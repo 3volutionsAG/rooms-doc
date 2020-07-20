@@ -3,6 +3,9 @@ This repository contains all the documentation available to the end user. The go
 - Benutzerhandbuch.docx (legacy/Benutzerhandbuch.docx)
 - [Use Cases](https://3volutions.atlassian.net/wiki/spaces/RoomsUC/overview)
 
+The latest version of this documentation is automatically deployed to gitlab pages on every commit. It can be browsed via: 
+- https://3volutions.gitlab.io/rooms-doc
+
 ## Getting started
 - Install HUGO
   - Choose an **extended** Version of HUGO: [hugo-releases](https://github.com/gohugoio/hugo/releases)

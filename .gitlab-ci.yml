@@ -1,0 +1,17 @@
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  stage: deploy
+  before_script:
+  - apk --update add git nodejs nodejs-npm
+  - npm install
+  script:
+  - hugo -d ./public --baseUrl https://3volutions.gitlab.io/3v-rooms/rooms-doc
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
