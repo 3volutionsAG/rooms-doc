@@ -33,5 +33,10 @@ hugo serve
 
 # Docsy
 You can learn more about Docsy and find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs
+To just start adding content a good introduction can be found here: https://www.docsy.dev/docs/adding-content/content/#
 
-To just start adding content a good introduction can be found here: https://www.docsy.dev/docs/adding-content/content/
+# Screenshots
+Any screenshot to illustrate a specific feature has to met the following criteria:
+- Format is JPEG
+- Size is 1280x716 px
+- Try to only show the relevant part and remove any clutter if possible
