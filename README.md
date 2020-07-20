@@ -7,6 +7,11 @@ The latest version of this documentation is automatically deployed to gitlab pag
 - https://3volutions.gitlab.io/3v-rooms/rooms-doc
 
 ## Getting started
+- Install [Git](https://git-scm.com)
+  - After the installation add a username and a email to your `~/.gitconfig` or execute the following two commands in your terminal.
+  - `git config --global user.name "your_username"`
+  - `git config --global user.email "your_email_address@example.com"`
+- Install a comfortable markdown editor like [VSCode](https://code.visualstudio.com/)
 - Install HUGO
   - Choose an **extended** Version of HUGO: [hugo-releases](https://github.com/gohugoio/hugo/releases)
   - Optional: If you have chocolatey installed just type `cinst hugo-extended -y` into the command line
