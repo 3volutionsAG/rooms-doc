@@ -17,13 +17,13 @@ The latest version of this documentation is automatically deployed to gitlab pag
   - Optional: If you have chocolatey installed just type `cinst hugo-extended -y` into the command line
 - Install [Node.js](https://nodejs.org/en)
   - Install the latest LTS version
-- Clone this repository and initialize all dependencies
-```sh
-git clone git@gitlab.com:3volutions/3v-rooms/rooms-doc.git
-cd rooms-doc
-git submodule update --init --recursive
-npm install
-```
+- Clone this repository and initialize all dependencies by executing the following lines on the command line
+  ```sh
+  git clone git@gitlab.com:3volutions/3v-rooms/rooms-doc.git
+  cd rooms-doc
+  git submodule update --init --recursive
+  npm install
+  ```
 
 Compile and run
 
