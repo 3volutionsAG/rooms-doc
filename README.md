@@ -4,7 +4,7 @@ This repository contains all the documentation available to the end user. The go
 - [Use Cases](https://3volutions.atlassian.net/wiki/spaces/RoomsUC/overview)
 
 The latest version of this documentation is automatically deployed to gitlab pages on every commit. It can be browsed via: 
-- https://3volutions.gitlab.io/rooms-doc
+- https://3volutions.gitlab.io/3v-rooms/rooms-doc
 
 ## Getting started
 - Install HUGO
@@ -13,7 +13,7 @@ The latest version of this documentation is automatically deployed to gitlab pag
 - Install [Node.js](https://nodejs.org/en)
   - Install the latest LTS version
 - Clone this repository and initialize all dependencies
-```
+```sh
 git clone git@gitlab.com:3volutions/3v-rooms/rooms-doc.git
 cd rooms-doc
 git submodule update --init --recursive
@@ -22,7 +22,7 @@ npm install
 
 Compile and run
 
-```
+```sh
 hugo serve
 ```
 
