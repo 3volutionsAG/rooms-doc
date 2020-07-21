@@ -1,5 +1,5 @@
 --
-title: "Test Nadine"
+title: "TestNadine"
 linkTitle: "Spielwiese"
 weight: 1
 type: list
