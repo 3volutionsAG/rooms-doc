@@ -13,8 +13,8 @@ description: >
 #### Deutschland
 ...ist ein Land in Europa
 
-{{< imgproc Nadine Resize "1280x" >}}
-Abbildung 1: Aufbau der ROOMS Applikation
+{{< imgproc test_Nadine Resize "1280x" >}}
+Abbildung 1: Profilbild Nadine
 {{< /imgproc >}}
 
 [3V-ROOMS](https://www.3v-rooms.ch/), die Software-Lösung zur Optimierung des Such- und Reservationsprozesses von Räumlichkeiten und Equipment. Dieses Handbuch beschreibt den Umgang mit der Software und dient den Anwendern als Leitfaden für Schulungen sowie als Nachschlagewerk um Fragen im täglichen Einsatz zu beantworten.
