@@ -3,7 +3,7 @@ title: "TestNadine"
 linkTitle: "Spielwiese"
 weight: 9
 description: >
-  Hier findest du heraus, wie ROOMS grundsätzlich aufgebaut ist und wie du dich am effizientisten in der Applikation bewegen kannst.
+  Hier ist Platz zum Austoben
 ---
 
 # Die Erde
