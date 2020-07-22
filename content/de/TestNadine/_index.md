@@ -9,7 +9,7 @@ menu:
 ---
 ausprobieren in alle Richtungen
 
-{{< imgproc Nadine Resize "1280x" >}}
+{{< imgproc Nadine Resize "450x" >}}
 Abbildung 1: Profilbild Nadine
 {{< /imgproc >}}
 
