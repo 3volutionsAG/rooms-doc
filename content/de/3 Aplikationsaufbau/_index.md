@@ -96,10 +96,10 @@ Folgende Tabelle erläutert die Listensymbole:
 |{{< imgproc 3-2_Listenfunktionen_Spaltenauswahl Resize "800x" >}}
 {{< /imgproc >}}|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern auf den Button "Übernehmen" klicken. </p>|
 |{{< imgproc 3-2_Listenfunktionen_RefreshIntervall Resize "800x" >}}
-{{< /imgproc >}}|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken ausgewählt werden. </p>|
+{{< /imgproc >}}|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
 ---
 
-
+**TIPP**: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte.
 
 
 

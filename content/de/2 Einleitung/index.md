@@ -3,9 +3,9 @@ title: "2 Einleitung"
 linkTitle: "2 Einleitung"
 weight: 10
 description: >
-  Mit diesem Handbuch zu ROOMS Release 4.2 soll den Benuzenden der Umgang mit dem Programm erleichtert werden und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. Eventuell sind spezifische Berechtigungen für die Nutzung mancher Funktionen nötig. 
+  Mit diesem Handbuch soll Ihnen der Umgang mit ROOMS erleichtert  und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. Nicht alle Funktionen sind für jeden Benutzenden sichtbar. Teilweise sind entsprechende Berechtigungen nötig. Bezüglich der Ihrer Berechtigungen wenden Sie sich bitte an Ihren Administrator.
   
-  Wir wünschen Ihnen viel Erfolg mit ROOMS.
+  Wir wünschen Ihnen viel Freude bei der Nutzung von ROOMS.
 ---
 
 
