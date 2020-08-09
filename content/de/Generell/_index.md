@@ -19,3 +19,14 @@ Die Applikation ist in einen Kopf-, Inhalts, sowie einen Fussbereiche eingeteilt
 ## Kopfbereich
 
 Der Kopfbereich der Applikation ist für die Navigation durch die Applikation verantwortlich. Der Home-Menüpunkt ist für jeden Benutzer sichtbar – alle anderen Menüpunkte werden nur bei entsprechender Berechtigung eingeblendet. Zusätzlich zur Navigation wird oben rechts der eingeloggte Benutzer mit der ihm zugehörizen Zeitzone angezeigt.
+
+### Neuer Screenshot Versuch 
+
+{{< imgproc Beispiel3V Resize "1280x" >}}
+Abbildung 2: Screenshot Beispiel
+{{< /imgproc >}}
+
+### Bild mit anderem Image Adding Markdown
+
+![Beispiel3V](Beispiel3V.PNG)
+
