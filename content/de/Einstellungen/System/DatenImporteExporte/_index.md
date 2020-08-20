@@ -2,16 +2,33 @@
 title: "Daten Importe/Exporte"
 linkTitle: "Daten Importe/Exporte"
 description: >
-  In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese.   
+  Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und bearbeiten diese.  
  
 
 
 ---
-## Daten Importe/Exporte bearbeiten
-Über den Menüpunkt "Gruppen" gelangen Sie in den Bereich, in dem Sie Gruppen hinzufügen oder entfernen können, Indem Sie auf den untenstehenden Button "hinzufügen" oder "entfernen" klicken (Abbildung g). 
+## Daten Importe/Exporte hinzufügen
+Über den untenstehenden Button "Hinzufügen" fügen Sie einen neuen Import Parameter zur Importliste hinzu (Abbildung i). Bei diesem bearbeiten Sie die Stammdaten (Abbildung ia).
 
-[//]: # (Beim Klicken auf bearbeiten erscheint dieser Text: Der Kontext dieses Bearbeitungsvorgangs steht nicht mehr zur Verfügung. Möglicherweise wurde der Bearbeitungsvorgang bereits beendet, abgebrochen oder zu lange nicht mehr verwendet. Beginnen Sie noch einmal einen neuen Bearbeitungsvorgang und verwenden Sie nicht den Zurück-Button des Browsers.
-)
+{{< imgproc Importe_hinzufügen_suchen Resize "1280x" >}}
+Abbildung i: Globale Parameter, Konfigurationsdaten bearbeiten
+{{< /imgproc >}}
 
+### Stammdaten bearbeiten
+Folgende Daten können für den Import Parameter bearbeitet werden: 
+
+| Feld         | Funktion         | 
+| ------------- |-------------  | 
+| Name      | Namen des Importparameters angeben | 
+| Nächste Ausführung      | Datum und Zeit der Ausführung eintragen |
+| Intervall in Minuten      |   |
+| Konfiguration |    |  
+
+{{< imgproc Importe_Stammdaten_bearbeiten Resize "1280x" >}}
+Abbildung ia: Stammdaten der Importparameter bearbeiten
+{{< /imgproc >}}
+
+## Daten Importe/Exprte durchsuchen 
+Über das linke Sidepanel durchsuchen Sie die Importliste nach dem Namen des Importparameters (Abbildung i).
 
 
