@@ -3,10 +3,31 @@ title: "Listen"
 linkTitle: "Listen"
 weight: 40
 description: >
-  Nach dem Erstellen von Buchungen ist es wichtig, dass diese auch einfach wiedergefunden werden können. Dabei ist einerseits die Kalenderansicht hilfreich, in der die Buchungen sehr einfach und übersichtlich dargestellt werden. Andererseits existiert in ROOMS auch der Bereich Listen, in dem mittels verschiedener Suchkriterien Buchungen, Personen, Ressourcen, Räume, Teilnehmer und Dienstleister gesucht und aufgelistet werden können.
+  Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Resourcen, Raumeinheiten, Teilnehmer und Dienstleistern. 
+  Die wichtigste Suchanfrage wird wohl die Buchungssuche sein. Eine erstellte Buchung sollte einfach wiedergefunden werden können um Änderungen vornehmen zu können oder sie zu aktualisieren.
 ---
 
-Die Ansicht im Bereich Listen ist wie überall in ROOMS in den Anzeigenbereich und das Sidepanel aufgeteilt. Im Sidepanel wird eingestellt, aufgrund welcher Kriterien die Suchergebnisse im Anzeigebereich dargestellt werden. Im Anzeigebereich gibt es in der Auflistung der Suchergebnisse noch einige Funktionen, um diese zu verwalten.
+Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. Unter der Auflistung oder auch in den Ergebniszeilen gibt es weitere Funktionen um die Suchergebnisse zu bearbeiten. Die Beschreibung der Funktionen finden Sie im jeweiligen Unterkapitel.
 
-Gespeicherte Listen
-Eingetragene Suchkriterien können für eine Wiederverwendung gespeichert werden. Durch Klick des Diskettensymbols und Eingabe einer Bezeichnung, wird die aktuelle Listenkonfiguration gespeichert. Zudem wird die Liste bei jedem Laden dieser Ansicht als Standard erscheinen, sofern die Checkbox „Favorit“ unter dem Diskettensymbol selektiert ist. Diese Listen können in den persönlichen Einstellungen wieder entfernt werden. Dies wird in Kapitel Eigene Listen genauer erläutert. Die Funktion steht im Outlook ebenfalls zur Verfügung.
+[//]: <> (Bild Startansicht Listen mit Markierung Sidepanel, Anzeigenbereich, Extrafunktionen)
+
+
+## Gespeicherte Listen
+
+Diese Funktion ist in jeder Kategorie vertreten und wird hier einmal zentral erläutert.
+
+Es kann vorkommen, dass Sie eine bestimmte Suche regelmäßig durchführen werdem. Für diesen Fall gibt es die Möglichkeit die Suchkriterien zu speichern. 
+Dazu klicken Sie nach der Einstellung der Suchkriterien auf das Diskettensymbol neben der Zeile "Gespeicherte Listen". Sie werden nun aufgefordert der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie außerdem die Möglichkeit die Suche als Favorit zu markieren. So wird bei jedem Laden der entsprechenden Kategorie direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.
+
+[//]: <> (Bild Suchanfrage speichern)
+[//]: <> (Bild geladene Suchmaske)
+
+Wollen Sie die gleiche Suche zu einem späteren Zeitpunkt nochmals ausführen, so wählen Sie die entsprechend benannte Suche aus dem Ausklappmenü "Gespeicherte Listen" aus.
+
+[//]: <> (Bild gespeicherte Liste auswählen)
+
+Benötigen Sie einer der gespeicherten Suchanfragen nicht mehr, so können Sie diese unter den persönlichen Einstellungen entfernen (siehe auch Kapitel Persönliche Einstellungen)
+
+[//]: <> (Link zu Persönliche Einstellungen/Eigene Listen)
+
+[//]: <> (Bild gespeicherte Listen entfernen)

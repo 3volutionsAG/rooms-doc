@@ -1,42 +1,71 @@
 ---
 title: "Buchungen suchen"
-linkTitle: "Buchungen suchen"
+linkTitle: "a) Buchungen suchen"
 weight: 40
 description: >
-  Buchungen wiederfinden
+  Haben Sie einmal eine Buchung erstellt ist es wichtig diese schnell und leicht wiederfinden zu können. Zu diesem Zweck gibt es im Bereich Listen als erstes die Buchungssuche. Anhand verschiedener Suchkriterien können Sie die Buchungen filtern, die Sie erstellt haben oder Organisator sind.
 ---
+## Einfache Suche
 
-## Buchungen suchen
+Um eine bestimmte Buchung zu finden gibt es zunächst eine einfache Suche. Diese wird mit den wichtigsten Kriterien Ressoucenart, Datum/Zeit der Buchung, Buchungszeitpunkt und Standort gefiltert.
 
-
-Hauptsuchkriterien anhand Buchungsmerkmale:
-
+ [//]: <> (Zeitraum statt Buchungszeitpunkt? Buchungszeitpunkt = Zeitpunkt der Buchung)
  [//]: <> (Bild Suchkriterien-Buchungen)
 
+Folgende Tabelle erläutert die Eingabefelder:
+
  ---
- |Feld|Funktion|
+ |<div style="width:220px">Feld</div>|Funktion|
  |---|---|
- |Gespeicherte Listen|Eingetragene Suchkriterien können für eine Wiederverwendung gespeichert werden. Durch Klick des Diskettensymbols und Eingabe einer Bezeichnung, wird die aktuelle Listenkonfiguration gespeichert. Zudem wird die Liste bei jedem Laden dieser Ansicht als Standard erscheinen, sofern die Checkbox „Favorit“ unter dem Diskettensymbol selektiert ist. Diese Listen können in den persönlichen Einstellungen wieder entfernt werden. Dies wird in Kapitel Eigene Listen genauer erläutert. Die Funktion steht im Outlook ebenfalls zur Verfügung.|
- |Ressoucenart|Hier kann ausgewählt werden, nach welchen Ressourcentypen gesucht wird.|
- |Datum/Zeit|Hier kann der Zeitrange der zu suchenden Buchungen eingeschränkt werden.|
- |Buchungszeitpunkt|...|
- |Standort|Hier kann der Standort der zu suchenden Buchungen eingeschränkt werden.|
+ |Ressoucenart|Nach welcher Ressourcenart wir gesucht?. Darunter fallen zum Beispiel Räume, Equipment, Parkplätze oder Arbeitsplätze|
+ |Datum/Zeit|An welchem Datum findet die Buchung statt? In welchem Zeitfenster wurde sie plaziert?|
+ |Buchungszeitpunkt  </br>(alternativ zu Datum/Zeit)|- *Alle*: Der Zeitruam wird nicht eingeschränkt </br> - *Heute laufende und künftige Buchungen*:  Alle Buchungen ab jetzt am heutigen Tag </br> -  *laufende und künftige Buchungen*:   Alle Buchungen ab dem morgigen Tag </br> - *vergangene Buchungen*:  Alle bereits vergangenen Buchungen|
+ |Standort|Werden über ROOMS die Ressourcen mehrerer Standorte verwaltet, kann hier der Standort ausgewählt werden, an dem die Buchung stattfindet.|
  ---
 
-Buchungsspezifische Kriterien
+## Erweiterte Suche
+
+Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder wollen Sie alle Buchungen finden, die von einem bestimmten Dienstleister bewirtet wird, können Sie die Liste über die Erweiterte Suche unter den entsprechenden Kriterien erstellen. Dabei stehen folgende Unterkategorien zur Verfügung:
+
+- Buchungsspezifische Kriterien  
+  Z.B. Buchungsnummer, Titel der Buchung, wurde die Buchung annuliert?
+
+- Ressourcenspezifische Kriterien  
+  Z.B. Ressourcen ID und Bezeichnung oder ist die Ressource aktiv?
+
+- Personenspezifische Kriterien  
+  Z.B. nur meine Buchungen, meine Buchungen für Dritte, Organisator, Kostenstelle
+
+- Gliederungen  
+  Z.B. Raumtyp oder Equipmenttyp
+
+- Anlassspeziefische Kriterien  
+  Z.B. Anlassnummer, Titel des Anlasses oder Anlasstyp
+
+- Dienstleisterspezifische Kriterien  
+  Buchungen, zu denen Bestellungen bei einem Dienstleister noch nicht freigegeben wurden
+
+### Buchungsspezifische Kriterien
+
+Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer oder der Titel der Buchung. Wenn Sie anhand des Buchungstitels nach einer Buchung suchen wollen, achten Sei darauf, dass dieser korrekt geschrieben ist. Es können nur identische Eingaben gefunden werden. Das gleiche gilt für alle Felder, die manuell ausgefüllt werden.
+
  [//]: <> (Bild Suchkriterien-Buchungen buchungsspezifisch)
 
  ---
- |Feld|Funktion|
+ |<div style="width:220px">Feld</div>|Funktion|
  |---|---|
- |Nummer|...|
- |Titel|...|
- |Kommentar|...|
- |Bemerkungen intern|...|
- |Status|...|
+ |Nummer|Wie lautet die Buchungsnummer?|
+ |Titel|Wie heißt der Titel der Buchung?|
+ |Bemerkung|Suchen Sie anhand einer eingefügten Bemerkung|
+ |Bemerkungen intern|Suchen Sie anhand einer eingefügten internen Bemerkung, diese ist nur für berechtigte Personenkreise sichtbar.|
+ |Status|Die Auswahlmöglichkeiten und die jeweilige Bedeutung wird im folgenden Abschnitt erläutert|
  ---
 
+[//]: <> (Bild Statusauswahl)
+[//]: <> (Tabelle Erklärung Stati)
+
 Ressourcenspeziefische Kriterien
+
 [//]: <> (Bild Suchkriterien-Buchungen ressourcenspezifisch)
 
 ---
@@ -48,6 +77,7 @@ Ressourcenspeziefische Kriterien
 ---
 
 Personenspezifische Kriterien
+
 [//]: <> (Bild Suchkriterien Buchungen personenspezifisch)
 
 ---
@@ -64,6 +94,7 @@ Personenspezifische Kriterien
 ---
 
 Gliederungen
+
 [//]: <> (Bild Suchkriterien Buchungen Gliederung)
 
 ---
@@ -75,6 +106,7 @@ Gliederungen
 ---
 
 Anlassspezifische Kriterien
+
 [//]: <> (Bild Suchkriterien Buchungen anlassspezifisch)
 
 ---
@@ -87,6 +119,7 @@ Anlassspezifische Kriterien
 ---
 
 Dienstleisterspezifische Kriterien
+
 [//]: <> (Bild Suchkriterien Buchungen dienstleisterspez.)
 
 ---

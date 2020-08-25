@@ -1,6 +1,6 @@
 ---
 title: "Ressourcen suchen"
-linkTitle: "Ressourcen suchen"
+linkTitle: "c) Ressourcen suchen"
 weight: 40
 description: >
   Ressourcen finden
