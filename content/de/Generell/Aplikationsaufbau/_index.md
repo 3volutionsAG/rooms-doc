@@ -17,72 +17,83 @@ Abbildung 1: Aufbau der ROOMS Applikation
 
 ### 1.1 Kopfbereich
 Der Kopfbereich enthält verschiedene Menüpunkte. Im Folgenden stellen wir Ihnen alle Menüpunkte vor, es kann jedoch sein, dass Sie nicht die Berechtigung für jeden dieser Menüpunkte haben, sodass Sie diese auf Ihrer Benutzeroberfläche nicht finden werden.
-Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. Tabelle 1 (gibt einen Überblick über die Menüpunkte und was sich dahinter verbirgt.
 
-[//]: Link zu Tabelle 1
-
-Desweiteren sehen Sie oben rechts neben der Menüleiste Ihren Namen und die Zeitzone, in der Sie sich befinden.
+#### 1.1.1 Menüleiste
+Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. Entsprechend Ihren Berechtigungen sehen Sie weitere Raiter in der Menüleiste. 
 
 {{< imgproc 3-1_Kopfbereich_beschriftet_ohneReservation Resize "1280x" >}}
-Abbildung 2: Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufende Reservationen.
+Abbildung 2: Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufender Buchung.
 {{< /imgproc >}}
 
-In dem kleinen Kasten über Ihrem Namen finden Sie die aktuellen Reseravtionen, die Sie erstellt haben oder die Sie organisieren. In der Standardansicht wird immer die erste laufende Reservation angezeigt.
-
-{{< imgproc 3-1_Kopfbereich_beschriftet_mitReservation Resize "1280x" >}}
-Abbildung 3: Kopfbereich mit laufenden Reservationen
-{{< /imgproc >}}
-
-Liegen mehrere laufende Reservationen vor, können Sie durch Klicken mit der linken Maustaste auf die erste laufende Reservation eine Auflistung öffnen. 
-
-{{< imgproc 3-1_Kopfbereich_Schnellzugriff Resize "1280x" >}}
-Abbildung 4: Schnellzugriff auf Reservationen
-{{< /imgproc >}}
-
-In dieser Darstellung ist es direkt möglich die Reservation in der Detailansicht anzuzeigen, zu bearbeiten, zu löschen oder freizugeben. 
-
-|Symbol|Bedeutung|Symbol|Bedeutung|
-|---|---|---|---|
-|{{< imgproc 3-1_Lupe Resize "50x" >}}{{< /imgproc >}}|<br> <br> Öffnen der Detailansicht|{{< imgproc 3-1_Bleistift Resize "50x" >}}{{< /imgproc >}}|<br> <br> Reservation bearbeiten|
-|{{< imgproc 3-1_rotesX Resize "50x" >}}{{< /imgproc >}}|<br> <br> Löschen der Reservation|{{< imgproc 3-1_gruenerHaken Resize "50x" >}}{{< /imgproc >}}|<br> <br> Reservation freigeben|
----
-
-Von ROOMS automatisch generierte Mitteilungen erscheinen für ein oben rechts neben der Menüleiste in einer Infobox und verschwinden dann wieder. Über das X kann die Infobox auch manuell geschlossen werden.
-Ist ein grüner Haken in der Box zu sehen, handelt es sich um eine Bestätigung oder korrekte Funktionsausführung. Erscheint dagegen eine rotes X, so liegt eine Fehlermedlung vor. Die Funktion kann zum Beispiel aufgrund von fehlenden Informationen oder Berechtigungen nicht ausgeführt werden.
-
-{{< imgproc 3-1_Infobox_beschriftet Resize "1280x" >}}
-Abbildung 5: Infobox mit automatisch generierten Mitteilungen
-{{< /imgproc >}}
-<br>
-
-Übersicht und Erläuterung der Menüpunkte:
-
-[//]: Tabellenüberschrift?
+Tabelle 1 (gibt einen Überblick über die Menüpunkte.
 
 ---
 |Menüpunkt|Funktion|
 |---|---|
 |Home Button|Der Home Button verweist auf die individuelle Startseite jedes Benutzenden. So lassen sich Funktionen, die häufig genutzt werden scneller erreichen. In den persönlichen Einstellungen kann die Seite von jedem selbst definiert werden.|
 |Buchen|Mit diesem Button gelangt man zur Suche nach freien Ressourcen. Mittels einer Suchfunktion mit verschiedenen Parametern kann der Benutzer aus einer Liste die gewünschte Ressource auswählen.|
-|Plan|Mittels dieses Buttons gelangt der Benutzer auf die Planansicht. Sofern für die einzelnen Standorte Pläne hinterlegt sind, kann der Benutzer durch die Stockwerke und Gebäude navigieren und von da aus direkt Reservationen tätigen.|
-|Kalender|Auf der Kalenderansicht kann man mittels verschiedener Einstellungsmöglichkeiten seinen persönlichen Kalender anzeigen lassen und darauf direkt Reservationen tätigen.|
+|Plan|Mittels dieses Buttons gelangt der Benutzer auf die Planansicht. Sofern für die einzelnen Standorte Pläne hinterlegt sind, kann der Benutzer durch die Stockwerke und Gebäude navigieren und von da aus direkt Buchungen tätigen.|
+|Kalender|Auf der Kalenderansicht kann man mittels verschiedener Einstellungsmöglichkeiten seinen persönlichen Kalender anzeigen lassen und darauf direkt Buchungen tätigen.|
 |Listen|Die Listenansicht zeigt bestehende Buchungen. Es steht eine Vielzahl von Suchfiltern und vordefinierten Listen zur Verfügung. Die Listen können nach Kundenbedürfnissen konfiguriert werden. In diesem Bereich befindet sich auch die Personensuche |
 |Reports|Unter diesem Menüpunkt können verschiedene Reports und Statistiken zur Auslastung, Stammdaten etc. erstellt werden. |
 |Einstellungen|Im Bereich Einstellungen kann der Benutzer seine persönlichen Einstellungen ändern. Diese sind im Kapitel Persönliche Einstellungen detailliert erläutert.|
 ---
 [//]: Link zu persönliche Einstellungen
 
+Desweiteren ist oben rechts neben der Menüleiste Ihr Namen und die Zeitzone, in der Sie sich befinden, zu sehen.
+
+#### 1.1.2 Schnellzugriff Buchungen
+
+In dem kleinen Kasten über Ihrem Namen finden Sie die aktuellen Buchungen, die Sie erstellt haben oder organisieren. In der Standardansicht wird die laufende Buchung, mit frühester Startzeit, angezeigt.
+
+{{< imgproc 3-1_Kopfbereich_beschriftet_mitReservation Resize "1280x" >}}
+Abbildung 3: Kopfbereich mit laufender Buchung
+{{< /imgproc >}}
+
+Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller ihrer ersteelten oder organisierten, laufenden Buchugen öffnen. 
+
+{{< imgproc 3-1_Kopfbereich_Schnellzugriff Resize "1280x" >}}
+Abbildung 4: Schnellzugriff auf Buchungen
+{{< /imgproc >}}
+
+In dieser Darstellung ist es möglich die Buchung direkt in der Detailansicht anzuzeigen, zu bearbeiten, zu löschen oder freizugeben. 
+
+|Symbol|Bedeutung|Symbol|Bedeutung|
+|---|---|---|---|
+|{{< imgproc 3-1_Lupe Resize "50x" >}}{{< /imgproc >}}|<br> <br> Öffnen der Detailansicht|{{< imgproc 3-1_Bleistift Resize "50x" >}}{{< /imgproc >}}|<br> <br> Buchung bearbeiten|
+|{{< imgproc 3-1_rotesX Resize "50x" >}}{{< /imgproc >}}|<br> <br> Löschen der Buchung|{{< imgproc 3-1_gruenerHaken Resize "50x" >}}{{< /imgproc >}}|<br> <br> Buchung freigeben|
+---
+
+[//]: <> (Was bedeutet Buchung freigeben?)
+
+#### 1.1.3 Actionpanel
+
+Von ROOMS automatisch generierte Mitteilungen erscheinen oben rechts neben der Menüleiste in einem sogenannten Actionpanel und verschwinden nach kurzer Zeit wieder. Über das "x" kann das Actionpanel manuell geschlossen werden.
+Ist ein grüner Haken in der Box zu sehen, handelt es sich um eine Bestätigung oder korrekte Funktionsausführung. Erscheint dagegen eine rotes x, so liegt eine Fehlermedlung vor. Die auszuführende Funktion kann, zum Beispiel aufgrund von fehlenden Informationen oder Berechtigungen, nicht ausgeführt werden.
+
+{{< imgproc 3-1_Infobox_beschriftet Resize "1280x" >}}
+Abbildung 5: Infobox mit automatisch generierten Mitteilungen
+{{< /imgproc >}}
+<br>
+
 ### 1.2 Inhaltsbereich
-Der Inhaltsbereich ist in ROOMS durchgängig nach dem gleichen Prinzip aufgebaut. Auf der linken Seite der Applikation befindet sich ein Sidepanel, in dem die Einstellungen für den Anzeigebereich rechts im Fenster festgelegt werden können. Das Sidepanel kann auch zusätzliche Informationen beinhalten.
+Der Inhaltsbereich ist in ROOMS durchgängig nach dem gleichen Prinzip aufgebaut. Auf der linken Seite der Applikation befindet sich ein Sidepanel, in dem die Einstellungen für den Anzeigebereich rechts im Fenster festgelegt werden können.
 
 {{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
 Abbildung 6: Aufbau Inhaltsbereich
 {{< /imgproc >}}
 
+#### 1.2.1 Sidepanel
+
+#### 1.2.2 Anzeigenbereich
+
 ## 2. Grundlegende Funktionen
 Die grundlegende Funktionen finden Sie auf jeder Seite.
 
-### 3. Listenfunktion
+### 2.1 Suchfunktionen
+
+### 2.1. Listenfunktion / Suchen
+
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
 {{< imgproc 3-2_Listenfunktionen_Position Resize "1280x" >}}
@@ -105,10 +116,12 @@ Folgende Tabelle erläutert die Listensymbole:
 
 **TIPP**: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte.
 
+Weitere Informationen zu Listen finden Sie im Kapitel Listen. [//]: <> (Link zu Listen)
+
 [//]: <> (Text eingefügt, noch nicht bearbeitet)
 
-### 4. Excel Export
-In ROOMS ist es jederzeit möglich, sämtliche Listen / Suchresultate in eine Excel-Datei zu exportieren. Zu diesem Zweck ist unter jeder Liste folgender Button platziert:
+### 2.2 Excel Export
+Sämtliche Suchresultate können in eine Excel-Datei exportiert werden. Dafür klicken Sie auf folgendes Symbol unten rechts unter dem Inhaltsbereich:
 
 [//]: <> (Bild Excelsymbol)
 
@@ -122,7 +135,7 @@ Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weite
 
 Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
 
-### 5. Auswahl des Datums
+### 2.3 Auswahl des Datums
 [//]: <> (Datumspicker?)
 
 In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
@@ -138,7 +151,7 @@ Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über 
 
 [//]: <> (Bild geöffneter Datumspicker)
 
-### 6. Favoriten Speichern
+### 2.4 Favoriten Speichern
 Je nachdem in welchem der Menüs „Listen“, „Reports“ oder „Einstellungen“ der Favoritenstern selektiert wird (Stern wird gelb eingefärbt), wird beim Einstieg in selbiges Menü, das vom Benutzer präferierte Subpanel angezeigt. Soll z.B. unter „Listen“ immer als erstes Ressourcen angezeigt werden, reicht 1 Klick auf den Stern.
 
 [//]: <> (Bild Favoritenpanel)
