@@ -1,13 +1,13 @@
 ---
-title: "3 Applikationsaufbau"
-linkTitle: "3 Applikationsaufbau"
+title: "Applikationsaufbau"
+linkTitle: "Applikationsaufbau"
 weight: 9
 
 description: >
    In deisem Kaptel erfahren Sie, wie rooms in seinen Grundzügen aufgebaut ist. Im Folgenden wird die Fensteraufteilung erläutert und auf die zugehörigen Funktionen eingegangen.
 ---
 
-## 3.1 Aufbau des Fensters
+## 1. Aufbau des Fensters
 Das Fenster von ROOMS ist in verschiedene Bereiche aufgeteilt - in einen Kopf- und einen Inhaltsbereich.
 Der Kopfbereich dient der Navigation. Der Inhaltsbereich zeigt Informationen und Auswahlmöglichkeiten des entsprechenden Menüpunktes.
 
@@ -15,7 +15,7 @@ Der Kopfbereich dient der Navigation. Der Inhaltsbereich zeigt Informationen und
 Abbildung 1: Aufbau der ROOMS Applikation
 {{< /imgproc >}}
 
-### Kopfbereich
+### 1.1 Kopfbereich
 Der Kopfbereich enthält verschiedene Menüpunkte. Im Folgenden stellen wir Ihnen alle Menüpunkte vor, es kann jedoch sein, dass Sie nicht die Berechtigung für jeden dieser Menüpunkte haben, sodass Sie diese auf Ihrer Benutzeroberfläche nicht finden werden.
 Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. Tabelle 1 (gibt einen Überblick über die Menüpunkte und was sich dahinter verbirgt.
 
@@ -72,17 +72,17 @@ Abbildung 5: Infobox mit automatisch generierten Mitteilungen
 ---
 [//]: Link zu persönliche Einstellungen
 
-### Inhaltsbereich
+### 1.2 Inhaltsbereich
 Der Inhaltsbereich ist in ROOMS durchgängig nach dem gleichen Prinzip aufgebaut. Auf der linken Seite der Applikation befindet sich ein Sidepanel, in dem die Einstellungen für den Anzeigebereich rechts im Fenster festgelegt werden können. Das Sidepanel kann auch zusätzliche Informationen beinhalten.
 
 {{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
 Abbildung 6: Aufbau Inhaltsbereich
 {{< /imgproc >}}
 
-## 3.2 Grundlegende Funktionen
+## 2. Grundlegende Funktionen
 Die grundlegende Funktionen finden Sie auf jeder Seite.
 
-### Listenfunktion
+### 3. Listenfunktion
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
 {{< imgproc 3-2_Listenfunktionen_Position Resize "1280x" >}}
@@ -107,7 +107,7 @@ Folgende Tabelle erläutert die Listensymbole:
 
 [//]: <> (Text eingefügt, noch nicht bearbeitet)
 
-### Excel Export
+### 4. Excel Export
 In ROOMS ist es jederzeit möglich, sämtliche Listen / Suchresultate in eine Excel-Datei zu exportieren. Zu diesem Zweck ist unter jeder Liste folgender Button platziert:
 
 [//]: <> (Bild Excelsymbol)
@@ -122,7 +122,7 @@ Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weite
 
 Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
 
-### Auswahl des Datums
+### 5. Auswahl des Datums
 [//]: <> (Datumspicker?)
 
 In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
@@ -138,7 +138,7 @@ Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über 
 
 [//]: <> (Bild geöffneter Datumspicker)
 
-### Favoriten Speichern
+### 6. Favoriten Speichern
 Je nachdem in welchem der Menüs „Listen“, „Reports“ oder „Einstellungen“ der Favoritenstern selektiert wird (Stern wird gelb eingefärbt), wird beim Einstieg in selbiges Menü, das vom Benutzer präferierte Subpanel angezeigt. Soll z.B. unter „Listen“ immer als erstes Ressourcen angezeigt werden, reicht 1 Klick auf den Stern.
 
 [//]: <> (Bild Favoritenpanel)
