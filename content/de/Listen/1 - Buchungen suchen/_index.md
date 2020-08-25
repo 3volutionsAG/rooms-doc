@@ -7,9 +7,7 @@ description: >
 ---
 
 ## Buchungen suchen
-Die Ansicht im Bereich Listen ist wie überall in ROOMS in den Anzeigebereich und das Sidepanel aufgeteilt. Im Sidepanel wird eingestellt, aufgrund welcher Kriterien die Buchungen im Anzeigebereich dargestellt werden. Im Anzeigebereich gibt es in der Liste noch einige Funktionen, um die Buchungen zu verwalten. Im View Modus (siehe Abbildung 100) besteht die Möglichkeit, aktuelle, annullierte oder in der Vergangenheit liegende Buchungen erneut zu aktivieren. Dies geschieht über den Button „Kopieren“. Damit wird eine 100% identische Kopie der Buchung erstellt und das System wechselt in den Editiermodus. Der Benutzer muss jetzt Datum/Zeit ändern oder den Raum wechseln, um die neue Buchung abspeichern zu können.
 
-[//]: <> (Bild Buchungssuche)
 
 Hauptsuchkriterien anhand Buchungsmerkmale:
 
@@ -20,7 +18,7 @@ Hauptsuchkriterien anhand Buchungsmerkmale:
  |---|---|
  |Gespeicherte Listen|Eingetragene Suchkriterien können für eine Wiederverwendung gespeichert werden. Durch Klick des Diskettensymbols und Eingabe einer Bezeichnung, wird die aktuelle Listenkonfiguration gespeichert. Zudem wird die Liste bei jedem Laden dieser Ansicht als Standard erscheinen, sofern die Checkbox „Favorit“ unter dem Diskettensymbol selektiert ist. Diese Listen können in den persönlichen Einstellungen wieder entfernt werden. Dies wird in Kapitel Eigene Listen genauer erläutert. Die Funktion steht im Outlook ebenfalls zur Verfügung.|
  |Ressoucenart|Hier kann ausgewählt werden, nach welchen Ressourcentypen gesucht wird.|
- |Datum/Zeit|Hier kann der Zeitrange der zu suchenden Buchungen eingeschränkt werden. Der Datumpicker wird in Kapitel D genauer erläutert.|
+ |Datum/Zeit|Hier kann der Zeitrange der zu suchenden Buchungen eingeschränkt werden.|
  |Buchungszeitpunkt|...|
  |Standort|Hier kann der Standort der zu suchenden Buchungen eingeschränkt werden.|
  ---
