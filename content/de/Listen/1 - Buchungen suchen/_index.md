@@ -3,7 +3,7 @@ title: "Buchungen suchen"
 linkTitle: "a) Buchungen suchen"
 weight: 40
 description: >
-  Haben Sie einmal eine Buchung erstellt ist es wichtig diese schnell und leicht wiederfinden zu können. Zu diesem Zweck gibt es im Bereich Listen als erstes die Buchungssuche. Anhand verschiedener Suchkriterien können Sie die Buchungen filtern, die Sie erstellt haben oder Organisator sind.
+  Haben Sie einmal eine Buchung erstellt ist es wichtig, dass Sie diese schnell und leicht wiederfinden. Zu diesem Zweck gibt es im Bereich Listen als erstes die Buchungssuche. Anhand verschiedener Kriterien können Sie vorliegende Buchungen filtern.
 ---
 ## Einfache Suche
 
@@ -17,15 +17,15 @@ Folgende Tabelle erläutert die Eingabefelder:
  ---
  |<div style="width:220px">Feld</div>|Funktion|
  |---|---|
- |Ressoucenart|Nach welcher Ressourcenart wir gesucht?. Darunter fallen zum Beispiel Räume, Equipment, Parkplätze oder Arbeitsplätze|
- |Datum/Zeit|An welchem Datum findet die Buchung statt? In welchem Zeitfenster wurde sie plaziert?|
- |Buchungszeitpunkt  </br>(alternativ zu Datum/Zeit)|- *Alle*: Der Zeitruam wird nicht eingeschränkt </br> - *Heute laufende und künftige Buchungen*:  Alle Buchungen ab jetzt am heutigen Tag </br> -  *laufende und künftige Buchungen*:   Alle Buchungen ab dem morgigen Tag </br> - *vergangene Buchungen*:  Alle bereits vergangenen Buchungen|
- |Standort|Werden über ROOMS die Ressourcen mehrerer Standorte verwaltet, kann hier der Standort ausgewählt werden, an dem die Buchung stattfindet.|
+ |Ressoucenart|Über das Plus (+) können Sie vorhandene Ressourcen (Räume, Parkplätze, Arbeitsplätze,...) auswählen|
+ |Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum der gesuchten Buchung aus|
+ |Buchungszeitpunkt  </br>(alternativ zu Datum/Zeit)|- *Alle*: Es werden alle Zeitäume berücksichtigt </br> - *Heute laufende und künftige Buchungen*:  Alle Buchungen ab jetzt am heutigen Tag </br> -  *laufende und künftige Buchungen*:   Alle Buchungen ab dem morgigen Tag </br> - *vergangene Buchungen*:  Alle bereits vergangenen Buchungen|
+ |Standort|Werden über ROOMS die Ressourcen mehrerer Standorte (verschiedene Städte, unterschiedliche Filialen,...) verwaltet, kann hier der Standort ausgewählt werden für den die gesuchte Buchung gilt|
  ---
 
 ## Erweiterte Suche
 
-Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder wollen Sie alle Buchungen finden, die von einem bestimmten Dienstleister bewirtet wird, können Sie die Liste über die Erweiterte Suche unter den entsprechenden Kriterien erstellen. Dabei stehen folgende Unterkategorien zur Verfügung:
+Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder wollen Sie alle Buchungen finden, die von einem bestimmten Dienstleister bewirtet wird, können Sie eine entsprechende Liste über die Erweiterte Suche erstellen. Dabei stehen folgende Unterkategorien zur Verfügung:
 
 - Buchungsspezifische Kriterien  
   Z.B. Buchungsnummer, Titel der Buchung, wurde die Buchung annuliert?
@@ -47,98 +47,142 @@ Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder
 
 ### Buchungsspezifische Kriterien
 
-Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer oder der Titel der Buchung. Wenn Sie anhand des Buchungstitels nach einer Buchung suchen wollen, achten Sei darauf, dass dieser korrekt geschrieben ist. Es können nur identische Eingaben gefunden werden. Das gleiche gilt für alle Felder, die manuell ausgefüllt werden.
+Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer oder der Titel der Buchung. Wenn Sie anhand des Buchungstitels nach einer Buchung suchen wollen.
+
+*Achten Sie darauf, dass dieser korrekt geschrieben ist. Es können nur identische Eingaben gefunden werden. Das gleiche gilt für alle anderen Felder, die manuell ausgefüllt werden.*
 
  [//]: <> (Bild Suchkriterien-Buchungen buchungsspezifisch)
 
  ---
  |<div style="width:220px">Feld</div>|Funktion|
  |---|---|
- |Nummer|Wie lautet die Buchungsnummer?|
- |Titel|Wie heißt der Titel der Buchung?|
- |Bemerkung|Suchen Sie anhand einer eingefügten Bemerkung|
- |Bemerkungen intern|Suchen Sie anhand einer eingefügten internen Bemerkung, diese ist nur für berechtigte Personenkreise sichtbar.|
- |Status|Die Auswahlmöglichkeiten und die jeweilige Bedeutung wird im folgenden Abschnitt erläutert|
+ |Nummer|Hier können Sie die individuelle Buchungsnummer eintragen.|
+ |Titel|Hier können Sie den Titel der Buchung eintragen|
+ |Bemerkung|Suchen Sie anhand einer eingetragene Bemerkung.|
+ |Bemerkungen intern|Suchen Sie anhand einer eingefügten internen Bemerkung. <br/> *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
+ |Status|*siehe nächsten Abschnnitt*|
  ---
 
-[//]: <> (Bild Statusauswahl)
-[//]: <> (Tabelle Erklärung Stati)
+Zum Eingabefeld Sataus:  
+Wenn Sie auf das Plus (+) neben der Eingabefeld klicken, öffnet sich ein Fenster, in dem Sie den entsprechenden Status auswählen, welcher der gesuchten Buchung zugewiesen wurde.
 
-Ressourcenspeziefische Kriterien
+[//]: <> (Bild Statusauswahl)
+
+---
+ |<div style="width:220px">Status</div>|Bedeutung|
+ |---|---|
+ |Alle / keine auswählen|Die Suche berücksicht jeden Status|
+ |Annulliert|gelöschte bzw abgesagte Buchungen|
+ |Besetzt (definitiv)|verbindliche Reservierung|
+ |Besetzt (provisorisch)|vorläufige Reservierung|
+ |Besetzt (System)|Zeiten die durch das System geblockt werden, z.B. eingeplante Vorlaufzeit für eine folgende Buchung|
+ |Besetzt (Temporär)|???|
+ |Slot definiert|???|
+ |Slot publiziert|???|
+ ---
+
+ Am Ende der Buchungsspezifischen Kriterien finden Sie vier weitere Checkboxen, die aktiviert werden können:
+
+---
+|<div style="width:220px">Status</div>|Bedeutung|
+ |---|---|
+ |Annulliert (nur No-Show)|Zeigt nur Buchungen, die durch Nichtinanspruchnahme als annulliert gekennzeichnet wurden|
+ |Annulliert (ohne No-Show)|Zeigt nur Buchungen, die aktiv annulliert wurden|
+ |Nicht Standard Bestuhlung <br/> *(gilt nur bei Raumbuchungen)*|Zeigt nur Buchungen, bei denen eine individuelle Bestuhlung bestellt wurde|
+ |Nur letzte Buchung einer Serie|Zeigt nur die letzten Buchungen einer Buchungsserien|
+ ---
+
+
+### Ressourcenspeziefische Kriterien
+
+Die ressourcenspezifischen Kriterien verändern sich je nach gewählter Ressourcenart (Raum, Parkplatz, Arbeitsplatz,...), die Sie in der einfachen Suche festlegen können. 
+In diesem Bereich werden in erster Linie firmenspezifische Bezeichnungen und Klassifizierungen als weitere Filterkriterien zur Verfügung gestellt. 
+
+Zur Veranschaulichung geben wir Ihnen folgendes Beispiel:
+
+Sie wollen eien Übersicht über alle Buchungen, die Sie für einen bestimmten Raum getätigt haben. Ihre firmenspezifischen Klassifizierungen zur Ressource Raum sind "Ressourcen ID/Bezeichnung", "Ressourcenstatus" und "VC*-Equipment".
+
+_*VC = Videokonferenz_  
+
+<br/>
 
 [//]: <> (Bild Suchkriterien-Buchungen ressourcenspezifisch)
 
 ---
-|Feld|Funktion|
+|<div style="width:220px">Status</div>|Bedeutung|
 |---|---|
-|Ressourcen ID/Bezeichnung|Hier kann eingeschränkt werden, dass nur Buchungen einer spezifischen Ressource gesucht werden – suche nach Name oder Bezeichnung.|
-|Ressourcenstatus|...|
-|VC-Equipment|...|
+|Ressourcen ID/Bezeichnung|Hier können Sie direkt nach der Raum ID oder der Raumbezeichnung filtern|
+|Ressourcenstatus|- *Aktiv:* Es werden nur Buchungen in zugänglichen Räumen angezeigt <br/> - *Inaktiv:* Es werden nur Buchungen in nicht zugänglichen Räumen angezeigt|
+|VC*-Equipment|- *Alle Räume:* Es werden alle Räume berücksichtigt <br/> - *Raum ohne VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC integral:* Es werden nur Buchungen in Räumen mit integralem VC-Equipment berücksichtigt|
 ---
+_*VC = Videokonferenz_
 
-Personenspezifische Kriterien
+### Personenspezifische Kriterien
+
+Unter Personenspezifischen Kriterien versteht man Merkmale, welceh die erstellenden, organisierenden oder verantwortungstrangenden Personen betreffen sowie die Kostenstelle, welcher die Buchung zugeordent ist.
 
 [//]: <> (Bild Suchkriterien Buchungen personenspezifisch)
 
 ---
-|Feld|Funktion|
+|<div style="width:220px">Feld</div>|Funktion|
 |---|---|
-|Meine Buchungen|Falls diese Checkbox aktiviert ist, werden nur eigene Buchungen angezeigt, von denen man selbst der Organisator ist. Um die Suche zu erweitern muss diese deaktiviert werden.|
-|Meine Buchungen für Dritte|Durch Anwählen dieser Checkbox, kann nach Buchungen gesucht werden, welche zwar vom angemeldeten Benutzer erstellt wurden,  er allerdings nicht der Organisator ist.|
-|Buchungen inaktiver Benutzender|Mit Hilfe dieses Feldes kann nach Buchungen gesucht werden, die von einem bereits aus der Firma ausgetretenen Benutzer getätigt wurden.|
-|Organisierender|...|
-|Erstellender|...|
-|Verantwortungstragender|...|
-|OE/Firma (Organisator)|...|
-|Kostenstelle (Organisator)|Es kann eingeschränkt werden, welcher Kostenstelle die Buchung zugeordnet wurde.|
+|Meine Buchungen|Aktivieren Sie diese Checkbox, um Buchungen zu finden, bei denen Sie selbst Organisator:in sind.|
+|Meine Buchungen für Dritte|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die Sie zwar erstellt haben, bei denen Sie jedoch selbst nicht Organisator:in sind.|
+|Buchungen inaktiver Benutzer:innen|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die von nicht mehr aktiven Mitarbeitenden getätigt wurden.|
+|Organisator:in|Tragen Sie hier den Namen der Person ein, welche die Buchung organsiert.|
+|Ersteller:in|Tragen Sie hier den Namen der Person ein, welche die Buchung erstellt hat.|
+|Verantwortliche:r|Tragen Sie hier den Namen der Person ein, welche die Verantwortung für die Buchung trägt.|
+|OE*/Firma (Organisator:in)|Tragen Sie hier den Firmennamen oder den Namen der Organisationseinheit ein, für welche die organisierende Person arbeitet.|
+|Kostenstelle (Organisator:in)|Tragen Sie hier ein, welcher Kostenstelle die Buchung zugeordet ist.|
 ---
 
-Gliederungen
+_*OE = Organisationseinheit_
 
-[//]: <> (Bild Suchkriterien Buchungen Gliederung)
+### Gliederungen
+
+Dei Unterkategorie Gliederung ist, wie die Ressourcenspezifischen Kriterien, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie im Bereich der einfachen Suche aus. 
+
+Wir bedienen uns nochmals dem Beispiel aus dem Kapitel Ressourcenspezifische Kriterien. 
+
+Sie wollen eine Auflistung aller Buchungen zusammenstellen, die in einem bestimmten Raumtyp, z. B. ein Sitzungssaal, stattfinden. Oder Sie wollen alle Buchungen heraussuchen, in dem 2 Beamern verwendet werden.
+
+[//]: <> (Bild Suchkriterien Buchungen Gliederung am Beispiel Raum)
 
 ---
-|Feld|Funktion|
+|<div style="width:220px">Feld</div>|Funktion|
 |---|---|
-|Raumtyp|...|
-|Raum: Equipmenttyp|...|
-|Equipment: Equipmenttyp|...|
+|Raumtyp|Durch klicken auf das Plus (+) öffnet sich die Auswahl der verschiedenen Raumtypen. Wählen Sie hier den Raumtyp, z.B. Sitzungssaal um alle Buchungen, die im Sitzungssaal stattfinden angezeigt zu bekommen.|
+|Raum: Equipmenttyp|Durch klicken auf das Plus (+) öffnet sich die Auswahl des vorhanden Equipments. Wählen Sie z.B. die Anzahl der Beamer um alle Bucungen angezeigt zu bekommen, in denen 2 Beamer verwendet werden.|
 ---
 
-Anlassspezifische Kriterien
+### Anlassspezifische Kriterien
+
+???  
+An eine Buchung kann ein Anlass gekoppelt sein, welcher wie die Buchung selbst charakteristische Merkmale aufweist. Sie können somit eine Buchung auch anhand der Charakteristika des Anlasses wiederfinden.
 
 [//]: <> (Bild Suchkriterien Buchungen anlassspezifisch)
 
 ---
-|Feld|Funkion|
+|<div style="width:220px">Feld</div>|Funkion|
 |---|---|
-|Nummer|...|
-|Titel|...|
-|Typ|...|
-|VC-Anlass|...|
+|Nummer|Hier können Sie die individuelle Anlassnummer eintragen.|
+|Titel|Hier können sie den Titel des Anlasses eintragen. <br/> *Achten Sie bitte auf die korrekte Schreibweise, da die Buchungen nur bei identischer Schreibweise gefunden werden können*|
+|Typ|Aus dem Dropdown Menü können Sie den Anlasstyp auswählen|
+|Hauptbuchung|In der Standardansicht werden Haupt- und Nebenbucungen zusammen angezeigt. Hier können Sie filtern, ob Sie nur Buchungen aus einer Hauptbuchung oder nur aus einer Nebenbuchung listen wollen.|
+|VC*-Anlass|*Alle* <br/> *Nur Anlässe mit VC:* Zeigt nur Buchungen mit einem Anlass mit VC <br/> *Nur Anlässe ohne VC:* zeigt nur Buchungen mit einem Anlass ohne VC|
 ---
 
-Dienstleisterspezifische Kriterien
+_*VC = Videokonferenz_
+
+### Dienstleisterspezifische Kriterien
+
+Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzufügen, die von der verantwortlichen Person genehmigt werden müssen. Mit Hilfe den Dienstleisterspezifiscen Kriterien können Sie sich Buchungen anzeigen lassen, deren Dienstleistungen noch nicht genehmigt wurden.
 
 [//]: <> (Bild Suchkriterien Buchungen dienstleisterspez.)
 
 ---
-|Feld|Funkion|
+|<div style="width:220px">Feld</div>|Funkion|
 |---|---|
-|Mit nicht freigegebenen Bestellungen|...|
+|Mit nicht freigegebenen Bestellungen|Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox.|
 
-
-
-
- [//]: <> (Bild Suchkriterien-Personen)
-
- ---
- |Feld|Funktion|
- |---|---|
- |Gespeicherte Listen| *siehe oben*|
- |Nachname/Vorname|...|
- |Email|...|
- |Sync. Modus|...|
- |Sync. deakiviet|...|
-
- 
+## Anzeigenbereich 
