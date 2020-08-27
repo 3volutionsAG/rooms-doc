@@ -3,10 +3,10 @@ title: "Catering und Services"
 linkTitle: "Catering und Services"
 weight: 68
 description: >
-  In der Kategorie "Catering und Service" ändern und speichern Sie verschiedene Dienstleister dessen Anhebote z.B. für das Catering oder die Bestuhlung in Räumen.
+  In diesem Bereich sehen Sie Ihre Dienstleister. Sie tragen neue Dienstleister und Angebote ein, bearbeiten bestehende Angebote oder löschen veraltete. 
  
 
 
 ---
-## Dienstleister und Abgebotszonen
+
 

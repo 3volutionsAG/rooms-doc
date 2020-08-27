@@ -2,16 +2,28 @@
 title: "Action Tracking"
 linkTitle: "Action Tracking"
 description: >
-  In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese.   
+  Sie sehen hier die Action Tracking list mit Zeitstempel, Ereignistyp, Meldungen, Exception.
  
 
 
 ---
-## Action Tracking bearbeiten
-Über den Menüpunkt "Gruppen" gelangen Sie in den Bereich, in dem Sie Gruppen hinzufügen oder entfernen können, Indem Sie auf den untenstehenden Button "hinzufügen" oder "entfernen" klicken (Abbildung g). 
+## Action Tracking 
+Elemente aus der Action Tracking list können Sie durchsuchen oder etfernen (Abbildung T).
 
-[//]: # (Beim Klicken auf bearbeiten erscheint dieser Text: Der Kontext dieses Bearbeitungsvorgangs steht nicht mehr zur Verfügung. Möglicherweise wurde der Bearbeitungsvorgang bereits beendet, abgebrochen oder zu lange nicht mehr verwendet. Beginnen Sie noch einmal einen neuen Bearbeitungsvorgang und verwenden Sie nicht den Zurück-Button des Browsers.
-)
+{{< imgproc Actiontracking_liste Resize "1280x" >}}
+Abbildung T: Action Tracking Liste durchsuchen
+{{< /imgproc >}}
+
+
+## Action Tracking durchsuchen
+Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folgenden Kriterien die Ereignisanzeige (Abbildung E): 
+* Ereignistyp 
+* Zeitstempel 
+* Meldungen
+* Exceptions
+* Aktion
+
+
 
 
 

@@ -2,16 +2,30 @@
 title: "Oberfläche"
 linkTitle: "Oberfläche"
 description: >
-  In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese.   
+  Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus.   
  
 
 
 ---
-## Oberfläche bearbeiten
-Über den Menüpunkt "Gruppen" gelangen Sie in den Bereich, in dem Sie Gruppen hinzufügen oder entfernen können, Indem Sie auf den untenstehenden Button "hinzufügen" oder "entfernen" klicken (Abbildung g). 
+## Oberfläche: Themenlisten bearbeiten und hinzufügen
+Die Elemente aus der Themenliste bearbeiten Sie, indem Sie auf das Stift Icon klicken. Indem sich öffnenden Feld bearbeiten Sie die Stammdaten des Listen Elements (Abbildung fa):  
 
-[//]: # (Beim Klicken auf bearbeiten erscheint dieser Text: Der Kontext dieses Bearbeitungsvorgangs steht nicht mehr zur Verfügung. Möglicherweise wurde der Bearbeitungsvorgang bereits beendet, abgebrochen oder zu lange nicht mehr verwendet. Beginnen Sie noch einmal einen neuen Bearbeitungsvorgang und verwenden Sie nicht den Zurück-Button des Browsers.
-)
+{{< imgproc Oberfläche_bearbeiten Resize "1280x" >}}
+Abbildung f: Thenenlisten auf der Oberfläche bearbeiten und durchsuchen
+{{< /imgproc >}}
 
+### Oberfläche Stammdaten bearbeiten
+Folgende Daten bearbeiten Sie in den Stammdaten: 
 
+| Feld         | Funktion         | 
+| ------------- |-------------  | 
+| File Pfad    |  File Pfad eintragen | 
+| Datei/Verzeichnis-Browser    | Wählen Sie eine Datei mit maximal 5MB aus    |
+
+{{< imgproc Oberfläche_Stammdaten Resize "1280x" >}}
+Abbildung fa: Thenenlisten auf der Oberfläche bearbeiten und durchsuchen
+{{< /imgproc >}}
+
+## Oberfläche durchsuchen
+Über das linke Sidepanel durchsuchen Sie die Themenlisten nach dem "File Pfad" (Abbildung f)
 

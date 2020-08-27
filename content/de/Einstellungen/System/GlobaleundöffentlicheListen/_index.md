@@ -2,16 +2,33 @@
 title: "Globale und öffentliche Listen"
 linkTitle: "Globale und öffentiche Listen"
 description: >
-  In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese.   
+  Legen Sie globale und öffentliche Listen an, bearbeiten Sie bestehende oder löschen Sie Elemente aus der Liste.    
  
 
 
 ---
-## Anlassstatus bearbeiten
-Über den Menüpunkt "Gruppen" gelangen Sie in den Bereich, in dem Sie Gruppen hinzufügen oder entfernen können, Indem Sie auf den untenstehenden Button "hinzufügen" oder "entfernen" klicken (Abbildung g). 
+## Globale und öffentliche Listen bearbeiten
+Die Elemente aus der Liste bearbeiten Sie, indem Sie auf das Stift Icon klicken. Indem sich öffnenden Feld bearbeiten Sie die Stammdaten des Listen Elements (Abbildung ea): 
+* Bezeichnung 
+* Besitzer 
 
-[//]: # (Beim Klicken auf bearbeiten erscheint dieser Text: Der Kontext dieses Bearbeitungsvorgangs steht nicht mehr zur Verfügung. Möglicherweise wurde der Bearbeitungsvorgang bereits beendet, abgebrochen oder zu lange nicht mehr verwendet. Beginnen Sie noch einmal einen neuen Bearbeitungsvorgang und verwenden Sie nicht den Zurück-Button des Browsers.
-)
+{{< imgproc Globale_bearbeiten_suchen Resize "1280x" >}}
+Abbildung e: Globale und öffentliche Listen bearbeiten und durchsuchen
+{{< /imgproc >}}
+
+{{< imgproc Globale_Daten_bearbeiten Resize "1280x" >}}
+Abbildung ea: Globale und öffentliche Listen: Stammdaten bearbeiten
+{{< /imgproc >}}
+
+## Globale und öffenrliche Listen: Daten einsehen
+Fahren Sie mit dem Mauszeiger über das Listenelement und klicken Sie darauf. Sie sehen nun die eingetragenen Daten und können diese bei Bedarf auch bearbeiten. 
+
+{{< imgproc Globale_Daten_einsehen Resize "1280x" >}}
+Abbildung e: Globale und öffentliche Listen: Daten einsehen
+{{< /imgproc >}}
+
+## Globale und öffentliche Listen bearbeiten
+Über das linke Sidepanel durchsuchen Sie die globalen und öffentlichen Listen nach Bezeichnungen und Besitzern (Abbildung e).
 
 
 

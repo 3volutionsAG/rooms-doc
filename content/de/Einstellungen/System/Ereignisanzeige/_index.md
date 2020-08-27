@@ -2,16 +2,31 @@
 title: "Ereignisanzeige"
 linkTitle: "Ereignisanzeige"
 description: >
-  In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese.   
+  In der Ereignisanzeige sehen Sie alle Ereignisse, die im System von Rooms vorgefallen sind. Beispiele hierzu sind Error Anzeigen oder Warnungen.  
  
 
 
 ---
-## Ereignisanzeige bearbeiten
-Über den Menüpunkt "Gruppen" gelangen Sie in den Bereich, in dem Sie Gruppen hinzufügen oder entfernen können, Indem Sie auf den untenstehenden Button "hinzufügen" oder "entfernen" klicken (Abbildung g). 
+## Ereignisanzeige Daten einsehen 
+Indem Sie auf den Namen des Ereignisses in der Liste klicken, erscheint ein neuen Feld. In diesem sehen Sie die eingetragenen Logging Stammdaten des Ereignisses. Diese können Sie teilweise bearbeiten oder drucken (Abbildung Ea).
 
-[//]: # (Beim Klicken auf bearbeiten erscheint dieser Text: Der Kontext dieses Bearbeitungsvorgangs steht nicht mehr zur Verfügung. Möglicherweise wurde der Bearbeitungsvorgang bereits beendet, abgebrochen oder zu lange nicht mehr verwendet. Beginnen Sie noch einmal einen neuen Bearbeitungsvorgang und verwenden Sie nicht den Zurück-Button des Browsers.
-)
+{{< imgproc Ereignisanzeige_Daten_einsehen Resize "1280x" >}}
+Abbildung Ea: Daten des angezeigten Ereignis einsehen
+{{< /imgproc >}}
+
+## Ereignisanzeige durchsuchen
+Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folgenden Kriterien die Ereignisanzeige (Abbildung E): 
+* Quelle
+* Ereignistyp 
+* Zeitstempel
+* Applikationskontext 
+* Meldungen
+* Benutzername
+* Servername
+
+{{< imgproc Ereignisanzeige_durchsuchen Resize "1280x" >}}
+Abbildung E: Ereignisliste durchsuchen
+{{< /imgproc >}}
 
 
 
