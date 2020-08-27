@@ -1,6 +1,7 @@
 ---
 title: "Standorte"
 linkTitle: "Standorte"
+weight: 1
 description: >
   In diesem Bereich legen Sie die Standorte der Ressourcen fest, fügen neue hinzu oder löschen Standorte.    
  

@@ -1,6 +1,7 @@
 ---
 title: "Workflows"
 linkTitle: "Workflows"
+weight: 3
 description: >
   In diesem Bereich neue Workflows an, erstellen Workflowlisten oder entfernen die gespeicherten Workflows.   
  

@@ -1,6 +1,7 @@
 ---
 title: "Anlassstatus"
 linkTitle: "Anlassstatus"
+weight: 2
 description: >
   Bearbeiten Sie den Anlassstatus.   
  

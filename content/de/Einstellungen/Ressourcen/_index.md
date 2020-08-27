@@ -1,7 +1,7 @@
 ---
 title: "Ressourcen"
 linkTitle: "Ressourcen"
-weight: 66
+weight: 6
 description: >
   In diesem Bereich speichern und bearbeiten Sie die Ressourcen. Sie erstellen Ressourcenlisten, fügen neue Ressourcen hinzu oder bearbeiten bestehende Ressourcen. 
  

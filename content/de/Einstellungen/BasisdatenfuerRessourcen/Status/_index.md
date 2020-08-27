@@ -1,6 +1,7 @@
 ---
 title: "Status"
 linkTitle: "Status"
+weight: 2
 description: >
   In diesem Bereich sehen Sie den Status der Basisdaten für die Ressourcen ein.   
  

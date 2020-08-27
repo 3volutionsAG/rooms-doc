@@ -1,6 +1,7 @@
 ---
 title: "Übersetzungen"
 linkTitle: "Übersetzungen"
+weight: 6
 description: >
   Im Bereich der Übersetzungen finden Sie alle eingetragenen Übersetzungen und Sprachen, welche in Rooms verwendet werden. Die Übersetzungen werden Ihnen in der Übersetzungsliste angezeigt. 
  

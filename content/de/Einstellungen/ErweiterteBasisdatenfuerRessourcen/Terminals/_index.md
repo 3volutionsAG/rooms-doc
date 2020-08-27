@@ -1,6 +1,7 @@
 ---
 title: "Terminals"
 linkTitle: "Terminals"
+weight: 6
 description: >
   Im Bereich Terminals legen Sie Terminallisten fest. Die einzelnen Terminals können Sie neu hinzufügen oder ändern.    
  

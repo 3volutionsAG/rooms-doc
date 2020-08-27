@@ -1,7 +1,7 @@
 ---
 title: "Sicherheitsdaten für Personen"
 linkTitle: "Sicherheitsdaten für Personen"
-weight: 62
+weight: 2
 description: >
   Im Bereich Sicherheitsdaten für Personen legen Sie Firmenlisten, Benutzergruppen und Mitarbeiter-Rollen an und fest. 
  

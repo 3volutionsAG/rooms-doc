@@ -1,6 +1,7 @@
 ---
 title: "Bestuhlung"
 linkTitle: "Bestuhlung"
+weight: 4
 description: >
   In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest.   
  

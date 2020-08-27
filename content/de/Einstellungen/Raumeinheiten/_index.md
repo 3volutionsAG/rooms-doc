@@ -1,7 +1,7 @@
 ---
 title: "Raumeinheiten"
 linkTitle: "Raumeinheiten"
-weight: 67
+weight: 7
 description: >
   In diesem Bereich legen Sie die Raumeinheiten und Listen der Raumeinheiten an. Fügen Sie neue Raumeinheiten hinzu oder löschen Sie bestehende Raumeinheiten. 
  

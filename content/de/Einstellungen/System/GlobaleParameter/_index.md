@@ -1,6 +1,7 @@
 ---
 title: "Globale Parameter"
 linkTitle: "Globale Parameter"
+weight: 1
 description: >
   In diesem Bereich sehen Sie die Konfigurationsliste ein und bearbeiten bestehende globale Parameter. 
  

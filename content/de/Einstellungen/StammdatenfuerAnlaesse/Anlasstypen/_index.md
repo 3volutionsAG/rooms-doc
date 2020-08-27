@@ -1,6 +1,7 @@
 ---
 title: "Anlasstypen"
 linkTitle: "Anlasstypen"
+weight: 1
 description: >
   Fügen Sie neue Anlasstypen hinzu oder bearbeiten Sie bestehende.   
  

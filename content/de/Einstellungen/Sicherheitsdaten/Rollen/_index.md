@@ -1,6 +1,7 @@
 ---
 title: "Rollen"
 linkTitle: "Rollen"
+weight: 3
 description: >
   In diesem Bereich bearbeiten und speichern Sie Rollenlisten. Ebenfalls können Sie Rollen neu anlegen oder entfernen und diese bearbeiten und speichern.   
  

@@ -1,6 +1,7 @@
 ---
 title: "Globale und öffentliche Listen"
 linkTitle: "Globale und öffentiche Listen"
+weight: 4
 description: >
   Legen Sie globale und öffentliche Listen an, bearbeiten Sie bestehende oder löschen Sie Elemente aus der Liste.    
  

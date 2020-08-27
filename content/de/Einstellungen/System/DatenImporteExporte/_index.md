@@ -1,6 +1,7 @@
 ---
 title: "Daten Importe/Exporte"
 linkTitle: "Daten Importe/Exporte"
+weight: 2
 description: >
   Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und bearbeiten diese.  
  

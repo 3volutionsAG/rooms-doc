@@ -1,6 +1,7 @@
 ---
 title: "Klassifikationen"
 linkTitle: "Klassifikationen"
+weight: 2
 description: >
   Im Bereich Klassifikationen erstellen und bearbeiten Sie Klassifikationstypen.   
  

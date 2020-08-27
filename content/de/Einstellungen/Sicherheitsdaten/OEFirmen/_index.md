@@ -1,6 +1,7 @@
 ---
 title: "OE Firmen"
 linkTitle: "OE Firmen"
+weight: 1
 description: >
   In diesem Bereich bearbeiten und speichern Sie Firmenlisten. Ebenfalls können Sie Firmen und Kooperationspartner neu anlegen und Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten und speichern.
  

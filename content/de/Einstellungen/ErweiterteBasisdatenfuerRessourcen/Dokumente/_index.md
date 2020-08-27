@@ -1,6 +1,7 @@
 ---
 title: "Dokumente"
 linkTitle: "Dokumente"
+weight: 5
 description: >
   In diesem Bereich erstellen und fügen Sie Dokumente hinzu.   
  

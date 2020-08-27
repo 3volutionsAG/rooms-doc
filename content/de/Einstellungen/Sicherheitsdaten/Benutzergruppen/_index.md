@@ -1,6 +1,7 @@
 ---
 title: "Benutzergruppen"
 linkTitle: "Benutzergruppen"
+weight: 2
 description: >
   In diesem Bereich bearbeiten und speichern Sie Gruppenlisten. Ebenfalls können Sie neue Gruppen anlegen und Stammdaten, Personen und Notifikationen schon bestehender und neuer Gruppen bearbeiten und speichern. 
  

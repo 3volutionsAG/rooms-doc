@@ -1,6 +1,7 @@
 ---
 title: "Gliederung"
 linkTitle: "Gliederung"
+weight: 1
 description: >
   Im Bereich Gliederung finden Sie Gliederungstyplisten. Diese Gliederungstypen können Sie einsehen, ändern und erstellen.  
  

@@ -1,6 +1,7 @@
 ---
 title: "Ereignisanzeige"
 linkTitle: "Ereignisanzeige"
+weight: 8
 description: >
   In der Ereignisanzeige sehen Sie alle Ereignisse, die im System von Rooms vorgefallen sind. Beispiele hierzu sind Error Anzeigen oder Warnungen.  
  

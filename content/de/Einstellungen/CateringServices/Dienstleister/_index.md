@@ -1,6 +1,7 @@
 ---
 title: "Dienstleister"
 linkTitle: "Dienstleister"
+weight: 1
 description: >
   Bearbeiten Sie bestehende Dienstleister oder fügen Sie neue hinzu. Die bestehenden Dienstleister sehen Sie in der Liste. 
 

@@ -1,6 +1,7 @@
 ---
 title: "Tarife"
 linkTitle: "Tarife"
+weight: 3
 description: >
   Im Bereich Tarife sehen und erstellen Sie Tarifkategorie-Listen. Ebenfalls können Sie neue Tarife erstellen und bearbeiten.   
  

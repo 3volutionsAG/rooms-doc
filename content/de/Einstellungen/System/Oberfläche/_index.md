@@ -1,6 +1,7 @@
 ---
 title: "Oberfläche"
 linkTitle: "Oberfläche"
+weight: 5
 description: >
   Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus.   
  

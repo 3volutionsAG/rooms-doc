@@ -1,6 +1,7 @@
 ---
 title: "Angebotszonen"
 linkTitle: "Angebotszonen"
+weight: 2
 description: >
   Im Bereich Angebotszonen sehen Sie die verschiedenen Dienstleister und ihre Angebote. Sie erstellen neue Angebotszonen oder bearbeiten bestehende. 
  
