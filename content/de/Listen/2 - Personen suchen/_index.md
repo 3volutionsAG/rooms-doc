@@ -1,7 +1,7 @@
 ---
 title: "Personen suchen"
-linkTitle: "b) Personen suchen"
-weight: 40
+linkTitle: "Personen suchen"
+weight: 2
 description: >
     Personen finden
 ---

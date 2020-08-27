@@ -1,7 +1,7 @@
 ---
 title: "Listen"
 linkTitle: "Listen"
-weight: 40
+weight: 600
 description: >
   Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Resourcen, Raumeinheiten, Teilnehmer und Dienstleistern. 
   Die wichtigste Suchanfrage wird wohl die Buchungssuche sein. Eine erstellte Buchung sollte einfach wiedergefunden werden können um Änderungen vornehmen zu können oder sie zu aktualisieren.

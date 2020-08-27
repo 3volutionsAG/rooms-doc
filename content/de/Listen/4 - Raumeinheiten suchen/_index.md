@@ -1,7 +1,7 @@
 ---
 title: "Raumeinheiten suchen"
-linkTitle: "d) Raumeinheiten suchen"
-weight: 40
+linkTitle: "Raumeinheiten suchen"
+weight: 4
 description: >
   Raumeinheiten finden
 ---

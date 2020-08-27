@@ -1,7 +1,7 @@
 ---
 title: "Teilnehmer suchen"
-linkTitle: "e) Teilnehmer suchen"
-weight: 40
+linkTitle: "Teilnehmer suchen"
+weight: 5
 description: >
  Teilnehmer finden
 ---
