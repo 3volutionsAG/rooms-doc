@@ -10,10 +10,6 @@ description: >
 
 Das Fenster von 3V-ROOMS ist in verschiedene Bereiche aufgeteilt und so angeordnet, so dass ein effizientes und reibungsloses Arbeiten möglich ist.
 
-{{< imgproc 01-Generell Resize "1280x" >}}
-Abbildung 1: Aufbau der ROOMS Applikation
-{{< /imgproc >}}
-
 Die Applikation ist in einen Kopf-, Inhalts, sowie einen Fussbereiche eingeteilt.
 
 ## Kopfbereich
