@@ -38,6 +38,5 @@ To just start adding content a good introduction can be found here: https://www.
 # Screenshots
 Any screenshot to illustrate a specific feature has to met the following criteria:
 - Format is png/jpg
-- If you clip the whole screen make sure the size is 1280x720 px
+- If you clip the whole screen make sure the size is 1280x768 px
 - Try to only show the relevant part and remove any clutter if possible
-- 
