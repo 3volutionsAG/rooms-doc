@@ -36,7 +36,7 @@ Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer, der Titel od
  <!-- Bild Suchkriterien-Buchungen buchungsspezifisch -->
 
  ---
- |<div style="width:220px">Feld</div>|Funktion|
+ |<div style="width:250px">Feld</div>|Funktion|
  |---|---|
  |Nummer|Hier können Sie die individuelle Buchungsnummer eintragen.|
  |Titel|Hier können Sie den Titel der Buchung eintragen|
@@ -52,7 +52,7 @@ Wenn Sie auf das Plus (+) neben dem Eingabefeld klicken, öffnet sich ein Fenste
 <!-- Bild Statusauswahl -->
 
 ---
- |<div style="width:220px">Status</div>|Bedeutung|
+ |<div style="width:250px">Status</div>|Bedeutung|
  |---|---|
  |Alle / keine auswählen|Die Suche berücksicht jeden/keinen Status|
  |Annulliert|gelöschte und abgesagte Buchungen|
@@ -67,7 +67,7 @@ Wenn Sie auf das Plus (+) neben dem Eingabefeld klicken, öffnet sich ein Fenste
  Am Ende der Buchungsspezifischen Kriterien finden Sie vier weitere Checkboxen, die aktiviert werden können:
 
 ---
-|<div style="width:220px">Status</div>|Bedeutung|
+|<div style="width:250px">Status</div>|Bedeutung|
  |---|---|
  |Annulliert (nur No-Show)|Zeigt nur Buchungen, die durch Nichtinanspruchnahme als annulliert gekennzeichnet wurden|
  |Annulliert (ohne No-Show)|Zeigt nur Buchungen, die aktiv annulliert wurden|
@@ -92,7 +92,7 @@ _*VC = Videokonferenz_
 <!-- Bild Suchkriterien-Buchungen ressourcenspezifisch -->
 
 ---
-|<div style="width:220px">Status</div>|Bedeutung|
+|<div style="width:250px">Status</div>|Bedeutung|
 |---|---|
 |Ressourcen ID/Bezeichnung|Hier können Sie direkt nach der Raum ID oder der Raumbezeichnung filtern|
 |Ressourcenstatus|- *Aktiv:* Es werden nur Buchungen in zugänglichen Räumen angezeigt <br/> - *Inaktiv:* Es werden nur Buchungen in nicht zugänglichen Räumen angezeigt|
@@ -107,11 +107,11 @@ Unter Personenspezifischen Kriterien versteht man Merkmale, welceh die erstellen
 <!-- Bild Suchkriterien Buchungen personenspezifisch -->
 
 ---
-|<div style="width:220px">Feld</div>|Funktion|
+|<div style="width:250px">Feld</div>|Funktion|
 |---|---|
 |Meine Buchungen|Aktivieren Sie diese Checkbox, um Buchungen zu finden, bei denen Sie selbst Organisator:in sind.|
-|Meine Buchungen für Dritte|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die Sie zwar erstellt haben, bei denen Sie jedoch selbst nicht Organisator:in sind.|
-|Buchungen inaktiver Benutzer:innen|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die von nicht mehr aktiven Mitarbeitenden getätigt wurden.|
+|Meine Buchungen </br> für Dritte|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die Sie zwar erstellt haben, bei denen Sie jedoch selbst nicht Organisator:in sind.|
+|Buchungen inaktiver </br> Benutzer:innen|Aktivieren Sie diese Checkbox, um Buchungen zu finden, die von nicht mehr aktiven Mitarbeitenden getätigt wurden.|
 |Organisator:in|Tragen Sie hier den Namen der Person ein, welche die Buchung organsiert.|
 |Ersteller:in|Tragen Sie hier den Namen der Person ein, welche die Buchung erstellt hat.|
 |Verantwortliche:r|Tragen Sie hier den Namen der Person ein, welche die Verantwortung für die Buchung trägt.|
@@ -132,7 +132,7 @@ Sie wollen eine Auflistung aller Buchungen zusammenstellen, die in einem bestimm
 <!-- Bild Suchkriterien Buchungen Gliederung am Beispiel Raum -->
 
 ---
-|<div style="width:220px">Feld</div>|Funktion|
+|<div style="width:250px">Feld</div>|Funktion|
 |---|---|
 |Raumtyp|Durch klicken auf das Plus (+) öffnet sich die Auswahl der verschiedenen Raumtypen. Wählen Sie hier den Raumtyp, z.B. Sitzungssaal um alle Buchungen, die im Sitzungssaal stattfinden angezeigt zu bekommen.|
 |Raum: Equipmenttyp|Durch klicken auf das Plus (+) öffnet sich die Auswahl des vorhanden Equipments. Wählen Sie z.B. die Anzahl der Beamer um alle Bucungen angezeigt zu bekommen, in denen 2 Beamer verwendet werden.|
@@ -146,7 +146,7 @@ Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Emp�
 <!-- Bild Suchkriterien Buchungen anlassspezifisch -->
 
 ---
-|<div style="width:220px">Feld</div>|Funkion|
+|<div style="width:250px">Feld</div>|Funkion|
 |---|---|
 |Nummer|Hier können Sie die individuelle Anlassnummer eintragen.| 
 |Titel|Hier können sie den Titel des Anlasses eintragen.*|
@@ -167,6 +167,6 @@ Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzuf
 <!-- Bild Suchkriterien Buchungen dienstleisterspez Kriterien -->
 
 ---
-|<div style="width:220px">Feld</div>|Funkion|
+|<div style="width:250px">Feld</div>|Funkion|
 |---|---|
-|Mit nicht freigegebenen Bestellungen|Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox.|
+|Mit nicht freigegebenen </br> Bestellungen|Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox.|
