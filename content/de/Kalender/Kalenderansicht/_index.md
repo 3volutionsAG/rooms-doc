@@ -17,7 +17,7 @@ Dazu stehen Ihnen verschiedene Filter- und Ansichtsfunktionen zur Verfügung. Mi
 Abbildung k: Startbildschirm der Kalenderansicht 
 {{< /imgproc >}}
 
-{{< imgproc Kalender_Kalender_Tooltip_Mouseover Resize "1280x" >}}
+{{< imgproc Kalender_Tooltip_Mouseover Resize "1280x" >}}
 Abbildung ka: Mit dem Mouseover über eine Ressource im Kalender fahren und zusätzliche Informationen erhalten
 {{< /imgproc >}}
 
