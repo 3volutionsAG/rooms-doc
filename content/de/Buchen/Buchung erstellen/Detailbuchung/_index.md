@@ -270,11 +270,19 @@ Verfügen Sie über das Recht „Darf den Mailverlauf anzeigen“ können Sie si
 Jeden Eintrag öffnen Sie mittels Klick. Darin sind die Details der E-Mail so wie sie versendet wurde, ersichtlich.
 
 #### Abschluss der Detailbuchung
-Sobald Sie alle Daten ausgefüllt haben schließen Sie die Buchung über den Button „Buchung abschliessen“ ab. 
+Sobald Sie alle Daten ausgefüllt haben schließen Sie die Buchung über den Button „Buchung abschliessen“ ab (Abbildung fg).
 
-Danach erhalten Sie die Ansicht „Zusammenfassung“ und mit Klick auf „Reservation bestätigen“ speichern Sie die Reservation definitiv. 
+{{< imgproc Detailbuchung_abschließen Resize "1280x" >}}
+Abbildung fg: Detailbuchung abschließen
+{{< /imgproc >}}
 
-Mit Hilfe der Checkbox „E-Mail" kann die Notifikation an den Organisator und Ersteller unterdrückt werden. Dasselbe gilt für die Exchange Synchronisation. Zudem besteht bei ausreichender Berechtigung die Möglichkeit, die automatische Verlängerung einer Reservation zu editieren (diese werden auf Ressourcenebene hinterlegt).
+Danach erhalten Sie die Ansicht „Zusammenfassung“ und mit Klick auf „Reservation bestätigen“ speichern Sie die Reservation definitiv (Abbildung fh) 
+
+{{< imgproc Detailbuchung_bestätigen Resize "1280x" >}}
+Abbildung fh: Detailbuchung bestätigen
+{{< /imgproc >}}
+
+Mit Hilfe der Checkbox „E-Mail" können Sie die Notifikation an die Organisator:in und Ersteller:in unterdrücken (Abbildung fg). Dasselbe gilt für die Exchange Synchronisation. Zudem haben Sie bei ausreichender Berechtigung die Möglichkeit, die automatische Verlängerung einer Reservation zu editieren (diese werden auf Ressourcenebene hinterlegt).
 
 Sind Dokumentvorlagen verfügbar, können Sie diese herunterladen oder direkt per Mail als PDF- oder Worddokument bei Reservationsabschluss an den Organisator und Ersteller verschicken. Die Ausnahme bilden die als „Pflicht“ markierten Downloads bzw. E-Mails, auf welche Sie keinen weiteren Einfluss haben und die automatisch verschickt werden.
 

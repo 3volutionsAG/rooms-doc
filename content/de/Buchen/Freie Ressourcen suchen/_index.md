@@ -3,7 +3,7 @@ title: "Freie Ressourcen suchen"
 linkTitle: "Freie Ressourcen suchen"
 weight: 1
 description: >
-  In diesem Bereich speichern Sie die Mitarbeiterdaten. Diese Mitarbeiterdaten können Sie über den Button "Bearbeiten" ändern. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen und Logons. 
+  Wollen Sie eine Ressource buchen, müssen Sie zuerst in Erfahrung bringen, ob diese Ressource zur Verfügung steht und frei ist. Im Kapitel "Freie Ressourcen suchen" erfahren Sie mit welchen Methoden Sie suchen können.  
  
 
 
@@ -17,7 +17,7 @@ Sie können in ROOMS über drei verschiedene Ansichten nach freien Ressourcen su
 
 3. Kalenderansicht: Mittels einer Tages-, Wochen- oder Monatsansicht kann dargestellt werden, welche Ressourcen zu welcher Zeit belegt sind. Auch hier können Sie Buchungen direkt vornehmen.
 
-Je nachdem, wie Ihrer Arbeitsweise ist, entscheiden Sie, welche Variante für Sie am besten geeignet ist. Durch das Angebot von verschiedenen Möglichkeiten, kann ROOMS für sämtliche Verwendungszwecke die richtige Lösung bieten.
+Je nachdem, wie Ihre Arbeitsweise ist, entscheiden Sie, welche Variante für Sie am besten geeignet ist. Durch das Angebot von verschiedenen Möglichkeiten, kann ROOMS für sämtliche Verwendungszwecke die richtige Lösung bieten.
 
 Suchresultate sehen Sie in einer Listenform. Mit einem Klick auf die Bezeichnung können Sie direkt auf die Detailreservation wechseln (Abbildung f).
 
@@ -36,6 +36,3 @@ Sie bearbeiten die Suchresultate in der Liste mit den folgenden Funktionen:
 | Ressourcen Info  | Über den Info Button gelangen Sie zu den Stammdaten und der Historie der Ressource (Abbildung fe)  | {{< imgproc Button_Ressourceninfo Resize "300x" >}}
 {{< /imgproc >}}|
 
-{{< imgproc Buchen_Ressourceninfo_einsehen Resize "1280x" >}}
-Abbildung fe: Stammdaten und Historie der Ressource einsehen und bearbeiten 
-{{< /imgproc >}}
