@@ -1,7 +1,7 @@
 ---
 title: "Dienstleister suchen"
 linkTitle: "Dienstleister suchen"
-weight: 6
+weight: 8
 description: >
   Dienstleister finden
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
-weight: 300
+weight: 20
 description: >
   Wollen Sie Ihre Suche weiter eingrenzen oder nach ganz bestimmten Merkmalen suchen, finden Sie in der erweiterten Suche weitere spezifische Filter.
 ---
@@ -26,6 +26,9 @@ Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder
 
 - Dienstleisterspezifische Kriterien  
   Buchungen, zu denen Bestellungen bei einem Dienstleister noch nicht freigegeben wurden
+
+- Kostenspezifische Kriterien  
+  Buchungen anhand der zugeordneten Kostenstellen suchen
 
 ### Buchungsspezifische Kriterien
 
@@ -170,3 +173,17 @@ Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzuf
 |<div style="width:250px">Feld</div>|Funkion|
 |---|---|
 |Mit nicht freigegebenen </br> Bestellungen|Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox.|
+
+### Kostenspezifische Kriterien
+
+Buchungen lassen sich auch über die zugeordnete Kostenstelle finden.
+
+|<div style="width:250px">Feld</div>|Funkion|
+|---|---|
+|Kostenträger Beschreibung </br> Buchung|Tragen Sie die Beschreibung des Kostenträgers der Bcuhung ein, um die Buchung zu finden.| 
+|Kostenträger Nummer </br> Buchung|Tragen Sie die Nummer des Kostenträgers der Bcuhung ein, um die Buchung zu finden.|
+|Kostenträger Geschäftsbereich </br> Buchung|Tragen Sie den Geschäftsbereich des Kostenträgers der Bcuhung ein, um die Buchung zu finden.|
+|Checkbox: </br> Nur Buchungen mit </br> Kostenträgern|Bei aktivierter Checkbox werden nur Buchungen angezeigt, denen ein Kostenträger zugewiesen ist.|
+|Checkbox: </br> Nur Buchungen mit </br> Kosten > 0|Bei aktivierter Checkbox werden nur Buchungen angezeigt, bei denen Kosten anfallen.|
+
+<!-- Bild Suchkriterien Buchungen kostenspezifischer Kriterien -->

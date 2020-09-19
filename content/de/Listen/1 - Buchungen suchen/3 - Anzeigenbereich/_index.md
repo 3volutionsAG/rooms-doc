@@ -1,7 +1,7 @@
 ---
 title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
-weight: 400
+weight: 30
 description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
@@ -15,7 +15,7 @@ Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Da
 
 Standardmäßig sind folgende Spalten sichtbar. Die unterschiedlichen Schaltflächen sind nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
 
-*Anmerkung: In den nachfolgenden Tabellen taucht häufiger das Wort "Tooltipp" auf. Unter einem Tooltipp versteht man ein Informationsfeld, welches erscheint, wenn man mit der Maus über ein Symbol fährt*
+*Anmerkung: In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase. In anderen Fällen verbirgt sich auch eine weitere Möglichkeit Einstellungen vorzunehmen oder ausführlichere Informationen abzurufen. Durch Klicken auf das Symbol öffnet sich das entsprechende Fenster.*
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -27,7 +27,7 @@ Standardmäßig sind folgende Spalten sichtbar. Die unterschiedlichen Schaltflä
 |Buchungs Titel||Mit einem Klick auf den Buchungs Titel öffnen Sie die Detailansicht.|
 |Ressourcen Bezeichnung||*z.B. Name des Raumes, Druckerbezeichnung*|
 |Anzahl Personen||Anzahl der teilnehmenden Personen|
-|Mobiles Equipment _(Tooltipp)_||zugebuchtes Equipment, welches der Ressource nicht permanent zugeordnet ist </br> *z.B. ein mobiler Beamer für einen Besprechnungsraum* |
+|Mobiles Equipment||zugebuchtes Equipment, welches der Ressource nicht permanent zugeordnet ist </br> *z.B. ein mobiler Beamer für einen Besprechnungsraum* |
 ---
 <!-- Bild Tooltipp Mobiles Equipment  -->
 </br>
@@ -47,7 +47,7 @@ Standardmäßig sind folgende Spalten sichtbar. Die unterschiedlichen Schaltflä
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Bemerkungen _(Tooltipp)_||Bemerkungen, welche in der Buchung hinterlegt wurden, können Sie über den Tooltipp einsehen.|
+|Bemerkungen||Bemerkungen, welche in der Buchung hinterlegt wurden, können Sie über den Tooltipp einsehen.|
 ---
 <!-- Bild Tooltipp Bemerkungen -->
 </br>
@@ -69,7 +69,7 @@ Standardmäßig sind folgende Spalten sichtbar. Die unterschiedlichen Schaltflä
 |Kosten||Höhe der Kosten, die durch diese Buchung entstehen </br> *z.B. Raummiete, Kosten für Dienstleistungen*|
 |Privat||Handelt es sich um eine private Buchung, sind, ohne entsprechende Berechtigungen, keine Details sichtbar|
 |Buchungsnummer|||
-|Fixes Equipment _(Tooltipp)_||Equipment, welches der Ressource permanent zugeordnet ist und zur Verfügung steht </br> *z.B. festinstallierter Beamer* |
+|Fixes Equipment||Equipment, welches der Ressource permanent zugeordnet ist und zur Verfügung steht </br> *z.B. festinstallierter Beamer* |
 ---
 
 <!-- Bild Tooltipp fixes Equipment einfügen -->
@@ -154,7 +154,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Ressourcenart||_z.B. Raum, Parkplatz, Arbeitsplatz_|
-|Bemerkungen Teilnehmende </br> _(Tooltipp)_||hinterlegte Bemerkung zu hinzugefügten Teilnehmenden|
+|Bemerkungen Teilnehmende||hinterlegte Bemerkung zu hinzugefügten Teilnehmenden|
 ---
 <!-- Bild Tooltipp Bemerkungen Teilnehmende -->
 </br>
@@ -162,7 +162,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Bemerkungen intern </br> _(Tooltipp)_||Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
+|Bemerkungen intern||Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
 ---
 <!-- Bild Tooltipp Bemerkungen intern -->
 </br>
@@ -170,7 +170,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Bemerkungen Annullation </br> _(Tooltipp)_||Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
+|Bemerkungen Annullation||Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
 ---
 <!-- Bild Tooltipp Bemerkungen Annullation -->
 </br>
@@ -178,7 +178,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Ressource Info </br> _(Schaltfläche)_||Über diese Schaltfläche kommen Sie auf die Detailsseite der Ressource|
+|Ressource Info||Über diese Schaltfläche kommen Sie auf die Detailsseite der Ressource|
 ---
 <!-- Bild Detailseite Ressourcen Info -->
 </br>
@@ -186,36 +186,42 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Info URL|||
+|Priorisierung||???|
+|Bestätigung senden||Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen (Checkbox aktiviert)|
+|Teilnehmer:innen||Auflistung der teilnehmenden Personen|
+|Kostenträger Nummer </br> Buchung||Beim Erstellen einer Buchung wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen.|
+|Kostenträger Beschreibung </br> Buchung||???|
+|Kostenträger Geschäftsbereich </br> Buchung||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
+|Kostenträger Nummer </br> Organisator:in|||
+|Kostenträger Bezeichnung </br> Organisator:in|||
+|Kostenträger Bezeichnung </br> Organisator:in|||
+|Kostenträger Nummer </br> Verantwortliche:r|||
+|Kostenträger Bezeichnung </br> Verantwortliche:r|||
 ---
-<!-- Bild Info URL -->
+<!-- Bild Liste mit Infos siehe oben -->
 </br>
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Priorisierung|||
-|Bestätigung senden||Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen (Checkbox aktiviert)|
-|Teilnehmer:innen||Auflistung der teilnehmenden Personen|
-|Kostenträger </br> Nummer Buchung|||
-|Kostenträger </br> Beschreibung Buchung|||
-|Kostenträger </br> Geschäftsbereich Buchung|||
-|Kostenträger </br> Nummer Organisator:in|||
-|Kostenträger </br> Bezeichnung Organisator:in|||
-|Kostenträger </br> Bezeichnung Organisator:in|||
-|Kostenträger </br> Nummer Verantwortliche:r|||
-|Kostenträger </br> Bezeichnung Verantwortliche:r|||
-|Logon Organisator:in|||
-|Logon Verantwortliche:r|||
-|Firma </br> Nummer Organisator:in|||
-|Firma </br> Nummer Verantwortliche:r|||
-|Firma </br> Bezeichnung Verantwortliche:r|||
-|Hauptbuchung|||
-|Folgebuchung|||
-|Wartezeit Kunde|||
-|Offene Menge bearbeiten|||
+|Logon Organisator:in||Log-In Name, welcher der organisierend Person zum anmelden in ROOMS zugeteilt wurde.|
+|Logon Verantwortliche:r||Log-In Name, welcher der verantwortlichen Person zum anmelden in ROOMS zugeteilt wurde.|
+|Firma Nummer </br> Organisator:in||Falls die organisierende Person einer externen Firma angehört, erscheint hier die Nummer, welche der Firma zugeordnet wurde.|
+|Firma Nummer </br> Verantwortliche:r||Falls die verantwortliche Person einer externen Firma angehört, erscheint hier die Nummer, welche der Firma zugeordnet wurde.|
+|Firma Bezeichnung </br> Verantwortliche:r||Falls die verantwortliche Person einer externen Firma angehört, erscheint hier der entsprechende Firmenname.|
+|Hauptbuchung||ja/nein|
+|Folgebuchung||Anzeige der Minuten bis zum Start der nächsten Buchung (ohne Vorlaufzeit). Bei 0 min ist die reservierte Buchungszeit abgelaufen. </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._|
+|Wartezeit Kunde||Zeit, welche der Kunde der Folgebuchung bereits auf die Nutzung des Raumes wartet (bezieht sich nur auf die Ressource Raum) </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._|
 ---
-<!-- Bild Dialogfenster Offene Menge bearbeiten -->
+<!-- Bild Folgebuchung und Wartezeit Kunde -->
+</br>
+
+---
+|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|---|---|---|
+|Offene Menge bearbeiten||Über die Schaltfläche öffnet sich der Bearbeitungsmodus der Buchug um die Menge des benötigten Catering & Service Angebots zu bearbeiten.|
+---
+<!-- Bild und Symbol Dialogfenster Offene Menge bearbeiten -->
 </br>
 
 ---
@@ -231,7 +237,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |---|---|---|
 |Annulliert am||Datum, an dem die Buchung storniert wurde|
 |Annulliert durch||Person, welche die Buchungsstornierte|
-|Anlass _(Tooltipp)_|||
+|Anlass|||
 ---
 <!-- Bild Tooltipp Anlass -->
 </br>
@@ -239,7 +245,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Besttelungen _(Tooltipp)_||Auflistung der zugefügten Bestellungen|
+|Besttelungen||Auflistung der zugefügten Bestellungen|
 ---
 <!-- Bild Tooltipp Bestellungen -->
 </br>
@@ -247,7 +253,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Mobiles Equipment Aggregiert </br> _(Tooltipp)_||Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._|
+|Mobiles Equipment Aggregiert||Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._|
 ---
 <!-- Bild Tooltipp Mobile Equipment Aggregiert -->
 </br>
@@ -255,7 +261,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Fixes Equipment Aggregiert </br> _(Tooltipp)_||Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._|
+|Fixes Equipment Aggregiert||Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._|
 ---
 <!-- Bild Tooltipp Fixes Equipment Aggregiert -->
 </br>
@@ -263,7 +269,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Parkplätze _(Tooltipp)_||Zeigt an welche Parkplätze im Detail zugebucht wurden|
+|Parkplätze||Zeigt an welche Parkplätze im Detail zugebucht wurden|
 ---
 <!-- Bild Tooltipp Parkplätze -->
 </br>
@@ -271,7 +277,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Parplätze Aggregiert _(Tooltipp)_||Zeigt die Anzahl der zugebuchten Parkplätze an|
+|Parplätze Aggregiert||Zeigt die Anzahl der zugebuchten Parkplätze an|
 ---
 <!-- Bild Tooltipp Parkplätze Aggregiert -->
 </br>
@@ -279,7 +285,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Fahrzeuge _(Tooltipp)_||Zeigt an welche Fahrzeuge im detail zugebucht wurden|
+|Fahrzeuge||Zeigt an welche Fahrzeuge im detail zugebucht wurden|
 ---
 <!-- Bild Tooltipp Fahrzeuge -->
 </br>
@@ -287,7 +293,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Fahrzeuge Aggregiert _(Tooltipp)_||Zeigt die Anzahl der zugebuchten Fahrzeuge|
+|Fahrzeuge Aggregiert||Zeigt die Anzahl der zugebuchten Fahrzeuge|
 ---
 <!-- Bild Tooltipp Fahrzeuge Aggregiert -->
 </br>
@@ -295,7 +301,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Serieninformationen _(Tooltipp)_||Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
+|Serieninformationen||Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
 ---
 <!-- Bild Tooltipp Serieninformationen -->
 </br>
@@ -303,8 +309,10 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Virtuelle Räume _(Tooltipp)_||Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_|
+|Virtuelle Räume||Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_|
 ---
 <!-- Bild Tooltipp Vrtuelle Räume -->
+
+
 
 <!-- Symbole einfügen  -->

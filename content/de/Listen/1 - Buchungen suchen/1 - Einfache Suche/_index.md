@@ -1,7 +1,7 @@
 ---
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
-weight: 2
+weight: 10
 description: >
   Es gibt viele Kriterien anand derer eine Buchung gesucht werden kann. Die gängisten Filter finden Sie in der einfachen Suche.
 ---
