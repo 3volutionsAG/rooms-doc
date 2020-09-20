@@ -15,7 +15,7 @@ Um eine bestimmte Buchung zu finden gibt es zunächst eine einfache Suche. Diese
 Folgende Tabelle erläutert die Eingabefelder:
 
  ---
- |<div style="width:220px">Feld</div>|Funktion|
+ |<div style="width:250px">Feld</div>|Funktion|
  |---|---|
  |Ressoucenart|Über das Plus (+) können Sie vorhandene Ressourcen (Räume, Parkplätze, Arbeitsplätze,...) auswählen|
  |Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum der gesuchten Buchung aus|
