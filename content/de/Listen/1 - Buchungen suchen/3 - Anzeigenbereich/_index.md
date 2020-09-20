@@ -7,9 +7,7 @@ description: >
 ---
 
 Die Liste ist tabellarisch angeordnet. Jede Buchung wird in einer eigene Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
-Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel Generell/Applikationsaufbau/Listensymbole erläutert.
-
-<!-- Verlinkung zu Generell/Applikationsaufbau/Listensymbole -->
+Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) erläutert.
 
 <!-- Bilder Anzeigenbereich -->
 
@@ -144,7 +142,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Zeit bis||Endzeit ohne Datum|
 |Standort-Name||_z.B. Name der Filiale oder Stadtname, in der sich der Standort befindet_|
 |Standortbeschrieb||Beschreibung des Standortes </br> _z.B. Zentrale, Werkstatt, Laden oder Showroom_|
-|Standort hierachsich||Gibt es mehrere Standort in verschiedenen Ländern, ist hier heruntergebrochen in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/, der Standort befindet sich in Basel in der Schweiz_ |
+|Standort hierachsich||Gibt es mehrere Standort z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ |
 |Plan||Über diese Schaltfläche öffnen Sie ein neues Fenster, in dem der Stadtort der Ressource auf einer Karte dargestellt wird|
 ---
 <!-- Bild Fenster mit Karte senden -->
@@ -192,12 +190,12 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Kostenträger Nummer </br> Buchung||Beim Erstellen einer Buchung wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen.|
 |Kostenträger Beschreibung </br> Buchung||???|
 |Kostenträger Geschäftsbereich </br> Buchung||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
-|Kostenträger Nummer </br> Organisator:in|||
-|Kostenträger Bezeichnung </br> Organisator:in|||
-|Kostenträger Bezeichnung </br> Organisator:in|||
-|Kostenträger Nummer </br> Verantwortliche:r|||
-|Kostenträger Bezeichnung </br> Verantwortliche:r|||
+|Kostenträger Nummer </br> Organisator:in||Nummer der Kostenstelle der organisierenden Person|
+|Kostenträger Bezeichnung </br> Organisator:in||???|
+|Kostenträger Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantworlichen Person|
+|Kostenträger Bezeichnung </br> Verantwortliche:r||???|
 ---
+<!-- Begriffe klären -->
 <!-- Bild Liste mit Infos siehe oben -->
 </br>
 
@@ -206,9 +204,10 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |---|---|---|
 |Logon Organisator:in||Log-In Name, welcher der organisierend Person zum anmelden in ROOMS zugeteilt wurde.|
 |Logon Verantwortliche:r||Log-In Name, welcher der verantwortlichen Person zum anmelden in ROOMS zugeteilt wurde.|
-|Firma Nummer </br> Organisator:in||Falls die organisierende Person einer externen Firma angehört, erscheint hier die Nummer, welche der Firma zugeordnet wurde.|
-|Firma Nummer </br> Verantwortliche:r||Falls die verantwortliche Person einer externen Firma angehört, erscheint hier die Nummer, welche der Firma zugeordnet wurde.|
-|Firma Bezeichnung </br> Verantwortliche:r||Falls die verantwortliche Person einer externen Firma angehört, erscheint hier der entsprechende Firmenname.|
+|Firma Nummer </br> Organisator:in||Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
+|Firma Nummer </br> Verantwortliche:r|||Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
+|Firma Bezeichnung </br> Organisator:in|||Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
+|Firma Bezeichnung </br> Verantwortliche:r|||Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
 |Hauptbuchung||ja/nein|
 |Folgebuchung||Anzeige der Minuten bis zum Start der nächsten Buchung (ohne Vorlaufzeit). Bei 0 min ist die reservierte Buchungszeit abgelaufen. </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._|
 |Wartezeit Kunde||Zeit, welche der Kunde der Folgebuchung bereits auf die Nutzung des Raumes wartet (bezieht sich nur auf die Ressource Raum) </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._|

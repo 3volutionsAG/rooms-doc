@@ -6,6 +6,7 @@ weight: 20
 description: >
    In deisem Kaptel erfahren Sie, wie rooms in seinen Grundzügen aufgebaut ist. Im Folgenden wird die Fensteraufteilung erläutert und auf die zugehörigen Funktionen eingegangen.
 ---
+<!-- blaue Schrift in Spaltenname -> kann nach diesem Kriterium sortiert werden -->
 
 ## 1. Aufbau des Fensters
 Das Fenster von ROOMS ist in verschiedene Bereiche aufgeteilt - in einen Kopf- und einen Inhaltsbereich.

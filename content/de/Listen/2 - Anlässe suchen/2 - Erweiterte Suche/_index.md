@@ -29,7 +29,7 @@ Anlassspezifische Kriterien sind zum Beispiel die Anlasssnummer, der Titel des A
  |Nummer|individuelle Anlassnummer|
  |Titel*|Titel der Buchung|
  |Typ|Typ, nach welchem der Anlass kategorisiert wurde|
- |VC*-Anlass|- Über den nach unten zeigenden Pfeil öffnen Sie ein Dropdown-Menü, in dem Sie einen der folgenden Punkte auswählen: </br> - *Alle:* Es werden alle Anlässe berücksichtigt <br/> - *Anlass ohne VC:* Es werden nur Anlösse berücksichtigt, bei welchen kein keine Viedokonferenz stattfindet. <br/> - *Anlass mit VC:* Es werden nur Anlässe berücksichtigt, bei welchen eine Videokonferenz stattfindet.|
+ |VC*-Anlass|- Über den nach unten zeigenden Pfeil öffnen Sie ein Dropdown-Menü, in dem Sie einen der folgenden Punkte auswählen: </br> - *Alle:* Es werden alle Anlässe berücksichtigt <br/> - *Anlass ohne VC:* Es werden nur Anlässe berücksichtigt, bei welchen kein keine Viedokonferenz stattfindet. <br/> - *Anlass mit VC:* Es werden nur Anlässe berücksichtigt, bei welchen eine Videokonferenz stattfindet.|
 ---
 _*VC = Videokonferenz_
 _*Hier können Sie eine Schalgwortsuche durchführen, indem Sie das Schlagwort zwischen zwei * setzen_

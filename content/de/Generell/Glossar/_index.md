@@ -55,7 +55,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-||| 
+|Folgebuchung|| 
 ---
 
 ## G
@@ -71,7 +71,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-||| 
+|Hauptbuchung|| 
 ---
 
 ## I
