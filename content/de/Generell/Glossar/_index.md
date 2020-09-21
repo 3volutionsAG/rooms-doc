@@ -12,7 +12,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Action Panel||
+|Actionpanel||
 |Anlass|| 
 |Anzeigenbereich||
 ---
@@ -154,6 +154,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
+|Schaltfläche|||
 |Sidepanel||
 |Status|| 
 ---

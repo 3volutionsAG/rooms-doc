@@ -19,9 +19,9 @@ Die grundlegende Funktionen finden Sie auf jeder Seite.
 
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
-{{< imgproc 3-2_Listenfunktionen_Position Resize "1280x" >}}
+<!-- {{< imgproc 3-2_Listenfunktionen_Position Resize "1280x" >}}
 Abbildung 7: Symbole Listenfunktionen
-{{< /imgproc >}}
+{{< /imgproc >}} -->
 <br>
 
 Folgende Tabelle erläutert die Listensymbole:
@@ -29,17 +29,14 @@ Folgende Tabelle erläutert die Listensymbole:
 ---
 |Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
 |---|---|---|
-|{{< imgproc 3-2_Listenfunktionen_AnzahlZeilen Resize "800x" >}}
-{{< /imgproc >}}|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
-|{{< imgproc 3-2_Listenfunktionen_Spaltenauswahl Resize "800x" >}}
-{{< /imgproc >}}|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern auf den Button "Übernehmen" klicken. </p>|
-|{{< imgproc 3-2_Listenfunktionen_RefreshIntervall Resize "800x" >}}
-{{< /imgproc >}}|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
+|_Button Anzahl Zeilen_|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
+|_Bild Spaltenauswahl_|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern auf den Button "Übernehmen" klicken. </p>|
+|_Bild Refreshintervall_|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
 ---
 
 **TIPP**: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte.
 
-Weitere Informationen zu Listen finden Sie im Kapitel Listen. [//]: <> (Link zu Listen)
+Weitere Informationen zu Listen finden Sie im Kapitel [Listen](/Listen).
 
 <!-- Text eingefügt, noch nicht bearbeitet -->
 

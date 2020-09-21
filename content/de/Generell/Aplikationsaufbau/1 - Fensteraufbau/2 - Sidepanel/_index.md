@@ -4,16 +4,14 @@ linkTitle: "Sidepanel"
 weight: 200
 
 description: >
-   Sidepanel
+   Das Prinzip des Sidepanels ist auf jeder Seite in ROOMS gleich. Es unterscheidet sich lediglich im Umfang und in den entsprechenden Funktionen zu Buchen, Plan, Kalender und Listen. In diesem Kapitel geben wir Ihnen einen Überblick zum grundlegenden Aufbau des Sidepanels. Die speziellen Funktionen werden in den entsprechenden Kapitel zu den Menüpunkten erläutert. 
 ---
 
-### 1.2 Inhaltsbereich
-Der Inhaltsbereich ist in ROOMS durchgängig nach dem gleichen Prinzip aufgebaut. Auf der linken Seite der Applikation befindet sich ein Sidepanel, in dem die Einstellungen für den Anzeigebereich rechts im Fenster festgelegt werden können.
+Das Sidepanel finden Sie auf der linken Seite. Die im Sidepanel eingetragenen Einstellungen, Kriterien oder Filter werden im Anzeigenbereich rechts daneben dargestellt. Die Darstellung variiert je nach Menüpunkt. Die detaillierte Beschreibung hierzu finden Sie in den entsprechenden Kapiteln [Buchen](/Buchen/), Plan, Kalender, Listen und Einstellungen
 
-{{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
+<!-- {{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
 Abbildung 6: Aufbau Inhaltsbereich
-{{< /imgproc >}}
+{{< /imgproc >}} -->
 
-#### 1.2.1 Sidepanel
 
-#### 1.2.2 Anzeigenbereich
+
