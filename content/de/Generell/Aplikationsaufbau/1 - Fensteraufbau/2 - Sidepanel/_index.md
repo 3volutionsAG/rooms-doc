@@ -9,9 +9,7 @@ description: >
 
 Das Sidepanel finden Sie auf der linken Seite. Die im Sidepanel eingetragenen Einstellungen, Kriterien oder Filter werden im Anzeigenbereich rechts daneben dargestellt. Die Darstellung variiert je nach Menüpunkt. Die detaillierte Beschreibung hierzu finden Sie in den entsprechenden Kapiteln [Buchen](/Buchen/), Plan, Kalender, Listen und Einstellungen
 
-<!-- {{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
-Abbildung 6: Aufbau Inhaltsbereich
-{{< /imgproc >}} -->
+<!-- Bild Sidepanel -->
 
 
 

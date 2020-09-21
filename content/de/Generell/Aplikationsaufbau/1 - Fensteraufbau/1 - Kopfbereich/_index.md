@@ -12,9 +12,7 @@ Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. E
 
 <!-- Bild Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufender Buchung -->
 
-<!-- {{< imgproc 3-1_Kopfbereich_beschriftet_ohneReservation Resize "1280x" >}} -->
-<!-- Abbildung 2: Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufender Buchung. -->
-<!-- {{< /imgproc >}} -->
+<!-- Bild Kopfbereich_beschriftet_ohneReservation -->
 
 Tabelle 1 gibt einen Überblick über die Menüpunkte.
 
@@ -36,15 +34,11 @@ Desweiteren ist oben rechts neben der Menüleiste Ihr Namen und die Zeitzone, in
 
 In dem kleinen Kasten über Ihrem Namen finden Sie die aktuellen Buchungen, die Sie erstellt haben oder organisieren. In der Standardansicht wird die laufende Buchung, mit frühester Startzeit, angezeigt.
 
-<!-- {{< imgproc 3-1_Kopfbereich_beschriftet_mitReservation Resize "1280x" >}}
-Abbildung 3: Kopfbereich mit laufender Buchung
-{{< /imgproc >}} -->
+<!-- Bild Kopfbereich mit Buchung beschriftet -->
 
 Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller ihrer ersteelten oder organisierten, laufenden Buchugen öffnen. 
 
-<!-- {{< imgproc 3-1_Kopfbereich_Schnellzugriff Resize "1280x" >}}
-Abbildung 4: Schnellzugriff auf Buchungen
-{{< /imgproc >}} -->
+<!-- Bild Schnellzugriff Buchungen -->
 
 In dieser Darstellung ist es möglich die Buchung direkt in der Detailansicht anzuzeigen, zu bearbeiten, zu löschen oder freizugeben. 
 
@@ -59,7 +53,5 @@ In dieser Darstellung ist es möglich die Buchung direkt in der Detailansicht an
 Von ROOMS automatisch generierte Mitteilungen erscheinen oben rechts neben der Menüleiste in einem sogenannten Actionpanel und verschwinden nach kurzer Zeit wieder. Über das "x" kann das Actionpanel manuell geschlossen werden.
 Ist ein grüner Haken in der Box zu sehen, handelt es sich um eine Bestätigung oder korrekte Funktionsausführung. Erscheint dagegen eine rotes x, so liegt eine Fehlermedlung vor. Die auszuführende Funktion kann, zum Beispiel aufgrund von fehlenden Informationen oder Berechtigungen, nicht ausgeführt werden.
 
-<!-- {{< imgproc 3-1_Infobox_beschriftet Resize "1280x" >}}
-Abbildung 5: Infobox mit automatisch generierten Mitteilungen
-{{< /imgproc >}} -->
+<!-- Bild Infobox beschriftet -->
 <br>

@@ -10,6 +10,4 @@ description: >
 ## Anzeigenbereich
 Der Inhaltsbereich ist in ROOMS durchgängig nach dem gleichen Prinzip aufgebaut. Auf der linken Seite der Applikation befindet sich ein Sidepanel, in dem die Einstellungen für den Anzeigebereich rechts im Fenster festgelegt werden können.
 
-<!-- {{< imgproc 3-1_Inhaltsbereich Resize "1280x" >}}
-Abbildung 6: Aufbau Inhaltsbereich
-{{< /imgproc >}} -->
+<!-- Bild Anzeigenbereich -->

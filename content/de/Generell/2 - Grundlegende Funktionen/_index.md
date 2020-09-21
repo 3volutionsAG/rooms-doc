@@ -1,27 +1,50 @@
 ---
 title: "Grundlegende Funktionen"
 linkTitle: "Grundlegende Funktionenu"
-weight: 20
+weight: 30
 
 description: >
-   Grundlegende Funktionen
+   Die grundlegenden Funktionen werden Ihnen auf jeder Seite wieder begegnen. An dieser Stelle bekommen Sie einen kurzen Überblick, welche Funktionen es gibt und wie sie im Groben bedient werden. Eine detaillierte Beschreibung finden Sie in den entsprechnden Kapiteln.
 ---
-## Grundlegende Funktionen
-Die grundlegende Funktionen finden Sie auf jeder Seite.
+## Suchfunktionen
 
-### Suchfunktionen
+Suchfunktionen sind im Sidepanel plaziert. Das Prinzip der Suchfunktionen ist auf jeder Seite gleich. 
+Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschten Bereich. Nun erscheint im Sidepanel eine Registerauswahl mit zugehörigen Suchfunktionen.
+Über die Felder und Auswahlmöglichkeiten stellen Sie die gewünschten Filter ein, um Ihre Suche einzugrenzen. Die einzelnen Felder werden in den zugehörigen Kapiteln beschrieben.
+Das Ergebnis wird zum Teil als Listen, Kalender, Plan oder eine Art Steckbrief ausgegeben.
+Im Kapitel Listen finden Sie eine ausführliche Übersicht aller Spalten mit Beschreibung der jeweiligen Bedeutung.
 
-<!-- Suchfunktionen allgemein anschneiden? -->
+### Buchen
 
-### Listenansicht anpassen
+<!-- Bild Startseite Buchen -->
+
+Unter dem Menüpunkt Buchen besteht die Registerauswahl aus "Ressourcen", "Anlass" und "Buchungsanfrage". 
+Unter Ressourcen können Sie entsprechnd Ihren Suchkriterien eine gewünschte [Ressource finden](/Buchen/FreieRessourcenSuchen)und diese über die Funktionen [Schnellbuchung](/Buchen/BuchungErstellen/Schnellbuchung) und [Detailbuchung](/Buchen/BuchungErstellen/Detailbuchung) im Anzeigenbereich reservieren. 
+Entsprechend finden Sie auch freie Kapazitäten für Anlässe sowie Buchungsanfragen. Die Ergebnisse werden Ihnen als Listen angezeigt.
+
+### Plan
+
+<!-- Bild Startseite Plan  -->
+
+Im Menüpunkt [Plan](/Plan), können Sie freie Ressourcen auf der Grundlage, z.B. eines Raumplanes, [suchen](/Plan/Plansuche/) und darstellen lassen. So finden Sie, z.B. einen Raum, im Grundriss des Gebäudes oder können sich den Standort einer Filiale auf einer Karte ansehen und [buchen](/Plan/BuchenAufDemPlan).
+
+### Kalender
+
+
+
+### Listen 
+
+
+### Einstellungen
+
+
+## Listenansicht anpassen
 
 <!-- blaue Schrift in Spaltenname -> kann nach diesem Kriterium sortiert werden -->
 
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
-<!-- {{< imgproc 3-2_Listenfunktionen_Position Resize "1280x" >}}
-Abbildung 7: Symbole Listenfunktionen
-{{< /imgproc >}} -->
+<!-- Bild Position Listenfunktionen -->
 <br>
 
 Folgende Tabelle erläutert die Listensymbole:
