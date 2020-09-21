@@ -55,7 +55,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Folgebuchung|| 
+|FolgebuchungS|| 
 ---
 
 ## G

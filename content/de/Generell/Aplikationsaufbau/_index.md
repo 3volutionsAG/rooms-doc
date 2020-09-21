@@ -26,7 +26,7 @@ Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. E
 Abbildung 2: Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufender Buchung.
 {{< /imgproc >}}
 
-Tabelle 1 (gibt einen Überblick über die Menüpunkte.
+Tabelle 1 gibt einen Überblick über die Menüpunkte.
 
 ---
 |Menüpunkt|Funktion|
@@ -39,7 +39,7 @@ Tabelle 1 (gibt einen Überblick über die Menüpunkte.
 |Reports|Unter diesem Menüpunkt können verschiedene Reports und Statistiken zur Auslastung, Stammdaten etc. erstellt werden. |
 |Einstellungen|Im Bereich Einstellungen kann der Benutzer seine persönlichen Einstellungen ändern. Diese sind im Kapitel Persönliche Einstellungen detailliert erläutert.|
 ---
-[//]: Link zu persönliche Einstellungen
+ <!-- Link zu persönliche Einstellunge -->
 
 Desweiteren ist oben rechts neben der Menüleiste Ihr Namen und die Zeitzone, in der Sie sich befinden, zu sehen.
 
@@ -93,7 +93,9 @@ Die grundlegende Funktionen finden Sie auf jeder Seite.
 
 ### 2.1 Suchfunktionen
 
-### 2.1. Listenfunktion / Suchen
+<!-- Suchfunktionen allgemein anschneiden? -->
+
+### 2.1. Listenansicht anpassen
 
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
@@ -119,41 +121,41 @@ Folgende Tabelle erläutert die Listensymbole:
 
 Weitere Informationen zu Listen finden Sie im Kapitel Listen. [//]: <> (Link zu Listen)
 
-[//]: <> (Text eingefügt, noch nicht bearbeitet)
+<!-- Text eingefügt, noch nicht bearbeitet -->
 
 ### 2.2 Excel Export
 Sämtliche Suchresultate können in eine Excel-Datei exportiert werden. Dafür klicken Sie auf folgendes Symbol unten rechts unter dem Inhaltsbereich:
 
-[//]: <> (Bild Excelsymbol)
+<!-- Bild Excelsymbol -->
 
 Mit einem Klick auf diesen Button wird der Excel-Export gestartet. Im Actionpanel wird angezeigt, dass die in der aktuellen Ansicht vorhandenen Daten aufbereitet und in eine Excel-Datei geschrieben werden.
 
-[//]: <> (Bild Anzeige Actionpanel)
+<!-- Bild Anzeige Actionpanel -->
 
 Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weiterhin mit ROOMS gearbeitet werden kann, ohne dass der Excel-Export behindert wird. Wenn dieser abgeschlossen ist, erscheint wiederum im Actionpanel die Nachricht, dass die Datei heruntergeladen werden kann.
 
-[//]: <> (Bild Anzeige Actionpanel)
+<!-- Bild Anzeige Actionpanel -->
 
 Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
 
 ### 2.3 Auswahl des Datums
-[//]: <> (Datumspicker?)
+<!-- Datumspicker? -->
 
 In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
 
-[//]: <> (Bild Datumspicker)
+<!-- Bild Datumspicker -->
 
 Der Datumpicker in ROOMS ist standardmässig deaktiviert und es sind das aktuelle Datum sowie die Zeiten (von / bis) hinterlegt. Damit ein anderes Datum und eine andere Zeit gewählt werden kann, muss der Datumpicker aktiviert werden. Dies kann mittels Klick auf die Checkbox links vom Datum erledigt werden.
 
-[//]: <> (Bild Datumspicker aktivieren)
+<!-- Bild Datumspicker aktivieren -->
 
 Mittels den Up- und Down-Buttons neben den jeweiligen Feldern oder direkter Eingabe im Feld, können das Datum und die Zeit eingestellt werden. Die Zeitanzeige springt jeweils zur nächsten vollen Viertelstunde. 
 Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über einen Tag hinaus reicht, möglich. Die Einstellung von zwei verschiedenen Daten kann einfach über einen Klick auf das Kalendersymbol durchgeführt werden. Danach öffnet sich je ein Kalender für das Start- und das Enddatum. Die Daten können dann einfach via Mausklick gewählt werden. Oben rechts vom Feld der „bis Zeit“ ist das eingestellte „bis Datum“ angezeigt.
 
-[//]: <> (Bild geöffneter Datumspicker)
+<!-- Bild geöffneter Datumspicker -->
 
 ### 2.4 Favoriten Speichern
 Je nachdem in welchem der Menüs „Listen“, „Reports“ oder „Einstellungen“ der Favoritenstern selektiert wird (Stern wird gelb eingefärbt), wird beim Einstieg in selbiges Menü, das vom Benutzer präferierte Subpanel angezeigt. Soll z.B. unter „Listen“ immer als erstes Ressourcen angezeigt werden, reicht 1 Klick auf den Stern.
 
-[//]: <> (Bild Favoritenpanel)
+<!-- Bild Favoritenpanel -->
 
