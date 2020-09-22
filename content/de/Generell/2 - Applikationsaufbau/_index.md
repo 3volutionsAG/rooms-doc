@@ -4,5 +4,5 @@ linkTitle: "Applikationsaufbau"
 weight: 20
 
 description: >
-   In deisem Kaptel erfahren Sie, wie ROOMS in seinen Grundzügen aufgebaut ist. Zunächst erfahren Sie etwas über den Fensteraufbau. Im Anschluss werden die grundlegend Funktionen, denen Sie immer wieder begegnen werden erläutert.
+   In diesem Kaptel geht es um den Aufbau von ROOMS und die grundlegenden Funktionen, denen Sie immer wieder begegnen werden.
 ---

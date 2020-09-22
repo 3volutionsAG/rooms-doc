@@ -1,20 +1,21 @@
 ---
 title: "Generell"
 linkTitle: "Generell"
-weight: 9
+weight: 1
 description: >
-  Mit diesem Handbuch soll Ihnen der Umgang mit ROOMS erleichtert  und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. Nicht alle Funktionen sind für jeden Benutzenden sichtbar. Teilweise sind entsprechende Berechtigungen nötig. Bezüglich der Ihrer Berechtigungen wenden Sie sich bitte an Ihren Administrator.
+  Mit diesem Handbuch soll Ihnen der Umgang mit ROOMS erleichtert  und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. 
   
   Wir wünschen Ihnen viel Freude bei der Nutzung von ROOMS.
 ---
 
-Das Fenster von 3V-ROOMS ist in verschiedene Bereiche aufgeteilt und so angeordnet, so dass ein effizientes und reibungsloses Arbeiten möglich ist.
+Ein paar kleine Anmerkung vornweg:
 
-Die Applikation ist in einen Kopf-, Inhalts, sowie einen Fussbereiche eingeteilt.
+-  Es kann sein, dass für Sie nicht alle Menüpunkte, Registerkarten oder Felder sichtbar sind. Für die jeweiligen Funktionen müssen entsprechende Benutzungsrechte vergeben sein. Ausgenommen ist der Home-Button, der immer für alle sichtbar ist.
+Sollten Sie Fragen zu den Berechtigungen haben, wenden Sie sich bitte an Ihren Administrator.
 
-## Kopfbereich
+-  Im Laufe des Handbuches werden Ihnen Applikationsspezifische Begriffe oder Fachbegriffe begegnen. Diese Begriffe sind alle im Glossar aufgeführt und erklärt.
 
-Der Kopfbereich der Applikation ist für die Navigation durch die Applikation verantwortlich. Der Home-Menüpunkt ist für jeden Benutzer sichtbar – alle anderen Menüpunkte werden nur bei entsprechender Berechtigung eingeblendet. Zusätzlich zur Navigation wird oben rechts der eingeloggte Benutzer mit der ihm zugehörizen Zeitzone angezeigt.
+-  Sollten, trotz aller Bemühungen unsererseits, Fragen zur Nutzung der Applikation, der Verständlichkeit des Handbuches oder fehlende Begriffserklärungen auftauchen, können Sie sich gerne an uns wenden.
 
 
 

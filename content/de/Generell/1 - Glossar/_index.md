@@ -4,7 +4,7 @@ linkTitle: "Glossar"
 weight: 10
 
 description: >
-   Im Glossar werden alle begriffe, die Sie im Umgang mit ROOMS benötigen. Die Begriffe sidn alphabetisch geordnet. 
+   Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie ihrer Bedeutung.
 ---
 
 ## A

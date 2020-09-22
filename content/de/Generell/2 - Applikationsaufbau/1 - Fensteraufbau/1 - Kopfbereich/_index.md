@@ -4,8 +4,9 @@ linkTitle: "Kopfbereich"
 weight: 100
 
 description: >
-   Der Kopfbereich enthält verschiedene Menüpunkte, die Ihnen hier detailiert beschrieben werden. Es kann jedoch sein, dass Sie nicht für jeden dieser Menüpunkte eine Berechtigung haben. Ist dies der Fall, werden Sie den entsprechenden Menüpunkt nicht sehen.
+   Der wichtigste Teil des Kopfbereiches ist die Menüleiste zur Navigation durch die Applikation. Der Home-Button In diesem Kapitel erhalten Sie eine kurze Beschreibung zu jedem der Menüpunkte. Sowie weiterer aufgeführter Informationen.
 ---
+Der Kopfbereich der Applikation ist für die Navigation durch die Applikation verantwortlich. Der Home-Menüpunkt ist für jeden Benutzer sichtbar – alle anderen Menüpunkte werden nur bei entsprechender Berechtigung eingeblendet. Zusätzlich zur Navigation wird oben rechts der eingeloggte Benutzer mit der ihm zugehörizen Zeitzone angezeigt.
 
 ## Menüleiste
 Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. Entsprechend Ihren Berechtigungen sehen Sie weitere Raiter in der Menüleiste. 
