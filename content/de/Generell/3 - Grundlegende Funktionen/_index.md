@@ -1,6 +1,6 @@
 ---
 title: "Grundlegende Funktionen"
-linkTitle: "Grundlegende Funktionenu"
+linkTitle: "Grundlegende Funktionen"
 weight: 30
 
 description: >
@@ -63,7 +63,7 @@ Weitere Informationen zu Listen finden Sie im Kapitel [Listen](/Listen).
 
 <!-- Text eingefügt, noch nicht bearbeitet -->
 
-### Excel Export
+## Excel Export
 Sämtliche Suchresultate können in eine Excel-Datei exportiert werden. Dafür klicken Sie auf folgendes Symbol unten rechts unter dem Inhaltsbereich:
 
 <!-- Bild Excelsymbol -->
@@ -78,7 +78,7 @@ Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weite
 
 Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
 
-### Datumspicker
+## Datumspicker
 
 In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
 
@@ -93,7 +93,7 @@ Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über 
 
 <!-- Bild geöffneter Datumspicker -->
 
-### 2.4 Favoriten Speichern
+## Favoriten Speichern
 Je nachdem in welchem der Menüs „Listen“, „Reports“ oder „Einstellungen“ der Favoritenstern selektiert wird (Stern wird gelb eingefärbt), wird beim Einstieg in selbiges Menü, das vom Benutzer präferierte Subpanel angezeigt. Soll z.B. unter „Listen“ immer als erstes Ressourcen angezeigt werden, reicht 1 Klick auf den Stern.
 
 <!-- Bild Favoritenpanel -->
