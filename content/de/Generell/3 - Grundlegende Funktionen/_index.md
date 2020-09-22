@@ -4,38 +4,54 @@ linkTitle: "Grundlegende Funktionen"
 weight: 30
 
 description: >
-   Die grundlegenden Funktionen werden Ihnen auf jeder Seite wieder begegnen. An dieser Stelle bekommen Sie einen kurzen Überblick, welche Funktionen es gibt und wie sie im Groben bedient werden. Eine detaillierte Beschreibung finden Sie in den entsprechnden Kapiteln.
+   Es gibt einige Funktionen, die Ihnen auf jeder Seite wieder begegnen werden. An dieser Stelle bekommen Sie einen kurzen Überblick über diese Funktionen und deren Nutzung.
 ---
 ## Suchfunktionen
 
 Suchfunktionen sind im Sidepanel plaziert. Das Prinzip der Suchfunktionen ist auf jeder Seite gleich. 
-Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschten Bereich. Nun erscheint im Sidepanel eine Registerauswahl mit zugehörigen Suchfunktionen.
-Über die Felder und Auswahlmöglichkeiten stellen Sie die gewünschten Filter ein, um Ihre Suche einzugrenzen. Die einzelnen Felder werden in den zugehörigen Kapiteln beschrieben.
+Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschten Bereich. Nun erscheint im Sidepanel eine Auswahl an Subpanels mit zugehörigen Suchfunktionen.
+Über die Felder und Auswahlmöglichkeiten stellen Sie die gewünschten Filter ein, um Ihre Suche einzugrenzen. Die Bedeutung der Felder und Schaltflächen werden in den zugehörigen Kapiteln beschrieben, auf die Bedienung gehen wir hier näher ein.
 Das Ergebnis wird zum Teil als Listen, Kalender, Plan oder eine Art Steckbrief ausgegeben.
 Im Kapitel Listen finden Sie eine ausführliche Übersicht aller Spalten mit Beschreibung der jeweiligen Bedeutung.
 
-### Buchen
+### Favoriten Speichern
+Bei jedem Menüpunkt können Sie Ihre favorisierte Subpanels markieren. Dazu klicken Sie auf den Stern, rechten neben der Subpanel-Überschrift. Daraufhin färbt sich der Stern gelb. Wann immer Sie nun diesen Menüpunkt wählen, öffnet sich automatisch, das als Favorit markierte, Subpanel.
+Die Markierung kann jederzeit geändert werden, indem Sie einfach einen Stern auf einem anderen Subpanel anklicken.
+In jedem Menüpunkt können Sie, falls gewünscht, eine anderes Subpanel als Favorit markieren.
 
-<!-- Bild Startseite Buchen -->
+<!-- Bild Favoritenstern auf Subpanel -->
 
-Unter dem Menüpunkt Buchen besteht die Registerauswahl aus "Ressourcen", "Anlass" und "Buchungsanfrage". 
-Unter Ressourcen können Sie entsprechnd Ihren Suchkriterien eine gewünschte [Ressource finden](/Buchen/FreieRessourcenSuchen)und diese über die Funktionen [Schnellbuchung](/Buchen/BuchungErstellen/Schnellbuchung) und [Detailbuchung](/Buchen/BuchungErstellen/Detailbuchung) im Anzeigenbereich reservieren. 
-Entsprechend finden Sie auch freie Kapazitäten für Anlässe sowie Buchungsanfragen. Die Ergebnisse werden Ihnen als Listen angezeigt.
+### Gespeicherte Listen
 
-### Plan
+### Datumspicker
 
-<!-- Bild Startseite Plan  -->
+In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
 
-Im Menüpunkt [Plan](/Plan), können Sie freie Ressourcen auf der Grundlage, z.B. eines Raumplanes, [suchen](/Plan/Plansuche/) und darstellen lassen. So finden Sie, z.B. einen Raum, im Grundriss des Gebäudes oder können sich den Standort einer Filiale auf einer Karte ansehen und [buchen](/Plan/BuchenAufDemPlan).
+<!-- Bild Datumspicker -->
 
-### Kalender
+Der Datumpicker in ROOMS ist standardmässig deaktiviert und es sind das aktuelle Datum sowie die Zeiten (von / bis) hinterlegt. Damit ein anderes Datum und eine andere Zeit gewählt werden kann, muss der Datumpicker aktiviert werden. Dies kann mittels Klick auf die Checkbox links vom Datum erledigt werden.
+
+<!-- Bild Datumspicker aktivieren -->
+
+Mittels den Up- und Down-Buttons neben den jeweiligen Feldern oder direkter Eingabe im Feld, können das Datum und die Zeit eingestellt werden. Die Zeitanzeige springt jeweils zur nächsten vollen Viertelstunde. 
+Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über einen Tag hinaus reicht, möglich. Die Einstellung von zwei verschiedenen Daten kann einfach über einen Klick auf das Kalendersymbol durchgeführt werden. Danach öffnet sich je ein Kalender für das Start- und das Enddatum. Die Daten können dann einfach via Mausklick gewählt werden. Oben rechts vom Feld der „bis Zeit“ ist das eingestellte „bis Datum“ angezeigt.
+
+<!-- Bild geöffneter Datumspicker -->
+
+### Eingabefeld
+
+#### freier Text
+Schlagwortsuche mit Sternchen
+
+#### mit Lupe
+Suchvorschläge während Eingabe
+
+#### Eingabefeld mit Plus-Symbol
 
 
+### Drop-Down-Menü
 
-### Listen 
 
-
-### Einstellungen
 
 
 ## Listenansicht anpassen
@@ -78,23 +94,7 @@ Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weite
 
 Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
 
-## Datumspicker
 
-In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
 
-<!-- Bild Datumspicker -->
 
-Der Datumpicker in ROOMS ist standardmässig deaktiviert und es sind das aktuelle Datum sowie die Zeiten (von / bis) hinterlegt. Damit ein anderes Datum und eine andere Zeit gewählt werden kann, muss der Datumpicker aktiviert werden. Dies kann mittels Klick auf die Checkbox links vom Datum erledigt werden.
-
-<!-- Bild Datumspicker aktivieren -->
-
-Mittels den Up- und Down-Buttons neben den jeweiligen Feldern oder direkter Eingabe im Feld, können das Datum und die Zeit eingestellt werden. Die Zeitanzeige springt jeweils zur nächsten vollen Viertelstunde. 
-Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über einen Tag hinaus reicht, möglich. Die Einstellung von zwei verschiedenen Daten kann einfach über einen Klick auf das Kalendersymbol durchgeführt werden. Danach öffnet sich je ein Kalender für das Start- und das Enddatum. Die Daten können dann einfach via Mausklick gewählt werden. Oben rechts vom Feld der „bis Zeit“ ist das eingestellte „bis Datum“ angezeigt.
-
-<!-- Bild geöffneter Datumspicker -->
-
-## Favoriten Speichern
-Je nachdem in welchem der Menüs „Listen“, „Reports“ oder „Einstellungen“ der Favoritenstern selektiert wird (Stern wird gelb eingefärbt), wird beim Einstieg in selbiges Menü, das vom Benutzer präferierte Subpanel angezeigt. Soll z.B. unter „Listen“ immer als erstes Ressourcen angezeigt werden, reicht 1 Klick auf den Stern.
-
-<!-- Bild Favoritenpanel -->
 

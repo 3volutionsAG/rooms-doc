@@ -8,7 +8,7 @@ description: >
 
 ## Einfache Suche
 
-Um eine Buchungsanfrag aufzurufen, navigieren Sie im Sidepanel, auf der linken Seite, auf die dritte Registerkarte "Buchungsanfragen". Dadurch öffnet sich zunächst die einfache Suche, ähnlich wie unter dem Registerpunkt [Buchungen](/Listen/BuchungenSuchen/EinfacheSuche). Hier haben Sie die Möglichkeit entweder über eine gespeicherte Liste zu suchen oder über die Suchfelder Datum, Anlasszeitpunkt und Standort. Wenn Sie die Checkbox 
+Um eine Buchungsanfrag aufzurufen, navigieren Sie im Sidepanel, auf der linken Seite, auf das dritte Subpanel "Buchungsanfragen". Dadurch öffnet sich zunächst die einfache Suche, ähnlich wie beim Subpanel [Buchungen](/Listen/BuchungenSuchen/EinfacheSuche). Hier haben Sie die Möglichkeit entweder über eine gespeicherte Liste zu suchen oder über die Suchfelder Datum, Anlasszeitpunkt und Standort. Wenn Sie die Checkbox 
 
  <!-- Anlass Zeitraum statt Anlasszeitpunkt? Zeitpunkt klingt genau, mit Zeitraum verbindet man eher Bezeichnungen wie heute, morgen,... -->
 

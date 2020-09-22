@@ -13,6 +13,7 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Actionpanel||
+|Administrator:in||
 |Anlass|| 
 |Anzeigenbereich||
 ---
@@ -48,6 +49,7 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Ersteller:in|Person, welche eine Buchung erstellt hat| 
+|Equipment||
 ---
 
 ## F
@@ -157,6 +159,7 @@ description: >
 |Schaltfläche|||
 |Sidepanel||
 |Status|| 
+|Subpanel||
 ---
 
 ## T
