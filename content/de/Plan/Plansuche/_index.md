@@ -4,6 +4,8 @@ linkTitle: "Plansuche"
 weight: 2
 description: >
   Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan. 
+
+  Bemerkung: Um einen Plan zu finden, der über freie Ressourcen verfügt müssen Sie einen Standort ausgewählt haben. 
 ---
 
 ## Plansuche 
@@ -14,6 +16,11 @@ Im folgenden Kapitel erfahren Sie, wie Sie mit Hilfe des Planfilters nach verfü
 ### Planansicht: Planfilter
 Im linken Bereich der Planansicht sehen Sie den Planfilterbereich. 
 Hier stellen Sie Ihre Suchkriterien für eine Plansuche ein. 
+
+{{< imgproc Plan_suche_Sidepanel Resize "1280x" >}}
+Abbildung ps: Planfilter ansicht im Sidepanel
+{{< /imgproc >}}
+
 
 | Feld          | Funktion      | 
 | ------------- |-------------  |
@@ -36,9 +43,14 @@ Mit Hilfe von Klassifikationen (Attribute zur spezifischen Kennzeichnung von Res
 Mit Hilfe von Gliederungen (Zusammenfassung bestimmter Attribute einer Ressource wie z.B. Raumtypen Sitzungszimmer, Schulungsraum, Kundenraum etc.) können Sie eine Suche zum Beispiel nach gewünschtem Equipment eingrenzen. Die Auswahl wird mit Klick auf das „Plus Symbol“ getätigt. 
 
 Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der Webapplikation durch berechtigte Personen verändert werden. Sind keine Gliederungen erfasst, werden keine Gliederungen eingeblendet.
+
 | Feld          | Funktion      | 
 | ------------- |-------------  |
-| Raum:Raumtyp | Mit Auswahl des "Plus" Symbols werden Ihnen die zur Verfügung stehenden Räume angezeigt. Wählen Sie den Raum aus, den Sie buchen wollen.  | 
-| Equipment:Equipmenttyp | Mit Auswahl des "Plus" Symbol werden Ihnen das zur Verfügung stehende Equipment angezeigt (z.B. Beamer, Flipchart etc.).  | 
+| Raum:Raumtyp | Mit Auswahl des "Plus" Symbols werden Ihnen die zur Verfügung stehenden Räume angezeigt. Wählen Sie den Raum aus, den Sie buchen wollen.| 
+| Equipment:Equipmenttyp | Mit Auswahl des "Plus" Symbol werden Ihnen das zur Verfügung stehende Equipment angezeigt (z.B. Beamer, Flipchart etc.).| 
 
-[Plansuche](http://localhost:1313/buchen/buchung-erstellen/schnellbuchung/)
+
+
+Dieses Kapitel wird ebenfalls unter Buchen beschrieben: 
+
+[Plansuche](/buchen/buchung-erstellen/schnellbuchung/)
