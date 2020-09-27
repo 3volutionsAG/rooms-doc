@@ -6,37 +6,30 @@ description: >
   Mit der Erweiterten Suche grenzen Sie die Suche über spezifische Filter weiter ein.
 ---
 
-## Erweiterte Suche
+Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, z.B. ein Titel können Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung:
 
-Liegen Ihnen weitere Details zu einem Anlass vor, z.B. eine Anlassnummer oder wollen Sie alle Anlässe eines bestimten Typs findenkönnen Sie eine entsprechende Liste über die Erweiterte Suche erstellen lassen. Dabei stehen folgende Unterkategorien zur Verfügung:
-
-- Anlassspezifische Kriterien  
-  Z.B. Anlasssnummer oder Titel des Anlass
+- Anfragepezifische Kriterien  
+  Z.B. Titel oder Anlasstyp
 
 - Personenspezifische Kriterien  
   Z.B. organisierende oder verantwortliche Person
 
-- Klassifikationen  
-  <!-- Was sind Klassifikationen? -->
+## Anfragespezifische Kriterien
 
-### Anlassspezifische Kriterien
-
-Anlassspezifische Kriterien sind zum Beispiel die Anlasssnummer, der Titel des Anlass oder der Typ des Anlass.
+Anfragepezifische Kriterien sind zum Beispiel der Titel der Anfrage oder der Typ des Anlass.
 
  ---
  |<div style="width:250px">Feld</div>|Funktion|
  |---|---|
- |Nummer|individuelle Anlassnummer|
- |Titel*|Titel der Buchung|
- |Typ|Typ, nach welchem der Anlass kategorisiert wurde|
- |VC*-Anlass|- Über den nach unten zeigenden Pfeil öffnen Sie ein Dropdown-Menü, in dem Sie einen der folgenden Punkte auswählen: </br> - *Alle:* Es werden alle Anlässe berücksichtigt <br/> - *Anlass ohne VC:* Es werden nur Anlässe berücksichtigt, bei welchen kein keine Viedokonferenz stattfindet. <br/> - *Anlass mit VC:* Es werden nur Anlässe berücksichtigt, bei welchen eine Videokonferenz stattfindet.|
+ |Titel|Titel der Buchungsanfrage|
+ |Typ|Kategorie des Anlasses </br> _Z.B. Kundenmeeting, Konfernez,..._|
+ |Status|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus: </br> - Alle </br> - Neu </br> - In Verarbeitung </br> - Bestätigung erwartet </br> - Gebucht|
+ |Mit Anlass|- _Ja:_ Die Anfrage bezeiht sich auf einen Anlass </br> - _Nein:_ Die Anfrage wurde unabhängig von einem Anlass gestellt|
 ---
-_*VC = Videokonferenz_
-_*Hier können Sie eine Schalgwortsuche durchführen, indem Sie das Schlagwort zwischen zwei * setzen_
 
-<!-- Bild Suchkriterien Anlassspezifische Suche -->
+<!-- Bild Suchkriterien Anfragespezifische Suche -->
 
-### Personenspezifische Kriterien
+## Personenspezifische Kriterien
 
 Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellenden, organisierenden oder verantwortlichen Personen betreffen.
 
@@ -48,20 +41,9 @@ Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellen
 |Verantwortliche:r*|Person, welche verantwortliche für den Anlass ist|
 ---
 
-_*können auch die selbe Person sein_
+_*können auch dieselbe Person sein_
 
-<!-- Bild Suchkriterine Anlässe suchen/personenspezifische Kriterien -->
+<!-- Bild Suchkriterine Anfragen suchen/personenspezifische Kriterien -->
 
-### Klassifikationen
-
-<!-- Kundenspezifisch? -->
-
----
-|<div style="width:250px">Feld</div>|Funktion|
-|---|---|
-||Person, welche den Anlass organsiert|
-||Person, welche den Anlass erstellt hat|
-||Person, welche verantwortliche für den Anlass ist|
----
 
 

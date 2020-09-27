@@ -25,7 +25,7 @@ Standardmäßig sind folgende Spalten sichtbar. Schlatflächen sind nur aktiv, s
 |Organisator:in||Person, welche den Anlass organisiert|
 |Beginn||Datum und Uhrzeit des Beginns des Anlasses|
 |Ende||Datum und Uhrzeit des Endes des Anlasses|
-|Anlasstyp|||
+|Anlasstyp||firmenspezifische Festlegung|
 ---
 
 <!-- Stiftsymbol einfügen -->

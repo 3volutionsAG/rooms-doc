@@ -22,16 +22,20 @@ In jedem Menüpunkt können Sie, falls gewünscht, eine anderes Subpanel als Fav
 <!-- Bild Favoritenstern auf Subpanel -->
 
 ### Gespeicherte Listen
-Für den fall, dass Sie häufig Buchungen nach den gelichen Kriterien suchen, können Sie die Filtereinstellungen speichern und später über "Gespeciherte Listen" abrufen.
 
-Um die gewählten Filtereinstellungen zu specihern, klicken Sie auf die Diskette rechts neben dem Feld "Gespeicherte Listen". Es öffnet sich ein kleines EIngabefeld, in dem Sie der Suche einen Namen vergeben.
+Es kann vorkommen, dass Sie eine bestimmte Suche regelmäßig durchführen werde. Für diesen Fall gibt es die Möglichkeit die Suchkriterien zu speichern. 
+Dazu klicken Sie nach der Einstellung der Suchkriterien auf das Diskettensymbol neben der Zeile "Gespeicherte Listen". Sie werden nun aufgefordert der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie außerdem die Möglichkeit die Suche als Favorit zu markieren. So wird beim Laden direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.
 In diesem Beispiel wird die Suche nach zukünftigen Parkplatz-Buchungen gespeichert und mit dem Namen Parkplatz betitelt.
 
 <!-- Bild Filtereinstellung speichern -->
 
-Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen Sie das Drop-Down-Menü und wählen Sie die entsprechende gespeicherte Suche aus. In diesem Beispiel "Parkplatz".
+Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen Sie das Drop-Down-Menü und wählen Sie die entsprechende gespeicherte Suche aus. In diesem Beispiel die Liste "Parkplatz".
 
 <!-- Bild Filtereinstellungen aufrufen -->
+
+Benötigen Sie einer der gespeicherten Suchanfragen nicht mehr, so können Sie diese unter den [persönlichen Einstellungen](/Einstellungen/PersönlicheEinstellungen/EigeneListen/) entfernen (siehe auch Kapitel Persönliche Einstellungen)
+
+<!-- Bild gespeicherte Listen entfernen -->
 
 ### Datumspicker
 

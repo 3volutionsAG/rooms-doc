@@ -6,14 +6,12 @@ description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
 
-Die Liste ist tabellarisch angeordnet. Jede Buchung wird in einer eigene Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
+Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
 Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) erläutert.
 
 <!-- Bilder Anzeigenbereich -->
 
-Standardmäßig sind folgende Spalten sichtbar. Die unterschiedlichen Schaltflächen sind nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
-
-*Anmerkung: In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase. In anderen Fällen verbirgt sich auch eine weitere Möglichkeit Einstellungen vorzunehmen oder ausführlichere Informationen abzurufen. Durch Klicken auf das Symbol öffnet sich das entsprechende Fenster.*
+Standardmäßig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -315,3 +313,5 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 
 
 <!-- Symbole einfügen  -->
+
+<!-- Schaltflächen von unten beschreiben -->

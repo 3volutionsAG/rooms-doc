@@ -6,8 +6,6 @@ description: >
   Unter der einfachen Suche finden Sie die gängisten Filter. 
 ---
 
-## Einfache Suche
-
 Um einen bestimmten Anlass zu finden, navigieren Sie im Sidepanel auf der linken Seite auf das Subpanel Anlässe. Dadurch öffnet sich zunächst die einfache Suche, ähnlich wie im Subpanel Buchungen. Hier haben Sie die Möglichkeit entweder über eine gespeicherte Liste zu suchen oder über die Suchfelder Datum, Anlasszeitpunkt und Standort. Wenn Sie die Checkbox 
 
  <!-- Anlass Zeitraum statt Anlasszeitpunkt? Zeitpunkt klingt genau, mit Zeitraum verbindet man eher Bezeichnungen wie heute, morgen,... -->

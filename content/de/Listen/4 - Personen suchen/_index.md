@@ -3,10 +3,10 @@ title: "Personen suchen"
 linkTitle: "Personen suchen"
 weight: 4
 description: >
-    Personen finden
+    Über die Personensuche können Personen, die in ROOMS registriert sind, gefunden werden.
 ---
 
-## Personen suchen
+
 
 
 

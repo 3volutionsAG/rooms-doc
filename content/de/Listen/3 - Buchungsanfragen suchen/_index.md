@@ -1,9 +1,9 @@
 ---
-title: "Buchungsanlässe suchen"
-linkTitle: "Buchungsanlässe suchen"
+title: "Buchungsanfragen suchen"
+linkTitle: "Buchungsanfragen suchen"
 weight: 3
 description: >
-    Buchungsanlässe finden
+    ROOMS hilft Ihnen auch Buchungsanfragen zu verwalten. Eingegangene Anfragen können Sie im Subpanel Buchungsanfragen suchen und finden.
 ---
 
 

@@ -6,8 +6,6 @@ description: >
   Mit der Erweiterten Suche grenzen Sie die Suche über spezifische Filter weiter ein.
 ---
 
-## Erweiterte Suche
-
 Liegen Ihnen weitere Details zu einem Anlass vor, z.B. eine Anlassnummer oder wollen Sie alle Anlässe eines bestimten Typs findenkönnen Sie eine entsprechende Liste über die Erweiterte Suche erstellen lassen. Dabei stehen folgende Unterkategorien zur Verfügung:
 
 - Anlassspezifische Kriterien  
@@ -19,7 +17,7 @@ Liegen Ihnen weitere Details zu einem Anlass vor, z.B. eine Anlassnummer oder wo
 - Klassifikationen  
   <!-- Was sind Klassifikationen? -->
 
-### Anlassspezifische Kriterien
+## Anlassspezifische Kriterien
 
 Anlassspezifische Kriterien sind zum Beispiel die Anlasssnummer, der Titel des Anlass oder der Typ des Anlass.
 
@@ -36,7 +34,7 @@ _*Hier können Sie eine Schalgwortsuche durchführen, indem Sie das Schlagwort z
 
 <!-- Bild Suchkriterien Anlassspezifische Suche -->
 
-### Personenspezifische Kriterien
+## Personenspezifische Kriterien
 
 Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellenden, organisierenden oder verantwortlichen Personen betreffen.
 
@@ -52,16 +50,16 @@ _*können auch die selbe Person sein_
 
 <!-- Bild Suchkriterine Anlässe suchen/personenspezifische Kriterien -->
 
-### Klassifikationen
+## Klassifikationen
 
 <!-- Kundenspezifisch? -->
 
 ---
 |<div style="width:250px">Feld</div>|Funktion|
 |---|---|
-||Person, welche den Anlass organsiert|
-||Person, welche den Anlass erstellt hat|
-||Person, welche verantwortliche für den Anlass ist|
+|||
+|||
+|||
 ---
 
 

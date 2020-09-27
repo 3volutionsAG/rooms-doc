@@ -5,7 +5,6 @@ weight: 20
 description: >
   Wollen Sie Ihre Suche weiter eingrenzen oder nach ganz bestimmten Merkmalen suchen, finden Sie in der erweiterten Suche weitere spezifische Filter.
 ---
-## Erweiterte Suche
 
 Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder wollen Sie alle Buchungen finden, die von einem bestimmten Dienstleister bewirtet wird, können Sie eine entsprechende Liste über die Erweiterte Suche erstellen. Dabei stehen folgende Unterkategorien zur Verfügung:
 
@@ -30,7 +29,7 @@ Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder
 - Kostenspezifische Kriterien  
   Buchungen anhand der zugeordneten Kostenstellen suchen
 
-### Buchungsspezifische Kriterien
+## Buchungsspezifische Kriterien
 
 Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer, der Titel oder eine Bemerkung.
 
@@ -79,7 +78,7 @@ Wenn Sie auf das Plus (+) neben dem Eingabefeld klicken, öffnet sich ein Fenste
  ---
 
 
-### Ressourcenspeziefische Kriterien
+## Ressourcenspeziefische Kriterien
 
 Die ressourcenspezifischen Kriterien verändern sich je nach gewählter Ressourcenart (Raum, Parkplatz, Arbeitsplatz,...), die Sie in der einfachen Suche festlegen können. 
 In diesem Bereich werden in erster Linie firmenspezifische Bezeichnungen und Klassifizierungen als weitere Filterkriterien zur Verfügung gestellt. 
@@ -103,7 +102,7 @@ _*VC = Videokonferenz_
 ---
 _*VC = Videokonferenz_
 
-### Personenspezifische Kriterien
+## Personenspezifische Kriterien
 
 Unter Personenspezifischen Kriterien versteht man Merkmale, welceh die erstellenden, organisierenden oder verantwortungstrangenden Personen betreffen sowie die Kostenstelle, welcher die Buchung zugeordent ist.
 
@@ -124,7 +123,7 @@ Unter Personenspezifischen Kriterien versteht man Merkmale, welceh die erstellen
 
 _*OE = Organisationseinheit_
 
-### Gliederungen
+## Gliederungen
 
 Dei Unterkategorie Gliederung ist, wie die Ressourcenspezifischen Kriterien, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie im Bereich der einfachen Suche aus. 
 
@@ -141,7 +140,7 @@ Sie wollen eine Auflistung aller Buchungen zusammenstellen, die in einem bestimm
 |Raum: Equipmenttyp|Durch klicken auf das Plus (+) öffnet sich die Auswahl des vorhanden Equipments. Wählen Sie z.B. die Anzahl der Beamer um alle Bucungen angezeigt zu bekommen, in denen 2 Beamer verwendet werden.|
 ---
 
-### Anlassspezifische Kriterien
+## Anlassspezifische Kriterien
 
 Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Empänge,...) und werden verschiedene Ressourcen benötigt (Besprechungsräume, Parkplätze, Equipment,...), wie zum Beispiel bei einer mehrtägigen Konfernz, so können Sie einen Anlass erstellen und in diesem alle Buchungen bündeln.  
 
@@ -163,7 +162,7 @@ Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Emp�
 _*Sie können eine Schlagwortsuche durchführen, in dem Sie das Schalgwort zwischen zwei *  setzen._ </br>
 _**VC = Videokonferenz_
 
-### Dienstleisterspezifische Kriterien
+## Dienstleisterspezifische Kriterien
 
 Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzufügen, die von der verantwortlichen Person genehmigt werden müssen. Mit Hilfe den Dienstleisterspezifiscen Kriterien können Sie sich Buchungen anzeigen lassen, deren Dienstleistungen noch nicht genehmigt wurden.
 
@@ -174,7 +173,7 @@ Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzuf
 |---|---|
 |Mit nicht freigegebenen </br> Bestellungen|Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox.|
 
-### Kostenspezifische Kriterien
+## Kostenspezifische Kriterien
 
 Buchungen lassen sich auch über die zugeordnete Kostenstelle finden.
 

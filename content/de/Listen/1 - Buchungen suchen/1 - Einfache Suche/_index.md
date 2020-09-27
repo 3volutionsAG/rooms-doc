@@ -5,7 +5,6 @@ weight: 10
 description: >
   Es gibt viele Kriterien anand derer eine Buchung gesucht werden kann. Die gängisten Filter finden Sie in der einfachen Suche.
 ---
-## Einfache Suche
 
 Um eine bestimmte Buchung zu finden gibt es zunächst eine einfache Suche. Diese wird mit den wichtigsten Kriterien Ressoucenart, Datum/Zeit der Buchung, Buchungszeitpunkt und Standort gefiltert.
 
