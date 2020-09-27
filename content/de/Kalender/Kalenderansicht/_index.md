@@ -167,7 +167,12 @@ Als Vorgabe werden die Arbeitszeiten des entsprechenden Tages eingetragen, diese
 Eine genaue Beschreibung zur Buchung im Kalender gibt es hier: Hier gelangen Sie zur weiteren Beschreibung der Schnellbuchung:
 [Im Kalender buchen](/kalender/im-kalender-buchen/)
 
+##### Transparenz der Farben im Kalender
 Je nach Dauer der Reservation weist der Block, nach Abschluss der Reservation, eine mehr oder weniger starke Transparenz auf. 
+
+Die Füllung weist eine Transparenz entsprechend der Auslastung des Blocks während der Arbeitszeiten auf. 
+* Beispiel: Definition der Arbeitszeiten: 8:00-17:00 = Total 9h; der Tag verfügt über 3 Buchungen (6:30-10:00, 13:00-14:00 und 16:00-17:30) = Total 6h, davon 4h während der Arbeitszeiten. Entsprechend wird die Füllung mit 5/9 Transparenz angezeigt (bzw. mit 4/9 Intransparenz). Sind keine Buchung während der Arbeitszeiten, aber Buchungen ausserhalb der Arbeitszeiten vorhanden, wird mit eine gebuchte Einheit berechnet, also im Beispiel 8/9 Transparenz bzw. 1/9 Intransparenz). 
+Hinweis: Für die Umsetzung muss die Berechnung wohl in Minuten vorgenommen werden.
 
 Dauert eine Buchung z.B. von 08.00-17.00 Uhr erscheint der Block in voller Farbe. Handelt es sich jedoch um eine kurze Buchungszeit, beispielsweise von 14.00-15.00 Uhr, ist der Blockinhalt nur schemenhaft zu erkennen. 
 Ist auf einem Block nur eine Buchung vorhanden, gelangt man mittels Klick auf das „+“-Symbol zum Fenster zur Bearbeitung der Reservation.
@@ -178,6 +183,7 @@ Sie sehen die Buchungen farbig markiert. DIe Farbgebung Ihrer eigenen Buchungen 
 [Farbgebung im Kalender einstellen](/einstellungen/pers%C3%B6nlicheeinstellungen/personeninformation/)
 
 In jeder Kalenderansicht wird Ihnen oben links das Icon „Legende“ angezeigt. Dort sehen Sie mithilfe der Farbgebung, ob z.B. eine Ressource gebucht ist oder nur provisorisch belegt.
+
 
 #### Legende
 Klicken Sie auf das Legenden Icon. Es öffnet sich ein Popup, welches alle im Kalender verwendeten/möglichen Farben und Icons auflistet und benennt. z.B. die Farbgebung der Status, Sperrzeiten, Feiertage, Wochenenden und eigenen Reservationen (diese wird aus den persönlichen Einstellungen in den Stammdaten übernommen) sowie die Icons für Anlässe, Serien, usw.
