@@ -31,7 +31,8 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Checkbox|| 
+|Checkbox||
+|.CSV-Datei|| 
 ---
 
 ## D

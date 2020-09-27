@@ -51,5 +51,5 @@ Wie Sie die Darstellung der Listen ihren Wünschen entsprechend anpassen können
 
 <!-- Bild Startseite Einstellungen  -->
 
-Unter [Einstellungen](/Einstellungen/) können Sie ROOMS firmenspezifisch konfigurieren Dazu gehört nicht nur das Anlegen der mitarbeitenden Personen und deren Berechtigungen. Ebenso werden hier kooperierende Dienstleister erfasst und sämtliche Details zu Ressourcen, Equipment hinterlegt und Systemeinstellungen erfasst.
+Unter [Einstellungen](/Einstellungen/) können Sie ROOMS firmenspezifisch konfigurieren. Dazu gehört nicht nur das Anlegen der mitarbeitenden Personen und deren Berechtigungen. Ebenso werden hier kooperierende Dienstleister und deren Angebote eingepflegt und sämtliche Details zu Ressourcen oder Equipment hinterlegt und Systemeinstellungen erfasst.
 Dieser Bereich ist vorrangig für die Administrator:innen der Applikation.

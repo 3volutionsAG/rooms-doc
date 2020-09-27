@@ -22,41 +22,67 @@ In jedem Menüpunkt können Sie, falls gewünscht, eine anderes Subpanel als Fav
 <!-- Bild Favoritenstern auf Subpanel -->
 
 ### Gespeicherte Listen
+Für den fall, dass Sie häufig Buchungen nach den gelichen Kriterien suchen, können Sie die Filtereinstellungen speichern und später über "Gespeciherte Listen" abrufen.
+
+Um die gewählten Filtereinstellungen zu specihern, klicken Sie auf die Diskette rechts neben dem Feld "Gespeicherte Listen". Es öffnet sich ein kleines EIngabefeld, in dem Sie der Suche einen Namen vergeben.
+In diesem Beispiel wird die Suche nach zukünftigen Parkplatz-Buchungen gespeichert und mit dem Namen Parkplatz betitelt.
+
+<!-- Bild Filtereinstellung speichern -->
+
+Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen Sie das Drop-Down-Menü und wählen Sie die entsprechende gespeicherte Suche aus. In diesem Beispiel "Parkplatz".
+
+<!-- Bild Filtereinstellungen aufrufen -->
 
 ### Datumspicker
 
-In ROOMS wird der Benutzer häufig auf den Datumpicker stossen, wo die Zeitrange einer Buchung oder die Anzeige einer Liste angegeben werden kann
+Unter einem Datumspicker versteht man eine Miniansicht eines Kalenders, auf der ein Datum ausgewählt werden kann.
 
-<!-- Bild Datumspicker -->
+In ROOMS gibt es an jeder Stelle, an der ein Datum festgelegt werden kann, die Möglichekit, dieses über den Datumspicker auszuwählen. 
 
-Der Datumpicker in ROOMS ist standardmässig deaktiviert und es sind das aktuelle Datum sowie die Zeiten (von / bis) hinterlegt. Damit ein anderes Datum und eine andere Zeit gewählt werden kann, muss der Datumpicker aktiviert werden. Dies kann mittels Klick auf die Checkbox links vom Datum erledigt werden.
+Um das Datum über den Datumspicker auszuwählen klicken Sie auf das Kalendersymbol rechts neben dem Datum-Eingabefeld. Es öffnet sich ein Kalender auf dem Sie das gewünschte Datum anklicken und über die Schaltfläche "Übernehmen" bestätigen. 
+Sollte ein anderes Datum eingestellt sein, können Sie über die Schaltfläche "Heute" auf das heutige Datum springen. Über das "X" oben rechts am Datumspicker, lässt sich dieser schließen, ohne dass Änderungen übernommen werden.
+
+Wollen Sie einen Zeitraum, der über einen Tag hinaus reicht auswählen wollen, so können Sie dies nur über den Datumspicker machen. Dazu wählen Sie auf der linken Kalenderansicht das Startdatum und anschließend auf der rechten Kalenderansicht das Enddatum.
+Zwischen den Kalenderansichten lässt sich außerdem noch die Spanne der Uhrzeit einstellen.
+
+<!-- Bild Datumspicker mit Beschriftungen -->
+
+Standardmäßig ist der Datumspicker deaktiviert und das aktuelle Datum mit dem Standardbuchungszeitraum wird angezeigt.
+Sie können das gesuchte Datum auch manuell eingeben. Dazu aktivieren Sie zunächst die Checkbox vor dem Eingabefeld.
 
 <!-- Bild Datumspicker aktivieren -->
 
-Mittels den Up- und Down-Buttons neben den jeweiligen Feldern oder direkter Eingabe im Feld, können das Datum und die Zeit eingestellt werden. Die Zeitanzeige springt jeweils zur nächsten vollen Viertelstunde. 
-Beim Datumpicker ist einzig die Einstellung für eine Zeitperiode, welche über einen Tag hinaus reicht, möglich. Die Einstellung von zwei verschiedenen Daten kann einfach über einen Klick auf das Kalendersymbol durchgeführt werden. Danach öffnet sich je ein Kalender für das Start- und das Enddatum. Die Daten können dann einfach via Mausklick gewählt werden. Oben rechts vom Feld der „bis Zeit“ ist das eingestellte „bis Datum“ angezeigt.
-
-<!-- Bild geöffneter Datumspicker -->
+Über die Pfeile neben dem Feld können Sie tageweise durch das Datum blättern, die Uhrzeit springt immer zur nächsten vollen Viertelstunde.
 
 ### Eingabefeld
 
-#### freier Text
-Schlagwortsuche mit Sternchen
+In den Suchotionen tauchen verschiedene Eingabefelder auf.
 
-#### mit Lupe
-Suchvorschläge während Eingabe
+#### Freie Texteingabe
+Es gibt einige Felder, z.B. Buchungstitel, in der eine völlig freie Texteingabe möglich ist. 
+Falls Sie den genauen Wortlaut, z.B. des gesuchten Bcuhungstitels, nicht mehr erinnern, können Sie eine Schalgwortsuche druchführen, in dem Sie ein Wort oder Teilwort zwischen zwei * setzen.
+
+#### Eingabefeld mit Lupensymbol
+
+<!-- Bild Eingabefeld mit Lupe und Texteingabe-->
+
+Während Sie das Suchwort eingeben, werden Ihnen bereits Vorschläge zu Ihrem Suchwort unterbreitet, aus denen Sie auswählen können.
+Sollten keine Vorschläge angezeigt werden, so gibt es zu diesem Suchwort keine passenden Ergebnisse.
 
 #### Eingabefeld mit Plus-Symbol
 
+Einige Eingabefelder haben an der rechten Seite ein Plus-Zeichen. Ähnlich dem Eingabefeld mit der Lupe werden Ihnen während des eintippens bereits Vorschläge aufgelistet. Sie können aber auch direkt auf das Plus klicken um aus einer Liste auszuwählen.
+
+<!-- Bild Eingabefeld mit Plus -->
 
 ### Drop-Down-Menü
 
+Bei einem Drop-Down-Menü klicken sie auf den, nach unten gerichteten Pfeil, woraufhin sich eine Liste ausklappt, aus der Sie das gewünschte Kriterium auswählen können. Ihre Auswahl wird dann im Eingabefeld angezeigt.
 
+<!-- Bild Drop Down Menü -->
 
 
 ## Listenansicht anpassen
-
-<!-- blaue Schrift in Spaltenname -> kann nach diesem Kriterium sortiert werden -->
 
 Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.
 
@@ -75,24 +101,25 @@ Folgende Tabelle erläutert die Listensymbole:
 
 **TIPP**: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte.
 
+Manche Spaltennamen sind in blauer Schrift gehalten. Die blaue Schrift markiert, nach welchen Spalten eine Liste sortiert werden kann. Dazu klicken Sie einfach in das Feld des Spaltennamen.
+
+<!-- Bild Liste nach Spalte sortieren -->
+
 Weitere Informationen zu Listen finden Sie im Kapitel [Listen](/Listen).
 
-<!-- Text eingefügt, noch nicht bearbeitet -->
+## Listen Export
+Alle Suchresultate und Listen können in einer .csv-Datei, z.B. für die Weiterverarbeitung in Excel, exportiert werden.
+Dafür klicken Sie auf das Export-Symbol unten rechts unter dem Anzeigenbereich:
 
-## Excel Export
-Sämtliche Suchresultate können in eine Excel-Datei exportiert werden. Dafür klicken Sie auf folgendes Symbol unten rechts unter dem Inhaltsbereich:
+<!-- Bild Exportsymbol -->
 
-<!-- Bild Excelsymbol -->
+Das Actionpanel informiert Sie über den Start des Export sowie das Bereitliegen der Datei zum Downloaden. 
 
-Mit einem Klick auf diesen Button wird der Excel-Export gestartet. Im Actionpanel wird angezeigt, dass die in der aktuellen Ansicht vorhandenen Daten aufbereitet und in eine Excel-Datei geschrieben werden.
+<!-- Bilder Anzeige Actionpanel -->
 
-<!-- Bild Anzeige Actionpanel -->
+Mit einem Klick auf den angezeigten Link im Actionpanel, könne Sie die .csv-Datei herunterladen und zur weiteren Verarbeitung auf Ihrem Rechner speichern.
 
-Das Erstellen des Excel-Exports funktioniert asynchron. Das bedeutet, dass weiterhin mit ROOMS gearbeitet werden kann, ohne dass der Excel-Export behindert wird. Wenn dieser abgeschlossen ist, erscheint wiederum im Actionpanel die Nachricht, dass die Datei heruntergeladen werden kann.
-
-<!-- Bild Anzeige Actionpanel -->
-
-Mit einem Klick auf diesen Link ist es nun möglich, die Datei herunterzuladen und für die weitere Verarbeitung auf dem Rechner zu speichern.
+Das Erstellen der Export-Datei läuft asynchron. Das bedeutet, dass Sie, aber auch andere User, weiterhin mit ROOMS arbeiten können, ohne dass der Export behindert wird. Dies bedeutet aber auch, dass während der Erstellung der Export-Datei, weitere Einträge in ROOMS gespeichert werden könnten, die dann jedoch noch nicht in der Export-Datei aufgeführt werden würden.
 
 
 
