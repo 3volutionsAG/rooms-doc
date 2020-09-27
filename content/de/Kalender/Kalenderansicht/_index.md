@@ -86,6 +86,8 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 {{< /imgproc >}} |
 | Kalender | Ändern Sie das Datum des gewünschten Tages | {{< imgproc Icon_datumspicker Resize "50x" >}}
 {{< /imgproc >}} |
+| Person | Lassen Sie sich die Belegung für einzelne Personen anzeigen (Abbildung kv)| {{< imgproc Icon_Personen_anzeigen Resize "50x" >}}
+{{< /imgproc >}} |
 
 Mit dem Regler oben in der Mitte der Kalenderansichten zoomen Sie in den Kalender hinein und hinaus. 
 Befinden Sie sich in der Tagesansicht, wird in die Stunden gezoomt, befindet Sie sich in der Wochenansicht, geschieht dasselbe mit den Tagen.
@@ -103,12 +105,28 @@ Falls ein spezifisches Datum gesucht wird, kann dieses auch im Datumpicker oben 
 
 Die Wochenendtage werden je nach eingestellter Landessprache und Zeitzone (Kultur) entweder an Samstag und Sonntag gelb eingefärbt oder an Freitag und Samstag etc.
 
+#### Listen Icon
+
 Wenn mehrere Ressourcen in der Liste im Kalender angezeigt werden, können Sie mithilfe des Buttons neben dem Fadenkreuz diese Listenelemente verkleinert darstellen. So haben Sie alle Ressourcen im Blick.
 
 {{< imgproc Kalender_Liste_verkleinert_anzeigen Resize "1280x" >}}
 Abbildung kl: Listenelemente verkleinert darstellen
 {{< /imgproc >}}
 
+#### Personen Icon 
+Sie können sich die Belegung und Ressourcen einzelner Personen anzeigen lassen. 
+Betätigen Sie das Personen Icon und es erscheint ein Feld, in welchem Sie durch tippen eine Person auswählen können. 
+Haben Sie die Person gewählt, werden auf dem Server die "Free/Busy" Daten dieser Person abgefragt.
+Sind keine Free/Busy Daten vorhanden wird die Kalenderlinie grau dargestellt.
+Die einzelnen (Busy) Termine sind in rot sichtbar. Allday-Termine (Busy/Out of Office) sind mit halbtransparenten, hell-rosaroten Balken hintergründig dargestellt.
+
+Über das Kreuz-Symbol löschen Sie dir Person wieder aus der Liste.
+
+{{< imgproc Kalender_Personen_anzeigen Resize "1280x" >}}
+Abbildung kv: Belegung von einzelnen Personen anzeigen
+{{< /imgproc >}}
+
+Achtung: Um diese Ansicht zu haben, müssen Sie vorher Free-Busy Einstellungen konfiguriert haben.
 
 ### Tagesansicht 
 In der Tagesansicht sehen Sie in der Liste die Ressourcen. In der Zeile darüber werden Ihnen die Stunden des Tages angezeigt.

@@ -5,29 +5,48 @@ linkTitle: "Eine neue Buchung im Kalender vornehmen"
 weight: 1
 date: 2020-06-30
 description: >
-  Der Kalender bietet Ihnen eine grafische Übersicht, um schnell einen Überblick über die Belegungssituation zu erhalten.
+  Im Kalender können Sie ganz einfach eine Ressource aus der Liste buchen.
 ---
 
 ## Eine neue Buchung vornehmen
-5.2.3.1	Erstellen einer neuen Reservation
-Auf der Kalenderansicht kann sehr einfach eine neue Reservation erstellt werden. Mit einem Klick auf den gewünschten Zeitpunkt öffnet sich ein kleines Fenster, in welchem diese erstellt werden kann.
-
+### Schnellbuchung im Kalender
+Klicken Sie mit dem Mauszeiger auf den gewünschten Zeitpunkt in der ausgewählten Ressource. Mit einem Klick auf den gewünschten Zeitpunkt öffnet sich ein kleines Fenster zur Schnellbuchung.
  
-Abbildung 40: Reservation im Kalender erstellen
+{{< imgproc Kalender_neue_Buchung_Schnellbuchung Resize "1280x" >}}
+Abbildung ko: Schnellbuchung im Kalender vornehmen
+{{< /imgproc >}}
 
-Falls ein anderer Organisator für dieses Meeting benötigt wird, kann dieser Name im Textfeld eingegeben werden. Hierfür sind spezielle Benutzerrechte notwendig. Es erscheint eine Auswahl an passenden Mitarbeiter- oder Kundennamen, welche in der Datenbank gespeichert sind. Standardmässig ist auch hier der angemeldete Benutzer eingetragen. Daneben kann, ebenfalls nur mit bestimmten Berechtigungen, eine für die Reservation verantwortliche Person im Feld „Verantwortlicher“ eingetragen werden. Sobald ein Verantwortlicher definiert ist, werden die E-Mail Notifikationen (sofern im Profil aktiviert) an diese Person verschickt und nicht mehr an den Organisator (die Exchange Synchronisation, falls aktiviert, erfolgt nach wie vor auf dem Organisator). Mit dem Button „Reservieren“ wird der Raum ohne Eingabe weiterer Informationen für eine gewisse Zeit, gemäss den Angaben in den persönlichen Einstellungen, reserviert. Die Eingabe dieser persönlichen Einstellungen ist  in Kapitel 5 genauer beschrieben.
+Im Fenster der Schnellbuchung geben Sie folgendes an: 
+* Titel
+* Dauer/Zeit
+* Organisator:in 
+* Verantwortlich:e 
+* Bemerkungen
+* Email Notifikation 
 
- 
-Abbildung 41: Buchung von mehreren Räumen zusammengefasst
+Für die Angabe einer anderen Organisator:in sind spezielle Benutzerrechte notwendig. Es erscheint Ihnen eine Auswahl an passenden Mitarbeiter- oder Kundennamen, welche in der Datenbank gespeichert sind. Standardmässig sind Sie als Benutzer:in eingetragen. 
 
-Selektiert man mehrere Ressourcen werden diese (auch über mehrere Standorte) beim Klick in einen freien Zeitraum im Popup „Schnellanlass“ aufgeführt. Diese Funktion bedingt das Recht „Darf Schnellreservation durchführen“. Zusatzinformationen können erfasst werden und pro Reservation kann der Organisator definiert werden. Mit den Checkboxen „Sync“ und „Mail“ (sofern im Profil aktiviert) kann eine Synchronisation der Reservation und die zugehörende E-Mail Notifikation aktiviert bzw. deaktiviert werden. Via Button „Erstellen“ werden die Ressourcen in 1 Anlass zusammengefasst und gebucht.
+Daneben kann, ebenfalls nur mit bestimmten Berechtigungen, eine für die Reservation verantwortliche Person im Feld „Verantwortlich:e“ eingetragen werden. Sobald eine verantwortliche Person definiert ist, werden die E-Mail Notifikationen (sofern im Profil aktiviert) an diese Person verschickt und nicht mehr an die Organisator:in 
 
-Über den Button „Detailreservation“ gelangt man in die detaillierte Reservation, welche im Kapitel 6.5 genauer erläutert wird.
+Bemerkung: Die Exchange Synchronisation, falls aktiviert, erfolgt nach wie vor auf der Organisator:in 
 
-Hinweis: 
-Mittels der Intelibox, mit welcher Mitarbeiter- oder Kundennamen ausgewählt werden, schränkt sich die Suche nach den entsprechenden Personen durch die Eingabe von Buchstaben ein. Die Liste zeigt zuerst jene Personen an, für welche der Benutzer am häufigsten gebucht hat, danach erst werden die restlichen erfassten Benutzer aufgelistet.
+Klicken Sie auf den Button „Buchen“ wird der Raum ohne Eingabe weiterer Informationen für eine gewisse Zeit, gemäss den Angaben in den persönlichen Einstellungen, gebucht. 
 
-Es besteht ebenfalls die Möglichkeit, Personen nach deren Personal-Nummer zu suchen.
+### Detailbuchung im Kalender
+Wählen Sie im Fenster der Schnellbuchung den Button "Detailbuchung" aus, gelangen Sie zum Eingabefeld für detaillierte Informationen. 
+
+{{< imgproc Kalender_neue_Buchung_Detailbuchung Resize "1280x" >}}
+Abbildung ko: Schnellbuchung im Kalender vornehmen
+{{< /imgproc >}}
+
+Sie schließen die Buchung ab, indem Sie auf den Button "Buchung abschließen" klicken. 
+
+Die einzelnen Funktionen der Felder werden Ihnen im Kapitel "Detailbuchung" beschrieben: 
+[Detailbuchung](/buchen/buchung-erstellen/detailbuchung/)
+
+
+
+
 
 
 
