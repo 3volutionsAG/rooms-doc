@@ -6,7 +6,7 @@ description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
 Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
-Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/3_GrundlegendeFunktionen/##Listenansicht-anpassen) erläutert.
+Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/3_GrundlegendeFunktionen/_index.md/) erläutert.
 
 <!-- Bilder Anzeigenbereich -->
 

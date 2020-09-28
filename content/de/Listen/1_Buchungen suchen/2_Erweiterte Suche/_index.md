@@ -33,8 +33,6 @@ Liegen Ihnen weitere Details zu einer Buchung vor, z.B. eine Buchungsnummer oder
 
 Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer, der Titel oder eine Bemerkung.
 
-*Falls Sie anahnd von Titel oder Bemerkung suchen wollen, können Sie eine Schlagwortsuche durchführen, in dem Sie das Schlagwort zwischen zwei * setzen*
-
  <!-- Bild Suchkriterien-Buchungen buchungsspezifisch -->
 
  ---

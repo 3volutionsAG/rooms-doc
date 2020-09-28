@@ -10,9 +10,7 @@ Die Liste ist ähnlich der Listen zu [Buchungen](/Listen/Buchungensuchen/Anzeige
 
 <!-- Bilder Anzeigenbereich -->
 
-Standardmäßig sind folgende Spalten sichtbar. Schlatflächen sind nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
-
-*Anmerkung: In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase. Es gibt aber auch Symbole, die als Schaltfläche fungieren, die Sie durch klicken auf das entsprechende Fenster mit ausführlichen Informationen leiten.* 
+Standardmäßig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -31,9 +29,6 @@ Standardmäßig sind folgende Spalten sichtbar. Schlatflächen sind nur aktiv, s
 <!-- Stiftsymbol einfügen -->
 
 Über das [Spaltensymbol](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
-Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
-
-*Anmerkung: Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.*
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|

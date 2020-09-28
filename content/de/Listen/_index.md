@@ -20,5 +20,10 @@ Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. Z
 
 <!-- (Bild Startansicht Listen mit Markierung Extrafunktionen) -->
 
-*Anmerkung: In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase oder durch klicken, woraufhin Sie auf eine Detailansicht geleitet werden.* 
+In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase oder durch klicken, woraufhin Sie auf eine Detailansicht geleitet werden.
 
+<!-- Bild Tooltipp -->
+
+Es gibt verschiedene Eingabefelder um eine Suche zu spezifizierne. Falls Sie eine Bezeichnung nicht mehr genau kennen, setzen Sie, bei einer freien Texteingabe, das Suchwort am besten zwischen zwei '*' um eine Schlagwortsuche durchzuführen.
+
+<!-- Bild Schlagwortsuche -->

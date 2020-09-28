@@ -5,6 +5,13 @@ weight: 20
 description: >
   Sind Ihnen weitere Details zur gesuchten Ressource bekannt, können Sie das Ergebnis über die Erweiterte Suche weiter eingrenzen.
 ---
+Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, z.B. eine Bezeichnung, können Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung:
+
+- Erweiterte Kriterien  
+  Z.B. Bezeichnung oder Status
+
+- Gliederung  
+  Z.B. Auswahl des Raumtyps, wie Konferenzraum oder Besprechungszimmer
 
 ## Erweiterte Kriterien
 
