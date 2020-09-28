@@ -17,8 +17,8 @@ Liegen Ihnen weitere Details zu einer Person vor, z.B. die Personalnummer könne
  |OE/Firma|Organisationseinheit der gesuchten Person oder Firma, welcher die Person angehört|
  |Kostenstellencode|Nummer der zugehörigen Kostenstelle|
  |Kostenstellenname|Name der zugehörigen Kostenstelle|
- |Status (Aktiv/Inaktiv)|Person mit aktivem oder inaktivem Zugang|
- |Art (Intern/Extern)|- _intern:_ firmenzugehörig </br> - _extern:_ einer externen Firma zugehörig|
+ |Status (Aktiv/Inaktiv)|Person mit aktiviertem oder deaktiviertem Zugang|
+ |Art (Intern/Extern)|- _intern:_ firmenzugehörig </br> - _extern:_ einer fremden Firma zugehörig|
  |E-Mail bestätigt|Gibt an, ob die E-Mail-Adresse von der gesuchten Person bestätigt wurde|
 ---
 

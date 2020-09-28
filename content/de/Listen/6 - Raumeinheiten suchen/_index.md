@@ -3,7 +3,6 @@ title: "Raumeinheiten suchen"
 linkTitle: "Raumeinheiten suchen"
 weight: 6
 description: >
-  Raumeinheiten finden
+  In nur wenigen Schritten finden Sie definierte Raumeinheiten an Ihren Standorten. 
 ---
 
-## Raumeinheiten suchen

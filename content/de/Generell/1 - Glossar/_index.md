@@ -14,6 +14,8 @@ description: >
 |---|---|
 |Actionpanel|Das Actionpanel ist eine Art Sprechblase, die oben rechts im Fenster auftaucht um unterschiedliche Informationen mitzuteilen. </br> _Vorgänge bestätigen, Fehlermeldungen anzeigen, Download-Link für eine Export-Datei bereitstellen_|
 |Administrator:in|Person, die alle Rechte in ROOMS hat und diese auch vergeben kann.|
+|aktiv (Person)|Eine Person, die in ROOMS regisistriert ist und deren Zugang aktiviert ist.|
+|aktiv (Ressource)|Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus.|
 |Anlass|Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </br> _Z.B. Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_| 
 |Anzeigenbereich|Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden.|
 ---
@@ -51,6 +53,8 @@ description: >
 |---|---|
 |Ersteller:in|Person, welche eine Buchung erstellt hat| 
 |Equipment|Unter Equipment versteht man Zubehör, das einer Ressource zugeordnet ist oder hinzugebucht werden kann, z.B. ein Beamer oder ein Flipchart.|
+|Equipment (fix)|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
+|Equipment (mobil)|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
 ---
 
 ## F
@@ -58,6 +62,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
+|fixes Equipment|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
 |Folgebuchung|Als Folgebuchung wird eine Buchung für die selbe Ressource bezeichnet, die nach der gerade betrachteten Buchung beginnt.| 
 ---
 
@@ -75,6 +80,7 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Hauptbuchung|Bei einem Anlass mit mehreren Buchungen kann eine Buchung als Hauptbuchung markiert werden. </br> _Z.B. wurde für eine Besprechung ein Raum und Parkplätze für die Teilnehmenden gebucht. Der Raum kann hierbei als Hauptbuchung markiert werden, da die Besorechung auch ohne Parkplätze stattfinden könnte/würde._|
+|hierachisch|Eine hierachische Darstellung wird z.B. beim Standort verwendet. Dies ist vor allem dann sinnvoll, wenn in einer Stadt oder einem Land mehrere Standorte gibt. </br> _Z.B. /Europa/CH/Bern/Filiale West_.| 
 ---
 
 ## I
@@ -82,7 +88,8 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-||| 
+|inaktiv (Person)|Person, die in ROOMS registriert ist, deren Zugang jedoch nicht deaktiviert ist.|
+|inaktiv (Ressource)|Ressource ist in ROOMS hinterelgt, jedoch gerade nicht nutzbar| undabhängig von der terminlichen Verfügbarkeit.| 
 ---
 
 ## J
@@ -114,6 +121,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
+|mobiles Equipment|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
 ||| 
 ---
 
@@ -154,6 +162,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
+|Raumeinheit|Definierte Fläche (Z.B. Bürofläche), der eine bestimmte Anzahl an Personen zugewiesen werden kann.
 |Ressource|Eine Ressource ist eine buchbare Einheit, wie z.B. ein Raum, einen Parkplatz, aber auch Equipment (Beamer, Flipchart,...)| 
 ---
 
@@ -163,6 +172,7 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Schaltfläche|Bereich auf der Oberfläche, der angeklickt werden kann um eine bestimmte Aktion auszuführen. </br> _Z.B. eine Diskette um etwas zu speichern_|
+|Schnellauswahl|Plus-Zeichen neben einem Eingabefeld, das durch klicken ein kleines Fenster mit Auswahlmöglichkeiten öffnet.
 |Sidepanel|Menü auf der linken Seite im Fenster|
 |Status|Der Status gibt an an welcher Stelle der Bearbeitungsvorgänge eine Buchung gerade steht, z.B. ob die Buchung noch genehmigt werden muss.| 
 |Subpanel|Das Subpanel ist ein Untermenü im Sidepanel, welches sich öffnet, wenn man auf die Überschrift klickt.|

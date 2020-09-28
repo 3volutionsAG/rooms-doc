@@ -74,7 +74,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 <!-- Symbole in Tabelle einfügen (mobiel Ressourcen, Workflow Status, Annullieren, fixes Equipment-->
 
-Über das Spaltensymbol können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
+Über das [Spaltensymbol](/generell/3-grundlegende-funktionen/) können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen. 
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
 
 *Anmerkung: Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.*

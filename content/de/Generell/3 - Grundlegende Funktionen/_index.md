@@ -33,7 +33,7 @@ Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen 
 
 <!-- Bild Filtereinstellungen aufrufen -->
 
-Benötigen Sie einer der gespeicherten Suchanfragen nicht mehr, so können Sie diese unter den [persönlichen Einstellungen](/Einstellungen/PersönlicheEinstellungen/EigeneListen/) entfernen (siehe auch Kapitel Persönliche Einstellungen)
+Benötigen Sie einer der gespeicherten Suchanfragen nicht mehr, so können Sie diese unter den [persönlichen Einstellungen](/Einstellungen/PersönlicheEinstellungen/) entfernen (siehe auch Kapitel Persönliche Einstellungen)
 
 <!-- Bild gespeicherte Listen entfernen -->
 
@@ -73,11 +73,11 @@ Falls Sie den genauen Wortlaut, z.B. des gesuchten Bcuhungstitels, nicht mehr er
 Während Sie das Suchwort eingeben, werden Ihnen bereits Vorschläge zu Ihrem Suchwort unterbreitet, aus denen Sie auswählen können.
 Sollten keine Vorschläge angezeigt werden, so gibt es zu diesem Suchwort keine passenden Ergebnisse.
 
-#### Eingabefeld mit Plus-Symbol
+#### Eingabefeld mit Schnellauswahl
 
-Einige Eingabefelder haben an der rechten Seite ein Plus-Zeichen. Ähnlich dem Eingabefeld mit der Lupe werden Ihnen während des eintippens bereits Vorschläge aufgelistet. Sie können aber auch direkt auf das Plus klicken um aus einer Liste auszuwählen.
+Einige Eingabefelder haben an der rechten Seite ein Plus-Zeichen. Ähnlich dem Eingabefeld mit der Lupe werden Ihnen während des Eintippens bereits Vorschläge aufgelistet. Sie können aber auch direkt auf das Plus klicken um aus einer Liste den gewünschten Punkt auszuwählen.
 
-<!-- Bild Eingabefeld mit Plus -->
+<!-- Bild Eingabefeld mit Schnellauswahl -->
 
 ### Drop-Down-Menü
 
@@ -99,7 +99,11 @@ Folgende Tabelle erläutert die Listensymbole:
 |Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
 |---|---|---|
 |_Button Anzahl Zeilen_|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
-|_Bild Spaltenauswahl_|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern auf den Button "Übernehmen" klicken. </p>|
+|_Bild Spaltenauswahl_|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern, klicken Sie auf die Schaltfläche "Übernehmen". </br> Die Spaltenauswahl und -sortierung wird für die nächste Suche gespeichert. Unter [Persönliche Einstellungen](/Einstellungen/PersönlicheEinstellungen) können Sie diese Einstellung wieder löschen. </p>|
+---
+
+|Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
+|---|---|---|
 |_Bild Refreshintervall_|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
 ---
 

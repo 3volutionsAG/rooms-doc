@@ -8,9 +8,17 @@ description: >
 ---
 
 Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. 
-Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. Zum Teil gibt es weitere Funktionen um die Suchergebnisse zu bearbeiten, allerdings sind die Schaltflächen nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
 
-<!-- (Bild Startansicht Listen mit Markierung Sidepanel, Anzeigenbereich, Extrafunktionen) -->
+<!-- Bild Gesamtfenster mit Markierung Sidepanel und Anzeigenbereich -->
+
+Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Nach der Auswahl muss immer die Schaltfläche "Finden" betätigt werden um das Ergebnis entsprechend der Filterkriterien zu aktualisieren.
+Sie haben aber auch die Möglichkeit ausgewählte Filter zu löschen, indem Sie die Schaltfläche "Zurücksetzen" drücken. Daraufhin wird wieder die ungefilterte Liste angezeigt.
+
+<!-- Bild Sidepanel mit mariertem finden und zurücksetzen -->
+
+Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. Zum Teil gibt es weitere Funktionen um die Suchergebnisse zu bearbeiten, allerdings sind die Schaltflächen nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
+
+<!-- (Bild Startansicht Listen mit Markierung Extrafunktionen) -->
 
 *Anmerkung: In einigen Spalten sehen Sie statt Text ein Symbol. Informationen zur jeweiligen Kategorie erhalten Sie entweder durch das Plazieren des Mauszeigers auf dem Symbol (Tooltipp), dabei öffnet sich eine Art Sprechblase oder durch klicken, woraufhin Sie auf eine Detailansicht geleitet werden.* 
 
