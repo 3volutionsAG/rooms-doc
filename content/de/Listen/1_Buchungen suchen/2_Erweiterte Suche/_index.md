@@ -44,12 +44,8 @@ Buchungsspezifische Kriterien sind zum Beispiel die Buchungsnummer, der Titel od
  |Titel|Hier können Sie den Titel der Buchung eintragen|
  |Bemerkung|Suchen Sie anhand einer eingetragene Bemerkung.*|
  |Bemerkungen intern|Suchen Sie anhand einer eingefügten internen Bemerkung. <br/> *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
- |Status|*siehe nächsten Abschnnitt*|
+ |Status|Den Status könne Sie über die Schnellauswahl wäheln </br> *Erläuterungen siehe nächsten Abschnnitt*|
  ---
-
-
-Zum Eingabefeld Sataus:  
-Wenn Sie auf das Plus (+) neben dem Eingabefeld klicken, öffnet sich ein Fenster, in dem Sie den entsprechenden Status auswählen können, welcher der gesuchten Buchung zugewiesen wurde.
 
 <!-- Bild Statusauswahl -->
 
@@ -85,9 +81,7 @@ In diesem Bereich werden in erster Linie firmenspezifische Bezeichnungen und Kla
 
 Zur Veranschaulichung geben wir Ihnen folgendes Beispiel:
 
-Sie wollen eien Übersicht über alle Buchungen, die Sie für einen bestimmten Raum getätigt haben. Ihre firmenspezifischen Klassifizierungen zur Ressource Raum sind "Ressourcen ID/Bezeichnung", "Ressourcenstatus" und "VC*-Equipment".
-
-_*VC = Videokonferenz_  
+Sie wollen eien Übersicht über alle Buchungen, die Sie für einen bestimmten Raum getätigt haben. Ihre firmenspezifischen Klassifizierungen zur Ressource Raum sind "Ressourcen ID/Bezeichnung", "Ressourcenstatus" und "VC-Equipment".  
 
 <br/>
 
@@ -98,9 +92,8 @@ _*VC = Videokonferenz_
 |---|---|
 |Ressourcen ID/Bezeichnung|Hier können Sie direkt nach der Raum ID oder der Raumbezeichnung filtern|
 |Ressourcenstatus|- *Aktiv:* Es werden nur Buchungen in zugänglichen Räumen angezeigt <br/> - *Inaktiv:* Es werden nur Buchungen in nicht zugänglichen Räumen angezeigt|
-|VC*-Equipment|- *Alle Räume:* Es werden alle Räume berücksichtigt <br/> - *Raum ohne VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC integral:* Es werden nur Buchungen in Räumen mit integralem VC-Equipment berücksichtigt|
+|VC-Equipment|- *Alle Räume:* Es werden alle Räume berücksichtigt <br/> - *Raum ohne VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC:* Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> - *Raum mit VC integral: Es werden nur Buchungen in Räumen mit integralem VC-Equipment berücksichtigt|
 ---
-_*VC = Videokonferenz_
 
 ## Personenspezifische Kriterien
 
@@ -156,11 +149,6 @@ Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Emp�
 |Hauptbuchung|In der Standardansicht werden Haupt- und Nebenbucungen zusammen angezeigt. Hier können Sie filtern, ob Sie nur Buchungen aus einer Hauptbuchung oder aus einer Nebenbuchung listen wollen.|
 |VC*-Anlass|*Alle* <br/> *Nur Anlässe mit VC:** Zeigt nur Buchungen mit einem Anlass mit VC <br/> *Nur Anlässe ohne VC:* zeigt nur Buchungen mit einem Anlass ohne VC|
 ---
-
-<!-- Was ist der Unterschied zw. Haupt und Nebenbuchung? -->
-
-_*Sie können eine Schlagwortsuche durchführen, in dem Sie das Schalgwort zwischen zwei *  setzen._ </br>
-_**VC = Videokonferenz_
 
 ## Dienstleisterspezifische Kriterien
 

@@ -25,7 +25,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 <!-- Stiftsymbol und Plansymbol einfügen -->
 
-Über das [Spaltensymbol](/Generell/GrundlegendeFunktionen/#ListenansichtAnpassen/) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
+Über das [Spaltensymbol](/Generell/3_Grundlegende-Funktionen/##ListenansichtAnpassen/) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
 
 ---

@@ -5,9 +5,8 @@ weight: 30
 description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
-
 Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
-Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) erläutert.
+Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/3_GrundlegendeFunktionen/##Listenansicht-anpassen) erläutert.
 
 <!-- Bilder Anzeigenbereich -->
 
@@ -74,7 +73,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 <!-- Symbole in Tabelle einfügen (mobiel Ressourcen, Workflow Status, Annullieren, fixes Equipment-->
 
-Über das [Spaltensymbol](/generell/3-grundlegende-funktionen/) können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen. 
+Über das [Spaltensymbol](/Generell/3_grundlegendefunktionen/##Listenansicht-anpassen) können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen. 
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
 
 *Anmerkung: Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.*
