@@ -12,7 +12,10 @@ Suchfunktionen sind im Sidepanel plaziert. Das Prinzip der Suchfunktionen ist au
 Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschten Bereich. Nun erscheint im Sidepanel eine Auswahl an Subpanels mit zugehörigen Suchfunktionen.
 Über die Felder und Auswahlmöglichkeiten stellen Sie die gewünschten Filter ein, um Ihre Suche einzugrenzen. Die Bedeutung der Felder und Schaltflächen werden in den zugehörigen Kapiteln beschrieben, auf die Bedienung gehen wir hier näher ein.
 Das Ergebnis wird zum Teil als Listen, Kalender, Plan oder eine Art Steckbrief ausgegeben.
-Im Kapitel Listen finden Sie eine ausführliche Übersicht aller Spalten mit Beschreibung der jeweiligen Bedeutung.
+
+<!-- Bild Sidepanel -->
+
+Im Kapitel [Listen](/Listen/) finden Sie eine ausführliche Übersicht aller Spalten mit Beschreibung der jeweiligen Bedeutung.
 
 ### Favoriten Speichern
 Bei jedem Menüpunkt können Sie Ihre favorisierte Subpanels markieren. Dazu klicken Sie auf den Stern, rechten neben der Subpanel-Überschrift. Daraufhin färbt sich der Stern gelb. Wann immer Sie nun diesen Menüpunkt wählen, öffnet sich automatisch, das als Favorit markierte, Subpanel.
@@ -65,6 +68,8 @@ In den Suchotionen tauchen verschiedene Eingabefelder auf.
 #### Freie Texteingabe
 Es gibt einige Felder, z.B. Buchungstitel, in der eine völlig freie Texteingabe möglich ist. 
 Falls Sie den genauen Wortlaut, z.B. des gesuchten Bcuhungstitels, nicht mehr erinnern, können Sie eine Schalgwortsuche druchführen, in dem Sie ein Wort oder Teilwort zwischen zwei * setzen.
+
+<!-- Bild freie texteingabe -->
 
 #### Eingabefeld mit Lupensymbol
 

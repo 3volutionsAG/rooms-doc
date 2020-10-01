@@ -6,9 +6,12 @@ description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
 Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden.
+
 Mit Hilfe der Listensymbole, rechts unten im Anzeigenbereich, können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Generell](/Generell/3_GrundlegendeFunktionen/_index.md/) erläutert.
 
-<!-- Bilder Anzeigenbereich -->
+<!-- Bilder Anzeigenbereich mit Markierung Listensymbole und Schaltflächen-->
+
+Die Schaltflächen, die am unteren Rand des Anzeigenbereichs angegliedert sind werden im nächsten Kapitel [Weitere Funktionen](/Listen/1_Buchungen-suchen/4_Weitere-Funktionen/) beschrieben.
 
 Standardmäßig sind folgende Spalten sichtbar:
 
@@ -309,8 +312,4 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 ---
 <!-- Bild Tooltipp Vrtuelle Räume -->
 
-
-
 <!-- Symbole einfügen  -->
-
-<!-- Schaltflächen von unten beschreiben -->

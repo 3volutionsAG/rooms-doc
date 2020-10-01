@@ -16,7 +16,11 @@ description: >
 |Administrator:in|Person, die alle Rechte in ROOMS hat und diese auch vergeben kann.|
 |aktiv (Person)|Eine Person, die in ROOMS regisistriert ist und deren Zugang aktiviert ist.|
 |aktiv (Ressource)|Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus.|
+|Angebot||
+|Angebotskategorie||
+|Angebotszone||
 |Anlass|Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </br> _Z.B. Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_| 
+|Annullieren|Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden.|
 |Anzeigenbereich|Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden.|
 ---
 
@@ -25,7 +29,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Buchungsanfrage|| 
+|Buchungsanfrage|unverbindliche Buchungsanfrage von externen Interessenten. Diese müssen nach dem entsprechenden Workflow bestätigt werden.| 
 ---
 
 ## C
@@ -64,6 +68,7 @@ description: >
 |---|---|
 |fixes Equipment|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
 |Folgebuchung|Als Folgebuchung wird eine Buchung für die selbe Ressource bezeichnet, die nach der gerade betrachteten Buchung beginnt.| 
+|Freigeben|Eine laufende Buchung kann freigegeben werden, z. B. wenn eine Besprechung früher endet. Die Nachlaufzeit wird dann ebenfalls freigegeben und die Buchungsdauer minutengenau hinterlegt.|
 ---
 
 ## G
@@ -177,6 +182,7 @@ description: >
 |Status|Der Status gibt an an welcher Stelle der Bearbeitungsvorgänge eine Buchung gerade steht, z.B. ob die Buchung noch genehmigt werden muss.| 
 |Subpanel|Das Subpanel ist ein Untermenü im Sidepanel, welches sich öffnet, wenn man auf die Überschrift klickt.|
 |Standort|Über ROOMS können mehrere Standorte ortsunabhängig verwaltet werden. Standort kann also das Land, die Stadt oder auch der Name einer Filiale sein.|
+|Standort (hierachisch)|Eine hierachische Darstellung wird verwendet, wenn es in einer Stadt oder einem Land mehrere Standorte gibt. </br> _Z.B. /Europa/CH/Bern/Filiale West_.
 ---
 
 ## T
@@ -184,6 +190,7 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
+|Terminieren|Eine laufende Buchung kann vorzeitig beendet werden, wenn z.B. eine Besprechung früher endet. Die Nachlaufzeit bleibt jedoch bestehen. Die Buchungsdauer wird minutengenau gespeichert.|
 |Tooltipp|Ein Tooltipp ist eine kleine Informationsblase, die erscheint, wenn man mit dem Mauszeiger über ein Symbol fährt.| 
 ---
 
