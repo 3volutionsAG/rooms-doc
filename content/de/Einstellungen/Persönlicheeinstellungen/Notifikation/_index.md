@@ -1,6 +1,7 @@
 ---
 title: "Notifikation"
 linkTitle: "Notifikation"
+weight: 4
 description: >
   Geben Sie die E-Mail Notifikation für die verschiedenen Ressourcentypen wie Räume, Arbeitsplätze, Equipment und Parkplätze an. Dabei unterscheiden Sie zwischen Buchungsnotifikation und Reminder. Wenn die Notifikation aktiviert ist, wird beim Abschluss einer Reservation eine Bestätigungsmail versendet. 
 

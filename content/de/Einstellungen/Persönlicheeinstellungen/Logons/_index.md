@@ -1,6 +1,7 @@
 ---
 title: "Logons"
 linkTitle: "Logons"
+weight: 7
 description: >
   Unter dem Tab Logons stellen Sie, sofern Sie über genügend Berechtigungen verfügen ein, wie das Login ins ROOMS erfolgen soll. 
 

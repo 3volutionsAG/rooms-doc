@@ -3,7 +3,7 @@ title: "Massenbearbeitung"
 linkTitle: "Massenbearbeitung"
 weight: 3
 description: >
-  Mit der Funktion "Massenbearbeitung" bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung, verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs „Plan“, „Kalender“ und „Listen“ durchführen.
+  Mit der Funktion "Massenbearbeitung" bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung, verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs „[Plan](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-plan)“, „[Kalender](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-kalender)“ und „[Listen](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-listen) “ durchführen.
   
   Bemerkung: Um diese Funktion nutzen zu können sind entsprechende Berechtigungen notwendig. 
  
