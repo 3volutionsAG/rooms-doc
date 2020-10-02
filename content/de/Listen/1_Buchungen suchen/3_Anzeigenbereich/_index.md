@@ -1,7 +1,7 @@
 ---
 title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
-weight: 30
+weight: 100
 description: >
   Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. 
 ---
@@ -20,11 +20,34 @@ Standardmäßig sind folgende Spalten sichtbar:
 |---|---|---|
 |Von||Start - Datum und Uhrzeit - der Buchung|
 |Bis||Ende - Datum und Uhrzeit - der Buchung|
-|Organisator:in|||
+|Organisator:in||Person, welche die Bcuhung organisiert|
+||_Stiftsymbol|Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen.|
+---
+
+<!-- Bild Eingabemaske Buchung -->
+
+Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchen/Buchung-erstellen)
+
+<!-- Verlinkung anpassen -->
+
+---
+|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|---|---|---|
 |Firma </br> Bezeichnung Organisator||Firma der organisierenden Person|
 |Buchungs Titel||Mit einem Klick auf den Buchungs Titel öffnen Sie die Detailansicht.|
+---
+
+<!-- Bild Detailansicht Buchung -->
+
+Weitere Informationen zur Detailsansicht und Bearbeitungsmöglichkeiten finden Sie im Unterkapitel [Detailsansicht Buchungen](/Listen/1_Buchungen-suchen/Detailansicht-Buchungen/)
+
+<!-- Verlinkung überprüfen -->
+
+---
+|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|---|---|---|
 |Ressourcen Bezeichnung||*z.B. Name des Raumes, Druckerbezeichnung*|
-|Anzahl Personen||Anzahl der teilnehmenden Personen|
+|Anzahl Personen||Anzahl der angemeldeten Personen|
 |Mobiles Equipment||zugebuchtes Equipment, welches der Ressource nicht permanent zugeordnet ist </br> *z.B. ein mobiler Beamer für einen Besprechnungsraum* |
 ---
 <!-- Bild Tooltipp Mobiles Equipment  -->

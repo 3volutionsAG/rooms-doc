@@ -19,7 +19,7 @@ Ergänzend können Sie im Feld Bemerkungen Notizen zum Anlass hinterlegen.
 
 Mit dem Klicken auf "Erstellen" werden Sie auf die Detailseite des Anlasses weitergeleitet. Dort können Sie diesen weiter bearbeiten oder auch weitere Buchungen zuordnen.
 
-<!-- Bild Detailseite Anlasserstellen/Bearbeiten -->
+<!-- Bild Detailseite Anlass erstellen/Bearbeiten -->
 
 Eine genaue Beschreibung hierzu finden Sie im Kapitel [Anlass erstellen](/Buchen/Anlass-erstellen).
 
@@ -30,7 +30,7 @@ Eine genaue Beschreibung hierzu finden Sie im Kapitel [Anlass erstellen](/Buchen
 
 <!-- Bild Detailbuchung -->
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchne/Buchung-erstellen)
+Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchen/Buchung-erstellen)
 
 <!-- Verlinkung anpassen -->
 

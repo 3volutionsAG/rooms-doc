@@ -1,7 +1,7 @@
 ---
 title: "Gäste hinzufügen"
 linkTitle: "Gäste hinzufügen"
-weight: 30
+weight: 100
 description: >
   Unabhängig von einer Buchung können in ROOMS Gäste registriert werden. In diesem Abschnitt erfahren Sie, wie Sie Gäste im System aufnehmen können.
 ---

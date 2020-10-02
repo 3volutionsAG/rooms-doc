@@ -73,4 +73,4 @@ Am unteren Rand des Anzeigenbereichs befindet sich noch folgende Schaltfläche:
 
 <!-- Bild Eingabemaske Teilnehmer hinzufügen -->
 
-Weitere Details zur Erfassung weiterer Teilnehmender finden Sie im Kapitel [Gäste hinzufügen](/Listen/7_Teilnehmer-suchen/4_Gäste-hinzufügen/)
+Weitere Details zur Erfassung weiterer Teilnehmender finden Sie im Kapitel [Gäste hinzufügen](/Listen/7_Teilnehmer-suchen//3_Anzeigenbereich/1_Gäste-hinzufügen/)
