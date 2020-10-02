@@ -7,27 +7,44 @@ description: >
   Die wichtigste Suchanfrage wird wohl die Buchungssuche sein. Eine erstellte Buchung sollte einfach wiedergefunden werden können um Änderungen vornehmen zu können oder sie zu aktualisieren.
 ---
 
-Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. Unter der Auflistung oder auch in den Ergebniszeilen gibt es weitere Funktionen um die Suchergebnisse zu bearbeiten. Die Beschreibung der Funktionen finden Sie im jeweiligen Unterkapitel.
+## Aufbau
+Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. 
 
-[//]: <> (Bild Startansicht Listen mit Markierung Sidepanel, Anzeigenbereich, Extrafunktionen)
+<!-- Bild Gesamtfenster mit Markierung Sidepanel und Anzeigenbereich -->
 
+## Sidepanel
+Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Nach der Auswahl muss immer die Schaltfläche "Finden" betätigt werden um das Ergebnis entsprechend der Filterkriterien zu aktualisieren.
+Sie haben aber auch die Möglichkeit ausgewählte Filter zu löschen, indem Sie die Schaltfläche "Zurücksetzen" drücken. Daraufhin wird wieder die ungefilterte Liste angezeigt.
 
-## Gespeicherte Listen
+<!-- Bild Sidepanel mit markiertem finden und zurücksetzen -->
 
-Diese Funktion ist in jeder Kategorie vertreten und wird hier einmal zentral erläutert.
+## Anzeigenbereich
+Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. 
 
-Es kann vorkommen, dass Sie eine bestimmte Suche regelmäßig durchführen werdem. Für diesen Fall gibt es die Möglichkeit die Suchkriterien zu speichern. 
-Dazu klicken Sie nach der Einstellung der Suchkriterien auf das Diskettensymbol neben der Zeile "Gespeicherte Listen". Sie werden nun aufgefordert der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie außerdem die Möglichkeit die Suche als Favorit zu markieren. So wird bei jedem Laden der entsprechenden Kategorie direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.
+In den meisten Listen gibt es eine Schaltfläche mit dem Symbol eines Bleistiftes. Über diese Schaltfläche werden Sie auf die Eingabemaske der Buchung weitergeleitet, wo Sie die Buchung bearbeiten können.
 
-[//]: <> (Bild Suchanfrage speichern)
-[//]: <> (Bild geladene Suchmaske)
+<!-- Bild Eingabemaske Buchung -->
 
-Wollen Sie die gleiche Suche zu einem späteren Zeitpunkt nochmals ausführen, so wählen Sie die entsprechend benannte Suche aus dem Ausklappmenü "Gespeicherte Listen" aus.
+Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchen/Buchung-erstellen)
 
-[//]: <> (Bild gespeicherte Liste auswählen)
+<!-- Verlinkung anpassen -->
 
-Benötigen Sie einer der gespeicherten Suchanfragen nicht mehr, so können Sie diese unter den persönlichen Einstellungen entfernen (siehe auch Kapitel Persönliche Einstellungen)
+Zum Teil gibt es weitere mögliche durchführbare Aktionen bezüglich eines Eintrages, allerdings sind die entsprechenden Schaltflächen nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
 
-[//]: <> (Link zu Persönliche Einstellungen/Eigene Listen)
+<!-- (Bild Startansicht Listen mit Markierung Extrafunktionen) -->
 
-[//]: <> (Bild gespeicherte Listen entfernen)
+## Einträge
+In einigen Spalten sehen Sie statt Text ein Symbol. Dieses Smybol kann zum einen ein Tooltipp sein. In diesem Fall erhalten Sie weitere Informationen durch das Plazieren des Mauszeigers auf dem Symbol. Dabei öffnet sich eine Art Sprechblase. 
+
+<!-- Bild Tooltipp -->
+
+Manche Symbole können auch als Schaltfläche fungieren. Durch einen Klick auf diese Schaltfläche werden Sie zu einer Aktion aufgefordert oder auf eine andere Seite weitergeleitet.
+
+<!-- Bild Schaltfläche mit Call to Action -->
+
+Im Details sind diese Informationen in den zugehörigen Unterkapiteln beschrieben. 
+
+Manche Einträge in einer Liste sind blau gefärbt. Durch klicken auf diesen Eintrag gelangen Sie zur entsprechenden Detailansicht des Eintrags.
+
+<!-- Bild blauer EIntrag -->
+<!-- Bild Detailseite -->
