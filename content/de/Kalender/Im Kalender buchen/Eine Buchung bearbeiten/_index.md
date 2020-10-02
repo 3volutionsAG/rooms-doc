@@ -5,68 +5,67 @@ linkTitle: "Eine Buchung im Kalender bearbeiten"
 weight: 2
 date: 2020-06-30
 description: >
-  Im Kalender können Sie eine bereits bestehende Buchung bearbeiten z.B. die Buchungslänge oder eine Buchung verschieben. 
+  Im Kalender können Sie eine bereits bestehende Buchung bearbeiten so, wie z.B. die Buchungslänge oder eine Buchung verschieben. 
 ---
-5.2.3.2	Bearbeiten einer Reservation
-Um eine Buchung zu bearbeiten, muss auf das „+“ in der Reservation im Kalender geklickt werden. Darauf erscheint ein kleines Fenster, in welchem verschiedene Funktionen zur Verfügung stehen.
+## Bearbeiten einer Buchung
+Um eine Buchung zu bearbeiten, wählen Sie das „+“ in der Reservation im Kalender aus. Dafür fahren Sie mit der Maus auf die Buchung und es erscheinen ein "+" und eine Checkbox. 
 
+Klicken Sie auf das Plus Zeichen erscheint ein Fenster mit mehreren Funktionen:
+* Detail Informationen ansehen: Zusammenfassung der Detailreservation
+* Buchung bearbeiten: Detailbuchung bearbeiten
+* Annulieren: Buchung wird annuliert aber bleibt für Sie als Benutzer:in unsuchtbar bestehen
+* Löschen: Buchung wird aus dem System gelöscht  
+* No Show (verbergen): Wird eine Ressource nicht genutzt ohne annulliert zu werden, können Sie die Buchung mit entsprechendem Button als „No-Show“ kennzeichnen. Das Verhalten ist analog der Annullation, die annullierte Buchung wird aber als „No-show“ gekennzeichnet und kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung zur Nutzung ist das Recht „Darf Reservationen als No-Show kennzeichnen“.
+* Kopieren der Buchung 
+
+{{< imgproc Kalender_Buchung_Plus Resize "1280x" >}}
+Abbildung kp: Buchung im Kalender auswählen und bearbeiten über das "+" Zeichen
+{{< /imgproc >}}
  
-Abbildung 42: Reservation im Kalender bearbeiten
-
-Mittels eines Klicks auf den Button „Detail“ wird die Zusammenfassung der Detailreservation (diese wird in Kapitel 6.5 detailliert beschrieben) geöffnet. Will der Benutzer direkt auf die Detailreservation zum Editieren gelangen, klickt er auf den Button „Bearbeiten“. Der Button „Annullieren“ annulliert die angeklickte Reservation, wobei diese für die Benutzer unsichtbar bestehen bleibt. Bei diesem Vorgang wird der Benutzer auf mögliche anfallende Kosten aufmerksam gemacht.
-
-Anders als beim Annullieren wird mit einem Klick auf den Button „Löschen“ der Eintrag, also die Reservation, gelöscht und damit komplett aus dem System entfernt.
-
-Wurde beim Abschluss der Reservation die Checkbox „mit Outlook synchronisieren“ nicht selektiert, kann im Popup via Button „Synchronisieren“ diese nachträglich ausgelöst werden.
-
-Wird eine Ressource nicht genutzt ohne annulliert zu werden, kann die Reservation mit entsprechendem Button als „No-Show“ gekennzeichnet werden. Das Verhalten ist analog der Annullation, die annullierte Buchung wird aber als „No-show“ gekennzeichnet und kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung zur Nutzung ist das Recht „Darf Reservationen als No-Show kennzeichnen“.
-
 
 Hinweis: 
 Bei einer laufenden Reservation stehen zusätzlich der „Terminieren“ Button und „Freigeben“ zur Verfügung, sofern die erforderlichen Funktionsrechte vorhanden sind. Diese terminieren laufende Reservationen. Terminieren unter Berücksichtigung der Nachlaufzeit und Freigabe per sofort (auch Nachlaufzeit wird terminiert).
 
-In Kapitel 6.6 Massenbearbeitung werden mit der Massenmutation, der Massenannullation, der Massenfreigabe und der Massenterminierung, verschiedene Arten der Massenbearbeitung erklärt.
+### Bearbeiten einer Buchung mittels Checkbox
+Sie können ebenfalls eine Buchung bearbeiten, indem Sie die Checkbox auf der Buchung auswählen. In der unteren Leiste stehen Ihnen dann die Funktionen zur Verfügung: 
 
+* Bearbeiten: Sie gelangen zur Detailbuchung 
+* Freigeben: Steht bei einer Massenbearbeitung zur Verfügung
+* Terminieren: Das Terminieren einer Buchung steht Ihnen bei einer Massenbuchung zur Verfügung
+* Annulieren: Annulieren der Buchung
+* Aktualisieren: Buchung aktualisieren
 
-5.2.3.3	Reservationslänge ändern
-Falls die Zeitspanne einer Reservation verändert werden soll, kann dies einfach mit dem Kalender durchgeführt werden. Dazu muss mit der Maus an den Anfang oder ans Ende einer Reservation gefahren werden, danach kann die Reservationszeit einfach mittels Ziehen der Maus verändert werden.
-
+{{< imgproc Kalender_Buchung_auswählen Resize "1280x" >}}
+Abbildung km: Buchung zum Bearbeiten über die Checkbox auswählen
+{{< /imgproc >}}
  
-Abbildung 43: Verändern der Reservationszeit auf dem Kalender
+
+### Buchungslänge ändern 
+Möchten Sie die Zeitspanne einer Buchung ändern, können Sie dies ganz einfach im Kalender machen. Dazu fahren Sie mit der Maus an den Anfang oder ans Ende einer Buchung, danach kann die Buchungszeit einfach mittels Ziehen der Maus verändert werden.
+
+{{< imgproc Kalender_Buchung_Länge_ändern Resize "1280x" >}}
+Abbildung kq: Länge einer Buchung im Kalender ändern
+{{< /imgproc >}}
 
 Es werden keine weiteren Klicks benötigt, die neue Reservationszeit wird sofort abgespeichert.
 
 
-5.2.3.4	Verschieben einer Reservation
-Auf dem Kalender können auch bestehende Reservationen verschoben werden. Die Reservationen können sowohl auf andere Zeitpunkte als auch auf andere Ressourcen verschoben werden. Dabei ist zu beachten, dass Reservationen einer Ressourcenart nur auf eine Ressource mit derselben Ressourcenart verschoben werden können. Eine solche Verschiebung funktioniert sehr einfach per Drag & Drop. 
-
+### Buchung verschieben
+Auf dem Kalender können Sie auch bestehende Buchungen verschieben. Verschieben Sie die Buchungen sowohl auf andere Zeitpunkte als auch auf andere Ressourcen. 
+Dabei sollten Sie beachten, dass die Buchungen einer Ressourcenart nur auf eine Ressource mit derselben Ressourcenart verschoben werden können. Eine solche Verschiebung funktioniert sehr einfach per Drag & Drop. 
  
-Abbildung 44: Verschieben einer Reservation mittels Drag & Drop.
+{{< imgproc Kalender_Buchung_verschieben Resize "1280x" >}}
+Abbildung ky: Eine bestehende Buchung im Kalender verschieben
+{{< /imgproc >}}
 
+## Massenbearbeitung einer Buchung im Kalender
+Wählen Sie mehrere Buchungen mittels der Checkbox aus, steht Ihnen die Funktion der Massenbearbeitung zur Verfügung. 
+Sie können dann mehrere Buchungen gleichzeitig bearbeiten, Freigeben, Verschieben oder Annulieren.
 
-5.2.4	Slot Reservationen
-Auf einer dafür eingerichteten Ressource (siehe Knowledge Base) können fix definierte Zeiträume sog. Slots erstellt, publiziert und gebucht werden.
+{{< imgproc Kalender_Massenbearbeitung Resize "1280x" >}}
+Abbildung kn: Mehrere Buchungen im Kalender bearbeiten (Massenbearbeitung)
+{{< /imgproc >}}
 
-
-5.2.5	Slot buchen
-Der Buchungsprozess ähnelt dem der „normalen“ Ressourcenbuchung stark. Abweichungen werden in diesem Kapitel dokumentiert.
-
-Stehen ein oder mehrere Slots, wie in Abbildung 45 ersichtlich, zur Auswahl, wird der gewünschte Slot ausgewählt und via Action Popup eine Schnell- oder Detailreservation ausgeführt.
-
- 
-Abbildung 45: Kalenderansicht - Slot buchen
-
-Bei der Buchung können Zeit und Datum nicht mehr verändert werden. Alle anderen Felder sind abhängig von den jeweiligen Berechtigungen editierbar.
-
- 
-Abbildung 46: Kalenderansicht - Slot buchen via Detailreservation
-
-Nach Reservationsabschluss ist nur noch der reservierte Slot als „gebucht“ ersichtlich, alle zeitgleichen Slots werden ausgeblendet bzw. stehen nicht mehr zur Buchung zur Verfügung. 
-
-Wird die Reservation auf dem Slot gelöscht (erfordert spezielle Rechte) oder annulliert, werden wiederum alle verfügbaren Slots angezeigt und können gebucht werden.
-
-
-
-
-
+Eine genaue Beschreibung der Massenbearbeitung finden Sie hier: 
+[Massenbearbeitung](/buchen/massenbearbeitung/)
 

@@ -27,4 +27,4 @@ Abbildung p: Plansuche im Sidepanel mittels Planfilter
 {{< /imgproc >}}
 
 Im Kapitel Plan erfahren Sie, wie Sie eine Ressource im Plan buchen:
-[Siehe auch das Kapitel Plan](http://localhost:1313/plan/)
+[Siehe auch das Kapitel Plan](/plan/#plansuche)

@@ -1,6 +1,7 @@
 ---
 title: "Eigene Listen"
 linkTitle: "Eigene Listen"
+weight: 5
 description: >
   In der Kategorie "Eigene Listen" verwalten Sie persönliche, öffentliche und geteilte Listen. 
 
@@ -58,7 +59,4 @@ Sie exportieren Listen, indem Sie den vierten Button unten rechts betätigen (ve
 
 {{< imgproc Listen_Button_Export Resize "1280x" >}}
 Abbildung e: Listen exportieren
-{{< /imgproc >}}
-{{< imgproc Listen_Button_Export1 Resize "1280x" >}}
-Abbildung f: Download von exportierter Liste startet
 {{< /imgproc >}}
