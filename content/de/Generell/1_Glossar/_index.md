@@ -4,7 +4,7 @@ linkTitle: "Glossar"
 weight: 10
 
 description: >
-   Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie deren Bedeutung.
+   <p style="text-align: justify"> Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie deren Bedeutung. </p>
 ---
 
 ## A
@@ -12,16 +12,16 @@ description: >
 ---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Actionpanel|Das Actionpanel ist eine Art Sprechblase, die oben rechts im Fenster auftaucht um unterschiedliche Informationen mitzuteilen. </br> _Vorgänge bestätigen, Fehlermeldungen anzeigen, Download-Link für eine Export-Datei bereitstellen_|
+|Actionpanel|<p style="text-align: justify"> Das Actionpanel ist eine Art Sprechblase, die oben rechts im Fenster auftaucht um unterschiedliche Informationen mitzuteilen. </p>|
 |Administrator:in|Person, die alle Rechte in ROOMS hat und diese auch vergeben kann.|
 |aktiv (Person)|Eine Person, die in ROOMS regisistriert ist und deren Zugang aktiviert ist.|
-|aktiv (Ressource)|Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus.|
+|aktiv (Ressource)|<p style="text-align: justify"> Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus. </p>|
 |Angebot||
 |Angebotskategorie||
 |Angebotszone||
-|Anlass|Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </br> _Z.B. Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_| 
-|Annullieren|Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden.|
-|Anzeigenbereich|Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden.|
+|Anlass|<p style="text-align: justify"> Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </p > <p style="text-align: justify"> _Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_ </p>| 
+|Annullieren|<p style="text-align: justify"> Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden. </p>|
+|Anzeigenbereich|<p style="text-align: justify"> Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden. </p>|
 ---
 
 ## B
