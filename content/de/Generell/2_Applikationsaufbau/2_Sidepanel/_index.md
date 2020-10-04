@@ -54,6 +54,6 @@ rot umrandet das Sidepanel im Bereich Listen
 <p style="text-align: justify"> Unter <a href="/einstellungen/"> Einstellungen </a> können Sie ROOMS individuell und firmenspezifisch konfigurieren. Dazu gehört nicht nur das Anlegen der Mitarbeitenden und ihren Berechtigungen. Ebenso werden hier kooperierende Dienstleister und deren Angebote eingepflegt und sämtliche Details zu Ressourcen oder Equipment hinterlegt.
 Dieser Bereich wird vorrangig von den administrativen Verantwortlichen der Applikation genutzt. </p>
 
-{{< imgproc Startseite_Einstellungen_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Einstellungen 
-{{< /imgproc >}}
+<!-- {{< imgproc Startseite_Einstellungen_Sidepanel Resize "1280x" >}} -->
+<!-- Rotumrandet das Sidepanel im Bereich Einstellungen  -->
+<!-- {{< /imgproc >}} -->
