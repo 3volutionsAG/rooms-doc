@@ -12,7 +12,7 @@ description: >
 <p style="text-align: justify"> Der Home-Button ist für alle sichtbar. Entsprechend Ihren Berechtigungen werden Ihnen weitere Reiter in der Menüleiste angezeigt. </p>
 
 {{< imgproc Kopfbereich_Beschriftet Resize "1280x" >}}
-Abbildung xy: Kopfbereich 
+Kopfbereich 
 {{< /imgproc >}}
 
 Tabelle 1 gibt einen Überblick über die Menüpunkte.
@@ -36,13 +36,13 @@ Tabelle 1 gibt einen Überblick über die Menüpunkte.
 <p style="text-align: justify"> Ebenfalls oben rechts, über Ihrem Namen, finden Sie eine Schnellübersicht laufender Buchungen, welche Sie erstellt oder organisiert haben. In der Standardansicht wird die laufende Buchung mit der frühesten Startzeit angezeigt. </p>
 
 {{< imgproc Kopfbereich_laufendeBuchung Resize "1280x" >}}
-Abbildung xy: Anzeige laufende Buchung im Kopfbereich 
+Anzeige laufende Buchung im Kopfbereich 
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller Ihrer laufenden Buchungen öffnen. </p>
 
 {{< imgproc Kopfbereich_allelaufendenBuchungen Resize "1280x" >}}
-Abbildung xy: Anzeige aller laufende Buchung im Kopfbereich 
+Anzeige aller laufende Buchung im Kopfbereich 
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Diese Darstellung stellt Ihnen vier grundlegende Funktionen zur Verfügung.  </p>

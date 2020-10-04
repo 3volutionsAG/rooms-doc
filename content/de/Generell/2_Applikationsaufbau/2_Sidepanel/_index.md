@@ -18,15 +18,13 @@ Unter Ressourcen können Sie freie <a href="/buchen/freie-ressourcen-suchen/">Re
 Unter den Subpanels "Anlass" und "Buchungsanfrage" haben Sie die Möglichkeit dieselbigen zu erstellen. </p>
 
 {{< imgproc Startseite_Buchen_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Buchen 
-{{< /imgproc >}}
+Rotumrandet das Sidepanel im Bereich Buchen {{< /imgproc >}}
 
 ## Plan
 <p style="text-align: justify"> Im Menüpunkt <a href="/plan/">Plan</a>, können Sie freie Ressourcen auf der Grundlage, z.B. eines Raumplanes, <a href="/plan/plansuche/">suchen </a>. So finden Sie, z.B. einen Raum, im Grundriss des Gebäudes oder können sich den Standort einer Filiale auf einer Landkarte ansehen und <a href="/plan/buchen-auf-demplan/">buchen</a>. Ebenso ist eine <a href="/plan/massenbuchung-auf-dem-plan/">Massenbuchung </a> auf dem Plan möglich. </p>
 
 {{< imgproc Startseite_Plan_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Plan 
-{{< /imgproc >}}
+rot umrandet das Sidepanel im Bereich Plan {{< /imgproc >}}
 
 ## Kalender
 <p style="text-align: justify"> Alle vorgenommen Buchungen können Sie sich in der <a href="/kalender/kalenderansicht/">Kalenderansicht </a> ansehen. Jeder Buchungseintrag ist, in der zugewiesenen Farbe der erstellenden Person, eingefärbt.  
@@ -34,8 +32,7 @@ Der Kalender startet standmäßig mit dem aktuellen Tag in der Wochenansicht. Di
 Über die Filter im Sidepanel ist es unter anderem möglich gebuchtes Equipment unabhängig vom Raum zu <a href="/kalender/im-kalender-suchen/"> suchen </a>. </p>
 
 {{< imgproc Startseite_Kalender_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Kalender 
-{{< /imgproc >}}
+Rotumrandet das Sidepanel im Bereich Kalender {{< /imgproc >}}
 
 <p style="text-align: justify"> Desweiteren können Sie über die Kalenderansicht auch <a href="/kalender/im-kalender-buchen/"> Buchungen </a> vornehmen. Klicken Sie am gewünschten Tag und Uhrzeit in der Zeile der gewünschtenn Ressource auf den Kalender. Dadurch öffnet sich ein Dialogfeld um eine <a href="/buchen/buchung-erstellen/schnellbuchung/"> Schnellbuchung </a> durchzuführen. Am unteren Rand befindet sich auch eine Schaltfläche, über die Sie zur <a href="/buchen/buchung-erstellen/deatilbuchung/"> Detailbuchung </a> wechseln können.
 Weitere Informationen entnehmen Sie bitte dem Kapitel <a href="/kalender/im-kalender-buchen/"> Im Kalender buchen </a>. </p>
@@ -47,8 +44,7 @@ Die Suchergebnisse werden immer in Listenform ausgegeben und Informationen in Sp
 Wie Sie die Darstellung der Listen ihren Wünschen entsprechend anpassen können, erfahren Sie im Kapitel Generell unter <a href="/generell/3_grundlegendefunktionen/#listenansicht-anpassen"> Grundlegende Funktionen </a>. </p>
 
 {{< imgproc Startseite_Listen_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Listen 
-{{< /imgproc >}}
+Rotumrandet das Sidepanel im Bereich Listen {{< /imgproc >}}
 
 ## Einstellungen
 <p style="text-align: justify"> Unter <a href="/einstellungen/"> Einstellungen </a> können Sie ROOMS individuell und firmenspezifisch konfigurieren. Dazu gehört nicht nur das Anlegen der Mitarbeitenden und ihren Berechtigungen. Ebenso werden hier kooperierende Dienstleister und deren Angebote eingepflegt und sämtliche Details zu Ressourcen oder Equipment hinterlegt.
