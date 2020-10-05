@@ -11,11 +11,13 @@ Wir bedienen uns nochmals dem Beispiel aus dem Kapitel Ressourcenspezifische Kri
 
 <p style="text-align: justify">Sie wollen eine Auflistung aller Buchungen zusammenstellen, die in einem bestimmten Raumtyp, z. B. ein Sitzungssaal, stattfinden. Oder Sie wollen alle Buchungen heraussuchen, in dem 2 Beamern verwendet werden. </p>
 
-<!-- Bild Suchkriterien Buchungen Gliederung am Beispiel Raum -->
+{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_beschriftet Resize "1280x" >}}
+Übersicht Filterkriterien bezgl. Gliederungen
+{{< /imgproc >}}
 
 ---
 |<div style="width:200px">Feld</div>||Funktion|
 |---|---|---|
-|Raumtyp||<p style="text-align: justify"> Durch klicken auf das Plus (+) öffnet sich die Auswahl der verschiedenen Raumtypen. Wählen Sie hier den Raumtyp, z.B. Sitzungssaal um alle Buchungen, die im Sitzungssaal stattfinden angezeigt zu bekommen. </p>|
-|Raum: Equipmenttyp||<p style="text-align: justify"> Durch klicken auf das Plus (+) öffnet sich die Auswahl des vorhanden Equipments. Wählen Sie z.B. die Anzahl der Beamer um alle Bucungen angezeigt zu bekommen, in denen 2 Beamer verwendet werden. </p>|
+|Raumtyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_Raumtyp Resize "1280x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Raumtypen aus (z.B. ein Sitzungssaal), um alle Buchungen, die in diesem Raumtyp stattfinden, anzeigen zu lassen. </p>|
+|Raum: Equipmenttyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_RaumEquiptyp Resize "1280x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Equipmentyp (z.B. die Anzahl der Beamer), um alle Buchungen anzeigen zu lassen, in welchen 2 Beamer verwendet werden. </p>|
 ---

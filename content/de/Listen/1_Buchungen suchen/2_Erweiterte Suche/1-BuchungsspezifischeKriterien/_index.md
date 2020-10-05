@@ -12,13 +12,13 @@ Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
 {{< /imgproc >}}
 
  ---
- |<div style="width:200px">Feld</div>||Funktion|
+ |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
  |---|---|---|
- |Nummer|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Nr Resize "400x" >}}{{< /imgproc >}}|Hier können Sie die individuelle Buchungsnummer eintragen.|
- |Titel|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Titel Resize "400x" >}}{{< /imgproc >}}|Hier können Sie den Titel der Buchung eintragen|
- |Kommentar|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Kom Resize "400x" >}}{{< /imgproc >}}|Suchen Sie anhand einer eingetragene Bemerkung.*|
- |Bemerkungen intern|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_BemIntern Resize "400x" >}}{{< /imgproc >}}|Suchen Sie anhand einer eingefügten internen Bemerkung. <br/> *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
- |Status|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Status Resize "400x" >}}{{< /imgproc >}}|Den Status könne Sie über die Schnellauswahl wäheln.|
+ |Nummer|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Nr Resize "200x" >}}{{< /imgproc >}}|Hier können Sie die individuelle Buchungsnummer eintragen.|
+ |Titel|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Titel Resize "200x" >}}{{< /imgproc >}}|Hier können Sie den Titel der Buchung eintragen|
+ |Kommentar|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Kom Resize "200x" >}}{{< /imgproc >}}|Suchen Sie anhand einer eingetragene Bemerkung.*|
+ |Bemerkungen intern|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_BemIntern Resize "200x" >}}{{< /imgproc >}}|Suchen Sie anhand einer eingefügten internen Bemerkung. <br/> *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
+ |Status|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Status Resize "200x" >}}{{< /imgproc >}}|Den Status könne Sie über die Schnellauswahl wäheln.|
  ---
 
 </br>
