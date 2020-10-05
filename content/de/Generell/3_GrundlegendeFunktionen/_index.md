@@ -12,8 +12,8 @@ Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschte
 Über die Felder und Auswahlmöglichkeiten stellen Sie die gewünschten Filter ein, um Ihre Suche einzugrenzen. Die Bedeutung der Felder und Schaltflächen werden in den zugehörigen Kapiteln beschrieben, die Bedienung wird in den folgenden Abschnitte kurz erläutert.
 Das Ergebnis wird zum Teil als Listen als Kalender, Plan oder einer Detailansicht ausgegeben. </p>
 
-{{< imgproc Startseite_Einstellungen_Sidepanel Resize "1280x" >}}
-rot umrandet ein Sidepanel 
+{{< imgproc Sidepanel Resize "1280x" >}}
+Rotumrandet ein Sidepanel 
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Im Kapitel <a href="/Listen/"> Listen </a> finden Sie eine ausführliche Übersicht aller Spalten und deren Bedeutung. </p>
@@ -29,7 +29,7 @@ gelber Stern markiert favorisiertes Subpanel
 
 <p style="text-align: justify"> Wollen Sie Ihre ausgewählten Favoriten zurücksetzen, wählen Sie unter Einstellungen "Filtereinstellungen löschen". <a href="/Einstellungen/PersönlicheEinstellungen/"> Persönlichen Einstellungen </a> </p>
 
-{{< imgproc FavoritenZurücksetzen_beschriftet Resize "1280x" >}}
+{{< imgproc FavoritenZuruecksetzen_beschriftet Resize "1280x" >}}
 Markierte Favoriten zurücksetzen 
 {{< /imgproc >}}
 
@@ -44,13 +44,13 @@ Schritte um ausgewählte Filter zu speichern
 
 <p style="text-align: justify"> Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen Sie das Drop-Down-Menü und wählen Sie die entsprechende gespeicherte Suche aus. In diesem Beispiel die Liste "Parkplatz". </p>
 
-{{< imgproc GespeicherteListeAuswählen_beschriftet Resize "1280x" >}}
+{{< imgproc GespeicherteListeAuswaehlen_beschriftet Resize "1280x" >}}
 Gespeicherte Filtereinstellungen aufrufen 
 {{< /imgproc >}}
 
 Gespeicherte Listen können unter den Persönlichen Einstellungen entfernt werden. Dazu navigieren Sie unter Einstellungen auf das Subpanel Persönliche Einstellungen und wählen am unteren Rand des Anzeigenbereichs die Schaltfläche "Bearbeiten". Ihre Profilseite öffnet sich im Bearbeitungsmodus. Dort wählen Sie den Reiter "Eigene Listen" aus und markieren die Checkboxen, der Listen, welche Sie löschen möchten.
 
-{{< imgproc GespeicherteListeLöschen_beschriftet Resize "1280x" >}}
+{{< imgproc GespeicherteListenLoeschen_beschriftet Resize "1280x" >}}
 Gespeicherte Listen löschen 
 {{< /imgproc >}}
 
@@ -67,8 +67,8 @@ Kalendersymbol um den Datumspicker zu öffnen und geöffneter Datumspicker
 
 <p style="text-align: justify"> Sollte ein anderes Datum eingestellt sein, können Sie über die Schaltfläche "Heute" auf das aktuelle Datum springen. Über das "X" oben rechts am Datumspicker, lässt sich dieser schließen, ohne Änderungen zu übernehmen. </p>
 
-{{< imgproc Datumspicker_Schaltflächen Resize "1280x" >}}
-"Heute" springt auf das aktuelle Datum, "x" schließt ohne Änderungen zu übernehmen 
+{{< imgproc Datumspicker_Schaltflaechen Resize "1280x" >}}
+Heute springt auf das aktuelle Datum, "x" schließt ohne Änderungen zu übernehmen 
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Möchten Sie einen Zeitraum, der über einen Tag hinaus reicht auswählen, so können Sie dies nur über den Datumspicker machen. Dazu wählen Sie auf der linken Kalenderansicht das Startdatum und anschließend auf der rechten Kalenderansicht das Enddatum.
@@ -116,14 +116,16 @@ Beispiel für ein Eingabefeld mit Schnellauswahl
 ### Drop-Down-Menü
 <p style="text-align: justify"> Bei einem Drop-Down-Menü klicken sie auf den, nach unten gerichteten Pfeil, woraufhin sich eine Liste ausklappt, aus der Sie das gewünschte Kriterium auswählen können. Ihre Auswahl wird dann im Eingabefeld angezeigt. </p>
 
-{{< imgproc DropDownMenü_beschriftet Resize "1280x" >}}
+{{< imgproc DropDownMenue_beschriftet Resize "1280x" >}}
 Beispiel für ein Drop-Down-Menü
 {{< /imgproc >}}
 
 ## Listenansicht anpassen
 <p style="text-align: justify"> Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole. </p>
 
-<!-- Bild Position Listenfunktionen -->
+{{< imgproc Listensymbole_Position Resize "1280x" >}}
+Position der Listensymbole
+{{< /imgproc >}}
 <br>
 
 Folgende Tabelle erläutert die Listensymbole:
@@ -131,36 +133,39 @@ Folgende Tabelle erläutert die Listensymbole:
 ---
 |Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
 |---|---|---|
-|_Button Anzahl Zeilen_|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
-|_Bild Spaltenauswahl_|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern, klicken Sie auf die Schaltfläche "Übernehmen". </br> Die Spaltenauswahl und -sortierung wird für die nächste Suche gespeichert. Unter <a href="/Einstellungen/PersönlicheEinstellungen"> Persönliche Einstellungen </a> können Sie diese Einstellung wieder löschen. </p>|
+|{{< imgproc Listensymbol_AnzahlZeilen Resize "40x" >}}{{< /imgproc >}}|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
+|{{< imgproc Listensymbol_Spaltenauswahl Resize "40x" >}}{{< /imgproc >}}|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern, klicken Sie auf die Schaltfläche "Übernehmen". </br> Die Spaltenauswahl und -sortierung wird für die nächste Suche gespeichert. Unter <a href="/Einstellungen/PersönlicheEinstellungen"> Persönliche Einstellungen </a> können Sie diese Einstellung wieder löschen. </p>|
+|{{< imgproc Listensymbol_Refresh Resize "40x" >}}{{< /imgproc >}}|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
 ---
+</br>
+<p style="text-align: justify"> <I> <B>TIPP</B>: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte. </I> </p>
 
-|Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
-|---|---|---|
-|_Bild Refreshintervall_|<br>Refresh Intervall einstellen|<br> <p style="text-align: justify">Ein sogenannter Autorefresh sorgt dafür, dass die angezeigte Liste gemäß des eingestellten Refresh Intervalls aktualisiert wird. <br>Das Refresh Intervall kann auf die gewünschte Länge durch klicken auf die gewünschte Zeit ausgewählt werden. </p>|
----
+<p style="text-align: justify"> Manche Spaltennamen sind in blau gedruckt. An der blauen Schrift erkennen Sie, nach welchen Spalten Sie eine Liste sortieren können. Dazu klicken Sie auf den Spaltennamen, die Liste sortiert sich anhand der dieser Spalteneinträge in aufsteigender Reihenfolge. Durch nochmaliges Klicken, wird die Liste in absteigender Reihenfolge sortiert. </p>
 
-<p style="text-align: justify"> **TIPP**: Es ist nicht zu empfehlen die Refreshrate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte. </p>
-
-<p style="text-align: justify"> Manche Spaltennamen sind in blauer Schrift gehalten. Die blaue Schrift markiert, nach welchen Spalten eine Liste sortiert werden kann. Dazu klicken Sie einfach in das Feld des Spaltennamen. </p>
-
-<!-- Bild Liste nach Spalte sortieren -->
-
-Weitere Informationen zu Listen finden Sie im Kapitel [Listen](/Listen).
+{{< imgproc Spaltenname_blau Resize "1280x" >}}
+Spaltenname in blau, nach dieser Spalte kann die Liste sortiert werden
+{{< /imgproc >}}
 
 ## Listen Export
 <p style="text-align: justify"> Alle Suchresultate und Listen können in einer .csv-Datei, z.B. für die Weiterverarbeitung in Excel, exportiert werden.
 Dafür klicken Sie auf das Export-Symbol unten rechts unter dem Anzeigenbereich: </p>
 
-<!-- Bild Exportsymbol -->
+{{< imgproc Listenexport_Position Resize "1280x" >}}
+Position der Schaltfläche um Listen als .csv-Datei zu exportieren
+{{< /imgproc >}}
 
-<p style="text-align: justify"> Das Actionpanel informiert Sie über den Start des Export sowie das Bereitliegen der Datei zum Downloaden. </p>
+<p style="text-align: justify"> Das Actionpanel informiert Sie über den Start des Exports sowie des Bereitliegens der Datei zum Downloaden. </p>
 
-<!-- Bilder Anzeige Actionpanel -->
+{{< imgproc Listenexport_Downloadinfo_beschriftet Resize "1280x" >}} 
+Das Actionpanel informiert über den laufenden Export der Liste 
+{{< /imgproc >}}
+{{< imgproc Listenexport_Downloadlink_beschriftet Resize "1280x" >}} 
+Das Actionpanel zeigt den Link für den Download der Liste an 
+{{< /imgproc >}}
 
-<p style="text-align: justify"> Mit einem Klick auf den angezeigten Link im Actionpanel, könne Sie die .csv-Datei herunterladen und zur weiteren Verarbeitung auf Ihrem Rechner speichern. </p>
+<p style="text-align: justify"> Mit einem Klick auf den angezeigten Link im Actionpanel, könne Sie die .csv-Datei herunterladen und zur weiteren Verarbeitung auf Ihrem Rechner speichern. Sie können entweder direkt einen Speicherort auswählen oder die Datei wird in Ihrem Downloadordner abgelegt. </p>
 
-<p style="text-align: justify"> Das Erstellen der Export-Datei läuft asynchron. Das bedeutet, dass Sie, aber auch andere User, weiterhin mit ROOMS arbeiten können, ohne dass der Export behindert wird. Dies bedeutet aber auch, dass während der Erstellung der Export-Datei, weitere Einträge in ROOMS gespeichert werden könnten, die dann jedoch noch nicht in der Export-Datei aufgeführt werden würden. </p>
+<p style="text-align: justify"> Das Erstellen der Export-Datei läuft asynchron. Das bedeutet, dass weiterhin mit ROOMS gearbeitet werden kann, ohne dass der Export behindert wird. Dies bedeutet aber auch, dass während der Erstellung der Export-Datei, weitere Einträge in ROOMS gespeichert werden könnten, die dann jedoch noch nicht in der Export-Datei aufgeführt werden würden. </p>
 
 
 

@@ -24,7 +24,7 @@ Rotumrandet das Sidepanel im Bereich Buchen {{< /imgproc >}}
 <p style="text-align: justify"> Im Menüpunkt <a href="/plan/">Plan</a>, können Sie freie Ressourcen auf der Grundlage, z.B. eines Raumplanes, <a href="/plan/plansuche/">suchen </a>. So finden Sie, z.B. einen Raum, im Grundriss des Gebäudes oder können sich den Standort einer Filiale auf einer Landkarte ansehen und <a href="/plan/buchen-auf-demplan/">buchen</a>. Ebenso ist eine <a href="/plan/massenbuchung-auf-dem-plan/">Massenbuchung </a> auf dem Plan möglich. </p>
 
 {{< imgproc Startseite_Plan_Sidepanel Resize "1280x" >}}
-rot umrandet das Sidepanel im Bereich Plan {{< /imgproc >}}
+Rotumrandet das Sidepanel im Bereich Plan {{< /imgproc >}}
 
 ## Kalender
 <p style="text-align: justify"> Alle vorgenommen Buchungen können Sie sich in der <a href="/kalender/kalenderansicht/">Kalenderansicht </a> ansehen. Jeder Buchungseintrag ist, in der zugewiesenen Farbe der erstellenden Person, eingefärbt.  
