@@ -8,9 +8,7 @@ description: >
   Wir wünschen Ihnen viel Freude bei der Nutzung von ROOMS.
 ---
 
-Ein paar kleine Anmerkung vornweg:
-
-
+Ein paar Anmerkung vornweg:
 
 -  <p style="text-align: justify"> Es kann sein, dass für Sie nicht alle Menüpunkte, Subpanels oder Felder sichtbar sind. Für die jeweiligen Funktionen müssen entsprechende Benutzungsrechte vergeben sein. Ausgenommen ist der Home-Button, der immer für alle sichtbar ist. Sollten Sie Fragen zu den Berechtigungen haben, wenden Sie sich bitte an die für die Administration verantwortlichen Personen. </p>
 
