@@ -1,7 +1,7 @@
 ---
 title: "Detailansicht Buchungen"
 linkTitle: "Detailansicht Buchungen"
-weight: 200
+weight: 400
 description: >
   Hier finden Sie weitere Information zur Detailansicht einer Buchung. Auf diese gelangen Sie, in dem Sie in der Listenansicht auf den Buchungsteitel klicken.
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Weitere Funktionen"
 linkTitle: "Weitere Funktionen"
-weight: 40
+weight: 300
 description: >
   Im Folgenden werden die Schaltflächen und deren Funktion beschreiben, die am unteren Rand des Anzeigenbereichs angegliedert sind. 
 ---
@@ -10,6 +10,7 @@ Aktivieren Sie eine oder mehrere Checkboxen am Anfang einer Zeile, werden die Sc
 <!-- Bild Anzeigenbereich mit aktivierten Schaltflächen -->
 
 ## Anlass erstellen
+<!-- Hierausführlich beschreiben -->
 Über die Schaltfläche "Anlass erstellen" öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
 
 <!-- Bild offenes Fenster Schnellbuchung Anlass -->

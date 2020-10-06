@@ -34,10 +34,10 @@ Folgende Tabelle erläutert die Bedeutung der Status:
  |---|---|
  |Alle / keine auswählen||Die Suche berücksicht jeden/keinen Status|
  |Annulliert|gelöschte und abgesagte Buchungen|
- |Besetzt (definitiv)|Die Buchung wurde bestätigt und ist verbindlich|
- |Besetzt (provisorisch)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow noch bestätigt werden.|
+ |Besetzt (definitiv)|Die Ressource ist verbindlich gebucht und wurde bestätigt.|
+ |Besetzt (provisorisch)|Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden.|
  |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert weden.|
- |Besetzt (Temporär)|<p style="text-align: justify"> Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wir die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht. </p>|
+ |Besetzt (Temporär)|<p style="text-align: justify"> Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht. </p>|
 <!-- Thema Slot vorerst außenvor -->
  ---
 
