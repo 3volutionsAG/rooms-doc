@@ -3,57 +3,67 @@ title: "Weitere Funktionen"
 linkTitle: "Weitere Funktionen"
 weight: 300
 description: >
-  Im Folgenden werden die Schaltflächen und deren Funktion beschreiben, die am unteren Rand des Anzeigenbereichs angegliedert sind. 
+  <p style="text-align: justify"> Im Folgenden werden die Schaltflächen und deren Funktion beschreiben, die am unteren Rand des Anzeigenbereichs angegliedert sind. </p>
 ---
-Aktivieren Sie eine oder mehrere Checkboxen am Anfang einer Zeile, werden die Schaltflächen am unteren Rand des Anzeigenbereichs aktiviert.
+<p style="text-align: justify"> Aktivieren Sie eine oder mehrere Checkboxen am Anfang einer Zeile, werden die Schaltflächen am unteren Rand des Anzeigenbereichs aktiviert. </p>
 
-<!-- Bild Anzeigenbereich mit aktivierten Schaltflächen -->
+{{< imgproc List_BG_Anzeige_weitFkt_aktSchalt_beschriftet Resize "1280x" >}}
+Ist eine Buchung ausgewählt, werden die Schaltflächen aktiviert
+{{< /imgproc >}}
 
 ## Anlass erstellen
-<!-- Hierausführlich beschreiben -->
-Über die Schaltfläche "Anlass erstellen" öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
+<p style="text-align: justify"> Über die Schaltfläche "Anlass erstellen" öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird. </p>
 
-<!-- Bild offenes Fenster Schnellbuchung Anlass -->
+{{< imgproc List_BG_Anzeige_weitFkt_AnlErst_beschriftet Resize "1280x" >}}
+Über die Schaltfläche "Anzeige erstellen" öffnet sich das Fenster für die Schnellbuchung eines Anlasses
+{{< /imgproc >}}
 
-Vergeben Sie dem Anlass einen Titel. Achten Sie darauf, dass das Datum und die Uhrzeit dem der Buchung entspricht bzw. die Buchung im Zeitraum des Anlasses liegt. Tragen Sie die Person ein, welche den Anlass organisiert und wählen Sie den Anlasstyp (Z.B. Kundenmeeting) aus. Anlasstypen können unter Einstellungen erstellt werden.
-Ergänzend können Sie im Feld Bemerkungen Notizen zum Anlass hinterlegen.
-
-Mit dem Klicken auf "Erstellen" werden Sie auf die Detailseite des Anlasses weitergeleitet. Dort können Sie diesen weiter bearbeiten oder auch weitere Buchungen zuordnen.
-
-<!-- Bild Detailseite Anlass erstellen/Bearbeiten -->
-
-Eine genaue Beschreibung hierzu finden Sie im Kapitel [Anlass erstellen](/Buchen/Anlass-erstellen).
-
-<!-- Verlinkung anpassen -->
+<p style="text-align: justify"> Eine genaue Beschreibung zum Erstellen eines Anlasses  finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
 
 ## Bearbeiten
-Über "Bearbeiten" werden Sie auf die Eingabemaske der Detailbuchung weitergeleitet. Dort können Sie die Buchung bearbeiten und ändern.
+<p style="text-align: justify"> Über "Bearbeiten" kommen Sie auf die Eingabemaske der Detailbuchung. Dort können Sie die Buchung bearbeiten und ändern. </p>
 
-<!-- Bild Detailbuchung -->
+{{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "1280x" >}}
+Eingabemaske zur Bearbeitung einer Buchung
+{{< /imgproc >}}
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchen/Buchung-erstellen)
-
-<!-- Verlinkung anpassen -->
+ <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen </a> </p>
 
 ## Freigeben
-Die Schaltfläche "Freigeben" funktioniert nur für laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Freigeben" um die Buchung zu beenden. Die Nachlaufzeit wird ebnenfalls freigeben. Die Buchungsdauer wird minutengenau gespeichert.
+<p style="text-align: justify"> Die Schaltfläche "Freigeben" bezieht sich nur auf laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Freigeben" um die Buchung zu beenden. Es erscheint ein Dialogfenster mit der Überschrift "Massenfreigabe" Dieser Titel bezieht sich auf die Möglichkeit mehrere laufende Buchungen zu markieren und in einem Zug freizugeben. 
+Die Nachlaufzeit wird ebnenfalls freigeben. Die Belegungsdauer wird minutengenau hinterlegt. </p>
 
-<!-- Bild Buchung freigeben -->
+{{< imgproc List_BG_Anzeige_weitFkt_freigeb_beschriftet Resize "1280x" >}}
+Dialogfenster zur Schaltfläche "Freigeben"
+{{< /imgproc >}}
 
 ## Terminieren
-Die Schaltfläche "Terminieren" funktioniert nur für laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Terminieren" um die Buchung zu beenden. Die Nachlaufzeit bleibt in diesem Fall bestehen. Die Buchungsdauer wird minutengenau gespeichert.
+<p style="text-align: justify"> Die Schaltfläche "Terminieren" bezieht sich nur für laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Terminieren" um die Buchung zu beenden. Es erscheint ein Dialogfenster mit der Überschrift "Massenterminierung" Dieser Titel bezieht sich auf die Möglichkeit mehrere laufende Buchungen zu markieren und in einem Zug zu terminieren.
+Die Nachlaufzeit bleibt in diesem Fall bestehen. Die Buchungsdauer wird minutengenau gespeichert. </p>
+
+{{< imgproc List_BG_Anzeige_weitFkt_term_beschriftet Resize "1280x" >}}
+Dialogfenster zur Schaltfläche "Terminieren"
+{{< /imgproc >}}
 
 ## Annullieren
-Über die Schaltfläche "Annullieren" löschen Sie ein Buchung aus dem Kalender. Die Buchung bleibt jedoch über die Suchkunftionen einsehbar.
+<p style="text-align: justify"> Über die Schaltfläche "Annullieren" löschen Sie ein Buchung aus dem Kalender. Die Buchung bleibt jedoch über die Suchkunftionen einsehbar. 
+Markieren Sie ein Buchung und klicken Sie auf "Annulieren" um die Buchung zu löschen. Dabei können Stornierungskosten anfallen. Die Buchung wird dabei aus dem Kalender gelöscht, kann jedoch weiterhin über die Suchfunktionen aufgerufen werden.
+Es erscheint ein Dialogfenster mit der Überschrift "Massenannulierung" Dieser Titel bezieht sich auf die Möglichkeit mehrere Buchungen zu markieren und in einem Zug zu annullieren. </p>
 
-<!-- Bild Dialogfeld Annullieren -->
+{{< imgproc List_BG_Anzeige_weitFkt_ann_beschriftet Resize "1280x" >}}
+Dialogfenster zur Schaltfläche "Annulieren"
+{{< /imgproc >}}
 
 ## Aktualisieren
-Sie können eine oder mehrere Buchungen aktualisieren und Änderungen, die evtl. von einer anderen Person zeitgleich vorgenommn wurden abzurufen.
-Mit dem Klicken auf die Schaltfläche "Aktualisieren" öffnet sich ein Dialogfeld. Hier können Sie nochmals bestätigen, ob Sie nur die selektierten Buchungen aktualisieren möcten oder die gesamte angezeigte Liste.
+<p style="text-align: justify"> Sie können eine oder mehrere Buchungen aktualisieren und Änderungen, die evtl. von einer anderen Person zeitgleich vorgenommn wurden abzurufen.
+Markieren Sie eine oder mehrere Buchungen und klicken Sie auf die Schaltfläche "Aktualisieren", worauhin sich ein Dialogfenster öffnet. Hier können Sie auswählen, ob Sie nur die selektierten Buchungen aktualisieren möhten oder die gesamte angezeigte Liste. </p>
 
-<!-- Bild Dialogfeld  -->
+{{< imgproc List_BG_Anzeige_weitFkt_Akt_beschriftet Resize "1280x" >}}
+Dialogfenster zur Schaltfläche "Aktualisieren"
+{{< /imgproc >}}
 
-Im Actionpanle werden Sie benachrichtigt, wenn die Aktualisierung abgeschlossen ist.
+<p style="text-align: justify"> Im Actionpanle werden Sie benachrichtigt, wenn die Aktualisierung abgeschlossen ist. </p>
 
-<!-- Bild Actionpanel -->
+{{< imgproc List_BG_Anzeige_weitFkt_Akt_ActPan_beschriftet Resize "1280x" >}}
+Bestätigung im Actionpanel über die erfolgreich durchgeführte Aktualisierung
+{{< /imgproc >}}
