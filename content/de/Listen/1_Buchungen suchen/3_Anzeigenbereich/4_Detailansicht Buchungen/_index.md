@@ -11,14 +11,14 @@ description: >
 Detailansicht zu einer Buchung 
 {{< /imgproc >}}
 
-In der Detailansicht finden Sie im Sidepanel eine Kurzübersicht der Buchung sowie gegebenfalls einen Hinweis auf eine nachfolgende Buchung. 
-
-{{< imgproc List_BG_Anzeige_DS_Kurz Resize "1280x" >}}
-Reiter "Zusammenfassung", "Historik", und "Mails" der Buchungsdetails 
-{{< /imgproc >}}
-
 Der Anzeigenbereich gliedert sich in "Zusammenfassung", "Historik" und "Mails". Die einzelnen Kategorien sind über die Reiter am oberen Rand des Anzeigenbereichs zugänglich.
 
 {{< imgproc List_BG_Anzeige_DS_Reiter Resize "1280x" >}}
 Reiter "Zusammenfassung", "Historik", und "Mails" der Buchungsdetails 
+{{< /imgproc >}}
+
+Im Sidepanel wird eine Kurzübersicht der gebuchten Ressource sowie gegebenfalls einen Hinweis auf eine nachfolgende Buchung angezeigt. 
+
+{{< imgproc List_BG_Anzeige_DS_Kurz Resize "1280x" >}}
+Kurzinformation zur gebuchten Ressource und Hinweis auf eine nachfolgende Buchung der Ressource 
 {{< /imgproc >}}

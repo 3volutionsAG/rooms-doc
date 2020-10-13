@@ -1,7 +1,7 @@
 ---
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
-weight: 30
+weight: 2
 description: >
   <p style="text-align: justify"> Neben den standardmäßig angezeigten Spalten können Sie weitere Spalten mit Informationen zum Anlass einblenden. </p>
 ---

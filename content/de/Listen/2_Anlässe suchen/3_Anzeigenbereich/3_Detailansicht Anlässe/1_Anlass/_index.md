@@ -5,63 +5,83 @@ weight: 1
 description: >
   Im Reiter Anlass sind alle Informationen übersichtlich zusammengestellt.
 ---
+{{< imgproc List_ANL_DS_Anl Resize "1280x" >}}
+Detaillierte Informationen zum ausgewählten Anlass im Reiter "Anlass" 
+{{< /imgproc >}}
 
+<p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle, dem Anlass hinzugefügten, Buchungen aufgelistet. </p>
 
-Am unteren Rand der Detailansicht befinden sich weitere Schaltflächen, die es Ihnen ermöglichen weitere Aktionen bezüglich des Anlasses durchzuführen.
+{{< imgproc List_ANL_DSunten_b Resize "1280x" >}}
+Unterer Bereich der Detailansicht eines Anlasses mit den Verwaltungsmöglichkeiten der zugefügten Buchungen 
+{{< /imgproc >}}
 
-### Bearbeiten
-Über "Bearbeiten" werden Sie auf die Eingabemaske der Detailbuchung für einen Anlass weitergeleitet. Dort können Sie den Anlass bearbeiten und ändern.
+<p style="text-align: justify"> Der Buchungstitel ist mit der <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/">Detailansicht der Buchung </a> verlinkt. </p>
 
-<!-- Bild Detailbuchung -->
+{{< imgproc List_BG_Anzeige_DS Resize "1280x" >}}
+Detailansicht zu einer Buchung 
+{{< /imgproc >}}
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Anlass erstellen](/Buchen/Anlass-erstellen)
+<p style="text-align: justify"> Über das Bleistiftsymbol kommen Sie zu <a href="/buchen/buchung-erstellen/">Eingabemaske </a> der Buchung und können diese bearbeiten. </p>
 
-<!-- Verlinkung anpassen -->
+{{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "1280x" >}}
+Eingabemaske zur Buchungsbearbeitung 
+{{< /imgproc >}}
 
-### Kopieren
-Mit deiser Schaltfläche kopieren Sie den betrachteten Anlass. Dies ist z.B. hilfreich, wenn der gleiche Anlass mit den gleichen Rahmenbedingungen und Teilnehmenden zu einem anderen Zeitpunkt erneut stattfinden soll.
+<p style="text-align: justify"> Wenn Sie eine oder mehrere Checkboxen vor dem Buchungstitel auswählen und auf die Schaltfläche "Bearbeiten" klicken, werden Sie zur Massenbearbeitung weitergeleitet. Wie diese funktioniert ist im Kapitel <a href="/buchen/massenbearbeitung/">Massenbearbeitung </a> beschrieben. </p>
 
-Es öffnet sich die Eingabemaske zur Detailbuchung für einen Anlass. Alle Details werden aus dem ursprünglichen Anlass übernommen. Sie haben nun die Möglichkeit einzelne Details, wie z.B. das Datum, zu ändern.
+{{< imgproc List_ANL_DS_Mass Resize "1280x" >}}
+Eingabemaske zur Buchungsbearbeitung 
+{{< /imgproc >}}
 
-<!-- Bild Detailbuchung Anlass-->
+Am unteren Rand der Detailansicht befinden sich Schaltflächen zur Anlassverwaltung
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Anlass erstellen](/Buchen/Anlass-erstellen)
+{{< imgproc List_ANL_DS_Schalt Resize "1280x" >}}
+Schaltflächen zur Anlassverwaltung 
+{{< /imgproc >}}
 
-<!-- Verlinkung prüfen/anpassen -->
+Im Folgenden werden die Schaltflächen im Einzelnen beschrieben:
 
-### Anlass für Serien
-Liegen Buchungsserien vor kann auch eine Anlassserie erstellt werden. Damit dies möglich ist, müssen alle Buchungen, die zu diesem Anlass gehören als Serienbuchung angelegt sein.
+## Bearbeiten
+<p style="text-align: justify"> Über "Bearbeiten" werden Sie auf die Eingabemaske zur Erstellung eines Anlasses weitergeleitet. Dort können Sie den Anlass bearbeiten und ändern. </p>
 
-<!-- Bild Erstellung Anlass für Serienl / Eingabemaske? -->
+{{< imgproc List_ANL_DS_Schalt Resize "1280x" >}}
+Schaltflächen zur Anlassverwaltung 
+{{< /imgproc >}}
 
-<!-- Evtl fehlt eine weitere Beschreibung! -->
+<p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/"> Anlass Erstellen </a>. </p>
 
-### Drucken
-Sie haben die Möglichkeit die Detailansicht des Anlasses auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucken-Fenster mit Ihren persönlichen und firmeninternen Voreinstellungen.
+## Kopieren
+<p style="text-align: justify"> Mit deiser Schaltfläche kopieren Sie den betrachteten Anlass. Dies ist dann hilfreich, wenn ein Anlass mit gleichen Rahmenbedingungen und/oder Teilnehmenden zu einem anderen Zeitpunkt erneut stattfinden soll. </p>
 
-### Anlass stornieren
-Über die Schaltfläche "Anlass stornieren" sagen Sie einen Anlass mit allen zugehörigen Buchungen ab und entfernen diese aus dem Kalender. Der Anlass und die zugehörigen Buchungen bleibt jedoch über die Suchkunftionen und in den Reports sichtbar.
-Es können Stornierungskosten anfallen.
-Es wird ein Dialogfeld angezeigt. Sie haben die Möglichkeit Notifikation an die Organisatoren, Verantwortlichen und Teilnehmenden zu versenden, in dem Sie die Checkbox aktivieren.
+<p style="text-align: justify"> Es öffnet sich die Eingabemaske zur Erstellung eines Anlasses. Alle Details werden aus dem ursprünglichen Anlass übernommen, die Sie nun bearbeiten können. </p>
 
-<!-- Bild Dialogfeld Annullieren -->
+_Bitte achten Sie darauf das Datum anzupassen, da dieses auch übernommen wird._
+
+{{< imgproc List_ANL_DS_Copy Resize "1280x" >}}
+Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern 
+{{< /imgproc >}}
+
+<p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
+
+## Anlass für Serien
+<p style="text-align: justify"> Liegt Buchungsserie vor, so ist es möglich für diese ebenfalls einen Anlass zu erstellen. Voraussetzung dafür ist, dass alle Buchungen, die zum Anlass hinzugefügt werden Serienbuchungen sind. </p>
+
+<!-- Nochmal überarbeiten -->
+
+## Drucken
+<p style="text-align: justify"> Sie haben die Möglichkeit die Detailansicht des Anlasses auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucker Dialogfenster mit Ihren persönlichen und firmeninternen Voreinstellungen. </p>
+
+{{< imgproc List_ANL_DS_Druck Resize "1280x" >}}
+Drucker Dialogfenster um die Detailsansicht zum Anlass auszudrucken 
+{{< /imgproc >}}
+
+## Anlass stornieren
+<p style="text-align: justify"> Über die Schaltfläche "Anlass stornieren" sagen Sie einen Anlass mit allen zugehörigen Buchungen ab und entfernen diese aus dem Kalender. Der Anlass und die zugehörigen Buchungen bleiben jedoch in den Listen und in den Reports sichtbar.
+Es könnten Stornierungskosten anfallen.
+Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit Notifikation an die Organisatoren, Verantwortlichen und Teilnehmenden zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. </p>
+
+{{< imgproc List_ANL_DS_Ann_b Resize "1280x" >}}
+Dialogfenster zur Bestätigung des Stornierungsvorganges 
+{{< /imgproc >}}
 
 <!-- Mail auch an Teilnehmende? -->
-
-## Anlass Kalender
-Im Reiter "Anlass Kalender" wird Ihnen die Kalenderansicht zu diesem Anlass angezeigt. Für jede gebuchte Ressource erscheint eine Kalenderzeile, in welcher die Buchungszeiträume eingetragen sind.
-
-<!-- Bild Ansicht Anlass Kalender -->
-
-Der Umgang und die Funktionen des Kalender können Sie im Kapitel [Kalender](/Kalender/) nachlesen.
-
-<!-- Verlinkung überprüfen -->
-
-Am unteren Rand des Anzeigenbereichs erscheinen die selben Schaltflächen, wie im Reiter "Anlass". Die entsprechenden Funktionen entnehmen Sie bitte dem vorherigen Abschnitt.
-
-## Historik
-Im Reiter Historik wird Ihnen Informationen zur Erstellung und Änderung der Buchung angezeigt.
-
-<!-- Bild Ansicht Historik -->
-
-Am unteren Rand des Anzeigenbereichs erscheinen die selben Schaltflächen, wie im Reiter "Anlass". Die entsprechenden Funktionen entnehmen Sie bitte dem vorherigen Abschnitt.

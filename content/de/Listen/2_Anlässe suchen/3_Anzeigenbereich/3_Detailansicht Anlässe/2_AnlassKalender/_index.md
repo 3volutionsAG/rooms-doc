@@ -3,10 +3,8 @@ title: "Reiter Anlass Kalender"
 linkTitle: "Reiter Anlass Kalender"
 weight: 2
 description: >
-  Die Detailsansicht fasst alle Informationen übersichtlich zusammen.
+  <p style="text-align:justify"> Im Reiter "Anlass Kalender" wird Ihnen die Kalenderansicht zu diesem Anlass angezeigt. Für jede gebuchte Ressource erscheint eine Kalenderzeile, in welcher die Buchungszeiträume eingetragen sind. </p>
 ---
-Im Reiter "Anlass Kalender" wird Ihnen die Kalenderansicht zu diesem Anlass angezeigt. Für jede gebuchte Ressource erscheint eine Kalenderzeile, in welcher die Buchungszeiträume eingetragen sind.
-
 <!-- Bild Ansicht Anlass Kalender -->
 
 Der Umgang und die Funktionen des Kalender können Sie im Kapitel [Kalender](/Kalender/) nachlesen.
