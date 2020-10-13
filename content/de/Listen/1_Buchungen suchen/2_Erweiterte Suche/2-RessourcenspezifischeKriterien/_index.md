@@ -20,7 +20,7 @@ Zur Veranschaulichung sehen Sie hier folgendes Beispiel:
 
 
 ---
-|<div style="width:200px">Feld</div>|<div style="width:200px">Feld</div>|Bedeutung|
+|<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Bedeutung|
 |---|---|---|
 |Ressourcen ID/Bezeichnung|{{< imgproc Listen_Buchungen_ErweiterteSuche_ResSpezKrit_ID Resize "200x" >}}{{< /imgproc >}}|Hier können Sie direkt nach der eindeutigen Ressourcen Nummer oder der Ressourcen Bezeichnung filtern.|
 |Ressourcenstatus|{{< imgproc Listen_Buchungen_ErweiterteSuche_ResSpezKrit_Status Resize "200x" >}}{{< /imgproc >}}|**Aktiv:** </br> Es werden nur Buchungen in zugänglichen Räumen angezeigt <br/> **Inaktiv:** Es werden nur Buchungen in nicht zugänglichen Räumen angezeigt|

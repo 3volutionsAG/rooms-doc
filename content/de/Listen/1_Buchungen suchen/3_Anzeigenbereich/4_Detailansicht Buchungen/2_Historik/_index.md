@@ -21,4 +21,4 @@ Details aus dem Bearbeitungsverlauf zur Buchungserstellung
 Details aus dem Bearbeitungsverlauf zur Buchungserstellung
 {{< /imgproc >}}
 
-<p style="text-align: justify">  Am unteren Rand des Anzeigenbereichs erscheinen die gleichen Schaltflächen, wie im Reiter "Zusammenfassung". Die entsprechenden Funktionen entnehmen Sie bitte dem Abschnitt "Zusammenfassung". </p>
+<p style="text-align: justify"> Informationen zur Funktionsweise der Schaltflächen am unteren Rand des anzeigenbereichs entnehmen Sie bitte dem Abschnitt <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/1_zusammenfassung/">Zusammenfassung</a>. </p>

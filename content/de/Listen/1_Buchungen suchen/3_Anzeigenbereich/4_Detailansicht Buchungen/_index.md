@@ -3,9 +3,9 @@ title: "Detailansicht Buchungen"
 linkTitle: "Detailansicht Buchungen"
 weight: 400
 description: >
-  <p style="text-align: justify">  Hier finden Sie weitere Information zur Detailansicht einer Buchung. Auf diese gelangen Sie, in dem Sie in der Listenansicht auf den Buchungsteitel klicken. </p>
+  <p style="text-align: justify">  Hier finden Sie weitere Information zur Detailansicht einer Buchung. Diese öffnen Sie, indem Sie auf den Buchungstitel in der Listenansicht klicken. </p>
 ---
-<p style="text-align: justify"> Wenn Sie diese Seite sehen, wurden Sie von der Listenansicht durch klicken auf den Buchungstitel hier her weitergeleitet. </p>
+<p style="text-align: justify"> Der Buchungstitel in der Listenansicht ist mir der Detailseite der entsprechenden Buchung verlinkt. Mit einem Klick auf den blau gefärbten Buchungstitel, werden Sie auf die Detailseite der Buchung weitergeleitet. </p>
 
 {{< imgproc List_BG_Anzeige_DS Resize "1280x" >}}
 Detailansicht zu einer Buchung 

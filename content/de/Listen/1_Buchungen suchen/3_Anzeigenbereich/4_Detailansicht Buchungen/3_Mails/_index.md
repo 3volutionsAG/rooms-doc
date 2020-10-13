@@ -3,10 +3,18 @@ title: "Mails"
 linkTitle: "Mails"
 weight: 3
 description: >
-  <p style="text-align: justify">  In diesem Reiter sind alle Mails, die aus der Buchung heraus verschickt wurden, aufgelistet. </p>
+  <p style="text-align: justify">  In diesem Reiter werden alle Mails, die aus der Buchung heraus verschickt wurden, angezeigt. </p>
 ---
-<p style="text-align: justify"> In diesem Reiter finden Sie eine Auflistung aller versendeten E-Mails zur Buchung.</p>
+<p style="text-align: justify"> Aufgelistet sehen Sie hier alle Mails, die aus diesem Vorgang heraus versendet wurden. </p>
 
-<!-- Bild Ansicht Mails -->
+{{< imgproc List_BG_Anzeige_DS_Mail Resize "1280x" >}}
+Auflistung aller Mails, die aus dem Vorgang versendet wurden 
+{{< /imgproc >}}
 
-<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs erscheinen die selben Schaltflächen, wie im Reiter "Zusammenfassung". Die entsprechenden Funktionen entnehmen Sie bitte dem vorherigen Abschnitt. </p>
+Über den Drop-Down-Pfeil öffnet sich die Mailansicht.
+
+{{< imgproc List_BG_Anzeige_DS_Mailoffen_beschriftet Resize "1280x" >}}
+Geöffnete Mailansicht 
+{{< /imgproc >}}
+
+<p style="text-align: justify"> Informationen zur Funktionsweise der Schaltflächen am unteren Rand des Anzeigenbereichs entnehmen Sie bitte dem Abschnitt <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/1_zusammenfassung/">Zusammenfassung</a>. </p>
