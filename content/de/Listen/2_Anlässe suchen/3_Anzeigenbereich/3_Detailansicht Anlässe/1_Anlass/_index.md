@@ -1,21 +1,12 @@
 ---
-title: "Detailansicht Anlässe"
-linkTitle: "Detailansicht Anlässe"
-weight: 100
+title: "Reiter Anlass"
+linkTitle: "Reiter Anlass"
+weight: 1
 description: >
-  Hier finden Sie weitere Information zur Detailansicht eines Anlasses. Auf diese gelangen Sie, in dem Sie in der Listenansicht auf den Anlassbezeichnung klicken.
+  Im Reiter Anlass sind alle Informationen übersichtlich zusammengestellt.
 ---
-Wenn diese Seite sehen, wurden Sie von der Listenansicht durch klicken auf die Anlassbezeichnung hierher geleitet.
 
-<!-- Bild Detailansicht Anlass mit Markierung Schaltflächen -->
 
-Die Detailansicht ist in drei Reiter aufgeteilt:
-
--  Anlass
--  Anlass Kalender
--  Hitorik
-
-## Anlass
 Am unteren Rand der Detailansicht befinden sich weitere Schaltflächen, die es Ihnen ermöglichen weitere Aktionen bezüglich des Anlasses durchzuführen.
 
 ### Bearbeiten

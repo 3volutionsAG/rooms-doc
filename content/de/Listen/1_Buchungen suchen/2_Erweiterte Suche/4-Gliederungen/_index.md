@@ -16,8 +16,8 @@ Wir bedienen uns nochmals dem Beispiel aus dem Kapitel Ressourcenspezifische Kri
 {{< /imgproc >}}
 
 ---
-|<div style="width:200px">Feld</div>||Funktion|
+|<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
 |---|---|---|
-|Raumtyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_Raumtyp Resize "1280x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Raumtypen aus (z.B. ein Sitzungssaal), um alle Buchungen, die in diesem Raumtyp stattfinden, anzeigen zu lassen. </p>|
-|Raum: Equipmenttyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_RaumEquiptyp Resize "1280x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Equipmentyp (z.B. die Anzahl der Beamer), um alle Buchungen anzeigen zu lassen, in welchen 2 Beamer verwendet werden. </p>|
+|Raumtyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_Raumtyp Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Raumtypen aus (z.B. ein Sitzungssaal), um alle Buchungen, die in diesem Raumtyp stattfinden, anzeigen zu lassen. </p>|
+|Raum: Equipmenttyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_RaumEquiptyp Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über die Schnellauswahl wählen Sie einen Equipmentyp (z.B. die Anzahl der Beamer), um alle Buchungen anzeigen zu lassen, in welchen 2 Beamer verwendet werden. </p>|
 ---

@@ -3,7 +3,7 @@ title: "Anlass erstellen"
 linkTitle: "Anlass erstellen"
 weight: 40
 description: >
-     Über die Schaltfläche "Anlass erstellen", im Anzeigenbereich der gelisteten Bcuhungen oder Anlässen ,öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
+     Über die Schaltfläche "Anlass erstellen", im Anzeigenbereich der gelisteten Buchungen oder Anlässen ,öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
 ---
 Über die Schaltfläche "Anlass erstellen" öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
 

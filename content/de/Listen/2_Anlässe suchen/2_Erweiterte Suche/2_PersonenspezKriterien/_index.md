@@ -7,7 +7,7 @@ description: >
 ---
 Folgende Tabelle erläutert die Eingabefelder der Personenspezifischen Kriterien:
 
-|<div style="width:250px">Feld</div>|<div style="width:200px"></div>|Funktion|
+|<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
 |---|---|---|
 |Organisator:in|{{< imgproc List_ANL_ErwSuch_PersSpezKrit_Org Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass organsiert|
 |Ersteller:in|{{< imgproc List_ANL_ErwSuch_PersSpezKrit_Erst Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass erstellt hat|

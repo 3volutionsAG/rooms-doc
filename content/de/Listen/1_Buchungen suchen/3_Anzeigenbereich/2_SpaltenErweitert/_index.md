@@ -17,7 +17,7 @@ In den Persönlichen Einstellungen setzen Sie die Spaltenauswahl und markierten 
 
 Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 
-|<div style="width:200px">Spalte</div>|<div style="width:250px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Verantwortliche:r||Für die Buchung verantwortliche Person|
 |Terminieren|{{< imgproc List_BG_Anzeige_SymTerm Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche können Sie die Belegung beenden, die Nachlaufzeit bleibt in diesem Fall bestehen. Das Ende der Buchung wird minutengenau vermerkt. </p>|
@@ -38,7 +38,7 @@ Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 |Zeit von||Startzeit ohne Datum|
 |Zeit bis||Endzeit ohne Datum|
 |Standort-Name||_z.B. Name der Filiale oder Stadtname, in der sich der Standort befindet_|
-|Standortbeschrieb|{{< imgproc List_BG_Anzeige_SymStandBeschr Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTStandBeschr Resize "250x" >}}{{< /imgproc >}}|Beschreibung des Standortes </br> _z.B. Zentrale, Werkstatt, Laden oder Showroom_|
+|Standortbeschrieb|{{< imgproc List_BG_Anzeige_SymStandBeschr Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTStandBeschr Resize "200x" >}}{{< /imgproc >}}|Beschreibung des Standortes </br> _z.B. Zentrale, Werkstatt, Laden oder Showroom_|
 |Standort hierachsich||<p style="text-align: justify"> Gibt es mehrere Standort z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ </p>|
 |Plan|{{< imgproc List_BG_Anzeige_SymPlan Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche öffnen Sie ein neues Fenster, in dem der Stadtort der Ressource auf einer Karte dargestellt wird </p>|
 ---
@@ -48,12 +48,12 @@ Neues Fenster mit Anzeige der Ressource auf dem Plan
 {{< /imgproc >}}
 </br>
 
-|<div style="width:200px">Spalte</div>|<div style="width:250px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Ressourcenart||_z.B. Raum, Parkplatz, Arbeitsplatz_|
 |Bemerkungen Teilnehmende|_Symbol und TT Bemerkungen TN_|hinterlegte Bemerkung zu hinzugefügten Teilnehmenden|
-|Bemerkungen intern|{{< imgproc List_BG_Anzeige_SymBemIntern Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemIntern Resize "250x" >}}{{< /imgproc >}}|Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
-|Bemerkungen Annullation|{{< imgproc List_BG_Anzeige_SymBemAnn Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemAnn Resize "250x" >}}{{< /imgproc >}}|Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
+|Bemerkungen intern|{{< imgproc List_BG_Anzeige_SymBemIntern Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemIntern Resize "200x" >}}{{< /imgproc >}}|Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
+|Bemerkungen Annullation|{{< imgproc List_BG_Anzeige_SymBemAnn Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemAnn Resize "200x" >}}{{< /imgproc >}}|Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
 |Ressource Info|{{< imgproc List_BG_Anzeige_SymResInfo Resize "40x" >}}{{< /imgproc >}}|Über diese Schaltfläche werden Sie auf die Detailansicht der Ressource weiter geleitet.|
 ---
 
@@ -62,7 +62,7 @@ Detailansicht zur Ressource
 {{< /imgproc >}}
 </br>
 
-|<div style="width:200px">Spalte</div>|<div style="width:250px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Priorisierung||_Informationen folgen_|
 |Bestätigung senden|{{< imgproc List_BG_Anzeige_SymBestSend Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen, sofern die Checkbox aktiviert wird. </p>|
@@ -87,14 +87,14 @@ Detailansicht zur Ressource
 |Als No Show markieren|{{< imgproc List_BG_Anzeige_SymNoShow Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Die Buchung wird, folgengleich zu "Annlullieren", storniert. Zusätzlich wird die Buchung als "No Show markiert und kann über diesen Filter gefunden werden. </p>|
 |Annulliert am||Datum, an dem die Buchung storniert wurde|
 |Annulliert durch||Person, welche die Buchungsstornierte|
-|Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_SymAnl Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTAnl Resize "250x" >}}{{< /imgproc >}}|Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
-|Bestellungen|{{< imgproc List_BG_Anzeige_SymBest Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBest Resize "250x" >}}{{< /imgproc >}}|Auflistung der zugefügten Bestellungen|
-|Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymMobEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "250x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
-|Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymFixEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "250x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
+|Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_SymAnl Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
+|Bestellungen|{{< imgproc List_BG_Anzeige_SymBest Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBest Resize "200x" >}}{{< /imgproc >}}|Auflistung der zugefügten Bestellungen|
+|Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymMobEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
+|Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymFixEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
 |Parkplätze|_Symbol und Tooltipp Parkplätze_|Zeigt an welche Parkplätze im Detail zugebucht wurden|
 |Parplätze Aggregiert|_Symbol und TT Parkplätze Aggregiert_|Zeigt die Anzahl der zugebuchten Parkplätze an|
 |Fahrzeuge|_Symbol und TT zugebuchter Fahrzeuge_|Zeigt an welche Fahrzeuge im detail zugebucht wurden|
 |Fahrzeuge Aggregiert|_Symbol und TT zugebuchter Fahrzeuge aggregiert_|Zeigt die Anzahl der zugebuchten Fahrzeuge|
-|Serieninformationen|{{< imgproc List_BG_Anzeige_SymSerie Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTSerie Resize "250x" >}}{{< /imgproc >}}|Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
-|Virtuelle Räume|{{< imgproc List_BG_Anzeige_SymVR Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTVR Resize "250x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
+|Serieninformationen|{{< imgproc List_BG_Anzeige_SymSerie Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTSerie Resize "200x" >}}{{< /imgproc >}}|Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
+|Virtuelle Räume|{{< imgproc List_BG_Anzeige_SymVR Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
 ---
