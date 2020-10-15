@@ -64,9 +64,52 @@ Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
 
 ## Anlass für Serien
-<p style="text-align: justify"> Liegt Buchungsserie vor, so ist es möglich für diese ebenfalls einen Anlass zu erstellen. Voraussetzung dafür ist, dass alle Buchungen, die zum Anlass hinzugefügt werden Serienbuchungen sind. </p>
+<p style="text-align: justify"> Neben der Möglichkeit einen Anlass für eine komplette Serie zu erstellen, gibt es an dieser Stelle auch die Möglichkeit je einen Anlass für die Serienbuchungseinträge zu erstellen. Hierzu muss bereits ein Anlass vorliegen und eine Serienbuchung enthalten. Die Stammdaten des ursprünglichen Anlasses werden in die Folgeanlässe kopiert. Ebenso werden Catering & Service Bestellungen sowie die Teilnehmenden übernommen.
+Sind mehrere Buchungen mit einem Anlass verbunden, so müssen alle Buchungen zeitlich identische (Wochentag und Uhrzeit) Serienbuchungen sein. Gebuchte Räume dürfen innerhalb einer Serie variieren. </p>
 
-<!-- Nochmal überarbeiten -->
+{{< imgproc List_ANL_DS_Serie_xSerie_b Resize "1280x" >}}
+Fehlermeldung: Nicht alle, dem Anlass zugeordneten Buchungen, sind Serienbuchungen  
+{{< /imgproc >}}
+
+<p style="text-align: justify"> Sollten einzelne Buchungen zeitlich nicht synchron stattfinden (z.B. weil an einem Tag der gewünschte Raum erst später verfügbar sein sollte), so wird für diesen Tag kein Anlass erstellt. Das gleiche gilt für Buchungsserien, die nicht die gleiche Serienlänge haben. </p>
+
+{{< imgproc List_ANL_DS_Serie_Error_b Resize "1280x" >}}
+Hinweis, dass nicht alle Serienbuchungseinträge zu einem Anlass zusammen gefügt werden konnten 
+{{< /imgproc >}}
+
+<p style="text-align: justify"> Konnten alle Serienbuchungselemente zu Anlässen zusammengeführt werden, erscheint eine entsprechende Bestätigung im Actionpanel. </p>
+
+{{< imgproc List_ANL_DS_Serie_Best_b Resize "1280x" >}}
+Bestätigung im Actionpanel, dass alle Serienbuchungselemente erfolgreich in je ienem Anlass zusammengeführt werden konnten 
+{{< /imgproc >}}
+
+_**Beispiel 1:**_ </br>
+**Anlass:** Teambesprechungen </br>
+**Serienbuchung 1:** Teambesprechung Dokumentation </br>
+14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Matterhorn </br>
+**Serienbuchung 2:** Teambesprechung Buchhaltung </br>
+14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Everest
+
+=>  *Alle Serienbuchungseinträge können zu je einem Anlass zusammengeführt werden*
+
+_**Beispiel 2:**_ </br>
+**Anlass**: Teambesprechungen </br>
+**Serienbuchung 1**: Teambesprechung Dokumentation </br>
+14:00-15:00 Uhr ab 20.10 jeden Dienstag im Raum Matterhorn </br>
+**Serienbuchung 2**: Teambesprechung Buchhaltung </br>
+14:30-15:30 Uhr ab 20.10. jeden Dienstag im Raum Everest
+
+=>  *Die Serienbuchungen können nicht zu Anlässen zusammengeführt werden, da sie zeitlich nicht identisch sind.*
+
+_**Beispiel 3:**_ </br>
+**Anlass**: Teambesprechungen </br>
+**Serienbuchung 1**: Teambesprechung Dokumentation </br>
+14:00-15:00 Uhr ab 20.10 jeden Dienstag im Raum Matterhorn </br>
+Ausnahme: 27.10. 15:00-16:00 Uhr </br>
+**Serienbuchung 2**: Teambesprechung Buchhaltung </br>
+14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Everest
+
+=>  *Die Serienbuchungen können, bis auf die Serienbuchungselemente am 27.10, jeweils zu einem Anlass zusammengeführt werden*
 
 ## Drucken
 <p style="text-align: justify"> Sie haben die Möglichkeit die Detailansicht des Anlasses auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucker Dialogfenster mit Ihren persönlichen und firmeninternen Voreinstellungen. </p>
