@@ -19,4 +19,4 @@ Geöffnete Mailansicht
 {{< /imgproc >}}
 
 ## Schaltflächen
-<p style="text-align: justify"> Informationen zur Funktionsweise der Schaltflächen am unteren Rand des Anzeigenbereichs entnehmen Sie bitte dem Abschnitt <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/1_zusammenfassung/">Zusammenfassung</a>. </p>
+<p style="text-align: justify"> Informationen zur Funktionsweise der Schaltflächen am unteren Rand des Anzeigenbereichs entnehmen Sie bitte dem Abschnitt <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/1_zusammenfassung/#schaltflächen">Zusammenfassung</a>. </p>

@@ -12,7 +12,7 @@ Tabelle: Übersicht und Erläuterung der standardmäßig angezeigten Spalten
 |Von||Wochentag, Datum und Uhrzeit des Startzeitpunktes der Buchung|
 |Bis||Wochentag, Datum und Uhrzeit des Endzeitpunktes der Buchung|
 |Organisator:in||Person, welche die Buchung organisiert|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen. </p>|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen. </br> _Das Symbol steht immer in der zweiten Spalte_</p>|
 ---
 
 {{< imgproc List_BG_Anzeige_BGbearbeiten Resize "1280x" >}}

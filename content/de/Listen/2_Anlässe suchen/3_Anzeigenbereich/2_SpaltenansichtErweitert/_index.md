@@ -7,11 +7,9 @@ description: >
 ---
 Über das [Spaltensymbol](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder herausnehmen. 
 
----
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Wochentag Von||Wochentag mit Start-Datum und -Uhrzeit|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Anlass bearbeiten </br> _steht automatisch in der zweiten Spalte_|
 |Wochentag Bis||Wochentag mit End-Datum und -Uhrzeit|
 |Startdatum||nur Startdatum|
 |Enddatum||nur Enddatum|
@@ -32,9 +30,9 @@ description: >
 |Logons Organisator:in||Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde|
 |Logons Verantwortliche:r||Log-In Name, welcher der verantwortlichen Person zum Anmelden in ROOMS zugeteilt wurde|
 |Firma Nummer </br> Organisator:in||Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
-|Firma Nummer </br> Verantwortliche:r|||Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
-|Firma Bezeichnung </br> Organisator:in|||Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
-|Firma Bezeichnung </br> Verantwortliche:r|||Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
+|Firma Nummer </br> Verantwortliche:r||Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
+|Firma Bezeichnung </br> Organisator:in||Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
+|Firma Bezeichnung </br> Verantwortliche:r||Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
 |Kosten||Kosten, die bei dem Anlass durch Catering&Service entstehen </br> _Z.B. Bestuhlungsservice oder Stehimbiss_|
 |Anzahl Personen||Anzahl der teilnehmenden bzw. angemeldeten Personen|
 ---
