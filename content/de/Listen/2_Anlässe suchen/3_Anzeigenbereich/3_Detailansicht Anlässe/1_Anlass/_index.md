@@ -5,10 +5,12 @@ weight: 1
 description: >
   Im Reiter Anlass sind alle Informationen übersichtlich zusammengestellt.
 ---
+## Ansichtsbereich
 {{< imgproc List_ANL_DS_Anl Resize "1280x" >}}
 Detaillierte Informationen zum ausgewählten Anlass im Reiter "Anlass" 
 {{< /imgproc >}}
 
+### Hinzugefügte Buchungen
 <p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle, dem Anlass hinzugefügten, Buchungen aufgelistet. </p>
 
 {{< imgproc List_ANL_DSunten_b Resize "1280x" >}}
@@ -39,9 +41,10 @@ Am unteren Rand der Detailansicht befinden sich Schaltflächen zur Anlassverwalt
 Schaltflächen zur Anlassverwaltung 
 {{< /imgproc >}}
 
+## Schaltflächen
 Im Folgenden werden die Schaltflächen im Einzelnen beschrieben:
 
-## Bearbeiten
+### Bearbeiten
 <p style="text-align: justify"> Über "Bearbeiten" werden Sie auf die Eingabemaske zur Erstellung eines Anlasses weitergeleitet. Dort können Sie den Anlass bearbeiten und ändern. </p>
 
 {{< imgproc List_ANL_DS_Schalt Resize "1280x" >}}
@@ -50,7 +53,7 @@ Schaltflächen zur Anlassverwaltung
 
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/"> Anlass Erstellen </a>. </p>
 
-## Kopieren
+### Kopieren
 <p style="text-align: justify"> Mit deiser Schaltfläche kopieren Sie den betrachteten Anlass. Dies ist dann hilfreich, wenn ein Anlass mit gleichen Rahmenbedingungen und/oder Teilnehmenden zu einem anderen Zeitpunkt erneut stattfinden soll. </p>
 
 <p style="text-align: justify"> Es öffnet sich die Eingabemaske zur Erstellung eines Anlasses. Alle Details werden aus dem ursprünglichen Anlass übernommen, die Sie nun bearbeiten können. </p>
@@ -63,7 +66,7 @@ Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern
 
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
 
-## Anlass für Serien
+### Anlass für Serien
 <p style="text-align: justify"> Neben der Möglichkeit einen Anlass für eine komplette Serie zu erstellen, gibt es an dieser Stelle auch die Möglichkeit je einen Anlass für die Serienbuchungseinträge zu erstellen. Hierzu muss bereits ein Anlass vorliegen und eine Serienbuchung enthalten. Die Stammdaten des ursprünglichen Anlasses werden in die Folgeanlässe kopiert. Ebenso werden Catering & Service Bestellungen sowie die Teilnehmenden übernommen.
 Sind mehrere Buchungen mit einem Anlass verbunden, so müssen alle Buchungen zeitlich identische (Wochentag und Uhrzeit) Serienbuchungen sein. Gebuchte Räume dürfen innerhalb einer Serie variieren. </p>
 
@@ -111,14 +114,14 @@ Ausnahme: 27.10. 15:00-16:00 Uhr </br>
 
 =>  *Die Serienbuchungen können, bis auf die Serienbuchungselemente am 27.10, jeweils zu einem Anlass zusammengeführt werden*
 
-## Drucken
+### Drucken
 <p style="text-align: justify"> Sie haben die Möglichkeit die Detailansicht des Anlasses auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucker Dialogfenster mit Ihren persönlichen und firmeninternen Voreinstellungen. </p>
 
 {{< imgproc List_ANL_DS_Druck Resize "1280x" >}}
 Drucker Dialogfenster um die Detailsansicht zum Anlass auszudrucken 
 {{< /imgproc >}}
 
-## Anlass stornieren
+### Anlass stornieren
 <p style="text-align: justify"> Über die Schaltfläche "Anlass stornieren" sagen Sie einen Anlass mit allen zugehörigen Buchungen ab und entfernen diese aus dem Kalender. Der Anlass und die zugehörigen Buchungen bleiben jedoch in den Listen und in den Reports sichtbar.
 Es könnten Stornierungskosten anfallen.
 Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit Notifikation an die Organisatoren, Verantwortlichen und Teilnehmenden zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. </p>

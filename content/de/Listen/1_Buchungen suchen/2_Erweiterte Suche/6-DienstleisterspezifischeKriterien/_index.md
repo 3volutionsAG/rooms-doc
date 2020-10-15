@@ -13,7 +13,6 @@ description: >
 
 Folgende Tabelle erläutert die Bedeutung der Checkboxen:
 
----
 |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funkion|
 |---|---|---|
 |Mit nicht freigegebenen </br> Bestellungen|{{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_xfreiBest Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox. </p>|

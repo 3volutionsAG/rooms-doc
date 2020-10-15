@@ -18,11 +18,8 @@ Zur Veranschaulichung sehen Sie hier folgendes Beispiel:
 Übersicht Ressourcenspezifischer Kriterien 
 {{< /imgproc >}}
 
-
----
 |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Bedeutung|
 |---|---|---|
 |Ressourcen ID/Bezeichnung|{{< imgproc Listen_Buchungen_ErweiterteSuche_ResSpezKrit_ID Resize "200x" >}}{{< /imgproc >}}|Hier können Sie direkt nach der eindeutigen Ressourcen Nummer oder der Ressourcen Bezeichnung filtern.|
 |Ressourcenstatus|{{< imgproc Listen_Buchungen_ErweiterteSuche_ResSpezKrit_Status Resize "200x" >}}{{< /imgproc >}}|**Aktiv:** </br> Es werden nur Buchungen in zugänglichen Räumen angezeigt <br/> **Inaktiv:** Es werden nur Buchungen in nicht zugänglichen Räumen angezeigt|
 |VC-Equipment|{{< imgproc Listen_Buchungen_ErweiterteSuche_ResSpezKrit_VC Resize "200x" >}}{{< /imgproc >}}|**Alle Räume:** </br> Es werden alle Räume berücksichtigt <br/> **Raum ohne VC:** Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> **Raum mit VC:** </br> Es werden nur Buchungen in Räumen ohne VC-Equipment berücksichtigt <br/> **Raum mit VC integral:** </br> Es werden nur Buchungen in Räumen mit fest verbautem VC-Equipment berücksichtigt|
----

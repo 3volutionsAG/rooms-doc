@@ -11,7 +11,8 @@ description: >
 Ist eine Buchung ausgewählt, werden die Schaltflächen aktiviert
 {{< /imgproc >}}
 
-## Anlass erstellen
+## Schaltflächen
+### Anlass erstellen
 <p style="text-align: justify"> Über die Schaltfläche "Anlass erstellen" öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird. </p>
 
 {{< imgproc List_BG_Anzeige_weitFkt_AnlErst_beschriftet Resize "1280x" >}}
@@ -20,7 +21,7 @@ Ist eine Buchung ausgewählt, werden die Schaltflächen aktiviert
 
 <p style="text-align: justify"> Eine genaue Beschreibung zum Erstellen eines Anlasses  finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
 
-## Bearbeiten
+### Bearbeiten
 <p style="text-align: justify"> Über "Bearbeiten" kommen Sie auf die Eingabemaske der Detailbuchung. Dort können Sie die Buchung bearbeiten und ändern. </p>
 
 {{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "1280x" >}}
@@ -29,7 +30,7 @@ Eingabemaske zur Bearbeitung einer Buchung
 
  <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen </a> </p>
 
-## Freigeben
+### Freigeben
 <p style="text-align: justify"> Die Schaltfläche "Freigeben" bezieht sich nur auf laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Freigeben" um die Buchung zu beenden. Es erscheint ein Dialogfenster mit der Überschrift "Massenfreigabe" Dieser Titel bezieht sich auf die Möglichkeit mehrere laufende Buchungen zu markieren und in einem Zug freizugeben. 
 Die Nachlaufzeit wird ebnenfalls freigeben. Die Belegungsdauer wird minutengenau hinterlegt. </p>
 
@@ -37,7 +38,7 @@ Die Nachlaufzeit wird ebnenfalls freigeben. Die Belegungsdauer wird minutengenau
 Dialogfenster zur Schaltfläche "Freigeben"
 {{< /imgproc >}}
 
-## Terminieren
+### Terminieren
 <p style="text-align: justify"> Die Schaltfläche "Terminieren" bezieht sich nur für laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf "Terminieren" um die Buchung zu beenden. Es erscheint ein Dialogfenster mit der Überschrift "Massenterminierung" Dieser Titel bezieht sich auf die Möglichkeit mehrere laufende Buchungen zu markieren und in einem Zug zu terminieren.
 Die Nachlaufzeit bleibt in diesem Fall bestehen. Die Buchungsdauer wird minutengenau gespeichert. </p>
 
@@ -45,7 +46,7 @@ Die Nachlaufzeit bleibt in diesem Fall bestehen. Die Buchungsdauer wird minuteng
 Dialogfenster zur Schaltfläche "Terminieren"
 {{< /imgproc >}}
 
-## Annullieren
+### Annullieren
 <p style="text-align: justify"> Über die Schaltfläche "Annullieren" löschen Sie ein Buchung aus dem Kalender. Die Buchung bleibt jedoch über die Suchkunftionen einsehbar. 
 Markieren Sie ein Buchung und klicken Sie auf "Annulieren" um die Buchung zu löschen. Dabei können Stornierungskosten anfallen. Die Buchung wird dabei aus dem Kalender gelöscht, kann jedoch weiterhin über die Suchfunktionen aufgerufen werden.
 Es erscheint ein Dialogfenster mit der Überschrift "Massenannulierung" Dieser Titel bezieht sich auf die Möglichkeit mehrere Buchungen zu markieren und in einem Zug zu annullieren. </p>
@@ -54,7 +55,7 @@ Es erscheint ein Dialogfenster mit der Überschrift "Massenannulierung" Dieser T
 Dialogfenster zur Schaltfläche "Annulieren"
 {{< /imgproc >}}
 
-## Aktualisieren
+### Aktualisieren
 <p style="text-align: justify"> Sie können eine oder mehrere Buchungen aktualisieren und Änderungen, die evtl. von einer anderen Person zeitgleich vorgenommn wurden abzurufen.
 Markieren Sie eine oder mehrere Buchungen und klicken Sie auf die Schaltfläche "Aktualisieren", worauhin sich ein Dialogfenster öffnet. Hier können Sie auswählen, ob Sie nur die selektierten Buchungen aktualisieren möhten oder die gesamte angezeigte Liste. </p>
 

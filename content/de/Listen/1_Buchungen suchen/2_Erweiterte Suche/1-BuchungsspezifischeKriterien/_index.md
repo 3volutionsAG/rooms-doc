@@ -11,7 +11,6 @@ Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
 Übersicht der Buchungsspezifischen Kriterien 
 {{< /imgproc >}}
 
- ---
  |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
  |---|---|---|
  |Nummer|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Nr Resize "200x" >}}{{< /imgproc >}}|Hier können Sie die individuelle Buchungsnummer eintragen.|
@@ -21,7 +20,6 @@ Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
  |Status|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Status Resize "200x" >}}{{< /imgproc >}}|Den Status könne Sie über die Schnellauswahl wäheln.|
  ---
 
-</br>
 Es stehen folgende Status zur Auswahl:
 </br>
 
@@ -29,7 +27,6 @@ Es stehen folgende Status zur Auswahl:
 
 Folgende Tabelle erläutert die Bedeutung der Status:
 
----
  |<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
  |Alle / keine auswählen||Die Suche berücksicht jeden/keinen Status|
@@ -38,13 +35,13 @@ Folgende Tabelle erläutert die Bedeutung der Status:
  |Besetzt (provisorisch)|Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden.|
  |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert weden.|
  |Besetzt (Temporär)|<p style="text-align: justify"> Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht. </p>|
-<!-- Thema Slot vorerst außenvor -->
  ---
+
+<!-- Thema Slot vorerst außenvor -->
+
 
  Am Ende der Buchungsspezifischen Kriterien finden Sie vier weitere Checkboxen, die aktiviert werden können:
 
-
----
 |<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
  ||{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Checkb Resize "200x" >}}{{< /imgproc >}}|
@@ -52,4 +49,3 @@ Folgende Tabelle erläutert die Bedeutung der Status:
  |Annulliert (ohne No-Show)|Zeigt nur Buchungen, die aktiv annulliert wurden|
  |Nicht Standard Bestuhlung <br/> *(gilt nur bei Raumbuchungen)*|Zeigt nur Buchungen, bei denen eine individuelle Bestuhlung bestellt wurde|
  |Nur letzte Buchung einer Serie|Zeigt nur die letzten Buchungen einer Buchungsserien|
- ---

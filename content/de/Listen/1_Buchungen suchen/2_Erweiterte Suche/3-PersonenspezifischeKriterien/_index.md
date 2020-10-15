@@ -12,7 +12,6 @@ description: >
 
 Folgende Tabelle erläutert die einzelnen Eingabefelder:
 
----
 |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
 |---|---|---|
 |Meine Buchungen|{{< imgproc Listen_Buchungen_ErweiterteSuche_PersSpezKrit_Checkb1 Resize "200x" >}}{{< /imgproc >}}|Aktivieren Sie diese Checkbox, um Buchungen zu finden, bei denen Sie selbst Organisator:in sind.|

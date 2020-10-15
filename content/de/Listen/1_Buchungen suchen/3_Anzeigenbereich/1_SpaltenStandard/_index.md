@@ -14,15 +14,14 @@ Tabelle: Übersicht und Erläuterung der standardmäßig angezeigten Spalten
 |Organisator:in||Person, welche die Buchung organisiert|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen. </p>|
 ---
-</br>
-Eingabemaske um Änderungen an einer Buchung vorzunehmen:
 
 {{< imgproc List_BG_Anzeige_BGbearbeiten Resize "1280x" >}}
 Eingabemaske um Buchungen zu bearbeiten
 {{< /imgproc >}}
 
 Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen</a>
-</br>
+
+---
 </br>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
@@ -31,16 +30,13 @@ Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen
 |Buchungs Titel||<p style="text-align: justify"> Mit einem Klick auf den Buchungs Titel öffnen Sie die Detailansicht. </p>|
 ---
 
-</br>
-
-In der Detailansicht einer Buchung sehen Sie alle Informationen auf einer Seite zusammengefasst:
-
 {{< imgproc List_BG_Anzeige_Detailansicht Resize "1280x" >}}
 Detailansicht einer Buchung
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Weitere Informationen zur Detailsansicht und Bearbeitungsmöglichkeiten finden Sie im Unterkapitel <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/">Detailansicht Buchungen</a> </p>
-</br>
+
+---
 </br>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
@@ -60,13 +56,13 @@ Detailansicht einer Buchung
 |Annullieren|{{< imgproc List_BG_Anzeige_SymAnn Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über diese Schaltfläche können Sie zukünfitge Buchungen stornieren, vergangene oder laufende Buchungen aus einer Serie bleiben bestehen.|
 ---
 
-Weitere Anmerkungen zum Annullieren:
+__Einschub Anmerkungen zum Annullieren__
 -  Standardmäßig wird eine Informationsmail an die erstellenden, organisierenden und verantwortlichen Personen sowie involvierte Dienstleister gesendet. Dies können Sie unterdrücken, in dem Sie die Checkbox deaktivieren. 
 -  Bei der Annullierung können Stronierungskosten anfallen.
 In den Kalenderansichten sind stornierte Buchungen nicht mehr sichtbar, jedoch tauchen sie weiterhin in Reports und Statistiken auf. In den Listen sind annullierte Buchungen nur sichtbar, wenn Sie speziell nach diesen filtern.
 -  Stornierte Buchungen können weiterhin bearbeitet werden, es werden jedoch weder Update-Emails versendet, noch eine Synchronisation durchgeführt. </p>
-
-</br>
+  
+---
 </br>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|

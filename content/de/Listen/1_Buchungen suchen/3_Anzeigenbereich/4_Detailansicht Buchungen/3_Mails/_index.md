@@ -5,6 +5,7 @@ weight: 3
 description: >
   <p style="text-align: justify">  In diesem Reiter werden alle Mails, die aus der Buchung heraus verschickt wurden, angezeigt. </p>
 ---
+## Anzeigenbereich
 <p style="text-align: justify"> Aufgelistet sehen Sie hier alle Mails, die aus diesem Vorgang heraus versendet wurden. </p>
 
 {{< imgproc List_BG_Anzeige_DS_Mail Resize "1280x" >}}
@@ -17,4 +18,5 @@ Auflistung aller Mails, die aus dem Vorgang versendet wurden
 Geöffnete Mailansicht 
 {{< /imgproc >}}
 
+## Schaltflächen
 <p style="text-align: justify"> Informationen zur Funktionsweise der Schaltflächen am unteren Rand des Anzeigenbereichs entnehmen Sie bitte dem Abschnitt <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/1_zusammenfassung/">Zusammenfassung</a>. </p>
