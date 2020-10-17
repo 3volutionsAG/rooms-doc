@@ -3,48 +3,22 @@ title: "Listen"
 linkTitle: "Listen"
 weight: 600
 description: >
-  Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Resourcen, Raumeinheiten, Teilnehmer und Dienstleistern. 
-  Die wichtigste Suchanfrage wird wohl die Buchungssuche sein. Eine erstellte Buchung sollte einfach wiedergefunden werden können um Änderungen vornehmen zu können oder sie zu aktualisieren.
+  Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Ressourcen, Raumeinheiten, Teilnehmenden und Dienstleistenden. 
+  Die wohl wichtigste Suche ist die Buchungssuche. Eine erstellte Buchung sollte einfach wiedergefunden werden, um sie unkompliziert verwalten zu können.
 ---
 
 ## Aufbau
-Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. 
+<p style="text-align: justify"> Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anzeigenbereich aufgeteilt. </p>
 
-<!-- Bild Gesamtfenster mit Markierung Sidepanel und Anzeigenbereich -->
+### Sidepanel
+<p style="text-align: justify"> Das Sidepanel bietet Ihnen vielfältige Filterkriterien, anhand derer Sie u.a. eine Buchung, eine Ressource oder einen Anlass finden können. Haben Sie die Kriterien ausgewählt, klicken Sie auf die Schaltfläche "Finden", um die Ergebnisliste anzupassen.
+Über die Schaltfläche "Zurücksetzen" löschen Sie die Filter und es werden wieder alle Einträge angezeigt. </p>
 
-## Sidepanel
-Im Sidepanel können Sie die Kategorien und Kriterien einstellen, nach denen Sie gerne suchen wollen. Nach der Auswahl muss immer die Schaltfläche "Finden" betätigt werden um das Ergebnis entsprechend der Filterkriterien zu aktualisieren.
-Sie haben aber auch die Möglichkeit ausgewählte Filter zu löschen, indem Sie die Schaltfläche "Zurücksetzen" drücken. Daraufhin wird wieder die ungefilterte Liste angezeigt.
+{{< imgproc List_Faufbau_FindReset Resize "1280x" >}}
+Schaltflächen um Suche zu starten und Filter zu löschen 
+{{< /imgproc >}}
 
-<!-- Bild Sidepanel mit markiertem finden und zurücksetzen -->
-
-## Anzeigenbereich
-Im Anzeigenbereich werden daraufhin die entsprechenden Ergebnisse aufgelistet. 
-
-In den meisten Listen gibt es eine Schaltfläche mit dem Symbol eines Bleistiftes. Über diese Schaltfläche werden Sie auf die Eingabemaske der Buchung weitergeleitet, wo Sie die Buchung bearbeiten können.
-
-<!-- Bild Eingabemaske Buchung -->
-
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/Buchen/Buchung-erstellen)
-
-<!-- Verlinkung anpassen -->
-
-Zum Teil gibt es weitere mögliche durchführbare Aktionen bezüglich eines Eintrages, allerdings sind die entsprechenden Schaltflächen nur aktiv, sofern Sie über die nötigen Berechtigungen verfügen.
-
-<!-- (Bild Startansicht Listen mit Markierung Extrafunktionen) -->
-
-## Einträge
-In einigen Spalten sehen Sie statt Text ein Symbol. Dieses Smybol kann zum einen ein Tooltipp sein. In diesem Fall erhalten Sie weitere Informationen durch das Plazieren des Mauszeigers auf dem Symbol. Dabei öffnet sich eine Art Sprechblase. 
-
-<!-- Bild Tooltipp -->
-
-Manche Symbole können auch als Schaltfläche fungieren. Durch einen Klick auf diese Schaltfläche werden Sie zu einer Aktion aufgefordert oder auf eine andere Seite weitergeleitet.
-
-<!-- Bild Schaltfläche mit Call to Action -->
-
-Im Details sind diese Informationen in den zugehörigen Unterkapiteln beschrieben. 
-
-Manche Einträge in einer Liste sind blau gefärbt. Durch klicken auf diesen Eintrag gelangen Sie zur entsprechenden Detailansicht des Eintrags.
-
-<!-- Bild blauer EIntrag -->
-<!-- Bild Detailseite -->
+### Anzeigenbereich
+<p style="text-align: justify"> Im Anzeigenbereich wird Ihnen Ihre Ergebnisliste angezeigt. 
+Am unteren Rand des Anzeigenbereichs finden Sie meistens noch weitere Schaltflächen zur Verwaltung der Listeneinträge. Diese sind nur aktive oder sichtbar, wenn Ihnen die entsprechenden Berechtigungen zugewiesen wurden.
+Wir ein Eintrag in blauer Schrfit angezeigt, so ist dieser mit der Detailseite des Listeneintrags verlinkt. Klicken Sie auf den Link um zur Detailseite weitergeleitet zu werden.</p>
