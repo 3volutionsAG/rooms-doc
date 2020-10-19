@@ -6,11 +6,6 @@ description: >
      Über den Menüpunkt Buchen ist eine Detailbuchung eines Anlasses möglich.
 ---
 Navigieren Sie im Menüpunkt "Buchen" auf das Subpanel "Anlass".
-
-{{< imgproc BG_ANL_ANLerst Resize "1280x" >}}
-Anlass unter Menüpunkt "Buchen" erstellen 
-{{< /imgproc >}}
-
 Klicken Sie auf die Schaltfläche "Erstellen", um die Eingabemaske zur Erstellung eines Anlasses zu öffnen.
 
 {{< imgproc BG_ANL_ANLerst Resize "1280x" >}}
@@ -41,11 +36,11 @@ Folgende Tabelle gibt einen Überblick mit kurzen Erklärungen der Eingabefelder
 |Ersteller:in*|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxPers Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass erstellt, wird automatisch eingegeben|
 |Organisator:in*|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxPers Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass organisiert, standardmäßig wird die erstellende Person eingetragen|
 |Kostenstelle Organisator:in|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxKost Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Ist der organisierenden Person eine Kostenstelle zugeordnet, wird diese hier automatisch eingertagen. Über das Eingabefeld können weitere Kostenstellen hinzugefügt werden. Diese kann aus den Vorschlägen während des Tippens ausgewählt oder frei eingegeben werden.</p>|
-||{{< imgproc BG_ANL_ANLerst_Eing_Inteliboxkost2 Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Die Verteilung der Kosten kann prozentual auf verschiedene Kostenstellen aufgeteilt werden. </br> _Im Beispiel trägt die Kostenstelle 1234 30% der Kosten und die Kostenstelle 5678 70% der Kosten_</p>|
+||{{< imgproc BG_ANL_ANLerst_Eing_Inteliboxkost2 Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Die Verteilung der Kosten kann prozentual auf verschiedene Kostenstellen aufgeteilt werden. </br> <em>Im Beispiel trägt die Kostenstelle 1234 30% der Kosten und die Kostenstelle 5678 70% der Kosten</em></p>|
 |VC Buchung|{{< imgproc BG_ANL_ANLerst_Eing_VC Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Handelt es sich um einen Anlass mit Videokonferenz, lässt sich dies hier durch Markierung der Checkbox gebucht werden</p>|
 |Anmeldeschluss||Freie Eingabe des Anmeldeschlusses|
-|Anlassstatus||<p style="text-align: justify">Der Anlassstatus ist kundenspezifisch definiert. </br> _Im Beispiel kann der Status auf angefragt - der Anlass wurde noch nicht genehmigt - oder gebucht gesetzt werden - der Anlass wird verbindlich erstellt._</p>|
-|Kosten||<p style="text-align: justify">Automatische Anzeige der aggregierten Kosten, die durch Catering & Service oder Mietgebühren zustande kommen.>/p>|
+|Anlassstatus||<p style="text-align: justify">Der Anlassstatus ist kundenspezifisch definiert. </br> <em>Im Beispiel kann der Status auf angefragt - der Anlass wurde noch nicht genehmigt - oder gebucht gesetzt werden - der Anlass wird verbindlich erstellt.</em></p>|
+|Kosten||<p style="text-align: justify">Automatische Anzeige der aggregierten Kosten, die durch Catering & Service oder Mietgebühren zustande kommen.</p>|
 ---
 <p style="text-align: justify"> <em>* Ist ein Name ausgewählt, können Sie über das Portraitsymbol an der rechten Seite des Eingabefelds die Detailansicht zu der Person einsehen. Dazu öffnet sich ein extra Fenster in Ihrem Browser </em></p>
 

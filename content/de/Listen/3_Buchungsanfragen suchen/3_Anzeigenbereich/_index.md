@@ -3,20 +3,22 @@ title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
 weight: 30
 description: >
-  Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben.
+  Im Anzeigenbereich werden die Ergebnisse Ihrer Suche nach Buchungsanfragen in Listenform ausgegeben.
 ---
 Das Ergebnis ist tabellarisch angeordnet. Jede Buchungsanfrage wird in je einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die bei der Buchungsanfrage hinterlegt wurden.  
 
-<!-- Bilder Anzeigenbereich -->
+{{< imgproc List_BA_Anz Resize "1280x" >}}
+Anzeigenbereich Suchergebnisse Buchungsanfragen
+{{< /imgproc >}}
 
+## Spaltenansicht Standard 
 Standardmäßig sind folgende Spalten sichtbar:
 
----
-|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Titel||Titel der Buchungsanfrage|
-||_Stift_|Buchungsanfrage bearbeiten </br> _steht immer automatisch in der zweiten Spalte_|
-|Anlasstyp||_Z.B. Kundenmeeting oder Konferenz_|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Buchungsanfrage bearbeiten </br> _steht immer automatisch in der zweiten Spalte_|
+|Anlasstyp||Anlasstzpen sind kundenspezifisch definiert </br> _z.B. Kundenmeeting oder Konferenz_|
 |Status||Gibt den Bearbeitungsstand an|
 |Von||Startdatum|
 |Bis||Enddatum|
@@ -25,25 +27,28 @@ Standardmäßig sind folgende Spalten sichtbar:
 |Anlass vorhanden?||Gibt an, ob die Bcuhungsanfrage zu einem bestehenden Anlass gehört|
 ---
 
-<!-- Stiftsymbol einfügen -->
-
+## Spaltenansicht Erweitert
 Über das [Spaltensymbol](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
 
-*Anmerkung: Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.*
-
----
-|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Bemerkungen||Bei der Buchungsanfrage eingetragene Bemerkungen|
 |Standort||Standort, welcher angefragt wurde|
 |Priorität||???|
-|Anzahl Teilnehmer|||
+|Anzahl Teilnehmende||Gibt die Anzahl der erwarteten Teilnehmenden an|
 |Verantwortliche:r||Person, welche für die Buchungsanfrage verantwortlich ist|
 ---
 
-Am unteren Rand des Anzeigenbereichs finden Sie die Schaltfläche "löschen". Um eine Buchungsanfrage zu löschen, markieren Sie diese über die Checkbox am Zeilenanfang und klicken dann auf "löschen". Es erscheint ein kleines Fenster, in dem Sie den Löschvorgang bestätigen müssen.
+## Schaltflächen
+Am unteren Rand des Anzeigenbereichs finden Sie die Schaltfläche "Löschen". Um eine Buchungsanfrage zu löschen, markieren Sie diese über die Checkbox am Zeilenanfang und klicken dann auf "Löschen". 
 
-<!-- Bild Löschen und bestätigen -->
+{{< imgproc List_BA_del_b Resize "1280x" >}}
+Löschen einer Buchungsanfrage
+{{< /imgproc >}}
 
-<!-- fehlende Begriffe erklären -->
+In dem erscheinenden Dialogfenster bestätigen Sie nun den Löschvorgang.
+
+{{< imgproc List_BA_del_best Resize "1280x" >}}
+Dialogfenster zur Bestötigung des Löschvorgangs
+{{< /imgproc >}}
