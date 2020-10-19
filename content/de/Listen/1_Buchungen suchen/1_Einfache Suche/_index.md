@@ -14,7 +14,6 @@ Einfache Suche um Buchungen zu finden
 
 Folgende Tabelle erläutert die Eingabefelder:
 
- ---
  |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
  |---|---|---|
  |Ressoucenart|{{< imgproc Listen_Buchungen_EinfacheSuche_Ressourcenart Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Über das Plus (+) wählen Sie vorhandene Ressourcen (Räume, Parkplätze, Arbeitsplätze,...) aus. </p>|
