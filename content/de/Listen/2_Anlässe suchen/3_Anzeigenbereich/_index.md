@@ -9,3 +9,5 @@ description: >
 Anzeigenbereich der Anlasssuche 
 {{< /imgproc >}}
 
+## Anpassung der Darstellung
+<p style="text-align: justify"> Mit Hilfe der Listensymbole können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel <a href="/generell/3_grundlegendefunktionen/">Grundlegende Funktionen</a> erläutert. </p>

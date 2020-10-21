@@ -3,26 +3,24 @@ title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
 description: >
-  Über detaillierte Angaben wie der Personalnummer, können Personen noch schneller gefunden werden.
+  Über detaillierte Angaben wie der Personalnummer oder zugeordneten Abteilung, grenzen Sie die Suche weiter ein.
 ---
+{{< imgproc List_Pers_ErwKrit_geschw_b Resize "1280x" >}}
+Filter der Erweiterten Suche, um Personen zu finden 
+{{< /imgproc >}}
 
-Liegen Ihnen weitere Details zu einer Person vor, z.B. die Personalnummer können Sie die Suche über die Erweiterten Kriterien einschränken. 
+Folgende Tabelle erläutert die Eingabefelder:
 
-## Erweiterte Kriterien
-
- ---
- |<div style="width:250px">Feld</div>|Funktion|
- |---|---|
- |Personalnummer||
- |OE/Firma|Organisationseinheit der gesuchten Person oder Firma, welcher die Person angehört|
- |Kostenstellencode|Nummer der zugehörigen Kostenstelle|
- |Kostenstellenname|Name der zugehörigen Kostenstelle|
- |Status (Aktiv/Inaktiv)|Person mit aktiviertem oder deaktiviertem Zugang|
- |Art (Intern/Extern)|- _intern:_ firmenzugehörig </br> - _extern:_ einer fremden Firma zugehörig|
- |E-Mail bestätigt|Gibt an, ob die E-Mail-Adresse von der gesuchten Person bestätigt wurde|
+ |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
+ |---|---|---|
+ |Personalnummer||Eindeutige Personalnummer einer firmeninternen Person|
+ |OE/Firma||Organisationseinheit/Abteilung der gesuchten Person oder Firma, welcher die Person angehört|
+ |Kostenstellencode||Nummer der zugehörigen Kostenstelle|
+ |Kostenstellenname||Name der zugehörigen Kostenstelle|
+ |</br> Status (Aktiv/Inaktiv)|{{< imgproc List_Pers_ErwKrit_Stat Resize "200x" >}}{{< /imgproc >}}|</br> Person mit aktivem oder deaktiviertem Zugang|
+ |</br> Art (Intern/Extern)|{{< imgproc List_Pers_ErwKrit_Art Resize "200x" >}}{{< /imgproc >}}|</br> **Intern:** firmenzugehörig </br> **Extern:** einer fremden Firma zugehörig|
+ |</br> E-Mail bestätigt|{{< imgproc List_Pers_ErwKrit_Mail Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** E-Mail-Adresse ist bestätigt </br> **Nein:** E-Mail-Adresse ist nicht bestätigt|
 ---
-
-<!-- Bild Suchkriterien Erweiterte Kriterien -->
 
 
 
