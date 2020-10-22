@@ -10,7 +10,7 @@ Folgende Tabelle zeigt die Spalten der Standardansicht auf:
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Anlassbezeichnung||Titel des Anlasses|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Anlass bearbeiten </br> _steht automatisch in der zweiten Spalte_|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br>Anlass bearbeiten </br> _steht automatisch in der zweiten Spalte_|
 ---
 
 {{< imgproc List_ANL_ANLbearb Resize "1280x" >}}

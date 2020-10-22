@@ -3,10 +3,8 @@ title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 2
 description: >
-  <p style="text-align: justify"> Neben den standardmäßig angezeigten Spalten können Sie weitere Spalten mit Informationen zum Anlass einblenden. </p>
+  Neben den standardmäßig angezeigten Spalten können Sie weitere Spalten mit Informationen zum Anlass einblenden.
 ---
-Über das [Spaltensymbol](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder herausnehmen. 
-
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Wochentag Von||Wochentag mit Start-Datum und -Uhrzeit|

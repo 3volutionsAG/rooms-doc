@@ -22,10 +22,8 @@ Erweiterte Kriterien zur Suche nach Ressourcen
  |Verantwortliche Person||Vor- und/oder Nachname der Person, welche für die Ressource verantwortlich ist|
 ---
 
-<!-- Buttons Ressourcenpicker -->
-
 ## Gliederung
-Den Filter Gliederung finden Sie nicht bei allen Ressourcenarten. Er steht nur für die Ressourcenart Raum und Equipment zur Verfügung.
+<p style="text-align: justify"> Den Filter Gliederung finden Sie nicht bei allen Ressourcenarten. Er steht nur für die Ressourcenart Raum und Equipment zur Verfügung. </p>
 
 {{< imgproc List_RES_Glied_b Resize "1280x" >}}
 Gliederung zur Suche nach Ressourcen

@@ -26,9 +26,9 @@ Folgende Tabelle gibt Ihnen einen Überblick der Filterkriterien und erläutert 
  |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
  |---|---|---|
  |Titel||Titel der Buchungsanfrage|
- |Anlasstyp|{{< imgproc List_BA_AnfSpezKrit_Typ Resize "200x" >}}{{< /imgproc >}}|Kategorie des Anlasses </br> _z.B. Kundenmeeting, Konfernez,..._|
+ |</br>Anlasstyp|{{< imgproc List_BA_AnfSpezKrit_Typ Resize "200x" >}}{{< /imgproc >}}|</br>Kategorie des Anlasses </br> _z.B. Kundenmeeting, Konfernez,..._|
  |Status|{{< imgproc List_BA_AnfSpezKrit_Stat Resize "200x" >}}{{< /imgproc >}}|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus|
- |Mit Anlass|{{< imgproc List_BA_AnfSpezKrit_Anl Resize "200x" >}}{{< /imgproc >}}| **Ja:** Die Anfrage bezeiht sich auf einen Anlass </br> **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
+ |</br>Mit Anlass|{{< imgproc List_BA_AnfSpezKrit_Anl Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** Die Anfrage bezeiht sich auf einen Anlass </br> **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
 ---
 
 ## Personenspezifische Kriterien
