@@ -29,7 +29,7 @@ Reiter "Ressource" stellt übersichtlich alle hinterlegten Details dar
 <p style="text-align: justify"> Hier ist die Historie der Erstellung und des Änderungsverlauf der Ressource aufgelistet. </p>
 
 {{< imgproc List_RES_DS_Reiter_Hist_b Resize "1280x" >}}
-Reiter "Ressource" stellt übersichtlich alle hinterlegten Details dar 
+Reiter "Historik" zeigt Details zur Erstellung und Änderungsvorgängen 
 {{< /imgproc >}}
 
 Über den Drop-Down Pfeil öffnen Sie die Informationen zu den einzelnen Änderungen.
