@@ -7,12 +7,15 @@ description: >
 ---
 Das Ergebnis ist tabellarisch angeordnet. Jedes Angebot wird in je einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die zu den jeweiligen Angeboten hinterlegt sind.  
 
-<!-- Bilde Anzeigenbereich -->
+{{< imgproc List_CS_Anz Resize "1280x" >}}
+Anzeigenbereich mit Ergebnisliste der Such nach Caterings & Services
+{{< /imgproc >}}
 
+## Spaltenansicht Standard
 Standardmäßig sind folgende Spalten sichtbar:
 
 ---
-|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Menge||Anzahl des bestellten Angebots|
 |Angebot Bezeichnung||Titel des Angebots|
@@ -20,12 +23,14 @@ Standardmäßig sind folgende Spalten sichtbar:
 |Lieferort||Standort/Raum, für welchen der Service bestellt wurde|
 |Beginn||Startdatum und -uhrzeit der Dienstleistung </br> _Kann von Buchungsbeginn abweichen_|
 |Titel||Titel der Buchung, zu welcher der Service gebucht wurde|
-|Notiz an Dienstleistende|_Symbol einfügen_|Klicken Sie auf das Symbol um eine Notiz an den Dienstleister zu lesen, eintzutragen oder zubearbeiten. Denken Sie daran, nach dem Bearbeiten auf "speichern" zu klicken.|
+|Notiz an Dienstleistende|{{< imgproc Notiz Resize "40x" >}}{{< /imgproc >}}</br>{{< imgproc List_CS_Anz_Notiz Resize "200x" >}}{{< /imgproc >}}|Klicken Sie auf das Symbol um eine Notiz an den Dienstleister zu lesen, eintzutragen oder zu bearbeiten. Denken Sie daran, nach dem Bearbeiten auf "speichern" zu klicken.|
 |Bestellung Nummer||Anzahl der Bestellungen, die für diese Buchung aufgegeben wurden|
-|Buchungstatus||Status der Buchung </br> _Beschreibung siehe nächsten Absatz_|
+|Buchungstatus||Status der Buchung|
 ---
 
-|<div style="width:250px">Status</div>|Bedeutung|
+Die Buchungsstatus im Einzelnen:
+
+|<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
  |Alle / keine auswählen|Die Suche berücksicht jeden/keinen Status|
  |Annulliert|gelöschte und abgesagte Buchungen|
@@ -35,14 +40,11 @@ Standardmäßig sind folgende Spalten sichtbar:
  |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wir die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
  ---
 
+## Spaltenansicht Erweitert
+<p style="text-align: justify"> Über das <a href="/Generell/3_Grundlegende-Funktionen/##ListenansichtAnpassen/"> Spaltensymbol</a> fügen Sie weitere Spalten der Liste hinzu, sortieren diese oder nehmen sie heraus. 
+Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. </p> 
 
-Über das [Spaltensymbol](/Generell/Aplikationsaufbau/#2.1.Listenfunktion/Suchen) können Sie weitere Kategorien der Liste hinzufügen, sortieren oder  herausnehmen. 
-Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. 
-
-*Anmerkung: Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.*
-
----
-|<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
+|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Angebot Bezeichnung </br> (erweitertet)||???|
 |Angebotkategorie Bezeichnung||???|
@@ -68,3 +70,4 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Buchung Nummer||Buchungsnummer der Buchung, zu welcher die Dienstleistung gebucht wurde|
 ---
 
+<!-- Begriffe erklären -->
