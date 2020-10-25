@@ -23,7 +23,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 |Lieferort||Standort/Raum, für welchen der Service bestellt wurde|
 |Beginn||Startdatum und -uhrzeit der Dienstleistung </br> _Kann von Buchungsbeginn abweichen_|
 |Titel||Titel der Buchung, zu welcher der Service gebucht wurde|
-|Notiz an Dienstleistende|{{< imgproc Notiz Resize "40x" >}}{{< /imgproc >}}</br>{{< imgproc List_CS_Anz_Notiz Resize "200x" >}}{{< /imgproc >}}|Klicken Sie auf das Symbol um eine Notiz an den Dienstleister zu lesen, eintzutragen oder zu bearbeiten. Denken Sie daran, nach dem Bearbeiten auf "speichern" zu klicken.|
+|</br>Notiz an Dienstleistende|{{< imgproc note Resize "40x" >}}{{< /imgproc >}}{{< imgproc List_CS_Anz_Notiz Resize "200x" >}}{{< /imgproc >}}|</br>Klicken Sie auf das Symbol um eine Notiz an den Dienstleister zu lesen, eintzutragen oder zu bearbeiten. Denken Sie daran, nach dem Bearbeiten auf "speichern" zu klicken.|
 |Bestellung Nummer||Anzahl der Bestellungen, die für diese Buchung aufgegeben wurden|
 |Buchungstatus||Status der Buchung|
 ---

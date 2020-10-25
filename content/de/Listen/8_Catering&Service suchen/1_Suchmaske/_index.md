@@ -21,9 +21,10 @@ Folgende Tabelle erläutert die Eingabefelder:
  |Angebotszone||???|
  |Angebotskategorie||???|
  |Angebot||???|
- |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen </br> *Erläuterungen siehe nächsten Abschnnitt*|
+ |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen|
  ---
 <!-- Begriffe erklären -->
+Erläuterung der einzelnen Buchungssatus:
 
  |<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
