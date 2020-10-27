@@ -113,6 +113,11 @@ Beispiel für ein Eingabefeld mit Lupe
 Beispiel für ein Eingabefeld mit Schnellauswahl
 {{< /imgproc >}}
 
+#### Eingabefeld mit Kopf-Symbol
+<p style="text-align: justify"> Dieses Eingabefeld befindet sich bei Suchfeldern, die sich auf Personen beziehen. Sobald ein Name eingertagen ist, öffnet sich über einen KLick auf das Kopf-Symbol die Detailansicht der entsprechenden Person.
+
+<!-- Bild Eingabefeld mit Kopf -->
+
 ### Drop-Down-Menü
 <p style="text-align: justify"> Bei einem Drop-Down-Menü klicken sie auf den, nach unten gerichteten Pfeil, woraufhin sich eine Liste ausklappt, aus der Sie das gewünschte Kriterium auswählen können. Ihre Auswahl wird dann im Eingabefeld angezeigt. </p>
 
@@ -130,8 +135,7 @@ Position der Listensymbole
 
 Folgende Tabelle erläutert die Listensymbole:
 
----
-|Anzeige|<div style="width:180px">Funktion</div>|Beschreibung|
+|Anzeige|<div style="width:200px">Funktion</div>|Beschreibung|
 |---|---|---|
 |{{< imgproc Listensymbol_AnzahlZeilen Resize "40x" >}}{{< /imgproc >}}|<br> Anzahl Zeilen pro Seite|<br> <p style="text-align: justify"> Über das Zeilensymbol ist es möglich, die Anzahl der Zeilen pro Seite einzustellen. Durch Klick auf das Symbol öffnet sich eine Auswahl an Darstellungsvarianten </p>|
 |{{< imgproc Listensymbol_Spaltenauswahl Resize "40x" >}}{{< /imgproc >}}|<br>Spaltenauswahl und -reihenfolge|<br> <p style="text-align: justify"> Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.<br>Durch setzen eines Häckchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch entfernen des Häckchens die Spalte in der Ansicht entfernt werden.<br>Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.<br>Um die Änderungen zu speichern, klicken Sie auf die Schaltfläche "Übernehmen". </br> Die Spaltenauswahl und -sortierung wird für die nächste Suche gespeichert. Unter <a href="/Einstellungen/PersönlicheEinstellungen"> Persönliche Einstellungen </a> können Sie diese Einstellung wieder löschen. </p>|
@@ -166,6 +170,13 @@ Das Actionpanel zeigt den Link für den Download der Liste an
 <p style="text-align: justify"> Mit einem Klick auf den angezeigten Link im Actionpanel, könne Sie die .csv-Datei herunterladen und zur weiteren Verarbeitung auf Ihrem Rechner speichern. Sie können entweder direkt einen Speicherort auswählen oder die Datei wird in Ihrem Downloadordner abgelegt. </p>
 
 <p style="text-align: justify"> Das Erstellen der Export-Datei läuft asynchron. Das bedeutet, dass weiterhin mit ROOMS gearbeitet werden kann, ohne dass der Export behindert wird. Dies bedeutet aber auch, dass während der Erstellung der Export-Datei, weitere Einträge in ROOMS gespeichert werden könnten, die dann jedoch noch nicht in der Export-Datei aufgeführt werden würden. </p>
+
+## Symbole
+
+|<div style="width:200px">Symbol</div>|Beschreibung|
+|---|---|
+|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br>Schaltfläche, um die Eingabemaske zu öffnen und den Eintrag zu bearbeiten.|
+|{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|Über diese Schaltfläche wird die individuell angepasste Listenansicht auf die Standardsortierung zurückgesetzt|
 
 
 
