@@ -3,32 +3,30 @@ title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
 description: >
-  Über diese Suchmaske finden Sie Catering&Services u.a. anhand von Dienstleistenden und Angeboten
+  Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten
 ---
+<p style="text-align: justify"> Um geordertes Catering oder gebuchter Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen "Catering & Service". Dadurch öffnet sich die Suchmaske. </p>
 
-Um bestelltes Catering oder gebuchter Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen "Catering & Service". Dadurch öffnet sich die Suchmaske. 
-
- <!-- Bild Suchkriterien-Catering Und Service -->
+{{< imgproc List_CS_Such Resize "1280x" >}}
+Übersicht der Suche nach Catering & Service mit Ergebnisliste 
+{{< /imgproc >}}
 
 Folgende Tabelle erläutert die Eingabefelder:
 
+ |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
+ |---|---|---|
+ |Datum/Zeit||Datum/Uhrzeit der bestellten Dienstleistung|
+ |Standort||Standort, an dem die Dienstleistung ausgeführt wird|
+ |Dienstleistende||Bezeichnung der Dienstleistenden|
+ |Angebotszone||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+ |Angebotskategorie||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+ |Angebot||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+ |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen|
  ---
- |<div style="width:220px">Feld</div>|Funktion|
- |---|---|
- |Datum/Zeit|Geben Sie das Datum und die Uhrzeit der Buchung manuell oder über den Datumspicker ein, wann ein Catering oder Service bestellt wurde.|
- |Standort|Geben Sie den Standort, für welchen Catering & Service gefunden werden sollen, ein oder wählen Sie diesen über die Schnellauswahl aus.|
- |Dienstleistende|Bezeichnung des Dienstleistenden|
- |Angebotszone|???|
- |Angebotskategorie|???|
- |Angebot|???|
- |Status|Den Status könne Sie über die Schnellauswahl wäheln </br> *Erläuterungen siehe nächsten Abschnnitt*|
- ---
-
-<!-- Bild Statusauswahl -->
 <!-- Begriffe erklären -->
+Erläuterung der einzelnen Buchungssatus:
 
----
- |<div style="width:250px">Status</div>|Bedeutung|
+ |<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
  |Alle / keine auswählen|Die Suche berücksicht jeden/keinen Status|
  |Annulliert|gelöschte und abgesagte Buchungen|

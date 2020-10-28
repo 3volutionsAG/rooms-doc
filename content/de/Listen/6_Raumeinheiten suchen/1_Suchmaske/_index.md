@@ -1,21 +1,21 @@
 ---
-title: "Einfache Suche"
-linkTitle: "Einfache Suche"
-weight: 10
+title: "Suchmaske"
+linkTitle: "Suchmaske"
+weight: 1
 description: >
-  Mit der Einfachen Suche finden Sie Raumeinheiten anhand der Bezeichnung, des Status oder des Standortes. 
+  Für die Suche nach einer Raumeinheit stehen Ihnen die Filter Bezeichnung, Standaord und Status zur verfügung.
 ---
+<p style="text-align: justify"> Um eine Ressource zu finden, navigieren Sie im Sidepanel auf das Subpanel "Raumeinheiten". Dadurch öffnet sich zunächst die Einfache Suche. </p>
 
-Um eine Ressource zu finden, navigieren Sie im Sidepanel auf das Subpanel "Raumeinheiten". Dadurch öffnet sich zunächst die Einfache Suche. 
-
- <!-- Bild Suchkriterien-Suche Raumeinheiten -->
+ {{< imgproc List_RE_Such Resize "1280x" >}}
+Filter für die Suche nach Raumeinheiten
+{{< /imgproc >}}
 
 Folgende Tabelle erläutert die Eingabefelder:
 
- ---
- |<div style="width:220px">Feld</div>|Funktion|
- |---|---|
- |Bezeichnung|Wählen Sie aus dem Drop-Down-Menü die gesuchte Ressourceart aus. Eine Ressource kann z.B. ein Raum, Arbeitsplatz oder Equipment, wie ein Beamer sein.|
- |Status|Filtern Sie nach aktiven oder inaktiven Raumeinheiten.|
- |Standort|Geben Sie den Standort der Ressource ein oder wählen Sie diesen über die Schnellauswahl aus.|
+ |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
+ |---|---|---|
+ |Bezeichnung||Name der Raumeinheit|
+ |</br> Status|{{< imgproc List_RE_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>__aktiv:__ von der Belegung unabhängig, grundsätzlich nutzbar </br> __inaktiv:__ Raumeinheit ist nicht zur Nutzung freigegeben|
+ |Standort||Standortauswahl|
  ---

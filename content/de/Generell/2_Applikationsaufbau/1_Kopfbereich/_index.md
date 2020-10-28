@@ -4,55 +4,67 @@ linkTitle: "Kopfbereich"
 weight: 100
 
 description: >
-   Der wichtigste Teil des Kopfbereiches ist die Menüleiste zur Navigation durch die Applikation. In diesem Kapitel erhalten Sie eine kurze Beschreibung zu jedem der Menüpunkte. Sowie weiterer aufgeführter Informationen.
+   <p style="text-align: justify"> Im Kopfbereiches befindet sich die Menüleiste zur Navigation durch die Applikation sowie Schnellübersichten und Kurzinformationen. </p>
 ---
-Zusätzlich zur Navigation wird oben rechts der eingeloggte Benutzer mit der, ihm zugehörigen, Zeitzone angezeigt sowie eine kurze Übersicht laufender Buchungen und ein Actionpanel, das bei Bestätigungen oder Fehlermeldungen auftaucht.
+ <p style="text-align: justify"> Rechts neben der Menüleiste wird Ihr Name und die Zeitzone, in der Sich sich befinden, angezeigt. Desweiteren finden Sie dort eine Schnellübersicht laufender Buchungen sowie ein Actionpanel, das bei Bestätigungen oder Fehlermeldungen auftaucht.
 
 ## Menüleiste
-Der Home-Button (Haus Symbol links in der Menüleiste) ist für alle sichtbar. Entsprechend Ihren Berechtigungen sehen Sie weitere Raiter in der Menüleiste. 
+<p style="text-align: justify"> Der Home-Button ist für alle sichtbar. Entsprechend Ihren Berechtigungen werden Ihnen weitere Reiter in der Menüleiste angezeigt. </p>
 
-<!-- Bild Kopfbereich mit Home Button, Menüleiste, Username, entsprechende Zeitzone und laufender Buchung -->
-
-<!-- Bild Kopfbereich_beschriftet_ohneReservation -->
+{{< imgproc Kopfbereich_Beschriftet Resize "1280x" >}}
+Kopfbereich 
+{{< /imgproc >}}
 
 Tabelle 1 gibt einen Überblick über die Menüpunkte.
 
 ---
 |Menüpunkt|Funktion|
 |---|---|
-|Home Button|Der Home Button verweist auf die individuelle Startseite jedes Benutzenden. So lassen sich Funktionen, die häufig genutzt werden scneller erreichen. In den persönlichen Einstellungen kann die Seite von jedem selbst definiert werden.|
-|Buchen|Mit diesem Button gelangt man zur Suche nach freien Ressourcen. Mittels einer Suchfunktion mit verschiedenen Parametern kann der Benutzer aus einer Liste die gewünschte Ressource auswählen.|
-|Plan|Mittels dieses Buttons gelangt der Benutzer auf die Planansicht. Sofern für die einzelnen Standorte Pläne hinterlegt sind, kann der Benutzer durch die Stockwerke und Gebäude navigieren und von da aus direkt Buchungen tätigen.|
-|Kalender|Auf der Kalenderansicht kann man mittels verschiedener Einstellungsmöglichkeiten seinen persönlichen Kalender anzeigen lassen und darauf direkt Buchungen tätigen.|
-|Listen|Die Listenansicht zeigt bestehende Buchungen. Es steht eine Vielzahl von Suchfiltern und vordefinierten Listen zur Verfügung. Die Listen können nach Kundenbedürfnissen konfiguriert werden. In diesem Bereich befindet sich auch die Personensuche |
-|Reports|Unter diesem Menüpunkt können verschiedene Reports und Statistiken zur Auslastung, Stammdaten etc. erstellt werden. |
-|Einstellungen|Im Bereich Einstellungen kann der Benutzer seine persönlichen Einstellungen ändern. Diese sind im Kapitel [Persönliche Einstellungen](/Einstellungen/PersönlicheEinstellungen) detailliert erläutert.|
+|Home Button|<p style="text-align: justify"> Über den Home-Button kommen Sie auf Ihre [individuell konfigurierte Startseite](/einstellungen/persönlicheeinstellungen/navigation/). So lassen sich Funktionen, die Sie häufig nutzen schneller erreichen. </p>|
+|[Buchen](/buchen/)|<p style="text-align: justify"> Über diesen Reiter gekangen Sie zur Suche nach freien Ressourcen. Mittels einer Suchfunktion mit verschiedenen Parametern wählen Sie die gewünschte Ressource aus und können eine Buchung vornehmen. </p>|
+|[Plan](/plan)|<p style="text-align: justify"> Hinter diesem Reiter verbrigt sich die Planansicht der Ressourcen. Sofern für die einzelnen Standorte Pläne hinterlegt sind, können Sie durch die Stockwerke und Gebäude navigieren um von dort direkt Buchungen zu tätigen. </p>|
+|[Kalender](/kalender/|<p style="text-align: justify"> Der Kalender bietet eine Übersicht aller Buchungen in Kalenderansicht. Auch ist es möglich über den Kalender Buchungen vorzunehmen. </p>|
+|[Listen](/listen/|<p style="text-align: justify"> Alle Buchunge können auch in Listenansicht betrachtet werden. Es steht eine Vielzahl Filterkriterien zur Verfügung. Sie können Ihre Filtereinstellungen speichern um zu einem schnelleren Suchergebnis zu gelangen. </p>|
+|[Reports](7reports)|<p style="text-align: justify"> Unter Reports erstellen Sie Reports und Statistiken, zum Beispiel zu Auslastungen oder Stammdaten. </p>|
+|[Einstellungen](/einstellungen)|<p style="text-align: justify"> In diesem Bereich können Sie Ihre persönlichen oder auch systemrelevante Einstellungen anpassen. </p>   |
 ---
 
-Desweiteren ist oben rechts neben der Menüleiste Ihr Namen und die Zeitzone, in der Sie sich befinden, zu sehen.
+<p style="text-align: justify"> Oben rechts neben der Menüleiste ist Ihr Namen und die Zeitzone, in der Sie sich befinden, zu sehen. </p>
 
 ## Schnellzugriff Buchungen
 
-In dem kleinen Kasten über Ihrem Namen finden Sie die aktuellen Buchungen, die Sie erstellt haben oder organisieren. In der Standardansicht wird die laufende Buchung, mit frühester Startzeit, angezeigt.
+<p style="text-align: justify"> Ebenfalls oben rechts, über Ihrem Namen, finden Sie eine Schnellübersicht laufender Buchungen, welche Sie erstellt oder organisiert haben. In der Standardansicht wird die laufende Buchung mit der frühesten Startzeit angezeigt. </p>
 
-<!-- Bild Kopfbereich mit Buchung beschriftet -->
+{{< imgproc Kopfbereich_laufendeBuchung Resize "1280x" >}}
+Anzeige laufende Buchung im Kopfbereich 
+{{< /imgproc >}}
 
-Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller ihrer ersteelten oder organisierten, laufenden Buchugen öffnen. 
+<p style="text-align: justify"> Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller Ihrer laufenden Buchungen öffnen. </p>
 
-<!-- Bild Schnellzugriff Buchungen -->
+{{< imgproc Kopfbereich_allelaufendenBuchungen Resize "1280x" >}}
+Anzeige aller laufende Buchung im Kopfbereich 
+{{< /imgproc >}}
 
-In dieser Darstellung ist es möglich die Buchung direkt in der Detailansicht anzuzeigen, zu bearbeiten, zu löschen oder freizugeben. 
+<p style="text-align: justify"> Diese Darstellung stellt Ihnen vier grundlegende Funktionen zur Verfügung.  </p>
+
+Folgende Tabelle zeigt die vier Symbole und ihre Funktionen:
 
 |Symbol|Bedeutung|Symbol|Bedeutung|
 |---|---|---|---|
-|_Bild Lupe_|<br> <br> Öffnen der Detailansicht|_Bild Bleistift_|<br> <br> Buchung bearbeiten|
-|_Bild rotes X_|<br> <br> Löschen der Buchung|_Bild grüner Haken_|<br> <br> Buchung freigeben|
+|{{< imgproc Lupe Resize "40x" >}}{{< /imgproc >}}|<br> <br> Öffnen der [Detailansicht](/listen/1_buchungen-suchen/3_anzeigenbereich/2_detailansicht-buchungen/)|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<br> <br> [Buchung bearbeiten](/buchen/buchung-erstellen/)|
+|{{< imgproc AbbruchX Resize "40x" >}}{{< /imgproc >}}|<br> <br> [Löschen](/listen/1_buchungen-suchen/3_anzeigenbereich/2_detailansicht-buchungen/#löschen) der Buchung|{{< imgproc grünerHaken Resize "40x" >}}{{< /imgproc >}}|<br> <br> Buchung [freigeben](/listen/1_buchungen-suchen/3_anzeigenbereich/1_weitere-funktionen/#freigeben)|
 ---
 
 ## Actionpanel
 
-Von ROOMS automatisch generierte Mitteilungen erscheinen oben rechts neben der Menüleiste in einem sogenannten Actionpanel und verschwinden nach kurzer Zeit wieder. Über das "x" kann das Actionpanel manuell geschlossen werden.
-Ist ein grüner Haken in der Box zu sehen, handelt es sich um eine Bestätigung oder korrekte Funktionsausführung. Erscheint dagegen eine rotes x, so liegt eine Fehlermedlung vor. Die auszuführende Funktion kann, zum Beispiel aufgrund von fehlenden Informationen oder Berechtigungen, nicht ausgeführt werden.
+<p style="text-align: justify"> Von ROOMS automatisch generierte Mitteilungen erscheinen oben rechts neben der Menüleiste in einem sogenannten Actionpanel. Nach kurzer Zeit verschwinden diese wieder oder können über das "x" manuell geschlossen werden.
 
-<!-- Bild Infobox beschriftet -->
-<br>
+Ist ein grüner Haken in der Box zu sehen, handelt es sich um eine Bestätigung oder erfolgreich ausgeführte Aktion. </p>
+
+{{< imgproc FensterMitActionpanel_beschriftet Resize "1280x" >}}
+Actionpanel zu einer erfolgreich ausgeführten Aktion {{< /imgproc >}}
+
+<p style="text-align: justify"> Erscheint dagegen eine "rotes X", so liegt eine Fehlermeldung vor. Die gewünschte Aktion kann, zum Beispiel aufgrund von fehlenden Informationen oder Berechtigungen, nicht durchgeführt werden. </p>
+
+{{< imgproc FensterMitActionpanel_Fehlermeldung_beschriftet Resize "1280x" >}}
+Actionpanel mit Fehlermeldung {{< /imgproc >}}

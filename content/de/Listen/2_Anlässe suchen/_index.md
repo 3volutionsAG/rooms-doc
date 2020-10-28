@@ -3,10 +3,12 @@ title: "Anlässe suchen"
 linkTitle: "Anlässe suchen"
 weight: 3
 description: >
-     Neben Buchungen können Sie auch Anlässe suchen. Es gibt verschiedene Kriterien anand derer Sie einen Anlass wiederfinden können. Die gängisten Filter finden Sie in der einfachen Suche. Eine spezifischere Suche führen Sie über die Erweiterte Suche unter den Anlassspezifischen Kriterien, Personenspezifischen Kriterin oder Kategorien durch.
+    Um Buchungen, die zu einem Anlass zusammengefasst wurden, nicht einzeln suchen zu müssen, können Sie direkt die Anlasssuche nutzen.
 ---
+<p style="text-align: justify"> Um einen bestimmten Anlass zu finden, navigieren Sie unter Listen im Sidepanel auf das Subpanel Anlässe. Dadurch öffnet sich zunächst die Einfache Suche. Liegen Ihnen weitere Details vor können Sie über die Erweiterte Suche das Ergebnis eingrenzen. </p>
 
-
-
+{{< imgproc List_ANL_ANLsuche_beschriftet Resize "1280x" >}}
+Ansicht der Anlasssuche 
+{{< /imgproc >}}
 
 

@@ -3,17 +3,15 @@ title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
 description: >
-  Mit der Einfachen Suchen finden Sie Buchungsanfragen anhand gängiger Kriterien. 
+  Mit der Einfachen Suchen finden Sie Buchungsanfragen anhand des Datums und Standortes oder einer gespeicherten Liste.
 ---
-
-Um eine Buchungsanfrage aufzurufen, navigieren Sie im Sidepanel, auf der linken Seite, auf das dritte Subpanel "Buchungsanfragen". Dadurch öffnet sich zunächst die einfache Suche, ähnlich wie beim Subpanel [Buchungen](/Listen/BuchungenSuchen/EinfacheSuche). Hier haben Sie die Möglichkeit über eine gespeicherte Liste oder über die Suchfelder Datum/Zeit und Standort zu suchen.
-
- <!-- Bild Suchkriterien-Buchungsanfragen -->
+{{< imgproc List_BA_EinfSuch Resize "1280x" >}}
+Filterkriterien der Einfache Suche für Buchungsanfragen
+{{< /imgproc >}}
 
 Folgende Tabelle erläutert die Eingabefelder:
 
- ---
- |<div style="width:220px">Feld</div>|Funktion|
+ |<div style="width:200px">Feld</div>|Funktion|
  |---|---|
  |Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlass über den Datumspicker aus oder geben Sie ihn nach Aktivierung der Checkbox manuell ein.|
  |Standort|Wählen Sie den Standort der angefragten Ressource an.|

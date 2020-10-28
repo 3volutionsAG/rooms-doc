@@ -4,8 +4,10 @@ linkTitle: "Anzeigenbereich"
 weight: 300
 
 description: >
-   Der Anzeigenbereich nimmt den größten Teil des Fensters ein. Hier werden alle gesuchten Informationen dargestellt, der Plan und Kalender abgebildet sowie die Eingabemasken geöffnet.
+   <p style="text-align: justify"> Der Anzeigenbereich nimmt den größten Teil des Fensters ein. Hier werden alle gesuchten Informationen dargestellt, der Plan und Kalender abgebildet sowie die Eingabemasken geöffnet. </p>
 ---
-Eine genaue Beschreibung des Anezigenbereichs zu den Menüpunkten, finden Sie in den zuehörigen Kapiteln. Dort wird detailliert auf jeden Bereich eingegangen.
+<p style="text-align: justify"> Eine genaue Beschreibung des Anezigenbereichs der Menüpunkten, finden Sie in den zuehörigen Kapiteln. Dort wird detailliert auf jeden Bereich eingegangen. </p>
 
-<!-- Bild Anzeigenbereich -->
+{{< imgproc Fensteraufteilung_Anzeigenbereich Resize "1280x" >}}
+rot umrandet der Anzeigenbereich 
+{{< /imgproc >}}

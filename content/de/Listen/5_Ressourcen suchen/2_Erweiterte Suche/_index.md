@@ -3,40 +3,36 @@ title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
 description: >
-  Sind Ihnen weitere Details zur gesuchten Ressource bekannt, können Sie das Ergebnis über die Erweiterte Suche weiter eingrenzen.
+  Sind Ihnen weitere Details, wie z.B. die Bezeichnung zur gesuchten Ressource bekannt, grenzen Sie das Ergebnis über die Erweiterte Suche weiter ein.
 ---
-Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, z.B. eine Bezeichnung, können Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung:
-
-- Erweiterte Kriterien  
-  Z.B. Bezeichnung oder Status
-
-- Gliederung  
-  Z.B. Auswahl des Raumtyps, wie Konferenzraum oder Besprechungszimmer
+{{< imgproc List_RES_ErwSuch Resize "1280x" >}}
+Kriterien der Erweiterten Suche nach Ressourcen
+{{< /imgproc >}}
 
 ## Erweiterte Kriterien
+{{< imgproc List_RES_ErwKrit_b Resize "1280x" >}}
+Erweiterte Kriterien zur Suche nach Ressourcen
+{{< /imgproc >}}
 
-<!-- Bild Suchmaske Erweiterte Kriterien -->
-
- ---
- |<div style="width:250px">Feld</div>|Funktion|
- |---|---|
- |Ressourcen ID/Bezeichnung|genaue Bezeichnung oder Nummer der gesuchten Ressource|
- |Ressourcenpicker|Im Ressourcenpicker können Sie den Standort oder die Bezeichnung eingeben. Während des Schreibens werden Ihnen bereits Vorschläge angezeigt, die Sie durch anklicken auswählen können. Alternativ können Sie über die Schnellauswahl zunächst den Standort auswählen, woraufhin sich eine Liste verfügbarer Ressourcen nach Bezeichnung öffnet.|
- |Status|Im Status können Sie zwischen aktiven und inaktive Ressourcen filtern.|
- |Verantwortliche Person|Für jede Ressource ist eine Person verantwortlich. Während der Eingabe des Vor- und/oder Nachnamens werden Ihnen Vorschläge angezeigt, aus welchen Sie auswählen können.|
+ |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
+ |---|---|---|
+ |Ressourcen ID/Bezeichnung||genaue Bezeichnung oder Nummer der gesuchten Ressource|
+ |Ressourcenpicker|{{< imgproc List_RES_ErwKrit_ResPick Resize "200x" >}}{{< /imgproc >}}|Standort eingeben oder aus der Schnellauswahl wählen|
+ |Status|{{< imgproc List_RES_ErwKrit_Stat Resize "200x" >}}{{< /imgproc >}}|Filter für aktive bzw. inaktive Ressourcen|
+ |Verantwortliche Person||Vor- und/oder Nachname der Person, welche für die Ressource verantwortlich ist|
 ---
 
 ## Gliederung
+<p style="text-align: justify"> Den Filter Gliederung finden Sie nicht bei allen Ressourcenarten. Er steht nur für die Ressourcenart Raum und Equipment zur Verfügung. </p>
 
-Den Filter Gliederung finden Sie nicht bei allen Ressourcenarten. Er steht nur für die Ressourcenart Raum und Equipment zur Verfügung.
+{{< imgproc List_RES_Glied_b Resize "1280x" >}}
+Gliederung zur Suche nach Ressourcen
+{{< /imgproc >}}
 
-<!-- Bild Suchmaske Gliederung -->
-
-|<div style="width:250px">Feld</div>|Funktion|
- |---|---|
- |Raum: Raumtyp|Räume können in verschiedene Typen (_Z.B. Konferenzraum, Seminarraum_) gegliedert werden. Über die Schnellauswahl wählen sie den gewünschten Typ aus.|
-|oder|||
-|Equipment: Equipmenttyp|Equipment kann in verschiedene Typen (_Z.B. Beamer, Flipchart_) gegliedert werden. Über die Schnellauswahl wählen sie den gewünschten Typ aus.|
+|<div style="width:250px">Feld</div>|<div style="width:250px"></div>|Funktion|
+ |---|---|---|
+ |Raum: Raumtyp|{{< imgproc List_RES_Glied_Typ Resize "200x" >}}{{< /imgproc >}}|Räume sind firemnspezifisch gegliedert </br> _z.B. Konferenzraum, Seminarraum,..._|
+ |Equipment: Equipmenttyp|{{< imgproc List_RES_Glied_EquipTyp Resize "200x" >}}{{< /imgproc >}}|Typ des Equipments </br> _z.B. Beamer oder Flipchart_)|
 
 
 
