@@ -11,7 +11,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Höhe||Deckenhöhe der Raumeinheit|
-|Gewichtung||???|
+|Gewichtung||__needs clarification:__ <a href="https://trello.com/c/uA46LhWL">Was ist das?</a>|
 |Status||__aktiv:__ zur Nutzung freigeggeben </br> __inaktiv:__ Raumeinheit ist zur Nutzung nicht freigegeben|
 ---
 

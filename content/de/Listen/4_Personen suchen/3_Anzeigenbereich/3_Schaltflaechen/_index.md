@@ -18,7 +18,7 @@ Siehe hierzu Kapitel XY.
 Fehlermeldung beim Löschen von Personen mit aktiven Buchungen
 {{< /imgproc >}}
 
-<!-- Gibt es ein entsprechendes Kapitel dazu? Verlinkung! -->
+__needs clarification:__ <a href="https://trello.com/c/U9W43c7N">Fehlermeldung beim Löschen von Personen mit aktiven Buchungen</a>
 
 ## Neue Person hinzufügen
 Über diese Schaltfläche erstellen Sie einen <a href="/einstellungen/person/"> neuen Personeneintrag </a> in der Datenbank .

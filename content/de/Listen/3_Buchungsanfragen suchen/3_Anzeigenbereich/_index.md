@@ -35,7 +35,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |---|---|---|
 |Bemerkungen||Bei der Buchungsanfrage eingetragene Bemerkungen|
 |Standort||Standort, welcher angefragt wurde|
-|Priorität||???|
+|Priorität||__needs clarification:__ <a href="https://trello.com/c/kr3461Ai">Bedeutung und wo einstellbar? </a>|
 |Anzahl Teilnehmende||Gibt die Anzahl der erwarteten Teilnehmenden an|
 |Verantwortliche:r||Person, welche für die Buchungsanfrage verantwortlich ist|
 ---

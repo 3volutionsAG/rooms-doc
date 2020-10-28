@@ -64,16 +64,16 @@ Detailansicht zur Ressource
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Priorisierung||_Informationen folgen_|
+|Priorisierung||__needs clarification:__ <a href="https://trello.com/c/kr3461Ai">Priorisierung?</a>|
 |</br>Bestätigung senden|{{< imgproc List_BG_Anzeige_SymBestSend Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen, sofern die Checkbox aktiviert wird. </p>|
 |Teilnehmer:innen||Auflistung der teilnehmenden Personen|
 |Kostenträger Nummer </br> Buchung||<p style="text-align: justify"> Beim Erstellen einer Buchung wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen. </p>|
-|Kostenträger Beschreibung </br> Buchung||_Erklärung folgt_|
+|Kostenträger Beschreibung </br> Buchung||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Beschreibung?</a>|
 |Kostenträger Geschäftsbereich </br> Buchung||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
 |Kostenträger Nummer </br> Organisator:in||Nummer der Kostenstelle der organisierenden Person|
-|Kostenträger Bezeichnung </br> Organisator:in||_Erklärung folgt_|
+|Kostenträger Bezeichnung </br> Organisator:in||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezeichnung?</a>|
 |Kostenträger Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantworlichen Person|
-|Kostenträger Bezeichnung </br> Verantwortliche:r||_Erklärung folgt_|
+|Kostenträger Bezeichnung </br> Verantwortliche:r||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezichnung Verantwortlicher?</a>|
 |Logon Organisator:in||<p style="text-align: justify"> Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde. </p>|
 |Logon Verantwortliche:r||<p style="text-align: justify"> Log-In Name, welcher der verantwortlichen Person zum anmelden in ROOMS zugeteilt wurde. </p>|
 |Firma Nummer </br> Organisator:in||<p style="text-align: justify"> Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet </p>|
@@ -91,10 +91,10 @@ Detailansicht zur Ressource
 |</br>Bestellungen|{{< imgproc List_BG_Anzeige_SymBest Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBest Resize "200x" >}}{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
 |</br>Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymMobEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
 |</br>Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymFixEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
-|</br>Parkplätze|_Symbol und Tooltipp Parkplätze_|</br>Zeigt an welche Parkplätze im Detail zugebucht wurden|
-|</br>Parplätze Aggregiert|_Symbol und TT Parkplätze Aggregiert_|</br>Zeigt die Anzahl der zugebuchten Parkplätze an|
-|</br>Fahrzeuge|_Symbol und TT zugebuchter Fahrzeuge_|</br>Zeigt an welche Fahrzeuge im detail zugebucht wurden|
-|Fahrzeuge Aggregiert|_Symbol und TT zugebuchter Fahrzeuge aggregiert_|Zeigt die Anzahl der zugebuchten Fahrzeuge|
+|</br>Parkplätze|_Symbol und Tooltipp Parkplätze_ __needs clarification:__</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt an welche Parkplätze im Detail zugebucht wurden|
+|</br>Parplätze Aggregiert|_Symbol und TT Parkplätze Aggregiert_</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt die Anzahl der zugebuchten Parkplätze an|
+|</br>Fahrzeuge|_Symbol und TT zugebuchter Fahrzeuge_ </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|</br>Zeigt an welche Fahrzeuge im detail zugebucht wurden|
+|Fahrzeuge Aggregiert|_Symbol und TT zugebuchter Fahrzeuge aggregiert_ </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|Zeigt die Anzahl der zugebuchten Fahrzeuge|
 |</br>Serieninformationen|{{< imgproc List_BG_Anzeige_SymSerie Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTSerie Resize "200x" >}}{{< /imgproc >}}|</br>Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
 |</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_SymVR Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
 ---

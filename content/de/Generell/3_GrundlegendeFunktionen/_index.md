@@ -116,7 +116,9 @@ Beispiel für ein Eingabefeld mit Schnellauswahl
 #### Eingabefeld mit Kopf-Symbol
 <p style="text-align: justify"> Dieses Eingabefeld befindet sich bei Suchfeldern, die sich auf Personen beziehen. Sobald ein Name eingertagen ist, öffnet sich über einen KLick auf das Kopf-Symbol die Detailansicht der entsprechenden Person.
 
-<!-- Bild Eingabefeld mit Kopf -->
+{{< imgproc GrdlFKTen_EingabefeldKopf Resize "1280x" >}}
+Eingabefeld mit Kopf-Symbol zur Personensuche und Aufruf der Detailseite
+{{< /imgproc >}}
 
 ### Drop-Down-Menü
 <p style="text-align: justify"> Bei einem Drop-Down-Menü klicken sie auf den, nach unten gerichteten Pfeil, woraufhin sich eine Liste ausklappt, aus der Sie das gewünschte Kriterium auswählen können. Ihre Auswahl wird dann im Eingabefeld angezeigt. </p>

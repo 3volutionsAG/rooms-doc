@@ -6,7 +6,8 @@ description: >
   Es gibt viele Filterfriterien anhand derer eine Buchung gefunden werden kann. Die gängisten Filter finden Sie in der Einfachen Suche. Diese sind die Ressoucenart, Datum/Zeit der Buchung, Buchungszeitpunkt und Standort.
 ---
 
- <!-- Zeitraum statt Buchungszeitpunkt? Buchungszeitpunkt = Zeitpunkt der Buchung -->
+ 
+ __needs clarification:_ Zeitraum statt Buchungszeitpunkt? Buchungszeitpunkt = Zeitpunkt der Buchung <a href="https://trello.com/c/pZSOn5IV">Trello</a>
 
  {{< imgproc Listen_Buchungen_EinfacheSuche Resize "1280x" >}}
 Einfache Suche um Buchungen zu finden 

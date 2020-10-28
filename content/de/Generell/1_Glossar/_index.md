@@ -14,9 +14,9 @@ description: >
 |Administrator:in|Person, die alle Rechte in ROOMS hat und diese auch vergeben kann.|
 |aktiv (Person)|Eine Person, die in ROOMS regisistriert ist und deren Zugang aktiviert ist.|
 |aktiv (Ressource)|<p style="text-align: justify"> Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus. </p>|
-|Angebot||
-|Angebotskategorie||
-|Angebotszone||
+|Angebot|__needs clarification:__ <a href="https://trello.com/c/H6fv499K">Trello</a>|
+|Angebotskategorie|__s. Angebot__|
+|Angebotszone|__s. Angebot__|
 |Anlass|<p style="text-align: justify"> Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </p > <p style="text-align: justify"> _Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_ </p>| 
 |Annullieren|<p style="text-align: justify"> Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden. </p>|
 |Anzeigenbereich|<p style="text-align: justify"> Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden. </p>|
@@ -36,7 +36,7 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Checkbox|Eine Checkbox ist ein Kästchen, in das durch ein Klick ein Häckchen gestzt oder entfernt werden kann. Dadurch werden Auswahlen oder Funktionen aktiviert bzw. deaktiviert. |
-|Custom Servervariavle||
+|Custom Servervariable|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ">Trello</a>|
 |.CSV-Datei|Eine .csv-Datei, ist eine Datei, die in einem Tabellenkalkulationsprogramm (z.B. Excel) verarbeitet werden kann.| 
 ---
 
@@ -57,7 +57,7 @@ description: >
 |Equipment|Unter Equipment versteht man Zubehör, das einer Ressource zugeordnet ist oder hinzugebucht werden kann, z.B. ein Beamer oder ein Flipchart.|
 |Equipment (fix)|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
 |Equipment (mobil)|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
-|External Identifier||
+|External Identifier|__needs clarification:__ <a href="https://trello.com/c/rXemQkzL">Trello</a>|
 ---
 
 ## F
@@ -121,7 +121,6 @@ description: >
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |mobiles Equipment|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
-||| 
 ---
 
 ## N
@@ -135,7 +134,7 @@ description: >
 
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|OAuth 2.0||
+|OAuth 2.0|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ">Trello</a>|
 |Organisator:in|Person, welche die Buchung organisiert </br> _Z.B. Besprechung in einem Raum, Anlass| 
 ---
 
@@ -179,9 +178,9 @@ description: >
 
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Tarifkategorie||
+|Tarifkategorie|__needs clarification:__ <a href="https://trello.com/c/EF7RfnEq">Trello</a>|
 |Terminieren|Eine laufende Buchung kann vorzeitig beendet werden, wenn z.B. eine Besprechung früher endet. Die Nachlaufzeit bleibt jedoch bestehen. Die Buchungsdauer wird minutengenau gespeichert.|
-|TMS System Id||
+|TMS System Id|__needs clarification:__ <a href="https://trello.com/c/27Lxq0O9">Trello</a>|
 |Tooltipp|Ein Tooltipp ist eine kleine Informationsblase, die erscheint, wenn man mit dem Mauszeiger über ein Symbol fährt.| 
 ---
 
@@ -207,7 +206,7 @@ description: >
 
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Windows Credentials||
+|Windows Credentials|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ|">Trello</a>|
 |Workflow|Ablauf festgelegter aufeinanderfolgender Arebitsschritte, z.B. Genehmigungsprozess| 
 ---
 

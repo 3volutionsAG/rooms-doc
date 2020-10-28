@@ -46,13 +46,13 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Angebot Bezeichnung </br> (erweitertet)||???|
-|Angebotkategorie Bezeichnung||???|
-|Angebotszone Bezeichnung||???|
-|Bezeichnung||???|
-|Standort Name||???|
-|Standort Bezeichnung||???|
-|Standort Hierarchiebezeichnung||???|
+|Angebot Bezeichnung </br> (erweitertet)||__needs clarification:__ <a href="https://trello.com/c/H6fv499K">Was bedeutet erweitert?</a>|
+|Angebotkategorie Bezeichnung||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+|Angebotszone Bezeichnung||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+|Bezeichnung||__needs clarification:__ <a href="https://trello.com/c/UYA3mWuO)">Differenzierung und wo ist die Eingabe? Dopplung?</a>|
+|Standort Name||__needs clarification:__ <a href="https://trello.com/c/UYA3mWuO)">Differenzierung und wo ist die Eingabe? Dopplung?</a>|
+|Standort Bezeichnung||__needs clarification:__ <a href="https://trello.com/c/UYA3mWuO)">Differenzierung und wo ist die Eingabe? Dopplung?</a>|
+|Standort Hierarchiebezeichnung||__needs clarification:__ <a href="https://trello.com/c/UYA3mWuO)">Differenzierung und wo ist die Eingabe? Dopplung?</a>|
 |Vorlaufzeit||Startdatum und -uhrzeit der Vorbereitungszeit zur Buchung|
 |Ende||Enddatum und -uhrzeit der Dienstleistung </br> _Kann von Buchungsende abweichen_|
 |Wochentag-Von||Startdatum und -uhrzeit der Dienstleistung mit Angabe des Wochentages </br> _Kann von Buchungsbeginn abweichen_|

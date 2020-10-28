@@ -5,8 +5,7 @@ weight: 500
 description: >
    Dies können die Anlassnummer, der Titel des Anlasses oder der Anlasstyp sein.
 ---
-<p style="text-align: justify"> Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Empänge,...) und werden verschiedene Ressourcen benötigt (Besprechungsräume, Parkplätze, Equipment,...), so können Sie einen <a href="/buchen/">Anlass</a>Anlass erstellen und in diesem alle Buchungen bündeln. </p>
-<!-- Link Anlass erstellen  -->
+<p style="text-align: justify"> Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Empänge,...) und werden verschiedene Ressourcen benötigt (Besprechungsräume, Parkplätze, Equipment,...), so können Sie einen <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass</a> erstellen und in diesem alle Buchungen bündeln. </p>
 
 {{< imgproc Listen_Buchungen_ErweiterteSuche_AnlSpezKrit_beschriftet Resize "1280x" >}}
 Übersicht Anlassspezifische Kriterien

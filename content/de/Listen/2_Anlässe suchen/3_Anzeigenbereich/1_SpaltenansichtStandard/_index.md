@@ -17,9 +17,7 @@ Folgende Tabelle zeigt die Spalten der Standardansicht auf:
 Eingabemaske um Anlass zu bearbeiten
 {{< /imgproc >}}
 
-Details zur Handhabung der Eingabemaske sind im Kapitel Anlass erstellen beschrieben.
-
-<!-- Link zu Anlass erstellen -->
+Details zur Handhabung der Eingabemaske sind im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a> beschrieben.
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|

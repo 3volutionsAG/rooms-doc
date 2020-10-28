@@ -5,6 +5,8 @@ weight: 400
 description: >
    Die können unter anderem Raumtyp oder Equipmenttyp sein.
 ---
+__needs clarification:__ <a href="https://trello.com/c/Z6Pk2LPg">Was genau bedeutet Gliederung?</a>
+
 <p style="text-align: justify"> Dei Unterkategorie Gliederung ist, wie die Ressourcenspezifischen Kriterien, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie im Bereich der einfachen Suche aus. </p>
 
 Wir bedienen uns nochmals dem Beispiel aus dem Kapitel Ressourcenspezifische Kriterien. 

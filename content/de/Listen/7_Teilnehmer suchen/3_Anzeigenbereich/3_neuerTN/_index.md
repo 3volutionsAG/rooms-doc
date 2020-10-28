@@ -46,7 +46,7 @@ Folgende Tabelle erläutert die Einagbefelder.
 |Datum/Zeit||Datum und Zeitspanne, in der der Besuch anwesend sein wird|
 |Standort||Ort, an dem der Besuch sein wird </br> _Angabe ist zwingend erforderlich_|
 |</br>Anlasstyp|{{< imgproc List_TN_TNneu_Art Resize "1280x" >}}{{< /imgproc >}}|</br>Grund des Besuchs|
-|Optional||???|
+|Optional||__needs clarification:__ <a href="https://trello.com/c/MfRTrSpV">Was bedeutet das?</a>|
 |VIP||Besuch wird als VIP gekennzeichnet|
 |Besuchspass Nummer||eindeutige Zuordnung des Besuchspasses|
 |Besuchspass zurück||<p style="text-align: justify"> Vermerk, ob der Besuchspass bereits zurückgegeben wurd oder noch im Umlauf ist </p>|

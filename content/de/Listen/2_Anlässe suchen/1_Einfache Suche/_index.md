@@ -7,7 +7,7 @@ description: >
 ---
 <p style="text-align: justify"> Hier haben Sie die Möglichkeit entweder über eine gespeicherte Liste zu suchen oder über die Suchfelder Datum, Anlasszeitpunkt und Standort. Wenn Sie in einem definierten Zeitraum suchen wollen und somit die Checkbox vor der Datumseingabe aktiviert ist, wird das Drop-Down-Menü darunter ausgeblendet.</p>
 
- <!-- Anlass Zeitraum statt Anlasszeitpunkt? Zeitpunkt klingt genau, mit Zeitraum verbindet man eher Bezeichnungen wie heute, morgen,... -->
+ __needs clarification:__ <a href="https://trello.com/c/pZSOn5IV">Anlass Zeitraum statt Anlasszeitpunkt? Zeitpunkt klingt genau, mit Zeitraum verbindet man eher Bezeichnungen wie heute, morgen,...</a>
 
 {{< imgproc List_ANL_EinfSuch Resize "1280x" >}}
 Anlässe über die Einfache Suche finden 

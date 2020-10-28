@@ -130,4 +130,6 @@ Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Z
 Dialogfenster zur Bestätigung des Stornierungsvorganges 
 {{< /imgproc >}}
 
+__needs clarification:__ <a href="https://trello.com/c/zJLww3LU">Geht Mail auch an TN?</a>
+
 <!-- Mail auch an Teilnehmende? -->

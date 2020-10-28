@@ -17,7 +17,7 @@ Folgende Tabelle erläutert die Spalteneinträge:
 |Sync. deaktiviert||Ja/Nein|
 |Personalnummer|||
 |Funktion||Funktion innerhalb der Firma|
-|Aktive Buchungen||???|
+|Aktive Buchungen||___needs clarification:__ <a href="https://trello.com/c/g66HeGmI"> Was ist das? </a>|
 |Aktive Raumeinheiten||Raumeinheit, z.B. Arbeitsplatz, der die Person zugeordnet ist. Der Eintrag ist mit der Detailansicht der Raumeinheit verknüpft.|
 ---
 

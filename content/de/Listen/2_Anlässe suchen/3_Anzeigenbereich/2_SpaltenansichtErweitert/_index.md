@@ -19,12 +19,12 @@ description: >
 |Catering & Services||Angabe des gebuchten Caterings oder Services sowie der entsprechnde Dienstleister|
 |Teilnehmer||Listet alle eingetragenen teilnehmenden Personen auf|
 |Kostenträger Nummer Anlass||Beim Erstellen eines Anlasses wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen, sofern diese hinterlegt wurde|
-|Kostenträger Beschreibung Anlass||???|
+|Kostenträger Beschreibung Anlass||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Wo kann man die eingeben?</a>|
 |Kostenträger Geschäftsbereich Anlass||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist|
 |Kostenstellen Nummer </br> Organisator:in||Nummer der Kostenstelle der organisierenden Person|
 |Kostenstellen Nummer Verantwortliche:r||Nummer der Kostenstelle der verantwortlichen Person|
-|Kostenträger Bezeichnung Organisator:in||???|
-|Kostenträger Bezeichnung Verantwortliche:r||???|
+|Kostenträger Bezeichnung Organisator:in||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Wo kann man die eingeben?</a>|
+|Kostenträger Bezeichnung Verantwortliche:r||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Wo kann man die eingeben?</a>|
 |Logons Organisator:in||Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde|
 |Logons Verantwortliche:r||Log-In Name, welcher der verantwortlichen Person zum Anmelden in ROOMS zugeteilt wurde|
 |Firma Nummer </br> Organisator:in||Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|

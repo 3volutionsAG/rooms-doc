@@ -18,9 +18,9 @@ Folgende Tabelle erläutert die Eingabefelder:
  |Datum/Zeit||Datum/Uhrzeit der bestellten Dienstleistung|
  |Standort||Standort, an dem die Dienstleistung ausgeführt wird|
  |Dienstleistende||Bezeichnung der Dienstleistenden|
- |Angebotszone||???|
- |Angebotskategorie||???|
- |Angebot||???|
+ |Angebotszone||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+ |Angebotskategorie||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
+ |Angebot||__needs clarification:__ <a href="https://trello.com/c/H6fv499K"> Differenzierung zu A.kategorie und Angebot?</a>|
  |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen|
  ---
 <!-- Begriffe erklären -->
