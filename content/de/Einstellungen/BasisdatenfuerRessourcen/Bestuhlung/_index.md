@@ -4,9 +4,6 @@ linkTitle: "Bestuhlung"
 weight: 4
 description: >
   In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest. Sie erfassen und verwalten die Bestuhlungsoptionen und die Zuweisung auf der Ressource. Eine „Bestuhlungsoption“ beinhaltet alle Felder der Tabelle „Bestuhlung“.  
- 
-
-
 ---
 ## Ansicht: Bestuhlung
 Im linken Sidepanel finden Sie die Filterfunktionen, um nach bestimmten Bestuhlungen zu suchen. Im rechten Feld sehen Sie die Bestuhlungsliste. (Abbildung b) Sie können eine neue Bestuhlungsoption hinzufügen, bestehende bearbeiten oder löschen. 
