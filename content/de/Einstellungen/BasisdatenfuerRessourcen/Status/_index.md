@@ -4,10 +4,8 @@ linkTitle: "Status"
 weight: 2
 description: >
   In diesem Bereich sehen Sie den Status der Basisdaten für die Ressourcen ein.   
- 
-
-
 ---
+
 ## Allgemeine Informationen
 Es gibt drei Arten von Status: Zustand einer Ressource, Systemstatus und frei definierbare Status auf Reservationen
 
