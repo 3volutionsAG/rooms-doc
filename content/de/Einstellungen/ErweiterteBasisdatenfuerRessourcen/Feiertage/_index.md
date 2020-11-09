@@ -3,13 +3,10 @@ title: "Feiertage"
 linkTitle: "Feiertage"
 weight: 4
 description: >
-  In diesem Bereich legen Sie die für Sie geltenden Feiertage fest und erstellen Feiertagslisten. Sie können Feiertage erstellen, bearbeiten und löschen.    
- 
-
-
+  In diesem Bereich legen Sie die für Sie geltenden Feiertage fest und erstellen Feiertagslisten. Sie können Feiertage erstellen, bearbeiten und löschen.
 ---
 ## Ansicht: Feiertage
-Im linken Sidepanel finden Sie die Filterkriterien, mit denen Sie nach einem Feiertag suchen können. Hierbie können Sie nach der Bezeichnung eines Feiertags suchen. 
+Im linken Sidepanel finden Sie die Filterkriterien, mit denen Sie nach einem Feiertag suchen können. Hierbei können Sie nach der Bezeichnung eines Feiertags suchen. 
 
 Im rechten Feld sehen Sie die Feiertagsliste. Mittel Scroll Down finden Sie in alphabetischer Reihenfolge alle eingespeicherten Feiertage. (Abbildung f)
 
@@ -108,9 +105,3 @@ Es spielt keine Rolle, ob das Datum und die Bezeichnung in Hochkommas abgespeich
 
 Als Hauptreferenz für den Import gilt http://www.feiertagskalender.ch/ (siehe Abbildung).
 Die Datei ist ROOMS Komfort anzupassen (erste Spalte = Datum, zweite Spalte = Feiertag Bezeichnung, etc.)
-
-
-
-
-
-
