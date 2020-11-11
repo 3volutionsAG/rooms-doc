@@ -15,8 +15,8 @@ description: >
 |<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Keine Lizenzen|Abbruch|5 Minuten|[BackSync] - Missing license
-|Person SyncMode auf None|Aktion wird gelöscht|
 |Person wird nicht gefunden|Aktion wird gelöscht|
+|Person SyncMode auf None|Aktion wird gelöscht|
 |Person Mailbox leer|Aktion wird gelöscht|
 |Reservation ist in der Vergangenheit|Aktion wird gelöscht|
 |Serie ist komplett in der Vergangenheit|Aktion wird gelöscht|
@@ -28,33 +28,21 @@ description: >
 
 |<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Exception beim durchführen der Backsync<br>--> Exchange Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Exchange Error occured while trying to find or save Appointment, related Reservation: {0}"
+|Exception beim durchführen der Backsync<br>--> Exchange Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Exchange Error occured while trying to find or save Appointment, related Reservation: {0}, Mailbox: {1}"
 |Exception beim durchführen der Backsync<br>--> DB Timeout|Service wird 5 Minuten gestoppt, beim 2. mal wird aktion gelöscht|
 |Exception beim durchführen der Backsync<br>--> Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Error occured during BackSync of Reservation: {0}
 |Appointment kann nicht gefunden werden|Intervall erhöht|BackSyncIntervall|
-|Validation Errors beim Speichern von Reservation||backsyncintervall
+|Validation Errors beim Speichern der Reservation|Intervall erhöht|BackSyncIntervall|[BackSync] - Error occured while trying to change reservation {0}: {1}
 
 ## Reservation Teil einer Serie
 |<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Exception bei durchführen der Backsync<br>--> Exception|Erorr Log|backsyncintervall
-|Exception bei durchführen der Backsync<br>--> DB Timeout|weitergeworfen|
-|||backsyncintervall
-|Master Appointment kann nicht gefunden werden||backsyncintervall
-|Weniger Appointments als Reservationen vorhanden<br>--> Buchungen werden annulliert --> Validationserror beim Annullieren||backsyncintervall
-|Validation Errors beim Speichern von Reservation||backsyncintervall
-
-# Sync Intervalle
-****
-- 
-
-**BackSyncIntervall**
-- 3x alle 5 Sekunden sofort wieder 
-- 3x alle 30 Sekunden
-- 3x alle 1 Stunde
-- 3x alle 6 Stunden
-- 2x alle 12 Stunden
-- Nach ca. 47 Stunden wird Aktion gelöscht HandleSyncError aufgerufen
+|Exception beim durchführen der Backsync<br>--> Exchange Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Exchange Error occured while trying to find or save Appointment, related Serie: {0}, Mailbox: {1}
+|Exception beim durchführen der Backsync<br>--> DB Timeout|Service wird 5 Minuten gestoppt, beim 2. mal wird aktion gelöscht|
+|Exception beim durchführen der Backsync<br>--> Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Error occured during BackSync of Serie: {0}
+|Master Appointment kann nicht gefunden werden|Intervall erhöht|BackSyncIntervall|
+|Weniger Appointments als Reservationen vorhanden<br>--> Buchungen werden annulliert --> Validationserror beim Annullieren|||[BackSync] - Error occured while trying to cancle reservation {0}: {1}
+|Validation Errors beim Speichern von Reservation||[BackSync] - Error occured while trying to change reservation {0} in serie: {1} 
 
 # Collaboration Dienst
 
@@ -62,9 +50,9 @@ description: >
 
 |<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Keine Lizenzen|Abbruch|
-|Bei Einzelreservation: Reservation in Vergangenheit|Aktion wird gelöscht|
-|Teil einer Seriereservation: Alle Reservationen in Vergangenheit|Aktion wird gelöscht|
+|Keine Lizenzen|Abbruch|5 Minuten|[CollaborationService] - Missing license
+|Reservation ist in der Vergangenheit|Aktion wird gelöscht|
+|Serie ist komplett in der Vergangenheit|Aktion wird gelöscht|
 |Person wird nicht gefunden|Aktion wird gelöscht|
 |Person SyncMode auf None|Aktion wird gelöscht|
 |Person Mailbox leer|Aktion wird gelöscht|
@@ -203,3 +191,29 @@ Der Push subscription Dienst...
 **HandleSyncError**
 
 
+# Sync Intervalle
+
+**BackSyncIntervall**
+- 3x alle 5 Sekunden sofort wieder 
+- 3x alle 30 Sekunden
+- 3x alle 1 Stunde
+- 3x alle 6 Stunden
+- 2x alle 12 Stunden
+- Nach ca. 47 Stunden wird Aktion gelöscht HandleSyncError aufgerufen
+
+
+# Testing
+
+## Funktioniert nicht
+
+Outlook:
+- Aus einzeleintrag serie erstellen --> Serie wird nicht erstellt in Rooms
+- Serie erweitern --> Zusätzliche Termine werden wieder gelöscht
+- Seriepattern anpassen mit überlappenden einträgen --> Termine werden zurückgesetzt z.B. daily jeder tag 5x zu daily jeder 2. tag 5x
+
+- Löschen von Serieeinträgen funktioniert noch nicht gut, werden recreated
+
+# Funktioniert
+Outlook:
+- Serie verkleinern
+- Seriepattern anpassen ohne überlappende einträge z.B. daily jeder tag 5x zu monatlich 
