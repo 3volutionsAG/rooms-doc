@@ -2,7 +2,6 @@
 title: "Exchange Synchronisation"
 linkTitle: "Exchange Synchronisation"
 weight: 40
-draft: true
 
 description: >
    <p style="text-align: justify">Generelle Informationen zu der Exchange Synchronisation</p>
@@ -151,17 +150,17 @@ Der Push subscription Dienst...
 ## Neue Subscriptions erstellen/aktualisieren
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Subscription is keine Person/Ressource|Exception||
+|Subscription is keine Person/Ressource|Exception||[PushSubscriptionService] - Error while creating a subscription for an unkown entity: 
 |Subscriber hat inzwischen SyncMode None|Sync wird deaktiviert||
-|Exception beim erstellen des Push Subscription<br>--> ExchangeManagerException|In einer Minute wird erneut probiert||
+|Exception beim erstellen des Push Subscription<br>--> ExchangeManagerException|In einer Minute wird erneut probiert||[PushSubscriptionService] - {0} {1}, subscription exchange error, ({2} - {3}) ({4} - {5}).
 |Exception beim erstellen des Push Subscription<br>--> DB Timeout|Exception wird weitergeworfen||
-|Exception beim erstellen des Push Subscribers<br>--> Exception|Sync wird deaktiviert||
-|Push subscription ist nicht erfolgreich|In einer Minute wird erneut probiert||
+|Exception beim erstellen des Push Subscribers<br>--> Exception|Sync wird deaktiviert||[PushSubscriptionService] - {0} {1}, subscription error, ({2} - {3}).
+|Push subscription ist nicht erfolgreich|In einer Minute wird erneut probiert|| [PushSubscriptionService] - Subscription: {0} {1} is invalid: '{2}'.
 
 ## Well Known Folders aktualisieren (Deleted-Items )
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Exception beim Abonnieren der Folders|In einer Minute wird erneut probiert||
+|Exception beim Abonnieren der Folders|In einer Minute wird erneut probiert||[PushSubscriptionService] - DeletedItemsFolder Subscription for {0} {1}, failed, ({2} - {3})
 |DB Timeout beim Abonnieren der Folders|Exception wird weitergeworfen||
 
 ## Sync deaktivieren (Subscription kann nicht aktualisiert werden)
