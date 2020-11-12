@@ -11,8 +11,7 @@ description: >
 # Backsync Dienst
 
 ## Vorbereitung
-
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Keine Lizenzen|Abbruch|5 Minuten|[BackSync] - Missing license
 |Person wird nicht gefunden|Aktion wird gelöscht|
@@ -24,9 +23,8 @@ description: >
 |Exception beim Suchen von Reservation|Intervall erhöht|BackSyncIntervall|[BackSync] - Error occured trying to find Reservation {0}
 |Reservation wird nicht gefunden|Aktion wird gelöscht||[BackSync] - Reservation {0} was not found in Rooms BackSync failed
 
-## Einzelne Reservation
-
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Backsync einzelner Reservation
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Exception beim durchführen der Backsync<br>--> Exchange Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Exchange Error occured while trying to find or save Appointment, related Reservation: {0}, Mailbox: {1}"
 |Exception beim durchführen der Backsync<br>--> DB Timeout|Service wird 5 Minuten gestoppt, beim 2. mal wird aktion gelöscht|
@@ -34,8 +32,8 @@ description: >
 |Appointment kann nicht gefunden werden|Intervall erhöht|BackSyncIntervall|
 |Validation Errors beim Speichern der Reservation|Intervall erhöht|BackSyncIntervall|[BackSync] - Error occured while trying to change reservation {0}: {1}
 
-## Reservation Teil einer Serie
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Backsync wenn Reservation Teil einer Serie ist
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Exception beim durchführen der Backsync<br>--> Exchange Exception|Intervall erhöht|BackSyncIntervall|[BackSync] - Exchange Error occured while trying to find or save Appointment, related Serie: {0}, Mailbox: {1}
 |Exception beim durchführen der Backsync<br>--> DB Timeout|Service wird 5 Minuten gestoppt, beim 2. mal wird aktion gelöscht|
@@ -47,8 +45,7 @@ description: >
 # Collaboration Dienst
 
 ## Vorbereitung
-
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Keine Lizenzen|Abbruch|5 Minuten|[CollaborationService] - Missing license
 |Reservation ist in der Vergangenheit|Aktion wird gelöscht|
@@ -57,8 +54,8 @@ description: >
 |Person SyncMode auf None|Aktion wird gelöscht|
 |Person Mailbox leer|Aktion wird gelöscht|
 
-## Vorbereitung IsSubscription
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Vorbereitung für Exchange Subscription Update (IsSubscription = true)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Keine Reservation verknüpft<br>Kommunikationsproblem mit Exchange beim suchen von Appointment|Intervall erhöht|ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
 |Keine Reservation verknüpft<br>Appointment wird in Exchange nicht gefunden|Aktion wird gelöscht|
@@ -68,15 +65,14 @@ description: >
 |Bei IstSerieübernahme: Serie existiert nicht in Rooms|Aktion wird gelöscht|
 |Bei IstSerieübernahme: Serie befindet sich in einem unsynchronisierbaren Status|Aktion wird gelöscht|
 
-## Aktion mit IsDelete und IsSubscription gekennzeichnet
-**Subcription Aktion für das Löschen von Reservation von Exchange erhalten**
+## Exchange Subscription Update für das Löschen eines Termins (IsSubscription = true, IsDelete = true)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
+|---|---|---|---|
 |Reservation/Serie kann nicht annulliert werden|Sync Error Mail wird versendet --> Aktion wird gelöscht||[CollaborationService] - Serie/Reservation {0} could not be cancled in rooms: {1}
 |Nach Annullation Reservation/Serie Exception bei Reset der Sync|Aktion wird gelöscht||[CollaborationService] - Failed to reset SyncProperties of Serie/Reservation {0}
-|Erfolgreiche Löschung der Reservation/Serie|Aktion wird gelöscht|
 
-## Aktion mit IsSubscription gekennzeichnet (Einzelreservation)
-**Subcription Aktion von Exchange erhalten**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Exchange Subscription Update für einen Termin erhalten (Einzelreservation) (IsSubscription = true)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Reservation ist nicht mehr synchronisert (keine SyncItemId)|Aktion wird gelöscht|[CollaborationService] - Reservation {0} is not synced anymore, ingoring subscription update
 |Appointment wird nicht gefunden<br>Exception|Intervall erhöht|ExchangeManageException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
@@ -84,9 +80,8 @@ description: >
 |Änderungen von Appointment kann nicht auf Reservation übernommen werden<br>--> Exception bei Update|Intervall erhöht|CollaborationAktionHandler Exception|[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
 |Änderungen von Appointment kann nicht auf Reservation übernommen werden|Aktion wird umgeschrieben von Subscription auf Update mit MeetingRequestUpdateType = SendToAll<br>- ErrorMail wird versendet|||[CollaborationService] - Validation Error occured during Sync but trying again: {0}
 
-## Aktion mit IsSubscription gekennzeichnet (Serie)**
-**Subcription Aktion von Exchange erhalten**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Exchange Subscription Update für einen Termin erhalten (Serie) (IsSubscription = true)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Serie ist nicht mehr synchronisert (keine SyncItemId)|Aktion wird gelöscht||[CollaborationService] - Serie {0} is not synced anymore, ingoring subscription update
 |Appointment wird nicht gefunden<br>Exception|Intervall erhöht|ExchangeManageException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
@@ -97,66 +92,64 @@ description: >
 |Änderung eines Appointments kann nicht auf Reservation übernommen werden<br> --> Exception bei Update|Intervall erhöht|CollaborationAktionHandler Exception|[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
 |Änderung eines Appointments kann nicht auf Reservation übernommen werden<br> --> Validierungserror bei Update|Aktion wird umgeschrieben von Subscription auf Update mit MeetingRequestUpdateType = SendToAll<br>- ErrorMail wird versendet||[CollaborationService] - Validation Error occured during Sync but trying again: {0}
 
-
-## Aktion mit IsDelete gekennzeichnet
-**Serie/Reservation wurde in Rooms gelöscht**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für das Löschen eines Appointments nach Exchange, Serie/Reservation gelöscht/annulliert (IsDelete = true)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Keine SyncItemId oder AppointmentOid|Aktion wird gelöscht|-|-|
-|Exception beim Löschen des Appointments|ExchangeManagerException|
-|Unerwartete Antwort beim löschen des Appointments|ValidationError / Aktion wird gelöscht |
+|Keine SyncItemId oder AppointmentOid|Aktion wird gelöscht||[CollaborationService] - Cannot remove appointment, no syncitemid or appointmentoid
+|Exception beim Löschen des Appointments|Intervall erhöht|ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Löschen des Appointments ist nicht erfolgreicht|Aktion wird gelöscht|| [CollaborationService] - Failed removing appointment on Exchange {0}
 
-
-## Aktion ohne IsDelete/IsSubscription gekennzeichnet
-**Vorbereitung**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Update von Reservation/en nach Exchange, Vorbereitung
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Keine Reservation verknüpft|Aktion wird gelöscht|-|-|
-|Exception beim suchen der Reservation|CollaborationAktionHandler Exception handling|
-|Reservation kann nicht gefunden werden|Aktion wird gelöscht|
-|Keine SyncItemId aber AppointmentOid gesetzt|Pending backsync| Intervall 0-5 jede Minute, Intervall 6 - 48 alle 30 minuten|
+|Keine Reservation verknüpft|Aktion wird gelöscht|||
+|Exception beim suchen der Reservation|Intervall erhöht|CollaborationAktionHandler Exception||[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Reservation kann nicht gefunden werden|Aktion wird gelöscht||[CollaborationService] - Reservation not found in Rooms: {0}
+|Keine SyncItemId aber AppointmentOid gesetzt|Warten auf Backsync, intervall erhöht| Intervall 0-5 jede Minute, Intervall 6 - 48 alle 30 minuten|
 |Serie mit unsychronisierbarem Status|Aktion wird gelöscht|
 
-## Aktion ohne IsDelete/IsSubscription gekennzeichnet
-**Reservation wurde in Rooms erstellt/angepasst**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Update von Reservation nach Exchange, neue Reservation (SyncItemId leer)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Exception beim Erstellen von Appointment|Appointment wird wieder gelöscht|ExchangeManager oder Exception handling
-|Exception beim Finden von Appointment|ExchangeManager handling|
-|Appointment wird nicht gefunden |Bei intervall > 1 wird Sync deaktiviert|ExchangeManager handling (DataProcessing)|
-|Appointment ist noch teil einer Serie (in Rooms nicht mehr) |Appointment wird gelöscht (Exception möglich) / Sync zurückgesetzt / ValidationError|
-|Exception beim Speichern/aktualisieren des Appointments |ExchangeManager handling|
+|Exchange Exception beim Erstellen von Appointment|Intervall erhöht|CollaborationAktionHandler ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Exception beim Erstellen von Appointment|Intervall erhöht|CollaborationAktionHandler Exception|[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Exception beim speichern der Reservation (SyncItemId / AppointmentOid)|Appointment wird wieder gelöscht|CollaborationAktionHandler Exception|[CollaborationService] - Reservation: {0} could not be saved after creation on Exchange, removing Appointment<br>[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
 
-## Aktion ohne IsDelete/IsSubscription gekennzeichnet
-**Serie wurde in Rooms erstellt**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Update von Reservation nach Exchange, Reservation aktualisiert (SyncItemId nicht leer)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
-|Serie mit unsychronisierbarem Status|Aktion wird gelöscht|
-|Exception beim erstellen von Serie Appointment|Appointment wird wieder gelöscht|ExchangeManager oder Exception handling
-|Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt|
-|Exception beim aktualisieren/erstellen von Serie|Exception handling|
+|Exchange Exception beim Finden von Appointment|Intervall erhöht|CollaborationAktionHandler ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Appointment nicht gefunden|Bei intervall > 1 wird Sync deaktiviert, intervall erhöht|CollaborationAktionHandler ExchangeManager (DataProcessing)|[CollaborationService] - Appointment not found on Exchange for reservation: {0} 
+|Appointment ist noch teil einer Serie (in Rooms nicht mehr) |Sync wird zurückgesetzt / Appointment wird gelöscht (Exception möglich) / Intervall erhöht|2x alle 5 Minuten|[CollaborationService] - Simple reservation in rooms is serie in Exchange, removing appointment re-sync reservation: {0}|
+|Exchange Exception beim Speichern von Appointment|Intervall erhöht|CollaborationAktionHandler ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Exception beim Speichern von Appointment|Intervall erhöht|CollaborationAktionHandler Exception|[CollaborationService] - Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
 
-## Aktion ohne IsDelete/IsSubscription gekennzeichnet
-**Serie wurde in Rooms aktualisiert**
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+## Aktion für Update von Serie nach Exchange, neue Serie (SyncItemId leer)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Serie mit unsychronisierbarem Status|Aktion wird gelöscht|
-|Exception beim erstellen von Serie Appointment|Appointment wird wieder gelöscht|ExchangeManager oder Exception handling
-|Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt|
-|Exception beim aktualisieren/erstellen von Serie|Exception handling|
-|Appointment wird nicht gefunden |Bei intervall > 1 wird Sync auf serie deaktiviert|ExchangeManager handling (DataProcessing)|
-|Appointment ist nicht master appointment |Sync auf Reservation zurücksetzen, appointment löschen, aktion wird nochmals ausgeführt|
-|Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt|
-|Exception beim aktualisieren/erstellen von Serie|Exception handling|
+|Exchange Exception beim Speichern von Appointment|Intervall erhöht|CollaborationAktionHandler ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Appointment konnte nicht richtig erstellt werden|Intervall erhöht|CollaborationAktionHandler ExchangeManager (DataProcessing)|
+[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
+|Exception beim erstellen von Serie Appointments|Master Appointment wird wieder gelöscht|CollaborationAktionHandler ExchangeManager (DataProcessing)|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
+|Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt<br>Aktion wird gelöscht|[CollaborationService] - Serie {0}, sync is broken, reservations with no syncitemid: {1}, disabling sync 
 
-
-
+## Aktion für Update von Serie nach Exchange, Serie aktualisiert (SyncItemId nicht leer)
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
+|---|---|---|---|
+|Serie mit unsychronisierbarem Status|Aktion wird gelöscht|
+|Exchange Exception beim Finden von Appointment|Intervall erhöht|CollaborationAktionHandler ExchangeManagerException|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}
+|Appointment nicht gefunden|Bei intervall > 1 wird Sync deaktiviert, intervall erhöht|CollaborationAktionHandler ExchangeManager (DataProcessing)|[CollaborationService] - Appointment not found on Exchange for serie: {0} 
+|Appointment ist nicht SerieMaster |Sync wird zurückgesetzt / Appointment wird gelöscht (Exception möglich) / Intervall erhöht|2x alle 5 Minuten|[CollaborationService] - Simple reservation in rooms is serie in Exchange, removing appointment re-sync reservation: {0}|
+|Appointment konnte nicht richtig erstellt werden|Intervall erhöht|CollaborationAktionHandler ExchangeManager (DataProcessing)|
+[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
+|Exception beim erstellen von Serie Appointments|Master Appointment wird wieder gelöscht|CollaborationAktionHandler ExchangeManager (DataProcessing)|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
+|Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt<br>Aktion wird gelöscht|[CollaborationService] - Serie {0}, sync is broken, reservations with no syncitemid: {1}, disabling sync 
 # Push subscription Dienst
 
 Der Push subscription Dienst...
 ## Neue Subscriptions erstellen/aktualisieren
-
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Subscription is keine Person/Ressource|Exception||
 |Subscriber hat inzwischen SyncMode None|Sync wird deaktiviert||
@@ -166,21 +159,16 @@ Der Push subscription Dienst...
 |Push subscription ist nicht erfolgreich|In einer Minute wird erneut probiert||
 
 ## Well Known Folders aktualisieren (Deleted-Items )
-
-|<div style="width:200px">Möglicher Fehler</div>|Resultat|Intervall|Logmeldung
+|Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
 |Exception beim Abonnieren der Folders|In einer Minute wird erneut probiert||
 |DB Timeout beim Abonnieren der Folders|Exception wird weitergeworfen||
 
 ## Sync deaktivieren (Subscription kann nicht aktualisiert werden)
 
-
-**HandleSyncError**
-
-
 # Sync Intervalle
 
-**BackSyncIntervall**
+## BackSyncIntervall
 - 3x alle 5 Sekunden sofort wieder 
 - 3x alle 30 Sekunden
 - 3x alle 1 Stunde
@@ -188,21 +176,18 @@ Der Push subscription Dienst...
 - 2x alle 12 Stunden
 - Nach ca. 47 Stunden wird Aktion gelöscht HandleSyncError aufgerufen
 
-**CollaborationAktionHandler ExchangeManagerException handling**
-
-|<div style="width:200px">Exchange Fehler</div>|Intervall|
+## CollaborationAktionHandler ExchangeManagerException handling
+|Exchange Fehler|Intervall|
 |---|---|
-|DataProcessing, InternalError|3x Retry je 5 Minuten|
-|Connectivity|24x Retry je 60 Minuten|
-|Authentication, Authorization|8x Retry je 120 Minuten|
-|UserUnknown|4x Retry je 360 Minuten|
-|Alle anderen Exchange Fehler|3x Retry je 3 Minuten|
+|DataProcessing, InternalError|3x Retry alle 5 Minuten|
+|Connectivity|24x Retry alle 60 Minuten|
+|Authentication, Authorization|8x Retry alle 120 Minuten|
+|UserUnknown|4x Retry alle 360 Minuten|
+|Alle anderen Exchange Fehler|3x Retry alle 3 Minuten|
 
-**CollaborationAktionHandler Exception handling**
-
-Intervall 0 --> Retry in 1 Minute
-
-Intervall 1 - 3 --> Retry nach je 20 Minuten
+## CollaborationAktionHandler Exception handling
+- Intervall 0 --> Retry in 1 Minute
+- Intervall 1 - 3 --> Retry nach alle 20 Minuten
 
 # Testing
 
@@ -212,7 +197,6 @@ Outlook:
 - Aus einzeleintrag serie erstellen --> Serie wird nicht erstellt in Rooms
 - Serie erweitern --> Zusätzliche Termine werden wieder gelöscht
 - Seriepattern anpassen mit überlappenden einträgen --> Termine werden zurückgesetzt z.B. daily jeder tag 5x zu daily jeder 2. tag 5x
-
 - Löschen von Serieeinträgen funktioniert noch nicht gut, werden recreated
 
 # Funktioniert
