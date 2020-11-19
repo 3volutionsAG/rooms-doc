@@ -9,8 +9,8 @@ description: >
 
 Begriffe:
 
-Appiontment: Termin in Exchange/Outlook
-Reservation: Termin in Rooms
+- Appiontment: Termin in Exchange/Outlook
+- Reservation: Termin in Rooms
 
 # Nicht unterstützte Verhalten in Outlook
 
