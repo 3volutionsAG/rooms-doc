@@ -18,7 +18,7 @@ Reservation: Termin in Rooms
 - Serie erweitern (mehr Appointments als Reservationen) --> Zusätzliche Appointments werden wieder gelöscht / Serieappointments werden zurückgesetzt
 - Sofortiges löschen des Appointmens nach der Erstellung --> Reservation bleibt bestehen
 - Datum/Zeitanpassung auf Outlook auf einen Zeitpunkt wo der Raum bereits besetzt ist oder das Buchen nicht erlaubt ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
-- Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> 
+- Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
 - Bei Serie: Jährliche oder wiederholung ohne Enddatum --> Bei der Erstellung wird dies vom Addin unterbunden
 - Anpassen/Löschen von Terminen aus Kalender von anderen Personen --> Wird in einem zukünftigen Release behoben/ermöglicht
 
@@ -26,7 +26,7 @@ Reservation: Termin in Rooms
 
 Der Backsync Dienst wird aktiv, wenn über das Addin eine Reservation/Appointment erstellt wird. Der Backsync dienst verknüpft die Reservation mit dem Appointment in Exchange. 
 
-Werden in der zwischenzeit (zwischen erstellen des Termins und ausführen der Backsync) änderungen am Termin vorgenommen muss der Backsync Dienst dies abhandeln Rooms ist dabei der Master. Dieses Verhalten kann mit der Konfiguration: "BackSync delay in minutes" getestet werden.
+Werden in der Zwischenzeit (zwischen erstellen des Termins und ausführen der Backsync) änderungen am Termin vorgenommen muss der Backsync Dienst dies abhandeln Rooms ist dabei der Master. Dieses Verhalten kann mit der Konfiguration: "BackSync delay in minutes" getestet werden.
 
 ## Vorbereitung
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
