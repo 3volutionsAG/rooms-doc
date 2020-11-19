@@ -7,7 +7,26 @@ description: >
    <p style="text-align: justify">Generelle Informationen zu der Exchange Synchronisation</p>
 ---
 
+Begriffe:
+
+Appiontment: Termin in Exchange/Outlook
+Reservation: Termin in Rooms
+
+# Nicht unterstützte Verhalten in Outlook
+
+- Aus einem mit Rooms synchronisierten Einzelappointment eine Serie erstellen --> Serie wird nicht erstellt in Rooms --> Beim nächsten Update der Reservation wird die Serie/Serieappoitments in Outlook entfernt
+- Serie erweitern (mehr Appointments als Reservationen) --> Zusätzliche Appointments werden wieder gelöscht / Serieappointments werden zurückgesetzt
+- Sofortiges löschen des Appointmens nach der Erstellung --> Reservation bleibt bestehen
+- Datum/Zeitanpassung auf Outlook auf einen Zeitpunkt wo der Raum bereits besetzt ist oder das Buchen nicht erlaubt ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
+- Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> 
+- Bei Serie: Jährliche oder wiederholung ohne Enddatum --> Bei der Erstellung wird dies vom Addin unterbunden
+- Anpassen/Löschen von Terminen aus Kalender von anderen Personen --> Wird in einem zukünftigen Release behoben/ermöglicht
+
 # Backsync Dienst
+
+Der Backsync Dienst wird aktiv, wenn über das Addin eine Reservation/Appointment erstellt wird. Der Backsync dienst verknüpft die Reservation mit dem Appointment in Exchange. 
+
+Werden in der zwischenzeit (zwischen erstellen des Termins und ausführen der Backsync) änderungen am Termin vorgenommen muss der Backsync Dienst dies abhandeln Rooms ist dabei der Master. Dieses Verhalten kann mit der Konfiguration: "BackSync delay in minutes" getestet werden.
 
 ## Vorbereitung
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
@@ -42,6 +61,8 @@ description: >
 |Validation Errors beim Speichern von Reservation|Aktion wird gelöscht||[BackSync] - Error occured while trying to change reservation {0} in serie: {1}: {2}
 
 # Collaboration Dienst
+
+Der Collaboration Dienst ist das Hauptstück der Synchronisation er behandelt sowohl Subscription Updates von Exchange sowie auch Updates auf seiten Rooms.
 
 ## Vorbereitung
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
@@ -144,9 +165,13 @@ description: >
 [CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
 |Exception beim erstellen von Serie Appointments|Master Appointment wird wieder gelöscht|CollaborationAktionHandler ExchangeManager (DataProcessing)|[CollaborationService] - Exchange Error trying to sync Reservation: {0}, IsSubscription: {1}, IsDelete: {2}, IsSerieUebernahme: {3}, Mailbox: {4}|
 |Einzelne Reservationen können nicht synchronisiert werden|Seriestatus wird auf Unsynchronisierbar gesetzt<br>Aktion wird gelöscht|[CollaborationService] - Serie {0}, sync is broken, reservations with no syncitemid: {1}, disabling sync 
+
 # Push subscription Dienst
 
-Der Push subscription Dienst...
+Die einzige Aufgabe des Push subscription Dienstes ist es, auf Exchange eine Subscription erstellen/aktualisieren. Dabei wird die entsprechende URL z.B. http://rooms.example.com/Webservices/SyncNotification.svc mitgegeben.
+
+Nach erfolgreicher Subscription sendet Exchange Subscription Updates nach Rooms.
+
 ## Neue Subscriptions erstellen/aktualisieren
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
 |---|---|---|---|
@@ -164,6 +189,8 @@ Der Push subscription Dienst...
 |DB Timeout beim Abonnieren der Folders|Exception wird weitergeworfen||
 
 ## Sync deaktivieren (Subscription kann nicht aktualisiert werden)
+
+Sync für die Person wird deaktiviert. (SyncMode auf None, Person erhält eine Mitteilung
 
 # Sync Intervalle
 
@@ -187,18 +214,3 @@ Der Push subscription Dienst...
 ## CollaborationAktionHandler Exception handling
 - Intervall 0 --> Retry in 1 Minute
 - Intervall 1 - 3 --> Retry nach alle 20 Minuten
-
-# Testing
-
-## Funktioniert nicht
-
-Outlook:
-- Aus einzeleintrag serie erstellen --> Serie wird nicht erstellt in Rooms
-- Serie erweitern --> Zusätzliche Termine werden wieder gelöscht
-- Seriepattern anpassen mit überlappenden einträgen --> Termine werden zurückgesetzt z.B. daily jeder tag 5x zu daily jeder 2. tag 5x
-- Löschen von Serieeinträgen funktioniert noch nicht gut, werden recreated
-
-# Funktioniert
-Outlook:
-- Serie verkleinern
-- Seriepattern anpassen ohne überlappende einträge z.B. daily jeder tag 5x zu monatlich 
