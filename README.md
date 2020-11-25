@@ -13,7 +13,7 @@ The latest version of this documentation is automatically deployed to gitlab pag
   - `git config --global user.email "your_email_address@example.com"`
 - Install a comfortable markdown editor like [VSCode](https://code.visualstudio.com/)
 - Install HUGO
-  - Choose an **extended** Version of HUGO: [hugo-releases](https://github.com/gohugoio/hugo/releases)
+  - Choose the **extended** Version of HUGO: [hugo-releases](https://github.com/gohugoio/hugo/releases)
   - Optional: If you have chocolatey installed just type `cinst hugo-extended -y` into the command line
 - Install [Node.js](https://nodejs.org/en)
   - Install the latest LTS version
@@ -25,11 +25,7 @@ The latest version of this documentation is automatically deployed to gitlab pag
   npm install
   ```
 
-Compile and run
-
-```sh
-hugo serve
-```
+Compile and run by executing `hugo serve`
 
 # Docsy
 You can learn more about Docsy and find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs
