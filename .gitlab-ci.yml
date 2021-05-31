@@ -6,7 +6,7 @@ variables:
 pages:
   stage: deploy
   before_script:
-  - apk --update add git nodejs nodejs-npm
+  - apk --update add git nodejs npm
   - npm install
   script:
   - hugo -d ./public --baseUrl https://3volutions.gitlab.io/3v-rooms/rooms-doc
