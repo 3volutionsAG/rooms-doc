@@ -1,6 +1,6 @@
 ---
-title: "Exchange Synchronisation"
-linkTitle: "Exchange Synchronisation"
+title: "Problembehandlung"
+linkTitle: "Problembehandlung"
 weight: 40
 
 description: >
@@ -232,24 +232,16 @@ Sync für die Person wird deaktiviert. (SyncMode auf None, Person erhält eine M
 |UserUnknown|4x Retry alle 360 Minuten|
 |Alle anderen Exchange Fehler|3x Retry alle 3 Minuten|
 
-# Testing
+### CollaborationAktionHandler Exception handling
+- Intervall 0 --> Retry in 1 Minute
+- Intervall 1 - 3 --> Retry nach alle 20 Minuten
 
-## Testen von verzögerter BackSycn
+## Testing
+
+### Testen von verzögerter BackSycn
 
 Um eine verzögerte BackSync zu simulieren kann folgender Gobaler Pararameter genutzt werden:
 
 - System --> Globale Parameter --> 
 
 
-## Funktioniert nicht
-
-Outlook:
-- Aus einzeleintrag serie erstellen --> Serie wird nicht erstellt in Rooms
-- Serie erweitern --> Zusätzliche Termine werden wieder gelöscht
-- Seriepattern anpassen mit überlappenden einträgen --> Termine werden zurückgesetzt z.B. daily jeder tag 5x zu daily jeder 2. tag 5x
-
-- Löschen von Serieeinträgen funktioniert noch nicht gut, werden recreated
-
-### CollaborationAktionHandler Exception handling
-- Intervall 0 --> Retry in 1 Minute
-- Intervall 1 - 3 --> Retry nach alle 20 Minuten

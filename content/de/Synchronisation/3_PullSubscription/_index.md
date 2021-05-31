@@ -1,14 +1,15 @@
 ---
-title: "Exchange Synchronisation"
-linkTitle: "Exchange Synchronisation"
+title: "Pull Subscription"
+linkTitle: "Pull Subscription"
 weight: 30
-draft: true
 
 description: >
    <p style="text-align: justify">Pull Synchronisation einrichten</p>
 ---
 
-# Aktivieren des Pull-Subscription Dienstes
+{{< imgproc Pull_Subscription_Overview Resize "1024x" >}}{{< /imgproc >}}
+
+## Aktivieren des Pull-Subscription Dienstes
 
 Der Dienst kann über die Structure Map aktiviert werden:
 
@@ -22,17 +23,17 @@ Weiterhin vorhanden sein muss:
 	<AddInstance Key="backSyncService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.BackSyncService.BackSyncServiceSession,Garaio.Products.Rooms.Core"/>
 	<AddInstance Key="collaborationService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.CollaborationService.CollaborationServiceSession,Garaio.Products.Rooms.Core"/>
 ```
-Um die Tests erfolgreicht durchzuführen muss noch folger Dienst aktiviert werden:
+Um die Tests erfolgreicht durchzuführen muss noch folgender Dienst aktiviert werden:
 
 ```
 	<AddInstance Key="syncTestService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.SyncTestService.SyncTestServiceSession,Garaio.Products.Rooms.Core"/>
 ```
 
-# Pull Subscription für eine Person einrichten
+## Pull Subscription für eine Person einrichten
 
 Um die Subscription für eine Person zu aktivieren muss in den Einstellungen der Person der SyncMode auf Exchange2016Pull (basic Auth) oder O365Pull (OAuth 2.0) gesetzt werden.
 
-{{< imgproc pull_subscription_aktivieren Resize "200x" >}}{{< /imgproc >}}
+{{< imgproc pull_subscription_aktivieren Resize "1024x" >}}{{< /imgproc >}}
 
 Folgende Scripts können helfen Personen auf Pullsubscription zu migrieren:
 
@@ -62,7 +63,30 @@ Folgende Scripts können helfen Personen auf Pullsubscription zu migrieren:
 		            AND person.id in (select id from person where IstImportiert = 1)   
 ```
 
-# Pull Subscription konfigurieren
+## Basic auth oder O365 einrichten
+
+### Basic Auth
+SyncMode: Exchange2016Pull
+
+RoomsAppSettings.config
+
+```
+	<add key="Exchange2016ServiceUser" value="joel.frutiger@ad.3v-rooms.ch" />
+   <add key="Exchange2016ServicePassword" value="XP39gt42" />
+```
+
+### OAuth 2.0
+SyncMode: O365Pull
+
+RoomsAppSettings.config
+
+```
+	<add key="ExchangeTenantId" value="xxx" />
+	<add key="ExchangeAppId" value="xxx" />
+	<add key="ExchangeClientSecret" value="xxx" />
+```
+
+## Pull Subscription konfigurieren
 
 Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 
@@ -99,7 +123,7 @@ Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 	<add key="IntervallTaskInSeconds" value="30" />
 
 	<!--An OAuth 2.0 token is valid for 1H, per default we renew it 20 mins before expiration.-->
-	<add key="OAuthTokenMinutesBeforeRenew" value="30" />
+	<add key="OAuthTokenMinutesBeforeRenew" value="20" />
 
 	<!--Subscription Timeout, the timeout is reset with every GetEvents() call. Defaults to 1 Day.-->
 	<add key="SubscriptionTimeoutInMinutes" value="720" />
