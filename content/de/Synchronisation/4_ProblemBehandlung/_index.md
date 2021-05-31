@@ -4,10 +4,28 @@ linkTitle: "Exchange Synchronisation"
 weight: 40
 
 description: >
-   <p style="text-align: justify">Generelle Informationen zu der Exchange Synchronisation</p>
+   <p style="text-align: justify">Problembehandlung bei der Exchange Synchronisation</p>
 ---
 
-Begriffe:
+# Finden von Reservationen mit Synchronisationsfehlern
+
+Unter Listen --> Buchungen können Buchungen gefunden werden, bei welchem die Synchronisation fehlgeschlagen hat.
+
+- Buchungen mit Synchronisationsproblemen
+- Serienbuchungen mit Synchronisationsproblemen
+
+In diesem fall annulliert man am Besten die Buchung und erstellt eine neue.
+
+Mit der Option
+
+- Bucungen mit fehlender Back-Synchronisation
+
+findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann aber von Rooms nicht in Exchange gefunden wurden. Liegt das Erstelldatum der Buchung lange in der Vergangenheit, ist wohl die dazugehörige Outlook buchung annulliert worden (bevor die Back-Synchronisation durgeführt wurde).
+
+{{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
+
+
+# Backsync Dienst
 
 - Appiontment: Termin in Exchange/Outlook
 - Reservation: Termin in Rooms
@@ -213,6 +231,24 @@ Sync für die Person wird deaktiviert. (SyncMode auf None, Person erhält eine M
 |Authentication, Authorization|8x Retry alle 120 Minuten|
 |UserUnknown|4x Retry alle 360 Minuten|
 |Alle anderen Exchange Fehler|3x Retry alle 3 Minuten|
+
+# Testing
+
+## Testen von verzögerter BackSycn
+
+Um eine verzögerte BackSync zu simulieren kann folgender Gobaler Pararameter genutzt werden:
+
+- System --> Globale Parameter --> 
+
+
+## Funktioniert nicht
+
+Outlook:
+- Aus einzeleintrag serie erstellen --> Serie wird nicht erstellt in Rooms
+- Serie erweitern --> Zusätzliche Termine werden wieder gelöscht
+- Seriepattern anpassen mit überlappenden einträgen --> Termine werden zurückgesetzt z.B. daily jeder tag 5x zu daily jeder 2. tag 5x
+
+- Löschen von Serieeinträgen funktioniert noch nicht gut, werden recreated
 
 ### CollaborationAktionHandler Exception handling
 - Intervall 0 --> Retry in 1 Minute
