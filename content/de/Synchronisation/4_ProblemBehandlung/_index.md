@@ -238,10 +238,17 @@ Sync für die Person wird deaktiviert. (SyncMode auf None, Person erhält eine M
 
 ## Testing
 
-### Testen von verzögerter BackSycn
+### Testen von verzögerter BackSync
 
 Um eine verzögerte BackSync zu simulieren kann folgender Gobaler Pararameter genutzt werden:
 
 - System --> Globale Parameter --> 
 
+### Ändern des Cache Refresh intervalls der DeletedFolderIds bei der Push Subscription
 
+In den RoomsAppSettings.config des Webservers:
+
+```
+	<add key="DeletedFolderIdsCacheRefreshInHours" value="12"/>
+
+```
