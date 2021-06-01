@@ -18,9 +18,9 @@ In diesem fall annulliert man am Besten die Buchung und erstellt eine neue.
 
 Mit der Option
 
-- Bucungen mit fehlender Back-Synchronisation
+- Buchungen mit fehlender Back-Synchronisation
 
-findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann aber von Rooms nicht in Exchange gefunden wurden. Liegt das Erstelldatum der Buchung lange in der Vergangenheit, ist wohl die dazugehörige Outlook buchung annulliert worden (bevor die Back-Synchronisation durgeführt wurde).
+findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann aber von Rooms nicht in Exchange gefunden wurden. Liegt das Erstelldatum der Buchung lange in der Vergangenheit, ist wohl die dazugehörige Outlook Buchung annulliert worden (bevor die Back-Synchronisation durgeführt wurde).
 
 {{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
 
