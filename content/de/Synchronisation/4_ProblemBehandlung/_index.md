@@ -7,7 +7,7 @@ description: >
    <p style="text-align: justify">Problembehandlung bei der Exchange Synchronisation</p>
 ---
 
-# Finden von Reservationen mit Synchronisationsfehlern
+## Finden von Reservationen mit Synchronisationsfehlern
 
 Unter Listen --> Buchungen können Buchungen gefunden werden, bei welchem die Synchronisation fehlgeschlagen hat.
 
@@ -25,7 +25,7 @@ findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann abe
 {{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
 
 
-# Backsync Dienst
+## Definitionen
 
 - Appiontment: Termin in Exchange/Outlook
 - Reservation: Termin in Rooms
