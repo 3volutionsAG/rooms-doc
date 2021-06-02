@@ -24,6 +24,29 @@ findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann abe
 
 {{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
 
+### Wie kommt es zu einem Konfikt / fehlgeschlagener Synchronisation
+
+*Einzelbuchung*
+
+Eine Einzelbuchung mit dem Status Unsynchronisierbar, erhält keine direkten Updates mehr von Exchange. Updates von Rooms werden aber weiterhin nach Exchange Synchronisiert.
+
+Eine Einzelbuchung wird Unsynchronisierbar wenn eine Notifikation von Exchange, welche wichtige Änderungen vornehmen, 5x nacheinander nicht verarbeitet werden konnte. Diese Anzahl von Updates bis die Sync deaktiviert wird, kann in den RoomsAppSettings konfiguriert werden:
+
+```
+	<!--Stop sync after continuous failed updates to a reservation-->
+	<add key="StopSyncAfterFailedAttempts" value="5" />
+```
+Beispiel:
+- Eine Reservation wird 5x nacheinander auf eine in dem Raum bereits besetzte Zeit verschoben.
+
+*Serie*
+
+Bei der Serie gibt es zwei verschiedene Konflikt Status: 
+
+UnsynchronizableUnrecoverableRoomsChanges --> Serie.SyncStatus = 1
+UnsynchronizableUnrecoverableRoomsChanges --> Serie.SyncStatus = 2
+
+Trifft einer dieser Status auf, wird die Serie komplett nicht mehr Synchronisiert. Zu diesem Status kann es kommen wenn von Rooms aus änderungen gemacht wurden die nicht mehr Synchronisiert werden können. Oder wenn wie bei den Einzelbuchungen Änderungen von Exchange 5x nacheinander nicht übernommen werden konnten.
 
 ## Definitionen
 
@@ -39,7 +62,6 @@ findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann abe
 - Datum/Zeitanpassung auf Outlook auf einen Zeitpunkt wo der Raum bereits besetzt ist oder das Buchen nicht erlaubt ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
 - Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
 - Bei Serie: Jährliche oder wiederholung ohne Enddatum --> Bei der Erstellung wird dies vom Addin unterbunden
-- Anpassen/Löschen von Terminen aus Kalender von anderen Personen --> Wird in einem zukünftigen Release behoben/ermöglicht
 {{% /alert %}}
 
 
