@@ -47,7 +47,14 @@ Folgende Scripts können helfen Personen auf Pullsubscription zu migrieren:
                 SET SettingsXml.modify('insert <SyncMode>Exchange2016Pull</SyncMode> into /PersonSettings[1]')
             WHERE SettingsXml IS NOT NULL
             AND CAST(SettingsXml as nvarchar(max)) NOT LIKE '<SyncMode>'
-		            AND person.id in (select id from person where IstImportiert = 1)   
+		            AND person.id in (select id from person where IstImportiert = 1)  
+
+		 UPDATE Person
+                SET SettingsXml.modify('insert <Exchange2016PullSyncUrl>https://some-url/EWS/Exchange.asmx</Exchange2016PullSyncUrl> into /PersonSettings[1]')
+            WHERE SettingsXml IS NOT NULL
+            AND CAST(SettingsXml as nvarchar(max)) NOT LIKE '<Exchange2016PullSyncUrl>'
+		            AND person.id in (select id from person where IstImportiert = 1)
+
 ```
 
 ```
@@ -61,6 +68,12 @@ Folgende Scripts können helfen Personen auf Pullsubscription zu migrieren:
             WHERE SettingsXml IS NOT NULL
             AND CAST(SettingsXml as nvarchar(max)) NOT LIKE '<SyncMode>'
 		            AND person.id in (select id from person where IstImportiert = 1)   
+
+		 UPDATE Person
+                SET SettingsXml.modify('insert <O365PullSyncUrl>https://outlook.office365.com/EWS/Exchange.asmx</O365PullSyncUrl> into /PersonSettings[1]')
+            WHERE SettingsXml IS NOT NULL
+            AND CAST(SettingsXml as nvarchar(max)) NOT LIKE '<O365PullSyncUrl>'
+		            AND person.id in (select id from person where IstImportiert = 1)
 ```
 
 ## Basic auth oder O365 einrichten
