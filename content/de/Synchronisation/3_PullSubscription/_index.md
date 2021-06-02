@@ -84,8 +84,8 @@ SyncMode: Exchange2016Pull
 RoomsAppSettings.config
 
 ```
-	<add key="Exchange2016ServiceUser" value="joel.frutiger@ad.3v-rooms.ch" />
-   <add key="Exchange2016ServicePassword" value="XP39gt42" />
+	<add key="Exchange2016ServiceUser" value="user@domain" />
+	<add key="Exchange2016ServicePassword" value="xxx" />
 ```
 
 ### OAuth 2.0
