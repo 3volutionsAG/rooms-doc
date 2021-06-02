@@ -46,7 +46,7 @@ Bei der Serie gibt es zwei verschiedene Konflikt Status:
 UnsynchronizableUnrecoverableRoomsChanges --> Serie.SyncStatus = 1
 UnsynchronizableUnrecoverableRoomsChanges --> Serie.SyncStatus = 2
 
-Trifft einer dieser Status auf, wird die Serie komplett nicht mehr Synchronisiert. Zu diesem Status kann es kommen wenn von Rooms aus änderungen gemacht wurden die nicht mehr Synchronisiert werden können. Oder wenn wie bei den Einzelbuchungen Änderungen von Exchange 5x nacheinander nicht übernommen werden konnten.
+Trifft einer dieser Status auf, wird die Serie komplett nicht mehr Synchronisiert. Zu diesem Status kann es kommen wenn von Rooms aus änderungen gemacht wurden die nicht mehr Synchronisiert werden können. Oder wenn, wie bei den Einzelbuchungen, wichtige Änderungen von Exchange 5x nacheinander nicht übernommen werden konnten.
 
 ## Definitionen
 
