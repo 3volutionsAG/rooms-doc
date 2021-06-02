@@ -28,7 +28,7 @@ findet man Buchungen welche über das Addin in Outlook erstellt wurden, dann abe
 
 *Einzelbuchung*
 
-Eine Einzelbuchung mit dem Status Unsynchronisierbar, erhält keine direkten Updates mehr von Exchange. Updates von Rooms werden aber weiterhin nach Exchange Synchronisiert.
+Eine Einzelbuchung mit dem Status Unsynchronisierbar --> Reservation.Unsynchronisierbar = 1, erhält keine direkten Updates mehr von Exchange.Updates von Rooms werden aber weiterhin nach Exchange Synchronisiert.
 
 Eine Einzelbuchung wird Unsynchronisierbar wenn eine Notifikation von Exchange, welche wichtige Änderungen vornehmen, 5x nacheinander nicht verarbeitet werden konnte. Diese Anzahl von Updates bis die Sync deaktiviert wird, kann in den RoomsAppSettings konfiguriert werden:
 
