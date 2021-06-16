@@ -166,6 +166,29 @@ Die Checkbox „Auf nachfolgende Serieneinträge übernehmen“ ist nur im Bearb
 
 Achtung: Es entstehen zwei neue Serien. Dies bedeutet, dass bei aktivierter Synchronisation die Teilnehmer eine Absage für zwei Termine erhalten und eine Neueinladung für die letzten beiden Termine.
 
+##### Zeitzone für Serienbuchungen
+
+Per Standard wird immer die Zeitzone des Organisators verwendet wenn die Serienelemente erstellt werden. Dies ist notwendig damit die Serie bei der Synchronisation mit der Exchange Mailbox des Oranisators keine Ausnahmen generiert.
+
+Dieses Standardverhalten kann ab der Version 4.7.2107 überschrieben werden:
+
+Einstellungen --> System --> Globale Parameter --> Serie creation timezone adjustable --> auf True setzen
+
+Dies hat zweierlei auswirkungen:
+
+Bei der Serieerstellung erscheint nun dieses Dropdown bei welchem ausgewählt werden kann, welche Zeitzone genutzt werden soll.
+
+{{< imgproc Detailbuchung_Serieninformation_Zeitzone Resize "1280x" >}}
+Abbildung fk: Auswahl der Zeitzone für die Erstellung der Serie.
+{{< /imgproc >}}
+
+Zudem kann über die Einstellungen für die Person im Tab "Stammdaten" die Standard Zeitzonen Quelle definiert werden.
+
+{{< imgproc Detailbuchung_Serieninformation_Zeitzone_PersonSettings Resize "1280x" >}}
+Abbildung fk: Auswahl der Standard Zeitzonen Quelle für Person
+{{< /imgproc >}}
+
+
 ### Detailbuchung: Ressourcen 
 Im Reiter "Ressourcen" wählen Sie in der Detailbuchung die zur Verfügung stehenden Ressourcen zu Ihrer Buchung aus. Soll z.B. im Raum "Matterhorn" zusätzlich ein weiterer Beamer verwendet werden, tragen Sie eine 1 in die Leerzeile ein (Abbildung fx). 
 
