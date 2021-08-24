@@ -1,0 +1,25 @@
+{
+    "name": "Rooms-Doc dev container",
+    "dockerFile": "./Dockerfile",
+    "forwardPorts": [
+        1313
+    ],
+    "mounts": [
+        "type=bind,src=${localWorkspaceFolder},dst=/app,consistency=cached",
+        "type=bind,src=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,dst=/home/dev/.ssh,consistency=cached",
+        "type=volume,src=vscode-extensions,dst=/home/dev/.vscode-server/extensions",
+        "type=volume,src=vscode-extensions-insiders,dst=/home/dev/.vscode-server-insiders/extensions",
+        "type=volume,src=bashhistory,dst=/bashhistory",
+    ],
+    "containerEnv": {
+        "HOME": "/home/dev"
+    },
+    "workspaceFolder": "/app",
+    "remoteUser": "dev",
+    "extensions": [
+		"eamodio.gitlens",
+		"editorconfig.editorconfig",
+		"budparr.language-hugo-vscode",
+		"bungcip.better-toml",
+	],
+}
