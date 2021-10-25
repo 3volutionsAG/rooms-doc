@@ -1,7 +1,7 @@
 ---
 title: "Plan"
 linkTitle: "Plan"
-weight: 20
+weight: 3 
 description: >
   Navigieren Sie virtuell auf einer Karte durch Ihre Räume.
 ---
