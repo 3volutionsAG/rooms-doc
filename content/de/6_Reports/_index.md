@@ -1,7 +1,7 @@
 ---
 title: "Reports"
 linkTitle: "Reports"
-weight: 5
+weight: 6
 description: >
   Unter Reports können Sie verschiedene Berichte und Statistiken u.a. zur Auslastung und Stammdaten erstellen und per E-Mail als Word- oder PDF-Datei an Verantwortliche und Organisatoren versenden.. 
 ---

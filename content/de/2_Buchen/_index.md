@@ -1,7 +1,7 @@
 ---
 title: "Buchen"
 linkTitle: "Buchen"
-weight: 10
+weight: 2
 description: >
   Unter der Kategorie "Buchen", verwalten,buchen und suchen Sie nach Ihren gewünschten Ressourcen. Im folgenden Kapitel erfahren Sie, wie Sie hierbei genau vorgehen und die ressourcenspezifischen Reservationsmasken werden Ihnen  erläutert. 
 

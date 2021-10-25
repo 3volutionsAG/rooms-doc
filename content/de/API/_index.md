@@ -1,7 +1,7 @@
 ---
 title: "API"
 type: swagger
-weight: 1000
+weight: 11 
 description: Reference for the ROOMS REST-API
 ---
 

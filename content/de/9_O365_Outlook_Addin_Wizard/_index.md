@@ -1,7 +1,7 @@
 ---
 title: "O365 Outlook Addin / Wizard"
 linkTitle: "o356-outlook-addin-wizard"
-weight: 6
+weight: 9
 description: >
   Hier wird die funktionalität des Outlook Addins erläutert
 ---
