@@ -107,3 +107,13 @@ Diese Konfiguration kann gewisse Verhalten des OnSite ROOMS beinflussen, wobei e
 |Kalender Zeitstrahl|o|x|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
 |QR Code Format|o|o|Bei OnSite Web muss zwingend *json* eingestellt sein|
 |Konfigurationsbenutzer wählen|o|o||
+
+
+## Bekannte Verhalten
+
+### Kalender wird nicht richtig dargestellt
+Diese Verhalten kann aufkommen falls die Türschilder nicht die gleiche Zeitzone haben wie die ROOMS Instanz **und** keine Start- und Endzeit eingestellt sind.
+
+Folgende konfigurationen beheben dieses Verhalten:
+* Zeitstrahl für Türschild konfigurieren (_Einstellungen -> Ressource -> Türschild_)
+* Öffnungszeit für Standort definieren an welchem die Ressource ist.
