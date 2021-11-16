@@ -1,0 +1,80 @@
+.os-h {
+
+	&.os-h-state-free {
+
+	}
+
+	&.os-h-state-busy {
+
+	}
+
+    &.os-h-state-blocking {
+
+    }
+
+    &.os-h-state-checkin {
+
+    }
+
+	.os-h-field-container {
+
+		.os-h-field-grid {
+
+			// Title
+			.os-h-t-field {
+			}
+
+			// Resource Designation
+			.os-h-rd-field {
+			}
+
+			// No future bookings
+			.os-h-nfb-field {
+			}
+
+			// Blocking time
+			.os-h-bt-field {
+			}
+
+			// Blocked until
+			.os-h-bu-field {
+
+			}
+
+			// Available from
+			.os-h-af-field {
+			}
+
+			// From to (HH:mm - HH:mm)
+			.os-h-from-to-field {
+			}
+
+			// Organizer
+			.os-h-o-field {
+			}
+
+			// Free text
+			.os-h-ft-field {
+			}
+
+			// Free until
+			.os-h-fu-field {
+			}
+
+			// Resource description
+			.os-h-rdesc-field {
+			}
+		}
+	}
+
+	.os-h-nav-container {
+
+		// Navigation menu
+		.os-h-nav {
+		}
+
+		// Clock
+		.os-h-clock {
+		}
+	}
+}
