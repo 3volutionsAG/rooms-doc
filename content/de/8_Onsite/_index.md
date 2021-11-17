@@ -1,6 +1,5 @@
-
 ---
-title: "OnSite-ROOMS"
+title: "OnsiteROOMS"
 linkTitle: "OnSite"
 weight: 8
 description: >
