@@ -26,10 +26,25 @@ Es gibt unterschiedliche Zustände, welche mit Farbcode hinterlegt sind, um eine
 Abbildung a: Ansicht Home
 {{< /imgproc >}}
 
+#### Vor- / Nachlaufzeiten
+Wenn in ROOMS konfiguriert, werden die Vor- und Nachlaufzeiten einer Buchung explizit ausgewiesen. Folgende Regeln gelten für Vor- und Nachlaufzeiten auf der Home Ansicht:
+
+* Farbcode entspricht immer dem Status der Buchung
+* Der Titel stellt sich wie folgt zusammen
+  * _{Titel der Buchung}_ (Vorbereitung)
+  * _{Titel der Buchung}_ (Nachbearbeitung)
+* Falls zusätzlich ein Check-In konfiguriert ist, wird dieses erst möglich sein sobald die Check-In Vorlaufzeit erreicht ist.
+
+
+{{< imgproc booking-example Resize "480x" >}}
+Abbildung b: Ansicht Buchungsbeispiel Vor-/Nachlaufzeiten
+{{< /imgproc >}}
+> Die verwendeten Farbcodes im Buchungsbeispiel entsprechen nicht den originalen Farbcodes und sind nur für eine bessere Visualisierung vorhanden.
+
 ### Dashboard
 
 {{< imgproc screens-dashboard Resize "640x" >}}
-Abbildung b: Ansicht Dashboard
+Abbildung c: Ansicht Dashboard
 {{< /imgproc >}}
 
 ### Kalender
@@ -44,13 +59,13 @@ Es gibt drei Optionen wie Buchungen im interaktiven Kalender erstellet werden k�
 Danach wird in jedem Fall die länge der Buchung nachgefragt und der Authentisierungsprozess angestossen.
 
 {{< imgproc screens-calendar-book Resize "640x" >}}
-Abbildung c: Ansicht Buchung erstellen
+Abbildung d: Ansicht Buchung erstellen
 {{< /imgproc >}}
 
 #### Buchung verlängern
 
 {{< imgproc screens-calendar-extend Resize "640x" >}}
-Abbildung d: Ansicht Buchung verlängern
+Abbildung e: Ansicht Buchung verlängern
 {{< /imgproc >}}
 
 ## Kundenspezifische Anpassungen
@@ -67,7 +82,7 @@ onsiteROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
 Alle oben erwähnten Dateien müssen in der ROOMS Instanz hinterlegt werden, welche die Ressource des Türschilds beinhaltet. Hinterlegt werden können Sie im Menüpunkt _Einstellungen -> System -> Oberfläche_.
 
 {{< imgproc dynamic-asset Resize "640x" >}}
-Abbildung e: Kundenspezifische Datein onsiteROOMS
+Abbildung f: Kundenspezifische Datein onsiteROOMS
 {{< /imgproc >}}
 
 ### Theme
