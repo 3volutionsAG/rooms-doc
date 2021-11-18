@@ -1,19 +1,19 @@
 ---
-title: "OnsiteROOMS"
-linkTitle: "OnSite"
+title: "onsiteROOMS"
+linkTitle: "onsiteROOMS"
 weight: 8
 description: >
-  OnSite ROOMS ist eine Türschild-Lösung für ROOMS welche es ermöglicht gewünschte Ressourcen mit einem interaktiven Türschild auszustatten. Mit OnSite ROOMS ist es möglich den Status einer Ressource visuell darzustellen, Check-in / -out für Buchungen zu tätigen und mit dem interaktiven Kalender Buchungen erstellen oder verlängern.
+  onsiteROOMS ist eine Türschild-Lösung für ROOMS, welche es ermöglicht gewünschte Ressourcen mit einem interaktiven Türschild auszustatten. Mit onsiteROOMS ist es möglich den Status einer Ressource visuell darzustellen, Check-in / -out für Buchungen zu tätigen und mit dem interaktiven Kalender Buchungen erstellen oder verlängern.
 ---
 
 ## Ansichten
 
-OnSite ROOMS ist für Türschilder ausgelegt und stellt verschiedene Ansichten für die jeweiligen Fukntionen zur Verfügung.
+onsiteROOMS ist für Türschilder ausgelegt und stellt verschiedene Ansichten für die jeweiligen Fukntionen zur Verfügung.
 
 ### Home
 
-Die Home Ansicht dient dazu zu visualisieren ob der Raum verfügbar ist oder nicht.
-Es gibt unterschiedliche Zustände, welche mit Farbcode hinterlegt sind um eine schnelle Übersicht der Verfügbarkeit des Raumes zu gewinnen.
+Die Home Ansicht dient dazu, zu visualisieren ob der Raum verfügbar ist oder nicht.
+Es gibt unterschiedliche Zustände, welche mit Farbcode hinterlegt sind, um eine schnelle Übersicht der Verfügbarkeit des Raumes zu gewinnen.
 
 |Farbcode|Bedeutung|Bemerkung|
 |---|---|---|
@@ -55,7 +55,7 @@ Abbildung d: Ansicht Buchung verlängern
 
 ## Kundenspezifische Anpassungen
 
-OnSite ROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
+onsiteROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
 
 |Was|Pfad|Limitationen|
 |---|---|---|
@@ -67,7 +67,7 @@ OnSite ROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
 Alle oben erwähnten Dateien müssen in der ROOMS Instanz hinterlegt werden, welche die Ressource des Türschilds beinhaltet. Hinterlegt werden können Sie im Menüpunkt _Einstellungen -> System -> Oberfläche_.
 
 {{< imgproc dynamic-asset Resize "640x" >}}
-Abbildung e: Kundenspezifische Datein OnSite ROOMS
+Abbildung e: Kundenspezifische Datein onsiteROOMS
 {{< /imgproc >}}
 
 ### Theme
@@ -86,25 +86,25 @@ Folgende SASS Datei dient als technische Hilfe welche Elemente ansteuerbar sind.
 ### Konfiguration
 
 Damit ein Türschild für eine Ressource eingesetzt werden kann, muss die entsprechende Ressource in ROOMS konfiguriert werden (_Einstellungen -> Ressourcen -> Türschild_).
-Diese Konfiguration kann gewisse Verhalten des OnSite ROOMS beinflussen, wobei ein unterschied besteht zwischen dem neuen OnSite ROOMS (Web basiert) und dem alten OnSite ROOMS (Android App).
+Diese Konfiguration kann gewisse Verhalten des onsiteROOMS beinflussen, wobei ein unterschied besteht zwischen dem neuen onsiteROOMS (Web basiert) und dem alten onsiteROOMS (Android App).
 
-|Einstellung|OnSite Web|OnSite Android|Beschreibung|
+|Einstellung|onsite Web|onsite Android|Beschreibung|
 |---|---|---|---|
 |Thema|x|o||
 |Sprache|o|o||
 |Wartezeit|o|o||
 |Anfrage Intervall|o|o||
 |Titel anzeigen|x|o||
-|Ressource Beschreibung anzeigen|x|o|Bei OnSite Web kann diese Option via Theming gelöst werden|
+|Ressource Beschreibung anzeigen|x|o|Bei onsite Web kann diese Option via Theming gelöst werden|
 |Read only|x|o||
 |Nur checkin|o|o||
 |Unauthorisierte aktionen erlauben|x|o||
 |Organisator anzeigen|o|o||
 |Anonym-Login|x|o||
 |Checkout Modus|o|o||
-|Authorisierungsmodus|o|o|Bei OnSite Web muss zwingend *Beide* eingestellt sein|
+|Authorisierungsmodus|o|o|Bei onsite Web muss zwingend *Beide* eingestellt sein|
 |Kalender Zeitstrahl|o|x|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
-|QR Code Format|o|o|Bei OnSite Web muss zwingend *json* eingestellt sein|
+|QR Code Format|o|o|Bei onsite Web muss zwingend *json* eingestellt sein|
 |Konfigurationsbenutzer wählen|o|o||
 
 
