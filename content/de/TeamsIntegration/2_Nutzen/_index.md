@@ -16,6 +16,3 @@ description: >
 Bei Serien wird immer nur ein Teams Meeting erstellt, dieses wird dann wiederverwendet.
 
 
-
-
-
