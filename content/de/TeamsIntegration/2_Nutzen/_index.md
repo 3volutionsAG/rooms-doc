@@ -1,6 +1,6 @@
 ---
-title: "Einrichten"
-linkTitle: "Einrichten"
+title: "Nutzen"
+linkTitle: "Nutzen"
 weight: 50
 
 description: >
