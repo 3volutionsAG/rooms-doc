@@ -1,7 +1,7 @@
 ---
-title: "Teams Integration"
-linkTitle: "Teams Integration"
-weight: 50
+title: "Einrichten"
+linkTitle: "Einrichten"
+weight: 1 
 
 description: >
    <p style="text-align: justify">Teams Integration einrichten</p>
@@ -85,14 +85,6 @@ Sollen Teams Meetings erstellt werden können für Personen ohne Exchange Synchr
 ```
 <AddInstance Key="teamsServiceSession" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.TeamsService.TeamsServiceSession,Garaio.Products.Rooms.Core" />
 ```
-
-## Standardmässige Teams Meeting Erstellung bei gewissen Ressourcen
-
-Über die Checkbox *Teams Meeting standardmässig hinzufügen* kann auf der Ressource definiert werden ob bei der Erstellung einer neuen Buchung standardmässig auch gerade ein Teams Meeting dazu erstellt wird.
-
-## Teams Meetings in Serien
-
-Bei Serien wird immer nur ein Teams Meeting erstellt, dieses wird dann wiederverwendet.
 
 
 
