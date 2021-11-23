@@ -8,17 +8,17 @@ description: >
 ---
 
 
-# Aktivieren der Microsoft-Teams Integration
+## Aktivieren der Microsoft-Teams Integration
 
-## Vergabe von Rechte
+### Vergabe von Rechte
 
 Folgendes Recht muss hinzugefügt werden um einem Benutzer zu erlauben Teams Meetings zu erstellen:
 
 Globales Recht: *Darf Teams meeting buchen*
 
-## Authentisierung einrichten
+### Authentisierung einrichten
 
-### App-Registrierung einrichten
+#### App-Registrierung einrichten
 
 Eine neue App muss im Azure Active-Directory registiert werden, oder es kann die bestehende Exchange App verwendet werden.
 
@@ -28,17 +28,13 @@ Folgende API-Berechtigung muss gesetzt werden:
 
 Um die Users zu mappen gibt es zwei Optionen:
 
->Zusätzlich noch folgende API-Berechtigung hinzufügen:
-
->*User.Read.All* --> Anwendung
-
->Die User werden dann per Mail gefunden.
+- Zusätzlich noch folgende API-Berechtigung hinzufügen:<br>*User.Read.All* --> Anwendung<br>Die User werden dann per Mail gefunden.
 
 Oder
 
->  Anpassen vom Benutzerdatenimport, Spalte 'AzureObjectId' in der Persontabelle ergänzen mit den ObjectIds der Users in Azure.
+- Anpassen vom Benutzerdatenimport, Spalte 'AzureObjectId' in der Persontabelle ergänzen mit den ObjectIds der Users in Azure.
 
-### Application Access Policy
+#### Application Access Policy
 
 Für Online-Meetings muss zwingend eine Application Access Policy definiert werden und der im vorderen Schritt erstellten App zugewiesen werden. Einfachhalber sollte diese Global gesetzt werden
 
@@ -53,7 +49,7 @@ Grant-CsApplicationAccessPolicy -PolicyName Teams-policy -Global
 ```
 New-CsApplicationAccessPolicy -Identity Teams-policy -AppIds "xxx" -Description "Allow creation of teams meetings"
 
-### App Credentials
+#### App Credentials
 
 Wenn bereits Exchange OAuth 2.0 eingerichtet ist, kann dieser wiederverwendet werden:
 
@@ -90,11 +86,11 @@ Sollen Teams Meetings erstellt werden können für Personen ohne Exchange Synchr
 <AddInstance Key="teamsServiceSession" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.TeamsService.TeamsServiceSession,Garaio.Products.Rooms.Core" />
 ```
 
-# Standardmässige Teams Meeting Erstellung bei gewissen Ressourcen
+## Standardmässige Teams Meeting Erstellung bei gewissen Ressourcen
 
 Über die Checkbox *Teams Meeting standardmässig hinzufügen* kann auf der Ressource definiert werden ob bei der Erstellung einer neuen Buchung standardmässig auch gerade ein Teams Meeting dazu erstellt wird.
 
-# Teams Meetings in Serien
+## Teams Meetings in Serien
 
 Bei Serien wird immer nur ein Teams Meeting erstellt, dieses wird dann wiederverwendet.
 
