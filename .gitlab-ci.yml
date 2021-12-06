@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pages/hugo/hugo_extended:0.88.1
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -6,6 +6,7 @@ variables:
 pages:
   stage: deploy
   before_script:
+  - apk upgrade
   - apk --update add git nodejs npm
   - npm install
   script:
