@@ -115,7 +115,7 @@ Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 	<add key="BatchGetEventsSleepBetweenBatchesInMiliseconds" value="0" />
 
 	<!--Timeout for the GetEvents call-->
-	<add key="BatchGetEventsTimeoutInMiliseconds" value="10000" />
+	<add key="BatchGetEventsTimeoutInMiliseconds" value="100000" />
 
 	<!--Size of the batches that we generating pull subscriptions. E.g. Create subscription for 100 persons at once.-->
 	<add key="BatchSubscribeSize" value="100" />
