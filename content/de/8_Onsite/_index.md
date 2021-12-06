@@ -51,10 +51,10 @@ Abbildung c: Ansicht Dashboard
 
 #### Buchung erstellen
 
-Es gibt drei Optionen wie Buchungen im interaktiven Kalender erstellet werden können:
+Es gibt drei Optionen wie Buchungen im interaktiven Kalender erstellt werden können:
 * Klick auf _Jetzt Buchen_
 * Klick auf Zeitslot
-* Langern Klick auf Zeitslot
+* Langer Klick auf Zeitslot
 
 Danach wird in jedem Fall die länge der Buchung nachgefragt und der Authentisierungsprozess angestossen.
 
@@ -76,7 +76,7 @@ onsiteROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
 |---|---|---|
 |Logo|onsite/logo.png|Dimensionen sowie Format des Bildes werden *nicht* angepasst. Das Bild muss also im richtigen Format vorhanden sein.|
 |Theme|onsite/theme.css|Erlaubt aktuell nur Anpassungen der Home Ansicht. Einzig die Schriftart kann global angepasst werden.|
-|Script|onsite/custom.js|Script welches eingebunden wird. Kann verwendet werden falls Netzwerktechnische Probleme auftretten welche Kundenspezifisch sind.|
+|Script|onsite/custom.js|Script welches eingebunden wird. Kann verwendet werden falls Netzwerktechnische Probleme auftreten welche Kundenspezifisch sind.|
 |Übersetzungen|onsite/translations/{de,en,it,fr}.json|Erlaubt anpassungen der Übersetzungen welche verwendet werden. Aktuell werden nur folgende Sprachen unterstützt: Deutsch, Englisch, Französisch und Italienisch.|
 
 Alle oben erwähnten Dateien müssen in der ROOMS Instanz hinterlegt werden, welche die Ressource des Türschilds beinhaltet. Hinterlegt werden können Sie im Menüpunkt _Einstellungen -> System -> Oberfläche_.
