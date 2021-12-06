@@ -105,22 +105,22 @@ Diese Konfiguration kann gewisse Verhalten des onsiteROOMS beinflussen, wobei ei
 
 |Einstellung|onsite Web|onsite Android|Beschreibung|
 |---|---|---|---|
-|Thema|x|o||
-|Sprache|o|o||
-|Wartezeit|o|o||
-|Anfrage Intervall|o|o||
-|Titel anzeigen|x|o||
-|Ressource Beschreibung anzeigen|x|o|Bei onsite Web kann diese Option via Theming gelöst werden|
-|Read only|x|o||
-|Nur checkin|o|o||
-|Unauthorisierte aktionen erlauben|x|o||
-|Organisator anzeigen|o|o||
-|Anonym-Login|x|o||
-|Checkout Modus|o|o||
-|Authorisierungsmodus|o|o|Bei onsite Web muss zwingend *Beide* eingestellt sein|
-|Kalender Zeitstrahl|o|x|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
-|QR Code Format|o|o|Bei onsite Web muss zwingend *json* eingestellt sein|
-|Konfigurationsbenutzer wählen|o|o||
+|Thema|&#10007;|&#10003;||
+|Sprache|&#10003;|&#10003;||
+|Wartezeit|&#10003;|&#10003;||
+|Anfrage Intervall|&#10003;|&#10003;||
+|Titel anzeigen|&#10007;|&#10003;||
+|Ressource Beschreibung anzeigen|&#10007;|&#10003;|Bei onsite Web kann diese Option via Theming gelöst werden|
+|Read only|&#10007;|&#10003;||
+|Nur checkin|&#10003;|&#10003;||
+|Unauthorisierte aktionen erlauben|&#10007;|&#10003;||
+|Organisator anzeigen|&#10003;|&#10003;||
+|Anonym-Login|&#10007;|&#10003;||
+|Checkout Modus|&#10003;|&#10003;||
+|Authorisierungsmodus|&#10003;|&#10003;|Bei onsite Web muss zwingend *Beide* eingestellt sein|
+|Kalender Zeitstrahl|&#10003;|&#10007;|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
+|QR Code Format|&#10003;|&#10003;|Bei onsite Web muss zwingend *json* eingestellt sein|
+|Konfigurationsbenutzer wählen|&#10003;|&#10003;||
 
 
 ## Bekannte Verhalten
