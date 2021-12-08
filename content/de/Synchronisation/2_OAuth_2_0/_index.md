@@ -1,10 +1,10 @@
 ---
-title: "OAuth"
-linkTitle: "OAuth"
+title: "OAuth 2.0 Authentisierung"
+linkTitle: "OAuth 20. Authentisierung"
 weight: 15
 
 description: >
-   <p style="text-align: justify">Exchange Synchronisation</p>
+   <p style="text-align: justify">OAuth 2.0 Authentisierung</p>
 ---
 
 Mit Rooms Release 4.7.2010 wird OAuth Authentication für Exchange Online unterstützt:
@@ -36,17 +36,17 @@ Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSetti
 4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
 5. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
 6. ~~Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Unterstützte Legacy-APIs die Option Exchange aus.~~
-6. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps  die Option Office 365 Exchange Online aus.
-7. Wählen Sie Anwendungsberechtigungen und dann full\_access\_as\_app aus. Klicken Sie auf Berechtigungen hinzufügen.
-8. Wählen Sie Administratorzustimmung für Organisation gewähren aus, und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
-9. Wählen Sie in der linken Navigation unter Verwalten die Option Zertifikate und Geheimnisse aus.
+7. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps  die Option Office 365 Exchange Online aus.
+8. Wählen Sie Anwendungsberechtigungen und dann full\_access\_as\_app aus. Klicken Sie auf Berechtigungen hinzufügen.
+9. Wählen Sie Administratorzustimmung für Organisation gewähren aus, und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
+10. Wählen Sie in der linken Navigation unter Verwalten die Option Zertifikate und Geheimnisse aus.
 
 ## Authentisieren mit ClientSecret
 
-10. Wählen Sie Neuer geheimer Clientschlüssel aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann Hinzufügen aus.
-11. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später.
+11. Wählen Sie Neuer geheimer Clientschlüssel aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann Hinzufügen aus.
+12. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später.
 
-Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten die man aus den vorherigen Schritten erlangt hat ersetzt werden
+Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten die man aus den vorherigen Schritten erlangt hat ersetzt werden.
 
 ```
 <RoomsAppSettings>
@@ -62,17 +62,17 @@ Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden
 
 Mit Rooms Release 4.7.2111 ist Authentisierung mit Zertifikat möglich.
 
-10. Laden Sie unter "Certificates" Ihr Zertifikat hoch und notieren Sie sich den Thumbprint.
-11. Fügen Sie das Zertifikat nun auf dem Applikationsserver unter Local Computer (Local Machine) --> Personal (My) hinzu.
+11. Laden Sie unter "Certificates" Ihr Zertifikat hoch und notieren Sie sich den Thumbprint.
+12. Fügen Sie das Zertifikat nun auf dem Applikationsserver unter Local Computer (Local Machine) --> Personal (My) hinzu.
 
-Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten die man aus den vorherigen Schritten erlangt hat ersetzt werden
+Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten die man aus den vorherigen Schritten erlangt hat ersetzt werden.
 
 ```
 <RoomsAppSettings>
 ...
     <add key="ExchangeTenantId" value="xxx" />
     <add key="ExchangeAppId" value="xxx" />
-	<add key="ExchangeCertThumbprint" value="xxx" />
+    <add key="ExchangeCertThumbprint" value="xxx" />
 ...
 </RoomsAppSettings>
 ```
