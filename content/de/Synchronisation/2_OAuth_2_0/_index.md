@@ -1,6 +1,6 @@
 ---
-title: "OAuth 2.0 Authentisierung"
-linkTitle: "OAuth 20. Authentisierung"
+title: "OAuth 2.0"
+linkTitle: "OAuth 2.0"
 weight: 15
 
 description: >
