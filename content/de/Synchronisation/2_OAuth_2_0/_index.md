@@ -17,7 +17,7 @@ Exchange stellt folgende Authentisierungsoptionen zur Verfügung:
 
 [https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth)
 
-### Rooms für OAuth Authentication konfigurieren
+## Rooms für OAuth Authentication konfigurieren
 
 In Setting --> Personen --> Person muss der Sync. Modus gesetzt werden
 
@@ -41,7 +41,7 @@ Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSetti
 9. Wählen Sie Administratorzustimmung für Organisation gewähren aus, und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
 10. Wählen Sie in der linken Navigation unter Verwalten die Option Zertifikate und Geheimnisse aus.
 
-## Authentisieren mit ClientSecret
+### Authentisieren mit ClientSecret
 
 11. Wählen Sie Neuer geheimer Clientschlüssel aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann Hinzufügen aus.
 12. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später.
@@ -58,7 +58,7 @@ Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden
 </RoomsAppSettings>
 ```
 
-## Authentisieren mit Zertifikat
+### Authentisieren mit Zertifikat
 
 Mit Rooms Release 4.7.2111 ist Authentisierung mit Zertifikat möglich.
 
