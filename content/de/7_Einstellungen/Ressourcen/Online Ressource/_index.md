@@ -8,7 +8,7 @@ description: >
 ---
 
 ## Online Ressource 
-Ressourcen können als [Online Ressource] definiert werden. 
+Ressourcen können ab [Release Januar 2022](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/3603824641) als [Online Ressource] definiert werden. 
 
 Dies kann in den Stammdaten der Ressource bearbeitet werden.
 
