@@ -13,3 +13,7 @@ Ressourcen können ab [Release Januar 2022](https://3volutions.atlassian.net/ser
 Dies kann in den Stammdaten der Ressource bearbeitet werden.
 
 Eine Online Ressource ist immer verfügbar und kann zu einem bestimmten Zeitpunkt mehrmals verwendet werden. Aus diesem Grund werden Online Ressourcen nicht in der Kalender-Ansicht angezeigt.
+
+{{< imgproc Online_Ressource Resize "1280x" >}}
+Abbildung v: Online Ressource
+{{< /imgproc >}}
