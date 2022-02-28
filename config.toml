@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "3V-ROOMS doc"
+title = "3V-ROOMS Dokumentation"
 
 enableRobotsTXT = true
 
@@ -53,8 +53,8 @@ anchor = "smart"
 
 [languages]
 [languages.de]
-title = "3v-rooms doc"
-description = "Dokumentation von 3V-ROOMS"
+title = "3VROOMS Dokumentation"
+description = "Dokumentation von 3VROOMS"
 languageName ="German"
 # Weight used for sorting.
 weight = 1

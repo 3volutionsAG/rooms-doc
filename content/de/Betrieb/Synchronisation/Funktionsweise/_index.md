@@ -1,23 +1,14 @@
 ---
-title: "Allgemein"
-linkTitle: "Allgemein"
+title: "Synchronisation Exchange"
+linkTitle: "Funktionsweise"
 weight: 10
-
-description: >
-   <p style="text-align: justify">Exchange Synchronisation</p>
+description: Dieses Dokument enthält notwendige Informationen im Zusammenhang mit der Synchronisation von Reservationen einer ROOMS Umgebung mit Kalendereinträgen einer MS Exchange Umgebung.
 ---
-
-# **Synchronisation Exchange**
-
-# **(Vertraulich)**
-
-# Einleitung
-
-Wir verwenden der Einfachheit im ganzen Dokument ausschliesslich die männliche Form, wobei auch alle Benutzerinnen angesprochen sind.
+## Einleitung
 
 Der Ausdruck Exchange 20_XX_ ist austauschbar, wir sprechen künftig nur noch von Exchange welche alle Versionen adressiert.
 
-Dieses Dokument enthält alle Informationen im Zusammenhang mit der Synchronisation von Reservationen einer ROOMS Umgebung mit Kalendereinträgen einer MS Exchange Umgebung. Die Synchronisation umfasst folgende Funktionalitäten:
+Die Synchronisation umfasst folgende Funktionalitäten:
 
 1. Reservationen aus der ROOMS Umgebung können als Kalendereinträge in eine MS Exchange Umgebung exportiert werden. _(Diese Funktionalität ist Teil der Basisinstallation, muss aber konfiguriert werden)._
 2. Beim Erstellen oder Editieren von Kalendereinträgen können direkt in einem MS Outlook Client neue ROOMS Reservationen erstellt werden. _(Diese Funktionalität setzt zusätzlich die Installation des ROOMS OutlookAddins auf allen erwünschten Clients voraus; es handelt sich dabei aber um eine optionale Erweiterung, die für den Betrieb der Synchronisation nicht zwingend benötigt wird)._
@@ -32,7 +23,7 @@ Die Synchronisation einer Reservation ist ausschliesslich mit dem Kalender des O
 
 Die MS Outlook Version ist nicht an einen bestimmten Benutzer gebunden und es können verschiedene Versionen gleichzeitig betrieben werden. Aktuell werden die MS Outlook Versionen 2007, 2010 und 2013, 2016, 2019 und Exchange Online (O365) unterstützt.
 
-# Systemübersicht
+## Systemübersicht
 
 Nachstehendes Kapitel soll einen Überblick über die verschiedenen Systemkomponenten und deren Interaktionen geben.
 

@@ -1,10 +1,8 @@
 ---
 title: "Problembehandlung"
 linkTitle: "Problembehandlung"
-weight: 40
-
-description: >
-   <p style="text-align: justify">Problembehandlung bei der Exchange Synchronisation</p>
+weight: 50
+description: Problembehandlung bei der Exchange Synchronisation
 ---
 
 ## Finden von Reservationen mit Synchronisationsfehlern

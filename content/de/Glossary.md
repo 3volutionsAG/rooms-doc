@@ -2,10 +2,10 @@
 title: "Glossar"
 linkTitle: "Glossar"
 weight: 10
-
-description: >
-   <p style="text-align: justify"> Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie deren Bedeutung. </p>
+type: list
+description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie deren Bedeutung.
 ---
+
 ## A
 
 |<div style="width:250px">Begriff</div>|Erklärung|

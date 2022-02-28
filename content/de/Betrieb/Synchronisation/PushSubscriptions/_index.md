@@ -1,10 +1,8 @@
 ---
 title: "Push Subscription O365"
 linkTitle: "Push Subscription O365"
-weight: 20
-
-description: >
-   <p style="text-align: justify">Push Synchronisation O365</p>
+weight: 30
+description: Push Synchronisation O365
 ---
 
 Push notifications require the least traffic and complexity, Notifications are simply sent to the URL provided by Rooms. This solution is currently in use by most of our customers with OnPrem Exchange and is tried and tested.

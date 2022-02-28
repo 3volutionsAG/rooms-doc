@@ -1,12 +1,9 @@
 ---
 title: "O365 Outlook Addin / Wizard"
-linkTitle: "O365 Outlook Addin / Wizard"
-weight: 9
-description: >
-  Hier wird die funktionalität des Outlook Addins erläutert
+linkTitle: "Outlook Addin"
+weight: 30
+description: Hier wird die funktionalität des Outlook Addins erläutert
 ---
-
-
 ## Nicht unterstützte Verhalten in Outlook
 
 {{% alert title="Warning" color="warning" %}}
@@ -17,8 +14,6 @@ description: >
 - Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
 - Bei Serie: Jährliche oder wiederholung ohne Enddatum --> Bei der Erstellung wird dies vom Addin unterbunden
 {{% /alert %}}
-
-
 
 ### Vorbereitung
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
@@ -32,4 +27,3 @@ __Kontaktdaten__
 ServiceDesK: https://3volutions.atlassian.net/servicedesk/customer/portal/1
 Telefon:     +41 31 511 01 39
 E-Mail:      support@3volutions.ch
-

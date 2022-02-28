@@ -1,10 +1,8 @@
 ---
 title: "OAuth 2.0"
 linkTitle: "OAuth 2.0"
-weight: 15
-
-description: >
-   <p style="text-align: justify">OAuth 2.0 Authentisierung</p>
+weight: 20
+description: OAuth 2.0 Authentisierung
 ---
 
 Mit Rooms Release 4.7.2010 wird OAuth Authentication für Exchange Online unterstützt:
