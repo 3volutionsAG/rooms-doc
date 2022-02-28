@@ -5,3 +5,5 @@ tech-doc-hugo
 
 # Ignore temporary word files
 ~$*
+
+.hugo_build.lock
