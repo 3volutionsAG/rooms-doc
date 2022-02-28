@@ -1,7 +1,7 @@
 ---
 title: "Microsoft-Teams Integration"
 linkTitle: "Microsoft-Teams Integration"
-weight: 11
+weight: 20
 description: >
   Hier wird die Integration von Microsoft Teams erläutert.
 ---
