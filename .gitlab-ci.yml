@@ -10,7 +10,7 @@ pages:
   - apk --update add git nodejs npm
   - npm install
   script:
-  - hugo -d ./public --baseUrl https://3volutions.gitlab.io/3v-rooms/rooms-doc
+  - hugo -d ./public --baseUrl https://docs.3vrooms.app
   artifacts:
     paths:
     - public
