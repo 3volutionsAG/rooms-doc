@@ -14,12 +14,13 @@
     "containerEnv": {
         "HOME": "/home/dev"
     },
+    "postCreateCommand": "git submodule update --init --recursive && npm install",
     "workspaceFolder": "/app",
     "remoteUser": "dev",
     "extensions": [
-		"eamodio.gitlens",
-		"editorconfig.editorconfig",
-		"budparr.language-hugo-vscode",
-		"bungcip.better-toml",
-	],
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "budparr.language-hugo-vscode",
+        "bungcip.better-toml",
+    ],
 }
