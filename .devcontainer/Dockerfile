@@ -4,24 +4,19 @@ ARG BASH_HIST_PATH=/bashhistory
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    iproute2 \
+    bash-completion \
     bsdmainutils \
+    curl \
+    dnsutils \
+    iproute2 \
     iputils-ping \
     ssh-client \
-    bash-completion \
+    unzip \
     vim \
-    dnsutils
+    wget
 
 RUN groupadd -g 1000 -r $USERNAME && \
     useradd -u 1000 -b /home -r -g $USERNAME -m -s $(which bash) $USERNAME
-
-RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
-    /home/$USERNAME/.vscode-server-insiders/extensions \
-    /home/$USERNAME/temp \
-    && chown -R $USERNAME \
-    /home/$USERNAME/.vscode-server \
-    /home/$USERNAME/.vscode-server-insiders \
-    /home/$USERNAME/temp
 
 # Create working directory. Ownership will be changed in entrypoint.sh which
 # executes *after* the volume has been mounted.
@@ -40,10 +35,14 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 USER ${USERNAME}
 
+RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
+    /home/$USERNAME/.vscode-server-insiders/extensions \
+    /home/$USERNAME/temp
+
 RUN git clone https://github.com/quickstar/pack.git /home/$USERNAME/.vim/pack/; \
     cd /home/$USERNAME/.vim/pack/; \
     git submodule update --init; \
-	./install.sh "/home/${USERNAME}"
+    ./install.sh "/home/${USERNAME}"
 
 RUN echo "export HISTFILE=${BASH_HIST_PATH}/.bash_history" >> /home/${USERNAME}/.bashrc
 
