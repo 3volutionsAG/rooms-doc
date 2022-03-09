@@ -4,7 +4,7 @@ This repository contains all the documentation available to the end user. The go
 - [Use Cases](https://3volutions.atlassian.net/wiki/spaces/RoomsUC/overview)
 
 The latest version of this documentation is automatically deployed to gitlab pages on every commit. It can be browsed via: 
-- https://3volutions.gitlab.io/3v-rooms/rooms-doc
+- https://docs.3vrooms.app
 
 ## Getting started
 - Install [Git](https://git-scm.com)

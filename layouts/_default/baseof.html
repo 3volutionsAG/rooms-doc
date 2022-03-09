@@ -2,6 +2,13 @@
 <html lang="{{ .Site.Language.Lang }}" class="no-js">
 
 <head>
+  <script type="text/javascript">
+    // Redirect to new site
+    if (window.location.toString().includes('3volutions.gitlab.io')) {
+      window.location.href = "https://docs.3vrooms.app";
+    }
+  </script>
+
   {{ partial "head.html" . }}
 </head>
 
