@@ -53,8 +53,8 @@ anchor = "smart"
 
 [languages]
 [languages.de]
-title = "3VROOMS Dokumentation"
-description = "Dokumentation von 3VROOMS"
+title = "3V ROOMS docs"
+description = "Dokumentation von 3V ROOMS"
 languageName ="German"
 # Weight used for sorting.
 weight = 1
