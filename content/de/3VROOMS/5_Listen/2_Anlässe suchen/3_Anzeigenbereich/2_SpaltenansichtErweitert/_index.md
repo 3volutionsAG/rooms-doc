@@ -34,5 +34,3 @@ description: >
 |Kosten||Kosten, die bei dem Anlass durch Catering&Service entstehen </br> _Z.B. Bestuhlungsservice oder Stehimbiss_|
 |Anzahl Personen||Anzahl der teilnehmenden bzw. angemeldeten Personen|
 ---
-
-<!-- fehlende Begriffe erklären -->

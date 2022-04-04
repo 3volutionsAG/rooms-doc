@@ -7,23 +7,23 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## A
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Actionpanel|<p style="text-align: justify"> Das Actionpanel ist eine Art Sprechblase, die oben rechts im Fenster auftaucht um unterschiedliche Informationen mitzuteilen. </p>|
 |Administrator:in|Person, die alle Rechte in ROOMS hat und diese auch vergeben kann.|
-|aktiv (Person)|Eine Person, die in ROOMS regisistriert ist und deren Zugang aktiviert ist.|
+|aktiv (Person)|Eine Person, die in ROOMS registriert ist und einen freigeschalteten Zugang hat.|
 |aktiv (Ressource)|<p style="text-align: justify"> Eine Ressource ist grundsätzlich nutzbar, der Status sagt aber nichts über die zeitliche Verfügbarkeit aus. </p>|
-|Angebot|__needs clarification:__ <a href="https://trello.com/c/H6fv499K">Trello</a>|
-|Angebotskategorie|__s. Angebot__|
-|Angebotszone|__s. Angebot__|
-|Anlass|<p style="text-align: justify"> Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </p > <p style="text-align: justify"> _Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_ </p>| 
+|Angebot|Ware oder Dienstleistung, die bei einem Lieferanten oder Dienstleister, für einen Anlass, gebucht werden kann.|
+|Angebotskategorie|Gruppierung von Waren oder Dienstleistungen eines Lieferanten oder Dienstleisters unter einen Hauptbegriff, z.B. enthält die Kategorie Getränke die Angebote Wasser, Kaffee, Softdrinks.|
+|Angebotszone|Bündelung mehrerer Angebote eines Lieferanten oder Dienstleisters.|
+|Anlass|<p style="text-align: justify"> Ein Anlass ist der Grund einer oder mehrerer Buchungen. Einem Anlass können verschiedene Buchungen zugeordnet sein. </p > <p style="text-align: justify"> _Eine Konferenz für die mehrere Räume reserviert werden oder eine Besprechung, für die neben einem Raum auch Parkplätze für die Teilnehmer gebucht werden_ </p>|
 |Annullieren|<p style="text-align: justify"> Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden. </p>|
 |Anzeigenbereich|<p style="text-align: justify"> Im Anzeigenbereich ist der größte Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden. </p>|
 ---
 
 ## B
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Buchungsanfrage|unverbindliche Buchungsanfrage von externen Interessenten. Diese müssen nach dem entsprechenden Workflow bestätigt werden.|
@@ -32,16 +32,16 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## C
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Checkbox|Eine Checkbox ist ein Kästchen, in das durch ein Klick ein Häckchen gestzt oder entfernt werden kann. Dadurch werden Auswahlen oder Funktionen aktiviert bzw. deaktiviert. |
-|Custom Servervariable|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ">Trello</a>|
-|.CSV-Datei|Eine .csv-Datei, ist eine Datei, die in einem Tabellenkalkulationsprogramm (z.B. Excel) verarbeitet werden kann.| 
+|Custom Servervariable|Individueller Wert zur Zuordnung der Benutzerdaten in der Datenbank, hier Benutzername.|
+|.CSV-Datei|Eine .csv-Datei, ist eine Datei, die in einem Tabellenkalkulationsprogramm (z.B. Excel) verarbeitet werden kann.|
 ---
 
 ## D
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Datumspicker|Ein Datumspicker ist eine Mini-Kalenderansicht, die sich öffnet um darauf ein Datum auszuwählen.|
@@ -50,18 +50,18 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## E
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Ersteller:in|Person, welche eine Buchung erstellt hat| 
+|Ersteller:in|Person, welche eine Buchung erstellt hat.|
 |Equipment|Unter Equipment versteht man Zubehör, das einer Ressource zugeordnet ist oder hinzugebucht werden kann, z.B. ein Beamer oder ein Flipchart.|
 |Equipment (fix)|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
 |Equipment (mobil)|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
-|External Identifier|__needs clarification:__ <a href="https://trello.com/c/rXemQkzL">Trello</a>|
+|External Identifier|Eindeutige Kennung einer Ressource, um diese von außerhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.|
 ---
 
 ## F
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |fixes Equipment|Equipment das fest einer Ressource zugeordnet ist und nicht sparat gebucht werden kann.|
@@ -71,14 +71,9 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## G
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
-
 ## H
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Hauptbuchung|Bei einem Anlass mit mehreren Buchungen kann eine Buchung als Hauptbuchung markiert werden. </br> _Z.B. wurde für eine Besprechung ein Raum und Parkplätze für die Teilnehmenden gebucht. Der Raum kann hierbei als Hauptbuchung markiert werden, da die Besorechung auch ohne Parkplätze stattfinden könnte/würde._|
@@ -86,74 +81,56 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## I
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |inaktiv (Person)|Person, die in ROOMS registriert ist, deren Zugang jedoch nicht deaktiviert ist.|
-|inaktiv (Ressource)|Ressource ist in ROOMS hinterelgt, jedoch gerade nicht nutzbar| undabhängig von der terminlichen Verfügbarkeit.| 
+|inaktiv (Ressource)|Ressource ist in ROOMS hinterelgt, jedoch gerade nicht nutzbar| undabhängig von der terminlichen Verfügbarkeit.|
 |Info URL|Link zu einer externen Seite mit Informationen zur Ressource oder Dienstleistung|
 |Intelibox|Eingabefeld mit Vorschlägen während der Eingabe und der Möglichkeit über das Plus, entlang des hierachischen Pfads, eine Auswahl zu treffen|
 ---
 
 ## J
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
-
 ## K
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Kopfbereich|Der Kopfbereich ist der obere Bereich im Fenster, der u.a. die Menüleiste beinhaltet.| 
 ---
 
 ## L
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
-
 ## M
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |mobiles Equipment|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
 ---
 
 ## N
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Nachlaufzeit|Zeit, die an eine Buchung angehängt wird, um die Ressource für eine neue Buchung vorbereitet werden kann| 
 ---
 
 ## O
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|OAuth 2.0|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ">Trello</a>|
+|OAuth 2.0|offenes Protokoll, das eine sichere Autorisierung von Webservices oder mobilen Anwendungen ermöglicht, ohne Drittanbietern Passwörter offenlegen zu müssen.|
 |Organisator:in|Person, welche die Buchung organisiert </br> _Z.B. Besprechung in einem Raum, Anlass| 
 ---
 
 ## P
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
 
 ## Q
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
 
 ## R
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Raumeinheit|Definierte Fläche (Z.B. Bürofläche), der eine bestimmte Anzahl an Personen zugewiesen werden kann.
@@ -161,7 +138,7 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## S
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Schaltfläche|Bereich auf der Oberfläche, der angeklickt werden kann um eine bestimmte Aktion auszuführen. </br> _Z.B. eine Diskette um etwas zu speichern_|
@@ -175,24 +152,20 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## T
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Tarifkategorie|__needs clarification:__ <a href="https://trello.com/c/EF7RfnEq">Trello</a>|
+|Tarifkategorie|Bestimmten Themen oder Gruppen zugeordnete Tarife, z.B. gestaffelt Nach Tageszeit.|
 |Terminieren|Eine laufende Buchung kann vorzeitig beendet werden, wenn z.B. eine Besprechung früher endet. Die Nachlaufzeit bleibt jedoch bestehen. Die Buchungsdauer wird minutengenau gespeichert.|
-|TMS System Id|__needs clarification:__ <a href="https://trello.com/c/27Lxq0O9">Trello</a>|
-|Tooltipp|Ein Tooltipp ist eine kleine Informationsblase, die erscheint, wenn man mit dem Mauszeiger über ein Symbol fährt.| 
+|TMS System Id|TelePresence Management Suite System ID: eindeutige Kennzeichnung einer Ressource, die gebucht werden kann, z.B. Raumkennzeichnung.|
+|Tooltipp|Ein Tooltipp ist eine kleine Informationsblase, die erscheint, wenn man mit dem Mauszeiger über ein Symbol fährt.|
 ---
 
 ## U
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
 
 ## V
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
 |Verantwortliche:r|Person, die für die Buchung verantwortlich ist und diese, je nach Workflow, genehmigen muss.
@@ -203,30 +176,18 @@ description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe s
 ---
 
 ## W
-
+---
 |<div style="width:250px">Begriff</div>|Erklärung|
 |---|---|
-|Windows Credentials|__needs clarification:__ <a href="https://trello.com/c/DlCeYOWZ|">Trello</a>|
-|Workflow|Ablauf festgelegter aufeinanderfolgender Arebitsschritte, z.B. Genehmigungsprozess| 
+|Windows Credentials|Zugangsdaten (Benutzername und Passwort) für das Betriebssystem Windows|
+|Workflow|Ablauf festgelegter aufeinanderfolgender Arebitsschritte, z.B. Genehmigungsprozess|
 ---
 
 ## X
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
 
 ## Y
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---
 
 ## Z
-
-|<div style="width:250px">Begriff</div>|Erklärung|
-|---|---|
-||| 
 ---

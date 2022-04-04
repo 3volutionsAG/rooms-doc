@@ -15,7 +15,8 @@ Folgende Tabelle erläutert die Spaltenkategorien:
 |Vorlaufdauer in Minuten||<p style="text-align: justify"> Für jede Ressource kann eine individuelle Vorlaufdauer, die zur Vorbereitung der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. </p>|
 |Nachlaufdauer in Minuten||<p style="text-align: justify"> Für jede Ressource kann eine individuelle Nachlaufdauer, die z.B. zum Aufräumen oder Reinigen benötigt der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. </p>|
 |Sync. Modus||<p style="text-align: justify"> Zeigt an über welchen Modus der Raum mit dem System synchronisiert wird. </p> </br> _z.B. Exchange 2016_|
-|External Identifier||__needs clarification:__ <a href="https://trello.com/c/rXemQkzL"> Bedeutung? </a>|
+|External Identifier||Eindeutige Kennung der Ressource, um diese von außerhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.
+|
 |Priorisierung||__needs clarifiaction:__ <a href="https://trello.com/c/kr3461Ai">Bedeutung?</a>|
 |Ist fixes Equipment|| <p style="text-align: justify"> Gibt an, ob es sich um fixes oder mobiles Equipment handelt. </br> _Wird beim Ressourcentyp "Equipment" angezeigt._ </p>|
 ---

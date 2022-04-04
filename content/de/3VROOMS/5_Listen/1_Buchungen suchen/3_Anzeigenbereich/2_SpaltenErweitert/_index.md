@@ -68,12 +68,12 @@ Detailansicht zur Ressource
 |</br>Bestätigung senden|{{< imgproc List_BG_Anzeige_SymBestSend Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen, sofern die Checkbox aktiviert wird. </p>|
 |Teilnehmer:innen||Auflistung der teilnehmenden Personen|
 |Kostenträger Nummer </br> Buchung||<p style="text-align: justify"> Beim Erstellen einer Buchung wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen. </p>|
-|Kostenträger Beschreibung </br> Buchung||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Beschreibung?</a>|
+|Kostenträger Beschreibung </br> Buchung||Zeigt die Beschreibung des Kostenträgers, die bei der Buchung hinterlegt wurde|
 |Kostenträger Geschäftsbereich </br> Buchung||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
 |Kostenträger Nummer </br> Organisator:in||Nummer der Kostenstelle der organisierenden Person|
 |Kostenträger Bezeichnung </br> Organisator:in||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezeichnung?</a>|
-|Kostenträger Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantworlichen Person|
-|Kostenträger Bezeichnung </br> Verantwortliche:r||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezichnung Verantwortlicher?</a>|
+|Kostenträger Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantwortlichen Person|
+|Kostenträger Bezeichnung </br> Verantwortliche:r||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezeichnung Verantwortlicher?</a>|
 |Logon Organisator:in||<p style="text-align: justify"> Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde. </p>|
 |Logon Verantwortliche:r||<p style="text-align: justify"> Log-In Name, welcher der verantwortlichen Person zum anmelden in ROOMS zugeteilt wurde. </p>|
 |Firma Nummer </br> Organisator:in||<p style="text-align: justify"> Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet </p>|

@@ -5,16 +5,18 @@ weight: 400
 description: >
    Die können unter anderem Raumtyp oder Equipmenttyp sein.
 ---
-__needs clarification:__ <a href="https://trello.com/c/Z6Pk2LPg">Was genau bedeutet Gliederung?</a>
+<p style="text-align: justify"> Die Unterkategorie Gliederung ist, wie die <i>Ressourcenspezifischen Kriterien</i>, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie in der <i>Einfachen Suche</i> aus. </p>
 
-<p style="text-align: justify"> Dei Unterkategorie Gliederung ist, wie die Ressourcenspezifischen Kriterien, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie im Bereich der einfachen Suche aus. </p>
+Beispiel:
 
-Wir bedienen uns nochmals dem Beispiel aus dem Kapitel Ressourcenspezifische Kriterien. 
-
-<p style="text-align: justify">Sie wollen eine Auflistung aller Buchungen zusammenstellen, die in einem bestimmten Raumtyp, z. B. ein Sitzungssaal, stattfinden. Oder Sie wollen alle Buchungen heraussuchen, in dem 2 Beamern verwendet werden. </p>
+<p style="text-align: justify">
+<ol> 
+<li> Sie möchten eine Auflistung aller Buchungen zusammenstellen, die in einem bestimmten Raumtyp, z. B. einem Sitzungssaal, stattfinden. </li>
+<li> Oder Sie wollen alle Buchungen heraussuchen, in dem 2 Beamer verwendet werden. </li>
+</p>
 
 {{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_beschriftet Resize "1280x" >}}
-Übersicht Filterkriterien bezgl. Gliederungen
+Übersicht Filterkriterien bzgl. Gliederungen
 {{< /imgproc >}}
 
 |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|

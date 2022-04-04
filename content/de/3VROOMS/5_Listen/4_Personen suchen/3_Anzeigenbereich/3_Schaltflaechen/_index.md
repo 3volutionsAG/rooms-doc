@@ -11,7 +11,7 @@ Schaltflächen zum Löschen und Hinzufügen von Personen
 
 ## Personen löschen
 Markieren Sie eine oder mehrer Checkboxen am Zeilenanfang und klicken Sie auf die Schaltfläche "Person unwiderruflich löschen" um diese aus der Datenbank zu entfernen.
-Es können nur externe Personen oder Teilnehmende gelöscht werden. Wollen Sie firmeninterne Personen entfernen, so darf diese bei aktiven Buchunge nicht als verantwortliche, organisierende oder erstellende Person eingertagen sein. Damit dies möglich ist legen Sie zunächst eine fiktive Person an, auf welche die bestehenden Buchungen übertragen werden.
+Es können nur externe Personen oder Teilnehmende gelöscht werden. Mitarbeitende können nur entfernt werden, sofern Sie bei keiner aktiven Buchung Verantwortlicher, Organisator oder Ersteller sind. Damit dies möglich ist legen Sie zunächst eine fiktive Person an, auf welche die bestehenden Buchungen übertragen werden.
 Siehe hierzu Kapitel XY.
 
 {{< imgproc List_Pers_delDF_b Resize "1280x" >}}
