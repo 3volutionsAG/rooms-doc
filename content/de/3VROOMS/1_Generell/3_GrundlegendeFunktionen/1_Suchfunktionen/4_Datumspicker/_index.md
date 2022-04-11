@@ -6,26 +6,25 @@ weight: 3000
 description: >
    <p style="text-align: justify">Datum auf einem Miniaturkalender auswählen </p>
 ---
-### Datumspicker
 <p style="text-align: justify"> In ROOMS gibt es an jeder Stelle, an der ein Datum festgelegt werden kann, die Möglichkeit, dieses über den Datumspicker auszuwählen. </p>
 
 <p style="text-align: justify"> Um das Datum über den Datumspicker auszuwählen klicken Sie auf das Kalendersymbol rechts neben dem Datum-Eingabefeld. Es öffnet sich ein Kalender auf dem Sie das gewünschte Datum anklicken und über die Schaltfläche "Übernehmen" bestätigen. </p>
 
 {{< imgproc Datumspicker_markiert Resize "1280x" >}}
-Kalendersymbol um den Datumspicker zu öffnen und geöffneter Datumspicker 
+Kalendersymbol um den Datumspicker zu öffnen und geöffneter Datumspicker
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Sollte ein anderes Datum eingestellt sein, können Sie über die Schaltfläche "Heute" auf das aktuelle Datum springen. Über das "X" oben rechts am Datumspicker, lässt sich dieser schließen, ohne Änderungen zu übernehmen. </p>
 
 {{< imgproc Datumspicker_Schaltflaechen Resize "1280x" >}}
-Heute springt auf das aktuelle Datum, "x" schließt ohne Änderungen zu übernehmen 
+Heute springt auf das aktuelle Datum, "x" schließt ohne Änderungen zu übernehmen
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Möchten Sie einen Zeitraum, der über einen Tag hinaus reicht auswählen, so können Sie dies nur über den Datumspicker machen. Dazu wählen Sie auf der linken Kalenderansicht das Startdatum und anschließend auf der rechten Kalenderansicht das Enddatum.
 Zwischen den Kalenderansichten lässt sich außerdem noch die Spanne der Uhrzeit einstellen. </p>
 
 {{< imgproc Datumspicker_Zeitspanne_beschriftet Resize "1280x" >}}
-Links Auswahl Startdatum, rechts Auswahl Enddatum, mitte Einstellung der Uhrzeitspanne
+Links Auswahl Startdatum, rechts Auswahl Enddatum, Mitte Einstellung der Uhrzeitspanne
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Standardmäßig ist der Datumspicker deaktiviert und das aktuelle Datum mit dem Standardbuchungszeitraum wird angezeigt.

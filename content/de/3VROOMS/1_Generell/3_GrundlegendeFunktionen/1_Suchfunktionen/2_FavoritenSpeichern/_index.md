@@ -17,5 +17,5 @@ gelber Stern markiert favorisiertes Subpanel
 <p style="text-align: justify"> Wollen Sie Ihre ausgewählten Favoriten zurücksetzen, wählen Sie unter Einstellungen "Filtereinstellungen löschen". <a href="/Einstellungen/PersönlicheEinstellungen/"> Persönlichen Einstellungen </a> </p>
 
 {{< imgproc FavoritenZuruecksetzen_beschriftet Resize "1280x" >}}
-Markierte Favoriten zurücksetzen 
+Markierte Favoriten zurücksetzen
 {{< /imgproc >}}
