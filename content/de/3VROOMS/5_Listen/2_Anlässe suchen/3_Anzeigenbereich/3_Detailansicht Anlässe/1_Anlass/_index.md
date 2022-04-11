@@ -7,38 +7,38 @@ description: >
 ---
 ## Ansichtsbereich
 {{< imgproc List_ANL_DS_Anl Resize "1280x" >}}
-Detaillierte Informationen zum ausgewählten Anlass im Reiter "Anlass" 
+Detaillierte Informationen zum ausgewählten Anlass im Reiter "Anlass"
 {{< /imgproc >}}
 
 ### Hinzugefügte Buchungen
 <p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle, dem Anlass hinzugefügten, Buchungen aufgelistet. </p>
 
 {{< imgproc List_ANL_DSunten_b Resize "1280x" >}}
-Unterer Bereich der Detailansicht eines Anlasses mit den Verwaltungsmöglichkeiten der zugefügten Buchungen 
+Unterer Bereich der Detailansicht eines Anlasses mit den Verwaltungsmöglichkeiten der zugefügten Buchungen.
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Der Buchungstitel ist mit der <a href="/listen/1_buchungen-suchen/3_anzeigenbereich/4_detailansicht-buchungen/">Detailansicht der Buchung </a> verlinkt. </p>
 
 {{< imgproc List_BG_Anzeige_DS Resize "1280x" >}}
-Detailansicht zu einer Buchung 
+Detailansicht zu einer Buchung
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Über das Bleistiftsymbol kommen Sie zu <a href="/buchen/buchung-erstellen/">Eingabemaske </a> der Buchung und können diese bearbeiten. </p>
 
 {{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "1280x" >}}
-Eingabemaske zur Buchungsbearbeitung 
+Eingabemaske zur Buchungsbearbeitung
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Wenn Sie eine oder mehrere Checkboxen vor dem Buchungstitel auswählen und auf die Schaltfläche "Bearbeiten" klicken, werden Sie zur Massenbearbeitung weitergeleitet. Wie diese funktioniert ist im Kapitel <a href="/buchen/massenbearbeitung/">Massenbearbeitung </a> beschrieben. </p>
+<p style="text-align: justify"> Wenn Sie eine oder mehrere Checkboxen vor dem Buchungstitel auswählen und auf die Schaltfläche "Bearbeiten" klicken, werden Sie zur Massenbearbeitung weitergeleitet. Wie diese funktioniert ist im Kapitel <a href="/buchen/massenbearbeitung/"> Massenbearbeitung </a> beschrieben. </p>
 
 {{< imgproc List_ANL_DS_Mass Resize "1280x" >}}
-Eingabemaske zur Buchungsbearbeitung 
+Eingabemaske zur Buchungsbearbeitung
 {{< /imgproc >}}
 
 Am unteren Rand der Detailansicht befinden sich Schaltflächen zur Anlassverwaltung
 
 {{< imgproc List_ANL_DS_Schalt Resize "1280x" >}}
-Schaltflächen zur Anlassverwaltung 
+Schaltflächen zur Anlassverwaltung
 {{< /imgproc >}}
 
 ## Schaltflächen
@@ -48,7 +48,7 @@ Im Folgenden werden die Schaltflächen im Einzelnen beschrieben:
 <p style="text-align: justify"> Über "Bearbeiten" werden Sie auf die Eingabemaske zur Erstellung eines Anlasses weitergeleitet. Dort können Sie den Anlass bearbeiten und ändern. </p>
 
 {{< imgproc List_ANL_DS_Schalt Resize "1280x" >}}
-Schaltflächen zur Anlassverwaltung 
+Schaltflächen zur Anlassverwaltung
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/"> Anlass Erstellen </a>. </p>
@@ -61,7 +61,7 @@ Schaltflächen zur Anlassverwaltung
 _Bitte achten Sie darauf das Datum anzupassen, da dieses auch übernommen wird._
 
 {{< imgproc List_ANL_DS_Copy Resize "1280x" >}}
-Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern 
+Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
@@ -83,7 +83,7 @@ Hinweis, dass nicht alle Serienbuchungseinträge zu einem Anlass zusammen gefüg
 <p style="text-align: justify"> Konnten alle Serienbuchungselemente zu Anlässen zusammengeführt werden, erscheint eine entsprechende Bestätigung im Actionpanel. </p>
 
 {{< imgproc List_ANL_DS_Serie_Best_b Resize "1280x" >}}
-Bestätigung im Actionpanel, dass alle Serienbuchungselemente erfolgreich in je ienem Anlass zusammengeführt werden konnten 
+Bestätigung im Actionpanel, dass alle Serienbuchungselemente erfolgreich in je einem Anlass zusammengeführt werden konnten
 {{< /imgproc >}}
 
 _**Beispiel 1:**_ </br>
@@ -124,12 +124,8 @@ Drucker Dialogfenster um die Detailsansicht zum Anlass auszudrucken
 ### Anlass stornieren
 <p style="text-align: justify"> Über die Schaltfläche "Anlass stornieren" sagen Sie einen Anlass mit allen zugehörigen Buchungen ab und entfernen diese aus dem Kalender. Der Anlass und die zugehörigen Buchungen bleiben jedoch in den Listen und in den Reports sichtbar.
 Es könnten Stornierungskosten anfallen.
-Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit Notifikation an die Organisatoren, Verantwortlichen und Teilnehmenden zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. </p>
+Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit Notifikation an die organisierenden und verantwortlichen Personen zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. Die Teilnehmenden erhalten Notifikation. </p>
 
 {{< imgproc List_ANL_DS_Ann_b Resize "1280x" >}}
-Dialogfenster zur Bestätigung des Stornierungsvorganges 
+Dialogfenster zur Bestätigung des Stornierungsvorgangs
 {{< /imgproc >}}
-
-__needs clarification:__ <a href="https://trello.com/c/zJLww3LU">Geht Mail auch an TN?</a>
-
-<!-- Mail auch an Teilnehmende? -->

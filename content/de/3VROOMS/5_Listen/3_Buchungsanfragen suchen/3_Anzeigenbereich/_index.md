@@ -35,7 +35,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |---|---|---|
 |Bemerkungen||Bei der Buchungsanfrage eingetragene Bemerkungen|
 |Standort||Standort, welcher angefragt wurde|
-|Priorität||__needs clarification:__ <a href="https://trello.com/c/kr3461Ai">Bedeutung und wo einstellbar? </a>|
+|Priorität||Einstufung der Buchungsanfragen zur Bearbeitung, z.B. 1 = hoch, 2 = mittel, 3 = gering|
 |Anzahl Teilnehmende||Gibt die Anzahl der erwarteten Teilnehmenden an|
 |Verantwortliche:r||Person, welche für die Buchungsanfrage verantwortlich ist|
 ---
@@ -50,5 +50,5 @@ Löschen einer Buchungsanfrage
 In dem erscheinenden Dialogfenster bestätigen Sie nun den Löschvorgang.
 
 {{< imgproc List_BA_del_best Resize "1280x" >}}
-Dialogfenster zur Bestötigung des Löschvorgangs
+Dialogfenster zur Bestätigung des Löschvorgangs
 {{< /imgproc >}}

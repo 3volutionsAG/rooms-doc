@@ -88,16 +88,14 @@ Detailansicht zur Ressource
 |Annulliert am||Datum, an dem die Buchung storniert wurde|
 |Annulliert durch||Person, welche die Buchungsstornierte|
 |</br>Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|</br>Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
-|</br>Bestellungen|{{< imgproc Bestellungen_TT "200x" >}}
-Neues Fenster mit Anzeige der Ressource auf dem Plan
-{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
+|</br>Bestellungen|{{< imgproc Bestellungen_TT Resize "200x" >}}{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
 |</br>Mobiles Equipment Aggregiert|{{< imgproc mobilesEquipment_aggretetiert_Tooltipp Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
 |</br>Fixes Equipment Aggregiert||</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
 |</br>Parkplätze (Tooltipp)|{{< imgproc Parkplatz_TT Resize "200x" >}}{{< /imgproc >}}|</br>Listet die gebuchten Parkplätze auf|
 |</br>Parkplätze Aggregiert||</br>Anzahl der gebuchten Parkplätze an|
 |</br>Fahrzeuge (Tooltipp)|{{< imgproc Fahrzeug_TT Resize "200x" >}}{{< /imgproc >}}|</br>Listet die gebuchten Fahrzeuge auf|
-|Fahrzeuge Aggregiert|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|Anzahl der gebuchten Fahrzeuge|
-|</br>Serieninformationen||</br>Kurzinformationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
+|Fahrzeuge Aggregiert||Anzahl der gebuchten Fahrzeuge|
+|</br>Serieninformationen|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|</br>Kurzinformationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
 |</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zuordnung eines virtuellen Raums </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
 ---
 

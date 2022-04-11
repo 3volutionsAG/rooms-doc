@@ -9,43 +9,43 @@ description: >
 
 ---
 ## Ansicht Ressourcen
-Im linken Sidepanel können Sie nach bestimmten Ressourcen suchen und die Filterkriterien hierfür einstellen. 
+Im linken Sidepanel können Sie nach bestimmten Ressourcen suchen und die Filterkriterien hierfür einstellen.
 
-Im rechten Bereich sehen Sie die Ressourcenliste. Je nachdem, welche Ressourcenart Sie im linken Filterkriterium angegeben haben, wird Ihnen diese Liste angezeigt. 
+Im rechten Bereich sehen Sie die Ressourcenliste. Je nachdem, welche Ressourcenart Sie im linken Filterkriterium angegeben haben, wird Ihnen diese Liste angezeigt.
 
 {{< imgproc Ressourcen_bearbeiten_erstellen Resize "1280x" >}}
 Abbildung r: Ansicht und Überblick über Ressourcen
 {{< /imgproc >}}
 
-Beispiel: Wählen Sie im linken Sidepanel unter Ressourcenart "Equipment" aus und drücken Sie auf finden, werden Ihnen alle Equipmenttypen in der Liste angezeigt. 
+Beispiel: Wählen Sie im linken Sidepanel unter Ressourcenart "Equipment" aus und drücken Sie auf finden, werden Ihnen alle Equipmenttypen in der Liste angezeigt.
 
 {{< imgproc Ressourcen_Equipment_finden_in_Liste Resize "1280x" >}}
 Abbildung ra: Equipment in der Ressourcenliste anzeigen
 {{< /imgproc >}}
 
 ### Ressourcen suchen
-Im linken Menü finden Sie unter der Kategorie "Ressourcen" eine Suchfunktion mit deren Hilfe Sie nach einer Ressource suchen können (Abbildung r). Sie können hierbei nach folgenden Kriterien suchen: 
+Im linken Menü finden Sie unter der Kategorie "Ressourcen" eine Suchfunktion mit deren Hilfe Sie nach einer Ressource suchen können (Abbildung r). Sie können hierbei nach folgenden Kriterien suchen:
 
 * Ressourcenart (Drop-down)
 * Gespeicherte Listen einsehen
 * Standort (Plus Zeichen): Auswählen aus allen eingespeicherten Standorten
 
-**Sie können eine Liste als Favorit speichern**: 
+**Sie können eine Liste als Favorit speichern**:
 Wird eine Liste als Favorit definiert wird diese standardmässig angezeigt.
 Ansonsten ist die Liste leer.
 Nach Wechsel eines Eintrages, werden Sidepanel und Inhaltsbereich automatisch neu geladen
 (Achtung: Bevor Liste gespeichert wird, muss "Finden" Button geklickt werden, um alle Kriterien zu speichdern)
 
 #### Suchen durch Erweiterte Kriterien
-Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes "Erweiterte Kriterien". 
+Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes "Erweiterte Kriterien".
 Hierbei können Sie nach den folgenden Kriterien suchen:
 
 * Ressourcen ID/Bezeichnung
-* Ressourcenpicker (Plus Zeichen) : Der Ressourcenpicker zeigt alle Ressourcen - unabhängig davon was im Feld "Ressourcenart" selektiert worden ist 
+* Ressourcenpicker (Plus Zeichen) : Der Ressourcenpicker zeigt alle Ressourcen - unabhängig davon was im Feld "Ressourcenart" selektiert worden ist
 * Status: Wählen aus Alle, Inaktiv oder Aktiv
-* Verantwortliche Person 
+* Verantwortliche Person
 
-#### Suchen über die Gliederung 
+#### Suchen über die Gliederung
 Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes "Gliederung". Es werden alle Gliederungstypen der gewählten "Ressourcenart" angezeigt. Bei Ressourcenart "alle" werden alle Gliederungstypen aller Ressourcenarten aufgelistet. Es werden nur die Gliederungen (eines Gliederungstyps) angezeigt für welche Sie auch Rechte haben.
 Hierbei können Sie nach den folgenden Kriterien suchen:
 
@@ -62,24 +62,24 @@ Zusätzliche Löschregel:
 * Nur möglich, wenn Benutzer über die entsprechende standortabhängige Rechte verfügt.
 
 ### Daten einsehen
-Klicken Sie auf den Namen einer Ressource in der Liste gelangen Sie zur Übersicht der gespeicherten Daten und der Historie der Ressource. 
+Klicken Sie auf den Namen einer Ressource in der Liste gelangen Sie zur Übersicht der gespeicherten Daten und der Historie der Ressource.
 
 {{< imgproc Ressource_Daten_einsehen Resize "1280x" >}}
 Abbildung rq: Daten einer Ressource einsehen
 {{< /imgproc >}}
 
-Aus diesem Modus können Sie ebenfalls die ausgewählte Ressource bearbeiten. Dazu klicken Sie auf den untenstehenden Button "Bearbeiten". Über den Button "Abbrechen" gelangen Sie wieder zur Übersicht im View Modus. 
+Aus diesem Modus können Sie ebenfalls die ausgewählte Ressource bearbeiten. Dazu klicken Sie auf den untenstehenden Button "Bearbeiten". Über den Button "Abbrechen" gelangen Sie wieder zur Übersicht im View Modus.
 
 ## Ressource neu erstellen 
 Eine neue Ressource erstellen Sie über den untenstehenden Button "Erstellen" (Abbildung r). Über den Drop Down Pfeil können Sie untenstehend auswählen, welchen Ressourcentyp Sie neu erstellen wollen. Sie können wählen zwischen Raum, Arbeitsplatz, Parkplatz, Equipment, Fahrzeug oder Bneutzerdefinierten Ressourcen. Je nachdem, welchen Ressourcentyp Sie neu erstellen, stehen Ihnen verschiedene Daten zur Verfügung.
 
-In dem Feld, welches sich öffnet legen Sie folgende Daten fest (Abbildung rb) 
+In dem Feld, welches sich öffnet legen Sie folgende Daten fest (Abbildung rb)
 * die Stammdaten
 * Spezifische Daten
 * Medien und Beilagen
 * Fixes Equipment
 * Bestuhlung
-* Virtuelle Räume 
+* Virtuelle Räume
 * Sperrzeiten
 * Berechtigungen
 * Feiertage  
@@ -98,7 +98,7 @@ Beispiel: Erstellung eines neuen Equipmenttyps (Whiteboard)
 Abbildung rz: Beispiel einer neu erstellten Ressource, Equipment
 {{< /imgproc >}}
 
-Nach dem Speichern, erscheint die neue Ressource in der aktualisierten Liste. 
+Nach dem Speichern, erscheint die neue Ressource in der aktualisierten Liste.
 
 {{< imgproc Ressourcen_neues_Equipment_in_Liste Resize "1280x" >}}
 Abbildung ry: Neu erstellte Ressource in der aktualisierten Liste
@@ -109,12 +109,12 @@ Eine bestehende Ressource bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeit
 
 Die geänderten Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung rb).
 
-### Stammdaten der Ressource bearbeiten 
-Die folgenden Stammdaten können Sie ändern und bearbeiten: 
+### Stammdaten der Ressource bearbeiten
+Die folgenden Stammdaten können Sie ändern und bearbeiten:
 
-| Feld         | Funktion         | 
-| ------------- |-------------  | 
-| Ressourcen ID       | Ressourcen ID eintragen | 
+| Feld         | Funktion         |
+| ------------- |-------------  |
+| Ressourcen ID       | Ressourcen ID eintragen |
 | Bezeichnung       | Bezeichnung der Ressource eintragen. Erfassung muss in allen aktivierten Sprachen erfolgen.|
 | Beschreibung      | Die Ressource beschreiben  |
 | Fehlermeldung  |  Fehlermeldung eintragen, die angezeigt werden soll. Diese übersteuert die globale Fehlermeldung bei Buchungsproblemen. Erfassung in mehreren Sprachen möglich. |  
@@ -122,18 +122,18 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Standort  | Standort über das "Plus-Zeichen" hinzufügen Bsp: Bern. Es werden nur die Standorte zur Verfügung gestellt an welchen der Benutzer auch Schreibrechte hat Datenrecht Ressource bearbeiten. |  
 | Ressourcenart    | Nur Bezeichnungsfeld (nicht editierbar)  |  
 | Status (aktiv*/inaktiv)* = markiert  |  Ankreuzen wenn zutreffend. Standard = inaktiv. Nur aktive Ressourcen erscheinen grundsätzlich in den Buchungssuchen (zusätzlich relevant ist das entsprechende Standortbezogene Recht.Wird eine Ressource auf inaktiv gesetzt, werden alle zugehörigen Reservationen mit Exchange Synchronisation von der Synchronisation abgekoppelt. |  
-| Checkin aktiviert  | Ankreuzen wenn zutreffend. Aktiviert die Checkin Funktionalität (auf Türschild) ob ein Checkin getätigt werden muss definiert die [Benutzergruppen](/einstellungen/sicherheitsdaten/benutzergruppen/).| 
-| NoShow Delay  | Minuten auswählen. Definiert nach wie vielen Minuten ohne Checkin der Raum wieder freigegeben wird. Standardwert = 15 Minuten | 
-| Tarifkategorie  | Es muss keine [Tarifkategorie](/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarikfategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion)  | 
-| Info Url  | Übersetzungseintrag „Alias für InfoURL“ muss erstellt werden. Ist der Übersetzungseintrag nicht übersetzt (leer), werden die effektiven URL’s der Ressourcen angezeigt. Ist die Übersetzung nicht leer wird der Text der Übersetzung in der entsprechenden Benutzersprache übernommen. Die Implementation erfolgt im Sidepanel (Reservationsdetail) und im View Mode der Ressource.  | 
-| Sync. Modus  | über das Drop-Down auswählen | 
-| Verantwortliche Person  | Intelibox mit allen aktiven verfügbaren Personen. Verantwortliche Person aus dem System eintragen oder suchen. | 
-| Minimale Buchungsdauer | Standardwert 0, 0 = keine Minimaldauer festgelegt. Eingabe in Minuten. Falls die Minimalreservationsdauer unterschritten wird, erfolgt im Reservationsprozess die Ausgabe einer Fehlermeldung. | 
-| Maximale Buchungsdauer | Standardwert 0, 0 = keine Minimaldauer festgelegt, Eingabe in Minuten. Falls die Minimalreservationsdauer unterschritten wird, erfolgt im Reservationsprozess die Ausgabe einer Fehlermeldung. | 
-| Vorlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten)  | 
-| Nachlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten). | 
-| Priorisierung | Angabe eines Sortiermerkmals. Wird in Listen und unter Buchen als zusätzliche Spalte angezeigt. Im Kalender wird automatisch nach dieser Spalte sortiert (aufsteigend). | 
-| Automatische Verlängerung| Aktivierung der automatischen Verlängerung erfolgt durch die Eingabe eines Wert grösser 0  ( >0 ). Ist der Wert 0, dann ist die automatische Verlängerung ausgeschalten. Die Prüfung erfolgt auf Ganzzahlen: Feldvalidierung (siehe 000.001 Globale Funktionen). Weitere Regeln: Das Ausführungsdatum ist Reservationsende - 5 Minuten. Eine automatische Verlängerung löst keine E-Mail Notifikationen aus. Synchronierte Buchungen werden im Outlook nachgetragen OHNE MeetingUpdate für die Teilnehmer. Eine Buchung mit automatischer Verlängerung endet bei Checkout, Konflikt mit der nächsten Reservation oder am Ende des Kalenderteages. | 
+| Checkin aktiviert  | Ankreuzen wenn zutreffend. Aktiviert die Checkin Funktionalität (auf Türschild) ob ein Checkin getätigt werden muss definiert die [Benutzergruppen](/einstellungen/sicherheitsdaten/benutzergruppen/).|
+| NoShow Delay  | Minuten auswählen. Definiert nach wie vielen Minuten ohne Checkin der Raum wieder freigegeben wird. Standardwert = 15 Minuten |
+| Tarifkategorie  | Es muss keine [Tarifkategorie](/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarikfategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion)  |
+| Info Url  | Übersetzungseintrag „Alias für InfoURL“ muss erstellt werden. Ist der Übersetzungseintrag nicht übersetzt (leer), werden die effektiven URL’s der Ressourcen angezeigt. Ist die Übersetzung nicht leer wird der Text der Übersetzung in der entsprechenden Benutzersprache übernommen. Die Implementation erfolgt im Sidepanel (Reservationsdetail) und im View Mode der Ressource.  |
+| Sync. Modus  | über das Drop-Down auswählen |
+| Verantwortliche Person  | Intelibox mit allen aktiven verfügbaren Personen. Verantwortliche Person aus dem System eintragen oder suchen. |
+| Minimale Buchungsdauer | Standardwert 0, 0 = keine Minimaldauer festgelegt. Eingabe in Minuten. Falls die Minimalreservationsdauer unterschritten wird, erfolgt im Reservationsprozess die Ausgabe einer Fehlermeldung. |
+| Maximale Buchungsdauer | Standardwert 0, 0 = keine Minimaldauer festgelegt, Eingabe in Minuten. Falls die Mindestdauer der Reservation unterschritten wird, erfolgt im Reservationsprozess die Ausgabe einer Fehlermeldung. |
+| Vorlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten)  |
+| Nachlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten). |
+| Priorisierung | Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
+| Automatische Verlängerung| Aktivierung der automatischen Verlängerung erfolgt durch die Eingabe eines Wert grösser 0  ( >0 ). Ist der Wert 0, dann ist die automatische Verlängerung ausgeschalten. Die Prüfung erfolgt auf Ganzzahlen: Feldvalidierung (siehe 000.001 Globale Funktionen). Weitere Regeln: Das Ausführungsdatum ist Reservationsende - 5 Minuten. Eine automatische Verlängerung löst keine E-Mail Notifikationen aus. Synchronierte Buchungen werden im Outlook nachgetragen OHNE MeetingUpdate für die Teilnehmer. Eine Buchung mit automatischer Verlängerung endet bei Checkout, Konflikt mit der nächsten Reservation oder am Ende des Kalenderteages. |
 | No Slot Buchungen zulässig | Bei Selektion kann Ressource nur als Slot gebucht werden (vordefinierter Zeitraum). Ankreuzen wenn zutreffend. | 
 | Online Ressource | Bei Selektion kann Ressource immer verwendet werden, unabhängig davon, ob es zu einem bestimmten Zeitpunkt bereits verwendet wird.| 
 | Schnellbuchungen deaktivieren | Somit kann diese Ressource auch über eine Schnellbuchung mit entsprechendem Recht gebucht werden. ankreuzen wenn zutreffend. | 
@@ -300,5 +300,4 @@ Mehr Information über die Bestuhlung finden Sie hier:[Bestuhlung](/einstellunge
 ### Virtuelle Räume der Ressource bearbeiten
 Im Kapitel virtuelle Räume werden diese genauer Beschrieben.
 
-
-
+[^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.

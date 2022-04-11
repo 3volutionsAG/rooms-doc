@@ -17,8 +17,8 @@ Folgende Tabelle erläutert die Spaltenkategorien:
 |Sync. Modus||<p style="text-align: justify"> Zeigt an über welchen Modus der Raum mit dem System synchronisiert wird. </p> </br> _z.B. Exchange 2016_|
 |External Identifier||Eindeutige Kennung der Ressource, um diese von außerhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.
 |
-|Priorisierung||__needs clarifiaction:__ <a href="https://trello.com/c/kr3461Ai">Bedeutung?</a>|
+|Priorisierung||Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 |Ist fixes Equipment|| <p style="text-align: justify"> Gibt an, ob es sich um fixes oder mobiles Equipment handelt. </br> _Wird beim Ressourcentyp "Equipment" angezeigt._ </p>|
 ---
 
-<!-- External Identifier und Priorisierung erklären erklären -->
+[^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.
