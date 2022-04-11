@@ -5,7 +5,7 @@ weight: 200
 description: >
   Neben den standardmäßig angezeigten Spalten gibt es noch weitere Spalten mit Informationen zu den einzelnen Buchungen, die eingeblendet werden können.
 ---
-<p style="text-align: justify"> Über das <a href="/Generell/3_grundlegendefunktionen/##Listenansicht-anpassen"> Spaltensymbol </a> können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen. 
+<p style="text-align: justify"> Über das <a href="/Generell/3_grundlegendefunktionen/##Listenansicht-anpassen"> Spaltensymbol </a> können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen.
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen.
 Gespeicherte Filter können Sie unter den Persönlichen Einstellungen löschen.
 </p>
@@ -23,17 +23,17 @@ Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 |</br>Terminieren|{{< imgproc List_BG_Anzeige_SymTerm Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche können Sie die Belegung beenden, die Nachlaufzeit bleibt in diesem Fall bestehen. Das Ende der Buchung wird minutengenau vermerkt. </p>|
 |</br>Freigeben|{{< imgproc List_BG_Anzeige_SymFreig Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche können Sie die Belegung beenden, die Nachlaufzeit wird in diesem Fall ebenfalls freigegeben und das Ende der Buchung minutengenau eingertagen. </p>|
 |</br>Bearbeiten|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche wechseln Sie in den Bearbeitungsmodus der Buchung </br> *Nähere Informationen finden Sie im Kapitel "Buchen"* </p>|
-|</br>Löschen|{{< imgproc List_BG_Anzeige_SymDel Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schlatfläche können Sie die Buchung oder komplette Buchungsserie aus dem System löschen. </br> Es fallen für die Buchung keinerlei Kosten an. </br> Die Buchung ist in keinen Listen,Kalenderansichten, Statistiken und Reports mehr sichtbar. </br> Eine Benachrichtungsmail wird automatisch an die/den Ersteller:in, Organisator:in und Verantwortliche:n sowie an die involvierten Dienstleister gesendet. </p>|
-|</br>Buchung von </br> Anlass entfernen|_Symbol Buchung von Anlass entfernen_|</br><p style="text-align: justify"> Über diese Schaltfläche lösen Sie eine Buchung von einem Anlass ab. Die Buchung bleibt unabhängig vom Anlass bestehen. </p>|
-|</br>Serie von </br> Anlass entfernen|_Symbol und TT Serie von Anlass entfernen_|</br><p style="text-align: justify"> Über diese Schaltfläche lösen Sie eine Serienbuchung von einem Anlass ab. Die Buchung bleibt unabhängig vom Anlass bestehen. </p>|
-|Von </br> _inkl. Vorlaufzeit_||<p style="text-align: justify"> Zeigt Beginndatum und -uhrzeit der Vorlaufzeit an </br> _Buchung beginnt um 12:00 Uhr, bei der Buchung eingestellte Vorlaufzeit ist 15 min, als Beginnzeit wird hier 11:45 Uhr angezeigt._ </p>|
-|Bis </br> _inkl. Nachlaufzeit_||<p style="text-align: justify"> Zeigt Enddatum und -uhrzeit der Nachlaufzeit an </br> _Buchung endet um 15:00 Uhr, bei der Buchung eingestellte Nachlaufzeit ist 15 min, als Endzeit wird hier 15:15 Uhr angezeigt._ </p>|
+|</br>Löschen|{{< imgproc List_BG_Anzeige_SymDel Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfäche können Sie die Buchung oder komplette Buchungsserie aus dem System löschen. </br> Es fallen für die Buchung keinerlei Kosten an. </br> Die Buchung ist in keinen Listen,Kalenderansichten, Statistiken und Reports mehr sichtbar. </br> Eine Benachrichtigungsmail wird automatisch an die/den Ersteller:in, Organisator:in und Verantwortliche:n sowie an die involvierten Dienstleister gesendet. </p>|
+|</br>Buchung von </br> Anlass entfernen|{{< imgproc BuchungVonAnlassEntfernen_TT Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche lösen Sie eine Buchung von einem Anlass ab. Die Buchung bleibt unabhängig vom Anlass bestehen. </p>|
+|</br>Serie von </br> Anlass entfernen||</br><p style="text-align: justify"> Über diese Schaltfläche lösen Sie eine Serienbuchung von einem Anlass ab. Die Buchung bleibt unabhängig vom Anlass bestehen. </p>|
+|Von </br> _inkl. Vorlaufzeit_||<p style="text-align: justify"> Beginndatum und -uhrzeit der Vorlaufzeit</br> _Buchung beginnt um 12:00 Uhr, bei der Buchung eingestellte Vorlaufzeit ist 15 min, als Beginnzeit wird hier 11:45 Uhr angezeigt._ </p>|
+|Bis </br> _inkl. Nachlaufzeit_||<p style="text-align: justify"> Enddatum und -uhrzeit der Nachlaufzeit</br> _Buchung endet um 15:00 Uhr, bei der Buchung eingestellte Nachlaufzeit ist 15 min, als Endzeit wird 15:15 Uhr angezeigt._ </p>|
 |Startdatum||Startdatum ohne Uhrzeit|
 |Enddatum||Enddatum ohne Uhrzeit|
 |Workflow Statusbezeichnung||Besetzt definitiv, provisorisch, Sytem oder temporär|
 |Anlass||Titel des Anlass|
 |Anlass Nummer||Dem Anlass zugeordnete eindeutige Nummer|
-|Notiz an Diesntleistungsfirma|_Symbol und TT Notiz an Dienstleister_|Notiz, welche der Dienstleistungsfirma bei Bestellung zusätzlich übermittelt wurde|
+|Notiz an Diesntleistungsfirma||Notiz, welche der Dienstleistungsfirma bei Bestellung zusätzlich übermittelt wurde|
 |Ressourcen ID||Eindeutige Kennzeichnung der Ressource, kann der Ressourcenbezeichnung entsprechen.|
 |Zeit von||Startzeit ohne Datum|
 |Zeit bis||Endzeit ohne Datum|
@@ -64,16 +64,16 @@ Detailansicht zur Ressource
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Priorisierung||__needs clarification:__ <a href="https://trello.com/c/kr3461Ai">Priorisierung?</a>|
+|Priorisierung||Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 |</br>Bestätigung senden|{{< imgproc List_BG_Anzeige_SymBestSend Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche senden Sie eine Bestätigungsmail an die verantwortlichen, organisierenden und erstellenden Personen der Buchung sowie an die Teilnehmer, die in den Mailverkehr eingebunden werden sollen, sofern die Checkbox aktiviert wird. </p>|
 |Teilnehmer:innen||Auflistung der teilnehmenden Personen|
-|Kostenträger Nummer </br> Buchung||<p style="text-align: justify"> Beim Erstellen einer Buchung wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen. </p>|
-|Kostenträger Beschreibung </br> Buchung||Zeigt die Beschreibung des Kostenträgers, die bei der Buchung hinterlegt wurde|
-|Kostenträger Geschäftsbereich </br> Buchung||Gibt die Kostenstelle des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
-|Kostenträger Nummer </br> Organisator:in||Nummer der Kostenstelle der organisierenden Person|
-|Kostenträger Bezeichnung </br> Organisator:in||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezeichnung?</a>|
-|Kostenträger Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantwortlichen Person|
-|Kostenträger Bezeichnung </br> Verantwortliche:r||__needs clarification:__ <a href="https://trello.com/c/w29Mmpve">Kostenträger Bezeichnung Verantwortlicher?</a>|
+|Kostenträger [^2] Nummer </br> Buchung||<p style="text-align: justify"> Beim Erstellen einer Buchung wird als Kostenträger automatisch der Kostenträger der organisierenden Person eingetragen. </p>|
+|Kostenträger [^2] Beschreibung </br> Buchung||Beschreibung des Kostenträgers, die bei der Buchung hinterlegt wurde|
+|Kostenträger [^2] Geschäftsbereich </br> Buchung||Gibt den Kostenträger des Geschäftsbereichs an, dem die Buchung zugeordnet ist.|
+|Kostenträger [^2] Nummer </br> Organisator:in||Nummer des Kostenträgers der organisierenden Person|
+|Kostenträger [^2] Bezeichnung </br> Organisator:in||eindeutige Kennung des Kostenträgers, welcher die organisierende Person zugeordnet ist|
+|Kostenträger [^2] Nummer </br> Verantwortliche:r||Nummer des Kostenträgers der verantwortlichen Person|
+|Kostenträger [^2] Bezeichnung </br> Verantwortliche:r||eindeutige Kennung des Kostentrgers, welcher der die verantwortliche Person zugeordnet ist|
 |Logon Organisator:in||<p style="text-align: justify"> Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde. </p>|
 |Logon Verantwortliche:r||<p style="text-align: justify"> Log-In Name, welcher der verantwortlichen Person zum anmelden in ROOMS zugeteilt wurde. </p>|
 |Firma Nummer </br> Organisator:in||<p style="text-align: justify"> Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet </p>|
@@ -88,13 +88,18 @@ Detailansicht zur Ressource
 |Annulliert am||Datum, an dem die Buchung storniert wurde|
 |Annulliert durch||Person, welche die Buchungsstornierte|
 |</br>Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|</br>Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
-|</br>Bestellungen|{{< imgproc List_BG_Anzeige_TTBest Resize "200x" >}}{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
-|</br>Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
-|</br>Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
-|</br>Parkplätze|{{< imgproc Parkplatz_TT Resize "200x" >}}{{< /imgproc >}}__needs clarification:__</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt an welche Parkplätze im Detail zugebucht wurden|
-|</br>Parkplätze Aggregiert|</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt die Anzahl der zugebuchten Parkplätze an|
-|</br>Fahrzeuge|{{< imgproc Fahrzeug_TT Resize "200x" >}} {{< /imgproc >}} </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|</br>Zeigt an welche Fahrzeuge im Detail zugebucht wurden|
-|Fahrzeuge Aggregiert|</br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|Zeigt die Anzahl der zugebuchten Fahrzeuge|
-|</br>Serieninformationen|{{< imgproc List_BG_Anzeige_TTSerie Resize "200x" >}} {{< /imgproc >}}|</br>Zeigt eine Kurzübersicht der Informationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
-|</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
+|</br>Bestellungen|{{< imgproc Bestellungen_TT "200x" >}}
+Neues Fenster mit Anzeige der Ressource auf dem Plan
+{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
+|</br>Mobiles Equipment Aggregiert|{{< imgproc mobilesEquipment_aggretetiert_Tooltipp Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
+|</br>Fixes Equipment Aggregiert||</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
+|</br>Parkplätze (Tooltipp)|{{< imgproc Parkplatz_TT Resize "200x" >}}{{< /imgproc >}}|</br>Listet die gebuchten Parkplätze auf|
+|</br>Parkplätze Aggregiert||</br>Anzahl der gebuchten Parkplätze an|
+|</br>Fahrzeuge (Tooltipp)|{{< imgproc Fahrzeug_TT Resize "200x" >}}{{< /imgproc >}}|</br>Listet die gebuchten Fahrzeuge auf|
+|Fahrzeuge Aggregiert|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|Anzahl der gebuchten Fahrzeuge|
+|</br>Serieninformationen||</br>Kurzinformationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
+|</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zuordnung eines virtuellen Raums </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
 ---
+
+[^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.
+[^2]: Die Nummer und die Beschreibung des Kostenträgers ist in den Daten der jeweiligen Person oder des Geschäftsbereichs hinterlegt.
