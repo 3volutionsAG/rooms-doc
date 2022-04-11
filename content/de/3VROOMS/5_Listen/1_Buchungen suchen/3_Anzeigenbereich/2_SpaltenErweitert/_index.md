@@ -38,7 +38,7 @@ Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 |Zeit von||Startzeit ohne Datum|
 |Zeit bis||Endzeit ohne Datum|
 |Standort-Name||_z.B. Name der Filiale oder Stadtname, in der sich der Standort befindet_|
-|</br>Standortbeschrieb|{{< imgproc List_BG_Anzeige_SymStandBeschr Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTStandBeschr Resize "200x" >}}{{< /imgproc >}}|</br>Beschreibung des Standortes </br> _z.B. Zentrale, Werkstatt, Laden oder Showroom_|
+|</br>Standortbeschreibung|{{< imgproc List_BG_Anzeige_TTStandBeschr Resize "200x" >}}{{< /imgproc >}}|</br>Beschreibung des Standortes </br> _z.B. Zentrale, Werkstatt, Laden oder Showroom_|
 |Standort hierachsich||<p style="text-align: justify"> Gibt es mehrere Standort z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ </p>|
 |</br>Plan|{{< imgproc List_BG_Anzeige_SymPlan Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche öffnen Sie ein neues Fenster, in dem der Stadtort der Ressource auf einer Karte dargestellt wird </p>|
 ---
@@ -51,9 +51,9 @@ Neues Fenster mit Anzeige der Ressource auf dem Plan
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Ressourcenart||_z.B. Raum, Parkplatz, Arbeitsplatz_|
-|Bemerkungen Teilnehmende|_Symbol und TT Bemerkungen TN_|hinterlegte Bemerkung zu hinzugefügten Teilnehmenden|
-|</br>Bemerkungen intern|{{< imgproc List_BG_Anzeige_SymBemIntern Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemIntern Resize "200x" >}}{{< /imgproc >}}|</br>Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
-|</br>Bemerkungen Annullation|{{< imgproc List_BG_Anzeige_SymBemAnn Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBemAnn Resize "200x" >}}{{< /imgproc >}}|</br>Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
+|Bemerkungen Teilnehmende|{{< imgproc Notizbuch_Bemerkungen Resize "40x" >}}{{< /imgproc >}}|hinterlegte Bemerkung zu hinzugefügten Teilnehmenden|
+|</br>Bemerkungen intern|{{< imgproc List_BG_Anzeige_TTBemIntern Resize "200x" >}}{{< /imgproc >}}|</br>Bei entsprechender Berechtigung, sehen Sie hier weitere Bemerkungen|
+|</br>Bemerkungen Annullation|{{< imgproc List_BG_Anzeige_TTBemAnn Resize "200x" >}}{{< /imgproc >}}|</br>Bemerkungen, die bei der Stornierung vermerkt wurden </br> _z.B. wegen Krankheit abgesagt_|
 |</br>Ressource Info|{{< imgproc List_BG_Anzeige_SymResInfo Resize "40x" >}}{{< /imgproc >}}|</br>Über diese Schaltfläche werden Sie auf die Detailansicht der Ressource weiter geleitet.|
 ---
 
@@ -81,20 +81,20 @@ Detailansicht zur Ressource
 |Firma Bezeichnung </br> Organisator:in||<p style="text-align: justify"> Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet </p>|
 |Firma Bezeichnung </br> Verantwortliche:r||<p style="text-align: justify"> Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet </p>|
 |Hauptbuchung||In einem Anlass kann eine Buchung als Hauptbuchung gekennzeichnet sein.|
-|Folgebuchung|_Symbol Folgebuchung_|<p style="text-align: justify"> Anzeige der Minuten bis zum Start der nächsten Buchung (ohne Vorlaufzeit). Bei 0 min ist die reservierte Buchungszeit abgelaufen. </br> _Es erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ </p>|
-|Wartezeit Kunde|_Symbol Wartezeit_|<p style="text-align: justify"> Zeit, welche der Kunde der Folgebuchung bereits auf die Nutzung des Raumes wartet (bezieht sich nur auf die Ressource Raum) </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ </p>|
-|</br>Offene Menge bearbeiten|_Symbol offene Mengen bearbeiten_|</br><p style="text-align: justify"> Über die Schaltfläche öffnet sich der Bearbeitungsmodus der Buchug um die Menge des benötigten Catering & Service Angebots zu bearbeiten. </p>|
+|Folgebuchung||<p style="text-align: justify"> Anzeige der Minuten bis zum Start der nächsten Buchung (ohne Vorlaufzeit). Bei 0 min ist die reservierte Buchungszeit abgelaufen. </br> _Es erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ </p>|
+|Wartezeit Kunde||<p style="text-align: justify"> Zeit, welche der Kunde der Folgebuchung bereits auf die Nutzung des Raumes wartet (bezieht sich nur auf die Ressource Raum) </br> _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ </p>|
+|</br>Offene Menge bearbeiten||</br><p style="text-align: justify"> Über die Schaltfläche öffnet sich der Bearbeitungsmodus der Buchug um die Menge des benötigten Catering & Service Angebots zu bearbeiten. </p>|
 |</br>Als No Show markieren|{{< imgproc List_BG_Anzeige_SymNoShow Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Die Buchung wird, folgengleich zu "Annlullieren", storniert. Zusätzlich wird die Buchung als "No Show markiert und kann über diesen Filter gefunden werden. </p>|
 |Annulliert am||Datum, an dem die Buchung storniert wurde|
 |Annulliert durch||Person, welche die Buchungsstornierte|
-|</br>Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_SymAnl Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|</br>Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
-|</br>Bestellungen|{{< imgproc List_BG_Anzeige_SymBest Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBest Resize "200x" >}}{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
-|</br>Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymMobEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
-|</br>Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_SymFixEquAgg Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
-|</br>Parkplätze|_Symbol und Tooltipp Parkplätze_ __needs clarification:__</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt an welche Parkplätze im Detail zugebucht wurden|
-|</br>Parplätze Aggregiert|_Symbol und TT Parkplätze Aggregiert_</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt die Anzahl der zugebuchten Parkplätze an|
-|</br>Fahrzeuge|_Symbol und TT zugebuchter Fahrzeuge_ </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|</br>Zeigt an welche Fahrzeuge im detail zugebucht wurden|
-|Fahrzeuge Aggregiert|_Symbol und TT zugebuchter Fahrzeuge aggregiert_ </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|Zeigt die Anzahl der zugebuchten Fahrzeuge|
-|</br>Serieninformationen|{{< imgproc List_BG_Anzeige_SymSerie Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTSerie Resize "200x" >}}{{< /imgproc >}}|</br>Zeigt eine Kurzübersicht der Informatione zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
-|</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_SymVR Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
+|</br>Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|</br>Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.|
+|</br>Bestellungen|{{< imgproc List_BG_Anzeige_TTBest Resize "200x" >}}{{< /imgproc >}}|</br>Auflistung der zugefügten Bestellungen|
+|</br>Mobiles Equipment Aggregiert|{{< imgproc List_BG_Anzeige_TTMobEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
+|</br>Fixes Equipment Aggregiert|{{< imgproc List_BG_Anzeige_TTFixEquAgg Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
+|</br>Parkplätze|{{< imgproc Parkplatz_TT Resize "200x" >}}{{< /imgproc >}}__needs clarification:__</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt an welche Parkplätze im Detail zugebucht wurden|
+|</br>Parkplätze Aggregiert|</br> <a href="https://trello.com/c/gEKGV6U9">Anzeige?</a>|</br>Zeigt die Anzahl der zugebuchten Parkplätze an|
+|</br>Fahrzeuge|{{< imgproc Fahrzeug_TT Resize "200x" >}} {{< /imgproc >}} </br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|</br>Zeigt an welche Fahrzeuge im Detail zugebucht wurden|
+|Fahrzeuge Aggregiert|</br> __needs clarification:__<a href="https://trello.com/c/RoCzSLCX">Fahrzeuge zubuchen?</a>|Zeigt die Anzahl der zugebuchten Fahrzeuge|
+|</br>Serieninformationen|{{< imgproc List_BG_Anzeige_TTSerie Resize "200x" >}} {{< /imgproc >}}|</br>Zeigt eine Kurzübersicht der Informationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_|
+|</br>Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Zeigt an, ob dem gebuchten Raum ein virtueller Raum zugeordnet ist. </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
 ---
