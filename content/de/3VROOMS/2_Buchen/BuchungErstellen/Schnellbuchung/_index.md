@@ -4,11 +4,11 @@ linkTitle: "Schnellbuchung"
 weight: 2
 description: >
   Eine Schnellbuchung können Sie über die Reiter "Buchen", "Kalender" oder "Plan" erstellen. Hier erfahren Sie, wie Sie eine Schnellbuchung im Reiter "Buchen" erstellen. Es ist möglich eine oder mehrere Ressourcen über eine Schnellbuchung zu reservieren. 
- 
 
 ---
 ## Schnellbuchung erstellen
-Im Reitr "Buchen" erstellen Sie wie folgt eine Buchung: 
+
+Im Reiter "Buchen" erstellen Sie wie folgt eine Buchung: 
 Indem Sie auf den Button Schnellbuchung erstellen neben der Ressource in der Liste der Suchresultate klicken, öffnet sich ein Feld (siehe Abbildung s), in welchem Sie nur die folgenden Daten aussuchen und eingeben können:
 * Titel 
 * Dauer (Datum/Zeit)
@@ -16,19 +16,18 @@ Indem Sie auf den Button Schnellbuchung erstellen neben der Ressource in der Lis
 * Verantwortliche : Ist eine Verantworliche vorhanden, werden die E-Mail Notifikationen (sofern im Profil aktiviert) an die Verantworliche geschickt und NICHT mehr an die Organisator:in
 * Bemerkungen 
 
-Durch Betätigen des Buttons Buchen, buchen Sie die ausgewählte Ressource. Sie können ebenfalls zur Detailbuchung wechseln und mehr Informationen zu der Ressource eingeben. 
+Durch Betätigen des Buttons Buchen, buchen Sie die ausgewählte Ressource. Sie können ebenfalls zur Detailbuchung wechseln und mehr Informationen zu der Ressource eingeben.
  
 {{< imgproc Buchen_Schnellbuchung Resize "1280x" >}}
 Abbildung s: Schnellbuchung durchführen
 {{< /imgproc >}}
 
-
-### Ablauf der Schnellbuchung im System 
+### Ablauf der Schnellbuchung im System
 
 1. Ihre Buchung wird gespeichert
 * Der Titel, den Sie eingetragen haben wird automatisch vergeben
 * Die Kostenträger werden gemäss Ihren Profileinstellungen gesetzt
-* Status (Workflow) wird gemäss der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt 
+* Status (Workflow) wird gemäß der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt
 
 2. Fehlerfall bei der Buchung
 * Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben Rechts im Bild eine Fehlermeldung 
@@ -42,8 +41,8 @@ Abbildung s: Schnellbuchung durchführen
 4. Rücksprung zum Ausgangspunkt
 * Haben Sie eine Buchung aus dem Plan oder dem Kalender vorgenommen, springt Rooms wieder zu Ihrem Ausgangspunkt zurück. 
 
-Hier erfahren Sie, wie Sie eine Schnellbuchung im Plan bzw. im Kalender durchführen: 
-[Schnellbuchung im Plan](/plan/buchen-auf-dem-plan/#schnellbuchung-im-plan)
+Hier erfahren Sie, wie Sie eine Schnellbuchung im Plan bzw. im Kalender durchführen:
+[Schnellbuchung im Plan](/3_plan/buchen-auf-dem-plan/#schnellbuchung-im-plan)
 [Schnellbuchung im Kalender](/kalender/im-kalender-buchen/eine-neue-buchung-vornehmen/#schnellbuchung-im-kalender)
 
 ## Massenschnellbuchung

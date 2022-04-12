@@ -8,7 +8,3 @@ description: >
 {{< imgproc List_Pers_geschw Resize "1280x" >}}
 Übersicht der Personensuche unter dem Menüpunkt Listen
 {{< /imgproc >}}
-
-
-
-
