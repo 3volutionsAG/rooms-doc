@@ -1,7 +1,7 @@
 ---
 title: "Glossar"
 linkTitle: "Glossar"
-weight: 10
+weight: 3
 type: list
 description: Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe sowie deren Bedeutung.
 ---

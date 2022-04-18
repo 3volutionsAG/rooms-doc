@@ -1,8 +1,8 @@
 ---
-title: "O365 Outlook Addin / Wizard"
-linkTitle: "Outlook Addin"
-weight: 30
-description: Hier wird die funktionalität des Outlook Addins erläutert
+title: "Nicht unterstützte Verhalten in Outlook"
+linkTitle: "Nicht unterstützte Verhalten in Outlook"
+weight: 40
+description: Nicht unterstützte Verhalten in Outlook
 ---
 ## Nicht unterstützte Verhalten in Outlook
 
