@@ -11,6 +11,6 @@ description: 3V ROOMS Wizard ist ein Buchungsassistent, der eine vereinfachte Bu
    <!-- Wie lautet die URL? -->
     {{< imgproc Buchungsassistent Resize "960x" >}} Buchungsassistent im Webbrowser {{< /imgproc >}}
 
-Das weitere Vorgehen entspricht dem Vorgehen im [3V ROOMS Add-In für Offcie 365 Outlook](3vrooms-erweiterungen/01_3vrooms_addin_o365outlook/).
+Das weitere Vorgehen entspricht dem Vorgehen im [3V ROOMS Add-In für Office 365 Outlook](3vrooms-erweiterungen/01_3vrooms_addin_o365outlook/).
 
 Mit den entsprechenden Einstellungen werden Buchungen, die mit dem 3V ROOMS Wizard erstellt wurden mit Office 365 Outlook synchronisiert, siehe dazu [Empfohlene Konfigurationen](/3vrooms-erweiterungen/03_addin-wizard_konfigurieren/).
