@@ -11,4 +11,5 @@ description: Der Buchungsassistent ermöglicht die vereinfachte Buchung einer Re
    
 {{< imgproc Buchungsassistent Resize "960x" >}} Buchungsassistent im Webbrowser {{< /imgproc >}}
 
-> Mit den entsprechenden Einstellungen werden Buchungen, die mit dem Buchungsassistenten erstellt wurden, in O365 Outlook übernommen. 
+> Mit den entsprechenden Einstellungen werden Buchungen, die mit dem Buchungsassistenten erstellt wurden, in O365 Outlook übernommen.
+
