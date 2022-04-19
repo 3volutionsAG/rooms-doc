@@ -4,7 +4,7 @@ linkTitle: "Ressource über O365 Outlook buchen"
 weight: 100
 description: Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook.
 ---
-<p> </br> </p>
+</br>
 
 1. Öffnen Sie O365 Outlook (lokal oder webbasiert).
 2. Legen Sie einen neuen Termin / ein neues Ereignis an, indem Sie im Aktionsmenü auf **Neuer Termin** / **Neues Ereignis** klicken oder im Kalender bei der gewünschten Zeit doppelklicken. </br>
@@ -16,7 +16,6 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
          {{< imgproc O365Outlook_web Resize "960x">}} {{< /imgproc >}}
       - in der *lokalen Anwendung* im Aktionsmenü auf **Raum buchen** klicken.
          {{< imgproc O365Outlook_lokal Resize "960x">}} {{< /imgproc >}}
-   </br> </br>
 5. Klicken Sie auf den **Ressourcentyp**, den Sie buchen möchten, z.B. Raum. Es öffnet sich eine Filtermaske:
    - *Datum und Uhrzeit* werden aus dem Outlook-Ereignis übernommen
    - *Teilnehmerzahl* wird mit den Standardeinstellungen des Benutzenden aus 3V ROOMS ausgefüllt

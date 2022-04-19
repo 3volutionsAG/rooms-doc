@@ -6,7 +6,7 @@ description: Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressourc
 ---
 Das Add-In kann im lokal installierten Outlook Client und in der Web-Anwendung von O365 Outlook genutzt werden.
 
-### Zusatzfunktionen für:
+Der Termin wird zunächst in Outlook erstellt. Über das Add-Inn stehen Ihnen weitere Funktionen zur Verfügung. Zusatzfunktionen beim:
 
 #### Termin/Serientermin erstellen
 
@@ -17,20 +17,20 @@ Das Add-In kann im lokal installierten Outlook Client und in der Web-Anwendung v
 
 Bei Serienterminen:
 
-- einzelne Serientermine anpassen, falls die Ressource zu diesem Zeitpunkt nicht verfügbar ist
+- einzelne Serientermine anpassen, falls die Ressource an einzelnen Serienterminen nicht verfügbar sein sollte
 
 **Hinweis**: </br>
 Ein Einzeltermin kann nicht in einen Serientermin umgebucht werden. Es muss eine neue Buchung erstellt und als Serientermin definiert werden.
 
 #### Termin/Serientermin ändern
 
-- Buchungsübersicht anzeigen, bei Serienterminen auch jedes Einzeltermins
+- Buchungsübersicht anzeigen
 - Buchungsdaten ändern (Raum, Catering & Service, Teilnehmer, ...)
 - Ressource ändern (z.B. Raum wechseln)
 
 Bei Serienterminen:
 
-- Buchungsdaten eines Einzeltermin ändern (Raum, Equipment, Teilnehmer, ...)
+- Buchungsdaten eines Einzeltermins ändern (Raum, Equipment, Teilnehmer, ...)
 
 **Hinweis**: </br>
 Ist zum neuen Termin eine der gebuchten Ressourcen oder Catering & Service nicht verfügbar, wird der Termin auf den ursprünglichen Termin zurückgesetzt.</br>
