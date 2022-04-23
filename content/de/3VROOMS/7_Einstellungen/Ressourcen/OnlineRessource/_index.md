@@ -4,7 +4,7 @@ linkTitle: "Online Ressource"
 weight: 1
 date: 2022-01-12
 description: >
-  Die Online Ressource ist eine virtuelle Ressource ohne physische repräsentation.
+  Die Online Ressource ist eine virtuelle Ressource ohne physische Repräsentation.
 ---
 
 ## Online Ressource 

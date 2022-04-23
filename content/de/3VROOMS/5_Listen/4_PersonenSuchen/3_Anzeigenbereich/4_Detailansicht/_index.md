@@ -9,7 +9,7 @@ description: >
 Detailansicht zu einem Personeneintrag
 {{< /imgproc >}}
 
-Über die Schlatflächen am unteren Rand des Anzeigenbereichs haben Sie die Möglichkeit den Eintrag zubearbeiten, gespeicherte Filtereinstellungen zu löschen und den Eintrag zu drucken.
+Über die Schaltflächen am unteren Rand des Anzeigenbereichs haben Sie die Möglichkeit, den Eintrag zu bearbeiten, gespeicherte Filtereinstellungen zu löschen und den Eintrag zu drucken.
 
 ## Bearbeiten
 Über die Schaltfläche "Bearbeiten" öffnet sich die Eingabemaske zum Personeneintrag. Hierüber bearbeiten Sie die hinterlegten Informationen.

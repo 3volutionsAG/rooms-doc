@@ -15,7 +15,7 @@ Anzeige laufende Buchung im Kopfbereich
 <p style="text-align: justify"> Liegen mehrere laufende Buchungen vor, können Sie durch Klicken auf die angezeigte Buchung eine Auflistung aller Ihrer laufenden Buchungen öffnen. </p>
 
 {{< imgproc Kopfbereich_allelaufendenBuchungen Resize "1280x" >}}
-Anzeige aller laufende Buchung im Kopfbereich 
+Anzeige aller laufenden Buchung im Kopfbereich 
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Diese Darstellung stellt Ihnen vier grundlegende Funktionen zur Verfügung.  </p>

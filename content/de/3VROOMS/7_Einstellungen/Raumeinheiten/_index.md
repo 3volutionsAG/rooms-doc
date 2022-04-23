@@ -58,7 +58,7 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Fläche | Über die Pfeiltasten (up/down) entsprechende Fläche auswählen. Fläche wird in Quadratmetern angegeben.  | 
 | Höhe | Über die Pfeiltasten (up/down) entsprechende Höhe auswählen  | 
 | Gewichtung | Über die Pfeiltasten (up/down) entsprechende Gewichtung auswählen  | 
-| Status (aktiv*/inaktiv)* = markiert | Ankreuzen wenn zutreffens  | 
+| Status (aktiv*/inaktiv)* = markiert | Ankreuzen, wenn zutreffend  | 
 
 Die geänderten Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung rb).
 
@@ -88,7 +88,7 @@ Die Liste aktualisiert sich automatisch und Sie sehen die hinzugefügten Persone
 Abbildung ad: Aktualisierte Liste der Personen einer Raumeinheit
 {{< /imgproc >}}
 
-Im unteren Feld haben Sie die Möglichkeit "Gültig von" und "Gültig bis" auszuwählen. Die Felder können leer bleiben oder Sie weisen ein bestimmten Start und End Datum einer Person zu.
+Im unteren Feld haben Sie die Möglichkeit "Gültig von" und "Gültig bis" auszuwählen. Die Felder können leer bleiben oder Sie weisen ein bestimmtes Start- und Enddatum einer Person zu.
 
 
 ## Raumeinheiten neu erstellen

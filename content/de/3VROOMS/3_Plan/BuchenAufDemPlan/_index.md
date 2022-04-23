@@ -8,7 +8,7 @@ description: >
 
 
 ### Buchen auf dem Plan
-Wenn Sie den passenden Plan gefunden haben, sehen Sie ob der Raum frei oder belegt ist durch das angezeigte Symbol in der mitte des Raumes. (Abbildung pa)
+Wenn Sie den passenden Plan gefunden haben, sehen Sie, ob der Raum frei oder belegt ist durch das angezeigte Symbol in der Mitte des Raumes. (Abbildung pa)
 
 {{< imgproc Plan_Planstatus_frei_Standortauswahl Resize "1280x" >}}
 Abbildung pa: Anzeigen des Planstatus im Raum
@@ -21,7 +21,7 @@ Klicken Sie auf den Raum und nicht auf das grüne Symbol, wählen Sie den Raum/d
 Diese wird hier beschrieben: [Massenbuchung im Plan](/plan/massenbuchung-auf-dem-plan/)
 
 ### Schnellbuchung im Plan
-Im Feld der Schnellbuchung, reservieren Sie Ihre gewünschte Ressource. 
+Im Feld der Schnellbuchung reservieren Sie Ihre gewünschte Ressource. 
 
 Wählen Sie dafür folgende Optionen aus: 
 * Titel 
@@ -40,7 +40,7 @@ Mit dem Button „Buchen“ reservieren Sie den Raum ohne Eingabe weiterer Infor
 Hier gelangen Sie zur weiteren Beschreibung der Schnellbuchung:
 [Schnellbuchung](/buchen/buchung-erstellen/detailbuchung/)
 
-### Deteilbuchung im Plan
+### Detailbuchung im Plan
 Möchten Sie weitere Angaben zu Ihrer Buchung machen, gehen Sie auf den Button "Detailbuchung". Es öffnet sich das Feld zur Detailbuchung.
 
 {{< imgproc Plan_Detailbuchung Resize "1280x" >}}

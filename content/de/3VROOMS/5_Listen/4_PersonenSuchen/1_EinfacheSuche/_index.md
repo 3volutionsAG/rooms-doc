@@ -18,7 +18,7 @@ Folgende Tabelle erläutert die Eingabefelder:
  |---|---|---|
  |Nachname/Vorname||Vor- und/oder Nachnamen der gesuchten Person, </br> die Reihenfolge spielt keine Rolle|
  |E-Mail||E-Mail-Adresse der gesuchten Person|
- |</br> Sync. Modus|{{< imgproc List_Pers_EinfSuch_SyncMod Resize "200x" >}}{{< /imgproc >}}|</br> Modus über welchen die Einträge der gesuchten Person synchronisiert werden </br> _z.B. Exchange2016_
- |</br> Sync. deaktiviert|{{< imgproc List_Pers_EinfSuch_SyncDeakt Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** Syncronisation ist deaktiviert </br> **Nein:** Synchronisation ist aktiv|
+ |</br> Sync. Modus|{{< imgproc List_Pers_EinfSuch_SyncMod Resize "200x" >}}{{< /imgproc >}}|</br> Modus, über welchen die Einträge der gesuchten Person synchronisiert werden </br> _z.B. Exchange2016_
+ |</br> Sync. deaktiviert|{{< imgproc List_Pers_EinfSuch_SyncDeakt Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** Synchronisation ist deaktiviert </br> **Nein:** Synchronisation ist aktiv|
  |Telefon (intern oder extern)||Telefonnummer der gesuchten Person|
  ---

@@ -12,7 +12,7 @@ Im linken Sidepanel finden Sie die Filterfunktionen, um nach bestimmten Bestuhlu
 Abbildung b: Ansicht der Bestuhlungslisten
 {{< /imgproc >}}
 
-Sie löschen eine bestehende Bestuhlung, indem Sie die Checkbox aktivieren in der Liste und auf den untenstehenden Button "Entfernen" klicken. 
+Sie löschen eine bestehende Bestuhlung, indem Sie die Checkbox aktivieren, in der Liste und auf den untenstehenden Button "Entfernen" klicken. 
 
 ### Bestuhlung suchen
 Im linken Menü finden Sie unter der Kategorie "Bestuhlung" eine Suchfunktion mit dessen Hilfe Sie nach einer Bestuhlung suchen können (Abbildung b). Sie können hierbei nach folgenden Kriterien suchen: 
@@ -31,8 +31,8 @@ Abbildung bi: Bestuhlung: Informationen bearbeiten und speichern
 
 Folgende Informationen können Sie bearbeiten: 
 * Bezeichnung : Erfassung muss Mehrsprachig erfolgen
-* Max. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrössen zu finden
-* Min. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrössen zu finden 
+* Max. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrößen zu finden
+* Min. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität die passende Raumgrößen zu finden 
 * Vorlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet 
 * Nachlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet
 * Bildvorschau (Icon): Es kann nur ein Bild zugewiesen werden. Es wird das Thumbnail angezeigt. Klick auf Bild öffnet das Zoom (im modalen Popup)

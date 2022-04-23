@@ -3,12 +3,13 @@ title: "Freie Ressourcen suchen"
 linkTitle: "Freie Ressourcen suchen"
 weight: 1
 description: >
-  Wollen Sie eine Ressource buchen, müssen Sie zuerst in Erfahrung bringen, ob diese Ressource zur Verfügung steht und frei ist. Im Kapitel "Freie Ressourcen suchen" erfahren Sie mit welchen Methoden Sie suchen können.  
+  Wollen Sie eine Ressource buchen, müssen Sie zuerst in Erfahrung bringen, ob diese Ressource zur Verfügung steht und frei ist. Im Kapitel <i>Freie Ressourcen suchen</i> erfahren Sie, mit welchen Methoden Sie suchen können.  
  
 
 
 ---
 ## Freie Ressourcen suchen 
+
 Sie können in ROOMS über drei verschiedene Ansichten nach freien Ressourcen suchen:
 
 1. Suche nach Kriterien (Ressourcenart, Datum, Zeit  etc.): Die Resultate werden in Listenform dargestellt.
@@ -28,9 +29,9 @@ Sie bearbeiten die Suchresultate in der Liste mit den folgenden Funktionen:
 | ------------- |-------------  | -------------|
 | Icon Schnellreservation         | Vor jedem Suchresultat sehen Sie eine Checkbox. Damit können mehrere Räume zusammen oder einzeln ausgewählt werden. Mittels Icon „Schnellreservation“ (wird nur angezeigt, sofern der Benutzer über das Funktionsrecht „Darf Schnellreservation durchführen“ verfügt) wird direkt eine Einzelbuchung mit Standardtitel für diese Reservationen erstellt. Die Ressourcen werden blockiert und können dann nachbearbeitet werden.  | {{< imgproc Button_Schnellreservation Resize "300x" >}}
 {{< /imgproc >}} |
-| Direkter Link Ressource | Über das Klicken auf den Namen der Ressource in der Liste, gelangen Sie zu den Buchungsfunktionen für diese Ressource (Abbildung fd) |{{< imgproc Suchresultat_bearbeiten Resize "300x" >}}
+| Direkter Link Ressource | Über das Klicken auf den Namen der Ressource in der Liste gelangen Sie zu den Buchungsfunktionen für diese Ressource (Abbildung fd) |{{< imgproc Suchresultat_bearbeiten Resize "300x" >}}
 {{< /imgproc >}}|
-| Detailreservation  | Der Button „Detailreservation“ verfügt über die gleiche Funktion wie der direkte Link auf die Ressource. Mit dem Aktivieren der Checkbox einer Ressource und dem Klick auf diesen Button kann also eine Detailreservation vorgenommen werden.Der Button wird nur angezeigt, wenn genau eine Ressource selektiert wurde. Mehrfachselektion und Buchung ist nur über Schnellreservation möglich.| {{< imgproc Button_Detailbuchung Resize "300x" >}}
+| Detailreservation  | Der Button „Detailreservation“ verfügt über die gleiche Funktion wie der direkte Link auf die Ressource. Mit dem Aktivieren der Checkbox einer Ressource und dem Klick auf diesen Button kann also eine Detailreservation vorgenommen werden. Der Button wird nur angezeigt, wenn genau eine Ressource selektiert wurde. Mehrfachselektion und Buchung ist nur über Schnellreservation möglich.| {{< imgproc Button_Detailbuchung Resize "300x" >}}
 {{< /imgproc >}}
 | Sortierung  | Falls der Titel einer Spalte einen Link aufweist, ist es möglich, mittels Klick auf diesen Link die Suchresultate nach diesem Kriterium zu sortieren.  | |
 | Ressourcen Info  | Über den Info Button gelangen Sie zu den Stammdaten und der Historie der Ressource (Abbildung fe)  | {{< imgproc Button_Ressourceninfo Resize "300x" >}}

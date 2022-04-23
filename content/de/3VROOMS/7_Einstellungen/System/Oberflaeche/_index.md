@@ -10,7 +10,7 @@ description: >
 ---
 ## Ansicht Oberfläche
 Im linken Bereich sehen Sie das Sidepanel mit den Filterfunktionen. 
-Im rechten Feld sehen Sie die Themenliste. Sind keine Themen gespeichert ist die Liste leer. (Abbildung f)
+Im rechten Feld sehen Sie die Themenliste. Sind keine Themen gespeichert, ist die Liste leer. (Abbildung f)
 Sie können Themen aus der Liste löschen, indem Sie die Checkbox neben dem Listenelement aktivieren und auf den Button "Entfernen" klicken. 
 
 {{< imgproc Oberfläche_bearbeiten Resize "1280x" >}}
@@ -37,8 +37,8 @@ Folgende Daten bearbeiten Sie in den Stammdaten:
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| File Pfad    |  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  "Content" erfassen. Ohne Slash (/) starten. Gross-Kleinschreibung irrelevant | 
-| Datei/Verzeichnis-Browser    | Wählen Sie eine Datei mit maximal 5MB aus. File Daten. Über Browse Button wird die zu ersetzende Datei selektiert. Über Upload Button wird die Datei auf den Server geladen. Der Upload ist begrenzt. Begrenzung wird global festgelegt. Der Upload wird visualsiert. Die Upload Datei wird nicht überprüft ob es sich um eine gültige Datei handelt. |
+| File Pfad    |  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  "Content" erfassen. Ohne Slash (/) starten. Groß-Kleinschreibung irrelevant | 
+| Datei/Verzeichnis-Browser    | Wählen Sie eine Datei mit maximal 5MB aus. File Daten. Über Browse Button wird die zu ersetzende Datei selektiert. Über Upload Button wird die Datei auf den Server geladen. Der Upload ist begrenzt. Begrenzung wird global festgelegt. Der Upload wird visualisiert. Die Upload Datei wird nicht überprüft, ob es sich um eine gültige Datei handelt. |
 
 Unterstützte Formate: 
 
@@ -49,7 +49,7 @@ Unterstützte Formate:
 * ZIP (beinhaltet alle Themenfiles)
 
 {{< imgproc Oberfläche_Stammdaten Resize "1280x" >}}
-Abbildung fa: Thenenlisten auf der Oberfläche bearbeiten und durchsuchen
+Abbildung fa: Themenlisten auf der Oberfläche bearbeiten und durchsuchen
 {{< /imgproc >}}
 
 

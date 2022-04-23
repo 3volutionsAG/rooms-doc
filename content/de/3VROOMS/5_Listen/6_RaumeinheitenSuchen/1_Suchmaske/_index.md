@@ -3,7 +3,7 @@ title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 1
 description: >
-  Für die Suche nach einer Raumeinheit stehen Ihnen die Filter Bezeichnung, Standaord und Status zur verfügung.
+  Für die Suche nach einer Raumeinheit stehen Ihnen die Filter Bezeichnung, Standard und Status zur Verfügung.
 ---
 <p style="text-align: justify"> Um eine Ressource zu finden, navigieren Sie im Sidepanel auf das Subpanel "Raumeinheiten". Dadurch öffnet sich zunächst die Einfache Suche. </p>
 

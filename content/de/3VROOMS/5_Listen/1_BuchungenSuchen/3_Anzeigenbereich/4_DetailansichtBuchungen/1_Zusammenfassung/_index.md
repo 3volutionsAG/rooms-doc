@@ -3,7 +3,7 @@ title: "Zusammenfassung"
 linkTitle: "Zusammenfassung"
 weight: 1
 description: >
-  <p style="text-align: justify">  In der Zusammenfassung sehen Sie die wichtigsten Details, u.a. Titel, Datum/Zeit, zuständige Personen, Kosten oder kostenstellen, einer Buchung. </p>
+  <p style="text-align: justify">  In der Zusammenfassung sehen Sie die wichtigsten Details, u.a. Titel, Datum/Zeit, zuständige Personen, Kosten oder Kostenstellen, einer Buchung. </p>
 ---
 ## Anzeigenbereich
 Im Reiter Zusammenfassung sind alle Informationen zur Buchung übersichtlich auf einer Seite dargestellt.
@@ -29,7 +29,7 @@ Eingabemaske zur Buchungsbearbeitung
 Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/Buchen/Buchung-erstellen">Buchung erstellen</a>.
 
 ### Annullieren
-<p style="text-align: justify">  Über die Schaltfläche "Annullieren" stornieren Sie ein Buchung und entfernen diese aus dem Kalender. Es können Stornierungskosten anfallen. Die Buchung bleibt über die Suchkunftionen und in den Reports weiterhin sichtbar.
+<p style="text-align: justify">  Über die Schaltfläche "Annullieren" stornieren Sie eine Buchung und entfernen diese aus dem Kalender. Es können Stornierungskosten anfallen. Die Buchung bleibt über die Suchfunktionen und in den Reports weiterhin sichtbar.
 
 Wenn Sie auf die Schaltfläche "Annullieren" klicken, öffnet sich ein Dialogfenster. In diesem können Sie den Grund für die Stornierung vermerken und eine Stornierungsbestätigung an die Organisatoren, Verantwortlichen und Teilnehmenden versenden. </p>
 
@@ -38,8 +38,8 @@ Dialogfenster zur Schaltfläche "Annullieren" mit der Möglichkeit einen Komment
 {{< /imgproc >}}
 
 ### Löschen
-<p style="text-align: justify">  Über die Schaltfläche "Löschen" entfernen Sie ein Buchung aus dem System. Die Buchung wird dann auch nicht mehr in den Listen und Reports geführt. Es werden keine Stornierungsgebühren berechnet.
-Über das Dialogfenster bestätigen sie die Löschung.</p>
+<p style="text-align: justify">  Über die Schaltfläche "Löschen" entfernen Sie eine Buchung aus dem System. Die Buchung wird dann auch nicht mehr in den Listen und Reports geführt. Es werden keine Stornierungsgebühren berechnet.
+Über das Dialogfenster bestätigen Sie die Löschung.</p>
 
 {{< imgproc List_BG_Anzeige_DS_ZusDel Resize "1280x" >}}
 Dialogfenster zur Schaltfläche "Löschen", die Löschung muss hier bestätigt werden.
@@ -51,23 +51,23 @@ Dialogfenster zur Schaltfläche "Löschen", die Löschung muss hier bestätigt w
 
 ### No Show
 <p style="text-align: justify"> Wird eine Buchung nicht in Anspruch genommen ohne im Vorfeld diese abzusagen, können Sie die laufende Buchung als "No Show" markieren.
-Die Buchung wird dann unwiederruflich annulliert und es können Stornierungskosten anfallen. </p>
+Die Buchung wird dann unwiderruflich annulliert und es können Stornierungskosten anfallen. </p>
 
 {{< imgproc List_BG_Anzeige_DS_ZusNoShow Resize "1280x" >}}
 Dialogfenster zur Schaltfläche "No Show", die Markierung als "No Show" muss hier bestätigt werden.
 {{< /imgproc >}}
 
-### Notfikation versenden
+### Notifikation versenden
 <p style="text-align: justify">  Über die Schaltfläche "Notifikation versenden" können Sie die Buchungsbestätigung erneut versenden. Aktivieren Sie die Checkbox "Erneut senden", so wird die ursprüngliche Buchungsbestätigung versendet.
 Sollten Sie Änderungen an der Buchung vorgenommen haben, ist es empfehlenswert, die untere Checkbox "Mit den neusten Daten versenden?" zu aktivieren. Daraufhin wird eine Reservierungsbestätigung mit den geänderten Details versendet. </p>
 
 {{< imgproc List_BG_Anzeige_DS_ZusNotvers Resize "1280x" >}}
-Dialogfenster zur Schaltfläche "Notifikation versenden". Es gibt die Auswahl die ursprüngliche Bucugsbestätigung zu versenden oder eine mit aktualisierten Details.
+Dialogfenster zur Schaltfläche "Notifikation versenden". Es gibt die Auswahl, die ursprüngliche Buchungsbestätigung zu versenden oder eine mit aktualisierten Details.
 {{< /imgproc >}}
 
 ### Serie löschen
-Handelt es sich um eine Buchungsserie, erscheint die zusätzliche Schaltfläche "Serie löschen". Hierüber können Sie die komplette Serie löschen. Sie werden in einem dialogfeld aufgefordert den Löschvorgang zu bestätigen.
-Wie bei den Einzellöschungen werden die Verantwortlichen und Organisierenden informiert. Sie erhalten eine E-Mail für die Löschung der Serie, nicht einzeln für jede Buchung. Es fallen keine Kosten.
+Handelt es sich um eine Buchungsserie, erscheint die zusätzliche Schaltfläche "Serie löschen". Hierüber können Sie die komplette Serie löschen. Sie werden in einem Dialogfeld aufgefordert, den Löschvorgang zu bestätigen.
+Wie bei den Einzellöschungen werden die Verantwortlichen und Organisierenden informiert. Sie erhalten eine E-Mail für die Löschung der Serie, nicht einzeln für jede Buchung. Es fallen keine Kosten an.
 
 {{< imgproc List_BG_Anzeige_DS_ZusDelSerie Resize "1280x" >}}
 Dialogfenster zur Schaltfläche "Serie löschen". Die Löschung muss hier bestätigt werden.
@@ -86,14 +86,14 @@ Dialogfenster zur Schaltfläche "Kopieren". Der Kopiervorgang muss hierüber bes
 Eingabemaske nach dem Kopiervorgang. Alle Details wurden übernommen.
 {{< /imgproc >}}
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen</a>
+Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen</a>
 
 ### Zurück
 Diese Schaltfläche bringt Sie zurück zur Listenansicht Ihrer letzten Suche.
 
 ### Drucken
-<p style="text-align: justify">  Sie haben die Möglichkeit die Detailansicht der Buchung auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucker-Dialogfenster mit allen persönlichen und firmeninternen Voreinstellungen. </p>
+<p style="text-align: justify">  Sie haben die Möglichkeit, die Detailansicht der Buchung auszudrucken. Über die Schaltfläche "Drucken" öffnet sich das Drucker-Dialogfenster mit allen persönlichen und firmeninternen Voreinstellungen. </p>
 
 {{< imgproc List_BG_Anzeige_DS_ZusPrint Resize "1280x" >}}
-Persönliches oder firmenspzifisches Drucker-Dialogfenster
+Persönliches oder firmenspezifisches Drucker-Dialogfenster
 {{< /imgproc >}}

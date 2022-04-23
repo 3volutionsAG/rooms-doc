@@ -5,7 +5,7 @@ weight: 600
 description: >
    Buchungen, zu denen Bestellungen bei einem Dienstleister noch nicht freigegeben wurden oder die Menge noch nicht spezifiziert wurde.
 ---
-<p style="text-align: justify"> Es besteht die Möglichkeit bestimmte Dienstleistungen zu einer Buchung hinzuzufügen, die von der verantwortlichen Person genehmigt werden müssen. Mit Hilfe den Dienstleisterspezifiscen Kriterien können Sie sich Buchungen anzeigen lassen, deren Dienstleistungen noch nicht genehmigt wurden. </p>
+<p style="text-align: justify"> Es besteht die Möglichkeit, bestimmte Dienstleistungen zu einer Buchung hinzuzufügen, die von der verantwortlichen Person genehmigt werden müssen. Mit Hilfe der Dienstleisterspezifiscen Kriterien können Sie sich Buchungen anzeigen lassen, deren Dienstleistungen noch nicht genehmigt wurden. </p>
 
 {{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_beschriftet Resize "1280x" >}}
 Übersicht Dienstleisterspezifische Kriterien

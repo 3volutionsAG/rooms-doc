@@ -28,7 +28,7 @@ Beispiel für ein Eingabefeld mit Lupe
 
 ### Eingabefeld mit Schnellauswahl
 
-<p style="text-align: justify"> Einige Eingabefelder haben an der rechten Seite ein Plus-Zeichen. Ähnlich dem Eingabefeld mit der Lupe werden Ihnen während des Eintippens bereits Vorschläge aufgelistet. Sie können aber auch direkt auf das Plus klicken um aus einer Liste den gewünschten Punkt auszuwählen. </p>
+<p style="text-align: justify"> Einige Eingabefelder haben an der rechten Seite ein Plus-Zeichen. Ähnlich dem Eingabefeld mit der Lupe werden Ihnen während des Eintippens bereits Vorschläge aufgelistet. Sie können aber auch direkt auf das Plus klicken, um aus einer Liste den gewünschten Punkt auszuwählen. </p>
 
 {{< imgproc Eingabefeld_Schnellauswahl_beschriftet Resize "1280x" >}}
 Beispiel für ein Eingabefeld mit Schnellauswahl

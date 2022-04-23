@@ -3,9 +3,9 @@ title: "Detailansicht"
 linkTitle: "Detailansicht"
 weight: 4
 description: >
-  Die Detailsansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.
+  Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.
 ---
-<p style="text-align: justify"> Die Ressourcen ID in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Ressourcen ID, werden Sie auf diese weitergeleitet. </p>
+<p style="text-align: justify"> Die Ressourcen ID in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Ressourcen ID werden Sie auf diese weitergeleitet. </p>
 
 {{< imgproc List_RES_DS Resize "1280x" >}}
 Detailansicht der Ressource mit übersichtlich dargestellten Informationen
@@ -26,7 +26,7 @@ Reiter "Ressource" stellt übersichtlich alle hinterlegten Details dar
 {{< /imgproc >}}
 
 ### Reiter Historik
-<p style="text-align: justify"> Hier ist die Historie der Erstellung und des Änderungsverlauf der Ressource aufgelistet. </p>
+<p style="text-align: justify"> Hier ist die Historie der Erstellung und des Änderungsverlaufs der Ressource aufgelistet. </p>
 
 {{< imgproc List_RES_DS_Reiter_Hist_b Resize "1280x" >}}
 Reiter "Historik" zeigt Details zur Erstellung und Änderungsvorgängen 

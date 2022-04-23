@@ -22,7 +22,7 @@ Eingabemaske zu Bearbeitung der Ressourcendetails
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Bezeichnung||Von der erstellenden Person vergebener Name der Ressource </br> _ist nicht zwingend eindeutig_|
-|Ressourcenart||Je nach firmenspezifische Definition </br> _z.B. Raum, Parkplatz, Equipment_|
-|Standort||hierachische Darstellung des Standortes|
+|Ressourcenart||Je nach firmenspezifischer Definition </br> _z.B. Raum, Parkplatz, Equipment_|
+|Standort||hierarchische Darstellung des Standortes|
 ||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|</br> <p style="text-align: justify"> Details zu Ressourcen bearbeiten|Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. </p>|
 ---

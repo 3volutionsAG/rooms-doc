@@ -3,9 +3,9 @@ title: "Detailansicht"
 linkTitle: "Detailansicht"
 weight: 4
 description: >
-  Die Detailsansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.
+  Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.
 ---
-<p style="text-align: justify"> Die Bezichnung der Raumeinheit in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Bezeichnung, werden Sie auf diese weitergeleitet. </p>
+<p style="text-align: justify"> Die Bezeichnung der Raumeinheit in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Bezeichnung werden Sie auf diese weitergeleitet. </p>
 
 {{< imgproc List_RE_DS Resize "1280x" >}}
 Detailansicht der Raumeinheit mit übersichtlich dargestellten Informationen
@@ -38,7 +38,7 @@ Reiter "Historik" zeigt den Verlauf geänderter Details der Raumeinheit
 Details zur Erstellung einer Raumeinheit 
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Unter den Drop-Down-Pfeilen der darüber leigenden Zeilen öffnen Sie die Details zu Änderungen an der Raumeinheit. </p>
+<p style="text-align: justify"> Unter den Drop-Down-Pfeilen der darüber liegenden Zeilen öffnen Sie die Details zu Änderungen an der Raumeinheit. </p>
 
 {{< imgproc List_RE_DS_Hist_Aend_b Resize "1280x" >}}
 Details zu einem Änderungsvorgang 
@@ -55,7 +55,7 @@ Schaltflächen zur Bearbeitung der Raumeinheit
 <p style="text-align: justify"> Über diese Schaltfläche gelangen Sie zur Eingabemaske, um die Raumeinheit zu bearbeiten. </p>
 
 {{< imgproc List_RE_DS_bearb Resize "1280x" >}}
-Eingabemaske zu Bearbeitung der Details der Raumeinheit
+Eingabemaske zur Bearbeitung der Details der Raumeinheit
 {{< /imgproc >}}
 
 <p style="text-align: justify"> Weitere Informationen zur Eingabemaske finden Sie im Kapitel <a href="/Einstellungen/Raumeinheiten/#RaumeinheitenErstellen/">Raumeinheiten erstellen</a>. </p>

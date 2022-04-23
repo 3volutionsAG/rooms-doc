@@ -11,7 +11,7 @@ Detaillierte Informationen zum ausgewählten Anlass im Reiter "Anlass"
 {{< /imgproc >}}
 
 ### Hinzugefügte Buchungen
-<p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle, dem Anlass hinzugefügten, Buchungen aufgelistet. </p>
+<p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle dem Anlass hinzugefügten Buchungen aufgelistet. </p>
 
 {{< imgproc List_ANL_DSunten_b Resize "1280x" >}}
 Unterer Bereich der Detailansicht eines Anlasses mit den Verwaltungsmöglichkeiten der zugefügten Buchungen.
@@ -67,7 +67,7 @@ Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern
 <p style="text-align: justify"> Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/listen/2_anlässe-suchen/4_anlass-erstellen/">Anlass erstellen</a>. </p>
 
 ### Anlass für Serien
-<p style="text-align: justify"> Neben der Möglichkeit einen Anlass für eine komplette Serie zu erstellen, gibt es an dieser Stelle auch die Möglichkeit je einen Anlass für die Serienbuchungseinträge zu erstellen. Hierzu muss bereits ein Anlass vorliegen und eine Serienbuchung enthalten. Die Stammdaten des ursprünglichen Anlasses werden in die Folgeanlässe kopiert. Ebenso werden Catering & Service Bestellungen sowie die Teilnehmenden übernommen.
+<p style="text-align: justify"> Neben der Möglichkeit einen Anlass für eine komplette Serie zu erstellen, gibt es an dieser Stelle auch die Möglichkeit je einen Anlass für die Serienbuchungseinträge zu erstellen. Hierzu muss bereits ein Anlass vorliegen und eine Serienbuchung enthalten sein. Die Stammdaten des ursprünglichen Anlasses werden in die Folgeanlässe kopiert. Ebenso werden Catering & Service Bestellungen sowie die Teilnehmenden übernommen.
 Sind mehrere Buchungen mit einem Anlass verbunden, so müssen alle Buchungen zeitlich identische (Wochentag und Uhrzeit) Serienbuchungen sein. Gebuchte Räume dürfen innerhalb einer Serie variieren. </p>
 
 {{< imgproc List_ANL_DS_Serie_xSerie_b Resize "1280x" >}}
@@ -98,7 +98,7 @@ _**Beispiel 1:**_ </br>
 _**Beispiel 2:**_ </br>
 **Anlass**: Teambesprechungen </br>
 **Serienbuchung 1**: Teambesprechung Dokumentation </br>
-14:00-15:00 Uhr ab 20.10 jeden Dienstag im Raum Matterhorn </br>
+14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Matterhorn </br>
 **Serienbuchung 2**: Teambesprechung Buchhaltung </br>
 14:30-15:30 Uhr ab 20.10. jeden Dienstag im Raum Everest
 
@@ -107,7 +107,7 @@ _**Beispiel 2:**_ </br>
 _**Beispiel 3:**_ </br>
 **Anlass**: Teambesprechungen </br>
 **Serienbuchung 1**: Teambesprechung Dokumentation </br>
-14:00-15:00 Uhr ab 20.10 jeden Dienstag im Raum Matterhorn </br>
+14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Matterhorn </br>
 Ausnahme: 27.10. 15:00-16:00 Uhr </br>
 **Serienbuchung 2**: Teambesprechung Buchhaltung </br>
 14:00-15:00 Uhr ab 20.10. jeden Dienstag im Raum Everest
@@ -124,7 +124,7 @@ Drucker Dialogfenster um die Detailsansicht zum Anlass auszudrucken
 ### Anlass stornieren
 <p style="text-align: justify"> Über die Schaltfläche "Anlass stornieren" sagen Sie einen Anlass mit allen zugehörigen Buchungen ab und entfernen diese aus dem Kalender. Der Anlass und die zugehörigen Buchungen bleiben jedoch in den Listen und in den Reports sichtbar.
 Es könnten Stornierungskosten anfallen.
-Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit Notifikation an die organisierenden und verantwortlichen Personen zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. Die Teilnehmenden erhalten Notifikation. </p>
+Im erscheinenden Dialogfenster muss der Stornierungsvorgang bestätigt werden. Zudem haben Sie die Möglichkeit, Notifikation an die organisierenden und verantwortlichen Personen zu versenden, in dem Sie die Checkbox vor dem Bestätigen aktivieren. Die Teilnehmenden erhalten Notifikation. </p>
 
 {{< imgproc List_ANL_DS_Ann_b Resize "1280x" >}}
 Dialogfenster zur Bestätigung des Stornierungsvorgangs

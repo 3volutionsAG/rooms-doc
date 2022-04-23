@@ -5,7 +5,7 @@ weight: 2
 description: >
   Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan. 
 
-  Bemerkung: Um einen Plan zu finden, der über freie Ressourcen verfügt müssen Sie einen Standort ausgewählt haben. 
+  Bemerkung: Um einen Plan zu finden, der über freie Ressourcen verfügt, müssen Sie einen Standort ausgewählt haben. 
 ---
 
 ## Plansuche 
@@ -18,7 +18,7 @@ Im linken Bereich der Planansicht sehen Sie den Planfilterbereich.
 Hier stellen Sie Ihre Suchkriterien für eine Plansuche ein. 
 
 {{< imgproc Plan_suche_Sidepanel Resize "1280x" >}}
-Abbildung ps: Planfilter ansicht im Sidepanel
+Abbildung ps: Planfilter Ansicht im Sidepanel
 {{< /imgproc >}}
 
 
@@ -34,9 +34,9 @@ Bei den ressourcenspezifischen Kriterien handelt es sich um Kriterien, welche vo
 | Feld          | Funktion      | 
 | ------------- |-------------  |
 | Meine favorisierten Ressourcen| Wählen Sie das Kästchen "meine favorisierten Ressourcen" aus, damit Ihnen Ihre zuvor gespeicherten Favoriten angezeigt werden | 
-| Resspourcen ID |   | 
+| Ressourcen ID |   | 
 
-Mit Hilfe von Klassifikationen (Attribute zur spezifischen Kennzeichnung von Reservationen wie z.B. internes Meeting, Beratungsgespräch etc.) kann eine Eingrenzung der Suche nach Ressourcen, denen die gewünschten Klassifikationen zu Grunde liegen erfolgen. Die Auswahl wird mit Klick auf das „Plus Symbol“ vorgenommen. Die Inhalte sind kundenspezifisch 
+Mit Hilfe von Klassifikationen (Attribute zur spezifischen Kennzeichnung von Reservationen wie z.B. internes Meeting, Beratungsgespräch etc.) kann eine Eingrenzung der Suche nach Ressourcen, denen die gewünschten Klassifikationen zu Grunde liegen, erfolgen. Die Auswahl wird mit Klick auf das „Plus Symbol“ vorgenommen. Die Inhalte sind kundenspezifisch 
 
 #### Gliederung
 
@@ -47,7 +47,7 @@ Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der
 | Feld          | Funktion      | 
 | ------------- |-------------  |
 | Raum:Raumtyp | Mit Auswahl des "Plus" Symbols werden Ihnen die zur Verfügung stehenden Räume angezeigt. Wählen Sie den Raum aus, den Sie buchen wollen.| 
-| Equipment:Equipmenttyp | Mit Auswahl des "Plus" Symbol werden Ihnen das zur Verfügung stehende Equipment angezeigt (z.B. Beamer, Flipchart etc.).| 
+| Equipment:Equipmenttyp | Mit Auswahl des "Plus" Symbol, werden Ihnen das zur Verfügung stehende Equipment angezeigt (z.B. Beamer, Flipchart etc.).| 
 
 
 

@@ -19,7 +19,7 @@ Abbildung s: Status der Basisdaten einsehen
 ## Ansicht der Status Information 
 Im View Modus sehen Sie einen Baum mit den zur Verfügung stehenden Status Meldungen. 
 
-Klicken Sie auf einen Status sehen Sie neben der Bezeichnung mehrere Symbole. (Abbildung sa)
+Klicken Sie auf einen Status, sehen Sie neben der Bezeichnung mehrere Symbole. (Abbildung sa)
 
 {{< imgproc Status_bearbeiten Resize "1280x" >}}
 Abbildung sa: Status Ansicht der Informationen
@@ -60,7 +60,7 @@ Abbildung sb: Die Informationen eines Status einsehen und ggf. bearbeiten
 {{< /imgproc >}}
 
 ### Status bearbeiten
-Klicken Sie auf das Stift Icon, können Sie die bestehenden Informationen zum Statud bearbeiten. Es öffnet sich dazu ein neues Feld. 
+Klicken Sie auf das Stift Icon, können Sie die bestehenden Informationen zum Status bearbeiten. Es öffnet sich dazu ein neues Feld. 
 
 {{< imgproc Status_bearbeiten2 Resize "1280x" >}}
 Abbildung sc: EInen bestehenden Status bearbeiten
@@ -91,7 +91,7 @@ Beispiele von bekannte individuelle Status, welche an einem System Status angeh�
 * Kundenberater im Raum
 * Reinigung
 
-Den hinzugefügten Status sehen Sie in der Übersicht. Über das kleine Plus Zeichen am System Status, können Sie diesen aufklappen.
+Den hinzugefügten Status sehen Sie in der Übersicht. Über das kleine Plus Zeichen am System Status können Sie diesen aufklappen.
 
 {{< imgproc Status_gespeichert_in_tree Resize "1280x" >}}
 Abbildung se: Ansicht des hinzugefügten Status

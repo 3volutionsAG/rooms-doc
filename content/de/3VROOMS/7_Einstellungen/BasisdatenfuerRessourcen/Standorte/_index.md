@@ -7,7 +7,7 @@ description: >
 ---
 
 ## Ansicht Standorte
-Im rechten Feld sehen Sie eine Übersicht, über die angelegten Standorte. Mit dem "+" im Pfad, öffnen Sie weitere Standorte. (Abbildung sa)
+Im rechten Feld sehen Sie eine Übersicht über die angelegten Standorte. Mit dem "+" im Pfad, öffnen Sie weitere Standorte. (Abbildung sa)
 
 {{< imgproc Standorte_erstellen Resize "1280x" >}}
 Abbildung sa: Standort erstellen 
@@ -125,7 +125,7 @@ Eine neue Berechtigung für den Standort fügen Sie über den untenstehenden But
 Abbildung ty: Standort Berechtigung hinzufügen
 {{< /imgproc >}}
 
-Haben Sie Berechtigungen hinzugefügt aktualisiert sich die Liste automatisch. 
+Haben Sie Berechtigungen hinzugefügt, aktualisiert sich die Liste automatisch. 
 
 
 #### Sperrzeiten
@@ -157,7 +157,7 @@ Zu einer Ressource können Sie Feiertage hinzufügen.
 Ein Feiertag wirkt sich so aus, dass die Ressourcen zwar buchbar sind, diese aber durch zu definierende Symbole, Farben und Meldungen z.B. im Kalender, Plan, Suchresultat, etc. erkennbar sind.
 Im Reservationsprozess wird ein Warnhinweis ausgegeben.
 
-Sie sehen die bereits hinugefügten Feiertage in Listenform. Diesen können Sie über die Checkbox wieder entfernen.
+Sie sehen die bereits hinzugefügten Feiertage in Listenform. Diesen können Sie über die Checkbox wieder entfernen.
 
 {{< imgproc Standort_Feiertage Resize "1280x" >}}
 Abbildung tv: Standort Feiertage bearbeiten 
@@ -176,7 +176,7 @@ Abbildung ft: Ansicht der eingetragenen Feiertage in der Liste
 
 
 #### Notifikationen
-Sie erfassen und verwalten eine Vorlage für Notifikationsvorlagen für die verschiedenen Anwendungszwecken.
+Sie erfassen und verwalten eine Vorlage für Notifikationsvorlage für die verschiedenen Anwendungszwecken.
 Legen Sie fest, an wen die Notifikationen versendet werden sollen. 
 
 Sie sehen im Startmodus, welche Notifikationstypen bereits eingetragen sind. Sollten Sie keine ausgewählt haben, ist die Liste leer. Sie fügen neue Notifikationen über den unten stehenden Butto "Hinzufügen" hinzu. 
@@ -189,7 +189,7 @@ Eine genaue Beschreibung der Notifikationen und möglichen Eingabefelder finden 
 
 #### Buchungsanfrage
 Sie legen hier fest, welche Gruppen eine Buchungsanfrage erhalten sollen, die Sie für den Standort auswählen. Das „Verschicken“ der Anfrage wird im Actionpanel bestätigt.
-Eine E-Mail wird an die Benutzer der  Benutzergruppe, welche dem Anlasstyp hinterlegt worden ist verschickt. Die Notifikation hierfür legen Sie bei Notifikationen fest.
+Eine E-Mail wird an die Benutzer der  Benutzergruppe, welche dem Anlasstyp hinterlegt worden ist, verschickt. Die Notifikation hierfür legen Sie bei Notifikationen fest.
 
 {{< imgproc Standort_Buchungsanfrage Resize "1280x" >}}
 Abbildung tu: Standort Buchungsanfragen bearbeiten 

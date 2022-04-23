@@ -3,9 +3,9 @@ title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
 description: >
-  Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten
+  Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten.
 ---
-<p style="text-align: justify"> Um geordertes Catering oder gebuchter Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen "Catering & Service". Dadurch öffnet sich die Suchmaske. </p>
+<p style="text-align: justify"> Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen "Catering & Service". Dadurch öffnet sich die Suchmaske. </p>
 
 {{< imgproc List_CS_Such Resize "1280x" >}}
 Übersicht der Suche nach Catering & Service mit Ergebnisliste 
@@ -24,7 +24,7 @@ Folgende Tabelle erläutert die Eingabefelder:
  |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen|
  ---
 <!-- Begriffe erklären -->
-Erläuterung der einzelnen Buchungssatus:
+Erläuterung der einzelnen Buchungsstatus:
 
  |<div style="width:200px">Status</div>|Bedeutung|
  |---|---|
@@ -33,5 +33,5 @@ Erläuterung der einzelnen Buchungssatus:
  |Besetzt (definitiv)|Die Buchung wurde bestätigt und ist verbindlich|
  |Besetzt (provisorisch)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow noch bestätigt werden.|
  |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert werden.|
- |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wir die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
+ |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
  ---

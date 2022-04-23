@@ -15,13 +15,13 @@ Sie können als Benutzer:in mehrere Logins beinhalten (z.B. verschiedene Windows
 Führen Sie Änderungen in diesem Bereich gewissenhaft durch. Unachtsamkeiten können dazu führen, dass sich eine Benutzer*in nicht mehr anmelden kann.
 
 ## Logons bearbeiten und neu erstellen und löschen
-Mit Klick auf das Stift Icon „Bearbeiten“ gelangen Sie zur Einstellung der Logondaten (siehe Abbildung la). Besteht noch kein Logon kann dieses via „Erstellen“ hinterlegt werden (Abbildung m). Es besteht ebenfalls die Möglichkeit ein bereits vorhandenes zu löschen. Dies erfolgt über Klick auf den untenstehenden Button "Entfernen".
+Mit Klick auf das Stift Icon „Bearbeiten“ gelangen Sie zur Einstellung der Logondaten (siehe Abbildung la). Besteht noch kein Logon, kann dieses via „Erstellen“ hinterlegt werden (Abbildung m). Es besteht ebenfalls die Möglichkeit, ein bereits vorhandenes zu löschen. Dies erfolgt über Klick auf den untenstehenden Button "Entfernen".
 
 {{< imgproc Logons_allgemein_speichern Resize "1280x" >}}
 Abbildung la: Logons bearbeiten 
 {{< /imgproc >}}
 
-Beim neu erstellen und bearbeiten eines Logons werden Sie nach folgenden Daten gefragt:
+Beim Neu erstellen und bearbeiten eines Logons werden Sie nach folgenden Daten gefragt:
 * Logontyp 
 * Logonname: dient der eindeutigen Benutzerkennung nur bei Forms Credential, Windows Credential & Custom Servervariable verfügbar 
 * Passwort: erscheint nur bei Logontyp „Forms Credentials“ – dann ist dieser obligatorisch
@@ -61,7 +61,7 @@ Abbildung ls: Logons Custom Servervariable erstellen
 Abbildung m: Logon OAuth 2.0 erstellen 
 {{< /imgproc >}}
 #### PIN 
-Der Logontyp "Pin" wird Ihnen nur angezeigt wenn in der globalen Konfiguration von ROOMS der Wert "Darf PIN Authentisierung nutzen" aktiviert ist. 
+Der Logontyp "Pin" wird Ihnen nur angezeigt, wenn in der globalen Konfiguration von ROOMS der Wert "Darf PIN Authentisierung nutzen" aktiviert ist. 
 
 Sie erstellen einen Pin, indem Sie auf den Button "Code erstellen" klicken. Der PIN enthält den generierten im System eindeutigen 4-6 stelligen PIN.
 
@@ -84,7 +84,7 @@ Abbildung m: Logons Windows Nt Credentials erstellen
 
 ### Logon Ansicht in der Liste 
 Haben Sie ein Logon erfolgreich hinzugefügt oder bearbeitet, aktualisiert Rooms Ihre Listenansicht im Menüpunkt "Logons". 
-Haben Sie mehrere Logons hinzugefügt, werden diese Ihnen in der Liste angezeigt. Sobald Sie ein Element aus der Liste entfernen oder hinzufügen aktualisiert sich die Liste automatisch und Sie gelangen wieder in die Übersicht der Logons.
+Haben Sie mehrere Logons hinzugefügt, werden diese Ihnen in der Liste angezeigt. Sobald Sie ein Element aus der Liste entfernen oder hinzufügen, aktualisiert sich die Liste automatisch und Sie gelangen wieder in die Übersicht der Logons.
 
 {{< imgproc Logons_Listenansicht Resize "1280x" >}}
 Abbildung lb: Listenansicht mehrerer Logons 

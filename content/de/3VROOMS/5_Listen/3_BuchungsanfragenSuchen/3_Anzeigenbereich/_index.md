@@ -18,13 +18,13 @@ Standardmäßig sind folgende Spalten sichtbar:
 |---|---|---|
 |Titel||Titel der Buchungsanfrage|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Buchungsanfrage bearbeiten </br> _steht immer automatisch in der zweiten Spalte_|
-|Anlasstyp||Anlasstzpen sind kundenspezifisch definiert </br> _z.B. Kundenmeeting oder Konferenz_|
+|Anlasstyp||Anlasstypen sind kundenspezifisch definiert </br> _z.B. Kundenmeeting oder Konferenz_|
 |Status||Gibt den Bearbeitungsstand an|
 |Von||Startdatum|
 |Bis||Enddatum|
 |Organisator:in||Person, welche die Buchung organisiert|
 |Ersteller:in||Person, welche die Buchungsanfrage erstellte|
-|Anlass vorhanden?||Gibt an, ob die Bcuhungsanfrage zu einem bestehenden Anlass gehört|
+|Anlass vorhanden?||Gibt an, ob die Buchungsanfrage zu einem bestehenden Anlass gehört|
 ---
 
 ## Spaltenansicht Erweitert

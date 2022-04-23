@@ -3,7 +3,7 @@ title: "Buchungsspezifische Kriterien"
 linkTitle: "Buchungsspezifische Kriterien"
 weight: 100
 description: >
-   Buchungsspezifische Kriterien, sind Kriterien, die sich direkt auf die Buchung beziehen.
+   Buchungsspezifische Kriterien sind Kriterien, die sich direkt auf die Buchung beziehen.
 ---
 Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
 
@@ -15,9 +15,9 @@ Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
  |---|---|---|
  |</br>Nummer|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Nr Resize "200x" >}}{{< /imgproc >}}|</br>Hier können Sie die individuelle Buchungsnummer eintragen.|
  |</br>Titel|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Titel Resize "200x" >}}{{< /imgproc >}}|</br>Hier können Sie den Titel der Buchung eintragen|
- |</br>Kommentar|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Kom Resize "200x" >}}{{< /imgproc >}}|</br>Suchen Sie anhand einer eingetragene Bemerkung.*|
+ |</br>Kommentar|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Kom Resize "200x" >}}{{< /imgproc >}}|</br>Suchen Sie anhand einer eingetragene Bemerkung.|
  |</br>Bemerkungen intern|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_BemIntern Resize "200x" >}}{{< /imgproc >}}|</br>Suchen Sie anhand einer eingefügten internen Bemerkung. <br/> *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
- |</br>Status|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Status Resize "200x" >}}{{< /imgproc >}}|</br>Den Status könne Sie über die Schnellauswahl wäheln.|
+ |</br>Status|{{< imgproc Listen_Buchungen_ErweiterteSuche_BGspezKrit_Status Resize "200x" >}}{{< /imgproc >}}|</br>Den Status können Sie über die Schnellauswahl wählen.|
  ---
 
 Es stehen folgende Status zur Auswahl:

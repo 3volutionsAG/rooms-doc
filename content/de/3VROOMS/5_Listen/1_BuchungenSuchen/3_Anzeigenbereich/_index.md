@@ -8,7 +8,7 @@ description: >
 <p style="text-align: justify"> Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden oder mit der Buchung in Zusammenhang stehen. </p>
 
 {{< imgproc List_BG_Anzeige_Buttons Resize "1280x" >}}
-Position der Listensymbole und Übersicht der zur Verfügungstehenden Schaltflächen 
+Position der Listensymbole und Übersicht der zur Verfügung stehenden Schaltflächen 
 {{< /imgproc >}}
 
 ## Anpassung der Darstellung

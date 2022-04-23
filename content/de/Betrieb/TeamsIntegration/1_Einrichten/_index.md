@@ -12,7 +12,7 @@ description: >
 
 ### Vergabe von Rechte
 
-Folgendes Recht muss hinzugefügt werden um einem Benutzer zu erlauben Teams Meetings zu erstellen:
+Folgendes Recht muss hinzugefügt werden, um einem Benutzer zu erlauben Teams Meetings zu erstellen:
 
 Globales Recht: *Darf Teams meeting buchen*
 
@@ -20,13 +20,13 @@ Globales Recht: *Darf Teams meeting buchen*
 
 #### App-Registrierung einrichten
 
-Eine neue App muss im Azure Active-Directory registiert werden, oder es kann die bestehende Exchange App verwendet werden.
+Eine neue App muss im Azure Active-Directory registiert werden oder es kann die bestehende Exchange App verwendet werden.
 
 Folgende API-Berechtigung muss gesetzt werden:
 
 *OnlineMeetings.ReadWrite.All*  --> Anwendung
 
-Um die Users zu mappen gibt es zwei Optionen:
+Um die Users zu mappen, gibt es zwei Optionen:
 
 - Zusätzlich noch folgende API-Berechtigung hinzufügen:<br>*User.Read.All* --> Anwendung<br>Die User werden dann per Mail gefunden.
 
@@ -36,7 +36,7 @@ Oder
 
 #### Application Access Policy
 
-Für Online-Meetings muss zwingend eine Application Access Policy definiert werden und der im vorderen Schritt erstellten App zugewiesen werden. Einfachhalber sollte diese Global gesetzt werden
+Für Online-Meetings muss zwingend eine Application Access Policy definiert werden und der im vorderen Schritt erstellten App zugewiesen werden. Der Einfachheit halber sollte diese Global gesetzt werden
 
 https://docs.microsoft.com/en-us/graph/cloud-communication-online-meeting-application-access-policy
 

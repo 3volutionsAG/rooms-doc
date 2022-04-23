@@ -5,7 +5,7 @@ weight: 20
 description: >
   Mit der Erweiterten Suche grenzen Sie die Suche über spezifische Filter weiter ein.
 ---
-Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, wie einen Titel können Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung:
+Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, wie einen Titel können, Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung:
 
 - Anfragepezifische Kriterien  
   Z.B. Titel oder Anlasstyp
@@ -28,7 +28,7 @@ Folgende Tabelle gibt Ihnen einen Überblick der Filterkriterien und erläutert 
  |Titel||Titel der Buchungsanfrage|
  |</br>Anlasstyp|{{< imgproc List_BA_AnfSpezKrit_Typ Resize "200x" >}}{{< /imgproc >}}|</br>Kategorie des Anlasses </br> _z.B. Kundenmeeting, Konfernez,..._|
  |Status|{{< imgproc List_BA_AnfSpezKrit_Stat Resize "200x" >}}{{< /imgproc >}}|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus|
- |</br>Mit Anlass|{{< imgproc List_BA_AnfSpezKrit_Anl Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** Die Anfrage bezeiht sich auf einen Anlass </br> **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
+ |</br>Mit Anlass|{{< imgproc List_BA_AnfSpezKrit_Anl Resize "200x" >}}{{< /imgproc >}}|</br> **Ja:** Die Anfrage bezieht sich auf einen Anlass </br> **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
 ---
 
 ## Personenspezifische Kriterien
@@ -42,7 +42,7 @@ Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellen
 |---|---|---|
 |Organisator:in||Person, welche den Anlass organsiert|
 |Ersteller:in||Person, welche den Anlass erstellt hat|
-|Verantwortliche:r||Person, welche verantwortliche für den Anlass ist|
+|Verantwortliche:r||Person, welche verantwortlich für den Anlass ist|
 ---
 
 

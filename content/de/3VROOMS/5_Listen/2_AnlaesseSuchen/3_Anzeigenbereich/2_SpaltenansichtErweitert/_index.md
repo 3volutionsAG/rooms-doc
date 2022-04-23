@@ -7,16 +7,16 @@ description: >
 ---
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Wochentag Von||Wochentag mit Start-Datum und -Uhrzeit|
-|Wochentag Bis||Wochentag mit End-Datum und -Uhrzeit|
+|Wochentag on||Wochentag mit Start-Datum und -Uhrzeit|
+|Wochentag bis||Wochentag mit End-Datum und -Uhrzeit|
 |Startdatum||nur Startdatum|
 |Enddatum||nur Enddatum|
 |Zeit von||nur Uhrzeit des Starts|
 |Zeit bis||nur Uhrzeit des Endes|
 |Status||angefragt / gebucht|
-|Anlass Standort hierarchisch||Gibt es mehrere Standort z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ |
+|Anlass Standort hierarchisch||Gibt es mehrere Standorte z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt in welchem Land und in welcher Stadt sich der Standort befindet </br> _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ |
 |Hauptraum||Benennt den Raum, in dem der Anlass hauptsächlich stattfindet|
-|Catering & Services||Angabe des gebuchten Caterings oder Services sowie der entsprechnde Dienstleister|
+|Catering & Services||Angabe des gebuchten Caterings oder Services sowie der entsprechende Dienstleister|
 |Teilnehmer||Listet alle eingetragenen teilnehmenden Personen auf|
 |Kostenträger Nummer Anlass||Beim Erstellen eines Anlasses wird als Kostenstelle automatisch die Kostenstelle der organisierenden Person eingetragen, sofern diese hinterlegt wurde|
 |Kostenträger Beschreibung Anlass||Beschreibung zum Kostenträger, dem der Anlass zugeordnet ist|
@@ -25,12 +25,12 @@ description: >
 |Kostenstellen Nummer </br> Verantwortliche:r||Nummer der Kostenstelle der verantwortlichen Person|
 |Kostenträger Bezeichnung </br> Organisator:in||eindeutige Bezeichnung des Kostenträgers, dem die organisierende Person zugeordnet ist|
 |Kostenträger Bezeichnung </br> Verantwortliche:r||eindeutige Bezeichnung des Kostenträgers dem die verantwortliche Person zugeordnet ist|
-|Logons Organisator:in||Log-In Name, welcher der organisierend Person zum Anmelden in ROOMS zugeteilt wurde|
+|Logons Organisator:in||Log-In Name, welcher der organisierenden Person zum Anmelden in ROOMS zugeteilt wurde|
 |Logons Verantwortliche:r||Log-In Name, welcher der verantwortlichen Person zum Anmelden in ROOMS zugeteilt wurde|
 |Firma Nummer </br> Organisator:in||Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
 |Firma Nummer </br> Verantwortliche:r||Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
 |Firma Bezeichnung </br> Organisator:in||Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet|
 |Firma Bezeichnung </br> Verantwortliche:r||Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet|
-|Kosten||Kosten, die bei dem Anlass durch Catering&Service entstehen </br> _Z.B. Bestuhlungsservice oder Stehimbiss_|
+|Kosten||Kosten, die bei dem Anlass durch Catering&Service entstehen </br> _z.B. Bestuhlungsservice oder Stehimbiss_|
 |Anzahl Personen||Anzahl der teilnehmenden bzw. angemeldeten Personen|
 ---

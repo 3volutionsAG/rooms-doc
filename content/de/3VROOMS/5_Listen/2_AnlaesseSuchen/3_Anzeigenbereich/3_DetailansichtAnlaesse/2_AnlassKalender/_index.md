@@ -6,7 +6,7 @@ description: >
   <p style="text-align:justify"> Im Reiter "Anlass Kalender" wird Ihnen die Kalenderansicht zu diesem Anlass angezeigt. Für jede gebuchte Ressource erscheint eine Kalenderzeile, in welcher die Buchungszeiträume eingetragen sind. </p>
 ---
 ## Kalenderansicht
-<p style="text-align: justify"> Im Reiter "Anlass" sind alle, dem Anlass zu georndeten Buchungen im Abschnitt "Hinzugefügte Buchungen aufgeführt. </p>
+<p style="text-align: justify"> Im Reiter "Anlass" sind alle dem Anlass zu zugeordneten Buchungen im Abschnitt "Hinzugefügte Buchungen aufgeführt. </p>
 
 {{< imgproc List_ANL_zugefBGen_b Resize "1280x" >}}
 Dem Anlass zugeordnete Buchungen in der Detailansicht des Anlasses
@@ -19,7 +19,7 @@ Kalenderansicht des Anlasses mit allen dem Anlass zugeordneten Buchungen
 {{< /imgproc >}}
 
 ## Kurzinformation zur Buchung
-<p style="text-align: justify"> Durch einen Mauskontakt mit dem Buchungstitel, öffnet sich ein Tooltipp und zeigt eine Kurzinformation der Buchung an. </p>
+<p style="text-align: justify"> Durch einen Mauskontakt mit dem Buchungstitel öffnet sich ein Tooltipp und zeigt eine Kurzinformation der Buchung an. </p>
 
 {{< imgproc List_ANL_KalAn_TTBG Resize "1280x" >}}
 Kurzinformation zur Buchung durch Mauskontakt mit dem Buchungstitel
@@ -49,4 +49,4 @@ Eingabemaske Deatailbuchung
 <p style="text-align: justify"> Detaillierte Informationen zur <a href="/buchen/buchung-erstellen/schnellbuchung/">Schnellbuchung</a> und <a href="/buchen/buchung-erstellen/detailbuchung/">Detailbuchung</a> einer Ressource finden Sie über den Link in den entsprechenden Kapiteln. </p>
 
 ## Schaltflächen
-<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs erscheinen die selben Schaltflächen, wie im <a href="/listen/2_anlässe-suchen/3_anzeigenbereich/3_detailansicht-anlässe/1_anlass/#schaltflächen">Reiter "Anlass"</a>, die auch dort beschrieben sind. </p>
+<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs erscheinen die selben Schaltflächen wie im <a href="/listen/2_anlässe-suchen/3_anzeigenbereich/3_detailansicht-anlässe/1_anlass/#schaltflächen">Reiter "Anlass"</a>, die auch dort beschrieben sind. </p>

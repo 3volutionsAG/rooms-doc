@@ -8,7 +8,7 @@ description: >
 ## Ansicht: Feiertage
 Im linken Sidepanel finden Sie die Filterkriterien, mit denen Sie nach einem Feiertag suchen können. Hierbei können Sie nach der Bezeichnung eines Feiertags suchen. 
 
-Im rechten Feld sehen Sie die Feiertagsliste. Mittel Scroll Down finden Sie in alphabetischer Reihenfolge alle eingespeicherten Feiertage. (Abbildung f)
+Im rechten Feld sehen Sie die Feiertagsliste. Mittels Scroll Down finden Sie in alphabetischer Reihenfolge alle eingespeicherten Feiertage. (Abbildung f)
 
 Aktivieren Sie die Checkbox neben einem Listenelement, wählen Sie dieses aus und können es löschen.
 
@@ -26,7 +26,7 @@ Abbildung fa: Stammdaten und Historie der Feiertage ansehen
 {{< /imgproc >}}
 
 ## Feiertage bearbeiten
-Zum Bearbeiten schon bestehenden Feiertags klicken Sie auf das Stift Icon neben dem jeweiligen Feiertag in der Liste (Abbildung f).
+Zum Bearbeiten eines schon bestehenden Feiertags klicken Sie auf das Stift Icon neben dem jeweiligen Feiertag in der Liste (Abbildung f).
 
 Es öffnet sich ein neues Fenster. In diesem bearbeiten Sie die Bezeichnung des Feiertags (Abbildung fi).
 
@@ -36,7 +36,7 @@ Abbildung fi: Bezeichnung des Feiertags festlegen oder ändern
 
 Im nächsten Reiter "Feiertag" legen Sie den Beginn und das Ende des Feiertags fest. Sie sehen eine Liste mit schon eingetragenen Daten für die nächsten Jahre (Abbildung fx). Möchten Sie diese Daten löschen, aktivieren Sie die Checkbox neben dem Datum und klicken Sie auf den untenstehenden Button "Entfernen". 
 
-Wollen Sie ein weiteres Datum hinzufügen, klicken Sie auf den Button "Hinzufügen". Es öffnet sich ein neues Feld in welchem Sie die Daten auswählen (Abbildung fd).
+Wollen Sie ein weiteres Datum hinzufügen, klicken Sie auf den Button "Hinzufügen". Es öffnet sich ein neues Feld, in welchem Sie die Daten auswählen (Abbildung fd).
 
 {{< imgproc Feiertage_Beginn_Ende Resize "1280x" >}}
 Abbildung fx: Den Beginn und das Ende des Feiertags festlegen
@@ -75,18 +75,16 @@ Abbildung fg: Der neue Feiertag in der Feiertagsliste
 {{< /imgproc >}}
 
 ## Feiertage Importieren
-Sie können Daten zu Feiertagen direkt aus Ihrem System importieren. Klicken SIe dazu aim View Modus auf den untenstehenden Button "Importieren". 
+Sie können Daten zu Feiertagen direkt aus Ihrem System importieren. Klicken Sie dazu aim View Modus auf den untenstehenden Button "Importieren". 
 
-Das entsprechende File mit den Feiertagen muss mittels Browser-Control ausgewählt werden und die Datei muss über eine gültige Formatierung aufweisen (Siehe Datei Format).
+Das entsprechende File mit den Feiertagen muss mittels Browser-Control ausgewählt werden und die Datei muss eine gültige Formatierung aufweisen (Siehe Datei Format).
 
 {{< imgproc Feiertage_Importieren Resize "1280x" >}}
 Abbildung fe: Feiertage aus einer Datei importieren
 {{< /imgproc >}}
 
 ### Sprache der importierten Datei
-* Die Dropdown-Sprache beinhaltet die entsprechenden Sprachen, wovon die Benutzersprache vordefiniert ist
-Upload
-
+* Die Dropdown-Sprache beinhaltet die entsprechenden Sprachen, wovon die Benutzersprache vordefiniert ist.
 * Nach Klick auf Upload werden die Feiertage als Liste zur Vorschau angezeigt (siehe Abbildung). Gespeichert werden diese erst, wenn der „Speichern“ geklickt wird
 
 ### Datei Format der importierten Datei
@@ -94,9 +92,9 @@ Da das zu importierende File jeweils nur eine Sprache beinhaltet, wird beim erst
 
 Sie können nun nach und nach die Files in den anderen Sprachen importieren. Sollte beim erneuten Import z.B. mit einem Englischen-File ein weiterer Feiertag hinzugekommen sein, wird dieser für sämtliche ROOMS PRO-Sprache wieder in Englisch dargestellt.
 
-Unterstützt werden die Dateien TXT und CSV werden (mittels Delimiter Untertrennung).
+Unterstützt werden die Dateien TXT und CSV (mittels Delimiter Untertrennung).
 
-Es reichen die Angaben Zeit, und Bezeichnung - eine Überschriftszeile darf nicht vorhanden sein (siehe Abbildung)
+Es reichen die Angaben Zeit, und Bezeichnung - eine Überschriftszeile darf nicht vorhanden sein (siehe Abbildung). 
 Die Delimiter Komma (,) und (Semikolon) ( ; ) werden unterstützt.
 
 Das Datum soll mindestens in den Formaten „12.04.2008“, „2008/04/12“ und „2008-04-12“ unterstützt werden.

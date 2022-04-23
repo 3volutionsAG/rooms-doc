@@ -11,7 +11,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 |---|---|---|
 |Bezeichnung|Name der Raumeinheit|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br>Details zu den Raumeinheiten bearbeiten|
-|</br> In Plan anzeigen|{{< imgproc Weltkugel Resize "40x" >}}{{< /imgproc >}}|</br> Durch klicken auf das Symbol werden Sie zum Lageplan weitergeleitet, sofern eine entsprechende Verknüpfung hinterlegt ist.|
+|</br> In Plan anzeigen|{{< imgproc Weltkugel Resize "40x" >}}{{< /imgproc >}}|</br> Durch Klicken auf das Symbol werden Sie zum Lageplan weitergeleitet, sofern eine entsprechende Verknüpfung hinterlegt ist.|
 |Raumeinheit Typ||Kategorie der Raumeinheit|
 |Anzahl Personen||<p style="text-align: justify"> Anzahl der Personen, die der Raumeinheit zugewiesen werden können </p>|
 |Fläche||Größe der definierten Fläche|

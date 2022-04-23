@@ -12,7 +12,7 @@ Schaltflächen zur Entfernung und Erstellung von Raumeinheiten
 {{< /imgproc >}}
 
 ## Entfernen
-<p style="text-align: justify"> Markieren Sie eine oder mehrer Checkboxen am Zeilenanfang und klicken Sie auf die Schaltfläche "Entfernen" um die Raumeinheit zu löschen. </p>
+<p style="text-align: justify"> Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang und klicken Sie auf die Schaltfläche "Entfernen", um die Raumeinheit zu löschen. </p>
 
 {{< imgproc List_RE_del_b Resize "1280x" >}}
 Entfernen einer Raumeinheit 
@@ -25,7 +25,7 @@ Dialogfenster zur Bestätigung des Löschvorgangs
 {{< /imgproc >}}
 
 ## Erstellen
-<p style="text-align: justify"> Klicken Sie auf die Schaltfläche "Erstellen" um eine neue Raumeinheit anzulegen. </p>
+<p style="text-align: justify"> Klicken Sie auf die Schaltfläche "Erstellen", um eine neue Raumeinheit anzulegen. </p>
 
 <p style="text-align: justify"> Sie werden auf die Eingabemaske zur Erstellung einer Raumeinheit weitergeleitet. </p>
 

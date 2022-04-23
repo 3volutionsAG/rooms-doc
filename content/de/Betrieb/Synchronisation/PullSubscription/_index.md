@@ -21,7 +21,7 @@ Weiterhin vorhanden sein muss:
 	<AddInstance Key="backSyncService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.BackSyncService.BackSyncServiceSession,Garaio.Products.Rooms.Core"/>
 	<AddInstance Key="collaborationService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.CollaborationService.CollaborationServiceSession,Garaio.Products.Rooms.Core"/>
 ```
-Um die Tests erfolgreicht durchzuführen muss noch folgender Dienst aktiviert werden:
+Um die Tests erfolgreich durchzuführen, muss noch folgender Dienst aktiviert werden:
 
 ```
 	<AddInstance Key="syncTestService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.SyncTestService.SyncTestServiceSession,Garaio.Products.Rooms.Core"/>
@@ -29,11 +29,11 @@ Um die Tests erfolgreicht durchzuführen muss noch folgender Dienst aktiviert we
 
 ## Pull Subscription für eine Person einrichten
 
-Um die Subscription für eine Person zu aktivieren muss in den Einstellungen der Person der SyncMode auf Exchange2016Pull (basic Auth) oder O365Pull (OAuth 2.0) gesetzt werden.
+Um die Subscription für eine Person zu aktivieren, muss in den Einstellungen der Person der SyncMode auf Exchange2016Pull (basic Auth) oder O365Pull (OAuth 2.0) gesetzt werden.
 
 {{< imgproc pull_subscription_aktivieren Resize "1024x" >}}{{< /imgproc >}}
 
-Folgende Scripts können helfen Personen auf Pullsubscription zu migrieren:
+Folgende Scripts können helfen, Personen auf Pullsubscription zu migrieren:
 
 ```
 			UPDATE Person
@@ -149,7 +149,7 @@ Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 
 ## Pull Subscriptions skalieren
 
-Mit Rooms Release 4.7.2112 ist eine skalierung des PullSubscription Services möglich.
+Mit Rooms Release 4.7.2112 ist eine Skalierung des PullSubscription Services möglich.
 
 Hinzufügen von zusätzlichen Services (Bsp: 4 Service worker):
 
@@ -160,7 +160,7 @@ Hinzufügen von zusätzlichen Services (Bsp: 4 Service worker):
 <AddInstance Key="pullSubscriberServiceSession3" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.PullSubscriberService.PullSubscriberServiceSession,Garaio.Products.Rooms.Core"/>
 ```
 
-Nun können Person und Ressourcen welche mit Exchange Synchronisiert werden in sogenanne Priority Groups gesetzt werden. Welche dann Einfluss darauf haben mit welcher Service Session die Pull-Synchronisation für diese Person/Ressource durchführt. (Im Beispiel 0-3)
+Nun können Personen und Ressourcen, welche mit Exchange Synchronisiert werden in sogenannte Priority Groups gesetzt werden. Welche dann Einfluss darauf haben, mit welcher Service Session die Pull-Synchronisation für diese Person/Ressource durchführt. (Im Beispiel 0-3)
 
 Die Priority Group kann folgendermassen gesetzt werden:
 
@@ -170,7 +170,7 @@ Einstellungen --> Personen --> Edit
 
 Dieselbe Einstellung kann bei den Ressourcen definiert werden.
 
-Für jeden Service (im Beispiel 0-3) können eigene konfigurationen definiert werden siehe Pull Subscription konfigurieren.
+Für jeden Service (im Beispiel 0-3) können eigene Konfigurationen definiert werden, siehe Pull Subscription konfigurieren.
 
 Beispiel:
 

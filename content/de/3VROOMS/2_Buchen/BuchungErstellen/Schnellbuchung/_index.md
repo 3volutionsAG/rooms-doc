@@ -3,18 +3,19 @@ title: "Schnellbuchung"
 linkTitle: "Schnellbuchung"
 weight: 2
 description: >
-  Eine Schnellbuchung können Sie über die Reiter "Buchen", "Kalender" oder "Plan" erstellen. Hier erfahren Sie, wie Sie eine Schnellbuchung im Reiter "Buchen" erstellen. Es ist möglich eine oder mehrere Ressourcen über eine Schnellbuchung zu reservieren. 
+  Eine Schnellbuchung können Sie über die Reiter "Buchen", "Kalender" oder "Plan" erstellen. Hier erfahren Sie, wie Sie eine Schnellbuchung im Reiter "Buchen" erstellen. Es ist möglich, eine oder mehrere Ressourcen über eine Schnellbuchung zu reservieren. 
 
 ---
 ## Schnellbuchung erstellen
 
-Im Reiter "Buchen" erstellen Sie wie folgt eine Buchung: 
+Im Reiter "Buchen" erstellen Sie wie folgt eine Buchung:
 Indem Sie auf den Button Schnellbuchung erstellen neben der Ressource in der Liste der Suchresultate klicken, öffnet sich ein Feld (siehe Abbildung s), in welchem Sie nur die folgenden Daten aussuchen und eingeben können:
+
 * Titel 
 * Dauer (Datum/Zeit)
 * Organisator:in : Standardmäßig sind Sie als Organisator:in angezeigt 
 * Verantwortliche : Ist eine Verantworliche vorhanden, werden die E-Mail Notifikationen (sofern im Profil aktiviert) an die Verantworliche geschickt und NICHT mehr an die Organisator:in
-* Bemerkungen 
+* Bemerkungen
 
 Durch Betätigen des Buttons Buchen, buchen Sie die ausgewählte Ressource. Sie können ebenfalls zur Detailbuchung wechseln und mehr Informationen zu der Ressource eingeben.
  
@@ -25,16 +26,16 @@ Abbildung s: Schnellbuchung durchführen
 ### Ablauf der Schnellbuchung im System
 
 1. Ihre Buchung wird gespeichert
-* Der Titel, den Sie eingetragen haben wird automatisch vergeben
-* Die Kostenträger werden gemäss Ihren Profileinstellungen gesetzt
+* Der Titel, den Sie eingetragen haben, wird automatisch vergeben
+* Die Kostenträger werden gemäß Ihren Profileinstellungen gesetzt
 * Status (Workflow) wird gemäß der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt
 
 2. Fehlerfall bei der Buchung
-* Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben Rechts im Bild eine Fehlermeldung 
+* Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben rechts im Bild eine Fehlermeldung 
 * Buchung wird entfernt bzw. nicht gespeichert
 
 3. Ihre Buchung wurde erfolgreich durchgeführt
-* Sie erhalten oben Rechts im Bild eine Bestättigungsmeldung im Actionpanel (Reservation wurde erstellt)
+* Sie erhalten oben rechts im Bild eine Bestättigungsmeldung im Actionpanel (Reservation wurde erstellt)
 * Ihre Buchung wird im Kalender visualisiert
 * Buchung wird im Plan visualisiert
 
@@ -52,7 +53,7 @@ Folgende Schritte führen Sie dazu aus:
 
 1. Wählen Sie eine oder mehrere Ressourcen aus der Liste aus und aktivieren die Checkbox. 
 2. Anschließend wählen Sie den Button "Massen-Schnellbuchung (gruppiert)" aus.(Abbildung sa)
-3. Es erscheint ein Popup Fenster in welchem Sie die Informationen für die Schnellbuchung eingeben und Sie die ausgewählten Ressourcen sehen:
+3. Es erscheint ein Popup Fenster, in welchem Sie die Informationen für die Schnellbuchung eingeben und Sie die ausgewählten Ressourcen sehen:
 * Titel
 * Dauer (Datum/Zeit)
 * Organisator:in
@@ -65,7 +66,7 @@ Abbildung sa: Schnellbuchung von mehreren Ressourcen durchführen
 {{< /imgproc >}}
 
 4. Klicken Sie auf den Button "Erstellen" im Popup fenster
-5. Sie sehen eine Zusammenfassung Ihrer Buchung. In der unteren Leiste sehen Sie, dass Sie die bestehende Buchung bearbeiten, kopieren, drucken, stornieren oder ein für eine Serie verwenden können (Abbildung sb)
+5. Sie sehen eine Zusammenfassung Ihrer Buchung. In der unteren Leiste sehen Sie, dass Sie die bestehende Buchung bearbeiten, kopieren, drucken, stornieren oder für eine Serie verwenden können (Abbildung sb)
 
 {{< imgproc Buchen_Massenschnellbuchung_bestätigt Resize "1280x" >}}
 Abbildung sb: Massenschnellbuchung bestätigt
@@ -105,7 +106,7 @@ Abbildung sd: Ressourcen zur Massenschnellbuchung hinzufgefügt
 {{< /imgproc >}}
 
 #### Ressourcen buchen zum Anlass im Kalender
-Wählen Sie den Button "Ressourcen zum Anlass buchen (Kalender)", gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen gehen Sie wie folgt vor: 
+Wählen Sie den Button "Ressourcen zum Anlass buchen (Kalender)", gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen, gehen Sie wie folgt vor: 
 
 1. Suchen Sie eine freie Ressource über das Sidepanel und der Filterfunktion. 
 2. Lassen Sie sich die freien Ressourcen über den Button "Anzeigen" im Kalender anzeigen.

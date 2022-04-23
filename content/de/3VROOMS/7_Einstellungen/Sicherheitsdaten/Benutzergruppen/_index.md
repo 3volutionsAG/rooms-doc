@@ -10,7 +10,7 @@ description: >
 ---
 ## Ansicht: Benutzergruppen 
 Im rechten Feld sehen Sie die bereits gespeicherten Benutzergruppen in Listenform. 
-Im linken Sidepanel, können Sie mithilfe der Filterfunktion nach Benutzergruppen suchen. 
+Im linken Sidepanel können Sie mithilfe der Filterfunktion nach Benutzergruppen suchen. 
 
 {{< imgproc Benutzergruppen_bearbeiten_suchen Resize "1280x" >}}
 Abbildung b: Benutzergruppen bearbeiten und suchen 
@@ -18,13 +18,13 @@ Abbildung b: Benutzergruppen bearbeiten und suchen
 
 
 ### Benutzergruppen suchen
-Im linken Sidepanel finden Sie unter der Kategorie "Benutzergruppen" eine Suchfunktion mit dessen Hilfe Sie nach Bezeichnung der Gruppe suchen können. 
+Im linken Sidepanel finden Sie unter der Kategorie "Benutzergruppen" eine Suchfunktion, mit dessen Hilfe Sie nach Bezeichnung der Gruppe suchen können. 
 Bestätigen Sie Ihre Filterfunktion mit dem Button "Anzeigen" im Sidepanel. Sie sehen dann ihre gefilterten Ergebnisse. (Abbildung b)
 
 
 
 ## Benutzergruppen bearbeiten und neu hinzufügen
-Die Stammdaten, Personen und Notifikationen bearbeiten Sie indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung b). Wenn Sie eine Benutzergruppe neu hinzufügen möchten, klicken Sie auf den untenstehenden Button "Hinzufügen". 
+Die Stammdaten, Personen und Notifikationen bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung b). Wenn Sie eine Benutzergruppe neu hinzufügen möchten, klicken Sie auf den untenstehenden Button "Hinzufügen". 
 
 In beiden Fällen öffnen sich die neuen Fenster zur Eingabe der Informationen. (Abbildung ba)
 
@@ -42,12 +42,12 @@ Unter den Stammdaten der Benutzergruppe tragen Sie folgende Informationen ein:
 Serieneinstellungen: Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 50 Iterationen). Die Maximierung erfolgt auf Iterationen oder Laufdauer unterteilt in Monate, Wochen, Tage.
 * Max. series duration yearly 
 * Max. Seriendauer monatlich 
-* Max. Seriedauer wöchentlich Serie
-* Max. Seriedauer täglich
+* Max. Seriendauer wöchentlich Serie
+* Max. Seriendauer täglich
 * Absolute Serienbegrenzung 1
 * Absolute Serienbegrenzung 2
 
-Sie können einstellen, welche Eigenschaften die erstelle Gruppe aufweisen soll:
+Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll:
 * Berechtigungsgruppe (Checkbox ja /nein)
 * Notifikationsgruppe (Checkbox ja /nein)
 * BenutzerkreisCheckin (Checkbox ja /nein)
@@ -77,7 +77,7 @@ Abbildung bd: Ansicht der aktualisierten Personen in der Benutzergruppe
 In diesem Bereich können Sie Notifikationsvorlagen für Benutzergruppen erfassen und verwalten. Ebenfalls stellen Sie ein, wie die Notifikationen versendet werden sollen.
 
 #### Notifikationen bearbeiten
-Klicken Sie auf den Menü Reiter "Notifikationen" wird Ihnen eine Liste aller gespeicherten Notifikationen angezeigt. 
+Klicken Sie auf den Menü Reiter "Notifikationen", wird Ihnen eine Liste aller gespeicherten Notifikationen angezeigt. 
 Über das Stift Icon können Sie die Notifikation bearbeiten. Es öffnet sich dabei ein Feld (Abbildung bh), indem Sie folgende Informationen eingeben: 
 
 
@@ -85,12 +85,12 @@ Klicken Sie auf den Menü Reiter "Notifikationen" wird Ihnen eine Liste aller ge
 | Feld          | Funktion      | 
 | ------------- |-------------  |
 | Notifikationstyp | Jeder Notifikationstyp darf nur einmal erfasst werden.  | 
-| Benachrichtigung im CC an| Erfassung von gültigen E-Mail Adressen, welche beim Versenden der Notifikation  im CC an die entsprechenden Adressaten verschickt werden. Mehrere E-Mail Adressen werden mittels semikolon separiert |  
+| Benachrichtigung im CC an| Erfassung von gültigen E-Mail Adressen, welche beim Versenden der Notifikation  im CC an die entsprechenden Adressaten verschickt werden. Mehrere E-Mail Adressen werden mittels Semikolon separiert |  
 | Antwort auf Benachrichtigung an Ersteller| Checkbox aktivieren |
 | Sprache| Mittels Drop-Down die Sprache auswählen, es stehen alle aktivierten Sprachen zur Verfügung. |
 | Titel| Der Titel muss mehrsprachig erfasst werden |
-| Email Body| Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht. Es steht ein Texteditor inkl. Formatierungen zur Verfügung. E-Mail Body kann mehrsprachig abgefüllt werden. Ist der E-Mail Body leer wird keine Notifikation verschickt. Es stehen alle Formatierungen gemäss Editor zur Verfügung|
-| Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalter wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors. | 
+| Email Body| Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht. Es steht ein Texteditor inkl. Formatierungen zur Verfügung. E-Mail Body kann mehrsprachig abgefüllt werden. Ist der E-Mail Body leer wird keine Notifikation verschickt. Es stehen alle Formatierungen gemäß Editor zur Verfügung|
+| Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalters wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert, wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors. | 
 
 {{< imgproc Benutzergruppen_Notifikationen_bearbeiten Resize "1280x" >}}
 Abbildung bl: Benutzergruppen in der Liste bearbeiten

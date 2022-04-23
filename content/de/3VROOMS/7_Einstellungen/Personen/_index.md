@@ -18,7 +18,7 @@ Abbildung pa: Kapitel Person Ansicht
 {{< /imgproc >}}
 
 ### Person suchen
-Im linken Menü finden Sie unter der Kategorie "Person" eine Suchfunktion mit dessen Hilfe Sie nach einer Person suchen können (Abbildung p). Sie können hierbei nach folgenden Kriterien suchen: 
+Im linken Menü finden Sie unter der Kategorie "Person" eine Suchfunktion, mit dessen Hilfe Sie nach einer Person suchen können (Abbildung p). Sie können hierbei nach folgenden Kriterien suchen: 
 
 * Nachname/Vorname 
 * E-mail
@@ -50,11 +50,11 @@ Abbildung pb: Suchergebnis in der Personenliste
 {{< /imgproc >}}
 
 ## Personenlisten bearbeiten 
-Die Person in der Personenliste bearbeiten Sie indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung p). Dort ändern Sie: 
+Die Person in der Personenliste bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung p). Dort ändern Sie: 
  * Stammdaten
  * Personen-Information
  * Navigation
- * Notofikation
+ * Notifikation
  * Eigene Listen
  * Firmen- und Gruppen Informationen
  * Logons 
@@ -66,7 +66,7 @@ Abbildung pi: Personen Informationen bearbeiten und speichern
 
  Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung pi)
 
- Eine genaue Beschreibung der Daten, die Sie bearbeiten können finden Sie hier: 
+ Eine genaue Beschreibung der Daten, die Sie bearbeiten können, finden Sie hier: 
 [Persönliche Einstellungen](/einstellungen/pers%C3%B6nlicheeinstellungen/)
 
 ## Person neu hinzufügen
@@ -83,7 +83,7 @@ Dort sehen Sie die
 * Personen-Information (Abbildung pz)
 * Mails: gesendete Mails und Notifikationen zu Buchungen (Abbildung pm)
 * Meine Arbeit: Verlauf der ausgeführten Buchungen und Stornierungen (Abbildung pr)
-* Historie: kompletter Verlauf der ausgeführten aktivitäten in Rooms (Abbildung ph) 
+* Historie: kompletter Verlauf der ausgeführten Aktivitäten in Rooms (Abbildung ph) 
 
 {{< imgproc Personendaten_einsehen Resize "1280x" >}}
 Abbildung px: Personen Informationen einsehen und bearbeiten

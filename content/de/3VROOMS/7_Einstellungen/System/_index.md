@@ -9,11 +9,11 @@ description: >
 
 ---
 ## Persönliche Einstellungen bearbeiten
-Beim klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten (Abbildung no.). 
+Beim Klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten (Abbildung no.). 
 Alle Daten im Tap-Menü (Personen Information, Stammdaten, Navigation, Notifikationen, Eigene Listen, Zugewiesene Ressourcen, Logons und Gruppen) können Sie hier bearbeiten. Diese Änderungen speichern Sie über den untenstehenden Button "Speichern".
 
 ### Anmerkung zum Ändern der Mitarbeiterdaten 
-Um diese Einstellungen verändern zu können sind Spezialrechte notwendig. Oft werden die Daten über eine Importschnittstelle periodisch in ROOMS geladen und somit nicht manuell gepflegt.
+Um diese Einstellungen verändern zu können, sind Spezialrechte notwendig. Oft werden die Daten über eine Importschnittstelle periodisch in ROOMS geladen und somit nicht manuell gepflegt.
 
 
 ## Synchronisation mit Outlook 

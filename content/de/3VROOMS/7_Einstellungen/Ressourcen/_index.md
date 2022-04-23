@@ -24,14 +24,14 @@ Abbildung ra: Equipment in der Ressourcenliste anzeigen
 {{< /imgproc >}}
 
 ### Ressourcen suchen
-Im linken Menü finden Sie unter der Kategorie "Ressourcen" eine Suchfunktion mit deren Hilfe Sie nach einer Ressource suchen können (Abbildung r). Sie können hierbei nach folgenden Kriterien suchen:
+Im linken Menü finden Sie unter der Kategorie "Ressourcen" eine Suchfunktion, mit deren Hilfe Sie nach einer Ressource suchen können (Abbildung r). Sie können hierbei nach folgenden Kriterien suchen:
 
 * Ressourcenart (Drop-down)
 * Gespeicherte Listen einsehen
 * Standort (Plus Zeichen): Auswählen aus allen eingespeicherten Standorten
 
 **Sie können eine Liste als Favorit speichern**:
-Wird eine Liste als Favorit definiert wird diese standardmässig angezeigt.
+Wird eine Liste als Favorit definiert, wird diese standardmäßig angezeigt.
 Ansonsten ist die Liste leer.
 Nach Wechsel eines Eintrages, werden Sidepanel und Inhaltsbereich automatisch neu geladen
 (Achtung: Bevor Liste gespeichert wird, muss "Finden" Button geklickt werden, um alle Kriterien zu speichdern)
@@ -46,7 +46,7 @@ Hierbei können Sie nach den folgenden Kriterien suchen:
 * Verantwortliche Person
 
 #### Suchen über die Gliederung
-Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes "Gliederung". Es werden alle Gliederungstypen der gewählten "Ressourcenart" angezeigt. Bei Ressourcenart "alle" werden alle Gliederungstypen aller Ressourcenarten aufgelistet. Es werden nur die Gliederungen (eines Gliederungstyps) angezeigt für welche Sie auch Rechte haben.
+Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes "Gliederung". Es werden alle Gliederungstypen der gewählten "Ressourcenart" angezeigt. Bei Ressourcenart "alle" werden alle Gliederungstypen aller Ressourcenarten aufgelistet. Es werden nur die Gliederungen (eines Gliederungstyps) angezeigt, für welche Sie auch Rechte haben.
 Hierbei können Sie nach den folgenden Kriterien suchen:
 
 * Raum: Raumtyp (Plus Zeichen: hinzufügen)
@@ -58,11 +58,11 @@ Es erscheint ein Warnhinweis, Ausgabe im Actionpanel oder Fehlermeldung im Actio
 
 Zusätzliche Löschregel:
 * Nur möglich, wenn eine Ressource keine Reservationen hat
-* Löschweitergabe an alle Abhänigkeiten zur Ressource
-* Nur möglich, wenn Benutzer über die entsprechende standortabhängige Rechte verfügt.
+* Löschweitergabe an alle Abhängigkeiten zur Ressource
+* Nur möglich, wenn Benutzer über die entsprechenden standortabhängigen Rechte verfügt.
 
 ### Daten einsehen
-Klicken Sie auf den Namen einer Ressource in der Liste gelangen Sie zur Übersicht der gespeicherten Daten und der Historie der Ressource.
+Klicken Sie auf den Namen einer Ressource in der Liste, gelangen Sie zur Übersicht der gespeicherten Daten und der Historie der Ressource.
 
 {{< imgproc Ressource_Daten_einsehen Resize "1280x" >}}
 Abbildung rq: Daten einer Ressource einsehen
@@ -71,9 +71,9 @@ Abbildung rq: Daten einer Ressource einsehen
 Aus diesem Modus können Sie ebenfalls die ausgewählte Ressource bearbeiten. Dazu klicken Sie auf den untenstehenden Button "Bearbeiten". Über den Button "Abbrechen" gelangen Sie wieder zur Übersicht im View Modus.
 
 ## Ressource neu erstellen 
-Eine neue Ressource erstellen Sie über den untenstehenden Button "Erstellen" (Abbildung r). Über den Drop Down Pfeil können Sie untenstehend auswählen, welchen Ressourcentyp Sie neu erstellen wollen. Sie können wählen zwischen Raum, Arbeitsplatz, Parkplatz, Equipment, Fahrzeug oder Bneutzerdefinierten Ressourcen. Je nachdem, welchen Ressourcentyp Sie neu erstellen, stehen Ihnen verschiedene Daten zur Verfügung.
+Eine neue Ressource erstellen Sie über den untenstehenden Button "Erstellen" (Abbildung r). Über den Drop Down Pfeil können Sie untenstehend auswählen, welchen Ressourcentyp Sie neu erstellen wollen. Sie können wählen zwischen Raum, Arbeitsplatz, Parkplatz, Equipment, Fahrzeug oder Benutzerdefinierten Ressourcen. Je nachdem, welchen Ressourcentyp Sie neu erstellen, stehen Ihnen verschiedene Daten zur Verfügung.
 
-In dem Feld, welches sich öffnet legen Sie folgende Daten fest (Abbildung rb)
+In dem Feld, welches sich öffnet, legen Sie folgende Daten fest (Abbildung rb)
 * die Stammdaten
 * Spezifische Daten
 * Medien und Beilagen
@@ -90,7 +90,7 @@ Die neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speic
 Abbildung rb: Benötigte Daten für die Erstellung einer neuen Ressource
 {{< /imgproc >}}
 
-Haben Sie eine Ressource neu erstellt und gespeichert, aktualisiert sich die Liste automatisch. Ihre eingetragene Ressource, sehen Sie nun im View Modus. (Abbildung rz)
+Haben Sie eine Ressource neu erstellt und gespeichert, aktualisiert sich die Liste automatisch. Ihre eingetragene Ressource sehen Sie nun im View Modus. (Abbildung rz)
 
 Beispiel: Erstellung eines neuen Equipmenttyps (Whiteboard)
 
@@ -98,14 +98,14 @@ Beispiel: Erstellung eines neuen Equipmenttyps (Whiteboard)
 Abbildung rz: Beispiel einer neu erstellten Ressource, Equipment
 {{< /imgproc >}}
 
-Nach dem Speichern, erscheint die neue Ressource in der aktualisierten Liste.
+Nach dem Speichern erscheint die neue Ressource in der aktualisierten Liste.
 
 {{< imgproc Ressourcen_neues_Equipment_in_Liste Resize "1280x" >}}
 Abbildung ry: Neu erstellte Ressource in der aktualisierten Liste
 {{< /imgproc >}}
 
 ## Ressource bearbeiten
-Eine bestehende Ressource bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" neben der jeweiligen Ressource in der Ressourcenliste klicken (Abbildung r). In dem Feld, welches sich öffnet ändern Sie die gleichen Daten fest, wie bei einer neu erstellten Ressource (Abbildung rb). 
+Eine bestehende Ressource bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" neben der jeweiligen Ressource in der Ressourcenliste klicken (Abbildung r). In dem Feld, welches sich öffnet, ändern Sie die gleichen Daten fest, wie bei einer neu erstellten Ressource (Abbildung rb). 
 
 Die geänderten Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung rb).
 
@@ -119,13 +119,13 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Beschreibung      | Die Ressource beschreiben  |
 | Fehlermeldung  |  Fehlermeldung eintragen, die angezeigt werden soll. Diese übersteuert die globale Fehlermeldung bei Buchungsproblemen. Erfassung in mehreren Sprachen möglich. |  
 | External Identifier  |     |  
-| Standort  | Standort über das "Plus-Zeichen" hinzufügen Bsp: Bern. Es werden nur die Standorte zur Verfügung gestellt an welchen der Benutzer auch Schreibrechte hat Datenrecht Ressource bearbeiten. |  
+| Standort  | Standort über das "Plus-Zeichen" hinzufügen Bsp: Bern. Es werden nur die Standorte zur Verfügung gestellt, an welchen der Benutzer auch Schreibrechte hat. Datenrecht Ressource bearbeiten. |  
 | Ressourcenart    | Nur Bezeichnungsfeld (nicht editierbar)  |  
-| Status (aktiv*/inaktiv)* = markiert  |  Ankreuzen wenn zutreffend. Standard = inaktiv. Nur aktive Ressourcen erscheinen grundsätzlich in den Buchungssuchen (zusätzlich relevant ist das entsprechende Standortbezogene Recht.Wird eine Ressource auf inaktiv gesetzt, werden alle zugehörigen Reservationen mit Exchange Synchronisation von der Synchronisation abgekoppelt. |  
+| Status (aktiv*/inaktiv)* = markiert  |  Ankreuzen, wenn zutreffend. Standard = inaktiv. Nur aktive Ressourcen erscheinen grundsätzlich in den Buchungssuchen (zusätzlich relevant ist das entsprechende Standortbezogene Recht. Wird eine Ressource auf inaktiv gesetzt, werden alle zugehörigen Reservationen mit Exchange Synchronisation von der Synchronisation abgekoppelt. |  
 | Checkin aktiviert  | Ankreuzen wenn zutreffend. Aktiviert die Checkin Funktionalität (auf Türschild) ob ein Checkin getätigt werden muss definiert die [Benutzergruppen](/einstellungen/sicherheitsdaten/benutzergruppen/).|
 | NoShow Delay  | Minuten auswählen. Definiert nach wie vielen Minuten ohne Checkin der Raum wieder freigegeben wird. Standardwert = 15 Minuten |
-| Tarifkategorie  | Es muss keine [Tarifkategorie](/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarikfategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion)  |
-| Info Url  | Übersetzungseintrag „Alias für InfoURL“ muss erstellt werden. Ist der Übersetzungseintrag nicht übersetzt (leer), werden die effektiven URL’s der Ressourcen angezeigt. Ist die Übersetzung nicht leer wird der Text der Übersetzung in der entsprechenden Benutzersprache übernommen. Die Implementation erfolgt im Sidepanel (Reservationsdetail) und im View Mode der Ressource.  |
+| Tarifkategorie  | Es muss keine [Tarifkategorie](/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarifkategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion)  |
+| Info Url  | Übersetzungseintrag „Alias für InfoURL“ muss erstellt werden. Ist der Übersetzungseintrag nicht übersetzt (leer), werden die effektiven URL’s der Ressourcen angezeigt. Ist die Übersetzung nicht leer, wird der Text der Übersetzung in der entsprechenden Benutzersprache übernommen. Die Implementation erfolgt im Sidepanel (Reservationsdetail) und im View Mode der Ressource.  |
 | Sync. Modus  | über das Drop-Down auswählen |
 | Verantwortliche Person  | Intelibox mit allen aktiven verfügbaren Personen. Verantwortliche Person aus dem System eintragen oder suchen. |
 | Minimale Buchungsdauer | Standardwert 0, 0 = keine Minimaldauer festgelegt. Eingabe in Minuten. Falls die Minimalreservationsdauer unterschritten wird, erfolgt im Reservationsprozess die Ausgabe einer Fehlermeldung. |
@@ -133,12 +133,12 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Vorlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten)  |
 | Nachlaufdauer in Minuten | Standardwert: 0, 0 = keine Vorlaufzeit wird berechnet. Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen)verwendet (kein Kummulatives verhalten). |
 | Priorisierung | Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
-| Automatische Verlängerung| Aktivierung der automatischen Verlängerung erfolgt durch die Eingabe eines Wert grösser 0  ( >0 ). Ist der Wert 0, dann ist die automatische Verlängerung ausgeschalten. Die Prüfung erfolgt auf Ganzzahlen: Feldvalidierung (siehe 000.001 Globale Funktionen). Weitere Regeln: Das Ausführungsdatum ist Reservationsende - 5 Minuten. Eine automatische Verlängerung löst keine E-Mail Notifikationen aus. Synchronierte Buchungen werden im Outlook nachgetragen OHNE MeetingUpdate für die Teilnehmer. Eine Buchung mit automatischer Verlängerung endet bei Checkout, Konflikt mit der nächsten Reservation oder am Ende des Kalenderteages. |
+| Automatische Verlängerung| Aktivierung der automatischen Verlängerung erfolgt durch die Eingabe eines Wert größer 0  ( >0 ). Ist der Wert 0, dann ist die automatische Verlängerung ausgeschaltet. Die Prüfung erfolgt auf Ganzzahlen: Feldvalidierung (siehe 000.001 Globale Funktionen). Weitere Regeln: Das Ausführungsdatum ist Reservationsende - 5 Minuten. Eine automatische Verlängerung löst keine E-Mail Notifikationen aus. Synchronisierte Buchungen werden im Outlook nachgetragen OHNE MeetingUpdate für die Teilnehmer. Eine Buchung mit automatischer Verlängerung endet bei Checkout, Konflikt mit der nächsten Reservation oder am Ende des Kalendertages. |
 | No Slot Buchungen zulässig | Bei Selektion kann Ressource nur als Slot gebucht werden (vordefinierter Zeitraum). Ankreuzen wenn zutreffend. | 
 | Online Ressource | Bei Selektion kann Ressource immer verwendet werden, unabhängig davon, ob es zu einem bestimmten Zeitpunkt bereits verwendet wird.| 
 | Schnellbuchungen deaktivieren | Somit kann diese Ressource auch über eine Schnellbuchung mit entsprechendem Recht gebucht werden. ankreuzen wenn zutreffend. | 
-| TMS System ID | Feld nur verfügbar bei der Ressourcenart "Equipment" nur Ressourcen mit einer Angabe in diesem Feld werden mit dem VC System synchronisiert und im VC Prozess gelistet. |
-| Beim Speichern Notifikation an Betroffene senden | Beim Abschluss der Buchung wird eine Email Notifikation an die ausgewählten Personen versendet. ankreizen wenn zutreffend. |
+| TMS System ID | Feld nur verfügbar bei der Ressourcenart "Equipment". Nur Ressourcen mit einer Angabe in diesem Feld werden mit dem VC System synchronisiert und im VC Prozess gelistet. |
+| Beim Speichern Notifikation an Betroffene senden | Beim Abschluss der Buchung wird eine Email Notifikation an die ausgewählten Personen versendet. Ankreuzen, wenn zutreffend. |
 
 Die geänderten Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung rb).
 
@@ -154,12 +154,12 @@ Legen Sie für die ausgewähle Ressource spezifische Daten fest, indem Sie im Re
 | Farbe       | Über das Pinsel-Sympol wählen Sie die gewünschte Farbe für die Ressource aus. Diese erscheint im Kalender. | 
 | Workflow       | Über Drop-Down wählen Sie den definierten [Workflow](/einstellungen/basisdatenfuerressourcen/workflows/) aus. |
 | Plan Label     | Gewünschtes Plan Label eintragen  |
-| Reminder für provisorische Buchungen (in Min.) | Verschickt einen zusätzlichen Reminder auf allen provisorischen Buchungen auf dieser Ressource in Minuten vorher (sofern Wert > 0 ist) Standardwert = leer. Die Notifikation wird an dieselbe Benutzerguppe verschickt, welche bereits beim Statuswechsel (in Status "prov. Buchung") informiert wurde. Diese muss also vorgängig als [Workflow](/einstellungen/basisdatenfuerressourcen/workflows/) konfiguriert werden Über die Pfeiltasten (oben/unten) die gewünschte Minutenanzahl auswählen. |  
-| Equipment Equipmenttyp  |  Über das "Plus-Zeichen" den gespeicherten Equipmenttypp auswählen   |  
+| Reminder für provisorische Buchungen (in Min.) | Verschickt einen zusätzlichen Reminder auf allen provisorischen Buchungen auf dieser Ressource in Minuten vorher (sofern Wert > 0 ist) Standardwert = leer. Die Notifikation wird an dieselbe Benutzergruppe verschickt, welche bereits beim Statuswechsel (in Status "prov. Buchung") informiert wurde. Diese muss also vorgängig als [Workflow](/einstellungen/basisdatenfuerressourcen/workflows/) konfiguriert werden. Über die Pfeiltasten (oben/unten) die gewünschte Minutenanzahl auswählen. |  
+| Equipment Equipmenttyp  |  Über das "Plus-Zeichen" den gespeicherten Equipmenttyp auswählen   |  
 | Telefonnummer  | Telefonnummer des Raumes. Wird auch im View Modus angezeigt. Anzeige im Reservationsdetail (Sidepanel und Summary Page) nur wenn Inhalt vorhanden ist, ansonsten ist Nummer UND Label nicht sichtbar.    |  
-| Alarmierung in Status  |Erscheint nur bei Ressourcenart "Raum".Dropdown zeigt alle erfassten Status (unabhängig vom Status der Ressouce). Es muss der Status erfasst werden, bei welchem das Alarmierungspopup angezeigt werden soll (siehe UC xxx ) in Kombination mit dem "Dauer nach Statuswechsel". |  
+| Alarmierung in Status  |Erscheint nur bei Ressourcenart "Raum". Dropdown zeigt alle erfassten Status (unabhängig vom Status der Ressource). Es muss der Status erfasst werden, bei welchem das Alarmierungspopup angezeigt werden soll (siehe UC xxx ) in Kombination mit dem "Dauer nach Statuswechsel". |  
 | Dauer nach Statuswechsel | Erscheint nur bei Ressourcenart "Raum". Angabe in Minuten. 0 oder leer = deaktiviert. Löst Event "Alarmierungspopup" nach Ablauf der erfassten Minutenzahl aus, wenn der unter "Alarmierung in Status" definierte Status eintrifft.  |  
-| Alarmierung bei Folgebuchung | Erscheint nur bei Ressourcenart "Raum". Angabe in Minuten. Die Minuten beziehen sich auf den Reservationsstart ohne Vorlauf. 0 oder leer = deaktiviert. Löst Event "Alarmierungspopup" nach Ablauf der erfassten Minutenzahl aus, falls zum aktuellen Zeitpunkt eine Reservation besteht und sich auf der Ressource einen Reservation in Zukunft befindet. Beispiel Reservation startet um 11:00, Alarmierung beträgt 60. Eine Vorgängige Reservation dauert von 08:00 bis 10:30 - so erscheint das Popup zwischen 10:00 und 10:30.|  
+| Alarmierung bei Folgebuchung | Erscheint nur bei Ressourcenart "Raum". Angabe in Minuten. Die Minuten beziehen sich auf den Reservationsstart ohne Vorlauf. 0 oder leer = deaktiviert. Löst Event "Alarmierungspopup" nach Ablauf der erfassten Minutenzahl aus, falls zum aktuellen Zeitpunkt eine Reservation besteht und sich auf der Ressource eine Reservation in Zukunft befindet. Beispiel Reservation startet um 11:00, Alarmierung beträgt 60. Eine vorgängige Reservation dauert von 08:00 bis 10:30 - so erscheint das Popup zwischen 10:00 und 10:30.|  
 
 Die geänderten Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung rc).
 
@@ -186,13 +186,13 @@ Abbildung re: Medien und Beilagen einer Ressource hinzufügen
 
 ### Sperrzeiten der Ressource bearbeiten
 Fügen Sie entweder eine Sperrzeitserie oder eine einzelne Sperrzeit zur Ressource hinzu. 
-Dazu klicken Sie auf den untenstehenden Button "Hinzufügen". Es öffnet sich ein neues Feld, in welchem Sie die geforterten Daten eingeben. (Abbildung rf)
+Dazu klicken Sie auf den untenstehenden Button "Hinzufügen". Es öffnet sich ein neues Feld, in welchem Sie die geforderten Daten eingeben. (Abbildung rf)
 
 {{< imgproc Ressourcen_Sperrzeiten Resize "1280x" >}}
 Abbildung rf: Sperrzeiten einer Ressource bearbeiten
 {{< /imgproc >}}
 
-Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld "Bezeichnung" (Abbildung rg). Mitteld Datumspicker können Sie das gewünschte Datum auswählen.
+Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld "Bezeichnung" (Abbildung rg). Mittels Datumspicker können Sie das gewünschte Datum auswählen.
 
 {{< imgproc Ressourcen_Sperrzeiten_hinzufügen Resize "1280x" >}}
 Abbildung rg: Sperrzeiten einer Ressource hinzufügen
@@ -298,6 +298,6 @@ Speichern Sie Ihre Eingabe mit dem Button "Speichern".
 Mehr Information über die Bestuhlung finden Sie hier:[Bestuhlung](/einstellungen/basisdatenfuerressourcen/bestuhlung/)
 
 ### Virtuelle Räume der Ressource bearbeiten
-Im Kapitel virtuelle Räume werden diese genauer Beschrieben.
+Im Kapitel virtuelle Räume werden diese genauer beschreiben.
 
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.

@@ -6,14 +6,14 @@ description: Dieses Dokument enthält notwendige Informationen im Zusammenhang m
 ---
 ## Einleitung
 
-Der Ausdruck Exchange 20_XX_ ist austauschbar, wir sprechen künftig nur noch von Exchange welche alle Versionen adressiert.
+Der Ausdruck Exchange 20_XX_ ist austauschbar, wir sprechen künftig nur noch von Exchange, welche alle Versionen adressiert.
 
 Die Synchronisation umfasst folgende Funktionalitäten:
 
 1. Reservationen aus der ROOMS Umgebung können als Kalendereinträge in eine MS Exchange Umgebung exportiert werden. _(Diese Funktionalität ist Teil der Basisinstallation, muss aber konfiguriert werden)._
 2. Beim Erstellen oder Editieren von Kalendereinträgen können direkt in einem MS Outlook Client neue ROOMS Reservationen erstellt werden. _(Diese Funktionalität setzt zusätzlich die Installation des ROOMS OutlookAddins auf allen erwünschten Clients voraus; es handelt sich dabei aber um eine optionale Erweiterung, die für den Betrieb der Synchronisation nicht zwingend benötigt wird)._
 3. In beiden Fällen werden in der Folge alle Änderungen an den betreffenden Elementen gegenseitig übernommen. _(Diese Funktionalität ist Teil der Basisinstallation, muss aber konfiguriert werden)._
-4. Abfrage und anzeige der Free/BusyInformationen von Teilnehmer, wenn diese in Exchange vorhanden sind. _(Diese Funktionalität ist Teil der Basisinstallation, muss aber konfiguriert werden)._
+4. Abfrage und Anzeige der Free/BusyInformationen von Teilnehmern, wenn diese in Exchange vorhanden sind. _(Diese Funktionalität ist Teil der Basisinstallation, muss aber konfiguriert werden)._
 
 Grundsätzlich muss unterschieden werden, mit welchen MS Exchange Versionen die Synchronisierung vorgenommen werden soll; je nach gewünschter Funktionalität und eingesetzten Versionen werden unterschiedliche Installations- und Konfigurationsschritte benötigt. Bei den Informationen in diesem Dokument ist also darauf zu achten, ob sie eine oder mehrere bestimmte Versionen betreffen (Versionen werden ausgewiesen) oder allgemein gültig sind (keine Kennzeichnung vorhanden). Aktuell werden die MS Exchange Versionen 2007, 2010 und 2013 unterstützt.
 
@@ -63,7 +63,7 @@ Dies umfasst Web Service Requests (SOAP) in Form von Push Notifications, die aus
 
 ## (A)- Abonnieren der Push Notifikation
 
-Der Windows Service erstellt für jeden Benutzer welcher die Synchronisation eingeschaltet hat ein Push Abonnement (über **Connection 2** ). Durch dieses Abonnement wird GARAIO ROOMS über alle Änderungen der Kalender-Einträge der jeweiligen Personen informiert.
+Der Windows Service erstellt für jeden Benutzer, welcher die Synchronisation eingeschaltet hat, ein Push Abonnement (über **Connection 2** ). Durch dieses Abonnement wird GARAIO ROOMS über alle Änderungen der Kalender-Einträge der jeweiligen Personen informiert.
 
 ## (B) - Neue Reservation über die Web Applikation
 
@@ -104,7 +104,7 @@ E2. Das ROOMS OutlookAddin aktualisiert / annulliert die Reservation über **Ver
  Achtung: Die Änderungen müssen nun vom MS Outlook Client an die MS Exchange Umgebung übermittelt werden (evtl. Taste F9)!
 
 E3. Die MS Exchange Umgebung sendet eine Push Notification (Update / Delete) über **Verbindung 3**. Über die ItemId wird die Reservation gefunden, es wird aber keine Veränderung festgestellt (die Reservation wurde ja bereits mit den Werten des Kalendereintrags aktualisiert: F2).
-_Hinweis: Wird auf einem Kalendereintrag im MS Outlook die Funktion Löschen aufgerufen, wird der Eintrag nicht gelöscht, sondern lediglich in den Papierkorb verschoben. Die Reservation in ROOMS 4 wird aber trotzdem annulliert - der Kalendereintrag sollte also nicht wieder hergestellt werden. (Tip: Das Drücken der Taste Shift während dem Aufruf der Funktion Löschen führt zu einer direkten Löschung im MS Outlook.)_
+_Hinweis: Wird auf einem Kalendereintrag im MS Outlook die Funktion Löschen aufgerufen, wird der Eintrag nicht gelöscht, sondern lediglich in den Papierkorb verschoben. Die Reservation in ROOMS 4 wird aber trotzdem annulliert - der Kalendereintrag sollte also nicht wieder hergestellt werden. (Tipp: Das Drücken der Taste Shift während dem Aufruf der Funktion Löschen führt zu einer direkten Löschung im MS Outlook.)_
 
 ## (F) – Anpassen über ein MS Outlook Client ohne Addin
 
@@ -113,7 +113,7 @@ _Achtung: Die Änderungen müssen nun vom MS Outlook Client an die MS Exchange U
 
 F2. Die MS Exchange Umgebung sendet eine Push Notification (Update / Delete) über **Verbindung 3**. Über die ItemId wird die Reservation gefunden und eine Veränderung festgestellt, die Reservation wird entsprechend aktualisiert / annulliert.
 
-_Hinweis: Wird auf einem Kalendereintrag im MS Outlook die Funktion Löschen aufgerufen, wird der Eintrag nicht gelöscht, sondern lediglich in den Papierkorb verschoben. Die Reservation in ROOMS wird aber trotzdem annulliert - der Kalendereintrag sollte also nicht wiederhergestellt werden. (__ **Tip:** _ _Das Drücken der Taste Shift während dem Aufruf der Funktion Löschen führt zu einer direkten Löschung im MS Outlook.)_
+_Hinweis: Wird auf einem Kalendereintrag im MS Outlook die Funktion Löschen aufgerufen, wird der Eintrag nicht gelöscht sondern lediglich in den Papierkorb verschoben. Die Reservation in ROOMS wird aber trotzdem annulliert - der Kalendereintrag sollte also nicht wiederhergestellt werden. (__ **Tip:** _ _Das Drücken der Taste Shift während dem Aufruf der Funktion Löschen führt zu einer direkten Löschung im MS Outlook.)_
 
 # Installation und Konfiguration
 
@@ -126,7 +126,7 @@ Eine Synchronisation mit einer MS Exchange Umgebung impliziert, dass aus der ROO
 ROOMS orientiert sich deshalb bei jeder MS Exchange Version an den verfügbaren Standards und optimiert die Synchronisation jeweils hinsichtlich Sicherheit und Performance. Auch bei sorgfältiger Berücksichtigung der genannten Punkte ist es unumgänglich, dass grundsätzlich Konzessionen in diesen Bereichen gemacht werden müssen. Eine dieser Konzessionen ist die Berechtigung eines Service Accounts auf die entsprechenden MS Exchange Server. Theoretisch ist es zwar möglich, die Synchronisation im Kontext des an der Web Applikation angemeldeten Benutzers durchzuführen und damit auf eine generelle Berechtigung eines Service Accounts zu verzichten. Dieses Konzept führt jedoch zu zahlreichen Schwierigkeiten:
 
 - Der Konfigurationsaufwand erhöht sich massiv (Impersonierung, Service Principal Names, Delegation, MS Outlook Freigaben).
-- Die Umsetzung einiger Funktionalitäten wird verunmöglicht (Reservationsänderungen, die nicht im Kontext des Benutzers erfolgen (dazu gehören beispielsweise alle Aktionen des ROOMS Windows Services), können nicht synchronisiert werden).
+- Die Umsetzung einiger Funktionalitäten wird verunmöglicht (Reservationsänderungen, die nicht im Kontext des Benutzers erfolgen, dazu gehören beispielsweise alle Aktionen des ROOMS Windows Services, können nicht synchronisiert werden).
 - Die Performance leidet spürbar (Benutzer müssen auf den Abschluss der Synchronisation warten, weil diese nicht asynchron erfolgen kann).
 
 Unsere Erfahrungen im Enterprise-Umfeld haben gezeigt, dass dieses Konzept aufgrund der genannten Schwierigkeiten nicht praxistauglich ist und das Berechtigen eines Service Accounts als einzig brauchbare Lösung betrachtet werden muss.
@@ -138,9 +138,9 @@ Die damit verbundenen Sicherheitsrisiken müssen und können organisatorisch gel
 
 ### Globale Konfiguration
 
-Im Gegensatz zur restlichen Web Appplikation muss auf dem Unterverzeichnis &quot;WebServices&quot; anonyme Requests zugelassen werden. Dazu ist im IIS die entsprechende Einstellung setzen. _(Hinweis: Diese Einstellung wird auch so im Installationsanleitung aufgeführt.)_
+Im Gegensatz zur restlichen Web Appplikation muss auf dem Unterverzeichnis &quot;WebServices&quot; anonyme Requests zugelassen werden. Dazu ist im IIS die entsprechende Einstellung zu setzen. _(Hinweis: Diese Einstellung wird auch so in der Installationsanleitung aufgeführt.)_
 
-Damit der ROOMS Windows Service jegliche sync bezogenen Aktionen abarbeiten kann müssen folgende Einträge zur Structuremap Konfiguration hinzugefügt werden.
+Damit der ROOMS Windows Service jegliche sync bezogenen Aktionen abarbeiten kann, müssen folgende Einträge zur Structuremap Konfiguration hinzugefügt werden.
 
 ```
 <!--ServiceSessions - Exchange-Synchronisation-->
@@ -150,8 +150,8 @@ Damit der ROOMS Windows Service jegliche sync bezogenen Aktionen abarbeiten kann
 	<AddInstance Key="syncTestService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.SyncTestService.SyncTestServiceSession,Garaio.Products.Rooms.Core"/>
 ```
 
-Zusätzlich muss überprüft werden ob der Eintrag für die Root-URL korrekt hinterlegt wurde.
-Diese URL wird verwenden um den korrekten Pfad für die Push-Notifikationen zu generieren ( **Connection 3** ).
+Zusätzlich muss überprüft werden, ob der Eintrag für die Root-URL korrekt hinterlegt wurde.
+Diese URL wird verwenden, um den korrekten Pfad für die Push-Notifikationen zu generieren ( **Connection 3** ).
 
 ### Benutzer Konfiguration
 
@@ -197,9 +197,9 @@ ManagementScope erstellen (Technet):
 
 Als Sync-Modus Exchange2013 auswählen und folgende URL eintragen: https://outlook.office365.com/EWS/Exchange.asmx
 
-Achtung: Damit die Sync funktioniert muss ein Benutzer welcher über Impersonierungsrechte verfügt in der O365 Exchange admin console hinterlegt werden, dazu kann folgende Anleitung konsultiert werden: Setting up Application Impersonation for Office 365
+Achtung: Damit die Sync funktioniert muss ein Benutzer, welcher über Impersonierungsrechte verfügt, in der O365 Exchange admin console hinterlegt werden, dazu kann folgende Anleitung konsultiert werden: Setting up Application Impersonation for Office 365
 
-Der erfasste Benutzer in der O365 Umgebung muss nun noch im RoomsAppSettings.config File hinterlegt werden, dieses File findest man im Installationsverzeichnis von ROOMS (Default: C:\Program Files (x86)\Garaio\ROOMS\Configuration).
+Der erfasste Benutzer in der O365 Umgebung muss nun noch im RoomsAppSettings.config File hinterlegt werden, dieses File findet man im Installationsverzeichnis von ROOMS (Default: C:\Program Files (x86)\Garaio\ROOMS\Configuration).
 RoomsAppSettings.config
 
 ```
@@ -212,12 +212,12 @@ RoomsAppSettings.config
 </RoomsAppSettings>
 ```
 
-Ergänze das File mit den obigen drei Einträgen und den angepassten values.
-Config.bat ausführen um die angepasste Konfiguration zu verteilen.
+Ergänzen Sie das File mit den obigen drei Einträgen und den angepassten values.
+Config.bat ausführen, um die angepasste Konfiguration zu verteilen.
 
-Es muss sichergestellt werden, dass ROOMS von extern erreichbar ist und Anonymous Authentication auf dem WebServices directory aktiviert ist. Dies kannst überprüft werden indem du versuchst ausserhalb eures Netzes folgende URL aufzurufen: http(s)://[ROOMS-URL]/WebServices/SyncNotification.svc
+Es muss sichergestellt werden, dass ROOMS von extern erreichbar ist und Anonymous Authentication auf dem WebServices directory aktiviert ist. Dies kann überprüft werden indem Sie außerhalb Ihres Netzes folgende URL aufrufen: http(s)://[ROOMS-URL]/WebServices/SyncNotification.svc
 
-Wenn dies klappt muss noch sichergestellt sein, dass die Applikation Root-Url in den "Globale Parameter" von ROOMS korrekt hinterlegt ist, also in der Form http(s)://[ROOMS-URL]/[Mandant]
+Wenn dies klappt, muss noch sichergestellt werden, dass die Applikation Root-Url in den "Globale Parameter" von ROOMS korrekt hinterlegt ist, also in der Form http(s)://[ROOMS-URL]/[Mandant]
 
 ### Ab Rooms Release 4.7.2010
 
@@ -241,23 +241,23 @@ Die korrekte URL wird bereits vorausgefüllt:
 
 Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSettings.config eingetragen werden. Dafür können diese Schritte befolgt werden:
 
-1. Öffnen Sie einen Browser, und navigieren Sie zum Azure Active Directory Admin Center. Melden Sie sich mit einem persönlichen Konto (auch: Microsoft-Konto) oder einem Geschäfts- oder Schulkonto an.
-2. Wählen Sie in der linken Navigationsleiste Azure Active Directory aus, und wählen Sie dann App-Registrierungen unter Verwalten aus.
+1. Öffnen Sie einen Browser und navigieren Sie zum Azure Active Directory Admin Center. Melden Sie sich mit einem persönlichen Konto (auch: Microsoft-Konto) oder einem Geschäfts- oder Schulkonto an.
+2. Wählen Sie in der linken Navigationsleiste Azure Active Directory aus und wählen Sie dann App-Registrierungen unter Verwalten aus.
 3. Wählen Sie Neue Registrierung aus. Legen Sie auf der Seite Anwendung registrieren die Werte wie folgt fest.
 	1. Geben Sie unter Name einen Anzeigenamen für Ihre App an.
-	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll sind.
+	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll ist.
 	3. Ändern Sie für URI umleiten die Dropdownliste in Öffentlicher Client (mobil &amp; Desktop), und legen Sie den Wert auf urn:ietf:wg:oauth:2.0:oob fest.
 4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
 5. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
 6. ~~Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Unterstützte Legacy-APIs die Option Exchange aus.~~
 6. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps  die Option Office 365 Exchange Online aus.
 7. Wählen Sie Anwendungsberechtigungen und dann full\_access\_as\_app aus. Klicken Sie auf Berechtigungen hinzufügen.
-8. Wählen Sie Administratorzustimmung für Organisation gewähren aus, und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
+8. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
 9. Wählen Sie in der linken Navigation unter Verwalten die Option Zertifikate und Geheimnisse aus.
 10. Wählen Sie Neuer geheimer Clientschlüssel aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann Hinzufügen aus.
-11. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später.
+11. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels und speichern Sie ihn. Sie benötigen ihn später.
 
-Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten die man aus den vorherigen Schritten erlangt hat ersetzt werden
+Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten, die man aus den vorherigen Schritten erlangt hat, ersetzt werden
 
 ```
 <RoomsAppSettings>
@@ -271,9 +271,9 @@ Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden
 
 ### Push Notifikationen von Exchange Online
 
-Eine erfolgreiche Synchronisation bedingt dass Push Notifikationen vom Exchange Server and den WebService gesendet werden können siehe 5.1.3.
+Eine erfolgreiche Synchronisation bedingt, dass Push Notifikationen vom Exchange Server and den WebService gesendet werden können siehe 5.1.3.
 
-Da sich bei Exchange Online der Exchange Server bei Microsoft in der Cloud befindet, benötigt es öffentlichen Zugang zu dem WebService. Mit Rooms 4.7.2010 ist es möglich eine separate URL für den Service anzugeben:
+Da sich bei Exchange Online der Exchange Server bei Microsoft in der Cloud befindet, benötigt es öffentlichen Zugang zu dem WebService. Mit Rooms 4.7.2010 ist es möglich, eine separate URL für den Service anzugeben:
 
 ```
 <RoomsAppSettings>
@@ -294,7 +294,7 @@ New-ManagementRoleAssignment -Name:NameDerBerechtigung
 -User:MeinServiceBenutzer
 ```
 
-Optional: Falls erwünscht, kann mittels Angabe eines Scopes die Berechtigung auf eine dedizierte Gruppe von Mailbox-Usern beschränkt werden. Dazu wird zuerst ein solcher Scope erstellt, danach wird der oben aufgeführte Befehl ausgeführt, diesmal aber mit Angabe des eben erstellten Scopes (es kann natürlich auch ein bereits vorhandener Scope verwendet werden):
+Optional: Falls erwünscht, kann mittels Angabe eines Scopes, die Berechtigung auf eine dedizierte Gruppe von Mailbox-Usern beschränkt werden. Dazu wird zuerst ein solcher Scope erstellt, danach wird der oben aufgeführte Befehl ausgeführt, diesmal aber mit Angabe des eben erstellten Scopes (es kann natürlich auch ein bereits vorhandener Scope verwendet werden):
 
 ```
 New-ManagementScope -Name:NameDesScopes -RecipientRestrictionFilter:NameDesFilters
@@ -466,7 +466,7 @@ MS Outlook starten, danach...
 Wird das Addin aufgelistet? Ist die Checkbox davor aktiviert?
 
 - Das Addin wird nicht aufgelistet: Regedit öffnen, HKLM\Software sowie HKCU\Software exportieren. Exportierte Datei zusammen mit Angabe der Versionen von Betriebssystem (x64?), MS Office und Addin Versionsnummer (siehe Screenshot, oder „Eigenschaften&quot; der Datei Garaio.Products.RoomsPro.OutlookAddin.Core.dll, Tab Details) an Garaio senden.
-- Das Addin wird aufgelistet, die Checkbox davor ist aber nicht aktiviert: Checkbox aktivieren und Dialog schliessen. Wird die Sidebar jetzt angezeigt? Ist die Checkbox beim erneuten Öffnen des Dialogs noch aktiviert?
- -\&gt; Nein: Ereignisanzeige öffen, Suche nach gerade erzeugten Fehler-Einträgen. Inhalt kopieren und Garaio kontaktieren.
+- Das Addin wird aufgelistet, die Checkbox davor ist aber nicht aktiviert: Checkbox aktivieren und Dialog schliessen. Wird die Sidebar jetzt angezeigt? Ist die Checkbox beim erneuten Öffnen des Dialogs noch aktiviert? </br>
+ -\&gt; Nein: Ereignisanzeige öffnen, Suche nach gerade erzeugten Fehler-Einträgen. Inhalt kopieren und Garaio kontaktieren.
 
 

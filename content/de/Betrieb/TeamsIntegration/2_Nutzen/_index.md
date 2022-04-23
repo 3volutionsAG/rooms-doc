@@ -9,7 +9,7 @@ description: >
 
 ## Standardmässige Teams Meeting Erstellung bei gewissen Ressourcen
 
-Über die Checkbox *Teams Meeting standardmässig hinzufügen* kann auf der Ressource definiert werden ob bei der Erstellung einer neuen Buchung standardmässig auch gerade ein Teams Meeting dazu erstellt wird.
+Über die Checkbox *Teams Meeting standardmässig hinzufügen* kann auf der Ressource definiert werden, ob bei der Erstellung einer neuen Buchung standardmässig auch gerade ein Teams Meeting dazu erstellt wird.
 
 ## Teams Meetings in Serien
 

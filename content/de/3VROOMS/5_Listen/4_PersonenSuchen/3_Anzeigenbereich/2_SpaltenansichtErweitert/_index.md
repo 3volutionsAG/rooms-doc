@@ -17,7 +17,7 @@ Folgende Tabelle erläutert die Spalteneinträge:
 |Sync. deaktiviert||Ja/Nein|
 |Personalnummer|||
 |Funktion||Funktion innerhalb der Firma|
-|Aktive Buchungen||Buchungen, die von dieser Person getätigt wurden oder der diese Person zugeordnet wurde. Vergangene oder stornierte Buchungen werden nicht angezeigt.|
+|Aktive Buchungen||Buchungen, die von dieser Person getätigt wurden oder der diese Person zugeordnet wurden. Vergangene oder stornierte Buchungen werden nicht angezeigt.|
 |Aktive Raumeinheiten||Raumeinheit, z.B. Arbeitsplatz, der die Person zugeordnet ist. Der Eintrag ist mit der Detailansicht der Raumeinheit verknüpft.|
 ---
 
@@ -25,7 +25,7 @@ Folgende Tabelle erläutert die Spalteneinträge:
 Detailansicht der Raumeinheit
 {{< /imgproc >}}
 
-Detaillierte Informationen zur Detailseite und den Bearbeitungsmöglichkeiten der Raumeinheit, finden Sie im Kapitel <a href="/einstellungen/raumeinheiten/">Einstellungen</a>.
+Detaillierte Informationen zur Detailseite und den Bearbeitungsmöglichkeiten der Raumeinheit finden Sie im Kapitel <a href="/einstellungen/raumeinheiten/">Einstellungen</a>.
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|

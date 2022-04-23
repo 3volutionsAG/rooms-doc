@@ -16,7 +16,7 @@ Abbildung l: Übersicht im Reiter Rollen
 {{< /imgproc >}}
 
 ## Rollen bearbeiten
-Die Rolle in der Rollenliste bearbeiten Sie indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung l). Dort ändern Sie die Stammdaten (Bezeichnung) sowie die Rechte der Rolle. 
+Die Rolle in der Rollenliste bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung l). Dort ändern Sie die Stammdaten (Bezeichnung) sowie die Rechte der Rolle. 
 Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung li)
 
 Bei den Stammdaten geben Sie die Bezeichnung der Rolle ein. 
@@ -26,7 +26,7 @@ Abbildung la: Stammdaten bearbeiten
 {{< /imgproc >}}
 
 ### Rechte verwalten
-Hier verwaltung Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht.
+Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht.
 Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschließend auf den Button "Hinzufügen". 
 
 {{< imgproc Rolle_Rechte_bearbeiten Resize "1280x" >}}

@@ -3,7 +3,7 @@ title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
 description: >
-  Über detaillierte Angaben wie der Personalnummer oder zugeordneten Abteilung, grenzen Sie die Suche weiter ein.
+  Über detaillierte Angaben wie der Personalnummer oder zugeordneten Abteilung grenzen Sie die Suche weiter ein.
 ---
 {{< imgproc List_Pers_ErwKrit_geschw_b Resize "1280x" >}}
 Filter der Erweiterten Suche, um Personen zu finden 

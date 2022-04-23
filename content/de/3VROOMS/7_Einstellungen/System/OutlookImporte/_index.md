@@ -9,7 +9,7 @@ description: >
 
 ---
 ## Outlook Importe hinzufügen
-Sie finden Ihre Outlook Importe über den Button "Browse" (Abbildung u). Dabei öffnet sich ein Feld ihres Browsers worüber Sie den gewünschten Import (Exportdatei) auswählen.
+Sie finden Ihre Outlook Importe über den Button "Browse" (Abbildung u). Dabei öffnet sich ein Feld ihres Browsers, worüber Sie den gewünschten Import (Exportdatei) auswählen.
 
 Generell können nur CSV Dateien verarbeitet werden.
 Die CSV wird automatisch durch einen Kalender Export aus Outlook generiert.
@@ -29,7 +29,7 @@ Folgende Daten bearbeiten Sie bei Ihren Outlook Importen:
 | Trennzeichen      | Wählen Sie ein Trennzeichen aus (z.B.: , ; .) Standardwert: , (Komma).Alternativen:(Semikolon), \t (Tabulator) |
 | Feldbegrenzzeichen      |  Das Zeichen am Anfang und Ende eines Felds. Kann je nach Sprache, Version, Einstellungen anders sein. Bsp: ' oder ". Standardwert: ". Alternativen: ' (Hochkomma) |
 | Maskierungszeichen | Das Zeichen am Anfang und Ende eines Felds. Kann je nach Sprache, Version, Einstellungen anders sein. Bsp: ' oder ".   | 
- | Default-Organisator | Diese Person wird als Organisator der Buchung verwendet, falls die Person aus der Datei im System nicht gefunden wird. wird aufgelöst auf Grund der folgenden Parameter: Vorname Nachname, Nachname Vorname, E-Mail, Personalnummer. Konnte keine Auflösung stattfinden wird der Organisator angezeigt und ein Edit Icon dargestellt| 
+ | Default-Organisator | Diese Person wird als Organisator der Buchung verwendet, falls die Person aus der Datei im System nicht gefunden wird. wird aufgelöst auf Grund der folgenden Parameter: Vorname Nachname, Nachname Vorname, E-Mail, Personalnummer. Konnte keine Auflösung stattfinden, wird der Organisator angezeigt und ein Edit Icon dargestellt| 
 
  ### Reihenfolge der Spalten bearbeiten 
 
@@ -39,7 +39,7 @@ Folgende Daten bearbeiten Sie bei Ihren Outlook Importen:
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
 | Spaltenindex Titel     | Der Index beginnt bei 0, somit ist die erste Spalte in der CSV-Datei die Spalte 0.| 
-| Spaltenindes Beginn-Datum     | Wählen Sie ein Beginn-Datum (Bsp: 1)    |
+| Spaltenindex Beginn-Datum     | Wählen Sie ein Beginn-Datum (Bsp: 1)    |
 | Spaltenindex Beginn-Zeit      |  Wählen Sie eine Beginn-Zeit (Bsp: 2) |
 | Spaltenindex Ende-Datum | Wählen Sie ein End-Datum (Bsp: 3)   | 
 | Spaltenindex Ende-Zeit | Wählen Sie eine End-Zeit (Bsp: 4) | 
@@ -47,7 +47,7 @@ Folgende Daten bearbeiten Sie bei Ihren Outlook Importen:
 | Spaltenindex erforderliche Teilnehmer | | 
 | Spaltenindex optionale Teilnehmer | | 
 | Spaltenindex Bemerkung | | 
-| Spaltenindex IstPrivat | | 
+| Spaltenindex Ist Privat | | 
 
 
 

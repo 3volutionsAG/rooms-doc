@@ -3,22 +3,22 @@ title: "Buchung einem Anlass hinzufügen"
 linkTitle: "Buchung einem Anlass hinzufügen"
 weight: 4
 description: >
-  <p style="text-align: justify"> Einem bestehenden Anlass können weitere Buchungen hinzugefügt werden. Dies ist u.a. über das Sidepanel in der Detailansicht eines Anlasses möglich. </p>
+  <p style="text-align: justify"> Einem bestehendem Anlass können weitere Buchungen hinzugefügt werden. Dies ist u.a. über das Sidepanel in der Detailansicht eines Anlasses möglich. </p>
 ---
-<p style="text-align: justify"> In der Anlass Übersicht im Sidepanel finden Sie drei weitere Schaltflächen über die Sie auf unterschiedlichen Wegen dem Anlass weitere Buchungen hinzufügen können. </p>
+<p style="text-align: justify"> In der Anlass Übersicht im Sidepanel finden Sie drei weitere Schaltflächen, über die Sie auf unterschiedlichen Wegen dem Anlass weitere Buchungen hinzufügen können. </p>
 
 {{< imgproc List_ANL_DS_BGhinzu Resize "1280x" >}}
 Schaltflächen um dem Anlass weitere Buchungen hinzuzufügen 
 {{< /imgproc >}}
 
 ## Bestehende Buchungen hinzufügen
-<p style="text-align: justify"> Über die Schaltfläche "Bestehende Buchungen hinzufügen" öffnet sich die Suchmaske, um Buchungen zu suchen. Wie bereits unter <a href="/listen/1_buchungen-suchen/">Buchungen suchen</a> beschrieben, stellen Sie hier die gewünschten Filterkriteren ein. Wählen Sie aus der Liste der angezeigten Buchungen diejenigen aus, die Sie dem Anlass hinzufügen wollen. Dazu markieren Sie die Checkbox am Anfang der Zeile und bestätigen Sie Ihre Auswahl über die Schaltfläche "Zum Anlass Hinzufügen". </p>
+<p style="text-align: justify"> Über die Schaltfläche "Bestehende Buchungen hinzufügen" öffnet sich die Suchmaske, um Buchungen zu suchen. Wie bereits unter <a href="/listen/1_buchungen-suchen/">Buchungen suchen</a> beschrieben, stellen Sie hier die gewünschten Filterkriterien ein. Wählen Sie aus der Liste der angezeigten Buchungen diejenigen aus, die Sie dem Anlass hinzufügen wollen. Dazu markieren Sie die Checkbox am Anfang der Zeile und bestätigen Sie Ihre Auswahl über die Schaltfläche "Zum Anlass Hinzufügen". </p>
 
 {{< imgproc List_ANL_DS_bestBGhinzu_Ausw_b Resize "1280x" >}}
 Gewünschte Buchung suchen, auswählen und Auswahl bestätigen 
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Nach dem Bestätigen, öffnet sich die Eingabemaske zur Massenbearbeitung, in der Sie gegebenfalls Details der gewählten Buchungen ändern können. Lesen Sie hierzu im Kapitel <a href="/buchen/massenbearbeitung/">Massenbearbeitung</a> nach. </p>
+<p style="text-align: justify"> Nach dem Bestätigen öffnet sich die Eingabemaske zur Massenbearbeitung, in der Sie gegebenenfalls Details der gewählten Buchungen ändern können. Lesen Sie hierzu im Kapitel <a href="/buchen/massenbearbeitung/">Massenbearbeitung</a> nach. </p>
 
 {{< imgproc List_ANL_DS_bestBGhinzu_Mass Resize "1280x" >}}
 Eingabemaske zur Massenbearbeitung der gewählten Buchungen 
@@ -31,7 +31,7 @@ Detailansicht des Anlasses mit hinzugefügter Buchung und Bestätigung im Action
 {{< /imgproc >}}
 
 ## Ressourcen zu Anlass buchen (Liste)
-<p style="text-align: justify"> Über die Schaltfläche "Ressourcen zu Anlass buchen (Liste)" haben Sie die Möglichkeit aus dem Anlass heraus eine weitere Ressource hinzuzubuchen. Es öffnet sich die Suchmaske für Ressourcen, über die Sie mit den entsprechenden Filterkriterien (s. <a href="/listen/5_ressourcen-suchen/">Ressourcen suchen</a>) eine Ergebnisliste erstellen können. Wählen Sie die gewünschten Ressourcen durch markieren der Checkboxen aus und bestätigen Sie die Auswahl über die Schaltfläche "Schnellbuchung zu Anlass". </p>
+<p style="text-align: justify"> Über die Schaltfläche "Ressourcen zu Anlass buchen (Liste)" haben Sie die Möglichkeit, aus dem Anlass heraus eine weitere Ressource hinzuzubuchen. Es öffnet sich die Suchmaske für Ressourcen, über die Sie mit den entsprechenden Filterkriterien (s. <a href="/listen/5_ressourcen-suchen/">Ressourcen suchen</a>) eine Ergebnisliste erstellen können. Wählen Sie die gewünschten Ressourcen durch markieren der Checkboxen aus und bestätigen Sie die Auswahl über die Schaltfläche "Schnellbuchung zu Anlass". </p>
 
 {{< imgproc List_ANL_DS_plusRESlist_Ausw_b Resize "1280x" >}}
 Gewünschte Ressource suchen, auswählen und bestätigen
@@ -56,10 +56,10 @@ Detailansicht des Anlasses mit hinzugefügter Buchung und Bestätigung im Action
 Kalenderansicht der Ressourcen, gewünschten Tag und Zeit wählen und Schnellbuchungsmaske bearbeiten
 {{< /imgproc >}}
 
-Nach dem Bestätigen erscheint die gebuchte Ressource in der Kalenderansicht. Das Actionpanel bestätigt die erfolgreiche Buchung. Über die Schaltfläche "Zurück zum Anlass" schließen Sie die Kalenderansicht und kehren zur Deatilansicht des Anlasses zurück.
+Nach dem Bestätigen erscheint die gebuchte Ressource in der Kalenderansicht. Das Actionpanel bestätigt die erfolgreiche Buchung. Über die Schaltfläche "Zurück zum Anlass" schließen Sie die Kalenderansicht und kehren zur Detailansicht des Anlasses zurück.
 
 {{< imgproc List_ANL_DS_plusRESkal_Best_b Resize "1280x" >}}
-Eingertagene Buchung mit Bestätigung im Actionpanel 
+Eingetragene Buchung mit Bestätigung im Actionpanel 
 {{< /imgproc >}}
 
 Zurück auf der Detailansicht des Anlasses erscheint die getätigte Buchung im Abschnit "Hinzugefügte Buchungen".

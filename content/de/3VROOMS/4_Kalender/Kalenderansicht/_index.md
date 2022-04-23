@@ -11,8 +11,8 @@ description: >
 ## Kalenderansicht
 Mit dem Kalender in ROOMS verschaffen Sie sich sehr schnell einen Überblick über die Belegungssituation der Ressourcen. (Abbildung k) 
 
-Um sich einen Überblick, über freie Ressourcen zu verscahaffen, stehen Ihnen verschiedene Filter- und Ansichtsfunktionen zur Verfügung. Mit dem Mouse-Over über eine Ressourcenbezeichnung öffnet sich ein Tooltip, in dem zusätzliche Informationen der Ressource sichtbar sind, sofern diese hinterlegt wurden. (Abbildung ka). 
-Wenn man mit dem Mauszeiger über eine Buchung fährt ohne yu klicken, sehen Sie ein kleines Fenster mit allgemeinen Informationen zu dieser Buchung. Je nach Einstellung Ihrer Berechtigungen sehen Sie hier mehr oder weniger Informationen.
+Um sich einen Überblick über freie Ressourcen zu verschaffen, stehen Ihnen verschiedene Filter- und Ansichtsfunktionen zur Verfügung. Mit dem Mouse-Over über eine Ressourcenbezeichnung öffnet sich ein Tooltip, in dem zusätzliche Informationen der Ressource sichtbar sind, sofern diese hinterlegt wurden. (Abbildung ka). 
+Wenn man mit dem Mauszeiger über eine Buchung fährt ohne zu klicken, sehen Sie ein kleines Fenster mit allgemeinen Informationen zu dieser Buchung. Je nach Einstellung Ihrer Berechtigungen sehen Sie hier mehr oder weniger Informationen.
 
 {{< imgproc Kalender_Kalenderansicht Resize "1280x" >}}
 Abbildung k: Startbildschirm der Kalenderansicht 
@@ -27,7 +27,7 @@ Des Weiteren stehen Ihnen neben der Tagesansicht auch jeweils eine Ansicht für 
 
 ### Sidepanel: Kalenderfilter 
 Im Kalenderfilter grenzen Sie ein, welche Ressourcen im Kalender dargestellt werden sollen. Dabei können Sie nach folgenden Kriterien filtern:
-* Gespeicherten Listen
+* Gespeicherte Listen
 * Ressourcenart
 * Standort
 * Erweiterte Kriterien (Ressourcen ID, Kapazität)
@@ -42,14 +42,14 @@ Nach der Einstellung der Suchfilter wird im rechten Bereich des Fensters der Kal
 
 Im oberen Bereich kann zwischen den verschiedenen Kalenderansichten gewählt werden. Je nach Präferenz kann zwischen Tag, Arbeitswoche, Woche oder Monat navigiert werden. 
 
-Es stehen Ihnen mehrere Anzeigeoptionen in jeder Ansicht zur Verfügung. Außerdem können Sie sich Buchungen hervorgehoben anzeigen lassen, die z.B. einen Parkplatz oder eine Bestellung enthalten. Ausser in der Monatsansicht, befindet sich in allen Kalenderansichten unten rechts eine Reihe von Icons, welche unterschiedliche Darstellungsfilter aktivieren. Dadurch werden Buchungen mit verknüpften Ressourcen mit einem entsprechenden Symbol gekennzeichnet und farblich hervorgehoben, was Ihnen eine rasche Erkennung ermöglicht.
+Es stehen Ihnen mehrere Anzeigeoptionen in jeder Ansicht zur Verfügung. Außerdem können Sie sich Buchungen hervorgehoben anzeigen lassen, die z.B. einen Parkplatz oder eine Bestellung enthalten. Ausser in der Monatsansicht befindet sich in allen Kalenderansichten unten rechts eine Reihe von Icons, welche unterschiedliche Darstellungsfilter aktivieren. Dadurch werden Buchungen mit verknüpften Ressourcen mit einem entsprechenden Symbol gekennzeichnet und farblich hervorgehoben, was Ihnen eine rasche Erkennung ermöglicht.
 
 {{< imgproc Kalender_ansicht_Toolleiste Resize "1280x" >}}
 Abbildung ky: Tollleiste im Kalender (Anzeige nicht in der Monatsansicht)
 {{< /imgproc >}}
 
 Das Icon ganz rechts aktiviert den Autorefresh. Die übrigen dienen als Visualisierungsfilter für den Kalender. 
-Fahren Sie mit dem Mauszeiger über ein Icon, öffnet sich ein Tooltip, das Sie darüber informiert welche Buchungen durch die Aktivierung dieses Icons hervorgehoben und durch ein Symbol entsprechend der Ressourcenverknüpfung markiert werden. Folgende Filter werden unterschieden:
+Fahren Sie mit dem Mauszeiger über ein Icon, öffnet sich ein Tooltip, das Sie darüber informiert, welche Buchungen durch die Aktivierung dieses Icons hervorgehoben und durch ein Symbol entsprechend der Ressourcenverknüpfung markiert werden. Folgende Filter werden unterschieden:
 
 | Feld          | Funktion      | Sympol |
 | ------------- |-------------  |-------------  |
@@ -82,7 +82,7 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 {{< /imgproc >}} |
 | Fadenkreuz | Bringen Sie die Kalenderansicht wieder auf 100% | {{< imgproc Icon_100_prozent Resize "50x" >}}
 {{< /imgproc >}} |
-| Quadrat mit Pfeil | Lassen Sie sich mehrere Listenelemente komplett anzeichen (siehe Abbildung kl) | {{< imgproc Icon_Liste_verkleinern Resize "50x" >}}
+| Quadrat mit Pfeil | Lassen Sie sich mehrere Listenelemente komplett anzeigen (siehe Abbildung kl) | {{< imgproc Icon_Liste_verkleinern Resize "50x" >}}
 {{< /imgproc >}} |
 | Kalender | Ändern Sie das Datum des gewünschten Tages | {{< imgproc Icon_datumspicker Resize "50x" >}}
 {{< /imgproc >}} |
@@ -90,7 +90,7 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 {{< /imgproc >}} |
 
 Mit dem Regler oben in der Mitte der Kalenderansichten zoomen Sie in den Kalender hinein und hinaus. 
-Befinden Sie sich in der Tagesansicht, wird in die Stunden gezoomt, befindet Sie sich in der Wochenansicht, geschieht dasselbe mit den Tagen.
+Befinden Sie sich in der Tagesansicht, wird in die Stunden gezoomt, befinden Sie sich in der Wochenansicht, geschieht dasselbe mit den Tagen.
 
 {{< imgproc Kalender_Slideransicht Resize "1280x" >}}
 Abbildung ks: Slider zum verkleinern oder vergrößern der Ansicht im Kalender
@@ -101,9 +101,9 @@ Ziehen Sie den Regler mit der Maus nach rechts, vergrössert sich die Ansicht. D
 Ziehen Sie den Regler mit der Maus nach links, verkleinert sich die Ansicht. Beide Einstellungen werden über sämtliche Kalenderansichten (Tag, Arbeitswoche, Woche, Monat) übernommen.
 Klick auf den Button „Fadenkreuz“ auf der rechten Seite des Reglers, passt den Kalender gemäss der Bildschirmauflösung wieder an die optimale Grösse an (100%).
 
-Falls ein spezifisches Datum gesucht wird, kann dieses auch im Datumpicker oben rechts eingegeben oder aus dem Kalenderpopup ausgewählt werden. Gleich daneben befindet sich der „Heute“ Button. Klickt man ihn an, wechselt man, unabhängig von der gewählten Kalenderansicht, auf das aktuelle Datum (oder eben die aktuelle Kalenderwoche oder den aktuellen Monat).
+Falls ein spezifisches Datum gesucht wird, kann dieses auch im Datumspicker oben rechts eingegeben oder aus dem Kalenderpopup ausgewählt werden. Gleich daneben befindet sich der „Heute“ Button. Klickt man ihn an, wechselt man, unabhängig von der gewählten Kalenderansicht, auf das aktuelle Datum (oder eben die aktuelle Kalenderwoche oder den aktuellen Monat).
 
-Die Wochenendtage werden je nach eingestellter Landessprache und Zeitzone (Kultur) entweder an Samstag und Sonntag gelb eingefärbt oder an Freitag und Samstag etc.
+Die Wochenendtage werden je nach eingestellter Landessprache und Zeitzone (Kultur) entweder am Samstag und am Sonntag gelb eingefärbt oder an Freitag und Samstag etc.
 
 #### Listen Icon
 
@@ -117,10 +117,10 @@ Abbildung kl: Listenelemente verkleinert darstellen
 Sie können sich die Belegung und Ressourcen einzelner Personen anzeigen lassen. 
 Betätigen Sie das Personen Icon und es erscheint ein Feld, in welchem Sie durch tippen eine Person auswählen können. 
 Haben Sie die Person gewählt, werden auf dem Server die "Free/Busy" Daten dieser Person abgefragt.
-Sind keine Free/Busy Daten vorhanden wird die Kalenderlinie grau dargestellt.
+Sind keine Free/Busy Daten vorhanden, wird die Kalenderlinie grau dargestellt.
 Die einzelnen (Busy) Termine sind in rot sichtbar. Allday-Termine (Busy/Out of Office) sind mit halbtransparenten, hell-rosaroten Balken hintergründig dargestellt.
 
-Über das Kreuz-Symbol löschen Sie dir Person wieder aus der Liste.
+Über das Kreuz-Symbol löschen Sie die Person wieder aus der Liste.
 
 {{< imgproc Kalender_Personen_anzeigen Resize "1280x" >}}
 Abbildung kv: Belegung von einzelnen Personen anzeigen
@@ -131,7 +131,7 @@ Achtung: Um diese Ansicht zu haben, müssen Sie vorher Free-Busy Einstellungen k
 ### Tagesansicht 
 In der Tagesansicht sehen Sie in der Liste die Ressourcen. In der Zeile darüber werden Ihnen die Stunden des Tages angezeigt.
 
-Mithilfe des Datumspickers oder den Pfeiltasten, wechseln Sie zwischen den Tagen hin und her. 
+Mithilfe des Datumspickers oder den Pfeiltasten wechseln Sie zwischen den Tagen hin und her. 
 
 {{< imgproc Kalender_Tagesansicht Resize "1280x" >}}
 Abbildung kt: Tagesansicht im Kalender
@@ -139,9 +139,9 @@ Abbildung kt: Tagesansicht im Kalender
 
 
 ### Wochenansicht (Arbeitswoche)
-Sie können sich entweder die komplette Woche (Abbildung kw), inklusive Samstag und Sonntag anzeigen lassen, oder nur die Arbeitswoche (Abbildung kr). 
+Sie können sich entweder die komplette Woche (Abbildung kw), inklusive Samstag und Sonntag, anzeigen lassen oder nur die Arbeitswoche (Abbildung kr). 
 
-Mithilfe des Datumspickers oder den Pfeiltasten, wechseln Sie zwischen den Wochen hin und her.
+Mithilfe des Datumspickers oder den Pfeiltasten wechseln Sie zwischen den Wochen hin und her.
 
 {{< imgproc Kalender_Arbeitswoche Resize "1280x" >}}
 Abbildung kr: Ansicht der Arbeitswoche im Kalender
@@ -171,18 +171,18 @@ Eine genaue Beschreibung zur Buchung im Kalender gibt es hier: Hier gelangen Sie
 Je nach Dauer der Reservation weist der Block, nach Abschluss der Reservation, eine mehr oder weniger starke Transparenz auf. 
 
 Die Füllung weist eine Transparenz entsprechend der Auslastung des Blocks während der Arbeitszeiten auf. 
-* Beispiel: Definition der Arbeitszeiten: 8:00-17:00 = Total 9h; der Tag verfügt über 3 Buchungen (6:30-10:00, 13:00-14:00 und 16:00-17:30) = Total 6h, davon 4h während der Arbeitszeiten. Entsprechend wird die Füllung mit 5/9 Transparenz angezeigt (bzw. mit 4/9 Intransparenz). Sind keine Buchung während der Arbeitszeiten, aber Buchungen ausserhalb der Arbeitszeiten vorhanden, wird mit eine gebuchte Einheit berechnet, also im Beispiel 8/9 Transparenz bzw. 1/9 Intransparenz). 
+* Beispiel: Definition der Arbeitszeiten: 8:00-17:00 = Total 9h; der Tag verfügt über 3 Buchungen (6:30-10:00, 13:00-14:00 und 16:00-17:30) = Total 6h, davon 4h während der Arbeitszeiten. Entsprechend wird die Füllung mit 5/9 Transparenz angezeigt (bzw. mit 4/9 Intransparenz). Sind keine Buchungen während der Arbeitszeiten, aber Buchungen ausserhalb der Arbeitszeiten vorhanden, wird mit eine gebuchte Einheit berechnet, also im Beispiel 8/9 Transparenz bzw. 1/9 Intransparenz). 
 Hinweis: Für die Umsetzung muss die Berechnung wohl in Minuten vorgenommen werden.
 
 Dauert eine Buchung z.B. von 08.00-17.00 Uhr erscheint der Block in voller Farbe. Handelt es sich jedoch um eine kurze Buchungszeit, beispielsweise von 14.00-15.00 Uhr, ist der Blockinhalt nur schemenhaft zu erkennen. 
 Ist auf einem Block nur eine Buchung vorhanden, gelangt man mittels Klick auf das „+“-Symbol zum Fenster zur Bearbeitung der Reservation.
 
 ### Farbegebung im Kalender
-Sie sehen die Buchungen farbig markiert. DIe Farbgebung Ihrer eigenen Buchungen können Sie in Ihren Einstellungen festlegen. 
+Sie sehen die Buchungen farbig markiert. Die Farbgebung Ihrer eigenen Buchungen können Sie in Ihren Einstellungen festlegen. 
 
 [Farbgebung im Kalender einstellen](/einstellungen/pers%C3%B6nlicheeinstellungen/personeninformation/)
 
-In jeder Kalenderansicht wird Ihnen oben links das Icon „Legende“ angezeigt. Dort sehen Sie mithilfe der Farbgebung, ob z.B. eine Ressource gebucht ist oder nur provisorisch belegt.
+In jeder Kalenderansicht wird Ihnen oben links das Icon „Legende“ angezeigt. Dort sehen Sie mithilfe der Farbgebung ob z.B. eine Ressource gebucht ist oder nur provisorisch belegt ist.
 
 
 #### Legende

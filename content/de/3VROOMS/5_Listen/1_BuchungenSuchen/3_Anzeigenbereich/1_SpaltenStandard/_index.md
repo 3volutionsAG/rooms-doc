@@ -16,10 +16,10 @@ Tabelle: Übersicht und Erläuterung der standardmäßig angezeigten Spalten
 ---
 
 {{< imgproc List_BG_Anzeige_BGbearbeiten Resize "1280x" >}}
-Eingabemaske um Buchungen zu bearbeiten
+Eingabemaske, um Buchungen zu bearbeiten
 {{< /imgproc >}}
 
-Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen</a>
+Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel <a href="/buchen/buchung-erstellen/">Buchung erstellen</a>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
@@ -39,7 +39,7 @@ Detailansicht einer Buchung
 |Anzahl Personen||Anzahl der angemeldeten Personen|
 |</br>Mobiles Equipment|{{< imgproc List_BG_Anzeige_SymMobEqu Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEqu Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> zugebuchtes Equipment, welches der Ressource nicht permanent zugeordnet ist </br> *z.B. ein mobiler Beamer für einen Besprechnungsraum* </p>|
 |Catering & Service||<p style="text-align: justify"> Name des Dienstleisters und gebuchte Leistungen mit Angabe der Lieferzeit und -ort </p> *z.B. Kaffee oder Bestuhlung*|
-|</br>Workflow Status|{{< imgproc List_BG_Anzeige_TTStatus Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Gibt an ob die Buchung bereits fest ist oder evtl. noch von einer weiteren Instanz geprüft werden muss. Durch einen Klick auf das Symbol können Sie eine Kurzübersicht in einem Dialogfenster öffnen und gegebenfalls den Workflow Status ändern. </p>|
+|</br>Workflow Status|{{< imgproc List_BG_Anzeige_TTStatus Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Gibt an, ob die Buchung bereits fest ist oder evtl. noch von einer weiteren Instanz geprüft werden muss. Durch einen Klick auf das Symbol können Sie eine Kurzübersicht in einem Dialogfenster öffnen und gegebenenfalls den Workflow Status ändern. </p>|
 ||{{< imgproc List_BG_Anzeige_SymStatusDef Resize "40x" >}}{{< /imgproc >}}|</br>Die Ressource ist verbindlich gebucht und bestätigt|
 ||{{< imgproc List_BG_Anzeige_SymStatusProv Resize "40x" >}}{{< /imgproc >}}|</br>Die Ressource wurde gebucht, muss jedoch noch entsprechend des hinterlegten Workflows bestätigt werden.|
 ||{{< imgproc List_BG_Anzeige_SymStatusSys Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Der Zeitraum für die gewünschte Ressource ist verübergehend vom System geblockt, da gerade ein Buchungsvorgang zu dieser im Gange ist, damit es zu keinen Doppelbuchungen kommt. Wird der Buchungsvorgang nicht abgeschlossen, wird der Zeitraum wieder freigegeben. Bei Buchungsabschluss wechselt der Status zu "Besetzt". </p>|
@@ -47,7 +47,7 @@ Detailansicht einer Buchung
 |</br>Bemerkungen|{{< imgproc List_BG_Anzeige_SymBem Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTBem Resize "200x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Bemerkungen, welche in der Buchung hinterlegt wurden, können Sie über den Tooltipp einsehen. </p>|
 |Standortbezeichnung||Standort der Ressource </br> *z.B. Stadt, Filiale, Land*|
 |Ersteller:in||Person, welche die Buchung erstellt hat|
-|</br>Annullieren|{{< imgproc List_BG_Anzeige_SymAnn Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche können Sie zukünfitge Buchungen stornieren, vergangene oder laufende Buchungen aus einer Serie bleiben bestehen.|
+|</br>Annullieren|{{< imgproc List_BG_Anzeige_SymAnn Resize "40x" >}}{{< /imgproc >}}|</br><p style="text-align: justify"> Über diese Schaltfläche können Sie zukünftige Buchungen stornieren, vergangene oder laufende Buchungen aus einer Serie bleiben bestehen.|
 ---
 
 __Einschub Anmerkungen zum Annullieren__

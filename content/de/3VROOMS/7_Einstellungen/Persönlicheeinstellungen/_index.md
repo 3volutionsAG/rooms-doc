@@ -9,10 +9,10 @@ description: >
 
 ---
 ## Persönliche Einstellungen Ansicht
-Sie haben die Möglichkeit Ihre und die Daten Ihrer Mitarbeiter in der Übersicht einzusehen. Hier gibt es die verschiedenen Reiten: 
+Sie haben die Möglichkeit Ihre und die Daten Ihrer Mitarbeiter in der Übersicht einzusehen. Hier gibt es die verschiedenen Reiter: 
 * Person: Persönliche Einstellungen bearbeiten
 * Historik: Änderungen nachvollziehen
-* Mails: Erhaltene und geschrieben Mails mit Buchungsbestätigungen werden hier gespeichert
+* Mails: Erhaltene und geschriebene Mails mit Buchungsbestätigungen werden hier gespeichert
 * Meine Arbeit: Alle Änderungen im System sind hier einsehbar z.B. Buchungsänderungen
 
 {{< imgproc Einstellung_PE_bearbeiten1 Resize "1280x" >}}
@@ -34,7 +34,7 @@ Abbildung pb: Übersicht der erfolgten Änderungen und Bearbeitungen in Rooms
 Alle Funktionen können Sie über den untenstehenden Button "Bearbeiten" bearbeiten und anpassen. 
 
 ## Persönliche Einstellungen bearbeiten
-Beim klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten (Abbildung p, pa). 
+Beim Klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten (Abbildung p, pa). 
 Alle Daten im Tap-Menü: 
 * Personen Information
 * Stammdaten

@@ -31,7 +31,7 @@ Gliederung zur Suche nach Ressourcen
 
 |<div style="width:250px">Feld</div>|<div style="width:250px"></div>|Funktion|
  |---|---|---|
- |Raum: Raumtyp|{{< imgproc List_RES_Glied_Typ Resize "200x" >}}{{< /imgproc >}}|Räume sind firemnspezifisch gegliedert </br> _z.B. Konferenzraum, Seminarraum,..._|
+ |Raum: Raumtyp|{{< imgproc List_RES_Glied_Typ Resize "200x" >}}{{< /imgproc >}}|Räume sind firemenspezifisch gegliedert </br> _z.B. Konferenzraum, Seminarraum,..._|
  |Equipment: Equipmenttyp|{{< imgproc List_RES_Glied_EquipTyp Resize "200x" >}}{{< /imgproc >}}|Typ des Equipments </br> _z.B. Beamer oder Flipchart_)|
 
 

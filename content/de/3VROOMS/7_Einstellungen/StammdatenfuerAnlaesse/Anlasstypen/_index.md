@@ -16,7 +16,7 @@ Im rechten Feld sehen Sie die Anlasstypenliste mit den gespeicherten Anlasstypen
 Abbildung p: Ansicht der Anlasstypen in Rooms
 {{< /imgproc >}}
 
-Über das Aktivieren der Checkbox, können Sie ein Listenelement über den Button "Entfernen" löschen. 
+Über das Aktivieren der Checkbox können Sie ein Listenelement über den Button "Entfernen" löschen. 
 
 ### Anlasstypen durchsuchen 
 Über die Suchfunktion im linken Sidepanel können Sie die Liste der Anlasstypen über die Bezeichnung durchsuchen (Abbildung p).
@@ -63,8 +63,8 @@ Die folgenden Daten können Sie bei den Buchungsanfragen ändern und bearbeiten:
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| Gruppe für die Notifikation       | Festlegen und auswählen, welche Gruppe benachrichtigt werden soll Benutzergruppe, welche notifiziert wird nach Versenden des Request Formulars. Notifikationstemplate: 11 - ReservationsanfrageNeu (siehe Notifikationsmatrix) muss bei Benutzergruppe hinterlegt worden sein. |
-| Detail der Buchungsanfrage      | Freie HTML und JavaScript Eingabe für Gestaltung des Request Formulars.Platzierung der Controls aus den Controllisten möglich. Beginn und Ende des Blocks müssen die HTML Tags <customHtml> und </customHtml> verwenden. | 
+| Gruppe für die Notifikation       | Festlegen und auswählen, welche Gruppe benachrichtigt werden soll. Benutzergruppe, welche notifiziert wird nach Versenden des Request Formulars. Notifikationstemplate: 11 - Reservationsanfrage Neu (siehe Notifikationsmatrix) muss bei Benutzergruppe hinterlegt worden sein. |
+| Detail der Buchungsanfrage      | Freie HTML und JavaScript Eingabe für Gestaltung des Request Formulars. Platzierung der Controls aus den Controllisten möglich. Beginn und Ende des Blocks müssen die HTML Tags <customHtml> und </customHtml> verwenden. | 
   
 
 
@@ -82,7 +82,7 @@ Bereits zugewiesene Benutzergruppen sehen Sie im rechten Feld (Abbildung pe). DI
 Abbildung pe: zugewiesene Benutzergruppen beim Anlasstyp
 {{< /imgproc >}}
 
-Fügen Sie eine neue Benutzergruppe hinzu, indem Sie auf den Button "Hinzufügen" klicken (Abbildung pc). In den neuen Feld, können Sie eine oder mehrere Benutzergruppen über die Checkbox auswählen. Speichern Sie Ihre Auswahl über den Button "Hinzufügen".
+Fügen Sie eine neue Benutzergruppe hinzu, indem Sie auf den Button "Hinzufügen" klicken (Abbildung pc). In dem neuen Feld können Sie eine oder mehrere Benutzergruppen über die Checkbox auswählen. Speichern Sie Ihre Auswahl über den Button "Hinzufügen".
 
 {{< imgproc Anlasstypen_Benutzergruppen_hinzufügen Resize "1280x" >}}
 Abbildung pc: Benutzergruppen zum Anlasstypen hinzufügen

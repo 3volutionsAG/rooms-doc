@@ -23,9 +23,9 @@ Abbildung k: Freie Ressourcen nach Kriterien durchsuchen
 | Kriterium         | Funktion         | 
 | ------------- |-------------  | 
 | Gespeicherte Listen          | Eingetragene Suchkriterien können für eine Wiederverwendung gespeichert werden. Durch Klick des Diskettensymbols und Eingabe einer Bezeichnung wird die aktuelle Listenkonfiguration gespeichert. Zudem wird die Liste bei jedem Laden dieser Ansicht als Standard erscheinen, sofern die Checkbox „Favorit“ unter dem Diskettensymbol selektiert ist. Diese Listen können in den persönlichen Einstellungen wieder entfernt werden. Dies wird in Kapitel 5.5 genauer erläutert. Die Funktion steht im Outlook ebenfalls zur Verfügung. | 
-| Ressourcenart   | Die Ressourcenart bestimmt, welche Ressourcen angezeigt werden sollen. Standardmässig wird in diesem Feld immer der Ressourcentyp Raum dargestellt. Mittels des Dropdown Buttons kann die Ressourcenart eingestellt werden.     |  
-| Datum / Zeit  | Die Box mit Datum und Zeit ist standardmässig inaktiv und kann mittels der Checkbox aktiviert werden. Als Standard wird das aktuelle Datum sowie die aktuelle Zeit plus 1 Stunde gesetzt. Das Datum kann mittels Datumpicker einfach gewählt und die Zeit mittels den Up- / Down-Buttons eingestellt werden.   |  
-| Standort   |  Mittels des Standorts kann eingeschränkt werden, wo sich die Ressource geografisch befinden soll. Standardmässig wird hier der vom Benutzer eingestellte Standard-Standort angezeigt. Falls in diesem Feld nichts steht, wird global über alle Standorte gesucht. Mittels des Buttons „+“ kann der Standortbaum angezeigt und der entsprechende Standort ausgewählt werden. Falls der Standort bekannt ist, beispielsweise „VZA1“, kann dies im Textfeld eingegeben werden. ROOMS schlägt dann direkt Standorte vor, welche auf diese Eingabe passen könnten.   |  
+| Ressourcenart   | Die Ressourcenart bestimmt, welche Ressourcen angezeigt werden sollen. Standardmäßig wird in diesem Feld immer der Ressourcentyp Raum dargestellt. Mittels des Dropdown Buttons kann die Ressourcenart eingestellt werden.     |  
+| Datum / Zeit  | Die Box mit Datum und Zeit ist standardmäßig inaktiv und kann mittels der Checkbox aktiviert werden. Als Standard wird das aktuelle Datum sowie die aktuelle Zeit plus 1 Stunde gesetzt. Das Datum kann mittels Datumspicker einfach gewählt und die Zeit mittels den Up- / Down-Buttons eingestellt werden.   |  
+| Standort   |  Mittels des Standorts kann eingeschränkt werden, wo sich die Ressource geografisch befinden soll. Standardmäßig wird hier der vom Benutzer eingestellte Standard-Standort angezeigt. Falls in diesem Feld nichts steht, wird global über alle Standorte gesucht. Mittels des Buttons „+“ kann der Standortbaum angezeigt und der entsprechende Standort ausgewählt werden. Falls der Standort bekannt ist, beispielsweise „VZA1“, kann dies im Textfeld eingegeben werden. ROOMS schlägt dann direkt Standorte vor, welche auf diese Eingabe passen könnten.   |  
 
 {{< imgproc FR_suchen_Ressourcen Resize "1280x" >}}
 Abbildung ka: Freie Ressourcen suchen im Sidepanel 
@@ -34,7 +34,7 @@ Abbildung ka: Freie Ressourcen suchen im Sidepanel
 #### Suche: Erweiterte Kriterien
 | Kriterium         | Funktion         | 
 | ------------- |-------------  | 
-| Ressourcen ID/Bezeichnung          | Durch Eingabe der Ressourcen ID (falls bekannt und vorhanden) oder der Bezeichnung der Ressource wie z.B. grosses Auditorium, kann die Suche weiter eingegrenzt werden.| 
+| Ressourcen ID/Bezeichnung          | Durch Eingabe der Ressourcen ID (falls bekannt und vorhanden) oder der Bezeichnung der Ressource wie z.B. großes Auditorium kann die Suche weiter eingegrenzt werden.| 
 | Dienstleistungen  | Mittels Plus Symbol werden alle zur Verfügung stehenden Dienstleistungen für den eingetragenen Standort angezeigt. Diese können ausgewählt und mit Button „Hinzufügen“ in die Suche übernommen werden. Wird aus der im Suchresultat angezeigten Ressource eine Reservation erzeugt, werden die vorher selektierten Dienstleistungen direkt übernommen. Das Suchkriterium ist nur im Menü „Reservieren“ sichtbar. | 
 | Ist Öffentlich  | Über den Pfeil wählen Sie aus, ob Sie alle Ressourcen, nur öffentliche oder nur interne suchen möchten |
 
@@ -66,7 +66,7 @@ Sie erweitern das Sidepanel und finden darunter den Reiter "Anlass". Wenn bestim
 Abbildung kd: freie Ressourcen nach einem Anlass durchsuchen oder einen Anlass erstellen
 {{< /imgproc >}}
 
-Möchten Sie selber einen Anlass erstellen, tun Sie dies, indem Sie auf den Button erstellen klicken (Abbildung kd). Es öffnet sich ein neues Feld. Hier geben Sie alle Informationen zum Anlass ein. SIe speichern den Anlass über den untenstehenden Button "Speichern". (Abbildung ke)
+Möchten Sie selber einen Anlass erstellen, tun Sie dies, indem Sie auf den Button *erstellen* klicken (Abbildung kd). Es öffnet sich ein neues Feld. Hier geben Sie alle Informationen zum Anlass ein. SIe speichern den Anlass über den untenstehenden Button "Speichern". (Abbildung ke)
 
 {{< imgproc FR_Anlass_erstellen Resize "1280x" >}}
 Abbildung ke: Einen Anlass erstellen 

@@ -3,12 +3,12 @@ title: "Massenbearbeitung"
 linkTitle: "Massenbearbeitung"
 weight: 3
 description: >
-  Mit der Funktion "Massenbearbeitung" bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung, verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs „[Plan](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-plan)“, „[Kalender](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-kalender)“ und „[Listen](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-listen) “ durchführen.
+  Mit der Funktion <i>Massenbearbeitung</i> bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs [Plan](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-plan), [Kalender](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-kalender) und [Listen](/buchen/massenbearbeitung/#massenbearbeitung-im-reiter-listen) durchführen. </br> </br>
   
-  Bemerkung: Um diese Funktion nutzen zu können sind entsprechende Berechtigungen notwendig. 
+  Bemerkung: Um diese Funktion nutzen zu können, sind entsprechende Berechtigungen notwendig. 
 ---
 ## Massenbearbeitung 
-Das Ziel der Massenbearbeitung ist es, eine oder mehrere Buchungen in den gleichen Prozessschritten bearbeiten zu können. Sie führen eine Massenbearbeitung in drei Schritten durch. Diese drei Schritte lassen sich auf die Selbe Art und Weise in den Reitern "Kalender", "Plan" und "Listen" wiederholen.  
+Das Ziel der Massenbearbeitung ist es, eine oder mehrere Buchungen in den gleichen Prozessschritten bearbeiten zu können. Sie führen eine Massenbearbeitung in drei Schritten durch. Diese drei Schritte lassen sich auf die selbe Art und Weise in den Reitern "Kalender", "Plan" und "Listen" wiederholen.  
 
 
 * Schritt 1: Selektion von zwei oder mehr Buchungen
@@ -20,7 +20,7 @@ Das Ziel der Massenbearbeitung ist es, eine oder mehrere Buchungen in den gleich
 ### Massenbearbeitung im Reiter Kalender
 Sofern das Recht „Darf Massenmutationen vornehmen“ vorhanden ist, erscheint bei einem Mouse-Over über eine Reservation rechts davon eine Checkbox. 
 
-Wählen Sie mit der Maus mehrere Buchungen aus, die Sie ändern möchten indem Sie die Checkbox aktivieren (Abbildung m).
+Wählen Sie mit der Maus mehrere Buchungen aus, die Sie ändern möchten, indem Sie die Checkbox aktivieren (Abbildung m).
 
 Bemerkung:
 Dies funktioniert nicht über das "+"-Symbol neben einer der selektierten Reservationen, da dies der individuelle Kontext einer einzelnen Buchung ist. Für eine Massenmutation muss der Button "Bearbeiten" unten links gewählt werden.
@@ -73,7 +73,7 @@ Sie führen eine Massenannullation von Buchungen ebenfalls in den Menüs „Plan
 Schritt 1 ist identisch zu der Massenbearbeitung. 
 
 ### Schritt 2
-In Schritt 2 klicken Sie anstelle des „Bearbeiten“ Buttons unten links, der Button „Annullieren“. (Abbildung mc)
+In Schritt 2 klicken Sie anstelle des „Bearbeiten“ Buttons unten links auf den Button „Annullieren“. (Abbildung mc)
 
 ### Schritt 3
 Als dritter Schritt erscheint hier ein Popup, welches über die Annullationskosten informiert und eine Bestätigung der Massenannullation von Ihnen verlangt. Wenn Sie auf den Button „Annullieren“ im Popup Fenster klicken, beenden Sie die Massenannullation. (Abbildung md)
@@ -95,10 +95,10 @@ Einzige wichtige Bedingung: Es muss sich bei den selektierten Reservationen um a
 Schritt 1 läuft identisch ab wie bei der Massenmutation und der Massenannullation. 
 
 ### Schritt 2
-In Schritt 2 klicken Sie anstelle des „Bearbeiten“ oder des „Annullieren“ Buttons, den Button „Freigabe“ oder „Terminieren“. 
+In Schritt 2 klicken Sie anstelle des „Bearbeiten“ oder des „Annullieren“ Buttons den Button „Freigabe“ oder „Terminieren“. 
 
 ### Schritt 3
-In Schritt 3 sehen Sie bei der Freigabe ein Popup mit der Rückfrage ob die selektierten Reservationen wirklich freigegeben werden sollen. Gewünschtes Datum und Uhrzeit können eingegeben werden und durch den Button „Freigeben“ im Popup wird der Vorgang abgeschlossen.
+In Schritt 3 sehen Sie bei der Freigabe ein Popup mit der Rückfrage, ob die selektierten Reservationen wirklich freigegeben werden sollen. Gewünschtes Datum und Uhrzeit können eingegeben werden und durch den Button „Freigeben“ im Popup wird der Vorgang abgeschlossen.
 
 {{< imgproc Massenfreigabe Resize "1280x" >}}
 Abbildung me: Eine Massenfreigabe oder Massenterminierung durchführen

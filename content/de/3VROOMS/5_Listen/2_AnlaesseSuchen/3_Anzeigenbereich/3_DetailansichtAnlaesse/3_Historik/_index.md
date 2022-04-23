@@ -21,5 +21,5 @@ Drop-Down-Ansicht mit Details zu Änderungen
 {{< /imgproc >}}
 
 ## Schaltflächen
-<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs erscheinen ebenfalls die Schaltflächen zru Anlassverwaltung. Diese werden unter <a href="/listen/2_anlässe-suchen/3_anzeigenbereich/3_detailansicht-anlässe/1_anlass/#schaltflächen">Reiter Anlass</a> beschrieben. </p>
+<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs erscheinen ebenfalls die Schaltflächen zur Anlassverwaltung. Diese werden unter <a href="/listen/2_anlässe-suchen/3_anzeigenbereich/3_detailansicht-anlässe/1_anlass/#schaltflächen">Reiter Anlass</a> beschrieben. </p>
 

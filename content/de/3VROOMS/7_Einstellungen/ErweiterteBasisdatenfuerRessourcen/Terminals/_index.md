@@ -9,11 +9,11 @@ description: >
 
 ---
 ## Ansicht: Terminals 
-Im linken Sidepanel finden Sie unter der Kategorie "Tarife" eine Suchfunktion mit dessen Hilfe Sie nach einem Tarif suchen können (Abbildung t). Sie können hierbei nach folgenden Kriterien suchen: 
+Im linken Sidepanel finden Sie unter der Kategorie "Tarife" eine Suchfunktion, mit dessen Hilfe Sie nach einem Tarif suchen können (Abbildung t). Sie können hierbei nach folgenden Kriterien suchen: 
 * Bezeichnung
 * Typ
 
-Im rechten Feld sehen Sie die Terminalliste. Sollten keine Terminals gespeichert sein ist diese Liste leer. 
+Im rechten Feld sehen Sie die Terminalliste. Sollten keine Terminals gespeichert sein, ist diese Liste leer. 
 
 {{< imgproc Terminals_Ansicht Resize "1280x" >}}
 Abbildung t: Start Ansicht der Terminalliste
@@ -28,7 +28,7 @@ Sie können die gespeicherten Daten der Listenelemente über Klick auf den Namen
 Klicken Sie auf das Sift Icon neben einem Listenelement, können Sie die Stammdaten und die Ressourcen eines Terminals bearbeiten.
 
 ## Terminal hinzufügen
-Terminals erstellen Sie über den untenstehenden Button "Hinzufügen". In dem Feld, welches sich öffnet legen Sie die Stammdaten sowie die Ressourcen für die jeweiliege Tarifkategorie fest (Abbildung hi).
+Terminals erstellen Sie über den untenstehenden Button "Hinzufügen". In dem Feld, welches sich öffnet, legen Sie die Stammdaten sowie die Ressourcen für die jeweilige Tarifkategorie fest (Abbildung hi).
 
 Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung hi).
 
@@ -48,7 +48,7 @@ Die folgenden Daten legen Sie bei den Stammdaten der Terminals fest:
 
 
 ### Ressourcen bearbeiten
-Im Reiter Ressourcen fügen Sie die entsprechenden Ressorcen für den Terminal hinzu (Abbildung hv). Sollten noch keine Ressourcen ausgewählt sein, klicken Sie auf den untenstehenden Button "Hinzufügen".
+Im Reiter Ressourcen fügen Sie die entsprechenden Ressourcen für den Terminal hinzu (Abbildung hv). Sollten noch keine Ressourcen ausgewählt sein, klicken Sie auf den untenstehenden Button "Hinzufügen".
 
 {{< imgproc Terminals_Ressourcen Resize "1280x" >}}
 Abbildung hv: Ressourcen der Terminals festlegen

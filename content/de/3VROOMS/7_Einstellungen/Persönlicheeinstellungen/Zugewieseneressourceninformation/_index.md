@@ -28,11 +28,11 @@ Klicken Sie auf den Button "Ressourcen hinzufügen", damit Sie eine neue Ressour
 
 
 {{< imgproc Zugewiesene_Ressourcen_speichern Resize "1280x" >}}
-Abbildung ra: Eine Ressource hinzufügen über den Button "Resosurce hinzufügen"
+Abbildung ra: Eine Ressource hinzufügen über den Button "Ressource hinzufügen"
 {{< /imgproc >}}
 
 Es öffnet sich ein neues Feld. In diesem wählen Sie die entsprechende Ressource aus, indem Sie die Checkbox am Anfang der Liste betätigen. (Abbildung rb)
-Über das Stift Icon können Sie die ressource ebenfalls bearbeiten.
+Über das Stift Icon können Sie die Ressource ebenfalls bearbeiten.
 
 {{< imgproc Zugewiesene_Ressource_hinzufügen Resize "1280x" >}}
 Abbildung rb: Ressource neu hinzufügen
@@ -42,7 +42,7 @@ Abbildung rb: Ressource neu hinzufügen
 Im View Modus unter dem Menüpunkt Einstellungen und Persönliche Einstellungen sehen Sie eine Zusammenfassung der Informationen. Hier sehen Sie auch die zugewiesenen Ressourcen (Abbildung rc).
 
 {{< imgproc Zugewiesene_Ressourcen_Information Resize "1280x" >}}
-Abbildung rc: Infomration zur Person und zugewiesenen Ressourcen einsehen
+Abbildung rc: Informationen zur Person und zugewiesenen Ressourcen einsehen
 {{< /imgproc >}}
 
 ### Ressourcen freigeben
@@ -52,7 +52,7 @@ Im Viewmodus der Person können SIe (Abbildung rc) die fixen Ressourcen für sel
 Abbildung rd: Ressourcen "Freigabe bearbeiten" Button
 {{< /imgproc >}}
 
-Weisse Felder im Kalender sind Tage an denen die Ressource freigegeben ist und blaue sind gebuchte Tage. Klicken Sie auf ein Datum ermöglicht dies das Buchen bzw. Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden.
+Weiße Felder im Kalender sind Tage, an denen die Ressource freigegeben ist und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen bzw. Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden.
 
 {{< imgproc Zugewiesene_Ressource_bearbeiten_freigeben Resize "1280x" >}}
 Abbildung re: Ressourcen Freigabe bearbeiten 

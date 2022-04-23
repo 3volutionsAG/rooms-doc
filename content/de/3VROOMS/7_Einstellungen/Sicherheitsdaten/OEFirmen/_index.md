@@ -9,7 +9,7 @@ description: >
 
 ---
 ## Ansicht: OE/Firmen 
-In der Startansicht unter der Kategorie OE und Firmen, sehen Sie auf der rechten Seite die Firmen in Listenform dargestellt. Aut der Linken Seite sehen Sie das Sidepanel mit Filterfunktionen. Hier können Sie nach eingetragenen Firmen suchen. 
+In der Startansicht unter der Kategorie OE und Firmen, sehen Sie auf der rechten Seite die Firmen in Listenform dargestellt. Aut der linken Seite sehen Sie das Sidepanel mit Filterfunktionen. Hier können Sie nach eingetragenen Firmen suchen. 
 
 {{< imgproc OE_Firmen_Ansicht Resize "1280x" >}}
 Abbildung o: OE/Firmen Ansicht in der Startansicht 
@@ -27,7 +27,7 @@ Im linken Menü finden Sie unter der Kategorie "OE/Firmen" eine Suchfunktion mit
 Betätigen Sie den Button "Anzeigen", um sich Ihre gefilterten Firmen anzeigen zu lassen. 
 
 ## OE/Firmen bearbeiten oder neu eintragen
-Die Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten Sie, indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung o). Ebenfalls können Sie eine Firma neu eintragen, indem Sie auf den Untenstehenden Button "Neu" klicken. Es öffnet sich in beiden Fällen, das gleiche Feld zur Bearbeitung.
+Die Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten Sie, indem Sie das Stift Icon "Bearbeiten" auswählen (Abbildung o). Ebenfalls können Sie eine Firma neu eintragen, indem Sie auf den untenstehenden Button "Neu" klicken. Es öffnet sich in beiden Fällen das gleiche Feld zur Bearbeitung.
 
 {{< imgproc OE_Firmen_bearbeiten Resize "1280x" >}}
 Abbildung oi: Bearbeitete Eigenschaften unter OE/Firmen speichern
@@ -36,7 +36,7 @@ Abbildung oi: Bearbeitete Eigenschaften unter OE/Firmen speichern
 Speichern Sie alle Ihre Einträge über den untenstehenden Button "Speichern"
 
 ### OE/Firmen: Stammdaten bearbeiten
-In den Stammdaten trageg Sie folgende Informationen ein: 
+In den Stammdaten tragen Sie folgende Informationen ein: 
 * Bezeichnung
 * Firmennummer
 * Abteilung
@@ -56,19 +56,19 @@ Sie sehen die eingetragene Adresse einer Firma in diesem Menüreiter (Abbildung 
 Abbildung oc: Ansicht Adressen der Firmen
 {{< /imgproc >}}
 
-Sie Tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Außerdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. (Abbildung ob)
+Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Außerdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. (Abbildung ob)
 
 {{< imgproc OE_Firmen_bearbeiten_Adresse_eintragen Resize "1280x" >}}
 Abbildung ob: Neue Adresse zu einer Firma hinzufügen
 {{< /imgproc >}}
 
-Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sich die Liste automatisch und Sie sehen die neu eingetragene Adress in der Liste. (Abbildung oa)
+Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sich die Liste automatisch und Sie sehen die neu eingetragene Adresse in der Liste. (Abbildung oa)
 
 {{< imgproc OE_Firmen_bearbeiten_Adressen_Ansicht Resize "1280x" >}}
 Abbildung oa: Einsehen der Adressen in Listenform
 {{< /imgproc >}}
 
-Hinwei: Es kann immer nur eine Adresse pro OE/Firma als Standard definiert werden. Eine Adresse muss als Standard definiert werden
+Hinweis: Es kann immer nur eine Adresse pro OE/Firma als Standard definiert werden. Eine Adresse muss als Standard definiert werden
 
 ### OE/Firmen: Peronen bearbeiten
 Sie können Personen auf eine OE (intern) und auf eine Firma (extern) zuweisen. Bereits zugewiesene Personen sehen Sie in der Liste (Abbildung od). 
