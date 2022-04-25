@@ -9,7 +9,7 @@ description: Dokumentation der Erstinstallation, die eine selbstständige Ausfü
 Falls nachträglich zusätzliche Installationen gewünscht oder eine Paketierung der Installation angestrebt wird, muss der Kunde die von uns vorgenommene Erstinstallation so ausführlich dokumentieren, dass diese Arbeiten danach selbständig ausgeführt werden können. </p>
 
 - Anzahl der eingesetzten Maschinen und Aufteilung der Komponenten klären:
-  [Skalierung](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/257130714?src=-720952394)
+  [Skalierung](/content/de/Betrieb/Skalierung/_index.md)
 - Setup der Maschinen mit der benötigten Software von Drittherstellern und Updates: [Tools & Guides](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/508690433)
 - ROOMS Installation File:
   [ROOMS Releases](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536)

@@ -22,7 +22,7 @@ Bei einem Update wird empfohlen, vorgängig den IIS zu stoppen: Kommandozeile al
 
 3. Wählen Sie die **gewünschten Optionen**.
    <p align = "justify">
-   Wie unter <a href = "https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/257130714?src=137072959">Skalierung</a> aufgeführt, ist es möglich, die Webapplikation und den Windows Service auf verschiedenen Maschinen zu betrieben oder die Webapplikation für ein LoadBalancing sogar auf mehreren Maschinen zu installieren. Die gewünschten Optionen sind entsprechend anzupassen - die Konfigurationskomponenten müssen aber immer auf allen Maschinen mitinstalliert werden. Bei Bedarf können für alle Optionen auch die Installationsverzeichnisse mit einem Klick auf <b>Durchsuchen</b> angepasst werden </p>
+   Wie unter <a href = "/betrieb/skalierung/_index.md">Skalierung</a> aufgeführt, ist es möglich, die Webapplikation und den Windows Service auf verschiedenen Maschinen zu betrieben oder die Webapplikation für ein LoadBalancing sogar auf mehreren Maschinen zu installieren. Die gewünschten Optionen sind entsprechend anzupassen - die Konfigurationskomponenten müssen aber immer auf allen Maschinen mitinstalliert werden. Bei Bedarf können für alle Optionen auch die Installationsverzeichnisse mit einem Klick auf <b>Durchsuchen</b> angepasst werden </p>
 
    {{< imgproc BenutzerSetup Resize "640x" >}} {{< /imgproc >}}
 
