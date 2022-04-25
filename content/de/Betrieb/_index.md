@@ -1,6 +1,6 @@
 ---
-title: "Installation & Betrieb"
-linkTitle: "Installation & Betrieb"
+title: "Betrieb"
+linkTitle: "Betrieb"
 weight: 100
-description: Generelle Informationen zu Installations- und Betriebsmöglichkeiten im ROOMS Ecosystem
+description: Generelle Informationen zum Betrieb im 3V ROOMS Ecosystem
 ---

@@ -434,7 +434,6 @@ Wenn alles korrekt konfiguriert ist, muss folgende Seite erscheinen:
 
 {{< imgproc Erfolgreicher_Push_Webservice Resize "512x" >}}{{< /imgproc >}}
 
-
 ### ROOMS Windows Service
 
 Sicherstellen, dass der Windowsservice gestartet und der korrekte ConnectionString hinterlegt ist.
@@ -444,7 +443,6 @@ Sicherstellen, dass der Windowsservice gestartet und der korrekte ConnectionStri
 Im Benutzerprofil die Sync-Settings überpfüfen:
 
 {{< imgproc Person_Troubleshooting Resize "1024x" >}}{{< /imgproc >}}
-
 
 **Fremdbuchungen (Sektretärinnenfunktion)**
 
@@ -468,5 +466,3 @@ Wird das Addin aufgelistet? Ist die Checkbox davor aktiviert?
 - Das Addin wird nicht aufgelistet: Regedit öffnen, HKLM\Software sowie HKCU\Software exportieren. Exportierte Datei zusammen mit Angabe der Versionen von Betriebssystem (x64?), MS Office und Addin Versionsnummer (siehe Screenshot, oder „Eigenschaften&quot; der Datei Garaio.Products.RoomsPro.OutlookAddin.Core.dll, Tab Details) an Garaio senden.
 - Das Addin wird aufgelistet, die Checkbox davor ist aber nicht aktiviert: Checkbox aktivieren und Dialog schliessen. Wird die Sidebar jetzt angezeigt? Ist die Checkbox beim erneuten Öffnen des Dialogs noch aktiviert? </br>
  -\&gt; Nein: Ereignisanzeige öffnen, Suche nach gerade erzeugten Fehler-Einträgen. Inhalt kopieren und Garaio kontaktieren.
-
-
