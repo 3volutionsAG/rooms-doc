@@ -2,7 +2,7 @@
 title: "Voraussetzungen für eine 3V ROOMS Migration"
 linkTitle: "Voraussetzungen für eine 3V ROOMS Migration"
 weight: 10
-description: Zusammenfassung aller Voraussetzungen für eine erfolgreiches Update von 3V ROOMS und das zugehörige Wizard.
+description: Zusammenfassung aller Voraussetzungen für eine erfolgreiches Update von 3V ROOMS.
 ---
 Stellen Sie Sie sicher, dass folgende Voraussetzungen erfüllt sind:
 
@@ -14,6 +14,6 @@ Stellen Sie Sie sicher, dass folgende Voraussetzungen erfüllt sind:
 6. URI / Concept für die IdP Integration
     - URL für IdP
     - URL für jede Authentifizierungs-Methode
-7. URI / Concetp für die AddIn/Wizard Integration
-    - URL für das AddIn/Wizard
+7. URI / Concept für die AddIn/Wizard Integration
+    - URL für das Add-In/Wizard
     - O365 Setup

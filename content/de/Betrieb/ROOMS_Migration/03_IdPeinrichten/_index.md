@@ -4,17 +4,17 @@ linkTitle: "IdP einrichten"
 weight: 30
 description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
 ---
-### Eigene Website für IdP einrichten
+### Eigene Seite für IdP einrichten
 
 1. Richten Sie eine eigene Seite für die IdP ein.
-2. Fügen Sie einen **Application Pool** hinzu und benennen Sie ihn **IDP**.
+2. Fügen Sie einen **Application Pool** hinzu und geben Sie ihm den Namen **IDP**.
 3. Klicken Sie auf **Advanced Settings**
 4. Wählen Sie im Feld **Identity** die Einstellung *Service User*.
 
 {{< imgproc IDP-Site Resize "640x" >}} {{< /imgproc >}}
 
-5. Erezugen Sie eine **neue Seite** und geben Sie ihr den Namen **IDP**.
-6. Wählen Sie den zuvor erstellten Applications Pool.
+5. Erzeugen Sie eine **neue Seite** und geben Sie ihr den Namen **IDP**.
+6. Wählen Sie den zuvor **Applications Pool IDP**.
 7. Geben Sie in das Feld **Physical Path** den Pfad für die IdP ein.
 
 {{< imgproc addSite Resize "640x" >}} {{< /imgproc >}}
@@ -26,9 +26,14 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
 
 ### appsettings.json konfigurieren
 
-1. Rufen Sie dei Datei **appsettings.json** auf. (default: C:\inetpub\wwwroot\config\IDP )
-2. Erezugen Sie eine **Log Output** Datei. 
-3. Platzieren Sie den Coursors zwischen **WriteTo** und **Enrich**.
+1. Rufen Sie dei Datei **appsettings.json** auf, standardmäßig:
+   
+   ```
+   C:\inetpub\wwwroot\config\IDP
+   ```
+
+2. Erzeugen Sie eine **Log Output** Datei.
+3. Platzieren Sie den Cursor zwischen **WriteTo** und **Enrich**.
    
    ```
     2.	            {
@@ -36,7 +41,7 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
     4.	                "Args": {
     5.	                    "path":  "C:\\inetpub\\wwwroot\\IDP\\idp_log\\serilog.txt"
     6.	                }
-    7.              }
+    1.              }
     ```
 
     {{< imgproc OutputFile Resize "640x" >}} {{< /imgproc >}}
@@ -49,7 +54,7 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
     Security=True;MultipleActiveResultSets=True;",
     ```
 
-5.	Fügen Sie einen expliziten explicit **Auftrag** hinzu.
+5.	Fügen Sie einen **Auftrag** hinzu.
     
     ```
     "Mandate": "Default",
@@ -91,7 +96,7 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
     ],
     ```
 
-9. Ersetzen Sie die "RedirectUris" durch die zuvor angegebenen URIs.
+9. Ersetzen Sie die **RedirectUris** durch die zuvor angegebenen URIs.
 
     ```
         "RedirectUris": [
@@ -99,7 +104,7 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
 	    "https://10.1.16.31/Default/"
     ],
     ```
-10. Ersetzen Sie die ""PostLogoutRedirectUris"" durch die zuvor angegebenen URIs.
+10. Ersetzen Sie die **PostLogoutRedirectUris** durch die zuvor angegebenen URIs.
 
     ```
     "PostLogoutRedirectUris": [
@@ -108,10 +113,14 @@ description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
     ],
     ```
 
-### Autentifizierungen konfigurieren
+### Authentifizierungen konfigurieren
 
-1. Suchen Sie **RoomsAppSettings.config**
-(Standard: C:\Program Files (x86)\3VOLUTIONS\ROOMS\Configuration).
+1. Suchen Sie **RoomsAppSettings.config**, standardmäßig unter
+
+    ```
+    C:\Program Files (x86)\3VOLUTIONS\ROOMS\Configuration
+    ```
+    
 2. **Windows-Authentifizierung + Anonym (Formulare)**
 
     ```

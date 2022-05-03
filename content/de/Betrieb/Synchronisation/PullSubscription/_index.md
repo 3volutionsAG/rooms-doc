@@ -4,7 +4,6 @@ linkTitle: "Pull Subscription"
 weight: 40
 description: Pull Synchronisation einrichten
 ---
-
 {{< imgproc Pull_Subscription_Overview Resize "1024x" >}}{{< /imgproc >}}
 
 ## Aktivieren des Pull-Subscription Dienstes
@@ -203,4 +202,3 @@ Hier ein Script um User auf eine bestimmte Anzahl von Priority Gruppen zuzuweise
 
   UPDATE Person set PriorityGroup = Id % @NumberOfServices
 ```
-

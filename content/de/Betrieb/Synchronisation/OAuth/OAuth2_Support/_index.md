@@ -2,7 +2,7 @@
 title: "OAuth 2.0 Support"
 linkTitle: "OAuth 2.0 Support"
 weight: 1
-description: Folgender Guide beschreibt die Konfiguration von Azure Active Directory und ROOMS. Mit diesen Konfigurationen wird die Applikation in der Lage sein, AAD als externen Identity Provider zu verwenden.
+description: Folgender Leitfaden beschreibt die Konfiguration von Azure Active Directory und ROOMS. Mit diesen Konfigurationen wird die Applikation in der Lage sein, AAD als externen Identity Provider zu verwenden.
 ---
 Die Konfiguration erfolgt in zwei Schritten:
 
@@ -87,7 +87,8 @@ Für O365 könnte die Konfiguration wie folgt aussehen:
 </IdentityProviders>
 ```
 
-Jeder Person welche in der Lage sein soll OAuth zu verwenden, muss ein Logon vom Typ **OAuth 2.0** hinterlegt werden (Dies kann optional durch den Benutzerdatenimport automatisiert werden). Der Name muss hierbei dem Inhalt, welcher im Claim mit dem Key ClaimLookup definiert wurde entsprechen.
+<p align="justify">
+Jeder Person welche in der Lage sein soll OAuth zu verwenden, muss ein Logon vom Typ **OAuth 2.0** hinterlegt werden (Dies kann optional durch den Benutzerdatenimport automatisiert werden). Der Name muss hierbei dem Inhalt, welcher im Claim mit dem Key ClaimLookup definiert wurde entsprechen. </p>
 
 1. Klicken Sie in der Menüleiste auf **Einstellungen**.
 2. Wählen Sie im Sidepanel **Personen**.
