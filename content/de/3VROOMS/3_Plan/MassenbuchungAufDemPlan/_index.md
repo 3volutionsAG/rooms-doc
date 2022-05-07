@@ -5,13 +5,11 @@ weight: 5
 description: >
   Buchen, löschen oder geben Sie mehrere Ressourcen oder Räume im Plan gleichzeitig frei.
 ---
+<p style="text-align: justify">
+Wenn Sie nicht direkt auf das Status-Icon der Ressource klicken, sondern auf die Fläche eines Raumes, heben Sie diese hervor (=selektieren). So verfahren Sie mit weiteren Ressourcen der gleichen Art, welche ebenfalls gebucht werden sollen. Klick auf das Icon einer der  markierten Ressourcen öffnet das Popup <i>Schnellanlass</i>. </p>
 
-
-## Massenbuchung auf dem Plan
-Wenn Sie nicht direkt auf das Status-Icon der Ressource klicken, sondern auf die Fläche eines Raumes, heben Sie diese hervor (=selektieren). So verfahren Sie mit weiteren Ressourcen der gleichen Art, welche ebenfalls gebucht werden sollen. Klick auf das Icon einer der  markierten Ressourcen öffnet das Popup „Schnellanlass“.
-
-{{< imgproc Plan_Massenbuchung Resize "1280x" >}}
-Abbildung pm: Massenbuchung im PLan erstellen
+{{< imgproc Plan_Massenbuchung Resize "960x" >}}
+Massenbuchung im PLan erstellen
 {{< /imgproc >}}
 
 Die Schnellbuchung wird Ihnen hier genauer erläutert:
