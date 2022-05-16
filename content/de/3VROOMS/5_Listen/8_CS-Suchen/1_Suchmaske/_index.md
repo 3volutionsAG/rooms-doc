@@ -3,11 +3,11 @@ title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
 description: >
-  Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten.
+  <p style="text-align: justify"> Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten. </p>
 ---
-<p style="text-align: justify"> Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen "Catering & Service". Dadurch öffnet sich die Suchmaske. </p>
+<p style="text-align: justify"> Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen <i>Catering & Service</i>. Dadurch öffnet sich die Suchmaske. </p>
 
-{{< imgproc List_CS_Such Resize "1280x" >}}
+{{< imgproc List_CS_Such Resize "960x" >}}
 Übersicht der Suche nach Catering & Service mit Ergebnisliste 
 {{< /imgproc >}}
 
@@ -15,15 +15,15 @@ Folgende Tabelle erläutert die Eingabefelder:
 
  |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
  |---|---|---|
- |Datum/Zeit||Datum/Uhrzeit der bestellten Dienstleistung|
- |Standort||Standort, an dem die Dienstleistung ausgeführt wird|
- |Dienstleistende||Bezeichnung der Dienstleistenden|
- |Angebotszone||Angebote eines Dienstleisters|
- |Angebotskategorie||Gruppierung von Angeboten aller Dienstleister, z.B. Getränke, Snacks,...|
- |Angebot||spezifisches Angebot eines Dienstleisters|
- |</br>Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|</br>Status über die Schnellauswahl wählen|
+ |Datum/Zeit||<p style="text-align: justify"> Datum/Uhrzeit der bestellten Dienstleistung </p>|
+ |Standort||<p style="text-align: justify"> Standort, an dem die Dienstleistung ausgeführt wird </p|
+ |Dienstleistende||<p style="text-align: justify">Bezeichnung der Dienstleistenden</p>|
+ |Angebotszone||<p style="text-align: justify">Angebote eines Dienstleisters</p>|
+ |Angebotskategorie||<p style="text-align: justify">Gruppierung von Angeboten aller Dienstleister, z.B. Getränke, Snacks,...</p>|
+ |Angebot||<p style="text-align: justify">spezifisches Angebot eines Dienstleisters</p>|
+ |Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Status über die Schnellauswahl wählen</p>|
  ---
-<!-- Begriffe erklären -->
+
 Erläuterung der einzelnen Buchungsstatus:
 
  |<div style="width:200px">Status</div>|Bedeutung|

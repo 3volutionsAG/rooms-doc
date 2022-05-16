@@ -5,5 +5,3 @@ weight: 9
 description: >
   Jobmanager finden
 ---
-
-## Jobmanager suchen

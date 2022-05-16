@@ -3,30 +3,37 @@ title: "Bestuhlung"
 linkTitle: "Bestuhlung"
 weight: 4
 description: >
-  In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest. Sie erfassen und verwalten die Bestuhlungsoptionen und die Zuweisung auf der Ressource. Eine „Bestuhlungsoption“ beinhaltet alle Felder der Tabelle „Bestuhlung“.  
+  <p style="text-align: justify"> In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest. Sie erfassen und verwalten die Bestuhlungsoptionen und die Zuweisung auf der Ressource. Eine <i>Bestuhlungsoption</i> beinhaltet alle Felder der Tabelle <i>Bestuhlung</i.  </p>
 ---
 ## Ansicht: Bestuhlung
-Im linken Sidepanel finden Sie die Filterfunktionen, um nach bestimmten Bestuhlungen zu suchen. Im rechten Feld sehen Sie die Bestuhlungsliste. (Abbildung b) Sie können eine neue Bestuhlungsoption hinzufügen, bestehende bearbeiten oder löschen. 
 
-{{< imgproc Bestuhlung_bearbeiten_suchen Resize "1280x" >}}
+<p style="text-align: justify">
+Im linken Sidepanel finden Sie die Filterfunktionen, um nach bestimmten Bestuhlungen zu suchen. Im rechten Feld sehen Sie die Bestuhlungsliste. (Abbildung b) Sie können eine neue Bestuhlungsoption hinzufügen, bestehende bearbeiten oder löschen. </p>
+
+{{< imgproc Bestuhlung_bearbeiten_suchen Resize "960x" >}}
 Abbildung b: Ansicht der Bestuhlungslisten
 {{< /imgproc >}}
 
-Sie löschen eine bestehende Bestuhlung, indem Sie die Checkbox aktivieren, in der Liste und auf den untenstehenden Button "Entfernen" klicken. 
+<p style="text-align: justify">
+Sie löschen eine bestehende Bestuhlung, indem Sie die Checkbox aktivieren, in der Liste und auf den untenstehenden Button <i>Entfernen</i> klicken. </p>
 
 ### Bestuhlung suchen
-Im linken Menü finden Sie unter der Kategorie "Bestuhlung" eine Suchfunktion mit dessen Hilfe Sie nach einer Bestuhlung suchen können (Abbildung b). Sie können hierbei nach folgenden Kriterien suchen: 
+
+<p style="text-align: justify">
+Im linken Menü finden Sie unter der Kategorie <i>Bestuhlung</i> eine Suchfunktion mit dessen Hilfe Sie nach einer Bestuhlung suchen können (Abbildung b). Sie können hierbei nach folgenden Kriterien suchen: </p>
 
 * Bezeichnung
 * Kapazität: Wird ein Wert beim Feld „Anzahl Personen“ angegeben, werden alle Bestuhlungsoptionen angezeigt, wo der angegebene Wert im Bereich zwischen Min- und Max-Anzahl Personen liegt
 
-Über den Button "Anzeigen" werden Ihnen die Ergebnisse der Suche in der Liste angezeigt.
+Über den Button <i>Anzeigen</i> werden Ihnen die Ergebnisse der Suche in der Liste angezeigt.
 
 ## Bestuhlungsliste bearbeiten 
-Die Bestuhlung in der Bestuhlungsliste bearbeiten Sie indem Sie auf das Stift Icon "Bearbeiten" auswählen (Abbildung b). Dort ändern Sie die Stammdaten der Bestuhlung wie z.B. die Bezeichnung, die minimale oder maximale Personenanzahl oder die Vorlaufdauer. Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung bi).
 
-{{< imgproc Bestuhlung_bearbeiten Resize "1280x" >}}
-Abbildung bi: Bestuhlung: Informationen bearbeiten und speichern
+<p style="text-align: justify">
+Die Bestuhlung in der Bestuhlungsliste bearbeiten Sie indem Sie auf das Stift Icon <i>Bearbeiten</i> auswählen. Dort ändern Sie die Stammdaten der Bestuhlung wie z.B. die Bezeichnung, die minimale oder maximale Personenanzahl oder die Vorlaufdauer. Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Speichern</i>. </p>
+
+{{< imgproc Bestuhlung_bearbeiten Resize "960x" >}}
+Bestuhlung: Informationen bearbeiten und speichern
 {{< /imgproc >}}
 
 Folgende Informationen können Sie bearbeiten: 
@@ -38,24 +45,28 @@ Folgende Informationen können Sie bearbeiten:
 * Bildvorschau (Icon): Es kann nur ein Bild zugewiesen werden. Es wird das Thumbnail angezeigt. Klick auf Bild öffnet das Zoom (im modalen Popup)
 
 ### Bestuhlung hinzufügen
-Sie können eine neue Bestuhlung zur Liste hinzufügen, indem Sie auf den untenstehenden Button "neu" klicken. Es öffnet sich ein Feld. In diesem geben Sie die gleichen Informationen wie oben aufgelistet an. 
 
-Sie bestätigen Ihre Eingabe über den Button "Speichern".
+<p style="text-align: justify">
+Sie können eine neue Bestuhlung zur Liste hinzufügen, indem Sie auf den untenstehenden Button <i>neu</i> klicken. Es öffnet sich ein Feld. In diesem geben Sie die gleichen Informationen wie oben aufgelistet an. </p>
 
-{{< imgproc Bestuhlung_hinzufügen Resize "1280x" >}}
-Abbildung bn: Neue Bestuhlung hinzufügen
+Sie bestätigen Ihre Eingabe über den Button <i>Speichern</i>.
+
+{{< imgproc Bestuhlung_hinzufügen Resize "960x" >}}
+Neue Bestuhlung hinzufügen
 {{< /imgproc >}}
 
-Die Liste aktualisiert sich automatisch und Sie sehen die neu hinzugefügte Bestuhlung in der Liste. 
+<p style="text-align: justify"> Die Liste aktualisiert sich automatisch und Sie sehen die neu hinzugefügte Bestuhlung in der Liste. </p>
 
-{{< imgproc Bestuhlung_neu_hinzugefügt_Liste Resize "1280x" >}}
-Abbildung bl: Aktualisierte Liste mit neuem Bestuhlungselement
+{{< imgproc Bestuhlung_neu_hinzugefügt_Liste Resize "960x" >}}
+Aktualisierte Liste mit neuem Bestuhlungselement
 {{< /imgproc >}}
 
 ### Bestuhlung: Daten einsehen
-Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Bestuhlung und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Bestuhlung (Abbildung bx). Dort sehen Sie die Stammdaten der Bestuhlung und die Historie. Über den untenstehenden Button "Bearbeiten" können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Personenliste. 
 
-{{< imgproc Bestuhlung_Daten_einsehen Resize "1280x" >}}
-Abbildung bx: Bestuhlung:Daten einsehen und bearbeiten
+<p style="text-align: justify">
+Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Bestuhlung und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Bestuhlung. Dort sehen Sie die Stammdaten der Bestuhlung und die Historie. Über den untenstehenden Button <i>Bearbeiten</i> können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Personenliste. </p>
+
+{{< imgproc Bestuhlung_Daten_einsehen Resize "960x" >}}
+Bestuhlung:Daten einsehen und bearbeiten
 {{< /imgproc >}}
 

@@ -3,17 +3,17 @@ title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
 description: >
-  Standardmäßig werden die Spalten mit den grundlegenden Informationen eines Anlasses angezeigt.
+  <p style="text-align: justify"> Standardmäßig werden die Spalten mit den grundlegenden Informationen eines Anlasses angezeigt. </p>
 ---
-Standardmäßig sind folgende Spalten sichtbar:
+<p style="text-align: justify"> Standardmäßig sind folgende Spalten sichtbar: </p>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
 |Ressourcen ID||Eindeutige Zuordnung der Ressource|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br>Details zu Ressourcen bearbeiten|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify">Details zu Ressourcen bearbeiten </p>|
 ---
 
-{{< imgproc List_RES_bearb Resize "1280x" >}}
+{{< imgproc List_RES_bearb Resize "960x" >}}
 Eingabemaske zu Bearbeitung der Ressourcendetails
 {{< /imgproc >}}
 
@@ -21,8 +21,8 @@ Eingabemaske zu Bearbeitung der Ressourcendetails
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
-|Bezeichnung||Von der erstellenden Person vergebener Name der Ressource </br> _ist nicht zwingend eindeutig_|
-|Ressourcenart||Je nach firmenspezifischer Definition </br> _z.B. Raum, Parkplatz, Equipment_|
-|Standort||hierarchische Darstellung des Standortes|
-||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|</br> <p style="text-align: justify"> Details zu Ressourcen bearbeiten|Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. </p>|
+|Bezeichnung||<p style="text-align: justify">Von der erstellenden Person vergebener Name der Ressource </br> _ist nicht zwingend eindeutig_</p>|
+|Ressourcenart||<p style="text-align: justify">Je nach firmenspezifischer Definition </br> _z.B. Raum, Parkplatz, Equipment_</p>|
+|Standort||<p style="text-align: justify">hierarchische Darstellung des Standortes</p>|
+||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Details zu Ressourcen bearbeiten</p>|<p style="text-align: justify">Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. </p>|
 ---

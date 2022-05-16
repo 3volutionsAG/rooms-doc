@@ -3,7 +3,7 @@ title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
 weight: 30
 description: >
-  Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben.
+  <p style="text-align: justify"> Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. </p>
 ---
 
 Das Ergebnis ist tabellarisch angeordnet. Jedes Jobmanagement wird in je einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die zu den jeweiligen Jobmanagements hinterlegt sind.  
