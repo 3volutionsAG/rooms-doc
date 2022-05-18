@@ -2,9 +2,10 @@
 title: "Serienbuchungen begrenzen"
 linkTitle: "Serienbuchungen begrenzen"
 weight: 200
-description: Definieren Sie welche Benutzergruppen wie viele Serienbuchungen vornehmen darf.
+description: > 
+    <p style="text-align: justify"> Definieren Sie welche Benutzergruppen wie viele Serienbuchungen vornehmen darf. </p>
 ---
-Definieren Sie in 3V ROOMS zunächst die Globalen Parameter und weisen Sie diese den gewünschten Benutzergruppen zu.
+<p style="text-align: justify"> Definieren Sie in 3V ROOMS zunächst die Globalen Parameter und weisen Sie diese den gewünschten Benutzergruppen zu. </p>
 
 ### Globale Parameter definieren
 

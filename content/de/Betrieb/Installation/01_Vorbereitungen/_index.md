@@ -2,7 +2,8 @@
 title: "Vorbereitungen"
 linkTitle: "Vorbereitungen"
 weight: 10
-description: Dokumentation der Erstinstallation, die eine selbstständige Ausführung ermöglicht.
+description: > 
+  <p style="text-align: justify"> Dokumentation der Erstinstallation, die eine selbstständige Ausführung ermöglicht. </p>
 ---
 <p align ="justify">
 Üblicherweise erfolgt eine Erstinstallation von ROOMS beim Kunden vor Ort durch Mitarbeitende von 3volutions. Mit diesem Vorgehen möchten wir sicherstellen, dass die kundenspezifischen Gegebenheiten der jeweiligen IT-Umgebung Berücksichtigung finden und die optimalen Konfigurationseinstellungen gewählt werden. </br>

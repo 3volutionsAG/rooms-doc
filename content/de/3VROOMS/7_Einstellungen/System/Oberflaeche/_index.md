@@ -3,18 +3,18 @@ title: "Oberfläche"
 linkTitle: "Oberfläche"
 weight: 5
 description: >
-  Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus. Die Erfassung und Verwaltung von Kundenspezifischen Layout Anpassungen. Änderungen von CSS und Bilddateien.   
+  <p style="text-align: justify"> Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus. Die Erfassung und Verwaltung von Kundenspezifischen Layout Anpassungen. Änderungen von CSS und Bilddateien.   </p>
  
 
 
 ---
-## Ansicht Oberfläche
-Im linken Bereich sehen Sie das Sidepanel mit den Filterfunktionen. 
-Im rechten Feld sehen Sie die Themenliste. Sind keine Themen gespeichert, ist die Liste leer. (Abbildung f)
-Sie können Themen aus der Liste löschen, indem Sie die Checkbox neben dem Listenelement aktivieren und auf den Button "Entfernen" klicken. 
+<p style="text-align: justify">
+Im linken Bereich sehen Sie das Sidepanel mit den Filterfunktionen. </br>
+Im rechten Feld sehen Sie die Themenliste. Sind keine Themen gespeichert, ist die Liste leer. </br>
+Sie können Themen aus der Liste löschen, indem Sie die Checkbox neben dem Listenelement aktivieren und auf den Button <i>Entfernen</i> klicken. </p>
 
-{{< imgproc Oberfläche_bearbeiten Resize "1280x" >}}
-Abbildung f: Themenlisten auf der Oberfläche bearbeiten und durchsuchen
+{{< imgproc Oberfläche_bearbeiten Resize "960x" >}}
+Themenlisten auf der Oberfläche bearbeiten und durchsuchen
 {{< /imgproc >}}
 
 **Hinweis zum Löschen**:
@@ -24,21 +24,28 @@ Abbildung f: Themenlisten auf der Oberfläche bearbeiten und durchsuchen
 * Bestätigungsmeldung im Actionpanel (inkl. Anzahl der gelöschten Einträge) ODER Fehlermeldung im Actionpanel
 
 ### Oberfläche durchsuchen
-Über das linke Sidepanel durchsuchen Sie die Themenlisten nach dem "File Pfad" (Abbildung f).
+
+<p style="text-align: justify">
+Über das linke Sidepanel durchsuchen Sie die Themenlisten nach dem <i>File Pfad</i>. </p>
 
 ## Oberfläche: Themenlisten bearbeiten und hinzufügen
-Die Elemente aus der Themenliste bearbeiten Sie, indem Sie auf das Stift Icon klicken. Indem sich öffnenden Feld bearbeiten Sie die Stammdaten des Listen Elements (Abbildung fa). 
 
-Fügen Sie neue Dateien hinzu, indem Sie auf den Button "Hinzufügen" klicken. In dem sich öffnendem Feld bearbeiten Sie ebenfalls die Stammdaten. 
+<p style="text-align: justify">
+Die Elemente aus der Themenliste bearbeiten Sie, indem Sie auf das Stift Icon klicken. Indem sich öffnenden Feld bearbeiten Sie die Stammdaten des Listen Elements. </p>
+
+<p style="text-align: justify">
+Fügen Sie neue Dateien hinzu, indem Sie auf den Button <i>Hinzufügen</i> klicken. In dem sich öffnendem Feld bearbeiten Sie ebenfalls die Stammdaten. </p>
 
 
 ### Oberfläche Stammdaten bearbeiten
-Folgende Daten bearbeiten Sie in den Stammdaten: 
+
+<p style="text-align: justify">
+Folgende Daten bearbeiten Sie in den Stammdaten: </p>
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| File Pfad    |  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  "Content" erfassen. Ohne Slash (/) starten. Groß-Kleinschreibung irrelevant | 
-| Datei/Verzeichnis-Browser    | Wählen Sie eine Datei mit maximal 5MB aus. File Daten. Über Browse Button wird die zu ersetzende Datei selektiert. Über Upload Button wird die Datei auf den Server geladen. Der Upload ist begrenzt. Begrenzung wird global festgelegt. Der Upload wird visualisiert. Die Upload Datei wird nicht überprüft, ob es sich um eine gültige Datei handelt. |
+| File Pfad    |<p style="text-align: justify">  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  _Content_ erfassen. Ohne Slash (/) starten. Groß-Kleinschreibung irrelevant </p>| 
+| Datei/Verzeichnis-Browser    |<p style="text-align: justify"> Wählen Sie eine Datei mit maximal 5MB aus. File Daten. Über Browse Button wird die zu ersetzende Datei selektiert. Über Upload Button wird die Datei auf den Server geladen. Der Upload ist begrenzt. Begrenzung wird global festgelegt. Der Upload wird visualisiert. Die Upload Datei wird nicht überprüft, ob es sich um eine gültige Datei handelt. </p>|
 
 Unterstützte Formate: 
 
@@ -48,8 +55,8 @@ Unterstützte Formate:
 * JPG, JPEG, PNG, GIF
 * ZIP (beinhaltet alle Themenfiles)
 
-{{< imgproc Oberfläche_Stammdaten Resize "1280x" >}}
-Abbildung fa: Themenlisten auf der Oberfläche bearbeiten und durchsuchen
+{{< imgproc Oberfläche_Stammdaten Resize "960x" >}}
+Themenlisten auf der Oberfläche bearbeiten und durchsuchen
 {{< /imgproc >}}
 
 

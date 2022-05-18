@@ -3,40 +3,50 @@ title: "OE Firmen"
 linkTitle: "OE Firmen"
 weight: 1
 description: >
-  In diesem Bereich bearbeiten und speichern Sie OE- und Firmenlisten. Ebenfalls können Sie Firmen und Kooperationspartner neu anlegen und Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten und speichern.
+  <p style="text-align: justify"> In diesem Bereich bearbeiten und speichern Sie OE- und Firmenlisten. Ebenfalls können Sie Firmen und Kooperationspartner neu anlegen und Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten und speichern. </p>
  
 
 
 ---
-## Ansicht: OE/Firmen 
-In der Startansicht unter der Kategorie OE und Firmen, sehen Sie auf der rechten Seite die Firmen in Listenform dargestellt. Aut der linken Seite sehen Sie das Sidepanel mit Filterfunktionen. Hier können Sie nach eingetragenen Firmen suchen. 
+<p style="text-align: justify">
+In der Startansicht unter der Kategorie OE und Firmen, sehen Sie auf der rechten Seite die Firmen in Listenform dargestellt. Aut der linken Seite sehen Sie das Sidepanel mit Filterfunktionen. Hier können Sie nach eingetragenen Firmen suchen. </p>
 
-{{< imgproc OE_Firmen_Ansicht Resize "1280x" >}}
-Abbildung o: OE/Firmen Ansicht in der Startansicht 
+{{< imgproc OE_Firmen_Ansicht Resize "960x" >}}
+OE/Firmen Ansicht in der Startansicht 
 {{< /imgproc >}}
 
 ### OE/Firmen suchen
-Im linken Menü finden Sie unter der Kategorie "OE/Firmen" eine Suchfunktion mit dessen Hilfe Sie nach:
+
+<p style="text-align: justify">
+Im linken Menü finden Sie unter der Kategorie "OE/Firmen" eine Suchfunktion mit dessen Hilfe Sie nach: </p>
+
  * Bezeichnung
  * Straße
  * Postleitzahl
  * Ort 
  * Art der Firma (intern oder extern) 
- suchen können (Abbildung o).
+ suchen können
 
-Betätigen Sie den Button "Anzeigen", um sich Ihre gefilterten Firmen anzeigen zu lassen. 
+<p style="text-align: justify">
+Betätigen Sie den Button <i>Anzeigen</i>, um sich Ihre gefilterten Firmen anzeigen zu lassen. </p>
 
 ## OE/Firmen bearbeiten oder neu eintragen
-Die Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten Sie, indem Sie das Stift Icon "Bearbeiten" auswählen (Abbildung o). Ebenfalls können Sie eine Firma neu eintragen, indem Sie auf den untenstehenden Button "Neu" klicken. Es öffnet sich in beiden Fällen das gleiche Feld zur Bearbeitung.
 
-{{< imgproc OE_Firmen_bearbeiten Resize "1280x" >}}
-Abbildung oi: Bearbeitete Eigenschaften unter OE/Firmen speichern
+<p style="text-align: justify">
+Die Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten Sie, indem Sie das Stift Icon <i>Bearbeiten</i> auswählen. Ebenfalls können Sie eine Firma neu eintragen, indem Sie auf den untenstehenden Button <i>Neu</i> klicken. Es öffnet sich in beiden Fällen das gleiche Feld zur Bearbeitung. </p>
+
+{{< imgproc OE_Firmen_bearbeiten Resize "960x" >}}
+Bearbeitete Eigenschaften unter OE/Firmen speichern
 {{< /imgproc >}}
 
-Speichern Sie alle Ihre Einträge über den untenstehenden Button "Speichern"
+<p style="text-align: justify">
+Speichern Sie alle Ihre Einträge über den untenstehenden Button <i>Speichern</i> </p>
 
 ### OE/Firmen: Stammdaten bearbeiten
-In den Stammdaten tragen Sie folgende Informationen ein: 
+
+<p style="text-align: justify">
+In den Stammdaten tragen Sie folgende Informationen ein: </p>
+
 * Bezeichnung
 * Firmennummer
 * Abteilung
@@ -45,94 +55,114 @@ In den Stammdaten tragen Sie folgende Informationen ein:
 * Kostenstellen Name
 * Standard Rabatt in %
 
-{{< imgproc OE_Firmen_bearbeiten Resize "1280x" >}}
-Abbildung oi: Bearbeitete Eigenschaften unter OE/Firmen speichern
+{{< imgproc OE_Firmen_bearbeiten Resize "960x" >}}
+Bearbeitete Eigenschaften unter OE/Firmen speichern
 {{< /imgproc >}}
 
 ### OE/Firmen: Adressen bearbeiten
-Sie sehen die eingetragene Adresse einer Firma in diesem Menüreiter (Abbildung oc). Tragen Sie eine neue Firma ein, geben Sie hier die Adressdaten der neu-eingetragenen Firma ein. 
 
-{{< imgproc OE_Firmen_bearbeiten_Adressen Resize "1280x" >}}
-Abbildung oc: Ansicht Adressen der Firmen
+<p style="text-align: justify">
+Sie sehen die eingetragene Adresse einer Firma in diesem Menüreiter. Tragen Sie eine neue Firma ein, geben Sie hier die Adressdaten der neu-eingetragenen Firma ein. </p>
+
+{{< imgproc OE_Firmen_bearbeiten_Adressen Resize "960x" >}}
+Ansicht Adressen der Firmen
 {{< /imgproc >}}
 
-Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Außerdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. (Abbildung ob)
+<p style="text-align: justify">
+Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Außerdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. </p>
 
-{{< imgproc OE_Firmen_bearbeiten_Adresse_eintragen Resize "1280x" >}}
-Abbildung ob: Neue Adresse zu einer Firma hinzufügen
+{{< imgproc OE_Firmen_bearbeiten_Adresse_eintragen Resize "960x" >}}
+Neue Adresse zu einer Firma hinzufügen
 {{< /imgproc >}}
 
-Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sich die Liste automatisch und Sie sehen die neu eingetragene Adresse in der Liste. (Abbildung oa)
+<p style="text-align: justify">
+Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sich die Liste automatisch und Sie sehen die neu eingetragene Adresse in der Liste. </p>
 
-{{< imgproc OE_Firmen_bearbeiten_Adressen_Ansicht Resize "1280x" >}}
-Abbildung oa: Einsehen der Adressen in Listenform
+{{< imgproc OE_Firmen_bearbeiten_Adressen_Ansicht Resize "960x" >}}
+Einsehen der Adressen in Listenform
 {{< /imgproc >}}
 
-Hinweis: Es kann immer nur eine Adresse pro OE/Firma als Standard definiert werden. Eine Adresse muss als Standard definiert werden
+<p style="text-align: justify">
+<b>Hinweis</b>: Es kann immer nur eine Adresse pro OE/Firma als Standard definiert werden. Eine Adresse muss als Standard definiert werden </p>
 
 ### OE/Firmen: Peronen bearbeiten
-Sie können Personen auf eine OE (intern) und auf eine Firma (extern) zuweisen. Bereits zugewiesene Personen sehen Sie in der Liste (Abbildung od). 
 
-{{< imgproc OE_Firmen_Personen_Liste Resize "1280x" >}}
-Abbildung od: Eingetragene Personen in Listenform
+<p style="text-align: justify">
+Sie können Personen auf eine OE (intern) und auf eine Firma (extern) zuweisen. Bereits zugewiesene Personen sehen Sie in der Liste. </p>
+
+{{< imgproc OE_Firmen_Personen_Liste Resize "960x" >}}
+Eingetragene Personen in Listenform
 {{< /imgproc >}}
 
-Möchten Sie eine Person einer Firma zuweisen, klicken Sie unten auf den Button "Person hinzufügen". Es öffnet sich ein Fenster. In diesem wählen Sie eine oder mehrere Personen aus dem System aus. (Abbildung oe)
-Anschließend können Sie noch eintragen: 
+<p style="text-align: justify">
+Möchten Sie eine Person einer Firma zuweisen, klicken Sie unten auf den Button <i>Person hinzufügen</i>. Es öffnet sich ein Fenster. In diesem wählen Sie eine oder mehrere Personen aus dem System aus. </br>
+Anschließend können Sie noch eintragen: </p>
+
 * Gültigkeitsdauer, 
 * Telefon intern
 * Telefon extern
 * Fax
 
-{{< imgproc OE_Firmen_Personen_hinzufügen Resize "1280x" >}}
-Abbildung oe: Eine Person einer Firma zuweisen
+{{< imgproc OE_Firmen_Personen_hinzufügen Resize "960x" >}}
+Eine Person einer Firma zuweisen
 {{< /imgproc >}}
 
-Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen. 
-Hinweis: Sie können nur Personen auswählen, die noch keiner Aufgabe oder Firma für diesen Zeitraum zugewiesen sind. 
+<p style="text-align: justify">
+Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen. </br>
+Hinweis: Sie können nur Personen auswählen, die noch keiner Aufgabe oder Firma für diesen Zeitraum zugewiesen sind. </p>
 
 ### OE/Firmen: Kostenträger bearbeiten
-Sie sehen die zugewiesenen Kostenträger einer Firma in Listenform. (Abbildung ox)
 
-{{< imgproc OE_Firmen_Kostenträger_Liste Resize "1280x" >}}
-Abbildung ox: Kostenträger in Listenform
+<p style="text-align: justify">
+Sie sehen die zugewiesenen Kostenträger einer Firma in Listenform. </p>
+
+{{< imgproc OE_Firmen_Kostenträger_Liste Resize "960x" >}}
+Kostenträger in Listenform
 {{< /imgproc >}}
 
-Möchten Sie einen neuen Kostenträger zu einer Firma hinzufügen, machen Sie dies wie folgt: Klicken Sie auf den Button hinzufügen, im geöffnetem Feld wählen Sie den Kostenträger aus und bestätigen die Auswahl mit dem Button "hinzufügen" (Abbildung oy).
+<p style="text-align: justify">
+Möchten Sie einen neuen Kostenträger zu einer Firma hinzufügen, machen Sie dies wie folgt: Klicken Sie auf den Button hinzufügen, im geöffnetem Feld wählen Sie den Kostenträger aus und bestätigen die Auswahl mit dem Button <i>hinzufügen</i>.
 
-{{< imgproc OE_Firmen_Kostenträger_hinzufügen Resize "1280x" >}}
-Abbildung oy: Kostenträger einer Firma zuweisen und neu hinzufügen
+{{< imgproc OE_Firmen_Kostenträger_hinzufügen Resize "960x" >}}
+Kostenträger einer Firma zuweisen und neu hinzufügen
 {{< /imgproc >}}
 
-Die Liste aktualisiert sich automatisch. Sie können mehrere Kostenträger auswählen. (Abbildung oz)
+<p style="text-align: justify">
+Die Liste aktualisiert sich automatisch. Sie können mehrere Kostenträger auswählen. </p>
 
-{{< imgproc OE_Firmen_Kostenträger_aktualisierte_Liste Resize "1280x" >}}
-Abbildung oz: Aktualisierte Liste mit Kostenträgern, nachdem sie zugewiesen wurden
+{{< imgproc OE_Firmen_Kostenträger_aktualisierte_Liste Resize "960x" >}}
+Aktualisierte Liste mit Kostenträgern, nachdem sie zugewiesen wurden
 {{< /imgproc >}}
 
 ### OE/Firmen: Präferenzen bearbeiten
-Sie können einen präferierten Standort hinzufügen. Ist dieser bereits ausgewählt, sehen Sie die Präferenz in Listenform. (Abbildung ol)
 
-{{< imgproc OE_Firmen_Präferenzen_Liste Resize "1280x" >}}
-Abbildung ol: Ansicht Ihrer Präferenzen in der Liste
+<p style="text-align: justify">
+Sie können einen präferierten Standort hinzufügen. Ist dieser bereits ausgewählt, sehen Sie die Präferenz in Listenform.</p>
+
+{{< imgproc OE_Firmen_Präferenzen_Liste Resize "960x" >}}
+Ansicht Ihrer Präferenzen in der Liste
 {{< /imgproc >}}
 
-Möchten Sie eine Präferenz hinzufügen, klicken Sie auf den Button "Präferenz hinzufügen". Es öffnet sich ein Feld, in welchem Sie über aktivieren der Checkbox, den präferierten Standort auswählen und bestätigen. 
-Die Liste aktualisiert sich automatisch. (Abbildung om)
+<p style="text-align: justify">
+Möchten Sie eine Präferenz hinzufügen, klicken Sie auf den Button <i>Präferenz hinzufügen</i>. Es öffnet sich ein Feld, in welchem Sie über aktivieren der Checkbox, den präferierten Standort auswählen und bestätigen. 
+Die Liste aktualisiert sich automatisch. </p>
 
-{{< imgproc OE_Firmen_Präferenzen_hinzufügen Resize "1280x" >}}
-Abbildung om: Präferenzen zu einer Firma hinzufügen und zuweisen
+{{< imgproc OE_Firmen_Präferenzen_hinzufügen Resize "960x" >}}
+Präferenzen zu einer Firma hinzufügen und zuweisen
 {{< /imgproc >}}
 
 ### OE/Firmen Daten einsehen
-Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Firma und klicken Sie auf diese. (Abbildung oj) Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Firma (Abbildung ok). 
 
-{{< imgproc OE_Firmen_Informationen_einsehen Resize "1280x" >}}
-Abbildung oj: Informationen einer Firma einsehen
+<p style="text-align: justify">
+Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Firma und klicken Sie auf diese. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Firma. </p>
+
+{{< imgproc OE_Firmen_Informationen_einsehen Resize "960x" >}}
+Informationen einer Firma einsehen
 {{< /imgproc >}}
 
-Mit Klick auf den Button "Bearbeiten" können Sie auch aus dieser Ansicht die Daten der Firma bearbeiten.
+<p style="text-align: justify">
+Mit Klick auf den Button <i>Bearbeiten</i> können Sie auch aus dieser Ansicht die Daten der Firma bearbeiten. </p>
 
-{{< imgproc OE_Firmen_Daten_einsehen2 Resize "1280x" >}}
-Abbildung ok: Informationen einer Firma einsehen und bearbeiten
+{{< imgproc OE_Firmen_Daten_einsehen2 Resize "960x" >}}
+Informationen einer Firma einsehen und bearbeiten
 {{< /imgproc >}}

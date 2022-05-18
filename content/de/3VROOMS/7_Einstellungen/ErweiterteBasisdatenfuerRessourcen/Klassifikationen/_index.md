@@ -3,122 +3,147 @@ title: "Klassifikationen"
 linkTitle: "Klassifikationen"
 weight: 2
 description: >
-  Im Bereich Klassifikationen erstellen und bearbeiten Sie Klassifikationstypen.   
+  <p style="text-align: justify"> Im Bereich Klassifikationen erstellen und bearbeiten Sie Klassifikationstypen.   </p>
  
 
 
 ---
-## Ansicht: Klassifikationstypen 
-Im linken Bereich sehen Sie das Sidepanel mit Filterfunktionen. Klicken Sie auf den Button "Anzeigen" werden Ihnen alle Klassifikationen angezeigt. 
+## Ansicht
 
-Im rechten Feld sehen Sie die Klassifikationstypliste. Die Baumstruktur ist zweistufig. Je nachdem an welcher Stelle im Baum navigiert wird, kann auf den jeweiligen Bereichen mehr oder weniger Aktionen durchgeführt (auch auf Grund der Anzahl der angezeigten Icons ersichtlich). (Abbildung k)
+<p style="text-align: justify">
+Im linken Bereich sehen Sie das Sidepanel mit Filterfunktionen. Klicken Sie auf den Button "Anzeigen" werden Ihnen alle Klassifikationen angezeigt. </p>
+
+<p style="text-align: justify">
+Im rechten Feld sehen Sie die Klassifikationstypliste. Die Baumstruktur ist zweistufig. Je nachdem an welcher Stelle im Baum navigiert wird, kann auf den jeweiligen Bereichen mehr oder weniger Aktionen durchgeführt (auch auf Grund der Anzahl der angezeigten Icons ersichtlich). </p>
 
 Es wird zwischen zwei Strukturen unterschieden:
+
 1. Übergeordneter Klassifikationstyp 
 2. Untergeordnete Buchungsklassifikation
 
-{{< imgproc Klassifikationen_Ansicht Resize "1280x" >}}
-Abbildung k: Ansicht im Reiter Klassifikationen
+{{< imgproc Klassifikationen_Ansicht Resize "960x" >}}
+Ansicht im Reiter Klassifikationen
 {{< /imgproc >}}
 
 ### Bedeutung Icons 
-Klicken Sie auf den Namen eines Klassifikationstypen im Baum, erscheint neben dem Namen eine Toolleiste mit Symbolen. Mithilfe dieser Symbole können Sie folgende Aktionen durchführen (Abbildung k): 
+
+<p style="text-align: justify">
+Klicken Sie auf den Namen eines Klassifikationstypen im Baum, erscheint neben dem Namen eine Toolleiste mit Symbolen. Mithilfe dieser Symbole können Sie folgende Aktionen durchführen: </p>
 
 * Plus Zeichen: neue untergeordnete Buchungsklassifikation erstellen. Das Plus Zeichen sehen Sie nur bei bei den übergeordneten Klassifikationstypen
-* Auge: Sehen Sie sich die erfassten Stammdaten und die Historie der Klassifikationen an (Abbildung ka) 
+* Auge: Sehen Sie sich die erfassten Stammdaten und die Historie der Klassifikationen an
 * Stift: Bearbeiten Sie eine bestehende Klassifikation
 * Papierkorb: Löschen Sie eine Klassifikation
 
-{{< imgproc Klassifikationen_Daten_ansehen Resize "1280x" >}}
-Abbildung ka: Ansehen der gespeicherten Daten einer Klassifikation über das Icon "Auge"
+{{< imgproc Klassifikationen_Daten_ansehen Resize "960x" >}}
+Ansehen der gespeicherten Daten einer Klassifikation über das Icon _Auge_
 {{< /imgproc >}}
 
-**Hinweis zum Löschen einer Klassifikation**: 
-Klicken Sie auf Löschen, erscheint ein Warnhinweis. Bei erfolgreicher Löschung erscheint eine Bestätigungsmeldung im Actionpanel oben rechts. Die Baumstruktur aktualisiert sich automatisch.
-Löschregeln:
-Das Löschen eines Klassikfikationstyps ist nur möglich, wenn keine Ressource mehr verknüpft und keine angehängten Klassifikationen mehr vorhanden sind. Ansonsten sehen Sie eine Warnmeldung im Actionpanel.
-Das Löschen  einer Klassifikation ist nur möglich, wenn keine Verbindung mehr zu einer Buchung vorhanden ist. Ansonsten sehen Sie eine Warnmeldung im Actionpanel.
+**Hinweis zum Löschen einer Klassifikation**:
+
+<p style="text-align: justify">
+Klicken Sie auf Löschen, erscheint ein Warnhinweis. Bei erfolgreicher Löschung erscheint eine Bestätigungsmeldung im Actionpanel oben rechts. Die Baumstruktur aktualisiert sich automatisch.</br>
+Löschregeln:</br>
+Das Löschen eines Klassikfikationstyps ist nur möglich, wenn keine Ressource mehr verknüpft und keine angehängten Klassifikationen mehr vorhanden sind. Ansonsten sehen Sie eine Warnmeldung im Actionpanel. </br>
+Das Löschen  einer Klassifikation ist nur möglich, wenn keine Verbindung mehr zu einer Buchung vorhanden ist. Ansonsten sehen Sie eine Warnmeldung im Actionpanel. </p>
 
 ## Übergeordneten Klassifikationstyp erstellen 
-Einen übergeorneten Klassifikationstypen erstellen Sie über den untenstehenden Button "Klassifikationstyp erstellen" (Abbildung k). 
-In dem Feld, welches sich öffnet legen Sie die Stammdaten, Ressourcen und Gruppen für den jeweiligen Klassifikationstyp fest (Abbildung ki).
 
-Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern".
+<p style="text-align: justify">
+Einen übergeorneten Klassifikationstypen erstellen Sie über den untenstehenden Button <i>Klassifikationstyp erstellen</i>. </br>
+In dem Feld, welches sich öffnet legen Sie die Stammdaten, Ressourcen und Gruppen für den jeweiligen Klassifikationstyp fest. </p>
 
-Der Baum in der Klassifikationsliste aktualisiert sich automatisch und Sie sehen Ihren neuen Klassifikationstyp in der Übersicht (Abbildung kx).
+Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Speichern</i>.
 
-{{< imgproc Klassifikationen_neuer_Typ_in_Baum Resize "1280x" >}}
-Abbildung kx: Aktualisierter Baum mit neuem Klassifikationstyp
+<p style="text-align: justify">
+Der Baum in der Klassifikationsliste aktualisiert sich automatisch und Sie sehen Ihren neuen Klassifikationstyp in der Übersicht. </p>
+
+{{< imgproc Klassifikationen_neuer_Typ_in_Baum Resize "960x" >}}
+Aktualisierter Baum mit neuem Klassifikationstyp
 {{< /imgproc >}}
 
 ### Stammdaten des Klassifikationstypes bearbeiten
-Tragen Sie die Stammdaten des neuen Klassifikationstyps ein.
 
-{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Stammdaten Resize "1280x" >}}
-Abbildung ki: Stammdaten eines neuen Klassifikationstyps eintragen
+<p style="text-align: justify">
+Tragen Sie die Stammdaten des neuen Klassifikationstyps ein. </p>
+
+{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Stammdaten Resize "960x" >}}
+Stammdaten eines neuen Klassifikationstyps eintragen
 {{< /imgproc >}}
 
-Die folgenden Stammdaten können Sie ändern und bearbeiten: 
+<p style="text-align: justify">
+Die folgenden Stammdaten können Sie ändern und bearbeiten: </p>
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| Bezeichnung        | Die Bezeichnung des Klassifikationstypen festlegen. DIe Erfassung muss Mehrsprachig erfolgen. | 
-| Beschreibung       | Die Funktion des Klassifikationstypen festlegen |
+| Bezeichnung        |<p style="text-align: justify"> Die Bezeichnung des Klassifikationstypen festlegen. DIe Erfassung muss Mehrsprachig erfolgen. </p>| 
+| Beschreibung       |<p style="text-align: justify"> Die Funktion des Klassifikationstypen festlegen </p>|
 | Code       |  |
-| Ressourcenart   | Die Ressourcenart über "drop-down" auswählen (Abbildung ki). Es können mehrere Ressourcenarten (Sitzungszimmer, Equipment, etc.) ausgewählt werden, womit definiert wird, bei welchen Ressourcenarten der Buchungsklassifikationstyp im Reservationsdetail zur Verfügung steht. Es sind nur diejenigen Ressourcenarten wählbar, auf denen das entsprechende Funktionsrecht vorhanden ist. |  
-| Mehrfachauswahl erlaubt  | Auswählen, wenn dieses zutreffend ist. Wird im Kapitel Buchen dargestellt als Multiselektor für Mehrfachselektion oder als Dropdown zur Einzelselektion. |  
+| Ressourcenart   |<p style="text-align: justify"> Die Ressourcenart über _drop-down_ auswählen. Es können mehrere Ressourcenarten (Sitzungszimmer, Equipment, etc.) ausgewählt werden, womit definiert wird, bei welchen Ressourcenarten der Buchungsklassifikationstyp im Reservationsdetail zur Verfügung steht. Es sind nur diejenigen Ressourcenarten wählbar, auf denen das entsprechende Funktionsrecht vorhanden ist. </p> |  
+| Mehrfachauswahl erlaubt  |<p style="text-align: justify"> Auswählen, wenn dieses zutreffend ist. Wird im Kapitel Buchen dargestellt als Multiselektor für Mehrfachselektion oder als Dropdown zur Einzelselektion. </p> |  
 | Mussfeld  |      |  
-| In Listen sichtbar    | Auswählen, wenn der Klassifikationstyp in Listen erscheinen soll. Die Checkbox „sichtbar in Listen“ definiert, ob der Klassifikationstyp auch als Filterkriterium in den Listen sichtbar ist  (Sidepanel)  |  
-| In Outlook sichtbar   | Auswählen, wenn der Klassifikationstyp in Outlook erscheinen soll  |  
-| Anlasstyp   | Multiselektionsmöglichkeit für Anlasstyp. Werden ein oder mehrere Anlasstypen selektiert, werden die Buchungsklassifikationen bei Auswahl des entsprechenden Anlasstyps auch zur Verfügung gestellt. Mehr zu  [Anlasstypen](/einstellungen/stammdatenfueranlaesse/anlasstypen/) | 
+| In Listen sichtbar    | <p style="text-align: justify">Auswählen, wenn der Klassifikationstyp in Listen erscheinen soll. Die Checkbox _sichtbar in Listen_ definiert, ob der Klassifikationstyp auch als Filterkriterium in den Listen sichtbar ist  (Sidepanel) </p> |  
+| In Outlook sichtbar   |<p style="text-align: justify"> Auswählen, wenn der Klassifikationstyp in Outlook erscheinen soll </p> |  
+| Anlasstyp   |<p style="text-align: justify"> Multiselektionsmöglichkeit für Anlasstyp. Werden ein oder mehrere Anlasstypen selektiert, werden die Buchungsklassifikationen bei Auswahl des entsprechenden Anlasstyps auch zur Verfügung gestellt. Mehr zu  [Anlasstypen](/einstellungen/stammdatenfueranlaesse/anlasstypen/) </p>| 
 
 ### Ressourcen des Klassifikationstypes bearbeiten
-Legen Sie die zugehörige Ressource des Klassifikationstypes fest, indem Sie auf den untenstehenden Button "Ressource hinzufügen" klicken. Es erscheinen Ihre eingetragenen Ressourcen in Listenform, die Sie über das Aktivieren der Checkbox auswählen. (Abbildung kb)
 
-Über den Button "hinzufügen" fügen Sie die ausgewählten Ressourcen zur Liste hinzu.
+<p style="text-align: justify">
+Legen Sie die zugehörige Ressource des Klassifikationstypes fest, indem Sie auf den untenstehenden Button <i>Ressource hinzufügen</i> klicken. Es erscheinen Ihre eingetragenen Ressourcen in Listenform, die Sie über das Aktivieren der Checkbox auswählen. </p>
 
-{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Ressource Resize "1280x" >}}
-Abbildung kb: Ressourcen zum Klassifikationstypen hinzufügen
+<p style="text-align: justify">
+Über den Button <i>hinzufügen</i> fügen Sie die ausgewählten Ressourcen zur Liste hinzu. </p>
+
+{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Ressource Resize "960x" >}}
+Ressourcen zum Klassifikationstypen hinzufügen
 {{< /imgproc >}}
 
-Die Liste aktualisiert sich automatisch und Sie sehen die Ressourcen (Abbildung kc). Die hinzugefügten Ressourcen können Sie wieder bearbeiten über das Stift Icon oder löschen. 
+<p style="text-align: justify">
+Die Liste aktualisiert sich automatisch und Sie sehen die Ressourcen. Die hinzugefügten Ressourcen können Sie wieder bearbeiten über das Stift Icon oder löschen. </p>
 
-{{< imgproc Klassifikationen_Ressourcen_in_Liste Resize "1280x" >}}
-Abbildung kc: Hinzugefügte Ressourcen in der Liste 
+{{< imgproc Klassifikationen_Ressourcen_in_Liste Resize "960x" >}}
+Hinzugefügte Ressourcen in der Liste 
 {{< /imgproc >}}
 
 ### Gruppe des Klassifikationstypes bearbeiten
-Legen Sie die zugehörige Gruppe des Klassifikationstypes fest, indem Sie auf den untenstehenden Button "Gruppe hinzufügen" klicken. Es öffnet sich ein Feld mit den zur Verfügung stehenden Gruppen. Wählen Sie eine oder mehrere Gruppen über die Checkbox aus. (Abbildung kd)
 
-{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Gruppe Resize "1280x" >}}
-Abbildung kd: Gruppen des Klassifikationstypen bearbeiten
+<p style="text-align: justify">
+Legen Sie die zugehörige Gruppe des Klassifikationstypes fest, indem Sie auf den untenstehenden Button "Gruppe hinzufügen" klicken. Es öffnet sich ein Feld mit den zur Verfügung stehenden Gruppen. Wählen Sie eine oder mehrere Gruppen über die Checkbox aus. </p>
+
+{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Gruppe Resize "960x" >}}
+Gruppen des Klassifikationstypen bearbeiten
 {{< /imgproc >}}
 
-Klicken Sie auf den untenstehenden Button "hinzufügen" und die Liste aktualisiert sich automatisch. Sie sehen die ausgewählten Gruppen nun in der Liste (Abbildung ke). Sie können die Gruppen dort auch wieder löschen oder bearbeiten über das Stift Icon.
+<p style="text-align: justify">
+Klicken Sie auf den untenstehenden Button <i>hinzufügen</i> und die Liste aktualisiert sich automatisch. Sie sehen die ausgewählten Gruppen nun in der Liste. Sie können die Gruppen dort auch wieder löschen oder bearbeiten über das Stift Icon. </p>
 
-{{< imgproc Klassifikationen_Gruppe_in_Liste Resize "1280x" >}}
-Abbildung ke: Hinzugefügte Gruppe in der Liste 
+{{< imgproc Klassifikationen_Gruppe_in_Liste Resize "960x" >}}
+Hinzugefügte Gruppe in der Liste 
 {{< /imgproc >}}
 
 ## Untergeordnete Buchungsklassifikation erstellen
-Klicken Sie auf das **Plus Zeichen** im übergeordnetem Klassifikationstyp, können Sie eine untergeordnete Buchungsklassifikation erstellen. Es öffnet sich ein Fenster, in welchem Sie die Stammdaten bearbeiten können. (Abbildung kf)
+
+<p style="text-align: justify">
+Klicken Sie auf das <i>Plus Zeichen</i> im übergeordnetem Klassifikationstyp, können Sie eine untergeordnete Buchungsklassifikation erstellen. Es öffnet sich ein Fenster, in welchem Sie die Stammdaten bearbeiten können. </p>
 
 Folgende Stammdaten können Sie eintragen: 
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| Bezeichnung   | Die Bezeichnung des Klassifikationstypen festlegen. DIe Erfassung muss Mehrsprachig erfolgen. | 
-| Sortierung  | Die Reihenfolge der Buchungsklassifikationen innerhalb eines Klassifkationstyps wird durch das Feld „Sortierung“ bestimmt (Dargestellt sowohl in der Baumstruktur, wie auch im Sidepanel und Detailreservation in Form einer Dropdown). |
-| Farbe     | Farben können selektiert werden. Diese wird dann im Kalender visualisiert.  |
+| Bezeichnung   |<p style="text-align: justify"> Die Bezeichnung des Klassifikationstypen festlegen. DIe Erfassung muss Mehrsprachig erfolgen.</p> | 
+| Sortierung  |<p style="text-align: justify"> Die Reihenfolge der Buchungsklassifikationen innerhalb eines Klassifkationstyps wird durch das Feld _Sortierung_ bestimmt (Dargestellt sowohl in der Baumstruktur, wie auch im Sidepanel und Detailreservation in Form einer Dropdown). </p>|
+| Farbe     |<p style="text-align: justify"> Farben können selektiert werden. Diese wird dann im Kalender visualisiert.  </p>|
 
-**Hinweis zur Farbauswahl**: Die Farbe speichern Sie über das Farbtopfzeichen unten rechts. (Abbildung kf)
+<p style="text-align: justify">
+**Hinweis zur Farbauswahl**: Die Farbe speichern Sie über das Farbtopfzeichen unten rechts. </p>
 
-{{< imgproc Klassifikationen_neue_Buchungsklassifikation Resize "1280x" >}}
-Abbildung kf: Neue Buchungsklassifikation erstellen 
+{{< imgproc Klassifikationen_neue_Buchungsklassifikation Resize "960x" >}}
+Neue Buchungsklassifikation erstellen 
 {{< /imgproc >}}
 
-Speichern Sie die neue Buchungsklassifikation mit dem Button "Speichern". Der Baum aktualisiert sich automatisch. (Abbildung kg)
+<p style="text-align: justify">
+Speichern Sie die neue Buchungsklassifikation mit dem Button <i>Speichern</i>. Der Baum aktualisiert sich automatisch. </p>
 
-{{< imgproc Klassifikationen_neue_buchungsklassifikation_im_Baum Resize "1280x" >}}
-Abbildung kg: Neue Buchungsklassifikation im Baum 
+{{< imgproc Klassifikationen_neue_buchungsklassifikation_im_Baum Resize "960x" >}}
+Neue Buchungsklassifikation im Baum 
 {{< /imgproc >}}

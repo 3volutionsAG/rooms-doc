@@ -2,9 +2,10 @@
 title: "Synchronisation unter Persönliche Einstellungen"
 linkTitle: "Synchronisation unter Persönliche Einstellungen"
 weight: 300
-description: Aktivieren Sie die Synchronisation in den Persönlichen Einstellungen, um die Synchronisation zwischen Add-In bzw. Wizard und 3V ROOMS sicherzustellen.
+description: > 
+   <p style="text-align: justify"> Aktivieren Sie die Synchronisation in den Persönlichen Einstellungen, um die Synchronisation zwischen Add-In bzw. Wizard und 3V ROOMS sicherzustellen. </p>
 ---
-Die Aktivierung erfolgt in zwei Schritten:
+<p style="text-align: justify"> Die Aktivierung erfolgt in zwei Schritten: </p>
 
 - Synchronisation aktivieren
 - Notifikationen aktivieren

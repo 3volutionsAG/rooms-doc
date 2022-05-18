@@ -2,14 +2,15 @@
 title: "Buchung in O365 Outlook ändern"
 linkTitle: "Buchung in O365 Outlook ändern"
 weight: 200
-description: Termine mit einer 3V ROOMS Buchung können auch in Outlook geändert werden.
+description: > 
+   <p style="text-align: justify"> Termine mit einer 3V ROOMS Buchung können auch in Outlook geändert werden. </p>
 ---
 Ein Termin kann auf zwei Arten geändert werden:
 
 - im Outlook-Kalender
 - über das 3V ROOMS Outlook Add-In
 
-Bei beiden Arten sind Besonderheiten zu beachten.
+<p style="text-align: justify"> Bei beiden Arten sind Besonderheiten zu beachten. </p>
 
 ### Termin im Outlook-Kalender ändern
 
@@ -20,9 +21,9 @@ Bei beiden Arten sind Besonderheiten zu beachten.
          {{< imgproc O365Outlook_web Resize "960x">}} {{< /imgproc >}}
       - in der *lokalen Anwendung* im Aktionsmenü auf **Raum buchen** klicken.
          {{< imgproc O365Outlook_lokal Resize "960x">}} {{< /imgproc >}}
-   </br> </br>
+   </br> 
 
-   Es wird die ROOMS Buchungsbestätigung angezeigt.
+   <p style="text-align: justify"> Es wird die ROOMS Buchungsbestätigung angezeigt. </p>
 
    {{< imgproc O365Outlook_web_BGbest Resize "960x">}} {{< /imgproc >}}
 
@@ -30,14 +31,17 @@ Bei beiden Arten sind Besonderheiten zu beachten.
 
    {{< imgproc O365Outlook_web_BGedit Resize "960x">}} {{< /imgproc >}}
 
-   Sie können die Buchungsdetails nun ändern.
+   <p style="text-align: justify"> Sie können die Buchungsdetails nun ändern. </p>
 
-Alternativ können Sie den Termineintrag im Kalender verschieben, um Datum und Zeit zu ändern.
+<p style="text-align: justify"> Alternativ können Sie den Termineintrag im Kalender verschieben, um Datum und Zeit zu ändern. </p>
 
     {{< imgproc O365Outlook_web_BGaendern Resize "960x">}} {{< /imgproc >}}
 
-Die Terminänderung wird automatisch mit 3V ROOMS synchronisiert. Sollte die ROOMS Ressource zum neuen Termin nicht verfügbar sein, wird die Buchung auf den ursprünglichen Termin zurück gesetzt.
 
-Je nach Konfigurationen werden entsprechende Mitteilungen an Teilnehmende, organisierende und verantwortliche Personen versendet.
+<p style="text-align: justify">Die Terminänderung wird automatisch mit 3V ROOMS synchronisiert. Sollte die ROOMS Ressource zum neuen Termin nicht verfügbar sein, wird die Buchung auf den ursprünglichen Termin zurück gesetzt. </p>
 
-Werden Änderungen an Terminen in der Vergangenheit vorgenommen, werden die neuen Information nicht mit 3V ROOMS synchronisiert.
+<p style="text-align: justify">
+Je nach Konfigurationen werden entsprechende Mitteilungen an Teilnehmende, organisierende und verantwortliche Personen versendet. </p>
+
+<p style="text-align: justify">
+Werden Änderungen an Terminen in der Vergangenheit vorgenommen, werden die neuen Information nicht mit 3V ROOMS synchronisiert. </p>

@@ -4,16 +4,17 @@ linkTitle: "Online Ressource"
 weight: 1
 date: 2022-01-12
 description: >
-  Die Online Ressource ist eine virtuelle Ressource ohne physische Repräsentation.
+  <p style="text-align: justify"> Die Online Ressource ist eine virtuelle Ressource ohne physische Repräsentation. </p>
 ---
 
-## Online Ressource 
-Ressourcen können ab [Release Januar 2022](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/3603824641) als [Online Ressource] definiert werden. 
+Ressourcen können ab [Release Januar 2022](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/3603824641) als [Online Ressource] definiert werden.
 
-Dies kann in den Stammdaten der Ressource bearbeitet werden.
+<p style="text-align: justify">
+Dies kann in den Stammdaten der Ressource bearbeitet werden. </p>
 
-Eine Online Ressource ist immer verfügbar und kann zu einem bestimmten Zeitpunkt mehrmals verwendet werden. Aus diesem Grund werden Online Ressourcen nicht in der Kalender-Ansicht angezeigt.
+<p style="text-align: justify">
+Eine Online Ressource ist immer verfügbar und kann zu einem bestimmten Zeitpunkt mehrmals verwendet werden. Aus diesem Grund werden Online Ressourcen nicht in der Kalender-Ansicht angezeigt. </p>
 
-{{< imgproc Online_Ressource Resize "1280x" >}}
-Abbildung v: Online Ressource
+{{< imgproc Online_Ressource Resize "960x" >}}
+Online Ressource
 {{< /imgproc >}}

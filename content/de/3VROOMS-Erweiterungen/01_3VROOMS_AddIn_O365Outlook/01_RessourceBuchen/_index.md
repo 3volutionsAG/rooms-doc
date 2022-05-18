@@ -2,7 +2,8 @@
 title: "Ressource über O365 Outlook buchen"
 linkTitle: "Ressource über O365 Outlook buchen"
 weight: 100
-description: Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook.
+description: >
+   <p style="text-align: justify"> Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook. </p>
 ---
 </br>
 

@@ -2,7 +2,8 @@
 title: "Fehlermeldung zur Synchronisation erstellen"
 linkTitle: "Fehlermeldung zur Synchronisation erstellen"
 weight: 100
-description: Sollte die Synchronisation fehlschlagen, ist es hilfreich eine entsprechende Fehlermeldung zu erhalten.
+description: > 
+    <p style="text-align: justify"> Sollte die Synchronisation fehlschlagen, ist es hilfreich eine entsprechende Fehlermeldung zu erhalten. </p>
 ---
 <p></br></p>
 

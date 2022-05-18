@@ -2,7 +2,8 @@
 title: "Nicht unterstützte Verhalten in Outlook"
 linkTitle: "Nicht unterstützte Verhalten in Outlook"
 weight: 40
-description: Nicht unterstützte Verhalten in Outlook
+description: >
+    <p style="text-align: justify"> Nicht unterstützte Verhalten in Outlook </p>
 ---
 ## Nicht unterstützte Verhalten in Outlook
 
