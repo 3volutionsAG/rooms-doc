@@ -8,7 +8,7 @@ description: Generelle Informationen zur Skalierung von 3V ROOMS
 
 Einen ungefähren Eindruck über die zu erwartende Auslastung des Systems und die damit verbundenen Hardware-Anforderungen gibt folgende Berechnungsmatrix: </br>
 
-<a href = "https://3volutions.atlassian.net/plugins/servlet/servicedesk/customer/confluence/shim/download/attachments/257130714/Berechnungsmatrix%20f%C3%BCr%20Hardware-Anforderungen.xlsx?version=5&modificationDate=1348047210144&cacheVersion=1&api=v2"> Berechnungsmatrix für Hardware-Anforderungen </a> </br>
+<a href="https://3volutions.atlassian.net/plugins/servlet/servicedesk/customer/confluence/shim/download/attachments/257130714/Berechnungsmatrix%20f%C3%BCr%20Hardware-Anforderungen.xlsx?version=5&modificationDate=1348047210144&cacheVersion=1&api=v2"> Berechnungsmatrix für Hardware-Anforderungen </a> </br>
 
 <p align = "justify">
 Je nach Auslastung ist es möglich, alle ROOMS Server Applikationen auf einer einzigen Maschine zu betreiben (1 Maschine); wenn immer möglich, sollte jedoch der MS SQL Server auf einer separaten Maschine installiert werden (2 Maschinen). </br>
