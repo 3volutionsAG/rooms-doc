@@ -49,3 +49,12 @@ Beispiel:
 	<add key="IntervallTaskInSeconds3" value="30" />
 
 ```
+
+Hier ein Script um User auf eine bestimmte Anzahl von Priority Gruppen zuzuweisen:
+
+```
+  DECLARE @NumberOfServices INT;
+  SET @NumberOfServices = 3
+
+  UPDATE Person set PriorityGroup = Id % @NumberOfServices
+```

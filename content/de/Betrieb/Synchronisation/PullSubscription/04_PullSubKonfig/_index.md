@@ -44,3 +44,8 @@ Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 	<!--Subscription Timeout, the timeout is reset with every GetEvents() call. Defaults to 1 Day.-->
 	<add key="SubscriptionTimeoutInMinutes" value="720" />
 ```
+	<!--Completely disable logging for all pullsubscription services-->
+	<add key="PullSubscriptionDisableAllLogging" value="true" />
+
+	<!--Enable Extended Logging for all pullsubscription services-->
+	<add key="PullSubscriptionEnableExtendedLogging" value="true" />
