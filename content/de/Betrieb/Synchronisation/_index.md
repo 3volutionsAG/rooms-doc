@@ -1,7 +1,7 @@
 ---
 title: "Exchange Synchronisation"
 linkTitle: "Exchange Synchronisation"
-weight: 10
+weight: 4
 description: >
   Hier wird die Konfiguration der Exchange Synchronisation erläutert.
 ---
