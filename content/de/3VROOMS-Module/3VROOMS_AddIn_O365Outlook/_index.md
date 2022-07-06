@@ -47,3 +47,16 @@ In Outlook löschen Sie den kompletten Einzeltermin/Serientermin inkl. der Resso
 
 <p style="text-align: justify">
 Mit dem Buchungsassistenten können Sie die Ressourcenbuchung stornieren, der Termin in O365 Outlook bleibt erhalten. </p>
+
+#### Einzelne Rooms Reservation aus einzelnem Serientermin einer Outlook Serie erstellen
+
+Mit dem Addin Release 1.4.0 und Rooms Release 4.7.2207 ist es möglich, aus einer Outlook Serie, einzelne Termine auszuwählen und nur genau zu diesen eine Rooms Buchung zu erstellen.
+
+Werden Änderung an dem Serientermin vorgenommen, werden diese Änderungen mit Rooms synchronisiert.
+
+Änderungen an der Serie werden normalerweise auch übernommen, z.B. Titel, Teilnehmer anpassungen.
+
+Bei einer Zeitänderung der Kompletten Serie werden alle Serietermine zurückgesetzt, dies wird dem Benutzer auch so in Outlook mitgeteilt. In diesem Fall werden alle bestehenden Serientermine in Rooms storniert.
+
+Es ist möglich, eine Serie welche bereits einzelne Termine mit Rooms synchronsiert hat, komplett mit Rooms zu synchronisieren. Auch hier werden die einzelnen Termine storniert und durch die Serientermine ersetzt. Zu beachten ist, dass wenn einzeltermin bearbeitet wird, der früher eine einzelbuchung war und nun Teil einer Serie ist, bei diesem Termin immer noch die alten Synchronisationsinformationen im Outlook Body vorhanden sind.
+
