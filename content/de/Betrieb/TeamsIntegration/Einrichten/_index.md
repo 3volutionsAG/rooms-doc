@@ -49,6 +49,10 @@ Grant-CsApplicationAccessPolicy -PolicyName Teams-policy -Global
 ```
 New-CsApplicationAccessPolicy -Identity Teams-policy -AppIds "xxx" -Description "Allow creation of teams meetings"
 
+Mehr Informationen dazu:
+
+https://docs.microsoft.com/en-us/powershell/module/skype/grant-csapplicationaccesspolicy?view=skype-ps
+
 #### App Credentials
 
 Wenn bereits Exchange OAuth 2.0 eingerichtet ist, kann dieser wiederverwendet werden:
