@@ -4,7 +4,7 @@
     "version": "v1",
     "title": "V1-API"
   },
-  "host": "vnext.book.3vrooms.local",
+  "host": "vnext.book.3vrooms.app",
   "schemes": [
     "https"
   ],
@@ -83,6 +83,12 @@
             "in": "query",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "cancelExchangeAppointment",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
           },
           {
             "name": "mandator",
@@ -183,6 +189,12 @@
             "type": "boolean"
           },
           {
+            "name": "cancelExchangeAppointment",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -221,6 +233,12 @@
             "required": true,
             "type": "integer",
             "format": "int32"
+          },
+          {
+            "name": "pin",
+            "in": "query",
+            "required": false,
+            "type": "string"
           },
           {
             "name": "mandator",
@@ -315,6 +333,46 @@
             "schema": {
               "$ref": "#/definitions/ReservationEditModel"
             }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BookingDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/reservation/copy/{bookingId}": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Copies an existing booking.\r\nE.g. GET api/reservation/copy/4.",
+        "operationId": "Bookings_Copy",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
           },
           {
             "name": "mandator",
@@ -441,6 +499,68 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/reservation/create/{gliederungId}/{standortId}": {
+      "post": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Creates a booking based on first avaiable gliederungstyp and standort.",
+        "operationId": "Bookings_Create",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "reservationCreateModel",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReservationCreateModel"
+            }
+          },
+          {
+            "name": "gliederungId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "standortId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CreateBookingDto"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/reservation/recurrence/create": {
       "post": {
         "tags": [
@@ -487,6 +607,46 @@
               "items": {
                 "$ref": "#/definitions/SeriesItemDto"
               }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/reservation/edit/{reservationId}": {
+      "post": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Edits the booking. Creates a new tempdataContext and returns it's id.",
+        "operationId": "Bookings_Edit",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "reservationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BookingTempdataDto"
             }
           }
         }
@@ -742,6 +902,20 @@
             "format": "uuid"
           },
           {
+            "name": "start",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -858,6 +1032,46 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/reservation/ics/{maskedIdentifier}": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Cancels the booking with the according tempadataContextId.",
+        "operationId": "Bookings_GetIcs",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "maskedIdentifier",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/series/{id}": {
       "get": {
         "tags": [
@@ -882,6 +1096,12 @@
             "format": "int32"
           },
           {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -896,6 +1116,66 @@
               "items": {
                 "$ref": "#/definitions/SeriesItemDto"
               }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/reservation/tempbooking/{tempdataContextId}/{gliederungTypId}/{bookingId}/{culture}": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Get temp booking info based on tempdatacontextid and selected gleiderungtyp",
+        "operationId": "Bookings_GetTempBooking",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "tempdataContextId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "gliederungTypId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "culture",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TempBookingDto"
             }
           }
         }
@@ -993,6 +1273,52 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/bookings/{id}/removeRoom": {
+      "patch": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Remove room from a booking, this moves the booking to a online resource.\r\nE.g. PATCH api/bookings/4/removeRoom",
+        "operationId": "Bookings_RemoveRoom",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "applyToSerie",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BookingDto"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/reservation/recurrence/delete": {
       "delete": {
         "tags": [
@@ -1028,6 +1354,53 @@
             "description": "OK",
             "schema": {
               "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/reservation/tempbooking/exists/{tempdataContextId}/{bookingId}": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Determines wheather a tempdatacontext still exists",
+        "operationId": "Bookings_TempBookingExists",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "tempdataContextId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
             }
           }
         }
@@ -1110,6 +1483,13 @@
             "required": false,
             "type": "integer",
             "format": "int32"
+          },
+          {
+            "name": "searchModel.displayFullDay",
+            "in": "query",
+            "description": "Gets or sets the DisplayFullDay.",
+            "required": false,
+            "type": "boolean"
           },
           {
             "name": "searchModel.filtersettingId",
@@ -1213,6 +1593,13 @@
             "required": false,
             "type": "integer",
             "format": "int32"
+          },
+          {
+            "name": "model.displayFullDay",
+            "in": "query",
+            "description": "Gets or sets the DisplayFullDay.",
+            "required": false,
+            "type": "boolean"
           },
           {
             "name": "model.filtersettingId",
@@ -1353,7 +1740,7 @@
           {
             "name": "term",
             "in": "query",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
@@ -1687,6 +2074,194 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/culture/list": {
+      "get": {
+        "tags": [
+          "Culture"
+        ],
+        "summary": "Returns all available cultures.",
+        "operationId": "Culture_GetAvailableCultures",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CultureDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/feiertag/{locationId}": {
+      "get": {
+        "tags": [
+          "Feiertag"
+        ],
+        "summary": "Returns the opening hours for a location and date.",
+        "operationId": "Feiertag_HasFeiertagAtLocationAtDate",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/file/booking/{bookingId}/delete/{attachmentId}": {
+      "delete": {
+        "tags": [
+          "File"
+        ],
+        "summary": "Removes a file from a booking.",
+        "operationId": "File_DeleteFileForBooking",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AttachmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/file/booking/{id}/add": {
+      "post": {
+        "tags": [
+          "File"
+        ],
+        "summary": "Adds files to a booking.",
+        "operationId": "File_UploadFileForBooking",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AttachmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/filtersetting/{listId}": {
       "get": {
         "tags": [
@@ -1729,6 +2304,49 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/locations/{locationId}/children": {
+      "get": {
+        "tags": [
+          "Location"
+        ],
+        "summary": "Returns all immediate children of the given location.",
+        "operationId": "Location_GetImmediateChildren",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LocationDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/locations/{locationId}": {
       "get": {
         "tags": [
@@ -1764,6 +2382,42 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/LocationDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/locations/leafs": {
+      "get": {
+        "tags": [
+          "Location"
+        ],
+        "summary": "Returns all location that are leafs",
+        "operationId": "Location_GetLocationLeafs",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LocationDto"
+              }
             }
           }
         }
@@ -1812,12 +2466,48 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/locations": {
+      "get": {
+        "tags": [
+          "Location"
+        ],
+        "summary": "Returns all root locations.",
+        "operationId": "Location_GetRoot",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LocationDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/locations/search": {
       "get": {
         "tags": [
           "Location"
         ],
-        "summary": "Returns all bookable locations with a specific title (rights specific).",
+        "summary": "Returns all bookable locations with a specific location title (rights specific).",
         "operationId": "Location_Search",
         "consumes": [],
         "produces": [
@@ -1833,6 +2523,12 @@
             "in": "query",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "skipResourceCheck",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
           },
           {
             "name": "mandator",
@@ -1880,8 +2576,7 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "integer",
-            "format": "int32"
+            "type": "string"
           },
           {
             "name": "name",
@@ -1953,6 +2648,191 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/person/assigngroups": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Assigns all specified groups to all specified persons.",
+        "operationId": "Person_AssignGroups",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "personIds",
+            "in": "body",
+            "description": "A comma seperated list of external ids from persons.",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "gruppeIds",
+            "in": "query",
+            "description": "A comma seperated list of unique ids from groups.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/passwordchange": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Change the current password of the specific forms logon with the new one",
+        "operationId": "Person_ChangePassword",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PasswordChangeModel"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/checkusername/{username}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Starts a new password reset request for a specific username.",
+        "operationId": "Person_CheckUsername",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/disableaccount/{username}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Disables the specified account.",
+        "operationId": "Person_DisableAccount",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/person/logonpin/{logonpin}": {
       "get": {
         "tags": [
@@ -1988,6 +2868,156 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/PersonDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/getaddress": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Returns all user created or modified in the specified time range.",
+        "operationId": "Person_GetCreatedOrModifiedPersonen",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PersonDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/getcreated": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Returns all user created in the specified time range.",
+        "operationId": "Person_GetCreatedPersonen",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PersonDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/getmodified": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Returns all user modified in the specified time range.",
+        "operationId": "Person_GetModifiedPersonen",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PersonDto"
+              }
             }
           }
         }
@@ -2029,84 +3059,6 @@
             "schema": {
               "$ref": "#/definitions/PersonDto"
             }
-          }
-        }
-      }
-    },
-    "/{mandator}/api/v1.0/person/password/reset": {
-      "post": {
-        "tags": [
-          "Person"
-        ],
-        "summary": "Starts a new password reset request for a specific username.",
-        "operationId": "Person_PasswordReset",
-        "consumes": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml",
-          "application/x-www-form-urlencoded"
-        ],
-        "produces": [],
-        "parameters": [
-          {
-            "name": "dto",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/PasswordResetDto"
-            }
-          },
-          {
-            "name": "mandator",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
-          }
-        }
-      }
-    },
-    "/{mandator}/api/v1.0/person/password/confirm": {
-      "put": {
-        "tags": [
-          "Person"
-        ],
-        "summary": "Sets the new password for an open password reset request.",
-        "operationId": "Person_PasswordConfirm",
-        "consumes": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml",
-          "application/x-www-form-urlencoded"
-        ],
-        "produces": [],
-        "parameters": [
-          {
-            "name": "dto",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/PasswordResetConfirmDto"
-            }
-          },
-          {
-            "name": "mandator",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
           }
         }
       }
@@ -2234,6 +3186,141 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/person/mailconfirmed/{username}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Returns true whetever the mail for the given user is confirmed..",
+        "operationId": "Person_IsMailConfirmed",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/password/confirm": {
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Sets the new password for an open password reset request.",
+        "operationId": "Person_PasswordConfirm",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "dto",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PasswordResetConfirmDto"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/password/reset": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Starts a new password reset request for a specific username.",
+        "operationId": "Person_PasswordReset",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "dto",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PasswordResetDto"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/person/register": {
       "post": {
         "tags": [
@@ -2277,6 +3364,45 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/PersonDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/person/removelogon/{username}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Removes the logon for a given person.",
+        "operationId": "Person_RemoveLogon",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
             }
           }
         }
@@ -2406,6 +3532,57 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/person/update": {
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "summary": "Update all User according to PersonDto's.",
+        "operationId": "Person_UpdatePersonen",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "personen",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PersonDto"
+              }
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/person/userinfo": {
       "get": {
         "tags": [
@@ -2439,21 +3616,14 @@
         }
       }
     },
-    "/{mandator}/api/v1.0/person/passwordchange": {
-      "post": {
+    "/{mandator}/api/v1.0/questionnaire/{bookingId}": {
+      "get": {
         "tags": [
-          "Person"
+          "Questionnaire"
         ],
-        "summary": "Change the current password of the specific forms logon with the new one",
-        "operationId": "Person_ChangePassword",
-        "consumes": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml",
-          "application/x-www-form-urlencoded"
-        ],
+        "summary": "Get configured questionnaires for a booking.",
+        "operationId": "Questionnaire_GetQuestionnairesForBooking",
+        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -2463,12 +3633,22 @@
         ],
         "parameters": [
           {
-            "name": "model",
-            "in": "body",
+            "name": "bookingId",
+            "in": "path",
             "required": true,
-            "schema": {
-              "$ref": "#/definitions/PasswordChangeModel"
-            }
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "classificationIds",
+            "in": "query",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "collectionFormat": "multi"
           },
           {
             "name": "mandator",
@@ -2481,7 +3661,10 @@
           "200": {
             "description": "OK",
             "schema": {
-              "type": "object"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/QuestionnaireDto"
+              }
             }
           }
         }
@@ -2522,6 +3705,126 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/DsConfigurationDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/ressources/ds/{locationId}": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Returns all resources available to the doorsign.",
+        "operationId": "Ressources_GetAvailableResourceForDoorsign",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RessourceDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/ressources/gliederungen/availability/{gliederungTypId}/{standortId}/{capacity}/{culture}": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Returns all bookable equipments (Gliederungen) for a specific User/Location.",
+        "operationId": "Ressources_GetAvailableRoomsByGliederungsTyp",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "gliederungTypId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "standortId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "capacity",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "culture",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GliederungDto"
+              }
             }
           }
         }
@@ -2591,7 +3894,7 @@
         }
       }
     },
-    "/{mandator}/api/v1.0/ressources2/equipments/{personId}/{locationId}": {
+    "/{mandator}/api/v1.0/ressources2/equipments/{personId}/{ressourceId}": {
       "get": {
         "tags": [
           "Ressources"
@@ -2615,7 +3918,7 @@
             "format": "int32"
           },
           {
-            "name": "locationId",
+            "name": "ressourceId",
             "in": "path",
             "required": true,
             "type": "integer",
@@ -2656,6 +3959,77 @@
               "type": "array",
               "items": {
                 "$ref": "#/definitions/RessourceEquipmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/ressources3/equipments/{personId}/{locationId}": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Returns all bookable equipments (Gliederungen) for a specific User/Location.",
+        "operationId": "Ressources_GetEquipmentForPersonAndLocation3",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "beginn",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "ende",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "personId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "bookingId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RessourceEquipmentGliederungDto"
               }
             }
           }
@@ -2712,6 +4086,130 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/ressources/equipment/fix/{ressourceId}": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Get all fix equipment of a resource",
+        "operationId": "Ressources_GetFixEquipment",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "ressourceId",
+            "in": "path",
+            "description": "ResourceId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EquipmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/ressource/guid": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Gets ressource info by providing the guid",
+        "operationId": "Ressources_GetRessourceByGuid",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "resourceId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/RessourceDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/ressource/{resourceId}": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Gets ressource info by providing the guid",
+        "operationId": "Ressources_GetRessourceById",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "resourceId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/RessourceDto"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/seating/options/{ressourceId}": {
       "get": {
         "tags": [
@@ -2754,12 +4252,150 @@
           }
         }
       }
+    },
+    "/{mandator}/api/v1.0/seating/location": {
+      "get": {
+        "tags": [
+          "Seating"
+        ],
+        "summary": "Returns all available seating options for the given locations.",
+        "operationId": "Seating_GetAvailableSeatingsForStandort",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationIds",
+            "in": "query",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SeatingDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/task/start": {
+      "post": {
+        "tags": [
+          "Task"
+        ],
+        "summary": "Starts a task.",
+        "operationId": "Task_Start",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/workflow/statuslist/{reservationOrTempdataContextId}": {
+      "get": {
+        "tags": [
+          "Workflow"
+        ],
+        "summary": "Returns all available cultures.",
+        "operationId": "Workflow_GetAvailableStatusList",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "reservationOrTempdataContextId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StatusDto"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
     "BookingDto": {
       "type": "object",
       "properties": {
+        "Answers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AnswerDto"
+          }
+        },
+        "Attachments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AttachmentDto"
+          }
+        },
         "Begin": {
           "format": "date-time",
           "type": "string"
@@ -2767,6 +4403,16 @@
         "BeginPreparation": {
           "format": "date-time",
           "type": "string"
+        },
+        "CateringCosts": {
+          "format": "double",
+          "type": "number"
+        },
+        "CateringList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CateringDto"
+          }
         },
         "CheckinAnonymous": {
           "type": "boolean"
@@ -2797,6 +4443,12 @@
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
+        "Currency": {
+          "type": "string"
+        },
+        "Doorman": {
+          "$ref": "#/definitions/DoormanDto"
+        },
         "End": {
           "format": "date-time",
           "type": "string"
@@ -2805,10 +4457,26 @@
           "format": "date-time",
           "type": "string"
         },
+        "EquipmentCosts": {
+          "format": "double",
+          "type": "number"
+        },
         "EquipmentList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/EquipmentDto"
+          }
+        },
+        "FieldDescriptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FieldDescription"
+          }
+        },
+        "FieldValues": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
           }
         },
         "HeadCount": {
@@ -2824,10 +4492,29 @@
             "type": "string"
           }
         },
+        "IsBlockingTime": {
+          "type": "boolean"
+        },
+        "IsFirstSerieItem": {
+          "type": "boolean"
+        },
+        "IsTeamsMeeting": {
+          "type": "boolean"
+        },
         "IstPrivat": {
           "type": "boolean"
         },
+        "KostenTotal": {
+          "type": "string"
+        },
         "Location": {
+          "type": "string"
+        },
+        "MaskedIdentifier": {
+          "type": "string"
+        },
+        "ModifiedOn": {
+          "format": "date-time",
           "type": "string"
         },
         "OrganizerId": {
@@ -2846,6 +4533,36 @@
             "$ref": "#/definitions/ParticipantDto"
           }
         },
+        "PersonInChargeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "PersonInChargeMail": {
+          "type": "string"
+        },
+        "PersonInChargeName": {
+          "type": "string"
+        },
+        "Pin": {
+          "type": "string"
+        },
+        "Questionnaires": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QuestionnaireDto"
+          }
+        },
+        "Resource": {
+          "$ref": "#/definitions/RessourceDto"
+        },
+        "ResourceCosts": {
+          "format": "double",
+          "type": "number"
+        },
+        "Resourcetype": {
+          "format": "int32",
+          "type": "integer"
+        },
         "RessourceDescription": {
           "type": "string"
         },
@@ -2859,6 +4576,9 @@
             "format": "int32",
             "type": "integer"
           }
+        },
+        "Seating": {
+          "$ref": "#/definitions/SeatingDto"
         },
         "SeatingCapacity": {
           "type": "string"
@@ -2877,8 +4597,14 @@
           "format": "int32",
           "type": "integer"
         },
+        "Series": {
+          "$ref": "#/definitions/SeriesDto"
+        },
         "Status": {
           "type": "string"
+        },
+        "StatusDto": {
+          "$ref": "#/definitions/StatusDto"
         },
         "SubTitle": {
           "type": "string"
@@ -2886,7 +4612,43 @@
         "SyncAppointmentOid": {
           "type": "string"
         },
+        "SyncedToExchangeSerieItem": {
+          "type": "boolean"
+        },
+        "TeamsMeetingInfo": {
+          "type": "string"
+        },
         "Title": {
+          "type": "string"
+        },
+        "TotalCosts": {
+          "format": "double",
+          "type": "number"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "AnswerDto": {
+      "type": "object",
+      "properties": {
+        "QuestionId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ReservationId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Text": {
           "type": "string"
         },
         "Id": {
@@ -2898,6 +4660,87 @@
           "items": {
             "type": "object"
           }
+        }
+      }
+    },
+    "AttachmentDto": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "CateringDto": {
+      "type": "object",
+      "properties": {
+        "Amount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "AngebotId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Automatic": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CategoryDesignation": {
+          "type": "string"
+        },
+        "CategoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Currency": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Designation": {
+          "type": "string"
+        },
+        "HasImage": {
+          "type": "boolean"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "OfferingZoneOfferingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "OpenAmount": {
+          "type": "boolean"
+        },
+        "PacketId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        },
+        "SelectedAmount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Sortierung": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
@@ -2920,6 +4763,9 @@
         "SortOrder": {
           "format": "int32",
           "type": "integer"
+        },
+        "TypeCaption": {
+          "type": "string"
         },
         "Id": {
           "format": "int32",
@@ -2970,9 +4816,30 @@
         }
       }
     },
+    "DoormanDto": {
+      "type": "object",
+      "properties": {
+        "DoorStatus": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
     "EquipmentDto": {
       "type": "object",
       "properties": {
+        "Currency": {
+          "type": "string"
+        },
         "Description": {
           "type": "string"
         },
@@ -2985,6 +4852,10 @@
         "HasImage": {
           "type": "boolean"
         },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        },
         "Id": {
           "format": "int32",
           "type": "integer"
@@ -2994,6 +4865,29 @@
           "items": {
             "type": "object"
           }
+        }
+      }
+    },
+    "FieldDescription": {
+      "type": "object",
+      "properties": {
+        "IsReadonly": {
+          "type": "boolean"
+        },
+        "IsRequired": {
+          "type": "boolean"
+        },
+        "Label": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Scope": {
+          "type": "string"
+        },
+        "Type": {
+          "type": "string"
         }
       }
     },
@@ -3021,21 +4915,374 @@
         }
       }
     },
-    "RessourceEquipmentGliederungDto": {
+    "QuestionnaireDto": {
       "type": "object",
       "properties": {
         "Designation": {
           "type": "string"
         },
+        "Questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QuestionDto"
+          }
+        },
+        "Sorting": {
+          "format": "int32",
+          "type": "integer"
+        },
         "Id": {
           "format": "int32",
           "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "RessourceDto": {
+      "type": "object",
+      "properties": {
+        "BookableFromAddin": {
+          "type": "boolean"
+        },
+        "BookingsCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Capacity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CheckinEnabled": {
+          "type": "boolean"
+        },
+        "Currency": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "HasCateringAvailable": {
+          "type": "boolean"
+        },
+        "HasImage": {
+          "type": "boolean"
+        },
+        "HierarchicalDescription": {
+          "type": "string"
+        },
+        "Images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "InfoUrl": {
+          "type": "string"
+        },
+        "Location": {
+          "type": "string"
+        },
+        "LocationDescription": {
+          "type": "string"
+        },
+        "LocationId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MaskedIdentifier": {
+          "format": "uuid",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "MaxCapacity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MinCapacity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        },
+        "RealDescription": {
+          "type": "string"
+        },
+        "ResourceType": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StandardCapacity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "TotalCosts": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "SeatingDto": {
+      "type": "object",
+      "properties": {
+        "Currency": {
+          "type": "string"
+        },
+        "Designation": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsStandard": {
+          "type": "boolean"
+        },
+        "MaxAmountPersons": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MinAmountPersons": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        },
+        "HasImage": {
+          "type": "boolean"
+        }
+      }
+    },
+    "SeriesDto": {
+      "type": "object",
+      "properties": {
+        "DayInMonth": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Days": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "enum": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "type": "integer"
+          }
+        },
+        "Description": {
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EveryWeekDay": {
+          "type": "boolean"
+        },
+        "HasEndDate": {
+          "type": "boolean"
+        },
+        "Interval": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MonthOfYear": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Occurences": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RecurrenceType": {
+          "type": "string"
+        },
+        "WeekNumber": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "StatusDto": {
+      "type": "object",
+      "properties": {
+        "Color": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "RessourceEquipmentGliederungDto": {
+      "type": "object",
+      "properties": {
+        "Count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Designation": {
+          "type": "string"
+        },
+        "HasImage": {
+          "type": "boolean"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "QuestionDto": {
+      "type": "object",
+      "properties": {
+        "Designation": {
+          "type": "string"
+        },
+        "EditableUntil": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Info": {
+          "$ref": "#/definitions/QuestionInfoDto"
+        },
+        "InfoText": {
+          "type": "string"
+        },
+        "IsRequired": {
+          "type": "boolean"
+        },
+        "Options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QuestionOptionDto"
+          }
+        },
+        "RequiredUntil": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Sorting": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "UniqueKey": {
+          "type": "string"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "QuestionInfoDto": {
+      "type": "object",
+      "properties": {
+        "IsReadonly": {
+          "type": "boolean"
+        },
+        "IsRequired": {
+          "type": "boolean"
+        }
+      }
+    },
+    "QuestionOptionDto": {
+      "type": "object",
+      "properties": {
+        "Designation": {
+          "type": "string"
+        },
+        "QuestionId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
         }
       }
     },
     "ReservationEditModel": {
       "type": "object",
       "properties": {
+        "Answers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AnswerDto"
+          }
+        },
+        "AnzahlPersonen": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ApplyChangesToSeries": {
+          "type": "boolean"
+        },
         "Beginn": {
           "format": "date-time",
           "type": "string"
@@ -3053,9 +5300,17 @@
             "type": "integer"
           }
         },
-        "CostUnit": {
-          "format": "int32",
-          "type": "integer"
+        "Comment": {
+          "type": "string"
+        },
+        "CostUnits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/KostentraegerDto"
+          }
+        },
+        "CreateTeamsMeeting": {
+          "type": "boolean"
         },
         "Ende": {
           "format": "date-time",
@@ -3072,6 +5327,10 @@
           "format": "int32",
           "type": "integer"
         },
+        "PersonInChargeId": {
+          "format": "int32",
+          "type": "integer"
+        },
         "RessourceId": {
           "format": "int32",
           "type": "integer"
@@ -3080,10 +5339,20 @@
           "format": "int32",
           "type": "integer"
         },
+        "StatusId": {
+          "format": "int32",
+          "type": "integer"
+        },
         "SyncAppointmentOid": {
           "format": "uuid",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "SyncedToExchangeSerieItem": {
+          "type": "boolean"
+        },
+        "SyncWithCalendar": {
+          "type": "boolean"
         },
         "TeilnehmerList": {
           "type": "array",
@@ -3097,6 +5366,12 @@
         },
         "Titel": {
           "type": "string"
+        },
+        "CustomFields": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         },
         "IsOnApiCall": {
           "type": "boolean"
@@ -3243,6 +5518,9 @@
         "IgnoreRecht": {
           "type": "boolean"
         },
+        "IsTeamsMeeting": {
+          "type": "boolean"
+        },
         "IstPersonRessourceReservation": {
           "type": "boolean"
         },
@@ -3259,11 +5537,24 @@
         "Kommentar": {
           "type": "string"
         },
+        "KommentarVertraulich": {
+          "type": "string"
+        },
         "KostentraegerModel": {
           "$ref": "#/definitions/KostentraegerModel"
         },
         "Kunde": {
           "$ref": "#/definitions/DefaultKunde"
+        },
+        "OriginOfCreation": {
+          "format": "int32",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "type": "integer"
         },
         "PersonOrganisatorId": {
           "format": "int32",
@@ -3425,12 +5716,15 @@
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "Designation": {
-          "type": "string"
-        },
         "End": {
           "format": "date-time",
           "type": "string"
+        },
+        "FieldDescriptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FieldDescription"
+          }
         },
         "Kosten": {
           "format": "double",
@@ -3439,6 +5733,18 @@
         "LocationId": {
           "format": "int32",
           "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "Questionnaires": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QuestionnaireDto"
+          }
         },
         "ReservationId": {
           "format": "int32",
@@ -3459,15 +5765,12 @@
         "SeatingText": {
           "type": "string"
         },
+        "SelectTeamsMeetingByDefault": {
+          "type": "boolean"
+        },
         "Start": {
           "format": "date-time",
           "type": "string"
-        },
-        "SubReservationList": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/CreateBookingDto"
-          }
         },
         "TempdataContextId": {
           "format": "int32",
@@ -3481,25 +5784,24 @@
     "ReservationCreateSerieModel": {
       "type": "object",
       "properties": {
-        "TempdataContextId": {
+        "DayOfMonth": {
           "format": "int32",
           "type": "integer"
         },
-        "EndByDate": {
-          "type": "boolean"
-        },
-        "EndDate": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "Iterations": {
+        "DayOfWeek": {
           "format": "int32",
+          "enum": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
           "type": "integer"
         },
-        "RecurrenceType": {
-          "type": "string"
-        },
-        "Interval": {
+        "DayOfWeekInMonth": {
           "format": "int32",
           "type": "integer"
         },
@@ -3519,25 +5821,26 @@
             "type": "integer"
           }
         },
-        "DayOfMonth": {
+        "EndByDate": {
+          "type": "boolean"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Interval": {
           "format": "int32",
           "type": "integer"
         },
-        "DayOfWeekInMonth": {
+        "Iterations": {
           "format": "int32",
           "type": "integer"
         },
-        "DayOfWeek": {
+        "RecurrenceType": {
+          "type": "string"
+        },
+        "TempdataContextId": {
           "format": "int32",
-          "enum": [
-            1,
-            2,
-            4,
-            8,
-            16,
-            32,
-            64
-          ],
           "type": "integer"
         }
       }
@@ -3551,6 +5854,10 @@
         },
         "IsMaster": {
           "type": "boolean"
+        },
+        "LocationId": {
+          "format": "int32",
+          "type": "integer"
         },
         "ReservationId": {
           "format": "int32",
@@ -3594,6 +5901,192 @@
         }
       }
     },
+    "BookingTempdataDto": {
+      "type": "object",
+      "properties": {
+        "Booking": {
+          "$ref": "#/definitions/BookingDto"
+        },
+        "TempdataContextId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TempBookingDto": {
+      "type": "object",
+      "properties": {
+        "Begin": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "BeginPreparation": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CateringList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CateringDto"
+          }
+        },
+        "CostUnits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/KostentraegerDto"
+          }
+        },
+        "End": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndFollowUp": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EquipmentList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EquipmentDto"
+          }
+        },
+        "Gliederung": {
+          "$ref": "#/definitions/GliederungDto"
+        },
+        "HeadCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "HierarchicalLocation": {
+          "type": "string"
+        },
+        "Images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "IstPrivat": {
+          "type": "boolean"
+        },
+        "Location": {
+          "type": "string"
+        },
+        "LocationId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RessourceDescription": {
+          "type": "string"
+        },
+        "RessourceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RessourceIdList": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "type": "integer"
+          }
+        },
+        "SeatingCapacity": {
+          "type": "string"
+        },
+        "SeatingDescription": {
+          "type": "string"
+        },
+        "SeatingHasImage": {
+          "type": "boolean"
+        },
+        "SeatingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Status": {
+          "type": "string"
+        },
+        "TempDataContextId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MessageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "GliederungDto": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Designation": {
+          "type": "string"
+        },
+        "GliederungsTypId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Vorbereitungszeit": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Sortierung": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "GliederungsTypDesignation": {
+          "type": "string"
+        },
+        "AmountOfAvailableRooms": {
+          "type": "string"
+        },
+        "SelectedAmount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Price": {
+          "format": "double",
+          "type": "number"
+        },
+        "HasImage": {
+          "type": "boolean"
+        },
+        "AdditionalBeilagen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BeilageDto"
+          }
+        },
+        "AdditionalInformation": {
+          "type": "string"
+        }
+      }
+    },
+    "BeilageDto": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        }
+      }
+    },
     "ReservationUpdateSerieItemModel": {
       "type": "object",
       "properties": {
@@ -3627,6 +6120,10 @@
           "format": "int32",
           "description": "Gets or sets the AnlassId.",
           "type": "integer"
+        },
+        "DisplayFullDay": {
+          "description": "Gets or sets the DisplayFullDay.",
+          "type": "boolean"
         },
         "FiltersettingId": {
           "format": "int32",
@@ -4007,6 +6504,10 @@
         "HasSubreservationRaum": {
           "description": "Hält den Wert, ob die Reservation Subreservationen auf Räume hat.",
           "type": "boolean"
+        },
+        "AllowShowDetailButton": {
+          "description": "Does \"+\" button allowed for this block.",
+          "type": "boolean"
         }
       }
     },
@@ -4041,10 +6542,17 @@
           ],
           "type": "integer"
         },
+        "DisplayFullDay": {
+          "type": "boolean"
+        },
         "DisplayMultiline": {
           "type": "boolean"
         },
         "DisplayZoom": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TimelinePosition": {
           "format": "int32",
           "type": "integer"
         },
@@ -4105,46 +6613,13 @@
         }
       }
     },
-    "CateringDto": {
-      "type": "object",
-      "properties": {
-        "CategoryDesignation": {
-          "type": "string"
-        },
-        "CategoryId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Currency": {
-          "type": "string"
-        },
-        "Description": {
-          "type": "string"
-        },
-        "Designation": {
-          "type": "string"
-        },
-        "HasImage": {
-          "type": "boolean"
-        },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "OfferingZoneOfferingId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Price": {
-          "format": "double",
-          "type": "number"
-        }
-      }
-    },
     "ClassificationDto": {
       "type": "object",
       "properties": {
         "Caption": {
+          "type": "string"
+        },
+        "Code": {
           "type": "string"
         },
         "Description": {
@@ -4192,6 +6667,17 @@
         }
       }
     },
+    "CultureDto": {
+      "type": "object",
+      "properties": {
+        "DisplayName": {
+          "type": "string"
+        },
+        "IsoLanguageName": {
+          "type": "string"
+        }
+      }
+    },
     "FiltersettingModel": {
       "description": "Gives the values of a filter list.",
       "type": "object",
@@ -4214,8 +6700,15 @@
     "LocationDto": {
       "type": "object",
       "properties": {
+        "ChildCount": {
+          "format": "int32",
+          "type": "integer"
+        },
         "Description": {
           "type": "string"
+        },
+        "HasChildren": {
+          "type": "boolean"
         },
         "HierarchicalDescription": {
           "type": "string"
@@ -4258,15 +6751,65 @@
         }
       }
     },
+    "PasswordChangeModel": {
+      "description": "Model which contains all necessary data for a password change",
+      "type": "object",
+      "properties": {
+        "CurrentPassword": {
+          "description": "Current password of the forms logon which should be updated",
+          "type": "string"
+        },
+        "NewPassword": {
+          "description": "New password which should be applied to the forms logon",
+          "type": "string"
+        },
+        "Username": {
+          "description": "Username which is used to identify which forms logon should be resetted",
+          "type": "string"
+        }
+      }
+    },
     "PersonDto": {
       "type": "object",
       "properties": {
+        "GlobalRights": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "type": "integer"
+          }
+        },
+        "City": {
+          "type": "string"
+        },
+        "CompanyDepartment": {
+          "type": "string"
+        },
         "CompanyDescription": {
           "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        },
+        "CreatedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CustomFields": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         },
         "DefaultCapacity": {
           "format": "int32",
           "type": "integer"
+        },
+        "DefaultCostUnits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/KostentraegerDto"
+          }
         },
         "DefaultDuration": {
           "format": "int32",
@@ -4276,8 +6819,15 @@
           "format": "int32",
           "type": "integer"
         },
+        "ExternalId": {
+          "type": "string"
+        },
         "FirstName": {
           "type": "string"
+        },
+        "GenderId": {
+          "format": "int32",
+          "type": "integer"
         },
         "HasImage": {
           "type": "boolean"
@@ -4287,6 +6837,9 @@
         },
         "IsExtern": {
           "type": "boolean"
+        },
+        "Kategorie": {
+          "type": "string"
         },
         "Language": {
           "type": "string"
@@ -4300,7 +6853,23 @@
         "Mobile": {
           "type": "string"
         },
+        "ModifiedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
         "Name": {
+          "type": "string"
+        },
+        "Password": {
+          "type": "string"
+        },
+        "Phone": {
+          "type": "string"
+        },
+        "Pin": {
+          "type": "string"
+        },
+        "Postcase": {
           "type": "string"
         },
         "ResourcetypesGranted": {
@@ -4312,11 +6881,30 @@
         "Salutation": {
           "type": "string"
         },
+        "Street": {
+          "type": "string"
+        },
         "TimezoneId": {
           "type": "string"
         },
         "Title": {
           "type": "string"
+        },
+        "Typ": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UniqueKey": {
+          "type": "string"
+        },
+        "Username": {
+          "type": "string"
+        },
+        "Zip": {
+          "type": "string"
+        },
+        "CalculateCapacityBasedOnParticipantsEnabled": {
+          "type": "boolean"
         },
         "Id": {
           "format": "int32",
@@ -4327,27 +6915,6 @@
           "items": {
             "type": "object"
           }
-        }
-      }
-    },
-    "PasswordResetDto": {
-      "type": "object",
-      "properties": {
-        "Username": {
-          "type": "string"
-        }
-      }
-    },
-    "PasswordResetConfirmDto": {
-      "type": "object",
-      "properties": {
-        "MaskedIdentifier": {
-          "format": "uuid",
-          "type": "string",
-          "example": "00000000-0000-0000-0000-000000000000"
-        },
-        "Password": {
-          "type": "string"
         }
       }
     },
@@ -4381,20 +6948,50 @@
         }
       }
     },
+    "PasswordResetConfirmDto": {
+      "type": "object",
+      "properties": {
+        "MaskedIdentifier": {
+          "format": "uuid",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "Password": {
+          "type": "string"
+        }
+      }
+    },
+    "PasswordResetDto": {
+      "type": "object",
+      "properties": {
+        "Username": {
+          "type": "string"
+        }
+      }
+    },
     "RegisterModel": {
       "description": "Model which contains the needed attributes to create a new user with a logon",
       "type": "object",
       "properties": {
+        "Address": {
+          "description": "Address for the person.",
+          "type": "string"
+        },
+        "Company": {
+          "description": "Company for the person.",
+          "type": "string"
+        },
+        "Country": {
+          "description": "Country for the person.",
+          "type": "string"
+        },
+        "CreateNewCompany": {
+          "description": "Indicates whetever a new company should be created.",
+          "type": "boolean"
+        },
         "Culture": {
           "description": "Culture to be used for the person",
           "type": "string"
-        },
-        "CustomFields": {
-          "description": "Custom fields which will be added to person plugins",
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
         },
         "Email": {
           "description": "Email of the person",
@@ -4413,6 +7010,10 @@
           "description": "Lastname of the person",
           "type": "string"
         },
+        "Location": {
+          "description": "Location for the person.",
+          "type": "string"
+        },
         "Password": {
           "description": "Password for basic auth logon",
           "type": "string"
@@ -4421,27 +7022,29 @@
           "description": "Phone of the person",
           "type": "string"
         },
+        "Plz": {
+          "description": "Plz for the person.",
+          "type": "string"
+        },
+        "Postcase": {
+          "description": "Postcase of the person.",
+          "type": "string"
+        },
         "Username": {
           "description": "Username for basic auth logon",
           "type": "string"
-        }
-      }
-    },
-    "PasswordChangeModel": {
-      "description": "Model which contains all necessary data for a password change",
-      "type": "object",
-      "properties": {
-        "CurrentPassword": {
-          "description": "Current password of the forms logon which should be updated",
-          "type": "string"
         },
-        "NewPassword": {
-          "description": "New password which should be applied to the forms logon",
-          "type": "string"
+        "DefaultLocationId": {
+          "format": "int32",
+          "description": "Default locationId for the user.",
+          "type": "integer"
         },
-        "Username": {
-          "description": "Username which is used to identify which forms logon should be resetted",
-          "type": "string"
+        "CustomFields": {
+          "description": "Custom fields which will be added to person plugins",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         }
       }
     },
@@ -4449,6 +7052,14 @@
       "type": "object",
       "properties": {
         "AuthMode": {
+          "type": "string"
+        },
+        "CalendarStart": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CalendarEnd": {
+          "format": "date-time",
           "type": "string"
         },
         "Checkin": {
@@ -4482,7 +7093,17 @@
         "HasCustomLogo": {
           "type": "string"
         },
+        "LastSync": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Locale": {
+          "type": "string"
+        },
         "LogoFontFingerprint": {
+          "type": "string"
+        },
+        "LogoUrl": {
           "type": "string"
         },
         "MaxFutureBookings": {
@@ -4505,9 +7126,15 @@
         "ResourceDescription": {
           "type": "string"
         },
+        "ResourceDesignation": {
+          "type": "string"
+        },
         "ResourceId": {
           "format": "int32",
           "type": "integer"
+        },
+        "ResourceName": {
+          "type": "string"
         },
         "ServiceUrl": {
           "type": "string"
@@ -4586,36 +7213,6 @@
           "type": "boolean"
         },
         "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Price": {
-          "format": "double",
-          "type": "number"
-        }
-      }
-    },
-    "SeatingDto": {
-      "type": "object",
-      "properties": {
-        "Currency": {
-          "type": "string"
-        },
-        "Designation": {
-          "type": "string"
-        },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "IsStandard": {
-          "type": "boolean"
-        },
-        "MaxAmountPersons": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MinAmountPersons": {
           "format": "int32",
           "type": "integer"
         },
