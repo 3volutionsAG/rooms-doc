@@ -111,12 +111,12 @@ Diese Konfiguration kann gewisse Verhalten des onsiteROOMS beinflussen, wobei ei
 |Anfrage Intervall|&#10003;|&#10003;||
 |Titel anzeigen|&#10007;|&#10003;||
 |Ressource Beschreibung anzeigen|&#10007;|&#10003;|Bei onsite Web kann diese Option via Theming gelöst werden|
-|Read only|&#10007;|&#10003;||
+|Read only|&#10003;|&#10003;||
 |Nur checkin|&#10003;|&#10003;||
-|Unauthorisierte Aktionen erlauben|&#10007;|&#10003;||
+|Unauthorisierte Aktionen erlauben|&#10003;|&#10003;|onsite Web möglich ab v1.1.0: Aktionen werden im Namen des Users, mit dem das Türschild konfiguriert wurde, ausgeführt|
 |Organisator anzeigen|&#10003;|&#10003;||
 |Anonym-Login|&#10007;|&#10003;||
-|Checkout Modus|&#10003;|&#10003;||
+|Checkout Modus|&#10003;|&#10003;|Terminieren = Buchung wird auf jetzt gekürzt, Nachlaufzeit bleibt, Freigeben = Buchung wird auf jetzt gekürzt, Raum ist frei| 
 |Authorisierungsmodus|&#10003;|&#10003;|Bei onsite Web muss zwingend *Beide* eingestellt sein|
 |Kalender Zeitstrahl|&#10003;|&#10007;|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
 |QR Code Format|&#10003;|&#10003;|Bei onsite Web muss zwingend *json* eingestellt sein|
