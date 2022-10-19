@@ -113,7 +113,7 @@ Diese Konfiguration kann gewisse Verhalten des onsiteROOMS beinflussen, wobei ei
 |Ressource Beschreibung anzeigen|&#10007;|&#10003;|Bei onsite Web kann diese Option via Theming gelöst werden|
 |Read only|&#10003;|&#10003;||
 |Nur checkin|&#10003;|&#10003;||
-|Unauthorisierte Aktionen erlauben|&#10003;|&#10003;|onsite Web möglich ab v1.1.0: Aktionen werden im Namen des Users, mit dem das Türschild konfiguriert wurde, ausgeführt|
+|Unauthorisierte Aktionen erlauben|&#10003;|&#10003;|onsite Web möglich ab v1.1.0: Aktionen werden im Namen des Users, mit dem das Türschild konfiguriert wurde, ausgeführt.  Mit der Option, ist es möglich anonymes checkin/checkout sowie anonymes ad-hoc buchen und buchen verlängern zu tätigen. Wenn nur Anonymes Checkin gemacht werden soll, kann zusätzlich “Nur Checkin” ausgewählt werden. |
 |Organisator anzeigen|&#10003;|&#10003;||
 |Anonym-Login|&#10007;|&#10003;||
 |Checkout Modus|&#10003;|&#10003;|Terminieren = Buchung wird auf jetzt gekürzt, Nachlaufzeit bleibt, Freigeben = Buchung wird auf jetzt gekürzt, Raum ist frei| 
