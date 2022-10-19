@@ -4,7 +4,7 @@ linkTitle: "Pull Subscription für eine Person einrichten"
 weight: 200
 description:
 ---
-Um die Subscription für eine Person zu aktivieren, muss in den Einstellungen der Person der SyncMode auf Exchange2016Pull (basic Auth) oder O365Pull (OAuth 2.0) gesetzt werden.
+Um die Subscription für eine Person zu aktivieren, muss in den Einstellungen der Person der SyncMode auf Exchange2016Pull (Integrated Auth) oder O365Pull (OAuth 2.0) gesetzt werden.
 
 {{< imgproc pull_subscription_aktivieren Resize "1024x" >}}{{< /imgproc >}}
 
