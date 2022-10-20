@@ -11,7 +11,7 @@ Eine erfolgreiche Synchronisation bedingt, dass Push Notifikationen vom Exchange
 
 Da sich bei Exchange Online der Exchange Server bei Microsoft in der Cloud befindet, benötigt es öffentlichen Zugang zu dem WebService. Mit Rooms 4.7.2010 ist es möglich, eine separate URL für den Service anzugeben:
 
-```
+```xml
 <RoomsAppSettings>
 ...
 	<add key="ExchangeServiceUrl" value="https://public.example.com/Webservices/SyncNotification.svc" />
@@ -65,6 +65,6 @@ X-Forwarded-Proto: http
 Accept-Encoding: gzip
 ```
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?><soap11:Envelope xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/"><soap11:Header><t:RequestServerVersion xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" Version="Exchange2010" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" /></soap11:Header><soap11:Body><m:SendNotification xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"><m:ResponseMessages><m:SendNotificationResponseMessage ResponseClass="Success"><m:ResponseCode>NoError</m:ResponseCode><m:Notification><t:SubscriptionId>LABkYjhwcjAxbWI2NDg1LmV1cnByZDAxLnByb2QuZXhjaGFuZ2VsYWJzLmNvbRAAAADELVfykPBZQp7Q8IIUrUfmCKn7JnqX2AgQAAAAWTlI8+A2EEqLQp01E8Pw2Q==<t:SubscriptionId><t:PreviousWatermark>AQAAAExY/dNdjDVKjtBVHKR5IOurFukhAAAAAAE=</t:PreviousWatermark><t:MoreEvents>false</t:MoreEvents><t:ModifiedEvent><t:Watermark>AQAAAExY/dNdjDVKjtBVHKR5IOsoIukhAAAAAAE=</t:Watermark><t:TimeStamp>2020-12-03T11:03:50Z</t:TimeStamp><t:ItemId Id="AQMkAGYzNDgzOTU5LTM2ZTAtNGExMC04YjQyLTlkMzUxM2MzZjBkOQBGAAADdiwJfgoT4UeFDoYZ5kbJFQcAbsZeBEfd1Eyd3oyV64JNiAAAAgENAAAAbsZeBEfd1Eyd3oyV64JNiAACUQqtogAAAA==" ChangeKey="DwAAAA==" /><t:ParentFolderId Id="AQMkAGYzNDgzOTU5LTM2ZTAtNGExMC04YjQyLTlkMzUxM2MzZjBkOQAuAAADdiwJfgoT4UeFDoYZ5kbJFQEAbsZeBEfd1Eyd3oyV64JNiAAAAgENAAAA" ChangeKey="AQAAAA==" /></t:ModifiedEvent><t:ModifiedEvent><t:Watermark>AQAAAExY/dNdjDVKjtBVHKR5IOstIukhAAAAAAE=</t:Watermark><t:TimeStamp>2020-12-03T11:03:50Z</t:TimeStamp><t:FolderId Id="AQMkAGYzNDgzOTU5LTM2ZTAtNGExMC04YjQyLTlkMzUxM2MzZjBkOQAuAAADdiwJfgoT4UeFDoYZ5kbJFQEAbsZeBEfd1Eyd3oyV64JNiAAAAgENAAAA" ChangeKey="AgAAAA==" /><t:ParentFolderId Id="AQMkAGYzNDgzOTU5LTM2ZTAtNGExMC04YjQyLTlkMzUxM2MzZjBkOQAuAAADdiwJfgoT4UeFDoYZ5kbJFQEAbsZeBEfd1Eyd3oyV64JNiAAAAgEIAAAA" ChangeKey="AQAAAA==" /></t:ModifiedEvent></m:Notification></m:SendNotificationResponseMessage></m:ResponseMessages></m:SendNotification></soap11:Body></soap11:Envelope>
 ```

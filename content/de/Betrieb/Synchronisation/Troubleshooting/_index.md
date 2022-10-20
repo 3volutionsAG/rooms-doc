@@ -30,7 +30,7 @@ Eine Einzelbuchung mit dem Status Unsynchronisierbar --> Reservation.Unsynchroni
 
 Eine Einzelbuchung wird unsynchronisierbar wenn eine Notifikation von Exchange, welche wichtige Änderungen vornimmt, 5x nacheinander nicht verarbeitet werden konnte. Diese Anzahl von Updates, bis die Sync deaktiviert wird, kann in den RoomsAppSettings konfiguriert werden:
 
-```
+```xml
 	<!--Stop sync after continuous failed updates to a reservation-->
 	<add key="StopSyncAfterFailedAttempts" value="5" />
 ```
