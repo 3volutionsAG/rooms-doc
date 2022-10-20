@@ -6,7 +6,7 @@ description:
 ---
 Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 
-```
+```xml
 	<!---->
 	<!--Pull Subscription configuration settings-->
 	<!---->

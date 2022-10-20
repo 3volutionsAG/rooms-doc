@@ -8,7 +8,7 @@ Mit Rooms Release 4.7.2112 ist eine Skalierung des PullSubscription Services mö
 
 Hinzufügen von zusätzlichen Services (Bsp: 4 Service worker):
 
-```
+```xml
 <AddInstance Key="pullSubscriberServiceSession" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.PullSubscriberService.PullSubscriberServiceSession,Garaio.Products.Rooms.Core"/>
 <AddInstance Key="pullSubscriberServiceSession1" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.PullSubscriberService.PullSubscriberServiceSession,Garaio.Products.Rooms.Core"/>
 <AddInstance Key="pullSubscriberServiceSession2" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.PullSubscriberService.PullSubscriberServiceSession,Garaio.Products.Rooms.Core"/>
@@ -29,7 +29,7 @@ Für jeden Service (im Beispiel 0-3) können eigene Konfigurationen definiert we
 
 Beispiel:
 
-```
+```xml
 	<!--Intervall to wait after task is complete-->
 	<add key="IntervallTaskInSeconds" value="0" />
 
@@ -52,7 +52,7 @@ Beispiel:
 
 Hier ein Script um User auf eine bestimmte Anzahl von Priority Gruppen zuzuweisen:
 
-```
+```sql
   DECLARE @NumberOfServices INT;
   SET @NumberOfServices = 3
 

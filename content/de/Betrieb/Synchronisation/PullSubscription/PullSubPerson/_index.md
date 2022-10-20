@@ -10,7 +10,7 @@ Um die Subscription für eine Person zu aktivieren, muss in den Einstellungen de
 
 Folgende Scripts können helfen, Personen auf Pullsubscription zu migrieren:
 
-```
+```sql
 			UPDATE Person
                 SET SettingsXml.modify('replace value of (//PersonSettings/SyncMode/text())[1] with "Exchange2016Pull"')
             WHERE SettingsXml IS NOT NULL 
@@ -30,7 +30,7 @@ Folgende Scripts können helfen, Personen auf Pullsubscription zu migrieren:
 
 ```
 
-```
+```sql
 			UPDATE Person
                 SET SettingsXml.modify('replace value of (//PersonSettings/SyncMode/text())[1] with "O365Pull"')
             WHERE SettingsXml IS NOT NULL 

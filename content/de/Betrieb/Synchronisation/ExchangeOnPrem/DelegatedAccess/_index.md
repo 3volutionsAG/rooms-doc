@@ -33,7 +33,7 @@ ROOMS verwendet standartmässig die Impersonierung um im Kontext eines anderen B
 
 RoomsAppSettings.config
 
-```
+```xml
 <RoomsAppSettings>
 	...
 	<add key="ExchangeUseImpersonation" value="false" />
@@ -50,7 +50,7 @@ Wichtig: Der ServiceUser (im obigen Beispiel delegationservice@sales.3v-rooms.ch
 
 Damit delegated Access via Powershell eingerichtet werden kann, werden die aktuellsten Exchange Cmdlets benötigt. Um zu überprüfen ob eine aktuelle Version installiert kann folgender Befehl abgesetzt werden: 
 
-```
+```powershell
 Add-MailboxFolderPermission -Identity lukas.laederach@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
 
 ```
