@@ -69,3 +69,49 @@ Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden
 [https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth)
 
 
+## Zugriff auf gewisse Mailboxen / User begrenzen
+
+https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access
+
+Powershell vorbereiten
+```
+Install-Module -Name ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
+```
+Distribution Gruppe erstellen und Benutzer hinzufügen, es kann auch eine bereits bestehende verwendet werden.
+
+```
+New-DistributionGroup -Name "SyncIsAllowed" -Type "Security"
+Add-DistributionGroupMember -Identity "SyncIsAllowed" -Member "DiegoS@rooms.myo365.site"
+```
+Access Policy erstellen, dabei wird die ExchangeAppId vom schritt oben und die Distribution Gruppe gebraucht.
+```
+New-ApplicationAccessPolicy -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f -PolicyScopeGroupId "SyncIsAllowed" -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group SyncIsAllowed."
+```
+
+Nun kann das ganze überprüft werden:
+
+```
+Test-ApplicationAccessPolicy -Identity "DiegoS@rooms.myo365.site" -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
+
+
+AppId             : 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
+Mailbox           : DiegoS
+MailboxId         : 07742579-71ac-4659-abd7-aa1a1be5d33a
+MailboxSid        : S-1-5-21-3752945577-1385056011-2515546586-533997
+AccessCheckResult : Granted
+
+Test-ApplicationAccessPolicy -Identity "AdeleV@rooms.myo365.site" -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
+
+
+AppId             : 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
+Mailbox           : AdeleV
+MailboxId         : 1cfe2bc2-368a-4de5-92d6-5b2846c8d162
+MailboxSid        : S-1-5-21-3752945577-1385056011-2515546586-533996
+AccessCheckResult : Denied
+
+```
+
+Achtung: Änderungen an Anwendungszugriffsrichtlinien können länger als 1 Stunde in Microsoft Graph REST-API-Aufrufen wirksam werden, auch wenn Test-ApplicationAccessPolicy positive Ergebnisse anzeigt.
+
+Grundsätzlich ist es auch möglich DenyAccess anstatt RestrictAccess zu verwenden um nur einer bestimmten Gruppe den Zugang zu verwehren.
