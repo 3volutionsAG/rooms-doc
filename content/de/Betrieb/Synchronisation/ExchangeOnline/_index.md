@@ -68,6 +68,14 @@ Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden
 
 [https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth)
 
+Achtung, der Service User mit dem der ROOMS Service läuft benötigt Zugriff auf den Private key, falls die Fehlermeldung "Keyset does not exist" im Rooms Log auftaucht, dann muss dem Service User die Rechte gegeben werden:
+
+Rechtsklick auf Certifikat --> All Tasks --> Manage private key
+
+Service User hinzufügen (Full control)
+
+https://improveandrepeat.com/2018/12/how-to-fix-the-keyset-does-not-exist-cryptographicexception/
+
 
 ## Zugriff auf gewisse Mailboxen / User begrenzen
 
