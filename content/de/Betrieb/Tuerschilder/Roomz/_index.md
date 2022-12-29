@@ -1,7 +1,7 @@
 ---
 title: "ROOMZ"
 linkTitle: "ROOMZ"
-weight: 2
+weight: 3
 
 description: >
    <p style="text-align: justify">ROOMZ Konfigurationsparameter</p>

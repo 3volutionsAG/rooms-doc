@@ -97,32 +97,6 @@ Folgende SASS Datei dient als technische Hilfe, welche Elemente ansteuerbar sind
 
 [Custom theme template](/attachements/theme-template.scss)
 
-
-### Konfiguration
-
-Damit ein Türschild für eine Ressource eingesetzt werden kann, muss die entsprechende Ressource in ROOMS konfiguriert werden (_Einstellungen -> Ressourcen -> Türschild_).
-Diese Konfiguration kann gewisse Verhalten des onsiteROOMS beinflussen, wobei ein Unterschied besteht zwischen dem neuen onsiteROOMS (Web basiert) und dem alten onsiteROOMS (Android App).
-
-|Einstellung|onsite Web|onsite Android|Beschreibung|
-|---|---|---|---|
-|Thema|&#10007;|&#10003;||
-|Sprache|&#10003;|&#10003;||
-|Wartezeit|&#10003;|&#10003;||
-|Anfrage Intervall|&#10003;|&#10003;||
-|Titel anzeigen|&#10007;|&#10003;||
-|Ressource Beschreibung anzeigen|&#10007;|&#10003;|Bei onsite Web kann diese Option via Theming gelöst werden|
-|Read only|&#10003;|&#10003;||
-|Nur checkin|&#10003;|&#10003;||
-|Unauthorisierte Aktionen erlauben|&#10003;|&#10003;|onsite Web möglich ab v1.1.0: Aktionen werden im Namen des Users, mit dem das Türschild konfiguriert wurde, ausgeführt.  Mit der Option, ist es möglich anonymes checkin/checkout sowie anonymes ad-hoc buchen und buchen verlängern zu tätigen. Wenn nur Anonymes Checkin gemacht werden soll, kann zusätzlich “Nur Checkin” ausgewählt werden. |
-|Organisator anzeigen|&#10003;|&#10003;||
-|Anonym-Login|&#10007;|&#10003;||
-|Checkout Modus|&#10003;|&#10003;|Terminieren = Buchung wird auf jetzt gekürzt, Nachlaufzeit bleibt, Freigeben = Buchung wird auf jetzt gekürzt, Raum ist frei| 
-|Authorisierungsmodus|&#10003;|&#10003;|Bei onsite Web muss zwingend *Beide* eingestellt sein|
-|Kalender Zeitstrahl|&#10003;|&#10007;|Definiert die sichtbare Zeitspanne des interaktiven Kalenders|
-|QR Code Format|&#10003;|&#10003;|Bei onsite Web muss zwingend *json* eingestellt sein|
-|Konfigurationsbenutzer wählen|&#10003;|&#10003;||
-
-
 ## Bekannte Verhalten
 
 ### Kalender wird nicht richtig dargestellt
@@ -131,3 +105,6 @@ Dieses Verhalten kann aufkommen, falls die Türschilder nicht die gleiche Zeitzo
 Folgende Konfigurationen beheben dieses Verhalten:
 * Zeitstrahl für Türschild konfigurieren (_Einstellungen -> Ressource -> Türschild_)
 * Öffnungszeit für Standort definieren, an welchem die Ressource ist.
+
+## Konfiguration
+Die Dokumentation für die Konfiguration finden Sie [hier]({{< ref "betrieb/tuerschilder/konfiguratonressource" >}})
