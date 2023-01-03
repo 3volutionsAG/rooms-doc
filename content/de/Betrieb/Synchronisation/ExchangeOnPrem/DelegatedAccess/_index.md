@@ -52,5 +52,7 @@ Damit delegated Access via Powershell eingerichtet werden kann, werden die aktue
 
 ```powershell
 Add-MailboxFolderPermission -Identity lukas.laederach@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
+Add-MailboxFolderPermission -Identity "lukas.laederach@sales.3v-rooms.ch:\Deleted Items" -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
+Add-MailboxFolderPermission -Identity "lukas.laederach@sales.3v-rooms.ch:\Drafts" -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
 
 ```

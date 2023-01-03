@@ -37,7 +37,7 @@ Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSetti
 Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten, die man aus den vorherigen Schritten erlangt hat, ersetzt werden dieses File findet man im Installationsverzeichnis von ROOMS (Default: C:\Program Files (x86)\Garaio\ROOMS\Configuration).
 
 RoomsAppSettings.config
-```
+```xml
 <RoomsAppSettings>
 ...
     <add key="ExchangeTenantId" value="xxx" />
@@ -56,7 +56,7 @@ Mit Rooms Release 4.7.2111 ist Authentisierung mit Zertifikat möglich.
 
 Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten, die man aus den vorherigen Schritten erlangt hat ersetzt werden.
 
-```
+```xml
 <RoomsAppSettings>
 ...
     <add key="ExchangeTenantId" value="xxx" />
@@ -123,3 +123,70 @@ AccessCheckResult : Denied
 Achtung: Änderungen an Anwendungszugriffsrichtlinien können länger als 1 Stunde in Microsoft Graph REST-API-Aufrufen wirksam werden, auch wenn Test-ApplicationAccessPolicy positive Ergebnisse anzeigt.
 
 Grundsätzlich ist es auch möglich DenyAccess anstatt RestrictAccess zu verwenden um nur einer bestimmten Gruppe den Zugang zu verwehren.
+
+## Delegated Access
+
+Falls Sie die Berechtigungen noch stärker einschränken wollen kann ab der Version 4.7.2301 die Option Delegated Access konfiguriert werden. Achtung diese Einstellung gilt für alle eingerichteten Synchronsationen also onPrem und O365.
+
+RoomsAppSettings.config
+
+```xml
+<RoomsAppSettings>
+	...
+	<add key="ExchangeUseImpersonation" value="false" />
+	...
+</RoomsAppSettings>
+```
+
+Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSettings.config eingetragen werden. Dafür können diese Schritte befolgt werden:
+
+1. Öffnen Sie einen Browser und navigieren Sie zum Azure Active Directory Admin Center. Melden Sie sich mit einem persönlichen Konto (auch: Microsoft-Konto) oder einem Geschäfts- oder Schulkonto an.
+2. Wählen Sie in der linken Navigationsleiste Azure Active Directory aus und wählen Sie dann App-Registrierungen unter Verwalten aus.
+3. Wählen Sie Neue Registrierung aus. Legen Sie auf der Seite Anwendung registrieren die Werte wie folgt fest.
+	1. Geben Sie unter Name einen Anzeigenamen für Ihre App an.
+	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll ist.
+4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
+5. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
+6. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps die Option Office 365 Exchange Online aus.
+7. Wählen Sie Delegated permissions und dann EWS.AccessAsUser.All aus. Klicken Sie auf Berechtigungen hinzufügen.
+8. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
+
+
+```xml
+<RoomsAppSettings>
+...
+    <add key="ExchangeTenantId" value="xxx" />
+    <add key="ExchangeAppId" value="xxx" />
+    <add key="ExchangeServiceUser" value="xxx" />
+    <add key="ExchangeServicePassword" value="xxx" />
+...
+</RoomsAppSettings>
+```
+
+Bei ExchangeServiceUser und ExchangeServicePassword muss ein Service User mit Postfach angegeben werden.
+
+Bspw.:
+
+```xml
+<RoomsAppSettings>
+...
+    <add key="ExchangeServiceUser" value="o365admin@rooms.myo365.site" />
+    <add key="ExchangeServicePassword" value="mySecretPassword" />
+...
+</RoomsAppSettings>
+```
+
+### Vergabe des Editor Rechts für den delegated User via Exchange Management Shell
+
+Powershell vorbereiten
+```
+Install-Module -Name ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
+```
+
+```powershell
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" -User o365admin@rooms.myo365.site -AccessRights Editor
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights Editor
+```
+
