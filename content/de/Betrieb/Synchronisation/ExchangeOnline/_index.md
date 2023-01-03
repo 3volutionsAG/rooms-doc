@@ -179,7 +179,8 @@ Bspw.:
 ### Vergabe des Editor Rechts für den delegated User via Exchange Management Shell
 
 Powershell vorbereiten
-```
+
+```powershell
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 ```
