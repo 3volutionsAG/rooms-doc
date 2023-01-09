@@ -41,6 +41,10 @@ Ab Rooms 4.7.2211 ist die Ressourcen-Sync mit dem neuen Addin kompatibel. Jedoch
 
 # Nicht unterstützte Verhalten
 
+*Vor-Nachlaufzeit
+
+Achtung! Ist die RessourcenSync auf einer Ressource aktiviert kann die Vor/Nachlaufzeit nicht mehr verwendet werden. Bei allen Buchungen auf der Ressource wird die Vor/Nachlaufzeit 0 gesetzt.
+
 *Termin mit mehreren Ressourcen erstellen*
 
 Bei einem Outlook Termin darf immer nur eine Ressource hinzugefügt/eingeladen werden.
