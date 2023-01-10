@@ -21,10 +21,6 @@ Bei Serienterminen:
 
 - einzelne Serientermine anpassen, falls die Ressource an einzelnen Serienterminen nicht verfügbar sein sollte
 
-**Hinweis**:
-<p style="text-align: justify">
-Ein Einzeltermin kann nicht in einen Serientermin umgebucht werden. Es muss eine neue Buchung erstellt und als Serientermin definiert werden. </p>
-
 #### Termin/Serientermin ändern
 
 - Buchungsübersicht anzeigen
