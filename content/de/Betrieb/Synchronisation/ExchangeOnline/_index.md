@@ -192,3 +192,4 @@ Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" 
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights Editor
 ```
 
+Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, bis jetzt noch unklar wie dies möglich ist.
