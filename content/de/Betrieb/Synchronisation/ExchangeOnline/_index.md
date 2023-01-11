@@ -146,10 +146,11 @@ Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSetti
 	1. Geben Sie unter Name einen Anzeigenamen für Ihre App an.
 	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll ist.
 4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
-5. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
-6. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps die Option Office 365 Exchange Online aus.
-7. Wählen Sie Delegated permissions und dann EWS.AccessAsUser.All aus. Klicken Sie auf Berechtigungen hinzufügen.
-8. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
+5. Wählen Sie in der linken Navigation unter Verwalten die Option Authentifizerung aus und wählen Sie unter Erweiterte Einstellungen --> Öffentliche Clientflows zulassen --> Folgende Mobilgerät- und Desktopflows aktivieren --> Ja
+6. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
+7. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps die Option Office 365 Exchange Online aus.
+8. Wählen Sie Delegated permissions und dann EWS.AccessAsUser.All aus. Klicken Sie auf Berechtigungen hinzufügen.
+9. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
 
 
 ```xml
