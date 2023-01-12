@@ -56,3 +56,4 @@ Add-MailboxFolderPermission -Identity "lukas.laederach@sales.3v-rooms.ch:\Delete
 Add-MailboxFolderPermission -Identity "lukas.laederach@sales.3v-rooms.ch:\Drafts" -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
 
 ```
+Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, bis jetzt noch unklar wie dies möglich ist.
