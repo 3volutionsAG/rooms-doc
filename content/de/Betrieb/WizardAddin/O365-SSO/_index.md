@@ -1,10 +1,10 @@
 ---
-title: "O365 Addin Single Sign On"
-linkTitle: "O365 Addin Single Sign On"
+title: "Addin O365 SSO"
+linkTitle: "Addin O365 SSO"
 weight: 2 
 
 description: >
-   <p style="text-align: justify"></p>
+   <p style="text-align: justify">Addin: Single sign on mit O365</p>
 ---
 
 Wird Forms oder Windows auth verwendet z.B. mit einem OnPrem Exchange, kann dieser Punkt übersprungen werden. 
