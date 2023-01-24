@@ -41,25 +41,28 @@ Rooms muss IDP als Authentisierung nutzen dies wird über RoomsAppSettings aktiv
 
 Addin: Der Wizard wird als Addin bezeichnet wenn er auf einem Outlook Client oder in Outlook Online integriert läuft.
 
-Unterstützte Outlook Clients:
+https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets?view=common-js-preview&tabs=xmlmanifest
 
-Windows 	
+Unterstützte Exchange Versionen:
+
+- Exchange Online
+- Exchange on-premises 	
+   <br>2019 (Addin funktioniert nur mit Client nicht in OWA)
+   <br>2016 (Addin funktioniert nur mit Client nicht in OWA)
+
+Unterstützte Outlook versionen:
+
+Windows:
+
 - Microsoft 365 subscription
-- retail perpetual Outlook 2016 and later
-- volume-licensed perpetual Outlook 2021
+- Retail version: Outlook 2016, Outlook 2019, Outook 2021
+- Volume license version: Outlook 2021
 
 Mac
 - classic UI
 - new UI
 
-Outlook Web Access, Outlook im Browser:
-
-- Nur Exchange Online, on-prem wird nicht unterstzützt
-
-Unterstützte Exchange Server:
-
-- Exchange Online
-- Exchange on-prem ab 2016
+Grunsätzlich braucht das Addin mindestens das Requirement Set 1.7
 
 ## Installation Wizard
 
