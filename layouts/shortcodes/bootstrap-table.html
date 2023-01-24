@@ -1,0 +1,8 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 | default "" }}
+{{ $old := "<table>" }}
+{{ $new := printf "<table class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable | safeHTML }}
+
+<!-- https://zwbetz.com/style-a-markdown-table-with-bootstrap-classes-in-hugo/ -->
