@@ -12,8 +12,8 @@ description: >
 In der Anleitung werden folgende URLs verwendet:
 
 ROOMS: https://rooms.example.com/Default
-IDP: https://idp.example.com
-Wizard: https://wizard.example.com
+<br>IDP: https://idp.example.com
+<br>Wizard: https://wizard.example.com
 
 Bezeichnungen:
 
