@@ -37,6 +37,11 @@ Rooms muss IDP als Authentisierung nutzen dies wird über RoomsAppSettings aktiv
     </RoomsAppSettings>
     ```
 
+### Unterstützte Browser
+
+- Alle "evergreen" browsers
+- Internet Explorer wird nicht unterstützt, die Benutzerfreundlichkeit ist nicht gewährleistet.
+
 ## Voraussetzungen Outlook Addin
 
 Addin: Der Wizard wird als Addin bezeichnet wenn er auf einem Outlook Client oder in Outlook Online integriert läuft.
@@ -63,6 +68,19 @@ Mac
 - new UI
 
 Grunsätzlich braucht das Addin mindestens das Requirement Set 1.7
+
+### Unterstützte Browser
+
+Die Benutzerfreundlichkeit ist für die EdgeHTML-Engine gewährleistet, mit Ausnahme der Drag & Drop-Funktion für Serienalternativen
+
+Internet Explorer als Web-Engine wird nicht unterstützt. 
+
+Eine Liste aller verwendeten Webansichten für Kombinationen von Windows und Office finden Sie unter diesem Link:
+https://docs.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins
+
+Für aktuelle Windows- und O365-Clients muss WebView2 installiert sein:
+https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
+
 
 ## Installation Wizard
 
