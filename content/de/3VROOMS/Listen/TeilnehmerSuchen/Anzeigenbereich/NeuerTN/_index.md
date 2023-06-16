@@ -2,10 +2,14 @@
 title: "Neue Teilnehmende erstellen"
 linkTitle: "Neue Teilnehmende erstellen"
 weight: 1
-description: >
-  <p style="text-align: justify"> Unabhängig von einer Buchung kann in ROOMS Besuch registriert werden. In diesem Abschnitt erfahren Sie, wie Sie Besuch im System aufnehmen können. </P>
+description: Unabhängig von einer Buchung können in ROOMS Besucher bzw. Teilnehmer erfasst werden. In diesem Abschnitt erfahren Sie, wie Sie Besuch im System aufnehmen können.
 ---
-<p style="text-align: justify"> Um sogenannten Walk-In-Besuch, ohne Zuordnung zu einer Buchung, in ROOMS zu registrieren, navigieren Sie im Menüpunkt Listen auf das Subpanel Teilnehmende. </br>
+
+{{% alert title="Warning" color="warning" %}}
+Um diese Funktion nutzen zu können wird das Stanortbezogene Recht `Darf Anlässe buchen` benötigt. 
+{{% /alert %}}
+
+<p style="text-align: justify"> Um sogenannten Walk-In-Besuch, ohne Zuordnung zu einer Buchung, in ROOMS zu registrieren, navigieren Sie im Menüpunkt Listen auf das Subpanel Teilnehmende. </br>*
 Am unteren Rand des Anzeigenbereichs finden Sie eine Schaltfläche <i>Teilnehmende hinzufügen</i> </p>
 
 {{< imgproc List_TN_Anz_Schalt Resize "960x" >}}
