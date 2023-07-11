@@ -8,15 +8,12 @@ description: >
 <p style="text-align: justify">
 Wenn Sie den passenden Plan gefunden haben, sehen Sie, ob der Raum frei oder belegt ist durch das angezeigte Symbol in der Mitte des Raumes. </p>
 
-{{< imgproc Plan_Planstatus_frei_Standortauswahl Resize "960x" >}}
+{{< imgproc plan_free_busy Resize "960x" >}}
 Anzeigen des Planstatus im Raum
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Sie buchen diesen Raum mittels Klick auf das grüne Symbol. Dabei erscheint ein kleines Fenster mit der Option Schnellbuchung. </p>
-
-<p style="text-align: justify">
-Klicken Sie auf den Raum und nicht auf das grüne Symbol, wählen Sie den Raum/die Ressource lediglich für die Massenbuchung aus. </p>
+Sie buchen diesen Raum mittels Klick auf die Verknüpfung. Dabei erscheint ein kleines Fenster mit der Option Schnellbuchung. </p>
 
 ### Schnellbuchung im Plan
 
@@ -33,7 +30,7 @@ Wählen Sie dafür folgende Optionen aus:
 <p style="text-align: justify">
 Zusätzlich können Sie eine Bemerkung eintragen und die Email Notifikation aktivieren. </p>
 
-{{< imgproc Plan_freie_Ressource_Schnellbuchung Resize "960x" >}}
+{{< imgproc plan_schnellbuchung Resize "960x" >}}
 Schnellbuchung im Plan
 {{< /imgproc >}}
 
@@ -47,7 +44,7 @@ Hier gelangen Sie zur weiteren Beschreibung der Schnellbuchung:
 <p style="text-align: justify">
 Möchten Sie weitere Angaben zu Ihrer Buchung machen, gehen Sie auf den Button <i>Detailbuchung</i>. Es öffnet sich das Feld zur Detailbuchung. </p>
 
-{{< imgproc Plan_Detailbuchung Resize "960x" >}}
+{{< imgproc plan_detailbuchung Resize "960x" >}}
 Detailbuchung im Plan
 {{< /imgproc >}}
 

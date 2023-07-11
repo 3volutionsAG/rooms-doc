@@ -8,23 +8,16 @@ description: >
 <p style="text-align: justify">
 Auf dem Plan selbst sind die Ressourcen eingezeichnet. Dabei wird durch Symbole angezeigt, welchen Status die Ressource zur gewählten Zeit hat. </p>
 
-{{< imgproc Plan_Planstatus_frei Resize "960x" >}}
-Ansicht einer freien Ressource im Plan
+{{< imgproc plan_status Resize "960x" >}}
+Status Anzeige der Ressourcen im Plan
 {{< /imgproc >}}
 
+### Verfügbarkeit
+
 ---
-| <div style="width:250px">Feld</div>          | Funktion      | <div style="width:100px">Symbol</div> | 
-| ------------- |-------------  |-------------  |
-| Frei| <p style="text-align: justify">Der angezeigte Raum ist zu jener Zeit, welche im Sidepanel eingestellt ist, frei. Der Raum kann gebucht werden. </p>| {{< imgproc Plan_Icon_frei Resize "50x" >}}
-{{< /imgproc >}} |
-| Besetzt (definitiv)| <p style="text-align: justify">Der angezeigte Raum ist zu jener Zeit, welche im Sidepanel eingestellt ist, bereits belegt.  </p>| {{< imgproc Plan_Icon_besetzt Resize "50x" >}}
-{{< /imgproc >}} |
-| Besetzt (provisorisch)| <p style="text-align: justify">Der angezeigte Raum ist zu jener Zeit, welche im Sidepanel eingestellt ist, bereits belegt, jedoch nur provisorisch. Das heisst, dass eine autorisierte Instanz die Reservation noch bestätigen muss. </p> | {{< imgproc Plan_Icon_besetzt_provisorisch Resize "50x" >}}
-{{< /imgproc >}} |
-| Besetzt (temporär)| <p style="text-align: justify">Der angezeigte Raum ist zu jener Zeit, welche im Sidepanel eingestellt ist, belegt, jedoch nur temporär. Das heisst, dass eine Person eine Reservation als Terminblocker vorgenommen hat. Die Person muss die eigene Reservation noch bestätigen. </p>| {{< imgproc Plan_Icon_besetzt_temporär Resize "50x" >}}
-{{< /imgproc >}} |
-| Gesperrt| Dieser Raum war zu jener Zeit, welche im Sidepanel eingestellt ist, gesperrt. Beispielsweise aufgrund von Renovationsarbeiten. | {{< imgproc Plan_Icon_gesperrt Resize "50x" >}}
-{{< /imgproc >}} |
-| Ressource (Link)| <p style="text-align: justify">Es handelt sich um ein Navigationssymbol im Plan. Durch Klick auf dieses Symbol kann man durch Pläne, welche mit dem Symbol verlinkt sind, navigieren. </p> | {{< imgproc Plan_Icon_Ressourcelink Resize "50x" >}}
-{{< /imgproc >}} |
+| <div style="width:200px">Farb-Code</div>| Bedeutung|
+| ------------- |-------------  |
+| <div style="width:20px; height: 20px; border-radius: 999px; background-color: #22c55e;"></div>| Der Raum ist zum gewünschten Zeitpunkt frei. |
+| <div style="width:20px; height: 20px; border-radius: 999px; background-color: #f97316;"></div>| Der Raum ist besetzt, jedoch muss die Buchung noch via Check-In bestätigt werden. |
+| <div style="width:20px; height: 20px; border-radius: 999px; background-color: #dc2626;"></div>| Der Raum ist definitiv besetzt. |
 ---
