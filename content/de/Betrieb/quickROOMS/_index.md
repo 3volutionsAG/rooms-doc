@@ -1,9 +1,8 @@
 ---
-title: "Wizard/Addin"
-linkTitle: "Wizard/Addin"
+title: "quickROOMS"
+linkTitle: "quickROOMS"
 weight: 
-description: >
-  Hier wird die Installation & Konfiguration des Rooms Wizard und Outlook Addin erläutert.
+description: Hier wird die Installation & Konfiguration von quickROOMS dem Rooms Wizard und Outlook Addin erläutert.
 ---
 
 Für weitere Informationen wenden Sie sich bitte an das Support-Team der 3Volutions AG:

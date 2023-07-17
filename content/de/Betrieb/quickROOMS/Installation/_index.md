@@ -2,45 +2,39 @@
 title: "Installation"
 linkTitle: "Installation"
 weight: 1 
-
-description: >
-   <p style="text-align: justify">Wizard/Addin installieren</p>
+description: quickROOMS installieren
 ---
-
-## Voraussetzungen Wizard
 
 In der Anleitung werden folgende URLs verwendet:
 
-ROOMS: https://rooms.example.com/Default
-<br>IDP: https://idp.example.com
-<br>Wizard: https://wizard.example.com
+- ROOMS: https://rooms.example.com/Default
+- IDP: https://idp.example.com
+- quickROOMS: https://wizard.example.com
 
-Bezeichnungen:
+## Voraussetzungen
 
 Fogende Voraussetzungen müssen erfüllt sein.
+- Laufende ROOMS und IDP instanz. 
+- ROOMS muss IDP als Authentisierung nutzen, dies wird über RoomsAppSettings aktiviert:
 
-Laufende 4.7 Rooms und IDP instanz. 
-
-Rooms muss IDP als Authentisierung nutzen dies wird über RoomsAppSettings aktiviert:
-
-    ```
-    <RoomsAppSettings>
-		...
-		<!-- IDP Communcation-->
-		<add key="UseLegacyAuth" value="false"/>
-		<add key="Authority" value="https://idp.example.com"/>
-		<add key="ClientSecret" value="xxx"/>
-		<add key="RedirectUri" value="https://rooms.example.com/Default/"/>
-		<add key="CallbackPath" value="/Default/"/>
-		<add key="CorsOrigins" value="https://rooms.example.com,https://wizard.example.com,https://idp.example.com" />
-		...
-    </RoomsAppSettings>
-    ```
+```xml
+<RoomsAppSettings>
+	...
+	<!-- IDP Communcation-->
+	<add key="UseLegacyAuth" value="false"/>
+	<add key="Authority" value="https://idp.example.com"/>
+	<add key="ClientSecret" value="xxx"/>
+	<add key="RedirectUri" value="https://rooms.example.com/Default/"/>
+	<add key="CallbackPath" value="/Default/"/>
+	<add key="CorsOrigins" value="https://rooms.example.com,https://wizard.example.com,https://idp.example.com" />
+	...
+</RoomsAppSettings>
+```
 
 ### Unterstützte Browser
 
-- Alle "evergreen" browsers
-- Internet Explorer wird nicht unterstützt, die Benutzerfreundlichkeit ist nicht gewährleistet.
+- Alle aktuellen Major Browser werden unterstützt
+- Internet Explorer 11 wird nicht unterstützt
 
 ## Voraussetzungen Outlook Addin
 
@@ -48,14 +42,14 @@ Addin: Der Wizard wird als Addin bezeichnet wenn er auf einem Outlook Client ode
 
 https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets?view=common-js-preview&tabs=xmlmanifest
 
-Unterstützte Exchange Versionen:
+### Unterstützte Exchange Versionen:
 
 - Exchange Online
 - Exchange on-premises 	
-   <br>2019 (Addin funktioniert nur mit Client nicht in OWA)
-   <br>2016 (Addin funktioniert nur mit Client nicht in OWA)
+  - 2016 (Addin funktioniert nur mit Client nicht in OWA)
+  - 2019 (Addin funktioniert nur mit Client nicht in OWA)
 
-Unterstützte Outlook versionen:
+### Unterstützte Outlook versionen:
 
 Windows:
 
@@ -165,5 +159,3 @@ Bspw.:
 ```
 
 Somit sollte der Wizard auf der URL https://wizard.example.com laufen und das Login sollte über Forms oder Windows authentisierung möglich sein.
-
-
