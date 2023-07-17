@@ -1,6 +1,6 @@
 ---
-title: "Reiter Allgemein"
-linkTitle: "Reiter Allgemein"
+title: "Allgemein"
+linkTitle: "Allgemein"
 weight: 10
 description: >
  
