@@ -26,10 +26,16 @@ Die maximale Iteration ist von zwei Konfigurationswerten abhängig. In den [Eins
 ### Begrenzungsmodell
 Es kann zwischen zwei verschiedenen Iterationsmodellen gewählt werden in den [Globalen Parametern](/3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen) [ModellSerieBegerenzung]. Als Standardwert wird das Zeitlichenmodel verwendet, welches Iteration auf eine bestimmte Anzahl Tage, Wochen oder Monate in die Zukunft begrenzt.
 
+{{< imgproc Detailbuchung_Serieninformation_MaxSerie Resize "960x" >}}
+Eingabe der Serienbegrenzung
+{{< /imgproc >}}
+
+Im obigen Screenshot wird die Serienbegrenzug auf das Datum 365 Tage in der Zukunft oder auf maximal 365 tägliche Iterationen gesetzt. Das gleiche gilt für Wochen, Monate und Jahre.
+
 #### Beispiele
 
 ##### Zeitlich
-Beim Iterationenmodel kann bis zu einem bestimmten Datum Serientermine erstellt werden.
+Beim Zeitlichenmodel kann bis zu einem bestimmten Datum Serientermine erstellt werden.
 - Max. tägliche Serienwiederholung: 5 Tage
 - Serie mit Startdatum 15.05.2023
 - Es können nur Iterationen bis zum 20.05.2023 gemacht werden
