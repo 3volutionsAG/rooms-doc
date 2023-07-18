@@ -1,9 +1,8 @@
 ---
-title: "Reiter Serieninformationen"
-linkTitle: "Reiter Serieninformationen"
+title: "Serieninformationen"
+linkTitle: "Serieninformationen"
 weight: 20
-description: >
-   
+description:
 ---
 Im Bereich Serieninformation in der Detailreservation erstellen Sie Serien auf die gleiche Weise wie in Microsoft Outlook.
 
@@ -21,8 +20,29 @@ In diesem Bereich wird angezeigt, wann die Serie startet. Darüber hinaus kann d
 Eingabe der Serieninformation zum Buchen von Ressourcen
 {{< /imgproc >}}
 
+### Iterationen begrenzen
+Die maximale Iteration ist von zwei Konfigurationswerten abhängig. In den [Einstellungen für Benutzergruppen](/3vrooms/einstellungen/sicherheitsdaten/benutzergruppen/) können Begrenzungen für tägliche, wöchentliche, und monatliche Iterationen definiert werden. Falls ein Benutzer in mehreren Gruppen ist, wird der höchste Wert der Gruppen genommen.
+
+### Begrenzungsmodell
+Es kann zwischen zwei verschiedenen Iterationsmodellen gewählt werden in den [Globalen Parametern](/3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen) [ModellSerieBegerenzung]. Als Standardwert wird das Zeitlichenmodel verwendet, welches Iteration auf eine bestimmte Anzahl Tage, Wochen oder Monate in die Zukunft begrenzt.
+
+#### Beispiele
+
+##### Zeitlich
+Beim Iterationenmodel kann bis zu einem bestimmten Datum Serientermine erstellt werden.
+- Max. tägliche Serienwiederholung: 5 Tage
+- Serie mit Startdatum 15.05.2023
+- Es können nur Iterationen bis zum 20.05.2023 gemacht werden
+
+##### Iteration
+Beim Iterationsmodel kann bis zu einer bestimmten Anzahl, Serientermine erstellt werden.
+- Max. tägliche Serienwiederholung: 5 Tage
+- Serie mit Startdatum 15.05.2023
+- Es können maximal 5 Iterationen täglich erstellt werden
+
 ## Serieninformationen
 Bei den Serieneinstellungen kann angegeben werden, wie sich die Serie wiederholt. Dabei kann zwischen verschiedenen Arten gewählt werden, welche wiederum verschiedene Einstellungsmöglichkeiten haben:
+
 #### Täglich
 
 Falls eine Serie täglich stattfinden soll, kann dies hier eingestellt werden. Es kann angegeben werden, wie viele Tage jeweils zwischen den Buchungen liegen sollen oder ob der Termin grundsätzlich an allen Wochentagen stattfinden soll.
