@@ -86,7 +86,7 @@ Folgende Daten können Sie ändern:
 | 79  | Ignoriere Sperrzeiten bei JobManager | Erlaubt es, beim Import von Lektionen die vorhandenen Sperrzeiten auf Ressourcen zu ignorieren. | false |
 | 96  | Ignoriere SSL Zertifikate bei Türschild | Das Türschild ignoriert alle SSL Zertifikate beim Verbinden mit Rooms, der QR Code des Türschilds muss neu erstellt werden. | false |
 | 19  | IntelliboxMaxRecords | Hält die Anzahl der maximalen visualisierten Einträge (falls das Such-resultat grösser ist). | 15  |
-| 52  | Kalender max. Anzahl dargestellter Ressourcen. | Konfiguriert, wieviele Ressourcen im Kalender maximal angezeigt werden sollen. Achtung: bei mehr als 100 Ressourcen ist eine schlechte Performance möglich. | 100 |
+| 52  | Kalender max. Anzahl dargestellter Ressourcen. | Konfiguriert, wieviele Ressourcen im Kalender maximal angezeigt werden sollen. Achtung: bei mehr als 100 Ressourcen ist eine schlechte Performance möglich. |
 | 108 | KalenderViewTeilnehmerAnzeigen | Wenn aktiviert, können über die Kalender Ansicht Teilnehmer und dessen Free/Busy Informationen angezeigt werden. | true |
 | 99  | Klickbarer Bereich auf dem Türschild | Gibt an, welcher Bereich auf dem Türschild klickbar ist (Mögliche Werte: Everywhere oder ClockOnly) | Everywhere |
 | 3   | KonfigurationIdMaxUploadFileSize | Definiert die maximale Dateigrösse beim Datei- Upload. | 5242880 |
@@ -96,7 +96,6 @@ Folgende Daten können Sie ändern:
 | 17  | Logon Custom Servervariable | Definiert eine für Logins zu berücksichtigende Servervariable, deren Wert von einem Plugin hinterlegt wird. |     |
 | 80  | Media Attachment aktivieren | Erlaubt es, Media Datei als Reservation/Anlass Beilage zu brauchen. | false |
 | 157 | Media Attachment Retention Time (days) | Media Attachment Retention Time (days). Set to 0 to disable | 0   |
-| 81  | Media Attachment Storage Path | Gibt an die Storage Path für die Media Attachment |     |
 | 103 | Meine Arbeit, Anzahl Tage berücksichtigt | Bestimmt für wie viele vergangene Tage die Historik (Meine Arbeit) angezeigt wird. | 14  |
 | 32  | ModellSerieBegerenzung | Hält den Begrenzungstyp für Serienbuchungen. Wert \[Monat\]: Anzahl der Monate in die Zukunft. Wert \[Iteration\]: Anzahl der Iterationen einer Serie. | Zeitlich |
 | 92  | Mwst-Satz | Gibt den aktuellen Mehrwertsteuer-Satz an. | 0.077 |
