@@ -21,3 +21,7 @@ Status Anzeige der Ressourcen im Plan
 | <div style="width:20px; height: 20px; border-radius: 999px; background-color: #f97316;"></div>| Der Raum ist besetzt, jedoch muss die Buchung noch via Check-In bestätigt werden. |
 | <div style="width:20px; height: 20px; border-radius: 999px; background-color: #dc2626;"></div>| Der Raum ist definitiv besetzt. |
 ---
+
+{{< imgproc plan_colors Resize "960x" >}}
+Farbcode
+{{< /imgproc >}}
