@@ -55,14 +55,14 @@ anchor = "smart"
 [languages.de]
 title = "3V ROOMS docs"
 description = "Dokumentation von 3V ROOMS"
-languageName ="German"
+languageName = "German"
 # Weight used for sorting.
 weight = 1
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 # Everything below this are Site Params
 
@@ -78,9 +78,9 @@ copyright = "3volutions AG"
 version_menu = "Releases"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://gitlab.com/3volutions/3v-rooms/rooms-doc"
+github_repo = "https://github.com/3volutionsAG/rooms-doc"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://gitlab.com/3volutions/3v-rooms/rooms"
+github_project_repo = "https://github.com/3volutions/3v-rooms/rooms"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -113,7 +113,7 @@ footer_about_disable = false
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
@@ -151,4 +151,3 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 # 	url = "https://example.org/mail"
 # 	icon = "fa fa-envelope"
 #     desc = "Discuss development issues around the project"
-
