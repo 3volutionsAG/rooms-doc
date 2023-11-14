@@ -1,7 +1,7 @@
 ---
-title: "3V ROOMS Migration"
-linkTitle: "3V ROOMS Migration"
-weight: 5
+title: "Migration 4.6 -> 4.7"
+linkTitle: "Migration 4.6 -> 4.7"
+weight: 200
 description: Dieser Leitfaden beschreibt alle Schritte, die für eine erfolgreiche Migration von ROOMS 4.6 auf eine 4.7 Instanz erforderlich sind, einschließlich der Konfiguration für die IdP und das Wizard.
 ---
 <p align="justify">

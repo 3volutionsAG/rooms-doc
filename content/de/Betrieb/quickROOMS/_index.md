@@ -1,7 +1,7 @@
 ---
 title: "quickROOMS"
 linkTitle: "quickROOMS"
-weight: 
+weight: 150
 description: Hier wird die Installation & Konfiguration von quickROOMS dem Rooms Wizard und Outlook Addin erläutert.
 ---
 

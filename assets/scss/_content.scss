@@ -1,12 +1,18 @@
 .td-sidebar-nav {
-  font-size: 0.9em !important;
+	font-size: 0.9em !important;
 }
 
 .td-navbar {
-  .navbar-brand {
-    svg {
-      margin: 0 10px 0 0;
-      height: 48px;
-    }
-  }
+	.navbar-brand {
+		svg {
+			margin: 0 10px 0 0;
+			height: 48px;
+		}
+	}
+}
+
+.td-content {
+	.lead {
+		margin-bottom: 24px;
+	}
 }

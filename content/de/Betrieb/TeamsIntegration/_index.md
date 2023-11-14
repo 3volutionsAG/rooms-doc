@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Teams Integration"
 linkTitle: "Microsoft-Teams Integration"
-weight: 10
+weight: 5
 description: Diese Dokumentation bietet eine detaillierte Anleitung zur Integration von Microsoft Teams in ROOMS. Die Integration ermöglicht die nahtlose Verbindung von Teams-Meetings mit Ihren ROOMS-Ressourcen.
 ---
 
