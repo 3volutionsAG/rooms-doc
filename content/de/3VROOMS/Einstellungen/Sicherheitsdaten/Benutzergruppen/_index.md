@@ -13,13 +13,7 @@ Im rechten Feld sehen Sie die bereits gespeicherten Benutzergruppen in Listenfor
 Benutzergruppen bearbeiten und suchen 
 {{< /imgproc >}}
 
-### Benutzergruppen suchen
-
-Im linken Sidepanel finden Sie unter der Kategorie _Benutzergruppen_ eine Suchfunktion, mit dessen Hilfe Sie nach Bezeichnung der Gruppe suchen können.
-
-Bestätigen Sie Ihre Filterfunktion mit dem Button "Anzeigen" im Sidepanel. Sie sehen dann ihre gefilterten Ergebnisse.
-
-## Benutzergruppen bearbeiten und neu hinzufügen
+### Benutzergruppen bearbeiten und neu hinzufügen
 
 Die Stammdaten, Personen und Notifikationen bearbeiten Sie, indem Sie auf das Stift Icon `Bearbeiten` auswählen. Wenn Sie eine Benutzergruppe neu hinzufügen möchten, klicken Sie auf den untenstehenden Button `Hinzufügen`.
 
@@ -31,14 +25,16 @@ Benutzergruppen hinzufügen
 
 Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button `Speichern`
 
-### Stammdaten der Benutzergruppen
+## Stammdaten der Benutzergruppen
 
 Unter den Stammdaten der Benutzergruppe tragen Sie folgende Informationen ein:
 
 * Benutzergruppen ID 
 * Bezeichnung 
 
-Serieneinstellungen: Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 50 Iterationen). Die Maximierung erfolgt auf Iterationen oder Laufdauer unterteilt in Monate, Wochen, Tage.
+### Serieneinstellungen
+
+Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 50 Iterationen). Die Maximierung erfolgt auf Iterationen oder Laufdauer unterteilt in Monate, Wochen, Tage.
 
 * Max. series duration yearly 
 * Max. Seriendauer monatlich 
@@ -47,6 +43,16 @@ Serieneinstellungen: Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 5
 * Absolute Serienbegrenzung 1
 * Absolute Serienbegrenzung 2
 
+### Maximale Anzahl gleichzeitiger Buchungen
+Dieses Feature ermöglicht es, die Anzahl gleichzeitiger Buchungen eines Organisators zu begrenzen. Es wurde entwickelt, um sicherzustellen, dass Organisatoren nicht mehr Buchungen gleichzeitig durchführen, als in ihrer Gruppenrichtlinie festgelegt ist. Dadurch kann die Buchungsaktivitäten gesteuert und sichergestellt werden dass die Ressourcen effizient genutzt werden.
+
+#### Ausnahme mit neuem Recht
+
+- `Darf die maximale Anzahl gleichzeitiger Buchungen überschreiten`
+
+Falls es notwendig ist, die maximale Anzahl gleichzeitiger Buchungen zu überschreiten, weisen Sie dieses Recht einer Rolle bei den entsprechenden Organisatoren zu.
+
+### Gruppeneigenschaften
 Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll:
 
 * Berechtigungsgruppe (Checkbox ja /nein)
@@ -54,7 +60,7 @@ Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll
 * BenutzerkreisCheckin (Checkbox ja /nein)
 * Einzelbuchungen (Checkbox ja /nein)
 
-### Personen der Benutzergruppe 
+### Personen
 
 Sie können einer Benutzergruppe eine oder mehrere Personen zuweisen. Haben Sie noch keine Personen einer Benutzerguppe hinzugefügt, sehen Sie diese auch nicht in der Liste.
 
