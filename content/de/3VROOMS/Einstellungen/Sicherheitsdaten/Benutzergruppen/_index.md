@@ -58,7 +58,13 @@ Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll
 * Berechtigungsgruppe (Checkbox ja /nein)
 * Notifikationsgruppe (Checkbox ja /nein)
 * BenutzerkreisCheckin (Checkbox ja /nein)
-* Einzelbuchungen (Checkbox ja /nein)
+
+### Checkin Einzelbuchungen
+Wenn diese Option aktiviert ist, müssen alle Benutzer in dieser Gruppe für Ressourcen, bei denen der Check-in-Prozess aktiviert ist, diesen verpflichtend durchführen.
+
+Zusätzlich kann das Recht `Check-In-Delegation erzwingen` vergeben werden. Dadurch werden Benutzende, die dieses Recht besitzen, dazu gezwungen, den Check-in-Prozess von einer anderen Person durchführen zu lassen. Auf diese Weise können diese Benutzenden den Check-in nicht eigenständig abschliessen. Das Vier-Augen-Prinzip stellt sicher, dass die erforderlichen Schritte und Sicherheitskontrollen eingehalten werden.
+
+[Checkin aktivieren](/3vrooms/einstellungen/ressourcen/#ressource-bearbeiten)
 
 ### Personen
 
