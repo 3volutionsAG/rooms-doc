@@ -13,7 +13,7 @@ description: >
 Die aktivierung eines Türschildes erfordert eine gültige Türschild Lizenz.
 {{% /alert %}}
 Wechseln Sie im Bearbeitungsmodus der Ressource (*Einstellungen* &rarr; *Ressource* &rarr; *Bearbeiten*) in den Tab *Türschild*.
-Selektieren Sie den Konfigurationsbenutzer / (Türschildbenuitzer siehe [Türschildbenutzer und API KEY]({{< ref "betrieb/tuerschilder/tuerschildbenutzer" >}})). Durch Klick auf *Türschild aktivieren* gelangen sie in die Konfiguration des Türschildes.
+Selektieren Sie den Konfigurationsbenutzer / (Türschildbenutzer siehe [Türschildbenutzer und API KEY]({{< ref "betrieb/tuerschilder/tuerschildbenutzer" >}})). Durch Klick auf *Türschild aktivieren* gelangen sie in die Konfiguration des Türschildes.
 
 ### Deaktivierung des Türschildes für eine Ressource
 Wechseln Sie im Bearbeitungsmodus der Ressource (*Einstellungen* &rarr; *Ressource* &rarr; *Bearbeiten*) in den Tab *Türschild*.
