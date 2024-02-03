@@ -14,7 +14,7 @@ Im rechten Feld sehen Sie die Tarifkategorie-Liste. Sollten keine Tarifkategorie
 Erstellen von Tarifkategorien
 {{< /imgproc >}}
 
-Generell können Sie zwischen drei Tarifmodellen wählen.
+Generell können Sie zwischen den folgenden Tarifmodellen gewählt werden.
 
 1. [Pauschales Modell](#pauschales-modell)
 2. [Kumultatives Modell](#kumulatives-modell)
@@ -88,17 +88,18 @@ Speichern Sie die Tarifkategorie über den Button <i>Speichern</i>. Die Liste ak
 Neu angelegte Tarifkategorie in der Liste
 {{< /imgproc >}}
 
-## Regeln zur Tarifberechnung bei Buchungen
+## Tarifberechnung bei Buchungen
 
 Bei der Preisberechnung im Buchungsprozess gelten folgende Regeln:
 
-* Wenn für eine Firma oder Organisationseinheit ein spezieller Tarif festgelegt wurde, wird dieser Tarif für die Berechnung verwendet.
+* Generell gilt die auf der Ressource hinterlegte Tarifkategorie.
+** Falls auf der Firma eine Tarifkategorie hinterlegt ist, so wird **immer** diese verwenden und somit die Tarifkategorie auf der Ressource ignoriert.
 * Falls es zum Zeitpunkt der Reservierung mehrere aktive Tarife gibt, wird der neueste Tarif (der mit dem aktuellsten Gültigkeitsdatum) verwendet.
 * Wenn für eine Ressource keine Tarifkategorie festgelegt ist, wird kein Preis berechnet.
 * Wenn zum Zeitpunkt der Reservierung kein aktiver Tarif vorhanden ist, fallen keine Kosten an.
 
 ## Tarifmodelle
-Die Tarifmodelle bieten flexible Möglichkeiten zur Preisberechnung und -gestaltung basierend auf unterschiedlichen Parametern. Es stehen verschiedene Ansätze zur Auswahl, darunter das pauschale Modell, das kumulative Modell und das zeitabhängige Modell. Im pauschalen Modell wird immer der nächstgrößere Minuten-Tarif verwendet, während im kumulativen Modell Tarife addiert werden und dabei minimale und maximale Werte berücksichtigt werden können. Das zeitabhängige Modell ermöglicht es, für jeden Zeitpunkt nur einen Tarif pro Firma oder Organisationseinheit festzulegen. Die Wahl des geeigneten Tarifmodells hängt von den spezifischen Anforderungen und Szenarien ab. Durch die klare Dokumentation der Tarifberechnung und Stornierungsregeln können Transparenz und Klarheit gewährleistet werden.
+Die Tarifmodelle bieten flexible Möglichkeiten zur Preisgestaltung basierend auf unterschiedlichen Parametern. Es stehen verschiedene Ansätze zur Auswahl, darunter das pauschale Modell, das kumulative Modell und das zeitabhängige Modell. Im pauschalen Modell wird immer der nächstgrössere Minuten-Tarif verwendet, während im kumulativen Modell Tarife addiert werden und dabei minimale und maximale Werte berücksichtigt werden können. Das zeitabhängige Modell ermöglicht es, für jeden Zeitpunkt genau einen Tarif festzulegen. Die Wahl des geeigneten Tarifmodells hängt von den spezifischen Anforderungen und Szenarien ab.
 
 ### Pauschales Modell
 
@@ -128,14 +129,19 @@ Beispiel: Tarife mit der Dauer von 1, 2, 4, und 8 Stunden wurden in den Stammdat
 ### Zeitabhängig
 Beim zeitabhängigen Modell liegt ebenfalls die kumulative Berechnung zu Grunde. Bei diesem Modell darf für eine Firma immer nur ein Tarif zum entsprechenden Zeitpunkt gültig sein.
 
-Morgentarif 8.00 – 12.00Uhr, Nachmittagstarif 12.00 – 18.00Uhr für Firma A à funktioniert </br>
-Morgentarif 8.00 – 12.30Uhr, Nachmittagstarif 12.00 – 18.00Uhr für Firma B à funktioniert NICHT. </br>
-Angebrochene Minuten werden IMMER voll verrechnet, nicht definierte Zeiten gelten als gratis und der Zeitintervall (55min) wird immer ab dem nächst gültigen Tarif gerechnet. Ausgangslage: Morgentarif 8.00 – 12.00Uhr (pro 55Minuten – CHF 30.-), Nachmittagstarif 12.00 – 18.00Uhr (pro 55Minuten – CHF 44.-)
+- Morgentarif 8.00 – 12.00Uhr, Nachmittagstarif 12.00 – 18.00Uhr für Firma A à funktioniert
+- Morgentarif 8.00 – 12.30Uhr, Nachmittagstarif 12.00 – 18.00Uhr für Firma B à funktioniert NICHT.
 
-Beispiel: </br> Firma bucht um 11.55Uhr für insgesamt zwei Intervalle (2x 55min) à Die Kosten betragen: CHF 74.---
+Angebrochene Minuten werden **IMMER** komplett verrechnet. Nicht definierte Zeiten gelten als gratis und der Zeitintervall (55min) wird immer ab dem nächst gültigen Tarif gerechnet. Ausgangslage: Morgentarif 8.00 – 12.00Uhr (pro 55Minuten – CHF 30.-), Nachmittagstarif 12.00 – 18.00Uhr (pro 55Minuten – CHF 44.-)
+
+Beispiel:
+
+Firma bucht um 11.55Uhr für insgesamt zwei Intervalle (2x 55min) à Die Kosten betragen: CHF 74.---
 Tagespauschalen werden mit den Minimal/Maximalwerten pro Tarif gesetzt. Ausgangslage: Tagestarif 8.00 – 18.00Uhr für Firma A (Kosten minimal/maximal CHF 200.-)
 
-Beispiel: </br> Firma bucht um 9.00Uhr für zwei Intervalle à Die Kosten betragen CHF 200.00
+Beispiel:
+
+Firma bucht um 9.00Uhr für zwei Intervalle à Die Kosten betragen CHF 200.00
 
 ### Manuelle Tarifüberschreibung
 {{% alert title="Berechtigung" %}}
