@@ -177,19 +177,27 @@ Bspw.:
 </RoomsAppSettings>
 ```
 
-### Vergabe des Editor Rechts für den delegated User via Exchange Management Shell
+### Vergabe der Rechte für den delegated User via Exchange Management Shell
 
-Powershell vorbereiten
+#### Powershell vorbereiten
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 ```
 
+#### Setzen der Berechtigungen
+
 ```powershell
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" -User o365admin@rooms.myo365.site -AccessRights Editor
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights Editor
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 ```
 
-Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, bis jetzt noch unklar wie dies möglich ist.
+Die `Editor` Rolle beinhaltet folgende Rechte: `CreateItems`, `DeleteAllItems`, `DeleteOwnedItems`, `EditAllItems`, `EditOwnedItems`, `FolderVisible`, `ReadItems`
+
+Das `FolderVisible` Recht erlaubt es dem Delegated-Benutzer den angegebenen Ordner zu sehen, aber keine Elemente im angegebenen Ordner zu lesen oder bearbeiten.
+
+{{% alert title="Warning" color="warning" %}}
+Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, da es sich jedoch um einen System-Folder handelt ist dies nicht möglich.
+{{% /alert %}}
