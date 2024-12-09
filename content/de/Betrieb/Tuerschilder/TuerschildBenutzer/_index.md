@@ -1,48 +1,48 @@
 ---
-title: "Türschildbenutzer und API KEY"
-linkTitle: "Türschildbenutzer und API KEY"
+title: "Konfiguration der System Person für die Türschilder"
+linkTitle: "Konfiguration der System Person für die Türschilder"
 weight: 1
-description: Erfassen eines Türschildbenutzers und eines API KEYs
+description: Konfiguration der System Person für die Verwendung mit den Türschildern
 ---
-Generell kann jede Person in Rooms kann als Türschildbenutzer verwendet werden (solange sie alle notwendigen Rechte besitzt).
+Generell kann jede Person in ROOMS als System Person hinterlegt werden (solange sie alle notwendigen Rechte besitzt).
 
-Wir empfehlen jedoch einen dedizierten Benutzer sowie eine Rolle und Gruppen anzulegen.   
+## System Person erstellen und konfigurieren
+Zuerst muss eine Person in ROOMS erstellt werden, welche dann als System Person verwendet wird. Dazu gemäss Anleitung unter [Person neu hinzufügen](/einstellungen/personen/#person-neu-hinzuf%C3%BCgen) eine neue Peron anlegen.
 
-## Türschildbenutzer konfiguration
-Folgende Konfiguration wird vorgeschlagen:
+Wir empfehlen folgende Angaben für diese System Person, damit der Betrieb mit den Türschildern einwandfrei funktioniert:
 
 #### Benutzer
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld             | Wert                                               |
-| ---------------- | -------------------------------------------------- |
-| Vorname          | onsiteROOMS                                        |
-| Nachname         | onsiteROOMS                                        |
-| Oe/Firma:        | Wir empfehlen die Default Firma zu verwenden       |
-| Logins           | Es muss ein Login vom Typ `QR Code` erzeugt werden |
+| Feld             | Wert                                              |
+| ---------------- | ------------------------------------------------- |
+| Vorname          | System                                            |
+| Nachname         | Person                                            |
+| Oe/Firma:        | Wir empfehlen die Default Firma zu verwenden      |
+| Logins           | Es muss ein Login vom Typ `APIKEY` erzeugt werden |
 {{< /bootstrap-table >}}
 
 #### Benutzergruppe
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld                    | Wert                                               |
-| ----------------------- | -------------------------------------------------- |
-| Benutzergruppen ID      | onsiteROOMS                                        |
-| Bezeichnung             | onsiteROOMS                                        |
-| Berechtigungsgruppe     | `Ja` |
-| Checkin Einzelbuchungen | `Ja` |
+| Feld                    | Wert                                          |
+| ----------------------- | --------------------------------------------- |
+| Benutzergruppen ID      | onsite                                        |
+| Bezeichnung             | onsite                                        |
+| Berechtigungsgruppe     | `Ja`                                          |
+| Checkin Einzelbuchungen | `Ja`                                          |
 {{< /bootstrap-table >}}
 
 #### Rolle
 
 Es wird empfohlen zwei separate Rollen für globale und lokalisierte Rechte zu erstellen
 
-- **onsiteROOMS (G)** mit folgenden Globalen Rechten
+- **onsite (G)** mit folgenden Globalen Rechten
    - Darf Reservation mit automatischer Verlängerung editieren  
    - Darf Reservationen buchen (privat)  
    - Darf Reservationen für Ressourcetyp Equipment buchen  
    - Darf Reservationen für Ressourcetyp Raum buchen
-- **onsiteROOMS (S)** mit folgenden standortbezogenen Rechten
+- **onsite (S)** mit folgenden standortbezogenen Rechten
    - Darf def. Reservationen buchen  
    - Darf prov. Reservationen buchen  
    - Darf Reservationen freigeben (fremde)  
@@ -55,4 +55,10 @@ Es wird empfohlen zwei separate Rollen für globale und lokalisierte Rechte zu e
 
 Danach kann wie gewohnt die Benutzergruppe und die Rolle über die Standorte zusammengeführt werden.
 
-Nun kann auf einer Ressource das [Türschild aktiviert](/betrieb/tuerschilder/konfiguratonressource) werden.
+#### System Person in ROOMS hinterlegen
+
+Falls noch nicht gemacht muss die oben erstellte Person noch in ROMMS als System Person hinterlegt werden. Dies erfolgt in den [Globalen Einstellungen](/3vrooms/einstellungen/system/globaleparameter)
+
+#### Abschluss
+
+Nachdem die System Person korrekt angelegt ist, kann auf einer Ressource das [Türschild aktiviert](/betrieb/tuerschilder/konfiguratonressource) werden.
