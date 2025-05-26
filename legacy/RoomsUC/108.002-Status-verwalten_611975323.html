@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 108.002 Status verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 108.002 Status verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Oct 13, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=a8k43pflvu]{color:#00b050} html[data-color-mode=dark] [data-colorid=a8k43pflvu]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-108.002Statusverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>108.002</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>2.2</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Es gibt drei Arten von Status: Zustand einer Ressource, Systemstatus und frei definierbare Status auf Reservationen:</p><ol><li>Benutzer soll Status, inkl. Farbe und Symbol definieren k&ouml;nnen.</li><li>Benutzer soll erfasste Status (UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a> ) pro Ressource aktivieren k&ouml;nnen und dabei auch die Reihenfolge definieren.</li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf Status verwalten</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><p>Folgende Zust&auml;nde einer Ressource gibt es:</p><ol><li><span>Frei&nbsp;</span></li><li><span>Gesperrt&nbsp;</span></li><li><span style="line-height: 1.4285715;">Besetzt (Besetzt wird als Reservationsstatus behandelt)</span></li></ol><p>Folgende Haupt Reservation-Status gibt es (System, bzw. Workflow Status)</p><ol><li>Besetzt (System)</li><li>Besetzt Provisorisch</li><li>Besetzt Tempor&auml;r</li><li>Besetzt Definitiv</li><li>Annulliert</li><li>Slot definiert</li><li>Slot publiziert</li></ol><p><span style="line-height: 1.4285715;"><br /></span></p><p><span style="line-height: 1.4285715;"><em>Ein Systemstatus ist vom System vorgegeben und kann NIEMALS gel&ouml;scht werden.</em><span>&nbsp;</span><br class="atl-forced-newline" /><span>&nbsp;</span><em>Neue Haupt Status k&ouml;nnen nur durch GARAIO implementiert werden</em></span></p><p><span style="line-height: 1.4285715;"><em><br /></em></span></p><p><span style="line-height: 1.4285715;">&nbsp;</span></p><p>Beispiele von bekannte individuelle Status, welche an einem System Status angeh&auml;ngt werden k&ouml;nnen</p><p><span style="line-height: 1.4285715;">&nbsp;</span></p><ol><li>Kunde im Raum</li><li>Kundenberater avisiert</li><li>Kundenberater im Raum</li><li>Reinigung</li></ol><p><span style="line-height: 1.4285715;"><em><span>Die Individuellen Status &uuml;bersteuern (falls n&ouml;tig) visuell immer die Systemstaus </span></em></span></p></td></tr><tr><td colspan="1" class="confluenceTd"><strong>Hauptszenario in Schritten</strong></td><td colspan="1" class="confluenceTd"><ol><li><a href="#id-108.002Statusverwalten-1">Navigation auf Einstellungen &gt;Basisdaten f&uuml;r Ressourcen &gt;Status</a></li><li><a href="#id-108.002Statusverwalten-2">Statusstruktur wird geladen - ein Status kann gel&ouml;scht werden</a></li><li><a href="#id-108.002Statusverwalten-3">Benutzer kann in View Modus des Status wechseln</a></li><li><a href="#id-108.002Statusverwalten-4">Benutzer kann Status editieren/hinzuf&uuml;gen</a></li></ol></td></tr><tr><td colspan="1" class="confluenceTd"><strong>Beziehungen zu UC</strong></td><td colspan="1" class="confluenceTd"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="a8k43pflvu">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><p>&nbsp;</p><h1 id="id-108.002Statusverwalten-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-108.002Statusverwalten-1Schritt1-NavigationaufEinstellungen>BasisdatenfürRessourcen>Status"><span class="confluence-anchor-link" id="id-108.002Statusverwalten-1"><span class="confluence-anchor-link" id="1" /></span>Schritt 1 - Navigation auf Einstellungen &gt;Basisdaten f&uuml;r Ressourcen &gt;Status</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p>Falls Funktionsrecht &bdquo;Darf Status verwalten&ldquo; vorhanden ist</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975323/611978073.jpg" data-image-src="attachments/611975323/611978073.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978073" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 1.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975323" data-linked-resource-container-version="20" data-media-id="d03dd435-9012-421a-b411-3de9f966c2a9" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-108.002Statusverwalten-2Schritt2–StatusStrukturwirdgeladen–einStatuskanngelöschtwerden"><span class="confluence-anchor-link" id="id-108.002Statusverwalten-2"><span class="confluence-anchor-link" id="2" /></span>Schritt 2 &ndash; Status Struktur wird geladen &ndash; ein Status kann gel&ouml;scht werden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><p><strong>Baum mit allen verf&uuml;gbaren Status</strong></p><ul><li>Bezeichnung</li><li>Icon &bdquo;Hinzuf&uuml;gen&ldquo; (nicht bei Annullieren und System)</li><li>Icon &quot;View&quot; (Ansehen)</li><li>Icon &bdquo;Bearbeiten&ldquo;</li></ul><p>Bei den Substatus zus&auml;tzlich verf&uuml;bar:</p><ul><li>Icon &quot;L&ouml;schen&quot;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Hauptstatus</strong><br /> Folgende Haupt Reservation-Status sind verf&uuml;gbar (System/Workflow Status)</p><ol><li>Besetzt (System)</li><li>Besetzt Provisorisch</li><li>Besetzt Tempor&auml;r</li><li>Besetzt Definitiv</li><li>Annulliert</li><li>Slot definiert =&gt; Prozessschritt nur in Zusammenhang mit Slots m&ouml;glich</li><li>Slot publiziert =&gt; Prozessschrit nur in Zusammenhang mit Slots m&ouml;glich</li></ol><p><strong>Bezeichnung</strong><br /> Wird in der Sprache des Benutzers ausgegeben</p><p><strong>&quot;Ansehen (View&quot;</strong></p><ul><li>Wechselt in den View Modus des Status (siehe Schritt 3)</li></ul><p><strong>&bdquo;Hinzuf&uuml;gen (Neu)&ldquo;</strong></p><ul><li>Button nur sichtbar auf Hauptstatus 2, 3 und 4</li></ul><p><strong>&bdquo;Bearbeiten&ldquo;</strong></p><ul><li>Wechselt in den Bearbeitungsmodus des Status (siehe Schritt 4)</li></ul><p><strong>&bdquo;L&ouml;schen&quot;</strong></p><ul><li>Nur auf Substatus m&ouml;glich</li><li>L&ouml;scht den aktuellen Status und s&auml;mtliche Konfigurationen (Verbindung zu Ressourcentabelle)</li><li>Bedingungen:<ul><li>Hat ein Status eine Abh&auml;ngigkeit zu einer Ressource, werden die entsprechenden Felder auf der Ressource auf Null gesetzt (StatusId, AlarmStatuswechsel)</li><li>Hat ein Status eine Abh&auml;ngigkeit zu einem Workflow-Ereignis, wird das Ereignis gel&ouml;scht.</li><li>Hat ein Status eine Abh&auml;ngigkeit zu einer Reservation kann der Status nicht gel&ouml;scht werden.</li></ul></li><li>Sicherheitsabfrage notwendig</li><li>Best&auml;tigungsmeldung im Actionpanel</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975323/611978246.jpg" data-image-src="attachments/611975323/611978246.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978246" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975323" data-linked-resource-container-version="20" data-media-id="2ff4ec55-6775-4f4a-8cee-7850a44f3831" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-108.002Statusverwalten-3Schritt3-BenutzerkanninViewModusdesStatuswechseln"><span class="confluence-anchor-link" id="id-108.002Statusverwalten-3"><span class="confluence-anchor-link" id="3" /></span>Schritt 3 - Benutzer kann in View Modus des Status wechseln</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p>Detail:</p><ul><li><span style="color: red;">&bdquo;Bezeichnung&ldquo;</span></li><li>&Uuml;bergeordneter Status (Hauptstatus)</li><li>Zugewiesenes Symbol</li><li>Farbe Status<br /><br /></li></ul><ul><li>Button &bdquo;Bearbeiten&ldquo;</li><li>Button &bdquo;Zur&uuml;ck&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Bezeichnung</strong><br /> Wird in der Sprache des angemeldeten Benutzers ausgegeben</p><p><strong>Zur&uuml;ck</strong><br /> Wechselt auf Status&uuml;bersicht (siehe Schritt 2)</p><p><strong>Bearbeiten</strong><br /> Wechselt in den Bearbeitungsmodus (siehe Schritt 4)</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975323/611978245.jpg" data-image-src="attachments/611975323/611978245.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978245" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975323" data-linked-resource-container-version="20" data-media-id="fcf0bda0-408e-4706-b8bf-2f86eb295bec" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-108.002Statusverwalten-4Schritt4-BenutzerkannStatuseditieren/hinzufügen"><span class="confluence-anchor-link" id="id-108.002Statusverwalten-4"><span class="confluence-anchor-link" id="4" /></span>Schritt 4 - Benutzer kann Status editieren/hinzuf&uuml;gen</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p>Detail:</p><ul><li><span style="color: red;">Feld &bdquo;Bezeichnung&ldquo;</span></li><li>Label &quot;&Uuml;bergeordneter Status&quot;</li><li>Bildupload Funktion: &quot;Symbol&quot;</li><li>Icon &quot;Zugewiesenes Symbol&quot;</li><li>Farbpicker &quot;Farbe Status&quot;</li><li>Farbpicker &quot;Farbe Vorlauf/Nachlauf&quot;</li><li>Identifikationsnummer (aus UC <a class="unresolved" href="#">UBS3_UC_319.001_SpsSteuerung.docx</a> )</li></ul><ul><li>Button &bdquo;Speichern&ldquo;</li><li>Button &bdquo;Abbrechen&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Bezeichnung</strong><br /> Mehrsprachige Erfassung m&ouml;glich</p><p><strong>Symbol</strong></p><ul><li>&Uuml;ber den &bdquo;Browse&hellip;&ldquo; Button kann ein neues Symbol selektiert werden</li><li>&Uuml;ber den &bdquo;Upload&ldquo; Button wird das Symbol auf den Server geladen - das bestehende Symbol wird &uuml;berschrieben.</li></ul><p><strong>Zugewiesenes Symbol:</strong></p><ul><li>Aktuell zugeordnetes Symbol wird angezeigt.</li></ul><p><strong>Farbpicker</strong></p><ul><li>Wahl einer Statusfarbe</li><li>Wahl der Vor-/Nachlauf Farbe</li></ul><p><strong>Identifikationsnummer (aus UC</strong> <strong><a class="unresolved" href="#">UBS3_UC_319.001_SpsSteuerung.docx</a></strong> <strong>)</strong><br /> Ist f&uuml;r die SPS Steuerung notwendig (identifiziert ein Terminal)</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975323/611976726.png" data-image-src="attachments/611975323/611976726.png" data-unresolved-comment-count="0" data-linked-resource-id="611976726" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="108.002 Vorlauf_Nachlauf_Farbe.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975323" data-linked-resource-container-version="20" data-media-id="e4385229-b8b1-4e89-a0e5-a93156a60abd" data-media-type="file" /></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-108.002Statusverwalten-Anhang">Anhang</h2>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975323/611978248.jpg" data-image-src="attachments/611975323/611978248.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978248" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Anhang Reservation Workflow und Status.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975323" data-linked-resource-container-version="20" data-media-id="ed77988b-76b2-472c-bcae-6d62ae43a9cc" data-media-type="file" /></span></p><p>Grafik visualisiert das Verhalten der verschiedenen Workflow Status und die M&ouml;glichkeit von Custom Status</p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611978073.jpg">Schritt 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611978246.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611978245.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611978249.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611978248.jpg">Anhang Reservation Workflow und Status.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975323/611976726.png">108.002 Vorlauf_Nachlauf_Farbe.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:40</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

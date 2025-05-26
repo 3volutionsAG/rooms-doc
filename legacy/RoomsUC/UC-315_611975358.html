@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 315</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 315
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC315-UseCaseÜberblickID315OwnerSandroRudinNameKontinuierlicheHistorisierungallerDatenbank-ÄnderungenZielJedeÄnderunginderDatenbanksollzurückverfolgtwerdenkönnen.AbhängigkeitenzuanderenUC–"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC315-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 315</p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Sandro Rudin</p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> Kontinuierliche Historisierung aller Datenbank-Änderungen </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Jede Änderung in der Datenbank soll zurückverfolgt werden können. </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> – </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC315-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC315-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Eine Framework-Komponente übernimmt als Teil des O/R-Mappers das Historisieren aller Datensatzänderungen. Abgelegt werden Zeitpunkt und Verursacher von INSERTS, UPDATES UND DELETES sowie bei den beiden letzteren die Werte aller veränderten Felder vor der Änderung.</p>
+
+<p>Grundsätzlich können damit alle Änderungen auf einem Objekt abgebildet werden; ausserdem wäre es möglich, ein Rollback von Änderungen durchzuführen. Vorläufig ist geplant, lediglich die Änderungen auf Bewegungsdaten ausgeben zu können.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC315-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<ul>
+	<li>Partielles Ein-/Ausschalten der Historisierung (Speicherplatz!).</li>
+	<li>Partielles Löschen von Historisierungseinträgen (Speicherplatz!).</li>
+	<li>Anzeige des Speicherplatzbedarfs der Historisierungsdaten.</li>
+</ul>
+
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

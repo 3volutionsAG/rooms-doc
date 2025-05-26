@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 110.2</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 110.2
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC110.2-UseCaseÜberblickID110.2OwnerTimBänzigerNameServiceProviderTerminalZielFürdenDienstleisterwerdendieBestellungeninübersichtlicherFormangezeigtAbhängigkeitenzuanderenUC110"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC110.2-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 110.2 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> Service Provider Terminal </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Für den Dienstleister werden die Bestellungen in übersichtlicher Form angezeigt </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> 110 </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.2-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.2-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Bitte hier den Use Case im groben Beschreiben – auch Abhängigkeiten zu anderen Use Cases sind zu erwähnen:</p>
+
+<p>Das Dienstleister-Terminal zeigt Bestellungen zu aktuellen Reservationen eines oder mehrerer Räume über einen bestimmten Zeitraum an:</p>
+<ul>
+	<li>Anzeige der Bestellungen zu einer Reservation in tabellarischer Form</li>
+	<li>Kopfbereich zeigt die aktuelle Zone, Zeitraum und Logo (variabel)</li>
+	<li>Es werden Informationen über die Anzahl und Art der Bestellung, über die Anzahl Personen, Objektnamen, Standort, angezeigt</li>
+	<li>Die Anzeige kann ausgedruckt werden</li>
+	<li>Kurzfristige Änderungen, Letzte Änderungen und gelöschte Reservationen werden auffällig markiert, damit der Dienstleister einen Überblick hat.</li>
+	<li>Die Anzeige ist immer aktuell und wird innerhalb einer Sekunde geladen (ohne Flackern)</li>
+</ul>
+
+
+<p>Innerhalb der Administrationsoberfläche ergibt sich für dieses Terminal folgende Spezialität:</p>
+<ul>
+	<li>Aus einem Set an Spalten kann selektiert werden, welche am Terminal angezeigt werden</li>
+	<li>Pro Terminal stehen verschiedene Skins zur Verfügung (Logo und Farbänderung)</li>
+	<li>Der gewünschte Anzeige-Zeitrange kann pro Terminalgruppierung definiert werden.</li>
+	<li>Die Anzeigesprache kann pro Terminalgruppierung gewählt werden.</li>
+	<li>Pro Terminal kann bestimmt werden, ob nur Reservationen mit Dienstleistungen oder alle angezeigt werden sollen.</li>
+	<li>Ein Terminal kann in mehreren Terminalgruppierungen vorkommen.</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.2-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<p>Bitte auflisten und im groben beschreiben:</p>
+<ul>
+	<li>Die Installation eines Terminals entfällt oder muss sehr einfach sein (z.b. Drag &amp; Drop)</li>
+	<li>Die Konfiguration des Terminals sollte global vorgenommen werden können</li>
+	<li>Die Kommunikation der Terminals erfolgt über standardisierte Protokolle (TCP/IP, http, etc.)</li>
+</ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

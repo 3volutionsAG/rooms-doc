@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 400.004 Terminals verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 400.004 Terminals verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Aug 14, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=e893haho5i]{color:#00b050} html[data-color-mode=dark] [data-colorid=e893haho5i]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+<h1 id="id-400.004Terminalsverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 400.004 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> ﻿<a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a><br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Terminals, wie elektronische T&uuml;rschilder oder SPS Steuerungen k&ouml;nnen administriert werden </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Terminals verwalten</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> Terminaltypen m&uuml;ssen vorg&auml;ngig implementiert werden. <br class="atl-forced-newline" />
+Aktuell implementierte Typen: <br class="atl-forced-newline" /></p>
+<ul>
+	<li>SPS Steuerung</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li><a href="#id-400.004Terminalsverwalten-1">Nutzer navigiert auf Einstellungen &gt;Erweiterte Basisdaten f&uuml;r Ressourcen &gt;Terminals</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-2">Nutzer gibt Suchkriterien ein (optional) und klickt Button &bdquo;Finden&ldquo;</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-3">Ein Suchresultat &uuml;ber alle Terminals wird angezeigt &ndash; ein oder mehrere Terminals k&ouml;nnen gel&ouml;scht werden</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-4">Nutzer kann einen Eintrag anklicken, um die Details anzuzeigen (View Modus)</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-5">Nutzer editiert oder erstellt ein Terminal</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-6">Liste der zugef&uuml;gten Ressourcen wird angezeigt - eine oder mehrere Ressourcen k&ouml;nnen entfernt werden</a></li>
+	<li><a href="#id-400.004Terminalsverwalten-7">Ressource kann hinzugef&uuml;gt werden</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> </p><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><br />
+<p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p> <p /></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="e893haho5i">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span><br class="atl-forced-newline" /></li>
+</ul>
+
+
+<h1 id="id-400.004Terminalsverwalten-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt1-NutzernavigiertaufEinstellungen>ErweiterteBasisdatenfürRessourcen>Terminals1">Schritt 1 - Nutzer navigiert auf Einstellungen &gt;Erweiterte Basisdaten f&uuml;r Ressourcen &gt;Terminals<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Navigation &ouml;ffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Funktionsrechte m&uuml;ssen implementiert werden:</p>
+
+<ul>
+	<li>Darf Terminals verwalten</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt2-NutzergibtSuchkriterienein(optional)undklicktButton„Suchen“2">Schritt 2 - Nutzer gibt Suchkriterien ein (optional) und klickt Button &bdquo;Suchen&ldquo;<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Dropdown: Terminaltyp</li>
+	<li>Feld: Bezeichnung</li>
+</ul>
+
+
+<ul>
+	<li>Button &bdquo;Finden&ldquo;</li>
+	<li>Button &bdquo;Zur&uuml;cksetzen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Terminaltyp</strong></p>
+<ul>
+	<li>in der Dropdown stehen alle verf&uuml;gbaren Terminaltypen zur Verf&uuml;gung</li>
+	<li>die Aktivierung (Implementierung) eines Terminaltyps wird durch die Entwicklung gemacht</li>
+</ul>
+
+
+<p><strong>Bezeichnung</strong></p>
+<ul>
+	<li>Suche erfolgt in der Sprache des angemeldeten Benutzers</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976505.png" data-image-src="attachments/611975316/611976505.png" data-unresolved-comment-count="0" data-linked-resource-id="611976505" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - Sidepanel.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="361561cb-5b99-4d47-9928-9bce91628c47" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt3-EinSuchresultatüberalleerfasstenTerminalswirdangezeigt–einodermehrereTerminalskönnengelöschtwerden3">Schritt 3 - Ein Suchresultat &uuml;ber alle erfassten Terminals wird angezeigt &ndash; ein oder mehrere Terminals k&ouml;nnen gel&ouml;scht werden<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-3"><span class="confluence-anchor-link" id="3" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+
+<p><strong><span style="text-decoration: underline;">Smartlist &quot;Themenliste&quot;</span></strong><br />
+<strong>Standard Spalten:</strong></p>
+<ul>
+	<li>Checkbox (f&uuml;r Mehrfachselektion)</li>
+	<li>Bezeichnung (mit View Link)</li>
+	<li>Bearbeiten Icon</li>
+	<li>Terminaltyp</li>
+</ul>
+
+
+
+<ul>
+	<li>Button: Entfernen</li>
+	<li>Button: Neu</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+
+<p><strong>Bezeichnung</strong></p>
+<ul>
+	<li>wird in der Sprache des angemeldeten Benutzers ausgegeben</li>
+</ul>
+
+
+<p><strong>L&ouml;schen</strong></p>
+
+
+<ol>
+	<li>Mehrfachselektionen m&ouml;glich</li>
+	<li>Klick auf L&ouml;schen</li>
+	<li>Warnhinweis
+	<ol>
+		<li>Best&auml;tigungsmeldung im Actionpanel (inkl. Anzahl der gel&ouml;schten Eintr&auml;ge) ODER</li>
+		<li>Fehlermeldung im Actionpanel</li>
+	</ol>
+	</li>
+</ol>
+
+
+
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976507.png" data-image-src="attachments/611975316/611976507.png" data-unresolved-comment-count="0" data-linked-resource-id="611976507" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - Liste.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="e37a7268-503c-4bd4-b90f-dfe25a804026" data-media-type="file" /></span></p>
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt4-NutzerkanneinenEintraganklicken,umdieDetailsanzuzeigen(ViewModus)4">Schritt 4 - Nutzer kann einen Eintrag anklicken, um die Details anzuzeigen (View Modus)<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-4"><span class="confluence-anchor-link" id="4" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &ndash; Tab&bdquo;Terminals&ldquo;</strong></p>
+<ul>
+	<li>Terminaltyp</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<ul>
+	<li>Button: Bearbeiten</li>
+	<li>Button: Zur&uuml;ck</li>
+	<li>Button: Drucken</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Der View Modus wird in der Sprache des angemeldeten Benutzers angezeigt</p>
+
+
+<p><strong>Button Bearbeiten</strong></p>
+
+<ul>
+	<li>wechselt in den Bearbeiten Modus (siehe Schritt 5)</li>
+</ul>
+
+
+<p><strong>Button Zur&uuml;ck</strong></p>
+<ul>
+	<li>wechselt zur&uuml;ck zum Ursprungsort</li>
+</ul>
+
+
+<p><strong>Button Drucken</strong></p>
+<ul>
+	<li>druckt die aktuelle Seite (siehe <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976504.png" data-image-src="attachments/611975316/611976504.png" data-unresolved-comment-count="0" data-linked-resource-id="611976504" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - view.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="bccfa902-a291-4b33-8e1c-13dc010a3ce1" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt5-NutzereditiertodererstellteineBestuhlung5">Schritt 5 - Nutzer editiert oder erstellt eine Bestuhlung<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-5"><span class="confluence-anchor-link" id="5" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &ndash; Tab &bdquo;Stammdaten&ldquo;</strong></p>
+
+<ul>
+	<li><span class="legacy-color-text-red2">Dropdown: Terminaltyp</span></li>
+	<li><span class="legacy-color-text-red2">Feld: Bezeichnung</span></li>
+</ul>
+
+
+<p><strong>Terminalspezifische Parameter (Felder):</strong></p>
+
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"><p> Terminal </p></th>
+<th class="confluenceTh"><p> Feld </p></th>
+<th class="confluenceTh"><p> Details <br class="atl-forced-newline" /> </p></th>
+</tr>
+<tr>
+<td class="confluenceTd"><p> SPS <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> <span class="legacy-color-text-red2">IP Adresse</span><br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> IP Adresse f&uuml;r die Point-to-Point Kommunikatin ist notwendig <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+</tr>
+</tbody></table></div>
+
+<p><strong>Button Bereich</strong></p>
+
+
+<ul>
+	<li>Button: Speichern</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Terminaltyp</strong></p>
+<ul>
+	<li>Selektion eines implementierten Terminaltyps</li>
+</ul>
+
+
+<p><strong>Bezeichnung</strong></p>
+<ul>
+	<li>Erfassung muss mehrsprachig erfolgen</li>
+</ul>
+
+
+<p><strong>Terminalspezifische Parameter (Felder):</strong></p>
+
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"><p> Terminal </p></th>
+<th class="confluenceTh"><p> Feld </p></th>
+<th class="confluenceTh"><p> Details <br class="atl-forced-newline" /> </p></th>
+</tr>
+<tr>
+<td class="confluenceTd"><p> SPS <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> <span class="legacy-color-text-red2">IP Adresse</span><br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> Validierung auf IP Adresse <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+<td class="confluenceTd"><p>&nbsp;</p></td>
+</tr>
+</tbody></table></div>
+
+
+
+<p><strong>Abbrechen-Button</strong></p>
+<ul>
+	<li>geht zur&uuml;ck auf die Suchresultatliste oder View Mode (zur&uuml;ck zum Ursprungsort)</li>
+</ul>
+
+
+
+<p><strong>Button Speichern</strong></p>
+<ul>
+	<li>Das Actionpanel best&auml;tigt die Speicherung.</li>
+	<li>Zur&uuml;ck zum Ursprungsort</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976501.png" data-image-src="attachments/611975316/611976501.png" data-unresolved-comment-count="0" data-linked-resource-id="611976501" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - Edit.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="27ab92f2-e983-4f3d-b364-40d374a36225" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt6-ListederzugefügtenRessourcenwirdangezeigt-eineodermehrereRessourcenkönnenentferntwerden6">Schritt 6 - Liste der zugef&uuml;gten Ressourcen wird angezeigt - eine oder mehrere Ressourcen k&ouml;nnen entfernt werden<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-6"><span class="confluence-anchor-link" id="6" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &ndash; Tab &bdquo;Ressourcen&ldquo;</strong></p>
+
+<p><strong>Standard Spalten:</strong></p>
+<ul>
+	<li><strong>Name</strong></li>
+	<li>Bezeichnung</li>
+	<li>Ressourcenart</li>
+	<li>Standort hierarchisch</li>
+</ul>
+
+
+<p><strong>Optionale Spalten:</strong></p>
+<ul>
+	<li>Identifikationsnummer</li>
+</ul>
+
+
+
+<p><strong>Button Bereich</strong></p>
+
+
+<ul>
+	<li>Button: Hinzuf&uuml;gen</li>
+	<li>Button: Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+<ul>
+	<li>&Uuml;berseztbare Werte werden in der Sprache des Benutzers angezeigt</li>
+	<li>Die Smartlist verf&uuml;gt &uuml;ber Suchfelder</li>
+</ul>
+
+
+<p><strong>Hinzuf&uuml;gen</strong></p>
+<ul>
+	<li>&ouml;ffnet modales Popup f&uuml;r die Zuordnung von Ressourcen</li>
+	<li>siehe Schritt 7</li>
+</ul>
+
+
+<p><strong>Entfernen</strong></p>
+<ol>
+	<li>Mehrfachselektionen m&ouml;glich</li>
+	<li>Klick auf L&ouml;schen</li>
+	<li>Warnhinweis
+	<ol>
+		<li>Best&auml;tigungsmeldung im Actionpanel (inkl. Anzahl der gel&ouml;schten Eintr&auml;ge) ODER</li>
+		<li>Fehlermeldung im Actionpanel</li>
+	</ol>
+	</li>
+</ol>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976507.png" data-image-src="attachments/611975316/611976507.png" data-unresolved-comment-count="0" data-linked-resource-id="611976507" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - Liste.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="e37a7268-503c-4bd4-b90f-dfe25a804026" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-400.004Terminalsverwalten-Schritt7-Ressourcekannhinzugefügtwerden7">Schritt 7 - Ressource kann hinzugef&uuml;gt werden<span class="confluence-anchor-link" id="id-400.004Terminalsverwalten-7"><span class="confluence-anchor-link" id="7" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Modales Popup&nbsp; &bdquo;Ressourcen&ldquo;</strong></p>
+
+<p><strong>Standard Spalten:</strong></p>
+<ul>
+	<li>Name</li>
+	<li>Bezeichnung</li>
+	<li>Standort hierarchisch</li>
+</ul>
+
+
+<p><strong>Optionale Spalten:</strong></p>
+<ul>
+	<li>Ressourcenart</li>
+	<li>Status</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+
+
+
+
+
+<ul>
+	<li><span class="legacy-color-text-red2">Feld: Identifikationsnummer</span></li>
+	<li>Button: Speichern</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+<ul>
+	<li>alle verf&uuml;gbaren Terminals werden gelistet</li>
+	<li>Die Smartlist verf&uuml;gt &uuml;ber Spaltensuchfelder</li>
+	<li>Die Anzeige aller Spalten erfolgt in der Sprache des angemeldeten Benutzers</li>
+</ul>
+
+
+
+<p><strong>Identifikation</strong></p>
+<ul>
+	<li>Eindeutige Kennung einer Terminal-Raum Kombination</li>
+</ul>
+
+
+
+
+<p><strong>Abbrechen-Button</strong></p>
+<ul>
+	<li>schliesst Popup</li>
+</ul>
+
+
+
+<p><strong>Button Speichern</strong></p>
+<ul>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>Actionpopup wird geschlossen</li>
+	<li>Refresh Smartlist</li>
+	<li>Best&auml;tigungsmeldung im Actionpanel, inkl. der Anzahl der zugef&uuml;gten Eintr&auml;ge</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975316/611976483.png" data-image-src="attachments/611975316/611976483.png" data-unresolved-comment-count="0" data-linked-resource-id="611976483" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="400.004 - Ressource hinzufügen.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975316" data-linked-resource-container-version="11" data-media-id="ccce7e59-50f9-4285-afb1-e873705cdb87" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976507.png">400.004 - Liste.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976505.png">400.004 - Sidepanel.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976504.png">400.004 - view.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976501.png">400.004 - Edit.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976483.png">400.004 - Ressource hinzufügen.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975316/611976482.png">400.004 - Ressourcenliste.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:42</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

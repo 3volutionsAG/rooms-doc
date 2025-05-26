@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 105.007 Kostenstellen importieren und verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 105.007 Kostenstellen importieren und verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Jan 05, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="id-105.007Kostenstellenimportierenundverwalten-UseCaseÜberblickID105.007OwnerTimBänzigerRev-Number2.0Priorität3Ziel&amp;BeschreibungUmwährenddesReservationsprozessesvordefinierte(alternative)KostenstellenzurAuswahlzurVerfügungzustellen,solleesmöglichseineineL"><style>[data-colorid=irhvdj51pl]{color:#00b050} html[data-color-mode=dark] [data-colorid=irhvdj51pl]{color:#4fff9f}</style><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></h1><h1 id="id-105.007Kostenstellenimportierenundverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 105.007 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 2.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong><br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 3<br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Um w&auml;hrend des Reservationsprozesses vordefinierte (alternative) Kostenstellen zur Auswahl zur Verf&uuml;gung zu stellen, solle es m&ouml;glich sein eine Liste von Kostenstellen in das System zu laden. Dazu muss eine Kostenstellen Datei erstellt werden (manuell oder durch Drittsystem). </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> &ndash; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Alternative Kostenstelle( n ) selektieren</li>
+	<li><span class="legacy-color-text-yellow2">Darf Kostenstellensplitt anpassen</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Ist die Tabelle &ldquo;Kostenstellen&rdquo; leer (NICHT abgef&uuml;llt), ist eine freie Ein-gabe der Kostenstellen m&ouml;glich (+ Button wird ausgeblendet und Feld hat Schreibrechte)</li>
+	<li>Die selektierte Kostenstelle wird immer auf die Reservation niederge-schrieben (keine Referenz)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Service schreibt Daten aus Kostenstellen Datei in Tabelle</li>
+	<li>Reservationsprozess: Benutzer kann eine Kostenstelle einer Reservation zuf&uuml;gen</li>
+	<li>Reservationsprozess: Benutzer kann eine zugewiesene Kostenstelle entfernen</li>
+	<li>Reservationsprozess: Benutzer kann Kostensplitt der Kostenstellen ver&auml;ndern</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a> </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="irhvdj51pl">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1 id="id-105.007Kostenstellenimportierenundverwalten-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.007Kostenstellenimportierenundverwalten-Schritt1-ServiceschreibtDatenausKostenstellenDateiinTabelle">Schritt 1 - Service schreibt Daten aus Kostenstellen Datei in Tabelle</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p><strong>Keine Visualisierung &ndash; da Service</strong></p>
+
+<p><strong>Datei Aufbau:</strong></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> Feld </p></td>
+<td class="confluenceTd"><p> Beschreibung </p></td>
+<td class="confluenceTd"><p> MUSS </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Gesch&auml;ftsbereich </p></td>
+<td class="confluenceTd"><p> Bietet optional die M&ouml;glichkeit Kostenstellen in logische Gruppen zusammen zu fassen (z.B. Projekte) </p></td>
+<td class="confluenceTd"><p> Optional </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Kostenstellennummer </p></td>
+<td class="confluenceTd"><p> Nummer der Kostenstelle &ndash; Ganzzahl wird erwartet </p></td>
+<td class="confluenceTd"><p> MUSS </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Kostenstellenbezeichnung </p></td>
+<td class="confluenceTd"><p> Beschreibung der Kostenstelle. Zus&auml;tzliches Visualisierungsobjekt </p></td>
+<td class="confluenceTd"><p> MUSS </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> G&uuml;ltig von </p></td>
+<td class="confluenceTd"><p> Ab wann ist diese Kostenstelle g&uuml;ltig </p></td>
+<td class="confluenceTd"><p> Optional </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> G&uuml;ltig bis </p></td>
+<td class="confluenceTd"><p> Bis wann ist diese Kostenstelle g&uuml;ltig </p></td>
+<td class="confluenceTd"><p> Optional </p></td>
+</tr>
+</tbody></table></div>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Eine CSV/TXT Datei wird &uuml;ber einen generischen Service in die Tabelle &bdquo;Kostenstelle&ldquo; importiert. Dies geschieht periodisch. Die Periodizit&auml;t kann in der Konfigurationsdatei des Service festgelegt werden (analog des heutigen Service f&uuml;r Benut-zerdaten Import).</p>
+
+<p><strong>Import Datei</strong></p>
+<ul>
+	<li>es k&ouml;nnen txt oder csv Dateien importiert werden</li>
+	<li>Alle Eintr&auml;ge werden &uuml;berschrieben (Ein-deutiger Schl&uuml;ssel ist das Feld Kosten-stellennummer). Nicht mehr gelieferte Eintr&auml;ge werden gel&ouml;scht.</li>
+	<li>Verf&uuml;gbarkeit der Kostenstelle (im Reser-vationsprozess) wird &uuml;ber Datum von/bis gesteuert</li>
+	<li>In Release 4.0 besteht keine M&ouml;glichkeit Kostenstellen anderweitig zu administrie-ren.</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.007Kostenstellenimportierenundverwalten-Schritt2-Reservationsprozess:BenutzerkanneineKostenstellederReservationzufügen">Schritt 2 - Reservationsprozess: Benutzer kann eine Kostenstelle der Reservation zuf&uuml;gen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<ul>
+	<li>Intelibox &bdquo;Alternative Kostenstelle&ldquo;</li>
+	<li>Button &bdquo;Hinzuf&uuml;gen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Funktionsrecht &bdquo;Darf alternative Kostenstelle se-lektieren&ldquo; muss gew&auml;hrt sein</p>
+
+<p><strong>Alternative Kostenstelle</strong></p>
+<ul>
+	<li>Feld kann leer bleiben</li>
+	<li>eine Kostenstellen kann durch (Teil-)-Eingabe eines Textes gefunden werden. Dabei werden folgende Felder durch-sucht:
+	<ul>
+		<li>Gesch&auml;ftsbereich</li>
+		<li>Kostenstellennummer</li>
+		<li>Kostenstellenbezeichnung</li>
+	</ul>
+	</li>
+	<li>Es werden nur Kostenstellen angezeigt, welche zur vollst&auml;ndigen Laufdauer der Reservation auch G&uuml;ltigkeit haben</li>
+</ul>
+
+
+<p><strong>Hinzuf&uuml;gen</strong></p>
+<ul>
+	<li>Durch Klick auf den Button kann eine Kostenstelle hinzugef&uuml;gt werden</li>
+	<li>Zugef&uuml;gte Kostenstellen werden unterei-nander aufgelistet mit Kostenstellennum-mer, Kostenstellenbezeichnung und Ge-sch&auml;ftsbereich</li>
+</ul>
+
+
+<p>Speicherung erfolgt bei Reservationsabschluss</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975377/611980396.jpg" data-image-src="attachments/611975377/611980396.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611980396" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975377" data-linked-resource-container-version="7" data-media-id="9d2feedc-450b-4af0-8e66-e0d3bbb59c8c" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.007Kostenstellenimportierenundverwalten-Schritt3-Reservationsprozess:BenutzerkanneineKostenstelleentfernen">Schritt 3 - Reservationsprozess: Benutzer kann eine Kostenstelle entfernen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<ul>
+	<li>Icon &bdquo;Papierkorb&ldquo; (Entfernen) &ndash; hinter jeder zugef&uuml;gten Kostenstelle</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Funktionsrecht &bdquo;Darf alternative Kostenstelle se-lektieren&ldquo; muss gew&auml;hrt sein</p>
+
+<p><strong>Papierkorb</strong></p>
+<ul>
+	<li>Klick auf Papierkorbsymbol entfernt alter-native Kostenstelle von der Reservation</li>
+	<li>Keine Sicherheitsabfrage</li>
+	<li>Keine Best&auml;tigung im Actionpanel</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975377/611980398.jpg" data-image-src="attachments/611975377/611980398.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611980398" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975377" data-linked-resource-container-version="7" data-media-id="d3a21ac3-51f4-418f-bf25-b62b7ac3fa33" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.007Kostenstellenimportierenundverwalten-Schritt4-Reservationsprozess:BenutzerkannKostensplittderKostenstellenverändern">Schritt 4 - Reservationsprozess: Benutzer kann Kostensplitt der Kostenstellen ver&auml;ndern</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><span class="legacy-color-text-yellow2">Grunds&auml;tzlich werden die Kosten bei Abrechnung (anderer UC) auf Grund der Anzahl der gew&auml;hlten alternativen Kostenstellen prozentual aufgesplittet.</span></p>
+
+<p><span class="legacy-color-text-yellow2">Diese Splittung kann von berechtigten Usern ge-&auml;ndert werden</span></p>
+
+<p><span class="legacy-color-text-yellow2">Die Splittung kann &uuml;ber den Kosten Button ( + ) und dem Tab &bdquo;Kostensplitt&ldquo; erfolgen.</span><br />
+<span class="legacy-color-text-yellow2">* Das System errechnet initial den Splitt (in nachfolgendem Beispiel w&auml;ren dies pro Feld 33.33 Prozent)</span><br />
+<span class="legacy-color-text-yellow2">* Prozentualen k&ouml;nnen ge&auml;ndert werden.</span><br />
+<span class="legacy-color-text-yellow2">* Wenn Summe &lt; &gt; 100 ist kann der Button &bdquo;&Uuml;bernehmen&ldquo; nicht geklickt werden (die Errechnung erfolgt auf zwei Kommastel-len genau &ndash; heisst, dass die Summe (auf zwei Kommastellen genau &uuml;ber 99.5 und unter 100 ergeben muss)</span><br />
+<span class="legacy-color-text-yellow2">* Als zus&auml;tzliche Kostenstelle steht auch die Kostenstelle das Organisators zur Verf&uuml;gung (hat aber Standardm&auml;ssig den Wert 0)</span></p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975377/611980393.jpg" data-image-src="attachments/611975377/611980393.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611980393" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975377" data-linked-resource-container-version="7" data-media-id="3996addc-14fb-4de3-9a9a-27b8fc41fb7c" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975377/611980396.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975377/611980398.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975377/611980393.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

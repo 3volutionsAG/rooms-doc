@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.010 Buchungen löschen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.010 Buchungen löschen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Sep 19, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+<h1 id="id-201.010Buchungenlöschen-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> <span class="inline-comment-marker" data-ref="f65976fd-8549-474f-b68a-764d6c94b05d">201.010 </span></p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger<br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 2.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorität</strong> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Löschen von Einzelbuchungen (eigene und Dritte)</li>
+	<li>Löschen von Serienbuchungen (eigene und Dritte)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Reservationen und Serien löschen (eigene)</li>
+	<li>Darf Reservationen und Serien löschen (fremde)</li>
+	<li>Darf Reservationen in Vergangenheit buchen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> Reservationen sind vorhanden (in Listen, Plan oder Kalender) <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Benutzer hat vorgängig <br class="atl-forced-newline"/></p>
+<ul>
+	<li>Reservation im Viewmode geöffnet</li>
+	<li>Actionpopup geöffnet</li>
+	<li>Reservationsticker geöffnet</li>
+	<li>Listenansicht selektiert <br class="atl-forced-newline"/>
+Löschen beduetet, das Buchungen unweiderruflich gelöscht werden = werden aus der Datenbank entfernt <br class="atl-forced-newline"/> </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer löscht bestehende Buchung löschen</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> – </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline"/>
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+</ul>
+
+
+
+<h1 id="id-201.010Buchungenlöschen-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.010Buchungenlöschen-Schritt1-NutzerkanneinebestehendeBuchunglöschen">Schritt 1 - Nutzer kann eine bestehende Buchung löschen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Button: Löschen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+
+<p> <br/>
+<strong>Generell</strong></p>
+<ul>
+	<li>Rechte
+	<ul>
+		<li>Bei eigenen Reservationen (ich bin Organisator, Ersteller oder Verantwortlicher) muss das Recht vorhanden sein: Darf Reservationen und Serien löschen (eigene)</li>
+		<li>Bei Reservationen Dritter (ich bin weder Organisator, Ersteller oder Verantworlicher) muss das Recht: Darf Reservationen und Serien löschen (fremde)</li>
+	</ul>
+	</li>
+	<li>Der Löschen-Button erscheint nur bei bestehenden, aktiven und/oder zukünftigen Reservationen</li>
+	<li>Für Reservationen ist zusätzlich das Recht &quot;Darf Reservationen in Vergangenheit buchen&quot; notwendig</li>
+</ul>
+
+
+<p><strong>Klick auf Button</strong></p>
+<ul>
+	<li>Buchung auf den Zeitpunkt, an welchem der Button betätigt wurde, komplett aus dem System gelöscht.</li>
+	<li>Es fallen keine Reservation-s und auch keine Annullierungs-Kosten an.</li>
+	<li>In den Listen- und Kalender-Ansichten ist die Buchung nicht mehr sichtbar.</li>
+	<li>Nach dem Löschen, wird die Buchung auch nicht mehr in den Reports (Auswertungen &amp; Statistiken) geführt.</li>
+	<li>Notifikation (ReservationLoeschung) wird an Ersteller, Organisator und Verantwortlichen verschickt (siehe <a class="unresolved" href="#">Notifikationsmatrix</a>)</li>
+	<li>Notifikation (BestellungDelete) wird an Dienstleister verschickt (siehe <a class="unresolved" href="#">Notifikationsmatrix</a> und UC <a href="106.002-Angebotszonen-verwalten_611975398.html" data-linked-resource-id="611975398" data-linked-resource-version="27" data-linked-resource-type="page">106.002 Angebotszonen verwalten)</a></li>
+</ul>
+
+
+<ul>
+	<li>Spezialfall Serie:
+	<ul>
+		<li>Alle Buchungen werden gelöscht, auch Vergangenheit. Bestätigungsmeldung an Organisator, Verantworlicher und Ersteller (1 E-Mail für die ganze Serie)</li>
+	</ul>
+	</li>
+</ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

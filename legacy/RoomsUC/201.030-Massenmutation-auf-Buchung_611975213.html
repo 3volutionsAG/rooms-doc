@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.030 Massenmutation auf Buchung</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.030 Massenmutation auf Buchung
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Jun 04, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=kufh4tn9as]{color:#00b050} html[data-color-mode=dark] [data-colorid=kufh4tn9as]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-201.030MassenmutationaufBuchung-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>201.030</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>1.1</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>3</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Zwei oder mehrere Buchungen k&ouml;nnen in den gleichen Prozessschritten bearbeitet werden</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>DarfMassenmutationenVornehmen</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><ul><li>Es bestehen Reservationen</li><li>Benutzer befindet sich im Plan, Kalender oder unter Listen</li><li>NICHT verf&uuml;gbar bei VC Events</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li><a href="#id-201.030MassenmutationaufBuchung-1">Nutzer selektiert zwei oder mehr Reservationen</a></li><li><a href="#id-201.030MassenmutationaufBuchung-2">Nutzer klickt Button &bdquo;Bearbeiten&quot;</a></li><li><a href="#id-201.030MassenmutationaufBuchung-3">Eingaben im Fenster f&uuml;r Massenmutation</a></li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><p>&nbsp;</p><p>&nbsp;</p></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="kufh4tn9as">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><h1 id="id-201.030MassenmutationaufBuchung-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.030MassenmutationaufBuchung-Schritt1-NutzerselektiertzweiodermehrReservationen1">Schritt 1 - Nutzer selektiert zwei oder mehr Reservationen<span class="confluence-anchor-link" id="id-201.030MassenmutationaufBuchung-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><ul class="alternate"><li><strong>Listenansicht</strong>: Benutzer hat bei zwei oder mehreren Reservationen die Checkbox in der Smartlist selektiert</li><li><strong>Planansicht</strong>: Benutzer selektiert mittels Mauslkick mehrere Hotspots. Wird ein Hotspot selektiert, bleibt es eingeblendet; ausserdem wird die Transparenz der Polygon-F&uuml;llung entfernt, d.h. der Polygon wird hervorgehoben.</li><li><strong>Kalender:</strong> Benutzer hat bei zwei oder mehreren Reservataionen die Checkbox selektiert. Box erscheint beim Mouse-Over, sofern folgendes Recht vorhanden ist: DarfMassenmutationenVornehmen</li><li><strong>Event</strong>: Benutzer hat eine oder mehrere Buchungen auf dem Event selektiert und den Button &quot;Bearbeiten&quot; geklickt ODER Benutzer hat eine oder mehrere bestehende Buchungen zu Event hinzugef&uuml;gt.</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p>Rechte m&uuml;ssen implementiert werden:</p><ul><li>DarfMassenmutationenVornehmen</li></ul><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.030MassenmutationaufBuchung-Schritt2-NutzerklicktButton„Bearbeiten“2">Schritt 2 - Nutzer klickt Button &bdquo;Bearbeiten&ldquo;<span class="confluence-anchor-link" id="id-201.030MassenmutationaufBuchung-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><ul><li>Button &bdquo;Bearbeiten&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Bearbeiten</strong></p><ul><li>erscheint nur mit dem Recht &quot;DarfMassenmutationenVornehmen&quot;</li><li>Button wird im Buttonbereich des Inhaltsbereich angezeigt (H&ouml;he &quot;auto-refresh&quot; icon)</li><li>Klick auf Button pr&uuml;ft f&uuml;r jede selektierte Reservation, ob der Benutzer Editier-Rechte besitzt (schliesst auch Pr&uuml;fung auf Vergangenheit usw. mit ein -&gt; RechtRules) und ob der Eintrag noch nicht gelockt ist:<ul><li>Trifft dies auf keinen Eintrag zu, wird im ActionPanel die Meldung &quot;Sie k&ouml;nnen zur Zeit keine der selektierte(n) Reservation(en) bearbeiten.&quot; ausgegeben; der Benutzer bleibt auf der aktuellen Ansicht, die Checkboxen sind wieder deaktiviert.</li><li>Trifft dies auf genau einen Eintrag zu, wird er auf die Detailansicht dieser Reservation geleitet (ohne zus&auml;tzliche Meldung); wurden mehrere Eintr&auml;ge selektiert, steht im ActionPanel &quot;Sie bearbeiten 1 Reservation; die andere(n) X Reservation(en) k&ouml;nnen zur Zeit von Ihnen nicht bearbeitet werden.&quot;.</li><li>Hat der Benutzer f&uuml;r mehr als eine Reservation die ben&ouml;tigten Rechte, wird er auf die neue Massenmutationsmaske weitergeleitet; dort wird im ActionPanel immer &quot;Sie bearbeiten X Reservationen.&quot; ausgegeben; bei Bedarf steht zus&auml;tzlich &quot;Sie bearbeiten X Reservationen; die andere(n) Reservation(en) k&ouml;nnen zur Zeit von Ihnen nicht bearbeitet werden.&quot; Gleichzeitig wird analog bei einer Einzelmutation ein Lock f&uuml;r jede zu bearbeitende Reservation vergeben; es wird aber kein Blocker erstellt.</li></ul></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975213/611976536.png" data-image-src="attachments/611975213/611976536.png" data-unresolved-comment-count="0" data-linked-resource-id="611976536" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="kalendercheckbox.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975213" data-linked-resource-container-version="11" data-media-id="f94b2d9b-07fd-414e-a5e9-1c6e4069186d" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.030MassenmutationaufBuchung-Schritt3-EingabenimFensterfürMassenmutation3">Schritt 3 - Eingaben im Fenster f&uuml;r Massenmutation<span class="confluence-anchor-link" id="id-201.030MassenmutationaufBuchung-3"><span class="confluence-anchor-link" id="3" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><ul class="alternate"><li>Checkbox UND Datumpicker: Datum/Zeit</li><li>Checkbox UND Intelibox: Organisator</li><li>Checkbox UND Intelibox: Verantwortlicher</li><li>Checkbox UND Feld: Titel</li></ul><ul><li>Button &bdquo;auf alle &Uuml;bernehmen&ldquo;</li><li>Button &bdquo;Abbrechen&quot;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Checkboxen</strong></p><ul><li>Aktiviert ein Feld f&uuml;r eine Eingabe</li><li>Wird das Feld nicht aktiviert, bleiben die Werte der einzelnen Reservationen erhalten</li><li>Wird das Feld aktiviert, wird der neue Wert auf alle Reservationen &uuml;bernommen</li></ul><p><strong>Datum/Zeit</strong></p><ul><li>Datumpicker (siehe auch <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li><li>Standardwert bei Selektion: aktuelles Datum und aktuelle Zeit (gem&auml;ss Voreinstellung Schnellreservation im Profil - siehe UC <a href="201.201-Schnellreservation_611975240.html" data-linked-resource-id="611975240" data-linked-resource-version="32" data-linked-resource-type="page">201.201 Schnellreservation</a>)</li></ul><p><strong>Titel</strong></p><ul><li>Eingabefeld</li><li>Standardwert generell: leer</li><li>Standardwert Event: Titel des Events wird ausgegraut angezeigt</li><li>Feldvalidierung: Pflichtfeld</li></ul><p><strong>Bemerkungen</strong></p><ul><li>Eingabefeld</li><li>Standardwert generell: leer</li><li>Standardwert Event: Bemerkungen des Events werden ausgegraut angezeigt</li><li>Feldvalidierung: keine<br /><br /></li></ul><p><strong>Organisator</strong></p><ul><li>Intelibox Person (siehe auch <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li><li>Standardwert generell: leer</li><li>Standardwert Event: Organisator des Events wird ausgegraut angezeigt</li><li>Feldvalidierung: Pflichtfeld und g&uuml;ltige Person</li></ul><p><strong>Verantwortlicher</strong></p><ul><li>Intelibox Person (siehe auch <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li><li>Standardwert generell: leer</li><li>Standardwert Event: Verantwortlicher des Events wird ausgegraut angezeigt</li><li>Feldvalidierung: Pflichtfeld und g&uuml;ltige Person</li></ul><p><strong>Kostentr&auml;ger</strong></p><ul><li>Intelbox Kostentr&auml;ger (siehe auch&nbsp;<a href="611975507.html" data-linked-resource-id="611975507" data-linked-resource-version="16" data-linked-resource-type="page">201.006 Kostenstellen bei Reservation zuf&uuml;gen und entfernen</a></li><li>Standardwert generell: leer</li><li>Standardwert Event: Kostentr&auml;ger des Events werden ausgegraut angezeigt</li><li>Feldvalidierung: g&uuml;ltiger Kostentr&auml;ger</li></ul><p><strong>Klassifikationen</strong></p><ul><li>Alle Klassifikationstpyen (siehe auch&nbsp;<a href="104.002-Buchungsklassifikationen-verwalten_611975293.html" data-linked-resource-id="611975293" data-linked-resource-version="26" data-linked-resource-type="page">104.002 Buchungsklassifikationen verwalten</a></li><li>Standardwerte generell: leer</li><li>Standardwert Event: Klassifikationen des Events werden pro Typ ausgegraut angezeigt</li><li>Standardwert Massenbuchung: Es werden alle Klassifikationen angezeigt, die alle involvierten Buchungen zusammen aufweisen k&ouml;nnten (also auch die nicht gesetzten)</li><li>Feldvalidierung: g&uuml;ltiger Eintrag aus Liste oder Multiselektion</li></ul><p><strong>auf alle &Uuml;bernehmen</strong></p><ul><li>Zur&uuml;ck auf die vorherige Ansicht</li><li>Ausgabe im Actionpanel: &quot;Die &Auml;nderungen werden nun &uuml;bernommen. Sie werden&nbsp; wieder informiert, sobald der Vorgang abgeschlossen ist.&quot;</li><li>Aktionseintr&auml;ge f&uuml;r Bearbeitung werden in Action Tabelle geschrieben</li><li>Asynchrone Abarbeitung (durch den Service) des Auftrags, ausser bei Event-Massenmutationen</li><li>Ausgabe im Actionpanel: &quot;Die &Auml;nderungen von X&nbsp; Eintr&auml;gen vom Typ Reservation sind abgeschlossen (a / b / c wurden&nbsp; angepasst; d / e / f konnten nicht angepasst werden).&quot;</li></ul><p><strong>Abbrechen</strong></p><ul><li>Abbrechen entfernt die Locks</li><li>Zur&uuml;ck auf die vorherige Ansicht</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" loading="lazy" src="attachments/611975213/611980691.png?width=500" data-image-src="attachments/611975213/611980691.png" data-unresolved-comment-count="0" data-linked-resource-id="611980691" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Massenmutation.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975213" data-linked-resource-container-version="11" data-media-id="e598c35d-0f1a-4da9-b802-ca330210985c" data-media-type="file" /></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975213/611976534">kalendercheckbox</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975213/611976536.png">kalendercheckbox.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975213/611976537.png">Massenmutationen.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975213/611980691.png">Massenmutation.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

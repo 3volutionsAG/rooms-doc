@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 110.4</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 110.4
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC110.4-UseCaseÜberblickID110.4OwnerTimBänzigerNamePOITerminalZielDasPOITerminalerlaubtdiead-hocReservationeinesArbeitsplatzesAbhängigkeitenzuanderenUC110"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC110.4-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 110.4 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> POI Terminal </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Das POI Terminal erlaubt die ad-hoc Reservation eines Arbeitsplatzes </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> 110 </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.4-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.4-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Bitte hier den Use Case im groben Beschreiben – auch Abhängigkeiten zu anderen Use Cases sind zu erwähnen:</p>
+
+<p>Das interaktive POI Terminal erlaubt es dem Benutzer über Touchscreen oder Tastatur eine ad-hoc Reservation eines Arbeitsplatzes: </p>
+<ul>
+	<li>Es muss eine Anmeldung am POI erfolgen</li>
+	<li>Die Anmeldung muss mittels Badge erfolgen</li>
+	<li>Das POI muss alle verfügbaren Arbeitsplätze eines Tages und Standortes in tabellarischer Form anzeigen.</li>
+	<li>Die Auflistung ist gruppiert nach Favoriten, Organisationseinheit und Projektgruppen</li>
+	<li>Mittels eines Klick kann der Benutzer einen Arbeitsplatz reservieren</li>
+	<li>Nach der Reservation wird eine Bestätigung (kann ausgedruckt werden) angezeigt und der Benutzer automatisch ausgeloggt</li>
+	<li>Nach einer bestimmten, vordefinierten Zeit muss der Benutzer automatisch ausgeloggt werden (Missbrauch)</li>
+	<li>Die Ansicht muss für Touch und Mouse optimiert sein</li>
+	<li>Die Ansicht muss sehr schnell sein (&lt; 1 Sekunde Ladezeiten)</li>
+	<li>Bei Nichtbenutzung muss ein Bildschirmschoner angezeigt werden (dieser wird im Administrationsbereich konfiguriert)</li>
+	<li>Das Terminal muss in einem Kiosk-Modus laufen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC110.4-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<p>Bitte auflisten und im groben beschreiben:</p>
+<ul>
+	<li>Die Kommunikation mit dem Badgleser erfolgt über eine COM Komponente (VB Komponente), welche von KABA zur Verfügung gestellt wird.</li>
+	<li>Die Installation eines Terminals entfällt oder muss sehr einfach sein (z.b. Drag &amp; Drop)</li>
+	<li>Die Konfiguration des Terminals sollte global vorgenommen werden können</li>
+	<li>Die Kommunikation der Terminals erfolgt über standardisierte Protokolle (TCP/IP, http, etc.)</li>
+</ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

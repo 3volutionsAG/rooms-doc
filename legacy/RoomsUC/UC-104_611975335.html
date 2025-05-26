@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 104</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 104
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC104-UseCaseÜberblickID104OwnerTimBänzigerNameVerwaltenvonLayersZielDieVerwaltungvon(individuellen)LayerszulassenAbhängigkeitenzuanderenUC109ff"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC104-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 104 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> Verwalten von Layers </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Die Verwaltung von (individuellen) Layers zulassen </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> 109ff </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC104-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC104-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Bitte hier den Use Case im groben beschreiben – auch Abhängigkeiten zu anderen Use Cases sind zu erwähnen:</p>
+
+<p><em>Layers sind vorgegebene und eigene hierarchische Bäume, welchen Ressourcen zugeordnet werden kann und durch Zuordnung einer Benutzergruppe und Vergabe eines Datenrechtes entsprechend berechtigt wird (Beispiel: Projektgruppen, Infoterminal, Dienstleisterterminal, etc.). Folgendes muss möglich sein:</em></p>
+
+<ol>
+	<li>Erstellung eines neuen, individuellen Layertyps unter Angabe der notwendigen Konfiguration (z.B. ob Ressourcen zugeordnet werden können, ob Layer Berechtigung steuern darf, etc.)</li>
+	<li>Löschung eines Layertyp (mit Sicherheitsabfrage) und Löschung aller Relationen zu Ressourcen, Berechtigungen, Layers, etc.</li>
+	<li>Erfassung und Löschung neuer Layers (Gruppierungen) in hierarchischer Form unter Angabe einer mehrsprachigen Bezeichnung und allfälligen Metadaten (tbd)</li>
+	<li>Verschiebung der Layers innerhalb der Linie und hierarchisch mittels Drag &amp; Drop (Wunsch).</li>
+	<li>Zuordnung und Löschung von Ressourcen und Personen zu einem Layer</li>
+	<li>Vererbung und Erben von Daten-Berechtigungen (bis auf die einzelne Ressource)</li>
+	<li>Vergabe und Aufhebung einer Datenberechtigung durch Zuordnung einer Benutzergruppe in Bezug eines Datenrechts zum Layer</li>
+</ol>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC104-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<p>Bitte auflisten und im groben beschreiben:</p>
+<ul>
+	<li>Erbungen und Vererbungen der Berechtigungen im Detail definieren</li>
+	<li>Achtung Performance bei grossen Bäumen und grossen Zuordnungen.</li>
+</ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

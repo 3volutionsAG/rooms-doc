@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 214.002 Alarmierung Überfälligkeit Organisator &amp;  Warnung Folgereservationen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 214.002 Alarmierung Überfälligkeit Organisator &amp;  Warnung Folgereservationen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Jun 14, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=zn5y1lavwl]{color:#00b050} html[data-color-mode=dark] [data-colorid=zn5y1lavwl]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+<h1 id="id-214.002AlarmierungÜberfälligkeitOrganisator&amp;WarnungFolgereservationen-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 214.002 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 2 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Falls Alarmierung auf der Ressource aktiviert, erscheint ein Popup mit den &uuml;berf&auml;lligen Terminen. <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Plan mit Alarmierungen sehen (Folgereservationen)</li>
+	<li>Darf Plan mit Alarmierungen sehen (Status&auml;nderungen)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Nutzer befindet sich auf dem Plan</li>
+	<li>Plan hat eine Ressource mit aktivierter Alarmierung f&uuml;r &Uuml;berf&auml;lligkeit des Organisators oder Warnung Folgereservation (siehe UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a>)</li>
+	<li>Gilt nur f&uuml;r Ressourcenart &quot;Raum&quot;</li>
+	<li><strong>Vorbedingung 1: Alarmierung &Uuml;berf&auml;lligkeit Organisator</strong>
+	<ul>
+		<li>Es befinden sich Reservationen auf der aktivierten Ressource (siehe UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a>)</li>
+		<li>Die Reservation ist im Status, welcher die Alarmierung ausl&ouml;sen soll (siehe UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a>)</li>
+		<li>Der &quot;Delay&quot; (Wartezeit) im Feld <strong>Dauer nach Statuswechsel</strong> ist abgelaufen (siehe UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a>)</li>
+		<li>Gilt f&uuml;r alle laufenden und k&uuml;nftigen Reservationen des aktuellen Tages</li>
+	</ul>
+	</li>
+	<li><strong>Vorbedingung 2: Alarmierung bei Folgereservation</strong>
+	<ul>
+		<li>Es befinden sich Reservationen in Zukunft auf der aktivierten Ressource</li>
+		<li>Zum aktuellen Zeitpunkt ist eine Reservation am laufen</li>
+		<li>Die Reservation in Zukunft hat den &quot;Delay&quot; im Feld <strong>Alarmierung bei Folgereservationen</strong> unterschriten (siehe UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a>** Beispiel:
+		<ul>
+			<li>Folgereservation startet um 11:00</li>
+			<li>Alarmierung Einstellung betr&auml;gt 30 Minuten</li>
+			<li>Eine vorg&auml;ngige Reservation dauert von 08:00 bis 11:00</li>
+			<li>DasPopup erscheint zwischen 10:30 und 11:00</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritte</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Alarmierungspopup wird angezeigt</li>
+	<li>Benutzer schliesst Popup</li>
+	<li>Popup schliesst automatisch</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> </p><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><br />
+<p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p> <br class="atl-forced-newline" /> <p /></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="zn5y1lavwl">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span><br class="atl-forced-newline" /></li>
+</ul>
+
+
+<h1 id="id-214.002AlarmierungÜberfälligkeitOrganisator&amp;WarnungFolgereservationen-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-214.002AlarmierungÜberfälligkeitOrganisator&amp;WarnungFolgereservationen-Schritt1-Alarmierungspopupwirdangezeigt">Schritt 1 - Alarmierungspopup wird angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - Modales Popup &quot;Alarmierung&quot; &ouml;ffnet sich</strong></p>
+
+
+<p><strong>Smartlist mit folgenden Spalten</strong></p>
+<ul>
+	<li>Icon: Warning</li>
+	<li>Wartezeit Kunde</li>
+	<li>Folgereservation in</li>
+	<li>Reservationstitel</li>
+	<li>Ressourcenbezeichnung</li>
+	<li>Organisator</li>
+	<li>Ersteller</li>
+	<li>Zeitstempel</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button: Best&auml;tigen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+
+
+<ul>
+	<li>Eines der folgenden Rechte muss vorhanden sein, damit das Popup erscheint
+	<ul>
+		<li>Darf Plan mit Alarmierungen sehen (Folgereservationen)</li>
+		<li>Darf Plan mit Alarmierungen sehen (Status&auml;nderungen)</li>
+	</ul>
+	</li>
+	<li>Standardsortierung &quot;Absteigend&quot; nach &quot;Folgereservation in&quot;</li>
+</ul>
+
+
+<p><strong>Wartezeit Kunde</strong></p>
+<ul>
+	<li>Vorbedingung 1 eingetroffen (siehe Bedingungen)</li>
+	<li>Seit wievielen Minuten ist die Reservation im aktuellen Status =&gt; zeigt die &Uuml;berf&auml;lligkeit des Organisators in Anzahl MInuten</li>
+	<li>nur sichtbar mit Recht: Darf Plan mit Alarmierungen sehen (Status&auml;nderungen)</li>
+	<li>siehe auch UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<p><strong>Folgereservation in</strong></p>
+<ul>
+	<li>Vorbedingung 2 eingetroffen (siehe Bedingungen)</li>
+	<li>Zeigt in wievielen Minuten eine Folgereservation startet</li>
+	<li>nur sichtbar mit dem Recht: Darf Plan mit Alarmierungen sehen (Folgereservationen)</li>
+	<li>siehe auch UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<p><strong>Reservationstitel</strong></p>
+<ul>
+	<li>Titel der Reservation (siehe UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)</li>
+	<li>siehe auch UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<p><strong>Ressourcenbezeichnung</strong></p>
+<ul>
+	<li>Bezeichnung der Ressourcen - wird angezeigt in der Sprache des angemeldeten Benutzers</li>
+</ul>
+
+
+<p><strong>Organisator</strong></p>
+<ul>
+	<li>Vorname und Name des Organnisators (siehe UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)</li>
+</ul>
+
+
+<p><strong>Ersteller</strong></p>
+<ul>
+	<li>Vorname und Nachname des Erstellers (siehe UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)</li>
+</ul>
+
+
+<p><strong>Zeitstempel</strong></p>
+<ul>
+	<li>Datum und Zeit als die Alarmierung ausgel&ouml;st wurde</li>
+	<li>Format: dd.mm.yyyy HH:MM</li>
+</ul>
+
+
+<p><strong>Best&auml;tigen</strong></p>
+<ul>
+	<li>siehe Schritt 2</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975248/611976354.png" data-image-src="attachments/611975248/611976354.png" data-unresolved-comment-count="0" data-linked-resource-id="611976354" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Alarmierung Popup.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975248" data-linked-resource-container-version="11" data-media-id="6d7d2c3e-bd8c-4b5e-a17d-52eb44dd18b3" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-214.002AlarmierungÜberfälligkeitOrganisator&amp;WarnungFolgereservationen-Schritt2-BenutzerschliesstPopup">Schritt 2 - Benutzer schliesst Popup</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlist</strong></p>
+
+
+<ul>
+	<li>Button &bdquo;Best&auml;tigen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Best&auml;tigen</strong></p>
+<ul>
+	<li>Popup wird geschlossen</li>
+</ul>
+
+
+<div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><p>Wichtig:</p>
+<ul>
+	<li>das Schliessen &auml;ndert nicht den Reservationsstatus. Dh. nach Ablauf des &quot;Autorefresh&quot; oder bei Aktiv Klick auf &quot;Plan&quot; wird das Popup wieder erscheinen.</li>
+	<li>das Schliessen beendet auch nicht die Warnung f&uuml;r Folgereservatinen. Diese erscheint nicht mehr wenn die Folgereservation gestartet hat oder diese nach hinten geschoben wird, so dass die Regel nicht mehr greift.</li>
+</ul>
+</div></div>
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975248/611976354.png" data-image-src="attachments/611975248/611976354.png" data-unresolved-comment-count="0" data-linked-resource-id="611976354" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Alarmierung Popup.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975248" data-linked-resource-container-version="11" data-media-id="6d7d2c3e-bd8c-4b5e-a17d-52eb44dd18b3" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-214.002AlarmierungÜberfälligkeitOrganisator&amp;WarnungFolgereservationen-Schritt3-Popupschliesstautomatisch">Schritt 3 - Popup schliesst automatisch</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+
+
+<ul>
+	<li>siehe Schritt 1</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Popup automatisch schliessen, wenn keine Eintr&auml;ge mehr vorhanden sind.   Der Inhalt des Popups wird automatisch nach 5 / 10 / 30 / 60 und 120   Sekunden (einstellbar &uuml;ber SmartList) aktualisiert; hat die SmartList   danach keine Eintr&auml;ge mehr, Popup schliessen.</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p>keine</p>
+
+<div class="panel" style="border-width: 1px;" />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975248/611976354.png">Alarmierung Popup.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

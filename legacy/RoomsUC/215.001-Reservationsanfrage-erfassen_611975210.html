@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 215.001 Reservationsanfrage erfassen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 215.001 Reservationsanfrage erfassen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Sep 19, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=iz22y221qx]{color:#00b050} html[data-color-mode=dark] [data-colorid=iz22y221qx]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+<h1 id="id-215.001Reservationsanfrageerfassen-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 215.001 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 2.1 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> </p></td>
+<td class="confluenceTd"><p> 2 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Eine neue Reservationsanfrage erstellen. <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Reservationsanfragen einreichen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> Vorg&auml;ngig m&uuml;ssen Anlass Status und Anlass Typen erfasst worden sein (siehe UC&nbsp;<a href="120.001-Anlasstyp-verwalten_611975291.html" data-linked-resource-id="611975291" data-linked-resource-version="29" data-linked-resource-type="page">120.001 Anlasstyp verwalten</a> und&nbsp;<a href="120.002-Anlassstatus-verwalten_611975289.html" data-linked-resource-id="611975289" data-linked-resource-version="6" data-linked-resource-type="page">120.002 Anlassstatus verwalten)</a> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Benutzer navigiert auf &gt;Reservieren &gt;Reservationsanfrage</li>
+	<li>Nutzer w&auml;hlt Standort und gew&uuml;nschtes Formular</li>
+	<li>Reservationsanfrage Formular wird angezeigt und Daten werden erfasst - Anfrage wird verschickt</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="215.002-Bestehende-Reservationsanfrage-suchen-und-bearbeiten_611975206.html" data-linked-resource-id="611975206" data-linked-resource-version="6" data-linked-resource-type="page">215.002 Bestehende Reservationsanfrage suchen und bearbeiten</a> <br class="atl-forced-newline" />
+<a href="120.001-Anlasstyp-verwalten_611975291.html" data-linked-resource-id="611975291" data-linked-resource-version="29" data-linked-resource-type="page">120.001 Anlasstyp verwalten</a> <br class="atl-forced-newline" /> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="iz22y221qx">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+
+<h1 id="id-215.001Reservationsanfrageerfassen-UseCaseDetails">Use Case Details</h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-215.001Reservationsanfrageerfassen-Schritt1-Benutzernavigiertauf>Reservieren>Reservationsanfrage">Schritt 1 - Benutzer navigiert auf &gt;Reservieren &gt;Reservationsanfrage</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Navigation &ouml;ffnet sich entsprechend</p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Folgendes Recht muss implementiert werden:</p>
+<ul>
+	<li>Darf Reservationsanfragen einreichen</li>
+</ul>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-215.001Reservationsanfrageerfassen-Schritt2-NutzerwähltStandortundgewünschtesFormular">Schritt 2 - Nutzer w&auml;hlt Standort und gew&uuml;nschtes Formular</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+
+<p><strong>Subpanel &bdquo;Reservationsanfrage&ldquo;</strong></p>
+<ul>
+	<li>Standortpicker: Standort</li>
+	<li>Dropdown: Reservationsanfrage</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+
+<ul>
+	<li>Button: Erstellen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<p><strong>Standort</strong></p>
+
+<ul>
+	<li>Selektion eines Standorts mittels Standortpicker</li>
+	<li>&nbsp;</li>
+</ul>
+
+
+<p><strong>Reservationsanfrage</strong></p>
+<ul>
+	<li>wird nur angezeigt nach Wahl eines Standorts</li>
+	<li>Inhalt sind alle verf&uuml;gbaren Request Formulare (Anlasstypen) des aktuellen und allen hierarchisch h&ouml;hren Standorten</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>siehe Schritt 3</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975210/611975708.png" data-image-src="attachments/611975210/611975708.png" data-unresolved-comment-count="0" data-linked-resource-id="611975708" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="215.001 Sidepanel.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975210" data-linked-resource-container-version="21" data-media-id="31f45d4f-7e9c-42f3-896d-c7525ee71a5a" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-215.001Reservationsanfrageerfassen-Schritt3-ReservationsanfrageFormularwirdangezeigtundDatenwerdenerfasst-Anfragewirdverschickt">Schritt 3 - Reservationsanfrage Formular wird angezeigt und Daten werden erfasst - Anfrage wird verschickt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>HTML Formular mit allen Controls wird gem&auml;ss Erfassung gerendert und visualisiert (siehe dazu UC <a href="120.001-Anlasstyp-verwalten_611975291.html" data-linked-resource-id="611975291" data-linked-resource-version="29" data-linked-resource-type="page">120.001 Anlasstyp verwalten</a>)</li>
+</ul>
+
+
+<p><strong>Buttons</strong></p>
+<ul>
+	<li>Anfrage senden</li>
+	<li>Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Anfrage senden</strong></p>
+<ul>
+	<li>Das &bdquo;Verschicken&ldquo; der Anfrage wird im Actionpanel best&auml;tigt.</li>
+	<li>Eine E-Mail wird an die Benutzer der&nbsp; Benutzergruppe, welche dem Anlasstyp hinterlegt worden ist verschickt, sofern das Template <em>11 - ReservationsanfrageNeu</em> (siehe <a class="unresolved" href="#">Notifikationsmatrix</a>)&nbsp; hinterlegt worden ist</li>
+	<li>Alle Daten werden gespeichert</li>
+	<li>Navigation auf
+	<ul>
+		<li>Sidepanel bleibt bestehen</li>
+		<li>Inhaltsbereich wechselt auf die Liste der erfassten Anfragen (siehe UC <a href="215.002-Bestehende-Reservationsanfrage-suchen-und-bearbeiten_611975206.html" data-linked-resource-id="611975206" data-linked-resource-version="6" data-linked-resource-type="page">215.002 Bestehende Reservationsanfrage suchen und bearbeiten</a>)</li>
+	</ul>
+	</li>
+</ul>
+
+
+
+<p><strong>Abbrechen</strong></p>
+<ul>
+	<li>Sidepanel bleibt bestehen</li>
+	<li>Inhaltsbereich wechselt auf die Liste der erfassten Anfragen (siehe UC <a href="215.002-Bestehende-Reservationsanfrage-suchen-und-bearbeiten_611975206.html" data-linked-resource-id="611975206" data-linked-resource-version="6" data-linked-resource-type="page">215.002 Bestehende Reservationsanfrage suchen und bearbeiten</a>)</li>
+</ul>
+
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975210/611976125.jpg" data-image-src="attachments/611975210/611976125.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611976125" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975210" data-linked-resource-container-version="21" data-media-id="0f256b4e-6023-4cd9-b25b-4a50d46f2bd0" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611975613.jpg">Schrittt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611976127.jpg">Schritt 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611976125.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611976144.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611976141.jpg">Schritt 5.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611976138.jpg">Schritt 6.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975210/611975708.png">215.001 Sidepanel.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

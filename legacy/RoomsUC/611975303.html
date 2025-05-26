@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 230.002 globale und öffentliche Listen verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 230.002 globale und öffentliche Listen verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Mar 29, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+<h1 id="id-230.002globaleundöffentlicheListenverwalten-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 230.002 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorität</strong> <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> 2 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Eine &quot;public&quot; Liste &quot;global&quot; machen oder eine &quot;globale&quot; Liste &quot;public&quot; machen. <br class="atl-forced-newline"/>
+Entfernen von &quot;globalen&quot; Listen <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Unterschied zwischen &quot;globalen&quot; und &quot;public&quot; Listen:</strong></p>
+<ul>
+	<li>public Liste gehört einer Person. Diese Person ist der Owner und kann die Liste jederzeit verändern. Jeder Benutzer kann über das Abonnementen System selber entscheiden ober er eine &quot;public&quot; Liste nutzen will oder nicht.</li>
+	<li>globale Listen haben keine Owner. Diese können nur innerhalb von &quot;Globale und Öffentliche Listen&quot; bearbeitet werden. &quot;Globale&quot; Listen sind für alle Benutzer MUSS-Listen und erscheinen in den Dropdowns im Bereich der Listenansicht</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf globale Filter editieren</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> Liste wurde bereits erstellt und hat den Status &quot;global&quot; oder &quot;public&quot; <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Weg um eine Liste zu erstellen: <br class="atl-forced-newline"/></p>
+<ol>
+	<li>Listenansicht eine Liste nach Wunsch zusammenstellen (inkl. Filterkrierien) - siehe UC <a href="611975559.html" data-linked-resource-id="611975559" data-linked-resource-version="10" data-linked-resource-type="page">230.001 Liste erstellen und (als Favorit) speichern</a></li>
+	<li>Liste unter beliebigem Namen abspeichern</li>
+	<li>Liste im Profil als &quot;Public&quot; publizieren - siehe UC <a href="230.003-Eigene-Listen-verwalten_611975297.html" data-linked-resource-id="611975297" data-linked-resource-version="15" data-linked-resource-type="page">230.003 Eigene Listen verwalten</a>)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer navigiert auf &gt;Einstellungen &gt;Stammdaten &gt;Globale und Öffentliche Listen</li>
+	<li>Nutzer gibt Suchkriterien ein (optional) und klickt Button „Finden“</li>
+	<li>Ein Suchresultat über &quot;public&quot; und &quot;globalen Listen&quot; wird angezeigt – ein oder mehrere Listen können gelöscht werden</li>
+	<li>Nutzer kann einen Eintrag anklicken, um die Details anzuzeigen (View Modus)</li>
+	<li>Nutzer editiert eine Liste - setzt sie auf &quot;global&quot; oder &quot;public&quot;</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p /><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p> <p /></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline"/>
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+</ul>
+
+
+<h1 id="id-230.002globaleundöffentlicheListenverwalten-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-230.002globaleundöffentlicheListenverwalten-Schritt1-Nutzernavigiertauf&gt;Einstellungen&gt;Stammdaten&gt;GlobaleundÖffentlicheListen">Schritt 1 - Nutzer navigiert auf &gt;Einstellungen &gt;Stammdaten &gt;Globale und Öffentliche Listen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Navigation öffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Rechte</strong></p>
+<ul>
+	<li>Recht muss vorhanden sein: Darf globale Filter editieren</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-230.002globaleundöffentlicheListenverwalten-Schritt2-NutzergibtSuchkriterienein(optional)undklicktButton„Finden“">Schritt 2 - Nutzer gibt Suchkriterien ein (optional) und klickt Button „Finden“</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Feld: Bezeichnung</li>
+	<li>Intelibox: Besitzer</li>
+</ul>
+
+
+<ul>
+	<li>Button „Finden“</li>
+	<li>Button „Zurücksetzen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong></p>
+
+<ul>
+	<li>sucht in der Sprache des angemeldeten Benutzers</li>
+</ul>
+
+
+<p><strong>Besitzer</strong></p>
+<ul>
+	<li>Personen Intelibox (siehe <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li>
+</ul>
+
+
+<p><strong>Finden</strong></p>
+<ul>
+	<li>siehe Schritt 3</li>
+</ul>
+
+
+<p><strong>Zurücksetzen</strong></p>
+<ul>
+	<li>Löscht die Felder &quot;Bezeichnung&quot; und &quot;Besitzer&quot;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975303/611976950.png" data-image-src="attachments/611975303/611976950.png" data-unresolved-comment-count="0" data-linked-resource-id="611976950" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="217.002 - Sidepanel.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975303" data-linked-resource-container-version="16" data-media-id="b8697f7a-3324-42dc-9e8f-63de9402dc76" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-230.002globaleundöffentlicheListenverwalten-Schritt3-EinSuchresultatüber&quot;public&quot;und&quot;globalenListen&quot;wirdangezeigt–einodermehrereListenkönnengelöschtwerden">Schritt 3 - Ein Suchresultat über &quot;public&quot; und &quot;globalen Listen&quot; wird angezeigt – ein oder mehrere Listen können gelöscht werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smarlist</strong></p>
+<ul>
+	<li>Bezeichnung</li>
+	<li>Listenart</li>
+	<li>Besitzer</li>
+	<li>Abos</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button &quot;Löschen&quot;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong></p>
+<ul>
+	<li>Bezeichnung der Liste - wird durch den Ersteller festgelegt (in <a href="220.001-Reservationen-in-Liste-anzeigen_611975230.html" data-linked-resource-id="611975230" data-linked-resource-version="45" data-linked-resource-type="page">220.001 Reservationen in Liste anzeigen</a>)</li>
+	<li>Hat einen Link auf Viewmode (Detail)</li>
+	<li>Mehrsprachig, wird in der Sprache des angemeldeten Benutzers angezeigt</li>
+</ul>
+
+
+<p><strong>Listenart</strong></p>
+<ul>
+	<li>Es wird unterschieden zwischen folgenden Arten:
+	<ul>
+		<li>public =&gt; Liste wurde durch einen Besitzer zur Publikation  publiziert</li>
+		<li>global =&gt; Liste wurde durch einen Dritten als public publiziert und in diesem Bereich der Ersteller entfernt (siehe Schritt 5)</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Besitzer</strong></p>
+<ul>
+	<li>Eigentümer der Liste</li>
+	<li>Vorname und Nachname werden dargestellt</li>
+	<li>Bei globaler Liste ist der Eigentümer leer (Identifikationsmerkmal einer globalen Liste)</li>
+</ul>
+
+
+<p><strong>Abos</strong></p>
+<ul>
+	<li>Ganzzahl</li>
+	<li>zeigt wieviele Personen eine Public Liste im Abonmenet haben</li>
+</ul>
+
+
+<hr/>
+<p><strong>Löschen</strong></p>
+<ul>
+	<li>Mehrfachselektion möglich</li>
+	<li>Sicherheitshinweis: Sollen die selektierten Listen wirklich gelöscht werden?</li>
+	<li>Listen werden gelöscht und stehen den Benutzer in den Listenansichten (siehe UC <a href="220.001-Reservationen-in-Liste-anzeigen_611975230.html" data-linked-resource-id="611975230" data-linked-resource-version="45" data-linked-resource-type="page">220.001 Reservationen in Liste anzeigen</a>) nicht mehr zur Verfügung</li>
+	<li>Aktualisierung der Smartliste</li>
+	<li>Bestätigungsmeldung im Actionpanel, inkl. Ausgabe der Anzahl der entfernten Listen</li>
+</ul>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975303/611976978.png" data-image-src="attachments/611975303/611976978.png" data-unresolved-comment-count="0" data-linked-resource-id="611976978" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="217.002 - Smartlist.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975303" data-linked-resource-container-version="16" data-media-id="b4485417-bfd9-44b5-84b8-ec87f6fdb123" data-media-type="file"></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-230.002globaleundöffentlicheListenverwalten-Schritt4-NutzerkanneinenEintraganklicken,umdieDetailsanzuzeigen(ViewModus)">Schritt 4 - Nutzer kann einen Eintrag anklicken, um die Details anzuzeigen (View Modus)</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Bezeichnung</li>
+	<li>Listenart</li>
+	<li>Besitzer</li>
+	<li>Abos</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button „Bearbeiten“</li>
+	<li>Button „Zurück&quot;</li>
+	<li>Button &quot;Drucken&quot;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong></p>
+<ul>
+	<li>Bezeichnung der Liste - wird durch den Ersteller festgelegt (in <a href="220.001-Reservationen-in-Liste-anzeigen_611975230.html" data-linked-resource-id="611975230" data-linked-resource-version="45" data-linked-resource-type="page">220.001 Reservationen in Liste anzeigen</a>)</li>
+	<li>Mehrsprachig, wird in der Sprache des angemeldeten Benutzers angezeigt</li>
+</ul>
+
+
+<p><strong>Listenart</strong></p>
+<ul>
+	<li>Es wird unterschieden zwischen folgenden Arten:
+	<ul>
+		<li>public =&gt; Liste wurde durch einen Besitzer zur Publikation  publiziert</li>
+		<li>global =&gt; Liste wurde durch einen Dritten als public publiziert  und in diesem Bereich der Ersteller entfernt (siehe Schritt 5)</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Besitzer</strong></p>
+<ul>
+	<li>Eigentümer der Liste</li>
+	<li>Vorname und Nachname werden dargestellt</li>
+	<li>Bei globaler Liste ist der Eigentümer leer (Identifikationsmerkmal einer globalen Liste)</li>
+</ul>
+
+
+<p><strong>Abos</strong></p>
+<ul>
+	<li>Ganzzahl</li>
+	<li>zeigt wieviele Personen eine Public Liste im Abonmenet haben</li>
+</ul>
+
+
+<hr/>
+<p><strong>Bearbeiten</strong></p>
+<ul>
+	<li>siehe Schritt 5</li>
+</ul>
+
+
+<p><strong>Zurück</strong></p>
+<ul>
+	<li>Wechselt auf den Ursprungspunkt zurück</li>
+</ul>
+
+
+<p><strong>Drucken</strong></p>
+<ul>
+	<li>Seite wird ausgedruckt (ohne Hauptmenü, Sidepanel und Buttons) - siehe <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a></li>
+</ul>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975303/611976952.png" data-image-src="attachments/611975303/611976952.png" data-unresolved-comment-count="0" data-linked-resource-id="611976952" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="217.002 - View.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975303" data-linked-resource-container-version="16" data-media-id="00972270-b343-4047-888d-1041dd5b2dec" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-230.002globaleundöffentlicheListenverwalten-Schritt5-NutzereditierteineListe-setztsieauf&quot;global&quot;oder&quot;public">Schritt 5 - Nutzer editiert eine Liste - setzt sie auf &quot;global&quot; oder &quot;public</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Feld: Bezeichnung</span></li>
+	<li>Intelibox: Besitzer</li>
+</ul>
+
+
+<ul>
+	<li>Button „Speichern“</li>
+	<li>Button „Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong></p>
+
+<ul>
+	<li>Mehrsprachige Erfassung möglich</li>
+</ul>
+
+
+<p><strong>Besitzer</strong></p>
+<ul>
+	<li>Personen Intelibox (siehe <a href="000.001-Globale-Funktionen_611975464.html" data-linked-resource-id="611975464" data-linked-resource-version="40" data-linked-resource-type="page">000.001 Globale Funktionen</a>)</li>
+	<li>ist eine Person erfasst, handelt es sich um eine &quot;Public&quot; Liste der erfassten Person</li>
+	<li>Ist Keine Person erfasst, handelt es sich um eine &quot;Globale&quot; Liste</li>
+	<li>Validierung auf eine Person aus ROOMS</li>
+</ul>
+
+
+<p><strong>Speichern</strong></p>
+<ul>
+	<li>Speichert die Änderung</li>
+	<li>Rücksprung zum Ursprungspunkt (Liste oder View Mode)</li>
+	<li>Ausgabe einer Bestättigung im Actionpanel</li>
+</ul>
+
+
+<p><strong>Abbrechen</strong></p>
+
+<ul>
+	<li>Rücksprung zum Ursprungspunkt (Liste oder View Mode)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975303/611976951.png" data-image-src="attachments/611975303/611976951.png" data-unresolved-comment-count="0" data-linked-resource-id="611976951" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="217.002 - Edit.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975303" data-linked-resource-container-version="16" data-media-id="e50fe0c2-67d3-4dda-a9e2-86d0021d04c8" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Anhang</strong></p>
+</div></div>
+
+<p>Nachstehende Grafik zeigt den Publikationsprozess von Listen</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-content-image-border" loading="lazy" src="attachments/611975303/611980477.jpg" data-image-src="attachments/611975303/611980477.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611980477" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Listen_Prozess.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="611975303" data-linked-resource-container-version="16" data-media-id="2295bff2-c517-44d4-854d-46d58bf43961" data-media-type="file"></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975303/611976952.png">217.002 - View.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975303/611976951.png">217.002 - Edit.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975303/611976950.png">217.002 - Sidepanel.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975303/611976978.png">217.002 - Smartlist.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975303/611980477.jpg">Listen_Prozess.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

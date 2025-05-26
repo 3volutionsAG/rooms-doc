@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Datum und Zeit Picker</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Datum und Zeit Picker
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on Jan 09, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p> Der Datum/Zeit Picker besteht aus folgenden einzelnen Controls: <br class="atl-forced-newline"/></p>
+<ul>
+	<li>Checkbox für „manuelle Zeitangabe&quot; <br class="atl-forced-newline"/></li>
+	<li>Feld &quot;Datum von&quot; <br class="atl-forced-newline"/></li>
+	<li>Feld &quot;Zeit von&quot; <br class="atl-forced-newline"/></li>
+	<li>Feld &quot;Zeit bis&quot; <br class="atl-forced-newline"/></li>
+	<li>Label &quot;Datum bis&quot; sofern unterschiedlich zu Datum von. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="75" width="288" loading="lazy" src="attachments/611975396/611980288.png?width=288" data-image-src="attachments/611975396/611980288.png" data-unresolved-comment-count="0" data-linked-resource-id="611980288" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav2ed330df846c63f58c191643c5fdac42.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975396" data-linked-resource-container-version="6" data-media-id="28d8185e-e19c-43c4-b122-d30673b122c2" data-media-type="file"></span> <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Checkbox für manuelle Zeitangabe</strong> <br class="atl-forced-newline"/>
+Wird diese Checkbox geklickt werden die anderen 4 Felder entsperrt und der Benutzer kann Datum/Zeit ändern. Ist die Checkbox nicht geklickt wird das aktuelle Datum/Zeit verwendet.Die Checkbox hat ein Tooltip: Hier Klicken um NICHT aktuelles Datum/Zeit zu verwenden (manuelle Eingabe). Der Standardwert (Checkbox geklickt oder nicht kann durch jeden Benutzer in seinem Profil festgelegt werden) <strong>Datum von</strong> <br class="atl-forced-newline"/>
+Validierung auf korrekte Eingabe eines gültigen Datums in der aktuellen Benutzersprache des Users. Mittels Pfeiltasten kann ein Datum vor und zurück gewechselt werden. <br class="atl-forced-newline"/>
+Mittels Klick öffnet sich Popup für Kalender Erfassung. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Zeit von, Zeit bis</strong> <br class="atl-forced-newline"/>
+Prüfung auf Eingabe einer gültigen Zeit – zwei korrekte Varianten möglich: <br class="atl-forced-newline"/></li>
+	<li>1800 wird automatisch auf 18:00 gewechselt <br class="atl-forced-newline"/></li>
+	<li>18:00 <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Weitere Prüfung auf von Datum KLEINER als bis Datum <br class="atl-forced-newline"/>
+Mittels Pfeiltasten kann in einem GLOBAL vordefinierten Intervall vor und zurück navigiert werden. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Popup</strong> <br class="atl-forced-newline"/>
+Das Popup erlaubt die Eingabe mittels Kalender. Folgende Controls sind darin enthalten: <br class="atl-forced-newline"/></li>
+	<li>Kalender &quot;Datum von&quot; <br class="atl-forced-newline"/></li>
+	<li>Kalender &quot;Datum bis&quot; <br class="atl-forced-newline"/></li>
+	<li>Zeit &quot;von&quot; <br class="atl-forced-newline"/></li>
+	<li>Zeit &quot;bis&quot; <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="166" width="378" loading="lazy" src="attachments/611975396/611980287.png?width=378" data-image-src="attachments/611975396/611980287.png" data-unresolved-comment-count="0" data-linked-resource-id="611980287" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavc21037d97e7d809160de6ae56f07def0.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975396" data-linked-resource-container-version="6" data-media-id="55256add-1b8b-4a4f-bb54-5e4be21d5206" data-media-type="file"></span> <strong>Kalender „Datum von&quot;</strong> <br class="atl-forced-newline"/></li>
+	<li>Selektion erfolgt durch Anklicken eines Datums. <br class="atl-forced-newline"/></li>
+	<li>Es kann nur ein Datum &gt;= (grösser, gleich) dem aktuellen Datum selektiert werden. <em>Ausnahme:</em> Funktionsrecht &quot;Darf in Vergangenheit reservieren&quot; ist vorhanden <br class="atl-forced-newline"/></li>
+	<li>Heute Button (nicht visualisiert) springt auf heutiges Datum <br class="atl-forced-newline"/></li>
+	<li>Mittels Pfeiltasten kann innerhalb des Kalenders jeweils einen Monat vor und zurück geblättert werden <strong>Zeit von, Zeit bis</strong>Prüfung auf Eingabe einer gültigen Zeit – zwei korrekte Varianten möglich: <br class="atl-forced-newline"/></li>
+	<li>1800 wird automatisch auf 18:00 gewechselt <br class="atl-forced-newline"/></li>
+	<li>18:00  Weitere Prüfung auf von Datum KLEINER als bis DatumMittels Pfeiltasten kann in einem GLOBAL vordefinierten Intervall vor und zurück navigiert werden. <strong>Kalender „Datum bis&quot;</strong> <br class="atl-forced-newline"/></li>
+	<li>Wird nur angezeigt, wenn Funktionsrecht „darf Bis-Datum editieren&quot; vorhanden ist, ansonsten wird Popup um die Grösse des Kalenders verkleinert. <br class="atl-forced-newline"/></li>
+	<li>Ansonsten gleiche Funktionalität wie Kalender „Datum von&quot;, PLUS <br class="atl-forced-newline"/>
+	<ul>
+		<li>Es können nur Daten angeklickt werden, welche &gt;= (grösser, gleich) dem „Datum von&quot; sind <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Popup Schliessen ohne Daten zu übernehmen</strong>Klick oben rechts auf rundes Icon <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="12" width="12" loading="lazy" src="attachments/611975396/611980282.png?width=12" data-image-src="attachments/611975396/611980282.png" data-unresolved-comment-count="0" data-linked-resource-id="611980282" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavf79da5482cac6254d2586bc414a657ee.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975396" data-linked-resource-container-version="6" data-media-id="7ab732a8-1495-486e-919c-3b0c3b233866" data-media-type="file"></span> <strong>Popup Schliessen mit Datenübernahmen</strong>Klick auf Button Übernehmen. Daten werden in den Datumspicker übernommen. Ist ein „Bis Datum&quot; &gt;= (grösser, gleich) dem „Von Datum&quot; selektiert worden, wird ein Label oberhalb der Bis Zeit erstellt (Inhalt: Bis Datum in Kurzform --siehe auch Screenshot) <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong><span style="text-decoration: underline;">Weitere Regeln</span></strong> <br class="atl-forced-newline"/>
+Nachstehend weitere Regeln zu Datum/Zeit unterteilt in zwei Prioritäten: <br class="atl-forced-newline"/>
+Release 4.0 (Prio 1) und 4.1 (Prio 2) <br class="atl-forced-newline"/>
+<em>Release 4.0 (Prio 1):</em> <br class="atl-forced-newline"/></li>
+	</ul>
+	</li>
+	<li>im gleichen Tab Datum/Zeit beibehalten (persistieren) <br class="atl-forced-newline"/></li>
+	<li>Zeit Sprung über Pfeile ist immer 15 Minuten <br class="atl-forced-newline"/></li>
+	<li>Tab „Reservieren&quot; → Von Zeit immer auf die nächste Viertelstunde genau (auch bei aktuelles Datum/Zeit verwenden). Beispiel: aktuell ist es 17:34 dann wird in der von Zeit 17:45 eingetragen. Der vorgeschlagene Zeitrange kann so belassen werden. <br class="atl-forced-newline"/></li>
+	<li>Tab „Plan&quot; → wurde bereits in Schritt 2 des AS_201.001 spezifiziert. <br class="atl-forced-newline"/></li>
+	<li>Tab „Liste&quot; → ist bereits OK umgesetzt <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<em>Release 4.1 (Prio 2):</em> <br class="atl-forced-newline"/></li>
+	<li>Tab „Reservieren Ressourcenart &quot;Arbeitsplatz&quot; auf Minute genau - ansonsten immer auf 15 Minuten genau die nächste Stunde anzeigen <br class="atl-forced-newline"/></li>
+	<li>Tab „Kalender&quot; → behält grundsätzlich das aktuelle Datum. Wird im Kalenderpicker einen Tag gewählt und zwischen den Kalender gesprungen, dann bleibt das Datum bestehen. Der gewählte Tag sollte in den Wochenansichten markiert sein. <br class="atl-forced-newline"/></li>
+</ul>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975396/611980288.png">worddav2ed330df846c63f58c191643c5fdac42.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975396/611980287.png">worddavc21037d97e7d809160de6ae56f07def0.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975396/611980282.png">worddavf79da5482cac6254d2586bc414a657ee.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

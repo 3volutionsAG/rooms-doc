@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.032  Massenfreigabe &amp; Massenterminierung</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.032  Massenfreigabe &amp; Massenterminierung
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on May 09, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=ec4v2y4wad]{color:#00b050} html[data-color-mode=dark] [data-colorid=ec4v2y4wad]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+<h1 id="id-201.032Massenfreigabe&amp;Massenterminierung-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 201.032 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> ﻿<a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a> <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Zwei oder mehrere Buchungen k&ouml;nnen im gleichen Prozessschritt Freigegeben (sofortige Beendigung ohne Nachlaufzeit) oder Terminiert (sofortige Beendigung, Nachlaufzeit bleibt bestehen) werden <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>DarfMassenmutationenVornehmen</li>
+	<li>DarfReservationenTerminierenMitDatum</li>
+	<li>DarfReservationenFreigebenMitDatum</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Es bestehen Reservationen <br class="atl-forced-newline" /></li>
+	<li>Benutzer befindet sich im Plan, Kalender oder unter Listen <br class="atl-forced-newline" />
+<br class="atl-forced-newline" /> </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li><a href="#id-201.032Massenfreigabe&amp;Massenterminierung-1">Nutzer selektiert zwei oder mehr Reservationen</a></li>
+	<li><a href="#id-201.032Massenfreigabe&amp;Massenterminierung-2">Nutzer klickt Button &quot;Freigabe&ldquo; oder &quot;Terminieren&quot;</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> </p><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><br />
+<p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p> <br class="atl-forced-newline" /> <p /></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="ec4v2y4wad">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span><br class="atl-forced-newline" /></li>
+</ul>
+
+
+<h1 id="id-201.032Massenfreigabe&amp;Massenterminierung-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.032Massenfreigabe&amp;Massenterminierung-Schritt1-NutzerselektiertzweiodermehrReservationen1">Schritt 1 - Nutzer selektiert zwei oder mehr Reservationen<span class="confluence-anchor-link" id="id-201.032Massenfreigabe&amp;Massenterminierung-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<ul class="alternate">
+	<li><strong>Listenansicht</strong>: Benutzer hat bei zwei oder mehreren Reservationen die Checkbox in der Smartlist selektiert</li>
+	<li><strong>Planansicht</strong>: Benutzer selektiert mittels Mauslkick mehrere Hotspots. Wird  ein Hotspot selektiert, bleibt es eingeblendet; ausserdem wird die  Transparenz der Polygon-F&uuml;llung entfernt, d.h. der Polygon wird  hervorgehoben.</li>
+	<li><strong>Kalender:</strong> Benutzer hat bei zwei oder mehreren Reservataionen die Checkbox selektiert. Box erscheint beim Mouse-Over, sofern folgendes Recht vorhanden ist: DarfMassenmutationenVornehmen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Rechte m&uuml;ssen implementiert werden:</p>
+
+<ul>
+	<li>DarfMassenmutationenVornehmen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975307/611976946.png" data-image-src="attachments/611975307/611976946.png" data-unresolved-comment-count="0" data-linked-resource-id="611976946" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="kalendercheckbox.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975307" data-linked-resource-container-version="8" data-media-id="0c4dc266-1577-4f05-8965-05785a42a5fc" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.032Massenfreigabe&amp;Massenterminierung-Schritt2-NutzerklicktButton&quot;Freigabe“oder&quot;Terminieren&quot;2">Schritt 2 - Nutzer klickt Button &quot;Freigabe&ldquo; oder &quot;Terminieren&quot; <span class="confluence-anchor-link" id="id-201.032Massenfreigabe&amp;Massenterminierung-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+
+
+<ul>
+	<li>Button &bdquo;Freigabe&ldquo;</li>
+	<li>Button &quot;Terminieren&quot;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Freigabe</strong></p>
+
+<ul>
+	<li>erscheint nur mit dem Recht &quot;DarfMassenmutationenVornehmen&quot;</li>
+	<li>Button wird im Buttonbereich des Inhaltsbereich angezeigt (H&ouml;he &quot;auto-refresh&quot; Icon)</li>
+	<li>Benutzer ben&ouml;tigt auf einem beliebigen Standort&nbsp; &uuml;ber ein Freigaberecht (egal ob eigene/fremde/private/&ouml;ffentliche)</li>
+</ul>
+
+
+<p>Ablauf:</p>
+<ol>
+	<li>Klick auf Button pr&uuml;ft f&uuml;r jede selektierte  Reservation ob der  Eintrag noch nicht gelockt ist:
+	<ul>
+		<li>Trifft dies auf keinen Eintrag zu, wird im ActionPanel die Meldung   &quot;Sie k&ouml;nnen zur Zeit keine der selektierte(n) Reservation(en) freigeben&quot;; der Benutzer bleibt auf der aktuellen Ansicht,   die Checkboxen sind wieder deaktiviert.</li>
+		<li>Trifft dies auf genau einen Eintrag zu, wird der Einzel-Freigabeprozess gestartet (ohne   zus&auml;tzliche Meldung); wurden mehrere Eintr&auml;ge selektiert, wird vorg&auml;ngig  ein Popup mit der Meldung &quot;Sie geben 1 Reservation frei; die  andere(n)  X Reservation(en) k&ouml;nnen zur Zeit von Ihnen nicht freigegeben  werden.&quot;.</li>
+	</ul>
+	</li>
+	<li>Hat der Benutzer das Recht &quot;DarfReservationenFreigebenMitDatum&quot; erscheint ein Eingabedialog mit Datum/Zeitpicker und Button &quot;Freigeben&quot;
+	<ul>
+		<li>Standardwert: Datum = heute(), Zeit: = jetzt() - was einer sofortigen Freigabe entspricht</li>
+		<li>Nach Klick auf den Button &quot;Freigabe&quot; folgt Schritt 3</li>
+	</ul>
+	</li>
+	<li>Hat der Benutzer f&uuml;r mehr als eine Reservation die ben&ouml;tigten Rechte, wird e<strong>in Ja/Nein-Dialog angezeigt</strong>. Die Frage lautet:
+	<ul>
+		<li>Wenn alle selektierten Reservationen freigegeben werden k&ouml;nnen: &quot;Wollen Sie die selektierten X Reservationen wirklich freigeben?&quot;</li>
+		<li>Wenn nicht alle selektierten Reservationen freigegeben werden k&ouml;nnen: &quot;Sie k&ouml;nnen zur Zeit Y der selektierten  Reservationen  nicht freigeben. Wollen Sie die selektierten X  Reservationen wirklich freigeben?&quot;</li>
+	</ul>
+	</li>
+	<li>Klickt der Benutzer Nein, passiert nichts (Checkboxen bleiben  selektiert).</li>
+	<li>Klickt der Benutzer Ja, wird die Seite neu geladen  (Checkboxen wieder deselektiert)</li>
+	<li>die selektierten Reservationen werden  gelockt und ein neuer Aktionseintrag mit allen relevanten Angaben f&uuml;r die Freigaben wird erstellt</li>
+	<li>Ausgabe im ActionPanel: &quot;Die &Auml;nderungen  werden nun &uuml;bernommen. Sie werden wieder informiert, sobald der Vorgang  abgeschlossen ist.&quot;</li>
+	<li>Asynchrone Abarbeitung (durch den Service) des Auftrags</li>
+	<li>Ausgabe im Actionpanel: &quot;Die &Auml;nderungen von X  Eintr&auml;gen vom Typ Reservation sind abgeschlossen (a / b / c wurden  angepasst; d / e / f konnten nicht angepasst werden).&quot;</li>
+</ol>
+
+
+
+<p><strong>Terminieren</strong></p>
+
+<ul>
+	<li>erscheint nur mit dem Recht &quot;DarfMassenmutationenVornehmen&quot;</li>
+	<li>Button wird im Buttonbereich des Inhaltsbereich angezeigt (H&ouml;he &quot;auto-refresh&quot; Icon)</li>
+	<li>Benutzer ben&ouml;tigt auf einem beliebigen Standort&nbsp; &uuml;ber ein Terminierenrecht (egal ob eigene/fremde/private/&ouml;ffentliche)</li>
+</ul>
+
+
+<p>Ablauf:</p>
+<ol>
+	<li>Klick auf Button pr&uuml;ft f&uuml;r jede selektierte  Reservation ob der  Eintrag noch nicht gelockt ist:
+	<ul>
+		<li>Trifft dies auf keinen Eintrag zu, wird im ActionPanel die Meldung   &quot;Sie k&ouml;nnen zur Zeit keine der selektierte(n) Reservation(en) terminieren.&quot;; der Benutzer bleibt auf der aktuellen Ansicht,   die Checkboxen sind wieder deaktiviert.</li>
+		<li>Trifft dies auf genau einen Eintrag zu, wird der Einzel-Terminierungsprozess gestartet (ohne   zus&auml;tzliche Meldung); wurden mehrere Eintr&auml;ge selektiert, wird vorg&auml;ngig  ein Popup mit der Meldung &quot;Sie terminieren 1 Reservation; die  andere(n)  X Reservation(en) k&ouml;nnen zur Zeit von Ihnen nicht terminiert  werden.&quot;.</li>
+	</ul>
+	</li>
+	<li>Hat der Benutzer das Recht &quot;DarfReservationenTerminierenMitDatum&quot; erscheint ein Eingabedialog mit Datum/Zeitpicker und Button &quot;Terninieren&quot;
+	<ul>
+		<li>Standardwert: Datum = heute(), Zeit: = jetzt() - was einer sofortigen Freigabe entspricht</li>
+		<li>Nach Klick auf den Button &quot;Freigabe&quot; folgt Schritt 3</li>
+	</ul>
+	</li>
+	<li>Hat der Benutzer f&uuml;r mehr als eine Reservation die ben&ouml;tigten Rechte, wird e<strong>in Ja/Nein-Dialog angezeigt</strong>. Die Frage lautet:
+	<ul>
+		<li>Wenn alle selektierten Reservationen terminiert werden k&ouml;nnen: &quot;Wollen Sie die selektierten X Reservationen wirklich terminieren?&quot;</li>
+		<li>Wenn nicht alle selektierten Reservationen terminiert werden k&ouml;nnen: &quot;Sie k&ouml;nnen zur Zeit Y der selektierten  Reservationen  nicht terminieren. Wollen Sie die selektierten X  Reservationen wirklich terminieren?&quot;</li>
+	</ul>
+	</li>
+	<li>Klickt der Benutzer Nein, passiert nichts (Checkboxen bleiben  selektiert).</li>
+	<li>Klickt der Benutzer Ja, wird die Seite neu geladen  (Checkboxen wieder deselektiert)</li>
+	<li>die selektierten Reservationen werden  gelockt und ein neuer Aktionseintrag mit allen relevanten Angaben f&uuml;r die Terminierungen wird erstellt</li>
+	<li>Ausgabe im ActionPanel: &quot;Die &Auml;nderungen  werden nun &uuml;bernommen. Sie werden wieder informiert, sobald der Vorgang  abgeschlossen ist.&quot;</li>
+	<li>Asynchrone Abarbeitung (durch den Service) des Auftrags</li>
+	<li>Ausgabe im Actionpanel: &quot;Die &Auml;nderungen von X  Eintr&auml;gen vom Typ Reservation sind abgeschlossen (a / b / c wurden  angepasst; d / e / f konnten nicht angepasst werden).&quot;</li>
+</ol>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975307/611976945">kalendercheckbox</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975307/611976946.png">kalendercheckbox.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975307/611976947.png">Massenmutationen.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

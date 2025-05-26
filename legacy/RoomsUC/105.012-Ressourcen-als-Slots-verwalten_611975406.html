@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 105.012 Ressourcen als Slots verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 105.012 Ressourcen als Slots verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified by <span class='editor'> Former user</span> on Oct 03, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=u6lel4l9qe]{color:#00b050} html[data-color-mode=dark] [data-colorid=u6lel4l9qe]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-105.012RessourcenalsSlotsverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>105.012</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p>Tim B&auml;nziger</p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>1.0</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Die Konfiguration einer Ressource f&uuml;r Slot Buchungen. Slot Erstellung und Slot Buchung</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf Slot administrieren</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Terminiologie</strong></p></td><td class="confluenceTd"><ul><li>Slot-Ressource: Ressource, die nur &uuml;ber Slots gebucht werden kann.</li><li>Slot: Reservation im Zustand Slot definiert/publiziert</li><li>Slot-Buchung: Kopie eines Slots in einem &quot;normalen&quot; Workflow-Zustand.</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><ul><li>UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a> wurde ausgef&uuml;hrt und Checkbox &quot;nur Slot Buchungen zul&auml;ssig&quot; wurde selektiert</li><li>Slot Reservationen stehen nur im Kalender und Plan zur Verf&uuml;gung* Wird ein Slot gebucht, wird ein Clone erstellt und der Clone erh&auml;lt die verf&uuml;gbaren Stati gem&auml;ss Workflow (z.B. definitiv gebucht)</li><li>Werden zus&auml;tzliche Ressourcen mitgebucht, wird der Slot als auf diese Ressource &uuml;bertragen. W&auml;hrend dieser Zeit sind keine weiteren Reservationen m&ouml;glich, allerdings ist bei der zus&auml;tzlichen Ressource ein freies Buchen m&ouml;glich.</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li>Benutzer navigiert auf Kalender - Kalender zeigt Slot Buchbarkeit</li><li>Nutzer definiert Slot</li><li>Nutzer publiziert Slot</li><li>Benutzer bucht Slot</li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><p><a href="201.201-Schnellreservation_611975240.html" data-linked-resource-id="611975240" data-linked-resource-version="32" data-linked-resource-type="page">201.201 Schnellreservation</a><br class="atl-forced-newline" /> <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a><br class="atl-forced-newline" /> <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a><br class="atl-forced-newline" /> <a href="213.001-Reservationen-im-Kalender-suchen-und-buchen_611975479.html" data-linked-resource-id="611975479" data-linked-resource-version="48" data-linked-resource-type="page">213.001 Reservationen im Kalender suchen und buchen</a><br class="atl-forced-newline" /> <a href="214.001-Reservationen-im-Plan-suchen-und-buchen_611975249.html" data-linked-resource-id="611975249" data-linked-resource-version="31" data-linked-resource-type="page">214.001 Reservationen im Plan suchen und buchen</a></p></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="u6lel4l9qe">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><h1 id="id-105.012RessourcenalsSlotsverwalten-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.012RessourcenalsSlotsverwalten-Schritt1-BenutzernavigiertaufKalender-KalenderzeigtSlotBuchbarkeit">Schritt 1 - Benutzer navigiert auf Kalender - Kalender zeigt Slot Buchbarkeit</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Kalenderansicht</strong></p><ul><li>Slotansicht wird bei der Slotressource angezeigt</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Generell</strong></p><ul><li>UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a> wurde ausgef&uuml;hrt und Checkbox &quot;nur Slot Buchungen zul&auml;ssig&quot; wurde selektiert</li></ul><p><strong>Slotansicht Kalender</strong></p><ul><li>Der Kalender wird zweizeilig aufgebeaut.</li><li>Die erste Zeile ist f&uuml;r die Erstellung eines Slots und f&uuml;r Drag&amp;Drop</li><li>die zweite Zeile zeigt den effektiven Publikationszeitpunkt</li><li>Pro zeitgleichliegenden Slot wird eine zus&auml;tzliche Zeile hinzugef&uuml;gt</li></ul><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" width="200" loading="lazy" src="attachments/611975406/611976425.png?width=200" data-image-src="attachments/611975406/611976425.png" data-unresolved-comment-count="0" data-linked-resource-id="611976425" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="105.012 - Slot Kalender.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975406" data-linked-resource-container-version="10" data-media-id="c93e415f-7ccc-4c96-b068-7d4ae1840c0f" data-media-type="file" /></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.012RessourcenalsSlotsverwalten-Schritt2-BenutzerdefiniertSlot">Schritt 2 - Benutzer definiert Slot</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Action Popup</strong></p><ul><li>Controls analog Einzelschnellreservation: siehe UC <a href="201.201-Schnellreservation_611975240.html" data-linked-resource-id="611975240" data-linked-resource-version="32" data-linked-resource-type="page">201.201 Schnellreservation</a></li><li>Zahlenpicker: Zeilennummer Kalender</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Generell</strong></p><ul><li>Recht muss vorhanden sein: Darf Slot administrieren</li><li>Slot-Definitionen k&ouml;nnen nur bearbeitet oder gel&ouml;scht werden. Die Annulationsfunktion steht nicht zur Verf&uuml;gung.</li></ul><p><strong>Zeilennummer Kalender</strong></p><ul><li>Es k&ouml;nnen mehrere Slots zum gleichen Zeitpunkt definiert und publiziert werden.</li><li>Zeilennummer gibt die Reihenfolge im Kalender (von oben nach unten, wobei 0 die oberste ist) an</li><li>Standardwert: 0</li></ul><p><strong>Workflow-Regeln:</strong></p><ul><li>Wird eine neue Reservation auf einer Slot-Ressource erstellt, stehen nur die beiden Slot-Status zur Auswahl.</li><li>Wird eine Reservation auf einer Slot-Ressource editiert, die in einem Slot-Status ist, stehen nur die beiden Slot-Status zur Auswahl.</li></ul><p><strong>Reservieren</strong></p><ul><li>definiert Slot analog einer Einzelschnellreservation - siehe UC <a href="201.201-Schnellreservation_611975240.html" data-linked-resource-id="611975240" data-linked-resource-version="32" data-linked-resource-type="page">201.201 Schnellreservation</a></li></ul><p><strong>Detailreservation</strong></p><ul><li>Slot wird im Detail definiert und konfiguriert, gem&auml;ss UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> und <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a></li></ul><p><strong>Speichern Spezialfall Slot</strong></p><ul><li>Alle Einstellungen des Reservationsdetail stehen grunds&auml;tzlich zur Verf&uuml;gung, machen aber nicht grunds&auml;tzlich Sinn. So empfehlen wir beispielsweise das Teilnehmer Tab f&uuml;r alle Benutzergruppen auszublenden.</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" width="200" loading="lazy" src="attachments/611975406/611976422.png?width=200" data-image-src="attachments/611975406/611976422.png" data-unresolved-comment-count="0" data-linked-resource-id="611976422" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="105.012 - Slots definieren1.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975406" data-linked-resource-container-version="10" data-media-id="4d487aa5-a6c5-47b5-a353-36fdcfed9ef8" data-media-type="file" /></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.012RessourcenalsSlotsverwalten-Schritt3-BenutzerpubliziertSlot">Schritt 3 - Benutzer publiziert Slot</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich oder Actionpopup</strong></p><ul><li>Status Dropdown</li><li>&nbsp;</li></ul><ul><li>Button &bdquo;Finden&ldquo;</li><li>Button &bdquo;Zur&uuml;cksetzen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Feld 1</strong><br /> Beschreibung</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p>&lt;Bild&gt;</p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-105.012RessourcenalsSlotsverwalten-Schritt4-NutzerbuchtSlot">Schritt 4 - Nutzer bucht Slot</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><ul><li>Feld 1</li><li>Feld 2</li></ul><ul><li>Button &bdquo;Finden&ldquo;</li><li>Button &bdquo;Zur&uuml;cksetzen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Slot im Kalender buchen</strong></p><ul><li>Ein publizierter Slot hat die Eigenschaft, dass er im Kalender nicht mehr verschoben werden kann. Auch nicht nachdem ein Kunde eine Buchung gemacht hat.</li></ul><p><strong>Slot im Plan buchen</strong></p><ul><li>Ist nur ein Slot auf der Ressource (zum gew&auml;hlten Zeitpunkt) publiziert, verh&auml;lt sich das System wie bis anhin: Action Popup und Reservation (Schnellbuchung oder Detailreservation). Sind mehrere Slots auf der Ressource publiziert und verf&uuml;gbar, kann der Benutzer einen Slot im Actionpopup aus einer Dropdown selektieren und dann die Detail oder Schnellreservation ausf&uuml;hren.</li></ul><p><strong>Clone erstellen</strong></p><ol><li>Der Clone hat folgende Regeln und Eigenschaften<ul><li>Wird der Clone erstellt wird der angemeldete Benutzer (Kunde) als Organisator &uuml;bernommen</li><li>Datum/Zeit und Vorlaufzeiten sind nicht &auml;nderbar &ndash; aber sichtbar</li><li>Ressource/Standort sind nicht &auml;nderbar &ndash; aber sichtbar</li><li>Serieninformationen sind nicht sichtbar</li><li>Der urspr&uuml;ngliche Titel wird gel&ouml;scht und das Feld leer gelassen, so dass der Kunde einen Titel eingeben muss.</li><li>Der Status &auml;ndert auf einen Workflow Status gem&auml;ss Bereichtigungen des Benutzers &ndash; z.B. provisorisch Buchen</li><li>Ein Clone ist nie Teil einer Serie: ist der Slot Teil einer Serie, wir danach ein Slot gebucht, wird immer eine Einzelreservation gebucht (Nie eine Serie)</li></ul></li><li>Buchungsregeln*:*<ol><li>Sind &uuml;ber den gleichen Zeitraum zwei oder mehrere Slots auf einer Ressource verf&uuml;gbar und wird einer der Slots gebucht (wird ein Clone erstellt), sind alle Slots nicht mehr buchbar und werden nicht mehr angezeigt (Kalender, Plan, Reservieren)</li><li>Wird eine Slot Buchung (Clone) gel&ouml;scht oder annulliert, werden alle Slots dieses Zeitpunkts wieder sichtbar</li></ol></li></ol><p><strong>Sperrzeiten, Feiertage und Wochenende</strong></p><ul><li>Bei dem Erstellen einer Slot-Reservation m&uuml;ssen diese Regeln gepr&uuml;ft werden. Benutzer mit entsprechenden Berechtigungen k&ouml;nnen diese Regeln &uuml;bersteuern. (Gleich wie normale Reservationen.)</li><li>Bei der Buchung eines Slots d&uuml;rfen diese Regeln nicht gepr&uuml;ft werden. Ein publizierter Slot ist mit der entsprechenden Berechtigung immer buchbar.</li></ul><p><strong>Funktionen und Rechte beim Definieren und Buchen</strong></p><ul><li>Grundsatz: Es werden die Funktionen zur Verf&uuml;gung gestellt, die in dem Kontext sinnvoll sind und f&uuml;r die der Benutzer die n&ouml;tigen Funktionsrechte und das entsprechende Datenrecht hat.</li><li>Die Checkout-Funktionen stehen bei Slot-Reservationen nicht zur Verf&uuml;gung.</li><li>Slot-Buchung verf&uuml;gen &uuml;ber die Funktionen Bearbeiten, Annulieren und L&ouml;schen.</li></ul><p><strong>Untergeordnete Ressourcen</strong></p><ul><li>Fixes Equipment und virtuelle R&auml;ume k&ouml;nnen einer als Slot buchbaren Ressource nur zugeordnet werden wenn sie ebenfalls nur als Slot buchbar sind. Ressourcen die nur als Slot buchbar sind k&ouml;nnen normalen Ressourcen nicht zugeordnet werden.</li><li>Mobiles Equipent (d.h. Equipment das erst bei der Buchung durch den Benutzer hinzugef&uuml;gt wird) muss nicht als Slot buchbar sein. Es gelten die normalen Regeln f&uuml;r Reservationen.</li></ul><p><strong>Workflow Logik</strong></p><ul><li>Wird ein Slot gebucht, wird anhand des auf der Ressource hinterlegten Workflows der n&auml;chstm&ouml;gliche Status berechnet (bestehende Logik).</li><li>Wird eine Reservation auf einer Slot-Ressource editiert, die nicht in einem Slot-Status ist, wird anhand des auf der Ressource hinterlegten Workflows der n&auml;chstm&ouml;gliche Status berechnet (bestehende Logik).</li></ul><p><strong>Reservationsdeatil</strong></p><ul><li>Zeit&auml;nderungen auf Slot-Buchungen d&uuml;rfen nicht m&ouml;glich sein. Zus&auml;tzliche Felder (gem. Spez S. 8) im Reservationsdetail d&uuml;rfen nicht editiert werden (readonly setzen).</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p>&lt;Bild&gt;</p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Anhang</strong></p>
+</div></div><p><strong>Slot Prozess</strong> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="200" loading="lazy" src="attachments/611975406/611976420.png?height=200" data-image-src="attachments/611975406/611976420.png" data-unresolved-comment-count="0" data-linked-resource-id="611976420" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Slot Prozess.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975406" data-linked-resource-container-version="10" data-media-id="13d2b1cf-4c88-42a3-9d9c-848d69bc1645" data-media-type="file" /></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+&nbsp;
+</div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975406/611976425.png">105.012 - Slot Kalender.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975406/611976422.png">105.012 - Slots definieren1.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975406/611976420.png">Slot Prozess.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:40</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 109.002 Rechte verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 109.002 Rechte verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Jul 10, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="id-109.002Rechteverwalten-UseCaseÜberblickID109.002Owner﻿Rev-Number3.0Priorität1Ziel&amp;BeschreibungDieVerwaltungvonverschiedenenRollen,welchedemNutzungsverhaltenderverschiedenenZielgruppenentspricht.WodasjeweiligeRechtinwelcherFormimplementiertwerdenmuss,st"><style>[data-colorid=fmzb65cox4]{color:#00b050} html[data-color-mode=dark] [data-colorid=fmzb65cox4]{color:#4fff9f}</style><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+</div></div></h1><h1 id="id-109.002Rechteverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 109.002 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> ﻿<a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a><br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 3.0 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 1 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Die Verwaltung von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht. <br class="atl-forced-newline" />
+Wo das jeweilige Recht in welcher Form implementiert werden muss, steht im jeweiligen Use Case </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ben&ouml;tigte Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Rollen verwalten</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> die ehem. Datenrechte (neu standortabh&auml;ngige Rechte) sind archiviert und in UC&nbsp;<a href="109.001-Datenrechte-verwalten_611975326.html" data-linked-resource-id="611975326" data-linked-resource-version="7" data-linked-resource-type="page">109.001 Datenrechte verwalten</a> zu finden <br class="atl-forced-newline" />
+<br class="atl-forced-newline" />
+Regeln zu den wichtigsten Standortabh&auml;ngigen Rechten: <br class="atl-forced-newline" />
+<br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Standortabh&auml;ngien Reservations-Rechte</span> <br class="atl-forced-newline" /></p>
+<ul>
+	<li>Darf Standorthierarchie sehen (Reservieren) (wird ben&ouml;tigt, um durch den Standortbaum zu navigieren, um eine entsprechende Ressource zu reservieren)</li>
+	<li>Darf dev. Reservationen buchen</li>
+	<li>Darf prov. Reservationen buchen</li>
+	<li>Darf Reservationen lesen</li>
+	<li>Darf Reservationen nicht sehen <br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Standortabh&auml;ngie Standort Rechte</span> <br class="atl-forced-newline" /></li>
+	<li>Darf Standort Hierarchie sehen (Standortverwaltung) (wird ben&ouml;tigt, um durch den Standortbaum navigieren zu k&ouml;nnen)</li>
+	<li>Darf Standort bearbeiten (Benutzer welche in einer Benutzergruppe sind, welche auf einem Standort dieses Datenrecht haben, k&ouml;nnen den aktuellen Standort editieren oder l&ouml;schen, sowie neue Child-Nodes anlegen)</li>
+	<li>Darf Standort lesen (Benutzergruppen mit diesem Datenrecht auf einem Standort, sehen den aktuellen Standort inkl. Stammdaten und Berechtigungen)</li>
+	<li>Darf Standort nicht sehen <br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Standortabh&auml;ngige Ressourcen Rechte</span> <br class="atl-forced-newline" /></li>
+	<li>Darf Standorthierarchie sehen (Ressourcenverwaltung) (wird ben&ouml;tigt, um durch den Standortbaum, um eine entsprechende Ressource zu sehen  z.B. Ressourcenpicker)</li>
+	<li>Darf Ressource bearbeiten (Benutzer welche in einer Benutzergruppe sind, welche auf einem Layer und/oder Standort dieses Datenrecht haben, k&ouml;nnen auf der Ressource einen Standort hinzuf&uuml;gen oder editieren &ndash; oder auch Ressourcen l&ouml;schen)</li>
+	<li>Darf Ressource nicht sehen <br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Standortabh&auml;ngie Rechte f&uuml;r Dritte</span> <br class="atl-forced-newline" /></li>
+	<li>Darf Reservationen freigeben (fremde)</li>
+	<li>Darf Reservationen f&uuml;r Dritte buchen <br class="atl-forced-newline" /></li>
+	<li>Darf Reservationen f&uuml;r Dritte buchen (privat) <br class="atl-forced-newline" /></li>
+	<li>Darf Reservationen f&uuml;r Dritte sehen <br class="atl-forced-newline" /></li>
+	<li>Darf Reservationen f&uuml;r Dritte sehen (privat)</li>
+	<li>Darf Reservationen terminieren (fremde) <br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Diverse Standortabh&auml;ngien Rechte</span> <br class="atl-forced-newline" /></li>
+	<li>Darf Plan Lesen (nur mit diesem Recht ist der Zugriff auf den Plan &uuml;berhaupt m&ouml;glich. Achtung: um Reservationen durchzuf&uuml;hren sind noch weitere Rechte, wie &bdquo;darf def. Reservationen buchen&ldquo; notwendig)</li>
+	<li>Darf no-Show vergeben</li>
+	<li>Darf Dienstelistungen &quot;offene Menge&quot; nachbearbeiten <br class="atl-forced-newline" />
+<br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Weitere Bedingungen zu Standortabh&auml;ngigen Rechten</span> <br class="atl-forced-newline" /></li>
+	<li>Es werden generell nur die Standort-Trees angezeigt, bei welchen man auch die entsprechenden Standortabh&auml;ngien Rechte hat.</li>
+	<li>Wird kein standortabh&auml;ngien Reservations-Rechte vergeben, so heisst dies, dass man bei der Reservationssuche auch keine Reservation findet.</li>
+	<li>Beim Verschieben eines Standortes, m&uuml;ssen standortabh&auml;ngien Rechte auf dem Quell- und Ziel-Ort vorhanden sein &ndash; falls die entsprechenden standortabh&auml;ngien Rechte nicht vorhanden sind, sieht man den Quell- und/oder Zielort gar nicht.</li>
+	<li>Beim verschieben einer Ressource von einem Standort zum anderen, erbt die Ressource vom Destination-Standort. Rechte vom Source Tree werden entfernt. Rechte welche direkt auf der Ressource erstellt wurden bleiben in jedem Fall bestehen.</li>
+	<li>Es ist nicht m&ouml;glich bei einer Ressource welche Rechte erbt, die Vererbung zu unterbrechen, ohne das jeweilige vererbte Recht komplett zu entfernen.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li><a href="#id-109.002Rechteverwalten-1">Recht wird implementiert (DB Script &ndash; kein UI)</a></li>
+	<li><a href="#id-109.002Rechteverwalten-2">Nutzer navigiert unter &gt;Einstellungen &gt;Sicherheitsdaten f&uuml;r Personen &gt;Rollen</a></li>
+	<li><a href="#id-109.002Rechteverwalten-3">Nutzer gibt Suchkriterien ein (optional) und klickt auf Finden</a></li>
+	<li><a href="#id-109.002Rechteverwalten-4">Ein Suchresultat &uuml;ber alle verf&uuml;gbaren Rollen gem&auml;ss Suchkriterien wird angezeigt &ndash; eine oder mehrere Rollen k&ouml;nnen gel&ouml;scht werden.</a></li>
+	<li><a href="#id-109.002Rechteverwalten-5">Eine Rolle kann angezeigt werden (View Modus)</a></li>
+	<li><a href="#id-109.002Rechteverwalten-6">Eine Rolle kann editiert werden (Edit Modus)</a></li>
+	<li><a href="#id-109.002Rechteverwalten-7">Liste mit allen zugef&uuml;gten Rechte wird angezeigt &ndash; ein oder mehrere Rechte k&ouml;nnen gel&ouml;scht werden</a></li>
+	<li><a href="#id-109.002Rechteverwalten-8">Ein oder mehrere Rechte k&ouml;nnen der Rolle zugewiesen werden</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> </p><p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p><br />
+<p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p> <br class="atl-forced-newline" /> <p /></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="fmzb65cox4">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1 id="id-109.002Rechteverwalten-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt1-Funktionsrechtwirdimplementiert(DBScript–keinUI)1">Schritt 1 - Funktionsrecht wird implementiert (DB Script &ndash; kein UI)<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Kein UI</li>
+</ul>
+
+
+<p><strong>Felder in DB</strong></p>
+<ul>
+	<li>GUID</li>
+	<li>ID</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Funktionsrechte werden ausschliesslich per DB Script durch GARAIO implementiert.</li>
+	<li>Ein Funktionsrecht hat immer eine ID und eine sprechende Bezeichnung, welche dem Benutzer die Bedeutung des Rechts anzeigt. Zum Beispiel: DARF STAMMDATEN erfassen oder DARF STAMMDATEN LESEN</li>
+	<li>Das Funktionsrecht wird in deutscher Sprache in die Datenbank eingelesen.</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt2-Nutzernavigiertauf>Einstellungen>SicherheitsdatenfürPersonen>Rollen2">Schritt 2 - Nutzer navigiert auf &gt;Einstellungen &gt;Sicherheitsdaten f&uuml;r Personen &gt;Rollen<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong><br />
+Navigation &ouml;ffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Funktionsrecht muss implementiert werden:</strong></p>
+<ul>
+	<li>Darf Rollen verwalten</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978087.jpg" data-image-src="attachments/611975331/611978087.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978087" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="04d111e9-4681-4f84-9fc2-6df611a9b8e9" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt3-NutzergibtSuchkriterienein(optional)undklicktaufFinden2">Schritt 3 - Nutzer gibt Suchkriterien ein (optional) und klickt auf Finden<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button &bdquo;Anzeigen&ldquo;</li>
+	<li>Button &bdquo;Zur&uuml;cksetzen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Recht muss implementiert werden:</strong></p>
+<ul>
+	<li>Darf Rollen verwalten</li>
+</ul>
+
+
+<p><strong>Bezeichnung</strong></p>
+
+<p>Es wird in der Sprache des angmeldeten Benutzers gesucht</p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978086.jpg" data-image-src="attachments/611975331/611978086.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978086" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="c679c966-aa01-43c5-b4a1-57510c80b355" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt4-EinSuchresultatüberalleverfügbarenRollengemässSuchkriterienwirdangezeigt–eineodermehrereRollenkönnengelöschtwerden4">Schritt 4 - Ein Suchresultat &uuml;ber alle verf&uuml;gbaren Rollen gem&auml;ss Suchkriterien wird angezeigt &ndash; eine oder mehrere Rollen k&ouml;nnen gel&ouml;scht werden<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-4"><span class="confluence-anchor-link" id="4" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &bdquo;Rollenliste&ldquo;</strong></p>
+<ul>
+	<li>Checkbox f&uuml;r Mehrfachselektion</li>
+	<li>Bezeichnung</li>
+	<li>Edit Icon</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Entfernen Button</li>
+	<li>Neu Button</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong><br />
+Die Rollenbezeichnung wird in der selektierten Sprache des angemeldeten Benutzers angezeigt</p>
+
+<p><strong>Entfernen</strong></p>
+<ul>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>Sicherheitsabfrage erscheint</li>
+	<li>L&ouml;schweitergabe zu Benutzergruppe (Mapping wird aufgel&ouml;st) und zu Funktionsrecht (Mapping wird aufgel&ouml;st)</li>
+	<li>Best&auml;tigung im Actionpanel, inkl. Angabe der Anzahl gel&ouml;schter Rollen</li>
+</ul>
+
+
+<p><strong>Neu</strong><br />
+Siehe Schritt 6</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978084.jpg" data-image-src="attachments/611975331/611978084.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978084" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="2667ac7e-3d3e-4ee6-a0b6-0da25cfe86b3" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt5-EineRollekannangezeigtwerden(ViewModus)5">Schritt 5 - Eine Rolle kann angezeigt werden (View Modus)<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-5"><span class="confluence-anchor-link" id="5" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Bezeichnung</li>
+	<li>Liste mit allen der Rolle zugewiesenen Funktionsrechte
+	<ul>
+		<li>Bezeichnung</li>
+		<li>Typ (global oder standortabh&auml;ngig)</li>
+		<li>G&uuml;ltigkeit</li>
+		<li>Dauer</li>
+		<li>Einheit</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Bearbeiten</li>
+	<li>Zur&uuml;ck</li>
+	<li>Drucken</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>View Ansicht wird gem&auml;ss der Benutzersprache des angemeldeten Benutzers geladen</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978077.jpg" data-image-src="attachments/611975331/611978077.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978077" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 5.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="3adab326-91b3-47ac-ac2c-0864ba9a0944" data-media-type="file" /></span></p>
+
+<p>(in Abbildung fehlt der Typ)</p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt6-EineRollekanneditiertwerden(EditModus)6">Schritt 6 - Eine Rolle kann editiert werden (Edit Modus)<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-6"><span class="confluence-anchor-link" id="6" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &ndash; Tab &bdquo;Stammdaten&ldquo;</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Bezeichnung (MUSS Feld)</span></li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button &bdquo;Speichern&ldquo;</li>
+	<li>Button &bdquo;Abbrechen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Bezeichnung wird in der Benutzersprache des angemeldeten Benutzers und kann &uuml;bersetzt werden.</p>
+
+<p>Button &bdquo;Abbrechen&ldquo; geht zur&uuml;ck aufs Suchresultat.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978076.jpg" data-image-src="attachments/611975331/611978076.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978076" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 6.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="ceeb84a0-9f7b-4dfd-918a-7d1cf4868049" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt7–ListemitallenzugefügtenRechtewirdangezeigt–einodermehrereRechtekönnengelöschtwerden7">Schritt 7 &ndash; Liste mit allen zugef&uuml;gten Rechte wird angezeigt &ndash; ein oder mehrere Rechte k&ouml;nnen gel&ouml;scht werden<span class="confluence-anchor-link" id="id-109.002Rechteverwalten-7"><span class="confluence-anchor-link" id="7" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlist</strong></p>
+<ul>
+	<li>Checkbox zur Mehrfach-Selektion</li>
+	<li>Bezeichnung</li>
+	<li>Typ (global oder standortabh&auml;ngig)</li>
+	<li>G&uuml;ltigkeit</li>
+	<li>Dauer</li>
+	<li>Einheit</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button &bdquo;Hinzuf&uuml;gen&ldquo;</li>
+	<li>Button &bdquo;Entfernen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong><br />
+Das Feld Bezeichnung wird in der angegebenen Benutzersprache ausgegeben.</p>
+
+<p><strong>Entfernen</strong></p>
+<ul>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>Warnhinweis erscheint</li>
+	<li>Funktionsrechte werden von der Liste entfernt</li>
+	<li>Best&auml;tigungsmeldung im Actionpanel, inkl. Angabe der Menge der entfernten Funktionsrechte</li>
+</ul>
+
+
+<p><strong>Hinzuf&uuml;gen</strong><br />
+Modales Popup &ouml;ffnet sich und zeigt alle noch verf&uuml;gbaren (nicht zugewiesenen) Funktionsrechte siehe Schritt 8</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611978075.jpg" data-image-src="attachments/611975331/611978075.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978075" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 7.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="ce37ca7d-39aa-42ab-838a-f50200e24a68" data-media-type="file" /></span></p>
+
+<p>In Abbildung sind die Spalten Typ, G&uuml;ltigkeit, Dauer und Einheit ausgeblendet</p>
+
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.002Rechteverwalten-Schritt8–EinodermehrereRechtekönnenderRollezugewiesenwerden{anchor:8)">Schritt 8 &ndash; Ein oder mehrere Rechte k&ouml;nnen der Rolle zugewiesen werden{anchor:8)</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlist</strong></p>
+<ul>
+	<li>Checkbox zur Selektion</li>
+	<li>Bezeichnung</li>
+	<li>Typ</li>
+</ul>
+
+
+<p><strong>Genereller Bereich (Reservations Eingrenzung)</strong></p>
+
+
+
+<ul>
+	<li>Dropdown: NULL (leer),ab, bis</li>
+	<li>Textfeld f&uuml;r Ganzzahl</li>
+	<li>Dropdown: Tage, Stunden</li>
+</ul>
+
+
+
+
+<p><strong>Button Bereich</strong></p>
+
+
+<ul>
+	<li>Button &bdquo;Funktion hinzuf&uuml;gen&ldquo;</li>
+	<li>Button &bdquo;Entfernen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Bezeichnung</strong><br />
+Das Feld Bezeichnung wird in der angegebenen Benutzersprache ausgegeben.</p>
+
+<p><strong>Spezialfall &bdquo;Reservation Eingrenzung&ldquo;</strong></p>
+<ul>
+	<li>Beim Hinzuf&uuml;gen des Reservationsrechts (siehe Bedinungen im UC Kopf) &bdquo;Darf def. Reservation buchen oder &bdquo;Darf prov. Reservation buchen&ldquo; werden die drei Felder (Dropdown, Text, Dropdown) eingeblendet</li>
+	<li>Dropdown 1 hat folgende Werte
+	<ul>
+		<li>NULL (leer) = Zeitfunktion deaktiviert</li>
+		<li>ab=Recht gilt erst ab xxx (Tagen/Stunden)</li>
+		<li>bis=Recht gilt nur bis xxx (Tagen/Stunden)</li>
+	</ul>
+	</li>
+	<li>Textfeld (leer oder numerische Ganzzahl) &rarr; gibt an wieviele Tage oder Stunden die Eingrenzung des Rechts G&uuml;ltigkeit hat</li>
+	<li>Dropdown (Tage / Stunden)
+	<ul>
+		<li>Tage= Recht gilt ab Anzahl Tage, wobei ein Tag um 00:00 Startet. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00; Eingabe: ab 1 Tage, hat zur Folge das der Raum erst am 6.3.2010 ab 00:01 gebucht werden kann</li>
+		<li>Stunden= Recht gilt ab sofort + Anzahl Stunden. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00, Eingabe: ab 24 Stunden, hat zur Folge das der Raum erst am 6.3.2010 ab 14:01 gebucht werden kann</li>
+	</ul>
+	</li>
+	<li>Standardm&auml;ssig sind alle Felder leer</li>
+	<li>Weitere Auswirkungen auf den Reservationsprozess:
+	<ul>
+		<li>Ist ein Benutzer in mehreren Gruppen, z&auml;hlt kumulativ das gr&ouml;sstm&ouml;gliche Recht</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Funktion Hinzuf&uuml;gen</strong></p>
+<ul>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>Popup schliesst sich</li>
+	<li>Smartlist wird aktualisiert</li>
+	<li>Actionpanel best&auml;tigt das erfolgreiche Hinzuf&uuml;gen, inkl. Angabe der Menge der hinzugef&uuml;gten Funktionsrechte</li>
+</ul>
+
+
+<p /><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611980801.png" data-image-src="attachments/611975331/611980801.png" data-unresolved-comment-count="0" data-linked-resource-id="611980801" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.002 Recht hinzufügen.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="4a04277d-4cc5-4973-87a4-066543c40b4c" data-media-type="file" /></span><br />
+standortabh&auml;ngiges Recht hinzuf&uuml;gen<p />
+
+<p>Konzept der Berechtigungen</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975331/611980804.png" data-image-src="attachments/611975331/611980804.png" data-unresolved-comment-count="0" data-linked-resource-id="611980804" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.002 Recht übersicht.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975331" data-linked-resource-container-version="26" data-media-id="6e2dea27-c5e3-46ef-a366-5ca9e7090931" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978087.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978086.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978084.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978077.jpg">Schritt 5.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978076.jpg">Schritt 6.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978075.jpg">Schritt 7.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611978074.jpg">Schritt 8.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611980801.png">109.002 Recht hinzufügen.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975331/611980804.png">109.002 Recht übersicht.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:40</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

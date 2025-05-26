@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knowledge Base (Deutsch) : Buchungsticker</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Knowledge Base (Deutsch)</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Knowledgebase_1178402824.html">Knowledgebase</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="626458691.html">GARAIO ROOMS Knowledge Base (Deutsch)</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Benutzerdokumentation_626458669.html">Benutzerdokumentation</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Applikationsaufbau_626458649.html">Applikationsaufbau</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Knowledge Base (Deutsch) : Buchungsticker
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Jul 31, 2013
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="panel" style="border-width: 1px;"><div class="panelContent">
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>Artikel Nummer</strong> <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> <img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Gültig ab Release</strong> </p></td>
+<td class="confluenceTd"><p> 4.2 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Verwandte Seiten</strong> </p></td>
+<td class="confluenceTd"><p> <img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+
+
+
+
+
+<h1 id="Buchungsticker-title"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></h1>
+
+<h2 id="Buchungsticker-Einleitung">Einleitung</h2>
+
+<p>Ein Buchungsticker wird als zusätzlicher Container zur Verfügung gestellt, der je nach Layout irgendwo im Kopfbereich der Applikation platziert werden kann. Der Buchungsticker erlaubt einige wichtige Verwaltungsfunktionen für die laufenden Buchungen des angemeldeten Benutzers.</p>
+
+<h2 id="Buchungsticker-Vorbedingungen">Vorbedingungen</h2>
+
+<p>Aktuell laufende Buchung des angemeldeten Benutzer vorhanden.</p>
+
+<h2 id="Buchungsticker-Vorgehen/Beschrieb">Vorgehen / Beschrieb</h2>
+
+<p>Der Buchungsticker kann pro Mandant global ausgeschaltet werden, indem keine Platzierung im Kopfbereich erfolgt. Wird er platziert, ist er für alle Benutzer auf allen Ansichten verfügbar.</p>
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;">
+<ul>
+	<li>Weist der aktuelle Benutzer keine laufende Buchungen auf, entspricht die Darstellung derjenigen eines nicht selektierten Subpanels und enthält einen Standard-Text. Es ist keine Interaktion möglich.</li>
+	<li>Der Buchungsticker enthält beim Laden einer Seite die aktuellen Buchungsdaten. Zusätzlich führt der Ticker automatisch einen regelmässigen Refresh zusammen mit dem <a href="Action-Message_626458780.html" data-linked-resource-id="626458780" data-linked-resource-version="6" data-linked-resource-type="page">Action Message</a> durch.</li>
+	<li>Der Buchungsticker zeigt nur Buchunen mit Status &quot;definitv gebucht&quot; an.</li>
+</ul>
+</table>
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Weist der aktuelle Benutzer laufende Reservationen auf, entspricht die Darstellung derjenigen eines selektierten Sub-Panels. Die Reservationen werden nach folgenden Kriterien in der angegebenen Reihenfolge sortiert:</p>
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;">
+<ul>
+	<li>Ressourcentyp: Deskshare / Raum / Parkplatz / Fahrzeug / Equipment / Person</li>
+	<li>Reservationsdauer: kürzer / länger</li>
+	<li>Reservationsbeginn: früher / später</li>
+	<li>Reservations-ID: kleiner / grösser</li>
+</ul>
+</table>
+<p><br class="atl-forced-newline"/>
+Der Ressourcenname der ersten Buchung gemäss genannter Sortierung wird direkt im Buchungsticker angezeigt. Hinter dem Namen werden einige Icons für Aktionen mit dieser Buchungen aufgelistet. Mit einem Klick auf den Ticker irgendwo neben den Icons werden die restlichen laufenden Buchungen bzw. die Ressourcennamen inkl. Icons eingeblendet. (Es wird bewusst auf Mouse-Over Funktionalität verzichtet, da sich diese bisher immer negativ auf die Usability ausgewirkt hat.) Ein Klick auf eines der Icons führt die entsprechende Aktion aus und schliesst die Einblendung (Popup). Jeder Klick ausserhalb des Popups schliesst das Popup ebenfalls.</p>
+
+<p>Folgende Icons werden angezeigt:</p>
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;">
+<ul>
+	<li>View: Absprung in den Ansichtsmodus der Buchung.</li>
+	<li>Edit (wenn es sich um keine zugeordnete Ressource handelt): Absprung in den Edit-Modus der Reservation.</li>
+	<li>Freigaben bearbeiten (wenn es sich um eine zugeordnete Ressource handelt): Öffnen des Bearbeitungsfensters für die Freigaben (siehe vorangehendes Kapitel).</li>
+	<li>Checkout (wenn das Funktionsrecht vorhanden ist): Sofortiges Beenden der Buchung (exkl. Nachlaufzeit).</li>
+	<li>Freigabe (wenn das Funktionsrecht vorhanden ist): Sofortiges Beenden der Buchung (inkl. Nachlaufzeit).</li>
+</ul>
+</table>
+<p><br class="atl-forced-newline"/>
+Die Breite des Reservationstickers richtet sich nach dem breitesten angezeigten Text (Ressourcennamen) und ist daher flexibel.
+<br class="atl-forced-newline"/></p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/626458642/626458890.png" data-image-src="attachments/626458642/626458890.png" data-unresolved-comment-count="0" data-linked-resource-id="626458890" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Buchungsticker_1.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="626458642" data-linked-resource-container-version="6" data-media-id="0c2dd886-e120-44c1-981b-2ef332862d46" data-media-type="file"></span> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/626458642/626458921.png" data-image-src="attachments/626458642/626458921.png" data-unresolved-comment-count="0" data-linked-resource-id="626458921" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Buchungsticker_2.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="626458642" data-linked-resource-container-version="6" data-media-id="669c5acc-2972-4129-af1c-c83014d7096e" data-media-type="file"></span></p>
+
+<h2 id="Buchungsticker-BenötigteRechte">Benötigte Rechte</h2>
+
+<p>Keine</p>
+
+<h2 id="Buchungsticker-IhreMeinungistunswichtig">Ihre Meinung ist uns wichtig</h2>
+<div class="confluence-information-macro confluence-information-macro-tip"><p class="title">Bewerten &amp; Kommentieren</p><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Helfen Sie uns mit die Qualität der Knowledge Base zu verbessern.<br/>
+Hat Ihnen den Artikel gefallen, dann bewerten Sie diesen mit den entsprechenden Sternen.<br/>
+Ihre Meinung und Kommentare erfassen Sie über den Link <strong>Kommentar hinzufügen</strong></p></div></div>
+<p><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/626458642/626458921.png">Buchungsticker_2.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/626458642/626458890.png">Buchungsticker_1.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:17</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

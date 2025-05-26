@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.019 Reservation stornieren (annullieren)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.019 Reservation stornieren (annullieren)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on May 30, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><h1 id="id-201.019Reservationstornieren(annullieren)-UseCaseÜberblick">Use Case Überblick</h1><p> </p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p><span class="inline-comment-marker" data-ref="5f3bedc7-483b-4a11-bca9-831fd1e59bd2">201.019</span></p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p>Tim Bänziger</p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>2.1</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorität</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Eine Reservation kann aus der Weboberfläche oder Outlook Plugin storniert werden. <br class="atl-forced-newline"/> Eine Reservation wird auf &quot;no-Show&quot; gesetzt</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf eigene annullieren</li><li>Darf Reservationen und Serien annullieren (fremde)</li><li>Darf Reservationen in Vergangenheit buchen</li><li>Darf Reservationen als No Show kennzeichnen</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><p>Reservationen sind vorhanden (in Listen, Plan oder Kalender) <br class="atl-forced-newline"/> Benutzer hat vorgängig</p><ul><li>Reservation im Viewmode geöffnet</li><li>Actionpopup geöffnet</li><li>Reservationsticker geöffnet</li><li>Listenansicht selektiert</li><li>ViewMode im Outlook selektiert</li></ul><p> </p></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li><a href="#id-201.019Reservationstornieren(annullieren)-1">Reservation wird storniert (annulliert)</a></li><li><a href="#id-201.019Reservationstornieren(annullieren)-2">Reservation wird &quot;no show&quot; gesetzt</a></li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline"/> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li></ul><h1 id="id-201.019Reservationstornieren(annullieren)-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.019Reservationstornieren(annullieren)-1Schritt1-Reservationwirdstorniert"><span class="confluence-anchor-link" id="id-201.019Reservationstornieren(annullieren)-1"><span class="confluence-anchor-link" id="1"></span></span>Schritt 1 - Reservation wird storniert</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>View, Listenbereich oder Action Popup</strong></p><ul><li>Button: „Annullieren“</li></ul><p> </p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Generell</strong></p><ul><li>Rechte<ul><li>Bei eigenen Reservationen (ich bin Organisator, Ersteller oder Verantwortlicher) können immer storniert (annulliert werden)</li><li>Bei Reservationen Dritter (ich bin weder Organisator, Ersteller oder Verantworlicher) muss das standortabhängige Recht: Darf Reservationen und Serien annullieren (fremde)</li></ul></li><li>Der Annullierungsbutton erscheint bei laufenden und/oder zukünftigen Reservationen</li><li>Für Reservationen in Vergangenheit ist zusätzlich das Recht &quot;Darf Reservationen in Vergangenheit buchen&quot; notwendig</li></ul><p><strong>Klick auf Button</strong></p><ul><li>Popup mit Warnhinweis: Wollen Sie die Reservation wirklich annullieren? Die Annullierungskosten betragen CHF x.xx (die Berechnung der Annullationskosten findet sich in UC <a href="105.004-Tarife-verwalten_611975355.html" data-linked-resource-id="611975355" data-linked-resource-version="50" data-linked-resource-type="page">105.004 Tarife verwalten</a>)<ul><li>Verhalten bei einer aktiven Buchung: Es fallen nur die Reservations-Kosten gemäss Kostenmodell an.</li><li>Verhalten bei einer zukünftigen Buchung: Es fallen die Annullations-Kosten gemäss Kostenmodell an.</li><li><strong>Checkbox &quot;Annullationsmails versenden&quot;</strong><ul><li>Standardmässig selektiert</li><li>Nicht selektiert unterdrückt den Versand einer Notifikation an Ersteller und Organisator/Verantwortlicher<strong><br/></strong></li></ul></li></ul></li><li>bei Klick auf „Annullieren“, wird die aktive (laufende) oder zukünftige Buchung auf den Zeitpunkt, an welchem der Button betätigt wurde, storniert (annulliert)</li><li>In den Kalender-Ansichten ist die Buchung nicht mehr sichtbar.</li><li>In der Listenansicht ist die Buchung nur noch sichtbar, sofern der entsprechende Status &quot;annulliert&quot; gewählt wurde</li><li>Nach der Annullation, wird die Buchung immer noch in den Reports (Auswertungen &amp; Statistiken) geführt.</li><li>Notifikation (ReservationAnnullierung) wird an Ersteller, Organisator und Verantwortlichen verschickt (siehe <a class="unresolved" href="#">Notifikationsmatrix</a>)</li><li>Notifikation (BestellungDelete) wird an Dienstleister verschickt (siehe <a class="unresolved" href="#">Notifikationsmatrix</a> und UC <a href="106.002-Angebotszonen-verwalten_611975398.html" data-linked-resource-id="611975398" data-linked-resource-version="27" data-linked-resource-type="page">106.002 Angebotszonen verwalten)</a></li><li>Notifikation (EquipmentNeuOrUpdate) wird an Dienstleister verschickt (siehe <a class="unresolved" href="#">Notifikationsmatrix</a> und UC <a href="106.002-Angebotszonen-verwalten_611975398.html" data-linked-resource-id="611975398" data-linked-resource-version="27" data-linked-resource-type="page">106.002 Angebotszonen verwalten)</a></li><li>die Synchronisation wird &quot;abgehängt&quot; - die Reservation wird nie wieder synchronisiert</li></ul><ul><li>Serieninformation<br/> Vergangenheit und laufende Buchung bleibt bestehen. Künftige Buchungen werden gelöscht. Annullationsmodell muss „greifen“. Bestätigungsmeldung an Organisator/Ersteller (1 E-Mail für die ganze Serie)</li></ul><p><strong>Stornierte Buchungen bearbeiten</strong></p><ul><li>Grundsätzlich können stornierte Buchungen bearbeitet werden (z.b. um nachträglich Annullationskosten zu mutieren)</li><li>Nicht möglich: Änderung des Status (Reservation bleibt annulliert)</li><li>Nach Änderung:<ul><li>es werden KEINE Notifikationen verschickt</li><li>es wird keine Synchronisation vorgenommen</li></ul></li></ul><hr/><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" loading="lazy" src="attachments/611975419/611975701.png" data-image-src="attachments/611975419/611975701.png" data-unresolved-comment-count="0" data-linked-resource-id="611975701" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Stornierung.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975419" data-linked-resource-container-version="18" data-media-id="88cff7ba-22f1-4f0f-8037-df7c0c6574a0" data-media-type="file"></span></p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.019Reservationstornieren(annullieren)-2Schritt2-Reservationwird&quot;no-show&quot;gesetzt"><span class="confluence-anchor-link" id="id-201.019Reservationstornieren(annullieren)-2"><span class="confluence-anchor-link" id="2"></span></span>Schritt 2 - Reservation wird &quot;no-show&quot; gesetzt</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><ul><li>Button &quot;no-show&quot; auf Listen, Actionpopup und Reservationsdetail (View Mode)</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Rechte</strong></p><ul><li>Button wird nur sichtbar mit Recht: Darf Reservationen als No Show kennzeichnen</li></ul><p><strong>Klick auf Button</strong></p><ol><li>Reservation wird annulliert (gemäss Schritt 1)</li><li>Zusätzlicher Text im Warnhinweis: Wollen Sie die Reservation wirklich als No Show kennzeichnen? Die Reservation wird unwiderruflich annulliert, und allfällige Annullationskosten werden angerechnet</li><li>Reservation wird zusätzlich als &quot;no-Show&quot; gekenzeichnet<ol><li>&quot;No-Show&quot; sind in der Listenansicht über den Status Filter &quot;No-Show&quot; auffindbar (siehe auch UC <a href="220.001-Reservationen-in-Liste-anzeigen_611975230.html" data-linked-resource-id="611975230" data-linked-resource-version="45" data-linked-resource-type="page">220.001 Reservationen in Liste anzeigen</a>)</li></ol></li></ol><p><strong>Stornierte Buchungen bearbeiten</strong></p><ul><li>Grundsätzlich können stornierte Buchungen bearbeitet werden (z.b. um nachträglich Annullationskosten zu mutieren)</li><li>Nicht möglich: Änderung des Status (Reservation bleibt annulliert)</li><li>Nach Änderung:<ul><li>es werden KEINE Notifikationen verschickt</li><li>es wird keine Synchronisation vorgenommen</li></ul></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975419/611977178.png" data-image-src="attachments/611975419/611977178.png" data-unresolved-comment-count="0" data-linked-resource-id="611977178" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="default.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975419" data-linked-resource-container-version="18" data-media-id="bcc1c674-11de-47ec-90a2-d7f06a55bbca" data-media-type="file"></span></p><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975419/611977178.png">default.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975419/611975701.png">Stornierung.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

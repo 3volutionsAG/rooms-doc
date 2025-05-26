@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 107.001 Notifikationen verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 107.001 Notifikationen verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Oct 13, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=r1xbhcj420]{color:#00b050} html[data-color-mode=dark] [data-colorid=r1xbhcj420]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-107.001Notifikationenverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>107.001</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>2.1</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Die Erfassung und Verwaltung von Notifikationsvorlagen f&uuml;r die verschiedenen Anwendungszwecken. <br class="atl-forced-newline" /> Die Aktivierung der Notifikationsvorlagen an den richtigen Stellen (Standorte oder Benutzergruppen) <br class="atl-forced-newline" /> Das Versenden der Notifikation</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf Notifikationen verwalten</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><p>Folgende Punkte werden in anderen Use Cases beschrieben</p><ul><li>Benutzer kann Reservationsnotifikationen unterdr&uuml;cken (<a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> )</li><li>Benutzer reserviert Dienstleistungen (<a href="611975251.html" data-linked-resource-id="611975251" data-linked-resource-version="42" data-linked-resource-type="page">201.003 Angebote hinzuf&uuml;gen, entfernen</a> und&nbsp; UC <a href="211.001-Anlass-erstellen_611975475.html" data-linked-resource-id="611975475" data-linked-resource-version="60" data-linked-resource-type="page">211.001 Anlass erstellen</a> )</li><li>Notifikation unterdr&uuml;cken bei Synchronisationsfehler</li><li>&Auml;nderungen auf einer Ressource (UC <a href="107.003-Vorkonfiguriertes-Mail-versenden_611975470.html" data-linked-resource-id="611975470" data-linked-resource-version="8" data-linked-resource-type="page">107.003 Vorkonfiguriertes Mail versenden</a> )</li><li>Details sind dem Notifikationsmatrix zu entnehmen <a href="000.006-Notifikationsmatrix_611975484.html" data-linked-resource-id="611975484" data-linked-resource-version="4" data-linked-resource-type="page">000.006 Notifikationsmatrix</a></li><li><strong>Folgende UC m&uuml;ssen vorg&auml;ngig ausgef&uuml;hrt worden sein</strong><br /><ul><li><a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a> (Schritte 1, 2 und 4)</li><li><a href="109.003-Benutzergruppen-verwalten_611975236.html" data-linked-resource-id="611975236" data-linked-resource-version="29" data-linked-resource-type="page">109.003 Benutzergruppen verwalten</a> (Schritte 1, 2, 3 und 5)</li></ul></li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li><a href="#id-107.001Notifikationenverwalten-1">Navigation auf Tab &quot;Notifikationen&quot;</a></li><li><a href="#id-107.001Notifikationenverwalten-2">Liste aller verf&uuml;gbaren Notifikationen wird angezeigt - eine oder mehrere Notifikationen k&ouml;nnen gel&ouml;scht werden</a></li><li><a href="#id-107.001Notifikationenverwalten-3">Klick auf Hinzuf&uuml;gen (oder Edit Icon) kann eine Notifikation neu erstellt, bzw. bearbeitet werden&nbsp;</a></li><li><a href="#id-107.001Notifikationenverwalten-4">Notifikationen werden versendet</a></li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><p><a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a><br class="atl-forced-newline" /> <a href="000.006-Notifikationsmatrix_611975484.html" data-linked-resource-id="611975484" data-linked-resource-version="4" data-linked-resource-type="page">000.006 Notifikationsmatrix</a> <br class="atl-forced-newline" /> <a href="000.007-Notifikationsplatzhalter_611975492.html" data-linked-resource-id="611975492" data-linked-resource-version="6" data-linked-resource-type="page">000.007 Notifikationsplatzhalter</a> <br class="atl-forced-newline" /> <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a> <br class="atl-forced-newline" /> <a href="109.003-Benutzergruppen-verwalten_611975236.html" data-linked-resource-id="611975236" data-linked-resource-version="29" data-linked-resource-type="page">109.003 Benutzergruppen verwalten</a></p></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="r1xbhcj420">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><p>&nbsp;</p><h1 id="id-107.001Notifikationenverwalten-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-107.001Notifikationenverwalten-1Schritt1-NavigationaufTab&quot;Notifikationen&quot;"><span class="confluence-anchor-link" id="id-107.001Notifikationenverwalten-1"><span class="confluence-anchor-link" id="1" /></span>Schritt 1 - Navigation auf Tab &quot;Notifikationen&quot;</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><ul><li>bleibt bestehen gem&auml;ss &uuml;bergeordneten UC</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p>Rechte muss vorhanden sein:</p><ul><li>Darf Notifikationen verwalten</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975472/611978345.jpg" data-image-src="attachments/611975472/611978345.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978345" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 1 Abbildung 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975472" data-linked-resource-container-version="23" data-media-id="a3f4cb7f-22d2-4500-b01f-8c935edc6f9b" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-107.001Notifikationenverwalten-2Schritt2-ListeallerverfügbarenNotifikationenwirdangezeigt-eineodermehrereNotifikationenkönnengelöschtwerden"><span class="confluence-anchor-link" id="id-107.001Notifikationenverwalten-2"><span class="confluence-anchor-link" id="2" /></span>Schritt 2 - Liste aller verf&uuml;gbaren Notifikationen wird angezeigt - eine oder mehrere Notifikationen k&ouml;nnen gel&ouml;scht werden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Smartlist</strong></p><ul><li>Checkbox zur Massenselektion</li><li>Notifikationstyp</li><li>Edit Icon</li><li>Titel (in der Sprache des angemeldeten Benutzers)</li></ul><p><strong>Button Bereich</strong></p><ul><li>Button &bdquo;Hinzuf&uuml;gen&ldquo;*</li><li>Button &bdquo;Entfernen&ldquo;*</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Hinzuf&uuml;gen/Edit Icon</strong></p><ul><li>&ouml;ffnet modeles Popup (siehe Schritt 3)</li></ul><p><strong>Entfernen</strong></p><ul><li>Es kann/k&ouml;nnen ein oder mehrere Notifikationen selektiert werden</li><li>Sicherheitsabfrage</li><li>L&ouml;scht die entsprechende( n ) Notifikation(en)</li><li>Best&auml;tigungsmeldung inkl. Der Anzahl der Entfernungen im Actionpanel</li><li>Smartlist wird neu geladen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p>Notifikationen auf Standort</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975472/611980841.png" data-image-src="attachments/611975472/611980841.png" data-unresolved-comment-count="0" data-linked-resource-id="611980841" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="107.001 Noification local.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975472" data-linked-resource-container-version="23" data-media-id="b022ad94-49ff-4399-a98f-42f3d4d9e8b0" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-107.001Notifikationenverwalten-3Schritt3-KlickaufHinzufügen(oderEditIcon)kanneineNotifikationneuerstellt,bzw.bearbeitetwerden"><span class="confluence-anchor-link" id="id-107.001Notifikationenverwalten-3"><span class="confluence-anchor-link" id="3" /></span>Schritt 3 - Klick auf Hinzuf&uuml;gen (oder Edit Icon) kann eine Notifikation neu erstellt, bzw. bearbeitet werden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Modales Popup</strong></p><ul><li><span style="color: red;">Dropdown: Notifkationstyp (siehe</span> <span style="color: red;"><a class="unresolved" href="#">Notifikationsmatrix</a></span><span style="color: red;">)</span></li><li>Feld: Benachrichtigung im CC an</li><li>Dropdown: Sprache</li><li><span style="color: red;">Feld: Titel (Subject)</span></li><li><span class="legacy-color-text-red2">Editor/Textarea: E-Mail Body</span></li><li><span class="legacy-color-text-green4">Textarea: SMS Body (Text)</span></li><li>Platzhalter Liste (siehe <a class="unresolved" href="#">Notifikationsplatzhalter</a>)</li></ul><p><strong>Button Bereich</strong></p><ul><li>Speichern</li><li>Abbrechen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Notifikationstyp</strong></p><ul><li>Jeder Notifikationstyp darf nur einmal erfasst werden.</li><li>Die verf&uuml;gbaren Notifikationstemplates pro Typ &quot;standortspezifische&quot; oder &quot;gruppenspezifische&quot;&nbsp; und deren Funktionsverhalten ist in <a class="unresolved" href="#">Notifikationsmatrix</a> beschrieben</li></ul><p><strong>Benachrichtigung im CC an</strong></p><ul><li>Erfassung von g&uuml;ltigen E-Mail Adressen, welche beim Versenden der Notifikation&nbsp; im CC an die entsprechenden Adressaten verschickt werden</li><li>Mehrere E-Mail Adressen werden mittels semikolon separiert</li></ul><p><strong>Sprache</strong></p><ul><li>Es stehen alle aktivierten Sprachen zur Verf&uuml;gung</li></ul><p><strong>Titel (Subject)</strong></p><ul><li>Der Titel muss mehrsprachig erfasst werden</li></ul><p><strong>E-Mail Body</strong></p><ul><li>Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht.</li><li>Es steht ein Texteditor inkl. Formatierungen zur Verf&uuml;gung</li><li>E-Mail Body kann mehrsprachig abgef&uuml;llt werden</li><li>Ist der E-Mail Body leer wird keine Notifikation verschickt</li><li>Es stehen alle Formatierungen gem&auml;ss Editor zur Verf&uuml;gung</li></ul><p><span class="legacy-color-text-green4"><strong>SMS Body</strong></span></p><ul><li><span class="legacy-color-text-green4">Wurde kein SMS-Gateway eingetragen, erscheint dieses Feld nicht.</span></li><li><span class="legacy-color-text-green4">Normale Textarea</span></li><li><span class="legacy-color-text-green4">Kann Mehrsprachig erfasst werden</span></li><li><span class="legacy-color-text-green4">Ist die Textarea leer wird keine SMS verschickt</span></li></ul><p><strong>Platzhalter Liste</strong></p><ul><li>Es steht eine Reihe von Platzhaltern zur Verf&uuml;gung, welche zur Laufzeit mit dem entsprechenden Text abgef&uuml;llt werden.</li><li>Platzhalter k&ouml;nnen im Titel (Subject) und im E-Mail Body verwendet werden</li><li>Die Werte werden immer in der aktuellen Benutzersprache abgef&uuml;llt</li><li>Auf Klick eines Platzhalter wird dieser an der aktuellen Stelle im Editor platziert</li><li>Die verf&uuml;gbaren Platzhalter sind in <a class="unresolved" href="#">Notifikationsplatzhalter</a> ersichtlich</li><li>Klick auf einen Platzhalter f&uuml;gt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert wird der Platzhalter am Anfang des Body Textes eingef&uuml;gt</li><li>Es ist immer nur eine Platzahlter Sektion gleichzeitig ge&ouml;ffnet.</li><li>Die Platzhalter &uuml;bernehmen die Formatierung des Body Editors</li></ul><p><strong>Speichern</strong></p><ul><li>Popup wurde geschlossen</li><li>Template Konfiguration wird gespeichert</li><li>Best&auml;tigungsmeldung im Action Panel</li><li>Refresh Smartlist</li></ul><p><strong>Abbrechen</strong></p><ul><li>Popup wird geschlossen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975472/611980840.png" data-image-src="attachments/611975472/611980840.png" data-unresolved-comment-count="0" data-linked-resource-id="611980840" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="107.001 Noification edit.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975472" data-linked-resource-container-version="23" data-media-id="b8d33bbe-0056-4483-8367-d0307a0fa62a" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-107.001Notifikationenverwalten-4Schritt4–Notifikationenversenden"><span class="confluence-anchor-link" id="id-107.001Notifikationenverwalten-4"><span class="confluence-anchor-link" id="4" /></span>Schritt 4 &ndash; Notifikationen versenden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p>keine</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Das Regelwerk ist detailliert im Notifikationsmatrix beschrieben:</strong> <strong><a class="unresolved" href="#">Notifikationsmatrix</a></strong></p><p><strong>Gruppenspezifische Vorlagen</strong></p><ul><li>Muss durch Hinzuf&uuml;gen auf der Benutzergruppe aktiviert werden</li><li>Wird veschickt sobald eine Aktion des entsprechenden Template Types ausgel&ouml;st wird</li></ul><p><strong>Standortspezifische Vorlagen</strong></p><ul><li>Muss durch Hinzuf&uuml;gen auf dem Standort aktiviert werden</li><li>Auf Grund des Standorts der Ressource wird beim Ausl&ouml;sen der Aktion das entsprechende Template gesucht und verschickt</li><li>Wird auf dem zugeh&ouml;rigen Standort kein Template gefunden, wird auf dem &uuml;bergeordneten Standort gesucht, wird wieder keines gefunden erfolgt die Suche wiederum auf dem &uuml;bergeordeneten, usw.</li><li>Wird bis zum Root Standort kein entsprechendens Notifikationstemplate gefunden, wird nichts verschickt</li><li><span style="font-size: 10.0pt;line-height: 13.0pt;">Bei der Aufbereitung zum Versand einer Notifikation wird zus&auml;tzlich hierarchisch (gleichen oder &uuml;bergeordneten Standort) &nbsp;gepr&uuml;ft ob ein Template der entsprechenden Ressourcenart vorhanden ist. D.h. beim Versand der Buchung eines Arbeitsplatz wird gepr&uuml;ft ob hierarchisch das Notifikationstemplate 01b vorhanden ist. Falls</span><ul><li><strong style="font-size: 10.0pt;line-height: 13.0pt;">ja</strong><span style="font-size: 10.0pt;line-height: 13.0pt;">&nbsp;wird dieses verschickt</span></li><li><strong style="font-size: 10.0pt;line-height: 13.0pt;">nein</strong><span style="font-size: 10.0pt;line-height: 13.0pt;">, wird die Pr&uuml;fung nochmals durchgef&uuml;hrt auf das Haupttemplate (in diesem Fall 01)</span><ul><li><span style="font-size: 10.0pt;line-height: 13.0pt;">ist dieses vorhanden, wird die Notifikation gem&auml;ss Haupttemplate verschickt =&gt; diese Regel existiert bereits</span></li><li><span style="font-size: 10.0pt;line-height: 13.0pt;">ist dieses nicht vorhanden wird keine Notifikation verschickt =&gt; diese Regel existiert bereits</span></li></ul></li></ul></li></ul><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p>View Modus</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975472/611978425.jpg" data-image-src="attachments/611975472/611978425.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978425" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 5 View Modus.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975472" data-linked-resource-container-version="23" data-media-id="52984260-bd35-4def-a903-95ea468003f6" data-media-type="file" /></span></p><p>Edit Modus</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975472/611978423.jpg" data-image-src="attachments/611975472/611978423.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978423" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 6 Edit Modus.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975472" data-linked-resource-container-version="23" data-media-id="bd4189fa-7d2f-497e-883a-d305905f8bf0" data-media-type="file" /></span></p><p>&nbsp;</p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978346.jpg">Schritt 1 Abbildung 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978345.jpg">Schritt 1 Abbildung 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978342.jpg">Schritt 2 Abbildung 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978349.jpg">Schritt 2 Abbildung 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978348.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978417.jpg">Schritt 4 Stammdaten.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978413.jpg">Schritt 4 Stammdaten.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978416.jpg">Schritt 4 Dienstleister.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978425.jpg">Schritt 5 View Modus.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978423.jpg">Schritt 6 Edit Modus.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611978418.jpg">Anhang.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611980841.png">107.001 Noification local.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975472/611980840.png">107.001 Noification edit.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:40</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

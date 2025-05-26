@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.013 Equipment reservieren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.013 Equipment reservieren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 22, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="id-201.013Equipmentreservieren-UseCaseÜberblickID201.013OwnerTimBänzigerRev-Number1.1Ziel&amp;BeschreibungDasSuchenundFindenvoneinemodermehreren,denKriterienentsprechenden,verfügbarenRäumen(Ressourcenart„Equipment“).DieReservationderselektiertenEquipmentResso"><style>[data-colorid=drrmma1oh7]{color:#00b050} html[data-color-mode=dark] [data-colorid=drrmma1oh7]{color:#4fff9f}</style><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></h1><h1 id="id-201.013Equipmentreservieren-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 201.013 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.1 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Das Suchen und Finden von einem oder mehreren, den Kriterien entsprechenden, verf&uuml;gbaren R&auml;umen (Ressourcenart &bdquo;Equipment&ldquo;).</li>
+	<li>Die Reservation der selektierten Equipment Ressource ( n )</li>
+	<li>Das Editieren einer Reservation (Schritte 4,5 und 6)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> &ndash; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Funktionsrechte von SUC 201.001 gelten</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Alternativszenario</strong> </p></td>
+<td class="confluenceTd"><p> Ein oder mehrere Equipments k&ouml;nnen &uuml;ber Schnellreservation gebucht werden <strong>(AS 201.001)</strong> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ausnahmeszenario</strong> </p></td>
+<td class="confluenceTd"><p> Kein Suchresultat gefunden:</p>
+<ul>
+	<li>Globale Fehlermeldung wird ausgegeben (Fehlermeldung und Verhalten in SUC 201.001 dokumentiert)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li><span class="legacy-color-text-yellow2">Defaults m&uuml;ssen geladen werden (PF 302)</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Navigation auf &bdquo;Reservieren&ldquo; &ndash; Wahl der Ressourcenart &bdquo;Equipment&ldquo; im Sidepanel</li>
+	<li>Subpanel &bdquo;Ressourcenspezifische Kriterien&ldquo; wird ge&ouml;ffnet. Nutzer kann zus&auml;tzliche Filterkriterien angeben (optional) und &bdquo;Suchen&ldquo; klicken.</li>
+	<li>System liefert Suchresultat (zus&auml;tzlich zu SUC 201.001) der verf&uuml;gbaren Ressourcen</li>
+	<li>Nutzer navigiert ins Detail, erfasst Equipment spezifische Daten und schliesst Reservation ab</li>
+	<li>Summary Page wird angezeigt (Optional)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a> </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="drrmma1oh7">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1 id="id-201.013Equipmentreservieren-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.013Equipmentreservieren-Schritt1-Navigationauf„Reservieren“–WahlderRessourcenart„Equipment“imSidepanel">Schritt 1 - Navigation auf &bdquo;Reservieren&ldquo; &ndash; Wahl der Ressourcenart &bdquo;Equipment&ldquo; im Sidepanel</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Intelibox &bdquo;Ressourcenart&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Benutzer muss Resourcenart &bdquo;Equipment&ldquo; w&auml;hlen (entsprechendes Funktionsrecht aus dem SUC 201.001 muss vorhanden sein)</p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.013Equipmentreservieren-Schritt2-Subpanel„RessourcenspezifischeKriterien“wirdgeöffnet.NutzerkannzusätzlicheFilterkriterienangeben(optional)und„Suchen“klicken.">Schritt 2 - Subpanel &bdquo;Ressourcenspezifische Kriterien&ldquo; wird ge&ouml;ffnet. Nutzer kann zus&auml;tzliche Filterkriterien angeben (optional) und &bdquo;Suchen&ldquo; klicken.</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel &ndash; Subpanel (ressourcenspezifische Suchfilter)</strong></p>
+<ul>
+	<li>Multiselektionsbox &bdquo;Equipment&ldquo; (zeigt alle Equipmenttypen aus den Gliederungen)</li>
+	<li>Gliederungen (restliche)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Subpanel Ressourcenspezifischen Kriterien ist per Default ge&ouml;ffnet und wird nach Wahl der Ressourcenart &bdquo;Equipment&ldquo; neu geladen</p>
+
+<p><strong>Grunds&auml;tzlich werden als ressourcenspezifische Filterkriterien nur Gliederungen angezeigt.</strong> Zum einen ein Spezialfall der Gliederungen (Equipmenttyp) und zum anderen die restlichen Gliederungen (siehe dazu <a href="104.001-Gliederungen-verwalten_611975387.html" data-linked-resource-id="611975387" data-linked-resource-version="20" data-linked-resource-type="page">104.001 Gliederungen verwalten</a> )</p>
+
+<p><strong>Gliederungen Equipmenttyp</strong></p>
+<ul>
+	<li>Beim Equipment handelt es sich um einen speziellen Gliederungstyp. Dieses wird zwar in einer Multiselektionsbox angezeigt (Vergleiche dazu <a href="104.001-Gliederungen-verwalten_611975387.html" data-linked-resource-id="611975387" data-linked-resource-version="20" data-linked-resource-type="page">104.001 Gliederungen verwalten</a> ), muss aber statt Checkboxen Eingabefelder f&uuml;r Ganzzahlen haben. Standardwert ist 0.</li>
+	<li><span class="legacy-color-text-yellow2">Es werden nur die Equipmenttypen angezeigt, bei welchen der angemeldete Benutzer auch min. Leserechte hat</span></li>
+	<li>Darstellung der Liste, sollte noch mit dem Softwareentwickler besprochen werden. Ev. sollte die Liste zwei-spaltig dargestellt werden (w&auml;re allerdings nur bei einem Popup m&ouml;glich), bei manchen Kunden hat es bis 70 Equipmenttypen.</li>
+	<li>Mehrfachselektionen m&ouml;glich</li>
+</ul>
+
+
+<p><strong>Suche</strong><br />
+<strong>Es wird nur nach mobilem Equipment (nicht einer anderen Ressource zugeordnet) gesucht</strong></p>
+
+<p><span class="legacy-color-text-yellow2">Gelbmarkierter Bereich wurde f&uuml;r Release 4.1 zur&uuml;ckgestellt: Datenrechte auf den Gliederungen</span></p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p>Nachstehende Abbildungen zeigeneigt die Gliederungen:</p>
+
+<p><strong>Variante A</strong> (bevorzugt)<br />
+Alle Gliederungen sind im Sidepanel integriert. Bei Equipmenttypen sind statt Checkboxen einfach Eingabefelder mit Standardwert 0)</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975268/611978025.jpg" data-image-src="attachments/611975268/611978025.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978025" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2 Variante A.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975268" data-linked-resource-container-version="8" data-media-id="fd2e7ba3-5bcc-4537-a354-3a75dc4b367c" data-media-type="file" /></span></p>
+
+<p><strong>Variante B</strong><br />
+Gliederungen sind im Sidepanel integriert. Spezialgliederung &bdquo;Equipmenttyp&ldquo; wird in Form eines Popups angezeigt:</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975268/611978024.jpg" data-image-src="attachments/611975268/611978024.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978024" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2 Variante B.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975268" data-linked-resource-container-version="8" data-media-id="33324b17-6777-4af6-9fd4-2dac2b4e5f74" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.013Equipmentreservieren-Schritt3-SystemliefertSuchresultat(zusätzlichzuSUC201.001)derverfügbarenRessourcen">Schritt 3 - System liefert Suchresultat (zus&auml;tzlich zu SUC 201.001) der verf&uuml;gbaren Ressourcen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Alle Spalten aus (SUC 201.001)</li>
+	<li><strong>Gliederung &bdquo;Equipmenttyp&ldquo;</strong></li>
+</ul>
+
+
+<p><strong>Zus&auml;tzliche Spalten</strong></p>
+<ul>
+	<li>Alle Spalten aus (SUC 201.001)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Kein Suchresultat</strong></p>
+<ul>
+	<li>Alternativen werden angezeigt (UC 201.00 <span style="color: red;">UC fehlt</span>)</li>
+	<li>Fehlermeldung gem&auml;ss Ausnahmeszenario (siehe oben)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p>Siehe Schritt 2</p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.013Equipmentreservieren-Schritt4-NutzernavigiertinsDetail,erfasstEquipmentspezifischeDatenundschliesstReservationab">Schritt 4 - Nutzer navigiert ins Detail, erfasst Equipment spezifische Daten und schliesst Reservation ab</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p>Es gibt keine Equipment spezifische Daten</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Es gibt keine Equipment spezifische Daten</p>
+
+<p>Folgende Tabs d&uuml;rfen nicht sichtbar sein, auch wenn entsprechende Funktionsrechte vorhanden:</p>
+<ul>
+	<li>Dienstleistungen</li>
+	<li>Bestuhlung</li>
+	<li>Teilnehmer</li>
+	<li>Equipment</li>
+</ul>
+
+
+<p>Folgende Tabs sind auf Grund der Funktionsrechte sichtbar:</p>
+<ul>
+	<li>Serieninformationen</li>
+	<li>Equipment (zus&auml;tzliche Ressource)</li>
+</ul>
+
+
+<p>Folgende Felder im Detailbereich d&uuml;rfen nicht sichtbar sein (gegen&uuml;ber <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a> ):</p>
+<ul>
+	<li>Kapazit&auml;t (Anzahl Personen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975268/611978022.jpg" data-image-src="attachments/611975268/611978022.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978022" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975268" data-linked-resource-container-version="8" data-media-id="a2d30bfc-20aa-4526-bd37-08c1b9e535b2" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.013Equipmentreservieren-Schritt5-SummaryPagewirdangezeigt">Schritt 5 - Summary Page wird angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p>Entspricht dem SUC 201.00</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Regeln und <strong>Funktionsrechte (wird Summary angezeigt oder nicht)</strong> m&uuml;ssen von SUC 201.001 &uuml;bernommen werden.</p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975268/611978025.jpg">Schritt 2 Variante A.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975268/611978024.jpg">Schritt 2 Variante B.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975268/611978022.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

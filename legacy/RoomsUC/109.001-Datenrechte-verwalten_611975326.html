@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 109.001 Datenrechte verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 109.001 Datenrechte verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Aug 25, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="id-109.001Datenrechteverwalten-UseCaseÜberblickID109.001OwnerRemoHerrenRev-Number23.Ziel&amp;BeschreibungDievollständigeVerwaltungvonDatenrechtenüberStandorteundRessourcenDatenrechteTechnischeErgänzungenzudenDatenrechtebeinhaltetdasDokumentArchitekturBerechti"><style>[data-colorid=o23q3ctklc]{color:#00b050} html[data-color-mode=dark] [data-colorid=o23q3ctklc]{color:#4fff9f}</style><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></h1><h1 id="id-109.001Datenrechteverwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 109.001 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Remo Herren </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 23. </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Die vollst&auml;ndige Verwaltung von Datenrechten &uuml;ber Standorte und Ressourcen </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> Technische Erg&auml;nzungen zu den Datenrechte beinhaltet das Dokument Architektur Berechtigungen</p>
+<ul>
+	<li>Reservationsdatenrecht
+	<ul>
+		<li>Darf Standorthierarchie sehen (Reservieren) (wird ben&ouml;tigt, um durch den Standortbaum, um eine entsprechende Ressource zu reservieren)</li>
+		<li>Darf dev. Reservationen bearbeiten</li>
+		<li>Darf prov. Reservationen bearbeiten</li>
+		<li>Darf Reservationen lesen</li>
+		<li>Darf Reservationen nicht sehen</li>
+	</ul>
+	</li>
+	<li>Standortdatenrecht
+	<ul>
+		<li>Darf Standort Hierarchie sehen (Standortverwaltung) (wird ben&ouml;tigt, um durch den Standortbaum navigieren zu k&ouml;nnen)</li>
+		<li>Darf Standort bearbeiten (Benutzer welche in einer Benutzergruppe sind, welche auf einem Standort dieses Datenrecht haben, k&ouml;nnen den aktuellen Standort editieren oder l&ouml;schen, sowie neue Child-Nodes anlegen)</li>
+		<li>Darf Standort lesen (Benutzergruppen mit diesem Datenrecht auf einem Standort, sehen den aktuellen Standort inkl. Stammdaten und Berechtigungen)</li>
+		<li>Darf Standort nicht sehen</li>
+	</ul>
+	</li>
+	<li>Ressourcendatenrecht
+	<ul>
+		<li>Darf Standorthierarchie sehen (Ressourcenverwaltung) (wird ben&ouml;tigt, um durch den Standortbaum, um eine entsprechende Ressource zu sehen  z.B. Ressourcenpicker)</li>
+		<li>Darf Ressource bearbeiten (Benutzer welche in einer Benutzergruppe sind, welche auf einem Layer und/oder Standort dieses Datenrecht haben, k&ouml;nnen auf der Ressource einen Standort hinzuf&uuml;gen oder editieren &ndash; oder auch Ressourcen l&ouml;schen)</li>
+		<li>Darf Ressource nicht sehen</li>
+	</ul>
+	</li>
+	<li>Diverse Rechte
+	<ul>
+		<li>Darf Plan Lesen (nur mit diesem Recht ist der Zugriff auf den Plan &uuml;berhaupt m&ouml;glich. Achtung: um Reservationen durchzuf&uuml;hren sind noch weitere Rechte, wie &bdquo;darf def. Reservationen bearbeiten&ldquo; notwendig)</li>
+	</ul>
+	</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Standorte lesen</li>
+	<li>Darf Reservationsdatenrechte editieren/vergeben</li>
+	<li>Darf Standortdatenrechte editieren/vergeben</li>
+	<li>Darf Ressourcendatenrechte editieren/vergeben</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Es werden generell nur die Standort-Trees angezeigt, bei welchen man auch die entsprechenden Daten-Berechtigungen hat.</li>
+	<li>Wird kein Reservationsdatenrecht vergeben, so heisst dies, dass man bei der Reservationssuche auch keine Reservation findet.</li>
+	<li>Beim verschieben eines Standortes , m&uuml;ssen Datenrechte auf dem Quell- und Ziel-Ort vorhanden sein &ndash; falls die entsprechenden Daten-Rechte nicht vorhanden sind, sieht man den Quell- und/oder Zielort gar nicht.</li>
+	<li>Beim verschieben einer Ressource von einem Standort zum anderen, erbt die Ressource vom Destination-Standort. Rechte vom Source Tree werden entfernt. Rechte welche direkt auf der Ressource erstellt wurden bleiben in jedem Fall bestehen.</li>
+	<li>Es ist nicht m&ouml;glich bei einer Ressource welche Rechte erbt, die Vererbung zu unterbrechen, ohne das jeweilige vererbte Recht komplett zu entfernen.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer navigiert unter EINSTELLUNGEN auf STAMMDATEN\STANDORTE VERWALTEN</li>
+	<li><span style="text-decoration: underline;">Standorte:</span> Nutzer kann durch den Standort-Baum navigieren, w&auml;hlt editieren und klickt das Tab &bdquo;Berechtigungen&ldquo; <br class="atl-forced-newline" />
+<span style="text-decoration: underline;">Ressource:</span> Nutzer kann eine Ressource aus Liste selektieren, klickt editieren w&auml;hlen und w&auml;hlt das Tab &bdquo;Berechtigungen&ldquo;</li>
+	<li>Liste mit den zugeordneten Berechtigungen wird angezeigt &ndash; eine oder mehrere Berechtigungen k&ouml;nnen entfernt werden</li>
+	<li>Nutzer kann verschiedene Datenrechte pro Tree vergeben (mit entsprechenden Funktionsrechten)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a> , <a href="104.001-Gliederungen-verwalten_611975387.html" data-linked-resource-id="611975387" data-linked-resource-version="20" data-linked-resource-type="page">104.001 Gliederungen verwalten</a> </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="o23q3ctklc">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1 id="id-109.001Datenrechteverwalten-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.001Datenrechteverwalten-Schritt1-NutzernavigiertunterEINSTELLUNGENaufSTAMMDATEN\STANDORTEVERWALTENund/oder">Schritt 1 - Nutzer navigiert unter EINSTELLUNGEN auf STAMMDATEN\STANDORTE VERWALTENund/oder</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong><br />
+Navigation &ouml;ffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Standort - Funktionsrecht muss implementiert werden:</strong></p>
+<ul>
+	<li>Darf (Men&uuml;) Standorte lesen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975326/611978066.jpg" data-image-src="attachments/611975326/611978066.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978066" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 1.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975326" data-linked-resource-container-version="7" data-media-id="bdd1d609-635d-43a4-a9fa-a5a3aeebe1df" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.001Datenrechteverwalten-Schritt2–Standorte:NutzerkanndurchdenStandort-Baumnavigieren,wählteditierenundklicktdasTab„Berechtigungen“">Schritt 2 &ndash; <span style="text-decoration: underline;">Standorte:</span> Nutzer kann durch den Standort-Baum navigieren, w&auml;hlt editieren und klickt das Tab &bdquo;Berechtigungen&ldquo;</h2>
+
+<p><span style="text-decoration: underline;">Ressource:</span> Nutzer kann eine Ressource aus Liste selektieren, klickt editieren w&auml;hlen und w&auml;hlt das Tab &bdquo;Berechtigungen&ldquo;</p>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich &ndash; Standortbaum</strong></p>
+<ul>
+	<li>STANDORT-BAUM GEM&Auml;SS <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a> Edit Icon</li>
+</ul>
+
+
+<p><strong>Ressourcenliste</strong></p>
+<ul>
+	<li>SUCHRESULTAT GEM&Auml;SS <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Datenrechte m&uuml;ssen implementiert werden:</strong></p>
+<ul>
+	<li>Reservationsdaten-Rechte</li>
+	<li>Ressourcendaten-Recht</li>
+	<li>Standortdaten-Recht</li>
+</ul>
+
+
+<p><strong>Standort Baum</strong></p>
+<ul>
+	<li>Klickt man auf einen Standort, wird das Edit-Icon dazu dargestellt</li>
+	<li>Klick auf &bdquo;Edit Icon&ldquo; nur m&ouml;glich, falls entsprechende Berechtigungen vorhanden:</li>
+	<li>Nutzer gelangt ins Detail und kann editieren (siehe Schritt 3)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975326/611978065.jpg" data-image-src="attachments/611975326/611978065.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978065" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975326" data-linked-resource-container-version="7" data-media-id="376b281f-b541-402e-a6fa-f23b3748255f" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.001Datenrechteverwalten-Schritt3–ListemitdenzugeordnetenBerechtigungenwirdangezeigt–eineodermehrereBerechtigungenkönnenentferntwerden">Schritt 3 &ndash; Liste mit den zugeordneten Berechtigungen wird angezeigt &ndash; eine oder mehrere Berechtigungen k&ouml;nnen entfernt werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlist</strong></p>
+<ul>
+	<li>BenutzergruppeRechtHinzuf&uuml;gen</li>
+	<li>Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Smartlist</strong><br />
+Jede Spalte beinhaltet im Spaltenkopf ein Suchfeld</p>
+
+<p><strong>Entfernen</strong></p>
+<ul>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>Sicherheitsabfrage</li>
+	<li>Selektierte Berechtigungen werden gel&ouml;scht und Liste aktualisiert</li>
+	<li>Best&auml;tigungsmeldung im Actionpanel, inkl. Angabe der Anzahl der gel&ouml;schten Berechtigungen</li>
+</ul>
+
+
+<p><strong>Hinzuf&uuml;gen</strong><br />
+Siehe Schritt 4</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975326/611978063.jpg" data-image-src="attachments/611975326/611978063.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978063" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975326" data-linked-resource-container-version="7" data-media-id="89d5770c-3913-4274-8422-6bbf86fa4f0a" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.001Datenrechteverwalten-Schritt4–NutzerkanneinDatenrechtproBenutzergruppehinzufügen">Schritt 4 &ndash; Nutzer kann ein Datenrecht pro Benutzergruppe hinzuf&uuml;gen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Popup</strong></p>
+<ul>
+	<li><span style="color: red;">Intelibox: Benutzergruppe</span></li>
+	<li><span style="color: red;">Checkboxliste: Datenrecht</span></li>
+	<li>Checkbox: Vererben (nur bei Standort)</li>
+	<li>Reservation Eingrenzung
+	<ul>
+		<li>Dropdown: NULL (leer),ab, bis</li>
+		<li>Textfeld f&uuml;r Ganzzahl</li>
+		<li>Dropdown: Tage, Stunden</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button: Speichern</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Benutzergruppe</strong><br />
+S&auml;mtliche Benutzergruppen des Systems werden in dieser Dropdown gef&uuml;hrt</p>
+
+<p><strong>Recht</strong><br />
+S&auml;mtliche verf&uuml;gbaren Berechtigungen werden in dieser Liste gef&uuml;hrt. Mehrfachselektion m&ouml;glich. Es gelten folgende Defaultwerte:</p>
+<ul>
+	<li>Darf Standorthierarchie sehen (reservieren)</li>
+	<li>Darf Reservationen lesen</li>
+	<li>Darf provisorische Reservationen bearbeiten</li>
+	<li>Darf definitive Reservationen bearbeiten</li>
+</ul>
+
+
+<p><strong>Vererben</strong></p>
+<ul>
+	<li>Ist nur bei Standorten verf&uuml;gbar</li>
+	<li>Ist die Checkbox angeklickt wird das Recht auf alle untenstehenden Standorte vererbt bis und mit auf die Ressourcen</li>
+</ul>
+
+
+<p><strong>Spezialfall &bdquo;Reservation Eingrenzung&ldquo;</strong></p>
+<ul>
+	<li>Beim Hinzuf&uuml;gen des Reservationsrechts &bdquo;Darf def. Reservation bearbeiten oder &bdquo;Darf prov. Reservation bearbeiten&ldquo; werden die drei Felder (Dropdown, Text, Dropdown) eingeblendet</li>
+	<li>Dropdown 1 hat folgende Werte
+	<ul>
+		<li>NULL (leer) = Zeitfunktion deaktiviert</li>
+		<li>ab=Recht gilt erst ab xxx (Tagen/Stunden)</li>
+		<li>bis=Recht gilt nur bis xxx (Tagen/Stunden)</li>
+	</ul>
+	</li>
+	<li>Textfeld (leer oder numerische Ganzzahl) &rarr; gibt an wieviele Tage oder Stunden die Eingrenzung des Rechts G&uuml;ltigkeit hat</li>
+	<li>Dropdown (Tage / Stunden)
+	<ul>
+		<li>Tage= Recht gilt ab Anzahl Tage, wobei ein Tag um 00:00 Startet. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00; Eingabe: ab 1 Tage, hat zur Folge das der Raum erst am 6.3.2010 ab 00:01 gebucht werden kann</li>
+		<li>Stunden= Recht gilt ab sofort + Anzahl Stunden. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00, Eingabe: ab 24 Stunden, hat zur Folge das der Raum erst am 6.3.2010 ab 14:01 gebucht werden kann</li>
+	</ul>
+	</li>
+	<li>Standardm&auml;ssig sind alle Felder leer</li>
+	<li>Weitere Auswirkungen auf den Reservationsprozess:
+	<ul>
+		<li>Ist ein Benutzer in mehreren Gruppen, z&auml;hlt kumulativ das gr&ouml;sstm&ouml;gliche Recht</li>
+	</ul>
+	</li>
+</ul>
+
+
+<p><strong>Abbrechen</strong><br />
+Schliesst Popup</p>
+
+<p><strong>Speichern</strong></p>
+<ul>
+	<li>Popup wird geschlossen</li>
+	<li>Smartlist wird aktualisiert</li>
+	<li>Best&auml;tigungsmeldung im Actionpanel</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975326/611978062.jpg" data-image-src="attachments/611975326/611978062.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978062" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4 Abbildung 1.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975326" data-linked-resource-container-version="7" data-media-id="62d949f3-19e3-4e4e-8945-986e497c15fe" data-media-type="file" /></span></p>
+
+<p>Mehrfachselektion von Datenrechten</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975326/611978069.jpg" data-image-src="attachments/611975326/611978069.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978069" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4 Abbildung 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975326" data-linked-resource-container-version="7" data-media-id="bb91b433-a3f0-40db-968f-0faad08a5784" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975326/611978066.jpg">Schritt 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975326/611978065.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975326/611978063.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975326/611978062.jpg">Schritt 4 Abbildung 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975326/611978069.jpg">Schritt 4 Abbildung 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

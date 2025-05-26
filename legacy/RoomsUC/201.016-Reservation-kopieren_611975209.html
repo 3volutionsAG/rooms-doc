@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.016 Reservation kopieren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.016 Reservation kopieren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Nov 01, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+<h1 id="id-201.016Reservationkopieren-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 201.016 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 2.0 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorität</strong> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Von einer bestehenden Reservation kann eine Kopie erstellt werden. <br class="atl-forced-newline"/>
+Die Kopie muss dann entweder in einer anderen Ressource und/oder zu einem anderen Zeitpunkt erstellt werden </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><p> – </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Eine bestehende Reservation ist vorhanden</li>
+	<li>Der Benutzer hat min. &quot;Read&quot; Rechte oder es handelt sich um seine eigene Reservation (ich bin Ersteller, Organisator oder Verantwortlicher)</li>
+	<li>Der Benutzer befindet sich im View Mode</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Benutzer klickt kopieren</li>
+	<li>Kopie wird erstellt - Benutzer änder Zeitraum oder Ressource</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline"/>
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+</ul>
+
+
+
+<h1 id="id-201.016Reservationkopieren-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.016Reservationkopieren-Schritt1-BenutzerklicktButtonkopieren">Schritt 1 - Benutzer klickt Button kopieren</h2>
+</div></div>
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+
+<p><strong>Buttonbereich im Viewmode einer Reservation</strong></p>
+<ul>
+	<li>Button: Kopieren</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Kopieren</strong>:</p>
+<ul>
+	<li>Warnhinweis:Soll die Reservation kopiert werden?</li>
+	<li>Erstellung einer identsichen Kopie der Reservation, als Systemreservation</li>
+	<li>Wechsel in Edit-Mode der Kopie<br class="atl-forced-newline"/></li>
+</ul>
+
+
+<p><strong>Kopier Regeln</strong></p>
+<ul>
+	<li>Kopfdaten werden 100% übernommen, inkl. der Ressourcenspezifischen Kopfdaten (wie Anzahl Personen, etc.)</li>
+	<li>Zusätzliche Ressourcen werden analog Originalbuchung mitgebucht – falls nicht möglich Warning im Actionpanel</li>
+	<li>Bestuhlung wird übernommen, falls dieselbe Ressource gewählt wurde.
+	<ul>
+		<li>Ansonsten wird unter der Berücksichtigung der maximalen Kapazität die entsprechende Bestuhlung übernommen.</li>
+		<li>Falls diese immer noch zu hoch, wird die Personenzahl auf die  maximale Kapazität zurückgesetzt und eine entsprechende Warnung  ausgegeben</li>
+	</ul>
+	</li>
+	<li>Teilnehmer werden übernommen, ohne Verfügbarkeitscheck</li>
+	<li>Dienstleistungen werden übernommen, sofern derselbe Raum, bzw.  dieselbe Angebotszonen zur Verfügung stehen. Ansonsten wird Warning im  Actionpanel ausgegeben und KEINE Dienstleistung übernommen.</li>
+	<li><strong>Serienbuchungen können nicht gesamthaft kopiert werden</strong> (einzelne Buchungen einer Serie können kopiert werden, sind aber nicht mehr Teil der Serie)</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.016Reservationkopieren-Schritt2-Kopiewirderstellt-BenutzeränderZeitraumoderRessource">Schritt 2 - Kopie wird erstellt - Benutzer änder Zeitraum oder Ressource</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p>gemäss UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a></p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Benutzer muss Datum/Zeit ODER Ressource ändern um die Kopie speichern zu können</li>
+	<li>Die Speicherung der Ressource erfolgt analog des &quot;normalen&quot; Speicherprozesses - siehe UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> und <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a></li>
+</ul>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975209/611978018.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 109.004 Berechtigungen visualisieren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 109.004 Berechtigungen visualisieren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on May 31, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=kxc8bem3sh]{color:#00b050} html[data-color-mode=dark] [data-colorid=kxc8bem3sh]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+<h1 id="id-109.004Berechtigungenvisualisieren-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 109.004 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> ﻿<a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a><br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 3.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Alle berechtige Ressourcen eines Benutzers oder Gruppe einsehen</li>
+	<li>Auf Grund eines Standorts oder einer Ressource alle berechtigte Gruppen und Rechte einsehen</li>
+	<li>Alle globalen Rechte eines Benutzers einsehen</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Report Berechtigungen sehen</li>
+	<li>Darf Sektion Reports nutzen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Jeder Benutzer kann seine Berechtigungen auf einem Standort oder Ressource einsehen</li>
+	<li>Alle anderen beschriebenen Funktionen sind nur &uuml;ber das Funktionsrecht &bdquo;Darf Berechtigungen sehen&ldquo; verf&uuml;gbar</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-1">Benutzer navigiert auf &gt;Reports &gt;Standortbezogene Rechte</a></li>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-2">Nutzer erfasst Filterkriterien (optional) und klickt auf &quot;Finden&quot;</a></li>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-3">Suchresultat &uuml;ber alle standortbezogene Rechte wird angezeigt</a></li>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-4">Benutzer navigiert auf &gt;Reports &gt;Globale Rechte</a></li>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-5">Nutzer erfasst Filterkriterien (optional) und klickt auf &quot;Finden&quot;</a></li>
+	<li><a href="#id-109.004Berechtigungenvisualisieren-6">Suchresultat &uuml;ber alle globalen Rechte wird angezeigt</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="109.002-Rechte-verwalten_611975331.html" data-linked-resource-id="611975331" data-linked-resource-version="26" data-linked-resource-type="page">109.002 Rechte verwalten</a><br class="atl-forced-newline" />
+<a href="109.003-Benutzergruppen-verwalten_611975236.html" data-linked-resource-id="611975236" data-linked-resource-version="29" data-linked-resource-type="page">109.003 Benutzergruppen verwalten</a><br class="atl-forced-newline" />
+<a href="109.005-Berechtigungen-erteilen-und-entfernen_611975338.html" data-linked-resource-id="611975338" data-linked-resource-version="16" data-linked-resource-type="page">109.005 Berechtigungen erteilen und entfernen</a><br class="atl-forced-newline" /> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="kxc8bem3sh">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+
+<h1 id="id-109.004Berechtigungenvisualisieren-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt1-Benutzernavigiertauf>Reports>StandortbezogeneRechte1">Schritt 1 - Benutzer navigiert auf &gt;Reports &gt;Standortbezogene Rechte<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Navigation &ouml;ffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Recht &quot;Darf Sektion Reports nutzen&quot; muss vorhanden sein. Sonst wird Men&uuml; Reports nicht angezeigt.</li>
+</ul>
+
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt2-NutzererfasstFilterkriterien(optional)undklicktauf&quot;Finden&quot;2">Schritt 2 - Nutzer erfasst Filterkriterien (optional) und klickt auf &quot;Finden&quot;<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls im Sidepanel</strong></p>
+</div></div>
+<p><strong>Generell (wird nicht als Subpanel visualisiert)</strong></p>
+<ul>
+	<li>Dropdown: Standortbezogenes Recht</li>
+	<li>Standortpicker: Standort</li>
+	<li>Ressourcenpicker: Ressource</li>
+	<li>Intelibox: Benutzergruppe</li>
+	<li>Intelibox: Rolle</li>
+	<li>Intelibox: Person</li>
+</ul>
+
+
+
+
+<p><strong>Erweiterte Kritierien</strong></p>
+<ul>
+	<li>Multipicker: Ressourcenart</li>
+	<li>Dropdown: Ressourcenstatus</li>
+	<li>Dropdown: Equipmentyp</li>
+	<li>Dropdown: Raumtyp</li>
+</ul>
+
+
+<ul>
+	<li>Button &bdquo;Finden&ldquo;</li>
+	<li>Button &bdquo;Zur&uuml;cksetzen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell:</strong></p>
+
+<p>Ohne das globales Recht &bdquo;Darf Report Berechtigungen sehen&quot; sind folgende Controls <strong>NICHT</strong> editierbar:</p>
+<ul>
+	<li>Benutzergruppe</li>
+	<li>Rolle</li>
+	<li>Person</li>
+</ul>
+
+
+<p>Bei der Suchabfrage werden diese Felder ignoriert, ausser bei <strong>Person</strong>. Dieses Feld wird implizit mit dem <strong>angemeldeten Benutzer vorabgef&uuml;llt</strong></p>
+
+<p><strong>Benutzergruppe</strong></p>
+<ul>
+	<li>es sind alle erfassten Benutzergruppen verf&uuml;gbar</li>
+</ul>
+
+
+<p><strong>Rolle</strong></p>
+<ul>
+	<li>es sind alle erfassten Rollen verf&uuml;gbar</li>
+</ul>
+
+
+<p><strong>Person</strong></p>
+<ul>
+	<li>es sind alle aktiven Personen verf&uuml;gbar</li>
+</ul>
+
+
+<p><strong>Standort</strong></p>
+<ul>
+	<li>es werden alle Standorte angezeigt (unabh&auml;ngig von Rechten)</li>
+</ul>
+
+
+<p><strong>Ressourcenpicker</strong></p>
+
+<ul>
+	<li>Es werden Eintr&auml;ge angezeigt, unabh&auml;ngig von den Rechten.</li>
+</ul>
+
+
+<p><strong>Ressourcenart</strong></p>
+<ul>
+	<li>es werden alle Ressourcenarten f&uuml;r welche der angemeldete Benutzer Rechte hat aufgelistet</li>
+</ul>
+
+
+<p><strong>Ressourcenstatus</strong></p>
+<ul>
+	<li>Folgende Werte sind verf&uuml;gbar
+	<ul>
+		<li>alle</li>
+		<li>aktiv</li>
+		<li>inaktiv</li>
+	</ul>
+	</li>
+	<li>Standardwert: alle</li>
+</ul>
+
+
+<p><strong>Equipmenttyp</strong></p>
+<ul>
+	<li>Folgende Werte sind verf&uuml;gbar
+	<ul>
+		<li>alle</li>
+		<li>mobil</li>
+		<li>fix</li>
+	</ul>
+	</li>
+	<li>Standardwert: alle</li>
+</ul>
+
+
+<p><strong>Raumtyp</strong></p>
+<ul>
+	<li>Folgende Werte sind verf&uuml;gbar
+	<ul>
+		<li>alle</li>
+		<li>alle ohne virtuelle R&auml;ume</li>
+		<li>virtuelle R&auml;ume</li>
+		<li>virtuelle R&auml;ume (ohne Subr&auml;ume)</li>
+	</ul>
+	</li>
+	<li>Standardwert: alle</li>
+</ul>
+
+
+<p><strong>Finden</strong></p>
+<ul>
+	<li>siehe Schritt 3</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" width="200" loading="lazy" src="attachments/611975238/611980601.png?width=200" data-image-src="attachments/611975238/611980601.png" data-unresolved-comment-count="0" data-linked-resource-id="611980601" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.004 Sidepanel - Standortbezogen.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975238" data-linked-resource-container-version="17" data-media-id="c229b757-7577-4dbf-b0cb-0bd33890acd5" data-media-type="file" /></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt3-SuchresultatüberallestandortbezogeneRechtewirdangezeigt3">Schritt 3 - Suchresultat &uuml;ber alle standortbezogene Rechte wird angezeigt<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-3"><span class="confluence-anchor-link" id="3" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlistim Inhaltsbereich</strong></p>
+
+
+<p><span style="text-decoration: underline;">Standard Spalten</span></p>
+<ul>
+	<li>Standort</li>
+	<li>Ressource</li>
+	<li>Gruppe</li>
+	<li>Rolle</li>
+	<li>Standortbezogenes Recht</li>
+	<li>Geerbt</li>
+	<li>Vererbt</li>
+</ul>
+
+
+<p><span style="text-decoration: underline;">Optionale Spalten</span></p>
+<ul>
+	<li>Standortbezeichnung</li>
+	<li>Standort Name</li>
+	<li>Ressourcen Name</li>
+	<li>Ressourcen Status</li>
+	<li>Ressourcenart</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<p><strong>Standort</strong></p>
+
+<ul>
+	<li>Hierarchischer Standortbaum</li>
+	<li>Felder: &Uuml;bergeordneter Standort + Bezeichnung, Tab: Stammdaten aus UC <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a></li>
+	<li>Inhalt wird in der Sprache des angemeldeten Benutzers angezeigt</li>
+</ul>
+
+
+<p><strong>Ressourcen</strong></p>
+<ul>
+	<li>Wird in der Sprache des angemeldeten Benutzers ausgegeben</li>
+</ul>
+
+
+<p><strong>Gruppe</strong></p>
+<ul>
+	<li>Benutzergruppe wird in der Sprache des angemeldeten Benutzers ausgegeben</li>
+</ul>
+
+
+<p><strong>Rolle</strong></p>
+<ul>
+	<li>Rolle wird in der Sprache des angemeldeten Benutzers ausgegeben Standortbezogenes Recht</li>
+</ul>
+
+
+<p><strong>Geerbt</strong></p>
+<ul>
+	<li>Wurde das Recht von einem &uuml;berliegenden Standort geerbt</li>
+</ul>
+
+
+<p><strong>Vererbt</strong></p>
+<ul>
+	<li>Wurde das Recht an einen unterliegenden Standort weiter vererbt</li>
+</ul>
+
+
+<p><strong>Standort Bezeichnung</strong></p>
+<ul>
+	<li>Bezeichnung des Standorts</li>
+	<li>Feld: Bezeichnung, Tab: Stammdaten aus UC <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a></li>
+	<li>Inhalt wird in der Sprache des angemeldeten Benutzers angezeigt</li>
+</ul>
+
+
+<p><strong>Standort Name</strong></p>
+<ul>
+	<li>Alias des Standorts</li>
+	<li>Feld: Name, Tab: Stammdaten aus UC <a href="103.001-Standorte-verwalten_611975385.html" data-linked-resource-id="611975385" data-linked-resource-version="30" data-linked-resource-type="page">103.001 Standorte verwalten</a></li>
+</ul>
+
+
+<p><strong>Ressourcen Name</strong></p>
+<ul>
+	<li>eindeutige Bezeichnung der Ressource</li>
+	<li>nicht &uuml;bersetzbar</li>
+	<li>Feld: Name, aus Tab &quot;Allgemein&quot; des UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<p><strong>Ressourcen Status</strong></p>
+<ul>
+	<li>Ist die Ressource aktiv/inaktiv</li>
+	<li>Feld: Aktiv, in Tab &quot;Allgemein&quot; des UC <a href="105.001-Ressourcen-verwalten_611975409.html" data-linked-resource-id="611975409" data-linked-resource-version="65" data-linked-resource-type="page">105.001 Ressourcen verwalten</a></li>
+</ul>
+
+
+<p><strong>Ressourcenart</strong></p>
+<ul>
+	<li>Art der der Buchung zu Grundeliegenden Ressource:
+	<ul>
+		<li>Raum</li>
+		<li>Arbeitsplatz</li>
+		<li>Fahrzeug</li>
+		<li>Equipment</li>
+		<li>Parkplatz</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" width="200" loading="lazy" src="attachments/611975238/611980238.png?width=200" data-image-src="attachments/611975238/611980238.png" data-unresolved-comment-count="0" data-linked-resource-id="611980238" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.004 Suchresultat - Standortbezogen.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975238" data-linked-resource-container-version="17" data-media-id="e4b2300d-f51c-4d3a-8ab3-8ba12606da95" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt4-Benutzernavigiertauf>Reports>GlobaleRechte4">Schritt 4 - Benutzer navigiert auf &gt;Reports &gt;Globale Rechte<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-4"><span class="confluence-anchor-link" id="4" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Navigation &ouml;ffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Ben&ouml;tigtes Recht: Darf Report Berechtigungen sehen</li>
+	<li>Recht &quot;Darf Sektion Reports nutzen&quot; muss vorhanden sein. Sonst wird Men&uuml; Reports nicht angezeigt.</li>
+</ul>
+
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt5-NutzererfasstFilterkriterien(optional)undklicktauf&quot;Finden&quot;5">Schritt 5 - Nutzer erfasst Filterkriterien (optional) und klickt auf &quot;Finden&quot;<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-5"><span class="confluence-anchor-link" id="5" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Dropdown: globales Recht</li>
+	<li>Intelibox: Gruppe</li>
+	<li>Intelibox: Rolle</li>
+	<li>Intelibox: Person</li>
+</ul>
+
+
+<ul>
+	<li>Button &bdquo;Finden&ldquo;</li>
+	<li>Button &bdquo;Zur&uuml;cksetzen&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Globales Recht</strong></p>
+<ul>
+	<li>alle globalen Rechte werden aufgelistet</li>
+</ul>
+
+
+<p><strong>Benutzergruppe</strong></p>
+<ul>
+	<li>es sind alle erfassten Benutzergruppen verf&uuml;gbar</li>
+	<li>nur &auml;nderbar mit Recht:&nbsp;Darf Report Berechtigungen sehen</li>
+</ul>
+
+
+<p><strong>Rolle</strong></p>
+<ul>
+	<li>es sind alle erfassten Rollen verf&uuml;gbar</li>
+	<li>nur &auml;nderbar mit Recht:&nbsp;Darf Report Berechtigungen sehen</li>
+</ul>
+
+
+<p><strong>Person</strong></p>
+<ul>
+	<li>es sind alle aktiven Personen verf&uuml;gbar</li>
+	<li>nur &auml;nderbar mit Recht:&nbsp;Darf Report Berechtigungen sehen</li>
+</ul>
+
+
+
+<p><strong>Finden</strong></p>
+<ul>
+	<li>siehe Schritt 6</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="200" loading="lazy" src="attachments/611975238/611980602.png?height=200" data-image-src="attachments/611975238/611980602.png" data-unresolved-comment-count="0" data-linked-resource-id="611980602" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.004 Sidepanel - global.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975238" data-linked-resource-container-version="17" data-media-id="f3faf747-da61-418e-8851-ce96a1badf13" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-109.004Berechtigungenvisualisieren-Schritt6-SuchresultatüberalleglobalenRechtewirdangezeigt6">Schritt 6 - Suchresultat &uuml;ber alle globalen Rechte wird angezeigt<span class="confluence-anchor-link" id="id-109.004Berechtigungenvisualisieren-6"><span class="confluence-anchor-link" id="6" /></span></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Smartlist Spalten</strong></p>
+<ul>
+	<li>Gruppe</li>
+	<li>Rolle</li>
+	<li>Globales Recht</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Gruppe</strong></p>
+<ul>
+	<li>Benutzergruppe wird in der sprache des angemeldeten Benutzers ausgegeben</li>
+</ul>
+
+
+<p><strong>Rolle</strong></p>
+<ul>
+	<li>Rolle wird in der sprache des angemeldeten Benutzers ausgegeben</li>
+</ul>
+
+
+<p><strong>Globales Recht</strong></p>
+<ul>
+	<li>Globales Recht wird in deutscher Sprache ausgegeben</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" width="200" loading="lazy" src="attachments/611975238/611980235.png?width=200" data-image-src="attachments/611975238/611980235.png" data-unresolved-comment-count="0" data-linked-resource-id="611980235" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="109.004 Suchresultat - global.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975238" data-linked-resource-container-version="17" data-media-id="23361d3e-301f-4180-89b3-f6dde55cd106" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611978113.jpg">Schritt 2a.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611978111.jpg">Schritt 3a.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611980238.png">109.004 Suchresultat - Standortbezogen.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611980235.png">109.004 Suchresultat - global.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611980603.png">109.004 - Sidepanel.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611980602.png">109.004 Sidepanel - global.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975238/611980601.png">109.004 Sidepanel - Standortbezogen.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:40</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

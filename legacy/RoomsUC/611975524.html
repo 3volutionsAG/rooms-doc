@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 102.001 Abteilung (Firmen) verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 102.001 Abteilung (Firmen) verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Oct 14, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=rcdw4hv3zk]{color:#00b050} html[data-color-mode=dark] [data-colorid=rcdw4hv3zk]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-102.001Abteilung(Firmen)verwalten-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>102.001</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>2.2</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Finden einer OE (intern) und Ausgabe der Detailinformationen zur OE. Finden einer Firma (extern) und Ausgabe der Detailinformationen zur Firma. Bei entsprechender Berechtigung: Neuerfassung, Editieren, L&ouml;schen (inaktiv) einer OE. Bei entsprechender Berechtigung: Neuerfassung, Editieren, L&ouml;schen (inaktiv) einer Firma. <br class="atl-forced-newline" /> Alternativ k&ouml;nnen/werden OE/Firmen &uuml;ber den Benutzerdaten Import eingelesen (UC 301.01)</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf Sektion Einstellungen nutzen</li><li>Darf Firmen verwalten (extern)</li><li>Darf Firmen verwalten (intern)</li><li>Darf Rabatte auf Firma editieren</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><p>&ndash;</p></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li><a href="#id-102.001Abteilung(Firmen)verwalten-1">Nutzer navigiert auf Men&uuml;punkt &gt;Einstellungen &gt;Sicherheitsdaten f&uuml;r Personen &gt;OE/Firmen</a></li><li><a href="#id-102.001Abteilung(Firmen)verwalten-2">Nutzer gibt Suchkriterien ein (optional) und klickt Button &bdquo;Finden&quot;</a></li><li><a href="#id-102.001Abteilung(Firmen)verwalten-3">System liefert Suchresultat den Kriterien entsprechend - eine oder mehrere OE k&ouml;nnen gel&ouml;scht werden.</a></li><li><a href="#id-102.001Abteilung(Firmen)verwalten-4">Nutzer kann Rekord anklicken, um zu den Detailinformationen zu gelangen oder einen bestehenden Eintrag l&ouml;schen</a></li><li><a href="#id-102.001Abteilung(Firmen)verwalten-5">OE/Firma kann editiert oder neu erstellt werden</a></li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="rcdw4hv3zk">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><p>&nbsp;</p><h1 id="id-102.001Abteilung(Firmen)verwalten-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<span class="confluence-anchor-link" id="id-102.001Abteilung(Firmen)verwalten-1"><span class="confluence-anchor-link" id="1" /></span><h2 id="id-102.001Abteilung(Firmen)verwalten-Schritt1-NutzernavigiertaufMenüpunktEinstellungen\Sicherheit\Firma/OEverwalten">Schritt 1 - Nutzer navigiert auf Men&uuml;punkt Einstellungen\Sicherheit\Firma/OE verwalten</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><ul><li>Subnavigation &bdquo;OE/Firma&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Eines der folgenden Funktionsrechte muss vorhanden sein</strong></p><ul><li>FirmaInternVerwalten</li><li>FirmaExternVerwalten</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975524/611978308.jpg" data-image-src="attachments/611975524/611978308.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978308" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 1.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975524" data-linked-resource-container-version="20" data-media-id="0c12af02-ab5a-49c1-b3ee-41e2485d5add" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<span class="confluence-anchor-link" id="id-102.001Abteilung(Firmen)verwalten-2"><span class="confluence-anchor-link" id="2" /></span><h2 id="id-102.001Abteilung(Firmen)verwalten-Schritt2-NutzergibtSuchkriterienein(optional)undklicktButton„Finden“">Schritt 2 - Nutzer gibt Suchkriterien ein (optional) und klickt Button &bdquo;Finden&ldquo;</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><ul><li>Feld: Bezeichnung</li><li>Feld: Strasse</li><li>Feld: PLZ</li><li>Feld: Ort</li><li>Dropdown: Art (intern/extern)</li></ul><p><strong>Button Bereich</strong></p><ul><li>Button: &bdquo;Finden&ldquo;</li><li>Button: &bdquo;Zur&uuml;cksetzen&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975524/611978287.jpg" data-image-src="attachments/611975524/611978287.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978287" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975524" data-linked-resource-container-version="20" data-media-id="4e381706-35c4-4227-881b-d4950b68c08e" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<span class="confluence-anchor-link" id="id-102.001Abteilung(Firmen)verwalten-3"><span class="confluence-anchor-link" id="3" /></span><h2 id="id-102.001Abteilung(Firmen)verwalten-Schritt3-SystemliefertSuchresultatdenKriterienentsprechend-eineodermehrereOEkönnengelöschtwerden">Schritt 3 - System liefert Suchresultat den Kriterien entsprechend - eine oder mehrere OE k&ouml;nnen gel&ouml;scht werden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p>Smartlist</p><p><strong>Standard:</strong></p><ul><li>Checkbox zur Mehrfachselektion</li><li>OE/Firmen-Bezeichnung (mit View Link)</li><li>Edit Icon</li><li>Art (intern/extern)</li><li>PLZ</li><li>Ort</li></ul><p><strong>Optional</strong></p><ul><li>Strasse</li><li>Kostenstellen-Code</li><li>Kostenstellen-Namen</li></ul><p><strong>Button Bereich</strong></p><ul><li>Button &bdquo;Entfernen&ldquo;</li><li>Button &bdquo;Neu&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Entfernen</strong></p><ol><li>nur bei entsprechendem Recht (intern, extern)</li><li>Mehrfachselektion erlaubt</li><li>Warnhinweis nach Button Klick</li><li>L&ouml;schen Regel:<ol><li>Die zur Firma/OE geh&ouml;renden Adressen werden dabei auch gleich gel&ouml;scht, sowie die Referenz/Verlinkung zu den Personen</li><li>Die Personen selber werden NICHT gel&ouml;scht</li></ol></li><li>Aktualisierung der Smartlist</li><li>Best&auml;tigungsmeldung inkl. Anzahl der gel&ouml;schten OE/Firmen im Actionpanel</li></ol><p><strong>Neu</strong></p><ul><li>Eines der Rechte &bdquo;Darf Firmen verwalten (extern)&rdquo; oder &ldquo;Darf Firmen verwalten (intern)&rdquo; muss vorhanden sein.</li><li>&Ouml;ffnet Detailbereich f&uuml;r die Neuerfassung einer OE (siehe Schritt 5)</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975524/611978285.jpg" data-image-src="attachments/611975524/611978285.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978285" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975524" data-linked-resource-container-version="20" data-media-id="d85d290d-6027-4d34-91fe-b543fb4526f6" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<span class="confluence-anchor-link" id="id-102.001Abteilung(Firmen)verwalten-4"><span class="confluence-anchor-link" id="4" /></span><h2 id="id-102.001Abteilung(Firmen)verwalten-Schritt4-NutzerkanneineOE/Firmaanklicken,umdieDetails(ViewModus)zusehen">Schritt 4 - Nutzer kann eine OE/Firma anklicken, um die Details (View Modus) zu sehen</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><ul><li>Stammdaten<ul><li>Bezeichnung</li><li>Art (intern/extern)</li><li>Kostenstellencode</li><li>Kostenstellenname</li><li>Standardrabatt in %</li></ul></li><li>Adresse als Liste (aus <a href="102.002-Adressen_OE-verwalten_611975531.html" data-linked-resource-id="611975531" data-linked-resource-version="10" data-linked-resource-type="page">102.002 Adressen_OE verwalten</a> )<ul><li>Adresszeile 1</li><li>Adresszeile 2</li><li>Adresszeile 3</li><li>PLZ</li><li>Ort</li><li>Land</li><li>Standardadresse?</li></ul></li><li>Label: es sind 00 Personen zugewiesen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Bearbeiten (Details Schritt 5)</strong><br /> Eines der folgenden Funktionsrechet muss vorhanden sein:</p><ul><li>Darf Firmen verwalten (extern)</li><li>Darf Firmen verwalten (intern)</li></ul><p><strong>Personen</strong></p><ul><li>Es wird ein Text ausgegeben und die zugewiesene Personenanzahl als Zahl: &bdquo;Es sind 89 Personen zugewiesen&ldquo;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975524/611980823.png" data-image-src="attachments/611975524/611980823.png" data-unresolved-comment-count="0" data-linked-resource-id="611980823" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="102.001 - Standardrabatt View.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975524" data-linked-resource-container-version="20" data-media-id="8bda7a5d-f1cc-4460-8edb-b2d588d0dd2c" data-media-type="file" /></span></p><hr /><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<span class="confluence-anchor-link" id="id-102.001Abteilung(Firmen)verwalten-5"><span class="confluence-anchor-link" id="5" /></span><h2 id="id-102.001Abteilung(Firmen)verwalten-Schritt5–OE/Firmakanneditiertoderneuerstelltwerden">Schritt 5 &ndash; OE/Firma kann editiert oder neu erstellt werden</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Tab &bdquo;Stammdaten&ldquo;</strong></p><ul><li><span style="color: red;">Bezeichnung</span></li><li>Firmennummer</li><li>Art (Intern / Extern)</li><li>Kostenstellen-Code</li><li>Kostenstellen-Namen</li><li><span class="legacy-color-text-red2">Standardrabatt in %</span></li></ul><p><strong>Tab &bdquo;Adressen&ldquo;</strong><br /> Siehe <a href="102.002-Adressen_OE-verwalten_611975531.html" data-linked-resource-id="611975531" data-linked-resource-version="10" data-linked-resource-type="page">102.002 Adressen_OE verwalten</a> &ndash; Schritt 2</p><p><strong>Tab &bdquo;Personen&ldquo;</strong><br /> Siehe <a href="102.003-Personen_OE-verwalten_611975542.html" data-linked-resource-id="611975542" data-linked-resource-version="13" data-linked-resource-type="page">102.003 Personen_OE verwalten</a> &ndash; Schritt 2</p><p><strong>Button Bereich</strong></p><ol><li>Button &bdquo;Speichern&ldquo;</li><li>Button &bdquo;Abbrechen&ldquo;</li></ol><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Art</strong></p><ul><li>Steuert ob es sich um einen OE (Intern) oder Firma (extern handelt). Dieser Status gilt dann auch f&uuml;r die jeweils zugeordneten Personen</li><li>Flag kann nur ge&auml;ndert werden, wenn das Recht f&uuml;r den Neuen Wert vorhanden ist.</li></ul><p><strong>Standard Rabatt in %</strong></p><ol><li>Recht &bdquo;Darf Rabatte auf Firma editieren&ldquo; notwendig, um in den Stammdaten das Feld abzuf&uuml;llen</li><li>Das Feld muss auf Ganzzahlen &le;100 validiert werden. Minuszahlen sind nicht Zul&auml;ssig</li><li>Im Reservationsprozess (Detailreservation) wird der Rabatt in Form eines Labels ausgewiesen (hinter dem Kostenfeld)</li><li>Bei Zeit&auml;nderung oder anderen Kosten&auml;nderung (Umstuhlung, Dienstleistungen, etc.) muss das Feld neu berechnet werden</li><li>Dasselbe gilt auf dem Anlass. In der Detailansicht und der Summary wird das Label angezeigt.</li><li>Auf der Summary Page wird dann der effektive Rabatt errechnet und ein Eintrag im Bereich der Rabatte generiert und entsprechend auf der Summary ausgewiesen.</li></ol><p>Dieser Rabatt Record wird bei jeder weiteren Editierung der Reservation wieder gel&ouml;scht und bei Reservationsabschluss neu erstellt. So wird sichergestellt, dass immer der Stammrabatt &uuml;ber den Gesamtbetrag neu berechnet wird.</p><p><strong>Abbrechen</strong><br /> Wechselt zur&uuml;ck auf den Viewmodus oder das Suchresultat</p><p><strong>Speichern</strong><br /> Es darf nur eine Adresse als Standard definiert werden, ansonsten ist die OE/Firma NICHT speicherbar (siehe <a href="611975524.html">102.001 Abteilung (Firmen) verwalten</a> )</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975524/611980822.png" data-image-src="attachments/611975524/611980822.png" data-unresolved-comment-count="0" data-linked-resource-id="611980822" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="102.001 - Standardrabatt Edit.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975524" data-linked-resource-container-version="20" data-media-id="0d703e77-a230-48e1-9d15-e25506aef9ee" data-media-type="file" /></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611978308.jpg">Schritt 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611978287.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611978285.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611978295.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611978293.jpg">Schritt 5.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611980822.png">102.001 - Standardrabatt Edit.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975524/611980823.png">102.001 - Standardrabatt View.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

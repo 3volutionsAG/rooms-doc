@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Reservationsticker</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Reservationsticker
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jan 09, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h3 id="Reservationsticker-Beschreibung">Beschreibung</h3>
+
+<p>Ein Reservationsticker wird als zusätzlicher Container zur Verfügung gestellt, der je nach Layout irgendwo im Header platziert werden kann. Der Reservationsticker erlaubt einige wichtige Verwaltungsfunktionen für die laufenden Reservationen des aktuellen Benutzers. Der Reservationsticker kann pro Mandant global ausgeschaltet werden, indem keine Platzierung im Header erfolgt; wird er platziert, ist er für alle Benutzer auf allen Ansichten verfügbar.</p>
+<ul>
+	<li>Weist der aktuelle Benutzer keine laufende Reservation auf, entspricht die Darstellung derjenigen eines nicht selektierten Sub-Panels und enthält einen Standard-Text. Es ist keine Interaktion möglich.</li>
+	<li>Der Reservationsticker enthält beim Laden einer Seite die aktuellen  Reservationsdaten. Zusätzlich führt der Ticker automatisch einen  regelmässigen Refresh zusammen mit dem Action-Panel durch.</li>
+	<li>Der Reservationsticker zeigt nur definitiv, gebuchte Reservationen</li>
+</ul>
+
+
+<h3 id="Reservationsticker-Funktionen">Funktionen</h3>
+
+<p>Weist der aktuelle Benutzer laufende Reservationen auf, entspricht die Darstellung derjenigen eines selektierten Sub-Panels. Die Reservationen werden nach folgenden Kriterien in der angegebenen Reihenfolge sortiert:</p>
+<ul>
+	<li>Ressourcentyp: Deskshare / Raum / Parkplatz / Fahrzeug / Equipment / Person</li>
+	<li>Reservationsdauer: kürzer / länger</li>
+	<li>Reservationsbeginn: früher / später</li>
+	<li>Reservations-ID: kleiner / grösser</li>
+</ul>
+
+
+<p>Der Ressourcenname der ersten Reservation gemäss dieser Sortierung wird direkt im Reservationsticker angezeigt; hinter dem Namen werden einige Icons für Aktionen mit dieser Reservation aufgelistet. Mit einem Klick auf den Ticker irgendwo neben den Icons wird ein Popup mit den anderen Ressourcennamen inkl. Icons eingeblendet. (Es wird bewusst auf Mouse-Over Funktionalität verzichtet, da sich diese bisher immer negativ auf die Usability ausgewirkt hat.) Ein Klick auf eines der Icons führt die entsprechende Aktion aus und schliesst das Popup; jeder Klick ausserhalb des Popups schliesst das Popup ebenfalls.</p>
+
+<p>Folgende Icons werden angezeigt:</p>
+<ul>
+	<li>View: Absprung in den View-Modus der Reservation.</li>
+	<li>Edit (wenn es sich um keine zugeordnete Ressource handelt): Absprung in den Edit-Modus der Reservation.</li>
+	<li>Freigaben bearbeiten (wenn es sich um eine zugeordnete Ressource handelt): Öffnen des Bearbeitungsfensters für die Freigaben (siehe vorangehendes Kapitel).</li>
+	<li>Checkout (wenn das Funktionsrecht vorhanden ist): Sofortiges Beenden der Reservation (exkl. Nachlaufzeit).</li>
+	<li>Freigabe (wenn das Funktionsrecht vorhanden ist): Sofortiges Beenden der Reservation (inkl. Nachlaufzeit).</li>
+</ul>
+
+
+<h3 id="Reservationsticker-Formatierung">Formatierung</h3>
+
+<p>Die Breite des Reservationstickers richtet sich nach dem breitesten angezeigten Text (Ressourcennamen) und ist daher flexibel.</p>
+
+<p> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-content-image-border" loading="lazy" src="attachments/611975522/611976494.png" data-image-src="attachments/611975522/611976494.png" data-unresolved-comment-count="0" data-linked-resource-id="611976494" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="_global-reservationsticker.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975522" data-linked-resource-container-version="4" data-media-id="ff0c6a13-2da6-451e-9593-53a175576698" data-media-type="file"></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975522/611976494.png">_global-reservationsticker.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

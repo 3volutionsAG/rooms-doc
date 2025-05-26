@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 211.004 Anlässe für Serien erstellen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 211.004 Anlässe für Serien erstellen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Dec 14, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=mbzhqiv5jl]{color:#00b050} html[data-color-mode=dark] [data-colorid=mbzhqiv5jl]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+<h1 id="id-211.004AnlässefürSerienerstellen-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 211.004 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorit&auml;t</strong> <br class="atl-forced-newline" /> </p></td>
+<td class="confluenceTd"><p> 2 <br class="atl-forced-newline" /> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Beinhaltet ein Anlass mehrere Ressourcen mit Serienbuchungen kann f&uuml;r jede dieser Serie-Items ein weiterer Anlass erzeugt werden </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Darf Anl&auml;sse buchen</li>
+	<li>Darf Anlass sehen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Anlass muss vorhanden sein</li>
+	<li>Anlass muss min. eine Ressource mit einer Serienbuchung enthalten</li>
+	<li>Erste Reservation der Serie ist teil des Anlasses</li>
+	<li>Sind mehrere Serien auf dem Anlass vorhanden m&uuml;ssen diese Synchron sein (zeitlich identisch)</li>
+	<li>UC <a href="211.002-Anlass-suchen-und-finden_611975456.html" data-linked-resource-id="611975456" data-linked-resource-version="17" data-linked-resource-type="page">211.002 Anlass suchen und finden</a> oder <a href="211.001-Anlass-erstellen_611975475.html" data-linked-resource-id="611975475" data-linked-resource-version="60" data-linked-resource-type="page">211.001 Anlass erstellen</a> wurde zuerst ausgef&uuml;hrt</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer navigiert auf View Mode des Anlasses</li>
+	<li>Nutzer klickt Button &quot;Anlass f&uuml;r Serien&quot;</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="211.001-Anlass-erstellen_611975475.html" data-linked-resource-id="611975475" data-linked-resource-version="60" data-linked-resource-type="page">211.001 Anlass erstellen</a> <br class="atl-forced-newline" />
+<a href="211.002-Anlass-suchen-und-finden_611975456.html" data-linked-resource-id="611975456" data-linked-resource-version="17" data-linked-resource-type="page">211.002 Anlass suchen und finden</a> <br class="atl-forced-newline" /> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="mbzhqiv5jl">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span><br class="atl-forced-newline" /></li>
+</ul>
+
+
+<h1 id="id-211.004AnlässefürSerienerstellen-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-211.004AnlässefürSerienerstellen-Schritt1-NutzernavigiertaufViewModeeinesAnlasses">Schritt 1 - Nutzer navigiert auf View Mode eines Anlasses</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+
+<ul>
+	<li>View Mode Anlass wird angezeigt</li>
+	<li>Button &quot;Anlass f&uuml;r Serien&quot;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Rechte m&uuml;ssen implementiert werden:</p>
+
+<ul>
+	<li>Darf Anlass sehen</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-211.004AnlässefürSerienerstellen-Schritt2-NutzerklicktButton&quot;AnlassfürSerien&quot;">Schritt 2 - Nutzer <strong>klickt Button &quot;Anlass f&uuml;r Serien&quot;</strong></h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Button Bereich des View Mode</strong></p>
+
+
+
+<ul>
+	<li>Button &bdquo;Anlass f&uuml;r Serien&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+
+<ul>
+	<li>Rechte m&uuml;ssen implementiert werden: Darf Anlass buchen</li>
+</ul>
+
+
+<p><strong>Anlass Serie erstellen</strong></p>
+
+<ol>
+	<li>F&uuml;r jeden Serienbuchungseintrag der Reservationen, welche identisch sind wird ein Anlass erzeugt
+	<ol>
+		<li>Identisch = Die Serien Items liegen zum gleichen Zeitpunkt - Vorlauf-/Nachlaufzeiten sind irrelevant</li>
+		<li>R&auml;ume k&ouml;nnen Different sein innerhalb der Serie</li>
+		<li>Die Anlassstammdaten werden vom Initial Anlass &uuml;bernommen</li>
+		<li>Catering und Teilnehmer werden ebenfalls mitkopiert</li>
+	</ol>
+	</li>
+	<li>Actionpanel meldet Best&auml;tigung inkl. der Daten der erfolgreichen Anlass Erstellungen UND/ODER</li>
+	<li>Actionpanel gibt f&uuml;r jeden nicht erstellten Anlass eine Fehlermeldung aus</li>
+</ol>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Beispiel eines funktionierenden Anlasses</strong></p>
+
+<p>Anlass &quot;TEST1&quot; beinhaltet zwei Serien-Reservationen:</p>
+<ul>
+	<li>Res1.1 = jeden Tag w&auml;hrend zwei Arbeitswochen von 14:00 bis 16:00 in Raum &quot;Eiger&quot;</li>
+	<li>Res1.2 = jeden Tag w&auml;hrend zwei Arbeitswochen von 14:00 bis 16:00 in Raum &quot;M&ouml;nch&quot;, ausser am dritten und siebten Tag musste in Raum &quot;Jungfrau&quot; ausgewichen werden</li>
+</ul>
+
+
+<p><em>Resultat: Es werden 10 Anl&auml;sse erstellt pro &quot;Tages-Paarung&quot;; keine Fehler</em></p>
+
+<p><strong>Beispiel eines Teil funktioniertenden Anlasses</strong></p>
+
+<p>Anlass &quot;TEST2&quot; beinhaltet zwei Serien-Reservationen:</p>
+<ul>
+	<li>Res2.1 = jeden Tag w&auml;hrend zwei Arbeitswochen von 14:00 bis 16:00 in Raum &quot;Castor&quot;, ausser am vierten Tag musste die Reservation auf 15:00 bis 18:00 gelegt werden</li>
+	<li>Res2.2 = jeden Tag w&auml;hrend zwei Arbeitswochen + 2 weitere Tage von 14:00 bis 16:00  in Raum &quot;Matterhorn&quot;, ausser am achten Tag musste in Raum  &quot;Stockhorn&quot; ausgewichen werden</li>
+</ul>
+
+
+<p><em>Resultat: Es werden 9 Anl&auml;sse erstellt pro &quot;Tages-Paarung&quot;; Am Tag 4 konnte kein Anlass erstellt werden, da die Reservationen zeitlich unterschiedlich liegen; Am Tag 11 und 12 konnten keine Anl&auml;sse erstellt werden, da nur bei einer Reservation vorhanden</em></p>
+</div></div>
+<p><br class="atl-forced-newline" /></p>
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

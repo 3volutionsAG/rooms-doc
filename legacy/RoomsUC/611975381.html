@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Standortpicker &amp; Ressourcenpicker</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Standortpicker &amp; Ressourcenpicker
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on Apr 30, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Die Rich-Intelibox besteht aus zwei Teilen:<br/>
+<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="56" width="297" loading="lazy" src="attachments/611975381/611980286.png?width=297" data-image-src="attachments/611975381/611980286.png" data-unresolved-comment-count="0" data-linked-resource-id="611980286" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav759385dd68c1a165c27317351d790d3a.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975381" data-linked-resource-container-version="10" data-media-id="150c71fa-5a1a-4da0-9507-e666442d5292" data-media-type="file"></span></p>
+
+<ol>
+	<li>Die Intelibox wie Sie unter dem Kapitel Intelibox auch beschrieben wurde
+	<ol>
+		<li>Standortpicker: Die Eingabe von Standorten auf jeder Hierarchie-Stufe ist möglich: Beispielhierarchie: \Schweiz\Bern\Laupenstrasse\Stockwerk - mittels Eingabe von „Laupenstrasse&quot;erscheinen alle Suchresultat zur Laupenstrasse, d.h. alle Stockwerke</li>
+		<li>Ressourcenpicker: Die Eingabe von Ressourcen auf jeder Hierarchie-Stufe ist möglich: Beispielhierarchie: \Schweiz\Bern\Laupenstrasse\Stockwerk\Raum Niesen - mittels Eingabe von „Niesen&quot; ist eine direkte Auswahl des Raums möglich</li>
+		<li>Eingabeunterstützung: Wird „Para&quot; eingeben wird „Para&quot; in der aufgeklappten Intelibox überall fett markiert, analog der Intelibox für „Personen&quot;</li>
+		<li>Es wird immer nur eine Zeile dargestellt. Ist der Standort/Ressource länger wird diese(r) abgeschnitten und mit drei Punkten ergänzt - es gibt keine zweizeiligen Darstellungen.</li>
+		<li>Mit den Pfeiltasten kann zwischen den Zeilen navigiert werden.</li>
+		<li>Beim Mouseover über eine Zeile, wird ein Tooltip mit der ganzen Standortlänge angezeigt</li>
+	</ol>
+	</li>
+	<li>Durch klicken des +-Buttons, öffnet sich der Picker
+	<ol>
+		<li>War bereits in der Inteli-Box ein Standort ausgewählt worden, wird dieser automatisch in der Baumstruktur vorselektiert. Der aktuell gewählte Raum kann nicht mehr selektiert werden und ist farblich different hinterlegt</li>
+		<li>Der Picker ist Hierarchisch aufgebaut</li>
+		<li>Der Picker hat immer eine fixe Grösse</li>
+		<li>Bei zu vielen Informationen erscheinen Scrollbars</li>
+		<li>Zum schliessen des Pickers muss:
+		<ol>
+			<li>Ein Standort, bzw. Ressource muss gewählt werden</li>
+			<li>Das Schliessen-Icon betätigt werden</li>
+		</ol>
+		</li>
+		<li>Wurde ein Eintrag (Standort) ausgewählt, muss dieser in die Intelibox (A) übernommen werden
+<br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="162" width="247" loading="lazy" src="attachments/611975381/611980285.png?width=247" data-image-src="attachments/611975381/611980285.png" data-unresolved-comment-count="0" data-linked-resource-id="611980285" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav69129e1026ef671a01dc70a9af88d654.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975381" data-linked-resource-container-version="10" data-media-id="bb0e54b3-e618-4d28-99fe-4bd5a66ca6ab" data-media-type="file"></span></li>
+	</ol>
+	</li>
+</ol>
+
+
+
+
+<p><strong>Multiple Location Search</strong></p>
+<ul>
+	<li>Der Standortpicker kann beliebig vervielfacht werden. Durch Eingabe eines Standortes wird automatisch ein weiterer Standort eingeblendet. Wird im zweiten Standort-Picker auch ein Standort erfasst, erscheint ein Dritter, usw.</li>
+	<li>In der Ressourcenbox des Kalenders (Sidepanel) werden die Ressourcen in Bereiche (in Form von Tabs) unterteilt (siehe Abbildung). Standardmässig sind bei einem hinzugefügten Standort alle Ressourcen selektiert.</li>
+	<li>Die Limitation für Anzahl der angezeigten Ressourcen gilt auch hier (diese wird global definiert - siehe <a href="https://3volutions.atlassian.net/wiki/spaces/ROOMSKBALL/pages/257130511/Konfigurationsparameter+Configuration+parameter" data-linked-resource-id="257130511" data-linked-resource-version="84" data-linked-resource-type="page">Konfigurationsparameter / Configuration parameter</a>).</li>
+	<li>Mittels Checkbox &quot;Alle Ressourcen laden (Achtung Wartezeit)&quot; kann die Limitation der angezeigten Ressourcen in der Ressourcenbox (Sidepanel) aufgehoben werden. Hat keine Auswirkungen auf die Anzahl der angezeigen Ressorucen im Kalender.</li>
+	<li>Klickt der Benutzer auf „Finden&quot;, werden die Ressourcen gruppiert nach Standorten aufgelistet.</li>
+</ul>
+
+
+<p><strong>Listenansichten:</strong></p>
+<ol>
+	<li>In den Listenansichten können auch beliebig viele Standorte selektiert werden</li>
+	<li>Nach Klick auf „Finden&quot; wird das Resultat des ersten Standorts im rechten Bereich angezeigt.</li>
+</ol>
+
+
+<p><span style="text-decoration: underline;">Regeln</span>:</p>
+<ul>
+	<li>Ist nur eine Standort Intelibox vorhanden und die ist leer, werden alle freien Ressourcen, bzw. alle Kalenderitems angezeigt. Ab 2 Standort Inteliboxen ist wird eine leere Intelibox ignoriert (in der Suche nicht berücksichtigt)</li>
+</ul>
+
+
+
+<p><strong>Implementierungen</strong></p>
+<ul>
+	<li>Reservieren/Listen: Gruppierungen nach Tabs</li>
+	<li>Kalender: Gruppiert nach Standorten</li>
+	<li>Reports - Statistiken: Zusammenzug gemäss Anzahl Standorten</li>
+	<li>Einstellungen: sortiert nach Standorten. * Kalender: Bei jedem Kalenderblock muss der Zeitstrahl der Zeitzone des Standortes angezeigt werden. Dieser Zeitstrahl dient nur der Orientierung und nicht als Navigationsinstrumen (keine Abbildung vorhanden)</li>
+</ul>
+
+
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="347" width="262" loading="lazy" src="attachments/611975381/611980284.png?width=262" data-image-src="attachments/611975381/611980284.png" data-unresolved-comment-count="0" data-linked-resource-id="611980284" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav70970ea45e490173465d3eccca2735ae.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975381" data-linked-resource-container-version="10" data-media-id="81b07e6b-da42-4cc3-8dd2-55ea5d23f19a" data-media-type="file"></span></p>
+
+<p><strong>Filter &quot;Ressourcenpicker&quot;</strong></p>
+
+<ul>
+	<li>Der Ressource Picker hat zwei zusätzliche Klickbare Toggle Button am rechten unteren Rand des Popup.</li>
+	<li>Diese Tasten können entweder gedrückt oder ungedrückt werden.</li>
+	<li>Klick auf ersten Button zeigt nur noch Ressourcen, welche min. in <strong>einer</strong> selben Gliederungen befinden, wie die erfassten Gliederungs-Suchkriterien oder die Ursprungsressource (im Reservationsdetail)</li>
+	<li>Klick auf zweiten Button zeigt nur  noch Ressourcen, welche exakt denselben Gliederungen entsprechen, wie die in der Suche gewählten Gliederungen oder der Gliederungen der Ursprungsressource (im Reservationsdetail)</li>
+	<li>Es kann nur ein Button gleichzeitig geklickt sein oder KEINER</li>
+	<li>Ist ein Button geklickt und wird der zweite gellickt, wird der erste wieder deselektiert.</li>
+	<li>Diese Buttons werden in den persönlichen und globalen Filter nicht gespeichert</li>
+</ul>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-content-image-border" loading="lazy" src="attachments/611975381/611977017.png" data-image-src="attachments/611975381/611977017.png" data-unresolved-comment-count="0" data-linked-resource-id="611977017" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Filter.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975381" data-linked-resource-container-version="10" data-media-id="cef477bf-4487-4ceb-804b-f1beceabd8d5" data-media-type="file"></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975381/611980286.png">worddav759385dd68c1a165c27317351d790d3a.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975381/611980285.png">worddav69129e1026ef671a01dc70a9af88d654.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975381/611980284.png">worddav70970ea45e490173465d3eccca2735ae.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975381/611977017.png">Filter.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

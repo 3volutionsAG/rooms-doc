@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.033 Massenaktualisierung</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.033 Massenaktualisierung
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified on Mar 06, 2013
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><style>[data-colorid=ox2c2f9wqr]{color:#00b050} html[data-color-mode=dark] [data-colorid=ox2c2f9wqr]{color:#4fff9f}</style><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body"><h1 id="id-201.033Massenaktualisierung-UseCaseÜberblick">Use Case &Uuml;berblick</h1><p>&nbsp;</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p>201.003</p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>1.0</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorit&auml;t</strong></p></td><td class="confluenceTd"><p>3</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Ein oder mehrere Buchungen k&ouml;nnen automatisiert aktualisiert werden</p></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li><span>DarfMassenmutationenVornehmen</span></li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><ul><li>Es bestehen Reservationen&nbsp;</li><li>Benutzer befindet sich im Plan, Kalender oder unter Listen</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li><a href="#id-201.033Massenaktualisierung-1">Nutzer selektiert zwei oder mehr Buchungen</a></li><li><a href="#id-201.033Massenaktualisierung-2">Nutzer klickt Button &bdquo;Aktualisieren&quot;</a></li><li><a href="#id-201.033Massenaktualisierung-3">Massenaktualisierung Popup wird angezeigt</a></li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/><img class="wysiwyg-unknown-macro" src="plugins/servlet/confluence/placeholder/unknown-macro"/></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline" /> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li><li><span data-colorid="ox2c2f9wqr">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li></ul><h1 id="id-201.033Massenaktualisierung-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.033Massenaktualisierung-Schritt1-BenutzerselektiertzweiodermehrBuchungen1">Schritt 1 - Benutzer selektiert zwei oder mehr Buchungen <span class="confluence-anchor-link" id="id-201.033Massenaktualisierung-1"><span class="confluence-anchor-link" id="1" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><ul class="alternate"><li><strong>Listenansicht</strong>: Benutzer hat bei zwei oder mehreren Buchungen die Checkbox in der Smartlist selektiert</li><li><strong>Planansicht</strong>: Benutzer selektiert mittels Mauslkick mehrere Hotspots. Wird ein Hotspot selektiert, bleibt es eingeblendet; ausserdem wird die Transparenz der Polygon-F&uuml;llung entfernt, d.h. der Polygon wird hervorgehoben.</li><li><strong>Kalender:</strong>&nbsp;Benutzer hat bei zwei oder mehreren Reservataionen die Checkbox selektiert. Box erscheint beim Mouse-Over, sofern folgendes Recht vorhanden ist: DarfMassenmutationenVornehmen</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p>Rechte m&uuml;ssen implementiert werden:</p><ul><li>DarfMassenmutationenVornehmen</li></ul><p>Button wird im Buttonbereich des Inhaltsbereich angezeigt (H&ouml;he &quot;auto-refresh&quot; icon)</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.033Massenaktualisierung-Schritt2-NutzerklicktButton„Aktualisieren“2">Schritt 2 - Nutzer klickt Button &bdquo;Aktualisieren&ldquo;<span class="confluence-anchor-link" id="id-201.033Massenaktualisierung-2"><span class="confluence-anchor-link" id="2" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Popup</strong></p><ul><li>Button &quot;Aktualisieren&quot;</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Aktualisieren</strong></p><ul><li>erscheint nur mit dem Recht &quot;DarfMassenmutationenVornehmen&quot;</li><li>&ouml;ffnet Popup &quot;Massenaktualisierung&quot;<br /><br /></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="300" loading="lazy" src="attachments/611975450/611980154.png?width=300" data-image-src="attachments/611975450/611980154.png" data-unresolved-comment-count="0" data-linked-resource-id="611980154" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Aktualisierung.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975450" data-linked-resource-container-version="12" data-media-id="2f3111d3-4507-44a2-a0d2-254f9bfdddb8" data-media-type="file" /></span></p><p>&nbsp;</p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.033Massenaktualisierung-Schritt3-MassenaktualisierungPopupwirdangezeigt3">Schritt 3 - Massenaktualisierung Popup wird angezeigt<span class="confluence-anchor-link" id="id-201.033Massenaktualisierung-3"><span class="confluence-anchor-link" id="3" /></span></h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Sidepanel</strong></p><ul><li style="list-style-type: none;background-image: none;"><ul><li>Text: Wollen Sie die selektierten (Anzahl) Reservationen wirklich aktualisieren</li><li>Button: Aktualisiere Selektion</li><li>Button: Aktualisiere gesamte Liste</li><li>Button: Abbrechen</li></ul></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Wollen Sie die selektierten (Anzahl) Reservationen wirklich aktualisieren</strong></p><ul><li>Text, falls keine g&uuml;ltigen Buchungen gefunden:&nbsp;<span class="legacy-color-text-default">Sie k&ouml;nnen zur Zeit keine der selektierte(n) Reservation(en) aktualisieren.</span></li><li>Text, falls g&uuml;ltige Buchungen vorhanden:&nbsp;Wollen Sie die selektierten (Anzahl) Reservationen wirklich aktualisieren?</li><li>(Anzahl) = Platzhalter f&uuml;r die effektive Anzahl der selektierten Buchungen</li></ul><p><strong>Aktualisiere Selektion + Aktualisiere gesamte Liste</strong></p><ul><li>Button: &quot;Aktualisiere Selektion&quot; nur sichtbar wenn auch g&uuml;ltige Reservationen vorhanden (z.B. nicht in Vergangenheit, gen&uuml;gend Rechte etc.)</li><li>Button: &quot;Aktualisiere gesamte Liste&quot; nur sichtbar in der Listenansicht</li><li>Ausgabe im Actionpanel: &quot;Die &Auml;nderungen werden nun &uuml;bernommen. Sie werden&nbsp; wieder informiert, sobald der Vorgang abgeschlossen ist.&quot;</li><li>Aktionseintr&auml;ge f&uuml;r Bearbeitung werden in Action Tabelle geschrieben</li><li>Asynchrone Abarbeitung (durch den Service) des Auftrags.&nbsp;Dabei werden<br /><ul><li><p class="p1">Zeiten aktualisiert (Beispiel: Vorlaufzeiten neu berechnet, Nachlaufzeiten neu berechnet, etc.)</p></li><li>Preise aktualisiert (Beispiel: Bestellungen neu berechnet, Umstuhlungskosten neu berechnet, Tarife der Ressourcen neu berechnet, etc.)</li></ul></li><li>Ausgabe im Actionpanel: &quot;Die&nbsp;&Auml;nderung&nbsp;von X&nbsp; Eintr&auml;gen vom Typ Reservation sind abgeschlossen.</li><li>Zus&auml;tzlich Ausgabe im Actionpanel im Fehlerfall: (y wurden&nbsp; angepasst; z konnten nicht angepasst werden).&quot;</li><li><span class="legacy-color-text-default">Zus&auml;tzlich Ausgabe im Actionpanel im Fehlerfall (zweite Meldung):&nbsp;Massen-Bearbeitung: f&uuml;r y Eintr&auml;ge vom Typ Reservation konnte die &Auml;nderung nicht validiert werden (Ids 4530,4531,4532,4533)</span></li><li>Nicht aktualisierte Buchungen werden im Log Bereich dokumentiert</li></ul><p><strong>Abbrechen</strong></p><ul><li>Abbrechen entfernt die Locks</li><li>Zur&uuml;ck auf die vorherige Ansicht</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p>&nbsp;</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="300" loading="lazy" src="attachments/611975450/611980154.png?width=300" data-image-src="attachments/611975450/611980154.png" data-unresolved-comment-count="0" data-linked-resource-id="611980154" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Aktualisierung.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975450" data-linked-resource-container-version="12" data-media-id="2f3111d3-4507-44a2-a0d2-254f9bfdddb8" data-media-type="file" /></span></p><p>&nbsp;</p><p>&nbsp;</p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975450/611980154.png">Aktualisierung.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

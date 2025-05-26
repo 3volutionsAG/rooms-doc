@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 216.005 Individueller Report nutzen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 216.005 Individueller Report nutzen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Sep 19, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+<h1 id="id-216.005IndividuellerReportnutzen-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 216.004 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.0 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorität</strong> <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Die individuellen Reports (Word Dokumente) werden in ROOMS verwaltet und bei Reservationsabschluss, Eventabschluss oder aus einer Listenansicht mit Daten abgefüllt. <br class="atl-forced-newline"/>
+Der Report steht dann zum Download bereit oder wird gleich mit der Reservationsbestätigung verschickt. <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>  &quot;Darf individuelle Dokumente erstellen&quot;</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><p> - </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Schritt 1: Dokumente selektieren
+	<ul>
+		<li>Variante: Nutzung der Dokumente bei Abschluss einer Reservation</li>
+		<li>Variante: Nutzung der Dokumente im View Mode einer Reservation und eines Events</li>
+		<li>Variante: Nutzung der Dokumente unter Reports</li>
+	</ul>
+	</li>
+	<li>Schritt 2: Actionpanel bestätigt die Erstellung</li>
+	<li>Schritt 3: Actionpanel liefert Dokumente zum Download</li>
+	<li>Schritt 4: E-Mails werden verschickt</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> <br class="atl-forced-newline"/>
+<a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a> <br class="atl-forced-newline"/>
+<a href="211.001-Anlass-erstellen_611975475.html" data-linked-resource-id="611975475" data-linked-resource-version="60" data-linked-resource-type="page">211.001 Anlass erstellen</a> <br class="atl-forced-newline"/> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline"/>
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+</ul>
+
+
+
+<h1 id="id-216.005IndividuellerReportnutzen-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-216.005IndividuellerReportnutzen-Schritt1:Dokumentselektieren">Schritt 1: Dokument selektieren</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h3 id="id-216.005IndividuellerReportnutzen-Variante-NutzungderDokumentebeiAbschlusseinerReservation">Variante - Nutzung der Dokumente bei Abschluss einer Reservation</h3>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Button Bereich im Reservationsdetail:</strong></p>
+
+<ul>
+	<li>Button: Dokumente</li>
+	<li>Modales Popup
+	<ul>
+		<li>Titel: Verfügbare Dokumente</li>
+		<li>Text: Die Dokumente werden erstellt, sobald die Reservation abgenschlossen ist</li>
+		<li>Reports aphabetisch aufgelistet</li>
+		<li>Checkbox: Download</li>
+		<li>Checkbox: E-Mail</li>
+		<li>Button: Bestätigen</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<p><strong>Generell</strong></p>
+<ul>
+	<li>Button wird nur angezeigt bei Recht &quot;Darf individuelle Dokumente erstellen&quot;.</li>
+</ul>
+
+
+<p><strong>Klick auf „Dokumente“</strong></p>
+<ol>
+	<li>alle Dokumente werden angezeigt, welche in diesen Bereich publiziert wurden</li>
+	<li>Die Dokumente werden alphabetisch aufgelistet</li>
+	<li>Die Dokument Sprache wird in Klammer gemäss Kultur-Kürzel ausgegeben – z.B. (CH-DE für Deutsch)</li>
+	<li>Selektion der Checkbox &quot;Download&quot; generiert das Dokument und stellt es zum Download bereit</li>
+	<li>Selektion der Checkbox &quot;E-Mail&quot; schickt das Dokument mit der E-Mail Bestätigung mit</li>
+	<li>Die Erstellung erfolgt als Word oder PDF - siehe Feld &quot;Export Format&quot; in UC <a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a>)</li>
+	<li>Standardwert wird bei Erfassung des Dokuments definiert (selektiert, nicht selektiert, pflicht-selektiert) - siehe Feld &quot;Selektion für Download&quot; und &quot;Selektion für E-Mail&quot; in UC<a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a>)</li>
+	<li>Mehrfachselektion erlaubt</li>
+	<li>*Klick auf „Bestätigen“
+	<ol>
+		<li>Reservation muss zuerst abgeschlossen werden – dabei werden die Dokumente generiert</li>
+		<li>siehe Schritt 2</li>
+	</ol>
+	</li>
+</ol>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975517/611975619.png" data-image-src="attachments/611975517/611975619.png" data-unresolved-comment-count="0" data-linked-resource-id="611975619" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="200.000 Dokumente.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975517" data-linked-resource-container-version="17" data-media-id="c8b1b85a-a79b-4acf-8ce6-050b8028145e" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h3 id="id-216.005IndividuellerReportnutzen-VarianteNutzungderDokumenteimViewModeeinerReservationundeinesEvents">Variante Nutzung der Dokumente im View Mode einer Reservation und eines Events</h3>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Button Bereich im Reservationsdetail:</strong></p>
+
+<ul>
+	<li>Button: Dokumente</li>
+	<li>Modales Popup
+	<ul>
+		<li>Titel: Verfügbare Dokumente</li>
+		<li>Reports aphabetisch aufgelistet</li>
+		<li>Checkbox: Download</li>
+		<li>Button: Erstellen</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<p><strong>Generell</strong></p>
+<ul>
+	<li>Button wird nur angezeigt bei Recht &quot;Darf individuelle Dokumente erstellen&quot;.</li>
+</ul>
+
+
+<p><strong>Klick auf „Dokumente“</strong></p>
+<ol>
+	<li>alle Dokumente werden angezeigt, welche in diesen Bereich publiziert wurden</li>
+	<li>Die Dokumente werden alphabetisch aufgelistet</li>
+	<li>Die Dokument Sprache wird in Klammer gemäss Kultur-Kürzel ausgegeben – z.B. (CH-DE für Deutsch)</li>
+	<li>Selektion der Checkbox &quot;Download&quot; generiert das Dokument und stellt es zum Download bereit</li>
+	<li>Die Erstellung erfolgt als Word oder PDF - siehe Feld &quot;Export Format&quot; in UC <a href="611975494.html" data-linked-resource-id="611975494" data-linked-resource-version="3" data-linked-resource-type="page">&Auml;nderungsverlauf 216.004</a><a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a>)</li>
+	<li>Standardwert wird bei Erfassung des Dokuments definiert (selektiert, nicht selektiert, pflicht-selektiert) - siehe Feld &quot;Selektion für Download&quot;  in UC <a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a>)</li>
+	<li>Mehrfachselektion erlaub<strong>t</strong></li>
+	<li><strong>Klick auf „Erstellen“</strong>
+	<ol>
+		<li>Benutzer bleibt auf dem ViewMode</li>
+		<li>siehe Schritt 2</li>
+	</ol>
+	</li>
+</ol>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975517/611977083.jpg" data-image-src="attachments/611975517/611977083.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611977083" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975517" data-linked-resource-container-version="17" data-media-id="2697b7d9-4263-4231-9975-ea9d2c7e05bb" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h3 id="id-216.005IndividuellerReportnutzen-Schritt3-NutzungderDokumenteimBereich&quot;Reports&quot;">Schritt 3 - Nutzung der Dokumente im Bereich &quot;Reports&quot;</h3>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - Sidepanel</strong></p>
+<ul>
+	<li><span style="color: red;">Dokument</span></li>
+	<li>Datum/Zeit</li>
+	<li>Organisator</li>
+	<li>Standort Picker</li>
+	<li>Ressourcen Picker</li>
+	<li>Anlass Titel</li>
+	<li>Anlass Nummer</li>
+	<li>Reservationstitel</li>
+</ul>
+
+
+<p><strong>Button Bereich</strong></p>
+<ul>
+	<li>Button „Entfernen“</li>
+	<li>Button „Zurücksetzen“</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<p><strong>Generell</strong></p>
+<ul>
+	<li>Bereich wird nur angezeigt bei Recht &quot;Darf individuelle Dokumente erstellen&quot;.</li>
+</ul>
+
+
+<p><strong>Wahl des Dokuments</strong></p>
+<ol>
+	<li>Alle Dokumente werden angezeigt, welche in diesen Bereich publiziert wurden</li>
+	<li>Die Dokumente werden alphabetisch aufgelistet</li>
+	<li>Die Dokument Sprache wird in Klammer ausgegeben – z.B. (CH-DE)</li>
+</ol>
+
+
+<p><strong>Eingabe der Filterkriterien</strong></p>
+<ul>
+	<li>Datum/Zeit
+	<ul>
+		<li>Standard = aktueller Tag von 00:00 bis 23:59</li>
+		<li>Veränderbar durch Klick der Checkbox und Eingabe der Werte</li>
+	</ul>
+	</li>
+	<li>Organisator (Intelibox)</li>
+	<li>Standort (Intelibox mit Picker)</li>
+	<li>Ressource (Picker)</li>
+	<li>Reservationstitel</li>
+</ul>
+
+
+<p><strong>Klick auf „Erstellen“</strong></p>
+
+<ul>
+	<li>Dokument wird auf Grund der Filterkriterien generiert.</li>
+	<li>Die Erstellung erfolgt als Word oder PDF - siehe Feld &quot;Export Format&quot; in UC <a href="216.004-Individueller-Report-verwalten_611975513.html" data-linked-resource-id="611975513" data-linked-resource-version="17" data-linked-resource-type="page">216.004 Individueller Report verwalten</a>)</li>
+	<li>Siehe Schritt 2 + 3</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975517/611977086.jpg" data-image-src="attachments/611975517/611977086.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611977086" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 3.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975517" data-linked-resource-container-version="17" data-media-id="ad754fe5-0328-4397-8da5-d85f4eb2ca6f" data-media-type="file"></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-216.005IndividuellerReportnutzen-Schritt2-ActionpanelbestätigtdieErstellung">Schritt 2 - Actionpanel bestätigt die Erstellung</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Actionpanel</strong></p>
+<ul>
+	<li>Bestätigungsmeldung</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975517/611976150.jpg" data-image-src="attachments/611975517/611976150.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611976150" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975517" data-linked-resource-container-version="17" data-media-id="3821d7cb-72eb-4683-aea6-6acae36a0f10" data-media-type="file"></span></p>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-216.005IndividuellerReportnutzen-Schritt3–ActionpanelliefertDokumentezumDownload">Schritt 3 – Actionpanel liefert Dokumente zum Download</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Actionpanel</strong></p>
+<ul>
+	<li>Erstellungsmeldung mit Download Link des erstellten Dokuments</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+
+<ul>
+	<li>Die aktuellste Meldung wird als erstes angezeigt (gilt immer für das Actionpanel)</li>
+	<li>Pro Dokument wird eine Meldung erstellt</li>
+</ul>
+
+
+
+<p><strong>Meldung</strong></p>
+
+<ul>
+	<li>Text: Das Dokument xy wurde erstellt und kann über den Link heruntergeladen werden.</li>
+</ul>
+
+
+<p><strong>Link</strong></p>
+
+<ul>
+	<li>Die Ausgabe des Links erfolgt in der Sprache des Benutzers (Bezeichnung)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975517/611977121.jpg" data-image-src="attachments/611975517/611977121.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611977121" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 5.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975517" data-linked-resource-container-version="17" data-media-id="b0804b75-cdad-4c31-bd35-a275bf6e4934" data-media-type="file"></span></p>
+
+<p>Actionpanel bestätigt die Erstellung</p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-216.005IndividuellerReportnutzen-Schritt4–E-Mailswerdenverschickt">Schritt 4 – E-Mails werden verschickt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Generell</strong></p>
+
+<ul>
+	<li>Dokument wird erstellt (PDF oder Word)</li>
+	<li>Dokument wird als E-Mail Anhang an E-Mail für Ersteller, Organisator und Verantwortlicher angefügt</li>
+	<li>E-Mail wird verschickt (siehe dazu UC <a href="107.001-Notifikationen-verwalten_611975472.html" data-linked-resource-id="611975472" data-linked-resource-version="23" data-linked-resource-type="page">107.001 Notifikationen verwalten</a> und <a class="unresolved" href="#">Notifikationsmatrix</a>)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611977122.jpg">Schritt 5.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611977086.jpg">Schritt 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611977083.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611977080.jpg">Schritt 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611977121.jpg">Schritt 5.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611976150.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975517/611975619.png">200.000 Dokumente.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

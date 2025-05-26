@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 104.002 Projektgruppen verwalten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Noch-nicht-umgesetzte-UC_611975491.html">Noch nicht umgesetzte UC</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 104.002 Projektgruppen verwalten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 19, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1><a name="id-104.002Projektgruppenverwalten-<div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+<h1><a name="id-104.002Projektgruppenverwalten-UseCaseÜberblick"></a>Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 104.002 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Remo Herren </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.1 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Die vollständige Verwaltung von Projektgruppen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"> <table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;"><ul>
+	<li>Funktionsrechte müssen implementiert werden:
+	<ul>
+		<li>Darf (Menü) Projektgruppen lesen</li>
+	</ul>
+	</li>
+</ul>
+</table>
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;"><ul>
+	<li>Die Projektgruppen werden in jeweils nur zwei Hierarchiestufen aufgeteilt (Haupt-Projektgruppen und Sub-Projektgruppen) sowie die Initialstufe (welche auch als „Projektgruppen" bezeichnet wird)</li>
+	<li>Es werden keine Projektgruppen standardmässig von GARAIO zur Verfügung gestellt</li>
+	<li>Der Kunde kann selber kann ein Set von Projektgruppen erstellen und diese als Filter- und/oder Berechtigungs-Kriterien verwenden.</li>
+</ul>
+</table> </td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer navigiert unter EINSTELLUNGEN auf GRUPPIERUNGEN\PROJEKTGRUPPEN VERWALTEN</li>
+	<li>Nutzer (mit entsprechendem Funktionsrecht) kann durch den Projektgruppen-Tree navigieren und die weiteren Aktionen festlegen</li>
+	<li>Nutzer kann neue Haupt-Projektgruppen erfassen und diese editieren</li>
+	<li>Nutzer kann neue Sub-Projektgruppen erfassen und diese editieren</li>
+	<li>Liste mit allen der Projektgruppen zugeordneten Ressourcen wird angezeigt</li>
+	<li>Ressourcen können von der Projektgruppen entfernt werden</li>
+	<li>Ressourcen können zu der Projektgruppen hinzugefügt werden</li>
+	<li>Liste mit allen der Projektgruppen zugeordneten Personen wird angezeigt</li>
+	<li>Personen können von der Projektgruppen entfernt werden</li>
+	<li>Personen können zu der Projektgruppen hinzugefügt werden</li>
+	<li>Nutzer kann Projektgruppen löschen</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+</tbody></table>
+</div></div>"></a><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+<h1><a name="id-104.002Projektgruppenverwalten-UseCaseÜberblick"></a>Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 104.002 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Remo Herren </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.1 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Die vollständige Verwaltung von Projektgruppen</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"> <table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;"><ul>
+	<li>Funktionsrechte müssen implementiert werden:
+	<ul>
+		<li>Darf (Menü) Projektgruppen lesen</li>
+	</ul>
+	</li>
+</ul>
+</table>
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse:collapse;"><ul>
+	<li>Die Projektgruppen werden in jeweils nur zwei Hierarchiestufen aufgeteilt (Haupt-Projektgruppen und Sub-Projektgruppen) sowie die Initialstufe (welche auch als „Projektgruppen" bezeichnet wird)</li>
+	<li>Es werden keine Projektgruppen standardmässig von GARAIO zur Verfügung gestellt</li>
+	<li>Der Kunde kann selber kann ein Set von Projektgruppen erstellen und diese als Filter- und/oder Berechtigungs-Kriterien verwenden.</li>
+</ul>
+</table> </td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Nutzer navigiert unter EINSTELLUNGEN auf GRUPPIERUNGEN\PROJEKTGRUPPEN VERWALTEN</li>
+	<li>Nutzer (mit entsprechendem Funktionsrecht) kann durch den Projektgruppen-Tree navigieren und die weiteren Aktionen festlegen</li>
+	<li>Nutzer kann neue Haupt-Projektgruppen erfassen und diese editieren</li>
+	<li>Nutzer kann neue Sub-Projektgruppen erfassen und diese editieren</li>
+	<li>Liste mit allen der Projektgruppen zugeordneten Ressourcen wird angezeigt</li>
+	<li>Ressourcen können von der Projektgruppen entfernt werden</li>
+	<li>Ressourcen können zu der Projektgruppen hinzugefügt werden</li>
+	<li>Liste mit allen der Projektgruppen zugeordneten Personen wird angezeigt</li>
+	<li>Personen können von der Projektgruppen entfernt werden</li>
+	<li>Personen können zu der Projektgruppen hinzugefügt werden</li>
+	<li>Nutzer kann Projektgruppen löschen</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> &#8211; </p></td>
+</tr>
+</tbody></table>
+</div></div></h1>
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><font color="#ff0000">Rote Schrift = MUSS Felder</font></li>
+	<li><font color="#00b050">Grüne Schrift = wird in einem Folgerelease umgesetzt</font></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1><a name="id-104.002Projektgruppenverwalten-UseCaseDetails"></a>Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt1-NutzernavigiertunterEINSTELLUNGENaufSTAMMDATEN\PROJEKTGRUPPENVERWALTEN"></a>Schritt 1 - Nutzer navigiert unter EINSTELLUNGEN auf STAMMDATEN\PROJEKTGRUPPEN VERWALTEN</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong><br/>
+Navigation öffnet sich entsprechend</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Funktionsrecht muss implementiert werden:</strong></p>
+<ul>
+	<li>Darf „(Menü) Projektgruppen lesen"</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt2-NutzerkanndurchdenProjektgruppen-TreenavigierenunddieweiterenAktionenfestlegen"></a>Schritt 2 - Nutzer kann durch den Projektgruppen-Tree navigieren und die weiteren Aktionen festlegen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Projektgruppen-Tree-Control
+	<ul>
+		<li>Edit Icon</li>
+		<li>View Icon</li>
+		<li>Neuerfassen Icon</li>
+		<li>Delete Icon</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Je nachdem wo das man sich im Tree befindet, kann man auf den jeweiligen Nodes mehr oder weniger Aktionen durchführen (auch an der Anzahl Icons ersichtlich).</p>
+<ul>
+	<li>Auf der Initialstufe „Projektgruppen" steht nur der Button „Neuerfassen" zur Verfügung
+	<ul>
+		<li>Klick auf „Neuerfassen"-Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Man gelangt ins Detail und kann einen neue Haupt-Projektgruppen erfassen (siehe Schritt 3)</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Auf der Hierarchiestufe „Haupt-Projektgruppen"  stehen die Buttons „Neuerfassen", „Anzeigen", „Editieren" und „Löschen" zur Verfügung.
+	<ul>
+		<li>Klick auf „Neuerfassen"-Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Man gelangt ins Detail und kann einen neue Sub-Projektgruppen erfassen (siehe Schritt 4)</li>
+		</ul>
+		</li>
+		<li>Klick auf „View" Button möglich
+		<ul>
+			<li>Details der Haupt-Projektgruppen werden nicht editierbar angezeigt</li>
+			<li>Es stehen die Buttons „Editieren", „Drucken" und „Zurück" zur Verfügung</li>
+		</ul>
+		</li>
+		<li>Klick auf „Edit Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Man gelangt ins Detail der Haupt-Projektgruppen und kann diese editieren (siehe Schritt 3)</li>
+		</ul>
+		</li>
+		<li>Klick auf „Delete" Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Löscht die entsprechende Haupt-Projektgruppen (Siehe Schritt 11)</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Auf der Hierarchiestufe „Sub-Projektgruppen" stehen die Buttons „Anzeigen", „Editieren" und „Löschen" zur Verfügung.
+	<ul>
+		<li>Klick auf „View" Button möglich
+		<ul>
+			<li>Details der Haupt-Projektgruppen werden nicht editierbar angezeigt</li>
+			<li>Es stehen die Buttons „Editieren", „Drucken" und „Zurück" zur Verfügung</li>
+		</ul>
+		</li>
+		<li>Klick auf „Edit Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Man gelangt ins Detail der Sub-Projektgruppen und kann diese editieren (siehe Schritt 4)</li>
+		</ul>
+		</li>
+		<li>Klick auf „Delete" Button möglich (falls entsprechende Berechtigungen vorhanden)
+		<ul>
+			<li>Löscht die entsprechende Sub-Projektgruppen (Siehe Schritt 11)</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p>Die nachfolgenden Screenshots zeigen die Gliederungen und nicht die Projektgruppen. Da das Verhalten aber vom Prinzip her das selbe ist, sollen diese Screenshots als Unterstützung dienen.<br/>
+Initialstufe „Projektgruppen</p>
+
+<p><span class="image-wrap" style=""><a class="confluence-thumbnail-link 217x203" href='https://3volutions.atlassian.net/wiki/download/attachments/611975391/Schritt%202%20Abbildung%201.jpg?api=v2'><img src="attachments/thumbnails/611975391/611980439" style="border: 1px solid black"/></a></span></p>
+
+<p>Hierarchiestufe „Haupt-Projektgruppen"</p>
+
+<p><span class="image-wrap" style=""><a class="confluence-thumbnail-link 267x212" href='https://3volutions.atlassian.net/wiki/download/attachments/611975391/Schritt%202%20Abbildung%202.jpg?api=v2'><img src="attachments/thumbnails/611975391/611980436" style="border: 1px solid black"/></a></span></p>
+
+<p>Hierarchiestufe „Sub-Projektgruppen"</p>
+
+<p><span class="image-wrap" style=""><a class="confluence-thumbnail-link 280x204" href='https://3volutions.atlassian.net/wiki/download/attachments/611975391/Schritt%202%20Abbildung%203.jpg?api=v2'><img src="attachments/thumbnails/611975391/611980433" style="border: 1px solid black"/></a></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt3-Nutzerkann(beientsprechenderBerechtigung)neueHaupt-Projektgruppenerfassenunddieseeditieren"></a>Schritt 3 - Nutzer kann (bei entsprechender Berechtigung) neue Haupt-Projektgruppen erfassen und diese editieren</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich TAB/Register „Stammdaten"</strong></p>
+
+<p><strong>EINGABEBEREICH</strong><br/>
+Bei Neuerfassung (über Neu) - analog Screenshot:</p>
+<ul>
+	<li>Label: Haupt-Projektgruppen neu erfassen</li>
+	<li><font color="red">Textfeld: Haupt-Projektgruppen-ID</font></li>
+	<li><font color="red">Textfeld: Bezeichnugn</font></li>
+	<li>Rich-Intelibox (Multiselektdropdown): Ressourcenart</li>
+	<li>Checkbox: sichtbar (ja/nein)</li>
+</ul>
+
+
+<ul>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<p><strong>Bei Editierung (über Edit) - kein Screenshot:</strong></p>
+<ul>
+	<li>Label: Hauptgliederung editieren</li>
+	<li><font color="red">Textfeld: Hauptgliederungs-ID</font></li>
+	<li><font color="red">Textfeld: Bezeichnung</font></li>
+	<li>Rich-Intelibox (Multiselektdropdown): Ressourcenart</li>
+	<li>Checkbox: Feld sichtbar (ja/nein)</li>
+</ul>
+
+
+
+<ul>
+	<li>Button: Aktualisieren</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><font color="red">Rot = Muss-Felder</font></p>
+
+<p>Bezeichnung wird in der Benutzersprache des angemeldeten Benutzers geladen (über T Icon) kann das Feld übersetzt werden.</p>
+<ul>
+	<li>Mittels Haupt-Projektgruppen -ID kann für jede Liste resp. jede Darstellung (inkl. dieser) definiert werden, an welcher Stelle resp. in welcher Reihenfolge diese erstellte Haupt-Projektgruppen im Verhältnis zu den anderen Haupt-Projektgruppen auftaucht (Vorschlag: muss nicht unbedingt eine Nummer sein, ich schlage drei Buchstaben vor und es wird dann nach abc sortiert)</li>
+	<li>Es können 1-n Ressourcenarten (Arbeitsplatz, Equipment, etc.) ausgewählt werden, womit definiert wird, bei welchen Ressourcenarten das Feld dargestellt werden und als Filterkriterium dienen soll</li>
+	<li>Eine zusätzliche Checkbox „sichtbar" definiert, ob das Feld dann effektiv als Filterkriterium-Feld in den Listen sichtbar dargestellt wird oder nicht sichtbar (nur für Berechtigungszwecke) ist (über alle ausgewählten Ressourcenarten)</li>
+	<li>Info: Das neu erstellte (als sichtbar gekennzeichnete) Feld (Hauptgliederung), taucht in folgenden Masken wie folgt auf (in diesem Beispiel gehen wir davon aus, dass nur die Ressourcenart „Sitzungszimmer" bei der Erstellung der Hauptgliederung „Raumtyp" definiert wurde):
+	<ul>
+		<li>Sidepanel: Generell sofern in einem Sidepanel die Ressourcenart „Sitzungszimmer" gewählt wurde, muss das Feld / Hauptgliederung (z.B. „Raumtyp") als Dropdown innerhalb des „Ressourcenspezifischen Suchfilters" dargestellt werden und wenn es dies nicht geben sollte, dann unterhalb des Ressourcenart-Feldes.</li>
+		<li>Sidepanel: Bei mehreren selbst erstellten Hauptgliederungen für die Ressourcenart „Sitzungszimmer", werden diese in der Reihenfolge gemäss Hauptgliederungs-ID unterhalb der Ressourcenart angezeigt.</li>
+		<li>Sidepanel: Die neu erstellten Felder / Hauptgliederungen müssen (sofern die bereits erwähnten Bedingungen erfüllt sind) unter den Menüpunkten „Reservieren", „Listen" und bei „Einstellungen" im Sidepanel als Filterkriterium dargestellt werden</li>
+		<li>Inhaltsbereich: Hauptgliederung wird im Inhaltsbereich nicht dargestellt.</li>
+		<li>Info: Zugewiesene Ressourcen können immer mehreren Hauptgliederungen angehören</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt4-Nutzerkann(beientsprechenderBerechtigung)neueSub-Projektgruppenerfassenunddieseeditieren"></a>Schritt 4 - Nutzer kann (bei entsprechender Berechtigung) neue Sub-Projektgruppen erfassen und diese editieren</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich TAB/Register „Stammdaten"</strong></p>
+
+<p><strong>EINGABEBEREICH</strong><br/>
+Bei Neuerfassung (über Neu) - analog Screenshot:</p>
+<ul>
+	<li>Label: Sub-Projektgruppen neu erfassen</li>
+	<li><font color="red">Textfeld: Bezeichnung</font></li>
+</ul>
+
+
+<ul>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<p><strong>Bei Editierung (über Edit) - kein Screenshot:</strong></p>
+<ul>
+	<li>Label: Sub-Projektgruppen editieren</li>
+	<li><font color="red">Textfeld: Bezeichnung</font></li>
+</ul>
+
+
+<ul>
+	<li>Button: Aktualisieren</li>
+	<li>Button: Abbrechen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><font color="red">ROT = Muss-Felder</font></p>
+<ul>
+	<li>Bezeichnung wird in der Benutzersprache des angemeldeten Benutzers geladen (über T Icon) kann das Feld übersetzt werden.</li>
+	<li>Die Reihenfolge der Sub-Projektgruppen wird durch die Sortierung „ABC" in der jeweiligen Sprache bestimmt (sowohl im Projektgruppen-Tree, wie auch im Sidepanel mittels Dropdowns).</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt5-ListemitallenderProjektgruppezugeordnetenRessourcenwirdangezeigt"></a>Schritt 5 - Liste mit allen der Projektgruppe zugeordneten Ressourcen wird angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - TAB „Ressourcen"</strong></p>
+
+<p><strong>Liste/Grid mit Spalten</strong><br/>
+<strong>Default:</strong></p>
+<ul>
+	<li>Selektionscheckbox</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<p><strong>Optional:</strong></p>
+<ul>
+	<li>Beschreibung</li>
+	<li>... die weiteren Ressourcen-Felder</li>
+</ul>
+
+
+<ul>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Klick auf „Entfernen" Button möglich (falls entsprechende Berechtigungen vorhanden)
+	<ul>
+		<li>Siehe Schritt 6</li>
+	</ul>
+	</li>
+	<li>Klick auf Button „Ressourcen hinzufügen" möglich (falls entsprechende Berechtigungen vorhanden)
+	<ul>
+		<li>Ein modaler Dialog wird geöffnet und man kann eine/mehrere Ressource( n ) der Projektgruppen hinzufügen (siehe Schritt 7)</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt6-RessourcenkönnenvonderProjektgruppeentferntwerden"></a>Schritt 6 - Ressourcen können von der Projektgruppe entfernt werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - TAB „Ressourcen"</strong><br/>
+Siehe Schritt 5</p>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Es kann/können ein oder mehrere Ressourcen selektiert werden. Klick auf „Entfernen" bewirkt folgendes:
+	<ul>
+		<li>Sicherheitsabfrage</li>
+		<li>Entfernt die Verlinkung zur Projektgruppe</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt7-RessourcenkönnenzuderProjektgruppehinzugefügtwerden"></a>Schritt 7 - Ressourcen können zu der Projektgruppe hinzugefügt werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - Modaler Dialog</strong></p>
+
+<p><strong>Liste/Grid mit Spalten</strong><br/>
+<strong>Default:</strong></p>
+<ul>
+	<li>Selektionscheckbox</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<p><strong>Optional:</strong></p>
+<ul>
+	<li>Beschreibung</li>
+	<li>... die weiteren Ressourcen-Felder</li>
+</ul>
+
+
+<p><strong>Weiterer Bereich unterhalb der Liste</strong></p>
+<ul>
+	<li>Start-Datum <font color="#993366"></font>(Kommentar rh 22.05.2009: macht dies wirklich bei den ressourcen und bei den personen sinn?)
+<div class="error"><span class="error">Unknown macro: {cololr}</span> 
+<ul>
+	<li>End-Datum <font color="#993366"></font>(Kommentar rh 22.05.2009: macht dies wirklich bei den ressourcen und bei den personen sinn?)</li>
+</ul>
+</div></li>
+</ul>
+
+
+<ul>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Ressourcen können selektiert und mittels „Hinzufügen"-Button übernommen werden</li>
+	<li>Standard Start-Datum ist der aktuelle Tag</li>
+	<li>Standard-End-Datum ist der 31.12.9999</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt8-ListemitallenderProjektgruppezugeordnetenPersonenwirdangezeigt"></a>Schritt 8 - Liste mit allen der Projektgruppe zugeordneten Personen wird angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - TAB „Personen"</strong></p>
+
+<p><strong>Liste/Grid mit Spalten</strong><br/>
+<strong>Default:</strong></p>
+<ul>
+	<li>Selektionscheckbox</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<p><strong>Optional:</strong></p>
+<ul>
+	<li>Beschreibung</li>
+	<li>... die weiteren Ressourcen-Felder</li>
+</ul>
+
+
+<ul>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Klick auf „Entfernen" Button möglich (falls entsprechende Berechtigungen vorhanden)
+	<ul>
+		<li>Siehe Schritt 9</li>
+	</ul>
+	</li>
+	<li>Klick auf Button „Personen hinzufügen" möglich (falls entsprechende Berechtigungen vorhanden)
+	<ul>
+		<li>Ein modaler Dialog wird geöffnet und man kann eine/mehrere Ressource<img class="emoticon" src="images/icons/emoticons/thumbs_down.png" height="16" width="16" align="absmiddle" alt="" border="0"/> der Projektgruppen hinzufügen (siehe Schritt 10)</li>
+	</ul>
+	</li>
+	<li>Nur die zugeordneten Personen haben Zugriff auf die jeweiligen Projektgruppen und deren Ressourcen</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt9-PersonenkönnenvonderProjektgruppeentferntwerden"></a>Schritt 9 - Personen können von der Projektgruppe entfernt werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - TAB „Ressourcen"</strong><br/>
+Siehe Schritt 8</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Es kann/können ein oder mehrere Personen selektiert werden. Klick auf „Entfernen" bewirkt folgendes:
+	<ul>
+		<li>Sicherheitsabfrage</li>
+		<li>Entfernt die Verlinkung zur Projektgruppe</li>
+	</ul>
+	</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt10-RessourcenkönnenzuderProjektgruppehinzugefügtwerden"></a>Schritt 10 - Ressourcen können zu der Projektgruppe hinzugefügt werden</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich - Modaler Dialog</strong></p>
+
+<p><strong>Liste/Grid mit Spalten</strong><br/>
+<strong>Default:</strong></p>
+<ul>
+	<li>Selektionscheckbox</li>
+	<li>Bezeichnung</li>
+</ul>
+
+
+<p><strong>Optional:</strong> </p>
+<ul>
+	<li>Beschreibung</li>
+	<li>... die weiteren Ressourcen-Felder</li>
+</ul>
+
+
+
+<p><strong>Weiterer Bereich unterhalb der Liste</strong></p>
+<ul>
+	<li>Start-Datum</li>
+	<li>End-Datum</li>
+	<li>Button: Hinzufügen</li>
+	<li>Button: Entfernen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Projektgruppen können selektiert und mittels „Hinzufügen"-Button übernommen werden</li>
+	<li>Standard Start-Datum ist der aktuelle Tag</li>
+	<li>Standard-End-Datum ist der 31.12.9999</li>
+</ul>
+
+
+<div class="panel" style="background-color: black;border-width: 1px;"></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2><a name="id-104.002Projektgruppenverwalten-Schritt11-Nutzerkann(beientsprechenderBerechtigung)Projektgruppenlöschen"></a>Schritt 11 - Nutzer kann (bei entsprechender Berechtigung) Projektgruppen löschen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Color</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Projektgruppen-Tree-Control</li>
+	<li>Delete Icon</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<ul>
+	<li>Klickt man auf das Delete-Item, dann erscheint zuerst eine Bestätigungsmeldung, welche man quittieren muss.</li>
+	<li>Sub-Projektgruppen können nur dann gelöscht werden, wenn keine Abhängigkeiten zu Ressourcen/Personen mehr bestehen</li>
+	<li>Haupt-Projektgruppen können nur gelöscht werden, wenn keine Sub-Projektgruppen bestehen, Sub-Projektgruppen ohne Ressourcen/Personen vorhanden sind oder Sub-Projektgruppen bestehen, welche aber noch für keine Reservation verwendet wurden.</li>
+	<li>Beim löschen einer Sub-Projektgruppen werden die verknüpften Berechtigungen gelöscht</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p>Die nachfolgenden Screenshots zeigen die Gliederungen und nicht die Projektgruppen. Da das Verhalten aber vom Prinzip her das selbe ist, sollen diese Screenshots als Unterstützung dienen.<br/>
+Initialstufe „Projektgruppen</p>
+
+<p><span class="image-wrap" style=""><a class="confluence-thumbnail-link 144x106" href='https://3volutions.atlassian.net/wiki/download/attachments/611975391/Schritt%2011.jpg?api=v2'><img src="attachments/thumbnails/611975391/611980447" style="border: 1px solid black"/></a></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975391/611980439.jpg">Schritt 2 Abbildung 1.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975391/611980436.jpg">Schritt 2 Abbildung 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975391/611980433.jpg">Schritt 2 Abbildung 3.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975391/611980447.jpg">Schritt 11.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

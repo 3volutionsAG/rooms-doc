@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Darstellung Kalender (Feiertage, Sperrzeiten, Wochenenden, Tooltipp)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Darstellung Kalender (Feiertage, Sperrzeiten, Wochenenden, Tooltipp)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on Apr 30, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-DarstellungFeiertage:"><strong>Darstellung Feiertage</strong><span style="text-decoration: underline;">:</span></h3>
+
+<p>Per GARAIO-Default ein hell-gelber Balken resp. Symbol (die Farbe kann global geändert werden), ohne Text im Balken, aber mit Tooltip (bei Mouse-Over über den Balken resp. Symbol). Das Tooltip beinhaltet folgende Informationen in formatierter Form (untereinander):
+<br class="atl-forced-newline"/></p>
+<ul>
+	<li>Bezeichnung (Feiertag)
+<br class="atl-forced-newline"/></li>
+	<li>Von Datum / Von Zeit
+<br class="atl-forced-newline"/></li>
+	<li>Bis Datum / Bis Zeit
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Klick auf den Balken mit linker Maustaste und Buchung möglich (wird ein Feiertag gebucht, muss zusätzlich eine Meldung im Action Panel ausgegeben werden) <strong>Darstellung Wochenende:</strong>
+<br class="atl-forced-newline"/>
+Per GARAIO-Default ein hell-gelber Balken resp. Symbol (die Farbe kann global geändert werden – d.h. hier muss ein globaler Konfigurationseintrag erstellt werden), ohne Text im Balken, aber mit Tooltip (bei Mouse-Over über den Balken resp. Symbol).
+<br class="atl-forced-newline"/></li>
+	<li>Bezeichnung (Wochenende resp. Wochenend-Tag)
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Klick auf den Balken mit rechter Maustaste und Buchung möglich (wird an einem Wochenende gebucht, muss zusätzlich eine Meldung im Action Panel ausgegeben werden).
+<br class="atl-forced-newline"/></li>
+</ul>
+
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-DarstellungSperrzeiten:">Darstellung Sperrzeiten:</h3>
+
+<p>Per Standard ein anthrazit-grauer Balken resp. Symbol (die Farbe kann global geändert werden - d.h. hier muss ein globaler Konfigurationseintrag erstellt werden), ohne Text im Balken, aber mit Tooltip (bei Mouse-Over über den Balken resp. Symbol). Das Tooltip beinhaltet folgende Informationen in formatierter Form (untereinander):
+<br class="atl-forced-newline"/></p>
+<ul>
+	<li>Bezeichnung (Sperrzeiten)
+<br class="atl-forced-newline"/></li>
+	<li>Von Datum / Von Zeit
+<br class="atl-forced-newline"/></li>
+	<li>Bis Datum / Bis Zeit
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Klick auf den Balken mit rechter Maustaste und Buchung NICHT möglich.
+<br class="atl-forced-newline"/></li>
+</ul>
+
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-DarstellunginaktiveRessource:">Darstellung inaktive Ressource:<br class="atl-forced-newline"/></h3>
+
+<p>Eine inaktive Ressource wird nicht dargestellt. 
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p>
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-Darstellungaktive(freie)Ressource:"><strong>Darstellung aktive (freie) Ressource</strong><span style="text-decoration: underline;">:</span></h3>
+
+<p>Im Kalender zeigt der weisse Bereich an, ob die Ressource frei. Im Plan wird die freie Ressource durch ein grünes Symbol angezeigt (die Farbe kann global geändert werden), ohne Text im Balken (Kalender) und ohne Tooltip (bei Mouse-Over).
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p>
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-DarstellungderReservation(besetzteRessource):"><strong>Darstellung der Reservation (besetzte Ressource):</strong></h3>
+
+<p>Die Status (u.a. Reservation, Provisorische Reservation, Besetzt, etc.) werden mittels Balkenfarbe resp. Symbol/Farbe (PLAN) deklariert.
+<br class="atl-forced-newline"/>
+Ob eine Reservation Teil eines <strong>Anlasses</strong>, einer Serie, Buchungen mit fixem Equipment, Buchungen mit mobilem Equipment, Buchungen mit Bestellungen, Buchungen mit Parkplätzen oder Buchungen in teilbaren Räumen ist, wird mit einem entsprechenden Symbol visualisiert. SCRENNS gem. 4.2!!!
+<br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="86" width="245" loading="lazy" src="attachments/611975449/611980539.png?width=245" data-image-src="attachments/611975449/611980539.png" data-unresolved-comment-count="0" data-linked-resource-id="611980539" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav5fdf9d5cc8eb29bc7f1e425574f8b88d.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975449" data-linked-resource-container-version="19" data-media-id="d093e35f-a00c-4197-a513-fa7f123a75ad" data-media-type="file"></span><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+Die Symbole können mittels einer Symbolleiste im Fussbereich ein- und ausgeblendet werden.
+<br class="atl-forced-newline"/></p>
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-Vor-undNachlaufzeiten"><strong>Vor- und Nachlaufzeiten</strong></h3>
+
+<p>(siehe entsprechender Eintrag im Globalen Dokument – Berechnung Vor- und Nachlaufzeiten) werden anders farbig gem. Definition auf Status (siehe UC<a href="108.002-Status-verwalten_611975323.html" data-linked-resource-id="611975323" data-linked-resource-version="20" data-linked-resource-type="page">108.002 Status verwalten</a>) dargestellt (siehe Abbildung).
+<br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="86" width="245" loading="lazy" src="attachments/611975449/611980531.png?width=245" data-image-src="attachments/611975449/611980531.png" data-unresolved-comment-count="0" data-linked-resource-id="611980531" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav71d96481ec1be48e7436c7c80224d43e.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975449" data-linked-resource-container-version="19" data-media-id="9d2e7255-688b-4ab5-bd51-b74df6f6c3b0" data-media-type="file"></span></p>
+
+<h3 id="DarstellungKalender(Feiertage,Sperrzeiten,Wochenenden,Tooltipp)-Tooltipp">Tooltipp</h3>
+
+<p>Das Tooltip der Reservation der Reservation kann global definiert werden</p>
+
+<p>siehe dazu <a href="https://3volutions.atlassian.net/wiki/spaces/ROOMSKBALL/pages/257130511/Konfigurationsparameter+Configuration+parameter" data-linked-resource-id="257130511" data-linked-resource-version="84" data-linked-resource-type="page">Konfigurationsparameter / Configuration parameter</a></p>
+
+
+
+
+<p>Um Tooltipps von privaten Reservationen oder Reservationen Dritter zu lesen sind spezielle Berechtigungen erforderlich.</p>
+
+<p>siehe auch <a href="Private-Flag_611975458.html" data-linked-resource-id="611975458" data-linked-resource-version="3" data-linked-resource-type="page">Private Flag</a> und <a href="https://3volutions.atlassian.net/wiki/spaces/ROOMSKBALL/pages/257130703/Rechte" data-linked-resource-id="257130703" data-linked-resource-version="2" data-linked-resource-type="page">Rechte</a></p>
+
+
+
+<ul>
+	<li> </li>
+</ul>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975449/611980540.png">worddav2cfd7e2236e34687c7aa36d55fcc34c9.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975449/611980539.png">worddav5fdf9d5cc8eb29bc7f1e425574f8b88d.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975449/611980537.png">worddave43e58fa09f640223c1b59dbc958a0d7.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975449/611980531.png">worddav71d96481ec1be48e7436c7c80224d43e.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975449/611980530.png">worddavd72b66fe53501742044d9a0e5c5a9b10.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

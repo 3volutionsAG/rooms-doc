@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 211</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 211
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC211-UseCaseÜberblickID211OwnerTimBänzigerNameUnterhaltenvonEvents/VideokonferenzenZielDerEventbestehenderEventsollgesuchtundeditiertwerdenkönnen.AbhängigkeitenzuanderenUC215,203,207"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC211-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 211 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> Unterhalten von Events/Videokonferenzen </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Der Event bestehender Event soll gesucht und editiert werden können. </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> 215, 203, 207 </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC211-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC211-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Bitte hier den Use Case im groben Beschreiben – auch Abhängigkeiten zu anderen Use Cases sind zu erwähnen:</p>
+
+<p>Dieser Use Case befasst sich mit der Suche, Editieren und Löschen von Events:<br/>
+<strong>Suchen</strong></p>
+<ol>
+	<li>Event muss unter „Meine Events“ des Event Owner erscheinen</li>
+	<li>Event kann über eine Eventsuchmaske (analog Reservationssuche) gesucht werden, unter Verwendung der Suchkriterien der Eventstammdaten (Owner, Eventtyp, Datum/Zeit, Titel, Kostenstelle, Standort, etc.) und ev. Ressourcensuchkriterien (wie Ressourcenname, Adressat, Datum, Zeit, etc.)</li>
+	<li>Event kann über die gängigen Ressourcensuche Instrumente gefunden werden (Kalender, Plan, Ressourcensuche, etc.) und dann über Ressourcendetail auf Link „Event“ klicken<br/>
+<strong>Anzeigen</strong></li>
+	<li>Suchresultat als Eventkalender (Default): zeigt den Event-Time-Stream mit allen Buchungen zu einem Event (grafische Darstellung)
+	<ol>
+		<li>Klick auf Anzeigen im Event Header linkt direkt in die Details eines Events im Read-Mode</li>
+		<li>Klick auf Editieren im Event Header linkt direkt in die Details eines Events im Edit-Mode</li>
+		<li>Klick auf eine Buchung auf der Eventzeitlinie, wechselt direkt in den Read-Mode einer Reservation</li>
+		<li>Klick auf das X einer Buchung auf der Eventzeitlinie löscht umgehend die Reservation (mit Sicherheitsabfrage)</li>
+	</ol>
+	</li>
+	<li>Suchresultat als Liste: zeigt eine Auflistung von Events mit den wichtigsten Angaben zu einem Event (Name, Owner, Datum/Zeit, Standort, etc.)
+	<ol>
+		<li>Klick auf Anzeigen linkt direkt in die Details eines Event im Read-Mode</li>
+		<li>Klick auf Editieren linkt direkt in die Details eines Events im Edit-Mode<br/>
+<strong>Detail</strong><br/>
+Im Eventdetail</li>
+	</ol>
+	</li>
+</ol>
+<ul>
+	<li>Kann der Event editiert werden (ev. vorgängiges Wechseln in Edit-Mode notwendig)
+	<ul>
+		<li>Neue Ressourcen hinzufügen</li>
+		<li>Ressourcen löschen</li>
+		<li>Dienstleistungen hinzufügen</li>
+		<li>Dienstleistungen löschen</li>
+		<li>Optional im Communication Center – Nachricht verschicken.</li>
+	</ul>
+	</li>
+	<li>Kann der Event gelöscht werden</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC211-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<p>Bitte auflisten und im groben beschreiben:</p>
+<ul>
+	<li>Optional: Communication Center</li>
+	<li>Optional: Person als Ressource (UC208)</li>
+	<li>Versenden der notwendigen Notifikationen</li>
+</ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

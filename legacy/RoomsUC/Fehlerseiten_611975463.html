@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Fehlerseiten</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Fehlerseiten
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on Jan 09, 2012
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Folgende Fehlerseiten müssen integriert werden. Per Produktstandard werden diese zweisprachig (Deutsch und Englisch ausgegeben) <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>401</strong> <br class="atl-forced-newline"/>
+Falls ein Benutzer eine URL aufruft und keine Berechtigung hat. Dies ist eine zweisprachige Statische Seite: <br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="245" width="323" loading="lazy" src="attachments/611975463/611980556.png?width=323" data-image-src="attachments/611975463/611980556.png" data-unresolved-comment-count="0" data-linked-resource-id="611980556" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddave37f0d9782b034a2fe70f3474c65f981.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975463" data-linked-resource-container-version="6" data-media-id="e6457c6d-62e8-4d6b-8d69-9c0a2870626f" data-media-type="file"></span> <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>404</strong> <br class="atl-forced-newline"/>
+Falls der Benutzer eine Fehleingabe in der URL macht oder die Seite aus einem anderen Grund nicht gefunden wird, soll ein „Seite nicht gefunden – 404 Fehler&quot; ausgegeben werden. Dieser wird 3 Sekunden angezeigt und dann automatisch auf die Startseite des Benutzers weiter navigiert. Als Alternative steht das Home Symbol (Haus) zur Verfügung. <br class="atl-forced-newline"/>  <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="253" width="333" loading="lazy" src="attachments/611975463/611980545.png?width=333" data-image-src="attachments/611975463/611980545.png" data-unresolved-comment-count="0" data-linked-resource-id="611980545" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav3bee56dc1178acfcded27046a44a994b.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975463" data-linked-resource-container-version="6" data-media-id="f39f5ded-ba06-4f93-bc0b-8c3e6bcaf06d" data-media-type="file"></span> <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>500</strong> <br class="atl-forced-newline"/>
+Im Fall eines Server Errors (500) wird nachstehende Seite aufgerufen. Die Seite loggt den Error in die dafür vorgesehene Tabelle der ROOMS Datenbank und zeigt dem Benutzer zwei Möglichkeiten: <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p>
+<ol>
+	<li>Navigation auf die zuletzt besuchte Seite</li>
+	<li>Navigation auf seine Home Seite (Haus Symbol) <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<strong>Anmerkung Entwicklung:</strong> <br class="atl-forced-newline"/>
+500, 401 und 404 Fehler, die innerhalb der Applikation auftreten, werden &quot;sauber&quot; von einer internen Seite behandelt (500er sind meist &quot;normale&quot; Programmierfehler, 401er gibt's wegen fehlenden Funktionsrechten und 404er wegen ungültigen Links). -&gt; 500er wirds ab und an geben, doch die anderen beiden sind eher unwahrscheinlich bzw. können eigentlich nur auftreten, wenn der Benutzer manuell die Url modifiziert. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+401 Fehler, die ausserhalb der Applikation auftreten (unbekanntes Login), werden auf die gleiche interne Seite gelinkt. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+404 Fehler kann es ausserhalb der Applikation gar nicht geben, weil das MVC Framework jeden Request behandelt. <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+-500 Fehler, die ausserhalb der Applikation auftreten (Konfigurationsfehler), werden auf die gleiche interne Seite gelinkt; allerdings ist das Verhalten hier unberechenbar: Ist die Applikation komplett unerreichbar (falsche Konfiguration oder so), dann werden auch unsere Fehlerseiten nicht erreicht -&gt; es kommt die Meldung, dass der Fehler nicht angezeigt werden kann bzw. ein 404er! <br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/>
+<em>Und schliesslich: Der IIS6 übernimmt unsere Seiten, der IIS7 gibt aber seine eigenen Warnungen aus.</em> </li>
+</ol>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975463/611980556.png">worddave37f0d9782b034a2fe70f3474c65f981.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975463/611980545.png">worddav3bee56dc1178acfcded27046a44a994b.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

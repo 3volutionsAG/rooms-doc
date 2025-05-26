@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.005 Alternative Suchresultate anzeigen</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.005 Alternative Suchresultate anzeigen
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user (Deleted)</span> on Oct 14, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+<h1 id="id-201.005AlternativeSuchresultateanzeigen-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 201.005 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 2.0 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Priorität</strong> <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> 3 <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><p> Alternative Suchresultate sollen bei einer fehlgeschlagenen Suche nach freien Ressourcen dem Benutzer angezeigt werden. <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rechte</strong> </p></td>
+<td class="confluenceTd"><p> – </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Betrifft nur den Bereich &quot;Reservieren&quot; (UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)</li>
+	<li>Kein Suchresultat konnte gefunden werden</li>
+	<li>Alle Regeln und Berechtigungen aus UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)  gelten auch hier – ausser diese sind explizit ausgenommen.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Alternativlinks werden angezeigt und Klick auf Alternativ Link</li>
+	<li>Alternativen werden angezeigt</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a> <br class="atl-forced-newline"/>
+<a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a> <br class="atl-forced-newline"/>
+<a href="201.011-SOT-Parkplatz-reservieren_611975263.html" data-linked-resource-id="611975263" data-linked-resource-version="7" data-linked-resource-type="page">201.011 SOT Parkplatz reservieren</a> <br class="atl-forced-newline"/>
+<a href="201.013-Equipment-reservieren_611975268.html" data-linked-resource-id="611975268" data-linked-resource-version="8" data-linked-resource-type="page">201.013 Equipment reservieren</a> <br class="atl-forced-newline"/> </p></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<p><br class="atl-forced-newline"/>
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+</ul>
+
+
+<h1 id="id-201.005AlternativeSuchresultateanzeigen-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.005AlternativeSuchresultateanzeigen-Schritt1-AlternativlinkswerdenangezeigtundKlickaufAlternativLink">Schritt 1 - Alternativlinks werden angezeigt und Klick auf Alternativ Link</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Suchkriterien bleiben unverändert (gemäss vorgängigen UC)</p>
+
+<p><strong>Inhaltsbereich</strong></p>
+
+<p>Folgende Links werden aufgelistet:</p>
+<ul>
+	<li>Freie Ressourcen ohne Berücksichtigung des Equipments</li>
+	<li>Freie Ressourcen ohne Berücksichtigung der Kapazität</li>
+	<li>Freie Ressourcen ohne Berücksichtigung des Equipments</li>
+	<li>Freie Ressourcen ohne Berücksichtigung der Id, der Bezeichnung und des Typs</li>
+	<li>Freie Ressourcen an einem nahen Standort</li>
+	<li>Freie Ressourcen zu alternativen Zeiten</li>
+</ul>
+
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Berechtigungen</strong><br/>
+Es gelten die Standortabhängigen Rechte aus den vorlaufenden UC (siehe Bedingungen)</p>
+
+<p><strong>Link Generierung</strong></p>
+
+<ul>
+	<li>Dabei wird für jeden Link sequentiell (mit Ajax Technologie) eine neue Suche abgesetzt und die potentiellen verfügbaren Ressourcen gesucht.</li>
+	<li>Es werden nur Links aktiv gesetzt, welche auch Alternativen vorzuweisen haben</li>
+</ul>
+
+
+<p><strong>Linkaufbau</strong><br/>
+Alternative Vorschläge sind wie folgt aufgebaut: Text und in Klammer die Anzahl der gefunden Objekte (Beispiel: Freie Ressourcen ohne Berücksichtigung des Equipments (23)).</p>
+
+<p><strong>Verfügbarkeit Link</strong></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"><p> Link </p></th>
+<th class="confluenceTh"><p> Raum </p></th>
+<th class="confluenceTh"><p> Equipment <br class="atl-forced-newline"/> </p></th>
+<th class="confluenceTh"><p> Parkplatz <br class="atl-forced-newline"/> </p></th>
+<th class="confluenceTh"><p> Arbeitsplatz <br class="atl-forced-newline"/> </p></th>
+<th class="confluenceTh"><p> Fahrzeug <br class="atl-forced-newline"/> </p></th>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung des Equipments </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung der Kapazität </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung des Equipments<br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x<br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+<td class="confluenceTd"><p> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung der Id, der Bezeichnung und des Typs </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen an einem nahen Standort </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen zu alternativen Zeiten </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+<td class="confluenceTd"><p> x <br class="atl-forced-newline"/> </p></td>
+</tr>
+</tbody></table></div>
+
+
+
+<p><strong>Link Klick</strong><br/>
+siehe Schritt 2</p>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.005AlternativeSuchresultateanzeigen-Schritt2-Alternativlinkswerdenangezeigt">Schritt 2 - Alternativlinks werden angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+
+<p>Suchkriterien verändern sich gemäss dem selektierten Alternativ Link</p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"><p> Link </p></th>
+<th class="confluenceTh"><p> Aktion </p></th>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung des Equipments </p></td>
+<td class="confluenceTd"><p> Equipmentauswahl wird deselektiert <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung der Kapazität </p></td>
+<td class="confluenceTd"><p> <em>Kapazität</em> wird auf leer gestellt <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen ohne Berücksichtigung der Id, der Bezeichnung und des Typs </p></td>
+<td class="confluenceTd"><p> Ressourcen-ID/-Bezeichnung wird auf leer gestellt </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen an einem nahen Standort </p></td>
+<td class="confluenceTd"><p> der Standordpicker wird aktualsiert. <br class="atl-forced-newline"/> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> Freie Ressourcen zu alternativen Zeiten </p></td>
+<td class="confluenceTd"><p> die Zeit wird aktualisiert <br class="atl-forced-newline"/> </p></td>
+</tr>
+</tbody></table></div>
+
+
+
+<p><strong>Inhaltsbereich</strong><br/>
+Smartlist mit verfügbaren Resourcen wird angezeigt (siehe UC <a href="201.000-Ressourcen-reservieren_611975215.html" data-linked-resource-id="611975215" data-linked-resource-version="74" data-linked-resource-type="page">201.000 Ressourcen reservieren</a>)</p>
+
+
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Berechtigungen</strong><br/>
+Es gelten die Standortabhängigen Rechte aus den vorlaufenden UC (siehe Bedingungen)</p>
+
+<p><strong>Link Generierung</strong><br/>
+Dabei wird für jeden Link sequentiell (mit Ajax Technologie) eine neue Suche abgesetzt und die potentiellen verfügbaren Ressourcen gesucht.</p>
+
+<p><strong>Linkaufbau</strong><br/>
+Alternative Vorschläge sind wie folgt aufgebaut: Text und in Klammer die Anzahl der gefunden Objekte (Beispiel: Freie Ressourcen ohne Berücksichtigung des Equipments (23)).</p>
+
+<p><strong>Link Klick</strong><br/>
+siehe Schritt 2</p>
+
+
+
+<p><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975260/611975639.png" data-image-src="attachments/611975260/611975639.png" data-unresolved-comment-count="0" data-linked-resource-id="611975639" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="201.005 Alternativen.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975260" data-linked-resource-container-version="18" data-media-id="4233faf4-8650-4aa4-8011-320d28d7e085" data-media-type="file"></span></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975260/611976959.bmp">201.005 Alternativen.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975260/611976957.bmp">201.005 Alternativen.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975260/611975639.png">201.005 Alternativen.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

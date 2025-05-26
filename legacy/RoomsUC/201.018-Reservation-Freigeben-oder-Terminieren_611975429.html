@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.018 Reservation Freigeben oder Terminieren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.018 Reservation Freigeben oder Terminieren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user (Deleted)</span>, last modified by <span class='editor'> Nadine Roth</span> on Sep 11, 2020
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><h1 id="id-201.018ReservationFreigebenoderTerminieren-UseCaseÜberblick">Use Case Überblick</h1><p> </p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>ID</strong></p></td><td class="confluenceTd"><p><span class="inline-comment-marker" data-ref="c80319b1-b030-497c-8ecb-a3f20cfab238">201.018</span></p></td></tr><tr><td class="confluenceTd"><p><strong>Owner</strong></p></td><td class="confluenceTd"><p><a class="confluence-userlink user-mention" data-account-id="5c47be75043b4f5d172a465d" href="https://3volutions.atlassian.net/wiki/people/5c47be75043b4f5d172a465d?ref=confluence" target="_blank" data-base-url="https://3volutions.atlassian.net/wiki">Former user (Deleted)</a></p></td></tr><tr><td class="confluenceTd"><p><strong>Rev-Number</strong></p></td><td class="confluenceTd"><p>1.1</p></td></tr><tr><td class="confluenceTd"><p><strong>Priorität</strong></p></td><td class="confluenceTd"><p>2</p></td></tr><tr><td class="confluenceTd"><p><strong>Ziel &amp; Beschreibung</strong></p></td><td class="confluenceTd"><p>Reservationen können zur Laufzeit terminiert werden.</p><ol><li>Terminieren: Mit Berücksichtigung der Nachlaufzeit (Checkout) - Nachlaufzeit bleibt bestehen</li><li>Freigeben: ohne Berücksichtigung der Nachlaufzeit - Nachlaufzeit wird beendet</li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Rechte</strong></p></td><td class="confluenceTd"><ul><li>Darf Reservationen terminieren (eigene)</li><li>Darf Reservationen terminieren (fremde)</li><li>Darf Reservationen freigeben (eigene)</li><li>Darf Reservationen freigeben (fremde)</li><li>DarfReservationenTerminierenMitDatum</li><li>DarfReservationenFreigebenMitDatum</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Bedingungen</strong></p></td><td class="confluenceTd"><p>Laufende (aktive) Reservationen sind vorhanden (in Listen, Plan oder Kalender) <br class="atl-forced-newline"/> <br class="atl-forced-newline"/> Benutzer hat vorgängig</p><ul><li>Reservation im Viewmode geöffnet</li><li>Actionpopup geöffnet</li><li>Reservationsticker geöffnet</li><li>Listenansicht selektiert  <br class="atl-forced-newline"/>   <br class="atl-forced-newline"/> Während der Nachlaufzeit ist nur der Button &quot;Checkout&quot; sichtbar</li></ul></td></tr><tr><td class="confluenceTd"><p><strong>Hauptszenario in Schritten</strong></p></td><td class="confluenceTd"><ol><li>Nutzer kann eine bestehende, aktive Buchung terminieren (checkout) oder freigeben</li></ol></td></tr><tr><td class="confluenceTd"><p><strong>Beziehungen zu UC</strong></p></td><td class="confluenceTd"><p> </p></td></tr></tbody></table></div></div></div><p><br class="atl-forced-newline"/> <strong>Legende</strong></p><ul><li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li></ul><h1 id="id-201.018ReservationFreigebenoderTerminieren-UseCaseDetails">Use Case Details</h1><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.018ReservationFreigebenoderTerminieren-Schritt1-Nutzerkanneinebestehende,aktiveBuchungterminieren(checkout)oderfreigeben">Schritt 1 - Nutzer kann eine bestehende, aktive Buchung terminieren (checkout) oder freigeben</h2>
+</div></div><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div><p><strong>Inhaltsbereich</strong></p><ul><li>Button: „Checkout“</li><li>Button: „Freigeben“</li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div><p><strong>Generell</strong></p><ul><li>Rechte bei Terminieren (Checkout)<ul><li>Bei eigenen Reservationen (ich bin Organisator, Ersteller oder Verantwortlicher) muss das folgende Recht vorhanden sein: Darf Reservationen terminieren (eigene)</li><li>Bei Reservationen Dritter (ich bin weder Organisator, Ersteller noch Verantworlicher) muss das folgende Recht vorhanden sein: Darf Reservationen terminieren (fremde)</li></ul></li><li>Rechte bei Freigeben<ul><li>Bei eigenen Reservationen (ich bin Organisator, Ersteller oder Verantwortlicher) muss das folgende Recht vorhanden sein: Darf Reservationen freigeben (eigene)</li><li>Bei Reservationen Dritter (ich bin weder Organisator, Ersteller oder Verantworlicher) muss das folgende Recht vorhanden sein: Darf Reservationen freigeben (fremde)</li></ul></li><li>Die beiden Buttons erscheinen nur bei aktiven (laufenden) Buchungen</li><li>Der Checkout Button erscheint auch in der Nachlaufzeit einer Reservation</li></ul><p><strong>MouseOver auf Button</strong></p><ul><li>Ist das Recht &quot;DarfReservationenTerminierenMitDatum&quot;, bzw. &quot;DarfReservationenFreigebenMitDatum&quot; vorhanden erscheint ein Eingabedialog mit Datum/Zeitpicker und Button &quot;Freigeben&quot;, bzw. &quot;Terminieren&quot;<ul><li>Standardwert: Datum = heute(), Zeit: = jetzt() - was einer sofortigen Freigabe entspricht</li><li>Benutzer kann Datum oder Zeit ändern</li></ul></li></ul><p><strong>Klick auf Button</strong></p><ul><li>Wird der Checkout oder Freigeben Button geklickt, wird die aktive (laufende) Buchung auf den Zeitpunkt, an welchem der Button betätigt wurde, sekundengenau terminiert (Reservationsende verkürzt). Dabei gilt die Systemzeit des Servers</li><li>Es fallen nur die Reservations-Kosten gemäss Kostenmodell an.</li><li>Die Nachlaufzeit wird hinten an gestellt (beim Checkout)</li><li>In den Listen- und Kalender-Ansichten ist die Buchung bis zum terminierten End-Datum sichtbar.</li><li>Nach dem Checkout, wird die Buchung immer noch in den Reports (Auswertungen &amp; Statistiken) geführt.</li><li>Änderungsnotifikation an Ersteller, Organisator und Verantwortlichen</li><li>Änderungsnotifikation an Dienstleister, sofern die entsprechenden Anspruchgruppen die Notifikationen aktiviert haben.</li><li><strong>Spezialfall Freigeben</strong><ul><li>Freigeben-Button terminiert auch die Nachlaufzeit (sofort und sekundengenau).</li></ul></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975429/611976943.png" data-image-src="attachments/611975429/611976943.png" data-unresolved-comment-count="0" data-linked-resource-id="611976943" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="PopUp2.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975429" data-linked-resource-container-version="10" data-media-id="6e859e88-b4f0-4667-ac02-06f0853c165c" data-media-type="file"></span></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975429/611976944.png" data-image-src="attachments/611975429/611976944.png" data-unresolved-comment-count="0" data-linked-resource-id="611976944" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="PopUp3.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975429" data-linked-resource-container-version="10" data-media-id="105ef537-e020-49b4-a39e-1ae48f19a05d" data-media-type="file"></span></p><div class="panel" style="background-color: black;border-width: 1px;"><div class="panelContent" style="background-color: black;">
+ 
+</div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975429/611976943.png">PopUp2.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975429/611976944.png">PopUp3.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:41</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

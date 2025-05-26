@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Inteliboxen &amp; Multiselektoren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Inteliboxen &amp; Multiselektoren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on May 22, 2014
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h3 id="Inteliboxen&amp;Multiselektoren-Inteliboxen">Inteliboxen</h3><p><strong>Generelle Regeln für Inteliboxen</strong></p><ul><li>Globale Konfiguration der Anzahl der maximalen visualisierten Einträge (falls das Suchresultat grösser ist) – Standard: 15 (siehe dazu <a href="https://3volutions.atlassian.net/wiki/spaces/ROOMSKBALL/pages/257130511/Konfigurationsparameter+Configuration+parameter" data-linked-resource-id="257130511" data-linked-resource-version="84" data-linked-resource-type="page">Konfigurationsparameter / Configuration parameter</a>)</li><li>Suche wird ab dem Schreiben des ersten Zeichen ausgelöst</li><li>Kennzeichnung:<ul><li>Jede Intelibox wird mit einem Icon gekenzeichnet</li><li>Jede Intelibox hat ein integrierter Hilfetext direkt in der Intelibox (leicht grau hinterlegt): Tippen für Hilfestellung</li><li>Die Implementation erfolgt bei folgenden Inteliboxen:<ul><li>Standortpicker</li><li>Ressourcenpicker</li><li>OE Picker</li><li>Firma Picker</li><li>Personen Inteliboxen</li></ul></li></ul></li><li>Navigation:<ul><li>Tabulator: normales Verhalten =&gt; springt aus dem Feld. Wenn möglich soll der aktuelle Eintrag der Intelibox selektiert sein.</li><li>Pfeiltasten zum Navigieren: ↑ = nach oben, ↓ = nach unten; ← innerhalb des Textes nach links und → innerhalb des Textes nach rechts</li><li>ENTER der markierte wird selektiert (mit Mausklick wird dasselbe erreicht)</li><li>Backspace: Zeichen löschen und neue Suche</li></ul></li><li>Layout:<ul><li>Suchresultat wird unterhalb der Intelibox dargestellt – wie aktuelles ROOMS PRO<br/> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975324/611976175.png" data-image-src="attachments/611975324/611976175.png" data-unresolved-comment-count="0" data-linked-resource-id="611976175" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav97517168e04080731cdf680ac4f84f17.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975324" data-linked-resource-container-version="18" data-media-id="e185a86e-3781-4ba0-8f13-bbbd40f40312" data-media-type="file"></span></li></ul></li></ul><ul><li>Falls Text zu lang ist wird er abgeschnitten und mit drei Punkten ergänzt. Beispiel: Rothenbühler Tho...<ul><li>Customized Tool Tip zeigt den ganzen Text. Beispiel Rothenbühler Thomas (Unit 100)</li><li>Tooltip ist auch auf dem selektierten Eintrag vorhanden.</li></ul></li></ul><p><strong>Spezialfall Person</strong></p><ul><li>Tooltip kann um weitere Informationen angereichert werden (z.B. Telefonnummer). Dies steht immer im Kontext wo die Intelibox eingesetzt wird</li><li>Zusätzlich hat die Intelibox ein Personen-Info Avatar. Hat die selektierte Person ein Bild hochgeladen, wird dieses Bild als Mini-Thumb. angezeigt. Das Icon wird bei auch bei den nicht änderbaren Personen (z.B. Viewmode oder Ersteller angezeigt).</li><li>Klick auf das Icon hat folgende Funktion:<ul><li>Ist das Feld &quot;URL&quot; aus dem Use Case 101.001 (Personen verwalten) nicht leer, wird der unter URL angegebene Hyperlink in einem neuen Fenster geladen.</li><li>Ist das Feld &quot;URL&quot; leer wird in einem modalen Popup der Viewmodus einer Person geladen.<br/> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975324/611976032.png" data-image-src="attachments/611975324/611976032.png" data-unresolved-comment-count="0" data-linked-resource-id="611976032" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="000.001 Tooltipp Intelibox.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975324" data-linked-resource-container-version="18" data-media-id="258b09b3-ba02-4f8d-9a71-a1313d94dc73" data-media-type="file"></span></li></ul></li></ul><ul><li>Inhalt Intelibox: die angezeigten Spalten können global definiert werden (pro Kunde/Brand). Default ist: Nachname Vorname (OE)</li><li>Beim Mouse-Over über die Intelibox (oder Label) werden dem Benutzer zusätzliche Informationen zur Person in Form eines Tooltips angezeigt. Dies kann global pro Kunde/Brand definiert werden. Default ist: Telefon, Mobile, E-MailEs müssen Felder aus der Tabelle Person, Firma und FirmaPerson definiert werden können</li><li>Suche nach Personalnummer und nach Vorname Name und Name Vorname<ul class="alternate"><li><strong>-- *--- *</strong>{*}<em>Spezialfall Intelibox Organisationseinheit/Firma</em>*</li></ul></li><li>Je nach Funktionsrecht kann nur nach Organisationseinheit oder nur nach Firma gesucht werden.</li><li>Inhalt Intelibox: die angezeigten Spalten können global definiert werden (pro Kunde/Brand). Default ist: OE/Firma. Der Avatar oder das Foto werden auch in der Intelibox angzeigt</li><li>Beim Mouse-Over über die Intelibox (oder Label) werden dem Benutzer zusätzliche Informationen zur Person in Form eines Tooltips angezeigt. Dies kann global pro Kunde/Brand definiert werden. Default ist: Strasse, PLZ, Ort</li><li>Wichtig: Wird der Inhalt oder das Mouse-Over der Intelibox mit Adressfeldern versehen, wird stets die Adresse angezeigt, welche als Standard definiert ist.</li></ul><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" loading="lazy" src="attachments/611975324/611976469.png" data-image-src="attachments/611975324/611976469.png" data-unresolved-comment-count="0" data-linked-resource-id="611976469" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Intelibox2.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975324" data-linked-resource-container-version="18" data-media-id="0196479a-af9f-4ee2-a0ee-b3fb1846eba3" data-media-type="file"></span></p><h3 id="Inteliboxen&amp;Multiselektoren-Multiselektoren">Multiselektoren</h3><ul><li>Wurde ein oder mehrere Einträge ausgewählt, werden diese wie bis anhin ins Control übernommen</li><li>Neu wird neben dem Eintrag ein Löschen-X (x) eingeblendet.</li><li>Der Eintrag kann mit Klick auf das X oder mit der Delete/Backspace Taste gelöscht werden.</li><li>Dies gilt für:<ul><li>Standortpicker</li><li>Ressourcenpicker</li><li>Angebotspicker</li><li>Personen Inteliboxen</li><li>Benutzergruppen Inteliboxen</li><li>Gliederungen</li><li>Buchungsklassifikationen</li><li>Ressourcenartpicker</li><li>Organisationseinheitpicker<br/> <span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-content-image-border" loading="lazy" src="attachments/611975324/611980522.png" data-image-src="attachments/611975324/611980522.png" data-unresolved-comment-count="0" data-linked-resource-id="611980522" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="U18 - Wegnavigieren.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975324" data-linked-resource-container-version="18" data-media-id="d55b36fc-bc6e-4489-b35f-c289d37f9b43" data-media-type="file"></span></li></ul></li></ul>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975324/611976175.png">worddav97517168e04080731cdf680ac4f84f17.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975324/611976184.png">worddav8f0c716ae499a3773969f8ba2b4f28c1.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975324/611976032.png">000.001 Tooltipp Intelibox.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975324/611980522.png">U18 - Wegnavigieren.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975324/611976469.png">Intelibox2.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

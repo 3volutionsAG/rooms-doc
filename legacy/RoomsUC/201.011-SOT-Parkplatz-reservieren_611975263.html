@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : 201.011 SOT Parkplatz reservieren</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : 201.011 SOT Parkplatz reservieren
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 22, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="id-201.011SOTParkplatzreservieren-UseCaseÜberblickID201.011OwnerTimBänzigerRev-Number1.1Ziel&amp;BeschreibungDasSuchenundFindenvoneinemodermehreren,denKriterienentsprechenden,verfügbarenKurzzeitParkplätzen(Ressourcenart„Parkplatz“).DieReservationderselektiert"><style>[data-colorid=wpodkvj6qo]{color:#00b050} html[data-color-mode=dark] [data-colorid=wpodkvj6qo]{color:#4fff9f}</style><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" /><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+
+
+
+
+</div></div></h1><h1 id="id-201.011SOTParkplatzreservieren-UseCaseÜberblick">Use Case &Uuml;berblick</h1>
+
+<p><br class="atl-forced-newline" /></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 201.011 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim B&auml;nziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Rev-Number</strong> </p></td>
+<td class="confluenceTd"><p> 1.1 </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel &amp; Beschreibung</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Das Suchen und Finden von einem oder mehreren, den Kriterien entsprechenden, verf&uuml;gbaren Kurzzeit Parkpl&auml;tzen (Ressourcenart &bdquo;Parkplatz&ldquo;).</li>
+	<li>Die Reservation der selektierten Parkplatz Ressource ( n )</li>
+	<li>Das Editieren einer Reservation (Schritte 4 und 5)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Datenrechte</strong> </p></td>
+<td class="confluenceTd"><p> &ndash; </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Funktionsrechte</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li>Funktionsrechte von SUC 201.001 gelten</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Alternativszenario</strong> </p></td>
+<td class="confluenceTd"><p> Ein oder mehrere Parkpl&auml;tze k&ouml;nnen &uuml;ber Schnellreservation gebucht werden <strong>(AS 201.001)</strong> </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ausnahmeszenario</strong> </p></td>
+<td class="confluenceTd"><p> Kein Suchresultat gefunden:</p>
+<ul>
+	<li>Globale Fehlermeldung wird ausgegeben (Fehlermeldung und Verhalten in SUC 201.001 dokumentiert)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Bedingungen</strong> </p></td>
+<td class="confluenceTd"><ul>
+	<li><span class="legacy-color-text-yellow2">Defaults m&uuml;ssen geladen werden (PF 302)</span></li>
+	<li>Es werden nur SOT Parkpl&auml;tze, welche verf&uuml;gbar sind angzeigt</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Hauptszenario in Schritten</strong> </p></td>
+<td class="confluenceTd"><ol>
+	<li>Navigation auf &bdquo;Reservieren&ldquo; &ndash; Wahl der Ressourcenart &bdquo;Parkplatz&ldquo; im Sidepanel</li>
+	<li>Subpanel &bdquo;Ressourcenspezifische Kriterien&ldquo; wird ge&ouml;ffnet. Nutzer kann zus&auml;tzliche Filterkriterien angeben (optional) und &bdquo;Suchen&ldquo; klicken.</li>
+	<li>System liefert Suchresultat (zus&auml;tzlich zu SUC 201.001) der verf&uuml;gbaren Parkplatz Ressourcen</li>
+	<li>Nutzer navigiert ins Detail, erfasst Parkplatz spezifische Daten und schliesst Reservation ab</li>
+	<li>Summary Page wird angezeigt (Optional)</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Beziehungen zu UC</strong> </p></td>
+<td class="confluenceTd"><p> <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a> </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline" />
+<strong>Legende</strong></p>
+<ul>
+	<li><span class="legacy-color-text-red2">Rote Schrift = MUSS Felder</span></li>
+	<li><span data-colorid="wpodkvj6qo">Gr&uuml;ne Schrift = wird in einem Folgerelease umgesetzt</span></li>
+</ul>
+
+
+<p><br class="atl-forced-newline" />
+<br class="atl-forced-newline" /></p>
+
+<h1 id="id-201.011SOTParkplatzreservieren-UseCaseDetails">Use Case Details</h1>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.011SOTParkplatzreservieren-Schritt1-Navigationauf„Reservieren“–WahlderRessourcenart„Parkplatz“imSidepanel">Schritt 1 - Navigation auf &bdquo;Reservieren&ldquo; &ndash; Wahl der Ressourcenart &bdquo;Parkplatz&ldquo; im Sidepanel</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel</strong></p>
+<ul>
+	<li>Intelibox &bdquo;Ressourcenart&ldquo;</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Benutzer muss Resourcenart &bdquo;Parkplatz&ldquo; w&auml;hlen (entsprechendes Funktionsrecht aus dem SUC 201.001 muss vorhanden sein)</p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.011SOTParkplatzreservieren-Schritt2-Subpanel„RessourcenspezifischeKriterien“wirdgeöffnet.NutzerkannzusätzlicheFilterkriterienangeben(optional)und„Suchen“klicken.">Schritt 2 - Subpanel &bdquo;Ressourcenspezifische Kriterien&ldquo; wird ge&ouml;ffnet. Nutzer kann zus&auml;tzliche Filterkriterien angeben (optional) und &bdquo;Suchen&ldquo; klicken.</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Sidepanel &ndash; Subpanel (ressourcenspezifische Suchfilter)</strong></p>
+<ul>
+	<li>Gliederungen (Parkplatzspezifische)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Subpanel Ressourcenspezifischen Kriterien ist per Default ge&ouml;ffnet und wird nach Wahl der Ressourcenart &bdquo;Parkplatz&ldquo; neu geladen</p>
+
+<p><strong>Grunds&auml;tzlich werden als ressourcenspezifische Filterkriterien nur Gliederungen angezeigt</strong> (siehe dazu UC 104.001).</p>
+
+<p>Es ist davon auszugehen, dass zwei Gliederungen erfasst werden (damit sich der Entwickler ein Bild machen kann):</p>
+<ul>
+	<li>Parkplatztyp
+	<ul>
+		<li>Behindertenparkplatz</li>
+		<li>Normal</li>
+		<li>Frauenparkplatz</li>
+	</ul>
+	</li>
+	<li>Parkplatzart
+	<ul>
+		<li>Garage</li>
+		<li>Aussenparkplatz</li>
+	</ul>
+	</li>
+	<li><span class="legacy-color-text-yellow2">Es werden nur die Gliederungen angezeigt, bei welchen der angemeldete Benutzer auch min. Leserechte hat</span></li>
+	<li>Darstellung der Gliederungen gem&auml;ss <a href="104.001-Gliederungen-verwalten_611975387.html" data-linked-resource-id="611975387" data-linked-resource-version="20" data-linked-resource-type="page">104.001 Gliederungen verwalten</a> (Singleselektion in der Dropdown und Multiselektion in Form von Checkboxlisten)</li>
+</ul>
+
+
+<p><strong>Suche</strong><br />
+<strong>Es wird nur nach verf&uuml;gbaren Parkpl&auml;tzen vom Typ SOT</strong> <span class="legacy-color-text-yellow2"><strong>gesucht UND Freigegebenen Parkpl&auml;tze vom Typ LOT ( <a href="611975261.html" data-linked-resource-id="611975261" data-linked-resource-version="8" data-linked-resource-type="page">201.010 Buchungen l&ouml;schen</a> )</strong></span></p>
+
+<p><span class="legacy-color-text-yellow2">Gelbmarkierter Bereich wurde f&uuml;r Release 4.1 zur&uuml;ckgestellt: Datenrechte auf den Gliederungen</span></p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p>Nachstehende Abbildungen zeigt die Gliederungen:</p>
+
+<p><strong>Darstellungsformen der Gliederungen im Sidepanel</strong></p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975263/611978007.jpg" data-image-src="attachments/611975263/611978007.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978007" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 2.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975263" data-linked-resource-container-version="7" data-media-id="eafcc7ea-5aa4-407d-8464-6340767fff62" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.011SOTParkplatzreservieren-Schritt3-SystemliefertSuchresultat(zusätzlichzuSUC201.001)derverfügbarenRessourcen">Schritt 3 - System liefert Suchresultat (zus&auml;tzlich zu SUC 201.001) der verf&uuml;gbaren Ressourcen</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p><strong>Inhaltsbereich</strong></p>
+<ul>
+	<li>Alle Spalten aus (SUC 201.001)</li>
+</ul>
+
+
+<p><strong>Zus&auml;tzliche Spalten</strong></p>
+<ul>
+	<li>Alle Spalten aus (SUC 201.001)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p><strong>Kein Suchresultat</strong></p>
+<ul>
+	<li>Alternativen werden angezeigt (UC 201.00 <span style="color: red;">UC fehlt</span>)</li>
+	<li>Fehlermeldung gem&auml;ss Ausnahmeszenario (siehe oben)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+<p>Siehe Schritt 2</p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.011SOTParkplatzreservieren-Schritt4-NutzernavigiertinsDetail,erfasstParkplatzspezifischeDatenundschliesstReservationab">Schritt 4 - Nutzer navigiert ins Detail, erfasst Parkplatz spezifische Daten und schliesst Reservation ab</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p>Es gibt keine Parkplatz spezifische Daten</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Es gibt keine Parkplatz spezifische Daten</p>
+
+<p>Folgende Tabs d&uuml;rfen <strong>nicht</strong> sichtbar sein, auch wenn entsprechende Funktionsrechte vorhanden:</p>
+<ul>
+	<li>Dienstleistungen</li>
+	<li>Bestuhlung</li>
+	<li>Teilnehmer</li>
+	<li>Equipment</li>
+</ul>
+
+
+<p>Folgende Tabs sind auf Grund der Funktionsrechte sichtbar:</p>
+<ul>
+	<li>Serieninformationen</li>
+	<li>Equipment (zus&auml;tzliche Ressource)</li>
+</ul>
+
+
+<p>Folgende Felder im Detailbereich d&uuml;rfen nicht sichtbar sein (gegen&uuml;ber <a href="201.001-Raum-reservieren_611975243.html" data-linked-resource-id="611975243" data-linked-resource-version="38" data-linked-resource-type="page">201.001 Raum reservieren</a> ):</p>
+<ul>
+	<li>Kapazit&auml;t (Anzahl Personen</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Bilder</strong></p>
+</div></div>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" loading="lazy" src="attachments/611975263/611978004.jpg" data-image-src="attachments/611975263/611978004.jpg" data-unresolved-comment-count="0" data-linked-resource-id="611978004" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Schritt 4.jpg" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/pjpeg" data-linked-resource-container-id="611975263" data-linked-resource-container-version="7" data-media-id="98508bdd-8ee7-4de0-9aea-a7c0712c950e" data-media-type="file" /></span></p>
+
+<div class="panel" style="background-color: black;border-width: 1px;" />
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="id-201.011SOTParkplatzreservieren-Schritt5-SummaryPagewirdangezeigt">Schritt 5 - Summary Page wird angezeigt</h2>
+</div></div>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Controls</strong></p>
+</div></div>
+<p>Entspricht dem SUC 201.00</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><strong>Regeln</strong></p>
+</div></div>
+<p>Regeln und <strong>Funktionsrechte (wird Summary angezeigt oder nicht)</strong> m&uuml;ssen von SUC 201.001 &uuml;bernommen werden.</p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975263/611978007.jpg">Schritt 2.jpg</a> (image/pjpeg)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975263/611978004.jpg">Schritt 4.jpg</a> (image/pjpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

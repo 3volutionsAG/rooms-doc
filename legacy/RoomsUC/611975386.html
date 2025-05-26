@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : Actionpanel (neu ActionMessage)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="000.001-Globale-Funktionen_611975464.html">000.001 Globale Funktionen</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : Actionpanel (neu ActionMessage)
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified by <span class='editor'> Former user</span> on Jun 26, 2013
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h3 id="Actionpanel(neuActionMessage)-ActionMessage"><strong>ActionMessage</strong></h3><p>Die ActionMessage zeigt die verschiedenen Systemrückmeldungen für den Benutzer. Grundsätzlich unterscheiden wir zwischen folgenden Messages:</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh"><p>Message</p></th><th colspan="1" class="confluenceTh">Art*</th><th class="confluenceTh"><p>Beschrieb</p></th><th class="confluenceTh"><p>Verhalten</p></th></tr><tr><td class="confluenceTd"><p>Warning</p></td><td colspan="1" class="confluenceTd">temporäre Meldung</td><td class="confluenceTd"><p>Warnings sollen den Benutzer auf einen bestimmten Systemzustand aufmerksam machen. Diese Meldungen sind aber für den Benutzer in erster Linie informativ. Beispiel: Sie buchen an einem Feiertag.</p></td><td class="confluenceTd"><p>Warnings verschwinden, sobald die Seite das nächste Mal geladen wird. Also z.B. wenn der Benutzer weiter navigiert</p></td></tr><tr><td class="confluenceTd"><p>Error</p></td><td colspan="1" class="confluenceTd">temporäre Meldung</td><td class="confluenceTd"><p>Errors sind Meldungen, welche auf eine Fehlmanipulation oder ein Fehlverhalten des Systems aufmerksam gemacht. z.B. Datensatz kann nicht bearbeitet werden, weil gerade Benutzer „xy&quot; diesen bearbeitet.</p></td><td class="confluenceTd"><p>Errors verschwinden, sobald die Seite das nächste Mal geladen wird. Also z.B. wenn der Benutzer weiter navigiert</p></td></tr><tr><td class="confluenceTd"><p>Status Normal</p></td><td colspan="1" class="confluenceTd">temporäre Meldung</td><td class="confluenceTd"><p>Normale Status Meldungen sind als Ergänzung zu den ersten beiden Statusmeldungen um erfolgreich ausgeführte Systeminteratkionen anzuzeigen. Z.B. Der Datensatz wurde erfolgreich gelöscht.</p></td><td class="confluenceTd"><p>Normale Status Meldungen verschwinden, sobald die Seite das nächste Mal geladen wird. Also z.B. wenn der Benutzer weiter navigiert</p></td></tr><tr><td class="confluenceTd"><p>Status Aufgabe</p></td><td colspan="1" class="confluenceTd">persistente Meldung</td><td class="confluenceTd"><p>Bei Statusmeldungen von Aufgaben (oder auch System) geht es um Meldungen, wenn das System eine Aufgabe ausgeführt hat. Z.B. die Generierung eines Reports oder einer Statistik.</p></td><td class="confluenceTd"><p>Status Meldungen von Aufgaben verschwinden erst, wenn der Benutzer die Meldung quittiert hat, also die Meldung explizit weggeklickt hat.</p></td></tr></tbody></table></div><p>* temporäre Meldung verschwinden bei Seiten-Wechsel, persistente Meldungen verschwinden erst auf Benutzer-Interaktion</p><p><strong>Darstellung</strong></p><ul><li>pro ausgegebene Meldung erscheint ein kleines Popup Fenster am rechten Browser Rand</li><li>Ein Icon (Warning, Status, Error) zeigt die Art der Meldung.</li><li>Beim Mouse-Over erscheint ein Schliessen Icon (X) mit welchem die Meldung weggeklickt werden kann</li><li>Im Profil kann der Benutzer definieren nach wievielen Sekunden die temporären Meldungen verschwinden sollen oder ob diese manuell weggeklickt werden müssen (siehe auch <a href="101.001-Personen-verwalten_611975556.html" data-linked-resource-id="611975556" data-linked-resource-version="66" data-linked-resource-type="page">101.001 Personen verwalten</a>)</li></ul><p> </p><p><strong><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" loading="lazy" src="attachments/611975386/611976013.png?width=500" data-image-src="attachments/611975386/611976013.png" data-unresolved-comment-count="0" data-linked-resource-id="611976013" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="neuesActionPanel.png" data-base-url="https://3volutions.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="611975386" data-linked-resource-container-version="5" data-media-id="82fd1e33-4c87-4667-8783-93cfe74a706d" data-media-type="file"></span><br/></strong></p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975386/611976778.png">000.001 Actionpanel.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/611975386/611976013.png">neuesActionPanel.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:39</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

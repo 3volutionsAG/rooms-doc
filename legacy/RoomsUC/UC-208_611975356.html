@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Cases : UC 208</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Use-Cases_611975223.html">Use Cases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv-4.x-Releases_611975508.html">Archiv 4.x Releases</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Archiv_611975367.html">Archiv</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Use Cases : UC 208
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Former user</span>, last modified on Jun 20, 2011
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="UC208-UseCaseÜberblickID208OwnerTimBänzigerNameReservierenvonPersonenZielAnalogeinesEquipmentsolleinePersonmitreserviertwerdenkönnenAbhängigkeitenzuanderenUC101,203,206,107,109"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">
+
+
+
+
+
+
+
+<h1 id="UC208-UseCaseÜberblick">Use Case Überblick</h1>
+
+<p><br class="atl-forced-newline"/></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<td class="confluenceTd"><p> <strong>ID</strong> </p></td>
+<td class="confluenceTd"><p> 208</p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Owner</strong> </p></td>
+<td class="confluenceTd"><p> Tim Bänziger </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Name</strong> </p></td>
+<td class="confluenceTd"><p> Reservieren von Personen </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Ziel</strong> </p></td>
+<td class="confluenceTd"><p> Analog eines Equipment soll eine Person mit reserviert werden können </p></td>
+</tr>
+<tr>
+<td class="confluenceTd"><p> <strong>Abhängigkeiten zu anderen UC</strong> </p></td>
+<td class="confluenceTd"><p> 101, 203, 206, 107, 109 </p></td>
+</tr>
+</tbody></table></div>
+
+<p><br class="atl-forced-newline"/>
+<br class="atl-forced-newline"/></p></div></div></h1>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC208-WichtigeAnmerkungen">Wichtige Anmerkungen</h2>
+</div></div>
+<p>Jede Liste (Grid) beinhaltet immer das Personalisieren von Spalten, Sortierung und Paging sowie optionale Checkboxen für Mehrfachselektion.</p>
+
+<p>Jede Detailansicht beinhaltet immer einen Readonly-Modus, einen Editier-Modus für Einzelmutationen und einen Editier-Modus für Mehrfachmutationen.</p>
+
+<p>Diese Funktionalitäten müssen deshalb beim Beschreiben der Use Cases nicht aufgeführt werden.</p>
+
+<p>Zudem müssen Validierungsregeln zum aktuellen Zeitpunkt nicht beschrieben werden.</p>
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC208-Grobbeschrieb">Grobbeschrieb</h2>
+</div></div>
+<p>Bitte hier den Use Case im groben Beschreiben – auch Abhängigkeiten zu anderen Use Cases sind zu erwähnen:</p>
+
+<p>Innerhalb einer Raumreservation, sowie auch separat soll eine verfügbare Ressource (z.B. Chauffeur) reserviert werden können.</p>
+<ul>
+	<li>Suche nach einer Ressource innerhalb und ausserhalb einer Objektreservation unter Verwendung verschiedener Suchkriterien (verfügbar/alle, Kategorie, Datum, Zeit)</li>
+	<li>Anzeige der verfügbaren Ressourcen in Form eines Kalenders (Free/Busy Ansicht) unter Berücksichtigung der Berechtigungen.</li>
+	<li>Selektion einer oder mehrere Ressourcen</li>
+	<li>Reservation der Ressourcen – allenfalls Verlinkung mit der Parent-Reservation (Objekt)</li>
+</ul>
+
+
+<div class="panel" style="border-width: 1px;"><div class="panelContent">
+<h2 id="UC208-SubcasesundFeatures">Subcases und Features</h2>
+</div></div>
+<p>Bitte auflisten und im groben beschreiben:</p>
+<ul>
+	<li>Konfiguration: Welche Objektetypen unterstützten Ressourcenreservation</li>
+	<li>Innerhalb der „Verwaltung von Personen (UC101)“ muss eine Person als reservierbar markiert werden können.</li>
+	<li>Einer reservierbaren Person muss ein Standort und Reservationskategorien (Skills) zugewiesen werden können (Lehrer, Chauffeur, Dienstleister, etc.)</li>
+	<li>Eine Ressource kann innerhalb seines Kalenders Sperrzeiten (Abwesenheiten) definieren.</li>
+	<li>Ressourcenreservation muss mit Outlook synchronisiert werden können</li>
+	<li>Mail/SMS Notifikation muss konfiguriert werden können</li>
+	<li>Definition der Berechtigung/Benutzergruppe auf einer Ressource</li>
+</ul>
+
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on May 26, 2025 17:43</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
