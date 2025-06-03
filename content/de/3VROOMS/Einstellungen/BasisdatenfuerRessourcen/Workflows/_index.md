@@ -3,7 +3,7 @@ title: "Workflows"
 linkTitle: "Workflows"
 weight: 3
 description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie neue Workflows an, erstellen Workflowlisten oder entfernen die gespeicherten Workflows. Bereits definierte Stati werden zu einem Workflow konfiguriert und einer Ressource zugeordnet.  </p>
+  <p style="text-align: justify"> In diesem Bereich legen Sie neue Workflows an, erstellen Workflowlisten oder entfernen die gespeicherten Workflows. Bereits definierte Status werden zu einem Workflow konfiguriert und einer Ressource zugeordnet.  </p>
 ---
 ## Workflow Ansicht 
 
@@ -58,7 +58,7 @@ Ein Ereignis setzt sich immer zusammen aus einem Wechsel von einem Status in ein
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| Wechsel von Status  | <p style="text-align: justify"> Mittels Dropdown wählen aus gespeicherten Stati. In Dropdown _Wechsel von Status_ ist zusätzlich der Eintrag _neu_ (Zustand einer unbebuchten Ressource) verfügbar. Sie sehen alle Status Angaben, die Sie gespeichert haben. </p>| 
+| Wechsel von Status  | <p style="text-align: justify"> Mittels Dropdown wählen aus gespeicherten Status. In Dropdown _Wechsel von Status_ ist zusätzlich der Eintrag _neu_ (Zustand einer unbebuchten Ressource) verfügbar. Sie sehen alle Status Angaben, die Sie gespeichert haben. </p>| 
 | Wechsel in Status |<p style="text-align: justify"> In Dropdown _Wechsel in Status_ ist der zusätzliche Reservationsstatus _annulliert_ verfügbar.    </p>|  
 | Notifikationsgruppe |<p style="text-align: justify"> Definition einer Benutzergruppe, welche bei Status Änderung per E-Mail notifiziert wird. Alle Member der entsprechenden Gruppe erhalten eine Notifikation.   </p> | 
 | Nachricht an Ersteller:in    |<p style="text-align: justify"> Wird der Ereignisschritt ausgelöst, erhält die Ersteller:in die Reservation-Änderungsnotifikation (Standard: deaktiviert (Nein))   </p>| 

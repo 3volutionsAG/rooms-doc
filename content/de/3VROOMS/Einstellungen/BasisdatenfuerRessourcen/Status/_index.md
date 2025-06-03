@@ -10,7 +10,7 @@ description: >
 Es gibt drei Arten von Status: Zustand einer Ressource, Systemstatus und frei definierbare Status auf Reservationen
 
 Sie können den Status inklusive der Farbe und einem Symbol selber definieren. 
-Die bereits bestehenden Stati können Sie pro Ressource aktivieren und die Reihenfolge definieren. 
+Die bereits bestehenden Status können Sie pro Ressource aktivieren und die Reihenfolge definieren. 
 
 {{< imgproc Status_einsehen Resize "1280x" >}}
 Abbildung s: Status der Basisdaten einsehen

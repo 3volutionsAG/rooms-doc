@@ -9,10 +9,10 @@ description: >
 
 ---
 <p style="text-align: justify">
-Im linken Sidepanel finden Sie die Filterfunktion zum Suchen von Anlassstati. </p>
+Im linken Sidepanel finden Sie die Filterfunktion zum Suchen von Anlassstatus. </p>
 
 <p style="text-align: justify">
-Im rechten Feld sehen Sie die Liste der Anlassstati. Hier können Sie einen Anlassstatus bearbeiten, neu hinzufügen oder löschen. </p>
+Im rechten Feld sehen Sie die Liste der Anlassstatus. Hier können Sie einen Anlassstatus bearbeiten, neu hinzufügen oder löschen. </p>
 
 {{< imgproc Anlassstatus_bearbeiten Resize "960x" >}}
 Erstellen und suchen einer Raumeinheit
