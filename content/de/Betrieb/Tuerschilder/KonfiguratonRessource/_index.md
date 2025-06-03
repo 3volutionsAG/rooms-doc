@@ -27,7 +27,7 @@ Folgender Konfigurationswert muss in der `config.json` ergänzt werden.
 "ledControlUrl": "http://localhost:6969"
 ```
 
-### Beispiel einer `config.json`
+#### Beispiel einer `config.json`
 
 ```json
 {
