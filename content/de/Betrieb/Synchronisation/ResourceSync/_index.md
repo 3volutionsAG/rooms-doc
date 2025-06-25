@@ -23,9 +23,9 @@ Nun können die individuellen Ressourcen für die Synchronisation konfiguriert w
 
 Relevant sind folgende Parameter:
 
-#### External Identifier & E-Mail
+#### E-Mail
 
-Die E-Mail und der External Identifier muss auf die primäre SMTP Mail-Adresse der Exchange Ressource gesetzt werden
+Die E-Mail muss auf die primäre SMTP Mail-Adresse der Exchange Ressource gesetzt werden.
 
 #### Sync-Modus/Sync Url
 
