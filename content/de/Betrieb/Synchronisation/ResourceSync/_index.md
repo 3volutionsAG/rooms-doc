@@ -57,4 +57,4 @@ Wenn über das neue Addin eine synchronisierte Ressource gebucht wird, darf dies
 
 Es ist nicht erlaubt auf der Exchange Ressource direkt einen Termin zu erstellen. Die Synchronisation funktioniert nur, wenn ein neues Appointment im Namen eines mit Rooms Synchronisierten Person erstellt wird und dort die Ressource hinzugefügt wird oder als Teilnehmer eingeladen wird.
 
-Es wird empfohlen den Benutzenden kein diwekter Zugriff auf die Exchange Ressourcen Mailbox zu gewähren.
+Es wird empfohlen den Benutzenden kein direkter Zugriff auf die Exchange Ressourcen Mailboxen zu gewähren.
