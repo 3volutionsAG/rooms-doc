@@ -55,10 +55,13 @@ Falls es notwendig ist, die maximale Anzahl gleichzeitiger Buchungen zu übersch
 ### Gruppeneigenschaften
 Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll:
 
-* Berechtigungsgruppe (Checkbox ja /nein)
-* Notifikationsgruppe (Checkbox ja /nein)
-* BenutzerkreisCheckin (Checkbox ja /nein)
-
+{{< bootstrap-table "table table-striped" >}}
+| Eigenschaft | Standard | Bemerkung |
+| --- | --- | --- |
+| Berechtigungsgruppe | nicht selektiert | Stehen bei der Zuweisung von Berechtigungen zur Verfügung |
+|Notifikationsgruppe|nicht selektiert|Stehen bei der Zuweisung für Benachrichtigungen zur Verfügung|
+|Benutzerkreis|nicht selektiert| - Benutzer in Benutzergruppen mit dem Flag "Benutzerkreis" aktiviert, können im Buchungsprozess nur Buchungen für Benutzer dieser Gruppe erstellen. <br> - Anwendung nur im Zusammenhang mit dem Recht "Darf Reservationen mit Organisator buchen" - Kann durch Recht "Darf Organisator aus allen Benutzerkreisen sehen" übersteuert werden|
+{{< /bootstrap-table >}}
 ### Checkin Einzelbuchungen
 Wenn diese Option aktiviert ist, müssen alle Benutzer in dieser Gruppe für Ressourcen, bei denen der Check-in-Prozess aktiviert ist, diesen verpflichtend durchführen.
 
