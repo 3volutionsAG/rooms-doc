@@ -51,17 +51,16 @@ https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outloo
 
 ### Unterstützte Outlook versionen:
 
-Windows:
+Grunsätzlich braucht das Addin mindestens das Requirement Set 1.7.
 
+Windows:
 - Microsoft 365 subscription
-- Retail version: Outlook 2016, Outlook 2019, Outook 2021
-- Volume license version: Outlook 2021
+- Retail version: Outlook 2016, Outlook 2019, Outlook 2021, Outlook 2024
+- Volume license version: Outlook 2021, Outlook 2024
 
 Mac
 - classic UI
 - new UI
-
-Grunsätzlich braucht das Addin mindestens das Requirement Set 1.7
 
 ### Unterstützte Browser
 
