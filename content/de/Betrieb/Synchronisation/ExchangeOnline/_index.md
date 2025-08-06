@@ -189,7 +189,7 @@ Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 #### Setzen der Berechtigungen
 
 ```powershell
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 ```

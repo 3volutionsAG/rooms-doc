@@ -1,4 +1,4 @@
----
+ f---
 title: "Delegated Access"
 linkTitle: "Delegated Access"
 weight: 2 
@@ -54,7 +54,7 @@ Get-Mailbox
 ```
 
 ```powershell
-Add-MailboxFolderPermission -Identity test.benutzer1@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
+Add-MailboxFolderPermission -Identity test.benutzer1@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
 Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Deleted Items" -User roomsservice@sales.3v-rooms.ch -AccessRights FolderVisible
 Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Drafts" -User roomsservice@sales.3v-rooms.ch -AccessRights FolderVisible
 ```
