@@ -190,7 +190,6 @@ Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 
 ```powershell
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Deleted Items" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 ```
 
@@ -198,6 +197,6 @@ Die `Editor` Rolle beinhaltet folgende Rechte: `CreateItems`, `DeleteAllItems`, 
 
 Das `FolderVisible` Recht erlaubt es dem Delegated-Benutzer den angegebenen Ordner zu sehen, aber keine Elemente im angegebenen Ordner zu lesen oder bearbeiten.
 
-{{% alert title="Warning" color="warning" %}}
-Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, da es sich jedoch um einen System-Folder handelt ist dies nicht möglich.
+{{% alert color="primary" title="Referenzen" %}}
+> Das Flag `CanViewPrivateItems` muss explizit gesetzt werden: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
 {{% /alert %}}

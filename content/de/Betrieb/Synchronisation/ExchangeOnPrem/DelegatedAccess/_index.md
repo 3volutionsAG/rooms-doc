@@ -1,4 +1,4 @@
- f---
+---
 title: "Delegated Access"
 linkTitle: "Delegated Access"
 weight: 2 
@@ -55,7 +55,6 @@ Get-Mailbox
 
 ```powershell
 Add-MailboxFolderPermission -Identity test.benutzer1@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
-Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Deleted Items" -User roomsservice@sales.3v-rooms.ch -AccessRights FolderVisible
 Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Drafts" -User roomsservice@sales.3v-rooms.ch -AccessRights FolderVisible
 ```
 
@@ -63,6 +62,7 @@ Die `Editor` Rolle beinhaltet folgende Rechte: `CreateItems`, `DeleteAllItems`, 
 
 Das `FolderVisible` Recht erlaubt es dem Delegated-Benutzer den angegebenen Ordner zu sehen, aber keine Elemente im angegebenen Ordner zu lesen oder bearbeiten.
 
-{{% alert title="Warning" color="warning" %}}
-Ebenfalls sollte das Recht auf Recoverable Deleted Items Folder gesetzt werden, da es sich jedoch um einen System-Folder handelt ist dies nicht möglich.
+
+{{% alert color="primary" title="Referenzen" %}}
+> Das Flag `CanViewPrivateItems` muss explizit gesetzt werden: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
 {{% /alert %}}
