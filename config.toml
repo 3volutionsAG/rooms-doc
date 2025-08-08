@@ -63,6 +63,8 @@ weight = 1
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+[markup.highlight]
+guessSyntax = false
 
 # Everything below this are Site Params
 
@@ -151,3 +153,6 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 # 	url = "https://example.org/mail"
 # 	icon = "fa fa-envelope"
 #     desc = "Discuss development issues around the project"
+
+[params.mermaid]
+enable = true
