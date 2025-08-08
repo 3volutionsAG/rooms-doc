@@ -5,198 +5,150 @@ weight: 2
 description: Einrichten von Synchronisation mit Exchange Online (M365)
 ---
 
-Bei den Personen muss der korrekte SyncModus gewählt werden
+{{% alert color="info" title="Hinweis" %}}
+Sie verwenden Exchange Online. Die Anleitung für Exchange On-Premises finden Sie hier: [Exchange On-Premises]({{< relref "Betrieb/Synchronisation/ExchangeOnPrem/_index.md" >}})
+{{% /alert %}}
 
-Setting --> Personen --> Person 
+## Kurzüberblick
 
-hier muss O365 oder O365Pull gewählt werden.
+ROOMS unterstützt in Exchange Online zwei Betriebsarten:
 
-Die korrekte Sync URL wird bereits vorausgefüllt:
+- Impersonation (App-Only, über OAuth „full_access_as_app“)
+- Delegated Access (Benutzerkontext, über OAuth „EWS.AccessAsUser.All“)
 
-[https://outlook.office365.com/EWS/Exchange.asmx](https://outlook.office365.com/EWS/Exchange.asmx)
+Beide Varianten können pro Deployment gewählt werden. Nachfolgend sind Voraussetzungen, ROOMS-Konfiguration und Einrichtungs-Schritte beschrieben.
 
-# Authentisierung
+## Einstellungen in ROOMS
 
-Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSettings.config eingetragen werden. Dafür können diese Schritte befolgt werden:
+- Personen → Person → SyncModus: `O365` oder `O365Pull`
+- Sync-URL: `https://outlook.office365.com/EWS/Exchange.asmx` (voreingestellt)
 
-1. Öffnen Sie einen Browser und navigieren Sie zum Azure Active Directory Admin Center. Melden Sie sich mit einem persönlichen Konto (auch: Microsoft-Konto) oder einem Geschäfts- oder Schulkonto an.
-2. Wählen Sie in der linken Navigationsleiste Azure Active Directory aus und wählen Sie dann App-Registrierungen unter Verwalten aus.
-3. Wählen Sie Neue Registrierung aus. Legen Sie auf der Seite Anwendung registrieren die Werte wie folgt fest.
-	1. Geben Sie unter Name einen Anzeigenamen für Ihre App an.
-	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll ist.
-4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
-5. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
-6. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps die Option Office 365 Exchange Online aus.
-7. Wählen Sie Anwendungsberechtigungen und dann full\_access\_as\_app aus. Klicken Sie auf Berechtigungen hinzufügen.
-8. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
-9. Wählen Sie in der linken Navigation unter Verwalten die Option Zertifikate und Geheimnisse aus.
-10. Wählen Sie Neuer geheimer Clientschlüssel aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann Hinzufügen aus.
-11. Kopieren Sie den Wert des neu hinzugefügten geheimen Clientschlüssels und speichern Sie ihn. Sie benötigen ihn später.
+## Impersonation (App-Only)
 
+Einrichtung der App-Only-Authentifizierung via Azure AD mit Anwendungsberechtigungen.
 
-Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten, die man aus den vorherigen Schritten erlangt hat, ersetzt werden dieses File findet man im Installationsverzeichnis von ROOMS (Default: C:\Program Files (x86)\Garaio\ROOMS\Configuration).
+1) App in Azure AD registrieren
+- Azure AD → App-Registrierungen → Neue Registrierung → Name vergeben, unterstützte Kontotypen wählen
+- Anwendungs-ID (Client-ID) notieren
 
-RoomsAppSettings.config
-```xml
-<RoomsAppSettings>
-...
-    <add key="ExchangeTenantId" value="xxx" />
-    <add key="ExchangeAppId" value="xxx" />
-    <add key="ExchangeClientSecret" value="xxx" />
-...
-</RoomsAppSettings>
-```
+2) API-Berechtigungen erteilen
+- Office 365 Exchange Online → Anwendungsberechtigungen → `full_access_as_app`
+- Administratorzustimmung für die Organisation erteilen
 
-### Authentisieren mit Zertifikat
+3) Geheimnis oder Zertifikat konfigurieren
+- Variante Geheimnis: Zertifikate & Geheimnisse → Neuer geheimer Clientschlüssel → Wert sicher ablegen
+- Variante Zertifikat: Zertifikat hochladen; Thumbprint notieren
 
-Mit Rooms Release 4.7.2111 ist Authentisierung mit Zertifikat möglich.
+4) ROOMS konfigurieren (RoomsAppSettings.config)
 
-1. Laden Sie unter "Certificates" Ihr Zertifikat hoch und notieren Sie sich den Thumbprint.
-2. Fügen Sie das Zertifikat nun auf dem Applikationsserver unter Local Computer (Local Machine) --> Personal (My) hinzu.
-
-Nun können die folgenden Zeilen zum RoomsAppSettings.config hinzugefügt werden und der Rooms Service neugestartet werden, xxx sollte mit den Werten, die man aus den vorherigen Schritten erlangt hat ersetzt werden.
+Geheimnis-basierte Anmeldung:
 
 ```xml
 <RoomsAppSettings>
-...
-    <add key="ExchangeTenantId" value="xxx" />
-    <add key="ExchangeAppId" value="xxx" />
-    <add key="ExchangeCertThumbprint" value="xxx" />
-...
+  <add key="ExchangeTenantId" value="xxx" />
+  <add key="ExchangeAppId" value="xxx" />
+  <add key="ExchangeClientSecret" value="xxx" />
 </RoomsAppSettings>
 ```
 
-[https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth)
+Zertifikat-basierte Anmeldung:
 
-Achtung, der Service User mit dem der ROOMS Service läuft benötigt Zugriff auf den Private key, falls die Fehlermeldung "Keyset does not exist" im Rooms Log auftaucht, dann muss dem Service User die Rechte gegeben werden:
-
-Rechtsklick auf Certifikat --> All Tasks --> Manage private key
-
-Service User hinzufügen (Full control)
-
-https://improveandrepeat.com/2018/12/how-to-fix-the-keyset-does-not-exist-cryptographicexception/
-
-
-## Zugriff auf gewisse Mailboxen / User begrenzen
-
-https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access
-
-Powershell vorbereiten
+```xml
+<RoomsAppSettings>
+  <add key="ExchangeTenantId" value="xxx" />
+  <add key="ExchangeAppId" value="xxx" />
+  <add key="ExchangeCertThumbprint" value="xxx" />
+</RoomsAppSettings>
 ```
+
+Hinweise:
+- Der Windows-Dienst-Account von ROOMS benötigt Zugriff auf den privaten Schlüssel des Zertifikats. Bei „Keyset does not exist“ dem Dienst-Account Rechte auf den Private Key geben (z. B. via „Manage private key“).
+- Weitere Details: `https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth`
+
+## Zugriff begrenzen (Application Access Policy)
+
+Mit Application Access Policies kann Impersonation auf bestimmte Postfächer begrenzt werden.
+
+PowerShell vorbereiten:
+
+```powershell
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 ```
-Distribution Gruppe erstellen und Benutzer hinzufügen, es kann auch eine bereits bestehende verwendet werden.
 
-```
+Sicherheitsgruppe erstellen und Benutzer hinzufügen (oder bestehende verwenden):
+
+```powershell
 New-DistributionGroup -Name "SyncIsAllowed" -Type "Security"
 Add-DistributionGroupMember -Identity "SyncIsAllowed" -Member "DiegoS@rooms.myo365.site"
 ```
-Access Policy erstellen, dabei wird die ExchangeAppId vom schritt oben und die Distribution Gruppe gebraucht.
-```
+
+Policy erstellen (verwenden Sie Ihre AppId aus oben):
+
+```powershell
 New-ApplicationAccessPolicy -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f -PolicyScopeGroupId "SyncIsAllowed" -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group SyncIsAllowed."
 ```
 
-Nun kann das ganze überprüft werden:
+Überprüfen:
 
-```
+```powershell
 Test-ApplicationAccessPolicy -Identity "DiegoS@rooms.myo365.site" -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
-
-
-AppId             : 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
-Mailbox           : DiegoS
-MailboxId         : 07742579-71ac-4659-abd7-aa1a1be5d33a
-MailboxSid        : S-1-5-21-3752945577-1385056011-2515546586-533997
-AccessCheckResult : Granted
-
 Test-ApplicationAccessPolicy -Identity "AdeleV@rooms.myo365.site" -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
-
-
-AppId             : 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
-Mailbox           : AdeleV
-MailboxId         : 1cfe2bc2-368a-4de5-92d6-5b2846c8d162
-MailboxSid        : S-1-5-21-3752945577-1385056011-2515546586-533996
-AccessCheckResult : Denied
-
 ```
 
-Achtung: Änderungen an Anwendungszugriffsrichtlinien können länger als 1 Stunde in Microsoft Graph REST-API-Aufrufen wirksam werden, auch wenn Test-ApplicationAccessPolicy positive Ergebnisse anzeigt.
-
-Grundsätzlich ist es auch möglich DenyAccess anstatt RestrictAccess zu verwenden um nur einer bestimmten Gruppe den Zugang zu verwehren.
+Hinweis: Änderungen an Policies können bis zu 1 Stunde dauern. Alternativ zu `RestrictAccess` ist auch `DenyAccess` möglich.
 
 ## Delegated Access
 
-Falls Sie die Berechtigungen noch stärker einschränken wollen kann ab der Version 4.7.2301 die Option Delegated Access konfiguriert werden. Achtung diese Einstellung gilt für alle eingerichteten Synchronsationen also onPrem und O365.
+Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agiert als Stellvertretung des Postfachbesitzers.
 
-RoomsAppSettings.config
+### Voraussetzungen und ROOMS-Konfiguration
 
-```xml
-<RoomsAppSettings>
-	...
-	<add key="ExchangeUseImpersonation" value="false" />
-	...
-</RoomsAppSettings>
-```
-
-Auf dem Applikationsserver müssen die Anmeledinformationen in das RoomsAppSettings.config eingetragen werden. Dafür können diese Schritte befolgt werden:
-
-1. Öffnen Sie einen Browser und navigieren Sie zum Azure Active Directory Admin Center. Melden Sie sich mit einem persönlichen Konto (auch: Microsoft-Konto) oder einem Geschäfts- oder Schulkonto an.
-2. Wählen Sie in der linken Navigationsleiste Azure Active Directory aus und wählen Sie dann App-Registrierungen unter Verwalten aus.
-3. Wählen Sie Neue Registrierung aus. Legen Sie auf der Seite Anwendung registrieren die Werte wie folgt fest.
-	1. Geben Sie unter Name einen Anzeigenamen für Ihre App an.
-	2. Legen Sie Unterstützte Kontotypen auf den Wert fest, der für Ihr Szenario sinnvoll ist.
-4. Wählen Sie Registrieren aus. Kopieren Sie auf der nächsten Seite den Wert der Anwendungs-ID (Client-ID), und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
-5. Wählen Sie in der linken Navigation unter Verwalten die Option Authentifizerung aus und wählen Sie unter Erweiterte Einstellungen --> Öffentliche Clientflows zulassen --> Folgende Mobilgerät- und Desktopflows aktivieren --> Ja
-6. Wählen Sie in der linken Navigation unter Verwalten die Option API-Berechtigungen aus.
-7. Wählen Sie Berechtigung hinzufügen aus. Wählen Sie auf der Seite API-Berechtigungen anfordern unter Meine Apps die Option Office 365 Exchange Online aus.
-8. Wählen Sie Delegated permissions und dann EWS.AccessAsUser.All aus. Klicken Sie auf Berechtigungen hinzufügen.
-9. Wählen Sie Administratorzustimmung für Organisation gewähren aus und bestätigen Sie Ihre Auswahl im Dialogfeld &quot;Zustimmung&quot;.
-
+- Der Service-User `MUSS` ein eigenes Exchange-Postfach besitzen.
+- Delegation aktivieren in `RoomsAppSettings.config`:
 
 ```xml
 <RoomsAppSettings>
-...
-    <add key="ExchangeTenantId" value="xxx" />
-    <add key="ExchangeAppId" value="xxx" />
-    <add key="ExchangeServiceUser" value="xxx" />
-    <add key="ExchangeServicePassword" value="xxx" />
-...
+  <add key="ExchangeUseImpersonation" value="false" />
 </RoomsAppSettings>
 ```
 
-Bei ExchangeServiceUser und ExchangeServicePassword muss ein Service User mit Postfach angegeben werden.
+### App in Azure AD registrieren (Delegated Permissions)
+- Azure AD → App-Registrierungen → Neue Registrierung → Name und Kontotypen wählen
+- Authentifizierung → Erweiterte Einstellungen → Öffentliche Clientflows zulassen → Mobilgerät-/Desktopflows aktivieren: Ja
+- API-Berechtigungen → Delegierte Berechtigungen → `EWS.AccessAsUser.All`
+- Administratorzustimmung erteilen
 
-Bspw.:
+### ROOMS mit Benutzeranmeldeinformationen konfigurieren:
 
 ```xml
 <RoomsAppSettings>
-...
-    <add key="ExchangeServiceUser" value="o365admin@rooms.myo365.site" />
-    <add key="ExchangeServicePassword" value="mySecretPassword" />
-...
+  <add key="ExchangeTenantId" value="{GUID}" />
+  <add key="ExchangeAppId" value="{GUID}" />
+  <add key="ExchangeServiceUser" value="roomsdelegated@rooms.myo365.site" />
+  <add key="ExchangeServicePassword" value="mySecretPassword" />
 </RoomsAppSettings>
 ```
 
-### Vergabe der Rechte für den delegated User via Exchange Management Shell
+### Berechtigungen pro Postfach setzen
 
-#### Powershell vorbereiten
 
 ```powershell
+# PowerShell vorbereiten:
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
+
+# Berechtigungen setzen:
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
 ```
 
-#### Setzen der Berechtigungen
+Rechte-Überblick:
+- `Editor`: `CreateItems`, `DeleteAllItems`, `DeleteOwnedItems`, `EditAllItems`, `EditOwnedItems`, `FolderVisible`, `ReadItems`
+- `FolderVisible`: Ordner sichtbar, keine Leseberechtigung für Inhalte
 
-```powershell
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
-```
-
-Die `Editor` Rolle beinhaltet folgende Rechte: `CreateItems`, `DeleteAllItems`, `DeleteOwnedItems`, `EditAllItems`, `EditOwnedItems`, `FolderVisible`, `ReadItems`
-
-Das `FolderVisible` Recht erlaubt es dem Delegated-Benutzer den angegebenen Ordner zu sehen, aber keine Elemente im angegebenen Ordner zu lesen oder bearbeiten.
-
-{{% alert color="primary" title="Referenzen" %}}
-> Das Flag `CanViewPrivateItems` muss explizit gesetzt werden: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
+{{% alert color="primary" title="Hinweise" %}}
+- `CanViewPrivateItems` muss explizit gesetzt werden: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
+- Zertifikat-Fehler „Keyset does not exist“ beheben: https://improveandrepeat.com/2018/12/how-to-fix-the-keyset-does-not-exist-cryptographicexception/
 {{% /alert %}}
+
