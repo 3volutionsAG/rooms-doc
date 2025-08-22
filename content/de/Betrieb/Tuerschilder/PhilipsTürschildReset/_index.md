@@ -42,5 +42,5 @@ Reset URL in einem freien Slot erfassen
 Home Screen mit Button zum Hauptmenü
 {{< /imgproc >}}
 
-8. Administration aufrufen und mit Pin anmelden
+8. Administration aufrufen und mit dem persönlichen [Pin]({{< relref "3VROOMS/Einstellungen/Persönlicheeinstellungen/Logons/#pin" >}}) welcher auf der Person hinterlegt ist anmelden. Wichtig die Person muss in einere Rolle sein welche das Recht [Darf Ressource bearbeiten]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/#standortabhängige-ressourcen-rechte" >}}) hinterlegt hat.
 9. Die gewünschte Ressource koppeln
