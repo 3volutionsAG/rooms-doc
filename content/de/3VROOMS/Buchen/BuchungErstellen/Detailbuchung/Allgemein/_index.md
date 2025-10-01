@@ -8,6 +8,7 @@ description: >
 In der Detailbuchung geben Sie folgende Daten zur Buchung der Ressource ein:
 
 ---
+{{< bootstrap-table "table-striped" >}}
 | Feld        | Funktion         |
 | ------------- |-------------  |
 | Ressource          | <p style="text-align: justify">Zeigt die ausgewählte Ressource an, auf welcher die Buchung vorgenommen wird. Diese Ressource kann bei Bedarf via Ressourcen-Picker direkt auf der Reservation neu gewählt werden. So kann auf einfache Art und Weise eine Reservation verschoben werden. </p>|
@@ -21,13 +22,14 @@ In der Detailbuchung geben Sie folgende Daten zur Buchung der Ressource ein:
 | Anzahl Personen (1-20)  | <p style="text-align: justify"> Dies ist die einzige Angabe, welche nur bei der Reservation eines Raumes zusätzlich auf dieser Maske erscheint. Hier kann eingegeben werden, wie viele Personen an diesem Meeting teilnehmen. Bei einer Eingabe wird diese Angabe mit der maximalen Kapazität verglichen und verunmöglicht, falls eine falsche Angabe eingegeben wurde, das Abschließen der Reservation. </p>  |
 | Buchungsnummer   | <p style="text-align: justify"> Hier wird die Buchungsnummer der aktuell erfassten Reservation dargestellt.  </p> |
 | Ersteller   | <p style="text-align: justify"> Hier wird angezeigt, welcher Benutzer diese Reservation durchführt. Dies ist immer der aktuell angemeldete Benutzer. </p>  |
-| Organisator   | <p style="text-align: justify"> Hier kann ausgewählt werden, wer für diese Reservation verantwortlich ist. Es ist möglich, dass ein Benutzer in Vertretung eines anderen Benutzers bucht. Dieser Benutzer kann mittels Eingabe des Namens gesucht werden. Die Suchresultate werden sofort angezeigt und der gewünschte Benutzer kann ausgewählt werden. Diese Funktion ist nur bei genügend Benutzerrechten ersichtlich. </p>  |
+| Organisator   | <p style="text-align: justify"> Hier kann ausgewählt werden, wer für diese Reservation verantwortlich ist. Es ist möglich, dass ein Benutzer in Vertretung eines anderen Benutzers bucht. Dieser Benutzer kann mittels Eingabe des Namens gesucht werden. Die Suchresultate werden sofort angezeigt und der gewünschte Benutzer kann ausgewählt werden. Diese Funktion ist nur bei genügend Benutzerrechten ersichtlich. **Generell kann bei synchronisierten Serien-Buchungen by Design die organisierende Person nicht geändert werden. Dies ist eine Limitation welche durch Outlook/Exchange auferlegt ist.**</p>  |
 | Verantwortlicher  | <p style="text-align: justify"> Ermöglicht in Form einer Intelibox eine verantwortliche Person für die Reservation zu bestimmen. Um diese Funktion zu nutzen, ist das Recht <i>Darf Person Verantwortlicher auf Reservation setzen</i>. Sofern der Verantwortliche im Profil die E-Mail Notifikationen aktiviert hat, werden diese an ihn und NICHT an den Organisator verschickt. </p>  |
 | Private Buchung   |  <p style="text-align: justify"> Mit der Aktivierung dieser Checkbox wird eine Reservation als privat definiert. Somit ist diese vertraulich und für andere Benutzer nicht einsehbar. </p> |
 | Kostenträger des Organisators   | <p style="text-align: justify"> Hier kann eine alternative Kostenstelle hinterlegt werden. Grundsätzlich wird die Kostenstelle des Organisators verwendet. Falls allerdings eine andere Kostenstelle verwendet werden soll, muss diese hier eingegeben werden. Diese Funktion ist nur bei genügend Benutzerrechten ersichtlich. Falls Kostenstellen vordefiniert wurden, steht an dieser Stelle eine Auswahlbox zur Verfügung. In diesem Fall können mehrere Kostenstellen hinzugefügt und auch wieder entfernt werden. Standardmäßig werden die Kosten linear auf die einzelnen Kostenträger verteilt. Dies kann bei Bedarf manuell übersteuert werden (spezielle Berechtigung notwendig). Sofern noch keine manuellen Änderungen an der Kostenstelle vorgenommen wurden, wird beim nachträglichen Wechsel des Organisators dessen Kostenstelle übernommen. </p>|
 | Ressourcenkosten    | <p style="text-align: justify"> Zeigt die Ressourcenkosten der aktuellen Reservation an. </p>   |
 | Hauptbuchung  |    |
 | Gesamtkosten   | <p style="text-align: justify"> Klick auf das <i>Plus</i> Icon öffnet eine Übersicht der Gesamtkosten der Reservation in der gültigen Währung. </p>  |
+{{< /bootstrap-table >}}
 
 {{< imgproc Buchen_Detailbuchung_start Resize "960x" >}}
 Allgemeine Information zum Buchen einer Ressource eingeben
