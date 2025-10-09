@@ -58,12 +58,15 @@ Damit ein Türschild für eine Ressource eingesetzt werden kann, muss die entspr
 |<div style="width:270px">Einstellung</div>|<div style="width:150px">Unterstützung</div>|Beschreibung|
 |---------|:---:|:---:|---|
 |Sprache|&#10003;|
-|Wartezeit|&#10003;|Beschreibt die Zeit, die das Türschild ohne Interaktion wartet, bevor es wieder in den "View Mode" wechselt</br>(min. 5, max. 30, standard 10)|
-|Anfrage Intervall|&#10003;|Intervall in Minuten, bei welchem das Türschild die Konfiguration prüft und neue Buchungsdaten abruft</br>(min. 1, max. 1440, standard 5)|
+|Anfrage Intervall|&#10003;|Intervall in Minuten, bei welchem das Türschild neue Buchungsdaten abruft</br>(min. 1, max. 1440, standard 5)|
+|Konfiguration Aktualisierung Intervall|&#10003;|Intervall in Minuten, bei welchem das Türschild die Konfiguration prüft</br>(min. 1, max. 1440, standard 5)|
+|Bildschirmaktualisierung Intervall|&#10003;|Intervall in Minuten, bei welchem das Türschild den Bildschirm aktualisiert</br>(min. 1, max. 1440, standard 60)|
+|Maximale Anzahl angezeigte Buchungen|&#10003;|Maximale Anzahl bevorstehende Buchungungen, welche auf dem Türschild ersichtlich sind</br>(min. 0, max. 10, standard 1)|
 |Titel anzeigen|&#10003;|Steuert die Ausgabe des Titel (ja/nein) am Türschild|
-|Ressource Beschreibung anzeigen|&#10007;|Bei onsite Web kann diese Option via Theming gelöst werden|
+|Ressource Beschreibung anzeigen|&#10003;|Steuert die Ausgabe der Ressourcen Beschreibung (ja/nein) am Türschild|
 |Read only|&#10003;||
 |Nur checkin|&#10003;||
+|Debug-Seite aktivieren|&#10003;||
 |Unauthorisierte Aktionen erlauben|&#10003;|onsite Web möglich ab v1.1.0: Aktionen werden im Namen des Users, mit dem das Türschild konfiguriert wurde, ausgeführt.  Mit der Option, ist es möglich anonymes checkin/checkout sowie anonymes ad-hoc buchen und buchen verlängern zu tätigen. Wenn nur Anonymes Checkin gemacht werden soll, kann zusätzlich “Nur Checkin” ausgewählt werden. |
 |Organisator anzeigen|&#10003;|Steuert die Ausgabe des Organisators (ja/nein) am Türschild|
 |Anonym-Login|&#10003;|Steuert die Funktion eine Buchung ohne Authentisierung zu bestätigen. </br> Gilt nur für Buchungen auf Ressourcen für die Checkin in den Stammdaten der Ressource aktiviert haben. </br> Die Zeitspanne in der eine Bestätigung der Buchung erfolgen kann, bezieht sich auf die beiden Konfigurationswerte in den Stammdaten der Ressource: "Checkin in Min vorher erlaubt", "NoShow Delay"|

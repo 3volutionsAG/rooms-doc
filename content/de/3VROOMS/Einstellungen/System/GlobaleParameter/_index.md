@@ -53,7 +53,6 @@ Folgende Daten können Sie ändern:
 | 154 | Active reservation refresh time | Refresh time in seconds, a value of 0 disables the active reservation view | 120 |
 | 112 | Anlassersteller anhand der Buchungsanfrage gesetzt | Wenn selektiert, dann wird der Anlassersteller anhand der Buchungsanfrage gesetzt sonst wird der aktuell angemeldete Benutzer verwendet. | true |
 | 95 | Anzahl Personen Detailansicht kein Initialwert | Falls aktiviert wird bei der Detailansicht keinen Initialwert bei Anzahl Personen gesetzt | false |
-| 98 | Anzahl zukünftige Buchungen auf dem Türschild | Gibt an, wie viele zukünftige Buchungen auf dem Türschild angezeigt werden sollen | 5 |
 | 18 | Applikation Root-Url | Hauptpfad der Applikation inkl. Mandantangabe (wird benötigt z.B. bei Notifikationen) | |
 | 60 | Applikation Root-Url Anonymous | Anonymouspfad der Applikation inkl. Mandantangabe (wird benötigt z.B. für Rest-Api) | |
 | 11 | Arbeitsbeginn | General end of work within the company. | 08:00 |
@@ -83,7 +82,6 @@ Folgende Daten können Sie ändern:
 | 117 | Hide unavailable ressources in the jobmanager ressource picker | If set to true, ressources which are unavailable when choosing a new ressource for a job will be hidden. | false |
 | 113 | IDP Root-Url | Hauptpfad zum IDP Server. | |
 | 79 | Ignoriere Sperrzeiten bei JobManager | Erlaubt es, beim Import von Lektionen die vorhandenen Sperrzeiten auf Ressourcen zu ignorieren. | false |
-| 96 | Ignoriere SSL Zertifikate bei Türschild | Das Türschild ignoriert alle SSL Zertifikate beim Verbinden mit Rooms, der QR Code des Türschilds muss neu erstellt werden. | false |
 | 19 | IntelliboxMaxRecords | Hält die Anzahl der maximalen visualisierten Einträge (falls das Such-resultat grösser ist). | 15 |
 | 52 | Kalender max. Anzahl dargestellter Ressourcen. | Konfiguriert, wieviele Ressourcen im Kalender maximal angezeigt werden sollen. Achtung: bei mehr als 100 Ressourcen ist eine schlechte Performance möglich. | 100 |
 | 108 | KalenderViewTeilnehmerAnzeigen | Wenn aktiviert, können über die Kalender Ansicht Teilnehmer und dessen Free/Busy Informationen angezeigt werden. | true |
@@ -131,8 +129,6 @@ Folgende Daten können Sie ändern:
 | 39 | Suchfelder in Smartlist automatisch ausblenden. | Konfiguriert, ob die Suchfelder und das Paging nicht angezeigt werden soll, wenn nicht benötigt. | false |
 | 64 | System User Id | Die ID des Systembenutzers, die für nicht authentifizierte oder automatisierte Vorgänge verwendet wird, wie onsiteROOMS, Check-ins/Check-outs und andere systemgesteuerte Aufgaben. | |
 | 44 | Telefonnummer validierungsregel | Konfiguriert, ob Telefonnummern validiert werden sollen und, wenn ja, wie (Regex Ausdruck). | [\d\s\+\(\)]\* |
-| 100 | Texte auf Türschild in Grossbuchstaben darstellen | Gibt an, ob die Texte auf dem Türschild in Grossbuchstaben dargestellt werden | true |
-| 97 | Tuerschildkonfiguration Aktualisierungsintervall (in Minuten) | In diesem Intervall wird von den Tuerschildern die Konfiguration abgefragt und aktualisiert | 15 |
 | 152 | Weiterleitung Detailbuchung Keine Rechte | Gibt an ob der Benutzer direkt auf das Detail der Buchung weitergeleitet werden soll, wenn dieser über keine Berechtigungen verfügt eine Schnellbuchung durchzuführen. | true |
 | 155 | Wizard Root-Url | The Root-Url of the Addin/Wizard if installed. Please add the url including the "#". Example: https://vnext.wizard.3vrooms.app/#/ | |
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
