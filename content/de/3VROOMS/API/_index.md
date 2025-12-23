@@ -9,6 +9,10 @@ Das ROOMS REST-API ist via SwaggerUI dokumentiert. Sofern der Konfig-Wert `Swagg
 
 Alle Zeitangeben sind immer in UTC. Eine konvertierung in Lokalzeit muss der Aufrufende selbständig durchführen. 
 
+## Guides
+
+- [JobManager REST API – Usage Guide]({{< relref "JobManager-Usage" >}}): Fachliche Verwendung (202 Accepted / asynchroner Batch-Flow, Polling, Fehlerhandling)
+
 ## Authentisierung
 
 Die Kommunikation mit dem REST-API erfolgt immer authentisiert mit einem Benutzer. Um API Calls mit einem spezifischen Benutzer durchzuführen müssen folgende Schritte durchgeführt werden.

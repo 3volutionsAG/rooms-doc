@@ -9,6 +9,198 @@
     "https"
   ],
   "paths": {
+    "/{mandator}/api/v1.0/attachment/booking/{bookingId}/delete/{attachmentId}": {
+      "delete": {
+        "tags": [
+          "Attachment"
+        ],
+        "summary": "Removes a file from a booking.",
+        "operationId": "Attachment_DeleteFileForBooking",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AttachmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/attachment/{attachmentId}": {
+      "get": {
+        "tags": [
+          "Attachment"
+        ],
+        "summary": "Download a generic attachment.",
+        "operationId": "Attachment_DownloadBeilage",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/attachment/booking/{bookingId}/download/{attachmentId}": {
+      "get": {
+        "tags": [
+          "Attachment"
+        ],
+        "summary": "Download a given attachment from a booking.",
+        "operationId": "Attachment_DownloadFile",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/attachment/booking/{id}/add": {
+      "post": {
+        "tags": [
+          "Attachment"
+        ],
+        "summary": "Adds files to a booking.",
+        "operationId": "Attachment_UploadFileForBooking",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AttachmentDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/reservation/abort": {
       "put": {
         "tags": [
@@ -211,6 +403,92 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/bookings/{id}/cancheckin": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Returns a boolean indicating if a checkin for the given booking is possible.",
+        "operationId": "Bookings_CanCheckin",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pin",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/bookings/{id}/cancheckout": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Returns a boolean indicating if a checkin for the given booking is possible.",
+        "operationId": "Bookings_CanCheckout",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/bookings/{id}/checkin": {
       "put": {
         "tags": [
@@ -298,6 +576,106 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/BookingDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/bookings/{id}/checkout/release": {
+      "put": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Releases the booking with the specific id.\r\nE.g. PUT api/bookings/4/checkout/release?sendMail=false.",
+        "operationId": "Bookings_CheckoutRelease",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "sendMail",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BookingDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/bookings/{resourceId}/claim": {
+      "put": {
+        "tags": [
+          "Bookings"
+        ],
+        "operationId": "Bookings_ClaimBookingByResource",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "resourceId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PersonResourceEditModel"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
             }
           }
         }
@@ -499,7 +877,7 @@
         }
       }
     },
-    "/{mandator}/api/v1.0/reservation/create/{gliederungId}/{standortId}": {
+    "/{mandator}/api/v1.0/reservation/create/{gliederungId}/{standortId}/{resourceTypeId}": {
       "post": {
         "tags": [
           "Bookings"
@@ -539,6 +917,13 @@
           },
           {
             "name": "standortId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "resourceTypeId",
             "in": "path",
             "required": true,
             "type": "integer",
@@ -676,6 +1061,12 @@
             "format": "int32"
           },
           {
+            "name": "fromTempContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -744,12 +1135,51 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/bookings/syncitemid": {
+      "get": {
+        "tags": [
+          "Bookings"
+        ],
+        "summary": "Gets the BookingId given a specific syncitemId.",
+        "operationId": "Bookings_GetBookingIdByReservationSyncItemId",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "syncItemId",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/gliederung/{gliederungId}/klassifikation/{klassifikationId}": {
       "get": {
         "tags": [
           "Bookings"
         ],
-        "summary": "Gets the bookings with the specific id of the ressource and the end time.\r\nE.g. GET api/ressources/4/bookings?end=2013-06-25T14:00.N.",
         "operationId": "Bookings_GetBookingsByGliederungAndNotInKlassifikation",
         "consumes": [],
         "produces": [
@@ -1406,6 +1836,60 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/bookings/{resourceId}/unclaim": {
+      "put": {
+        "tags": [
+          "Bookings"
+        ],
+        "operationId": "Bookings_UnclaimBookingByResource",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "resourceId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PersonResourceEditModel"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/reservation/recurrence/update": {
       "put": {
         "tags": [
@@ -1479,7 +1963,6 @@
           {
             "name": "searchModel.anlassId",
             "in": "query",
-            "description": "Gets or sets the AnlassId.",
             "required": false,
             "type": "integer",
             "format": "int32"
@@ -1487,14 +1970,12 @@
           {
             "name": "searchModel.displayFullDay",
             "in": "query",
-            "description": "Gets or sets the DisplayFullDay.",
             "required": false,
             "type": "boolean"
           },
           {
             "name": "searchModel.filtersettingId",
             "in": "query",
-            "description": "Gets or sets the FiltersettingId.",
             "required": false,
             "type": "integer",
             "format": "int32"
@@ -1502,7 +1983,6 @@
           {
             "name": "searchModel.from",
             "in": "query",
-            "description": "Gets or sets the From.",
             "required": false,
             "type": "string",
             "format": "date-time"
@@ -1510,7 +1990,6 @@
           {
             "name": "searchModel.id",
             "in": "query",
-            "description": "Gets or sets the Id.",
             "required": false,
             "type": "array",
             "items": {
@@ -1522,7 +2001,6 @@
           {
             "name": "searchModel.mode",
             "in": "query",
-            "description": "Gets or sets the Mode.",
             "required": false,
             "type": "integer",
             "format": "int32",
@@ -1536,7 +2014,6 @@
           {
             "name": "searchModel.standortId",
             "in": "query",
-            "description": "Gets or sets the StandortId.",
             "required": false,
             "type": "array",
             "items": {
@@ -1548,7 +2025,6 @@
           {
             "name": "searchModel.to",
             "in": "query",
-            "description": "Gets or sets the To.",
             "required": false,
             "type": "string",
             "format": "date-time"
@@ -1589,7 +2065,6 @@
           {
             "name": "model.anlassId",
             "in": "query",
-            "description": "Gets or sets the AnlassId.",
             "required": false,
             "type": "integer",
             "format": "int32"
@@ -1597,14 +2072,12 @@
           {
             "name": "model.displayFullDay",
             "in": "query",
-            "description": "Gets or sets the DisplayFullDay.",
             "required": false,
             "type": "boolean"
           },
           {
             "name": "model.filtersettingId",
             "in": "query",
-            "description": "Gets or sets the FiltersettingId.",
             "required": false,
             "type": "integer",
             "format": "int32"
@@ -1612,7 +2085,6 @@
           {
             "name": "model.from",
             "in": "query",
-            "description": "Gets or sets the From.",
             "required": false,
             "type": "string",
             "format": "date-time"
@@ -1620,7 +2092,6 @@
           {
             "name": "model.id",
             "in": "query",
-            "description": "Gets or sets the Id.",
             "required": false,
             "type": "array",
             "items": {
@@ -1632,7 +2103,6 @@
           {
             "name": "model.mode",
             "in": "query",
-            "description": "Gets or sets the Mode.",
             "required": false,
             "type": "integer",
             "format": "int32",
@@ -1646,7 +2116,6 @@
           {
             "name": "model.standortId",
             "in": "query",
-            "description": "Gets or sets the StandortId.",
             "required": false,
             "type": "array",
             "items": {
@@ -1658,7 +2127,6 @@
           {
             "name": "model.to",
             "in": "query",
-            "description": "Gets or sets the To.",
             "required": false,
             "type": "string",
             "format": "date-time"
@@ -1709,6 +2177,154 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/CalendarInfo"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/calendar/freebusy": {
+      "get": {
+        "tags": [
+          "Calendar"
+        ],
+        "summary": "Liefert die Free Busy Informationen der angegebenen Personen.",
+        "operationId": "Calendar_GetFreeBusy",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "emailList",
+            "in": "query",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CalendarTeilnehmerFreeBusy"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/calendar/freebusy/backsync": {
+      "post": {
+        "tags": [
+          "Calendar"
+        ],
+        "summary": "Triggers a back-sync for a clicked Exchange resource Free/Busy slot by finding the matching appointment\r\non the resource mailbox and creating a BackSync action for it.",
+        "operationId": "Calendar_TriggerResourceBacksync",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FreeBusyBacksyncRequest"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/category/{categoryId}": {
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "summary": "Returns a category by id.",
+        "operationId": "Category_GetById",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "categoryId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CategoryDto"
             }
           }
         }
@@ -2025,6 +2641,90 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/costunit": {
+      "post": {
+        "tags": [
+          "CostUnit"
+        ],
+        "summary": "Returns all available Business-Areas.",
+        "operationId": "CostUnit_Create",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "createCostUnitDto",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateCostUnitDto"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/KostentraegerDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/costunit/businessareas": {
+      "get": {
+        "tags": [
+          "CostUnit"
+        ],
+        "summary": "Returns all available Business-Areas.",
+        "operationId": "CostUnit_GetAvailableBusinessAreas",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/costunit/search": {
       "get": {
         "tags": [
@@ -2046,6 +2746,18 @@
             "in": "query",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "businessArea",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "noBusinessAreas",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
           },
           {
             "name": "count",
@@ -2152,111 +2864,6 @@
             "description": "OK",
             "schema": {
               "type": "boolean"
-            }
-          }
-        }
-      }
-    },
-    "/{mandator}/api/v1.0/file/booking/{bookingId}/delete/{attachmentId}": {
-      "delete": {
-        "tags": [
-          "File"
-        ],
-        "summary": "Removes a file from a booking.",
-        "operationId": "File_DeleteFileForBooking",
-        "consumes": [],
-        "produces": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "name": "bookingId",
-            "in": "path",
-            "required": true,
-            "type": "integer",
-            "format": "int32"
-          },
-          {
-            "name": "attachmentId",
-            "in": "path",
-            "required": true,
-            "type": "integer",
-            "format": "int32"
-          },
-          {
-            "name": "fromTempdataContext",
-            "in": "query",
-            "required": false,
-            "type": "boolean"
-          },
-          {
-            "name": "mandator",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/AttachmentDto"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/{mandator}/api/v1.0/file/booking/{id}/add": {
-      "post": {
-        "tags": [
-          "File"
-        ],
-        "summary": "Adds files to a booking.",
-        "operationId": "File_UploadFileForBooking",
-        "consumes": [],
-        "produces": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "integer",
-            "format": "int32"
-          },
-          {
-            "name": "fromTempdataContext",
-            "in": "query",
-            "required": false,
-            "type": "boolean"
-          },
-          {
-            "name": "mandator",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/AttachmentDto"
-              }
             }
           }
         }
@@ -2371,6 +2978,12 @@
             "format": "int32"
           },
           {
+            "name": "fromTempdataContext",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -2423,6 +3036,60 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/locations": {
+      "get": {
+        "tags": [
+          "Location"
+        ],
+        "summary": "Returns all root locations.",
+        "operationId": "Location_GetLocations",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "preselectedLocationId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "locationIds",
+            "in": "query",
+            "required": false,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LocationDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/locations/person/{personId}": {
       "get": {
         "tags": [
@@ -2446,42 +3113,6 @@
             "type": "integer",
             "format": "int32"
           },
-          {
-            "name": "mandator",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/LocationDto"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/{mandator}/api/v1.0/locations": {
-      "get": {
-        "tags": [
-          "Location"
-        ],
-        "summary": "Returns all root locations.",
-        "operationId": "Location_GetRoot",
-        "consumes": [],
-        "produces": [
-          "application/json",
-          "text/json",
-          "text/javascript",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
           {
             "name": "mandator",
             "in": "path",
@@ -2601,6 +3232,56 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/opening-hours/all/{locationId}": {
+      "get": {
+        "tags": [
+          "OpeningHours"
+        ],
+        "summary": "Returns the opening hours for a location and date.",
+        "operationId": "OpeningHours_GetAllHoursLocationById",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/OpeningHourDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/opening-hours/{locationId}": {
       "get": {
         "tags": [
@@ -2627,7 +3308,7 @@
           {
             "name": "date",
             "in": "query",
-            "required": true,
+            "required": false,
             "type": "string",
             "format": "date-time"
           },
@@ -2643,6 +3324,90 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/OpeningHourDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/payment/init": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "summary": "Initialize a payment for the given tempdata context",
+        "operationId": "Payment_InitPayment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "paymentRequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InitPaymentRequestDto"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/InitPaymentResponseDto"
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/paymentProvider": {
+      "get": {
+        "tags": [
+          "PaymentProvider"
+        ],
+        "summary": "Get all payment providers",
+        "operationId": "PaymentProvider_GetPaymentProviders",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PaymentProviderDto"
+              }
             }
           }
         }
@@ -3651,6 +4416,13 @@
             "collectionFormat": "multi"
           },
           {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
             "name": "mandator",
             "in": "path",
             "required": true,
@@ -3665,6 +4437,57 @@
               "items": {
                 "$ref": "#/definitions/QuestionnaireDto"
               }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/questionnaire/validate/{tempdataContextId}": {
+      "get": {
+        "tags": [
+          "Questionnaire"
+        ],
+        "summary": "Validate the booking with the given classificationIds.",
+        "operationId": "Questionnaire_ValidateForClassifications",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "tempdataContextId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "classificationIds",
+            "in": "query",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
             }
           }
         }
@@ -3753,12 +4576,12 @@
         }
       }
     },
-    "/{mandator}/api/v1.0/ressources/gliederungen/availability/{gliederungTypId}/{standortId}/{capacity}/{culture}": {
+    "/{mandator}/api/v1.0/ressources/gliederungen/availability/{gliederungTypId}/{standortId}/{resourceTypeId}": {
       "get": {
         "tags": [
           "Ressources"
         ],
-        "summary": "Returns all bookable equipments (Gliederungen) for a specific User/Location.",
+        "summary": "Returns all bookable categories for a specific time range",
         "operationId": "Ressources_GetAvailableRoomsByGliederungsTyp",
         "consumes": [],
         "produces": [
@@ -3784,6 +4607,13 @@
             "format": "date-time"
           },
           {
+            "name": "capacity",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
             "name": "gliederungTypId",
             "in": "path",
             "required": true,
@@ -3798,17 +4628,11 @@
             "format": "int32"
           },
           {
-            "name": "capacity",
+            "name": "resourceTypeId",
             "in": "path",
             "required": true,
             "type": "integer",
             "format": "int32"
-          },
-          {
-            "name": "culture",
-            "in": "path",
-            "required": true,
-            "type": "string"
           },
           {
             "name": "mandator",
@@ -4130,6 +4954,49 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/locations/{locationId}/resources": {
+      "get": {
+        "tags": [
+          "Ressources"
+        ],
+        "summary": "Returns all resources from a given location",
+        "operationId": "Ressources_GetResourcesFromLocation",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "locationId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RessourceDto"
+              }
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/ressource/guid": {
       "get": {
         "tags": [
@@ -4175,7 +5042,7 @@
         "tags": [
           "Ressources"
         ],
-        "summary": "Gets ressource info by providing the guid",
+        "summary": "Gets ressource info by providing the id",
         "operationId": "Ressources_GetRessourceById",
         "consumes": [],
         "produces": [
@@ -4300,6 +5167,88 @@
         }
       }
     },
+    "/{mandator}/api/v1.0/status": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "operationId": "Status_FindAll",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StatusDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/subscriptions/roomzwebhook": {
+      "post": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "operationId": "Subscriptions_RoomzWebhook",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "eventObject",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoomzWebhookEvent"
+            }
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
     "/{mandator}/api/v1.0/task/start": {
       "post": {
         "tags": [
@@ -4326,6 +5275,48 @@
         "responses": {
           "204": {
             "description": "No Content"
+          }
+        }
+      }
+    },
+    "/{mandator}/api/v1.0/welcome/info": {
+      "get": {
+        "tags": [
+          "WelcomeRooms"
+        ],
+        "summary": "Retourniert die aktuellen {Garaio.Products.Rooms.Web.Models.Welcomerooms.InfoItemModel} zur Anzeige im Welcomescreen",
+        "operationId": "WelcomeRooms_GetInfoItems",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "text/javascript",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "duid",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mandator",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/InfoItemModel"
+              }
+            }
           }
         }
       }
@@ -4381,364 +5372,400 @@
     }
   },
   "definitions": {
+    "AttachmentDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "messageList": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
     "BookingDto": {
       "type": "object",
       "properties": {
-        "Answers": {
+        "answers": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/AnswerDto"
           }
         },
-        "Attachments": {
+        "attachments": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/AttachmentDto"
           }
         },
-        "Begin": {
+        "begin": {
           "format": "date-time",
           "type": "string"
         },
-        "BeginPreparation": {
+        "beginPreparation": {
           "format": "date-time",
           "type": "string"
         },
-        "CateringCosts": {
+        "cateringCosts": {
           "format": "double",
           "type": "number"
         },
-        "CateringList": {
+        "cateringList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/CateringDto"
           }
         },
-        "CheckinAnonymous": {
+        "checkinConfirmed": {
           "type": "boolean"
         },
-        "CheckinConfirmed": {
-          "type": "boolean"
-        },
-        "CheckinFollowupTime": {
+        "checkinFollowupTime": {
           "format": "date-time",
           "type": "string"
         },
-        "CheckinLeadTime": {
+        "checkinLeadTime": {
           "format": "date-time",
           "type": "string"
         },
-        "ClassificationValues": {
+        "classificationValues": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/ClassificationValueDto"
           }
         },
-        "Comment": {
+        "comment": {
           "type": "string"
         },
-        "CostUnits": {
+        "costUnits": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Doorman": {
+        "doorman": {
           "$ref": "#/definitions/DoormanDto"
         },
-        "End": {
+        "end": {
           "format": "date-time",
           "type": "string"
         },
-        "EndFollowUp": {
+        "endFollowUp": {
           "format": "date-time",
           "type": "string"
         },
-        "EquipmentCosts": {
+        "equipmentCosts": {
           "format": "double",
           "type": "number"
         },
-        "EquipmentList": {
+        "equipmentList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/EquipmentDto"
           }
         },
-        "FieldDescriptions": {
+        "fieldDescriptions": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/FieldDescription"
           }
         },
-        "FieldValues": {
+        "fieldValues": {
           "type": "object",
           "additionalProperties": {
             "type": "object"
           }
         },
-        "HeadCount": {
+        "firstFutureSerieBookingId": {
           "format": "int32",
           "type": "integer"
         },
-        "HierarchicalLocation": {
+        "headCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "externalHeadCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hierarchicalLocation": {
           "type": "string"
         },
-        "Images": {
+        "images": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "IsBlockingTime": {
+        "isBlockingTime": {
           "type": "boolean"
         },
-        "IsFirstSerieItem": {
+        "isClaimedResourceBooking": {
           "type": "boolean"
         },
-        "IsTeamsMeeting": {
+        "isFirstSerieItem": {
           "type": "boolean"
         },
-        "IstPrivat": {
+        "isNewBooking": {
           "type": "boolean"
         },
-        "KostenTotal": {
+        "isTeamsMeeting": {
+          "type": "boolean"
+        },
+        "istPrivat": {
+          "type": "boolean"
+        },
+        "kostenTotal": {
           "type": "string"
         },
-        "Location": {
-          "type": "string"
-        },
-        "MaskedIdentifier": {
-          "type": "string"
-        },
-        "ModifiedOn": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "OrganizerId": {
+        "lessonId": {
           "format": "int32",
           "type": "integer"
         },
-        "OrganizerMail": {
+        "location": {
           "type": "string"
         },
-        "OrganizerName": {
+        "maskedIdentifier": {
           "type": "string"
         },
-        "ParticipantDtoList": {
+        "modifiedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "organizerCompany": {
+          "type": "string"
+        },
+        "organizerId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "organizerMail": {
+          "type": "string"
+        },
+        "organizerName": {
+          "type": "string"
+        },
+        "participantDtoList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/ParticipantDto"
           }
         },
-        "PersonInChargeId": {
+        "personInChargeId": {
           "format": "int32",
           "type": "integer"
         },
-        "PersonInChargeMail": {
+        "personInChargeMail": {
           "type": "string"
         },
-        "PersonInChargeName": {
+        "personInChargeName": {
           "type": "string"
         },
-        "Pin": {
+        "pin": {
           "type": "string"
         },
-        "Questionnaires": {
+        "questionnaires": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuestionnaireDto"
           }
         },
-        "Resource": {
+        "resource": {
           "$ref": "#/definitions/RessourceDto"
         },
-        "ResourceCosts": {
+        "resourceCosts": {
           "format": "double",
           "type": "number"
         },
-        "Resourcetype": {
+        "resourcetype": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceDescription": {
+        "ressourceDescription": {
           "type": "string"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceIdList": {
+        "ressourceIdList": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "Seating": {
+        "seating": {
           "$ref": "#/definitions/SeatingDto"
         },
-        "SeatingCapacity": {
+        "seatingCapacity": {
           "type": "string"
         },
-        "SeatingDescription": {
-          "type": "string"
-        },
-        "SeatingHasImage": {
-          "type": "boolean"
-        },
-        "SeatingId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "SerienId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Series": {
-          "$ref": "#/definitions/SeriesDto"
-        },
-        "Status": {
-          "type": "string"
-        },
-        "StatusDto": {
-          "$ref": "#/definitions/StatusDto"
-        },
-        "SubTitle": {
-          "type": "string"
-        },
-        "SyncAppointmentOid": {
-          "type": "string"
-        },
-        "SyncedToExchangeSerieItem": {
-          "type": "boolean"
-        },
-        "TeamsMeetingInfo": {
-          "type": "string"
-        },
-        "Title": {
-          "type": "string"
-        },
-        "TotalCosts": {
+        "seatingCosts": {
           "format": "double",
           "type": "number"
         },
-        "Id": {
+        "seatingDescription": {
+          "type": "string"
+        },
+        "seatingHasImage": {
+          "type": "boolean"
+        },
+        "seatingId": {
           "format": "int32",
           "type": "integer"
         },
-        "MessageList": {
+        "serienId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "series": {
+          "$ref": "#/definitions/SeriesDto"
+        },
+        "status": {
+          "type": "string"
+        },
+        "statusDto": {
+          "$ref": "#/definitions/StatusDto"
+        },
+        "subReservations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingDto"
+          }
+        },
+        "subTitle": {
+          "type": "string"
+        },
+        "syncAppointmentOid": {
+          "type": "string"
+        },
+        "syncedToExchangeSerieItem": {
+          "type": "boolean"
+        },
+        "teamsMeetingInfo": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "totalCosts": {
+          "format": "double",
+          "type": "number"
+        },
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "AnswerDto": {
       "type": "object",
       "properties": {
-        "QuestionId": {
+        "questionId": {
           "format": "int32",
           "type": "integer"
         },
-        "ReservationId": {
+        "reservationId": {
           "format": "int32",
           "type": "integer"
         },
-        "Text": {
+        "text": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
-        }
-      }
-    },
-    "AttachmentDto": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
-        },
-        "MessageList": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          }
         }
       }
     },
     "CateringDto": {
       "type": "object",
       "properties": {
-        "Amount": {
+        "amount": {
           "format": "int32",
           "type": "integer"
         },
-        "AngebotId": {
+        "angebotId": {
           "format": "int32",
           "type": "integer"
         },
-        "Automatic": {
+        "automatic": {
           "format": "int32",
           "type": "integer"
         },
-        "CategoryDesignation": {
+        "categoryDesignation": {
           "type": "string"
         },
-        "CategoryId": {
+        "categoryId": {
           "format": "int32",
           "type": "integer"
         },
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "HasImage": {
+        "hasImage": {
           "type": "boolean"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "OfferingZoneOfferingId": {
+        "offeringZoneOfferingId": {
           "format": "int32",
           "type": "integer"
         },
-        "OpenAmount": {
+        "openAmount": {
           "type": "boolean"
         },
-        "PacketId": {
+        "packetId": {
           "format": "int32",
           "type": "integer"
         },
-        "Price": {
+        "preparationTime": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "price": {
           "format": "double",
           "type": "number"
         },
-        "SelectedAmount": {
+        "selectedAmount": {
           "format": "int32",
           "type": "integer"
         },
-        "Sortierung": {
+        "sortierung": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "timeRequired": {
           "format": "int32",
           "type": "integer"
         }
@@ -4747,146 +5774,157 @@
     "ClassificationValueDto": {
       "type": "object",
       "properties": {
-        "Caption": {
+        "caption": {
           "type": "string"
         },
-        "ClassificationId": {
+        "classificationId": {
           "format": "int32",
           "type": "integer"
         },
-        "ColorCode": {
+        "colorCode": {
           "type": "string"
         },
-        "IsDefault": {
+        "isDefault": {
           "type": "boolean"
         },
-        "SortOrder": {
+        "sortOrder": {
           "format": "int32",
           "type": "integer"
         },
-        "TypeCaption": {
+        "typeCaption": {
           "type": "string"
         },
-        "Id": {
+        "typeSortOrder": {
           "format": "int32",
           "type": "integer"
         },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "KostentraegerDto": {
       "type": "object",
       "properties": {
-        "Anteil": {
+        "anteil": {
           "format": "double",
           "type": "number"
         },
-        "Beschreibung": {
+        "beschreibung": {
           "type": "string"
         },
-        "Children": {
+        "children": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "Geschaeftsbereich": {
+        "geschaeftsbereich": {
           "type": "string"
         },
-        "IstVerrechenbar": {
+        "hasChildrenAvailable": {
           "type": "boolean"
         },
-        "Nummer": {
+        "istVerrechenbar": {
+          "type": "boolean"
+        },
+        "nummer": {
           "type": "string"
         },
-        "Id": {
+        "parentId": {
           "format": "int32",
           "type": "integer"
         },
-        "MessageList": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          }
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "DoormanDto": {
       "type": "object",
       "properties": {
-        "DoorStatus": {
+        "doorStatus": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "EquipmentDto": {
       "type": "object",
       "properties": {
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "Gliederungen": {
+        "gliederungen": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RessourceEquipmentGliederungDto"
           }
         },
-        "HasImage": {
+        "hasImage": {
           "type": "boolean"
         },
-        "Price": {
+        "price": {
           "format": "double",
           "type": "number"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "FieldDescription": {
       "type": "object",
       "properties": {
-        "IsReadonly": {
+        "data": {
+          "type": "object"
+        },
+        "isHidden": {
           "type": "boolean"
         },
-        "IsRequired": {
+        "isReadonly": {
           "type": "boolean"
         },
-        "Label": {
+        "isRequired": {
+          "type": "boolean"
+        },
+        "label": {
           "type": "string"
         },
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Scope": {
+        "scope": {
           "type": "string"
         },
-        "Type": {
+        "type": {
           "type": "string"
         }
       }
@@ -4894,199 +5932,232 @@
     "ParticipantDto": {
       "type": "object",
       "properties": {
-        "EMail": {
+        "eMail": {
           "type": "string"
         },
-        "IsExternal": {
+        "isExternal": {
           "type": "boolean"
         },
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "QuestionnaireDto": {
       "type": "object",
       "properties": {
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "Questions": {
+        "questions": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuestionDto"
           }
         },
-        "Sorting": {
+        "sorting": {
           "format": "int32",
           "type": "integer"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "RessourceDto": {
       "type": "object",
       "properties": {
-        "BookableFromAddin": {
-          "type": "boolean"
+        "addinVisibility": {
+          "type": "string"
         },
-        "BookingsCount": {
+        "attachments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AttachmentDto"
+          }
+        },
+        "bookingsCount": {
           "format": "int32",
           "type": "integer"
         },
-        "Capacity": {
+        "capacity": {
           "format": "int32",
           "type": "integer"
         },
-        "CheckinEnabled": {
+        "categoryItems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CategoryItemDto"
+          }
+        },
+        "checkinEnabled": {
           "type": "boolean"
         },
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "HasCateringAvailable": {
+        "followUpDuration": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hasAnzahlPersonenBasedTarif": {
           "type": "boolean"
         },
-        "HasImage": {
+        "hasCateringAvailable": {
           "type": "boolean"
         },
-        "HierarchicalDescription": {
+        "hasImage": {
+          "type": "boolean"
+        },
+        "hierarchicalDescription": {
           "type": "string"
         },
-        "Images": {
+        "images": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "InfoUrl": {
+        "infoUrl": {
           "type": "string"
         },
-        "Location": {
+        "location": {
           "type": "string"
         },
-        "LocationDescription": {
+        "locationDescription": {
           "type": "string"
         },
-        "LocationId": {
+        "locationId": {
           "format": "int32",
           "type": "integer"
         },
-        "MaskedIdentifier": {
+        "maskedIdentifier": {
           "format": "uuid",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
-        "MaxCapacity": {
+        "maxCapacity": {
           "format": "int32",
           "type": "integer"
         },
-        "MinCapacity": {
+        "metadata": {
+          "type": "object"
+        },
+        "minCapacity": {
           "format": "int32",
           "type": "integer"
         },
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Price": {
+        "preparationDuration": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "price": {
           "format": "double",
           "type": "number"
         },
-        "RealDescription": {
+        "priority": {
           "type": "string"
         },
-        "ResourceType": {
+        "realDescription": {
+          "type": "string"
+        },
+        "resourceType": {
           "format": "int32",
           "type": "integer"
         },
-        "StandardCapacity": {
+        "standardCapacity": {
           "format": "int32",
           "type": "integer"
         },
-        "Title": {
+        "title": {
           "type": "string"
         },
-        "TotalCosts": {
+        "totalCosts": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "SeatingDto": {
       "type": "object",
       "properties": {
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Designation": {
+        "description": {
           "type": "string"
         },
-        "Description": {
+        "designation": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "IsStandard": {
+        "hasImage": {
           "type": "boolean"
         },
-        "MaxAmountPersons": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "MinAmountPersons": {
+        "isStandard": {
+          "type": "boolean"
+        },
+        "maxAmountPersons": {
           "format": "int32",
           "type": "integer"
         },
-        "Price": {
+        "minAmountPersons": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "price": {
           "format": "double",
           "type": "number"
         },
-        "HasImage": {
-          "type": "boolean"
+        "style": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "SeriesDto": {
       "type": "object",
       "properties": {
-        "DayInMonth": {
+        "dayInMonth": {
           "format": "int32",
           "type": "integer"
         },
-        "Days": {
+        "days": {
           "type": "array",
           "items": {
             "format": "int32",
@@ -5102,35 +6173,35 @@
             "type": "integer"
           }
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "EndDate": {
+        "endDate": {
           "format": "date-time",
           "type": "string"
         },
-        "EveryWeekDay": {
+        "everyWeekDay": {
           "type": "boolean"
         },
-        "HasEndDate": {
+        "hasEndDate": {
           "type": "boolean"
         },
-        "Interval": {
+        "interval": {
           "format": "int32",
           "type": "integer"
         },
-        "MonthOfYear": {
+        "monthOfYear": {
           "format": "int32",
           "type": "integer"
         },
-        "Occurences": {
+        "occurences": {
           "format": "int32",
           "type": "integer"
         },
-        "RecurrenceType": {
+        "recurrenceType": {
           "type": "string"
         },
-        "WeekNumber": {
+        "weekNumber": {
           "format": "int32",
           "type": "integer"
         }
@@ -5139,45 +6210,45 @@
     "StatusDto": {
       "type": "object",
       "properties": {
-        "Color": {
+        "color": {
           "type": "string"
         },
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "RessourceEquipmentGliederungDto": {
       "type": "object",
       "properties": {
-        "Count": {
+        "count": {
           "format": "int32",
           "type": "integer"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "HasImage": {
+        "hasImage": {
           "type": "boolean"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "Price": {
+        "price": {
           "format": "double",
           "type": "number"
         }
@@ -5186,61 +6257,83 @@
     "QuestionDto": {
       "type": "object",
       "properties": {
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "EditableUntil": {
+        "editableUntil": {
           "format": "int32",
           "type": "integer"
         },
-        "Info": {
+        "info": {
           "$ref": "#/definitions/QuestionInfoDto"
         },
-        "InfoText": {
+        "infoText": {
           "type": "string"
         },
-        "IsRequired": {
+        "isRequired": {
           "type": "boolean"
         },
-        "Options": {
+        "options": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuestionOptionDto"
           }
         },
-        "RequiredUntil": {
+        "requiredUntil": {
           "format": "int32",
           "type": "integer"
         },
-        "Sorting": {
+        "sorting": {
           "format": "int32",
           "type": "integer"
         },
-        "Type": {
+        "type": {
           "type": "string"
         },
-        "UniqueKey": {
+        "uniqueKey": {
           "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CategoryItemDto": {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "typeName": {
+          "type": "string"
+        },
+        "typeVisible": {
+          "type": "boolean"
         }
       }
     },
     "QuestionInfoDto": {
       "type": "object",
       "properties": {
-        "IsReadonly": {
+        "isReadonly": {
           "type": "boolean"
         },
-        "IsRequired": {
+        "isRequired": {
           "type": "boolean"
         }
       }
@@ -5248,21 +6341,33 @@
     "QuestionOptionDto": {
       "type": "object",
       "properties": {
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "QuestionId": {
+        "questionId": {
           "format": "int32",
           "type": "integer"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
+          }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PersonResourceEditModel": {
+      "type": "object",
+      "properties": {
+        "dates": {
+          "type": "array",
+          "items": {
+            "format": "date-time",
+            "type": "string"
           }
         }
       }
@@ -5270,120 +6375,124 @@
     "ReservationEditModel": {
       "type": "object",
       "properties": {
-        "Answers": {
+        "answers": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/AnswerDto"
           }
         },
-        "AnzahlPersonen": {
+        "anzahlPersonen": {
           "format": "int32",
           "type": "integer"
         },
-        "ApplyChangesToSeries": {
+        "anzahlExternePersonen": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "applyChangesToSeries": {
           "type": "boolean"
         },
-        "Beginn": {
+        "beginn": {
           "format": "date-time",
           "type": "string"
         },
-        "BestellungItems": {
+        "bestellungItems": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/BestellungItem"
           }
         },
-        "ClassificationValueIds": {
+        "classificationValueIds": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "Comment": {
+        "comment": {
           "type": "string"
         },
-        "CostUnits": {
+        "costUnits": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "CreateTeamsMeeting": {
+        "createTeamsMeeting": {
           "type": "boolean"
         },
-        "Ende": {
+        "ende": {
           "format": "date-time",
           "type": "string"
         },
-        "GliederungEquipment": {
+        "gliederungEquipment": {
           "type": "object",
           "additionalProperties": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "OrganizerId": {
+        "organizerId": {
           "format": "int32",
           "type": "integer"
         },
-        "PersonInChargeId": {
+        "personInChargeId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "SeatingId": {
+        "seatingId": {
           "format": "int32",
           "type": "integer"
         },
-        "StatusId": {
+        "statusId": {
           "format": "int32",
           "type": "integer"
         },
-        "SyncAppointmentOid": {
+        "syncAppointmentOid": {
           "format": "uuid",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
-        "SyncedToExchangeSerieItem": {
+        "syncedToExchangeSerieItem": {
           "type": "boolean"
         },
-        "SyncWithCalendar": {
+        "syncWithCalendar": {
           "type": "boolean"
         },
-        "TeilnehmerList": {
+        "teilnehmerList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/ParticipantDto"
           }
         },
-        "TempdataContextId": {
+        "tempdataContextId": {
           "format": "int32",
           "type": "integer"
         },
-        "Titel": {
+        "titel": {
           "type": "string"
         },
-        "CustomFields": {
+        "customFields": {
           "type": "object",
           "additionalProperties": {
             "type": "object"
           }
         },
-        "IsOnApiCall": {
+        "isOnApiCall": {
           "type": "boolean"
         },
-        "Entity": {
+        "entity": {
           "$ref": "#/definitions/BaseEntity"
         },
-        "EntityId": {
+        "entityId": {
           "format": "int32",
           "type": "integer"
         },
-        "SaveIfValid": {
+        "saveIfValid": {
           "type": "boolean"
         }
       }
@@ -5391,38 +6500,38 @@
     "BestellungItem": {
       "type": "object",
       "properties": {
-        "AngebotszoneAngebotId": {
+        "angebotszoneAngebotId": {
           "format": "int32",
           "type": "integer"
         },
-        "Bezeichnung": {
+        "bezeichnung": {
           "type": "string"
         },
-        "Dienstleister": {
+        "dienstleister": {
           "type": "string"
         },
-        "Gesamtpreis": {
+        "gesamtpreis": {
           "$ref": "#/definitions/Kosten"
         },
-        "IstOffeneMenge": {
+        "istOffeneMenge": {
           "type": "boolean",
           "readOnly": true
         },
-        "Liefertermin": {
+        "liefertermin": {
           "format": "date-time",
           "type": "string"
         },
-        "Menge": {
+        "menge": {
           "format": "int32",
           "type": "integer"
         },
-        "Notiz": {
+        "notiz": {
           "type": "string"
         },
-        "PreisProEinheit": {
+        "preisProEinheit": {
           "$ref": "#/definitions/Kosten"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         }
@@ -5431,19 +6540,19 @@
     "BaseEntity": {
       "type": "object",
       "properties": {
-        "CreateHistory": {
+        "createHistory": {
           "type": "boolean",
           "readOnly": true
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "IsNewEntity": {
+        "isNewEntity": {
           "type": "boolean",
           "readOnly": true
         },
-        "RemovedFromEntitySet": {
+        "removedFromEntitySet": {
           "type": "array",
           "items": {
             "type": "object"
@@ -5454,164 +6563,186 @@
     "Kosten": {
       "type": "object",
       "properties": {
-        "Betrag": {
+        "betrag": {
           "format": "double",
           "type": "number"
         },
-        "IsEmpty": {
+        "isEmpty": {
           "type": "boolean",
           "readOnly": true
         },
-        "Waehrung": {
+        "rate": {
+          "$ref": "#/definitions/Rate"
+        },
+        "waehrung": {
           "type": "string"
+        }
+      }
+    },
+    "Rate": {
+      "type": "object",
+      "properties": {
+        "tarifBezeichnung": {
+          "type": "string"
+        },
+        "tarifId": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "ReservationCreateModel": {
       "type": "object",
       "properties": {
-        "AnlassId": {
+        "allDayEvent": {
+          "type": "boolean"
+        },
+        "anlassId": {
           "format": "int32",
           "type": "integer"
         },
-        "AnzahlPersonen": {
+        "anzahlPersonen": {
           "format": "int32",
           "type": "integer"
         },
-        "Beginn": {
+        "beginn": {
           "format": "date-time",
           "type": "string"
         },
-        "BestellungItems": {
+        "bestellungItems": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/BestellungItem"
           }
         },
-        "BestuhlungId": {
+        "bestuhlungId": {
           "format": "int32",
           "type": "integer"
         },
-        "CustomProperties": {
+        "customProperties": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/CustomPropery"
           }
         },
-        "DirectCheckin": {
+        "directCheckin": {
           "type": "boolean"
         },
-        "Ende": {
+        "ende": {
           "format": "date-time",
           "type": "string"
         },
-        "EndeFix": {
+        "endeFix": {
           "type": "boolean"
         },
-        "GliederungEquipment": {
+        "gliederungEquipment": {
           "type": "object",
           "additionalProperties": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "IgnoreRecht": {
+        "ignoreRecht": {
           "type": "boolean"
         },
-        "IsTeamsMeeting": {
+        "isTeamsMeeting": {
           "type": "boolean"
         },
-        "IstPersonRessourceReservation": {
+        "istPersonRessourceReservation": {
           "type": "boolean"
         },
-        "IstPrivat": {
+        "istPrivat": {
           "type": "boolean"
         },
-        "KlassifikationIds": {
+        "klassifikationIds": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "Kommentar": {
+        "kommentar": {
           "type": "string"
         },
-        "KommentarVertraulich": {
+        "kommentarVertraulich": {
           "type": "string"
         },
-        "KostentraegerModel": {
+        "kostentraegerModel": {
           "$ref": "#/definitions/KostentraegerModel"
         },
-        "Kunde": {
+        "kunde": {
           "$ref": "#/definitions/DefaultKunde"
         },
-        "OriginOfCreation": {
+        "originOfCreation": {
           "format": "int32",
           "enum": [
             0,
             1,
             2,
-            3
+            3,
+            4
           ],
           "type": "integer"
         },
-        "PersonOrganisatorId": {
+        "personOrganisatorId": {
           "format": "int32",
           "type": "integer"
         },
-        "PersonVerantwortlicherId": {
+        "personVerantwortlicherId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "SchnellreservationDauer": {
+        "schnellreservationDauer": {
           "format": "int32",
           "type": "integer"
         },
-        "SendNotification": {
+        "sendNotification": {
           "type": "boolean"
         },
-        "StatusId": {
+        "standortHierarchieId": {
+          "type": "string"
+        },
+        "statusId": {
           "format": "int32",
           "type": "integer"
         },
-        "SupressKostenstellen": {
+        "supressKostenstellen": {
           "type": "boolean"
         },
-        "SyncWithCalendar": {
+        "syncWithCalendar": {
           "type": "boolean"
         },
-        "TeilnehmerCollection": {
+        "teilnehmerCollection": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "TeilnehmerNeuList": {
+        "teilnehmerNeuList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/ParticipantDto"
           }
         },
-        "Titel": {
+        "titel": {
           "type": "string"
         },
-        "IsOnApiCall": {
+        "isOnApiCall": {
           "type": "boolean"
         },
-        "Entity": {
+        "entity": {
           "$ref": "#/definitions/BaseEntity"
         },
-        "EntityId": {
+        "entityId": {
           "format": "int32",
           "type": "integer"
         },
-        "SaveIfValid": {
+        "saveIfValid": {
           "type": "boolean"
         }
       }
@@ -5619,10 +6750,10 @@
     "CustomPropery": {
       "type": "object",
       "properties": {
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Value": {
+        "value": {
           "type": "object"
         }
       }
@@ -5630,7 +6761,7 @@
     "KostentraegerModel": {
       "type": "object",
       "properties": {
-        "KostentraegerHalterList": {
+        "kostentraegerHalterList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
@@ -5641,14 +6772,14 @@
     "DefaultKunde": {
       "type": "object",
       "properties": {
-        "ParentEntity": {
+        "parentEntity": {
           "$ref": "#/definitions/BaseEntity"
         },
-        "TooltipStandardinformationen": {
+        "tooltipStandardinformationen": {
           "type": "string",
           "readOnly": true
         },
-        "ValidationRules": {
+        "validationRules": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RuleBase"
@@ -5660,11 +6791,11 @@
     "RuleBase": {
       "type": "object",
       "properties": {
-        "ErrorTextIfNotValid": {
+        "errorTextIfNotValid": {
           "type": "string",
           "readOnly": true
         },
-        "ValidationLevel": {
+        "validationLevel": {
           "format": "int32",
           "enum": [
             0,
@@ -5674,7 +6805,7 @@
           "type": "integer",
           "readOnly": true
         },
-        "ValidationResultIfNotValid": {
+        "validationResultIfNotValid": {
           "$ref": "#/definitions/ValidationMessage",
           "readOnly": true
         }
@@ -5683,17 +6814,17 @@
     "ValidationMessage": {
       "type": "object",
       "properties": {
-        "Message": {
+        "message": {
           "type": "string"
         },
-        "MessageData": {
+        "messageData": {
           "type": "object",
           "additionalProperties": {
             "type": "object"
           },
           "readOnly": true
         },
-        "MessageLevel": {
+        "messageLevel": {
           "format": "int32",
           "enum": [
             0,
@@ -5702,7 +6833,7 @@
           ],
           "type": "integer"
         },
-        "MessagePath": {
+        "messagePath": {
           "type": "string"
         }
       }
@@ -5710,73 +6841,73 @@
     "CreateBookingDto": {
       "type": "object",
       "properties": {
-        "CostUnits": {
+        "costUnits": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "End": {
+        "end": {
           "format": "date-time",
           "type": "string"
         },
-        "FieldDescriptions": {
+        "fieldDescriptions": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/FieldDescription"
           }
         },
-        "Kosten": {
+        "kosten": {
           "format": "double",
           "type": "number"
         },
-        "LocationId": {
+        "locationId": {
           "format": "int32",
           "type": "integer"
         },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
         },
-        "Questionnaires": {
+        "questionnaires": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuestionnaireDto"
           }
         },
-        "ReservationId": {
+        "reservationId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourcetypId": {
+        "ressourcetypId": {
           "format": "int32",
           "type": "integer"
         },
-        "SeatingId": {
+        "seatingId": {
           "format": "int32",
           "type": "integer"
         },
-        "SeatingText": {
+        "seatingText": {
           "type": "string"
         },
-        "SelectTeamsMeetingByDefault": {
+        "selectTeamsMeetingByDefault": {
           "type": "boolean"
         },
-        "Start": {
+        "start": {
           "format": "date-time",
           "type": "string"
         },
-        "TempdataContextId": {
+        "tempdataContextId": {
           "format": "int32",
           "type": "integer"
         },
-        "Title": {
+        "title": {
           "type": "string"
         }
       }
@@ -5784,11 +6915,11 @@
     "ReservationCreateSerieModel": {
       "type": "object",
       "properties": {
-        "DayOfMonth": {
+        "dayOfMonth": {
           "format": "int32",
           "type": "integer"
         },
-        "DayOfWeek": {
+        "dayOfWeek": {
           "format": "int32",
           "enum": [
             1,
@@ -5801,11 +6932,11 @@
           ],
           "type": "integer"
         },
-        "DayOfWeekInMonth": {
+        "dayOfWeekInMonth": {
           "format": "int32",
           "type": "integer"
         },
-        "Days": {
+        "days": {
           "type": "array",
           "items": {
             "format": "int32",
@@ -5821,25 +6952,25 @@
             "type": "integer"
           }
         },
-        "EndByDate": {
+        "endByDate": {
           "type": "boolean"
         },
-        "EndDate": {
+        "endDate": {
           "format": "date-time",
           "type": "string"
         },
-        "Interval": {
+        "interval": {
           "format": "int32",
           "type": "integer"
         },
-        "Iterations": {
+        "iterations": {
           "format": "int32",
           "type": "integer"
         },
-        "RecurrenceType": {
+        "recurrenceType": {
           "type": "string"
         },
-        "TempdataContextId": {
+        "tempdataContextId": {
           "format": "int32",
           "type": "integer"
         }
@@ -5848,39 +6979,45 @@
     "SeriesItemDto": {
       "type": "object",
       "properties": {
-        "End": {
+        "end": {
           "format": "date-time",
           "type": "string"
         },
-        "IsMaster": {
+        "isMaster": {
           "type": "boolean"
         },
-        "LocationId": {
+        "locationId": {
           "format": "int32",
           "type": "integer"
         },
-        "ReservationId": {
+        "reservationId": {
           "format": "int32",
           "type": "integer"
         },
-        "ResourceId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "ResourceLocation": {
+        "reservationTitle": {
           "type": "string"
         },
-        "ResourceTitle": {
+        "resourceHierarchyLocation": {
           "type": "string"
         },
-        "Start": {
+        "resourceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "resourceLocation": {
+          "type": "string"
+        },
+        "resourceTitle": {
+          "type": "string"
+        },
+        "start": {
           "format": "date-time",
           "type": "string"
         },
-        "ValidationMessage": {
+        "validationMessage": {
           "type": "string"
         },
-        "ValidationState": {
+        "validationState": {
           "format": "int32",
           "enum": [
             0,
@@ -5889,25 +7026,25 @@
           ],
           "type": "integer"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "BookingTempdataDto": {
       "type": "object",
       "properties": {
-        "Booking": {
+        "booking": {
           "$ref": "#/definitions/BookingDto"
         },
-        "TempdataContextId": {
+        "tempdataContextId": {
           "format": "int32",
           "type": "integer"
         }
@@ -5916,173 +7053,176 @@
     "TempBookingDto": {
       "type": "object",
       "properties": {
-        "Begin": {
+        "begin": {
           "format": "date-time",
           "type": "string"
         },
-        "BeginPreparation": {
+        "beginPreparation": {
           "format": "date-time",
           "type": "string"
         },
-        "CateringList": {
+        "cateringList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/CateringDto"
           }
         },
-        "CostUnits": {
+        "costUnits": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/KostentraegerDto"
           }
         },
-        "End": {
+        "end": {
           "format": "date-time",
           "type": "string"
         },
-        "EndFollowUp": {
+        "endFollowUp": {
           "format": "date-time",
           "type": "string"
         },
-        "EquipmentList": {
+        "equipmentList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/EquipmentDto"
           }
         },
-        "Gliederung": {
+        "gliederung": {
           "$ref": "#/definitions/GliederungDto"
         },
-        "HeadCount": {
+        "headCount": {
           "format": "int32",
           "type": "integer"
         },
-        "HierarchicalLocation": {
+        "hierarchicalLocation": {
           "type": "string"
         },
-        "Images": {
+        "images": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "IstPrivat": {
+        "istPrivat": {
           "type": "boolean"
         },
-        "Location": {
+        "location": {
           "type": "string"
         },
-        "LocationId": {
+        "locationId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceDescription": {
+        "ressourceDescription": {
           "type": "string"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "RessourceIdList": {
+        "ressourceIdList": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "SeatingCapacity": {
+        "seatingCapacity": {
           "type": "string"
         },
-        "SeatingDescription": {
+        "seatingDescription": {
           "type": "string"
         },
-        "SeatingHasImage": {
+        "seatingHasImage": {
           "type": "boolean"
         },
-        "SeatingId": {
+        "seatingId": {
           "format": "int32",
           "type": "integer"
         },
-        "Status": {
+        "status": {
           "type": "string"
         },
-        "TempDataContextId": {
+        "tempDataContextId": {
           "format": "int32",
           "type": "integer"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "GliederungDto": {
       "type": "object",
       "properties": {
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Description": {
-          "type": "string"
-        },
-        "Designation": {
-          "type": "string"
-        },
-        "GliederungsTypId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Vorbereitungszeit": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Sortierung": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "GliederungsTypDesignation": {
-          "type": "string"
-        },
-        "AmountOfAvailableRooms": {
-          "type": "string"
-        },
-        "SelectedAmount": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Price": {
-          "format": "double",
-          "type": "number"
-        },
-        "HasImage": {
-          "type": "boolean"
-        },
-        "AdditionalBeilagen": {
+        "additionalBeilagen": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/BeilageDto"
           }
         },
-        "AdditionalInformation": {
+        "additionalInformation": {
           "type": "string"
+        },
+        "amountOfAvailableRooms": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string"
+        },
+        "gliederungsTypDesignation": {
+          "type": "string"
+        },
+        "gliederungsTypId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hasImage": {
+          "type": "boolean"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "metadata": {
+          "type": "object"
+        },
+        "price": {
+          "format": "double",
+          "type": "number"
+        },
+        "selectedAmount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "sortierung": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "vorbereitungszeit": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "BeilageDto": {
       "type": "object",
       "properties": {
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "Name": {
+        "name": {
           "type": "string"
         }
       }
@@ -6090,62 +7230,55 @@
     "ReservationUpdateSerieItemModel": {
       "type": "object",
       "properties": {
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "NewEnd": {
+        "newEnd": {
           "format": "date-time",
           "type": "string"
         },
-        "NewResourceId": {
+        "newResourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "NewStart": {
+        "newStart": {
           "format": "date-time",
           "type": "string"
         },
-        "TempdataContextId": {
+        "tempdataContextId": {
           "format": "int32",
           "type": "integer"
         }
       }
     },
     "CalendarSearchModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "AnlassId": {
+        "anlassId": {
           "format": "int32",
-          "description": "Gets or sets the AnlassId.",
           "type": "integer"
         },
-        "DisplayFullDay": {
-          "description": "Gets or sets the DisplayFullDay.",
+        "displayFullDay": {
           "type": "boolean"
         },
-        "FiltersettingId": {
+        "filtersettingId": {
           "format": "int32",
-          "description": "Gets or sets the FiltersettingId.",
           "type": "integer"
         },
-        "From": {
+        "from": {
           "format": "date-time",
-          "description": "Gets or sets the From.",
           "type": "string"
         },
-        "Id": {
-          "description": "Gets or sets the Id.",
+        "id": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "Mode": {
+        "mode": {
           "format": "int32",
-          "description": "Gets or sets the Mode.",
           "enum": [
             0,
             1,
@@ -6154,43 +7287,36 @@
           ],
           "type": "integer"
         },
-        "StandortId": {
-          "description": "Gets or sets the StandortId.",
+        "standortId": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "To": {
+        "to": {
           "format": "date-time",
-          "description": "Gets or sets the To.",
           "type": "string"
         }
       }
     },
     "CalendarModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "AnlassId": {
+        "anlassId": {
           "format": "int32",
-          "description": "Hält die AnlassId.",
           "type": "integer"
         },
-        "HighlightEnd": {
+        "highlightEnd": {
           "format": "date-time",
-          "description": "Hält die Highlight Zeit, falls vorhanden.",
           "type": "string"
         },
-        "HighlightStart": {
+        "highlightStart": {
           "format": "date-time",
-          "description": "Hält die Highlight Zeit, falls vorhanden.",
           "type": "string"
         },
-        "Mode": {
+        "mode": {
           "format": "int32",
-          "description": "Hält den Kalender Modus.",
           "enum": [
             0,
             1,
@@ -6199,115 +7325,93 @@
           ],
           "type": "integer"
         },
-        "ReadOnly": {
-          "description": "Hält ob der Kalender ReadOnly angezeigt werden soll.",
+        "readOnly": {
           "type": "boolean"
         },
-        "RessourceList": {
-          "description": "Hält die Ressourcen.",
+        "ressourceList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RessourceModel"
           },
           "readOnly": true
         },
-        "StandortList": {
-          "description": "Hält die Standorte.",
+        "standortList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/StandortModel"
           },
           "readOnly": true
         },
-        "UserTimeline": {
-          "$ref": "#/definitions/TimelineModel",
-          "description": "Hält die Zeitlinie."
+        "userTimeline": {
+          "$ref": "#/definitions/TimelineModel"
         }
       }
     },
     "RessourceModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "BlockList": {
-          "description": "Hält die Elemente.",
+        "blockList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/BlockModel"
           },
           "readOnly": true
         },
-        "Color": {
-          "description": "Hält die Farbe der Ressource.",
+        "color": {
           "type": "string"
         },
-        "HasMultiselectRights": {
-          "description": "Hält ob der User einen Schnellanlass auf dieser Ressource machen darf oder nicht.",
+        "email": {
+          "type": "string"
+        },
+        "hasMultiselectRights": {
           "type": "boolean"
         },
-        "Id": {
+        "id": {
           "format": "int32",
-          "description": "Hält die Id.",
           "type": "integer"
         },
-        "IsSlot": {
-          "description": "Hält ob Slot.",
+        "isOnline": {
           "type": "boolean"
         },
-        "IsSlotAdmin": {
-          "description": "Hält ob Slot-Admin.",
-          "type": "boolean"
-        },
-        "RessourcetypId": {
-          "description": "Hält die RessourcetypId.",
+        "ressourcetypId": {
           "type": "string"
         },
-        "SchnellbuchungDisabled": {
-          "description": "Hält ob Schnellbuchung ist deaktiviert.",
+        "schnellbuchungDisabled": {
           "type": "boolean"
         },
-        "Title": {
-          "description": "Hält die Ressource Bezeichnung.",
+        "title": {
           "type": "string"
         }
       }
     },
     "StandortModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "Id": {
-          "description": "Hält die Id.",
+        "id": {
           "type": "string"
         },
-        "RessourceList": {
-          "description": "Hält die Ressourcen.",
+        "ressourceList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RessourceModel"
           },
           "readOnly": true
         },
-        "Timeline": {
-          "$ref": "#/definitions/TimelineModel",
-          "description": "Hält die Zeitlinie."
+        "timeline": {
+          "$ref": "#/definitions/TimelineModel"
         },
-        "Title": {
-          "description": "Hält den Titel.",
+        "title": {
           "type": "string"
         }
       }
     },
     "TimelineModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "Arbeitszeit": {
-          "description": "Hält die Arbeitszeit als string.",
+        "arbeitszeit": {
           "type": "string"
         },
-        "Timeline": {
-          "description": "Hält die Elemente in der Zeitlinie.",
+        "timeline": {
           "type": "array",
           "items": {
             "type": "string"
@@ -6317,206 +7421,152 @@
       }
     },
     "BlockModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "BeginnInCurrentViewPort": {
-          "format": "date-time",
-          "description": "Hält die Von Zeit für den angegebenen Tag.",
-          "type": "string"
-        },
-        "BlockTimesOnlyPortalIntegration": {
-          "description": "Identify if the block times must only be visible",
+        "allowShowDetailButton": {
           "type": "boolean"
         },
-        "Date": {
+        "beginnInCurrentViewPort": {
           "format": "date-time",
-          "description": "Hält den Tag im Monat.",
           "type": "string"
         },
-        "EndeInCurrentViewPort": {
+        "blockTimesOnlyPortalIntegration": {
+          "type": "boolean"
+        },
+        "date": {
           "format": "date-time",
-          "description": "Hält die Bis Zeit für den angegebenen Tag.",
           "type": "string"
         },
-        "EntryPart": {
-          "description": "Gibt an, an ob die Reservation abgeschlossen werden soll, oder ob sie am folgetag weiter läuft.",
+        "endeInCurrentViewPort": {
+          "format": "date-time",
           "type": "string"
         },
-        "Id": {
+        "entryPart": {
+          "type": "string"
+        },
+        "id": {
           "format": "int32",
-          "description": "Hält die Id der Reservation.",
           "type": "integer"
         },
-        "IsBookableSlot": {
-          "description": "Gibt an ob der Eintrag ein buchbarer Slot ist. Ein Slot ist dann buchbar wenn die Reservation eine\r\npublizierte Slotdefinition ist.",
+        "isEditable": {
           "type": "boolean"
         },
-        "IsEditable": {
-          "description": "Gibt an, ob der Eintrag editierbar ist.",
+        "isReservationOwner": {
           "type": "boolean"
         },
-        "IsReservationOwner": {
-          "description": "Gibt an, ob es sich um eine Reservation der aktuellen Person handelt.",
+        "isViewable": {
           "type": "boolean"
         },
-        "IsViewable": {
-          "description": "Gibt an, ob das PopUp aufgeht.",
-          "type": "boolean"
-        },
-        "KlassifikationFarben": {
-          "description": "Enthält die Farbe für die Klassifikation. Ist null wenn keine Farbe vorhanden ist.",
+        "klassifikationFarben": {
           "type": "string"
         },
-        "LineIndex": {
+        "nachlauf": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "nachlaufStatusFarbe": {
+          "type": "string"
+        },
+        "organisatorPersonenFarbe": {
+          "type": "string"
+        },
+        "rahmenFarbe": {
+          "type": "string"
+        },
+        "reservationAnlassTooltipPath": {
+          "type": "string"
+        },
+        "reservationBestellungTooltipPath": {
+          "type": "string"
+        },
+        "reservationId": {
           "format": "int32",
-          "description": "Hält den Zeile in der die Reservation angezeigt werden soll. Wird nur für Slotreservationen verwendet.",
           "type": "integer"
         },
-        "Nachlauf": {
-          "format": "date-time",
-          "description": "Hält die Nachlaufzeit.",
-          "type": "string"
-        },
-        "NachlaufStatusFarbe": {
-          "description": "Hält die Farbe des Status für die Nachlaufzeit.",
-          "type": "string"
-        },
-        "OrganisatorPersonenFarbe": {
-          "description": "Hält die Farbe der Person.",
-          "type": "string"
-        },
-        "RahmenFarbe": {
-          "description": "Hält die Farbe des Rahmens.",
-          "type": "string"
-        },
-        "ReservationAnlassTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
-          "type": "string"
-        },
-        "ReservationBestellungTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
-          "type": "string"
-        },
-        "ReservationId": {
+        "reservationOriginalId": {
           "format": "int32",
-          "description": "Hält die Id der Hauptreservation, falls vorhanden (wenn Subreservation).",
           "type": "integer"
         },
-        "ReservationOriginalId": {
-          "format": "int32",
-          "description": "Hält die Id der Original-Reservation, falls vorhanden (wenn Clone).",
-          "type": "integer"
-        },
-        "ReservationSerieTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
+        "reservationSerieTooltipPath": {
           "type": "string"
         },
-        "ReservationSubreservationEquipmentTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
+        "reservationSubreservationEquipmentTooltipPath": {
           "type": "string"
         },
-        "ReservationSubreservationParkplatzTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
+        "reservationSubreservationParkplatzTooltipPath": {
           "type": "string"
         },
-        "ReservationSubreservationRaumTooltipPath": {
-          "description": "Hält die URL des Tooltips.",
+        "reservationSubreservationRaumTooltipPath": {
           "type": "string"
         },
-        "StatusFarbe": {
-          "description": "Hält die Farbe des Status.",
+        "statusFarbe": {
           "type": "string"
         },
-        "Vorlauf": {
+        "vorlauf": {
           "format": "date-time",
-          "description": "Hält die Vorlaufzeit.",
           "type": "string"
         },
-        "VorlaufStatusFarbe": {
-          "description": "Hält die Farbe des Status für die Vorlaufzeit.",
+        "vorlaufStatusFarbe": {
           "type": "string"
         },
-        "AllowClickAufFeiertag": {
-          "description": "Gibt an, ob auf einem Feiertag gebucht werden darf.",
+        "allowClickAufFeiertag": {
           "type": "boolean"
         },
-        "BeginnEffective": {
+        "beginnEffective": {
           "format": "date-time",
-          "description": "Hält die die effektive Beginnzeit (Falls die Reservation über mehrer Tage geht).",
           "type": "string"
         },
-        "Belegung": {
+        "belegung": {
           "format": "double",
-          "description": "Gibt die Belegung relativ zu den Arbeitszeiten an (zwischen 0 und 1).",
           "type": "number"
         },
-        "EndeEffective": {
+        "endeEffective": {
           "format": "date-time",
-          "description": "Hält die die effektive Endzeit (Falls die Reservation über mehrer Tage geht).",
           "type": "string"
         },
-        "Kommentar": {
-          "description": "Hält den Kommentar des Eintrags.",
+        "kommentar": {
           "type": "string"
         },
-        "RessourceId": {
+        "ressourceId": {
           "format": "int32",
-          "description": "Hält die Id der Ressource.",
           "type": "integer"
         },
-        "RessourceTyp": {
-          "description": "Hält den Ressourcetyp.",
+        "ressourceTyp": {
           "type": "string"
         },
-        "Titel": {
-          "description": "Hält den Titel des Eintrags.",
+        "titel": {
           "type": "string"
         },
-        "HasAnlass": {
-          "description": "Gibt an, ob ein Anlass vorhanden ist.",
+        "hasAnlass": {
           "type": "boolean"
         },
-        "HasBestellung": {
-          "description": "Hält den Wert, ob die Reservation Bestellungen hat.",
+        "hasBestellung": {
           "type": "boolean"
         },
-        "HasSerie": {
-          "description": "Gibt an, ob eine Serie vorhanden ist.",
+        "hasSerie": {
           "type": "boolean"
         },
-        "HasSubreservationFahrzeug": {
-          "description": "Hält den Wert, ob die Reservation Subreservationen auf Fahrzeuge hat.",
+        "hasSubreservationFahrzeug": {
           "type": "boolean"
         },
-        "HasSubreservationFixesEquipment": {
-          "description": "Hält den Wert, ob die Reservation Subreservationen auf fixes Equipment hat.",
+        "hasSubreservationFixesEquipment": {
           "type": "boolean"
         },
-        "HasSubreservationMobilesEquipment": {
-          "description": "Hält den Wert, ob die Reservation Subreservationen auf mobiles Equipment hat.",
+        "hasSubreservationMobilesEquipment": {
           "type": "boolean"
         },
-        "HasSubreservationParkplatz": {
-          "description": "Hält den Wert, ob die Reservation Subreservationen auf Parkplätze hat.",
+        "hasSubreservationParkplatz": {
           "type": "boolean"
         },
-        "HasSubreservationRaum": {
-          "description": "Hält den Wert, ob die Reservation Subreservationen auf Räume hat.",
-          "type": "boolean"
-        },
-        "AllowShowDetailButton": {
-          "description": "Does \"+\" button allowed for this block.",
+        "hasSubreservationRaum": {
           "type": "boolean"
         }
       }
     },
     "RessourceDeltaModel": {
-      "description": "Dieses Model wird vom REST-API verwendet.",
       "type": "object",
       "properties": {
-        "RessourceList": {
-          "description": "Hält die Ressourcen.",
+        "ressourceList": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RessourceModel"
@@ -6528,11 +7578,11 @@
     "CalendarInfo": {
       "type": "object",
       "properties": {
-        "Beginn": {
+        "beginn": {
           "format": "date-time",
           "type": "string"
         },
-        "CalendarMode": {
+        "calendarMode": {
           "format": "int32",
           "enum": [
             0,
@@ -6542,73 +7592,142 @@
           ],
           "type": "integer"
         },
-        "DisplayFullDay": {
+        "displayFullDay": {
           "type": "boolean"
         },
-        "DisplayMultiline": {
+        "displayMultiline": {
           "type": "boolean"
         },
-        "DisplayZoom": {
+        "displayZoom": {
           "format": "int32",
           "type": "integer"
         },
-        "TimelinePosition": {
+        "timelinePosition": {
           "format": "int32",
           "type": "integer"
         },
-        "MultiSelectionAndOr": {
+        "multiSelectionAndOr": {
           "type": "boolean"
         },
-        "ShowAllReservation": {
+        "showAllReservation": {
           "type": "boolean",
           "readOnly": true
         },
-        "ShowAnlass": {
+        "showAnlass": {
           "type": "boolean"
         },
-        "ShowBestellung": {
+        "showBestellung": {
           "type": "boolean"
         },
-        "ShowSerie": {
+        "showSerie": {
           "type": "boolean"
         },
-        "ShowSubreservationEquipment": {
+        "showSubreservationEquipment": {
           "type": "boolean"
         },
-        "ShowSubreservationParkplatz": {
+        "showSubreservationParkplatz": {
           "type": "boolean"
         },
-        "ShowSubreservationRaum": {
+        "showSubreservationRaum": {
           "type": "boolean"
         },
-        "AutoRefresh": {
+        "autoRefresh": {
           "format": "int32",
           "type": "integer"
+        }
+      }
+    },
+    "CalendarTeilnehmerFreeBusy": {
+      "type": "object",
+      "properties": {
+        "appointments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IReservationCalendarEntry"
+          }
+        },
+        "bezeichnung": {
+          "type": "string"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "mail": {
+          "type": "string"
+        },
+        "zeitzoneInformation": {
+          "type": "string"
+        }
+      }
+    },
+    "IReservationCalendarEntry": {
+      "type": "object",
+      "properties": {
+        "allowClickAufFeiertag": {
+          "type": "boolean"
+        },
+        "beginnEffective": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "belegung": {
+          "format": "double",
+          "type": "number"
+        },
+        "endeEffective": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "kommentar": {
+          "type": "string"
+        },
+        "ressourceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ressourceTyp": {
+          "type": "string"
+        },
+        "titel": {
+          "type": "string"
+        }
+      }
+    },
+    "FreeBusyBacksyncRequest": {
+      "type": "object",
+      "properties": {
+        "end": {
+          "format": "date-time",
+          "description": "Appointment end in UTC.",
+          "type": "string"
+        },
+        "resourceId": {
+          "format": "int32",
+          "description": "Rooms resource id (not mailbox).",
+          "type": "integer"
+        },
+        "start": {
+          "format": "date-time",
+          "description": "Appointment start in UTC.",
+          "type": "string"
         }
       }
     },
     "CategoryDto": {
       "type": "object",
       "properties": {
-        "Items": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "items": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/CategoryItemDto"
           }
         },
-        "Type": {
-          "type": "string"
-        }
-      }
-    },
-    "CategoryItemDto": {
-      "type": "object",
-      "properties": {
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "Title": {
+        "type": {
           "type": "string"
         }
       }
@@ -6616,53 +7735,71 @@
     "ClassificationDto": {
       "type": "object",
       "properties": {
-        "Caption": {
+        "caption": {
           "type": "string"
         },
-        "Code": {
+        "code": {
           "type": "string"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "IsMultiSelection": {
+        "isMultiSelection": {
           "type": "boolean"
         },
-        "IsRequired": {
+        "isRequired": {
           "type": "boolean"
         },
-        "Values": {
+        "sorting": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "values": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/ClassificationValueDto"
           }
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "ConfigurationDto": {
       "type": "object",
       "properties": {
-        "Beschreibung": {
+        "beschreibung": {
           "type": "string"
         },
-        "Bezeichnung": {
+        "bezeichnung": {
           "type": "string"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "Wert": {
+        "wert": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateCostUnitDto": {
+      "type": "object",
+      "properties": {
+        "businessArea": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "number": {
           "type": "string"
         }
       }
@@ -6670,10 +7807,10 @@
     "CultureDto": {
       "type": "object",
       "properties": {
-        "DisplayName": {
+        "displayName": {
           "type": "string"
         },
-        "IsoLanguageName": {
+        "isoLanguageName": {
           "type": "string"
         }
       }
@@ -6682,16 +7819,16 @@
       "description": "Gives the values of a filter list.",
       "type": "object",
       "properties": {
-        "Description": {
+        "description": {
           "description": "The descritption of the list.",
           "type": "string"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "description": "The id of the list.",
           "type": "integer"
         },
-        "IsFavorit": {
+        "isFavorit": {
           "description": "Is this list the favorit of the current user.",
           "type": "boolean"
         }
@@ -6700,54 +7837,191 @@
     "LocationDto": {
       "type": "object",
       "properties": {
-        "ChildCount": {
+        "childCount": {
           "format": "int32",
           "type": "integer"
         },
-        "Description": {
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LocationDto"
+          }
+        },
+        "description": {
           "type": "string"
         },
-        "HasChildren": {
+        "hasChildren": {
           "type": "boolean"
         },
-        "HierarchicalDescription": {
+        "hierarchicalDescription": {
           "type": "string"
         },
-        "HierarchicalTitle": {
+        "hierarchicalTitle": {
           "type": "string"
         },
-        "Title": {
-          "type": "string"
-        },
-        "Id": {
+        "mapHeight": {
           "format": "int32",
           "type": "integer"
         },
-        "MessageList": {
+        "mapWidth": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "parent": {
+          "$ref": "#/definitions/LocationDto"
+        },
+        "parentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "OpeningHourDto": {
       "type": "object",
       "properties": {
-        "Beginn": {
+        "beginn": {
           "format": "date-time",
           "type": "string"
         },
-        "Closed": {
+        "closed": {
           "type": "boolean"
         },
-        "Date": {
+        "date": {
           "format": "date-time",
           "type": "string"
         },
-        "End": {
+        "end": {
           "format": "date-time",
           "type": "string"
+        }
+      }
+    },
+    "InitPaymentRequestDto": {
+      "type": "object",
+      "properties": {
+        "failUrl": {
+          "type": "string"
+        },
+        "invoiceAddress": {
+          "$ref": "#/definitions/InvoiceAddressDto"
+        },
+        "providerName": {
+          "type": "string"
+        },
+        "successUrl": {
+          "type": "string"
+        },
+        "tempdataContextId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "InvoiceAddressDto": {
+      "type": "object",
+      "properties": {
+        "additionalInfo": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "isDefault": {
+          "type": "boolean"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "postalcode": {
+          "type": "string"
+        },
+        "sex": {
+          "type": "string"
+        },
+        "streetname1": {
+          "type": "string"
+        },
+        "streetname2": {
+          "type": "string"
+        },
+        "streetname3": {
+          "type": "string"
+        }
+      }
+    },
+    "InitPaymentResponseDto": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "format": "int32",
+          "enum": [
+            0,
+            1
+          ],
+          "type": "integer"
+        },
+        "providerRedirectUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "PaymentProviderDto": {
+      "type": "object",
+      "properties": {
+        "baseUri": {
+          "type": "string"
+        },
+        "customerId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "paymentMethods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "terminalId": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "wallets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
@@ -6755,15 +8029,15 @@
       "description": "Model which contains all necessary data for a password change",
       "type": "object",
       "properties": {
-        "CurrentPassword": {
+        "currentPassword": {
           "description": "Current password of the forms logon which should be updated",
           "type": "string"
         },
-        "NewPassword": {
+        "newPassword": {
           "description": "New password which should be applied to the forms logon",
           "type": "string"
         },
-        "Username": {
+        "username": {
           "description": "Username which is used to identify which forms logon should be resetted",
           "type": "string"
         }
@@ -6772,178 +8046,212 @@
     "PersonDto": {
       "type": "object",
       "properties": {
-        "GlobalRights": {
+        "calculateCapacityBasedOnParticipantsEnabled": {
+          "type": "boolean"
+        },
+        "city": {
+          "type": "string"
+        },
+        "claimedResources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ClaimedResourceDto"
+          }
+        },
+        "companyAdress": {
+          "type": "string"
+        },
+        "companyCity": {
+          "type": "string"
+        },
+        "companyDepartment": {
+          "type": "string"
+        },
+        "companyDescription": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "companyZip": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "defaultCapacity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "defaultCostUnits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/KostentraegerDto"
+          }
+        },
+        "defaultDuration": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "defaultLocationIds": {
           "type": "array",
           "items": {
             "format": "int32",
             "type": "integer"
           }
         },
-        "City": {
+        "externalId": {
           "type": "string"
         },
-        "CompanyDepartment": {
+        "firstName": {
           "type": "string"
         },
-        "CompanyDescription": {
-          "type": "string"
-        },
-        "Country": {
-          "type": "string"
-        },
-        "CreatedOn": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "CustomFields": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object"
-          }
-        },
-        "DefaultCapacity": {
+        "genderId": {
           "format": "int32",
           "type": "integer"
         },
-        "DefaultCostUnits": {
+        "globalRights": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/KostentraegerDto"
+            "format": "int32",
+            "type": "integer"
           }
         },
-        "DefaultDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "DefaultLocationId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "ExternalId": {
-          "type": "string"
-        },
-        "FirstName": {
-          "type": "string"
-        },
-        "GenderId": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "HasImage": {
+        "hasImage": {
           "type": "boolean"
         },
-        "IsActive": {
+        "isActive": {
           "type": "boolean"
         },
-        "IsExtern": {
+        "isExtern": {
           "type": "boolean"
         },
-        "Kategorie": {
+        "kategorie": {
           "type": "string"
         },
-        "Language": {
+        "language": {
           "type": "string"
         },
-        "LastName": {
+        "lastName": {
           "type": "string"
         },
-        "Mail": {
+        "mail": {
           "type": "string"
         },
-        "Mobile": {
+        "mobile": {
           "type": "string"
         },
-        "ModifiedOn": {
+        "modifiedOn": {
           "format": "date-time",
           "type": "string"
         },
-        "Name": {
+        "name": {
           "type": "string"
         },
-        "Password": {
+        "password": {
           "type": "string"
         },
-        "Phone": {
+        "phone": {
           "type": "string"
         },
-        "Pin": {
+        "pin": {
           "type": "string"
         },
-        "Postcase": {
+        "poBox": {
           "type": "string"
         },
-        "ResourcetypesGranted": {
+        "postcase": {
+          "type": "string"
+        },
+        "resourcetypesGranted": {
           "type": "object",
           "additionalProperties": {
             "type": "string"
           }
         },
-        "Salutation": {
+        "salutation": {
           "type": "string"
         },
-        "Street": {
+        "street": {
           "type": "string"
         },
-        "TimezoneId": {
+        "timezoneIanaId": {
           "type": "string"
         },
-        "Title": {
+        "timezoneId": {
           "type": "string"
         },
-        "Typ": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "UniqueKey": {
+        "title": {
           "type": "string"
         },
-        "Username": {
+        "uniqueKey": {
           "type": "string"
         },
-        "Zip": {
+        "username": {
           "type": "string"
         },
-        "CalculateCapacityBasedOnParticipantsEnabled": {
-          "type": "boolean"
+        "zip": {
+          "type": "string"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
-          "type": "array",
-          "items": {
+        "customFields": {
+          "type": "object",
+          "additionalProperties": {
             "type": "object"
           }
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "ClaimedResourceDto": {
+      "type": "object",
+      "properties": {
+        "lastBookingStart": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "resourceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "PersonIntelliboxModel": {
       "type": "object",
       "properties": {
-        "Bezeichnung": {
+        "bezeichnung": {
           "type": "string"
         },
-        "HasReservation": {
+        "hasReservation": {
           "type": "boolean"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "InfoUrl": {
+        "infoUrl": {
           "type": "string"
         },
-        "Mail": {
+        "mail": {
           "type": "string"
         },
-        "PersonThumbnailImageData": {
+        "personThumbnailImageData": {
           "type": "string"
         },
-        "ShowCheckbox": {
+        "showCheckbox": {
           "type": "boolean"
         },
-        "TooltipContent": {
+        "tooltipContent": {
           "type": "string"
         }
       }
@@ -6951,12 +8259,12 @@
     "PasswordResetConfirmDto": {
       "type": "object",
       "properties": {
-        "MaskedIdentifier": {
+        "maskedIdentifier": {
           "format": "uuid",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
-        "Password": {
+        "password": {
           "type": "string"
         }
       }
@@ -6964,7 +8272,7 @@
     "PasswordResetDto": {
       "type": "object",
       "properties": {
-        "Username": {
+        "username": {
           "type": "string"
         }
       }
@@ -6973,73 +8281,73 @@
       "description": "Model which contains the needed attributes to create a new user with a logon",
       "type": "object",
       "properties": {
-        "Address": {
+        "address": {
           "description": "Address for the person.",
           "type": "string"
         },
-        "Company": {
+        "company": {
           "description": "Company for the person.",
           "type": "string"
         },
-        "Country": {
+        "country": {
           "description": "Country for the person.",
           "type": "string"
         },
-        "CreateNewCompany": {
+        "createNewCompany": {
           "description": "Indicates whetever a new company should be created.",
           "type": "boolean"
         },
-        "Culture": {
+        "culture": {
           "description": "Culture to be used for the person",
           "type": "string"
         },
-        "Email": {
-          "description": "Email of the person",
-          "type": "string"
-        },
-        "Firstname": {
-          "description": "Firstname of the person",
-          "type": "string"
-        },
-        "Gender": {
-          "format": "int32",
-          "description": "Id of the gender for the person",
-          "type": "integer"
-        },
-        "Lastname": {
-          "description": "Lastname of the person",
-          "type": "string"
-        },
-        "Location": {
-          "description": "Location for the person.",
-          "type": "string"
-        },
-        "Password": {
-          "description": "Password for basic auth logon",
-          "type": "string"
-        },
-        "Phone": {
-          "description": "Phone of the person",
-          "type": "string"
-        },
-        "Plz": {
-          "description": "Plz for the person.",
-          "type": "string"
-        },
-        "Postcase": {
-          "description": "Postcase of the person.",
-          "type": "string"
-        },
-        "Username": {
-          "description": "Username for basic auth logon",
-          "type": "string"
-        },
-        "DefaultLocationId": {
+        "defaultLocationId": {
           "format": "int32",
           "description": "Default locationId for the user.",
           "type": "integer"
         },
-        "CustomFields": {
+        "email": {
+          "description": "Email of the person",
+          "type": "string"
+        },
+        "firstname": {
+          "description": "Firstname of the person",
+          "type": "string"
+        },
+        "gender": {
+          "format": "int32",
+          "description": "Id of the gender for the person",
+          "type": "integer"
+        },
+        "lastname": {
+          "description": "Lastname of the person",
+          "type": "string"
+        },
+        "location": {
+          "description": "The city of the address.",
+          "type": "string"
+        },
+        "password": {
+          "description": "Password for basic auth logon",
+          "type": "string"
+        },
+        "phone": {
+          "description": "Phone of the person",
+          "type": "string"
+        },
+        "plz": {
+          "description": "Plz for the person.",
+          "type": "string"
+        },
+        "postcase": {
+          "description": "Postcase of the person.",
+          "type": "string"
+        },
+        "username": {
+          "description": "Username for basic auth logon",
+          "type": "string"
+        },
+        "customFields": {
           "description": "Custom fields which will be added to person plugins",
           "type": "object",
           "additionalProperties": {
@@ -7051,174 +8359,187 @@
     "DsConfigurationDto": {
       "type": "object",
       "properties": {
-        "AuthMode": {
-          "type": "string"
-        },
-        "CalendarStart": {
+        "calendarEnd": {
           "format": "date-time",
           "type": "string"
         },
-        "CalendarEnd": {
+        "calendarStart": {
           "format": "date-time",
           "type": "string"
         },
-        "Checkin": {
+        "checkin": {
           "type": "boolean"
         },
-        "CheckinOnly": {
+        "checkinOnly": {
           "type": "boolean"
         },
-        "CheckoutMode": {
+        "checkoutMode": {
           "type": "string"
         },
-        "ClickRange": {
-          "type": "string"
-        },
-        "ConfigRefreshInterval": {
+        "configRefreshInterval": {
           "format": "int32",
           "type": "integer"
         },
-        "DsReadOnly": {
+        "dsReadOnly": {
           "type": "boolean"
         },
-        "HasCustomFontDesc": {
-          "type": "string"
+        "enableDebugPage": {
+          "type": "boolean"
         },
-        "HasCustomFontTime": {
-          "type": "string"
+        "followUpDuration": {
+          "format": "int32",
+          "type": "integer"
         },
-        "HasCustomFontTitle": {
-          "type": "string"
-        },
-        "HasCustomLogo": {
-          "type": "string"
-        },
-        "LastSync": {
+        "lastSync": {
           "format": "date-time",
           "type": "string"
         },
-        "Locale": {
+        "locale": {
           "type": "string"
         },
-        "LogoFontFingerprint": {
+        "logoUrl": {
           "type": "string"
         },
-        "LogoUrl": {
-          "type": "string"
-        },
-        "MaxFutureBookings": {
+        "maxFutureBookings": {
           "format": "int32",
           "type": "integer"
         },
-        "NoActionTimeout": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "QrCodeFormat": {
+        "resourceBeschreibung": {
           "type": "string"
         },
-        "ResourceBeschreibung": {
-          "type": "string"
-        },
-        "ResourceBeschreibungAnzeigen": {
+        "resourceBeschreibungAnzeigen": {
           "type": "boolean"
         },
-        "ResourceDescription": {
+        "resourceDescription": {
           "type": "string"
         },
-        "ResourceDesignation": {
-          "type": "string"
-        },
-        "ResourceId": {
+        "resourceId": {
           "format": "int32",
           "type": "integer"
         },
-        "ResourceName": {
+        "resourceName": {
           "type": "string"
         },
-        "ServiceUrl": {
-          "type": "string"
+        "screenReloadInterval": {
+          "format": "int32",
+          "type": "integer"
         },
-        "ServiceUserPin": {
-          "type": "string"
-        },
-        "Theme": {
-          "type": "string"
-        },
-        "TimeZone": {
-          "type": "string"
-        },
-        "ToUpperCase": {
+        "showOrganizer": {
           "type": "boolean"
         },
-        "Translations": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/TranslationDto"
-          }
+        "timeZone": {
+          "type": "string"
         },
-        "UnauthorizedActions": {
+        "unauthorizedActions": {
           "type": "boolean"
         },
-        "ViewRefreshInterval": {
+        "viewRefreshInterval": {
           "format": "int32",
           "type": "integer"
         },
-        "Id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "MessageList": {
+        "messageList": {
           "type": "array",
           "items": {
             "type": "object"
           }
-        }
-      }
-    },
-    "TranslationDto": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string"
         },
-        "Value": {
-          "type": "string"
+        "id": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     },
     "RessourceEquipmentDto": {
       "type": "object",
       "properties": {
-        "Count": {
+        "count": {
           "format": "int32",
           "type": "integer"
         },
-        "Currency": {
+        "currency": {
           "type": "string"
         },
-        "Description": {
+        "description": {
           "type": "string"
         },
-        "Designation": {
+        "designation": {
           "type": "string"
         },
-        "Gliederungen": {
+        "gliederungen": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/RessourceEquipmentGliederungDto"
           }
         },
-        "HasImage": {
+        "hasImage": {
           "type": "boolean"
         },
-        "Id": {
+        "id": {
           "format": "int32",
           "type": "integer"
         },
-        "Price": {
+        "price": {
           "format": "double",
           "type": "number"
+        }
+      }
+    },
+    "RoomzWebhookEvent": {
+      "type": "object",
+      "properties": {
+        "apiVersion": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/EventData"
+        },
+        "id": {
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "EventData": {
+      "type": "object",
+      "properties": {
+        "presenceStatus": {
+          "format": "int32",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "integer"
+        },
+        "workspaceId": {
+          "type": "string"
+        }
+      }
+    },
+    "InfoItemModel": {
+      "description": "Model für Infoitems zur Darstellung im Welcomerooms",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
         }
       }
     }
