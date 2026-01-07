@@ -2,7 +2,8 @@ FROM klakegg/hugo:ext-debian
 ARG USERNAME=dev
 ARG BASH_HIST_PATH=/bashhistory
 
-RUN apt-get update \
+RUN rm -f /etc/apt/sources.list.d/nodesource.list \
+    && apt-get update \
     && apt-get install -y --no-install-recommends \
     bash-completion \
     bsdmainutils \
