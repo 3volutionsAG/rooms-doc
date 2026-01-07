@@ -11,6 +11,6 @@ Für weitere Informationen wenden Sie sich bitte an das Support-Team der 3Voluti
 __Kontaktdaten__
 ServiceDesK: https://3volutions.atlassian.net/servicedesk/customer/portal/1
 Telefon:     +41 31 511 01 39
-E-Mail:      support@3volutions.ch
+E-Mail:      support@microfast.ch
 
 
