@@ -2,7 +2,7 @@
 title: "Ressourcensuche nach Kriterien"
 linkTitle: "Ressourcensuche nach Kriterien"
 weight: 1
-description: Suchen Sie Ihre Ressource nach Kriterien wie z.B. Datum, Zeit oder Ort.
+description: 'Suchen Sie Ihre Ressource nach Kriterien wie z.B. Datum, Zeit oder Ort.'
 ---
 Das Startfenster unter der Kategorie _Buchen_ ist in zwei Bereiche eingeteilt. Im linken Bereich sehen Sie das Sidepanel. In diesem Panel stellen Sie die Kriterien für die Suche ein und erweitern oder schränken diese ein.
 Im rechten Bereich sehen Sie die Suchresultate (meistens in Listenform).

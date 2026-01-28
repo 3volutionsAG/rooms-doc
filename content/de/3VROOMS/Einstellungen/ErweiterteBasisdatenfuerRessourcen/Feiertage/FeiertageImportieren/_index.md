@@ -2,8 +2,7 @@
 title: "Feiertage importieren"
 linkTitle: "Feiertage importieren"
 weight: 30
-description: >
-  
+description: ''
 ---
 
 <p style="text-align: justify">

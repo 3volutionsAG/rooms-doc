@@ -2,7 +2,7 @@
 title: "Tarife"
 linkTitle: "Tarife"
 weight: 3
-description: Im Bereich Tarife verwalten Sie Tarifkategorien und Tarife. Jeder Tarifkategorie wird ein Tarifmodell sowie eine beliebige Anzahl an Tarifen zugeordnet. Die Tarife können als Buchungskosten oder Annulationskosten erfasst werden.
+description: 'Im Bereich Tarife verwalten Sie Tarifkategorien und Tarife. Jeder Tarifkategorie wird ein Tarifmodell sowie eine beliebige Anzahl an Tarifen zugeordnet. Die Tarife können als Buchungskosten oder Annulationskosten erfasst werden.'
 ---
 
 ## Tarif neu erstellen

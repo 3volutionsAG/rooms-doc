@@ -2,8 +2,7 @@
 title: "Bestuhlung"
 linkTitle: "Bestuhlung"
 weight: 4
-description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest. Sie erfassen und verwalten die Bestuhlungsoptionen und die Zuweisung auf der Ressource. Eine <i>Bestuhlungsoption</i> beinhaltet alle Felder der Tabelle <i>Bestuhlung</i.  </p>
+description: 'In diesem Bereich legen Sie die Bestuhlungspläne bzw. die Bestuhlungslisten fest. Sie erfassen und verwalten die Bestuhlungsoptionen und die Zuweisung auf der Ressource. Eine *Bestuhlungsoption* beinhaltet alle Felder der Tabelle *Bestuhlung</i.'
 ---
 ## Ansicht: Bestuhlung
 

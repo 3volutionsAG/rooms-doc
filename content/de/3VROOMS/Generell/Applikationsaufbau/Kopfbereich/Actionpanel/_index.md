@@ -3,8 +3,7 @@ title: "Actionpanel"
 linkTitle: "Actionpanel"
 weight: 3000
 
-description: >
-   <p style="text-align: justify"> Im Actionpanel erscheinen vom Programm generierte Rückmeldungen auf Ihre Aktionen. </p>
+description: 'Im Actionpanel erscheinen vom Programm generierte Rückmeldungen auf Ihre Aktionen.'
 ---
 <p style="text-align: justify"> Die automatisch generierten Mitteilungen erscheinen im sog. Actionpanel oben rechts neben der Menüleiste. Nach kurzer Zeit verschwinden diese wieder oder können über das "x" manuell geschlossen werden.
 

@@ -2,11 +2,7 @@
 title: "Raumeinheiten"
 linkTitle: "Raumeinheiten"
 weight: 7
-description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie die Raumeinheiten und Listen der Raumeinheiten an. Fügen Sie neue Raumeinheiten hinzu oder löschen Sie bestehende Raumeinheiten. </p>
- 
-
-
+description: 'In diesem Bereich legen Sie die Raumeinheiten und Listen der Raumeinheiten an. Fügen Sie neue Raumeinheiten hinzu oder löschen Sie bestehende Raumeinheiten.'
 ---
 ## Ansicht Raumeinheiten
 

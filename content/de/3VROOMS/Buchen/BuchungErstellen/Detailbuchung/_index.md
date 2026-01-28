@@ -2,8 +2,7 @@
 title: "Detailbuchung"
 linkTitle: "Detailbuchung"
 weight: 1
-description: >
-  In diesem Abschnitt erfahren Sie, wie Sie eine Detailbuchung oder eine Schnellbuchung durchführen.  
+description: 'In diesem Abschnitt erfahren Sie, wie Sie eine Detailbuchung oder eine Schnellbuchung durchführen.'
 ---
 <p style="text-align: justify">
 In der Detailbuchung stellen Sie sämtliche Einstellungen für eine Buchung ein. Die Reservationsmaske ist so aufgebaut, dass Ihnen die fakultativen Eingaben in den eigenen Bereichen nur bei Bedarf angezeigt werden. </p>

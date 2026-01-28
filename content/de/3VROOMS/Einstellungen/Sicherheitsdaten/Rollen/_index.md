@@ -2,11 +2,7 @@
 title: "Rollen"
 linkTitle: "Rollen"
 weight: 3
-description: >
-  <p style="text-align: justify"> In diesem Bereich bearbeiten und speichern Sie Rollenlisten. Ebenfalls können Sie Rollen neu anlegen oder entfernen und diese bearbeiten und speichern.   </p>
- 
-
-
+description: 'In diesem Bereich bearbeiten und speichern Sie Rollenlisten. Ebenfalls können Sie Rollen neu anlegen oder entfernen und diese bearbeiten und speichern.'
 ---
 <p style="text-align: justify">
 Im rechten Feld sehen Sie alle eingetragenen Rollen. Im linken Sidepanel finden Sie die Filterfunktion, mit welcher Sie nach Rollen und deren Bezeichnung suchen können. </p>

@@ -2,7 +2,7 @@
 title: "SQL Programmability"
 linkTitle: "SQL Programmability"
 weight: 30
-description: Ausführungsberechtigungen für Nicht-DB-Owner setzen.
+description: 'Ausführungsberechtigungen für Nicht-DB-Owner setzen.'
 ---
 <p align = "justify">
 Dadurch, dass der Service User üblicherweise nicht auch "DB Owner" ist. Ist es unter Umständen nötig Ausführungsberechtigungen zu setzten. </p>

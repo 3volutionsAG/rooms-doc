@@ -2,8 +2,7 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 100
-description: >
-  <p style="text-align: justify">Standardmäßig werden die Spalten mit den Hauptinformationen einer Buchung angezeigt.</p>
+description: 'Standardmäßig werden die Spalten mit den Hauptinformationen einer Buchung angezeigt.'
 ---
 Tabelle: Übersicht und Erläuterung der standardmäßig angezeigten Spalten
 

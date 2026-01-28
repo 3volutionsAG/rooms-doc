@@ -2,7 +2,7 @@
 title: "Aktivieren der Services"
 linkTitle: "Aktivieren der Services"
 weight: 2 
-description: Aktivieren der für die Synchronisation benötigten Dienste
+description: 'Aktivieren der für die Synchronisation benötigten Dienste'
 ---
 
 Über die Structure Map können die benötigten Services aktiviert werden:

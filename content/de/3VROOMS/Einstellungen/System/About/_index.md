@@ -2,11 +2,7 @@
 title: "About"
 linkTitle: "About"
 weight: 10
-description: >
-  <p style="text-align: justify"> Im Bereich About sehen Sie alle Allgemeinen Informationen über Services sowie Datenbanken ein.   </p>
- 
-
-
+description: 'Im Bereich About sehen Sie alle Allgemeinen Informationen über Services sowie Datenbanken ein.'
 ---
 ## Allgemeines zur About Seite
 

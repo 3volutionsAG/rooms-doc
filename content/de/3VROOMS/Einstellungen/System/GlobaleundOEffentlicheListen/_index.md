@@ -2,10 +2,7 @@
 title: "Globale und öffentliche Listen"
 linkTitle: "Globale und öffentiche Listen"
 weight: 4
-description: >
-  <p style="text-align: justify"> Legen Sie globale und öffentliche Listen an, bearbeiten Sie bestehende oder löschen Sie Elemente aus der Liste. </p>
-
-
+description: 'Legen Sie globale und öffentliche Listen an, bearbeiten Sie bestehende oder löschen Sie Elemente aus der Liste.'
 ---
 <p style="text-align: justify">
 Im linken Feld sehen Sie das Sidepanel mit den Filterfunktionen. </p>

@@ -3,8 +3,7 @@ title: "Ansischtsfunktionen"
 linkTitle: "Ansichtsfunktionen"
 weight: 100
 date: 2020-06-30
-description: >
-  
+description: ''
 ---
 <p style="text-align: justify">
 Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu verändern. Folgende Funktonen stehen Ihnen dabei zur Verfügung: </p>

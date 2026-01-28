@@ -2,11 +2,7 @@
 title: "Zugewiesene Ressourcen"
 linkTitle: "Zugewiesene Ressourcen"
 weight: 6
-description: >
-  <p style="text-align: justify"> Im Bereich <i>Zugewiesene Ressourcen</i> weisen Sie einer Person im Profil Ressourcen fix zu (Langzeitbuchungen). Bereits zugewiesene Ressourcen können einzeln oder via Mehrfachselektion auch wieder entfernt werden.  </p>
- 
-
-
+description: 'Im Bereich *Zugewiesene Ressourcen* weisen Sie einer Person im Profil Ressourcen fix zu (Langzeitbuchungen). Bereits zugewiesene Ressourcen können einzeln oder via Mehrfachselektion auch wieder entfernt werden.'
 ---
 ## Voraussetzung für die Zuweisung einer Ressource 
 

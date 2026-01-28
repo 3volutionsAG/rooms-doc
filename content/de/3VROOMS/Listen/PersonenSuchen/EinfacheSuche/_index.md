@@ -2,8 +2,7 @@
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
-description: >
-  <p style="text-align: justify"> Über die Einfachen Suchen finden Sie Personen u.a. anhand des Namens oder der E-Mail-Adresse. </p>
+description: 'Über die Einfachen Suchen finden Sie Personen u.a. anhand des Namens oder der E-Mail-Adresse.'
 ---
 <p style="text-align: justify"> Um eine Suche durchzuführen, navigieren Sie unter Listen im Sidepanel auf das vierte Subpanel <i>Personen</i>. Dadurch öffnet sich zunächst die Einfache Suche. </p>
 

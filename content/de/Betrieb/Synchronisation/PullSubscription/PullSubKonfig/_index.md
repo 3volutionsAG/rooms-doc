@@ -2,7 +2,7 @@
 title: "Pull Subscription konfigurieren"
 linkTitle: "Pull Subscription konfigurieren"
 weight: 400
-description:
+description: ''
 ---
 Folgende Einstellungen können über RoomsAppSettings.config gemacht werden:
 

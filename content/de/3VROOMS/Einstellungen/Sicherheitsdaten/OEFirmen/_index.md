@@ -2,11 +2,7 @@
 title: "OE Firmen"
 linkTitle: "OE Firmen"
 weight: 1
-description: >
-  <p style="text-align: justify"> In diesem Bereich bearbeiten und speichern Sie OE- und Firmenlisten. Ebenfalls können Sie Firmen und Kooperationspartner neu anlegen und Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten und speichern. </p>
- 
-
-
+description: 'In diesem Bereich bearbeiten und speichern Sie OE- und Firmenlisten. Ebenfalls können Sie Firmen und Kooperationspartner neu anlegen und Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten und speichern.'
 ---
 <p style="text-align: justify">
 In der Startansicht unter der Kategorie OE und Firmen, sehen Sie auf der rechten Seite die Firmen in Listenform dargestellt. Aut der linken Seite sehen Sie das Sidepanel mit Filterfunktionen. Hier können Sie nach eingetragenen Firmen suchen. </p>

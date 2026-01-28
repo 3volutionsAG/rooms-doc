@@ -2,11 +2,7 @@
 title: "Oberfläche"
 linkTitle: "Oberfläche"
 weight: 5
-description: >
-  <p style="text-align: justify"> Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus. Die Erfassung und Verwaltung von Kundenspezifischen Layout Anpassungen. Änderungen von CSS und Bilddateien.   </p>
- 
-
-
+description: 'Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu, bearbeiten bestehende oder löschen Elemente hieraus. Die Erfassung und Verwaltung von Kundenspezifischen Layout Anpassungen. Änderungen von CSS und Bilddateien.'
 ---
 <p style="text-align: justify">
 Im linken Bereich sehen Sie das Sidepanel mit den Filterfunktionen. </br>

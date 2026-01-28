@@ -2,8 +2,7 @@
 title: "Anlassspezifische Kriterien"
 linkTitle: "Anlassspezifische Kriterien"
 weight: 1
-description: >
-  <p style="text-align: justify"> Anlassspezifische Kriterien sind zum Beispiel die Anlassnummer, der Titel oder der Typ des Anlasses. </p>
+description: 'Anlassspezifische Kriterien sind zum Beispiel die Anlassnummer, der Titel oder der Typ des Anlasses.'
 ---
 {{< imgproc List_ANL_ErwSuch_AnlSpezKrit_b Resize "960x" >}}
 Übersicht Anlassspezifischer Kriterien der Erweiterten Suche 

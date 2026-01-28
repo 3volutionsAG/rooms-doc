@@ -2,11 +2,7 @@
 title: "Navigation"
 linkTitle: "Navigation"
 weight: 3
-description: >
- <p style="text-align: justify"> In der "Navigation" hinterlegen Sie Ihre bevorzugten Einstellungen für die Führung durch die Menüpunkte. </p>
- 
-
-
+description: 'In der "Navigation" hinterlegen Sie Ihre bevorzugten Einstellungen für die Führung durch die Menüpunkte.'
 ---
 ## Navigation bearbeiten 
 

@@ -2,7 +2,7 @@
 title: "IIS Konfiguration"
 linkTitle: "IIS Konfiguration"
 weight: 60
-description: Generelle Informationen zur IIS Konfiguration
+description: 'Generelle Informationen zur IIS Konfiguration'
 ---
 ## Voraussetzungen
 

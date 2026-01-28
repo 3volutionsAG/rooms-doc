@@ -2,8 +2,7 @@
 title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
-description: >
-  <p style="text-align: justify"> Über diese Suchmaske finden Sie Teilnehmende anhand von Buchungsdetails oder Details zu den Teilnehmenden.  </p>
+description: 'Über diese Suchmaske finden Sie Teilnehmende anhand von Buchungsdetails oder Details zu den Teilnehmenden.'
 ---
 <p style="text-align: justify"> Um Teilnehmende zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen <i>Teilnehmende</i>. Dadurch öffnet sich die Suchmaske. </p>
 

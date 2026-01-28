@@ -2,8 +2,7 @@
 title: "Standorte"
 linkTitle: "Standorte"
 weight: 1
-description: >
-  <p style="text-align: justify">In diesem Bereich legen Sie die Standorte der Ressourcen fest, fügen neue hinzu oder löschen Standorte.  </p>  
+description: 'In diesem Bereich legen Sie die Standorte der Ressourcen fest, fügen neue hinzu oder löschen Standorte.'
 ---
 
 ## Ansicht Standorte

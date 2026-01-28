@@ -2,7 +2,7 @@
 title: "Konfiguration der System Person für die Türschilder"
 linkTitle: "Konfiguration der System Person für die Türschilder"
 weight: 1
-description: Konfiguration der System Person für die Verwendung mit den Türschildern
+description: 'Konfiguration der System Person für die Verwendung mit den Türschildern'
 ---
 
 Generell kann jede Person in ROOMS als System Person hinterlegt werden (solange sie alle notwendigen Rechte besitzt).

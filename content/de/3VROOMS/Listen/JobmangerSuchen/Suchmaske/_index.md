@@ -2,8 +2,7 @@
 title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
-description: >
-  
+description: ''
 ---
 
 <!-- offen lassen -->

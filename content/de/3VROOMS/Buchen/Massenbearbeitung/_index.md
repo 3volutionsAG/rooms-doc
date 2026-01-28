@@ -2,9 +2,7 @@
 title: "Massenbearbeitung"
 linkTitle: "Massenbearbeitung"
 weight: 3
-description: >
-  <p style="text-align: justify">
-  Mit der Funktion <i>Massenbearbeitung</i> bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs Plan, Kalender und Listen durchführen.</p>
+description: 'Mit der Funktion *Massenbearbeitung* bearbeiten, löschen oder geben Sie mehrere bestehende Buchungen frei. In diesem Kapitel werden mit der Massenbearbeitung, der Massenannullation, der Massenfreigabe und der Massenterminierung verschiedene Arten der Massenbearbeitung erklärt. Alle Funktionen können Sie in den Menüs Plan, Kalender und Listen durchführen.'
 ---
 <p style="text-align: justify">
 Das Ziel der Massenbearbeitung ist es, eine oder mehrere Buchungen in den gleichen Prozessschritten bearbeiten zu können. Um diese Funktion nutzen zu können, sind entsprechende Berechtigungen notwendig. </br>

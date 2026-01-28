@@ -2,11 +2,7 @@
 title: "Klassifikationen"
 linkTitle: "Klassifikationen"
 weight: 2
-description: >
-  <p style="text-align: justify"> Im Bereich Klassifikationen erstellen und bearbeiten Sie Klassifikationstypen.   </p>
- 
-
-
+description: 'Im Bereich Klassifikationen erstellen und bearbeiten Sie Klassifikationstypen.'
 ---
 ## Ansicht
 

@@ -2,8 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 2
-description: >
-  <p style="text-align: justify"> Neben den standardmäßig angezeigten Spalten können Sie hier erläuterte, weitere Spalten mit Informationen zur Ressource einblenden. </p>
+description: 'Neben den standardmäßig angezeigten Spalten können Sie hier erläuterte, weitere Spalten mit Informationen zur Ressource einblenden.'
 ---
 Folgende Tabelle erläutert die Spaltenkategorien:
 

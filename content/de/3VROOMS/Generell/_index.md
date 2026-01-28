@@ -2,10 +2,7 @@
 title: "Generell"
 linkTitle: "Generell"
 weight: 1
-description: >
-  <p style="text-align: justify"> Mit diesem Handbuch soll Ihnen der Umgang mit ROOMS erleichtert  und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. </p>
-  
-  Wir wünschen Ihnen viel Freude bei der Nutzung von ROOMS.
+description: 'Mit diesem Handbuch soll Ihnen der Umgang mit ROOMS erleichtert und die Funktionsweisen erklärt werden. Es dient als Leitfaden für Schulungen sowie als Nachschlagewerk im täglichen Gebrauch. Wir wünschen Ihnen viel Freude bei der Nutzung von ROOMS.'
 ---
 Ein paar Anmerkung vornweg:
 

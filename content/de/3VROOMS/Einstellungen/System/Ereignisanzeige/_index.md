@@ -2,11 +2,7 @@
 title: "Ereignisanzeige"
 linkTitle: "Ereignisanzeige"
 weight: 8
-description: >
-  <p style="text-align: justify"> In der Ereignisanzeige sehen Sie alle Ereignisse, die im System von Rooms vorgefallen sind. Beispiele hierzu sind Error Anzeigen oder Warnungen.  </p>
- 
-
-
+description: 'In der Ereignisanzeige sehen Sie alle Ereignisse, die im System von Rooms vorgefallen sind. Beispiele hierzu sind Error Anzeigen oder Warnungen.'
 ---
 <p style="text-align: justify">
 Im linken Sidepanel sehen Sie die Filterfunktionen. Im rechten Feld sehen Sie die Ereignisliste. Elemente in der Ereignisliste können Sie löschen oder ihre Daten einsehen. </p>

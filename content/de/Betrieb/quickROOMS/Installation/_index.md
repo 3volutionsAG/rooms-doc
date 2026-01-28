@@ -2,7 +2,7 @@
 title: "Installation"
 linkTitle: "Installation"
 weight: 1 
-description: quickROOMS installieren
+description: 'quickROOMS installieren'
 ---
 
 In der Anleitung werden folgende URLs verwendet:

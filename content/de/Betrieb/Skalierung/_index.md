@@ -2,7 +2,7 @@
 title: "Skalierung"
 linkTitle: "Skalierung"
 weight: 90
-description: Generelle Informationen zur Skalierung von 3V ROOMS
+description: 'Generelle Informationen zur Skalierung von 3V ROOMS'
 ---
 ## Allgemeines
 

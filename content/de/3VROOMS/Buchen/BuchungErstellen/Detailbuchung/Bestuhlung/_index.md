@@ -2,8 +2,7 @@
 title: "Bestuhlung"
 linkTitle: "Bestuhlung"
 weight: 40
-description: >
-    
+description: ''
 ---
 Einem Raum können unter Umständen verschiedene Bestuhlungsvarianten zugeordnet sein.
 

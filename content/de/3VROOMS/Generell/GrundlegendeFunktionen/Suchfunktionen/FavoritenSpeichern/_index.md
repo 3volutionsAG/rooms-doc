@@ -3,8 +3,7 @@ title: "Favoriten speichern"
 linkTitle: "Favoriten speichern"
 weight: 1000
 
-description: >
-   <p style="text-align: justify">Bevorzugte Subpanels als Favorit markieren</p>
+description: 'Bevorzugte Subpanels als Favorit markieren'
 ---
 <p style="text-align: justify"> Unter jedem Menüpunkt können Sie ein Subpanel als Favorit markieren. Wenn Sie den Menüpunkt wählen, öffnet sich automatisch das Subpanel, das Sie als Favorit markiert haben. Klicken Sie auf den Stern rechts neben der Subpanel-Beschriftung. Der Stern färbt sich gelb.
 Die Markierung kann jederzeit geändert werden, indem Sie auf einen Stern eines anderen Subpanels klicken.

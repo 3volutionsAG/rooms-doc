@@ -2,8 +2,7 @@
 title: "Kopplung"
 linkTitle: "Kopplung"
 weight: 3
-description: >
-  Türschild mit einer Ressource koppeln und entkoppeln
+description: 'Türschild mit einer Ressource koppeln und entkoppeln'
 ---
 
 ## Voraussetzungen

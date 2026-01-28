@@ -2,7 +2,7 @@
 title: "Pull Subscription skalieren"
 linkTitle: "Pull Subscription skalieren"
 weight: 500
-description: 
+description: ''
 ---
 Mit Rooms Release 4.7.2112 ist eine Skalierung des PullSubscription Services möglich.
 

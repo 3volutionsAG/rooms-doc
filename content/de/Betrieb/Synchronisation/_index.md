@@ -2,8 +2,7 @@
 title: "Exchange Synchronisation"
 linkTitle: "Exchange Synchronisation"
 weight: 4
-description: >
-  Hier wird die Konfiguration der Exchange Synchronisation erläutert.
+description: 'Hier wird die Konfiguration der Exchange Synchronisation erläutert.'
 ---
 
 Für weitere Informationen wenden Sie sich bitte an das Support-Team der 3Volutions AG:

@@ -2,8 +2,7 @@
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
-description: >
-  <p style="text-align: justify"> Mit der Einfachen Suche finden Sie Ressourcen anhand des Typs oder Standortes. </p>
+description: 'Mit der Einfachen Suche finden Sie Ressourcen anhand des Typs oder Standortes.'
 ---
 <p style="text-align: justify"> Um eine Ressource zu finden, navigieren Sie im Sidepanel auf das fünfte Subpanel mit dem Namen <i>Ressourcen</i>. Dadurch öffnet sich zunächst die Einfache Suche. </p>
 

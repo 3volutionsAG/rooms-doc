@@ -2,7 +2,7 @@
 title: "Teilnehmen"
 linkTitle: "Teilnehmer"
 weight: 60
-description:
+description: ''
 ---
 Im Bereich Teilnehmer erfassen Sie die Teilnehmer einer Buchung (Termin). Die Teilnehmer werden in einer Liste hinterlegt und zur Buchung gespeichert. Bei Bedarf können Sie selektiv durch Klick auf die Notifikations-Checkbox den Teilnehmern auch eine automatische Bestätigungsmail zusenden. Dies erfordert spezielle Funktionsrechte
 

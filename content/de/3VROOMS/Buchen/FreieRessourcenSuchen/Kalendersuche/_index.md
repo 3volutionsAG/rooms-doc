@@ -2,8 +2,7 @@
 title: "Ressourcensuche im Kalender"
 linkTitle: "Ressourcensuche im Kalender"
 weight: 3
-description: >
-  Sie suchen über die Kalenderfunktion eine freie Ressource. 
+description: 'Sie suchen über die Kalenderfunktion eine freie Ressource.'
 ---
 <p style="text-align: justify">
 Mit dem Kalender in ROOMS verschaffen Sie sich sehr schnell einen Überblick über die Belegungssituation der Ressourcen. Dazu stehen verschiedene Filter- und Ansichtsfunktionen zur Verfügung. Mit dem Mouse-Over über eine Ressourcenbezeichnung öffnet sich ein Tooltip, in dem zusätzliche Informationen der Ressource sichtbar sind, sofern diese hinterlegt wurden. </p>

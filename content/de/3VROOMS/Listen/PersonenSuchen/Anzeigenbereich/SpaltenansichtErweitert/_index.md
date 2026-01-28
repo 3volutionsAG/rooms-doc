@@ -2,8 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 2
-description: >
-  <p style="text-align: justify"> Über die Listensymbole lassen sich weitere Spalten hinzufügen </p>
+description: 'Über die Listensymbole lassen sich weitere Spalten hinzufügen'
 ---
 Folgende Tabelle erläutert die Spalteneinträge:
 

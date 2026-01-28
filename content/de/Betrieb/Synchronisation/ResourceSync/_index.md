@@ -2,7 +2,7 @@
 title: "Exchange Ressource Sync"
 linkTitle: "Exchange Ressource Sync"
 weight: 50
-description: Synchronisation von Exchange Ressourcen mit ROOMS Ressourcen
+description: 'Synchronisation von Exchange Ressourcen mit ROOMS Ressourcen'
 ---
 ## Konfiguration 
 Um die Exchange Ressourcen Synchronisation zu aktivieren müssen folgende Konfigurationswerte gesetzt werden:

@@ -2,8 +2,7 @@
 title: "Massenfreigabe"
 linkTitle: "Massenfreigabe"
 weight: 10
-description: >
-  
+description: ''
 ---
 <p style="text-align: justify">
 Auch die Massenfreigabe und die Massenterminierung von Buchungen führen Sie in den Menüs <i>Plan</i>, <i>Kalender</i> und <i>Listen</i> durch. </p>

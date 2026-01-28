@@ -4,8 +4,7 @@ title: "Kalenderansicht"
 linkTitle: "Kalenderansicht"
 weight: 1
 date: 2020-06-30
-description: >
-  Die Ansicht des Kalenders können Sie nach Belieben ändern z.B. in eine Tages-, Wochen- oder Monatsansicht.
+description: 'Die Ansicht des Kalenders können Sie nach Belieben ändern z.B. in eine Tages-, Wochen- oder Monatsansicht.'
 ---
 <p style="text-align: justify">
 Mit dem Kalender in ROOMS verschaffen Sie sich sehr schnell einen Überblick über die Belegungssituation der Ressourcen. </p>

@@ -2,7 +2,7 @@
 title: "IdP einrichten"
 linkTitle: "IdP einrichten"
 weight: 30
-description: Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
+description: 'Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.'
 ---
 ### Eigene Seite für IdP einrichten
 

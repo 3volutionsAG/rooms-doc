@@ -2,8 +2,7 @@
 title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
-description: >
-  <p style="text-align: justify">Über detaillierte Angaben wie der Personalnummer oder zugeordneten Abteilung grenzen Sie die Suche weiter ein. </p>
+description: 'Über detaillierte Angaben wie der Personalnummer oder zugeordneten Abteilung grenzen Sie die Suche weiter ein.'
 ---
 {{< imgproc List_Pers_ErwKrit_geschw_b Resize "960x" >}}
 Filter der Erweiterten Suche, um Personen zu finden 

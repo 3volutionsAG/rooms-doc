@@ -4,8 +4,7 @@ title: "Eine Buchung im Kalender bearbeiten"
 linkTitle: "Eine Buchung im Kalender bearbeiten"
 weight: 2
 date: 2020-06-30
-description: >
-  Im Kalender können Sie eine bereits bestehende Buchung bearbeiten, wie z.B. die Buchungslänge oder eine Buchung verschieben. 
+description: 'Im Kalender können Sie eine bereits bestehende Buchung bearbeiten, wie z.B. die Buchungslänge oder eine Buchung verschieben.'
 ---
 <p style="text-align: justify">
 Um eine Buchung zu bearbeiten, wählen Sie das <b>+</b> in der Reservation im Kalender aus. Dafür fahren Sie mit der Maus auf die Buchung und es erscheinen ein <b>+</b> und eine Checkbox. </p>

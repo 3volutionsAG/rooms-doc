@@ -2,8 +2,7 @@
 title: "Gliederungen"
 linkTitle: "Gliederungen"
 weight: 400
-description: >
-   <p style="text-align: justify"> Die können unter anderem Raumtyp oder Equipmenttyp sein. </p>
+description: 'Die können unter anderem Raumtyp oder Equipmenttyp sein.'
 ---
 <p style="text-align: justify"> Die Unterkategorie Gliederung ist, wie die <i>Ressourcenspezifischen Kriterien</i>, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie in der <i>Einfachen Suche</i> aus. </p>
 

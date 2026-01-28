@@ -3,8 +3,7 @@ title: "On-Prem Exchange"
 linkTitle: "On-Prem Exchange"
 weight: 3 
 
-description: >
-   <p style="text-align: justify">Addin Deployment Exchange 2016/2019</p>
+description: 'Addin Deployment Exchange 2016/2019'
 ---
 
 ## Erstellen des Manifests. 

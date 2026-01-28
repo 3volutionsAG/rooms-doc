@@ -2,8 +2,7 @@
 title: "Ressourcenspezifische Kriterien"
 linkTitle: "Ressourcenspezifische Kriterien"
 weight: 200
-description: >
-   <p style="text-align: justify"> Diese können unter anderen die Ressourcen ID oder  Bezeichnung sein. </p>
+description: 'Diese können unter anderen die Ressourcen ID oder Bezeichnung sein.'
 ---
 <p style="text-align: justify"> Die ressourcenspezifischen Kriterien verändern sich je nach gewählter Ressourcenart (Raum, Parkplatz, Arbeitsplatz,...), die Sie in der einfachen Suche festlegen. </br>
 In diesem Bereich werden in erster Linie firmenspezifische Bezeichnungen und Klassifizierungen als weitere Filterkriterien zur Verfügung gestellt. </p>

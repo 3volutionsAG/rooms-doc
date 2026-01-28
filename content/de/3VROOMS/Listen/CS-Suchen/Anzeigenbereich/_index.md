@@ -2,8 +2,7 @@
 title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
 weight: 30
-description: >
-  <p style="text-align: justify"> Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform dargestellt. </P>
+description: 'Im Anzeigenbereich, rechts neben dem Sidepanel, werden die Ergebnisse Ihrer Suche in Listenform dargestellt.'
 ---
 <p style="text-align: justify"> Das Ergebnis ist tabellarisch angeordnet. Jedes Angebot wird in je einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die zu den jeweiligen Angeboten hinterlegt sind.  </p>
 

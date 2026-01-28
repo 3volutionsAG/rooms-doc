@@ -2,7 +2,7 @@
 title: "Exchange 2013 - 2016 - 2019"
 linkTitle: "Exchange 2013 - 2016 - 2019"
 weight: 200
-description: 
+description: ''
 ---
 Um die Synchronisation mit einer MS Exchange 2013 Umgebung zuzulassen, muss der Account, unter dem der ROOMS Windows Service läuft, über die entsprechenden Zugriffsrechte verfügen. Anstelle von normalen Vollzugriffsrechten kann dafür das sogenannte Impersonierungsrecht vergeben werden, welches den Vorteil besitzt, dass es nur im Kontext der MS Exchange Web Services verwendet werden kann. Der berechtigte Account kann dann Aktionen im Namen eines anderen Benutzers ausführen, womit die ROOMS Umgebung im Namen eines bestimmten Benutzers auf dessen eigene Mailbox zugreifen kann.
 

@@ -2,8 +2,7 @@
 title: "Buchung in O365 Outlook ändern"
 linkTitle: "Buchung in O365 Outlook ändern"
 weight: 200
-description: > 
-   <p style="text-align: justify"> Termine mit einer 3V ROOMS Buchung können auch in Outlook geändert werden. </p>
+description: 'Termine mit einer 3V ROOMS Buchung können auch in Outlook geändert werden.'
 ---
 Ein Termin kann auf zwei Arten geändert werden:
 

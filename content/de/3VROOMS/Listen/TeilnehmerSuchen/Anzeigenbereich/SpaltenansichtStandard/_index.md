@@ -2,8 +2,7 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: >
-  <p style="text-align: justify">In der Standardansicht werden die grundlegenden Informationen zu den Teilnehmenden aufgelistet.</p>
+description: 'In der Standardansicht werden die grundlegenden Informationen zu den Teilnehmenden aufgelistet.'
 ---
 Standardmäßig sind folgende Spalten sichtbar:
 

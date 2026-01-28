@@ -2,8 +2,7 @@
 title: "Detailansicht Anlässe"
 linkTitle: "Detailansicht Anlässe"
 weight: 3
-description: >
-  <p style="text-align: justify"> Die Detailansicht fasst alle Informationen zum ausgewählten Anlass übersichtlich zusammen. </p>
+description: 'Die Detailansicht fasst alle Informationen zum ausgewählten Anlass übersichtlich zusammen.'
 ---
 <p style="text-align: justify"> Der Anlasstitel in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf den blau gefärbten Anlasstitel werden Sie auf die Detailseite des Anlasses weitergeleitet.
 

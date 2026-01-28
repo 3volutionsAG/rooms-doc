@@ -2,11 +2,7 @@
 title: "Personen Information"
 linkTitle: "Personen Information"
 weight: 1
-description: >
-  <p style="text-align: justify"> In diesem Bereich speichern Sie die Mitarbeiterdaten. Diese Mitarbeiterdaten können Sie über den Button <i>Bearbeiten</i> ändern. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen und Logons. </p>
- 
-
-
+description: 'In diesem Bereich speichern Sie die Mitarbeiterdaten. Diese Mitarbeiterdaten können Sie über den Button *Bearbeiten* ändern. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen und Logons.'
 ---
 ## Personen Informationen Bearbeiten 
 

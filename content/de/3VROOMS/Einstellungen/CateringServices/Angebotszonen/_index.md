@@ -2,11 +2,7 @@
 title: "Angebotszonen"
 linkTitle: "Angebotszonen"
 weight: 2
-description: >
-  <p style="text-align: justify"> Im Bereich Angebotszonen sehen Sie die verschiedenen Dienstleister und ihre Angebote. Sie erstellen neue Angebotszonen oder bearbeiten bestehende. </p>
- 
-
-
+description: 'Im Bereich Angebotszonen sehen Sie die verschiedenen Dienstleister und ihre Angebote. Sie erstellen neue Angebotszonen oder bearbeiten bestehende.'
 ---
 ## Ansicht Angebotszone 
 

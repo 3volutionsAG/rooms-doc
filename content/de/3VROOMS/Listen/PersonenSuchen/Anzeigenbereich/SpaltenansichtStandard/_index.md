@@ -2,8 +2,7 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: >
-  <p style="text-align: justify">Standardmäßig sind hier aufgeführte Spalten sichtbar</p>
+description: 'Standardmäßig sind hier aufgeführte Spalten sichtbar'
 ---
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|

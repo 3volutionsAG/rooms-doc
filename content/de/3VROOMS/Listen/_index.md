@@ -2,9 +2,7 @@
 title: "Listen"
 linkTitle: "Listen"
 weight: 5
-description: >
-  <p style="text-align: justify"> Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Ressourcen, Raumeinheiten, Teilnehmenden und Dienstleistenden. 
-  Die wohl wichtigste Suche ist die Buchungssuche. Eine erstellte Buchung sollte einfach wiedergefunden werden, um sie unkompliziert verwalten zu können. </p>
+description: 'Unter dem Menüpunkt Listen haben Sie die Möglichkeit verschiedene Suchanfragen durchzuführen. Es kann nicht nur nach Buchungen gesucht werden, sondern auch nach Personen, Ressourcen, Raumeinheiten, Teilnehmenden und Dienstleistenden. Die wohl wichtigste Suche ist die Buchungssuche. Eine erstellte Buchung sollte einfach wiedergefunden werden, um sie unkompliziert verwalten zu können.'
 ---
 
 ## Aufbau

@@ -2,10 +2,7 @@
 title: "Eigene Listen"
 linkTitle: "Eigene Listen"
 weight: 5
-description: >
-  <p style="text-align: justify"> In der Kategorie "Eigene Listen" verwalten Sie persönliche, öffentliche und geteilte Listen. </p>
-
-
+description: 'In der Kategorie "Eigene Listen" verwalten Sie persönliche, öffentliche und geteilte Listen.'
 ---
 
 ## Eigene Listen bearbeiten  

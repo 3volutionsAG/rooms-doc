@@ -2,8 +2,7 @@
 title: "Buchung einem Anlass hinzufügen"
 linkTitle: "Buchung einem Anlass hinzufügen"
 weight: 4
-description: >
-  <p style="text-align: justify"> Einem bestehendem Anlass können weitere Buchungen hinzugefügt werden. Dies ist u.a. über das Sidepanel in der Detailansicht eines Anlasses möglich. </p>
+description: 'Einem bestehendem Anlass können weitere Buchungen hinzugefügt werden. Dies ist u.a. über das Sidepanel in der Detailansicht eines Anlasses möglich.'
 ---
 <p style="text-align: justify"> In der Anlass Übersicht im Sidepanel finden Sie drei weitere Schaltflächen, über die Sie auf unterschiedlichen Wegen dem Anlass weitere Buchungen hinzufügen können. </p>
 

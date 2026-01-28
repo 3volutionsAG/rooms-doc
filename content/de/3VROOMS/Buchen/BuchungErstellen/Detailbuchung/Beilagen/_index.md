@@ -2,7 +2,7 @@
 title: "Beilage"
 linkTitle: "Beilage"
 weight: 80
-description: Das Media Attachment-Feature ermöglicht es, beliebige Dateianhänge einer Reservation anzufügen.
+description: 'Das Media Attachment-Feature ermöglicht es, beliebige Dateianhänge einer Reservation anzufügen.'
 ---
 
 Diese Funktion ist Teil der Detailreservation. Benutzende können damit relevante Dokumente, Bilder oder andere Dateien direkt mit der Reservation verknüpfen und speichern.

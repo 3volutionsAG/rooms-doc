@@ -2,8 +2,7 @@
 title: "Detailbuchung"
 linkTitle: "Detailbuchung"
 weight: 1
-description: >
-     <p style="text-align: justify"> Über den Menüpunkt Buchen ist eine Detailbuchung eines Anlasses möglich. </p>
+description: 'Über den Menüpunkt Buchen ist eine Detailbuchung eines Anlasses möglich.'
 ---
 <p style="text-align: justify"> Navigieren Sie im Menüpunkt <i>Buchen</i> auf das Subpanel <i>Anlass</i>.
 Klicken Sie auf die Schaltfläche <i>Erstellen</i>, um die Eingabemaske zur Erstellung eines Anlasses zu öffnen. </p>

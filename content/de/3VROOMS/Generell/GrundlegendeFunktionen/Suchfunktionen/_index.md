@@ -3,8 +3,7 @@ title: "Suchfunktionen"
 linkTitle: "Suchfunktionen"
 weight: 100
 
-description: >
-   <p style="text-align: justify">Die Suchfunktionen finden Sie zu jeder Kategorie im Sidepanel. </p>
+description: 'Die Suchfunktionen finden Sie zu jeder Kategorie im Sidepanel.'
 ---
 <p style="text-align: justify">
 Sie navigieren zunächst über die Menüleiste im Kopfbereich in den gewünschten Bereich. Nun erscheint im Sidepanel eine Auswahl an Subpanels mit verschiedenen Filterkriterien.

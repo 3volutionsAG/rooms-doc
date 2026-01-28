@@ -2,11 +2,7 @@
 title: "Sicherheitsdaten für Personen"
 linkTitle: "Sicherheitsdaten für Personen"
 weight: 2
-description: >
-  <p style="text-align: justify"> Im Bereich Sicherheitsdaten für Personen legen Sie OE- und Firmenlisten, Benutzergruppen und Mitarbeiter-Rollen an und fest. </p>
- 
-
-
+description: 'Im Bereich Sicherheitsdaten für Personen legen Sie OE- und Firmenlisten, Benutzergruppen und Mitarbeiter-Rollen an und fest.'
 ---
 
 ### Anmerkung zum Ändern der Mitarbeiterdaten 

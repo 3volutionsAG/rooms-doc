@@ -2,7 +2,7 @@
 title: "DB Update Manager"
 linkTitle: "DB Update Manager"
 weight: 70
-description: Generelle Informationen zum DB Update Manager
+description: 'Generelle Informationen zum DB Update Manager'
 ---
 <p align = "justify">
 Der DBUpdateManager aktualisiert automatisch die Datenbanken auf genau den Stand, der mit den installierten Applikationsdateien übereinstimmt. Dieser Assistent muss nach jedem Setup für jede verwendete Datenbank einmal ausgeführt werden; es spielt keine Rolle, auf welcher Maschine der Assistent ausgeführt wird. </p>

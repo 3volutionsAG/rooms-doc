@@ -3,9 +3,7 @@ title: "Ansichtsarten"
 linkTitle: "Ansichtsarten"
 weight: 200
 date: 2020-06-30
-description: >
-    Hier erfahren Sie, wie Sie die Ansicht zwischen Tages-, Wochen- und Monatsansicht wechseln.
-  
+description: 'Hier erfahren Sie, wie Sie die Ansicht zwischen Tages-, Wochen- und Monatsansicht wechseln.'
 ---
 ### Tagesansicht 
 

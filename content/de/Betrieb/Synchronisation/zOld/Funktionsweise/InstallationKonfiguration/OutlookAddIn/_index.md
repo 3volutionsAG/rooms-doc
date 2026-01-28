@@ -2,7 +2,7 @@
 title: "Outlook Add-In"
 linkTitle: "Outlook Add-In"
 weight: 500
-description: 
+description: ''
 ---
 Es wird nur die 32Bit Version von MS Outlook unterstützt.
 

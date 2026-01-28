@@ -2,7 +2,7 @@
 title: "Feiertage bearbeiten"
 linkTitle: "Feiertage bearbeiten"
 weight: 10
-description: >
+description: ''
 ---
 
 <p style="text-align: justify">

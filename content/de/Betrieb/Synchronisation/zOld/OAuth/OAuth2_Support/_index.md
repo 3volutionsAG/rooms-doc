@@ -2,7 +2,7 @@
 title: "OAuth 2.0 Support"
 linkTitle: "OAuth 2.0 Support"
 weight: 1
-description: Folgender Leitfaden beschreibt die Konfiguration von Azure Active Directory und ROOMS. Mit diesen Konfigurationen wird die Applikation in der Lage sein, AAD als externen Identity Provider zu verwenden.
+description: 'Folgender Leitfaden beschreibt die Konfiguration von Azure Active Directory und ROOMS. Mit diesen Konfigurationen wird die Applikation in der Lage sein, AAD als externen Identity Provider zu verwenden.'
 ---
 Die Konfiguration erfolgt in zwei Schritten:
 

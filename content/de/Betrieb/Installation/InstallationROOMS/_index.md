@@ -2,7 +2,7 @@
 title: "Installation 3V ROOMS"
 linkTitle: "Installation 3V ROOMS"
 weight: 40
-description: Grundlegende Informationen zur Installation von 3V ROOMS
+description: 'Grundlegende Informationen zur Installation von 3V ROOMS'
 ---
 <p align = "justify">
 Die Dateien werden in Form eines MSI-Setups ausgeliefert, welches in unserem <a hfref = "https://us04st1.zoom.us/web_client/1q1nf58/html/externalLinkPage.html?ref=https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536"> Downloadbereich </a> heruntergeladen werden kann (<i>Rooms_Core_X.msi</i>). Das Core-Setup beinhaltet die Webapplikation, den Windows Service sowie Dateien zum Konfigurieren der Applikation. </br>

@@ -2,7 +2,7 @@
 title: "Systemübersicht"
 linkTitle: "Systemübersicht"
 weight: 20
-description:
+description: ''
 ---
 {{< imgproc Uebersicht Resize "640x" >}} {{< /imgproc >}}
 

@@ -2,11 +2,7 @@
 title: "Outlook Importe"
 linkTitle: "Outlook Importe"
 weight: 3
-description: >
-  <p style="text-align: justify"> Fügen Sie Kontakte aus Ihrem Outlook Kalender und Adresslisten hinzu. CSV Exporte eines Outlook Kalenders in ROOMS importieren.   </p>
- 
-
-
+description: 'Fügen Sie Kontakte aus Ihrem Outlook Kalender und Adresslisten hinzu. CSV Exporte eines Outlook Kalenders in ROOMS importieren.'
 ---
 ## Outlook Importe hinzufügen
 

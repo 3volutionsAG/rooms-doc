@@ -3,8 +3,7 @@ title: "Schnellzugriff Buchungen"
 linkTitle: "Schnellzugriff Buchungen"
 weight: 2000
 
-description: >
-   <p style="text-align: justify"> Übersicht Ihrer laufenden Buchungen </p>
+description: 'Übersicht Ihrer laufenden Buchungen'
 ---
 <p style="text-align: justify"> Über Ihrem Namen, oben rechts, finden Sie eine Kurzübersicht laufender Buchungen, die von Ihnen erstellt oder organisiert wurden. Die Buchung mit der frühestens Startzeit wird an erster Stelle angezeigt. </p>
 

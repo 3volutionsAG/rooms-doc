@@ -2,7 +2,7 @@
 title: "Prozesse"
 linkTitle: "Prozesse"
 weight: 30
-description:
+description: ''
 ---
 ## (A)- Abonnieren der Push Notifikation
 

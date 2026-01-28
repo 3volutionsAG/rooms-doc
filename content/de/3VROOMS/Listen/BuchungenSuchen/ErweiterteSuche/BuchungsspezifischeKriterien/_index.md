@@ -2,8 +2,7 @@
 title: "Buchungsspezifische Kriterien"
 linkTitle: "Buchungsspezifische Kriterien"
 weight: 100
-description: >
-   <p style="text-align: justify"> Buchungsspezifische Kriterien sind Kriterien, die sich direkt auf die Buchung beziehen. </p>
+description: 'Buchungsspezifische Kriterien sind Kriterien, die sich direkt auf die Buchung beziehen.'
 ---
 Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
 

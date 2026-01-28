@@ -2,8 +2,7 @@
 title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
-description: >
-  <p style="text-align: justify"> Mit der Erweiterten Suche grenzen Sie die Suche über spezifische Filter weiter ein. </p>
+description: 'Mit der Erweiterten Suche grenzen Sie die Suche über spezifische Filter weiter ein.'
 ---
 <p style="text-align: justify"> Liegen Ihnen weitere Details zu einer Buchungsanfrage vor, wie einen Titel können, Sie die Suche über die erweiterten Kriterien einschränken. Dabei stehen folgende Unterkategorien zur Verfügung: </p>
 

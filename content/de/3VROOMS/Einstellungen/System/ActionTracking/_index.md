@@ -2,11 +2,7 @@
 title: "Action Tracking"
 linkTitle: "Action Tracking"
 weight: 9
-description: >
-  <p style="text-align: justify"> Sie sehen hier die Action Tracking list mit Zeitstempel, Ereignistyp, Meldungen, Exception. </p>
- 
-
-
+description: 'Sie sehen hier die Action Tracking list mit Zeitstempel, Ereignistyp, Meldungen, Exception.'
 ---
 ## Action Tracking 
 

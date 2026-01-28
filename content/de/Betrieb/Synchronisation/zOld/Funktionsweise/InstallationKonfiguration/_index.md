@@ -2,7 +2,7 @@
 title: "Installation und Konfiguration"
 linkTitle: "Installation und Konfiguration"
 weight: 40
-description: 
+description: ''
 ---
 Eine Synchronisation mit einer MS Exchange Umgebung impliziert, dass aus der ROOMS Umgebung heraus Zugriffe auf MS Exchange Server und Mailboxen erfolgen. Da in den Mailboxen private und mitunter auch vertrauliche oder geschäftsrelevante Informationen vorhanden sind, ist dies ein heikler Vorgang.
 

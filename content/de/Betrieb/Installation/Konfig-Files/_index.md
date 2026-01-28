@@ -2,7 +2,7 @@
 title: "Konfigurations-Files"
 linkTitle: "Konfigurations-Files"
 weight: 50
-description: Generelle Informationen zur Konfigurationsinfrastruktur
+description: 'Generelle Informationen zur Konfigurationsinfrastruktur'
 ---
 <p align = "justify">
 Das MSI-Setup installiert auf jeder Maschine die sogenannte Konfigurationsinfrastruktur im Verzeichnis <i>Configuration</i> unter dem für die Installation angegebenen Verzeichnispfad </p>

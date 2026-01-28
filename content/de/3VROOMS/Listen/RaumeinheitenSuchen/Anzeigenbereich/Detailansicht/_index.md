@@ -2,8 +2,7 @@
 title: "Detailansicht"
 linkTitle: "Detailansicht"
 weight: 4
-description: >
-  <p style="text-align: justify"> Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen. </p>
+description: 'Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.'
 ---
 <p style="text-align: justify"> Die Bezeichnung der Raumeinheit in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Bezeichnung werden Sie auf diese weitergeleitet. </p>
 

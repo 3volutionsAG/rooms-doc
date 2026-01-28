@@ -2,11 +2,7 @@
 title: "Anlassstatus"
 linkTitle: "Anlassstatus"
 weight: 2
-description: >
-  <p style="text-align: justify"> Einen Anlassstatus bearbeiten, löschen oder neu hinzufügen.   </p>
- 
-
-
+description: 'Einen Anlassstatus bearbeiten, löschen oder neu hinzufügen.'
 ---
 <p style="text-align: justify">
 Im linken Sidepanel finden Sie die Filterfunktion zum Suchen von Anlassstatus. </p>

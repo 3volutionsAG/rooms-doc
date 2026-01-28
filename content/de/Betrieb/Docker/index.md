@@ -2,8 +2,7 @@
 title: "Docker"
 linkTitle: "Docker"
 weight: 100
-description: > 
-  <p style="text-align: justify"> Docker images für den Betrieb von ROOMS </p>
+description: 'Docker images für den Betrieb von ROOMS'
 ---
 <p style="text-align: justify">
 Nebst der klassischen Installation via msi Paket kann ROOMS ebenfalls durch Dockerimages, welche durch 3volutions zur Verfügung gestellt werden, betrieben werden. Dabei werden drei Images in privaten registries angeboten. Der Zugang muss explizit angefordert werden. </p>

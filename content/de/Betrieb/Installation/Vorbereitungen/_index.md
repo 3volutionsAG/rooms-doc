@@ -2,7 +2,7 @@
 title: "Systemanforderungen"
 linkTitle: "Systemanforderungen"
 weight: 10
-description: Dokumentation der Erstinstallation, die eine selbstständige Ausführung ermöglicht.
+description: 'Dokumentation der Erstinstallation, die eine selbstständige Ausführung ermöglicht.'
 ---
 Üblicherweise erfolgt eine Erstinstallation von ROOMS beim Kunden vor Ort oder per Remote durch Mitarbeitende der 3volutions. Mit diesem Vorgehen möchten wir sicherstellen, dass die kundenspezifischen Gegebenheiten der jeweiligen IT-Umgebung Berücksichtigung finden und die optimalen Konfigurationseinstellungen gewählt werden.
 

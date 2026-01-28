@@ -2,7 +2,7 @@
 title: "Einleitung"
 linkTitle: "Einleitung"
 weight: 10
-description:
+description: ''
 ---
 Der Ausdruck Exchange 20_XX_ ist austauschbar, wir sprechen künftig nur noch von Exchange, welche alle Versionen adressiert.
 

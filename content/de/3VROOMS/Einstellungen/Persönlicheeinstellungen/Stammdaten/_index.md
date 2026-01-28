@@ -2,11 +2,7 @@
 title: "Stammdaten"
 linkTitle: "Stammdaten"
 weight: 2
-description: >
-  <p style="text-align: justify"> In diesem Bereich ändern und speichern Sie die Stammdaten der Mitarbeiter, wie z.B. die Sprache, die Zeitzone oder die jeweiligen Kapazitäten. Ebenfalls hinterlegen Sie hier Ihre präferierten Einstellungen z.B. die standardmäßige Dauer bei einer Schnellreservation, den Standard Standort etc. </p>
- 
-
-
+description: 'In diesem Bereich ändern und speichern Sie die Stammdaten der Mitarbeiter, wie z.B. die Sprache, die Zeitzone oder die jeweiligen Kapazitäten. Ebenfalls hinterlegen Sie hier Ihre präferierten Einstellungen z.B. die standardmäßige Dauer bei einer Schnellreservation, den Standard Standort etc.'
 ---
 ## Stammdaten bearbeiten 
 

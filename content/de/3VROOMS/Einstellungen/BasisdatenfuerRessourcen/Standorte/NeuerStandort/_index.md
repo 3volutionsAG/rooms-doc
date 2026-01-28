@@ -2,7 +2,7 @@
 title: "Neuen Haupt-Standort anlegen"
 linkTitle: "Neuen Haupt-Standort anlegen"
 weight: 1
-description:  
+description: ''
 ---
 <p style="text-align: justify">
 In der Übersicht der Standort Pfade erstellen Sie einen neuen Hauptstandort, indem Sie auf den untenstehenden Button <i>Haupt-Standort erstellen</i> klicken. </br>

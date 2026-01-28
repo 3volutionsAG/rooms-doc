@@ -2,7 +2,7 @@
 title: "ROOMS Umgebung"
 linkTitle: "ROOMS Umgebung"
 weight: 100
-description: 
+description: ''
 ---
 ### Globale Konfiguration
 

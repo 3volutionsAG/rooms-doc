@@ -2,7 +2,7 @@
 title: "Konfigurationen"
 linkTitle: "Konfigurationen"
 weight: 5 
-description: Konfigurationseinstellungen vornehmen
+description: 'Konfigurationseinstellungen vornehmen'
 ---
 
 Folgende Einstellungen in den Globalen Parameter sind relevant für die Synchronisation:

@@ -2,8 +2,7 @@
 title: "Personenspezifische Kriterien"
 linkTitle: "Personenspezifische Krieterien"
 weight: 2
-description: >
-  <p style="text-align: justify"> Personenspezifische Kriterien sind Merkmale, welche die erstellenden, organisierenden oder verantwortlichen Personen betreffen. </p>
+description: 'Personenspezifische Kriterien sind Merkmale, welche die erstellenden, organisierenden oder verantwortlichen Personen betreffen.'
 ---
 Folgende Tabelle erläutert die Eingabefelder der Personenspezifischen Kriterien:
 

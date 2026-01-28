@@ -2,8 +2,7 @@
 title: "Allgemein"
 linkTitle: "Allgemein"
 weight: 10
-description: >
- 
+description: ''
 ---
 In der Detailbuchung geben Sie folgende Daten zur Buchung der Ressource ein:
 

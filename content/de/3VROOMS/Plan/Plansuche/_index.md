@@ -2,10 +2,7 @@
 title: "Plansuche"
 linkTitle: "Plansuche"
 weight: 2
-description: >
-  Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan. 
-
-  Bemerkung: Um einen Plan zu finden, der über freie Ressourcen verfügt, müssen Sie einen Standort ausgewählt haben. 
+description: 'Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan. Bemerkung: Um einen Plan zu finden, der über freie Ressourcen verfügt, müssen Sie einen Standort ausgewählt haben.'
 ---
 <p style="text-align: justify">
 Um auf dem Plan buchen zu können, müssen Sie sich sicher sein, dass der Raum/die Ressource frei ist. </p>

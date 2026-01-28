@@ -2,8 +2,7 @@
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
-description: >
-  <p style="text-align: justify"> Unter der Einfachen Suche finden Sie Filter zum Zeitraum des Anlasses und des Standortes. </p>
+description: 'Unter der Einfachen Suche finden Sie Filter zum Zeitraum des Anlasses und des Standortes.'
 ---
 <p style="text-align: justify"> Hier haben Sie die Möglichkeit, entweder über eine gespeicherte Liste zu suchen oder über die Suchfelder Datum, Anlasszeitpunkt und Standort. Wenn Sie in einem definierten Zeitraum suchen wollen und somit die Checkbox vor der Datumseingabe aktiviert ist, wird das Drop-Down-Menü darunter ausgeblendet.</p>
 

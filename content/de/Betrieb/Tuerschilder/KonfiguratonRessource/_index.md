@@ -3,8 +3,7 @@ title: "Konfiguration Ressource"
 linkTitle: "Konfiguration Ressource"
 weight: 2
 
-description: >
-   Konfiguration der Ressource für das Türschild
+description: 'Konfiguration der Ressource für das Türschild'
 ---
 
 ## Aktivierung des Türschildes

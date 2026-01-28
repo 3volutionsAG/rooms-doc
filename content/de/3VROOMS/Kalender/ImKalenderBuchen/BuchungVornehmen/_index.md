@@ -4,8 +4,7 @@ title: "Eine neue Buchung im Kalender vornehmen"
 linkTitle: "Eine neue Buchung im Kalender vornehmen"
 weight: 1
 date: 2020-06-30
-description: >
-  Im Kalender können Sie ganz einfach eine Ressource aus der Liste buchen.
+description: 'Im Kalender können Sie ganz einfach eine Ressource aus der Liste buchen.'
 ---
 ### Schnellbuchung im Kalender
 

@@ -2,8 +2,7 @@
 title: "Detailansicht Buchungen"
 linkTitle: "Detailansicht Buchungen"
 weight: 400
-description: >
-  <p style="text-align: justify">  Hier finden Sie weitere Informationen zur Detailansicht einer Buchung. Diese öffnen Sie, indem Sie auf den Buchungstitel in der Listenansicht klicken. </p>
+description: 'Hier finden Sie weitere Informationen zur Detailansicht einer Buchung. Diese öffnen Sie, indem Sie auf den Buchungstitel in der Listenansicht klicken.'
 ---
 ## Detailansicht Buchungen
 

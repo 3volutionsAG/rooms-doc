@@ -2,9 +2,7 @@
 title: "Ressourcensuche im Plan"
 linkTitle: "Ressourcensuche im Plan"
 weight: 2
-description: >
-  <p style="text-align: justify"> Die Planansicht ermöglicht es Ihnen, Räume mittels Stockwerk- oder Gebäudeplänen interaktiv auf grafischer Ebene zu suchen und direkt zu buchen. 
-  Mithilfe der Plansuche ermitteln Sie freie Räume und zur Verfügung stehende Ressourcen. </p>
+description: 'Die Planansicht ermöglicht es Ihnen, Räume mittels Stockwerk- oder Gebäudeplänen interaktiv auf grafischer Ebene zu suchen und direkt zu buchen. Mithilfe der Plansuche ermitteln Sie freie Räume und zur Verfügung stehende Ressourcen.'
 ---
 <p style="text-align: justify">
 Im Sidepanel der Planansicht (Planfilter) verändern Sie Einstellungen für die Anzeige des Plans und stellen die Kriterien für die Suche ein. </p>

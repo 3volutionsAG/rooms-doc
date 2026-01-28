@@ -3,8 +3,7 @@ title: "Kalender"
 linkTitle: "Kalender"
 weight: 3000
 
-description: >
-    <p style="text-align: justify"> Alle vorgenommenen Buchungen können sind in der <a href="/3vrooms/kalender/kalenderansicht/">Kalenderansicht </a> zu finden.  </p>
+description: 'Alle vorgenommenen Buchungen können sind in der [Kalenderansicht](/3vrooms/kalender/kalenderansicht/) zu finden.'
 ---
 <p style="text-align: justify"> Jeder Buchungseintrag ist, in der zugewiesenen Farbe der erstellenden Person, eingefärbt.  
 Der Kalender startet standardmäßig mit dem aktuellen Tag in der Wochenansicht. Die Ansicht können Sie über die Register "Tag", "Arbeitswoche", "Woche" und "Monat" ändern oder über den Datumspicker oben rechts auf den gewünschten Zeitraum einstellen.

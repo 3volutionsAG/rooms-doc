@@ -2,11 +2,7 @@
 title: "Hilfe Texte"
 linkTitle: "Hilfe Texte"
 weight: 7
-description: >
-  <p style="text-align: justify"> Aktivieren oder deaktivieren Sie Hilfetexte in Rooms   </p>
- 
-
-
+description: 'Aktivieren oder deaktivieren Sie Hilfetexte in Rooms'
 ---
 <p style="text-align: justify">
 Im linken Sidepanel finden Sie den Button <i>Hilfetexte aktivieren</i> oder <i>Hilfetexte deaktivieren</i>, wenn diese bereits aktiv sind. </p>

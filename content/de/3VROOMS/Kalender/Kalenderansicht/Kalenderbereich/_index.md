@@ -3,8 +3,7 @@ title: "Kalenderbereich"
 linkTitle: "Kalenderbereich"
 weight: 10
 date: 2020-06-30
-description: >
-  
+description: ''
 ---
 <p style="text-align: justify">
 Nach der Einstellung der Suchfilter wird im rechten Bereich des Fensters der Kalender aufgebaut. </p>

@@ -3,7 +3,7 @@ title: "Online Ressource"
 linkTitle: "Online Ressource"
 weight: 1
 date: 2022-01-12
-description: Die Online Ressource ist eine virtuelle Ressource, die keine physische Repräsentation hat. Diese virtuellen Ressourcen sind immer verfügbar und können zur gleichen Zeiten mehrmals genutzt werden.
+description: 'Die Online Ressource ist eine virtuelle Ressource, die keine physische Repräsentation hat. Diese virtuellen Ressourcen sind immer verfügbar und können zur gleichen Zeiten mehrmals genutzt werden.'
 ---
 
 ## Vorteile der Online Ressource

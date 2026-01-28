@@ -2,8 +2,7 @@
 title: "Workflows"
 linkTitle: "Workflows"
 weight: 3
-description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie neue Workflows an, erstellen Workflowlisten oder entfernen die gespeicherten Workflows. Bereits definierte Status werden zu einem Workflow konfiguriert und einer Ressource zugeordnet.  </p>
+description: 'In diesem Bereich legen Sie neue Workflows an, erstellen Workflowlisten oder entfernen die gespeicherten Workflows. Bereits definierte Status werden zu einem Workflow konfiguriert und einer Ressource zugeordnet.'
 ---
 ## Workflow Ansicht 
 

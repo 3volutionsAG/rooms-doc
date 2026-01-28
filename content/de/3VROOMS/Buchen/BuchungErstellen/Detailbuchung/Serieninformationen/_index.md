@@ -2,7 +2,7 @@
 title: "Serieninformationen"
 linkTitle: "Serieninformationen"
 weight: 20
-description:
+description: ''
 ---
 Im Bereich Serieninformation in der Detailreservation erstellen Sie Serien auf die gleiche Weise wie in Microsoft Outlook.
 

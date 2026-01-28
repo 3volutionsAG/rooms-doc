@@ -2,7 +2,7 @@
 title: "Lizenzen beziehen"
 linkTitle: "Lizenzen beziehen"
 weight: 80
-description: Generelle Informationen, wie Sie eine Lizenzen beziehen
+description: 'Generelle Informationen, wie Sie eine Lizenzen beziehen'
 ---
 <p align = "justify">
 Damit die Applikation ROOMS ohne Einschränkungen genutzt werden kann, müssen von 3volutions ausgestellte Lizenzen installiert werden. Die Lizenzen müssen bei der Erstinstallation eingerichtet und danach in bestimmten Abständen erneuert werden. Die Lizenzen sind normalerweise auf die Verwendung innerhalb einer bestimmten Domäne beschränkt; auch können die Datenbanken, die verwendet werden können, limitiert sein. </br> Zudem können Einschränkungen gemäß dem gewählten Lizenzierungsmodell (Anzahl Ressourcen, Verwendung der MS Exchange Synchronisation) bestehen. 3volutions informiert jeden Kunden gerne individuell über die bei ihm vorhandenen Beschränkungen und den Zeitpunkt der Erneuerungen. </br> </br>

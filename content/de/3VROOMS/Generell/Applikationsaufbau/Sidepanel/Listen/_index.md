@@ -3,8 +3,7 @@ title: "Listen"
 linkTitle: "Listen"
 weight: 4000
 
-description: >
-    <p style="text-align: justify"> Über Listen suchen Sie bestehende Buchungen, Anlässe, Ressourcen oder Personen. </p>
+description: 'Über Listen suchen Sie bestehende Buchungen, Anlässe, Ressourcen oder Personen.'
 ---
 <p style="text-align: justify"> 
 Die Suchfunktionen sowie die Suchergebnisse sind sehr umfangreich. Eine ausführliche Beschreibung aller Filtermöglichkeiten finden Sie im Kapitel <a heref="/listen/"> Listen </a>.

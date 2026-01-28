@@ -2,7 +2,7 @@
 title: "Problembehandlung"
 linkTitle: "Problembehandlung"
 weight: 50
-description: Problembehandlung bei der Exchange Synchronisation
+description: 'Problembehandlung bei der Exchange Synchronisation'
 ---
 
 Diese Seite hilft Administratoren und Support, typische Synchronisationsprobleme schnell zu identifizieren und zu lösen. Nutzen Sie die Logmeldungen, um Einträge im ROOMS-Log zielgenau zu finden.

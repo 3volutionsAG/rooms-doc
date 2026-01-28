@@ -2,7 +2,7 @@
 title: "API"
 type: swagger
 weight: 12
-description: Reference for the ROOMS REST-API
+description: 'Reference for the ROOMS REST-API'
 ---
 
 Das ROOMS REST-API ist via SwaggerUI dokumentiert. Sofern der Konfig-Wert `SwaggerEnabled` im RoomsAppSettings.config auf `true` gesetzt ist kann die API-Doc via `https://vnext.book.3vrooms.local/swagger` aufgerufen werden.

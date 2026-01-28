@@ -2,7 +2,7 @@
 title: "Pull Subscription aktivieren"
 linkTitle: "Pull Subscription aktivieren"
 weight: 100
-description:
+description: ''
 ---
 Der Dienst kann über die Structure Map aktiviert werden:
 

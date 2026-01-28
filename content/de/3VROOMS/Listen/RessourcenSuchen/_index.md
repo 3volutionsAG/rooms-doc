@@ -2,8 +2,7 @@
 title: "Ressourcen suchen"
 linkTitle: "Ressourcen suchen"
 weight: 5
-description: >
-  <p style="text-align: justify"> In diesem Abschnitt erfahren Sie, wie Sie Ressourcen finden können, um Detailinformationen einzusehen und zu bearbeiten. </p>
+description: 'In diesem Abschnitt erfahren Sie, wie Sie Ressourcen finden können, um Detailinformationen einzusehen und zu bearbeiten.'
 ---
 {{< imgproc List_RES Resize "960x" >}}
 Suchmaske und Anzeigenbereich der Ressourcen 

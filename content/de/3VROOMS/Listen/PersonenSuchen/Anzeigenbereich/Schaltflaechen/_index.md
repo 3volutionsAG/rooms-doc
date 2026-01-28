@@ -2,8 +2,7 @@
 title: "Schaltflächen"
 linkTitle: "Schaltflächen"
 weight: 3
-description: >
-    <p style="text-align: justify">Am unteren Rand des Anzeigenbereichs befinden sich Schaltflächen zum Löschen und Hinzufügen von Personen</p>
+description: 'Am unteren Rand des Anzeigenbereichs befinden sich Schaltflächen zum Löschen und Hinzufügen von Personen'
 ---
 {{< imgproc List_Pers_geschw_Schalt Resize "960x" >}}
 Schaltflächen zum Löschen und Hinzufügen von Personen

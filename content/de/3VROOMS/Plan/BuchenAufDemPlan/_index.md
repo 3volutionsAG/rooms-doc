@@ -2,8 +2,7 @@
 title: "Buchen auf dem Plan"
 linkTitle: "Buchen auf dem Plan"
 weight: 4
-description: >
- Buchen Sie Ihren Raum und Ihre Ressourcen über den virtuellen Plan.
+description: 'Buchen Sie Ihren Raum und Ihre Ressourcen über den virtuellen Plan.'
 ---
 <p style="text-align: justify">
 Wenn Sie den passenden Plan gefunden haben, sehen Sie, ob der Raum frei oder belegt ist durch das angezeigte Symbol in der Mitte des Raumes. </p>

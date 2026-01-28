@@ -2,7 +2,7 @@
 title: "JobManager REST API – Usage Guide"
 linkTitle: "JobManager Usage"
 weight: 2
-description: Fachliche Verwendung des JobManager-Imports (asynchroner Background-Job) via ROOMS REST API v2.
+description: 'Fachliche Verwendung des JobManager-Imports (asynchroner Background-Job) via ROOMS REST API v2.'
 ---
 
 Diese Dokumentation beschreibt die **fachliche Verwendung** des JobManager-Imports für Lektionen (asynchroner Hintergrund-Job). Die technischen Details (Endpunkte, Schemas, Felder) sind im Swagger UI dokumentiert:

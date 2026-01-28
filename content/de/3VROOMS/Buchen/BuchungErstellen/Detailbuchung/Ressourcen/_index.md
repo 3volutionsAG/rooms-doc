@@ -2,7 +2,7 @@
 title: "Ressourcen"
 linkTitle: "Ressourcen"
 weight: 30
-description:
+description: ''
 ---
 Im Reiter `Ressourcen` wählen Sie in der Detailbuchung die zur Verfügung stehenden Ressourcen zu Ihrer Buchung aus. Soll z.B. im Raum _Matterhorn_ zusätzlich ein weiterer Beamer verwendet werden, tragen Sie eine 1 in die Leerzeile ein.
 

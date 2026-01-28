@@ -2,7 +2,7 @@
 title: "Voraussetzungen für eine 3V ROOMS Migration"
 linkTitle: "Voraussetzungen für eine 3V ROOMS Migration"
 weight: 10
-description: Zusammenfassung aller Voraussetzungen für eine erfolgreiches Update von 3V ROOMS.
+description: 'Zusammenfassung aller Voraussetzungen für eine erfolgreiches Update von 3V ROOMS.'
 ---
 Stellen Sie Sie sicher, dass folgende Voraussetzungen erfüllt sind:
 

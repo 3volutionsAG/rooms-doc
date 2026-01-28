@@ -2,11 +2,7 @@
 title: "Gruppen"
 linkTitle: "Gruppen"
 weight: 8
-description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese. Sie können einer Person mehrere Benutzergruppen zuweisen.  </p>
- 
-
-
+description: 'In diesem Bereich legen Sie Gruppen an bzw. fügen Gruppen hinzu oder entfernen diese. Sie können einer Person mehrere Benutzergruppen zuweisen.'
 ---
 ## Gruppen hinzufügen 
 

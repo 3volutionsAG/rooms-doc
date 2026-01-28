@@ -4,8 +4,7 @@ title: "Im Kalender suchen"
 linkTitle: "Im Kalender suchen"
 weight: 2
 date: 2020-06-30
-description: >
-  Der Kalender bietet Ihnen eine grafische Übersicht, um schnell einen Überblick über die Belegungssituation zu erhalten.
+description: 'Der Kalender bietet Ihnen eine grafische Übersicht, um schnell einen Überblick über die Belegungssituation zu erhalten.'
 ---
 
 ## Kalenderfilter

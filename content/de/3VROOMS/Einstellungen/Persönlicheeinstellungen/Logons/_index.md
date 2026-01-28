@@ -2,13 +2,7 @@
 title: "Logons"
 linkTitle: "Logons"
 weight: 7
-description: >
-  <p style="text-align: justify"> Unter dem Tab Logons stellen Sie ein, sofern Sie über genügend Berechtigungen verfügen, wie das Login ins ROOMS erfolgen soll. </p>
-
- 
- 
-
-
+description: 'Unter dem Tab Logons stellen Sie ein, sofern Sie über genügend Berechtigungen verfügen, wie das Login ins ROOMS erfolgen soll.'
 ---
 ## Grundlegende Information zu Logons
 

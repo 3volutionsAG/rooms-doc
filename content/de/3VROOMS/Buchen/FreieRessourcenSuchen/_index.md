@@ -2,8 +2,7 @@
 title: "Freie Ressourcen suchen"
 linkTitle: "Freie Ressourcen suchen"
 weight: 1
-description: >
-  <p style="text-align: justify"> Wollen Sie eine Ressource buchen, müssen Sie zuerst in Erfahrung bringen, ob diese Ressource zur Verfügung steht und frei ist. Im Kapitel <i>Freie Ressourcen suchen</i> erfahren Sie, mit welchen Methoden Sie suchen können. </p>
+description: 'Wollen Sie eine Ressource buchen, müssen Sie zuerst in Erfahrung bringen, ob diese Ressource zur Verfügung steht und frei ist. Im Kapitel *Freie Ressourcen suchen* erfahren Sie, mit welchen Methoden Sie suchen können.'
 ---
 Sie können in ROOMS über drei verschiedene Ansichten nach freien Ressourcen suchen:
 

@@ -2,8 +2,7 @@
 title: "Weitere Funktionen"
 linkTitle: "Weitere Funktionen"
 weight: 300
-description: >
-  <p style="text-align: justify"> Im Folgenden werden die Schaltflächen und deren Funktion beschrieben, die am unteren Rand des Anzeigenbereichs angegliedert sind. </p>
+description: 'Im Folgenden werden die Schaltflächen und deren Funktion beschrieben, die am unteren Rand des Anzeigenbereichs angegliedert sind.'
 ---
 <p style="text-align: justify"> Aktivieren Sie eine oder mehrere Checkboxen am Anfang einer Zeile, werden die Schaltflächen am unteren Rand des Anzeigenbereichs aktiviert. </p>
 

@@ -3,8 +3,7 @@ title: "Listenansicht anpassen"
 linkTitle: "Listenansicht anpassen"
 weight: 200
 
-description: >
-   <p style="text-align: justify"> Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.</p>
+description: 'Um eine individuelle Ansicht der Listen zu erstellen, finden Sie unten rechts 3 verschiedene Symbole.'
 ---
 {{< imgproc Listensymbole_Position Resize "1280x" >}}
 Position der Listensymbole

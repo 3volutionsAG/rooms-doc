@@ -2,7 +2,7 @@
 title: "Globale Parameter"
 linkTitle: "Globale Parameter"
 weight: 1
-description: In diesem Bereich sehen Sie die Konfigurationsliste ein und bearbeiten bestehende globale Parameter.
+description: 'In diesem Bereich sehen Sie die Konfigurationsliste ein und bearbeiten bestehende globale Parameter.'
 ---
 
 Im linken Sidepanel sehen Sie die Filterfunktion, mit deren Hilfe Sie nach globalen Parametern suchen können. Im rechten Feld sehen Sie die Liste aller gespeicherten globalen Parameter. Diese können Sie bearbeiten und deren gespeicherten Daten einsehen.

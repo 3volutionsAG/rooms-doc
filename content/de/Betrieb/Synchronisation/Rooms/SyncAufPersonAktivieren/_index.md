@@ -2,7 +2,7 @@
 title: "Personen konfigurieren"
 linkTitle: "Personen konfigurieren"
 weight: 3
-description: Synchronisation auf den Personen aktivieren
+description: 'Synchronisation auf den Personen aktivieren'
 ---
 
 Die Synchronisation muss nun für jede gewünschte Person aktiviert werden, idealerweise wird dies über einen Benutzerdatenimport gesteuert.

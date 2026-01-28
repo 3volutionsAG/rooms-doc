@@ -2,8 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 2
-description: >
-  <p style="text-align: justify"> Um weitere Details einzusehen, blenden Sie weitere Spalten ein. </p>
+description: 'Um weitere Details einzusehen, blenden Sie weitere Spalten ein.'
 ---
 <p style="text-align: justify"> Über das <a href="/3vrooms/generell/grundlegendefunktionen/listenansichtanpassen/"> Spaltensymbol</a> fügen Sie weitere Spalten der Liste hinzu, sortieren diese oder nehmen sie heraus. </br>
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen. </p> 

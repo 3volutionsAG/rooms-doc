@@ -2,7 +2,7 @@
 title: "Synchronisation details"
 linkTitle: "Synchronisation details"
 weight: 60 
-description: Details darüber welche Daten in welche Richtung Synchronisiert werden
+description: 'Details darüber welche Daten in welche Richtung Synchronisiert werden'
 ---
 
 Synchronisierte Daten:

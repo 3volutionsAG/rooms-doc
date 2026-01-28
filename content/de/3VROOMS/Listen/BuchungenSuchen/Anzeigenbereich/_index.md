@@ -2,8 +2,7 @@
 title: "Anzeigenbereich"
 linkTitle: "Anzeigenbereich"
 weight: 100
-description: >
-  <p style="text-align: justify"> Im Anzeigenbereich werden die Ergebnisse Ihrer Suche in Listenform ausgegeben. </p>
+description: 'Im Anzeigenbereich werden die Ergebnisse Ihrer Suche in Listenform ausgegeben.'
 ---
 <p style="text-align: justify"> Das Ergebnis ist tabellarisch angeordnet. Jede Buchung wird in je einer Zeile ausgegeben. In den Spalten finden Sie sämtliche Informationen, die bei der Buchung hinterlegt wurden oder mit der Buchung in Zusammenhang stehen. </p>
 

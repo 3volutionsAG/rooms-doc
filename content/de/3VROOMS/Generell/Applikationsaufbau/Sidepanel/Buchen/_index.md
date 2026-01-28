@@ -3,8 +3,7 @@ title: "Buchen"
 linkTitle: "Buchen"
 weight: 1000
 
-description: >
-    <p style="text-align: justify"> Unter Buchen nehmen Sie neue Buchungen vor. Das Sidepanel gliedert sich in die Subpanels Ressourcen, Anlass, und Buchungsanfragen. </p>
+description: 'Unter Buchen nehmen Sie neue Buchungen vor. Das Sidepanel gliedert sich in die Subpanels Ressourcen, Anlass, und Buchungsanfragen.'
 ---
 <p style="text-align: justify"> 
 Unter Ressourcen können Sie freie <a href="/3vrooms/buchen/freie-ressourcen-suchen/">Ressourcen suchen</a> und über entsprechende Symbole und Schaltflächen eine </a href="/3vrooms/buchen/buchung-erstellen/">Buchung erstellen </a>.

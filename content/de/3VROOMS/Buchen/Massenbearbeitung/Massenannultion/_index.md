@@ -2,8 +2,7 @@
 title: "Massenannulation"
 linkTitle: "Massenannulation"
 weight: 20
-description: >
-  
+description: ''
 ---
 <p style="text-align: justify">
 Sie führen eine Massenannullation von Buchungen ebenfalls in den Menüs <i>Plan</i>, <i>Kalender</i> und <i>Listen</i> durch. </p>

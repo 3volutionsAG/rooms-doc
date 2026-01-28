@@ -2,8 +2,7 @@
 title: "Schaltflächen"
 linkTitle: "Schaltflächen"
 weight: 3
-description: >
-  <p style="text-align: justify"> Über die Listenansicht lassen sich Raumeinheiten entfernen sowie neu generieren. </p>
+description: 'Über die Listenansicht lassen sich Raumeinheiten entfernen sowie neu generieren.'
 ---
 <p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs befinden sich folgende Schaltflächen: </p>
 

@@ -2,8 +2,7 @@
 title: "Schaltflächen"
 linkTitle: "Schaltflächen"
 weight: 3
-description: >
-  <p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs befinden sich Schaltflächen zur Verwaltung der Ressourcen. </p>
+description: 'Am unteren Rand des Anzeigenbereichs befinden sich Schaltflächen zur Verwaltung der Ressourcen.'
 ---
 {{< imgproc List_RES_Anz_Schalt Resize "960x" >}}
 Schaltflächen zur Verwaltung von Ressourcen

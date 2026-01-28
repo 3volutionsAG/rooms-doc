@@ -2,7 +2,7 @@
 title: "Exchange On-Premises"
 linkTitle: "Exchange On-Premises"
 weight: 3
-description: Einrichten von Synchronisation mit Exchange on-premise Server
+description: 'Einrichten von Synchronisation mit Exchange on-premise Server'
 aliases:
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/Impersonation/
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/DelegatedAccess/

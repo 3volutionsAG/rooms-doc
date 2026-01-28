@@ -3,8 +3,7 @@ title: "Listen Export"
 linkTitle: "Listen Export"
 weight: 300
 
-description: >
-   <p style="text-align: justify">Suchergebnisse exportieren und speichern</p>
+description: 'Suchergebnisse exportieren und speichern'
 ---
 <p style="text-align: justify"> Alle Suchresultate und Listen können in einer .csv-Datei, z.B. für die Weiterverarbeitung in Excel, exportiert werden.
 Dafür klicken Sie auf das Export-Symbol unten rechts unter dem Anzeigenbereich: </p>

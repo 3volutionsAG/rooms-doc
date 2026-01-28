@@ -3,8 +3,7 @@ title: "Eingabefeld"
 linkTitle: "Eingabefeld"
 weight: 4000
 
-description: >
-   <p style="text-align: justify"> Eingabefelder richtig nutzen </p>
+description: 'Eingabefelder richtig nutzen'
 ---
 In den Suchoptionen gibt es verschiedene Eingabefelder.
 

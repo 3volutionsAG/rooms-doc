@@ -2,8 +2,7 @@
 title: "Legende"
 linkTitle: "Legende"
 weight: 400
-description: >
-  Die Ansicht des Kalenders können Sie nach Belieben ändern z.B. in eine Tages-, Wochen- oder Monatsansicht.
+description: 'Die Ansicht des Kalenders können Sie nach Belieben ändern z.B. in eine Tages-, Wochen- oder Monatsansicht.'
 ---
 
 #### Legende

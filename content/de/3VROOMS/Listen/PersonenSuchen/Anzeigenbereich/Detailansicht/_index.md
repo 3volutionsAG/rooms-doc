@@ -2,8 +2,7 @@
 title: "Detailansicht"
 linkTitle: "Detailansicht"
 weight: 4
-description: >
-  <p style="text-align: justify"> Über die Verknüpfung hinter dem Namen eines Personeneintrags wird die Detailansicht angezeigt. </p>
+description: 'Über die Verknüpfung hinter dem Namen eines Personeneintrags wird die Detailansicht angezeigt.'
 ---
 {{< imgproc List_Pers_DS Resize "960x" >}}
 Detailansicht zu einem Personeneintrag

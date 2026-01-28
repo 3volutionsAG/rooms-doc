@@ -2,7 +2,7 @@
 title: "Rechte verwalten"
 linkTitle: "Rechte verwalten"
 weight: 1
-description: Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht.
+description: 'Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht.'
 ---
 ## Rechte verwalten
 

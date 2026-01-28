@@ -2,8 +2,7 @@
 title: "Schnellbuchung"
 linkTitle: "Schnellbuchung"
 weight: 2
-description: >
-     <p style="text-align: justify"> Über den Menüpunkt Listen lässt sich eine Schnellbuchung eines Anlasses durchführen. Mindestens eine Buchung, die dem Anlass zugehörig sein sollen, muss bereits bestehen. </p>
+description: 'Über den Menüpunkt Listen lässt sich eine Schnellbuchung eines Anlasses durchführen. Mindestens eine Buchung, die dem Anlass zugehörig sein sollen, muss bereits bestehen.'
 ---
 <p style="text-align: justify">Navigieren Sie auf Buchungen im Subpanel unter dem Menüpunkt Listen. Wählen Sie mindestens eine Buchung aus, die Sie einem Anlass hinzufügen möchten und klicken Sie auf <i>Anlass erstellen</i>. Es öffnet sich die Eingabemaske für die Schnellbuchung eines Anlasses. </p>
 

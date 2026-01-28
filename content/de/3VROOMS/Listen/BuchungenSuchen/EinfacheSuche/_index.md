@@ -2,8 +2,7 @@
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
-description: >
-  <p style="text-align: justify"> Es gibt viele Filterkriterien anhand derer eine Buchung gefunden werden kann. Die gängigsten Filter finden Sie in der <i>Einfachen Suche</i>: Ressourcenart, Datum/Zeit der Buchung, Buchungszeitpunkt und Standort. </p>
+description: 'Es gibt viele Filterkriterien anhand derer eine Buchung gefunden werden kann. Die gängigsten Filter finden Sie in der *Einfachen Suche*: Ressourcenart, Datum/Zeit der Buchung, Buchungszeitpunkt und Standort.'
 ---
 
 {{< imgproc Listen_Buchungen_EinfacheSuche Resize "960x" >}}

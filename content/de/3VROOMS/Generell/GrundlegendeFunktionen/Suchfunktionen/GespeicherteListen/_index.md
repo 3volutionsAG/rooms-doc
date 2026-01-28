@@ -3,8 +3,7 @@ title: "Gespeicherte Listen"
 linkTitle: "Gespeicherte Listen"
 weight: 2000
 
-description: >
-   <p style="text-align: justify">Häufig verwendete Sucheinstellungen speichern </p>
+description: 'Häufig verwendete Sucheinstellungen speichern'
 ---
 <p style="text-align: justify">
 Klicken Sie nach der Auswahl der Suchkriterien auf das Diskettensymbol neben der Zeile <i> Gespeicherte Listen </i>. Sie werden nun aufgefordert, der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie außerdem die Möglichkeit, die Suche als Favorit zu markieren. So wird beim Laden direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.

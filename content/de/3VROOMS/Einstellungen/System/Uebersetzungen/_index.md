@@ -2,11 +2,7 @@
 title: "Übersetzungen"
 linkTitle: "Übersetzungen"
 weight: 6
-description: >
-  <p style="text-align: justify"> Im Bereich der Übersetzungen finden Sie alle eingetragenen Übersetzungen und Sprachen, welche in Rooms verwendet werden. Die Übersetzungen werden Ihnen in der Übersetzungsliste angezeigt. Die Standard-Textkonserven können mit Custom Text geändert und anderssprachige Texte können übersetzt werden. </p>
- 
-
-
+description: 'Im Bereich der Übersetzungen finden Sie alle eingetragenen Übersetzungen und Sprachen, welche in Rooms verwendet werden. Die Übersetzungen werden Ihnen in der Übersetzungsliste angezeigt. Die Standard-Textkonserven können mit Custom Text geändert und anderssprachige Texte können übersetzt werden.'
 ---
 <p style="text-align: justify">
 Im linken Feld sehen Sie das Sidepanel mit den Filterfunktionen. Hier können Sie nach Übersetzungen suchen. </p>

@@ -3,8 +3,7 @@ title: "Datumspicker"
 linkTitle: "Datumspicker"
 weight: 3000
 
-description: >
-   <p style="text-align: justify">Datum auf einem Miniaturkalender auswählen </p>
+description: 'Datum auf einem Miniaturkalender auswählen'
 ---
 <p style="text-align: justify"> In ROOMS gibt es an jeder Stelle, an der ein Datum festgelegt werden kann, die Möglichkeit, dieses über den Datumspicker auszuwählen. </p>
 

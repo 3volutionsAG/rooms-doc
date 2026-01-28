@@ -3,8 +3,7 @@ title: "Farbdarstellung"
 linkTitle: "Farbdarstellung"
 weight: 300
 date: 2020-06-30
-description: >
-  
+description: ''
 ---
 ### Farbegebung im Kalender
 

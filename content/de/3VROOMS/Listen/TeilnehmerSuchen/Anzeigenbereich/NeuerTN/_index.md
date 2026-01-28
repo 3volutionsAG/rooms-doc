@@ -2,7 +2,7 @@
 title: "Neue Teilnehmende erstellen"
 linkTitle: "Neue Teilnehmende erstellen"
 weight: 1
-description: Unabhängig von einer Buchung können in ROOMS Besucher bzw. Teilnehmer erfasst werden. In diesem Abschnitt erfahren Sie, wie Sie Besuch im System aufnehmen können.
+description: 'Unabhängig von einer Buchung können in ROOMS Besucher bzw. Teilnehmer erfasst werden. In diesem Abschnitt erfahren Sie, wie Sie Besuch im System aufnehmen können.'
 ---
 
 {{% alert title="Warning" color="warning" %}}

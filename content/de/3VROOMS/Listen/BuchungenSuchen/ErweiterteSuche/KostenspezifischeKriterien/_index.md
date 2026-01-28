@@ -2,8 +2,7 @@
 title: "Kostenspezifische Kriterien"
 linkTitle: "Kostenspezifische Kriterien"
 weight: 700
-description: >
-   <p style="text-align: justify"> Buchungen können auch anhand der zugeordneten Kostenstellen gesucht werden. </p>
+description: 'Buchungen können auch anhand der zugeordneten Kostenstellen gesucht werden.'
 ---
 {{< imgproc Listen_Buchungen_ErweiterteSuche_KostSpezKrit_beschriftet Resize "960x" >}}
 Übersicht Kostenspezifische Kriterien 

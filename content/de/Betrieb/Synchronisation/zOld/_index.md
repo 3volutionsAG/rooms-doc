@@ -2,6 +2,6 @@
 title: "Alte Dokumentation"
 linkTitle: "Alte Dokumentation"
 weight: 100
-description: 
+description: ''
 toc_hide: true
 ---

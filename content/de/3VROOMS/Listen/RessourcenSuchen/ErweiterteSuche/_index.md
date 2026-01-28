@@ -2,8 +2,7 @@
 title: "Erweiterte Suche"
 linkTitle: "Erweiterte Suche"
 weight: 20
-description: >
-  <p style="text-align: justify"> Sind Ihnen weitere Details, wie z.B. die Bezeichnung zur gesuchten Ressource bekannt, grenzen Sie das Ergebnis über die Erweiterte Suche weiter ein. </p>
+description: 'Sind Ihnen weitere Details, wie z.B. die Bezeichnung zur gesuchten Ressource bekannt, grenzen Sie das Ergebnis über die Erweiterte Suche weiter ein.'
 ---
 {{< imgproc List_RES_ErwSuch Resize "960x" >}}
 Kriterien der Erweiterten Suche nach Ressourcen

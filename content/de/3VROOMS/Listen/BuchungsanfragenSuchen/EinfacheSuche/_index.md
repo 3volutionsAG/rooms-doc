@@ -2,8 +2,7 @@
 title: "Einfache Suche"
 linkTitle: "Einfache Suche"
 weight: 10
-description: >
-  <p style="text-align: justify"> Mit der Einfachen Suchen finden Sie Buchungsanfragen anhand des Datums und Standortes oder einer gespeicherten Liste. </p>
+description: 'Mit der Einfachen Suchen finden Sie Buchungsanfragen anhand des Datums und Standortes oder einer gespeicherten Liste.'
 ---
 {{< imgproc List_BA_EinfSuch Resize "960x" >}}
 Filterkriterien für Buchungsanfragen der Einfachen Suche

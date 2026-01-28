@@ -2,8 +2,7 @@
 title: "Türschilder"
 linkTitle: "Türschilder"
 weight: 20
-description: >
-  Konfiguration und Betrieb von Türschildern mit ROOMS
+description: 'Konfiguration und Betrieb von Türschildern mit ROOMS'
 ---
 
 Diese Dokumentation beschreibt die Einrichtung und den Betrieb von Türschildern mit ROOMS.

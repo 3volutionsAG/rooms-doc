@@ -2,8 +2,7 @@
 title: "Historik"
 linkTitle: "Historik"
 weight: 2
-description: >
-  <p style="text-align: justify">  In der Historik finden Sie die Dokumentation zur Erstellung und sämtlichen Änderungen, die an der Buchung vorgenommen wurden. </p>
+description: 'In der Historik finden Sie die Dokumentation zur Erstellung und sämtlichen Änderungen, die an der Buchung vorgenommen wurden.'
 ---
 ## Anzeigenbereich
 

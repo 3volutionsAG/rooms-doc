@@ -2,11 +2,7 @@
 title: "Daten Importe/Exporte"
 linkTitle: "Daten Importe/Exporte"
 weight: 2
-description: >
-  <p style="text-align: justify"> Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und bearbeiten diese. Es steht Ihnen der generische Service für Import und Export von verschiedenen Datenstämmen zur Konfiguration zur Verfügung. Erlaubt sind Importe/Exporte aus/in CSV, XML, TXT, MS SQL, AD. </p>
- 
-
-
+description: 'Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und bearbeiten diese. Es steht Ihnen der generische Service für Import und Export von verschiedenen Datenstämmen zur Konfiguration zur Verfügung. Erlaubt sind Importe/Exporte aus/in CSV, XML, TXT, MS SQL, AD.'
 ---
 
 ## Daten Importe/Exporte hinzufügen

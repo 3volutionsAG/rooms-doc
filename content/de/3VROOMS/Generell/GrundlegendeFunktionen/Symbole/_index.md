@@ -3,8 +3,7 @@ title: "Symbole"
 linkTitle: "Symbole"
 weight: 400
 
-description: >
-   <p style="text-align: justify"> Wiederkehrende Symbole </p>
+description: 'Wiederkehrende Symbole'
 ---
 |<div style="width:200px">Symbol</div>|Beschreibung|
 |---|---|

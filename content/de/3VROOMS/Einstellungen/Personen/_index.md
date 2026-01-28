@@ -2,7 +2,7 @@
 title: "Personen"
 linkTitle: "Personen"
 weight: 3
-description: In diesem Bereich speichern und ändern Sie die Mitarbeiterdaten zu einer Person und erstellen Personenlisten. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen, Logons sowie zugewiesene Ressourcen.
+description: 'In diesem Bereich speichern und ändern Sie die Mitarbeiterdaten zu einer Person und erstellen Personenlisten. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen, Logons sowie zugewiesene Ressourcen.'
 ---
 ## Ansicht
 

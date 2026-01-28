@@ -2,8 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 200
-description: >
-  <p style="text-align: justify"> Neben den standardmäßig angezeigten Spalten gibt es noch weitere Spalten mit Informationen zu den einzelnen Buchungen, die eingeblendet werden können. </p>
+description: 'Neben den standardmäßig angezeigten Spalten gibt es noch weitere Spalten mit Informationen zu den einzelnen Buchungen, die eingeblendet werden können.'
 ---
 <p style="text-align: justify"> Über das <a href="/3vrooms/generell/grundlegendefunktionen/listenansichtanpassen/"> Spaltensymbol </a> können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen.
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen.

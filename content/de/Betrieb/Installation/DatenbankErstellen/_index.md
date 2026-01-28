@@ -2,7 +2,7 @@
 title: "Datenbank erstellen"
 linkTitle: "Datenbank erstellen"
 weight: 20
-description: Generelle Beschreibung über das Erstellen einer Datenbank
+description: 'Generelle Beschreibung über das Erstellen einer Datenbank'
 ---
 <p align = "justify">
 3volutions stellt für die Erstellung von Datenbanken im Downloadbereich ein Backup zur Verfügung, welches bereits über für den Kunden optimierte Stammdaten verfügt <a href="https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/529432586"> 3volutions Datenbank - Baukasten.bak </a>; mit diesem Backup wird ein gewöhnlicher Restore durchgeführt. </p>

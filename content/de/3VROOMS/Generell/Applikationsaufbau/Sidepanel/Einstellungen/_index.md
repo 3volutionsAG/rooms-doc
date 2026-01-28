@@ -3,8 +3,7 @@ title: "Einstellungen"
 linkTitle: "Einstellungen"
 weight: 5000
 
-description: >
-    <p style="text-align: justify"> Unter <a href="/3vrooms/einstellungen/"> Einstellungen </a> können Sie ROOMS individuell und firmenspezifisch konfigurieren. </p>
+description: 'Unter [Einstellungen](/3vrooms/einstellungen/) können Sie ROOMS individuell und firmenspezifisch konfigurieren.'
 ---
 <p style="text-align: justify">  Dazu gehört das Anlegen der Mitarbeitenden und ihren Berechtigungen, kooperierende Dienstleister und deren Angebote sowie Details zu Ressourcen oder Equipments.
 Dieser Bereich wird vorrangig von den administrativen Verantwortlichen der Applikation genutzt. </p>

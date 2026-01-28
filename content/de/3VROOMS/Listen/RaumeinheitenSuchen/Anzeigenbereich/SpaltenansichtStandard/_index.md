@@ -2,8 +2,7 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: >
-  <p style="text-align: justify">Standardmäßig werden die Spalten mit den grundlegenden Informationen angezeigt.</P>
+description: 'Standardmäßig werden die Spalten mit den grundlegenden Informationen angezeigt.'
 ---
 Standardmäßig sind folgende Spalten sichtbar:
 

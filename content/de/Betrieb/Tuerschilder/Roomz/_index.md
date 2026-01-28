@@ -3,8 +3,7 @@ title: "ROOMZ"
 linkTitle: "ROOMZ"
 weight: 4
 
-description: >
-   <p style="text-align: justify">ROOMZ Konfigurationsparameter</p>
+description: 'ROOMZ Konfigurationsparameter'
 ---
 ## Vorbereitung
 Damit Sie die IDP Konfiguration testen und das ROOMZ-Türschild konfigurieren können, benötigen Sie einen *API_KEY*.   

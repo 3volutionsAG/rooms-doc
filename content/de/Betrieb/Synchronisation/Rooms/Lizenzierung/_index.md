@@ -2,7 +2,7 @@
 title: "Lizenzierung"
 linkTitle: "Lizenzierung"
 weight: 1
-description: Lizenzierung einrichten
+description: 'Lizenzierung einrichten'
 ---
 
 Das Exchange modul muss lizenziert sein:

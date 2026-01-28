@@ -2,8 +2,7 @@
 title: "3V ROOMS Wizard"
 linkTitle: "3V ROOMS Wizard"
 weight: 20
-description: > 
-    <p style="text-align:"justify"> 3V ROOMS Wizard ist ein Buchungsassistent, der eine vereinfachte Buchung von Ressourcen über den Webbrowser ermöglicht. Er ist auch für mobile Endgeräte (Tablet, Smartphone, ...) geeignet. </p>
+description: '3V ROOMS Wizard ist ein Buchungsassistent, der eine vereinfachte Buchung von Ressourcen über den Webbrowser ermöglicht. Er ist auch für mobile Endgeräte (Tablet, Smartphone, ...) geeignet.'
 ---
 ### 3V ROOMS Wizard öffnen
 

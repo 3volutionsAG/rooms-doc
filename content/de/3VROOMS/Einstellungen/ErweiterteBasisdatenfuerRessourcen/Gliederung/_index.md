@@ -2,8 +2,7 @@
 title: "Gliederung"
 linkTitle: "Gliederung"
 weight: 1
-description: >
-  Im Bereich Gliederung finden Sie Gliederungstyplisten. Diese Gliederungstypen können Sie einsehen, ändern und erstellen. Die Gliederungen werden in jeweils nur zwei Hierarchiestufen aufgeteilt (Hauptgliederung und Subgliederung) sowie die Initialstufe (welche auch als „Gliederungen“ bezeichnet wird).
+description: 'Im Bereich Gliederung finden Sie Gliederungstyplisten. Diese Gliederungstypen können Sie einsehen, ändern und erstellen. Die Gliederungen werden in jeweils nur zwei Hierarchiestufen aufgeteilt (Hauptgliederung und Subgliederung) sowie die Initialstufe (welche auch als „Gliederungen“ bezeichnet wird).'
 ---
 
 ## Ansicht Gliederung

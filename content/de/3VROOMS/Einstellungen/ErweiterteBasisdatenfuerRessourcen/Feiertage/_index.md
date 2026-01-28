@@ -2,8 +2,7 @@
 title: "Feiertage"
 linkTitle: "Feiertage"
 weight: 4
-description: >
-  <p style="text-align: justify"> In diesem Bereich legen Sie die für Sie geltenden Feiertage fest und erstellen Feiertagslisten. Sie können Feiertage erstellen, bearbeiten und löschen. </p>
+description: 'In diesem Bereich legen Sie die für Sie geltenden Feiertage fest und erstellen Feiertagslisten. Sie können Feiertage erstellen, bearbeiten und löschen.'
 ---
 ## Ansicht
 

@@ -2,8 +2,7 @@
 title: "Mails"
 linkTitle: "Mails"
 weight: 3
-description: >
-  <p style="text-align: justify">  In diesem Reiter werden alle Mails, die aus der Buchung heraus verschickt wurden, angezeigt. </p>
+description: 'In diesem Reiter werden alle Mails, die aus der Buchung heraus verschickt wurden, angezeigt.'
 ---
 ## Anzeigenbereich
 

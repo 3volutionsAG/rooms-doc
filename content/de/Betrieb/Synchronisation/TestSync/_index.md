@@ -2,7 +2,7 @@
 title: "Synchronisation testen"
 linkTitle: "Synchronisation testen"
 weight: 45
-description: Testen ob Synchronisation funktioniert
+description: 'Testen ob Synchronisation funktioniert'
 ---
 
 Nachdem alles eingerichtet ist, kann die Synchronisation folgendermassen überprüft werden:

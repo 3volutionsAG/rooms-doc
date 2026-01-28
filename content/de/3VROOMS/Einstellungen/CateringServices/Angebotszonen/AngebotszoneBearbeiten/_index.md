@@ -2,7 +2,7 @@
 title: "Angebotszonen bearbeiten"
 linkTitle: "Angebotszonen bearbeiten"
 weight: 10
-description: >
+description: ''
 ---
 <p style="text-align: justify">
 Sie bearbeiten ein bestehendes Angebot, indem Sie auf das Stift Icon <i>Bearbeiten</i> neben dem Namen des Dienstleisters klicken. Dort können Sie bestehende Daten bearbeiten. Ein neues Angebot legen Sie über den Button <i>Erstellen</i> an. In dem Feld, welches sich öffnet, legen Sie folgende Daten fest: </p>

@@ -2,10 +2,7 @@
 title: "Anlasstypen"
 linkTitle: "Anlasstypen"
 weight: 1
-description: >
-  <p style="text-align: justify"> Fügen Sie neue Anlasstypen hinzu oder bearbeiten Sie bestehende.   </p>
- 
-
+description: 'Fügen Sie neue Anlasstypen hinzu oder bearbeiten Sie bestehende.'
 ---
 <p style="text-align: justify">
 Im linken Sidepanel sehen Sie die Filterfunktionen mit deren Hilfe Sie nach Anlasstypen suchen können. </p>

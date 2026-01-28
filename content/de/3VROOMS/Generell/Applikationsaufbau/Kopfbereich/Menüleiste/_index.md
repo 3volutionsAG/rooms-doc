@@ -3,8 +3,7 @@ title: "Menüleiste"
 linkTitle: "Menüleiste"
 weight: 1000
 
-description: >
-   <p style="text-align: justify"> Über die Menüleiste navigieren Sie zwischen den Funktionen. </p>
+description: 'Über die Menüleiste navigieren Sie zwischen den Funktionen.'
 ---
 <p style="text-align: justify"> Der Home-Button ist für alle sichtbar. Entsprechend Ihren Berechtigungen werden Ihnen weitere Reiter in der Menüleiste angezeigt. </p>
 

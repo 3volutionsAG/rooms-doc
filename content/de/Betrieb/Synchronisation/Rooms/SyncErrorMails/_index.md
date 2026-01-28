@@ -2,7 +2,7 @@
 title: "Sync-Error Mails"
 linkTitle: "Sync-Error Mails"
 weight: 4 
-description: Konfiguration des Sync-Error Mails
+description: 'Konfiguration des Sync-Error Mails'
 ---
 
 Über folgenden Pfad können die Sync-Error Mails konfiguriert werden:

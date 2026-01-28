@@ -2,7 +2,7 @@
 title: "Wizard einrichten"
 linkTitle: "Wizard einrichten"
 weight: 40
-description: Leitfaden, wie Sie das Buchungs-Wizard nach einem Update von ROOMS einrichten.
+description: 'Leitfaden, wie Sie das Buchungs-Wizard nach einem Update von ROOMS einrichten.'
 ---
 1. Erstellen Sie eine eigene **Seite für das Wizard** bzw. das Add-In.
 2. Erstellen Sie ein entsprechendes **Verzeichnis**, standardmäßig unter

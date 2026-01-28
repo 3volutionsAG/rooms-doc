@@ -2,8 +2,7 @@
 title: "Empfohlene Konfigurationen"
 linkTitle: "Empfohlene Konfigurationen"
 weight: 30
-description: > 
-    <p style="text-align: justify"> Mit Hilfe den beschriebenen Konfigurationen ist die Synchronisation zwischen 3V ROOMS Add-In für Office 365 Outlook bzw. dem 3V ROOMS Wizard mit Outlook sowie die Ausgabe von Fehlermeldungen bzgl. der Synchronisation möglich. </p>
+description: 'Mit Hilfe den beschriebenen Konfigurationen ist die Synchronisation zwischen 3V ROOMS Add-In für Office 365 Outlook bzw. dem 3V ROOMS Wizard mit Outlook sowie die Ausgabe von Fehlermeldungen bzgl. der Synchronisation möglich.'
 ---
 <p style="text-align: justify"> Stellen Sie zudem sicher, dass die Synchronisation von Office 365 eingerichtet ist und das Add-In bzw. Wizard registriert ist. </p>
 

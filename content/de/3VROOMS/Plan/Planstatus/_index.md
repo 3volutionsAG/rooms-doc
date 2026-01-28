@@ -2,8 +2,7 @@
 title: "Planstatus"
 linkTitle: "Planstatus"
 weight: 2
-description: >
-  Der Status eines Raumes oder einer Ressource wird Ihnen über den Status angezeigt.
+description: 'Der Status eines Raumes oder einer Ressource wird Ihnen über den Status angezeigt.'
 ---
 <p style="text-align: justify">
 Auf dem Plan selbst sind die Ressourcen eingezeichnet. Dabei wird durch Symbole angezeigt, welchen Status die Ressource zur gewählten Zeit hat. </p>

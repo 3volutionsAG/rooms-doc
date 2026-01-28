@@ -2,7 +2,7 @@
 title: "Catering & Services"
 linkTitle: "Catering & Services"
 weight: 50
-description: >
+description: ''
 ---
 
 Im Bereich `Catering & Services` können Angebote der Reservation hinzugefügt werden. Die Angebote können durch verschiedene Dienstleister zur Verfügung gestellt werden und können sehr unterschiedlich sein. Ein häufiges Beispiel ist das Catering, bei dem Essen und Getränke bereitgestellt werden.

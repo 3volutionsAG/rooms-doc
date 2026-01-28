@@ -3,8 +3,7 @@ title: "O365"
 linkTitle: "O365"
 weight: 3 
 
-description: >
-   <p style="text-align: justify">Bereitstellen vom Outlook Addin</p>
+description: 'Bereitstellen vom Outlook Addin'
 ---
 
 ## Erstellen des Manifests. 

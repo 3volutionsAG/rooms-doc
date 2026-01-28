@@ -2,7 +2,7 @@
 title: "Push Subscription"
 linkTitle: "Push Subscription"
 weight: 30
-description: Funktionsweise der Push-Synchronisation
+description: 'Funktionsweise der Push-Synchronisation'
 ---
 
 ### Was ist Push-Synchronisation?

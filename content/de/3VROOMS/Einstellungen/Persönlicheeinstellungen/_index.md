@@ -2,11 +2,7 @@
 title: "Persönliche Einstellungen"
 linkTitle: "Persönliche Einstellungen"
 weight: 1
-description: >
-  In diesem Bereich speichern Sie die Mitarbeiterdaten. Diese Mitarbeiterdaten können Sie über den Button "Bearbeiten" ändern. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen und Logons. 
- 
-
-
+description: 'In diesem Bereich speichern Sie die Mitarbeiterdaten. Diese Mitarbeiterdaten können Sie über den Button "Bearbeiten" ändern. Zu den persönlichen Einstellungen gehören Personen-Informationen, die Stammdaten, die Navigation, Firmen- und Gruppen-Informationen und Logons.'
 ---
 ## Persönliche Einstellungen Ansicht
 Sie haben die Möglichkeit Ihre und die Daten Ihrer Mitarbeiter in der Übersicht einzusehen. Hier gibt es die verschiedenen Reiter: 

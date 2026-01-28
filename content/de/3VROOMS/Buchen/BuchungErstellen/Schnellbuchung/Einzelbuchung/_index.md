@@ -2,8 +2,7 @@
 title: "Einzel-Schnellbuchung"
 linkTitle: "Einzel-Schnellbuchung"
 weight: 10
-description: > 
-
+description: ''
 ---
 <p style="text-align: justify">
 Im Reiter <i>Buchen</i> erstellen Sie wie folgt eine Buchung: </br>

@@ -2,11 +2,7 @@
 title: "Dokumente"
 linkTitle: "Dokumente"
 weight: 5
-description: >
-  <p style="text-align: justify"> In diesem Bereich erstellen und fügen Sie Dokumente hinzu.   </p>
- 
-
-
+description: 'In diesem Bereich erstellen und fügen Sie Dokumente hinzu.'
 ---
 ## Ansicht Dokumente
 

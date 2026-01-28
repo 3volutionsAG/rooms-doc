@@ -2,8 +2,7 @@
 title: "Office 365 Outlook Add-In"
 linkTitle: "Office 365 Outlook Add-In"
 weight: 10
-description: > 
-    <p style="text-align: justify">Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook. </p>
+description: 'Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook.'
 ---
 <p style="text-align: justify"> Das Add-In kann im lokal installierten Outlook Client und in der Web-Anwendung von O365 Outlook genutzt werden. </p>
 

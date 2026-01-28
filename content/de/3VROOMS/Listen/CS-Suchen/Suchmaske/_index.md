@@ -2,8 +2,7 @@
 title: "Suchmaske"
 linkTitle: "Suchmaske"
 weight: 10
-description: >
-  <p style="text-align: justify"> Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten. </p>
+description: 'Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten.'
 ---
 <p style="text-align: justify"> Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen <i>Catering & Service</i>. Dadurch öffnet sich die Suchmaske. </p>
 

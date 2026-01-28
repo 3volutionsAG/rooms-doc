@@ -2,8 +2,7 @@
 title: "Ablauf im System"
 linkTitle: "Ablauf im System"
 weight: 30
-description: > 
-  
+description: ''
 ---
 1. Ihre Buchung wird gespeichert
    * Der Titel, den Sie eingetragen haben, wird automatisch vergeben

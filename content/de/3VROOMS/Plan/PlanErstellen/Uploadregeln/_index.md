@@ -2,8 +2,7 @@
 title: "Regeln für den Plan-Upload"
 linkTitle: "Regeln für den Plan.Upload"
 weight: 10
-description: >
-  Für den Upload einer Plan.Datei gelten folgende Regeln. 
+description: 'Für den Upload einer Plan.Datei gelten folgende Regeln.'
 ---
 Browse/Upload
 

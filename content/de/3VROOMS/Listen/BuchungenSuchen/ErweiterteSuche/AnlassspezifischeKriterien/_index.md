@@ -2,8 +2,7 @@
 title: "Anlassspezifische Kriterien"
 linkTitle: "Anlassspezifische Kriterien"
 weight: 500
-description: >
-   <p style="text-align: justify"> Dies können die Anlassnummer, der Titel des Anlasses oder der Anlasstyp sein. </p>
+description: 'Dies können die Anlassnummer, der Titel des Anlasses oder der Anlasstyp sein.'
 ---
 <p style="text-align: justify"> Besteht eine Veranstaltung aus mehreren Terminen (Besprechungen, Workshops, Empfänge,...) und werden verschiedene Ressourcen benötigt (Besprechungsräume, Parkplätze, Equipment,...), so können Sie einen <a href="/3vrooms/listen/anlaessesuchen/anlasserstellen/">Anlass</a> erstellen und in diesem alle Buchungen bündeln. </p>
 

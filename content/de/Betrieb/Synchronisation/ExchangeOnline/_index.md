@@ -2,7 +2,7 @@
 title: "Exchange Online (M365)"
 linkTitle: "Exchange Online"
 weight: 2
-description: Einrichten von Synchronisation mit Exchange Online (M365)
+description: 'Einrichten von Synchronisation mit Exchange Online (M365)'
 ---
 
 {{% alert color="info" title="Hinweis" %}}

@@ -2,8 +2,7 @@
 title: "onsiteROOMS"
 linkTitle: "onsiteROOMS"
 weight: 40
-description: >
-  onsiteROOMS ist eine Türschild-Lösung für ROOMS, welche es ermöglicht, gewünschte Ressourcen mit einem interaktiven Türschild auszustatten. Mit onsiteROOMS ist es möglich, den Status einer Ressource visuell darzustellen, Check-in / -out für Buchungen zu tätigen und mit dem interaktiven Kalender Buchungen zu erstellen oder verlängern.
+description: 'onsiteROOMS ist eine Türschild-Lösung für ROOMS, welche es ermöglicht, gewünschte Ressourcen mit einem interaktiven Türschild auszustatten. Mit onsiteROOMS ist es möglich, den Status einer Ressource visuell darzustellen, Check-in / -out für Buchungen zu tätigen und mit dem interaktiven Kalender Buchungen zu erstellen oder verlängern.'
 ---
 
 ## Ansichten

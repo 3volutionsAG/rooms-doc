@@ -2,8 +2,7 @@
 title: "Reiter Anlass"
 linkTitle: "Reiter Anlass"
 weight: 1
-description: >
-  <p style="text-align: justify"> Im Reiter Anlass sind alle Informationen übersichtlich zusammengestellt. </p>
+description: 'Im Reiter Anlass sind alle Informationen übersichtlich zusammengestellt.'
 ---
 ## Ansichtsbereich
 

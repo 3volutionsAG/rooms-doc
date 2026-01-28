@@ -2,10 +2,7 @@
 title: "Dienstleister"
 linkTitle: "Dienstleister"
 weight: 1
-description: >
-  Bearbeiten Sie bestehende Dienstleister und deren Angebote und fügen Sie neue hinzu. Die bestehenden Dienstleister sehen Sie in der Liste. 
-
-
+description: 'Bearbeiten Sie bestehende Dienstleister und deren Angebote und fügen Sie neue hinzu. Die bestehenden Dienstleister sehen Sie in der Liste.'
 ---
 ## Ansicht Dienstleister
 Im linken Sidepanel sehen Sie die Filterfunktionen, mit denen Sie nach Dienstleistern suchen können. 

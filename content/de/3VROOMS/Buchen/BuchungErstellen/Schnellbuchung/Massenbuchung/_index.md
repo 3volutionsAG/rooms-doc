@@ -2,8 +2,7 @@
 title: "Massen-Schnellbuchung"
 linkTitle: "Massen-Schnellbuchung"
 weight: 20
-description: > 
-  
+description: ''
 ---
 <p style="text-align: justify">
 Sie können im Reiter <i>Buchen</i> auch eine Schnellbuchung von mehreren Ressourcen durchführen. </br>

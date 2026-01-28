@@ -2,8 +2,7 @@
 title: "Companion App"
 linkTitle: "Companion App"
 weight: 5
-description: >
-  Konfiguration der Companion App für LED-Bars
+description: 'Konfiguration der Companion App für LED-Bars'
 ---
 
 {{% alert title="Info" color="info" %}}

@@ -2,8 +2,7 @@
 title: "Plan erstellen"
 linkTitle: "Plan erstellen"
 weight: 1
-description: >
-  Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan. 
+description: 'Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan.'
 ---
 <p style="text-align: justify">
 Um in einem Plan freie Ressourcen (z.B. Räume) suchen und buchen zu können, müssen Sie zuerst einen Plan erstellen. Das heißt, Sie ordnen einem Standort einen Plan zu und zeichnen in diesem die zur Verfügung stehenden Räume ein. </p>

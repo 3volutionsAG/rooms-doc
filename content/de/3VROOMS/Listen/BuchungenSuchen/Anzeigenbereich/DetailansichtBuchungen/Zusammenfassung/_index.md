@@ -2,8 +2,7 @@
 title: "Zusammenfassung"
 linkTitle: "Zusammenfassung"
 weight: 1
-description: >
-  <p style="text-align: justify">  In der Zusammenfassung sehen Sie die wichtigsten Details, u.a. Titel, Datum/Zeit, zuständige Personen, Kosten oder Kostenstellen, einer Buchung. </p>
+description: 'In der Zusammenfassung sehen Sie die wichtigsten Details, u.a. Titel, Datum/Zeit, zuständige Personen, Kosten oder Kostenstellen, einer Buchung.'
 ---
 ## Anzeigenbereich
 

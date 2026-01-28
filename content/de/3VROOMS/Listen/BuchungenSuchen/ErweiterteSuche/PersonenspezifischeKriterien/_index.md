@@ -2,8 +2,7 @@
 title: "Personenspezifische Kriterien"
 linkTitle: "Personenspezifische Kriterien"
 weight: 300
-description: >
-   <p style="text-align: justify"> Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellenden, organisierenden oder verantwortungstragenden Personen betreffen sowie die Kostenstelle, welcher die Buchung zugeordnet ist. <P>
+description: 'Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellenden, organisierenden oder verantwortungstragenden Personen betreffen sowie die Kostenstelle, welcher die Buchung zugeordnet ist.'
 ---
 
 {{< imgproc Listen_Buchungen_ErweiterteSuche_PersSpezKrit_beschriftet Resize "960x" >}}

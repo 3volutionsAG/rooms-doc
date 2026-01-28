@@ -2,8 +2,7 @@
 title: "Historik"
 linkTitle: "Historik"
 weight: 3
-description: >
-  <p style="text-align: justify"> Im Reiter Historik werden Ihnen Details zum Änderungsverlauf des Anlasses angezeigt. </p>
+description: 'Im Reiter Historik werden Ihnen Details zum Änderungsverlauf des Anlasses angezeigt.'
 ---
 ## Anzeigenbereich
 
