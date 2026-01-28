@@ -17,77 +17,64 @@ Vorteile:
 ### Architekturüberblick
 
 ```mermaid
-%%{init: {
-  'theme': 'neutral',
-  'themeVariables': {
-    'primaryColor': '#EEF2FF',
-    'primaryBorderColor': '#4F46E5',
-    'primaryTextColor': '#111827',
-    'secondaryColor': '#F8FAFC',
-    'tertiaryColor': '#FFFFFF',
-    'lineColor': '#6B7280',
-    'fontFamily': 'Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial'
-  }
-}}%%
 flowchart LR
-
-  classDef node fill:#FFFFFF,stroke:#CBD5E1,stroke-width:1.5,rx:8,ry:8,color:#111827;
-  classDef accent fill:#EEF2FF,stroke:#4F46E5,stroke-width:1.5,rx:8,ry:8,color:#111827;
-  classDef cluster fill:#F8FAFC,stroke:#E5E7EB,rx:10,ry:10,color:#111827;
-
-  subgraph Intranet
+  subgraph intranet [Intranet]
     direction LR
-    DB[(ROOMS DB)]
-    APP[ROOMS Service]
-    DB <--> APP
+    RoomsDB[(ROOMS_DB)]
+    RoomsService[ROOMS_Service]
+    RoomsDB <--> RoomsService
   end
-  class Intranet cluster
 
-  subgraph DMZ
-    RP[Reverse Proxy]
+  subgraph dmz [DMZ]
+    ReverseProxy[Reverse_Proxy]
+    RoomsProWeb["RoomsPro.Web"]
   end
-  class DMZ cluster
 
-  subgraph Internet
-    EXO[(Exchange / Exchange Online)]
+  subgraph internet [Internet]
+    Exchange["Exchange / Exchange Online"]
   end
-  class Internet cluster
 
-  APP -- "HTTPS: /Webservices/SyncNotification.svc" --> RP
-  RP  -- HTTPS --> EXO
-  EXO -- "SendNotification (SOAP)" --> RP
-  RP  -- HTTPS --> APP
-
-  class DB,APP,RP node
-  class EXO accent
+  RoomsService -->|"creates_or_renews_subscription(callbackUrl)"| Exchange
+  Exchange -->|"POST /api/webhooks/exchange"| ReverseProxy
+  ReverseProxy -->|"POST /api/webhooks/exchange"| RoomsProWeb
+  RoomsProWeb -->|"enqueue_sync_event"| RoomsService
 ```
 
-Hinweis: Für Exchange Online muss die veröffentlichte URL aus dem Internet erreichbar sein – direkt oder via Reverse Proxy. Der interne ROOMS Service bleibt dabei privat. Veröffentlichen Sie nur den Pfad `Webservices/SyncNotification.svc`, ohne Pre‑Authentication (anonyme Anfragen zulassen) und mit gültigem, öffentlich vertrauenswürdigem TLS‑Zertifikat. Idealerweise IP‑Allowlisting auf Microsoft‑Ranges.
+Hinweis: Für Exchange Online muss die veröffentlichte URL aus dem Internet erreichbar sein – direkt oder via Reverse Proxy. Der interne ROOMS Service bleibt dabei privat. Veröffentlichen Sie den Pfad `/api/webhooks/exchange` (RoomsPro.Web), ohne Pre‑Authentication (anonyme Requests zulassen) und mit gültigem, öffentlich vertrauenswürdigem TLS‑Zertifikat. Idealerweise IP‑Allowlisting auf Microsoft‑Ranges.
 
 DMZ/Reverse Proxy ist optional:
 - Wenn Sicherheitsrichtlinien es erlauben, kann der ROOMS Webservice direkt veröffentlicht werden.
 - Ein Reverse Proxy wird empfohlen (TLS-Offload, IP-Filter, WAF/Rate-Limiting, Logging).
 
 Service-URL in ROOMS:
-- [Applikation Root-Url Anonymous]({{< relref "3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen" >}})
-- Format: `http(s)://<rooms-host>/Webservices/SyncNotification.svc`
+- [IDP Root-Url]({{< relref "3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen" >}})
+- Standard-Callback: `IdpRootUrl + /api/webhooks/exchange`
+
+### Konfiguration (RoomsAppSettings / Environment Variables)
+
+Die Werte werden aus `RoomsContext.AppSettings` gelesen (Konfiguration via `RoomsAppSettings.config`) und können via Environment Variables überschrieben werden (Twelve-Factor).
+
+- **`ExchangePushNotificationEndpointUrl`** (string, optional)  Wenn gesetzt, wird diese URL **1:1** als Callback registriert (muss eine **absolute URL** sein).
+- **`ExchangePushNotificationUseLegacyEndpoint`** (bool, optional, Default `false`)  Wenn `true` und kein Override gesetzt ist, wird das **Legacy**-Callback verwendet (Rollback).
+
+**Precedence**:1. `ExchangePushNotificationEndpointUrl`2. `ExchangePushNotificationUseLegacyEndpoint=true`3. Default: `IdpRootUrl + /api/webhooks/exchange`
+
+**Local dev**:Setzen Sie `ExchangePushNotificationEndpointUrl` auf eine von Exchange erreichbare URL (z. B. per Tunnel):`https://<your-tunnel-host>/api/webhooks/exchange`
+
+**Prod rollback**:Setzen Sie `ExchangePushNotificationUseLegacyEndpoint=true` und stellen Sie sicher, dass die Legacy-URL weiterhin erreichbar ist:`https://<rooms-host>/WebServices/SyncNotification.svc?{tenant}`
 
 ### Funktionsablauf
 
 1. ROOMS registriert bei Exchange eine Push-Subscription auf relevante Ordner.
-2. Bei Änderungen sendet Exchange eine `SendNotification`-SOAP-Nachricht an `SyncNotification.svc`.
+2. Bei Änderungen sendet Exchange eine HTTP-Notification an den Callback `POST /api/webhooks/exchange`.
 3. ROOMS bestätigt den Empfang und schreibt ein Ereignis in die Datenbank.
 4. Der ROOMS-Synchronisationsdienst liest die Ereignisse und aktualisiert betroffene Reservierungen.
 
-Wenn alles korrekt konfiguriert ist und Sie die URL im Browser öffnen, erscheint eine Bestätigungsseite:
-
-{{< imgproc Erfolgreicher_Push_Webservice Resize "512x" >}}{{< /imgproc >}}
+Hinweis: Der neue Callback ist ein REST-Endpoint und hat **keine** Bestätigungsseite im Browser. Für eine einfache Erreichbarkeitsprüfung kann `IdpRootUrl + /healthz` verwendet werden.
 
 ### Sicherheitsempfehlungen
 
-- Nur den Webservice `Webservices/SyncNotification.svc` veröffentlichen, nicht die gesamte ROOMS-Anwendung
 - Zugriff auf bekannte Exchange-IP-Bereiche beschränken: https://docs.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
 - Eingehende Requests prüfen und verwerfen, wenn sie nicht passen:
   - Methode: `POST`
-  - Pfad: `/Webservices/SyncNotification.svc`
-  - SOAPAction: `http://schemas.microsoft.com/exchange/services/2006/messages/SendNotification`
+  - Pfad: `/api/webhooks/exchange`
