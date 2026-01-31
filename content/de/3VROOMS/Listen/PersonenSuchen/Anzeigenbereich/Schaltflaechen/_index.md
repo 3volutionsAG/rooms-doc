@@ -19,7 +19,7 @@ Es können nur externe Personen oder Teilnehmende gelöscht werden. Mitarbeitend
 <p style="text-align: justify">
 Öffnen Sie die Dummy ID, um einen Mitarbeiter festzulegen, auf den aktive Buchungen übertragen werden sollen, wenn eine Person aus dem System gelöscht wird. </br>
 Die Dummy ID finden Sie unter Einstellungen -> System -> Parameter Global -> Dummy ID.
-Klicken Sie auf die Schaltfläche _Bearbeiten_ und tragen Sie in das Feld _Wert_ die _ID_ des Mitarbeiters ein, auf den die Buchungen übertragen werden sollen. Klicken Sie auf _Speichern_, um die Änderungen zu speichern und die Eingabemaske zu schließen. </p>
+Klicken Sie auf die Schaltfläche _Bearbeiten_ und tragen Sie in das Feld _Wert_ die _ID_ des Mitarbeiters ein, auf den die Buchungen übertragen werden sollen. Klicken Sie auf _Speichern_, um die Änderungen zu speichern und die Eingabemaske zu schliessen. </p>
 
 ## Neue Person hinzufügen
 

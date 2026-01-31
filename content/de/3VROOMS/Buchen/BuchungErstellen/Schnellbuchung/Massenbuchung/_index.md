@@ -10,7 +10,7 @@ Sie können im Reiter <i>Buchen</i> auch eine Schnellbuchung von mehreren Ressou
 Folgende Schritte führen Sie dazu aus: </p>
 
 1. Wählen Sie eine oder mehrere Ressourcen aus der Liste aus und aktivieren die **Checkbox**. 
-2. Anschließend wählen Sie den Button **Massen-Schnellbuchung (gruppiert)** aus.
+2. Anschliessend wählen Sie den Button **Massen-Schnellbuchung (gruppiert)** aus.
 3. Es erscheint ein Popup Fenster, in welchem Sie die Informationen für die Schnellbuchung eingeben und Sie die ausgewählten Ressourcen sehen:
    
    * Titel

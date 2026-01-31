@@ -10,7 +10,7 @@ description: 'Über den Menüpunkt Listen lässt sich eine Schnellbuchung eines 
 Dialogfenster zur Schnellbuchung eines Anlasses 
 {{< /imgproc >}}
 
-<p style="text-align: justify">Standardmäßig wird der Anlasstitel <i>Anlass für erstellende Person</i> vor ausgefüllt, kann aber auch überschrieben werden. Geben Sie in der Eingabemaske alle gewünschten Daten zum Anlass ein und bestätigen Sie Ihre Eingabe mit <i>Erstellen</i>. </br>
+<p style="text-align: justify">Standardmässig wird der Anlasstitel <i>Anlass für erstellende Person</i> vor ausgefüllt, kann aber auch überschrieben werden. Geben Sie in der Eingabemaske alle gewünschten Daten zum Anlass ein und bestätigen Sie Ihre Eingabe mit <i>Erstellen</i>. </br>
 Achten Sie darauf, dass Sie den Zeitraum des Anlasses so wählen, dass die Buchung innerhalb dieses Zeitraumes liegt. </p>
 
 <p style="text-align: justify">Nach dem Bestätigen der Eingaben wir die Detailseite des Anlasses erstellt. Hier sind alle Informationen zum Anlass übersichtlich dargestellt und alle hinzugefügten Buchungen aufgelistet. Über diese Seite können Sie den Anlass bearbeiten sowie weitere Buchungen hinzufügen. </p>

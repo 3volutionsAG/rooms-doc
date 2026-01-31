@@ -6,7 +6,7 @@ weight: 2000
 description: 'Häufig verwendete Sucheinstellungen speichern'
 ---
 <p style="text-align: justify">
-Klicken Sie nach der Auswahl der Suchkriterien auf das Diskettensymbol neben der Zeile <i> Gespeicherte Listen </i>. Sie werden nun aufgefordert, der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie außerdem die Möglichkeit, die Suche als Favorit zu markieren. So wird beim Laden direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.
+Klicken Sie nach der Auswahl der Suchkriterien auf das Diskettensymbol neben der Zeile <i> Gespeicherte Listen </i>. Sie werden nun aufgefordert, der Suche einen Namen zu geben. In diesem Eingabefeld haben Sie ausserdem die Möglichkeit, die Suche als Favorit zu markieren. So wird beim Laden direkt die Ergebnisliste zu den gespeicherten Suchkriterien angezeigt.
 In diesem Beispiel wird die Suche nach zukünftigen Parkplatz-Buchungen gespeichert und mit dem Namen Parkplatz betitelt. </p>
 
 {{< imgproc GespeicherteListeAnlegen_beschriftet Resize "1280x" >}}

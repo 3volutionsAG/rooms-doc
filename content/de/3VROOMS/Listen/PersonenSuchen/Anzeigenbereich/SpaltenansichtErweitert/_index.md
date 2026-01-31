@@ -8,7 +8,7 @@ Folgende Tabelle erläutert die Spalteneinträge:
 
 |<div style="width:200px">Spalte</div>|Anmerkungen|
 |---|---|
-|Adresse|<p style="text-align: justify">Straße und Hausnummer</p>|
+|Adresse|<p style="text-align: justify">Strasse und Hausnummer</p>|
 |Initialien|<p style="text-align: justify"></p>|
 |PLZ|<p style="text-align: justify">Postleitzahl der Firmenadresse</p>|
 |Ort|<p style="text-align: justify"></p>|

@@ -28,7 +28,7 @@ Stammdaten bearbeiten
 
 <p style="text-align: justify">
 Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht. </br>
-Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschließend auf den Button <i>Hinzufügen</i>. </p>
+Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschliessend auf den Button <i>Hinzufügen</i>. </p>
 
 {{< imgproc Rolle_Rechte_bearbeiten Resize "960x" >}}
 Rechte der Rollen bearbeiten

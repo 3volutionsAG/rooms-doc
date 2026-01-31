@@ -10,7 +10,7 @@ Indem Sie auf den Button Schnellbuchung erstellen neben der Ressource in der Lis
 
 - Titel 
 - Dauer (Datum/Zeit)
-- Organisator:in : Standardmäßig sind Sie als Organisator:in angezeigt 
+- Organisator:in : Standardmässig sind Sie als Organisator:in angezeigt 
 - Verantwortliche : Ist eine Verantworliche vorhanden, werden die E-Mail Notifikationen (sofern im Profil aktiviert) an die Verantworliche geschickt und NICHT mehr an die Organisator:in
 - Bemerkungen
 

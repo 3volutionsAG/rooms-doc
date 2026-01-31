@@ -11,11 +11,11 @@ Browse/Upload
 * Über den Upload Button wird der Plan ins System geladen
 * Ist bereits ein Plan vorhanden, wird dieser Überschrieben – die Hotspots bleiben bestehen.
 
-Maximale Dateigröße
+Maximale Dateigrösse
 
-* Die maximale Dateigröße wird auf Grund der Systemkonfiguration (webconfig) angezeigt (Standard 5MB)
+* Die maximale Dateigrösse wird auf Grund der Systemkonfiguration (webconfig) angezeigt (Standard 5MB)
 * Während des Uploads wird in diesem Bereich der aktuelle Status in Form bereits hochgeladener Bytes angezeigt
-* Wird die maximale Dateigröße überschritten gibt das System einen Fehler aus
+* Wird die maximale Dateigrösse überschritten gibt das System einen Fehler aus
 
 Clear
 

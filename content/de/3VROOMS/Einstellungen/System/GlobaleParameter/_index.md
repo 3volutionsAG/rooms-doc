@@ -40,7 +40,7 @@ Folgende Daten können Sie ändern:
 | ------------- | ------------- |
 | Bezeichnung | Interne definierte Bezeichnung des Parameters. Einsprachig (Deutsch).nicht änderbar |
 | Beschreibung | Beschreibung des Parameters. Einsprachig (Deutsch). nicht änderbar |
-| Wert | Wert des Parameters. Änderbar. Je nach Parameter stehen folgende Werte zur Verfügung. Feld: Eingabefeld. Checkbox für True/False. Dropdown für Selektionen- Textarea für größere Textmengen |
+| Wert | Wert des Parameters. Änderbar. Je nach Parameter stehen folgende Werte zur Verfügung. Feld: Eingabefeld. Checkbox für True/False. Dropdown für Selektionen- Textarea für grössere Textmengen |
 | Standard | Ursprungswert durch den Hersteller definiert. nicht änderbar |
 | Benötigtes globales Recht | Falls der globale Parameter in direktem Zusammenhang mit einem globalen Recht steht, wird hier darauf hingewiesen. Standard: leer. nicht änderbar |
 {{< /bootstrap-table >}}

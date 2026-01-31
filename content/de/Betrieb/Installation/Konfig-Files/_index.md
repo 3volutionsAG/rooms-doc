@@ -52,7 +52,7 @@ Anforderungen:
 
 4. **ConnectionStrings.config** </br>
    <p align = "justify">
-   Für jede zu verwendende Datenbank muss ein <i>add</i> Eintrag vorhanden sein, bestehend aus einem frei wählbaren Namen (ohne Sonderzeichen) und einem ConnectionString, <a href="http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.100).aspx"> gemäß Defintion </a> (Beispiele siehe <a href="http://www.connectionstrings.com/sql-server-2008"> hier</a>). Der Name wird in der Webapplikation als Teil der URL sichtbar sein <i>http(s)://SERVER/NAME/etc.</i>. </p>
+   Für jede zu verwendende Datenbank muss ein <i>add</i> Eintrag vorhanden sein, bestehend aus einem frei wählbaren Namen (ohne Sonderzeichen) und einem ConnectionString, <a href="http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.100).aspx"> gemäss Defintion </a> (Beispiele siehe <a href="http://www.connectionstrings.com/sql-server-2008"> hier</a>). Der Name wird in der Webapplikation als Teil der URL sichtbar sein <i>http(s)://SERVER/NAME/etc.</i>. </p>
 
    ```
     <connectionStrings>

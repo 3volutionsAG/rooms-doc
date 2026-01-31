@@ -37,7 +37,7 @@ Folgende Tabelle erläutert die Bedeutung der Status:
  |Besetzt (Temporär)|<p style="text-align: justify"> Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht. </p>|
  ---
 
-<!-- Thema Slot vorerst außenvor -->
+<!-- Thema Slot vorerst aussenvor -->
 
 <p style="text-align: justify">
  Am Ende der Buchungsspezifischen Kriterien finden Sie vier weitere Checkboxen, die aktiviert werden können: </p>

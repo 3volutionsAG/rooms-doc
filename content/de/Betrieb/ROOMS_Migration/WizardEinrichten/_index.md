@@ -5,7 +5,7 @@ weight: 40
 description: 'Leitfaden, wie Sie das Buchungs-Wizard nach einem Update von ROOMS einrichten.'
 ---
 1. Erstellen Sie eine eigene **Seite für das Wizard** bzw. das Add-In.
-2. Erstellen Sie ein entsprechendes **Verzeichnis**, standardmäßig unter
+2. Erstellen Sie ein entsprechendes **Verzeichnis**, standardmässig unter
    
    ```
     C:\inetpub\wwwroot\ADDIN
@@ -25,7 +25,7 @@ description: 'Leitfaden, wie Sie das Buchungs-Wizard nach einem Update von ROOMS
 
     {{< imgproc Auth Resize "640x" >}} {{< /imgproc >}}
 
-8. Suchen Sie die Datei **appsettings.json**, standardmäßig unter
+8. Suchen Sie die Datei **appsettings.json**, standardmässig unter
     
     ```
     C:\inetpub\wwwroot\IDP
@@ -63,7 +63,7 @@ description: 'Leitfaden, wie Sie das Buchungs-Wizard nach einem Update von ROOMS
      },
      ```
 
-10. Suchen Sie die Datei **config.json**, standardmäßig unter:
+10. Suchen Sie die Datei **config.json**, standardmässig unter:
     
     ```
     C:\inetpub\wwwroot\ADDIN\assets\config

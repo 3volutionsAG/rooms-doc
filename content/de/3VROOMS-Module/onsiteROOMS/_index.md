@@ -55,7 +55,7 @@ Es gibt drei Optionen, wie Buchungen im interaktiven Kalender erstellt werden k�
 * Klick auf Zeitslot
 * Langer Klick auf Zeitslot
 
-Danach wird in jedem Fall die Länge der Buchung nachgefragt und der Authentisierungsprozess angestoßen.
+Danach wird in jedem Fall die Länge der Buchung nachgefragt und der Authentisierungsprozess angestossen.
 
 {{< imgproc screens-calendar-book Resize "640x" >}}
 Abbildung d: Ansicht Buchung erstellen

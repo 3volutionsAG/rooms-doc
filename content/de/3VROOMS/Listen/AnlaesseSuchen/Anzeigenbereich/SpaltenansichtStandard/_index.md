@@ -2,7 +2,7 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: 'Standardmäßig werden die Spalten mit den wichtigsten Informationen eines Anlasses angezeigt.'
+description: 'Standardmässig werden die Spalten mit den wichtigsten Informationen eines Anlasses angezeigt.'
 ---
 Folgende Tabelle zeigt die Spalten der Standardansicht auf:
 

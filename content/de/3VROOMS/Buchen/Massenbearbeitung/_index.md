@@ -41,7 +41,7 @@ Beim Klicken auf den Button <i>Bearbeiten</i> sehen Sie den Tab mit den Daten, d
 Vor jedem dieser Felder befindet sich eine Checkbox. Aktivieren Sie diese Checkbox, wird der neue Wert auf alle Reservationen übernommen. Aktivieren Sie nicht die Checkbox, bleiben die Werte der einzelnen Reservationen erhalten. </p>
 
 <p style="text-align: justify">
-Nachdem Sie die gewünschten Änderungen eingegeben haben, schließen Sie die Bearbeitung mit Klick auf den Button <i>Für alle Übernehmen</i>. </p>
+Nachdem Sie die gewünschten Änderungen eingegeben haben, schliessen Sie die Bearbeitung mit Klick auf den Button <i>Für alle Übernehmen</i>. </p>
 
 {{< imgproc Massenbearbeitung_Felder_eintragen Resize "960x" >}}
 Daten der ausgewählten Buchungen bearbeiten und ändern 
@@ -54,7 +54,7 @@ Vor jeder Reservation befindet sich eine Checkbox. </p>
 
 <p style="text-align: justify">
 Wählen Sie die gewünschten Buchungen aus, welche Sie ändern möchten, indem Sie die Checkbox vor dem Listenelement aktivieren. </br>
-Klicken Sie anschließend, wie oben beschrieben, den Button <b>Bearbeiten</b>. Es öffnet sich das Bearbeitungsfenster. Folgende Daten können Sie ändern: </p>
+Klicken Sie anschliessend, wie oben beschrieben, den Button <b>Bearbeiten</b>. Es öffnet sich das Bearbeitungsfenster. Folgende Daten können Sie ändern: </p>
 
 * Datum 
 * Zeit 
@@ -66,7 +66,7 @@ Klicken Sie anschließend, wie oben beschrieben, den Button <b>Bearbeiten</b>. E
 Vor jedem dieser Felder befindet sich eine Checkbox. Aktivieren Sie diese Checkbox, wird der neue Wert auf alle Reservationen übernommen. Aktivieren Sie nicht die Checkbox, bleiben die Werte der einzelnen Reservationen erhalten.  </p>
 
 <p style="text-align: justify">
-Nachdem Sie die gewünschten Änderungen eingegeben haben, schließen Sie die Bearbeitung mit Klick auf den Button <i>Für alle Übernehmen</i>. </p>
+Nachdem Sie die gewünschten Änderungen eingegeben haben, schliessen Sie die Bearbeitung mit Klick auf den Button <i>Für alle Übernehmen</i>. </p>
 
 {{< imgproc Massenbearbeitung_Listen Resize "960x" >}}
 Im Reiter Listen eine Massenbearbeitung der Buchungen vornehmen

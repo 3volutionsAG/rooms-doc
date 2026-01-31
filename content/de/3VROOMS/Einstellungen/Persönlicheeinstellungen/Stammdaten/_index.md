@@ -2,7 +2,7 @@
 title: "Stammdaten"
 linkTitle: "Stammdaten"
 weight: 2
-description: 'In diesem Bereich ändern und speichern Sie die Stammdaten der Mitarbeiter, wie z.B. die Sprache, die Zeitzone oder die jeweiligen Kapazitäten. Ebenfalls hinterlegen Sie hier Ihre präferierten Einstellungen z.B. die standardmäßige Dauer bei einer Schnellreservation, den Standard Standort etc.'
+description: 'In diesem Bereich ändern und speichern Sie die Stammdaten der Mitarbeiter, wie z.B. die Sprache, die Zeitzone oder die jeweiligen Kapazitäten. Ebenfalls hinterlegen Sie hier Ihre präferierten Einstellungen z.B. die standardmässige Dauer bei einer Schnellreservation, den Standard Standort etc.'
 ---
 ## Stammdaten bearbeiten 
 
@@ -35,7 +35,7 @@ Stammdaten bearbeiten und speichern
 | Farbe für eigene Buchungen (Plan/Kalender) |<p style="text-align: justify"> Mittels Farbpicker kann eine Farbe definiert werden, damit in der Plan- und der Kalenderansicht auf den ersten Blick alle Buchungen, bei denen der angemeldete Benutzer Organisator ist, ersichtlich sind. Die entsprechenden Buchungen werden im Kalender oberhalb des Textes mit einem schmalen Balken in der ausgewählten Farbe dargestellt. Im Plan wird der entsprechende Raum in der definierten Farbe markiert.   </p>   |
 | Farbe Dritter auf Plan/Kalender einblenden|<p style="text-align: justify"> In der Standard Einstellung ist eine Farbe selektiert. Sie sehen die "eigenen definierten Farben" bei Buchungen von Dritten. </p> |
 | Standardwert für Versand von Benachrichtigungen |    |
-| Stellvertreter | <p style="text-align: justify">Ein Stellvertreter wird durch Eingabe einer Person definiert. Die Stellvertretung hat so lange ihre Gültigkeit bis die Person wieder entfernt wird. Der Stellvertreter kann alle Reservationen einsehen und verändern, bei denen die zu stellvertretende Person Ersteller oder Organisator ist. Das heißt, der Stellvertreter wird in diesem Fall zum Owner.   </p>   |
+| Stellvertreter | <p style="text-align: justify">Ein Stellvertreter wird durch Eingabe einer Person definiert. Die Stellvertretung hat so lange ihre Gültigkeit bis die Person wieder entfernt wird. Der Stellvertreter kann alle Reservationen einsehen und verändern, bei denen die zu stellvertretende Person Ersteller oder Organisator ist. Das heisst, der Stellvertreter wird in diesem Fall zum Owner.   </p>   |
 | Datei-/Verzeichnis Browser |<p style="text-align: justify"> Zeigt Ihnen den Browserverlauf für das ausgewählte Bild an, während der Auswahl von Ihren Dateien. Haben Sie ein Bild ausgewählt, sehen Sie den Namen der Bild Datei.   </p>  |
 | Zugewiesenes Bild |<p style="text-align: justify"> Ist ein Foto vorhanden wird dieses angezeigt, ansonsten sehen Sie den Standard Avatar  </p>  |
 

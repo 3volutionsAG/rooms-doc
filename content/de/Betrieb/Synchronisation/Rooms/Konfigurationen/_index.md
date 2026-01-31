@@ -13,7 +13,7 @@ Exchange Ressource Sync enabled --> Aktiviert/Deaktiviert die Exchange Ressource
 
 Exchange: Subscriptions intervall --> Gibt an in welchem Intervall alle Subscriptions erneuert werden sollen (in Minuten). Nur relevant für PushSubscriptions.
 
-In **RoomsAppSettings.config**, standardmäßig unter
+In **RoomsAppSettings.config**, standardmässig unter
 
     ```
     C:\Program Files (x86)\3VOLUTIONS\ROOMS\Configuration

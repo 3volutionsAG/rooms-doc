@@ -12,7 +12,7 @@ Nach der Einstellung der Suchfilter wird im rechten Bereich des Fensters der Kal
 Im oberen Bereich kann zwischen den verschiedenen Kalenderansichten gewählt werden. Je nach Präferenz kann zwischen Tag, Arbeitswoche, Woche oder Monat navigiert werden. </p>
 
 <p style="text-align: justify">
-Es stehen Ihnen mehrere Anzeigeoptionen in jeder Ansicht zur Verfügung. Außerdem können Sie sich Buchungen hervorgehoben anzeigen lassen, die z.B. einen Parkplatz oder eine Bestellung enthalten. Außer in der Monatsansicht befindet sich in allen Kalenderansichten unten rechts eine Reihe von Icons, welche unterschiedliche Darstellungsfilter aktivieren. Dadurch werden Buchungen mit verknüpften Ressourcen mit einem entsprechenden Symbol gekennzeichnet und farblich hervorgehoben, was Ihnen eine rasche Erkennung ermöglicht. </p>
+Es stehen Ihnen mehrere Anzeigeoptionen in jeder Ansicht zur Verfügung. Ausserdem können Sie sich Buchungen hervorgehoben anzeigen lassen, die z.B. einen Parkplatz oder eine Bestellung enthalten. Ausser in der Monatsansicht befindet sich in allen Kalenderansichten unten rechts eine Reihe von Icons, welche unterschiedliche Darstellungsfilter aktivieren. Dadurch werden Buchungen mit verknüpften Ressourcen mit einem entsprechenden Symbol gekennzeichnet und farblich hervorgehoben, was Ihnen eine rasche Erkennung ermöglicht. </p>
 
 {{< imgproc Kalender_ansicht_Toolleiste Resize "960x" >}}
 Tollleiste im Kalender (Anzeige nicht in der Monatsansicht)

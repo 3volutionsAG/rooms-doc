@@ -57,7 +57,7 @@ Navigieren Sie auf den gewünschten Tag und die gewünschte Zeit und klicken Sie
 Kalenderansicht der Ressourcen, gewünschten Tag und Zeit wählen und Schnellbuchungsmaske bearbeiten
 {{< /imgproc >}}
 
-Nach dem Bestätigen erscheint die gebuchte Ressource in der Kalenderansicht. Das Actionpanel bestätigt die erfolgreiche Buchung. Über die Schaltfläche <i>Zurück zum Anlass</i> schließen Sie die Kalenderansicht und kehren zur Detailansicht des Anlasses zurück.
+Nach dem Bestätigen erscheint die gebuchte Ressource in der Kalenderansicht. Das Actionpanel bestätigt die erfolgreiche Buchung. Über die Schaltfläche <i>Zurück zum Anlass</i> schliessen Sie die Kalenderansicht und kehren zur Detailansicht des Anlasses zurück.
 
 {{< imgproc List_ANL_DS_plusRESkal_Best_b Resize "960x" >}}
 Eingetragene Buchung mit Bestätigung im Actionpanel 

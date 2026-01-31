@@ -17,7 +17,7 @@ OE/Firmen Ansicht in der Startansicht
 Im linken Menü finden Sie unter der Kategorie "OE/Firmen" eine Suchfunktion mit dessen Hilfe Sie nach: </p>
 
  * Bezeichnung
- * Straße
+ * Strasse
  * Postleitzahl
  * Ort 
  * Art der Firma (intern oder extern) 
@@ -65,7 +65,7 @@ Ansicht Adressen der Firmen
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Außerdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. </p>
+Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Ausserdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren. </p>
 
 {{< imgproc OE_Firmen_bearbeiten_Adresse_eintragen Resize "960x" >}}
 Neue Adresse zu einer Firma hinzufügen
@@ -92,7 +92,7 @@ Eingetragene Personen in Listenform
 
 <p style="text-align: justify">
 Möchten Sie eine Person einer Firma zuweisen, klicken Sie unten auf den Button <i>Person hinzufügen</i>. Es öffnet sich ein Fenster. In diesem wählen Sie eine oder mehrere Personen aus dem System aus. </br>
-Anschließend können Sie noch eintragen: </p>
+Anschliessend können Sie noch eintragen: </p>
 
 * Gültigkeitsdauer, 
 * Telefon intern

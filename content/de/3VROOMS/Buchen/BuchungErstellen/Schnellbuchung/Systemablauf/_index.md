@@ -6,8 +6,8 @@ description: ''
 ---
 1. Ihre Buchung wird gespeichert
    * Der Titel, den Sie eingetragen haben, wird automatisch vergeben
-   * Die Kostenträger werden gemäß Ihren Profileinstellungen gesetzt
-   * Status (Workflow) wird gemäß der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt
+   * Die Kostenträger werden gemäss Ihren Profileinstellungen gesetzt
+   * Status (Workflow) wird gemäss der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt
 
 2. Fehlerfall bei der Buchung
    * Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben rechts im Bild eine Fehlermeldung 

@@ -2,7 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 2
-description: 'Neben den standardmäßig angezeigten Spalten können Sie weitere Spalten mit Informationen zum Anlass einblenden.'
+description: 'Neben den standardmässig angezeigten Spalten können Sie weitere Spalten mit Informationen zum Anlass einblenden.'
 ---
 |<div style="width:200px">Spalte</div>|Anmerkungen|
 |---|---|

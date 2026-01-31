@@ -61,7 +61,7 @@ Ressourcen "Freigabe bearbeiten" Button
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Weiße Felder im Kalender sind Tage, an denen die Ressource freigegeben ist und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen bzw. Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden. </p>
+Weisse Felder im Kalender sind Tage, an denen die Ressource freigegeben ist und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen bzw. Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden. </p>
 
 {{< imgproc Zugewiesene_Ressource_bearbeiten_freigeben Resize "960x" >}}
 Ressourcen Freigabe bearbeiten 

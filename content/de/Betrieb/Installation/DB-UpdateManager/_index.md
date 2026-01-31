@@ -9,7 +9,7 @@ Der DBUpdateManager aktualisiert automatisch die Datenbanken auf genau den Stand
 
 1. Ist der DBUpdateManager noch nicht installiert, kann er im <a href="https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/508690433"> Downloadbereich </a> heruntergeladen werden. 
 2. Nach der Installation steht im Startmenu unter "3volutions" die Verknüpfung **DBUpdateManager Wizard** zur Verfügung.
-3. In Ausnahmefällen können während der Aktualisierung Dialoge mit Rückfragen angezeigt werden. Erscheint ein solcher Dialog, ist gemäß Angaben der entsprechenden **Release Notes** zu verfahren oder **Rücksprache mit 3volutions** zu nehmen.
+3. In Ausnahmefällen können während der Aktualisierung Dialoge mit Rückfragen angezeigt werden. Erscheint ein solcher Dialog, ist gemäss Angaben der entsprechenden **Release Notes** zu verfahren oder **Rücksprache mit 3volutions** zu nehmen.
 4. **Option 2 auswählen** und Verzeichnis mit den Applikationsdateien angeben: Auf Maschinen mit der Webapplikation wird das Unterverzeichnis "bin" im angegebenen Verzeichnispfad:
 
     ``` 

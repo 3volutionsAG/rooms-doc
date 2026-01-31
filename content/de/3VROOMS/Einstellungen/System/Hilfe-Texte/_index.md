@@ -23,7 +23,7 @@ Editmodus aktivieren
 Überall in der Applikation wird im Sidepanel, Inhaltsbereich und View Mode vor einem Label (Beschriftungsfeld) ein Hilfe Icon eingeblendet. Wo ein Hilfetext in der Sprache des angemeldeten Benutzers hinterlegt wurde, wird das Hilfe Icon eingeblendet. </p>
 
 <p style="text-align: justify">
-Klicken Sie auf das Icon, öffnet sich ein modales Popup <i>Feldbezogene Hilfe</i>. Pro aktivierte Sprache wird ein mehrzeiliges Eingabefeld angezeigt - keine Pflichtfelder. Klicken Sie auf Speichern und die Hilfetexte werden gespeichert. Schließen Sie anschließend das Popup. </p>
+Klicken Sie auf das Icon, öffnet sich ein modales Popup <i>Feldbezogene Hilfe</i>. Pro aktivierte Sprache wird ein mehrzeiliges Eingabefeld angezeigt - keine Pflichtfelder. Klicken Sie auf Speichern und die Hilfetexte werden gespeichert. Schliessen Sie anschliessend das Popup. </p>
 
 {{< imgproc Hilfe_Icon Resize "960x" >}}
 Hilfe Icon in Rooms

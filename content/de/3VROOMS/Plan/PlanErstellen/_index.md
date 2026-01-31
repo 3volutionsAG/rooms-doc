@@ -5,7 +5,7 @@ weight: 1
 description: 'Suchen Sie nach freien Ressourcen und zur Verfügung stehenden Räumen im Plan.'
 ---
 <p style="text-align: justify">
-Um in einem Plan freie Ressourcen (z.B. Räume) suchen und buchen zu können, müssen Sie zuerst einen Plan erstellen. Das heißt, Sie ordnen einem Standort einen Plan zu und zeichnen in diesem die zur Verfügung stehenden Räume ein. </p>
+Um in einem Plan freie Ressourcen (z.B. Räume) suchen und buchen zu können, müssen Sie zuerst einen Plan erstellen. Das heisst, Sie ordnen einem Standort einen Plan zu und zeichnen in diesem die zur Verfügung stehenden Räume ein. </p>
 
 Dies machen Sie wie folgt:
 
@@ -13,7 +13,7 @@ Dies machen Sie wie folgt:
 2. Im linken Sidepanel wählen Sie den Reiter **Basisdaten für Ressourcen**
 3. Dort sehen Sie den Reiter **Standorte** und im rechten Feld die Standortliste. Fügen Sie entweder einen neuen Standort hinzu oder wählen Sie einen bestehenden aus. 
 4. Wenn Sie einen Standort ausgewählt haben, klicken Sie auf den Namen und mittels Klick auf das erscheinende **Stift Icon** bearbeiten Sie diesen Standort
-5. Unter dem Reiter **Stammdaten** weisen Sie dem Standort einen Plan zu. Die Datei kann bis zu 5MB groß sein, s. [Regeln für den Plan-Upload](/3vrooms/Plan/PlanErstellen/Uploadregeln).
+5. Unter dem Reiter **Stammdaten** weisen Sie dem Standort einen Plan zu. Die Datei kann bis zu 5MB gross sein, s. [Regeln für den Plan-Upload](/3vrooms/Plan/PlanErstellen/Uploadregeln).
 
 {{< imgproc Plan_zuweisen Resize "960x" >}}
 Einem Standort einen Plan zuweisen und hochladen

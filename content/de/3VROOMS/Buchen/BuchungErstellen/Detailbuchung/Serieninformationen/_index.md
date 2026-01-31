@@ -89,7 +89,7 @@ Nach dem Klicken auf den Button <i>Erstellen</i> überprüft ROOMS die jeweilige
 Prüfstatus der Serienelemente nach dem Erstellen der Buchung 
 {{< /imgproc >}}
 
-In der Liste existiert eine Spalte Prüfstatus. Falls dieser Status ein Warndreieck aufweist, wird dadurch angezeigt, dass die Ressource zu diesem Zeitpunkt besetzt ist. Dieses Serienelement kann nur durch Anwählen der Checkbox und anschließendem Klicken des Buttons <i>Löschen</i> aus der Serie entfernt werden. Klicken Sie auf das Stift Icon um die Ressource und die Buchung zu bearbeiten. Sie können für eine andere Ressource (einmalige Umbuchung auf eine andere Ressource) oder ein anderen Zeitraum (bei gleicher Ressource) wählen. Dies kann auch mit Serienelementen gemacht werden, welche grundsätzlich frei sind.
+In der Liste existiert eine Spalte Prüfstatus. Falls dieser Status ein Warndreieck aufweist, wird dadurch angezeigt, dass die Ressource zu diesem Zeitpunkt besetzt ist. Dieses Serienelement kann nur durch Anwählen der Checkbox und anschliessendem Klicken des Buttons <i>Löschen</i> aus der Serie entfernt werden. Klicken Sie auf das Stift Icon um die Ressource und die Buchung zu bearbeiten. Sie können für eine andere Ressource (einmalige Umbuchung auf eine andere Ressource) oder ein anderen Zeitraum (bei gleicher Ressource) wählen. Dies kann auch mit Serienelementen gemacht werden, welche grundsätzlich frei sind.
 
 Klicken Sie auf das Stift Icon, um die Ressource zu bearbeiten. Sie sehen ein neues Fenster, in welchem Sie einen anderen Zeitraum oder eine andere Ressource wählen können. Sie sehen nur die zu diesem Zeitpunkt freien Ressourcen der gleichen Art.
 
@@ -107,7 +107,7 @@ Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterat
 2.	Mit Klick auf das <b>+</b>-Icon öffnet sich ein Fenster und man klickt den Button <b>Bearbeiten</b>.
 3.	Aktivieren der Checkbox <b>Auf nachfolgende Serieneinträge übernehmen</b> unten in der Ansicht.
 4.	Durch Eingabe der gewünschten Startzeit, Reservation um eine halbe Stunde vorziehen. Bestätigung durch grünes Häkchen erfolgt.
-5.	Klick auf <b>Reservation abschließen</b>.
+5.	Klick auf <b>Reservation abschliessen</b>.
 6.	Seite mit Zusammenfassung wird ausgegeben, darauf ist die Änderung der Zeiten für die beiden letzten Termine ersichtlich.
 7.	Klick auf <b>Reservation bestätigen</b>. Die Teilnehmer der Serie erhalten für die bearbeiteten Termine zuerst einzelne Absagen und danach für den bearbeiteten Teil der Serie eine einzelne neue Einladung.
 

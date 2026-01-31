@@ -90,7 +90,7 @@ Zuletzt muss noch für einen initialen Benutzer die Administrator-Berechtigung i
    
    {{< imgproc Name Resize "640x" >}} {{< /imgproc >}}
 
-5. **Tabelle schließen**. Diesen Schritt für alle neu angelegten Datenbanken wiederholen.
+5. **Tabelle schliessen**. Diesen Schritt für alle neu angelegten Datenbanken wiederholen.
 
 <p align = "justify">
 Alternativ können Datenbanken, anstelle eines Restores, auch von Grund auf neu erstellt werden. In diesem Fall muss das entsprechende ROOMS Script verwendet werden und der initiale Benutzer kann erst nach Ausführung des  <a href="https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/1959165953?src=127677552">DB Update Managers</a> hinterlegt werden. Dieses Vorgehen sollte aber nur von 3volutions Spezialisten durchgeführt werden und wird deshalb hier nicht weiter dokumentiert. </p>

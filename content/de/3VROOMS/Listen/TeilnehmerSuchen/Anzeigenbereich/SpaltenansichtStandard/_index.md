@@ -4,7 +4,7 @@ linkTitle: "Spaltenansicht Standard"
 weight: 1
 description: 'In der Standardansicht werden die grundlegenden Informationen zu den Teilnehmenden aufgelistet.'
 ---
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 |<div style="width:200px">Spalte</div>|Anmerkungen|
 |---|---|

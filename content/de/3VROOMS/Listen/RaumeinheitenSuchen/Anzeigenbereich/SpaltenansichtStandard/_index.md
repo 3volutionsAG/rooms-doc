@@ -2,9 +2,9 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: 'Standardmäßig werden die Spalten mit den grundlegenden Informationen angezeigt.'
+description: 'Standardmässig werden die Spalten mit den grundlegenden Informationen angezeigt.'
 ---
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
@@ -13,6 +13,6 @@ Standardmäßig sind folgende Spalten sichtbar:
 |In Plan anzeigen|{{< imgproc Weltkugel Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify">Durch Klicken auf das Symbol werden Sie zum Lageplan weitergeleitet, sofern eine entsprechende Verknüpfung hinterlegt ist.</p>|
 |Raumeinheit Typ||<p style="text-align: justify">Kategorie der Raumeinheit</p>|
 |Anzahl Personen||<p style="text-align: justify"> Anzahl der Personen, die der Raumeinheit zugewiesen werden können </p>|
-|Fläche||<p style="text-align: justify">Größe der definierten Fläche</p>|
+|Fläche||<p style="text-align: justify">Grösse der definierten Fläche</p>|
 |Personen||<p style="text-align: justify">Auflistung der zugewiesenen Personen</p>|
 ---

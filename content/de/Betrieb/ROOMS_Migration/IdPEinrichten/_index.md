@@ -26,7 +26,7 @@ description: 'Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
 
 ### appsettings.json konfigurieren
 
-1. Rufen Sie dei Datei **appsettings.json** auf, standardmäßig:
+1. Rufen Sie dei Datei **appsettings.json** auf, standardmässig:
    
    ```
    C:\inetpub\wwwroot\config\IDP
@@ -115,7 +115,7 @@ description: 'Leitfaden, wie Sie die IdP nach einem Update von ROOMS einrichten.
 
 ### Authentifizierungen konfigurieren
 
-1. Suchen Sie **RoomsAppSettings.config**, standardmäßig unter
+1. Suchen Sie **RoomsAppSettings.config**, standardmässig unter
 
     ```
     C:\Program Files (x86)\3VOLUTIONS\ROOMS\Configuration

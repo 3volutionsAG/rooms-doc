@@ -23,7 +23,7 @@ Folgende Daten können durch Sie eingegeben und geändert werden: </p>
 * Personalnummer 
 * Eindeutige ID 
 * Link auf Drittsysteme
-* Begrüßungsassistenten anzeigen 
+* Begrüssungsassistenten anzeigen 
 * Sync.Modus 
 * Datei-/Verzeichnis Browser 
 * Zugewiesene Unterschrift 

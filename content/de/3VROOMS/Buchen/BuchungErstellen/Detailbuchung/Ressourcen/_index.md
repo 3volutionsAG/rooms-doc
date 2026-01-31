@@ -21,7 +21,7 @@ Sie sehen, abhängig von Ihren eingetragenen Rechten, eine Ressource einzeln (z.
 * Benutzer:in hat das Einzeln-Recht: Ressourcen-Tab ist sichtbar, aber nur mit der Einzelansicht.
 * Benutzer:in hat beide Rechte: Ressourcen-Tab ist sichtbar und kann sich mittels zweier Buttons die bevorzugte der beiden Ansichten anzeigen lassen.
 
-Sie sehen standardmäßig die aggregierte Ansicht. Legen Sie beim ersten Mal seine bevorzugte Ansicht fest, wird diese gespeichert und beim nächsten Mal direkt angezeigt.
+Sie sehen standardmässig die aggregierte Ansicht. Legen Sie beim ersten Mal seine bevorzugte Ansicht fest, wird diese gespeichert und beim nächsten Mal direkt angezeigt.
 
 {{< imgproc Detailbuchung_Ressource_Einzelansicht Resize "960x" >}}
 Die Ressourcen entweder in der aggregierten Form oder in der Einzelansicht anzeigen lassen  

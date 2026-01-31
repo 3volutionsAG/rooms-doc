@@ -37,8 +37,8 @@ Bestuhlung: Informationen bearbeiten und speichern
 
 Folgende Informationen können Sie bearbeiten: 
 * Bezeichnung : Erfassung muss Mehrsprachig erfolgen
-* Max. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrößen zu finden
-* Min. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität die passende Raumgrößen zu finden 
+* Max. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrössen zu finden
+* Min. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität die passende Raumgrössen zu finden 
 * Vorlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet 
 * Nachlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet
 * Bildvorschau (Icon): Es kann nur ein Bild zugewiesen werden. Es wird das Thumbnail angezeigt. Klick auf Bild öffnet das Zoom (im modalen Popup)

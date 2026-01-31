@@ -35,7 +35,7 @@ Daneben kann, ebenfalls nur mit bestimmten Berechtigungen, eine für die Reserva
 Die Exchange Synchronisation, falls aktiviert, erfolgt nach wie vor auf der Organisator:in. </p>
 
 <p style="text-align: justify">
-Klicken Sie auf den Button <i>Buchen</i> wird der Raum ohne Eingabe weiterer Informationen für eine gewisse Zeit, gemäß den Angaben in den persönlichen Einstellungen, gebucht. </p>
+Klicken Sie auf den Button <i>Buchen</i> wird der Raum ohne Eingabe weiterer Informationen für eine gewisse Zeit, gemäss den Angaben in den persönlichen Einstellungen, gebucht. </p>
 
 ### Detailbuchung im Kalender
 
@@ -47,7 +47,7 @@ Schnellbuchung im Kalender vornehmen
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Sie schließen die Buchung ab, indem Sie auf den Button <i>Buchung abschließen</i> klicken. </p>
+Sie schliessen die Buchung ab, indem Sie auf den Button <i>Buchung abschliessen</i> klicken. </p>
 
 Die einzelnen Funktionen der Felder werden Ihnen im Kapitel <i>Detailbuchung</i> beschrieben: 
 [Detailbuchung](/3vrooms/buchen/buchungerstellen/detailbuchung/)

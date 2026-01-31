@@ -13,7 +13,7 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 | ------------- |-------------  |-------------  |
 | Pfeile |<p style="text-align: justify"> Wechseln Sie den Tag/Woche/Monat hin und her </p>| {{< imgproc Icon_Tag_wechseln Resize "50x" >}}
 {{< /imgproc >}} |
-|Slider |<p style="text-align: justify">Zoomen Sie im Kalender heraus oder ein </p>| {{< imgproc Icon_Slider_vergrößern Resize "50x" >}}
+|Slider |<p style="text-align: justify">Zoomen Sie im Kalender heraus oder ein </p>| {{< imgproc Icon_Slider_vergrössern Resize "50x" >}}
 {{< /imgproc >}} |
 | Fadenkreuz |<p style="text-align: justify"> Bringen Sie die Kalenderansicht wieder auf 100% </p>| {{< imgproc Icon_100_prozent Resize "50x" >}}
 {{< /imgproc >}} |
@@ -30,13 +30,13 @@ Mit dem Regler oben in der Mitte der Kalenderansichten zoomen Sie in den Kalende
 Befinden Sie sich in der Tagesansicht, wird in die Stunden gezoomt, befinden Sie sich in der Wochenansicht, geschieht dasselbe mit den Tagen. </p>
 
 {{< imgproc Kalender_Slideransicht Resize "960x" >}}
-Slider zum verkleinern oder vergrößern der Ansicht im Kalender
+Slider zum verkleinern oder vergrössern der Ansicht im Kalender
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Ziehen Sie den Regler mit der Maus nach rechts, vergrößert sich die Ansicht. Das kann z.B. in der Tagesansicht zur Folge haben, dass Sie nicht mehr die vollen 24h angezeigt bekommen und horizontal – mittels Mausziehen auf dem Zeitbalken – gescrollt werden muss. </br>
+Ziehen Sie den Regler mit der Maus nach rechts, vergrössert sich die Ansicht. Das kann z.B. in der Tagesansicht zur Folge haben, dass Sie nicht mehr die vollen 24h angezeigt bekommen und horizontal – mittels Mausziehen auf dem Zeitbalken – gescrollt werden muss. </br>
 Ziehen Sie den Regler mit der Maus nach links, verkleinert sich die Ansicht. Beide Einstellungen werden über sämtliche Kalenderansichten (Tag, Arbeitswoche, Woche, Monat) übernommen. </br>
-Klick auf den Button <i>Fadenkreuz</i> auf der rechten Seite des Reglers, passt den Kalender gemäß der Bildschirmauflösung wieder an die optimale Größe an (100%). </p>
+Klick auf den Button <i>Fadenkreuz</i> auf der rechten Seite des Reglers, passt den Kalender gemäss der Bildschirmauflösung wieder an die optimale Grösse an (100%). </p>
 
 <p style="text-align: justify">
 Falls ein spezifisches Datum gesucht wird, kann dieses auch im Datumspicker oben rechts eingegeben oder aus dem Kalender-Popup ausgewählt werden. Gleich daneben befindet sich der <i>Heute</i> Button. Klickt man ihn an, wechselt man, unabhängig von der gewählten Kalenderansicht, auf das aktuelle Datum (oder eben die aktuelle Kalenderwoche oder den aktuellen Monat). </p>

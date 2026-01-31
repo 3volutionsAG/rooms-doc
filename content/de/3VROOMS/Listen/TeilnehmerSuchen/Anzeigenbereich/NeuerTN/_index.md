@@ -22,7 +22,7 @@ Sie werden zur Eingabemaske weitergeleitet:
 Eingabemaske um neue Teilnehmende zu erfassen
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Es gibt die Möglichkeit zur Listenansicht eine einzelne Person und  zurück zu kehren oder mehrere Einzelpersonen in Serie hinzuzufügen. Außerdem lassen sich über einen vereinfachten Modus Gruppe schneller erfassen. </p>
+<p style="text-align: justify"> Es gibt die Möglichkeit zur Listenansicht eine einzelne Person und  zurück zu kehren oder mehrere Einzelpersonen in Serie hinzuzufügen. Ausserdem lassen sich über einen vereinfachten Modus Gruppe schneller erfassen. </p>
 
 {{< imgproc List_TNneu_Schalt Resize "960x" >}}
 Varianten um Teilnehmende zu erfassen
@@ -31,7 +31,7 @@ Varianten um Teilnehmende zu erfassen
 ## Einzelbesuch hinzufügen
 
 <p style="text-align: justify">
-Standardmäßig öffnet sich die Eingabemaske für die Erfassung von Einzelbesuch. </p>
+Standardmässig öffnet sich die Eingabemaske für die Erfassung von Einzelbesuch. </p>
 
 Folgende Tabelle erläutert die Eingabefehler.
 
@@ -46,7 +46,7 @@ Folgende Tabelle erläutert die Eingabefehler.
 
 |<div style="width:200px">Feld</div>|<div style="width:200px"></div>|Funktion|
 |---|---|---|
-|Gruppe||<p style="text-align: justify"> Standardmäßig ist hier eine Einzelteilnehmer:in eingetragen. Sie können aber auch Besuchsgruppen hinzufügen. Siehe dazu Abschnitt <a href="/3vrooms/listen/teilnehmersuchen/anzeigenbereich/neuertn/#besuchsgruppe-hinzufügen">Besuchsgruppe hinzufügen</a>. </p>
+|Gruppe||<p style="text-align: justify"> Standardmässig ist hier eine Einzelteilnehmer:in eingetragen. Sie können aber auch Besuchsgruppen hinzufügen. Siehe dazu Abschnitt <a href="/3vrooms/listen/teilnehmersuchen/anzeigenbereich/neuertn/#besuchsgruppe-hinzufügen">Besuchsgruppe hinzufügen</a>. </p>
 |Kommentar||<p style="text-align: justify"> Notieren Sie hier Informationen, die an einen Dienstleister weitergegeben werden müssen.</p>|
 |Organisator:in||<p style="text-align: justify">Person, welche den Besuch hinzufügt </br> _Wird automatisch ausgefüllt._</p>|
 |Datum/Zeit||<p style="text-align: justify">Datum und Zeitspanne, in der der Besuch anwesend sein wird</p>|

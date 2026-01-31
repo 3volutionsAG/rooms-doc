@@ -6,7 +6,7 @@ description: 'Im Bereich Tarife verwalten Sie Tarifkategorien und Tarife. Jeder 
 ---
 
 ## Tarif neu erstellen
-Im linken Sidepanel finden Sie die Filterkriterien. Hier können Sie nach der Bezeichnung eines Tarifs suchen. Klicken Sie anschließend auf den Button `Anzeigen`.
+Im linken Sidepanel finden Sie die Filterkriterien. Hier können Sie nach der Bezeichnung eines Tarifs suchen. Klicken Sie anschliessend auf den Button `Anzeigen`.
 
 Im rechten Feld sehen Sie die Tarifkategorie-Liste. Sollten keine Tarifkategorien eingetragen sein, ist diese leer. Tragen Sie neue ein, löschen oder bearbeiten Sie bestehende.
 
@@ -24,7 +24,7 @@ Tarifkategorien erstellen Sie über den untenstehenden Button `Neu`. In dem Feld
 
 Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button `Speichern`.
 
-Neu eingetragene Tarife sehen Sie anschließend in der Liste. Sie können von hier aus über das Stift Icon den Tarif bearbeiten. Mit Aktivierung der Checkbox können Sie den Tarif löschen.
+Neu eingetragene Tarife sehen Sie anschliessend in der Liste. Sie können von hier aus über das Stift Icon den Tarif bearbeiten. Mit Aktivierung der Checkbox können Sie den Tarif löschen.
 
 {{< imgproc Tarife_hinzugefügt_in_Liste Resize "960x" >}}
 Erstellen von Tarifkategorien
@@ -153,7 +153,7 @@ Ab `v4.11.0` besteht die Möglichkeit, den Tarif einer Buchung manuell zu übers
 Die Auswahl des Tarifs erfolgt einfach und intuitiv über das Dropdown-Menü, das die verfügbaren Tarife für die gewählte Ressource anzeigt. Dadurch können Benutzer flexibel den gewünschten Tarif für ihre Buchung auswählen und anpassen.
 
 Folgende Regeln werden dabei beachtet:
-- Wenn Änderungen an einer bestehenden Buchung vorgenommen werden, wie beispielsweise die Änderung der Ressource, der Start- oder Endzeit, wird der zuvor manuell gesetzte Tarif verworfen und die Standardberechnung gemäß dem Tarifmodell durchgeführt.
+- Wenn Änderungen an einer bestehenden Buchung vorgenommen werden, wie beispielsweise die Änderung der Ressource, der Start- oder Endzeit, wird der zuvor manuell gesetzte Tarif verworfen und die Standardberechnung gemäss dem Tarifmodell durchgeführt.
 - Wenn ein Tarif nicht mehr gültig ist, beispielsweise aufgrund des Ablaufdatums, kann die Reservierung nicht mehr gespeichert werden. Bitte beachten Sie, dass der Wochentags-/Wochenendzeitraum beim manuellen Überschreiben nicht berücksichtigt wird.
 - Beim Löschen von Tarifen, die direkt von Buchungen referenziert werden, werden die Tarif-Referenzen in den betroffenen Reservierungen entfernt. Es erfolgt keine automatische Neuberechnung der Preise.
 

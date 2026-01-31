@@ -13,7 +13,7 @@ Anzeigenbereich Suchergebnisse Buchungsanfragen
 
 ## Spaltenansicht Standard
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|

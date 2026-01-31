@@ -32,7 +32,7 @@ In der Vorlage ändern Sie die folgenden Daten: </p>
 * Publiziert in 
 
 <p style="text-align: justify">
-Außerdem wählen Sie ein Dokument mit der maximalen Dateigröße 5MB aus. Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Speichern</i>. </p>
+Ausserdem wählen Sie ein Dokument mit der maximalen Dateigrösse 5MB aus. Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Speichern</i>. </p>
 
 
 {{< imgproc Dokumente_neu_eintragen Resize "960x" >}}

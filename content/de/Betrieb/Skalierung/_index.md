@@ -25,7 +25,7 @@ Die Wahl der für ein LoadBalancing verwendeten Server Applikation sowie deren K
 
 <b>LB decision</b>: Aus Sicht ROOMS egal, z.B. <i>IP Adresse</i>.
 
-<b>LB algorithm</b>: Idealerweise wird eine gleichmäßige Auslastung der Server angestrebt, z.B. <i>least loaded</i>.
+<b>LB algorithm</b>: Idealerweise wird eine gleichmässige Auslastung der Server angestrebt, z.B. <i>least loaded</i>.
 
 <b>Probe</b>: Optional, möglich wäre eine IIS Response <i>HTTP 200</i>.
 

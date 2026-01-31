@@ -24,7 +24,7 @@ Mit dem Button `Neuer Teilnehmer` öffnet sich ein Fenster, in dem die Daten des
 Neue oder externe Teilnehmer hinzufügen
 {{< /imgproc >}}
 
-Sie sehen die erfassten Teilnehmer in der Liste und können diese, wie in den meisten Listen, mittels Auswahl der Checkbox und anschließendem Klick auf den Button `Entfernen` aus der Liste löschen.
+Sie sehen die erfassten Teilnehmer in der Liste und können diese, wie in den meisten Listen, mittels Auswahl der Checkbox und anschliessendem Klick auf den Button `Entfernen` aus der Liste löschen.
 
 Verfügen Sie über das Recht `Darf den Mailverlauf anzeigen`, können Sie sich den Verlauf versandter E-Mail Notifikationen von Reservationen anzeigen lassen. Dafür navigieren Sie über eines der Menüs `Listen`, `Plan` oder `Kalender` in den View Modus einer Reservation und wählen das Tab Mails aus. Für jeden Empfänger wird ein Eintrag gemacht (sind z.B. bei einer Reservation Ersteller und Organisator unterschiedlich, gibt es zwei Einträge).
 

@@ -27,13 +27,13 @@ Indem Sie in der Ressourcenliste auf den Button <i>Detailbuchung eingeben</i> kl
 
 Eine genauere Beschreibung der Menü-Reiter finden Sie in den Unterkapiteln.
 
-### Detailbuchung abschließen
+### Detailbuchung abschliessen
 
 <p style="text-align: justify">
-Sobald Sie alle Daten ausgefüllt haben, schließen Sie die Buchung über den Button <i>Buchung abschließen</i> ab.</p>
+Sobald Sie alle Daten ausgefüllt haben, schliessen Sie die Buchung über den Button <i>Buchung abschliessen</i> ab.</p>
 
-{{< imgproc Detailbuchung_abschließen Resize "960x" >}}
-Detailbuchung abschließen
+{{< imgproc Detailbuchung_abschliessen Resize "960x" >}}
+Detailbuchung abschliessen
 {{< /imgproc >}}
 
 <p style="text-align: justify">

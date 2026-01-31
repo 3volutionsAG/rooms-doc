@@ -2,9 +2,9 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 1
-description: 'Standardmäßig werden die Spalten mit den grundlegenden Informationen eines Anlasses angezeigt.'
+description: 'Standardmässig werden die Spalten mit den grundlegenden Informationen eines Anlasses angezeigt.'
 ---
-<p style="text-align: justify"> Standardmäßig sind folgende Spalten sichtbar: </p>
+<p style="text-align: justify"> Standardmässig sind folgende Spalten sichtbar: </p>
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|

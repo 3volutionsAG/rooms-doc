@@ -62,7 +62,7 @@ Die neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Spe
 
 <p style="text-align: justify">
 Sie fügen einen neuen Anlassstatus hinzu, indem Sie auf den Button <i>Hinzufügen</i> klicken. </br> 
-Anschließend geben Sie die Stammdaten ein und bestätigen Ihre Eingabe mit dem Button <i>Speichern</i>.
+Anschliessend geben Sie die Stammdaten ein und bestätigen Ihre Eingabe mit dem Button <i>Speichern</i>.
 
 {{< imgproc Anlassstatus_neu_hinzufügen Resize "960x" >}}
 Neuen Anlassstatus hinzufügen

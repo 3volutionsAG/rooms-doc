@@ -2,9 +2,9 @@
 title: "Spaltenansicht Standard"
 linkTitle: "Spaltenansicht Standard"
 weight: 100
-description: 'Standardmäßig werden die Spalten mit den Hauptinformationen einer Buchung angezeigt.'
+description: 'Standardmässig werden die Spalten mit den Hauptinformationen einer Buchung angezeigt.'
 ---
-Tabelle: Übersicht und Erläuterung der standardmäßig angezeigten Spalten
+Tabelle: Übersicht und Erläuterung der standardmässig angezeigten Spalten
 
 |<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
 |---|---|---|
@@ -51,7 +51,7 @@ Detailansicht einer Buchung
 
 __Einschub Anmerkungen zum Annullieren__
 
--  Standardmäßig wird eine Informationsmail an die erstellenden, organisierenden und verantwortlichen Personen sowie involvierte Dienstleister gesendet. Dies können Sie unterdrücken, in dem Sie die Checkbox deaktivieren. 
+-  Standardmässig wird eine Informationsmail an die erstellenden, organisierenden und verantwortlichen Personen sowie involvierte Dienstleister gesendet. Dies können Sie unterdrücken, in dem Sie die Checkbox deaktivieren. 
 -  Bei der Annullierung können Stornierungskosten anfallen.
 In den Kalenderansichten sind stornierte Buchungen nicht mehr sichtbar, jedoch tauchen sie weiterhin in Reports und Statistiken auf. In den Listen sind annullierte Buchungen nur sichtbar, wenn Sie speziell nach diesen filtern.
 -  Stornierte Buchungen können weiterhin bearbeitet werden, es werden jedoch weder Update-Emails versendet, noch eine Synchronisation durchgeführt.

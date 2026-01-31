@@ -2,7 +2,7 @@
 title: "Spaltenansicht Erweitert"
 linkTitle: "Spaltenansicht Erweitert"
 weight: 200
-description: 'Neben den standardmäßig angezeigten Spalten gibt es noch weitere Spalten mit Informationen zu den einzelnen Buchungen, die eingeblendet werden können.'
+description: 'Neben den standardmässig angezeigten Spalten gibt es noch weitere Spalten mit Informationen zu den einzelnen Buchungen, die eingeblendet werden können.'
 ---
 <p style="text-align: justify"> Über das <a href="/3vrooms/generell/grundlegendefunktionen/listenansichtanpassen/"> Spaltensymbol </a> können Sie weitere Spalten mit Informationn hinzufügen, sortieren oder  herausnehmen.
 Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen.
@@ -89,13 +89,13 @@ Detailansicht zur Ressource
 |Anlass (Tooltipp)|{{< imgproc List_BG_Anzeige_TTAnl Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Das Symbol markiert, dass die Buchung zu einem Anlass gehört. Über den Tooltipp, erscheint eine Kurzinformation über den Anlass.</p>|
 |Bestellungen|{{< imgproc Bestellungen_TT Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Auflistung der zugefügten Bestellungen</p>|
 |Mobiles Equipment Aggregiert|{{< imgproc mobilesEquipment_aggretetiert_Tooltipp Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zugebuchtes Mobiles Equipment wird als Anzahl je Equipmentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde der mobile Beamer "Heidi" und der mobile Beamer "Peter" gebucht. Unter Mobiles Equipment Aggregiert wird nun "2 Beamer" angezeigt._ </p>|
-|Fixes Equipment Aggregiert||<p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewießene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
+|Fixes Equipment Aggregiert||<p style="text-align: justify"> Zugebuchtes Fixes Equipment wird als Anzahl je Equimentart dargestellt, eine detaillierte Bezeichnung des Equipments erscheint nicht. </br> _z. B. wurde das (dem Raum zugewiessene) Flipchart "Max" und das (dem Raum zugewiesene) Flipchart "Moritz" gebucht. Unter Fixes Equipment Aggregiert wird nun "2 Flipchart" angezeigt._ </p>|
 |Parkplätze (Tooltipp)|{{< imgproc Parkplatz_TT Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Listet die gebuchten Parkplätze auf</p>|
 |Parkplätze Aggregiert||<p style="text-align: justify">Anzahl der gebuchten Parkplätze an</p>|
 |Fahrzeuge (Tooltipp)|{{< imgproc Fahrzeug_TT Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify">Listet die gebuchten Fahrzeuge auf</p>|
 |Fahrzeuge Aggregiert||<p style="text-align: justify">Anzahl der gebuchten Fahrzeuge</p>|
 |Serieninformationen|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify">Kurzinformationen zur Serienbuchung. </br> _Beginndatum, Enddatum, Intervall_</p>|
-|Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zuordnung eines virtuellen Raums </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrößen/ergänzen_ </p>|
+|Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Zuordnung eines virtuellen Raums </br> _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrössen/ergänzen_ </p>|
 ---
 
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.

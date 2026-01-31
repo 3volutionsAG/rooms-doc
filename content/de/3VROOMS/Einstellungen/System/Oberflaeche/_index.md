@@ -40,7 +40,7 @@ Folgende Daten bearbeiten Sie in den Stammdaten: </p>
 
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
-| File Pfad    |<p style="text-align: justify">  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  _Content_ erfassen. Ohne Slash (/) starten. Groß-Kleinschreibung irrelevant </p>| 
+| File Pfad    |<p style="text-align: justify">  File Pfad eintragen. Exakter Ablagepfad der zu übersteuernden CSS oder Bilddatei. Pfad ab (nach)  _Content_ erfassen. Ohne Slash (/) starten. Gross-Kleinschreibung irrelevant </p>| 
 | Datei/Verzeichnis-Browser    |<p style="text-align: justify"> Wählen Sie eine Datei mit maximal 5MB aus. File Daten. Über Browse Button wird die zu ersetzende Datei selektiert. Über Upload Button wird die Datei auf den Server geladen. Der Upload ist begrenzt. Begrenzung wird global festgelegt. Der Upload wird visualisiert. Die Upload Datei wird nicht überprüft, ob es sich um eine gültige Datei handelt. </p>|
 
 Unterstützte Formate: 

@@ -27,6 +27,9 @@ Buchung im Kalender auswählen und bearbeiten über das <b>+</b> Zeichen
 <b>Hinweis</b>:</br> 
 Bei einer laufenden Reservation stehen zusätzlich die Buttons <i>Terminieren</i> und <i>Freigeben</i> zur Verfügung, sofern die erforderlichen Funktionsrechte vorhanden sind. Diese terminieren laufende Reservationen. Terminieren unter Berücksichtigung der Nachlaufzeit und Freigabe per sofort (auch Nachlaufzeit wird terminiert). </p>
 
+{{% alert title="Info: Tab „Fragenkatalog“ in Buchungen" color="info" %}}
+In einigen Buchungen sehen Sie zusätzlich den Tab **„Fragenkatalog“**. Dieser erscheint nur, wenn für die ausgewählte Ressource (z.B. Raum) ein Fragenkatalog hinterlegt ist und relevante Fragen vorhanden sind.\n\nMehr dazu:\n- [Fragenkatalog](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragenkatalog/)\n- [Fragen](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/)\n{{% /alert %}}
+
 ### Bearbeiten einer Buchung mittels Checkbox
 
 <p style="text-align: justify">

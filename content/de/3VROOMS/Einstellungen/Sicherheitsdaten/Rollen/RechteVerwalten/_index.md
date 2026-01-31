@@ -6,7 +6,7 @@ description: 'Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem
 ---
 ## Rechte verwalten
 
-Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschließend auf den Button <i>Hinzufügen</i>. Mit diesem Verfahren können Sie auch Rechte einer Rolle entfernen.
+Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschliessend auf den Button <i>Hinzufügen</i>. Mit diesem Verfahren können Sie auch Rechte einer Rolle entfernen.
 
 {{< imgproc Rolle_Rechte_bearbeiten Resize "960x" >}}
 Rechte der Rollen bearbeiten
@@ -58,7 +58,7 @@ Rechte der Rollen bearbeiten
 
 Es werden generell nur die Standort-Trees angezeigt, bei welchen man auch die entsprechenden Standortabhängige Rechte hat.
 
-Wird kein standortabhängige Reservations-Rechte vergeben, so heißt dies, dass man bei der Reservationssuche auch keine Reservation findet.
+Wird kein standortabhängige Reservations-Rechte vergeben, so heisst dies, dass man bei der Reservationssuche auch keine Reservation findet.
 
 Beim Verschieben eines Standortes, müssen standortabhängige Rechte auf dem Quell- und Ziel-Ort vorhanden sein – falls die entsprechenden standortabhängige Rechte nicht vorhanden sind, sieht man den Quell- und/oder Zielort gar nicht.
 
@@ -79,7 +79,7 @@ Beim Hinzufügen des Reservationsrechts <i>Darf def. Reservation buchen</i> oder
 * Dropdown (Tage / Stunden)
 * Tage= Recht gilt ab Anzahl Tage, wobei ein Tag um 00:00 startet. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00; Eingabe: ab 1 Tage, hat zur Folge, dass der Raum erst am 6.3.2010 ab 00:01 gebucht werden kann
 * Stunden= Recht gilt ab sofort + Anzahl Stunden. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00, Eingabe: ab 24 Stunden, hat zur Folge das der Raum erst am 6.3.2010 ab 14:01 gebucht werden kann
-* Standardmäßig sind alle Felder leer
+* Standardmässig sind alle Felder leer
 
 Weitere Auswirkungen auf den Reservationsprozess:
 

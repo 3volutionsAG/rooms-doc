@@ -18,7 +18,7 @@ Der Anzeigenbereich ist  nochmals in fünf Reiter unterteilt:
 
 ## Offene Jobs 
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -36,7 +36,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 ## Geplante Jobs
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -54,7 +54,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 ## Definitive Jobs
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -72,7 +72,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 ## Fehlerhafte Jobs
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|
@@ -90,7 +90,7 @@ Standardmäßig sind folgende Spalten sichtbar:
 
 ## Automatische Verarbeitung fehlgeschlagen
 
-Standardmäßig sind folgende Spalten sichtbar:
+Standardmässig sind folgende Spalten sichtbar:
 
 ---
 |<div style="width:250px">Spalte</div>|<div style="width:100px">Symbol</div>|Anmerkungen|

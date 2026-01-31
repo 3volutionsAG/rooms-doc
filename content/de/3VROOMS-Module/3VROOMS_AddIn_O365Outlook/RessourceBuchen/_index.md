@@ -36,12 +36,12 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
 
 7. Wählen Sie eine Ressource und klicken Sie auf **Buchen**. Die Ressource wird in 3V ROOMS blockiert, jedoch noch nicht gebucht. Es öffnet sich die Zusammenfassung der Buchung.
 
-   **Die Buchungsdetails, außer der Titel, können nicht mehr geändert werden. Wird das Datum oder die Uhrzeit in Outlook geändert, startet der Buchungsassistent neu. Die Blockierung der Ressource wird aufgehoben.**
+   **Die Buchungsdetails, ausser der Titel, können nicht mehr geändert werden. Wird das Datum oder die Uhrzeit in Outlook geändert, startet der Buchungsassistent neu. Die Blockierung der Ressource wird aufgehoben.**
 
    {{< imgproc O365Outlook_web_Zus Resize "960x">}} {{< /imgproc >}}
 
 8. Je nach Konfiguration können Sie weitere Informationen hinterlegen (Kostenträger, Bestuhlungsart, Equipment, ...). Schieben Sie dazu den Laufbalken rechts neben der Zusammenfassung runter.
    {{< imgproc O365Outlook_web_weitereInfos Resize "960x">}} {{< /imgproc >}}
-9. Klicken Sie auf **Buchen**, um die Buchung verbindlich abzuschließen. Die Buchung wird in 3V ROOMS übernommen und bestätigt. </br> Der Name der Ressource wird in das Feld Standort des Outlook-Termins übertragen.
+9. Klicken Sie auf **Buchen**, um die Buchung verbindlich abzuschliessen. Die Buchung wird in 3V ROOMS übernommen und bestätigt. </br> Der Name der Ressource wird in das Feld Standort des Outlook-Termins übertragen.
    {{< imgproc O365Outlook_web_Buchungsbest Resize "960x">}} {{< /imgproc >}}
 10. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.

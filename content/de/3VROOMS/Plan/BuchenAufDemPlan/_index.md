@@ -51,7 +51,7 @@ Detailbuchung im Plan
 Hier geben Sie die benötigten Informationen für Ihre Buchung ein. Sie können Allgemeine und Serieninformationen einstellen. </p>
 
 <p style="text-align: justify">
-Schließen Sie dann Ihre Buchung über den Button <i>Buchung abschließen</i> ab. </p>
+Schliessen Sie dann Ihre Buchung über den Button <i>Buchung abschliessen</i> ab. </p>
 
 Hier gelangen Sie zur weiteren Beschreibung der Detailbuchung und den Funktionen der Felder:
 [Detailbuchung](/3vrooms/buchen/buchungerstellen/detailbuchung/)

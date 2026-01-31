@@ -26,7 +26,7 @@ RoomsAppSettings.config
 Ergänzen Sie das File mit den obigen drei Einträgen und den angepassten values.
 Config.bat ausführen, um die angepasste Konfiguration zu verteilen.
 
-Es muss sichergestellt werden, dass ROOMS von extern erreichbar ist und Anonymous Authentication auf dem WebServices directory aktiviert ist. Dies kann überprüft werden indem Sie außerhalb Ihres Netzes folgende URL aufrufen: http(s)://[ROOMS-URL]/WebServices/SyncNotification.svc
+Es muss sichergestellt werden, dass ROOMS von extern erreichbar ist und Anonymous Authentication auf dem WebServices directory aktiviert ist. Dies kann überprüft werden indem Sie ausserhalb Ihres Netzes folgende URL aufrufen: http(s)://[ROOMS-URL]/WebServices/SyncNotification.svc
 
 Wenn dies klappt, muss noch sichergestellt werden, dass die Applikation Root-Url in den "Globale Parameter" von ROOMS korrekt hinterlegt ist, also in der Form http(s)://[ROOMS-URL]/[Mandant]
 

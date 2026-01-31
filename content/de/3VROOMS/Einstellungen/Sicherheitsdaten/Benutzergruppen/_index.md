@@ -76,7 +76,7 @@ Sie können einer Benutzergruppe eine oder mehrere Personen zuweisen. Haben Sie 
 Ansicht: Personen einer Benutzergruppe
 {{< /imgproc >}}
 
-Möchten Sie der Benutzerguppe Personen hinzufügen, klicken Sie auf den Button `Person hinzufügen`. Es öffnet sich ein Fenster, in dem Sie eine oder mehrere Personen auswählen über das aktivieren der Checkbox. Anschließend klicken Sie auf den Button `hinzufügen`.
+Möchten Sie der Benutzerguppe Personen hinzufügen, klicken Sie auf den Button `Person hinzufügen`. Es öffnet sich ein Fenster, in dem Sie eine oder mehrere Personen auswählen über das aktivieren der Checkbox. Anschliessend klicken Sie auf den Button `hinzufügen`.
 
 {{< imgproc Benutzergruppen_Personen_hinzufügen Resize "960x" >}}
 Personen zu Benutzergruppen hinzufügen
@@ -106,7 +106,7 @@ Klicken Sie auf den Menü Reiter `Notifikationen`, wird Ihnen eine Liste aller g
 | Antwort auf Benachrichtigung an Ersteller|Checkbox aktivieren|
 | Sprache|Mittels Drop-Down die Sprache auswählen, es stehen alle aktivierten Sprachen zur Verfügung.|
 | Titel|Der Titel muss mehrsprachig erfasst werden|
-| Email Body|Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht. Es steht ein Texteditor inkl. Formatierungen zur Verfügung. E-Mail Body kann mehrsprachig abgefüllt werden. Ist der E-Mail Body leer wird keine Notifikation verschickt. Es stehen alle Formatierungen gemäß Editor zur Verfügung|
+| Email Body|Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht. Es steht ein Texteditor inkl. Formatierungen zur Verfügung. E-Mail Body kann mehrsprachig abgefüllt werden. Ist der E-Mail Body leer wird keine Notifikation verschickt. Es stehen alle Formatierungen gemäss Editor zur Verfügung|
 | Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalters wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert, wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors.| 
 {{< /bootstrap-table >}}
 
