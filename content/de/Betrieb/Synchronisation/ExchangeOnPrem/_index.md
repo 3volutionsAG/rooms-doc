@@ -2,7 +2,7 @@
 title: "Exchange On-Premises"
 linkTitle: "Exchange On-Premises"
 weight: 3
-description: 'Einrichten von Synchronisation mit Exchange on-premise Server'
+description: "Einrichten von Synchronisation mit Exchange on-premise Server"
 aliases:
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/Impersonation/
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/DelegatedAccess/
@@ -98,6 +98,7 @@ Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Drafts"
 ```
 
 Rechte-Überblick:
+
 - `Editor`: `CreateItems`, `DeleteAllItems`, `DeleteOwnedItems`, `EditAllItems`, `EditOwnedItems`, `FolderVisible`, `ReadItems`
 - `FolderVisible`: Ordner sichtbar, ohne Leseberechtigung für Inhalte
 
@@ -136,11 +137,13 @@ $null = $service.AddDelegates($mailbox, [Microsoft.Exchange.WebServices.Data.Mee
 ```
 
 Hinweise:
+
 - Skript mit Anmeldeinformationen des Postfachbesitzers ausführen ODER temporär `ApplicationImpersonation` für die Einrichtung nutzen
 - Ordnerberechtigungen per `Add-MailboxFolderPermission` bleiben weiterhin erforderlich
 
 {{% alert color="primary" title="Referenzen" %}}
+
 > Exchange Online: `CanViewPrivateItems` per `SharingPermissionFlags`: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
 >
 > Exchange On-Premises: Delegation via EWS (EWS Managed API): https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-add-and-remove-delegates-by-using-ews-in-exchange
-{{% /alert %}}
+> {{% /alert %}}

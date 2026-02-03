@@ -247,9 +247,19 @@ Der Collaboration Dienst ist das Hauptstück der Synchronisation, er behandelt s
 
 ## Push-Subscription-Dienst
 
-Die einzige Aufgabe des Push subscription Dienstes ist es, auf Exchange eine Subscription zu erstellen/aktualisieren. Dabei wird die entsprechende URL z.B. http://rooms.example.com/Webservices/SyncNotification.svc mitgegeben.
+Die einzige Aufgabe des Push subscription Dienstes ist es, auf Exchange eine Subscription zu erstellen/aktualisieren. Dabei wird die entsprechende Callback-URL mitgegeben, z.B. `https://idp.example.com/api/webhooks/exchange`.
 
 Nach erfolgreicher Subscription sendet Exchange Subscription Updates nach Rooms.
+
+### Checkliste (Webhook / Reachability)
+
+- `IdpRootUrl` ist korrekt gesetzt (Globale Parameter: **IDP Root-Url**).
+- Reachability-Grundtest: `IdpRootUrl + /healthz` ist aus dem Internet erreichbar (DNS/TLS/Firewall/Reverse Proxy).
+- Effektive Callback-URL prüfen (Precedence):
+  - `ExchangePushNotificationEndpointUrl` (falls gesetzt, gewinnt)
+  - sonst `ExchangePushNotificationUseLegacyEndpoint=true` (Rollback)
+  - sonst Default: `IdpRootUrl + /api/webhooks/exchange`
+- Bei Exchange Online: Reverse Proxy/Firewall so konfigurieren, dass `POST /api/webhooks/exchange` zugelassen ist (und optional IP-Allowlisting auf Microsoft-Ranges).
 
 ### Neue Subscriptions erstellen/aktualisieren
 {{< bootstrap-table "table table-sm table-striped table-bordered" >}}
