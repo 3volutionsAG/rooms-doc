@@ -10,6 +10,13 @@ description: 'Im Bereich Sicherheitsdaten für Personen legen Sie OE- und Firmen
 <p style="text-align: justify">
 Um diese Einstellungen verändern zu können sind Spezialrechte notwendig. Oft werden die Daten über eine Importschnittstelle periodisch in ROOMS geladen und somit nicht manuell gepflegt. </p>
 
+## Inhalte in diesem Bereich
+
+- [`OE Firmen`](/3vrooms/einstellungen/sicherheitsdaten/oefirmen/)
+- [`Benutzergruppen`](/3vrooms/einstellungen/sicherheitsdaten/benutzergruppen/)
+- [`Rollen`](/3vrooms/einstellungen/sicherheitsdaten/rollen/)
+- [`Kostenträger`](/3vrooms/einstellungen/sicherheitsdaten/kostentraeger/)
+
 
 ## Synchronisation mit Outlook 
 
