@@ -49,7 +49,7 @@ Die Menüpunkte **Fragenkatalog** und **Fragen** sind getrennt. Einzelne Fragen 
 - **Fragenkatalog**: Eine Sammlung von Fragen, die Sie gemeinsam einer oder mehreren Ressourcen zuordnen.
 - **Zuordnung zu Ressourcen**: Bestimmt, **bei welchen** Ressourcen (typisch: Räume) der Fragenkatalog bei Buchungen relevant ist.
 
-## Fragenkatalog einrichten (Schritt-für-Schritt)
+## Fragenkatalog einrichten
 
 ### 1) Fragenkatalog anlegen
 
@@ -93,17 +93,17 @@ Wenn eine Buchung eine Ressource verwendet, der ein Fragenkatalog zugeordnet ist
 - Eine Buchung im Auditorium zeigt den Tab „Fragenkatalog“.
 - Wird die Buchung als **Event** klassifiziert, erscheinen zusätzlich event-spezifische Fragen (z.B. „Agenda/Rednerreihenfolge“, „Präsentationsformat“, „Live Webcast: Fragen zulassen?“).
 
-## Wichtige Regeln (einfach erklärt)
+## Wichtige Regeln
 
 ### Pflichtfragen
 
 Als **Pflichtfrage** markierte Fragen müssen beantwortet werden, damit eine Buchung gespeichert/abgeschlossen werden kann (Ausnahme: spezielle Berechtigung, siehe unten).
 
-### „Zwingend bis“ (Pflicht gilt erst später)
+### „Zwingend bis“
 
 Optional kann eine Pflichtfrage so konfiguriert werden, dass sie erst **ab einem bestimmten Zeitpunkt** zwingend wird (z.B. „erst 3 Tage vor Beginn“). Das verhindert, dass Buchungen frühzeitig blockieren, wenn Details noch nicht feststehen.
 
-### „Editierbar bis“ (Antwort wird schreibgeschützt)
+### „Editierbar bis“
 
 Optional kann eine Antwort ab einer gewissen Nähe zum Start **nicht mehr änderbar** sein (z.B. „1 Tag vor Beginn schreibgeschützt“). Das ist hilfreich, wenn Services sich auf diese Angaben verlassen müssen.
 

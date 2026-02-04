@@ -45,7 +45,7 @@ Weiterführend: [`Fragenkatalog`](/3vrooms/einstellungen/erweitertebasisdatenfue
 Bei **Radio** und **Dropdown** müssen Sie die **Optionen** (Werte) pflegen, damit Benutzer überhaupt auswählen können.
 {{% /alert %}}
 
-## Eine Frage erstellen (Grundprinzip)
+## Eine Frage erstellen
 
 1. Erstellen Sie eine neue Frage.
 2. Pflegen Sie mindestens:
@@ -64,9 +64,9 @@ Bei **Radio** und **Dropdown** müssen Sie die **Optionen** (Werte) pflegen, dam
 Frage bearbeiten (Stammdaten, Typ, Klassifikationen, Aktiv/Pflicht, Zeitregeln)
 {{< /imgproc >}}
 
-## Regeln & Optionen (für alle Typen)
+## Regeln & Optionen
 
-### Aktiv (ein-/ausschalten)
+### Aktiv
 
 Mit **Aktiv** steuern Sie, ob eine Frage im System **verwendet** wird.
 
@@ -103,7 +103,7 @@ So vermeiden Sie „zu viele“ Fragen und zeigen nur relevante Eingaben.
 
 Mehr zu Klassifikationen: [`Klassifikationen`](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/klassifikationen/)
 
-## Fragetypen im Detail (inkl. Beispiele)
+## Fragetypen im Detail
 
 ### Textfeld
 
@@ -160,7 +160,7 @@ Radio eignet sich besonders, wenn Sie nur wenige Optionen haben und diese **sofo
     - „Raum-PC“
     - „Beides“
 
-### TimePicker (Zeitbereich von/bis)
+### TimePicker - Zeitbereich von/bis
 
 - **Was sieht der Benutzer?** Zwei Zeitfelder: **von** und **bis**.
 - **So konfigurieren Sie es**: Fragetyp **TimePicker**.
@@ -168,11 +168,11 @@ Radio eignet sich besonders, wenn Sie nur wenige Optionen haben und diese **sofo
   - Bezeichnung: „Soundcheck-Zeitfenster (von/bis)“
   - Hilfetext: „Bitte Zeitfenster angeben, in dem ein Soundcheck möglich ist.“
 
-{{% alert title="Hinweis" color="warning" %}}
+{{% alert title="Hinweis" color="secondary" %}}
 Beim TimePicker werden zwei Werte erfasst (von/bis). Formulieren Sie die Bezeichnung/Hilfe so, dass Benutzer das sofort verstehen.
 {{% /alert %}}
 
-### DateTimePicker (Datum+Zeitbereich von/bis)
+### DateTimePicker - Datum+Zeitbereich von/bis
 
 - **Was sieht der Benutzer?** Zwei Felder: **von** und **bis** (Datum + Uhrzeit).
 - **So konfigurieren Sie es**: Fragetyp **DateTimePicker**.
@@ -180,7 +180,7 @@ Beim TimePicker werden zwei Werte erfasst (von/bis). Formulieren Sie die Bezeich
   - Bezeichnung: „Aufbauzeit (von/bis)“
   - Hilfetext: „Zeitraum für Aufbau inkl. Datum angeben.“
 
-### Label (Hinweistext)
+### Label - Hinweistext
 
 - **Was sieht der Benutzer?** Nur Text/Information, **keine Eingabe**.
 - **So konfigurieren Sie es**: Fragetyp **Label**.

@@ -15,4 +15,50 @@
 	.lead {
 		margin-bottom: 24px;
 	}
+
+	// Improve readability of Docsy/Bootstrap alert boxes.
+	// Docsy uses white alert backgrounds and colored borders/headings, which can be too light.
+	$td-alert-colors: (
+		primary: $primary,
+		secondary: $secondary,
+		success: $success,
+		info: $info,
+		warning: $warning,
+		danger: $danger
+	);
+
+	@each $name, $color in $td-alert-colors {
+		.alert-#{$name} {
+			// Default: subtle tint + solid left border (Docsy sets border-left width).
+			background-color: rgba($color, 0.08);
+			border-color: darken($color, 20%);
+
+			.alert-heading {
+				color: darken($color, 30%);
+			}
+
+			// Make links stand out without reducing contrast.
+			a {
+				color: darken($color, 35%);
+				text-decoration: underline;
+				text-underline-offset: 2px;
+			}
+
+			// Slightly increase list readability inside alerts.
+			ul,
+			ol {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	// Warning/danger use a strong red in this theme; keep the border color as-is,
+	// but make the background tint a bit more subtle.
+	.alert-warning {
+		background-color: rgba($warning, 0.06);
+	}
+
+	.alert-danger {
+		background-color: rgba($danger, 0.06);
+	}
 }

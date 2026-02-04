@@ -24,6 +24,8 @@ Indem Sie in der Ressourcenliste auf den Button <i>Detailbuchung eingeben</i> kl
 * Bestuhlung
 * Catering & Services
 * Teilnehmer
+* Reminder
+* Beilage
 
 Eine genauere Beschreibung der Menü-Reiter finden Sie in den Unterkapiteln.
 
