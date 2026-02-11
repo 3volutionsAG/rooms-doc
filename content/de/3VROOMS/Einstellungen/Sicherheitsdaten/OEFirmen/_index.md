@@ -44,6 +44,7 @@ Speichern Sie alle Ihre Einträge über den untenstehenden Button <i>Speichern</
 In den Stammdaten tragen Sie folgende Informationen ein: </p>
 
 * Bezeichnung
+* E-Mail
 * Firmennummer
 * Abteilung
 * Art (intern/extern*=markiert
@@ -51,8 +52,8 @@ In den Stammdaten tragen Sie folgende Informationen ein: </p>
 * Kostenstellen Name
 * Standard Rabatt in %
 
-{{< imgproc OE_Firmen_bearbeiten Resize "960x" >}}
-Bearbeitete Eigenschaften unter OE/Firmen speichern
+{{< imgproc OE_Firmen_Stammdaten_bearbeiten Resize "960x" >}}
+Stammdaten bearbeiten
 {{< /imgproc >}}
 
 ### OE/Firmen: Adressen bearbeiten
