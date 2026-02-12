@@ -4,78 +4,86 @@ linkTitle: "Zugewiesene Ressourcen"
 weight: 6
 description: 'Im Bereich *Zugewiesene Ressourcen* weisen Sie einer Person im Profil Ressourcen fix zu (Langzeitbuchungen). Bereits zugewiesene Ressourcen können einzeln oder via Mehrfachselektion auch wieder entfernt werden.'
 ---
-## Voraussetzung für die Zuweisung einer Ressource 
 
-<p style="text-align: justify">
-Folgende Voraussetzungen gelten für die Ressourcenzuweisung: </p>
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Für die Zuweisung von Ressourcen benötigen Sie:
 
-* Die angemeldete Benutzer*in besitzt definitive Buchungsrechte für die entsprechende Ressource. 
-* Die Ressource ist noch keiner (anderen) Benutzer*in zugewiesen.
-* Die Ressource verfügt über keine Reservationen in der Zukunft.
-* Die angemeldete Benutzer*in verfügt über das Recht „Darf zugewiesene Ressourcen verwalten“.
+- das Recht **„Darf zugewiesene Ressourcen verwalten"**
+
+Details: [`Einstellungen → Sicherheitsdaten → Rollen → Rechte verwalten`](/3vrooms/einstellungen/sicherheitsdaten/rollen/rechteverwalten/).
+
+Zusätzlich müssen folgende Bedingungen erfüllt sein:
+
+- Sie besitzen definitive Buchungsrechte für die entsprechende Ressource.
+- Die Ressource ist noch keiner (anderen) Person zugewiesen.
+- Die Ressource verfügt über keine Reservationen in der Zukunft.
+
+{{% /alert %}}
+
+{{% alert title="Hinweis: Spezielle Buchungsrechte" color="note" %}}
+**Auswirkung auf Öffnungszeiten und Feiertage:**
+
+Das Erstellungs-Verhalten der Buchungen hängt von den Rechten der zugewiesenen Person ab:
+
+- Hat die Person das Recht **„Kann ausserhalb von Öffnungszeiten buchen"**, werden Öffnungszeiten nicht berücksichtigt.
+- Hat die Person das Recht **„Darf Reservationen an Feiertagen buchen"**, werden Feiertage nicht berücksichtigt.
+{{% /alert %}}
+
+Im Bereich **Zugewiesene Ressourcen** weisen Sie einer Person im Profil Ressourcen fix zu (Langzeitbuchungen). Bereits zugewiesene Ressourcen können einzeln oder via Mehrfachselektion auch wieder entfernt werden.
 
 
-### Ressourcen zuweisen 
+## Ressourcen verwalten
 
-<p style="text-align: justify">
-Wählen Sie eine Ressource aus der Liste aus und betätigen Sie die Checkbox am Anfang der Ressource. So können Sie Ressourcen aus der Listenansicht zuweisen. </p>
+### 1) Ressourcen aus der Listenansicht zuweisen
+
+Wählen Sie eine Ressource aus der Liste aus und betätigen Sie die Checkbox am Anfang der Ressource, um diese zuzuweisen.
 
 {{< imgproc Zugewiesene_Ressourcen_Listenansicht_speichern Resize "960x" >}}
 Geänderte Ressourcen speichern
 {{< /imgproc >}}
 
-### Ressource hinzufügen
+### 2) Ressource hinzufügen
 
-<p style="text-align: justify">
-Klicken Sie auf den Button <i>Ressourcen hinzufügen</i>, damit Sie eine neue Ressource einer Mitarbeiter:in zuordnen können. </p>
-
+Klicken Sie auf den Button **Ressourcen hinzufügen**, um eine neue Ressource einer Mitarbeiter:in zuzuordnen.
 
 {{< imgproc Zugewiesene_Ressourcen_speichern Resize "960x" >}}
 Eine Ressource hinzufügen über den Button "Ressource hinzufügen"
 {{< /imgproc >}}
 
-<p style="text-align: justify">
-Es öffnet sich ein neues Feld. In diesem wählen Sie die entsprechende Ressource aus, indem Sie die Checkbox am Anfang der Liste betätigen.</br>
-Über das Stift Icon können Sie die Ressource ebenfalls bearbeiten. </p>
+Es öffnet sich ein neues Feld. In diesem wählen Sie die entsprechende Ressource aus, indem Sie die Checkbox am Anfang der Liste betätigen. Über das Stift-Icon können Sie die Ressource ebenfalls bearbeiten.
 
 {{< imgproc Zugewiesene_Ressource_hinzufügen Resize "960x" >}}
 Ressource neu hinzufügen
 {{< /imgproc >}}
 
-### Zugewiesene Ressourcen Information einsehen
+### 3) Zugewiesene Ressourcen Information einsehen
 
-<p style="text-align: justify">
-Im View Modus unter dem Menüpunkt Einstellungen und Persönliche Einstellungen sehen Sie eine Zusammenfassung der Informationen. Hier sehen Sie auch die zugewiesenen Ressourcen. </p>
+Im View-Modus unter dem Menüpunkt **Einstellungen → Persönliche Einstellungen** sehen Sie eine Zusammenfassung der Informationen zur Person und den zugewiesenen Ressourcen.
 
 {{< imgproc Zugewiesene_Ressourcen_Information Resize "960x" >}}
 Informationen zur Person und zugewiesenen Ressourcen einsehen
 {{< /imgproc >}}
 
-### Ressourcen freigeben
+## Ressourcen freigeben
 
-<p style="text-align: justify">
-Im Viewmodus der Person können Sie die fixen Ressourcen für selber definierte Zeiträume freigegeben. Klicken Sie auf das Icon <i>Freigabe bearbeiten</i> öffnet ein modales Popup.</p>
+### Freigabe in einem Kalender bearbeiten
+
+Im View-Modus der Person können Sie die fixen Ressourcen für selbst definierte Zeiträume freigeben. Klicken Sie auf das Icon **Freigabe bearbeiten**, um ein modales Popup zu öffnen.
 
 {{< imgproc Zugewiesene_Ressourcen_Info_bearbeiten Resize "960x" >}}
 Ressourcen "Freigabe bearbeiten" Button
 {{< /imgproc >}}
 
-<p style="text-align: justify">
-Weisse Felder im Kalender sind Tage, an denen die Ressource freigegeben ist und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen bzw. Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden. </p>
+Weisse Felder im Kalender sind Tage, an denen die Ressource freigegeben ist, und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen oder Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden.
 
 {{< imgproc Zugewiesene_Ressource_bearbeiten_freigeben Resize "960x" >}}
-Ressourcen Freigabe bearbeiten 
+Ressourcen Freigabe bearbeiten
 {{< /imgproc >}}
 
-<p style="text-align: justify">
-Mittels Serienfunktionalität können Sie Ressourcen individuell in einem selber definierten Intervall freigegeben bzw. buchen (z.B. jeden Freitag oder immer den ersten Montag im Monat, etc.). Notwendig ist die korrekte Wahl der gewünschten Aktion: </p>
+### Serienfunktionalität nutzen
 
-* Freigeben = Ressource wird freigegeben
-* Buchen = Ressource wird reserviert
-* Zukünftig freigeben = Ressource wird bei der fortlaufenden Buchung durch das System an den gewünschten Tagen z.B. immer am Mittwoch zukünftig auch immer freigegeben.
+Mittels Serienfunktionalität können Sie Ressourcen individuell in einem selbst definierten Intervall freigeben oder buchen (z.B. jeden Freitag oder immer den ersten Montag im Monat). Wählen Sie die gewünschte Aktion:
 
-
-#### Hinweis:
-
-<p style="text-align: justify">
-Freigaben/Buchungen sind nur pro Tag möglich; halbe Tage können nicht über die Freigaben verwaltet werden. Alle Anpassungen werden sofort wirksam; es werden keine temporären Blocker erstellt und die Änderungen können nicht über einen <i>Abbrechen-Button</i> rückgängig gemacht werden. </p>
+- **Freigeben** = Ressource wird freigegeben
+- **Buchen** = Ressource wird reserviert
+- **Zukünftig freigeben** = Ressource wird bei der fortlaufenden Buchung durch das System an den gewünschten Tagen zukünftig auch immer freigegeben
