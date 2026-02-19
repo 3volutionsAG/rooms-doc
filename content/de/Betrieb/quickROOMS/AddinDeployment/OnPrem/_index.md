@@ -45,6 +45,22 @@ Das Manifest kann nun heruntergeladen werden unter:
 https://idp.example.com/api/addin/manifest?clientName=rooms-addin&useOnPrem=true
 
 
+### Icon anpassen
+
+Das Icon welches für die Auswahl des Addins in Outlook angezeigt wird kann im Manifest angepasst werden. Dazu die folgenden 3 Links anpassen (<strong>Achtung: die Links kommen mehrfach vor</strong>):
+
+```xml
+<bt:Images>
+  <bt:Image id="icon16" DefaultValue="https://[UrlAufIcons]/favicon-16.png"/>
+  <bt:Image id="icon32" DefaultValue="https://[UrlAufIcons]/favicon-32.png"/>
+  <bt:Image id="icon80" DefaultValue="https://[UrlAufIcons]/favicon-80.png"/>
+</bt:Images>
+```
+
+Die Icons sollten gemäss der folgenden Dokumentation von Microsoft erstellt werden:
+
+https://learn.microsoft.com/en-us/office/dev/add-ins/design/add-in-icons
+
 ## Globales deployment
 
 Öffnen des Exchange admin centers (https://exchange.example.com/ecp/)
