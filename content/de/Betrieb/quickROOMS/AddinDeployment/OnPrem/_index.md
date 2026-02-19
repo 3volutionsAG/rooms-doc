@@ -36,7 +36,27 @@ Die URL zeigt auf den **IDP-Server** (z.B. `idp.example.com`), **nicht** auf den
 Falls Ihre Umgebung Entra ID / Azure AD nutzt (Hybrid-Setup), können Sie `useSso` weglassen und stattdessen die [O365-Anleitung](../o365/) verwenden — auch wenn Exchange on-premises läuft. Der Parameter steuert die **Authentisierungsmethode**, nicht den Standort des Exchange Servers.
 {{% /alert %}}
 
-## Schritt 2: Deployment über Exchange Admin Center
+## Schritt 2: Add-In-Icon optional anpassen
+
+Das Icon für die Auswahl des Add-Ins in Outlook kann über die Icon-URLs im Manifest angepasst werden. Passen Sie dazu die folgenden drei Links an. Die Links kommen im Manifest mehrfach vor und müssen überall konsistent geändert werden.
+
+```xml
+<bt:Images>
+  <bt:Image id="icon16" DefaultValue="https://<URL-zu-den-Icons>/favicon-16.png"/>
+  <bt:Image id="icon32" DefaultValue="https://<URL-zu-den-Icons>/favicon-32.png"/>
+  <bt:Image id="icon80" DefaultValue="https://<URL-zu-den-Icons>/favicon-80.png"/>
+</bt:Images>
+```
+
+{{% alert title="Empfehlung" color="info" %}}
+Laden Sie die Icons nach Möglichkeit über das ROOMS-Theming hoch und verwenden Sie die dadurch bereitgestellten URLs. So werden die Icons vom gleichen System ausgeliefert wie ROOMS und typische CORS-Probleme mit extern gehosteten Bilddateien werden vermieden.
+{{% /alert %}}
+
+Die Icons sollten gemäss der Microsoft-Dokumentation für Office Add-Ins erstellt werden:
+
+https://learn.microsoft.com/en-us/office/dev/add-ins/design/add-in-icons
+
+## Schritt 3: Deployment über Exchange Admin Center
 
 1. Öffnen Sie das [Exchange Admin Center (ECP)](https://learn.microsoft.com/en-us/exchange/architecture/client-access/exchange-admin-center) Ihres Exchange Servers (z.B. `https://exchange.example.com/ecp/`).
 2. Navigieren Sie zu **Organization** → **Add-ins**.
@@ -50,7 +70,7 @@ Falls Ihre Umgebung Entra ID / Azure AD nutzt (Hybrid-Setup), können Sie `useSs
 
 Weitere Informationen zum Verwalten von Add-Ins auf Exchange on-premises finden Sie in der [Microsoft Dokumentation](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook).
 
-## Schritt 3: WebView-Voraussetzungen prüfen
+## Schritt 4: WebView-Voraussetzungen prüfen
 
 Das Add-In benötigt die **WebView2 Runtime** auf den Clients. Diese muss installiert sein, falls sie nicht bereits mit dem Betriebssystem oder Office ausgeliefert wurde.
 
