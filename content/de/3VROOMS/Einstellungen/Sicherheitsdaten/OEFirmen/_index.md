@@ -45,9 +45,11 @@ In den Stammdaten tragen Sie folgende Informationen ein: </p>
 
 * Bezeichnung
 * E-Mail
+* Verifiziert
+  * Zeigt an, ob die Firma verifiziert ist. Bei der Benutzer-Registration neu erstellte Firmen werden als unverifiziert markiert.
 * Firmennummer
 * Abteilung
-* Art (intern/extern*=markiert
+* Art (intern/extern*) *=markiert
 * Kostenstellen Code 
 * Kostenstellen Name
 * Standard Rabatt in %
