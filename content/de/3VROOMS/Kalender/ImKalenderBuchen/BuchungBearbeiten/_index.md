@@ -67,6 +67,16 @@ Dabei sollten Sie beachten, dass die Buchungen einer Ressourcenart nur auf eine 
 Eine bestehende Buchung im Kalender verschieben
 {{< /imgproc >}}
 
+### Buchung annullieren
+Falls der Benutzer die Berechtigung "Darf Reservationen mit Kosten editieren" hat, kann bei der Annullation einer Buchung angegeben werden, was mit den anfälligen Kosten auf der geschehen soll. Es gibt drei optionen:
+* Annullierungskosten verrechnen (Standardverhalten)
+* Alle kosten verrechnen
+* Keine kosten verrechnen
+
+{{< imgproc Kalender_Buchung_annullation Resize "500x" >}}
+Buchung annullieren
+{{< /imgproc >}}
+
 ## Massenbearbeitung einer Buchung im Kalender
 
 <p style="text-align: justify">
