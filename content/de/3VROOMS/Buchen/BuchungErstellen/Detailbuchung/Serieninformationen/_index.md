@@ -113,6 +113,14 @@ Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterat
 
 Die Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> ist nur im Bearbeitungsmodus vorhanden und übernimmt mit ihrer Aktivierung alle Änderungen der aktuellen Reservation auf alle künftigen Reservationen dieser Serie.
 
+### Catering & Service bei Serienbearbeitung
+
+Beim Hinzufügen eines neuen Datums zu einer bestehenden Serie oder beim Bearbeiten mit aktivierter Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> werden die Catering & Service Bestellungen auf die neuen bzw. betroffenen Serientermine übertragen.
+
+{{% alert color="info" %}}
+Die Quelle der Catering & Service Artikel ist immer der Termin, über den die Serie geöffnet bzw. bearbeitet wird — nicht zwingend der erste Termin der Serie. Hat der geöffnete Termin keine Catering & Service Artikel, werden auch die neuen Termine ohne Artikel erstellt.
+{{% /alert %}}
+
 ### Warnmeldung: Serie neu erstellen und aufteilen
 
 Bei bestimmten Änderungen an einer Serie zeigt ROOMS folgende Warnmeldung an:
