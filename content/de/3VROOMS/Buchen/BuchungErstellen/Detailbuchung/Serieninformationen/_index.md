@@ -99,11 +99,11 @@ Eine Buchung aus der Serienliste bearbeiten
 
 Wählen Sie mittels des Datumspickers einen anderen Zeitraum für diese Reservation aus. Mit einem Klick auf den Button <b>+</b> der Ressource wählen Sie aus dem Standortbaum eine andere verfügbare Ressource der gleichen Art aus. Mit dem Button <i>Speichern</i> prüft ROOMS die Angaben und speichert sie dementsprechend ab.
 
-## Bearbeiten einer Serie 
+## Bearbeiten einer Serie
 
 Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterationen beispielsweise die letzten beiden Termine eine halbe Stunde früher beginnen, kann dies in folgenden Schritten eingegeben werden:
 
-1.	Man geht im Kalender zum zweitletzten Termin, ab welchem die Änderung gelten soll. 
+1.	Man geht im Kalender zum zweitletzten Termin, ab welchem die Änderung gelten soll.
 2.	Mit Klick auf das <b>+</b>-Icon öffnet sich ein Fenster und man klickt den Button <b>Bearbeiten</b>.
 3.	Aktivieren der Checkbox <b>Auf nachfolgende Serieneinträge übernehmen</b> unten in der Ansicht.
 4.	Durch Eingabe der gewünschten Startzeit, Reservation um eine halbe Stunde vorziehen. Bestätigung durch grünes Häkchen erfolgt.
@@ -113,7 +113,50 @@ Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterat
 
 Die Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> ist nur im Bearbeitungsmodus vorhanden und übernimmt mit ihrer Aktivierung alle Änderungen der aktuellen Reservation auf alle künftigen Reservationen dieser Serie.
 
-<b>Achtung</b>: Es entstehen zwei neue Serien. Dies bedeutet, dass bei aktivierter Synchronisation die Teilnehmer eine Absage für zwei Termine erhalten und eine Neueinladung für die letzten beiden Termine.
+### Warnmeldung: Serie neu erstellen und aufteilen
+
+Bei bestimmten Änderungen an einer Serie zeigt ROOMS folgende Warnmeldung an:
+
+{{% alert color="warning" %}}
+Achtung! Sie haben Änderungen an der Serie vorgenommen, bei denen es notwendig ist, die Serie neu zu erstellen und ggf. in zwei Teile aufzuteilen.
+{{% /alert %}}
+
+Diese Meldung ist ein **erwartetes Verhalten** und erscheint, wenn ROOMS die bestehende Serie nicht einfach aktualisieren kann, sondern sie intern neu aufbauen muss. Es gibt keine Limitierung bezüglich der Anzahl Termine — die Meldung wird ausschliesslich durch die **Art der Änderung** ausgelöst.
+
+#### Wann erscheint die Meldung?
+
+Die Warnmeldung wird in folgenden Fällen ausgelöst:
+
+1. **Änderung des Wiederholungsmusters**: Wenn der Serientyp (täglich, wöchentlich, monatlich) oder die Wiederholungseinstellungen (z.B. anderer Wochentag, anderes Intervall) geändert werden, muss die Serie **immer** neu erstellt werden.
+
+2. **Änderung sync-relevanter Felder bei synchronisierten Serien**: Wenn die Serie mit Exchange/Outlook synchronisiert wird und Felder wie Startzeit, Endzeit oder Teilnehmer geändert werden — aber **nicht alle** zukünftigen Termine betroffen sind — muss die Serie aufgeteilt werden.
+
+#### Was passiert bei der Aufteilung?
+
+Wenn die Meldung bestätigt wird, teilt ROOMS die Serie in **zwei Teile** auf:
+
+{{< bootstrap-table "table table-striped" >}}
+| Teil | Inhalt |
+|------|--------|
+| **Originalserie** | Enthält alle Termine **vor** dem bearbeiteten Termin (unverändert) |
+| **Neue Serie** | Enthält den bearbeiteten Termin und alle **nachfolgenden** Termine (mit den neuen Einstellungen) |
+{{< /bootstrap-table >}}
+
+Beide Serien bleiben intern miteinander verknüpft.
+
+#### Auswirkungen bei aktivierter Synchronisation
+
+Wenn die Serie mit Exchange/Outlook synchronisiert wird, hat die Aufteilung folgende Auswirkungen auf die Teilnehmer:
+
+- **Absagen** für die Termine, die in die neue Serie verschoben werden
+- **Neue Einladungen** für dieselben Termine als Teil der neuen Serie
+
+Dies ist technisch bedingt, da Exchange eine geteilte Serie als zwei separate Serien behandelt.
+
+#### Wie kann die Meldung vermieden werden?
+
+- **Einzelne Termine bearbeiten**: Wenn nur ein bestimmter Termin angepasst werden soll, diesen ohne die Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> bearbeiten. Einzeländerungen lösen keine Aufteilung aus.
+- **Alle Termine gleichzeitig ändern**: Wenn die Änderung für **alle** zukünftigen Termine gilt, kann ROOMS die Serie in bestimmten Fällen direkt aktualisieren, ohne sie aufzuteilen.
 
 ## Zeitzone für Serienbuchungen
 
