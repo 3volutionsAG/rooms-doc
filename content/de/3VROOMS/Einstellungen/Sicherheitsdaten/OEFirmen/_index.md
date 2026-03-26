@@ -84,7 +84,7 @@ Einsehen der Adressen in Listenform
 <p style="text-align: justify">
 <b>Hinweis</b>: Es kann immer nur eine Adresse pro OE/Firma als Standard definiert werden. Eine Adresse muss als Standard definiert werden </p>
 
-### OE/Firmen: Peronen bearbeiten
+### OE/Firmen: Personen bearbeiten
 
 <p style="text-align: justify">
 Sie können Personen auf eine OE (intern) und auf eine Firma (extern) zuweisen. Bereits zugewiesene Personen sehen Sie in der Liste. </p>
@@ -107,8 +107,39 @@ Eine Person einer Firma zuweisen
 {{< /imgproc >}}
 
 <p style="text-align: justify">
-Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen. </br>
-Hinweis: Sie können nur Personen auswählen, die noch keiner Aufgabe oder Firma für diesen Zeitraum zugewiesen sind. </p>
+Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen. </p>
+
+#### Regeln der Zuordnung
+
+{{< bootstrap-table "table table-striped" >}}
+| Regel | Beschreibung |
+|-------|-------------|
+| **Eine Firma pro Zeitraum** | Eine Person kann immer nur einer Firma oder OE gleichzeitig zugeordnet sein. Überlappende Gültigkeitszeiträume bei verschiedenen Firmen sind nicht erlaubt. |
+| **Gültigkeitsdauer** | Jede Zuordnung basiert auf einem Zeitraum (Beginn- und Enddatum). Wird kein Datum gesetzt, gilt die Zuordnung als unbefristet. |
+| **Suchfilter** | Beim Hinzufügen einer Person erscheinen nur Personen, die im gewählten Zeitraum keiner anderen Firma oder OE zugewiesen sind. Bereits zugewiesene Personen werden in der Suche nicht angezeigt. |
+{{< /bootstrap-table >}}
+
+#### Zuordnung beenden oder ändern
+
+Um eine Person einer anderen Firma zuzuordnen, muss die bestehende Zuordnung zuerst beendet werden:
+
+1. Navigieren Sie zur Firma, der die Person aktuell zugeordnet ist
+2. Öffnen Sie den Reiter **Personen** und suchen Sie die betreffende Person in der Liste
+3. Klicken Sie auf das Stift-Icon, um die Zuordnung zu bearbeiten
+4. Setzen Sie ein **Ende-Datum** (z.B. das heutige Datum) und speichern Sie
+5. Anschliessend kann die Person bei einer anderen Firma über **Person hinzufügen** zugewiesen werden
+
+<p style="text-align: justify">
+<b>Hinweis</b>: Sie müssen die Person nicht neu erfassen. Durch das Setzen eines Ende-Datums wird die bisherige Zuordnung zeitlich begrenzt und die Person steht für eine neue Zuordnung zur Verfügung. </p>
+
+#### Häufige Fehlermeldungen
+
+{{< bootstrap-table "table table-striped" >}}
+| Fehlermeldung | Ursache | Lösung |
+|---------------|---------|--------|
+| *Die Person X ist zwischen Y bereits der Firma Z zugewiesen.* | Die Person hat eine aktive Zuordnung zu einer anderen Firma im selben Zeitraum. | Navigieren Sie zur genannten Firma und beenden Sie dort die Zuordnung (Ende-Datum setzen). |
+| Person erscheint nicht in der Suche beim Hinzufügen | Die Person ist bereits einer anderen Firma zugeordnet oder wurde über einen Import ins System erfasst. | Prüfen Sie, ob die Person bei einer anderen Firma zugewiesen ist, und beenden Sie dort ggf. die Zuordnung. |
+{{< /bootstrap-table >}}
 
 ### OE/Firmen: Kostenträger bearbeiten
 
