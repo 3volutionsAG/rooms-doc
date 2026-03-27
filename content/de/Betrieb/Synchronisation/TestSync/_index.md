@@ -15,7 +15,7 @@ Ein erfolgreicher Synchronisationstest sieht folgerndermassen aus:
 
 Wird kein Test grün so besteht grundsätzlich ein Problem. Prüfen Sie in der Datenbank die Tabellen Synchronisation und Logging (alternativ Einstellungen --> System --> Ereignissanzeige) und prüfen Sie ob die Dienste laufen unter Einstellungen --> System --> About.
 
-Werden nur die ersten zwei Tests grün, so funktioniert die Subscription nicht, siehe PullSubscription oder PushSubscription Kapitel.
+Werden nur die ersten zwei Tests grün, so funktioniert die Subscription nicht, siehe PushSubscription Kapitel.
 
 Ein öfters auftauchendes Problem ist, dass die E-Mail Adresse nicht auf die primäre SMTP Adresse gesetzt ist.
 

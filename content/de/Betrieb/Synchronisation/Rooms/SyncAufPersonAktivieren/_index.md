@@ -11,7 +11,7 @@ Personen --> Edit
 
 *SyncModus*
 
-Muss entsprechend der ausgewählten Authentisierung Methode und Subscription art ausgewählt werden. (Siehe Kapitel ExchangeOnline/ExchangeOnPrem, PullSubscription/PushSubscription)
+Muss entsprechend der ausgewählten Authentisierung Methode und Subscription art ausgewählt werden. (Siehe Kapitel ExchangeOnline/ExchangeOnPrem, PushSubscription)
 
 *Sync Url*
 

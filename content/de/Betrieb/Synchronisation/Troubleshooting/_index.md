@@ -21,7 +21,7 @@ Der Synchronisationstest prüft, ob die Verbindung zwischen ROOMS und Exchange g
 |----------|-----------|-----------------|
 | Alle Tests grün | Grundverbindung funktioniert | Weiter mit Schritt 2 |
 | Kein Test grün | Grundsätzliches Verbindungsproblem | Dienste prüfen (Schritt 3) und Support kontaktieren |
-| Nur die ersten zwei Tests grün | Subscription funktioniert nicht | Siehe [PushSubscription](/betrieb/synchronisation/pushsubscriptions/) oder [PullSubscription](/betrieb/synchronisation/pullsubscription/) |
+| Nur die ersten zwei Tests grün | Subscription funktioniert nicht | Siehe [PushSubscription](/betrieb/synchronisation/pushsubscriptions/) |
 
 {{% alert title="Häufige Ursache" color="info" %}}
 Die E-Mail-Adresse der Person ist nicht auf die **primäre SMTP-Adresse** gesetzt. Prüfe unter Personen → Person → Bearbeiten, ob die E-Mail-Adresse mit der primären SMTP-Adresse in Exchange übereinstimmt.
@@ -94,4 +94,3 @@ Folgende Änderungen in Outlook können zu Synchronisationskonflikten führen. D
 - [Synchronisation testen](/betrieb/synchronisation/testsync/) — Detaillierte Anleitung zum Synchronisationstest
 - [Synchronisationsdetails](/betrieb/synchronisation/syncdetails/) — Welche Felder synchronisiert werden
 - [PushSubscription](/betrieb/synchronisation/pushsubscriptions/) — Push-Synchronisation einrichten
-- [PullSubscription](/betrieb/synchronisation/pullsubscription/) — Pull-Synchronisation einrichten
