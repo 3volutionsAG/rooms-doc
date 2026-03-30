@@ -4,57 +4,110 @@ linkTitle: "Exchange Ressource Sync"
 weight: 50
 description: 'Synchronisation von Exchange Ressourcen mit ROOMS Ressourcen'
 ---
-## Konfiguration 
-Um die Exchange Ressourcen Synchronisation zu aktivieren müssen folgende Konfigurationswerte gesetzt werden:
 
-### Global
+## Voraussetzungen
 
-- `Einstellungen` --> `System` --> `Globale Parameter` --> `Exchange Ressource Sync enabled` --> auf `true` setzten
-- `Einstellungen` --> `System` --> `Globale Parameter` --> `StructureMapXml`
-  In der StructureMapXml muss sichergestellt werden dass der folgende eintrag exisitert:
-   ```xml
-   <AddInstance Key="backSyncService" PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core" PluggedType="Garaio.Products.Rooms.Core.WindowsServices.BackSyncService.BackSyncServiceSession,Garaio.Products.Rooms.Core"/>
-   ```
+### Globale Parameter
 
-### Ressource
-Nun können die individuellen Ressourcen für die Synchronisation konfiguriert werden:
+Folgende Einstellungen müssen unter **Einstellungen → System → Globale Parameter** gesetzt sein:
 
-- `Einstellungen` --> `Ressourcen` --> `Edit`
+{{< bootstrap-table "table table-striped" >}}
+| Parameter | Wert |
+|-----------|------|
+| Exchange Ressource Sync enabled | `true` |
+{{< /bootstrap-table >}}
 
-Relevant sind folgende Parameter:
+Zusätzlich muss in der **StructureMapXml** (ebenfalls unter Globale Parameter) folgender Eintrag vorhanden sein:
 
-#### E-Mail
+```xml
+<AddInstance
+  Key="backSyncService"
+  PluginType="Garaio.Products.Rooms.Core.WindowsServices.BaseServiceSession,Garaio.Products.Rooms.Core"
+  PluggedType="Garaio.Products.Rooms.Core.WindowsServices.BackSyncService.BackSyncServiceSession,Garaio.Products.Rooms.Core" />
+```
 
-Die E-Mail muss auf die primäre SMTP Mail-Adresse der Exchange Ressource gesetzt werden.
+### Ressource konfigurieren
 
-#### Sync-Modus/Sync Url
+Unter **Einstellungen → Ressourcen → Edit** werden die einzelnen Ressourcen für die Synchronisation eingerichtet:
 
-Entsprechender SyncModus und Url muss ausgewählt werden
+{{< bootstrap-table "table table-striped" >}}
+| Parameter | Beschreibung |
+|-----------|-------------|
+| **E-Mail** | Muss auf die primäre SMTP-Adresse der Exchange-Ressource gesetzt werden |
+| **Sync-Modus / Sync-URL** | Entsprechender Sync-Modus und URL auswählen |
+| **Ist Sync-Master** | Steuert das Verhalten bei Konflikten (siehe unten) |
+{{< /bootstrap-table >}}
 
 #### Ist Sync-Master
 
-Falls eine Buchung in Exchange nicht für Rooms verfügbar ist, beispielsweise aufgrund einer bereits bestehenden Buchung oder einer Sperrzeit, wird die Rooms-Buchung nicht erstellt. Stattdessen wird eine E-Mail mit einem Synchronisationsfehler versendet. Wenn die Option "Ist Sync-Master" aktiviert ist, wird die Raumbuchung auch auf der Exchange-Seite entfernt bzw. der Teilnehmer wird aus Rooms Buchung entfernt. Wenn "Ist Sync-Master" nicht aktiviert ist, bleibt der Termin in Exchange bestehen und es wird lediglich eine E-Mail ausgelöst.
+Falls eine Buchung in Exchange nicht für ROOMS verfügbar ist (z.B. wegen bestehender Buchung oder Sperrzeit), wird die ROOMS-Buchung nicht erstellt und eine Fehler-E-Mail versendet.
 
-Ab Rooms `4.7.2211` ist die Ressourcen Synchronisation mit dem Addin kompatibel. Jedoch dürfen die Ressourcen nicht direkt im Outlook-Kalender gebucht werden sondern muss via Teilnehmer eingeladen werden.
+{{< bootstrap-table "table table-striped" >}}
+| Ist Sync-Master | Verhalten |
+|-----------------|-----------|
+| **Aktiviert** | Die Raumbuchung wird auch auf der Exchange-Seite entfernt bzw. der Teilnehmer wird aus der ROOMS-Buchung entfernt |
+| **Deaktiviert** | Der Termin bleibt in Exchange bestehen, es wird lediglich eine Fehler-E-Mail ausgelöst |
+{{< /bootstrap-table >}}
 
 ## Limitationen
 
 {{% alert title="Vor- und Nachlaufzeiten" color="warning" %}}
-Ist die RessourcenSync auf einer Ressource aktiviert, können Vor- und Nachlaufzeiten nicht mehr verwendet werden. Bei allen Buchungen der Ressource werden die Vor- und Nachlaufzeiten auf **0** gesetzt.
+Ist die Ressourcen-Sync auf einer Ressource aktiviert, können Vor- und Nachlaufzeiten nicht mehr verwendet werden. Bei allen Buchungen der Ressource werden die Vor- und Nachlaufzeiten auf **0** gesetzt, da Exchange dieses Konzept nicht unterstützt.
 {{% /alert %}}
 
-Da Exchange Ressourcen das Konzept der Vor- und Nachlaufzeiten nicht unterstützen passt sich der Funktionsumfang der ROOMS Ressource entpsrechend an.
+{{< bootstrap-table "table table-striped" >}}
+| Einschränkung | Beschreibung |
+|---------------|-------------|
+| **Nur eine Ressource pro Termin** | Bei einem Outlook-Termin darf immer nur eine synchronisierte Ressource hinzugefügt/eingeladen werden |
+| **Add-in: Ressource nicht manuell einladen** | Wird über das Add-in eine synchronisierte Ressource gebucht, darf sie nicht zusätzlich als Teilnehmer hinzugefügt werden — sie wird automatisch im Synchronisationsprozess eingeladen |
+| **Kein direkter Zugriff auf Exchange-Kalender** | Es ist nicht erlaubt, auf der Exchange-Ressource direkt einen Termin zu erstellen. Die Synchronisation funktioniert nur, wenn ein Appointment im Namen einer mit ROOMS synchronisierten Person erstellt wird und die Ressource dort hinzugefügt oder als Teilnehmer eingeladen wird |
+{{< /bootstrap-table >}}
 
-#### Termin mit mehreren Ressourcen erstellen
+Es wird empfohlen, den Benutzenden keinen direkten Zugriff auf die Exchange-Ressourcen-Mailboxen zu gewähren.
 
-Bei einem Outlook Termin darf immer nur eine Ressource hinzugefügt/eingeladen werden.
+## Buchungsrichtlinien der Exchange-Ressource (Booking Policies)
 
-#### Neues Addin: Ressource nicht einladen
+Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt.
 
-Wenn über das neue Addin eine synchronisierte Ressource gebucht wird, darf diese nicht zusätzlich als Teilnehmer hinzugefügt werden. Diese wird automatisch im Synchronisationsprozess hinzugefügt.
+### Wichtige Parameter
 
-#### Exchange Ressource direkt im Outlook-Kalender buchen
+{{< bootstrap-table "table table-striped" >}}
+| Parameter | Beschreibung | Auswirkung auf Serien |
+|-----------|-------------|----------------------|
+| `AllowRecurringMeetings` | Ob wiederkehrende Termine erlaubt sind | `$false` → alle Serien werden abgelehnt |
+| `BookingWindowInDays` | Maximaler Buchungszeitraum in die Zukunft (Standard: 180 Tage) | Serie wird abgelehnt, wenn Termine ausserhalb des Fensters liegen |
+| `EnforceSchedulingHorizon` | Ob `BookingWindowInDays` erzwungen wird | `$true` → Termine ausserhalb des Fensters werden abgelehnt |
+| `MaximumConflictInstances` | Max. Anzahl Konflikte in einer Serie (Standard: 0) | Wird der Wert überschritten, lehnt die Ressource die **gesamte Serie** ab |
+| `ConflictPercentageAllowed` | Max. erlaubter Konfliktanteil in % (Standard: 0) | Überschreitung → **gesamte Serie** wird abgelehnt |
+| `MaximumDurationInMinutes` | Max. Dauer eines einzelnen Termins (Standard: 1440 = 24h) | Einzeltermine über dem Limit werden abgelehnt |
+{{< /bootstrap-table >}}
 
-Es ist nicht erlaubt auf der Exchange Ressource direkt einen Termin zu erstellen. Die Synchronisation funktioniert nur, wenn ein neues Appointment im Namen eines mit Rooms Synchronisierten Person erstellt wird und dort die Ressource hinzugefügt wird oder als Teilnehmer eingeladen wird.
+### Auswirkung auf Serien mit Konflikten
 
-Es wird empfohlen den Benutzenden kein direkter Zugriff auf die Exchange Ressourcen Mailboxen zu gewähren.
+ROOMS kann beliebig viele Konflikte in einer Serie auflösen — z.B. durch Umbuchung einzelner Termine auf alternative Räume. Die Serie wird jedoch als Recurring Appointment an die Exchange-Raumressource synchronisiert. Dort bestehen die Konflikte weiterhin (der Raum ist an diesen Terminen bereits belegt).
+
+{{% alert title="Wichtig" color="warning" %}}
+Wenn `MaximumConflictInstances` oder `ConflictPercentageAllowed` auf `0` gesetzt sind (Standard), lehnt die Exchange-Ressource eine Serie **komplett** ab, sobald auch nur ein einziger Konflikt besteht — obwohl ROOMS die Konflikte intern bereits gelöst hat.
+{{% /alert %}}
+
+**Beispiel:** Eine Serie mit 10 Terminen wird für Raum A erstellt. An 3 Terminen ist Raum A bereits belegt. ROOMS bucht diese 3 Termine auf alternative Räume um. Die Serie wird trotzdem als Recurring Appointment an die Exchange-Ressource von Raum A gesendet. Dort bestehen die 3 Konflikte weiterhin. Bei `MaximumConflictInstances = 0` lehnt Exchange die gesamte Serie ab.
+
+### Aktuelle Einstellungen auslesen
+
+Die Buchungsrichtlinien einer Exchange-Raumressource können per PowerShell ausgelesen werden:
+
+```powershell
+# Exchange Online
+Connect-ExchangeOnline
+Get-CalendarProcessing -Identity "raum@domain.ch" | Format-List
+```
+
+### Einstellungen anpassen
+
+Falls die Standardwerte zu restriktiv sind, können sie angepasst werden:
+
+```powershell
+Set-CalendarProcessing -Identity "raum@domain.ch" -MaximumConflictInstances 5 -ConflictPercentageAllowed 25
+```
+
+Im obigen Beispiel würde die Ressource Serien akzeptieren, solange maximal 5 Konflikte bestehen und der Konfliktanteil unter 25% liegt.

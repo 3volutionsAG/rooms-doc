@@ -99,6 +99,10 @@ Eine Buchung aus der Serienliste bearbeiten
 
 Wählen Sie mittels des Datumspickers einen anderen Zeitraum für diese Reservation aus. Mit einem Klick auf den Button <b>+</b> der Ressource wählen Sie aus dem Standortbaum eine andere verfügbare Ressource der gleichen Art aus. Mit dem Button <i>Speichern</i> prüft ROOMS die Angaben und speichert sie dementsprechend ab.
 
+{{% alert title="Hinweis bei synchronisierten Exchange-Ressourcen" color="info" %}}
+Wenn die Ressource mit einer Exchange-Raumressource synchronisiert wird, kann das Umbuchen einzelner Serientermine auf alternative Räume dazu führen, dass die Exchange-Ressource die gesamte Serie ablehnt. Grund: Die Termine, an denen die Ressource bereits belegt ist, werden von Exchange als Konflikte gewertet. Weitere Details und Konfigurationsmöglichkeiten unter [Exchange Ressource Sync — Buchungsrichtlinien](/betrieb/synchronisation/resourcesync/#buchungsrichtlinien-der-exchange-ressource-booking-policies).
+{{% /alert %}}
+
 ## Bearbeiten einer Serie
 
 Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterationen beispielsweise die letzten beiden Termine eine halbe Stunde früher beginnen, kann dies in folgenden Schritten eingegeben werden:
