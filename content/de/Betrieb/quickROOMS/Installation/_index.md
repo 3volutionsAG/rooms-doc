@@ -61,6 +61,24 @@ Das Add-In benötigt mindestens das [Outlook API Requirement Set 1.7](https://le
 Auf on-premises Exchange funktioniert das Add-In ausschliesslich mit dem Desktop Outlook Client. OWA wird nicht unterstützt, da on-premises Exchange nur Requirement Sets bis 1.6 (OWA) bzw. 1.5 (Server) bereitstellt. Weitere Details: [Outlook API Requirement Sets (Microsoft)](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets).
 {{% /alert %}}
 
+### Benötigte Outlook API Requirement Sets nach Funktion
+
+Das Add-In nutzt APIs aus verschiedenen [Outlook API Requirement Sets](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets). Die folgende Tabelle zeigt, welche Funktion welches Requirement Set voraussetzt:
+
+{{< bootstrap-table "table table-striped" >}}
+| Funktion | Requirement Set | Beschreibung | Microsoft-Dokumentation |
+|---|---|---|---|
+| Erkennung bestehender Buchungen | 1.1 | Custom Properties zum Verknüpfen von Outlook-Terminen mit ROOMS-Buchungen | [Custom Properties](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in) |
+| Kategorien auf Termin-Ebene | 1.3 | ROOMS-Kategorie auf einzelnen Termin setzen | [Categories](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/categories) |
+| Einzelbuchungen (Start, Ende, Teilnehmer, Ort) | 1.5 | Basis-Buchungsfunktionalität | [Requirement Set 1.5](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5) |
+| **Serienbuchungen** | **1.7** | **Serienmuster lesen/schreiben — zwingend für Serienanlage, -bearbeitung und -löschung** | [Recurrence](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/get-and-set-recurrence) |
+| Stellvertreterbuchungen / Shared Calendars | 1.8 | Shared Calendar Erkennung und Delegiertenberechtigungen | [Delegate Access](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/delegate-access) |
+| Enhanced Location / Raum-Ressourcen | 1.8 | Raum-Ressourcen als Enhanced Location auslesen | [Requirement Set 1.8](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8) |
+| Master-Kategorien | 1.10 | ROOMS-Kategorie in Mailbox-Master-Liste registrieren (Fallback auf Item-Level vorhanden) | [Requirement Set 1.10](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) |
+{{< /bootstrap-table >}}
+
+**Warum Requirement Set 1.7 das Minimum ist:** Serienbuchungen gehören zu den meistgenutzten Funktionen und sind für den produktiven Einsatz unverzichtbar. Die dafür benötigte Recurrence-API ist erst ab Requirement Set 1.7 verfügbar. On-premises Exchange (2016/2019/SE) stellt via OWA nur Requirement Set 1.5–1.6 bereit — daher wird OWA auf on-premises Exchange nicht unterstützt. Der Desktop Outlook Client unterstützt auch auf on-premises Exchange höhere Requirement Sets, weshalb das Add-In dort funktioniert.
+
 ### Unterstützte Outlook-Versionen
 
 Windows:
