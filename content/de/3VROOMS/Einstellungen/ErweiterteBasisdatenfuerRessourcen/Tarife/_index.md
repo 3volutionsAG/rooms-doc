@@ -34,6 +34,10 @@ Erstellen von Tarifkategorien
 
 Die folgenden Daten legen Sie bei den Stammdaten der Tarife fest:
 
+{{% alert color="info" title="Validierung Tarifmodell" %}}
+Ressourcen innerhalb derselben Gliederung müssen dasselbe Tarifmodell verwenden. Diese Prüfung erfolgt sowohl beim Speichern einer Ressource als auch beim Zuordnen einer Ressource zu einer Gliederung. Bei abweichenden Tarifmodellen verhindert das System das Speichern mit einer Validierungsmeldung.
+{{% /alert %}}
+
 {{< bootstrap-table "table table-striped" >}}
 | Feld         | Funktion         | 
 | ------------- |-------------  | 
@@ -94,6 +98,8 @@ Bei der Preisberechnung im Buchungsprozess gelten folgende Regeln:
 
 * Generell gilt die auf der Ressource hinterlegte Tarifkategorie.
 ** Falls auf der Firma eine Tarifkategorie hinterlegt ist, so wird **immer** diese verwenden und somit die Tarifkategorie auf der Ressource ignoriert.
+* Ressourcen innerhalb derselben Gliederung dürfen nur Tarifkategorien mit demselben Tarifmodell verwenden.
+* Die Validierung erfolgt beim Speichern einer Ressource sowie beim Hinzufügen einer Ressource zu einer Gliederung.
 * Falls es zum Zeitpunkt der Reservierung mehrere aktive Tarife gibt, wird der neueste Tarif (der mit dem aktuellsten Gültigkeitsdatum) verwendet.
 * Wenn für eine Ressource keine Tarifkategorie festgelegt ist, wird kein Preis berechnet.
 * Wenn zum Zeitpunkt der Reservierung kein aktiver Tarif vorhanden ist, fallen keine Kosten an.

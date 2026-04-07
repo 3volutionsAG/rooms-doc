@@ -129,6 +129,10 @@ Wenn Sie Fragen haben oder Unterstützung benötigen, stehen wir Ihnen gerne zur
 
 Sie sehen hinzugefügte Ressourcen in der Liste. Sind dort keine vorhanden, können Sie Ressourcen über den untenstehenden Button "hinzufügen" auswählen.
 
+{{% alert color="info" title="Validierung auf Gliederung" %}}
+Ressourcen derselben Gliederung müssen dasselbe Tarifmodell verwenden. Beim Hinzufügen einer Ressource prüft das System deshalb, ob das Tarifmodell der ausgewählten Ressource mit den bereits zugeordneten Ressourcen dieser Gliederung übereinstimmt. Bei Abweichungen erscheint eine Validierungsmeldung und die Zuordnung wird nicht gespeichert.
+{{% /alert %}}
+
 {{< imgproc Gliederung_hinzufügen_Ressourcen Resize "960x" >}}
 Ressourcen zu Gliederungstypen hinzufügen
 {{< /imgproc >}}
