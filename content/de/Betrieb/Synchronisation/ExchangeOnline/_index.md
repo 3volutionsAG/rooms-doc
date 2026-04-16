@@ -1,45 +1,72 @@
 ---
-title: "Exchange Online (M365)"
-linkTitle: "Exchange Online"
-weight: 2
-description: 'Einrichten von Synchronisation mit Exchange Online (M365)'
+title: "Exchange Online (EWS / legacy)"
+linkTitle: "Exchange Online (legacy)"
+weight: 3
+description: "Einrichten der legacy Exchange-Online-Synchronisation über EWS (`O365`)."
 ---
 
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Diese Seite gilt **nur** für den SyncModus `O365`.
+
+- `O365` ist **kein** Graph-Modus, sondern weiterhin **EWS** über `https://outlook.office365.com/EWS/Exchange.asmx`
+- für Graph-basierten Exchange-Online-Sync ist **`Microsoft365`** die passende Wahl
+- im Personen-/Ressourcenprofil ist `O365` der passende legacy Modus für Exchange Online auf EWS-Basis
+{{% /alert %}}
+
 {{% alert color="info" title="Hinweis" %}}
-Sie verwenden Exchange Online. Die Anleitung für Exchange On-Premises finden Sie hier: [Exchange On-Premises]({{< relref "Betrieb/Synchronisation/ExchangeOnPrem/_index.md" >}})
+Sie möchten den Graph-basierten Sync einrichten? Dann verwenden Sie die Seite [Microsoft 365 (Graph API)]({{< relref "Betrieb/Synchronisation/Microsoft365/_index.md" >}}).
 {{% /alert %}}
 
 ## Kurzüberblick
 
-ROOMS unterstützt in Exchange Online zwei Betriebsarten:
+ROOMS unterstützt für Exchange Online weiterhin eine **EWS-basierte** Betriebsart über den SyncModus `O365`.
 
-- Impersonation (App-Only, über OAuth „full_access_as_app“)
-- Delegated Access (Benutzerkontext, über OAuth „EWS.AccessAsUser.All“)
+Technisch gehört `O365` zur gleichen Familie wie `EWS1` und `EWS2`:
 
-Beide Varianten können pro Deployment gewählt werden. Nachfolgend sind Voraussetzungen, ROOMS-Konfiguration und Einrichtungs-Schritte beschrieben.
+- alle drei Modi arbeiten gegen eine **EWS `.asmx`-Schnittstelle**
+- Unterschiede betreffen vor allem Zielsystem und Authentisierung
 
 ## Einstellungen in ROOMS
 
-- Personen → Person → SyncModus: `O365` oder `O365Pull`
-- Sync-URL: `https://outlook.office365.com/EWS/Exchange.asmx` (voreingestellt)
+- Personen → Person → **SyncModus**: `O365`
+- Ressourcen → Ressource → **SyncModus**: `O365`
+- **Sync-URL**: `https://outlook.office365.com/EWS/Exchange.asmx`
 
-## Impersonation (App-Only)
+## Mehrere M365-Tenants mit `DomainOverrides`
 
-Einrichtung der App-Only-Authentifizierung via Azure AD mit Anwendungsberechtigungen.
+Für den EWS-basierten SyncModus `O365` unterstützt ROOMS **`DomainOverrides`**.
 
-1) App in Azure AD registrieren
-- Azure AD → App-Registrierungen → Neue Registrierung → Name vergeben, unterstützte Kontotypen wählen
-- Anwendungs-ID (Client-ID) notieren
+Damit können Sie abhängig von der **Mail-Domäne** der synchronisierten Mailbox unterschiedliche Credentials bzw. unterschiedliche M365-Tenants verwenden.
 
-2) API-Berechtigungen erteilen
-- Office 365 Exchange Online → Anwendungsberechtigungen → `full_access_as_app`
-- Administratorzustimmung für die Organisation erteilen
+Beispiel:
 
-3) Geheimnis oder Zertifikat konfigurieren
-- Variante Geheimnis: Zertifikate & Geheimnisse → Neuer geheimer Clientschlüssel → Wert sicher ablegen
-- Variante Zertifikat: Zertifikat hochladen; Thumbprint notieren
+- Standard-`O365`-Provider für `@contoso.com`
+- Override für `@subsidiary.onmicrosoft.com`
 
-4) ROOMS konfigurieren (RoomsAppSettings.config)
+Die Auswahl erfolgt anhand der Mailadresse der betroffenen Person oder Ressource:
+
+- `user@subsidiary.onmicrosoft.com` → Override `subsidiary.onmicrosoft.com`
+
+Damit können Sie in einem gemeinsamen ROOMS-Setup mehrere Exchange-Online-Tenants bedienen, solange der Sync weiterhin über **EWS / `O365`** läuft.
+
+Die Konfiguration erfolgt in:
+
+- `appsettings.json`
+- `CalendarSync:Ews:Providers:O365:DomainOverrides`
+
+Ein vollständiges Beispiel finden Sie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
+
+## App-Only (Impersonation)
+
+Einrichtung der App-Only-Authentifizierung via Microsoft Entra ID mit EWS-Anwendungsrechten.
+
+1. App in Microsoft Entra ID registrieren.
+2. API-Berechtigung **Office 365 Exchange Online → `full_access_as_app`** vergeben.
+3. Administratorzustimmung für die Organisation erteilen.
+4. Secret oder Zertifikat konfigurieren.
+5. ROOMS konfigurieren.
+
+### ROOMS konfigurieren (`RoomsAppSettings.config`)
 
 Geheimnis-basierte Anmeldung:
 
@@ -61,32 +88,55 @@ Zertifikat-basierte Anmeldung:
 </RoomsAppSettings>
 ```
 
-Hinweise:
-- Der Windows-Dienst-Account von ROOMS benötigt Zugriff auf den privaten Schlüssel des Zertifikats. Bei „Keyset does not exist“ dem Dienst-Account Rechte auf den Private Key geben (z. B. via „Manage private key“).
-- Weitere Details: `https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth`
+### Zertifikatsauthentisierung - was der Code tatsächlich macht
 
-## Zugriff begrenzen (Application Access Policy)
+Die EWS-Implementierung für `O365` unterstützt Zertifikatsauthentisierung **im App-Only- / Impersonation-Modus**.
 
-Mit Application Access Policies kann Impersonation auf bestimmte Postfächer begrenzt werden.
+Code-verifiziert:
 
-PowerShell vorbereiten:
+- das Zertifikat wird anhand des Thumbprints aus **`LocalMachine\My`** geladen
+- ROOMS / der Windows-Dienst bzw. Worker-Prozess benötigt Zugriff auf den **privaten Schlüssel**
+- wenn `UseImpersonation = false` (delegierter EWS-Modus), verwendet der Code **Benutzername/Passwort** und **nicht** das Zertifikat
+
+Praktisch bedeutet das:
+
+- **Zertifikat + `UseImpersonation = true`** → unterstützt
+- **Zertifikat + `UseImpersonation = false`** → nicht der relevante Pfad; hier zählen `ExchangeServiceUser` + `ExchangeServicePassword`
+
+### Zertifikatsauthentisierung einrichten
+
+1. Zertifikat in **`LocalMachine\My`** auf dem Server importieren, auf dem der ROOMS-Prozess läuft.
+2. Thumbprint ohne Tippfehler / Copy-Paste-Artefakte übernehmen.
+3. In Microsoft Entra ID das Zertifikat bei der App-Registrierung hochladen.
+4. In ROOMS den Thumbprint via `ExchangeCertThumbprint` konfigurieren.
+5. Sicherstellen, dass der laufende Dienst / Worker Zugriff auf den **privaten Schlüssel** hat.
+
+Typische Fehlerbilder:
+
+- Zertifikat nicht im richtigen Store
+- falscher Thumbprint
+- privater Schlüssel fehlt oder ist für den Dienstaccount nicht lesbar
+- Zertifikat nur lokal beim Admin importiert, nicht auf dem effektiven Laufzeitserver
+
+{{% alert color="warning" title="Wichtig" %}}
+Wenn Sie Zertifikatsauthentisierung für `O365` verwenden wollen, kombinieren Sie diese mit **AppOnly / Impersonation**. Für den delegierten EWS-Modus ist weiterhin der Service-User mit Passwort massgeblich.
+{{% /alert %}}
+
+### Zugriff auf bestimmte Postfächer begrenzen
+
+Für bestehende Setups kann der Zugriff mit einer **Application Access Policy** eingeschränkt werden:
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
-```
 
-Sicherheitsgruppe erstellen und Benutzer hinzufügen (oder bestehende verwenden):
-
-```powershell
 New-DistributionGroup -Name "SyncIsAllowed" -Type "Security"
 Add-DistributionGroupMember -Identity "SyncIsAllowed" -Member "DiegoS@rooms.myo365.site"
-```
 
-Policy erstellen (verwenden Sie Ihre AppId aus oben):
-
-```powershell
-New-ApplicationAccessPolicy -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f -PolicyScopeGroupId "SyncIsAllowed" -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group SyncIsAllowed."
+New-ApplicationAccessPolicy -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f `
+  -PolicyScopeGroupId "SyncIsAllowed" `
+  -AccessRight RestrictAccess `
+  -Description "Restrict this app to members of distribution group SyncIsAllowed."
 ```
 
 Überprüfen:
@@ -96,7 +146,9 @@ Test-ApplicationAccessPolicy -Identity "DiegoS@rooms.myo365.site" -AppId 6e9157a
 Test-ApplicationAccessPolicy -Identity "AdeleV@rooms.myo365.site" -AppId 6e9157a8-801c-4f5c-9522-9ae9ffd2aa4f
 ```
 
-Hinweis: Änderungen an Policies können bis zu 1 Stunde dauern. Alternativ zu `RestrictAccess` ist auch `DenyAccess` möglich.
+{{% alert color="warning" title="Hinweis" %}}
+Für Graph-basierte Exchange-Online-Setups empfiehlt Microsoft **Exchange Application RBAC** als moderneren Mailbox-Scoping-Mechanismus. Application Access Policies funktionieren weiterhin, sind aber eher eine Legacy-Option.
+{{% /alert %}}
 
 ## Delegated Access
 
@@ -104,8 +156,8 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 
 ### Voraussetzungen und ROOMS-Konfiguration
 
-- Der Service-User `MUSS` ein eigenes Exchange-Postfach besitzen.
-- Delegation aktivieren in `RoomsAppSettings.config`:
+- der Service-User **muss** ein eigenes Exchange-Postfach besitzen
+- Delegation in `RoomsAppSettings.config` aktivieren:
 
 ```xml
 <RoomsAppSettings>
@@ -113,13 +165,14 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 </RoomsAppSettings>
 ```
 
-### App in Azure AD registrieren (Delegated Permissions)
-- Azure AD → App-Registrierungen → Neue Registrierung → Name und Kontotypen wählen
-- Authentifizierung → Erweiterte Einstellungen → Öffentliche Clientflows zulassen → Mobilgerät-/Desktopflows aktivieren: Ja
-- API-Berechtigungen → Delegierte Berechtigungen → `EWS.AccessAsUser.All`
+### App in Microsoft Entra ID registrieren
+
+- App-Registrierung anlegen
+- öffentliche Clientflows zulassen
+- delegierte Berechtigung **`EWS.AccessAsUser.All`** vergeben
 - Administratorzustimmung erteilen
 
-### ROOMS mit Benutzeranmeldeinformationen konfigurieren:
+### ROOMS mit Benutzeranmeldeinformationen konfigurieren
 
 ```xml
 <RoomsAppSettings>
@@ -132,23 +185,36 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 
 ### Berechtigungen pro Postfach setzen
 
-
 ```powershell
-# PowerShell vorbereiten:
 Install-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName o365admin@rooms.myo365.site
 
-# Berechtigungen setzen:
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\\Calendar" -User o365admin@rooms.myo365.site -AccessRights Editor -SharingPermissionFlags Delegate,CanViewPrivateItems
-Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\\Drafts" -User o365admin@rooms.myo365.site -AccessRights FolderVisible
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Calendar" `
+  -User o365admin@rooms.myo365.site `
+  -AccessRights Editor `
+  -SharingPermissionFlags Delegate,CanViewPrivateItems
+
+Add-MailboxFolderPermission -Identity "DiegoS@rooms.myo365.site:\Drafts" `
+  -User o365admin@rooms.myo365.site `
+  -AccessRights FolderVisible
 ```
 
 Rechte-Überblick:
+
 - `Editor`: `CreateItems`, `DeleteAllItems`, `DeleteOwnedItems`, `EditAllItems`, `EditOwnedItems`, `FolderVisible`, `ReadItems`
 - `FolderVisible`: Ordner sichtbar, keine Leseberechtigung für Inhalte
 
-{{% alert color="primary" title="Hinweise" %}}
-- `CanViewPrivateItems` muss explizit gesetzt werden: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
-- Zertifikat-Fehler „Keyset does not exist“ beheben: https://improveandrepeat.com/2018/12/how-to-fix-the-keyset-does-not-exist-cryptographicexception/
-{{% /alert %}}
+## UX für Enduser
 
+Der Enduser-Unterschied zwischen `O365` und `Microsoft365` ist wichtig:
+
+- `O365` ist ein **legacy EWS-Modus**
+- Benutzer sehen hier **keinen Graph Connect-/Disconnect-Flow**
+- es gibt **keine** Graph-Consent-Maske im Benutzerprofil
+- wenn Sie explizite Benutzer-Zustimmung, Graph-Consent-Status oder Graph-Webhooks brauchen, verwenden Sie **`Microsoft365`**
+
+## Referenzen
+
+- EWS OAuth App-Only: https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth
+- Exchange Application RBAC: https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac
+- `CanViewPrivateItems`: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display

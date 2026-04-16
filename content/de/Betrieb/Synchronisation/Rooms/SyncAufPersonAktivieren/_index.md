@@ -2,37 +2,74 @@
 title: "Personen konfigurieren"
 linkTitle: "Personen konfigurieren"
 weight: 3
-description: 'Synchronisation auf den Personen aktivieren'
+description: "Synchronisation auf Personen aktivieren und die SyncModi korrekt einsetzen."
 ---
 
-Die Synchronisation muss nun für jede gewünschte Person aktiviert werden, idealerweise wird dies über einen Benutzerdatenimport gesteuert.
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Die häufigsten Fehler auf Personenprofilen sind:
 
-Personen --> Edit
+- veraltete SyncModi aus alten Dokumentationen übernommen
+- `Microsoft365` gewählt, aber die primäre SMTP-Adresse fehlt oder ist falsch
+- `.asmx`-URL bei `EWS1`, `EWS2` oder `O365` vergessen
+- Annahme, dass `Microsoft365` ebenfalls eine `Sync-URL` braucht - das ist **nicht** so
+{{% /alert %}}
 
-*SyncModus*
+Die Synchronisation wird pro Person aktiviert - idealerweise über einen Benutzerdatenimport.
 
-Muss entsprechend der ausgewählten Authentisierung Methode und Subscription art ausgewählt werden. (Siehe Kapitel ExchangeOnline/ExchangeOnPrem, PushSubscription)
+**Pfad:** `Personen` → `Bearbeiten`
 
-*Sync Url*
+## SyncModi
 
-Muss auf die EWS Schnittstelle des Exchange Servers zeigen, bei O365 ist das: https://outlook.office365.com/EWS/Exchange.asmx
+{{< bootstrap-table "table table-striped" >}}
+| SyncModus | Technologie | Typischer Einsatz | Sync-URL |
+|-----------|-------------|-------------------|----------|
+| `EWS1` | EWS | Exchange On-Premises, Slot 1 | erforderlich |
+| `EWS2` | EWS | Exchange On-Premises, Slot 2 | erforderlich |
+| `O365` | EWS | Exchange Online, bestehendes / legacy Setup | erforderlich |
+| `Microsoft365` | Graph API | Exchange Online, Graph-basiertes Setup | nicht relevant |
+{{< /bootstrap-table >}}
 
-Unter Personen --> Edit --> Notifikationen 
+## `Sync-URL`
 
-"Outlook Sync" aktivieren bei den gewünschten Ressourcentypen.
+- bei `EWS1`, `EWS2` und `O365` muss die URL auf die passende **EWS `.asmx`-Schnittstelle** zeigen
+- bei `O365` ist das in der Regel:
 
-### Zusätzliche Einstellungen
+```text
+https://outlook.office365.com/EWS/Exchange.asmx
+```
 
-*Buchungen beim Anpassen der Synchronisationseinstellungen neu abgleichen*
+- bei `Microsoft365` wird **keine** `Sync-URL` verwendet
 
-Kann aktiviert werden, wenn Exchange Termine auf einen neuen Exchange Server migriert wurden und die Id's der Termine dabei geändert wurde. Bitte kontaktieren Sie uns bei so einem Fall vorher.
+## Zusätzliche Felder / Einstellungen
 
-*Eigene Buchungen mit Kalender synchronisieren*
+Unter `Personen` → `Bearbeiten` → `Notifikationen` aktivieren Sie bei Bedarf **Outlook Sync** für die gewünschten Ressourcentypen.
 
-Grundsätzlich kann bei jeder Buchung in Rooms über eine Checkbox gewählt werden ob diese nun Synchronisiert werden soll oder nicht. Ist diese Einstellung aktiviert so ist diese Checkbox standardmässig aktiviert.
+### Buchungen beim Anpassen der Synchronisationseinstellungen neu abgleichen
 
-*Mail bei Synchronisationsfehler*
+Kann aktiviert werden, wenn Exchange-Termine auf einen neuen Exchange-Server migriert wurden und sich dabei die Termin-IDs geändert haben.
 
-Dies sollte aktiviert werden, damit der Benutzer über Probleme mit der Synchronisation informiert wird. Verschiebt z.B. ein User einen Termin direkt in Outlook auf einen Zeitpunkt bei dem in Rooms bereits eine Buchung liegt, so wird dieser Termin zurückgesetzt und der User über dieses Mail informiert.
+Bitte in solchen Fällen vorgängig den Support kontaktieren.
 
-Siehe Kapitel Sync-Error Mails.
+### Eigene Buchungen mit Kalender synchronisieren
+
+Wenn diese Einstellung aktiviert ist, ist die Checkbox zur Synchronisation bei neuen Buchungen standardmässig aktiviert.
+
+### Mail bei Synchronisationsfehler
+
+Diese Einstellung sollte in der Regel aktiviert werden, damit Benutzer über Probleme mit der Synchronisation informiert werden.
+
+## UX bei `Microsoft365`
+
+### `AppOnly`
+
+- Benutzer müssen nichts verbinden
+- es gibt keinen Connect-/Disconnect-Flow
+- nach dem Setzen von `SyncModus = Microsoft365` startet die Provisionierung im Hintergrund
+
+### `Delegated`
+
+- Benutzer müssen den Kalender einmalig verbinden
+- ROOMS kann den Consent-Dialog beim Login oder nach dem Speichern der Person automatisch auslösen
+- solange kein Consent erteilt wurde, startet für diese Person kein Graph-Sync
+
+Weitere Details dazu: [Microsoft 365 (Graph API)]({{< relref "Betrieb/Synchronisation/Microsoft365/_index.md" >}})

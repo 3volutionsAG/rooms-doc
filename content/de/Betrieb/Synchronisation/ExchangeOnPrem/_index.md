@@ -1,36 +1,45 @@
 ---
-title: "Exchange On-Premises"
+title: "Exchange On-Premises (EWS)"
 linkTitle: "Exchange On-Premises"
-weight: 3
-description: "Einrichten von Synchronisation mit Exchange on-premise Server"
+weight: 4
+description: "Einrichten der EWS-basierten Synchronisation mit Exchange On-Premises."
 aliases:
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/Impersonation/
   - /de/Betrieb/Synchronisation/ExchangeOnPrem/DelegatedAccess/
 ---
 
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+In ROOMS-Profilen werden **keine expliziten Exchange-Serverversionen** als SyncModus verwendet.
+
+- für Exchange On-Premises verwenden Sie **`EWS1`** oder **`EWS2`**
+- beide Modi sprechen dieselbe **EWS `.asmx`-Technologie** an
+- die Serverversion steckt im Zielsystem und in der EWS-Konfiguration, nicht im Namen des SyncModus
+{{% /alert %}}
+
 {{% alert color="info" title="Hinweis" %}}
-Sie verwenden Exchange On-Premises. Die Anleitung für Exchange Online finden Sie hier: [Exchange Online]({{< relref "Betrieb/Synchronisation/ExchangeOnline/_index.md" >}})
+Sie verwenden Exchange On-Premises. Die Anleitung für Exchange Online finden Sie hier: [Exchange Online (EWS / legacy)]({{< relref "Betrieb/Synchronisation/ExchangeOnline/_index.md" >}}).
 {{% /alert %}}
 
 ## Kurzüberblick
 
-ROOMS unterstützt in Exchange On-Premises zwei Betriebsarten für den Zugriff auf Postfächer:
+ROOMS unterstützt für Exchange On-Premises eine **EWS-basierte** Synchronisation über zwei konfigurierbare Slots:
 
-- Impersonation (EWS ApplicationImpersonation, server-/postfachweit)
-- Delegated Access (Ordnerberechtigungen pro Postfach/Ordner)
+- `EWS1`
+- `EWS2`
 
-Die Wahl hängt vom Sicherheits- und Berechtigungskonzept Ihrer Umgebung ab. Beide Varianten sind unten beschrieben.
+Beide Modi verwenden technisch die gleiche EWS-Schnittstelle. Die Wahl hängt davon ab, welcher Slot in Ihrer Umgebung mit welchen Zugangsdaten und welcher Exchange-URL belegt ist.
 
 ## Einstellungen in ROOMS
 
-- Personen → Person → SyncModus: `Exchange2010`, `Exchange2013`, `Exchange2016` oder `Exchange2016Pull`
-- Sync-URL: zeigt auf die EWS-Schnittstelle, z. B.: `https://exchange01.customer.com/EWS/Exchange.asmx`
+- Personen → Person → **SyncModus**: `EWS1` oder `EWS2`
+- Ressourcen → Ressource → **SyncModus**: `EWS1` oder `EWS2`
+- **Sync-URL**: zeigt auf die EWS-Schnittstelle, z. B. `https://exchange01.customer.com/EWS/Exchange.asmx`
 
 ## Impersonation
 
 Impersonation erlaubt dem ROOMS Service-Account, im Kontext der EWS-Schnittstelle Aktionen im Namen beliebiger Benutzer-Postfächer auszuführen (kein Vollzugriff, nur EWS).
 
-### Rechte vergeben (ApplicationImpersonation)
+### Rechte vergeben (`ApplicationImpersonation`)
 
 Für alle Benutzer der Organisation:
 
@@ -54,9 +63,9 @@ Set-ManagementRoleAssignment "NameDerBerechtigung" -Enabled $true
 
 ### Hinweise
 
-- Impersonation wirkt auf Ebene Server/Postfach, nicht auf einzelne Ordner/Elemente.
-- Logs unterscheiden später nicht zwischen „echt“ und „impersoniert“.
-- Der verwendete Account darf kein Exchange-Administrator sein.
+- Impersonation wirkt auf Ebene Server/Postfach, nicht auf einzelne Ordner oder Elemente
+- Logs unterscheiden später nicht zwischen „echt“ und „impersoniert“
+- der verwendete Account darf kein Exchange-Administrator sein
 
 ### Client Throttling Policies (empfohlen)
 
@@ -71,8 +80,8 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 
 ### Voraussetzungen und ROOMS-Konfiguration
 
-- Der Service-User `MUSS` ein eigenes Exchange-Postfach besitzen.
-- Delegation aktivieren in `RoomsAppSettings.config`:
+- der Service-User **muss** ein eigenes Exchange-Postfach besitzen
+- Delegation in `RoomsAppSettings.config` aktivieren:
 
 ```xml
 <RoomsAppSettings>
@@ -89,10 +98,9 @@ Import-PSSession $Session -DisableNameChecking
 Get-Mailbox | Select-Object -First 1
 ```
 
-### Ordnerberechtigungen vergeben (On-Premises)
+### Ordnerberechtigungen vergeben
 
 ```powershell
-# Kalender: Editor-Rechte für den ROOMS Service-User
 Add-MailboxFolderPermission -Identity test.benutzer1@sales.3v-rooms.ch:\Calendar -User roomsservice@sales.3v-rooms.ch -AccessRights Editor
 Add-MailboxFolderPermission -Identity "test.benutzer1@sales.3v-rooms.ch:\Drafts" -User roomsservice@sales.3v-rooms.ch -AccessRights FolderVisible
 ```
@@ -108,9 +116,9 @@ Berechtigungen prüfen:
 Get-MailboxFolderPermission -Identity test.benutzer1@sales.3v-rooms.ch:\Calendar | Where-Object { $_.User -like "roomsservice*" }
 ```
 
-### Private Kalenderelemente sichtbar machen (On-Premises)
+### Private Kalenderelemente sichtbar machen
 
-`CanViewPrivateItems` kann On-Prem nicht per `Add-MailboxFolderPermission` gesetzt werden.
+`CanViewPrivateItems` kann On-Premises nicht per `Add-MailboxFolderPermission` gesetzt werden.
 
 Es gibt zwei Wege, ROOMS den Zugriff auf private Termine zu ermöglichen:
 
@@ -120,10 +128,10 @@ Es gibt zwei Wege, ROOMS den Zugriff auf private Termine zu ermöglichen:
    - Option aktivieren: „Stellvertretungen können private Elemente sehen“
 
 2. EWS-gestützt (automatisierbar)
-   - Per EWS-Delegation `ViewPrivateItems` setzen (EWS Managed API):
+   - per EWS-Delegation `ViewPrivateItems` setzen:
 
 ```powershell
-Add-Type -Path "C:\\Program Files\\Microsoft\\Exchange\\Web Services\\2.2\\Microsoft.Exchange.WebServices.dll"
+Add-Type -Path "C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Exchange.WebServices.dll"
 $service = New-Object Microsoft.Exchange.WebServices.Data.ExchangeService([Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2013_SP1)
 $service.Credentials = New-Object System.Net.NetworkCredential("<admin_or_impersonation_user>", "<password>", "<domain>")
 $service.Url = [Uri] "https://<exchange-fqdn>/EWS/Exchange.asmx"
@@ -138,12 +146,10 @@ $null = $service.AddDelegates($mailbox, [Microsoft.Exchange.WebServices.Data.Mee
 
 Hinweise:
 
-- Skript mit Anmeldeinformationen des Postfachbesitzers ausführen ODER temporär `ApplicationImpersonation` für die Einrichtung nutzen
+- Skript mit Anmeldeinformationen des Postfachbesitzers ausführen oder temporär `ApplicationImpersonation` für die Einrichtung nutzen
 - Ordnerberechtigungen per `Add-MailboxFolderPermission` bleiben weiterhin erforderlich
 
-{{% alert color="primary" title="Referenzen" %}}
+## Referenzen
 
-> Exchange Online: `CanViewPrivateItems` per `SharingPermissionFlags`: https://learn.microsoft.com/en-us/troubleshoot/exchange/user-and-shared-mailboxes/private-items-not-display
->
-> Exchange On-Premises: Delegation via EWS (EWS Managed API): https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-add-and-remove-delegates-by-using-ews-in-exchange
-> {{% /alert %}}
+- Delegation via EWS (EWS Managed API): https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-add-and-remove-delegates-by-using-ews-in-exchange
+- Impersonation konfigurieren: https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-configure-impersonation

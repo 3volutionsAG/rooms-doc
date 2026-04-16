@@ -2,16 +2,35 @@
 title: "Problembehandlung"
 linkTitle: "Problembehandlung"
 weight: 50
-description: 'Schritt-für-Schritt-Anleitung bei Synchronisationsproblemen'
+description: "Schritt-für-Schritt-Anleitung bei Synchronisationsproblemen."
 ---
 
-Wenn Buchungen nicht zwischen ROOMS und Outlook/Exchange synchronisiert werden, hilft diese Anleitung bei der Fehlersuche.
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Fehlersuche beginnt immer mit der Frage: **Welcher SyncModus ist betroffen?**
 
-## Schritt 1: Synchronisationstest durchführen
+- `EWS1`, `EWS2`, `O365` → EWS-basierter Pfad
+- `Microsoft365` → Graph-basierter Pfad
 
-Der Synchronisationstest prüft, ob die Verbindung zwischen ROOMS und Exchange grundsätzlich funktioniert.
+Die Symptome sind oft ähnlich, die Ursachen und Prüfpunkte aber unterschiedlich.
+{{% /alert %}}
 
-**Pfad:** Personen → [betroffene Person] → Ansicht → Tab "Synchronisationstest"
+Wenn Buchungen nicht zwischen ROOMS und Outlook / Exchange synchronisiert werden, hilft diese Anleitung bei der Fehlersuche.
+
+## Schritt 1: Grunddaten prüfen
+
+Prüfen Sie zuerst:
+
+- stimmt die **E-Mail-Adresse** der Person / Ressource mit der **primären SMTP-Adresse** überein?
+- ist der richtige **SyncModus** gesetzt?
+- ist **Sync deaktiviert** nicht versehentlich aktiviert?
+- bei `EWS1`, `EWS2`, `O365`: stimmt die **Sync-URL**?
+- bei `Microsoft365`: ist die Person ggf. noch **nicht verbunden** (`Delegated`)?
+
+## Schritt 2: Synchronisationstest durchführen
+
+Der klassische Synchronisationstest ist vor allem für **EWS-basierte** Modi hilfreich.
+
+**Pfad:** `Personen` → betroffene Person → `Ansicht` → Tab **Synchronisationstest**
 
 {{< imgproc sync-test Resize "1024x" >}}{{< /imgproc >}}
 
@@ -19,33 +38,81 @@ Der Synchronisationstest prüft, ob die Verbindung zwischen ROOMS und Exchange g
 
 | Ergebnis | Bedeutung | Nächster Schritt |
 |----------|-----------|-----------------|
-| Alle Tests grün | Grundverbindung funktioniert | Weiter mit Schritt 2 |
-| Kein Test grün | Grundsätzliches Verbindungsproblem | Dienste prüfen (Schritt 3) und Support kontaktieren |
-| Nur die ersten zwei Tests grün | Subscription funktioniert nicht | Siehe [PushSubscription](/betrieb/synchronisation/pushsubscriptions/) |
+| Alle Tests grün | Grundverbindung funktioniert | Weiter mit Schritt 3 |
+| Kein Test grün | Grundsätzliches Verbindungsproblem | Worker / Dienste prüfen und Logs auswerten |
+| Nur die ersten zwei Tests grün | typischerweise EWS-Subscription-Problem | [Push Subscription]({{< relref "Betrieb/Synchronisation/PushSubscriptions/_index.md" >}}) prüfen |
 
-{{% alert title="Häufige Ursache" color="info" %}}
-Die E-Mail-Adresse der Person ist nicht auf die **primäre SMTP-Adresse** gesetzt. Prüfe unter Personen → Person → Bearbeiten, ob die E-Mail-Adresse mit der primären SMTP-Adresse in Exchange übereinstimmt.
+{{% alert title="Microsoft365 / Graph" color="info" %}}
+Bei `Microsoft365` reicht der klassische Synchronisationstest allein nicht aus. Prüfen Sie zusätzlich:
+
+- Consent-Status im Personenprofil (`Delegated`)
+- Graph-Rechte / Admin-Consent
+- Hintergrundverarbeitung / `RoomsPro.Worker`
+- Erreichbarkeit von `/api/webhooks/graph` und `/api/webhooks/graph/lifecycle`
 {{% /alert %}}
 
-## Schritt 2: Ereignisanzeige prüfen
+## Schritt 3: Ereignisanzeige und Logs prüfen
 
-Die Ereignisanzeige zeigt Fehler und Warnungen der Synchronisationsdienste.
+**Pfad:** `Einstellungen` → `System` → `Ereignisanzeige`
 
-**Pfad:** Einstellungen → System → Ereignisanzeige
+Prüfen Sie:
 
-1. Zeitraum auf den ungefähren Zeitpunkt der fehlgeschlagenen Buchung einschränken
-2. Nach Fehlermeldungen mit `[BackSync]`, `[CollaborationService]` oder `[PushSubscriptionService]` suchen
-3. Die Fehlermeldung gibt Aufschluss über die Ursache (z.B. Verbindungsprobleme, fehlende Berechtigungen)
+- `[BackSync]`
+- `[CollaborationService]`
+- Einträge mit `Graph`
+- Einträge zu Hintergrundjobs wie `GraphSubscriptionProvisioning`, `GraphSubscriptionRenewal`, `DelegatedTokenRefresh`
 
-## Schritt 3: Dienste prüfen
+Die Meldungen geben meist direkt Aufschluss über:
 
-**Pfad:** Einstellungen → System → About
+- Berechtigungsprobleme
+- Webhook-Probleme
+- ungültige Mailadressen
+- Konflikte bei BackSync / Collaboration
 
-Prüfe, ob die Synchronisationsdienste laufen. Werden hier keine laufenden Dienste angezeigt, muss der Windows-Dienst neu gestartet werden.
+## Schritt 4: Hintergrundverarbeitung bzw. Dienste prüfen
 
-## Schritt 4: Betroffene Buchungen finden
+### Aktuelle Setups
 
-Unter Listen → Buchungen können Buchungen mit Synchronisationsproblemen gefiltert werden:
+- prüfen, ob **`RoomsPro.Worker`** läuft
+- Dashboard für Hintergrundjobs unter **`/tickerq`** öffnen
+- prüfen, ob die relevanten Jobs vorhanden und nicht dauerhaft fehlerhaft sind
+
+### Legacy Setups
+
+**Pfad:** `Einstellungen` → `System` → `About`
+
+Wenn die klassischen Synchronisationsdienste dort nicht laufen, muss der entsprechende Windows-Dienst geprüft bzw. neu gestartet werden.
+
+## Schritt 5: Graph-spezifische Prüfungen
+
+Nur relevant für `Microsoft365`:
+
+### `Delegated`
+
+- Personenprofil öffnen
+- Consent-Status prüfen:
+  - `None` / `Pending` → Benutzer noch nicht vollständig verbunden
+  - `Granted` → Consent ist vorhanden
+  - `Revoked` → Verbindung wurde entzogen
+
+Wenn `Delegated` aktiv ist und der Status nicht `Granted` ist, startet für diese Person kein Graph-Sync.
+
+### `AppOnly`
+
+- Entra-App und Berechtigungen prüfen
+- Admin-Consent prüfen
+- falls Mailboxzugriff eingeschränkt wurde: Exchange Application RBAC / Application Access Policy prüfen
+
+### Webhooks
+
+Prüfen Sie, ob folgende Endpunkte extern erreichbar sind:
+
+- `/api/webhooks/graph`
+- `/api/webhooks/graph/lifecycle`
+
+## Schritt 6: Betroffene Buchungen finden
+
+Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen gefiltert werden:
 
 {{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
 
@@ -53,13 +120,9 @@ Unter Listen → Buchungen können Buchungen mit Synchronisationsproblemen gefil
 |--------|-----------|
 | **Buchungen mit Synchronisationsproblemen** | Einzelbuchungen, bei denen die Sync fehlgeschlagen ist |
 | **Serienbuchungen mit Synchronisationsproblemen** | Serien, bei denen die Sync fehlgeschlagen ist |
-| **Buchungen mit fehlender Back-Synchronisation** | Über das Add-in erstellte Buchungen, die ROOMS nicht in Exchange finden konnte |
+| **Buchungen mit fehlender Back-Synchronisation** | über Add-in erstellte Buchungen, die ROOMS nicht mehr in Exchange finden konnte |
 
-**Empfehlung:** Buchungen mit Synchronisationsproblemen am besten annullieren und neu erstellen.
-
-{{% alert title="Hinweis" color="info" %}}
-Bei Buchungen mit fehlender Back-Synchronisation, deren Erstelldatum weit in der Vergangenheit liegt: Die zugehörige Outlook-Buchung wurde vermutlich gelöscht, bevor die Back-Synchronisation durchgeführt werden konnte.
-{{% /alert %}}
+**Empfehlung:** Buchungen mit Synchronisationsproblemen am besten annullieren und neu erstellen, wenn die Ursache nicht unmittelbar behoben werden kann.
 
 ## Konfliktverhalten (Rollback vs. Cancel)
 
@@ -68,29 +131,15 @@ Das Verhalten bei Synchronisationskonflikten wird pro Person über die Einstellu
 {{< bootstrap-table "table table-striped" >}}
 | Modus | Verhalten | Versuche |
 |-------|-----------|----------|
-| **Rollback** (Standard) | Der Outlook-Termin wird auf den ROOMS-Stand zurückgesetzt. Die Synchronisation läuft danach normal weiter. Erst bei wiederholtem Fehlschlag wird die Buchung als "SyncDisabled" markiert und empfängt keine Exchange-Updates mehr. | 5 (konfigurierbar) |
+| **Rollback** (Standard) | Der Outlook-Termin wird auf den ROOMS-Stand zurückgesetzt. Erst bei wiederholtem Fehlschlag wird die Buchung als `SyncDisabled` markiert. | 5 (konfigurierbar) |
 | **Cancel** | Die ROOMS-Buchung wird automatisch annulliert. Der Outlook-Termin verliert seine ROOMS-Verknüpfung. | 2 |
 {{< /bootstrap-table >}}
 
 In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
 
-## Einschränkungen bei Outlook-Änderungen
-
-Folgende Änderungen in Outlook können zu Synchronisationskonflikten führen. Das Ergebnis hängt von der Einstellung **SyncConflictBehaviour** ab (siehe oben).
-
-{{< bootstrap-table "table table-striped" >}}
-| Aktion in Outlook | Verhalten |
-|--------------------|-----------|
-| Einzeltermin in eine Serie umwandeln | ROOMS versucht, die Serie automatisch zu erstellen. Falls das fehlschlägt, greift das Konfliktverhalten (Rollback/Cancel). |
-| Serie um zusätzliche Termine erweitern | ROOMS versucht, fehlende Termine zuzuordnen. Falls nicht möglich, greift das Konfliktverhalten. |
-| Termin sofort nach dem Erstellen löschen | Die ROOMS-Buchung bleibt bestehen, da die Back-Synchronisation noch nicht abgeschlossen war. Der Termin muss zusätzlich in ROOMS annulliert werden. |
-| Termin auf einen belegten Zeitpunkt verschieben | ROOMS kann die Änderung nicht übernehmen. Nach mehreren Versuchen greift das Konfliktverhalten: **Rollback** setzt den Termin auf die ursprüngliche Zeit zurück, **Cancel** annulliert die Buchung. |
-| Buchung in Outlook ändern, während sie in ROOMS geöffnet ist | Die Bearbeitungssperre in ROOMS verhindert das Speichern. Nach mehreren Versuchen greift das Konfliktverhalten. |
-| Serie mit jährlicher Wiederholung oder ohne Enddatum erstellen | Wird vom quickROOMS Add-in bei der Erstellung unterbunden. ROOMS unterstützt jährliche Serien intern, berechnet aber bei der Synchronisation ein Enddatum basierend auf der Anzahl vorhandener Buchungen. |
-{{< /bootstrap-table >}}
-
 ## Weiterführende Informationen
 
-- [Synchronisation testen](/betrieb/synchronisation/testsync/) — Detaillierte Anleitung zum Synchronisationstest
-- [Synchronisationsdetails](/betrieb/synchronisation/syncdetails/) — Welche Felder synchronisiert werden
-- [PushSubscription](/betrieb/synchronisation/pushsubscriptions/) — Push-Synchronisation einrichten
+- [Synchronisation testen]({{< relref "Betrieb/Synchronisation/TestSync/_index.md" >}}) - klassischer Test
+- [Synchronisationsdetails]({{< relref "Betrieb/Synchronisation/SyncDetails/_index.md" >}}) - welche Felder synchronisiert werden
+- [Push Subscription]({{< relref "Betrieb/Synchronisation/PushSubscriptions/_index.md" >}}) - EWS-Webhooks
+- [Microsoft 365 (Graph API)]({{< relref "Betrieb/Synchronisation/Microsoft365/_index.md" >}}) - Graph-spezifische Checks

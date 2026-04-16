@@ -2,27 +2,41 @@
 title: "Push Subscription"
 linkTitle: "Push Subscription"
 weight: 30
-description: 'Funktionsweise der Push-Synchronisation'
+description: "Funktionsweise der EWS-basierten Push-Synchronisation."
 ---
 
-### Was ist Push-Synchronisation?
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Diese Seite gilt **nur** für die **EWS-basierten** SyncModi:
 
-Bei Push-Synchronisation informiert Exchange ROOMS aktiv über Änderungen (neue/aktualisierte Elemente). ROOMS hält dafür eine Subscription auf Postfächer/Folders und stellt einen öffentlichen Webservice bereit, an den Exchange Benachrichtigungen sendet. ROOMS verarbeitet die Meldung und synchronisiert die betroffenen Elemente nach.
+- `EWS1`
+- `EWS2`
+- `O365`
+
+Der SyncModus `Microsoft365` verwendet **keine Exchange Push Subscription**, sondern **Graph-Webhooks** auf:
+
+- `/api/webhooks/graph`
+- `/api/webhooks/graph/lifecycle`
+{{% /alert %}}
+
+## Was ist Push-Synchronisation?
+
+Bei der EWS-basierten Push-Synchronisation informiert Exchange ROOMS aktiv über Änderungen (neue / aktualisierte Elemente). ROOMS hält dafür eine Subscription auf Postfächer bzw. Ordner und stellt einen öffentlichen Webservice bereit, an den Exchange Benachrichtigungen sendet.
 
 Vorteile:
-- Sehr wenig Datenverkehr (nur Ereignisse, kein Polling)
-- Niedrige Latenz
-- Bewährtes Setup für On-Prem und Online
 
-### Architekturüberblick
+- sehr wenig Datenverkehr (nur Ereignisse, kein Polling)
+- niedrige Latenz
+- bewährtes Setup für EWS On-Prem und EWS Exchange Online (`O365`)
+
+## Architekturüberblick
 
 ```mermaid
 flowchart LR
   subgraph intranet [Intranet]
     direction LR
     RoomsDB[(ROOMS_DB)]
-    RoomsService[ROOMS_Service]
-    RoomsDB <--> RoomsService
+    Worker["RoomsPro.Worker / Hintergrundjobs"]
+    Worker <--> RoomsDB
   end
 
   subgraph dmz [DMZ]
@@ -31,50 +45,86 @@ flowchart LR
   end
 
   subgraph internet [Internet]
-    Exchange["Exchange / Exchange Online"]
+    Exchange["Exchange / Exchange Online (EWS)"]
   end
 
-  RoomsService -->|"creates_or_renews_subscription(callbackUrl)"| Exchange
+  Worker -->|"create_or_renew_ews_subscription(callbackUrl)"| Exchange
   Exchange -->|"POST /api/webhooks/exchange"| ReverseProxy
   ReverseProxy -->|"POST /api/webhooks/exchange"| RoomsProWeb
-  RoomsProWeb -->|"enqueue_sync_event"| RoomsService
+  RoomsProWeb -->|"persist_notification"| RoomsDB
 ```
 
-Hinweis: Für Exchange Online muss die veröffentlichte URL aus dem Internet erreichbar sein – direkt oder via Reverse Proxy. Der interne ROOMS Service bleibt dabei privat. Veröffentlichen Sie den Pfad `/api/webhooks/exchange` (RoomsPro.Web), ohne Pre‑Authentication (anonyme Requests zulassen) und mit gültigem, öffentlich vertrauenswürdigem TLS‑Zertifikat. Idealerweise IP‑Allowlisting auf Microsoft‑Ranges.
+## Wichtige Änderung gegenüber älteren Setups
 
-DMZ/Reverse Proxy ist optional:
-- Wenn Sicherheitsrichtlinien es erlauben, kann der ROOMS Webservice direkt veröffentlicht werden.
-- Ein Reverse Proxy wird empfohlen (TLS-Offload, IP-Filter, WAF/Rate-Limiting, Logging).
+Die frühere explizite Service-Session `pushSubscriberServiceSession` wird in produktiven Setups **nicht mehr separat aktiviert**.
 
-Service-URL in ROOMS:
+Subscription-Erstellung und -Erneuerung laufen über die Hintergrundverarbeitung / `RoomsPro.Worker`, insbesondere über:
+
+- `ProvisionEwsSubscription`
+- `EwsSubscriptionManagement`
+
+## Veröffentlichung des Webhooks
+
+Für EWS-basierte Push-Subscriptions muss die veröffentlichte URL aus dem Internet erreichbar sein - direkt oder via Reverse Proxy.
+
+Veröffentlichen Sie den Pfad:
+
+```text
+/api/webhooks/exchange
+```
+
+Empfehlungen:
+
+- anonyme `POST`-Requests zulassen
+- gültiges öffentlich vertrauenswürdiges TLS-Zertifikat
+- idealerweise Reverse Proxy mit Logging, Rate Limiting und IP-Filter
+
+## Service-URL in ROOMS
+
 - [IDP Root-Url]({{< relref "3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen" >}})
 - Standard-Callback: `IdpRootUrl + /api/webhooks/exchange`
 
-### Konfiguration (RoomsAppSettings / Environment Variables)
+## Konfiguration (RoomsAppSettings / Environment Variables)
 
-Die Werte werden aus `RoomsContext.AppSettings` gelesen (Konfiguration via `RoomsAppSettings.config`) und können via Environment Variables überschrieben werden (Twelve-Factor).
+Die Werte werden aus `RoomsContext.AppSettings` gelesen (Konfiguration via `RoomsAppSettings.config`) und können via Environment Variables überschrieben werden.
 
-- **`ExchangePushNotificationEndpointUrl`** (string, optional)  Wenn gesetzt, wird diese URL **1:1** als Callback registriert (muss eine **absolute URL** sein).
-- **`ExchangePushNotificationUseLegacyEndpoint`** (bool, optional, Default `false`)  Wenn `true` und kein Override gesetzt ist, wird das **Legacy**-Callback verwendet (Rollback).
+- **`ExchangePushNotificationEndpointUrl`** - optionale absolute Override-URL
+- **`ExchangePushNotificationUseLegacyEndpoint`** - optionaler Rollback auf `SyncNotification.svc`
 
-**Precedence**:1. `ExchangePushNotificationEndpointUrl`2. `ExchangePushNotificationUseLegacyEndpoint=true`3. Default: `IdpRootUrl + /api/webhooks/exchange`
+Precedence:
 
-**Local dev**:Setzen Sie `ExchangePushNotificationEndpointUrl` auf eine von Exchange erreichbare URL (z. B. per Tunnel):`https://<your-tunnel-host>/api/webhooks/exchange`
+1. `ExchangePushNotificationEndpointUrl`
+2. `ExchangePushNotificationUseLegacyEndpoint=true`
+3. Default: `IdpRootUrl + /api/webhooks/exchange`
 
-**Prod rollback**:Setzen Sie `ExchangePushNotificationUseLegacyEndpoint=true` und stellen Sie sicher, dass die Legacy-URL weiterhin erreichbar ist:`https://<rooms-host>/WebServices/SyncNotification.svc?{tenant}`
+**Local dev**
 
-### Funktionsablauf
+```text
+https://<your-tunnel-host>/api/webhooks/exchange
+```
+
+**Prod rollback**
+
+```text
+https://<rooms-host>/WebServices/SyncNotification.svc?{tenant}
+```
+
+## Funktionsablauf
 
 1. ROOMS registriert bei Exchange eine Push-Subscription auf relevante Ordner.
-2. Bei Änderungen sendet Exchange eine HTTP-Notification an den Callback `POST /api/webhooks/exchange`.
-3. ROOMS bestätigt den Empfang und schreibt ein Ereignis in die Datenbank.
-4. Der ROOMS-Synchronisationsdienst liest die Ereignisse und aktualisiert betroffene Reservierungen.
+2. Bei Änderungen sendet Exchange eine HTTP-Notification an `POST /api/webhooks/exchange`.
+3. ROOMS bestätigt den Empfang und schreibt das Ereignis in die Datenbank.
+4. Die weitere Verarbeitung übernimmt die ROOMS-Synchronisationslogik.
 
-Hinweis: Der neue Callback ist ein REST-Endpoint und hat **keine** Bestätigungsseite im Browser. Für eine einfache Erreichbarkeitsprüfung kann `IdpRootUrl + /healthz` verwendet werden.
+Für eine einfache Erreichbarkeitsprüfung kann zusätzlich `IdpRootUrl + /healthz` verwendet werden.
 
-### Sicherheitsempfehlungen
+## Sicherheitsempfehlungen
 
-- Zugriff auf bekannte Exchange-IP-Bereiche beschränken: https://docs.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
-- Eingehende Requests prüfen und verwerfen, wenn sie nicht passen:
-  - Methode: `POST`
-  - Pfad: `/api/webhooks/exchange`
+- Zugriff auf bekannte Exchange-IP-Bereiche beschränken: https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+- eingehende Requests prüfen und verwerfen, wenn sie nicht passen:
+  - Methode `POST`
+  - Pfad `/api/webhooks/exchange`
+
+## Graph statt EWS?
+
+Wenn Sie `Microsoft365` einsetzen, verwenden Sie stattdessen die Seite [Microsoft 365 (Graph API)]({{< relref "Betrieb/Synchronisation/Microsoft365/_index.md" >}}).

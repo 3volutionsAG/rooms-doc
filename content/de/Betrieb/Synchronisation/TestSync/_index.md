@@ -2,22 +2,40 @@
 title: "Synchronisation testen"
 linkTitle: "Synchronisation testen"
 weight: 45
-description: 'Testen ob Synchronisation funktioniert'
+description: "Prüfen, ob die Synchronisation grundsätzlich funktioniert."
 ---
 
-Nachdem alles eingerichtet ist, kann die Synchronisation folgendermassen überprüft werden:
+{{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
+Der klassische Synchronisationstest ist besonders für **EWS-basierte** Modi (`EWS1`, `EWS2`, `O365`) hilfreich.
 
-Personen --> Person --> Ansicht --> Synchronisationstest
+Bei `Microsoft365` prüfen Sie zusätzlich immer auch:
 
-Ein erfolgreicher Synchronisationstest sieht folgerndermassen aus:
+- Consent-Status (`Delegated`)
+- Graph-Webhooks
+- Hintergrundverarbeitung / `RoomsPro.Worker`
+{{% /alert %}}
+
+Nachdem alles eingerichtet ist, kann die Synchronisation wie folgt überprüft werden:
+
+`Personen` → `Person` → `Ansicht` → `Synchronisationstest`
+
+Ein erfolgreicher Synchronisationstest sieht wie folgt aus:
 
 {{< imgproc sync-test Resize "1024x" >}}{{< /imgproc >}}
 
-Wird kein Test grün so besteht grundsätzlich ein Problem. Prüfen Sie in der Datenbank die Tabellen Synchronisation und Logging (alternativ Einstellungen --> System --> Ereignissanzeige) und prüfen Sie ob die Dienste laufen unter Einstellungen --> System --> About.
+## Interpretation
 
-Werden nur die ersten zwei Tests grün, so funktioniert die Subscription nicht, siehe PushSubscription Kapitel.
+- **Kein Test grün** → grundsätzliches Verbindungs- oder Konfigurationsproblem
+- **Nur die ersten zwei Tests grün** → typischerweise Subscription-Problem im EWS-Pfad
+- **Alle Tests grün** → Grundverbindung funktioniert
 
-Ein öfters auftauchendes Problem ist, dass die E-Mail Adresse nicht auf die primäre SMTP Adresse gesetzt ist.
+Typische weitere Prüfpunkte:
 
+- Ereignisanzeige / Logging
+- `RoomsPro.Worker` bzw. laufende Dienste
+- Datenbanktabellen `CalendarSubscription` und Logging
+- primäre SMTP-Adresse auf der Person
 
+Wenn nur die ersten zwei Tests grün sind, prüfen Sie zusätzlich die Seite [Push Subscription]({{< relref "Betrieb/Synchronisation/PushSubscriptions/_index.md" >}}).
 
+Ein häufiges Problem ist, dass die **E-Mail-Adresse** der Person nicht auf die **primäre SMTP-Adresse** gesetzt ist.
