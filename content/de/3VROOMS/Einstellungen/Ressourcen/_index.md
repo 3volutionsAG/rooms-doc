@@ -134,7 +134,7 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Status                                           | Ankreuzen, wenn zutreffend. Standard = inaktiv. Nur aktive Ressourcen erscheinen grundsätzlich in den Buchungssuchen (zusätzlich relevant ist das entsprechende Standortbezogene Recht. Wird eine Ressource auf inaktiv gesetzt, werden alle zugehörigen Reservationen mit Exchange Synchronisation von der Synchronisation abgekoppelt. |
 | Checkin aktiviert                                | Diese Option schaltet die Check-in-Funktion auf dem Türschild ein. Durch die Benutzergruppe wird entschieden, ob ein Check-in für die Benutzende notwendig ist oder nicht. [Benutzergruppen](/3vrooms/einstellungen/sicherheitsdaten/benutzergruppen/#checkin-einzelbuchungen). |
 | NoShow Delay                                     | Minuten auswählen. Definiert nach wie vielen Minuten ohne Checkin der Raum wieder freigegeben wird. Standardwert = 15 Minuten |
-| Tarifkategorie                                   | Es muss keine [Tarifkategorie](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarifkategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion) |
+| Tarifkategorie                                   | Es muss keine [Tarifkategorie](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/tarife/) gewählt werden. Falls keine Tarifkategorie gewählt wurde, erfolgt keine Preisberechnung auf der Ressource. Standard = leer (keine Selektion). Ressourcen innerhalb derselben Gliederung müssen jedoch dasselbe Tarifmodell verwenden. Beim Speichern der Ressource prüft das System diese Regel und zeigt bei Abweichungen eine Validierungsmeldung an. |
 | Info Url                                         | Übersetzungseintrag _Alias für InfoURL_ muss erstellt werden. Ist der Übersetzungseintrag nicht übersetzt (leer), werden die effektiven URL’s der Ressourcen angezeigt. Ist die Übersetzung nicht leer, wird der Text der Übersetzung in der entsprechenden Benutzersprache übernommen. Die Implementation erfolgt im Sidepanel (Reservationsdetail) und im View Mode der Ressource. |
 | Sync. Modus                                      | Über das Drop-Down auswählen |
 | Verantwortliche Person                           | Intelibox mit allen aktiven verfügbaren Personen. Verantwortliche Person aus dem System eintragen oder suchen. |
@@ -152,6 +152,10 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 {{< /bootstrap-table >}}
 
 Die geänderten Daten speichern Sie über den untenstehenden Button <i>Speichern</i>.
+
+{{% alert color="info" title="Validierung auf Ressource" %}}
+Wenn eine Ressource bereits einer Gliederung zugeordnet ist, prüft das System beim Speichern der Ressource, ob das Tarifmodell zur Gliederung passt. Ressourcen derselben Gliederung können nicht mit unterschiedlichen Tarifmodellen gespeichert werden.
+{{% /alert %}}
 
 {{< imgproc Ressourcen_Stammdaten_bearbeiten Resize "960x" >}}
 Stammdaten der Ressourcen bearbeiten
