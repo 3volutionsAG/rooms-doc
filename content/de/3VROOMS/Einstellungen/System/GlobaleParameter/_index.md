@@ -119,7 +119,7 @@ Folgende Daten können Sie ändern:
 | 24 | SchnellreservationPlanAufrunden | Konfiguriert das zeitliche Aufrunden einer Schnellreservation (Plan). Numerischer Wert zwischen 0-60; 0 => Ab sofort; 1-60 => Aufrunden auf Minuten. | 0 |
 | 25 | SchnellreservationPlanDauer | Konfiguriert die Laufzeit einer Schnellreservation (Plan). Numerischer Wert zwischen 0-...; 0 => Bis Tagesende; 1-... => Dauer in Minuten | 0 |
 | 56 | Schrittweite Suche alternative Zeiten | Konfiguration der Schrittweiten für die Suche nach alternativen Reservationszeiten (Werte in Minuten, kommasepariert: 30,45,60). | 30,60,90,120,180,210,240 |
-| 59 | Schwellwert Jobmanager | Schwellwert für den Prüfstatus eines Jobs beim Verarbeiten. | 0.7 |
+| 59 | Schwellwert Jobmanager | Steuert im Jobmanager die Grenze zwischen gelbem und rotem Prüfstatus in der Ressourcenwahl. Beispiel: `0.7` bedeutet 70 %. Ab 100 % bleibt der Status grün. Der Parameter hebt die 100-%-Anforderung für die direkte Verarbeitung nicht auf. | 0.7 |
 | 53 | Schwellwerte für Kosten auf Bestellungen | Enthält eine Liste mit den Bestellungs-Schwellwerten für jede Währung. Wenn die Gesamtkosten der Bestellungen in einer Reservation oder einem Anlass den Wert überschreiten muss die Bestellung vom Vorgesetzten genemigt werden. | <BestellungSchwellwerte></BestellungSchwellwerte> |
 | 114 | Serie creation timezone adjustable | If set to true serie creation timezone is adjustable, meaning instead of using organizers timezone, the location or creator timezone can be used. | false |
 | 14 | Smtp From | E-Mail Adresse, die beim Versenden von Mails als Absender angegeben wird. | |

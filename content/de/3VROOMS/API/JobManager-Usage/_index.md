@@ -9,6 +9,8 @@ Diese Dokumentation beschreibt die **fachliche Verwendung** des JobManager-Impor
 
 - Swagger UI: siehe [API v2]({{< relref "../v2" >}}) (und allgemeine Hinweise unter [API]({{< relref "../" >}}))
 
+Für die manuelle fachliche Verarbeitung dieser importierten Jobs in der Legacy-Oberfläche siehe [Jobmanager]({{< relref "3VROOMS/Listen/Jobmanager/_index.md" >}}).
+
 ## Was ist neu / warum 202 Accepted?
 
 Früher wurden die angelieferten Jobs/Lektionen im REST-Request direkt verarbeitet. Bei grossen Jobs (viel Payload) konnte das zu **doppelten Job-Einträgen** bzw. unerwünschten Nebenwirkungen führen.
@@ -159,5 +161,3 @@ Für einen Überblick über laufende/queued Batches kann die Batch-Liste verwend
 - **Ich erhalte `LessonsImportFailed`**
   - `ErrorMessages` auswerten und im Support-Fall mitgeben.
   - Nicht blind re-tryen; zuerst Ursache korrigieren.
-
-
