@@ -42,6 +42,10 @@ Eingabefenster Restore Database
 
 7. **Ok** klicken und warten, bis der Restore abgeschlossen ist. Danach bei Bedarf mit demselben Backup weitere Datenbanken (Mandanten) anlegen.
 
+Hinweis:
+
+- Ein Restore ersetzt nicht die aktuelle Schema-Prüfung. Führen Sie nach Restore und Berechtigungsvergabe zusätzlich die Schritte aus [Datenbankmigrationen]({{< relref "Betrieb/Installation/Datenbankmigrationen/_index.md" >}}) aus.
+
 ### SQL Berechtigungen vergeben
 
 <p align = "justify">
@@ -92,5 +96,4 @@ Zuletzt muss noch für einen initialen Benutzer die Administrator-Berechtigung i
 
 5. **Tabelle schliessen**. Diesen Schritt für alle neu angelegten Datenbanken wiederholen.
 
-<p align = "justify">
-Alternativ können Datenbanken, anstelle eines Restores, auch von Grund auf neu erstellt werden. In diesem Fall muss das entsprechende ROOMS Script verwendet werden und der initiale Benutzer kann erst nach Ausführung des  <a href="https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/1959165953?src=127677552">DB Update Managers</a> hinterlegt werden. Dieses Vorgehen sollte aber nur von 3volutions Spezialisten durchgeführt werden und wird deshalb hier nicht weiter dokumentiert. </p>
+Alternativ können Datenbanken anstelle eines Restores auch von Grund auf neu erstellt werden. In diesem Fall muss das entsprechende ROOMS Script verwendet werden. Der anschliessende Schema-Abgleich erfolgt ebenfalls über den aktuellen Ablauf unter [Datenbankmigrationen]({{< relref "Betrieb/Installation/Datenbankmigrationen/_index.md" >}}). Dieses Vorgehen sollte nur von 3volutions Spezialisten durchgeführt werden und wird deshalb hier nicht weiter dokumentiert.

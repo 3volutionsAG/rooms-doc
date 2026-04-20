@@ -2,137 +2,114 @@
 title: "IIS Konfiguration"
 linkTitle: "IIS Konfiguration"
 weight: 60
-description: 'Generelle Informationen zur IIS Konfiguration'
+description: 'Aktuelle Hinweise zur IIS Konfiguration für Legacy Website und RoomsPro API'
 ---
+Diese Seite beschreibt die aktuelle IIS-Konfiguration für Windows-Installationen mit:
+
+- der Legacy Website `ROOMS`
+- der `RoomsPro API`
+
+Beide Rollen können auf demselben Server oder getrennt betrieben werden. Wenn beide Rollen auf einer Maschine installiert werden, müssen auch beide Voraussetzungen erfüllt sein.
+
 ## Voraussetzungen
 
-- Microsoft .NET Framework 3.5
-- Microsoft .NET Framework 4.0 Extended (oder höher)
+- Windows Server x64 mit IIS 10 oder neuer
+- Für die Legacy Website `ROOMS`: `.NET Framework 4.8`
+- Für die `RoomsPro API`: ASP.NET Core Hosting Bundle für `.NET 10` (x64)
 
-**Anmerkung**
-Ab MR 2019, ROOMS 4.7, wird .NET Framework 4.7.2 oder neuer benötig </br>
+Wichtige Hinweise:
 
-Check if you RUN .NET 4.7.2:
-```
-Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\'
+- **WebDAV** auf der ROOMS Website nicht aktivieren
+- Die `RoomsPro API` ist **keine** klassische ASP.NET-4.x-Anwendung und benötigt stattdessen `AspNetCoreModuleV2`
+- Die Legacy Website verwendet weiterhin klassische ASP.NET-4.x-Komponenten
 
-Get-ItemPropertyValue -Name Release
+## Empfohlene IIS-Rollen und Features
 
-Foreach-Object { $_ -ge 461800 }
-```
+### Für die Legacy Website `ROOMS`
 
-Microsoft Internet Information Service IIS 7.0 (oder höher) mit folgenden Rollendiensten: </br>
-(Installation über *Server Manager*, *Roles*", *Web Server (IIS) - Role Services*, *Add Role Services*):
+- Common HTTP Features
+  - Default Document
+  - HTTP Errors
+  - Static Content
+  - HTTP Redirection
+- Health and Diagnostics
+  - HTTP Logging
+- Performance
+  - Static Content Compression
+  - Dynamic Content Compression
+- Security
+  - Request Filtering
+  - Anonymous Authentication
+  - Windows Authentication oder Basic Authentication nur für explizite Legacy-Sonderfälle
+- Application Development
+  - `.NET Extensibility 4.8`
+  - `ASP.NET 4.8`
+  - `ISAPI Extensions`
+  - `ISAPI Filters`
+- Windows Features
+  - `.NET Framework 4.8 Features`
 
-- Server Rolls - Web Server
-  - Common HTTP Features
-    - Default Document
-    - HTTP Errors
-    - Static Content
-    - HTTP Redirection
-  - Health an Diagnostics
-    - HTTP Logging
-  - Performance
-    - Static Content Compression
-    - Dynamic Content Compression
-  - Security
-    - Request Filtering
-    - Basic Authentification
-    - Windows Authentification
-  - Application Development
-    - .NET Extensibility
-    - ASP.NET
-    - ISAPI Extensions
-    - ISAPI Filters
-  - Managemnte Tools
-- Features
-    - .NET Framework Features
-    - HTTP Activation
-    - Non.HTTP Activation
-    - ASP.NET
-    - WCF Services
-- WebDAV Publishing
+### Für die `RoomsPro API`
 
-<p align = "justify">
-<b>Anmerkung</b>:
-Die Rolle WebDAV Publishing unter den Common HTTP Features darf nicht installiert werden. Durch das Einschalten dieser Rolle werden PUTS und DELETES als HTTP-Verb nicht mehr unterstützt. </p>
+- IIS mit eigenem Site- oder Application-Eintrag
+- installiertes ASP.NET Core Hosting Bundle für `.NET 10` (x64)
+- `AspNetCoreModuleV2` verfügbar
+- `Anonymous Authentication` aktiviert
 
-Unter Features: WCF Funktionalitäten müssen auch installiert werden.
+## Berechtigungen
 
-Alle weiteren Rollendienste sind optional.
+Wenn ein Service-Domänen-Account für Application Pools verwendet wird:
 
-{{< imgproc Roles Resize "640x" >}} {{< /imgproc >}}
+1. Den Account auf dem Webserver in die Gruppe **IIS_IUSRS** aufnehmen oder äquivalente Rechte vergeben.
+2. Dem Account Lese- und Ausführungsrechte auf die jeweiligen Installationsverzeichnisse geben.
+3. Falls Konfigurationsdateien oder Logs ausserhalb der Standardpfade liegen, auch dort die nötigen NTFS-Rechte vergeben.
 
+## Legacy Website `ROOMS` konfigurieren
 
+1. Im IIS einen eigenen Application Pool für die Legacy Website anlegen, zum Beispiel `ROOMS`.
+2. Als **Identity** den vorgesehenen Service-Account verwenden.
+3. Die Website auf das Installationsverzeichnis der Legacy Website zeigen lassen, standardmässig:
 
-## Berechtigungen vergeben
+   ```text
+   C:\inetpub\wwwroot\ROOMS
+   ```
 
-<p align = "justify">
-Wir empfehlen die Verwendung eines Service Domänen-Accounts; diesem Account muss nun auf jedem Web Server die Berechtigung vergeben werden, eine IIS Website zu betreiben: </p>
+4. Bindings, Hostname und SSL-Zertifikate gemäss Umgebung setzen.
+5. Authentifizierung passend zur Umgebung konfigurieren.
 
-1. **Server Manager** öffnen und unter **Configuration**, **Local Users and Groups**, **Groups** anwählen.
-   
-   {{< imgproc SererManager-Config Resize "640x" >}} {{< /imgproc >}}
+Typische Variante:
 
-2. Die Gruppe **IIS_IUSRS** doppelklicken und über **Add** den Service Domänen-Account hinzufügen.
-   
-   {{< imgproc ILS_IUSRS Resize "640x" >}} {{< /imgproc >}}
+- `Anonymous Authentication` aktiviert
+- `Windows Authentication` deaktiviert
+- `Basic Authentication` deaktiviert
 
-3. Alle Fenster mit **Ok** bestätigen.
+Für die aktuelle Standardinstallation wird die Legacy Website anonym betrieben; die eigentliche Authentisierung erfolgt über die API beziehungsweise den IdentityServer/OpenIddict-Flow. Von dieser Default-Konfiguration sollte nur abgewichen werden, wenn bewusst ein spezieller Legacy-Authentifizierungsweg betrieben wird.
 
-## Application Pool erstellen
+Hinweis:
 
-Jetzt kann im IIS die Website wie folgt konfiguriert werden:
+- Frühere Hinweise zu einem separaten Unterverzeichnis `WebServices` betreffen Altinstallationen. Für die aktuelle `RoomsPro API` wird eine **eigene** IIS-Site oder Application verwendet.
 
-1. Unter **Administrative Tools** den **Internet Information Services (IIS) Manager** öffnen.
-   
-   {{< imgproc AdminTools-IIS Resize "640x" >}} {{< /imgproc >}}
+## `RoomsPro API` konfigurieren
 
-2. Den zu konfigurierenden Web Server öffnen und darunter auf **Application Pools** klicken.
-   
-   {{< imgproc AppPool Resize "640x" >}} {{< /imgproc >}}
+1. Im IIS eine eigene Site oder Application für die `RoomsPro API` anlegen.
+2. Als Physical Path das API-Verzeichnis verwenden, standardmässig:
 
-3. Ganz rechts unter **Actions** auf **Add Application Pool** klicken.
-4. Den neuen Application Pool wie in der nachfolgenden Darstellung **konfigurieren**:
-   
-   {{< imgproc AppPool-konfig Resize "640x" >}} {{< /imgproc >}}
+   ```text
+   C:\inetpub\wwwroot\API
+   ```
 
-5. Danach **Ok** klicken, den neuen **Application Pool** in der Liste anwählen und rechts unter **Actions** auf **Advanced Settings** klicken.
-   
-   {{< imgproc AppPool-konfig Resize "640x" >}} {{< /imgproc >}}
+3. Für die API einen separaten Application Pool verwenden.
+4. `Anonymous Authentication` aktivieren.
+5. Sicherstellen, dass das ASP.NET Core Hosting Bundle korrekt installiert ist und `AspNetCoreModuleV2` geladen werden kann.
+6. Die API-Konfiguration und Datenbankverbindung vor dem ersten Start prüfen.
 
-6. Folgende **Einstellungen** anpassen (bei allen anderen Einstellungen den voreingestellten Wert belassen):
-   1. Identity: Hier wiederum den Service Domänen-Account hinterlegen.
-   2. Failure Interval (minutes): Auf 1 setzen.
-   3. Maximum Failures: Auf 25 setzen.
-7. Jetzt links unter dem zu konfigurierenden Web Server das Unterverzeichnis **Sites** öffnen und darunter die **Default Website** anwählen.
-   
-   {{< imgproc AppPool-Sites Resize "640x" >}} {{< /imgproc >}}
+## SSL und Betrieb
 
-8. Rechts unter **Actions** auf **Basic Settings** klicken. Die Einstellungen der Website so festlegen, dass als **Application pool** der oben erstellte *ROOMS* und als **Physical path** das *Installationsverzeichnis der Webapplikation* verwendet wird.
-   
-   {{< imgproc AppPool_BasicSet Resize "640x" >}} {{< /imgproc >}}
-
-   <p align = "justify">
-   Üblicherweise wird die ROOMS Webapplikation im Browser nicht einfach über Eingabe des entsprechenden Web Server Namens, sondern über Eingabe eines dedizierten DNS-Eintrags aufgerufen (z.B. *rooms.kunde.com* oder im Intranet einfach nur *rooms*); dieser DNS-Eintrag verweist dann auf den Web Server (oder bei einer WebFarm auf den LoadBalancing Server). Wird ein solcher DNS-Eintrag verwendet, muss er jetzt auf der Website konfiguriert werden: </p>
-9. Rechts unter **Actions** auf **Bindings** klicken und die Konfiguration im Fenster über **Add** / **Edit** / **Remove** anpassen:
-    
-    {{< imgproc SiteBindings Resize "640x" >}} {{< /imgproc >}}
-
-10. Danach **Ok** klicken und im mittleren Bereich **Authentication** doppelklicken. Die Einstellungen so festlegen, dass **Windows Authentication** aktiviert (Enabled) und alle anderen Optionen deaktiviert (Disabled) sind. Die Umschaltung erfolgt über Rechtsklick, **Enable/Disable**.
-    
-    {{< imgproc AppPool_Auth Resize "640x" >}} {{< /imgproc >}}
-
-11. Links das Unterverzeichnis **WebServices** anwählen und wiederum im mittleren Bereich **Authentication** doppelklicken. Die Einstellungen diesmal so festlegen, dass **Anonymous Authentication** aktiviert (Enabled) und alle anderen Optionen deaktiviert (Disabled) sind. Die Umschaltung erfolgt über Rechtsklick, **Enable/Disable**.
-    
-    {{< imgproc AppPool_WebServ Resize "640x" >}} {{< /imgproc >}}
-
-<p align = "justify">
-Bei Bedarf können für die Website auch andere Authentifizierungsarten zum Einsatz kommen - möglicherweise müssen dadurch aber auch Konfigurationsanpassungen an ROOMS vorgenommen werden (mit 3volutions besprechen). Das Unterverzeichnis "WebServices" muss hingegen immer mit "Anonymous Authentication" betrieben werden. </br>
-Der IIS ist nun für den Einsatz von ROOMS konfiguriert. </br>
-Bei Bedarf kann ROOMS auch über SSL (HTTPS) betrieben werden. Für detaillierte Angaben zu Konfiguration und Einsatz des IIS mit SSL verweisen wir auf die entsprechende <a href="http://technet.microsoft.com/de-de/library/cc771438(v=ws.10)"> Online-Dokumentation von Microsoft </a>. </p>
+- Für produktive Umgebungen ist HTTPS für Legacy Website und `RoomsPro API` empfohlen.
+- DNS-Namen und Zertifikate für beide Sites sauber trennen und dokumentieren.
+- Nach Änderungen an IIS, Bindings oder Hosting Bundle die Sites neu starten und die Logs prüfen.
 
 ## Deinstallation
 
-<p aligne = "justify">
-Die Website kann mit einem Rechtsklick, <b>Remove</b> gelöscht oder nach Belieben umkonfiguriert und wiederverwendet werden. Der erstellte <i>ROOMS Application Pool</i> kann ebenfalls mit einem Rechtsklick, <b>Remove</b> gelöscht werden.
+- IIS-Sites, Application Pools und Bindings bei Bedarf manuell löschen oder umkonfigurieren.
+- Installierte Dateien werden über das MSI entfernt; die IIS-Konfiguration ist anschliessend separat zu bereinigen.

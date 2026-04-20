@@ -2,53 +2,114 @@
 title: "Systemanforderungen"
 linkTitle: "Systemanforderungen"
 weight: 10
-description: 'Dokumentation der Erstinstallation, die eine selbstständige Ausführung ermöglicht.'
+description: 'Mindestanforderungen und Voraussetzungen für die aktuelle ROOMS-Installation.'
 ---
-Üblicherweise erfolgt eine Erstinstallation von ROOMS beim Kunden vor Ort oder per Remote durch Mitarbeitende der 3volutions. Mit diesem Vorgehen möchten wir sicherstellen, dass die kundenspezifischen Gegebenheiten der jeweiligen IT-Umgebung Berücksichtigung finden und die optimalen Konfigurationseinstellungen gewählt werden.
+Die aktuelle MSI-Installation kann je nach gewählten Features eine Kombination aus Legacy-Komponenten und RoomsPro-Komponenten enthalten:
 
-Falls nachträglich zusätzliche Installationen gewünscht oder eine Paketierung der Installation angestrebt wird, muss der Kunde die von uns vorgenommene Erstinstallation so ausführlich dokumentieren, dass diese Arbeiten danach selbständig ausgeführt werden können.
+- Legacy Website `ROOMS`
+- Legacy Windows Service `ROOMS`
+- `RoomsPro API`
+- `RoomsPro Worker`
 
-## Applikationsserver
-- 4 CPU's
-- 16GB RAM
-- 100Gb
-- Windows Server 2019 mit IIS >= 10
-- .NET Framework 4.8
-## Datenbank
-- Microsoft SQL Server 2017 oder neuer
-## Exchange Server
-- Exchange Online (M365)
-- 2019 (quickROOMS funktioniert nur mit dem Rich-Client nicht in OWA)
-- 2016 (quickROOMS funktioniert nur mit dem Rich-Client nicht in OWA)
+Die Anforderungen hängen deshalb von der gewählten Topologie ab.
 
-### quickROOMS
-Um eine optimale quickROOMS Integration zu gewährleisten muss eine der folgenden Versionen vorhanden sein. 
+## Mindestanforderungen
 
-- Microsoft 365 subscription
-- Retail version: Outlook 2016, Outlook 2019, Outook 2021
-- Volume license version: Outlook 202
+### Serverrollen und Laufzeiten
 
-## Infrastruktur und Tools
+{{< bootstrap-table "table table-striped" >}}
+| Rolle | Mindestanforderungen |
+|---|---|
+| Legacy Website `ROOMS` | Windows Server x64 mit IIS 10 oder neuer, `.NET Framework 4.8` |
+| Legacy Windows Service `ROOMS` | Windows Server x64, `.NET Framework 4.8` |
+| `RoomsPro API` | Windows Server x64 mit IIS 10 oder neuer, ASP.NET Core Hosting Bundle für `.NET 10` (x64) |
+| `RoomsPro Worker` | Windows Server x64, `.NET 10 Runtime` (x64) |
+{{< /bootstrap-table >}}
 
-- Setup der Maschinen mit der benötigten Software von Drittherstellern und Updates: [Tools & Guides](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/508690433)
-- ROOMS Installation File:
-  [ROOMS Releases](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536)
-- Kommunikation zwischen den Maschinen (Firewalls u.ä.) sicherstellen
-- **Service User** erstellen Bsp. "ROOMSSERVICE" mit folgenden Anforderungen
-  - read/write database(s) (but not db-owner)
-  - Allow to run "IIS Application Pool"
-  - Allow to run ROOMS Windows Services
-  - Allow communication between third-party systems (LDAP, MS Exchange, etc. ) 
-  
-- **Applications Admin** User für Installations- und Wartungsarbeiten mit folgenden Anforderungen:
-  - db-owner (wichtig für *DB-Update Manager*, wird nach jedem APP Update ausgeführt)
-  - ROOMS Server & ROOMS SQL DB (local Admin)
-  - please make sure any server or component can be administered during the basic installations process
-  
-- DNS Naming für die  ROOMS Web Umgebung
-  - ROOMS.<yourdomain>.xy (Prod)
-  - FORMS-ROOMS.<yourdomain>.xy (Prod Forms Auth.)
-  - TEST-ROOMS.<yourdomain>.xy (Test)
-  - TEST-FORMS-ROOMS.<yourdomain>.xy (Test Forms Auth)
+### Basis-Hardware
 
-Es ist möglich, die Berechtigungen nicht über einen Service Domänen-Account, sondern über eine Service Domänen-Rolle zu vergeben. Dieses Vorgehen kann je nach Umgebung zwar Vorteile bieten, ist aber aufwändiger und wird als Standard nicht empfohlen. Diese Dokumentation geht deshalb nicht detailliert auf die Verwendung einer Service Domänen-Rolle ein und spricht künftig immer nur vom Service Domänen-Account.
+{{< bootstrap-table "table table-striped" >}}
+| Bereich | Empfehlung |
+|---|---|
+| Applikations-/Webserver | 4 vCPU, 16 GB RAM |
+| Freier Speicher | mindestens 100 GB für Binärdateien, Logs, temporäre Dateien und Updates |
+| Datenbankserver | getrennt nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
+{{< /bootstrap-table >}}
+
+### Datenbank
+
+- Microsoft SQL Server in einer aktuell unterstützten Version
+- TCP/IP-Konnektivität zwischen allen beteiligten Serverrollen und dem SQL Server
+- Für Updates und Migrationen ein Konto mit `db_owner`
+
+### quickROOMS / Outlook Add-In
+
+Für quickROOMS gelten zusätzlich die aktuellen Anforderungen aus [quickROOMS Installation]({{< relref "Betrieb/quickROOMS/Installation/_index.md" >}}):
+
+- mindestens Outlook API Requirement Set `1.7`
+- Exchange Online oder Exchange on-premises 2016, 2019 beziehungsweise SE
+- Outlook für Windows: Microsoft 365 Subscription oder Outlook 2016, 2019, 2021, 2024
+- Outlook für Mac: Classic UI oder New UI
+- auf Windows-Clients für das Add-In zusätzlich die aktuelle WebView2 Runtime
+
+## Voraussetzungen vor der Installation
+
+### Installationspakete und Topologie
+
+- Aktuelles MSI aus dem [Downloadbereich](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536) bereitstellen
+- Benötigte Drittanbieter-Software und Windows-Updates vorab installieren
+- Festlegen, welche Features auf welcher Maschine installiert werden
+- Für den dokumentierten Standardweg mindestens eine installierte `RoomsPro API` einplanen, da dort die aktuelle CLI für `db status` und `db migrate` verfügbar ist
+
+### Standardpfade des Installers
+
+{{< bootstrap-table "table table-striped" >}}
+| Komponente | Standardpfad |
+|---|---|
+| Konfiguration | `C:\Program Files\3volutions\ROOMS\Configuration` |
+| Legacy Windows Service | `C:\Program Files\3volutions\ROOMS\WindowsService` |
+| `RoomsPro Worker` | `C:\Program Files\3volutions\ROOMS\Worker` |
+| Legacy Website `ROOMS` | `C:\inetpub\wwwroot\ROOMS` |
+| `RoomsPro API` | `C:\inetpub\wwwroot\API` |
+{{< /bootstrap-table >}}
+
+Wenn im Setup andere Verzeichnisse gewählt werden, sind die nachfolgenden Beispiele entsprechend anzupassen.
+
+### Service User
+
+Wir empfehlen einen dedizierten Service-Domänen-Account, zum Beispiel `ROOMSSERVICE`, mit folgenden Rechten:
+
+- Lese-/Schreibrechte auf die ROOMS-Datenbanken, jedoch nicht dauerhaft `db_owner`
+- Berechtigung zum Ausführen von IIS Application Pools
+- Berechtigung zum Ausführen der Windows-Dienste `ROOMS` und `RoomsPro Worker`
+- Erforderliche Zugriffe auf Drittanbieter-Systeme wie LDAP, Exchange oder Graph-Endpunkte
+
+Hinweis:
+
+- Derselbe Service-Account wird im aktuellen MSI für den Legacy Windows Service und den `RoomsPro Worker` verwendet.
+
+### Applications Admin
+
+Für Installation, Updates und Migrationen wird zusätzlich ein Administrationskonto benötigt mit:
+
+- `db_owner` auf den zu aktualisierenden Datenbanken
+- lokalen Administratorrechten auf den beteiligten Windows-Servern
+- Berechtigung zum Administrieren von IIS, Diensten, Firewall-Regeln und Installationsverzeichnissen
+
+### Netzwerk, URLs und DNS
+
+- Kommunikation zwischen allen beteiligten Maschinen sicherstellen, insbesondere SQL Server, IIS, Worker, Exchange, LDAP und gegebenenfalls IDP
+- Öffentliche oder interne DNS-Namen für die benötigten Web-Endpunkte definieren
+- Je nach Umgebung mindestens URLs für folgende Komponenten festlegen:
+  - Legacy Website `ROOMS`
+  - `RoomsPro API`
+  - optional IDP
+  - optional quickROOMS Wizard / Outlook Add-In
+  - optional Test- oder Staging-Umgebung
+
+### Backup und Dokumentation
+
+- Vor Updates immer Dateisystem und Datenbanken sichern
+- Gewählte Feature-Kombination, Pfade, Service-Accounts, DNS-Namen und Verbindungszeichenfolgen dokumentieren
+
+Es ist weiterhin möglich, Berechtigungen statt über einen einzelnen Service-Domänen-Account über Rollen oder Gruppen zu vergeben. Für die Standarddokumentation wird jedoch weiterhin von einem dedizierten Service-Account ausgegangen.
