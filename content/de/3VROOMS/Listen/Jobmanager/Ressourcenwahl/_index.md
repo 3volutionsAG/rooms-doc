@@ -69,6 +69,20 @@ Zusätzliche Optionen auf dieser Seite:
 | Standort | Schränkt die angezeigten Alternativräume weiter ein |
 {{< /bootstrap-table >}}
 
+## Mehrheitslogik bei bestehenden Jobs
+
+Wird ein bereits verarbeiteter Job erneut geöffnet und kein Raum explizit mitgegeben, verwendet der Jobmanager standardmässig den **am häufigsten bereits gebuchten Raum** des Jobs als Ausgangspunkt für die erneute Prüfung.
+
+Das ist vor allem relevant, wenn:
+
+- ein bestehender Job nach einer Änderung aus dem Quellsystem erneut geprüft wird
+- neue oder geänderte Lektionen zu einem schon disponierten Job hinzukommen
+- die Detailprüfung ohne vorgängige explizite Raumwahl geöffnet wird
+
+Der so abgeleitete Raum dient als Standard für die erneute Verarbeitung. Er ersetzt jedoch nicht den in der Lektion hinterlegten **gewünschten Raum** in der Anzeige.
+
+Über den globalen Parameter **Jobmanager darf bei gewünschtem Raum auf Fallback-Raum wechseln** wird gesteuert, ob der Jobmanager diesen ausgewählten beziehungsweise abgeleiteten Raum auch als automatischen Fallback verwenden darf.
+
 {{< imgproc Jobmanager_Ressourcenwahl_OhnePraeferenz Resize "1280x" >}}
 Ressourcenwahl mit erweiterten Alternativen
 {{< /imgproc >}}

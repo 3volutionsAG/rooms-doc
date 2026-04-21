@@ -75,6 +75,7 @@ Folgende Daten können Sie ändern:
 | 1 | Default-Paging | Standardwert für das Paging (angezeigte Anzahl Einträge pro Seite) aller SmartList-Ansichten. | 10 |
 | 30 | DetailreservationPersönlicheKostenträger | Hält ob die Detailreservation Persönliche Kostenträger übernimmt. | True |
 | 68 | Exchange (Jobmanager): Synchronisation von Jobmanager-Buchungen aktiviert | Aktiviert die Exchange Synchronisation für Buchungen, die über den Jobmanager verarbeitet werden. | false |
+| 160 | Jobmanager darf bei gewünschtem Raum auf Fallback-Raum wechseln | Wenn aktiviert, darf der Jobmanager bei Konflikten des gewünschten Raums automatisch auf den ausgewählten Raum oder bei bestehenden Jobs auf den am häufigsten bereits gebuchten Raum ausweichen. Wenn deaktiviert, bleibt der gewünschte Raum sichtbar und betroffene Zeilen müssen manuell einem Raum zugewiesen werden. | true |
 | 110 | Exchange Ressource Sync enabled | If set to true Exchange Ressource Sync is enabled | false |
 | 67 | Exchange: Subscriptions Intervall | Gibt an in welchem Intervall alle Subscriptions erneuert werden sollen (in Minuten) | 240 |
 | 93 | Google-Sync enable impersonation | Activates organizer impersonation. If true, all bookings will be created in the name of the booking organizer. This requires domain-wide delegatation for the service user. | False |

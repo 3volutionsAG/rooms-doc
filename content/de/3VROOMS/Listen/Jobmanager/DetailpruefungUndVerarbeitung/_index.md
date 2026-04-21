@@ -30,6 +30,21 @@ Wichtig:
 - **Gebuchter Raum** zeigt den bereits persistierten Raum, wenn die Lektion früher schon verarbeitet wurde
 - **Änderung** wird aus dem effektiven Lektionenzustand abgeleitet, nicht nur aus der temporären Reservierung
 
+## Wunschraum, Mehrheitsraum und Fallback
+
+Bei **bestehenden Jobs** wird beim erneuten Öffnen ohne explizite Raumwahl standardmässig der **am häufigsten bereits gebuchte Raum** des Jobs als Ausgangsraum verwendet. Diese Mehrheitslogik erleichtert die Nachbearbeitung von Jobs, bei denen bereits ein grosser Teil der Lektionen disponiert wurde.
+
+Für die automatische Behandlung von Konflikten zwischen **gewünschtem Raum** und diesem Ausgangsraum ist der globale Parameter **Jobmanager darf bei gewünschtem Raum auf Fallback-Raum wechseln** relevant:
+
+- **Aktiviert**: Wenn der gewünschte Raum für eine betroffene Lektion nicht verfügbar ist, darf der Jobmanager automatisch auf den ausgewählten Raum oder bei bestehenden Jobs auf den abgeleiteten Mehrheitsraum ausweichen.
+- **Deaktiviert**: Bei Konflikten bleibt der gewünschte Raum in der Spalte **Gewünschter Raum** sichtbar, aber es wird **kein automatischer Fallback-Raum** gesetzt. Betroffene neue oder noch nicht zugewiesene Zeilen müssen manuell bereinigt werden.
+
+Unverändert bleiben dabei:
+
+- bereits effektiv gebuchte Räume von schon verarbeiteten Lektionen
+- manuell vom Benutzer ausgewählte Räume
+- Vorbelegungen in den Dialogen **Verarbeiten** und **Prüfen und verarbeiten**
+
 {{< imgproc Jobmanager_Detailpruefung Resize "1280x" >}}
 Detailprüfung der einzelnen Lektionen
 {{< /imgproc >}}
