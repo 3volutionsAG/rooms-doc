@@ -49,6 +49,9 @@ Detailbuchung bestätigen
 Mit Hilfe der Checkbox <i>E-Mail</i> können Sie die Notifikation an die Organisator:in und Ersteller:in unterdrücken. Dasselbe gilt für die Exchange Synchronisation. Zudem haben Sie bei ausreichender Berechtigung die Möglichkeit, die automatische Verlängerung einer Reservation zu editieren (diese werden auf Ressourcenebene hinterlegt). </p>
 
 <p style="text-align: justify">
+Die Checkbox für die ICS-Datei steuert die Kalenderdatei für die direkten Buchungsnotifikationen an Ersteller:in, Organisator:in und Verantwortliche:n. Dienstleister- und Gruppenbenachrichtigungen, beispielsweise an den internen Hausdienst bei einer geänderten Bestuhlung, richten sich nicht nach dieser Checkbox. Für diese Benachrichtigungen wird die ICS-Datei angehängt, wenn die globale Erstellung von ICS-Dateien aktiviert ist und die Buchung aktiv bleibt. Diese Einstellung wird nicht pro Notifikationsvorlage konfiguriert. </p>
+
+<p style="text-align: justify">
 Sind Dokumentvorlagen verfügbar, können Sie diese herunterladen oder direkt per Mail als PDF- oder Word-Dokument bei Reservationsabschluss an den Organisator und Ersteller verschicken. Die Ausnahme bilden die als <i>Pflicht</i> markierten Downloads bzw. E-Mails, auf welche Sie keinen weiteren Einfluss haben und die automatisch verschickt werden. </p>
 
 <p style="text-align: justify">

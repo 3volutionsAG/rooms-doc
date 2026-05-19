@@ -15,3 +15,5 @@ Bestuhlungsmöglichkeiten einsehen und auswählen
 Die Bestuhlung hat direkten Einfluss auf die Anzahl Teilnehmer am Meeting. Falls Sie eine Bestuhlungsvariante auswählen, welche nicht genügend Platz für die Teilnehmer bietet, kann die Buchung nicht abgeschlossen werden. Genau gleich verhält sich das System bei zu wenig Teilnehmern (minimale Kapazität).
 
 Verändern Sie eine Bestuhlung, kann dies ebenfalls Einfluss auf die Vor- und Nachlaufzeiten (werden automatisch überprüft) sowie die Kosten haben, da der interne Dienst diese Umstuhlung vornehmen muss und somit Aufwand generiert wird.
+
+Ist für die betroffene Ressource eine Gruppe für Bestuhlungsbenachrichtigungen hinterlegt, erhält diese Gruppe bei relevanten Änderungen eine Notifikation. Eine ICS-Datei wird dabei unabhängig von der ICS-Checkbox der Buchung angehängt, sofern die globale Erstellung von ICS-Dateien aktiviert ist und die Buchung aktiv bleibt. Die ICS-Beilage lässt sich aktuell nicht pro Notifikationsvorlage ein- oder ausschalten.
