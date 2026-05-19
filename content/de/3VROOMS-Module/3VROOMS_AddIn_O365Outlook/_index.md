@@ -4,10 +4,10 @@ linkTitle: "Office 365 Outlook Add-In"
 weight: 10
 description: 'Das Office 365 Outlook Add-In ermöglicht das Buchen einer Ressource in Outlook.'
 ---
-<p style="text-align: justify"> Das Add-In kann im lokal installierten Outlook Client und in der Web-Anwendung von O365 Outlook genutzt werden. </p>
+Das Add-In kann im lokal installierten Outlook Client und in der Web-Anwendung von O365 Outlook genutzt werden.
 
-<p style="text-align: justify">
-Der Termin wird zunächst in Outlook erstellt. Über das Add-Inn stehen Ihnen weitere Funktionen zur Verfügung. Zusatzfunktionen beim: </p>
+
+Der Termin wird zunächst in Outlook erstellt. Über das Add-Inn stehen Ihnen weitere Funktionen zur Verfügung. Zusatzfunktionen beim:
 
 #### Termin/Serientermin erstellen
 
@@ -30,18 +30,18 @@ Bei Serienterminen:
 
 - Buchungsdaten eines Einzeltermins ändern (Raum, Equipment, Teilnehmer, ...)
 
-**Hinweis**: </br>
-<p style="text-align: justify">
-Ist zum neuen Termin eine der gebuchten Ressourcen oder Catering & Service nicht verfügbar, wird der Termin auf den ursprünglichen Termin zurückgesetzt.</br>
-Termine, die in der Vergangenheit liegen, werden nach einer Änderung nicht synchronisiert. </p>
-  
+**Hinweis**:
+
+Ist zum neuen Termin eine der gebuchten Ressourcen oder Catering & Service nicht verfügbar, wird der Termin auf den ursprünglichen Termin zurückgesetzt.
+Termine, die in der Vergangenheit liegen, werden nach einer Änderung nicht synchronisiert.
+
 #### Termin/Serientermin stornieren
 
-<p style="text-align: justify">
-In Outlook löschen Sie den kompletten Einzeltermin/Serientermin inkl. der Ressourcenbuchung in 3V ROOMS. </p>
 
-<p style="text-align: justify">
-Mit dem Buchungsassistenten können Sie die Ressourcenbuchung stornieren, der Termin in O365 Outlook bleibt erhalten. </p>
+In Outlook löschen Sie den kompletten Einzeltermin/Serientermin inkl. der Ressourcenbuchung in 3V ROOMS.
+
+
+Mit dem Buchungsassistenten können Sie die Ressourcenbuchung stornieren, der Termin in O365 Outlook bleibt erhalten.
 
 #### Einzelne Rooms Reservation aus einzelnem Serientermin einer Outlook Serie erstellen
 

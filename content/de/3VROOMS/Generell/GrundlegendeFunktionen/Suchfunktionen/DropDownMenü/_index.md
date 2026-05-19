@@ -5,7 +5,7 @@ weight: 5000
 
 description: 'Auswahlmenü ausklappen'
 ---
-<p style="text-align: justify"> Klicken Sie auf den nach unten gerichteten Pfeil, um das Auswahlmenü auszuklappen. Wählen das gewünschte Kriterium aus. Ihre Auswahl wird im Eingabefeld angezeigt. </p>
+Klicken Sie auf den nach unten gerichteten Pfeil, um das Auswahlmenü auszuklappen. Wählen das gewünschte Kriterium aus. Ihre Auswahl wird im Eingabefeld angezeigt.
 
 {{< imgproc DropDownMenue_beschriftet Resize "1280x" >}}
 Beispiel für ein Drop-Down-Menü

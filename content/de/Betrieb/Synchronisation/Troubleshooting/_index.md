@@ -36,11 +36,13 @@ Der klassische Synchronisationstest ist vor allem für **EWS-basierte** Modi hil
 
 ### Ergebnis interpretieren
 
+{{< bootstrap-table "table table-striped" >}}
 | Ergebnis | Bedeutung | Nächster Schritt |
 |----------|-----------|-----------------|
 | Alle Tests grün | Grundverbindung funktioniert | Weiter mit Schritt 3 |
 | Kein Test grün | Grundsätzliches Verbindungsproblem | Worker / Dienste prüfen und Logs auswerten |
 | Nur die ersten zwei Tests grün | typischerweise EWS-Subscription-Problem | [Push Subscription]({{< relref "Betrieb/Synchronisation/PushSubscriptions/_index.md" >}}) prüfen |
+{{< /bootstrap-table >}}
 
 {{% alert title="Microsoft365 / Graph" color="info" %}}
 Bei `Microsoft365` reicht der klassische Synchronisationstest allein nicht aus. Prüfen Sie zusätzlich:
@@ -116,11 +118,13 @@ Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen g
 
 {{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
 
+{{< bootstrap-table "table table-striped" >}}
 | Filter | Bedeutung |
 |--------|-----------|
 | **Buchungen mit Synchronisationsproblemen** | Einzelbuchungen, bei denen die Sync fehlgeschlagen ist |
 | **Serienbuchungen mit Synchronisationsproblemen** | Serien, bei denen die Sync fehlgeschlagen ist |
 | **Buchungen mit fehlender Back-Synchronisation** | über Add-in erstellte Buchungen, die ROOMS nicht mehr in Exchange finden konnte |
+{{< /bootstrap-table >}}
 
 **Empfehlung:** Buchungen mit Synchronisationsproblemen am besten annullieren und neu erstellen, wenn die Ursache nicht unmittelbar behoben werden kann.
 

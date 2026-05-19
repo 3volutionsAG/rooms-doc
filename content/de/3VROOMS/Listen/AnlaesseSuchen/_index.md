@@ -4,8 +4,8 @@ linkTitle: "Anlässe suchen"
 weight: 3
 description: 'Um Buchungen, die zu einem Anlass zusammengefasst wurden, nicht einzeln suchen zu müssen, können Sie direkt die Anlasssuche nutzen.'
 ---
-<p style="text-align: justify"> Um einen bestimmten Anlass zu finden, navigieren Sie unter Listen im Sidepanel auf das Subpanel Anlässe. Dadurch öffnet sich zunächst die Einfache Suche. Liegen Ihnen weitere Details, vor können Sie über die Erweiterte Suche das Ergebnis eingrenzen. </p>
+Um einen bestimmten Anlass zu finden, navigieren Sie unter Listen im Sidepanel auf das Subpanel Anlässe. Dadurch öffnet sich zunächst die Einfache Suche. Liegen Ihnen weitere Details, vor können Sie über die Erweiterte Suche das Ergebnis eingrenzen.
 
 {{< imgproc List_ANL_ANLsuche_beschriftet Resize "960x" >}}
-Ansicht der Anlasssuche 
+Ansicht der Anlasssuche
 {{< /imgproc >}}

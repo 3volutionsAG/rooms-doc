@@ -36,15 +36,15 @@ Hinweis:
 ### Installationsassistent
 
 1. Öffnen Sie den **3V-ROOMS Installer**.
-   
+
    {{< imgproc Installationsassistent Resize "640x" >}} {{< /imgproc >}}
 
 2. Akzeptieren Sie die **Lizenzvereinbarung**.
-   
+
    {{< imgproc Lizenzvereinbarung Resize "640x" >}} {{< /imgproc >}}
 
 3. Wählen Sie die **gewünschten Optionen**.
-   
+
    Typische Feature-Kombinationen sind:
 
    - nur Konfigurationskomponenten auf Administrations- oder Hilfsservern
@@ -59,13 +59,13 @@ Hinweis:
    {{< imgproc CustomSetup Resize "640x" >}} {{< /imgproc >}}
 
 4. Geben Sie den **Service Domäne-Account** ein. Im Kontext dieses Benutzers werden die Windows-Dienste `ROOMS` und `RoomsPro Worker` ausgeführt, sofern diese Features installiert werden. Werden die Felder leer gelassen, wird der lokale System-Account verwendet. Die Option _Service nach der Installation automatisch starten_ nicht anwählen.
-   
+
    {{< imgproc ServiceKonfig Resize "640x" >}} {{< /imgproc >}}
-   
-   **Anmerkung**: </br>
-   Der Benutzername muss zwingend mit der vorangestellten Domäne angegeben werden, ansonsten bricht das Setup während der Installation ab. </br>
+
+   **Anmerkung**:
+   Der Benutzername muss zwingend mit der vorangestellten Domäne angegeben werden, ansonsten bricht das Setup während der Installation ab.
 5. Klicken Sie auf **Installieren**.
-   
+
    {{< imgproc Installieren Resize "640x" >}} {{< /imgproc >}}
 
 ## Nach der Installation

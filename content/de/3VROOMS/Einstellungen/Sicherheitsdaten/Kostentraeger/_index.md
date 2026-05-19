@@ -95,9 +95,9 @@ Nach dem Import sehen Sie eine Rückmeldung wie z.B. **Aktualisiert**, **Erstell
 
 ### Wichtige Regeln (bitte beachten)
 
-- **Eindeutigkeit**: Ein Kostenträger wird über **Nummer + Geschäftsbereich** erkannt.  
+- **Eindeutigkeit**: Ein Kostenträger wird über **Nummer + Geschäftsbereich** erkannt.
   (Gleiche Nummer ist möglich, wenn der Geschäftsbereich unterschiedlich ist.)
-- **Terminierung statt Löschen**: Kostenträger, die früher per CSV importiert wurden, aber **in der aktuellen Importdatei fehlen**, werden automatisch **terminiert** (Gültig bis = heute).  
+- **Terminierung statt Löschen**: Kostenträger, die früher per CSV importiert wurden, aber **in der aktuellen Importdatei fehlen**, werden automatisch **terminiert** (Gültig bis = heute).
   Damit bleiben sie in der Historie erhalten, sind aber nicht mehr neu auswählbar.
 - **Vollständige Datei liefern**: Verwenden Sie den Import idealerweise als „Vollabzug“ (alle relevanten Kostenträger in jeder Datei), damit nichts unbeabsichtigt terminiert wird.
 

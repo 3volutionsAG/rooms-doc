@@ -44,7 +44,7 @@ Die Menüpunkte **Fragenkatalog** und **Fragen** sind getrennt. Einzelne Fragen 
 
 ## Begriffe kurz erklärt
 
-- **Frage**: Eine einzelne Abfrage (z.B. „Wer ist der technische Ansprechpartner am Eventtag (Name/Telefon)?“).  
+- **Frage**: Eine einzelne Abfrage (z.B. „Wer ist der technische Ansprechpartner am Eventtag (Name/Telefon)?“).
   Fragen werden unter [`Fragen`](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/) gepflegt.
 - **Fragenkatalog**: Eine Sammlung von Fragen, die Sie gemeinsam einer oder mehreren Ressourcen zuordnen.
 - **Zuordnung zu Ressourcen**: Bestimmt, **bei welchen** Ressourcen (typisch: Räume) der Fragenkatalog bei Buchungen relevant ist.

@@ -10,7 +10,7 @@ description: ''
    * Status (Workflow) wird gemäss der Ressource hinterlegtem Workflow und den Berechtigungen gesetzt
 
 2. Fehlerfall bei der Buchung
-   * Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben rechts im Bild eine Fehlermeldung 
+   * Besteht bei der Buchung ein Fehler, zeigt Ihnen das Actionpanel oben rechts im Bild eine Fehlermeldung
    * Buchung wird entfernt bzw. nicht gespeichert
 
 3. Ihre Buchung wurde erfolgreich durchgeführt

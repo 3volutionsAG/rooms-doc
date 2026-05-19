@@ -19,7 +19,9 @@ description: 'Nicht unterstützte Verhalten in Outlook'
 ### Vorbereitung
 
 |Möglicher Fehler|Resultat|Intervall|Logmeldung
+{{< bootstrap-table "table table-striped" >}}
 |---|---|---|---|
+{{< /bootstrap-table >}}
 |Keine Lizenzen|Abbruch|5 Minuten|[BackSync] - Missing license
 
 Für weitere Informationen wenden Sie sich bitte an das Support-Team der 3Volutions AG:

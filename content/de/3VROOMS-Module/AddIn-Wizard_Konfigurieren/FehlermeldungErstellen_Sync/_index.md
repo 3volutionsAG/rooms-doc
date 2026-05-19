@@ -4,7 +4,7 @@ linkTitle: "Fehlermeldung zur Synchronisation erstellen"
 weight: 100
 description: 'Sollte die Synchronisation fehlschlagen, ist es hilfreich eine entsprechende Fehlermeldung zu erhalten.'
 ---
-<p></br></p>
+
 
 1. Öffnen Sie **3V ROOMS**.
 2. Klicken Sie in der Menüzeile auf **Einstellungen**.
@@ -18,18 +18,18 @@ description: 'Sollte die Synchronisation fehlschlagen, ist es hilfreich eine ent
 9. Nehmen Sie folgende Einstellungen vor:
    1.  **Notifikationstyp**: Synchronisation - Fehlermeldung
    2.  **Titel**: ROOMS Synchronisation fehlgeschlagen
-   3.  **Text**:</br>
+   3.  **Text**:
 
         Die ROOMS Buchung konnte mit Outlook nicht richtig synchronisiert werden und wurde möglicherweise zurückgesetzt.
 
-        [Reservation.Titel] </br>
+        [Reservation.Titel]
         [ReservationVorlaufbeginnDatum], [Reservation.VorlaufbeginnZeit] - [Reservation.NachlaufendeZeit]
 
         Link zur ROOMS Buchung
 
-        Informationen zur fehlgeschlagenen Synchronisation: </br>
-        [SynchronisationValidierung] </br>
-        [Validierungsfehler] </br>
+        Informationen zur fehlgeschlagenen Synchronisation:
+        [SynchronisationValidierung]
+        [Validierungsfehler]
         [/SynchronisationValildierung]
 
         {{< imgproc NotifikationErstellen_Text Resize "960x" >}} {{< /imgproc >}}

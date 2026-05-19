@@ -7,8 +7,8 @@ description: 'Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und 
 
 ## Daten Importe/Exporte hinzufügen
 
-<p style="text-align: justify">
-Über den untenstehenden Button <i>Hinzufügen</i> fügen Sie einen neuen Import Parameter zur Importliste hinzu. Bei diesem bearbeiten Sie die Stammdaten.
+
+Über den untenstehenden Button _Hinzufügen_ fügen Sie einen neuen Import Parameter zur Importliste hinzu. Bei diesem bearbeiten Sie die Stammdaten.
 
 {{< imgproc Importe_hinzufügen_suchen Resize "960x" >}}
 Globale Parameter, Konfigurationsdaten bearbeiten
@@ -16,23 +16,25 @@ Globale Parameter, Konfigurationsdaten bearbeiten
 
 ### Stammdaten bearbeiten
 
-<p style="text-align: justify">
-Folgende Daten können für den Import Parameter bearbeitet werden: </p>
 
-| Feld         | Funktion         | 
-| ------------- |-------------  | 
-| Name      |<p style="text-align: justify"> Namen des Importparameters angeben. Freie Eingabe eines beliebigen Namens des Import/Export Jobs. </p>| 
-| Nächste Ausführung      |<p style="text-align: justify"> Datum und Zeit der Ausführung eintragen. Zum Starten des Jobs muss eine nächste Ausführung angegeben werden. Standard = leer. Datum/Zeit können auch in Vergangenheit liegen => sofortige Ausführung. Datumpicker verfügt nur über Datum/Zeit (kein von/bis) </p>|
-| Intervall in Minuten      |<p style="text-align: justify">  Standard = leer. Validierung auf positive Ganzzahlen. leer = einmalige Ausführung </p>|
-| Konfiguration |<p style="text-align: justify"> XML basierende Konfiguration des Imports oder Exports. Wird durch GARAIO Softwareentwickler definiert.  </p>|  
+Folgende Daten können für den Import Parameter bearbeitet werden:
+
+{{< bootstrap-table "table table-striped" >}}
+| Feld         | Funktion         |
+| ------------- |-------------  |
+| Name      | Namen des Importparameters angeben. Freie Eingabe eines beliebigen Namens des Import/Export Jobs. |
+| Nächste Ausführung      | Datum und Zeit der Ausführung eintragen. Zum Starten des Jobs muss eine nächste Ausführung angegeben werden. Standard = leer. Datum/Zeit können auch in Vergangenheit liegen => sofortige Ausführung. Datumpicker verfügt nur über Datum/Zeit (kein von/bis) |
+| Intervall in Minuten      |  Standard = leer. Validierung auf positive Ganzzahlen. leer = einmalige Ausführung |
+| Konfiguration | XML basierende Konfiguration des Imports oder Exports. Wird durch GARAIO Softwareentwickler definiert.  |
+{{< /bootstrap-table >}}
 
 {{< imgproc Importe_Stammdaten_bearbeiten Resize "960x" >}}
 Stammdaten der Importparameter bearbeiten
 {{< /imgproc >}}
 
-## Daten Importe/Exporte durchsuchen 
+## Daten Importe/Exporte durchsuchen
 
-<p style="text-align: justify">
-Über das linke Sidepanel durchsuchen Sie die Importliste nach dem Namen des Importparameters. </p>
+
+Über das linke Sidepanel durchsuchen Sie die Importliste nach dem Namen des Importparameters.
 
 

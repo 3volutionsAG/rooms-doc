@@ -10,8 +10,10 @@ Filterkriterien für Buchungsanfragen der Einfachen Suche
 
 Folgende Tabelle erläutert die Eingabefelder:
 
- |<div style="width:200px">Feld</div>|Funktion|
- |---|---|
- |Datum/Zeit|<p style="text-align: justify">Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlasses über den Datumspicker aus oder geben Sie ihn nach Aktivierung der Checkbox manuell ein.</p>|
- |Standort|<p style="text-align: justify">Wählen Sie den Standort der angefragten Ressource an.</p>|
- ---
+{{< bootstrap-table "table table-striped" >}}
+|Feld|Funktion|
+|---|---|
+|Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlasses über den Datumspicker aus oder geben Sie ihn nach Aktivierung der Checkbox manuell ein.|
+|Standort|Wählen Sie den Standort der angefragten Ressource an.|
+{{< /bootstrap-table >}}
+---

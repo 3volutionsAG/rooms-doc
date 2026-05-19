@@ -214,7 +214,7 @@ Für eine saubere Zuordnung verwenden Sie in Outlook am besten E-Mail-Adressen, 
 
 {{% alert title="Hinweis" color="secondary" %}}
 Wenn Datum oder Zeit in der CSV nicht erkannt werden, verwendet das System die aktuelle Zeit als Fallback. Überprüfen Sie daher immer die Vorschau vor dem Speichern.
-{{% /alert %}} 
+{{% /alert %}}
 
 
 

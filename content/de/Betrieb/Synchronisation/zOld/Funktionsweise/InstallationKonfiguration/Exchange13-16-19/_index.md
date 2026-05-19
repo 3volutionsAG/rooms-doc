@@ -24,8 +24,8 @@ Zusätzlich müssen die sogenannten Client Throttling Policies berücksichtigt w
 Weitere Informationen zu den verschiedenen Themen dieser Seite sind hier zu finden:
 
 [Konfiguration Exchange Impersonation](http://msdn.microsoft.com/en-us/library/bb204095.aspx):
- http://msdn.microsoft.com/en-us/library/bb204095.aspx
+http://msdn.microsoft.com/en-us/library/bb204095.aspx
 ManagementScope erstellen (Technet):
- http://technet.microsoft.com/en-us/library/dd335137%28EXCHG.140%29.aspx
+http://technet.microsoft.com/en-us/library/dd335137%28EXCHG.140%29.aspx
 [Throttling Policies](http://technet.microsoft.com/en-us/library/dd298094.aspx):
 [http://technet.microsoft.com/en-us/library/dd298094.aspx](http://technet.microsoft.com/en-us/library/dd298094.aspx)

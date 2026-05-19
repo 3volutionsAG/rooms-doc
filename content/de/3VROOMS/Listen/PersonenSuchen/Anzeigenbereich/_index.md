@@ -4,7 +4,7 @@ linkTitle: "Anzeigenbereich"
 weight: 30
 description: 'Im Anzeigenbereich werden die Ergebnisse Ihrer Suche angezeigt.'
 ---
-<p style="text-align: justify"> Das Ergebnis ist tabellarisch angeordnet. Jede Person wird in einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die zu den jeweiligen Personen hinterlegt wurden. </p> 
+Das Ergebnis ist tabellarisch angeordnet. Jede Person wird in einer Zeile ausgegeben. In den Spalten finden Sie alle Informationen, die zu den jeweiligen Personen hinterlegt wurden.
 
 {{< imgproc List_Pers_Anzeige_geschw_b Resize "960x" >}}
 Anzeigenbereich für die Ergebnisse der Personensuche
@@ -12,4 +12,4 @@ Anzeigenbereich für die Ergebnisse der Personensuche
 
 ## Anpassung der Darstellung
 
-<p style="text-align: justify"> Mit Hilfe der Listensymbole können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel <a href="/3vrooms/generell/grundlegendefunktionen/">Grundlegende Funktionen</a> erläutert. </p>
+Mit Hilfe der Listensymbole können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Grundlegende Funktionen](/3vrooms/generell/grundlegendefunktionen/) erläutert.

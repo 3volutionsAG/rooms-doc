@@ -5,5 +5,4 @@ weight: 100
 
 description: 'Im Kopfbereich befindet sich die Menüleiste zur Navigation durch die Applikation sowie Schnellübersichten und Kurzinformationen.'
 ---
- <p style="text-align: justify"> Rechts neben der Menüleiste wird Ihr Name und die Zeitzone, in der Sie sich befinden, angezeigt. Des weiteren finden Sie dort eine Schnellübersicht laufender Buchungen sowie ein Actionpanel, das bei Bestätigungen oder Fehlermeldungen auftaucht.
- 
+  Rechts neben der Menüleiste wird Ihr Name und die Zeitzone, in der Sie sich befinden, angezeigt. Des weiteren finden Sie dort eine Schnellübersicht laufender Buchungen sowie ein Actionpanel, das bei Bestätigungen oder Fehlermeldungen auftaucht.

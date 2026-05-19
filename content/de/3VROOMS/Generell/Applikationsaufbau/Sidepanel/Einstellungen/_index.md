@@ -5,8 +5,8 @@ weight: 5000
 
 description: 'Unter [Einstellungen](/3vrooms/einstellungen/) können Sie ROOMS individuell und firmenspezifisch konfigurieren.'
 ---
-<p style="text-align: justify">  Dazu gehört das Anlegen der Mitarbeitenden und ihren Berechtigungen, kooperierende Dienstleister und deren Angebote sowie Details zu Ressourcen oder Equipments.
-Dieser Bereich wird vorrangig von den administrativen Verantwortlichen der Applikation genutzt. </p>
+  Dazu gehört das Anlegen der Mitarbeitenden und ihren Berechtigungen, kooperierende Dienstleister und deren Angebote sowie Details zu Ressourcen oder Equipments.
+Dieser Bereich wird vorrangig von den administrativen Verantwortlichen der Applikation genutzt.
 
 {{< imgproc Startseite_Einstellungen_Sidepanel Resize "1280x" >}}
 Rot umrandet das Sidepanel im Bereich Einstellungen {{< /imgproc >}}

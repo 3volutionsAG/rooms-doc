@@ -9,7 +9,7 @@ description: 'In diesem Bereich bearbeiten und speichern Sie Gruppenlisten. Eben
 Im rechten Feld sehen Sie die bereits gespeicherten Benutzergruppen in Listenform. Im linken Sidepanel können Sie mithilfe der Filterfunktion nach Benutzergruppen suchen.
 
 {{< imgproc Benutzergruppen_bearbeiten_suchen Resize "960x" >}}
-Benutzergruppen bearbeiten und suchen 
+Benutzergruppen bearbeiten und suchen
 {{< /imgproc >}}
 
 ### Benutzergruppen bearbeiten und neu hinzufügen
@@ -28,15 +28,15 @@ Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehen
 
 Unter den Stammdaten der Benutzergruppe tragen Sie folgende Informationen ein:
 
-* Benutzergruppen ID 
-* Bezeichnung 
+* Benutzergruppen ID
+* Bezeichnung
 
 ### Serieneinstellungen
 
 Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 50 Iterationen). Die Maximierung erfolgt auf Iterationen oder Laufdauer unterteilt in Monate, Wochen, Tage.
 
-* Max. series duration yearly 
-* Max. Seriendauer monatlich 
+* Max. series duration yearly
+* Max. Seriendauer monatlich
 * Max. Seriendauer wöchentlich Serie
 * Max. Seriendauer täglich
 * Absolute Serienbegrenzung 1
@@ -59,7 +59,7 @@ Sie können einstellen, welche Eigenschaften die erstellte Gruppe aufweisen soll
 | --- | --- | --- |
 | Berechtigungsgruppe | nicht selektiert | Stehen bei der Zuweisung von Berechtigungen zur Verfügung |
 |Notifikationsgruppe|nicht selektiert|Stehen bei der Zuweisung für Benachrichtigungen zur Verfügung|
-|Benutzerkreis|nicht selektiert| - Benutzer in Benutzergruppen mit dem Flag "Benutzerkreis" aktiviert, können im Buchungsprozess nur Buchungen für Benutzer dieser Gruppe erstellen. <br> - Anwendung nur im Zusammenhang mit dem Recht "Darf Reservationen mit Organisator buchen" - Kann durch Recht "Darf Organisator aus allen Benutzerkreisen sehen" übersteuert werden|
+|Benutzerkreis|nicht selektiert| - Benutzer in Benutzergruppen mit dem Flag "Benutzerkreis" aktiviert, können im Buchungsprozess nur Buchungen für Benutzer dieser Gruppe erstellen. ; - Anwendung nur im Zusammenhang mit dem Recht "Darf Reservationen mit Organisator buchen" - Kann durch Recht "Darf Organisator aus allen Benutzerkreisen sehen" übersteuert werden|
 {{< /bootstrap-table >}}
 ### Checkin Einzelbuchungen
 Wenn diese Option aktiviert ist, müssen alle Benutzer in dieser Gruppe für Ressourcen, bei denen der Check-in-Prozess aktiviert ist, diesen verpflichtend durchführen.
@@ -88,7 +88,7 @@ Die Liste aktualisiert sich automatisch. Sie sehen die ausgewählten Personen in
 Ansicht der aktualisierten Personen in der Benutzergruppe
 {{< /imgproc >}}
 
-### Notifikationen 
+### Notifikationen
 
 In diesem Bereich können Sie Notifikationsvorlagen für Benutzergruppen erfassen und verwalten. Ebenfalls stellen Sie ein, wie die Notifikationen versendet werden sollen.
 
@@ -99,15 +99,15 @@ Klicken Sie auf den Menü Reiter `Notifikationen`, wird Ihnen eine Liste aller g
 Über das Stift Icon können Sie die Notifikation bearbeiten. Es öffnet sich dabei ein Feld, indem Sie folgende Informationen eingeben:
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld          | Funktion      | 
+| Feld          | Funktion      |
 | ------------- |-------------  |
-| Notifikationstyp |Jeder Notifikationstyp darf nur einmal erfasst werden. | 
-| Benachrichtigung im CC an|Erfassung von gültigen E-Mail Adressen, welche beim Versenden der Notifikation  im CC an die entsprechenden Adressaten verschickt werden. Mehrere E-Mail Adressen werden mittels Semikolon separiert|  
+| Notifikationstyp |Jeder Notifikationstyp darf nur einmal erfasst werden. |
+| Benachrichtigung im CC an|Erfassung von gültigen E-Mail Adressen, welche beim Versenden der Notifikation  im CC an die entsprechenden Adressaten verschickt werden. Mehrere E-Mail Adressen werden mittels Semikolon separiert|
 | Antwort auf Benachrichtigung an Ersteller|Checkbox aktivieren|
 | Sprache|Mittels Drop-Down die Sprache auswählen, es stehen alle aktivierten Sprachen zur Verfügung.|
 | Titel|Der Titel muss mehrsprachig erfasst werden|
 | Email Body|Wurde kein E-Mail-Server eingetragen, erscheint dieses Feld nicht. Es steht ein Texteditor inkl. Formatierungen zur Verfügung. E-Mail Body kann mehrsprachig abgefüllt werden. Ist der E-Mail Body leer wird keine Notifikation verschickt. Es stehen alle Formatierungen gemäss Editor zur Verfügung|
-| Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalters wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert, wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors.| 
+| Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalters wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert, wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors.|
 {{< /bootstrap-table >}}
 
 {{< imgproc Benutzergruppen_Notifikationen_bearbeiten Resize "960x" >}}

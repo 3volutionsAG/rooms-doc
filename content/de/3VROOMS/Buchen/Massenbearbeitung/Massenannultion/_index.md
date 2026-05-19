@@ -4,8 +4,8 @@ linkTitle: "Massenannulation"
 weight: 20
 description: ''
 ---
-<p style="text-align: justify">
-Sie führen eine Massenannullation von Buchungen ebenfalls in den Menüs <i>Plan</i>, <i>Kalender</i> und <i>Listen</i> durch. </p>
+
+Sie führen eine Massenannullation von Buchungen ebenfalls in den Menüs _Plan_, _Kalender_ und _Listen_ durch.
 
 1. Wählen Sie eine oder Mehrere Buchungen aus.
 2. Klicken Sie auf den Button **Annullieren**.

@@ -69,35 +69,35 @@ Eingabe wöchentliche Serieninformation
 
 Bei der monatlichen Serie gibt es zwei Varianten zur Erstellung:
 
-1. Am selben Datum:</br>
+1. Am selben Datum:
 Es kann eingestellt werden, dass jeweils an einem bestimmten Tag jedes X-ten Monats eine Buchung erstellt wird.
 
-2. Am selben Tag: </br>
+2. Am selben Tag:
 Es kann eingestellt werden, dass die Buchung immer jeweils am X-ten Wochentag des X-ten Monats erstellt wird.
 
 {{< imgproc Detailbuchung_Serieninformation_monatlich Resize "960x" >}}
-Eingabe der Serieninformation zum Buchen von Ressourcen 
+Eingabe der Serieninformation zum Buchen von Ressourcen
 {{< /imgproc >}}
 
-Wenn die gewünschten Einstellungen vorgenommen wurden, kann auf den Button <i>Erstellen</i> geklickt werden. Die Serienelemente werden dann gesucht und deren Verfügbarkeit direkt geprüft.
+Wenn die gewünschten Einstellungen vorgenommen wurden, kann auf den Button _Erstellen_ geklickt werden. Die Serienelemente werden dann gesucht und deren Verfügbarkeit direkt geprüft.
 
-### Anzeige der Serienelemente 
+### Anzeige der Serienelemente
 
-Nach dem Klicken auf den Button <i>Erstellen</i> überprüft ROOMS die jeweiligen Serienelemente auf ihre Verfügbarkeit. Das Ergebnis wird in einer Liste aufgeführt.
+Nach dem Klicken auf den Button _Erstellen_ überprüft ROOMS die jeweiligen Serienelemente auf ihre Verfügbarkeit. Das Ergebnis wird in einer Liste aufgeführt.
 
 {{< imgproc Detailbuchung_Serieninformation_Prüfstatus Resize "960x" >}}
-Prüfstatus der Serienelemente nach dem Erstellen der Buchung 
+Prüfstatus der Serienelemente nach dem Erstellen der Buchung
 {{< /imgproc >}}
 
-In der Liste existiert eine Spalte Prüfstatus. Falls dieser Status ein Warndreieck aufweist, wird dadurch angezeigt, dass die Ressource zu diesem Zeitpunkt besetzt ist. Dieses Serienelement kann nur durch Anwählen der Checkbox und anschliessendem Klicken des Buttons <i>Löschen</i> aus der Serie entfernt werden. Klicken Sie auf das Stift Icon um die Ressource und die Buchung zu bearbeiten. Sie können für eine andere Ressource (einmalige Umbuchung auf eine andere Ressource) oder ein anderen Zeitraum (bei gleicher Ressource) wählen. Dies kann auch mit Serienelementen gemacht werden, welche grundsätzlich frei sind.
+In der Liste existiert eine Spalte Prüfstatus. Falls dieser Status ein Warndreieck aufweist, wird dadurch angezeigt, dass die Ressource zu diesem Zeitpunkt besetzt ist. Dieses Serienelement kann nur durch Anwählen der Checkbox und anschliessendem Klicken des Buttons _Löschen_ aus der Serie entfernt werden. Klicken Sie auf das Stift Icon um die Ressource und die Buchung zu bearbeiten. Sie können für eine andere Ressource (einmalige Umbuchung auf eine andere Ressource) oder ein anderen Zeitraum (bei gleicher Ressource) wählen. Dies kann auch mit Serienelementen gemacht werden, welche grundsätzlich frei sind.
 
 Klicken Sie auf das Stift Icon, um die Ressource zu bearbeiten. Sie sehen ein neues Fenster, in welchem Sie einen anderen Zeitraum oder eine andere Ressource wählen können. Sie sehen nur die zu diesem Zeitpunkt freien Ressourcen der gleichen Art.
 
 {{< imgproc Detailbuchung_Prüfstatus_bearbeiten Resize "960x" >}}
-Eine Buchung aus der Serienliste bearbeiten  
+Eine Buchung aus der Serienliste bearbeiten
 {{< /imgproc >}}
 
-Wählen Sie mittels des Datumspickers einen anderen Zeitraum für diese Reservation aus. Mit einem Klick auf den Button <b>+</b> der Ressource wählen Sie aus dem Standortbaum eine andere verfügbare Ressource der gleichen Art aus. Mit dem Button <i>Speichern</i> prüft ROOMS die Angaben und speichert sie dementsprechend ab.
+Wählen Sie mittels des Datumspickers einen anderen Zeitraum für diese Reservation aus. Mit einem Klick auf den Button **+** der Ressource wählen Sie aus dem Standortbaum eine andere verfügbare Ressource der gleichen Art aus. Mit dem Button _Speichern_ prüft ROOMS die Angaben und speichert sie dementsprechend ab.
 
 {{% alert title="Hinweis bei synchronisierten Exchange-Ressourcen" color="info" %}}
 Wenn die Ressource mit einer Exchange-Raumressource synchronisiert wird, kann das Umbuchen einzelner Serientermine auf alternative Räume dazu führen, dass die Exchange-Ressource die gesamte Serie ablehnt. Grund: Die Termine, an denen die Ressource bereits belegt ist, werden von Exchange als Konflikte gewertet. Weitere Details und Konfigurationsmöglichkeiten unter [Exchange Ressource Sync — Buchungsrichtlinien](/betrieb/synchronisation/resourcesync/#buchungsrichtlinien-der-exchange-ressource-booking-policies).
@@ -108,18 +108,18 @@ Wenn die Ressource mit einer Exchange-Raumressource synchronisiert wird, kann da
 Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterationen beispielsweise die letzten beiden Termine eine halbe Stunde früher beginnen, kann dies in folgenden Schritten eingegeben werden:
 
 1.	Man geht im Kalender zum zweitletzten Termin, ab welchem die Änderung gelten soll.
-2.	Mit Klick auf das <b>+</b>-Icon öffnet sich ein Fenster und man klickt den Button <b>Bearbeiten</b>.
-3.	Aktivieren der Checkbox <b>Auf nachfolgende Serieneinträge übernehmen</b> unten in der Ansicht.
+2.	Mit Klick auf das **+**-Icon öffnet sich ein Fenster und man klickt den Button **Bearbeiten**.
+3.	Aktivieren der Checkbox **Auf nachfolgende Serieneinträge übernehmen** unten in der Ansicht.
 4.	Durch Eingabe der gewünschten Startzeit, Reservation um eine halbe Stunde vorziehen. Bestätigung durch grünes Häkchen erfolgt.
-5.	Klick auf <b>Reservation abschliessen</b>.
+5.	Klick auf **Reservation abschliessen**.
 6.	Seite mit Zusammenfassung wird ausgegeben, darauf ist die Änderung der Zeiten für die beiden letzten Termine ersichtlich.
-7.	Klick auf <b>Reservation bestätigen</b>. Die Teilnehmer der Serie erhalten für die bearbeiteten Termine zuerst einzelne Absagen und danach für den bearbeiteten Teil der Serie eine einzelne neue Einladung.
+7.	Klick auf **Reservation bestätigen**. Die Teilnehmer der Serie erhalten für die bearbeiteten Termine zuerst einzelne Absagen und danach für den bearbeiteten Teil der Serie eine einzelne neue Einladung.
 
-Die Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> ist nur im Bearbeitungsmodus vorhanden und übernimmt mit ihrer Aktivierung alle Änderungen der aktuellen Reservation auf alle künftigen Reservationen dieser Serie.
+Die Checkbox _Auf nachfolgende Serieneinträge übernehmen_ ist nur im Bearbeitungsmodus vorhanden und übernimmt mit ihrer Aktivierung alle Änderungen der aktuellen Reservation auf alle künftigen Reservationen dieser Serie.
 
 ### Catering & Service bei Serienbearbeitung
 
-Beim Hinzufügen eines neuen Datums zu einer bestehenden Serie oder beim Bearbeiten mit aktivierter Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> werden die Catering & Service Bestellungen auf die neuen bzw. betroffenen Serientermine übertragen.
+Beim Hinzufügen eines neuen Datums zu einer bestehenden Serie oder beim Bearbeiten mit aktivierter Checkbox _Auf nachfolgende Serieneinträge übernehmen_ werden die Catering & Service Bestellungen auf die neuen bzw. betroffenen Serientermine übertragen.
 
 {{% alert color="info" %}}
 Die Quelle der Catering & Service Artikel ist immer der Termin, über den die Serie geöffnet bzw. bearbeitet wird — nicht zwingend der erste Termin der Serie. Hat der geöffnete Termin keine Catering & Service Artikel, werden auch die neuen Termine ohne Artikel erstellt.
@@ -167,7 +167,7 @@ Dies ist technisch bedingt, da Exchange eine geteilte Serie als zwei separate Se
 
 #### Wie kann die Meldung vermieden werden?
 
-- **Einzelne Termine bearbeiten**: Wenn nur ein bestimmter Termin angepasst werden soll, diesen ohne die Checkbox <i>Auf nachfolgende Serieneinträge übernehmen</i> bearbeiten. Einzeländerungen lösen keine Aufteilung aus.
+- **Einzelne Termine bearbeiten**: Wenn nur ein bestimmter Termin angepasst werden soll, diesen ohne die Checkbox _Auf nachfolgende Serieneinträge übernehmen_ bearbeiten. Einzeländerungen lösen keine Aufteilung aus.
 - **Alle Termine gleichzeitig ändern**: Wenn die Änderung für **alle** zukünftigen Termine gilt, kann ROOMS die Serie in bestimmten Fällen direkt aktualisieren, ohne sie aufzuteilen.
 
 ## Zeitzone für Serienbuchungen
@@ -236,13 +236,13 @@ Wenn diese Serie synchronisiert wird, werden `7 Ausnahmen` erstellt. In diesem B
 |-------------|-----------------------|-------------------|-----------------------------------------------------|-------------------|
 | 2023-10-27  | 07:00:00 (UTC+00:00)  | 09:00 (UTC+02:00) | 03:00 (UTC-04:00)                                   | 08:00 (UTC+01:00) |
 | 2023-10-28  | 07:00:00 (UTC+00:00)  | 09:00 (UTC+02:00) | 03:00 (UTC-04:00)                                   | 08:00 (UTC+01:00) |
-| 2023-10-29  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-10-30  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-10-31  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-11-01  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-11-02  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-11-03  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
-| 2023-11-04  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | <span class="text-warning">04:00 (UTC-04:00)</span> | 08:00 (UTC+00:00) |
+| 2023-10-29  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-10-30  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-10-31  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-11-01  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-11-02  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-11-03  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
+| 2023-11-04  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | **04:00 (UTC-04:00)** | 08:00 (UTC+00:00) |
 | 2023-11-05  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | 03:00 (UTC-05:00)                                   | 08:00 (UTC+00:00) |
 | 2023-11-06  | 08:00:00 (UTC+00:00)  | 09:00 (UTC+01:00) | 03:00 (UTC-05:00)                                   | 08:00 (UTC+00:00) |
 {{< /bootstrap-table >}}
@@ -258,13 +258,13 @@ Wenn diese Serie synchronisiert wird, werden `7 Ausnahmen` erstellt. In diesem B
 |-------------|-----------------------|-------------------|-----------------------------------------------------|-------------------|
 | 2023-10-27  | 08:00:00 (UTC+00:00)  | 10:00 (UTC+02:00) | 04:00 (UTC-04:00)                                   | 09:00 (UTC+01:00) |
 | 2023-10-28  | 08:00:00 (UTC+00:00)  | 10:00 (UTC+02:00) | 04:00 (UTC-04:00)                                   | 09:00 (UTC+01:00) |
-| 2023-10-29  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-10-30  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-10-31  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-11-01  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-11-02  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-11-03  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
-| 2023-11-04  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | <span class="text-warning">05:00 (UTC-04:00)</span> | 09:00 (UTC+00:00) |
+| 2023-10-29  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-10-30  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-10-31  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-11-01  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-11-02  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-11-03  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
+| 2023-11-04  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | **05:00 (UTC-04:00)** | 09:00 (UTC+00:00) |
 | 2023-11-05  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | 04:00 (UTC-05:00)                                   | 09:00 (UTC+00:00) |
 | 2023-11-06  | 09:00:00 (UTC+00:00)  | 10:00 (UTC+01:00) | 04:00 (UTC-05:00)                                   | 09:00 (UTC+00:00) |
 {{< /bootstrap-table >}}

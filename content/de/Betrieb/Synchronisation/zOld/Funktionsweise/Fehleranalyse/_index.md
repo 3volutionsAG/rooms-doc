@@ -74,5 +74,5 @@ MS Outlook starten, danach...
 Wird das Addin aufgelistet? Ist die Checkbox davor aktiviert?
 
 - Das Addin wird nicht aufgelistet: Regedit öffnen, HKLM\Software sowie HKCU\Software exportieren. Exportierte Datei zusammen mit Angabe der Versionen von Betriebssystem (x64?), MS Office und Addin Versionsnummer (siehe Screenshot, oder „Eigenschaften&quot; der Datei Garaio.Products.RoomsPro.OutlookAddin.Core.dll, Tab Details) an Garaio senden.
-- Das Addin wird aufgelistet, die Checkbox davor ist aber nicht aktiviert: Checkbox aktivieren und Dialog schliessen. Wird die Sidebar jetzt angezeigt? Ist die Checkbox beim erneuten Öffnen des Dialogs noch aktiviert? </br>
- -\&gt; Nein: Ereignisanzeige öffnen, Suche nach gerade erzeugten Fehler-Einträgen. Inhalt kopieren und Garaio kontaktieren.
+- Das Addin wird aufgelistet, die Checkbox davor ist aber nicht aktiviert: Checkbox aktivieren und Dialog schliessen. Wird die Sidebar jetzt angezeigt? Ist die Checkbox beim erneuten Öffnen des Dialogs noch aktiviert?
+-\&gt; Nein: Ereignisanzeige öffnen, Suche nach gerade erzeugten Fehler-Einträgen. Inhalt kopieren und Garaio kontaktieren.

@@ -4,24 +4,28 @@ linkTitle: "Spaltenansicht Standard"
 weight: 1
 description: 'Standardmässig werden die Spalten mit den grundlegenden Informationen eines Anlasses angezeigt.'
 ---
-<p style="text-align: justify"> Standardmässig sind folgende Spalten sichtbar: </p>
+Standardmässig sind folgende Spalten sichtbar:
 
-|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
+{{< bootstrap-table "table table-striped" >}}
+|Spalte|Symbol|Anmerkungen|
 |---|---|---|
 |Ressourcen ID||Eindeutige Zuordnung der Ressource|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify">Details zu Ressourcen bearbeiten </p>|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Details zu Ressourcen bearbeiten |
+{{< /bootstrap-table >}}
 ---
 
 {{< imgproc List_RES_bearb Resize "960x" >}}
 Eingabemaske zu Bearbeitung der Ressourcendetails
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Weitere Informationen zur Eingabemaske finden Sie im Kapitel <a href="/3vrooms/einstellungen/ressourcen/#ressource-bearbeiten">Ressourcen bearbeiten</a>. </p>
+Weitere Informationen zur Eingabemaske finden Sie im Kapitel [Ressourcen bearbeiten](/3vrooms/einstellungen/ressourcen/#ressource-bearbeiten).
 
-|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
+{{< bootstrap-table "table table-striped" >}}
+|Spalte|Symbol|Anmerkungen|
 |---|---|---|
-|Bezeichnung||<p style="text-align: justify">Von der erstellenden Person vergebener Name der Ressource </br> _ist nicht zwingend eindeutig_</p>|
-|Ressourcenart||<p style="text-align: justify">Je nach firmenspezifischer Definition </br> _z.B. Raum, Parkplatz, Equipment_</p>|
-|Standort||<p style="text-align: justify">hierarchische Darstellung des Standortes</p>|
-||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|<p style="text-align: justify"> Details zu Ressourcen bearbeiten</p>|<p style="text-align: justify">Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. </p>|
+|Bezeichnung||Von der erstellenden Person vergebener Name der Ressource ; _ist nicht zwingend eindeutig_|
+|Ressourcenart||Je nach firmenspezifischer Definition ; _z.B. Raum, Parkplatz, Equipment_|
+|Standort||hierarchische Darstellung des Standortes|
+||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}| Details zu Ressourcen bearbeiten|Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. |
+{{< /bootstrap-table >}}
 ---

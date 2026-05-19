@@ -15,7 +15,7 @@ Die Konfiguration erfolgt in zwei Schritten:
 2. Klicken Sie im linken Panel auf **Azure Active Directory**. Es öffnet sich ein neues Fenster.
 3. Klicken Sie auf **Azure Active Directory**.
 4. Wählen Sie **App Registrations**.
-5. Kicken Sie auf die Schaltfläche **+ New Registration** </br>
+5. Kicken Sie auf die Schaltfläche **+ New Registration**
 
     {{< imgproc NewReg Resize "640x" >}}{{< /imgproc >}}
 
@@ -23,8 +23,8 @@ Die Konfiguration erfolgt in zwei Schritten:
 
     1. Name: ROOMS
     2. Supported Account Types: *Accounts in any organizational directory.
-    3. Redirect URI: </br>
-        https:// *Ihre Rooms Domäne* /signin-microsoft.com </br>
+    3. Redirect URI:
+        https:// *Ihre Rooms Domäne* /signin-microsoft.com
         Z.B.: https://vnext.idp.3vrooms.app/signin-microsoft.com
 
 ### Konfiguration in ROOMS
@@ -36,7 +36,7 @@ Damit ROOMS mit externen Identity Providern, wie Microsoft Azure Active Director
 3. Öffnen Sie das Subpanel **Globale Parameter**.
 4. Suchen Sie den Eintrag **BezeichnungIdentity Providers - OAuth 2.0**.
 5. Klicken Sie auf den **Bleistift**, um die Parameter einzustellen.
-6. Geben Sie in das Feld Wert folgend Zeilen ein: </br>
+6. Geben Sie in das Feld Wert folgend Zeilen ein:
 
     ```
    <IdentityProviders>
@@ -57,6 +57,7 @@ Damit ROOMS mit externen Identity Providern, wie Microsoft Azure Active Director
 7. Füllen Sie die Felder entsprechend Ihrer Anforderungen. Orientieren Sie sich dabei an der Erklärung der Felder:
 
     ---
+{{< bootstrap-table "table table-striped" >}}
     |Feld|Erklärung|
     |---|---|---|
     |Name|Unique name provided by ROOMS, which identifies the identity provider.|
@@ -69,6 +70,7 @@ Damit ROOMS mit externen Identity Providern, wie Microsoft Azure Active Director
     |TokenEndpoint|The URI the middleware will access to exchange the OAuth token.|
     |MetadataEndpoint|The URI the middleware will access to retrieve basic metadata about the Identity Provider.|
     |UserInformationEndpoint|The URI the middleware will access to obtain the user information.|
+{{< /bootstrap-table >}}
     ---
 
 Meist ist es nicht nötig alle Felder auszufüllen, mindestens müssen jedoch **Name**, **ClaimLookup**, **ClientId** sowie **Secret** angegeben werden.
@@ -87,8 +89,7 @@ Für O365 könnte die Konfiguration wie folgt aussehen:
 </IdentityProviders>
 ```
 
-<p align="justify">
-Jeder Person welche in der Lage sein soll OAuth zu verwenden, muss ein Logon vom Typ **OAuth 2.0** hinterlegt werden (Dies kann optional durch den Benutzerdatenimport automatisiert werden). Der Name muss hierbei dem Inhalt, welcher im Claim mit dem Key ClaimLookup definiert wurde entsprechen. </p>
+Jeder Person welche in der Lage sein soll OAuth zu verwenden, muss ein Logon vom Typ **OAuth 2.0** hinterlegt werden (Dies kann optional durch den Benutzerdatenimport automatisiert werden). Der Name muss hierbei dem Inhalt, welcher im Claim mit dem Key ClaimLookup definiert wurde entsprechen.
 
 1. Klicken Sie in der Menüleiste auf **Einstellungen**.
 2. Wählen Sie im Sidepanel **Personen**.

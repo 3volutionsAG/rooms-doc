@@ -4,11 +4,13 @@ linkTitle: "Spaltenansicht Standard"
 weight: 1
 description: 'Standardmässig sind hier aufgeführte Spalten sichtbar'
 ---
-|<div style="width:200px">Spalte</div>|<div style="width:200px">Symbol</div>|Anmerkungen|
+{{< bootstrap-table "table table-striped" >}}
+|Spalte|Symbol|Anmerkungen|
 |---|---|---|
 |Nachname|||
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Personendaten bearbeiten|
 |Vorname|||
 |Telefon intern||firmeninterne Telefonnummer|
 |Mail||E-Mail-Adresse|
+{{< /bootstrap-table >}}
 ---

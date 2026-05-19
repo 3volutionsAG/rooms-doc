@@ -23,6 +23,7 @@ Outlook sollte vor der Installation beendet werden.
 
 Die Installationsdatei kann für Erstinstallationen wie auch für Updates verwendet werden. Eine Deinstallation bereits installierter Versionen ist nicht notwendig, da das Setup diese Aufgabe selber übernimmt. Bei einem Update werden die bei der vorgängigen Installation angegebenen Werte übernommen.
 
+{{< bootstrap-table "table table-striped" >}}
 | **Installationsschritt** | **Beschreibung** |
 | --- | --- |
 | Begrüssungsschritt – keine Interaktion. |
@@ -30,6 +31,7 @@ Die Installationsdatei kann für Erstinstallationen wie auch für Updates verwen
 | Angabe eines Installationspfads. Es wird empfohlen, den vorgegebenen Pfad zu verwenden. |
 | Angabe der URL der zu verwendenen ROOMS Installation im Format &quot;http(s)://server/mandant&quot;. |
 | Bestätigungsschritt - keine Interaktion. |
+{{< /bootstrap-table >}}
 
 Um die Installation bei einer grösseren Anzahl Clients automatisiert durchzuführen, kann folgender Befehl für eine sogenannte &quot;unattended installation&quot; verwendet werden:
 

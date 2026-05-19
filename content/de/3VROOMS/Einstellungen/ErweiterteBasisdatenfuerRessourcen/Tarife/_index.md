@@ -39,12 +39,12 @@ Ressourcen innerhalb derselben Gliederung müssen dasselbe Tarifmodell verwenden
 {{% /alert %}}
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld         | Funktion         | 
-| ------------- |-------------  | 
-| Bezeichnung        |<p style="text-align: justify"> Die Bezeichnung der Tarifkategorie festlegen </p>| 
-| Tarifmodell   |<p style="text-align: justify"> Über das _drop-down_ Menü aus kumultativem, pauschalem oder zeitabhängigem Tarif auswählen </p> |  
-| Mehrwertsteuer  |<p style="text-align: justify"> Angeben, ob die Mehrwertsteuer berücksichtigt werden soll oder nicht   </p> |  
-| Tarife von Firma bevorzugen  |<p style="text-align: justify">  Ankreuzen, wenn zutreffend  </p> |  
+| Feld         | Funktion         |
+| ------------- |-------------  |
+| Bezeichnung        | Die Bezeichnung der Tarifkategorie festlegen |
+| Tarifmodell   | Über das _drop-down_ Menü aus kumultativem, pauschalem oder zeitabhängigem Tarif auswählen  |
+| Mehrwertsteuer  | Angeben, ob die Mehrwertsteuer berücksichtigt werden soll oder nicht    |
+| Tarife von Firma bevorzugen  |  Ankreuzen, wenn zutreffend   |
 {{< /bootstrap-table >}}
 
 {{< imgproc Tarife_neu_erstellen Resize "960x" >}}
@@ -64,29 +64,29 @@ Es öffnet sich ein Fenster, in welchem Sie die Daten der Tarife festlegen.
 Die folgenden Daten legen Sie bei den Tarifen der Tarifkategorie fest:
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld         | Funktion         | 
-| ------------- |-------------  | 
-| Bezeichnung        |<p style="text-align: justify"> Geben Sie eine Bezeichnung für den Tarif ein (in der Sprache des angmeldeten Benutzers) </p> | 
-| Art   | <p style="text-align: justify"> Wählen Sie mittels Drop-Down das Tarifmodell aus. Es stehen die Werte _Buchung_ und _Annullation_ zur Verfügung. Es wird definiert, ob es sich um eine Annullationspauschale handelt oder um eine Buchungspauschale. Bei Annullation sind die Werte Zeitrange und _Aktiviert am_ nicht auszufüllen </p>  |  
-| Annullation in %  |<p style="text-align: justify"> wird nur angezeigt, wenn in der Dropdown _Tarif Art_ eine Annullation selektiert wurde Validierung auf Ganzzahlen (nummerischer Wert).</p>|  
-| Gültigkeit  |<p style="text-align: justify"> Datumspicker, über welchen die Laufzeit eines Tarifs selektiert wird. </p>| 
-| Aktivitätsstatus für die einzelnen Wochentage  |<p style="text-align: justify"> Alle Wochentage werden in Form von Checkboxen und Zeitrange Textboxen aufgelistet. Durch Selektion kann definiert werden, dass an diesem Tag der Tarif gültig ist und zu welcher Zeit am Tag er gültig ist. </p> |  
-| Dauer in Minuten  |<p style="text-align: justify"> Definiert das Kostenintervall - für welche Zeiteinheit wird der Tarif berechnet. Beispiel: wird 60 angegeben wird auf Stundenbasis abgerechnet. Bei Annullationen bezieht sich die Dauer in Minuten auf die Annullation vor Reservationstart. Erläuterung an einem Beispiel: 0 = Annullation zur Laufzeit der Reservation = 100% der Reservationskosten (100=Tarif, %-Checkbox selektiert) 60 = Annullation zwischen 0 und 60 Minuten vor Reservationsstart = 50% der Reservationskosten (50=Tarif, %-Checkbox selektiert) 1440 = Annullation zwischen 60 Minuten und einem Tag vor Reservationsstart = fix 100.00 Franken (100 = Tarif, %-Checkbox nicht selektiert) </p> | 
-| Firma  |<p style="text-align: justify"> Optionales Feld: Bleibt dieser Wert leer, ist der Tarif für alle gültig. Wird auf dem Tarif eine Firma selektiert, ist dies ein Spezialtarif für genau diese Firma. Mit diesem Mechanismus werden die Fixpreise definiert. </p>| 
-| Währung  |<p style="text-align: justify"> alle aktivierten Währungen. Standardwert = Währung der im Profil der angemeldeten gewählten Kultur.Die Anzahl der aktivierten Währungen ist abhängig von der Anzahl der zur Verfügung gestellten Kulturen.</p>| 
-| Kosten Intern  |<p style="text-align: justify"> Tarif, welcher für alle Firmen ohne selektierte "Extern" Checkbox gültig ist. Validierung auf nummerischer Wert.</p>| 
-| Kosten Extern  |<p style="text-align: justify"> Tarif, welcher für alle Firmen MIT selektierte "Extern" Checkbox gültig ist. Validierung auf nummerischer Wert. </p>| 
-| Kosten Extern minimal  |<p style="text-align: justify"> Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die minimalen Kosten. </p> | 
-| Kosten Extern maximal  | <p style="text-align: justify"> Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die maximalen Kosten. </p> | 
-| Kosten Intern minimal  |<p style="text-align: justify"> Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die minimalen Kosten. </p>  | 
-| Kosten Intern maximal  | <p style="text-align: justify">Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die maximalen Kosten.</p> | 
+| Feld         | Funktion         |
+| ------------- |-------------  |
+| Bezeichnung        | Geben Sie eine Bezeichnung für den Tarif ein (in der Sprache des angmeldeten Benutzers)  |
+| Art   |  Wählen Sie mittels Drop-Down das Tarifmodell aus. Es stehen die Werte _Buchung_ und _Annullation_ zur Verfügung. Es wird definiert, ob es sich um eine Annullationspauschale handelt oder um eine Buchungspauschale. Bei Annullation sind die Werte Zeitrange und _Aktiviert am_ nicht auszufüllen   |
+| Annullation in %  | wird nur angezeigt, wenn in der Dropdown _Tarif Art_ eine Annullation selektiert wurde Validierung auf Ganzzahlen (nummerischer Wert).|
+| Gültigkeit  | Datumspicker, über welchen die Laufzeit eines Tarifs selektiert wird. |
+| Aktivitätsstatus für die einzelnen Wochentage  | Alle Wochentage werden in Form von Checkboxen und Zeitrange Textboxen aufgelistet. Durch Selektion kann definiert werden, dass an diesem Tag der Tarif gültig ist und zu welcher Zeit am Tag er gültig ist.  |
+| Dauer in Minuten  | Definiert das Kostenintervall - für welche Zeiteinheit wird der Tarif berechnet. Beispiel: wird 60 angegeben wird auf Stundenbasis abgerechnet. Bei Annullationen bezieht sich die Dauer in Minuten auf die Annullation vor Reservationstart. Erläuterung an einem Beispiel: 0 = Annullation zur Laufzeit der Reservation = 100% der Reservationskosten (100=Tarif, %-Checkbox selektiert) 60 = Annullation zwischen 0 und 60 Minuten vor Reservationsstart = 50% der Reservationskosten (50=Tarif, %-Checkbox selektiert) 1440 = Annullation zwischen 60 Minuten und einem Tag vor Reservationsstart = fix 100.00 Franken (100 = Tarif, %-Checkbox nicht selektiert)  |
+| Firma  | Optionales Feld: Bleibt dieser Wert leer, ist der Tarif für alle gültig. Wird auf dem Tarif eine Firma selektiert, ist dies ein Spezialtarif für genau diese Firma. Mit diesem Mechanismus werden die Fixpreise definiert. |
+| Währung  | alle aktivierten Währungen. Standardwert = Währung der im Profil der angemeldeten gewählten Kultur.Die Anzahl der aktivierten Währungen ist abhängig von der Anzahl der zur Verfügung gestellten Kulturen.|
+| Kosten Intern  | Tarif, welcher für alle Firmen ohne selektierte "Extern" Checkbox gültig ist. Validierung auf nummerischer Wert.|
+| Kosten Extern  | Tarif, welcher für alle Firmen MIT selektierte "Extern" Checkbox gültig ist. Validierung auf nummerischer Wert. |
+| Kosten Extern minimal  | Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die minimalen Kosten.  |
+| Kosten Extern maximal  |  Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die maximalen Kosten.  |
+| Kosten Intern minimal  | Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die minimalen Kosten.   |
+| Kosten Intern maximal  | Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die maximalen Kosten. |
 {{< /bootstrap-table >}}
 
 {{< imgproc Tarife_anlegen Resize "960x" >}}
 Tarifeinzelheiten und Gültigkeit festlegen
 {{< /imgproc >}}
 
-Speichern Sie die Tarifkategorie über den Button <i>Speichern</i>. Die Liste aktualisiert sich automatisch und Sie sehen die neue Tarifkategorie.
+Speichern Sie die Tarifkategorie über den Button _Speichern_. Die Liste aktualisiert sich automatisch und Sie sehen die neue Tarifkategorie.
 
 {{< imgproc Tarife_neu_angelegt_in_Liste Resize "960x" >}}
 Neu angelegte Tarifkategorie in der Liste
@@ -113,11 +113,11 @@ Im pauschalen Modell wird immer der `kleinst grössere` Minuten-Tarif verwendet.
 
 Beispiel: Tarife mit der Dauer von 1, 2, 4, und 8 Stunden wurden in den Stammdaten erfasst.
 {{< bootstrap-table "table table-striped" >}}
-| Buchungsdauer | Tarife | 
-| ------------- | ------ | 
-| 30min         | 1      | 
-| 3h            | 4      | 
-| 10h           | 8      | 
+| Buchungsdauer | Tarife |
+| ------------- | ------ |
+| 30min         | 1      |
+| 3h            | 4      |
+| 10h           | 8      |
 {{< /bootstrap-table >}}
 
 ### Kumulatives Modell
@@ -126,10 +126,10 @@ Es wird der kleinst grössere Minuten-Tarif addiert. Es werden dabei, falls gese
 Beispiel: Tarife mit der Dauer von 1, 2, 4, und 8 Stunden wurden in den Stammdaten erfasst.
 {{< bootstrap-table "table table-striped" >}}
 | Buchungsdauer | Tarife | Beschreibung |
-| ------------- | ------ | ------------ | 
+| ------------- | ------ | ------------ |
 | 1h            | 1     |              |
 | 2h            | 2     |              |
-| 6.5h          | 4,2,1 | <p>Zuerst wird der Tarif mit der längsten Dauer, welcher noch innerhalb der Buchungsdauer liegt gewählt. In diesem Fall ist es der Tarif für 4 Stunden. Jetzt bleiben noch 2,5 Stunden übrig (`6,5 Stunden - 4 Stunden = 2,5 Stunden`).</p><p>Als nächstes wird der Tarif mit der nächstkleineren Dauer, der noch in die verbleibende Zeit passt gesucht. Das ist der Tarif für 2 Stunden. Damit sind insgesamt 6 Stunden abgedeckt (`4 Stunden + 2 Stunden = 6 Stunden`).</p><p>Es bleibt noch eine halbe Stunde übrig (`6,5 Stunden - 6 Stunden = 0,5 Stunden`). Da der 1h Tarif der kleinste Tarif ist in dem die restliche Dauer platz hat, wird für diese halbe Stunde der 1h Tarif verwendet. |
+| 6.5h          | 4,2,1 | Zuerst wird der Tarif mit der längsten Dauer, welcher noch innerhalb der Buchungsdauer liegt gewählt. In diesem Fall ist es der Tarif für 4 Stunden. Jetzt bleiben noch 2,5 Stunden übrig (`6,5 Stunden - 4 Stunden = 2,5 Stunden`).Als nächstes wird der Tarif mit der nächstkleineren Dauer, der noch in die verbleibende Zeit passt gesucht. Das ist der Tarif für 2 Stunden. Damit sind insgesamt 6 Stunden abgedeckt (`4 Stunden + 2 Stunden = 6 Stunden`).Es bleibt noch eine halbe Stunde übrig (`6,5 Stunden - 6 Stunden = 0,5 Stunden`). Da der 1h Tarif der kleinste Tarif ist in dem die restliche Dauer platz hat, wird für diese halbe Stunde der 1h Tarif verwendet. |
 {{< /bootstrap-table >}}
 
 ### Zeitabhängig
@@ -170,19 +170,19 @@ Wird eine Buchung mit pauschalen Stornierungskosten annulliert, werden alle Paus
 
 **hinterlegte Stornierungskosten**:
 
-Raum: 50 CH </br>
-Beamer: 5 CHF </br>
-Flipchart: 5 CHF </br>
-Pinwand: 5 CHF </br>
-Umstuhlung: 7 CHF </br>
+Raum: 50 CH
+Beamer: 5 CHF
+Flipchart: 5 CHF
+Pinwand: 5 CHF
+Umstuhlung: 7 CHF
 
 **Angebotszone**:
 
 Sind Angebot aus verschiedenen Angebotszonen gebucht worden, werden die Angebotszonen Stornierungspauschalen zusammengezählt – aber immer nur 1x kalkuliert – egal wieviele Angebote einer Zone effektiv gebucht worden sind
 
-5 CHF</br>
-4x Kaffee zu 2 CHF: 8 CHF </br>
-4x Mineral zu 0 CHF: 0 CHF </br>
+5 CHF
+4x Kaffee zu 2 CHF: 8 CHF
+4x Mineral zu 0 CHF: 0 CHF
 8x Sandwiches zu 3 CHF: 24 CHF
 
 **109 CHF Stornierungsgebühr** bei Stornierung des Raumes (Hauptbuchung)
@@ -190,16 +190,16 @@ Sind Angebot aus verschiedenen Angebotszonen gebucht worden, werden die Angebots
 ### Prozentual
 Wird eine Buchung mit prozentualen Stornierungskosten (nur auf Ressourcen möglich) annulliert, werden die Prozentualen auf den jeweiligen Bruttokosten (hinterlegten Tarife) berechnet. Zuschläge und Rabatte werden ignoriert.
 
-Beispiel: </br>
-Raum: Kosten= CHF100, Stornierung 50% </br>
-Beamer: Kosten=CHF20, Stornierung 100% </br>
-Flipchart: Kosten=CHF5, Stornierung 0% </br>
-Pinwand: Kosten=CHF10, Stornierung Pauschal CHF5 </br>
+Beispiel:
+Raum: Kosten= CHF100, Stornierung 50%
+Beamer: Kosten=CHF20, Stornierung 100%
+Flipchart: Kosten=CHF5, Stornierung 0%
+Pinwand: Kosten=CHF10, Stornierung Pauschal CHF5
 
-Umstuhlung: 7 CHF </br>
+Umstuhlung: 7 CHF
 
-Angebotszone: </br> 5 CHF (Sind Angebote aus verschiedenen Angebotszonen gebucht worden, werden die Angebotszonen Stornierungspauschalen zusammengezählt – aber immer nur 1x kallkuliert – egal wieviele Angebote einer Zone effektiv gebucht worden sind) </br>
-4x Kaffee zu 2 CHF: 8 CHF </br>
-4x Mineral zu 0 CHF: 0 CHF </br>
-8x Sandwiches zu 3 CHF: 24 CHF </br>
+Angebotszone:   5 CHF (Sind Angebote aus verschiedenen Angebotszonen gebucht worden, werden die Angebotszonen Stornierungspauschalen zusammengezählt – aber immer nur 1x kallkuliert – egal wieviele Angebote einer Zone effektiv gebucht worden sind)
+4x Kaffee zu 2 CHF: 8 CHF
+4x Mineral zu 0 CHF: 0 CHF
+8x Sandwiches zu 3 CHF: 24 CHF
 = 119 CHF Stornierungsgebühr bei Stornierung des Raumes (Hauptbuchung)

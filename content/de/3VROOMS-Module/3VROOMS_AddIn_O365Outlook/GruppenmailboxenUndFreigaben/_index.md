@@ -12,10 +12,12 @@ ROOMS kann diesen Kontext nicht verändern — **Outlook bestimmt, wer als Erste
 
 ### Begriffe
 
+{{< bootstrap-table "table table-striped" >}}
 | Begriff     | Beschreibung                                                                                     |
 |-------------|--------------------------------------------------------------------------------------------------|
 | **Ersteller (Creator)** | Die Person, die den Termin technisch erstellt. Wird von Outlook anhand des angemeldeten Benutzers gesetzt. |
 | **Organisator**         | Der Besitzer des Kalenders, in dem der Termin erstellt wird.                                     |
+{{< /bootstrap-table >}}
 
 ## Szenarien
 
@@ -83,11 +85,13 @@ freigegebene Kalender (Delegated Access) verwendet werden.
 
 Das Add-In verwendet folgende Outlook-APIs:
 
+{{< bootstrap-table "table table-striped" >}}
 | API | Zweck |
 |-----|-------|
 | `Office.context.mailbox.userProfile` | Aktuell angemeldeter Benutzer ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.userprofile)) |
 | `item.organizer.getAsync()` | Organisator des Termins auslesen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.organizer)) |
 | `item.getSharedPropertiesAsync()` | Delegierungskontext und Berechtigungen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.sharedproperties)) |
+{{< /bootstrap-table >}}
 
 Die Erkennung des freigegebenen Kontexts erfolgt über `Office.context.mailbox.initialData.isFromSharedFolder`.
 Nur wenn dieses Flag gesetzt ist, werden die Shared Properties und der Organisator separat aufgelöst.

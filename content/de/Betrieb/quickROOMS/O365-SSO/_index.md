@@ -1,12 +1,12 @@
 ---
 title: "Addin O365 SSO"
 linkTitle: "Addin O365 SSO"
-weight: 2 
+weight: 2
 
 description: 'Addin: Single sign on mit O365'
 ---
 
-Wird Forms oder Windows auth verwendet z.B. mit einem OnPrem Exchange, kann dieser Punkt übersprungen werden. 
+Wird Forms oder Windows auth verwendet z.B. mit einem OnPrem Exchange, kann dieser Punkt übersprungen werden.
 
 Loggen Sie sich in ihren Azure Plattform als Administrator ein
 
@@ -14,7 +14,7 @@ Loggen Sie sich in ihren Azure Plattform als Administrator ein
 
 1. Navigieren Sie zu "App registration"
 
-1. Klicken Sie auf "+New registration" 
+1. Klicken Sie auf "+New registration"
 
    - Fügen Sie einen Namen hinzu, z.B. "3V-ROOMS SSO"
 
@@ -24,7 +24,7 @@ Loggen Sie sich in ihren Azure Plattform als Administrator ein
 
 1. Notieren Sie folgende Daten:
 
-   - Application (client) ID 
+   - Application (client) ID
 
    - Object ID
 
@@ -60,7 +60,7 @@ Loggen Sie sich in ihren Azure Plattform als Administrator ein
    - Eine Clientanwendung hinzufügen: Eben erstellter bereich auswählen
    - folgende GUID einfügen: ea5a67f6-b6f3-4338-b240-c655ddc3cc8e
 
-   > **Hinweis** Die ea5a67f6-b6f3-4338-b240-c655ddc3cc8e ID autorisiert Office auf allen folgenden Plattformen vorab. Alternativ können Sie eine ordnungsgemässe Teilmenge der folgenden IDs eingeben, wenn Sie aus irgendeinem Grund die Autorisierung für Office auf einigen Plattformen verweigern möchten. Lassen Sie einfach die IDs der Plattformen weg, von denen Sie die Autorisierung verweigern möchten. Benutzer Ihres Add-Ins auf diesen Plattformen können Ihre Web-APIs nicht aufrufen, aber andere Funktionen in Ihrem Add-In funktionieren weiterhin.<br>d3590ed6-52b3-4102-aeff-aad2292ab01c (Microsoft Office<br>93d53678-613d-4013-afc1-62e9e444a0a5 (Office im Web)<br>bc59ab01-8403-45c6-8796-ac3ef710b3e3 (Outlook im Web)
+   > **Hinweis** Die ea5a67f6-b6f3-4338-b240-c655ddc3cc8e ID autorisiert Office auf allen folgenden Plattformen vorab. Alternativ können Sie eine ordnungsgemässe Teilmenge der folgenden IDs eingeben, wenn Sie aus irgendeinem Grund die Autorisierung für Office auf einigen Plattformen verweigern möchten. Lassen Sie einfach die IDs der Plattformen weg, von denen Sie die Autorisierung verweigern möchten. Benutzer Ihres Add-Ins auf diesen Plattformen können Ihre Web-APIs nicht aufrufen, aber andere Funktionen in Ihrem Add-In funktionieren weiterhin. d3590ed6-52b3-4102-aeff-aad2292ab01c (Microsoft Office 93d53678-613d-4013-afc1-62e9e444a0a5 (Office im Web) bc59ab01-8403-45c6-8796-ac3ef710b3e3 (Outlook im Web)
 1. Navigieren Sie auf "Manifest"
    - Geben Sie 2 als Wert für die Eigenschaft ```accessTokenAcceptedVersion``` ein.
    - Wählen Sie speichern aus
@@ -98,6 +98,6 @@ Nun kann der IDP für die O365 Auth konfiguriert werden:
 
 Somit kann nun Microsoft als Login für Rooms und das Addin verwendet werden.
 
-Jedes Login muss in Rooms hinterlegt sein, normalerweise wird dies über einen Benutzerdatenimport durchgeführt.<br>
-z.B.<br>
+Jedes Login muss in Rooms hinterlegt sein, normalerweise wird dies über einen Benutzerdatenimport durchgeführt.
+z.B.
 Einstellungen --> Personen --> Person editieren --> Logins --> Erstellen --> Logontyp: OAuth 2.0 --> Logonname: Mail z.B. hans@example.com

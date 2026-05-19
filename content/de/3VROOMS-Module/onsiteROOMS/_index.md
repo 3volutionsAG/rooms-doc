@@ -14,12 +14,14 @@ onsiteROOMS ist für Türschilder ausgelegt und stellt verschiedene Ansichten f�
 Die Home Ansicht dient dazu, zu visualisieren, ob der Raum verfügbar ist oder nicht.
 Es gibt unterschiedliche Zustände, welche mit Farbcode hinterlegt sind, um eine schnelle Übersicht der Verfügbarkeit des Raumes zu gewinnen.
 
+{{< bootstrap-table "table table-striped" >}}
 |Farbcode|Bedeutung|Bemerkung|
 |---|---|---|
 |Grün|Raum ist verfügbar|-|
 |Orange|Kommende oder aktuelle Buchung braucht ein Check-In|Die Buchung wird angezeigt sobald ein Check-In möglich ist, auch wenn Sie aktuell noch nicht läuft.|
 |Rot|Raum ist besetzt|-|
 |Blau|Raum nicht verfügbar|Ein Raum gilt als nicht verfügbar, wenn Sperrzeiten vorhanden sind. Da Sperrzeiten nicht gleich behandelt werden, wie normale Buchungen ist der Farbcode anders gewählt.|
+{{< /bootstrap-table >}}
 
 {{< imgproc screens-home Resize "640x" >}}
 Abbildung a: Ansicht Home
@@ -71,12 +73,14 @@ Abbildung e: Ansicht Buchung verlängern
 
 onsiteROOMS unterstützt Kundenspezifische Anpassungen per ROOMS Mandant.
 
+{{< bootstrap-table "table table-striped" >}}
 |Was|Pfad|Limitationen|
 |---|---|---|
 |Logo|onsite/logo.png|Dimensionen sowie Format des Bildes werden *nicht* angepasst. Das Bild muss also im richtigen Format vorhanden sein.|
 |Theme|onsite/theme.css|Erlaubt aktuell nur Anpassungen der Home Ansicht. Einzig die Schriftart kann global angepasst werden.|
 |Script|onsite/custom.js|Script, welches eingebunden wird. Kann verwendet werden, falls netzwerktechnische Probleme auftreten, welche kundenspezifisch sind.|
 |Übersetzungen|onsite/translations/{de,en,it,fr}.json|Erlaubt Anpassungen der Übersetzungen welche verwendet werden. Aktuell werden nur folgende Sprachen unterstützt: Deutsch, Englisch, Französisch und Italienisch.|
+{{< /bootstrap-table >}}
 
 Alle oben erwähnten Dateien müssen in der ROOMS Instanz hinterlegt werden, welche die Ressource des Türschilds beinhaltet. Hinterlegt werden können Sie im Menüpunkt _Einstellungen -> System -> Oberfläche_.
 

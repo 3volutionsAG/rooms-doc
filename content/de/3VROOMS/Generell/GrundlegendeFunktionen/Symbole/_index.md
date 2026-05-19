@@ -5,7 +5,9 @@ weight: 400
 
 description: 'Wiederkehrende Symbole'
 ---
-|<div style="width:200px">Symbol</div>|Beschreibung|
+{{< bootstrap-table "table table-striped" >}}
+|Symbol|Beschreibung|
 |---|---|
-|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|</br>Eingabemaske öffnen und  Eintrag bearbeiten|
+|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Eingabemaske öffnen und  Eintrag bearbeiten|
 |{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|individuelle Listenansicht auf Standardsortierung zurücksetzen|
+{{< /bootstrap-table >}}

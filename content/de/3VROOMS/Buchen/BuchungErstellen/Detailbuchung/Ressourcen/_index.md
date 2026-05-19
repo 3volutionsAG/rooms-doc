@@ -7,7 +7,7 @@ description: ''
 Im Reiter `Ressourcen` wählen Sie in der Detailbuchung die zur Verfügung stehenden Ressourcen zu Ihrer Buchung aus. Soll z.B. im Raum _Matterhorn_ zusätzlich ein weiterer Beamer verwendet werden, tragen Sie eine 1 in die Leerzeile ein.
 
 {{< imgproc Detailbuchung_Ressource Resize "960x" >}}
-Ressourcen zu einer Buchung hinzufügen  
+Ressourcen zu einer Buchung hinzufügen
 {{< /imgproc >}}
 
 Einem Raum ist unter Umständen eine gewisse Anzahl an fixem Equipment zugeordnet. Dieses Equipment wird beim Öffnen des Bereichs Ressourcen direkt angezeigt. Das Equipment kann nicht entfernt werden und hat in der Spalte Standort auch die Beschreibung Fix installiertes Equipment.
@@ -24,7 +24,7 @@ Sie sehen, abhängig von Ihren eingetragenen Rechten, eine Ressource einzeln (z.
 Sie sehen standardmässig die aggregierte Ansicht. Legen Sie beim ersten Mal seine bevorzugte Ansicht fest, wird diese gespeichert und beim nächsten Mal direkt angezeigt.
 
 {{< imgproc Detailbuchung_Ressource_Einzelansicht Resize "960x" >}}
-Die Ressourcen entweder in der aggregierten Form oder in der Einzelansicht anzeigen lassen  
+Die Ressourcen entweder in der aggregierten Form oder in der Einzelansicht anzeigen lassen
 {{< /imgproc >}}
 
 ### Equipment hinzufügen

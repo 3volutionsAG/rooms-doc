@@ -15,7 +15,7 @@ Möchten Sie einen Gliederungstyp bearbeiten, klicken Sie auf den Namen. Neben d
 
 * Plus Zeichen: neuen Subgliederungstypen erstellen. Dieses Zeichen erscheint nur bei den Hauptgliederungstypen.
 * Auge: Ansehen der Informationen
-* Stift: Bearbeiten eines Gliederungstypen 
+* Stift: Bearbeiten eines Gliederungstypen
 * Papierkorb: Löschen eines Gliederungstypen
 
 {{< imgproc Gliederungstyp_erstellen Resize "960x" >}}
@@ -80,10 +80,10 @@ Es öffnet sich ein neues Feld, in welchem Sie die Stammdaten, Ressourcen, Grupp
 Speichern Sie Ihre Angaben über den untenstehenden Button `Speichern`. Die Liste aktualisiert sich automatisch und Sie sehen die neu Gliederung im Startmodus.
 
 {{< imgproc Gliederung_in_tree Resize "960x" >}}
-Neuer Subgliederungstyp im Stamm 
+Neuer Subgliederungstyp im Stamm
 {{< /imgproc >}}
 
-### Stammdaten 
+### Stammdaten
 
 Tragen Sie die Stammdaten des neuen Subgliederungstypen ein. Folgende Informationen können Sie eingeben:
 
@@ -100,7 +100,7 @@ Tragen Sie die Stammdaten des neuen Subgliederungstypen ein. Folgende Informatio
 
 
 {{< imgproc Gliederung_hinzufügen_Stammdaten Resize "960x" >}}
-Stammdaten eines neuen Subgliederungstypen eintragen 
+Stammdaten eines neuen Subgliederungstypen eintragen
 {{< /imgproc >}}
 
 ### Vorbereitungszeit
@@ -125,7 +125,7 @@ Das "Vorbereitungszeit"-Feature ermöglicht eine genauere Planung von Ressourcen
 
 Wenn Sie Fragen haben oder Unterstützung benötigen, stehen wir Ihnen gerne zur Verfügung.
 
-### Ressource 
+### Ressource
 
 Sie sehen hinzugefügte Ressourcen in der Liste. Sind dort keine vorhanden, können Sie Ressourcen über den untenstehenden Button "hinzufügen" auswählen.
 
@@ -149,7 +149,7 @@ Die Liste aktualisiert sich automatisch. Sie sehen die neu hinzugefügten Ressou
 Ressourcenübersicht in der Liste
 {{< /imgproc >}}
 
-### Gruppe 
+### Gruppe
 
 Sie können Gruppen zum Gliederungstypen hinzufügen. Wählen Sie dafür den untenstehenden Button `hinzufügen` aus. Es öffnet sich ein neues Feld. In diesem wählen Sie eine oder mehrere zur Verfügung stehender Gruppen aus.
 
@@ -160,10 +160,10 @@ Eine oder mehrere Gruppen zum Gliederungstypen auswählen und hinzufügen
 Bestätigen Sie Ihre Auswahl über den Button "Gruppe hinzufügen". Die Liste aktualisiert sich automatisch und Sie sehen die hinzugefügten Gruppen in der Liste.
 
 {{< imgproc Gliederung_Gruppe_hinzufügen_Liste Resize "960x" >}}
-Ansicht der neuen Gruppe in der Liste 
+Ansicht der neuen Gruppe in der Liste
 {{< /imgproc >}}
 
-### Verfügbarkeit 
+### Verfügbarkeit
 
 Im Reiter Verfügbarkeit können Sie weitere Ressourcen auswählen. Wählen Sie dafür den untenstehenden Button `Hinzufügen` aus und wählen Sie über die Checkbox eine oder mehrere Ressourcen aus.
 

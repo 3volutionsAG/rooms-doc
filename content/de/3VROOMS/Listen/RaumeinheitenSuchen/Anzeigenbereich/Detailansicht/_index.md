@@ -4,7 +4,7 @@ linkTitle: "Detailansicht"
 weight: 4
 description: 'Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.'
 ---
-<p style="text-align: justify"> Die Bezeichnung der Raumeinheit in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Bezeichnung werden Sie auf diese weitergeleitet. </p>
+Die Bezeichnung der Raumeinheit in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Bezeichnung werden Sie auf diese weitergeleitet.
 
 {{< imgproc List_RE_DS Resize "960x" >}}
 Detailansicht der Raumeinheit mit übersichtlich dargestellten Informationen
@@ -12,43 +12,43 @@ Detailansicht der Raumeinheit mit übersichtlich dargestellten Informationen
 
 ## Gliederung der Ansicht
 
-<p style="text-align: justify"> Der Anzeigenbereich ist in <i>Raumeinheit</i> und <i>Historik</i> aufgeteilt. Diese Kategorien erreichen Sie über die Reiter am oberen Rand des Anzeigenbereichs. </p>
+Der Anzeigenbereich ist in _Raumeinheit_ und _Historik_ aufgeteilt. Diese Kategorien erreichen Sie über die Reiter am oberen Rand des Anzeigenbereichs.
 
 {{< imgproc List_RE_DS_Reiter Resize "960x" >}}
-Reiter <i>Raumeinheit</i> und <i>Historik</i> 
+Reiter _Raumeinheit_ und _Historik_
 {{< /imgproc >}}
 
 ### Reiter Raumeinheit
 
-<p style="text-align: justify"> Im Reiter <i>Raumeinheit</i> sind alle hinterlegten Details der Raumeinheit übersichtlich dargestellt. </p>
+Im Reiter _Raumeinheit_ sind alle hinterlegten Details der Raumeinheit übersichtlich dargestellt.
 
 {{< imgproc List_RE_DS_Reiter_RE Resize "960x" >}}
-Der Reiter <i>Raumeinheit</i> stellt übersichtlich alle hinterlegten Details dar 
+Der Reiter _Raumeinheit_ stellt übersichtlich alle hinterlegten Details dar
 {{< /imgproc >}}
 
 ### Reiter Historik
 
-<p style="text-align: justify"> Hier ist die Historie der Erstellung und des Änderungsverlauf der Ressource aufgelistet. </p>
+Hier ist die Historie der Erstellung und des Änderungsverlauf der Ressource aufgelistet.
 
 {{< imgproc List_RE_DS_Hist_b Resize "960x" >}}
-Reiter <i>Historik</i> zeigt den Verlauf geänderter Details der Raumeinheit 
+Reiter _Historik_ zeigt den Verlauf geänderter Details der Raumeinheit
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Über den untersten Drop-Down Pfeil öffnen Sie die Informationen zur Erstellung der Raumeinheit. </p>
+Über den untersten Drop-Down Pfeil öffnen Sie die Informationen zur Erstellung der Raumeinheit.
 
 {{< imgproc List_RE_DS_Hist_Erst_b Resize "960x" >}}
-Details zur Erstellung einer Raumeinheit 
+Details zur Erstellung einer Raumeinheit
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Unter den Drop-Down-Pfeilen der darüber liegenden Zeilen öffnen Sie die Details zu Änderungen an der Raumeinheit. </p>
+Unter den Drop-Down-Pfeilen der darüber liegenden Zeilen öffnen Sie die Details zu Änderungen an der Raumeinheit.
 
 {{< imgproc List_RE_DS_Hist_Aend_b Resize "960x" >}}
-Details zu einem Änderungsvorgang 
+Details zu einem Änderungsvorgang
 {{< /imgproc >}}
 
 ## Schaltflächen
 
-<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs befinden sich die Schaltflächen <i>Bearbeiten</i>, <i>Zurück</i> und <i>Drucken</i>. </p>
+Am unteren Rand des Anzeigenbereichs befinden sich die Schaltflächen _Bearbeiten_, _Zurück_ und _Drucken_.
 
 {{< imgproc List_RE_DS_Schalt Resize "960x" >}}
 Schaltflächen zur Bearbeitung der Raumeinheit
@@ -56,21 +56,21 @@ Schaltflächen zur Bearbeitung der Raumeinheit
 
 ### Bearbeiten
 
-<p style="text-align: justify"> Über diese Schaltfläche gelangen Sie zur Eingabemaske, um die Raumeinheit zu bearbeiten. </p>
+Über diese Schaltfläche gelangen Sie zur Eingabemaske, um die Raumeinheit zu bearbeiten.
 
 {{< imgproc List_RE_DS_bearb Resize "960x" >}}
 Eingabemaske zur Bearbeitung der Details der Raumeinheit
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Weitere Informationen zur Eingabemaske finden Sie im Kapitel <a href="/3vrooms/einstellungen/raumeinheiten/#raumeinheiten-neu-erstellen">Raumeinheiten erstellen</a>. </p>
+Weitere Informationen zur Eingabemaske finden Sie im Kapitel [Raumeinheiten erstellen](/3vrooms/einstellungen/raumeinheiten/#raumeinheiten-neu-erstellen).
 
 ### Zurück
 
-<p style="text-align: justify"> Über diese Schaltfläche kommen Sie zurück zur Ergebnisliste der Suche nach Raumeinheiten. </p>
+Über diese Schaltfläche kommen Sie zurück zur Ergebnisliste der Suche nach Raumeinheiten.
 
 ### Drucken
 
-<p style="text-align: justify"> Sie haben die Möglichkeit die Detailansicht auszudrucken. Nach dem Drücken der Schaltfläche öffnet sich das Drucker Dialogfeld. </p>
+Sie haben die Möglichkeit die Detailansicht auszudrucken. Nach dem Drücken der Schaltfläche öffnet sich das Drucker Dialogfeld.
 
 {{< imgproc List_RE_DS_Druck_b Resize "960x" >}}
 Dialogfenster Drucken

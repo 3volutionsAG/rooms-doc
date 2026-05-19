@@ -7,7 +7,7 @@ description: '3V ROOMS Wizard ist ein Buchungsassistent, der eine vereinfachte B
 ### 3V ROOMS Wizard öffnen
 
 1. Öffnen Sie den Webbrowser.
-2. Geben Sie die URL des 3V ROOMS Wizards ein: </br>
+2. Geben Sie die URL des 3V ROOMS Wizards ein:
    <!-- Wie lautet die URL? -->
     {{< imgproc Buchungsassistent Resize "960x" >}} Buchungsassistent im Webbrowser {{< /imgproc >}}
 

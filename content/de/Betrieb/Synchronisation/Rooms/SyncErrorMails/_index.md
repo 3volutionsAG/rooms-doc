@@ -1,7 +1,7 @@
 ---
 title: "Sync-Error Mails"
 linkTitle: "Sync-Error Mails"
-weight: 4 
+weight: 4
 description: 'Konfiguration des Sync-Error Mails'
 ---
 

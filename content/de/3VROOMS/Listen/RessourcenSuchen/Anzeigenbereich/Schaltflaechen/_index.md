@@ -10,13 +10,13 @@ Schaltflächen zur Verwaltung von Ressourcen
 
 ## Entfernen
 
-<p style="text-align: justify"> Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang und klicken Sie auf diese Schaltfläche, um die Ressource zu löschen. </p>
+Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang und klicken Sie auf diese Schaltfläche, um die Ressource zu löschen.
 
 {{< imgproc List_RES_Anz_del_b Resize "960x" >}}
 Ressource auswählen und löschen
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Es erscheint ein Dialogfenster, um den Löschvorgang zu bestätigen. </p>
+Es erscheint ein Dialogfenster, um den Löschvorgang zu bestätigen.
 
 {{< imgproc List_RES_Anz_delBest_b Resize "960x" >}}
 Dialogfenster zur Bestätigung des Löschvorgangs
@@ -24,10 +24,10 @@ Dialogfenster zur Bestätigung des Löschvorgangs
 
 ## Erstellen
 
-<p style="text-align: justify"> Wählen Sie zunächst aus dem vorangestellten Drop-Down-Menü die Ressourcenart aus, die Sie hinzufügen wollen. Klicken Sie dann auf die Schaltfläche _Erstellen_, um eine zu definieren. </p>
+Wählen Sie zunächst aus dem vorangestellten Drop-Down-Menü die Ressourcenart aus, die Sie hinzufügen wollen. Klicken Sie dann auf die Schaltfläche _Erstellen_, um eine zu definieren.
 
 {{< imgproc List_RES_Anz_neu_b Resize "960x" >}}
 Neue Ressource hinzufügen
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Sie werden nun zur Eingabemaske zur Erstellung einer neuen Ressource weitergeleitet. Weitere Informationen hierzu finden Sie im Kapitel <a href="/3vrooms/einstellungen/ressourcen/#ressource-neu-erstellen"> Neue Ressource erstellen </a>. </p>
+Sie werden nun zur Eingabemaske zur Erstellung einer neuen Ressource weitergeleitet. Weitere Informationen hierzu finden Sie im Kapitel [Neue Ressource erstellen](/3vrooms/einstellungen/ressourcen/#ressource-neu-erstellen).

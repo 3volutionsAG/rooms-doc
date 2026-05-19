@@ -7,6 +7,6 @@ description: 'Lizenzierung einrichten'
 
 Das Exchange modul muss lizenziert sein:
 
-Einstellungen --> System --> About --> Lizenzinformationen 
+Einstellungen --> System --> About --> Lizenzinformationen
 
 Modul Exchange: Muss aktiviert sein

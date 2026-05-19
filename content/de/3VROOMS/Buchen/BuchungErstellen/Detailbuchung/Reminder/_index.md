@@ -8,7 +8,7 @@ description: "Mit dem Reiter „Reminder“ können Sie zu einer Buchung eine ma
 {{% alert title="Voraussetzungen (häufige Fehlerquelle)" color="info" %}}
 Damit Sie den Reiter **„Reminder“** nutzen können, muss Folgendes erfüllt sein:
 
-- Ihre Rolle hat das globale Recht **„Darf Reminder sehen“**.  
+- Ihre Rolle hat das globale Recht **„Darf Reminder sehen“**.
   Details: [`Einstellungen → Sicherheitsdaten → Rollen → Rechte verwalten`](/3vrooms/einstellungen/sicherheitsdaten/rollen/rechteverwalten/).
 - Für Ihren **Standort** ist eine **Reminder-Notifikation** (E-Mail-Vorlage für Reservations-Reminder) eingerichtet und aktiv.
 - Für den Versand an **Notifikation Gruppe** muss eine entsprechende **Notifikationsgruppe** vorhanden sein.

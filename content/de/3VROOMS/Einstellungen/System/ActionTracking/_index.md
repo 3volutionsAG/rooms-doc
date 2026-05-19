@@ -4,10 +4,10 @@ linkTitle: "Action Tracking"
 weight: 9
 description: 'Sie sehen hier die Action Tracking list mit Zeitstempel, Ereignistyp, Meldungen, Exception.'
 ---
-## Action Tracking 
+## Action Tracking
 
-<p style="text-align: justify">
-Elemente aus der Action Tracking list können Sie durchsuchen oder etfernen. </p>
+
+Elemente aus der Action Tracking list können Sie durchsuchen oder etfernen.
 
 {{< imgproc Actiontracking_liste Resize "960x" >}}
 Action Tracking Liste durchsuchen
@@ -16,11 +16,11 @@ Action Tracking Liste durchsuchen
 
 ## Action Tracking durchsuchen
 
-<p style="text-align: justify">
-Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folgenden Kriterien die Ereignisanzeige: </p>
 
-* Ereignistyp 
-* Zeitstempel 
+Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folgenden Kriterien die Ereignisanzeige:
+
+* Ereignistyp
+* Zeitstempel
 * Meldungen
 * Exceptions
 * Aktion

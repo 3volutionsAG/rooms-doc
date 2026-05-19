@@ -4,8 +4,8 @@ linkTitle: "Massenfreigabe"
 weight: 10
 description: ''
 ---
-<p style="text-align: justify">
-Auch die Massenfreigabe und die Massenterminierung von Buchungen führen Sie in den Menüs <i>Plan</i>, <i>Kalender</i> und <i>Listen</i> durch. </p>
+
+Auch die Massenfreigabe und die Massenterminierung von Buchungen führen Sie in den Menüs _Plan_, _Kalender_ und _Listen_ durch.
 
 Voraussetzung für die Massenfreigabe und Massenteminierung ist, es muss sich bei den selektierten Reservationen um aktuell laufende Reservationen handeln. Ist diese Bedingung erfüllt, können zwei oder mehrere Buchungen im gleichen Prozessschritt freigegeben (sofortige Beendigung ohne Nachlaufzeit) oder terminiert (sofortige Beendigung, Nachlaufzeit bleibt bestehen) werden. Ansonsten sehen Sie ein Popup wie in Abbildung me.
 

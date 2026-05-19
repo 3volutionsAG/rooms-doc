@@ -6,7 +6,7 @@ weight: 4
 description: 'ROOMZ Konfigurationsparameter'
 ---
 ## Vorbereitung
-Damit Sie die IDP Konfiguration testen und das ROOMZ-Türschild konfigurieren können, benötigen Sie einen *API_KEY*.   
+Damit Sie die IDP Konfiguration testen und das ROOMZ-Türschild konfigurieren können, benötigen Sie einen *API_KEY*.
 Eine Anleitung dazu finden Sie unter [Türschildbenutzer und API KEY]({{< ref "betrieb/tuerschilder/tuerschildbenutzer" >}})
 
 ## Konfiguration IDP
@@ -17,7 +17,7 @@ Diese Konfiguration wird bei unseren SaaS Kunden durch uns vorgenommen.
 
 
 
-Damit die Türschilder mit Rooms kommunizieren können, muss im IDP ein Client konfiguriert werden.   
+Damit die Türschilder mit Rooms kommunizieren können, muss im IDP ein Client konfiguriert werden.
 Ergänzen Sie dazu die Datei `appsettings.json` im `config` Verzeichnis folgendermassen:
 
 ``` json
@@ -53,7 +53,7 @@ Ergänzen Sie dazu die Datei `appsettings.json` im `config` Verzeichnis folgende
 }
 ```
 ### Testen des Clients
-Um den Client zu testen, können sie folgende Abfrage machen (z.B. mit Postman, Insomnia, curl etc.)   
+Um den Client zu testen, können sie folgende Abfrage machen (z.B. mit Postman, Insomnia, curl etc.)
 Bei einer korrekten Konfiguration erhalten Sie in der Response ein Bearer Token.
 
 Verwenden Sie als *API KEY* den PIN ihres Türschildbenutzers (siehe [Türschildbenutzer und API KEY]({{< ref "betrieb/tuerschilder/tuerschildbenutzer" >}}))

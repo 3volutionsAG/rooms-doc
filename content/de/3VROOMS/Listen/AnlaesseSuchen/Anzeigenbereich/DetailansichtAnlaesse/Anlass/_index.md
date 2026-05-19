@@ -7,30 +7,30 @@ description: 'Im Reiter Anlass sind alle Informationen übersichtlich zusammenge
 ## Ansichtsbereich
 
 {{< imgproc List_ANL_DS_Anl Resize "960x" >}}
-Detaillierte Informationen zum ausgewählten Anlass im Reiter <i>Anlass</i>
+Detaillierte Informationen zum ausgewählten Anlass im Reiter _Anlass_
 {{< /imgproc >}}
 
 ### Hinzugefügte Buchungen
 
-<p style="text-align:justify"> Im unteren Teil der Detailansicht sind alle dem Anlass hinzugefügten Buchungen aufgelistet. </p>
+Im unteren Teil der Detailansicht sind alle dem Anlass hinzugefügten Buchungen aufgelistet.
 
 {{< imgproc List_ANL_DSunten_b Resize "960x" >}}
 Unterer Bereich der Detailansicht eines Anlasses mit den Verwaltungsmöglichkeiten der zugefügten Buchungen.
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Der Buchungstitel ist mit der <a href="/3vrooms/listen/buchungensuchen/anzeigenbereich/detailansichtbuchungen/">Detailansicht der Buchung </a> verlinkt. </p>
+Der Buchungstitel ist mit der [Detailansicht der Buchung](/3vrooms/listen/buchungensuchen/anzeigenbereich/detailansichtbuchungen/) verlinkt.
 
 {{< imgproc List_BG_Anzeige_DS Resize "960x" >}}
 Detailansicht zu einer Buchung
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Über das Bleistiftsymbol kommen Sie zu <a href="/3vrooms/buchen/buchungerstellen/">Eingabemaske </a> der Buchung und können diese bearbeiten. </p>
+Über das Bleistiftsymbol kommen Sie zu [Eingabemaske](/3vrooms/buchen/buchungerstellen/) der Buchung und können diese bearbeiten.
 
 {{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "960x" >}}
 Eingabemaske zur Buchungsbearbeitung
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Wenn Sie eine oder mehrere Checkboxen vor dem Buchungstitel auswählen und auf die Schaltfläche <i>Bearbeiten</i> klicken, werden Sie zur Massenbearbeitung weitergeleitet. Wie diese funktioniert ist im Kapitel <a href="/3vrooms/buchen/massenbearbeitung/"> Massenbearbeitung </a> beschrieben. </p>
+Wenn Sie eine oder mehrere Checkboxen vor dem Buchungstitel auswählen und auf die Schaltfläche _Bearbeiten_ klicken, werden Sie zur Massenbearbeitung weitergeleitet. Wie diese funktioniert ist im Kapitel [Massenbearbeitung](/3vrooms/buchen/massenbearbeitung/) beschrieben.
 
 {{< imgproc List_ANL_DS_Mass Resize "960x" >}}
 Eingabemaske zur Buchungsbearbeitung

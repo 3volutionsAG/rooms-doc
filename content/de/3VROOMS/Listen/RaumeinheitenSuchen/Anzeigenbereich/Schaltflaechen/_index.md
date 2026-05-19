@@ -4,7 +4,7 @@ linkTitle: "Schaltflächen"
 weight: 3
 description: 'Über die Listenansicht lassen sich Raumeinheiten entfernen sowie neu generieren.'
 ---
-<p style="text-align: justify"> Am unteren Rand des Anzeigenbereichs befinden sich folgende Schaltflächen: </p>
+Am unteren Rand des Anzeigenbereichs befinden sich folgende Schaltflächen:
 
 {{< imgproc List_RE_Anz_Schalt Resize "960x" >}}
 Schaltflächen zur Entfernung und Erstellung von Raumeinheiten
@@ -12,26 +12,26 @@ Schaltflächen zur Entfernung und Erstellung von Raumeinheiten
 
 ## Entfernen
 
-<p style="text-align: justify"> Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang und klicken Sie auf die Schaltfläche <i>Entfernen</i>, um die Raumeinheit zu löschen. </p>
+Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang und klicken Sie auf die Schaltfläche _Entfernen_, um die Raumeinheit zu löschen.
 
 {{< imgproc List_RE_del_b Resize "960x" >}}
-Entfernen einer Raumeinheit 
+Entfernen einer Raumeinheit
 {{< /imgproc >}}
 
 Es erscheint ein Dialogfenster, in dem der Löschvorgang bestätigt werden muss.
 
 {{< imgproc List_RE_DFdel_b Resize "960x" >}}
-Dialogfenster zur Bestätigung des Löschvorgangs 
+Dialogfenster zur Bestätigung des Löschvorgangs
 {{< /imgproc >}}
 
 ## Erstellen
 
-<p style="text-align: justify"> Klicken Sie auf die Schaltfläche <i>Erstellen</i>, um eine neue Raumeinheit anzulegen. </p>
+Klicken Sie auf die Schaltfläche _Erstellen_, um eine neue Raumeinheit anzulegen.
 
-<p style="text-align: justify"> Sie werden auf die Eingabemaske zur Erstellung einer Raumeinheit weitergeleitet. </p>
+Sie werden auf die Eingabemaske zur Erstellung einer Raumeinheit weitergeleitet.
 
 {{< imgproc List_RE_neu Resize "960x" >}}
-Dialogfenster zur Bestätigung des Löschvorgangs 
+Dialogfenster zur Bestätigung des Löschvorgangs
 {{< /imgproc >}}
 
-<p style="text-align: justify"> Näheres zur Eingabemaske finden Sie im Kapitel <a href="/3vrooms/einstellungen/raumeinheiten/#raumeinheiten-neu-erstellen">Einstellungen</a>. </p>
+Näheres zur Eingabemaske finden Sie im Kapitel [Einstellungen](/3vrooms/einstellungen/raumeinheiten/#raumeinheiten-neu-erstellen).

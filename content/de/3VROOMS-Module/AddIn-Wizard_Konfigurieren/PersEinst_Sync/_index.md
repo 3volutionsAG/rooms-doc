@@ -15,7 +15,7 @@ Wenn Ihre Umgebung bereits den Graph-basierten SyncModus **`Microsoft365`** verw
 Bei `Delegated` muss der Benutzer den Kalender zusätzlich einmalig verbinden.
 {{% /alert %}}
 
-<p style="text-align: justify">Die Aktivierung erfolgt in zwei Schritten:</p>
+Die Aktivierung erfolgt in zwei Schritten:
 
 - Synchronisation aktivieren
 - Notifikationen aktivieren

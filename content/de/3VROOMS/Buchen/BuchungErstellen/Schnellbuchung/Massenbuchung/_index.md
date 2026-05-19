@@ -4,15 +4,15 @@ linkTitle: "Massen-Schnellbuchung"
 weight: 20
 description: ''
 ---
-<p style="text-align: justify">
-Sie können im Reiter <i>Buchen</i> auch eine Schnellbuchung von mehreren Ressourcen durchführen. </br>
 
-Folgende Schritte führen Sie dazu aus: </p>
+Sie können im Reiter _Buchen_ auch eine Schnellbuchung von mehreren Ressourcen durchführen.
 
-1. Wählen Sie eine oder mehrere Ressourcen aus der Liste aus und aktivieren die **Checkbox**. 
+Folgende Schritte führen Sie dazu aus:
+
+1. Wählen Sie eine oder mehrere Ressourcen aus der Liste aus und aktivieren die **Checkbox**.
 2. Anschliessend wählen Sie den Button **Massen-Schnellbuchung (gruppiert)** aus.
 3. Es erscheint ein Popup Fenster, in welchem Sie die Informationen für die Schnellbuchung eingeben und Sie die ausgewählten Ressourcen sehen:
-   
+
    * Titel
    * Dauer (Datum/Zeit)
    * Organisator:in
@@ -33,8 +33,8 @@ Folgende Schritte führen Sie dazu aus: </p>
 
 ### Ressourcen zu Massenschnellbuchung hinzufügen
 
-<p style="text-align: justify">
-Im rechten Sidepanel wird Ihnen bei der Zusammenfassung der Massen-Schnellbuchung angezeigt, dass Sie weitere Ressourcen hinzufügen können. </p>
+
+Im rechten Sidepanel wird Ihnen bei der Zusammenfassung der Massen-Schnellbuchung angezeigt, dass Sie weitere Ressourcen hinzufügen können.
 
 1. Bestehende Buchungen hinzufügen
 2. Ressourcen zum Anlass buchen (Liste)
@@ -42,22 +42,22 @@ Im rechten Sidepanel wird Ihnen bei der Zusammenfassung der Massen-Schnellbuchun
 
 #### Ressourcen zum Anlass buchen in Listen
 
-<p style="text-align: justify">
-Wählen Sie den Button <i>Ressourcen zum Anlass buchen (Liste)</i>, gelangen Sie zur Liste der zur Verfügung stehenden Ressourcen. </br></br>
 
-Um eine Ressource hinzuzufügen gehen Sie wie folgt vor: </p>
+Wählen Sie den Button _Ressourcen zum Anlass buchen (Liste)_, gelangen Sie zur Liste der zur Verfügung stehenden Ressourcen.
+
+Um eine Ressource hinzuzufügen gehen Sie wie folgt vor:
 
 1. Freie Ressource im Sidepanel mittels Filter suchen: Je nach Ressourcenart können Sie mittels Drop Down diese auswählen.
-2. Wählen Sie den Button **Anzeigen** im Sidepanel und Sie sehen eine Liste mit zur Verfügung stehenden Ressourcen. 
+2. Wählen Sie den Button **Anzeigen** im Sidepanel und Sie sehen eine Liste mit zur Verfügung stehenden Ressourcen.
 3. Wählen Sie die gewünschte Ressource aus (Checkbox aktivieren)
 4. Klicken Sie auf den untenstehenden Button **Schnellbuchung zu Anlass**
-5. Es erscheint ein Popup-Fenster (Massenbuchung gruppiert), in welchem Sie die notwendigen Informationen eingeben können: 
-   
+5. Es erscheint ein Popup-Fenster (Massenbuchung gruppiert), in welchem Sie die notwendigen Informationen eingeben können:
+
    * Titel
-   * Dauer 
+   * Dauer
    * Organisator:in
    * Anlasstyp
-   * Bemerkung 
+   * Bemerkung
 
     {{< imgproc Buchen_Massenschnellbuchung_Anlass Resize "960x" >}}
     Massenschnellbuchung Ressourcen zu Anlässen hinzufügen
@@ -71,19 +71,19 @@ Um eine Ressource hinzuzufügen gehen Sie wie folgt vor: </p>
 
 #### Ressourcen buchen zum Anlass im Kalender
 
-<p style="text-align: justify">
-Wählen Sie den Button <i>Ressourcen zum Anlass buchen (Kalender)</i>, gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen, gehen Sie wie folgt vor: </p>
 
-1. Suchen Sie eine freie Ressource über das Sidepanel und der Filterfunktion. 
+Wählen Sie den Button _Ressourcen zum Anlass buchen (Kalender)_, gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen, gehen Sie wie folgt vor:
+
+1. Suchen Sie eine freie Ressource über das Sidepanel und der Filterfunktion.
 2. Lassen Sie sich die freien Ressourcen über den Button **Anzeigen** im Kalender anzeigen.
 3. Wählen Sie eine Ressource aus: Mittels Doppelklick in das gewünschte Zeitfenster
 4. Es erscheint ein Popup Fenster *Massenbuchung (gruppiert)*, in welchem Sie alle notwendigen Informationen eingeben können:
-   
+
     - Titel
     - Dauer
     - Organisator:in
     - Anlasstyp
-    - Bemerkung 
+    - Bemerkung
 
     {{< imgproc Buchen_Massenschnellbuchung_RessourceimKalender Resize "960x" >}}
     Ressource im Kalender zum Anlass hinzufügen

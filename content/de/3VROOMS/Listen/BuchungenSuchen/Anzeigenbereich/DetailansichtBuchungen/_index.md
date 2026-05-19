@@ -6,26 +6,26 @@ description: 'Hier finden Sie weitere Informationen zur Detailansicht einer Buch
 ---
 ## Detailansicht Buchungen
 
-<p style="text-align: justify"> Der Buchungstitel in der Listenansicht ist mit der Detailseite der entsprechenden Buchung verlinkt. Mit einem Klick auf den blau gefärbten Buchungstitel werden Sie auf die Detailseite der Buchung weitergeleitet. </p>
+Der Buchungstitel in der Listenansicht ist mit der Detailseite der entsprechenden Buchung verlinkt. Mit einem Klick auf den blau gefärbten Buchungstitel werden Sie auf die Detailseite der Buchung weitergeleitet.
 
 {{< imgproc List_BG_Anzeige_DS Resize "960x" >}}
-Detailansicht zu einer Buchung 
+Detailansicht zu einer Buchung
 {{< /imgproc >}}
 
 ## Gliederung des Anzeigenbereichs
 
-<p style="text-align: justify">
-Der Anzeigenbereich gliedert sich in <i>Zusammenfassung</i>, <i>Historik</i> und <i>Mails</i>. Die einzelnen Kategorien sind über die Reiter am oberen Rand des Anzeigenbereichs zugänglich und werden in den folgenden Unterkapiteln beschrieben. </p>
+
+Der Anzeigenbereich gliedert sich in _Zusammenfassung_, _Historik_ und _Mails_. Die einzelnen Kategorien sind über die Reiter am oberen Rand des Anzeigenbereichs zugänglich und werden in den folgenden Unterkapiteln beschrieben.
 
 {{< imgproc List_BG_Anzeige_DS_Reiter Resize "960x" >}}
-Reiter "Zusammenfassung", "Historik", und "Mails" der Buchungsdetails 
+Reiter "Zusammenfassung", "Historik", und "Mails" der Buchungsdetails
 {{< /imgproc >}}
 
 ## Sidepanel
 
-<p style="text-align: justify">
-Im Sidepanel wird eine Kurzübersicht der gebuchten Ressource sowie gegebenenfalls ein Hinweis auf eine nachfolgende Buchung angezeigt. </p>
+
+Im Sidepanel wird eine Kurzübersicht der gebuchten Ressource sowie gegebenenfalls ein Hinweis auf eine nachfolgende Buchung angezeigt.
 
 {{< imgproc List_BG_Anzeige_DS_Kurz Resize "960x" >}}
-Kurzinformation zur gebuchten Ressource und Hinweis auf eine nachfolgende Buchung der Ressource 
+Kurzinformation zur gebuchten Ressource und Hinweis auf eine nachfolgende Buchung der Ressource
 {{< /imgproc >}}

@@ -22,7 +22,7 @@ Equipment in der Ressourcenliste anzeigen
 
 ### Ressourcen suchen
 
-Im linken Menü finden Sie unter der Kategorie <i>Ressourcen</i> eine Suchfunktion, mit deren Hilfe Sie nach einer Ressource suchen können. Sie können hierbei nach folgenden Kriterien suchen:
+Im linken Menü finden Sie unter der Kategorie _Ressourcen_ eine Suchfunktion, mit deren Hilfe Sie nach einer Ressource suchen können. Sie können hierbei nach folgenden Kriterien suchen:
 
 * Ressourcenart (Drop-down)
 * Gespeicherte Listen einsehen
@@ -54,7 +54,7 @@ Hierbei können Sie nach den folgenden Kriterien suchen:
 * Raum: Raumtyp (Plus Zeichen: hinzufügen)
 * Equipmemt: Equipmenttyp (Plus Zeichen: hinzufügen)
 
-### Löschen von Ressourcen 
+### Löschen von Ressourcen
 
 Sie können eine Mehrfachselektion über die linke Checkbox vornehmen und eine Ressource über den untenstehenden Button _entfernen_ löschen.
 
@@ -73,11 +73,11 @@ Klicken Sie auf den Namen einer Ressource in der Liste, gelangen Sie zur Übersi
 Daten einer Ressource einsehen
 {{< /imgproc >}}
 
-Aus diesem Modus können Sie ebenfalls die ausgewählte Ressource bearbeiten. Dazu klicken Sie auf den untenstehenden Button <i>Bearbeiten</i>. Über den Button <i>Abbrechen</i> gelangen Sie wieder zur Übersicht im View Modus.
+Aus diesem Modus können Sie ebenfalls die ausgewählte Ressource bearbeiten. Dazu klicken Sie auf den untenstehenden Button _Bearbeiten_. Über den Button _Abbrechen_ gelangen Sie wieder zur Übersicht im View Modus.
 
-## Ressource neu erstellen 
+## Ressource neu erstellen
 
-Eine neue Ressource erstellen Sie über den untenstehenden Button <i>Erstellen</i>. Über den Drop Down Pfeil können Sie untenstehend auswählen, welchen Ressourcentyp Sie neu erstellen wollen. Sie können wählen zwischen Raum, Arbeitsplatz, Parkplatz, Equipment, Fahrzeug oder Benutzerdefinierten Ressourcen. Je nachdem, welchen Ressourcentyp Sie neu erstellen, stehen Ihnen verschiedene Daten zur Verfügung.
+Eine neue Ressource erstellen Sie über den untenstehenden Button _Erstellen_. Über den Drop Down Pfeil können Sie untenstehend auswählen, welchen Ressourcentyp Sie neu erstellen wollen. Sie können wählen zwischen Raum, Arbeitsplatz, Parkplatz, Equipment, Fahrzeug oder Benutzerdefinierten Ressourcen. Je nachdem, welchen Ressourcentyp Sie neu erstellen, stehen Ihnen verschiedene Daten zur Verfügung.
 
 In dem Feld, welches sich öffnet, legen Sie folgende Daten fest
 
@@ -89,9 +89,9 @@ In dem Feld, welches sich öffnet, legen Sie folgende Daten fest
 * Virtuelle Räume
 * Sperrzeiten
 * Berechtigungen
-* Feiertage  
+* Feiertage
 
-Die neu eingetragenen Daten speichern Sie über den untenstehenden Button <i>Speichern</i>.
+Die neu eingetragenen Daten speichern Sie über den untenstehenden Button _Speichern_.
 
 {{< imgproc Ressource_neu_erstellen Resize "960x" >}}
 Benötigte Daten für die Erstellung einer neuen Ressource
@@ -99,7 +99,7 @@ Benötigte Daten für die Erstellung einer neuen Ressource
 
 Haben Sie eine Ressource neu erstellt und gespeichert, aktualisiert sich die Liste automatisch. Ihre eingetragene Ressource sehen Sie nun im View Modus.
 
-Beispiel: </br> Erstellung eines neuen Equipmenttyps (Whiteboard)
+Beispiel:   Erstellung eines neuen Equipmenttyps (Whiteboard)
 
 {{< imgproc Ressourcen_Beispiel_neu_Equipment Resize "960x" >}}
 Beispiel einer neu erstellten Ressource, Equipment
@@ -127,7 +127,7 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Ressourcen ID                                    | Ressourcen ID eintragen                                           |
 | Bezeichnung                                      | Bezeichnung der Ressource eintragen. Erfassung muss in allen aktivierten Sprachen erfolgen. |
 | Beschreibung                                     | Die Ressource beschreiben                                         |
-| Fehlermeldung                                    | Fehlermeldung eintragen, die angezeigt werden soll. Diese übersteuert die globale Fehlermeldung bei Buchungsproblemen. Erfassung in mehreren Sprachen möglich. |  
+| Fehlermeldung                                    | Fehlermeldung eintragen, die angezeigt werden soll. Diese übersteuert die globale Fehlermeldung bei Buchungsproblemen. Erfassung in mehreren Sprachen möglich. |
 | External Identifier                              |                                                                   |
 | Standort                                         | Standort über das "Plus-Zeichen" hinzufügen Bsp: Bern. Es werden nur die Standorte zur Verfügung gestellt, an welchen der Benutzer auch Schreibrechte hat. Datenrecht Ressource bearbeiten. |
 | Ressourcenart                                    | Nur Bezeichnungsfeld (nicht editierbar)                           |
@@ -144,14 +144,14 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Nachlaufdauer                                    | Eingabe in Minuten. Bei der Berechnung im Reservationsprozess wird der grösste Wert aller Vorlaufzeiten (Ressourcen, Services, Bestuhlungen) verwendet (kein kummulatives verhalten). |
 | Priorisierung                                    | Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 | Automatische Verlängerung                        | Aktivierung der automatischen Verlängerung erfolgt durch die Eingabe eines Wert grösser 0  ( >0 ). Ist der Wert 0, dann ist die automatische Verlängerung ausgeschaltet. Die Prüfung erfolgt auf Ganzzahlen: Feldvalidierung (siehe 000.001 Globale Funktionen). Weitere Regeln: Das Ausführungsdatum ist Reservationsende - 5 Minuten. Eine automatische Verlängerung löst keine E-Mail Notifikationen aus. Synchronisierte Buchungen werden im Outlook nachgetragen OHNE MeetingUpdate für die Teilnehmer. Eine Buchung mit automatischer Verlängerung endet bei Checkout, Konflikt mit der nächsten Reservation oder am Ende des Kalendertages. |
-| No Slot Buchungen zulässig                       | Bei Selektion kann Ressource nur als Slot gebucht werden (vordefinierter Zeitraum). Ankreuzen wenn zutreffend. | 
+| No Slot Buchungen zulässig                       | Bei Selektion kann Ressource nur als Slot gebucht werden (vordefinierter Zeitraum). Ankreuzen wenn zutreffend. |
 | Online Ressource                                 | Bei Selektion kann Ressource immer verwendet werden, unabhängig davon, ob es zu einem bestimmten Zeitpunkt bereits verwendet wird. |
-| Schnellbuchungen deaktivieren                    | Somit kann diese Ressource auch über eine Schnellbuchung mit entsprechendem Recht gebucht werden. ankreuzen wenn zutreffend. | 
-| TMS System ID                                    | Feld nur verfügbar bei der Ressourcenart <i>Equipment</i>. Nur Ressourcen mit einer Angabe in diesem Feld werden mit dem VC System synchronisiert und im VC Prozess gelistet. |
+| Schnellbuchungen deaktivieren                    | Somit kann diese Ressource auch über eine Schnellbuchung mit entsprechendem Recht gebucht werden. ankreuzen wenn zutreffend. |
+| TMS System ID                                    | Feld nur verfügbar bei der Ressourcenart _Equipment_. Nur Ressourcen mit einer Angabe in diesem Feld werden mit dem VC System synchronisiert und im VC Prozess gelistet. |
 | Beim Speichern Notifikation an Betroffene senden | Beim Abschluss der Buchung wird eine Email Notifikation an die ausgewählten Personen versendet. Ankreuzen, wenn zutreffend. |
 {{< /bootstrap-table >}}
 
-Die geänderten Daten speichern Sie über den untenstehenden Button <i>Speichern</i>.
+Die geänderten Daten speichern Sie über den untenstehenden Button _Speichern_.
 
 {{% alert color="info" title="Validierung auf Ressource" %}}
 Wenn eine Ressource bereits einer Gliederung zugeordnet ist, prüft das System beim Speichern der Ressource, ob das Tarifmodell zur Gliederung passt. Ressourcen derselben Gliederung können nicht mit unterschiedlichen Tarifmodellen gespeichert werden.
@@ -163,11 +163,11 @@ Stammdaten der Ressourcen bearbeiten
 
 ### Spezifische Daten der Ressource bearbeiten
 
-Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im Reitermenü auf <i>Spezifische Daten</i> gehen. Folgende Daten können Sie für die ausgewählte Ressource bearbeiten:
+Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im Reitermenü auf _Spezifische Daten_ gehen. Folgende Daten können Sie für die ausgewählte Ressource bearbeiten:
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld                                 | Funktion                                                                                                   | 
-| ------------------------------------ |----------------------------------------------------------------------------------------------------------- | 
+| Feld                                 | Funktion                                                                                                   |
+| ------------------------------------ |----------------------------------------------------------------------------------------------------------- |
 | Farbe                                | Über das Pinsel-Sympol wählen Sie die gewünschte Farbe für die Ressource aus. Diese erscheint im Kalender. |
 | Workflow                             | Über Drop-Down wählen Sie den definierten [Workflow](/3vrooms/einstellungen/basisdatenfuerressourcen/workflows/) aus. |
 | Plan Label                           | Gewünschtes Plan Label eintragen |
@@ -179,7 +179,7 @@ Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im R
 | Alarmierung bei Folgebuchung         | Erscheint nur bei Ressourcenart _Raum_. Angabe in Minuten. Die Minuten beziehen sich auf den Reservationsstart ohne Vorlauf. 0 oder leer = deaktiviert. Löst Event _Alarmierungspopup_ nach Ablauf der erfassten Minutenzahl aus, falls zum aktuellen Zeitpunkt eine Reservation besteht und sich auf der Ressource eine Reservation in Zukunft befindet. Beispiel Reservation startet um 11:00, Alarmierung beträgt 60. Eine vorgängige Reservation dauert von 08:00 bis 10:30 - so erscheint das Popup zwischen 10:00 und 10:30. |
 {{< /bootstrap-table >}}
 
-Die geänderten Daten speichern Sie über den untenstehenden Button <i>Speichern</i>.
+Die geänderten Daten speichern Sie über den untenstehenden Button _Speichern_.
 
 {{< imgproc Ressourcen_Spezifische_Daten Resize "960x" >}}
 Spezifische Daten der Ressourcen bearbeiten
@@ -187,12 +187,12 @@ Spezifische Daten der Ressourcen bearbeiten
 
 ### Medien und Beilagen der Ressource bearbeiten
 
-Fügen Sie Medien und Beilagen zur bestehenden Ressource hinzu, indem Sie den untenstehenden Button <i>Hinzufügen</i> auswählen. Folgende Daten können Sie der Ressource hinzufügen:
+Fügen Sie Medien und Beilagen zur bestehenden Ressource hinzu, indem Sie den untenstehenden Button _Hinzufügen_ auswählen. Folgende Daten können Sie der Ressource hinzufügen:
 
 {{< bootstrap-table "table table-striped" >}}
-| Feld                 | Funktion                                      | 
-| -------------------- | --------------------------------------------- | 
-| Bezeichnung          | Bezeichnung der ausgewählten Datei hinzufügen | 
+| Feld                 | Funktion                                      |
+| -------------------- | --------------------------------------------- |
+| Bezeichnung          | Bezeichnung der ausgewählten Datei hinzufügen |
 | Bild/Datei auswählen | Maximale Dateigrö0e 5MB                       |
 {{< /bootstrap-table >}}
 
@@ -207,14 +207,14 @@ Medien und Beilagen einer Ressource hinzufügen
 
 ### Sperrzeiten der Ressource bearbeiten
 
-Fügen Sie entweder eine Sperrzeitserie oder eine einzelne Sperrzeit zur Ressource hinzu. </br>
-Dazu klicken Sie auf den untenstehenden Button <i>Hinzufügen</i>. Es öffnet sich ein neues Feld, in welchem Sie die geforderten Daten eingeben.
+Fügen Sie entweder eine Sperrzeitserie oder eine einzelne Sperrzeit zur Ressource hinzu.
+Dazu klicken Sie auf den untenstehenden Button _Hinzufügen_. Es öffnet sich ein neues Feld, in welchem Sie die geforderten Daten eingeben.
 
 {{< imgproc Ressourcen_Sperrzeiten Resize "960x" >}}
 Sperrzeiten einer Ressource bearbeiten
 {{< /imgproc >}}
 
-Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld <i>Bezeichnung</i>. Mittels Datumspicker können Sie das gewünschte Datum auswählen.
+Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld _Bezeichnung_. Mittels Datumspicker können Sie das gewünschte Datum auswählen.
 
 {{< imgproc Ressourcen_Sperrzeiten_hinzufügen Resize "960x" >}}
 Sperrzeiten einer Ressource hinzufügen
@@ -226,11 +226,11 @@ Sperrzeiten einer Ressource hinzufügen
 
 #### Sperrzeitserie
 
-Eine Sperrzeitserie fügen Sie über den untenstehenden Button <i>Sperrzeitserie hinzufügen</i>. Sie können hierbei zwischen verschiedenen Wiederholungen wählen:
+Eine Sperrzeitserie fügen Sie über den untenstehenden Button _Sperrzeitserie hinzufügen_. Sie können hierbei zwischen verschiedenen Wiederholungen wählen:
 
-* täglich 
+* täglich
 * wöchentlich
-* monatlich 
+* monatlich
 
 {{< imgproc Ressourcen_Sperrzeitserie_hinzufügen Resize "960x" >}}
 Sperrzeitserie hinzufügen
@@ -238,13 +238,13 @@ Sperrzeitserie hinzufügen
 
 ### Berechtigungen der Ressource bearbeiten
 
-Fügen Sie Berechtigungen hinzu oder entfernen Sie diese. Beim Betätigen des untenstehenden Button <i>Hinzufügen</i> wählen Sie eine der bereits gespeicherten Berechtigungen aus z.B. Admin.
+Fügen Sie Berechtigungen hinzu oder entfernen Sie diese. Beim Betätigen des untenstehenden Button _Hinzufügen_ wählen Sie eine der bereits gespeicherten Berechtigungen aus z.B. Admin.
 
 {{< imgproc Ressourcen_Berechtigungen Resize "960x" >}}
 Berechtigungen einer Ressource bearbeiten
 {{< /imgproc >}}
 
-Sie können eine oder mehrere Berechtigungen auswählen. Aktivieren Sie dafür die Checkbox. Speichern Sie Ihre Auswahl über den Button <i>Speichern</i>.
+Sie können eine oder mehrere Berechtigungen auswählen. Aktivieren Sie dafür die Checkbox. Speichern Sie Ihre Auswahl über den Button _Speichern_.
 
 {{< imgproc Ressourcen_Berechtigungen_hinzufügen Resize "960x" >}}
 Berechtigungen einer Ressource hinzufügen
@@ -254,7 +254,7 @@ Mehr Information zum Thema Berechtigungen finden Sie hier: [Benutzergruppen](/3v
 
 ### Feiertage der Ressource bearbeiten
 
-Sie können einen der bereits gespeicherten Feiertage (z.B. Weihnachten) der Ressource zuordnen. Dazu klicken Sie auf den untenstehenden Button <i>Hinzufügen</i>. In dem Feld, welches sich öffnet, wählen Sie einen oder mehrere Feiertage über das linke Kästchen aus.
+Sie können einen der bereits gespeicherten Feiertage (z.B. Weihnachten) der Ressource zuordnen. Dazu klicken Sie auf den untenstehenden Button _Hinzufügen_. In dem Feld, welches sich öffnet, wählen Sie einen oder mehrere Feiertage über das linke Kästchen aus.
 
 {{< imgproc Ressourcen_Feiertage Resize "960x" >}}
 Feiertage für eine Ressource bearbeiten
@@ -264,60 +264,60 @@ Feiertage für eine Ressource bearbeiten
 Einer Ressource einen Feiertag zuweisen
 {{< /imgproc >}}
 
-Speichern Sie Ihre Auswahl über den untenstehenden Button <i>Speichern</i>. Die Liste aktualisiert sich automatisch und die ausgewählten Feiertage erscheinen in der Liste.
+Speichern Sie Ihre Auswahl über den untenstehenden Button _Speichern_. Die Liste aktualisiert sich automatisch und die ausgewählten Feiertage erscheinen in der Liste.
 
 {{< imgproc Ressourcen_Feiertage_in_Liste Resize "960x" >}}
 Hinzugefügte Feiertage in der aktualisierten Liste
 {{< /imgproc >}}
 
-Mehr über Feiertage erfahren Sie hier: [Feiertage](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/feiertage/) 
+Mehr über Feiertage erfahren Sie hier: [Feiertage](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/feiertage/)
 
 ### Türschild der Ressource bearbeiten
 
 Für das Türschild wählen Sie den Konfigurationsbenutzer aus und aktivieren das Türschild.
 
 {{< imgproc Ressource_Türschild Resize "960x" >}}
-Türschild einer Ressource bearbeiten 
+Türschild einer Ressource bearbeiten
 {{< /imgproc >}}
 
 ### Fixes Equipment der Ressource bearbeiten
 
-Wenn Sie die Ressourcenart <i>Raum</i> bearbeiten, können Sie diesem fixes Equipment zuordnen.
+Wenn Sie die Ressourcenart _Raum_ bearbeiten, können Sie diesem fixes Equipment zuordnen.
 
 {{< imgproc Ressource_fixes_Equipment Resize "960x" >}}
 Fixes Equipment auswählen
 {{< /imgproc >}}
 
-Sollten Sie eine neue Ressource erstellen oder weiteres Equipment hinzufügen, klicken Sie auf den untenstehenden Button <i>hinzufügen</i>. Es öffnet sich ein Feld, in welchem Sie ein oder mehrere Equipments auswählen können über die Aktivierung der Checkbox.
+Sollten Sie eine neue Ressource erstellen oder weiteres Equipment hinzufügen, klicken Sie auf den untenstehenden Button _hinzufügen_. Es öffnet sich ein Feld, in welchem Sie ein oder mehrere Equipments auswählen können über die Aktivierung der Checkbox.
 
 {{< imgproc Ressourcen_fixes_Equipment_hinzufügen Resize "960x" >}}
-Fixes Equipment zuordnen und hinzufügen 
+Fixes Equipment zuordnen und hinzufügen
 {{< /imgproc >}}
 
-Speichern Sie Ihre Auswahl über den Button <i>Speichern</i>. Die Liste aktualisiert sich automatisch und Sie sehen das hinzugefügte Equipment.
+Speichern Sie Ihre Auswahl über den Button _Speichern_. Die Liste aktualisiert sich automatisch und Sie sehen das hinzugefügte Equipment.
 
 {{< imgproc Ressourcen_fixes_Equipment_in_Liste Resize "960x" >}}
 Ansicht fixes Equipment in aktualisierter Liste
 {{< /imgproc >}}
 
-#### Equipment Schnellerfassung 
+#### Equipment Schnellerfassung
 
-Sie haben die Möglichkeit über die Equipment Schnellerfassung. Dazu klicken Sie auf den gleichnamigen untenstehenden Button. Es öffnet sich ein Feld und Sie können dort die zur Verfügung stehenden Equipmenttypen mittels der Plus-Auswahl hinzufügen. Speichern Sie Ihre Eingabe ebenfalls über den Button <i>Speichern</i>.
+Sie haben die Möglichkeit über die Equipment Schnellerfassung. Dazu klicken Sie auf den gleichnamigen untenstehenden Button. Es öffnet sich ein Feld und Sie können dort die zur Verfügung stehenden Equipmenttypen mittels der Plus-Auswahl hinzufügen. Speichern Sie Ihre Eingabe ebenfalls über den Button _Speichern_.
 
 {{< imgproc Ressourcen_Schnellzugriff_Equipment Resize "960x" >}}
-Schnellerfassung von Equipment  
+Schnellerfassung von Equipment
 {{< /imgproc >}}
 
 
 ### Bestuhlung der Ressource bearbeiten
 
-Wenn Sie die Ressourcenart <i>Raum</i> bearbeiten, können Sie diesem eine oder mehrere Bestuhlungsmöglichkeiten zuordnen. Bereits bestehende und gespeicherte Bestuhlungen sehen Sie in der Liste.
+Wenn Sie die Ressourcenart _Raum_ bearbeiten, können Sie diesem eine oder mehrere Bestuhlungsmöglichkeiten zuordnen. Bereits bestehende und gespeicherte Bestuhlungen sehen Sie in der Liste.
 
 {{< imgproc Ressourcen_Bestuhlung Resize "960x" >}}
 Bestuhlung zu einer Ressource hinzufügen
 {{< /imgproc >}}
 
-Wollen Sie der Ressource neue Bestuhlungen hinzufügen, klicken Sie auf den untenstehenden Button <i>hinzufügen</i>. Es öffnet sich ein Feld, in welchem Sie durch Aktivieren der Checkbox den Bestuhlungstyp auswählen können.
+Wollen Sie der Ressource neue Bestuhlungen hinzufügen, klicken Sie auf den untenstehenden Button _hinzufügen_. Es öffnet sich ein Feld, in welchem Sie durch Aktivieren der Checkbox den Bestuhlungstyp auswählen können.
 
 {{< imgproc Ressourcen_Bestuhlung_hinzufügen Resize "960x" >}}
 Bestuhlung zu einer Ressource hinzufügen

@@ -9,10 +9,10 @@ description: 'Türschild mit einer Ressource koppeln und entkoppeln'
 
 Bevor Sie ein Türschild mit einer Ressource koppeln können, müssen folgende Voraussetzungen erfüllt sein:
 
-1. **System Person konfiguriert**: Eine System Person mit den notwendigen Rechten muss in ROOMS hinterlegt sein.  
+1. **System Person konfiguriert**: Eine System Person mit den notwendigen Rechten muss in ROOMS hinterlegt sein.
    Siehe [Konfiguration der System Person]({{< ref "betrieb/tuerschilder/tuerschildbenutzer" >}})
 
-2. **Ressource vorbereitet**: Das Türschild muss für die entsprechende Ressource aktiviert sein.  
+2. **Ressource vorbereitet**: Das Türschild muss für die entsprechende Ressource aktiviert sein.
    Siehe [Konfiguration Ressource]({{< ref "betrieb/tuerschilder/konfiguratonressource" >}})
 
 3. **Benutzer mit Berechtigung**: Die Person welche die Kopplung durchführt benötigt das Recht [Darf Ressource bearbeiten]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/#standortabhängige-ressourcen-rechte" >}}).
@@ -41,7 +41,7 @@ Dashboard - Administration auswählen
 
 Es stehen zwei Authentifizierungsmethoden zur Verfügung:
 
-- **Option 1**: Zutritt mit Pin-Code  
+- **Option 1**: Zutritt mit Pin-Code
 - **Option 2**: Zutritt mit scannen vom QR-Code
 
 Geben Sie Ihren [persönlichen PIN]({{< relref "3VROOMS/Einstellungen/Persönlicheeinstellungen/Logons/#pin" >}}) ein.
@@ -100,14 +100,14 @@ Browser öffnen
 {{< imgproc step2 Resize "960x" >}}
 Compose aufrufen
 {{< /imgproc >}}
- 
+
 4. **Reset URL eingeben**
 
-   In einem freien Slot die onsiteROOMS URL mit dem Parameter `/#/reset` erfassen.  
+   In einem freien Slot die onsiteROOMS URL mit dem Parameter `/#/reset` erfassen.
    Dieser Parameter erzwingt die Entkopplung der aktuellen Ressource.
-   
+
    `<kundenbezeichnung>.onsite.<rooms domain>/#/reset`
-   
+
    Beispiel: `microfast.onsite.roomspro.ch/#/reset`
 
 {{< imgproc step3 Resize "960x" >}}
@@ -119,7 +119,7 @@ Reset URL in einem freien Slot erfassen
 
 6. **Neu koppeln**
    - In das Compose Menü zurückkehren
-   - Die onsiteROOMS URL aufrufen: `<kundenbezeichnung>.onsite.<rooms domain>`  
+   - Die onsiteROOMS URL aufrufen: `<kundenbezeichnung>.onsite.<rooms domain>`
      Beispiel: `microfast.onsite.roomspro.ch`
 
 7. **Zum Hauptmenü navigieren**

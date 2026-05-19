@@ -18,10 +18,10 @@ Kapitel Person Ansicht
 
 Im linken Menü finden Sie unter der Kategorie *Person* eine Suchfunktion, mit dessen Hilfe Sie nach einer Person suchen können. Sie können hierbei nach folgenden Kriterien suchen:
 
-* Nachname/Vorname 
+* Nachname/Vorname
 * E-mail
-* Sync. Modus 
-* Sync. Deaktiviert 
+* Sync. Modus
+* Sync. Deaktiviert
 * Telefon (Intern/Extern)
 
 {{< imgproc Personenliste_bearbeiten_suchen Resize "960x" >}}
@@ -34,8 +34,8 @@ Die Suchfunktionen erweitern Sie über den Drop Down des Menü-Punktes *Erweiter
 Hierbei können Sie nach den folgenden Kriterien suchen:
 
 * Personalnummer
-* OE/Firma 
-* Kostenstellencode 
+* OE/Firma
+* Kostenstellencode
 * Kostenstellenname
 * Status (Aktiv/Inaktiv)
 * Art (Intern/Extern)
@@ -46,19 +46,19 @@ Das Ergebnis der Suche wird Ihnen in der Liste angezeigt, nachdem Sie auf den Bu
 Suchergebnis in der Personenliste
 {{< /imgproc >}}
 
-## Personenlisten bearbeiten 
+## Personenlisten bearbeiten
 
 Die Person in der Personenliste bearbeiten Sie, indem Sie auf das Stift Icon `Bearbeiten` auswählen. Dort ändern Sie:
 
- * Stammdaten
- * Personen-Information
- * Navigation
- * Notifikation
- * Eigene Listen
- * Firmen- und Gruppen Informationen
- * Logons 
- * zugewiesene Ressourcen 
- 
+* Stammdaten
+* Personen-Information
+* Navigation
+* Notifikation
+* Eigene Listen
+* Firmen- und Gruppen Informationen
+* Logons
+* zugewiesene Ressourcen
+
 {{< imgproc Person_bearbeiten Resize "960x" >}}
 Personen Informationen bearbeiten und speichern
 {{< /imgproc >}}
@@ -69,7 +69,7 @@ Eine genaue Beschreibung der Daten, die Sie bearbeiten können, finden Sie hier:
 
 ## Person neu hinzufügen
 
-Möchten Sie eine neue Person hinzufügen, klicken Sie auf den untenstehenden Button <i>neu</i>. Es öffent sich ein neues Fenster. In diesem geben Sie die gleichen Informationen wie im vorher beschriebenem Absatz ein.
+Möchten Sie eine neue Person hinzufügen, klicken Sie auf den untenstehenden Button _neu_. Es öffent sich ein neues Fenster. In diesem geben Sie die gleichen Informationen wie im vorher beschriebenem Absatz ein.
 
 {{< imgproc Person_neu_hinzufügen Resize "960x" >}}
 Neue Person zu Personenliste hinzufügen
@@ -84,7 +84,7 @@ Dort sehen Sie die
 * Personen-Information
 * Mails: gesendete Mails und Notifikationen zu Buchungen
 * Meine Arbeit: Verlauf der ausgeführten Buchungen und Stornierungen
-* Historie: kompletter Verlauf der ausgeführten Aktivitäten in Rooms 
+* Historie: kompletter Verlauf der ausgeführten Aktivitäten in Rooms
 
 {{< imgproc Personendaten_einsehen Resize "960x" >}}
 Personen Informationen einsehen und bearbeiten
