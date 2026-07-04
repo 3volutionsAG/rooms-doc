@@ -5,21 +5,41 @@ weight: 47
 description: "Abweichungen zwischen ROOMS-Buchungen und Exchange-/Outlook-Terminen erkennen und auflösen."
 ---
 
-Die Ansicht **Sync-Differenzen** hilft dabei, Abweichungen zwischen ROOMS und Exchange / Outlook zu erkennen und gezielt zu bereinigen.
+**Sync-Differenzen** zeigen Abweichungen zwischen ROOMS und Exchange / Outlook für synchronisierte Buchungen.
 
 Eine Sync-Differenz entsteht, wenn ROOMS und Exchange für dasselbe synchronisierte Element unterschiedliche Werte kennen, zum Beispiel beim Titel, beim Zeitraum oder wenn ein Termin auf einer Seite fehlt.
 
-{{% alert title="Zielgruppe" color="info" %}}
-Diese Funktion richtet sich an Administratoren und Supportpersonen. Änderungen können produktive Buchungen oder Exchange-Termine anpassen. Prüfen Sie deshalb jede Differenz vor dem Anwenden sorgfältig.
+## Voraussetzung
+
+Für den Zugriff auf **Sync-Differenzen** benötigt der Benutzer das globale Recht **`AdminKonfiguration`**.
+
+Das Recht wird in den Rollen verwaltet:
+
+`Einstellungen` → `Sicherheitsdaten` → `Rollen` → `Rechte verwalten`
+
+{{% alert title="Wichtig" color="warning" %}}
+Beim Auflösen einer Sync-Differenz können produktive Buchungen oder Exchange-Termine angepasst werden. Verwenden Sie die Funktion deshalb nur, wenn klar ist, welche Seite fachlich korrekt ist.
 {{% /alert %}}
 
-## Aufruf
+## Wo finde ich die Sync-Differenzen?
 
-Die Ansicht befindet sich unter:
+Sie finden die Ansicht unter:
 
 `Einstellungen` → `System` → `Sync-Differenzen`
 
-Für den Zugriff ist eine Administrationsberechtigung für die Systemkonfiguration erforderlich.
+## Wozu gibt es Sync-Differenzen?
+
+Sync-Differenzen helfen Administratoren und Supportpersonen, Abweichungen zwischen ROOMS und Exchange / Outlook nachvollziehbar zu prüfen und gezielt zu bereinigen.
+
+Typische Einsatzfälle:
+
+- Eine Buchung wurde in ROOMS geändert, aber Exchange zeigt noch andere Werte.
+- Ein Termin wurde in Outlook / Exchange geändert und ROOMS zeigt abweichende Werte.
+- Ein Termin fehlt auf einer Seite oder kann dort nicht mehr gefunden werden.
+- Bei einer Serienbuchung unterscheiden sich einzelne Termine zwischen ROOMS und Exchange.
+- Es ist unklar, welche Seite zuletzt geändert wurde und welche Werte übernommen werden sollen.
+
+Sync-Differenzen ersetzen nicht die allgemeine Fehlersuche bei technischen Synchronisationsproblemen. Wenn die Synchronisation grundsätzlich nicht funktioniert, prüfen Sie zuerst die [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}) und den [Synchronisationstest]({{< relref "Betrieb/Synchronisation/TestSync/_index.md" >}}).
 
 ## Was wird geprüft?
 
@@ -111,5 +131,3 @@ Sync-Differenzen sind nicht dasselbe wie ein grundsätzlich fehlgeschlagener Syn
 
 - **Synchronisationsfehler** bedeuten, dass ein Sync-Vorgang technisch nicht erfolgreich war.
 - **Sync-Differenzen** bedeuten, dass ROOMS und Exchange unterschiedliche fachliche Daten für ein synchronisiertes Element haben.
-
-Wenn die Synchronisation grundsätzlich nicht funktioniert, prüfen Sie zuerst die [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}) und den [Synchronisationstest]({{< relref "Betrieb/Synchronisation/TestSync/_index.md" >}}).
