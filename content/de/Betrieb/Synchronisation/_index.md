@@ -53,6 +53,7 @@ Explizite Exchange-Serverversionen wie `Exchange2010`, `Exchange2013` oder `Exch
 - [Rooms vorbereiten]({{< relref "Betrieb/Synchronisation/Rooms/_index.md" >}}) - Person-, Konfigurations- und Betriebs-Themen
 - [Exchange Ressource Sync]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md" >}}) - Besonderheiten für Ressourcenpostfächer
 - [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}) - Fehlersuche im Betrieb
+- [Sync-Differenzen]({{< relref "Betrieb/Synchronisation/SyncDifferenzen/_index.md" >}}) - Abweichungen zwischen ROOMS und Exchange erkennen und auflösen
 
 ## Support
 

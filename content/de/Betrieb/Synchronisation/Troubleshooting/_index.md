@@ -112,7 +112,7 @@ Prüfen Sie, ob folgende Endpunkte extern erreichbar sind:
 - `/api/webhooks/graph`
 - `/api/webhooks/graph/lifecycle`
 
-## Schritt 6: Betroffene Buchungen finden
+## Schritt 6: Betroffene Buchungen und Sync-Differenzen finden
 
 Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen gefiltert werden:
 
@@ -127,6 +127,8 @@ Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen g
 {{< /bootstrap-table >}}
 
 **Empfehlung:** Buchungen mit Synchronisationsproblemen am besten annullieren und neu erstellen, wenn die Ursache nicht unmittelbar behoben werden kann.
+
+Wenn ROOMS und Exchange unterschiedliche fachliche Daten für dieselbe synchronisierte Buchung anzeigen, verwenden Sie zusätzlich die Ansicht [Sync-Differenzen]({{< relref "Betrieb/Synchronisation/SyncDifferenzen/_index.md" >}}). Dort können Abweichungen geprüft und gezielt mit **Exchange verwenden**, **ROOMS verwenden** oder **Ignorieren** aufgelöst werden.
 
 ## Konfliktverhalten (Rollback vs. Cancel)
 
