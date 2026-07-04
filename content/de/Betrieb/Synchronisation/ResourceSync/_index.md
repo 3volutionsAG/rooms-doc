@@ -69,7 +69,7 @@ Bei Ressourcen mit Exchange-Synchronisation kann ROOMS den Free/Busy-Status der 
 
 Diese Anzeige ist vor allem für Support und Disposition nützlich, wenn geprüft werden soll, ob ROOMS und Exchange dieselbe Belegung kennen.
 
-Wenn eine Buchung nicht korrekt mit Exchange verbunden ist, kann in der Buchungsansicht der Backsync erneut ausgelöst werden. Verwenden Sie diese Funktion gezielt zur Korrektur einzelner Buchungen und nicht als Ersatz für eine saubere Synchronisationskonfiguration.
+Wenn in der Exchange-Free/Busy-Anzeige ein erwarteter Ressourcentermin fehlt oder abweicht, kann der Backsync über den betroffenen Free/Busy-Slot im Kalender erneut ausgelöst werden. ROOMS verwendet dabei die Ressource sowie Start- und Endzeit des angeklickten Slots. Verwenden Sie diese Funktion gezielt zur Korrektur einzelner Abweichungen und nicht als Ersatz für eine saubere Synchronisationskonfiguration.
 
 ## EWS vs Graph bei Ressourcen
 
