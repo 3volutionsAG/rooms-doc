@@ -27,6 +27,8 @@ Sie finden die Ansicht unter:
 
 `Einstellungen` → `System` → `Sync-Differenzen`
 
+{{< imgproc sync-differenzen-uebersicht Resize "1024x" >}}{{< /imgproc >}}
+
 ## Wozu gibt es Sync-Differenzen?
 
 Sync-Differenzen helfen Administratoren und Supportpersonen, Abweichungen zwischen ROOMS und Exchange / Outlook nachvollziehbar zu prüfen und gezielt zu bereinigen.
@@ -71,6 +73,8 @@ In der Liste werden unter anderem Status, Buchung, Postfach, geänderte Werte, a
 ## Manuellen Scan starten
 
 Im Sidepanel kann ein manueller Scan gestartet werden.
+
+{{< imgproc sync-differenzen-manueller-scan Resize "400x" >}}{{< /imgproc >}}
 
 Mögliche Scan-Ziele:
 
