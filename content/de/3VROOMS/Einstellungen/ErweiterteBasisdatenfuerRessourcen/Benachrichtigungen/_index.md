@@ -71,6 +71,14 @@ Für einen gültigen Meldungs-Eintrag müssen folgende Felder ausgefüllt sein:
 - Eine Meldung wird in einer Reservation nur angezeigt, wenn die Ressource dieser Reservation entweder zu einem der konfigurierten **Standorte** gehört oder in den konfigurierten **Ressourcen** enthalten ist.
 - Treffen mehrere Buchungshinweise gleichzeitig zu, werden diese untereinander aufgelistet.
 
+{{% alert title="Hinweis" color="info" %}}
+Ein Buchungshinweis ersetzt keine automatische Notifikation. Er wird in ROOMS angezeigt, löst aber nicht automatisch E-Mails oder andere Benachrichtigungen aus.
+{{% /alert %}}
+
+### Löschen
+
+Beim Löschen fragt ROOMS nach einer Bestätigung. Löschen Sie einen Buchungshinweis nur, wenn er nicht mehr benötigt wird. Bereits angezeigte Informationen werden dadurch nicht als Historieneintrag auf bestehenden Buchungen gespeichert.
+
 ## Hilfreiche Links
 
 - [`Rechte verwalten`](/3vrooms/einstellungen/sicherheitsdaten/rollen/rechteverwalten/) – Wie Sie die Berechtigung „Darf Buchungshinweise verwalten“ vergeben.
