@@ -25,8 +25,12 @@ Folgende Daten können für den Import Parameter bearbeitet werden:
 | Name      | Namen des Importparameters angeben. Freie Eingabe eines beliebigen Namens des Import/Export Jobs. |
 | Nächste Ausführung      | Datum und Zeit der Ausführung eintragen. Zum Starten des Jobs muss eine nächste Ausführung angegeben werden. Standard = leer. Datum/Zeit können auch in Vergangenheit liegen => sofortige Ausführung. Datumpicker verfügt nur über Datum/Zeit (kein von/bis) |
 | Intervall in Minuten      |  Standard = leer. Validierung auf positive Ganzzahlen. leer = einmalige Ausführung |
-| Konfiguration | XML basierende Konfiguration des Imports oder Exports. Wird durch GARAIO Softwareentwickler definiert.  |
+| Konfiguration | XML basierende Konfiguration des Imports oder Exports. Wird durch GARAIO Softwareentwickler definiert. File-basierte Import-/Exportstrategien können je nach Konfiguration auch SFTP verwenden.  |
 {{< /bootstrap-table >}}
+
+{{% alert title="Hinweis zu SFTP" color="info" %}}
+Für file-basierte Datenstrategien kann SFTP als Transportweg konfiguriert werden. Die konkrete Konfiguration hängt vom jeweiligen Import/Export ab und sollte vor der Aktivierung mit den Zugangsdaten und Pfaden des Zielsystems getestet werden.
+{{% /alert %}}
 
 {{< imgproc Importe_Stammdaten_bearbeiten Resize "960x" >}}
 Stammdaten der Importparameter bearbeiten
