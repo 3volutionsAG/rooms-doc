@@ -13,6 +13,22 @@ Alle Zeitangeben sind immer in UTC. Eine konvertierung in Lokalzeit muss der Auf
 
 - [JobManager REST API – Usage Guide]({{< relref "JobManager-Usage" >}}): Fachliche Verwendung (202 Accepted / asynchroner Batch-Flow, Polling, Fehlerhandling)
 
+## Buchungs- und Anlass-Endpunkte
+
+Die aktuelle API stellt neben einzelnen Buchungen auch Anlassdaten und paginierte Listen bereit. Je nach Berechtigung und Installation können damit unter anderem folgende fachliche Aktionen ausgeführt werden:
+
+- Buchungen und Anlässe suchen und lesen
+- Buchungen erstellen und aktualisieren
+- Buchungen freigeben, terminieren, annullieren, einchecken oder als No-Show markieren
+- Buchungen eines Anlasses abrufen
+- kundenspezifische Felder, Klassifikationen und Kostenträger auslesen
+
+Die API liefert jeweils den aktuellen Zustand zum Zeitpunkt des Aufrufs. Es gibt keinen generellen Delta-Endpunkt über alle Buchungen und Anlässe.
+
+{{% alert title="Hinweis" color="info" %}}
+Die technische Feldliste und die verfügbaren Operationen sind in der Swagger UI der installierten Umgebung dokumentiert. Verwenden Sie für Integrationen die Swagger-Dokumentation der Zielumgebung, da kundenspezifische Felder und Berechtigungen je Installation abweichen können.
+{{% /alert %}}
+
 ## Authentisierung
 
 Die Kommunikation mit dem REST-API erfolgt immer authentisiert mit einem Benutzer. Um API Calls mit einem spezifischen Benutzer durchzuführen müssen folgende Schritte durchgeführt werden.

@@ -23,6 +23,14 @@ Status Anzeige der Ressourcen im Plan
 {{< /bootstrap-table >}}
 ---
 
+## Check-in Status hervorheben
+
+Im Kalender kann über die Option **Eingecheckte Buchungen hervorheben** sichtbar gemacht werden, welche Buchungen bereits eingecheckt wurden.
+
+Wenn die Option aktiv ist, markiert ROOMS eingecheckte Reservationen zusätzlich mit einem Symbol. In der Detailinformation beziehungsweise im Tooltip ist ersichtlich, dass die Buchung bereits eingecheckt wurde.
+
+Diese Anzeige ist hilfreich, wenn vor Ort geprüft werden soll, ob Räume zwar reserviert, aber noch nicht bestätigt wurden.
+
 {{< imgproc plan_colors Resize "960x" >}}
 Farbcode
 {{< /imgproc >}}

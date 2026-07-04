@@ -56,6 +56,22 @@ Dialogfenster zur Schaltfläche "Terminieren"
 Markieren Sie ein Buchung und klicken Sie auf _Annulieren_, um die Buchung zu löschen. Dabei können Stornierungskosten anfallen. Die Buchung wird dabei aus dem Kalender gelöscht, kann jedoch weiterhin über die Suchfunktionen aufgerufen werden.
 Es erscheint ein Dialogfenster mit der Überschrift _Massenannulierung_. Dieser Titel bezieht sich auf die Möglichkeit mehrere Buchungen zu markieren und in einem Zug zu annullieren.
 
+Bei ausreichender Berechtigung zeigt der Dialog zusätzlich die Auswahl **Verrechnung**. Damit legen Sie fest, wie ROOMS die Kosten der annullierten Buchung behandelt:
+
+{{< bootstrap-table "table table-striped" >}}
+| Option | Bedeutung |
+|--------|-----------|
+| Annulierungskosten verrechnen | ROOMS verrechnet die definierten Annullationskosten. Diese Option ist vorausgewählt, wenn Annullationskosten vorhanden sind. |
+| Alle Kosten verrechnen | ROOMS verrechnet alle bestehenden Kosten der Buchung. |
+| Keine Kosten verrechnen | ROOMS annulliert die Buchung ohne Kostenverrechnung. |
+{{< /bootstrap-table >}}
+
+Die Auswahl erscheint nur für Benutzer mit dem globalen Recht `KostenuebersichtEditieren`. Ohne dieses Recht wird die Buchung mit der Standardlogik annulliert.
+
+{{% alert title="Hinweis" color="info" %}}
+Die Verrechnungsoptionen stehen auch beim Annullieren einer Serie zur Verfügung. Bei Serien berücksichtigt ROOMS die zukünftigen Reservationen der Serie.
+{{% /alert %}}
+
 {{< imgproc List_BG_Anzeige_weitFkt_ann_beschriftet Resize "960x" >}}
 Dialogfenster zur Schaltfläche _Annulieren_
 {{< /imgproc >}}

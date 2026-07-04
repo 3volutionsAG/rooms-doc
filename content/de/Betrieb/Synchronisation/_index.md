@@ -52,6 +52,7 @@ Explizite Exchange-Serverversionen wie `Exchange2010`, `Exchange2013` oder `Exch
 - [Exchange On-Premises]({{< relref "Betrieb/Synchronisation/ExchangeOnPrem/_index.md" >}}) - EWS-basierte On-Premises-Konfiguration
 - [Rooms vorbereiten]({{< relref "Betrieb/Synchronisation/Rooms/_index.md" >}}) - Person-, Konfigurations- und Betriebs-Themen
 - [Exchange Ressource Sync]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md" >}}) - Besonderheiten für Ressourcenpostfächer
+- [Systemressource]({{< relref "Betrieb/Synchronisation/Systemressource/_index.md" >}}) - interne Ressource für Synchronisations- und Annullationsfälle
 - [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}) - Fehlersuche im Betrieb
 
 ## Support
