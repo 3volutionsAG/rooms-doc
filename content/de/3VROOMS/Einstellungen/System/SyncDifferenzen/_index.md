@@ -1,8 +1,11 @@
 ---
 title: "Sync-Differenzen"
 linkTitle: "Sync-Differenzen"
-weight: 47
+weight: 11
 description: "Abweichungen zwischen ROOMS-Buchungen und Exchange-/Outlook-Terminen erkennen und auflösen."
+aliases:
+  - /Betrieb/Synchronisation/SyncDifferenzen/
+  - /betrieb/synchronisation/syncdifferenzen/
 ---
 
 **Sync-Differenzen** zeigen Abweichungen zwischen ROOMS und Exchange / Outlook für synchronisierte Buchungen.

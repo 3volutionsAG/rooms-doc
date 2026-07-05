@@ -128,7 +128,7 @@ Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen g
 
 **Empfehlung:** Buchungen mit Synchronisationsproblemen am besten annullieren und neu erstellen, wenn die Ursache nicht unmittelbar behoben werden kann.
 
-Wenn ROOMS und Exchange unterschiedliche fachliche Daten für dieselbe synchronisierte Buchung anzeigen, verwenden Sie zusätzlich die Ansicht [Sync-Differenzen]({{< relref "Betrieb/Synchronisation/SyncDifferenzen/_index.md" >}}). Dort können Abweichungen geprüft und gezielt mit **Exchange verwenden**, **ROOMS verwenden** oder **Ignorieren** aufgelöst werden.
+Wenn ROOMS und Exchange unterschiedliche fachliche Daten für dieselbe synchronisierte Buchung anzeigen, verwenden Sie zusätzlich die Ansicht [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}). Dort können Abweichungen geprüft und gezielt mit **Exchange verwenden**, **ROOMS verwenden** oder **Ignorieren** aufgelöst werden.
 
 ## Konfliktverhalten (Rollback vs. Cancel)
 
