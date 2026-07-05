@@ -50,6 +50,7 @@ Die Jobliste zeigt je nach Konfiguration zusätzliche Spalten. Die wichtigsten S
 | Start / Ende | Frühester Beginn und spätestes Ende der Lektionen im Job |
 | Reservationsanfrage | Link zur Reservationsanfrage, sofern der Job aus einem Formular entstanden ist |
 | Job-ID | Fachliche Kennung des Jobs |
+| Automatische Verarbeitung | Zeigt an, ob der Job für automatische Verarbeitung vorgesehen ist. |
 | Organisator / Verantwortlicher | Personen, auf welche die Jobverarbeitung fachlich referenziert |
 | Anzahl Personen | Personenanzahl aus den Lektionen |
 | Kunde | Kunde bzw. Organisation aus dem Lektionenkontext |
@@ -65,6 +66,8 @@ Wichtige Aktionen:
 - **Delete/Annullieren** entfernt Jobs oder hebt bereits verarbeitete Buchungen auf
 
 Ohne das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** erscheint **Delete/Annullieren** nur in den eingeschränkten Fällen, in denen ein Job vollständig als Löschfall verarbeitet werden kann.
+
+Beim Annullieren eines verarbeiteten Jobs zeigt ROOMS einen Bestätigungsdialog. Dort kann bei entsprechender Konfiguration ausgewählt werden, ob Annullationsmails versendet werden sollen.
 
 {{< imgproc Jobmanager_Jobliste Resize "1280x" >}}
 Beispiel einer Jobliste mit offenen Jobs

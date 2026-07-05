@@ -25,6 +25,8 @@ _**TIPP**: Es ist nicht zu empfehlen, die Refresh-Rate unter 30 Sekunden zu setz
 
 Manche Spaltennamen sind in blau gedruckt. An der blauen Schrift erkennen Sie, nach welchen Spalten Sie eine Liste sortieren können. Dazu klicken Sie auf den Spaltennamen, die Liste sortiert sich anhand der Spalteneinträge in aufsteigender Reihenfolge. Durch nochmaliges Klicken wird die Liste in absteigender Reihenfolge sortiert.
 
+Systemspalten, zum Beispiel **Bearbeiten**, bleiben in der Spaltenauswahl aktiv und können nicht ausgeblendet werden. Ihre Position kann aber wie bei anderen Spalten angepasst werden, sofern die jeweilige Liste dies unterstützt.
+
 {{< imgproc Spaltenname_blau Resize "1280x" >}}
 Spaltenname in blau, nach dieser Spalte kann die Liste sortiert werden
 {{< /imgproc >}}

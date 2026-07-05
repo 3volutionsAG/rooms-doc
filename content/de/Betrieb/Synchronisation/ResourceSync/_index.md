@@ -63,6 +63,14 @@ Falls eine Buchung in Exchange nicht für ROOMS verfügbar ist (z. B. wegen best
 | **Deaktiviert** | der Termin bleibt in Exchange bestehen, es wird lediglich eine Fehler-E-Mail ausgelöst |
 {{< /bootstrap-table >}}
 
+### Free/Busy-Status
+
+Bei Ressourcen mit Exchange-Synchronisation kann ROOMS den Free/Busy-Status der Ressource im Kalender anzeigen. Dafür benötigt der Benutzer das globale Recht **Darf Free/Busy Informationen von Ressourcen welche mit Exchange verbunden sind einsehen**.
+
+Diese Anzeige ist vor allem für Support und Disposition nützlich, wenn geprüft werden soll, ob ROOMS und Exchange dieselbe Belegung kennen.
+
+Wenn in der Exchange-Free/Busy-Anzeige ein erwarteter Ressourcentermin fehlt oder abweicht, kann der Backsync über den betroffenen Free/Busy-Slot im Kalender erneut ausgelöst werden. ROOMS verwendet dabei die Ressource sowie Start- und Endzeit des angeklickten Slots. Verwenden Sie diese Funktion gezielt zur Korrektur einzelner Abweichungen und nicht als Ersatz für eine saubere Synchronisationskonfiguration.
+
 ## EWS vs Graph bei Ressourcen
 
 - `EWS1`, `EWS2`, `O365` synchronisieren Ressourcen über **EWS**

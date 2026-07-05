@@ -30,6 +30,7 @@ Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 |Bis ; _inkl. Nachlaufzeit_|| Enddatum und -uhrzeit der Nachlaufzeit; _Buchung endet um 15:00 Uhr, bei der Buchung eingestellte Nachlaufzeit ist 15 min, als Endzeit wird 15:15 Uhr angezeigt._ |
 |Startdatum||Startdatum ohne Uhrzeit|
 |Enddatum||Enddatum ohne Uhrzeit|
+|Anzahl externer Personen||Zeigt, wie viele Personen der Buchung als extern erfasst wurden. Der Wert ist optional und darf nicht grösser sein als die gesamte Personenanzahl.|
 |Workflow Statusbezeichnung||Besetzt definitiv, provisorisch, Sytem oder temporär|
 |Anlass||Titel des Anlass|
 |Anlass Nummer||Dem Anlass zugeordnete eindeutige Nummer|

@@ -29,6 +29,17 @@ Indem Sie in der Ressourcenliste auf den Button _Detailbuchung eingeben_ klicken
 
 Eine genauere Beschreibung der Menü-Reiter finden Sie in den Unterkapiteln.
 
+Je nach Inhalt zeigt ROOMS direkt auf den Reitern eine Zahl oder einen Statusindikator an. So sehen Sie bereits vor dem Öffnen eines Reiters, ob dort Einträge vorhanden sind oder ob der Bereich bewusst angepasst wurde.
+
+Beispiele:
+
+- **Teilnehmer** zeigt die Anzahl erfasster Teilnehmer.
+- **Beilage** zeigt die Anzahl vorhandener Beilagen.
+- **Catering & Services** zeigt die Anzahl der Bestellpositionen.
+- **Ressourcen**, **Bestuhlung** und **Reminder** zeigen einen Indikator, wenn dort relevante Angaben vorhanden sind.
+
+Die Anzeige wird beim Bearbeiten aktualisiert, wenn Sie Einträge hinzufügen oder entfernen.
+
 ### Detailbuchung abschliessen
 
 

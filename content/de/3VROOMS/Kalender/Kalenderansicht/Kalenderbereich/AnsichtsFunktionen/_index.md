@@ -18,6 +18,7 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 | Quadrat mit Pfeil | Lassen Sie sich mehrere Listenelemente komplett anzeigen  | {{< imgproc Icon_Liste_verkleinern Resize "50x" >}}{{< /imgproc >}} |
 | Kalender | Ändern Sie das Datum des gewünschten Tages | {{< imgproc Icon_datumspicker Resize "50x" >}}{{< /imgproc >}} |
 | Person | Lassen Sie sich die Belegung für einzelne Personen anzeigen | {{< imgproc Icon_Personen_anzeigen Resize "50x" >}}{{< /imgproc >}} |
+| Exchange Free/Busy | Lassen Sie sich die Belegung von synchronisierten Exchange-Ressourcen anzeigen. Diese Funktion ist nur mit entsprechender Berechtigung sichtbar. | |
 {{< /bootstrap-table >}}
 ---
 
@@ -68,3 +69,13 @@ Belegung von einzelnen Personen anzeigen
 
 **Achtung**:
 Um diese Ansicht zu haben, müssen Sie vorher Free-Busy Einstellungen konfiguriert haben.
+
+#### Exchange Free/Busy für Ressourcen
+
+Wenn der Benutzer das globale Recht **Darf Free/Busy Informationen von Ressourcen welche mit Exchange verbunden sind einsehen** besitzt, kann ROOMS zusätzlich Free/Busy-Daten von synchronisierten Exchange-Ressourcen im Kalender anzeigen.
+
+Die Anzeige hilft bei der Analyse, ob eine ROOMS-Buchung und die Belegung der Exchange-Ressource übereinstimmen. Bei fehlenden oder abweichenden Einträgen kann ein berechtigter Benutzer in der Buchung den Backsync erneut auslösen, um die Verbindung mit Exchange wiederherzustellen.
+
+{{% alert title="Voraussetzung" color="info" %}}
+Diese Funktion setzt voraus, dass die betroffene Ressource korrekt für den [Exchange Ressource Sync]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md" >}}) eingerichtet ist.
+{{% /alert %}}
