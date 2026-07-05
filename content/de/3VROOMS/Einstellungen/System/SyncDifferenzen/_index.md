@@ -62,6 +62,8 @@ Geprüft werden insbesondere:
 
 In der Liste werden unter anderem Status, Buchung, Postfach, geänderte Werte, aktuellere Seite, Empfehlung und die letzte Prüfung angezeigt.
 
+Falls Sie eine Differenz auf eine Serie zurückführen müssen, können Sie die Spalten der Liste anpassen und die Spalte **Sync-Element** einblenden. Dort zeigt ROOMS, ob es sich um eine **Einzelbuchung**, eine **Buchungsserie** oder einen **Einzeltermin aus Serie** handelt. Die betroffene Buchung ist direkt verlinkt; bei Serien ist zusätzlich die Serien-ID für gezielte Prüfungen relevant.
+
 ## Status einer Sync-Differenz
 
 {{< bootstrap-table "table table-striped" >}}
@@ -90,7 +92,9 @@ Mögliche Scan-Ziele:
 | **Person/Organisator (Person-ID)** | Prüft synchronisierte Elemente einer bestimmten Person bzw. eines Organisators. |
 {{< /bootstrap-table >}}
 
-Nach dem Start wird der Scan eingereiht oder direkt ausgeführt. Wenn bereits ein Scan läuft, zeigt ROOMS eine entsprechende Meldung an.
+Für **Alle zukünftigen synchronisierten Elemente** wird der Scan im Hintergrund eingereiht. Gezielte Prüfungen für eine Buchung, Serie oder Person werden direkt ausgeführt. Wenn bereits ein Scan läuft, zeigt ROOMS eine entsprechende Meldung an.
+
+Für Support-Analysen kann die Trefferliste zusätzlich über die Manage-API nach Status, Buchungs-ID, Serien-ID, Person-ID oder Typ eingeschränkt werden.
 
 ## Detailansicht
 
