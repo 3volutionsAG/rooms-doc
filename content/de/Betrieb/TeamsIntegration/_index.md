@@ -12,6 +12,19 @@ description: 'Diese Dokumentation bietet eine detaillierte Anleitung zur Integra
 Um Teams-Meetings zu erstellen, werden folgende Rechte benötigt:
 - Globales Recht `Darf Teams Meeting buchen`
 
+Um Teams-Meeting-Links von anderen Buchungen zu sehen, benötigt ein Benutzer entweder einen fachlichen Bezug zur Buchung oder das globale Recht `Darf alle Teams-Meetings sehen`.
+
+Ohne dieses Recht sieht ein Benutzer den Teams-Link nur, wenn er zur Buchung gehört, zum Beispiel als:
+
+- Organisator:in oder Stellvertretung
+- verantwortliche Person oder Stellvertretung
+- Ersteller:in oder Stellvertretung
+- Teilnehmer:in
+
+{{% alert title="Hinweis" color="info" %}}
+Das Recht `Darf Teams Meeting buchen` steuert, ob ein Benutzer Teams-Meetings erstellen darf. Das Recht `Darf alle Teams-Meetings sehen` steuert zusätzlich die Sichtbarkeit von Teams-Links bei Buchungen anderer Personen.
+{{% /alert %}}
+
 ### Teams Meeting automatisch erstellen beim Buchen
 
 Die Checkbox `Teams Meeting standardmässig hinzufügen` ermöglicht es, festzulegen, ob bei der Erstellung einer neuen Buchung automatisch ein Teams Meeting erstellt wird.
