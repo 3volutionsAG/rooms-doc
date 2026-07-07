@@ -128,7 +128,7 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 | Bezeichnung                                      | Bezeichnung der Ressource eintragen. Erfassung muss in allen aktivierten Sprachen erfolgen. |
 | Beschreibung                                     | Die Ressource beschreiben                                         |
 | Fehlermeldung                                    | Fehlermeldung eintragen, die angezeigt werden soll. Diese übersteuert die globale Fehlermeldung bei Buchungsproblemen. Erfassung in mehreren Sprachen möglich. |
-| External Identifier                              |                                                                   |
+| External Identifier                              | Eindeutige Kennung der Ressource für externe Systeme oder Integrationen, z.B. eine E-Mail-Adresse für Terminanfragen. Der Wert ist unabhängig von Ressourcenfarbe, Buchungsstatus und Planstatus. Siehe [Glossar](/glossary/#e). |
 | Standort                                         | Standort über das "Plus-Zeichen" hinzufügen Bsp: Bern. Es werden nur die Standorte zur Verfügung gestellt, an welchen der Benutzer auch Schreibrechte hat. Datenrecht Ressource bearbeiten. |
 | Ressourcenart                                    | Nur Bezeichnungsfeld (nicht editierbar)                           |
 | Status                                           | Ankreuzen, wenn zutreffend. Standard = inaktiv. Nur aktive Ressourcen erscheinen grundsätzlich in den Buchungssuchen (zusätzlich relevant ist das entsprechende Standortbezogene Recht. Wird eine Ressource auf inaktiv gesetzt, werden alle zugehörigen Reservationen mit Exchange Synchronisation von der Synchronisation abgekoppelt. |
@@ -168,7 +168,7 @@ Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im R
 {{< bootstrap-table "table table-striped" >}}
 | Feld                                 | Funktion                                                                                                   |
 | ------------------------------------ |----------------------------------------------------------------------------------------------------------- |
-| Farbe                                | Über das Pinsel-Sympol wählen Sie die gewünschte Farbe für die Ressource aus. Diese erscheint im Kalender. |
+| Farbe                                | Über das Pinsel-Symbol wählen Sie die gewünschte Farbe für die Ressource aus. Diese Farbe gehört zur Ressource und kann in Ansichten zur Kennzeichnung der Ressource verwendet werden. Sie ist nicht identisch mit der Statusfarbe einer Buchung; Statusfarben werden unter [Status](/3vrooms/einstellungen/basisdatenfuerressourcen/status/) verwaltet. |
 | Workflow                             | Über Drop-Down wählen Sie den definierten [Workflow](/3vrooms/einstellungen/basisdatenfuerressourcen/workflows/) aus. |
 | Plan Label                           | Gewünschtes Plan Label eintragen |
 | Reminder für provisorische Buchungen | Verschickt einen zusätzlichen Reminder auf allen provisorischen Buchungen auf dieser Ressource in Minuten vorher (sofern Wert > 0 ist) Standardwert = leer. Die Notifikation wird an dieselbe Benutzergruppe verschickt, welche bereits beim Statuswechsel (in Status _prov. Buchung_) informiert wurde. Diese muss also vorgängig als [Workflow](/3vrooms/einstellungen/basisdatenfuerressourcen/workflows/) konfiguriert werden. Über die Pfeiltasten (oben/unten) die gewünschte Minutenanzahl auswählen. |
