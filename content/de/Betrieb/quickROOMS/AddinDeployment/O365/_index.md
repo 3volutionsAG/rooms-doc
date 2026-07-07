@@ -28,7 +28,27 @@ Die URL zeigt auf den **IDP-Server** (z.B. `idp.example.com`), **nicht** auf den
 Der Query-Parameter `clientName` ist optional (Standard: `rooms-addin`). Nur angeben, falls ein anderer IDP-Client verwendet wird.
 {{% /alert %}}
 
-## Schritt 2: Deployment via Centralized Deployment
+## Schritt 2: Add-In-Icon optional anpassen
+
+Das Icon für die Auswahl des Add-Ins in Outlook kann über die Icon-URLs im Manifest angepasst werden. Passen Sie dazu die folgenden drei Links an. Die Links kommen im Manifest mehrfach vor und müssen überall konsistent geändert werden.
+
+```xml
+<bt:Images>
+  <bt:Image id="icon16" DefaultValue="https://<URL-zu-den-Icons>/favicon-16.png"/>
+  <bt:Image id="icon32" DefaultValue="https://<URL-zu-den-Icons>/favicon-32.png"/>
+  <bt:Image id="icon80" DefaultValue="https://<URL-zu-den-Icons>/favicon-80.png"/>
+</bt:Images>
+```
+
+{{% alert title="Empfehlung" color="info" %}}
+Laden Sie die Icons nach Möglichkeit über das ROOMS-Theming hoch und verwenden Sie die dadurch bereitgestellten URLs. So werden die Icons vom gleichen System ausgeliefert wie ROOMS und typische CORS-Probleme mit extern gehosteten Bilddateien werden vermieden.
+{{% /alert %}}
+
+Die Icons sollten gemäss der Microsoft-Dokumentation für Office Add-Ins erstellt werden:
+
+https://learn.microsoft.com/en-us/office/dev/add-ins/design/add-in-icons
+
+## Schritt 3: Deployment via Centralized Deployment
 
 1. Melden Sie sich als Administrator im [Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal) an.
 2. Navigieren Sie zu **Settings** → **Integrated apps**.
