@@ -13,12 +13,11 @@ Die Farbgebung Ihrer eigenen Buchungen können Sie in Ihren Einstellungen festle
 
 In jeder Kalenderansicht wird Ihnen oben links das Icon _Legende_ angezeigt. Dort sehen Sie mithilfe der Farbgebung, welchen Status eine Buchung hat, z.B. ob sie definitiv oder provisorisch belegt ist. Die Legende enthält auch weitere Kennzeichnungen wie Sperrzeiten, Feiertage, Wochenenden und eigene Reservationen.
 
-### Abgrenzung zu anderen Farben und Kennungen
+### Abgrenzung zu anderen Farben
 
 - Die **Ressourcenfarbe** wird auf der Ressource unter [Spezifische Daten](/3vrooms/einstellungen/ressourcen/#spezifische-daten-der-ressource-bearbeiten) gepflegt. Sie kennzeichnet die Ressource, beschreibt aber nicht den Status einer konkreten Buchung.
 - Die **Statusfarbe** wird auf dem Buchungsstatus gepflegt und zeigt im Kalender den Status einer Buchung an.
 - Der **Planstatus** zeigt auf dem Plan die aktuelle Verfügbarkeit einer Ressource, z.B. frei, besetzt mit ausstehendem Check-in oder definitiv besetzt. Die Bedeutung der Planfarben ist unter [Planstatus](/3vrooms/plan/planstatus/) beschrieben.
-- Der **External Identifier** ist eine Kennung der Ressource für externe Systeme oder Integrationen. Er hat keinen Einfluss auf die Farbdarstellung im Kalender oder auf den Planstatus. Siehe [Ressourcen](/3vrooms/einstellungen/ressourcen/#stammdaten-der-ressource-bearbeiten) und [Glossar](/glossary/#e).
 
 ### Transparenz der Farben im Kalender
 
