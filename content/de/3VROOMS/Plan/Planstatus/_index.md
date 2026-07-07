@@ -13,15 +13,15 @@ Status Anzeige der Ressourcen im Plan
 
 ### Verfügbarkeit
 
----
 {{< bootstrap-table "table table-striped" >}}
-| Farb-Code| Bedeutung|
-| ------------- |-------------  |
-| {{< color-swatch "#22c55e" >}}| Der Raum ist zum gewünschten Zeitpunkt frei. |
-| {{< color-swatch "#f97316" >}}| Der Raum ist besetzt, jedoch muss die Buchung noch via Check-In bestätigt werden. |
-| {{< color-swatch "#dc2626" >}}| Der Raum ist definitiv besetzt. |
+| Farb-Code | Bedeutung |
+| --------- | --------- |
+| {{< color-swatch "#22c55e" "Grün" >}} Grün | Der Raum ist zum gewünschten Zeitpunkt frei. |
+| {{< color-swatch "#f97316" "Orange" >}} Orange | Der Raum ist besetzt, jedoch muss die Buchung noch via Check-in bestätigt werden. |
+| {{< color-swatch "#dc2626" "Rot" >}} Rot | Der Raum ist definitiv besetzt. |
 {{< /bootstrap-table >}}
----
+
+Diese Planfarben zeigen die Verfügbarkeit der Ressource zum gewählten Zeitpunkt. Sie sind nicht identisch mit der Ressourcenfarbe oder der Statusfarbe einer Buchung im Kalender. Siehe auch [Farbdarstellung im Kalender](/3vrooms/kalender/kalenderansicht/kalenderbereich/farbdarstellung/).
 
 ## Check-in Status hervorheben
 

@@ -15,11 +15,10 @@ Folgende Tabelle erläutert die Spaltenkategorien:
 |Vorlaufdauer in Minuten| Für jede Ressource kann eine individuelle Vorlaufdauer, die zur Vorbereitung der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. |
 |Nachlaufdauer in Minuten| Für jede Ressource kann eine individuelle Nachlaufdauer, die z.B. zum Aufräumen oder Reinigen der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. |
 |Sync. Modus| Zeigt an, über welchen Modus der Raum mit dem System synchronisiert wird.  ; _z.B. Exchange 2016_|
-{{< /bootstrap-table >}}
-|External Identifier|Eindeutige Kennung der Ressource, um diese von ausserhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.
-|
+|External Identifier|Eindeutige Kennung der Ressource für externe Systeme oder Integrationen, z.B. eine E-Mail-Adresse für Terminanfragen. Siehe [Glossar](/glossary/#e).|
 |Priorisierung|Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 |Ist fixes Equipment|  Gibt an, ob es sich um fixes oder mobiles Equipment handelt. ; _Wird beim Ressourcentyp "Equipment" angezeigt._ |
+{{< /bootstrap-table >}}
 ---
 
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.
