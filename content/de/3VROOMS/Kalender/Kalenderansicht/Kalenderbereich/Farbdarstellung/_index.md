@@ -3,7 +3,7 @@ title: "Farbdarstellung"
 linkTitle: "Farbdarstellung"
 weight: 300
 date: 2020-06-30
-description: 'Diese Seite erklärt, welche Farben im Kalender angezeigt werden und wie sie sich von Ressourcenfarben und Planstatus unterscheiden.'
+description: 'Diese Seite erklärt, welche Farben im Kalender angezeigt werden und wie sie sich von Ressourcenfarben und Planfarben unterscheiden.'
 ---
 ### Farbgebung im Kalender
 
