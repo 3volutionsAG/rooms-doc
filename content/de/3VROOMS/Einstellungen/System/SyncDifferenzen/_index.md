@@ -100,6 +100,8 @@ Für Support-Analysen kann die Trefferliste zusätzlich über die Manage-API nac
 
 Über die Detailansicht einer Sync-Differenz sehen Sie:
 
+{{< imgproc sync-differenzen-detail Resize "1024x" >}}{{< /imgproc >}}
+
 - welche Seite aktuellere Daten enthält: **ROOMS**, **Exchange**, **Gemischt** oder **Unklar**
 - die betroffene Buchung, Person und das Postfach
 - den Vergleich zwischen ROOMS und Exchange
