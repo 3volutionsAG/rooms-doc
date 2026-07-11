@@ -7,9 +7,11 @@ description: ''
 
 Sie führen eine Massenannullation von Buchungen ebenfalls in den Menüs _Plan_, _Kalender_ und _Listen_ durch.
 
-1. Wählen Sie eine oder Mehrere Buchungen aus.
+1. Wählen Sie eine oder mehrere Buchungen aus.
 2. Klicken Sie auf den Button **Annullieren**.
-3. Es erscheint ein Popup, welches über die Annullationskosten informiert und eine Bestätigung der Massenannullation von Ihnen verlangt. Wenn Sie auf den Button **Annullieren** im Popup Fenster klicken, wird die Massenannullation durchgeführt.
+3. Es erscheint ein Popup, das über die Annullationskosten informiert und eine Bestätigung der Massenannullation verlangt.
+4. Erfassen Sie bei Bedarf im Feld **Grund für die Annullation** einen Kommentar. ROOMS speichert diesen Kommentar bei allen ausgewählten Buchungen als Annullationskommentar. Wenn Annullationsmails versendet werden, erscheint der Kommentar auch in diesen Mails.
+5. Klicken Sie im Popup auf **Annullieren**, um die Massenannullation durchzuführen.
 
 Bei ausreichender Berechtigung können Sie im Popup zusätzlich festlegen, wie ROOMS die Kosten behandeln soll:
 
@@ -21,8 +23,4 @@ Diese Auswahl ist nur sichtbar, wenn der Benutzer das globale Recht `Kostenueber
 
 {{< imgproc Massenannulation Resize "960x" >}}
 Eine Massenannulation (Löschen) von mehreren Buchungen vornehmen
-{{< /imgproc >}}
-
-{{< imgproc Massenannulation_Popup Resize "960x" >}}
-Massenannulation durchführen oder abbrechen
 {{< /imgproc >}}
