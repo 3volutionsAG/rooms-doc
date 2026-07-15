@@ -22,8 +22,10 @@ Im Kalenderfilter grenzen Sie ein, welche Ressourcen im Kalender dargestellt wer
 | Suche ohne Substandorte | Aktivieren Sie die Checkbox und lassen Sie sich Standorte ohne Substandorte anzeigen. Begrenzt die Suche auf den  aktuell gewählten Standort oder die aktuelle gewählten Standorte. Die jeweiligen Substandorte werden nicht berücksichtigt. |
 | Ressourcen ID |  Suche über die ID der Ressourcen und über die Bezeichnung in der Benutzer:in  |
 | Kapazität (Anz. Personen) | Wählen Sie die Kapazität für Ihre gesuchte Ressource aus  |
-| Alle Standorte | Die Gliederung fasst bestimmte Attribute einer Ressource wie z.B. Raumtypen: Sitzungszimmer, Schulungsraum, Kundenraum etc. zusammen. Somit erfolgt eine Eingrenzung der Suche. Die Auswahl wird mit Klick auf das _Plus Symbol_ getätigt. Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der Webapplikation durch berechtigte Personen verändert werden. Sind keine Gliederungen erfasst, werden keine Gliederungen eingeblendet. |
+| Gliederungen | Die Gliederung fasst bestimmte Attribute einer Ressource wie z.B. Raumtypen: Sitzungszimmer, Schulungsraum, Kundenraum etc. zusammen. Somit erfolgt eine Eingrenzung der Suche. Die Auswahl wird mit Klick auf das _Plus Symbol_ getätigt. Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der Webapplikation durch berechtigte Personen verändert werden. Sind keine Gliederungen erfasst, werden keine Gliederungen eingeblendet. |
 {{< /bootstrap-table >}}
+
+Welche Gliederungstypen und Gliederungen zur Auswahl stehen, richtet sich nach den gewählten Ressourcenarten und Standorten. Bei mehreren Standorten berücksichtigt ROOMS Einträge, die mindestens einer aktiven Ressource der gewählten Ressourcenarten an einem der Standorte zugeordnet sind. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl. Gibt es keine passende Zuordnung, wird der betreffende Gliederungstyp nicht angezeigt.
 
 {{< imgproc Kalender_Sidepanel Resize "960x" >}}
 Sidepanel im Kalender mit Filterfuntionen zur Suche
