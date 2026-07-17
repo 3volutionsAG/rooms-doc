@@ -102,7 +102,7 @@ Ist die Ressourcen-Sync auf einer Ressource aktiviert, können Vor- und Nachlauf
 {{< bootstrap-table "table table-striped" >}}
 | Einschränkung | Beschreibung |
 |---------------|-------------|
-| **Nur eine Ressource pro Termin** | Bei einem Outlook-Termin darf immer nur eine synchronisierte Ressource hinzugefügt oder eingeladen werden |
+| **Nur eine Ressource pro Termin** | Grundsätzlich darf bei einem Outlook-Termin nur eine synchronisierte Ressource hinzugefügt oder eingeladen sein. Beim oben beschriebenen Raumwechsel dürfen vorübergehend der bisherige und genau ein neuer synchronisierter Raum vorhanden sein. |
 | **Add-in: Ressource nicht manuell einladen** | Wird über das Add-in eine synchronisierte Ressource gebucht, darf sie nicht zusätzlich als Teilnehmer hinzugefügt werden |
 | **Kein direkter Zugriff auf Exchange-Kalender** | Termine sollen nicht direkt auf der Ressourcenmailbox erstellt werden; die Synchronisation ist auf den ROOMS-Flow ausgerichtet |
 {{< /bootstrap-table >}}
