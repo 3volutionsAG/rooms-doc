@@ -77,6 +77,22 @@ Wenn in der Exchange-Free/Busy-Anzeige ein erwarteter Ressourcentermin fehlt ode
 - `Microsoft365` synchronisiert Ressourcen über **Graph**
 - Ressourcen laufen bei `Microsoft365` praktisch **app-basiert** - ein Enduser-Consent-Flow wie bei Personen ist dafür nicht vorgesehen
 
+## Raumwechsel in Outlook
+
+Bei einer bereits synchronisierten Buchung kann die organisierende Person den Raum direkt im Outlook-Termin ersetzen:
+
+1. neuen synchronisierten Raum über die Outlook-Raumsuche als Ressource hinzufügen
+2. bisherigen Raum aus dem Termin entfernen
+3. Termin speichern oder senden
+
+ROOMS ordnet den Outlook-Termin der bestehenden Buchung zu und wechselt die ROOMS-Ressource, wenn die Buchung auf dem neuen Raum zulässig ist. Titel, Zeitraum und menschliche Teilnehmende werden aus demselben Outlook-Stand übernommen. Ein Raumwechsel gilt als notifikationsrelevante Änderung; ROOMS versendet die dafür konfigurierten Änderungsmitteilungen.
+
+Sind vorübergehend der bisherige und genau ein neuer synchronisierter Raum im Termin vorhanden, behandelt ROOMS den neuen Raum als Ersatz und bereinigt den bisherigen Raum bei der Synchronisation. Trotzdem soll am Ende nur ein synchronisierter Raum eingeladen sein. Mehrere zusätzliche Räume führen zu einem mehrdeutigen Zustand und sollen vermieden werden.
+
+{{% alert title="Wichtig" color="warning" %}}
+Ein Text im Outlook-Feld **Ort** genügt nicht für einen Raumwechsel. Der neue Raum muss als Exchange-Ressource eingeladen sein.
+{{% /alert %}}
+
 ## Limitationen
 
 {{% alert title="Vor- und Nachlaufzeiten" color="warning" %}}
