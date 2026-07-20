@@ -20,7 +20,8 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
    - *Datum und Uhrzeit* werden aus dem Outlook-Ereignis übernommen
    - *Teilnehmerzahl* wird mit den Standardeinstellungen des Benutzenden aus 3V ROOMS ausgefüllt
    - Die Einstellung *Alle Bestuhlungsarten* berücksichtigt auch Räume für mehr Personen als die angegebene Teilnehmerzahl.
-   - *Standort* grenzt die Suche lokal ein, es können mehrere Standort ausgewählt werden.
+   - *Standort* grenzt die Suche lokal ein; es können mehrere Standorte ausgewählt werden.
+   - Welche *Gliederungstypen* (z. B. Raumtyp oder Raumlabel) und *Gliederungen* zur Auswahl stehen, richtet sich nach der gewählten Ressourcenart und den Standorten. Das Add-In zeigt nur Einträge an, die mindestens einer aktiven Ressource an einem gewählten Standort oder dessen Unterstandorten zugeordnet sind. Ändern Sie die Standortauswahl, werden die verfügbaren Gliederungen aktualisiert und nicht mehr passende Auswahlen entfernt. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl.
 
       {{< imgproc O365Outlook_web_RaumFilter Resize "960x">}} {{< /imgproc >}}
 
