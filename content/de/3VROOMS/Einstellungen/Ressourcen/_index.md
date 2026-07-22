@@ -54,6 +54,22 @@ Hierbei können Sie nach den folgenden Kriterien suchen:
 * Raum: Raumtyp (Plus Zeichen: hinzufügen)
 * Equipmemt: Equipmenttyp (Plus Zeichen: hinzufügen)
 
+### Gliederungen in der Ressourcenliste anzeigen
+
+Gliederungen wie **Raumtyp** oder **Raumlabel** können in der Ressourcenliste als eigene Spalten angezeigt werden. Die Spaltennamen entsprechen den in ROOMS erfassten Gliederungstypen.
+
+Für die gewählte Ressourcenart benötigen Sie das entsprechende globale Verwaltungsrecht, zum Beispiel **Darf Ressourcetyp Raum verwalten** für Räume. In der Spaltenauswahl stehen nur sichtbare Gliederungstypen zur Verfügung, auf die Sie Zugriff haben.
+
+1. Öffnen Sie `Einstellungen` → `Ressourcen`.
+2. Wählen Sie die Ressourcenart und klicken Sie auf **Finden**.
+3. Öffnen Sie unten rechts **Spaltenauswahl und -reihenfolge**.
+4. Aktivieren Sie die gewünschten Gliederungstypen und ordnen Sie die Spalten bei Bedarf neu an.
+5. Klicken Sie auf **Übernehmen**.
+
+Die Liste zeigt pro Ressource die zugeordneten Gliederungen. Sind einer Ressource mehrere Einträge desselben Gliederungstyps zugeordnet, werden diese durch Kommas getrennt angezeigt. Ohne Zuordnung bleibt die Zelle leer. Die zusätzlichen Gliederungsspalten können nicht zur Sortierung verwendet werden.
+
+Weitere Informationen zum Ein- und Ausblenden sowie zum Speichern von Spalten finden Sie unter [Listenansicht anpassen](/3vrooms/generell/grundlegendefunktionen/listenansichtanpassen/).
+
 ### Löschen von Ressourcen
 
 Sie können eine Mehrfachselektion über die linke Checkbox vornehmen und eine Ressource über den untenstehenden Button _entfernen_ löschen.
