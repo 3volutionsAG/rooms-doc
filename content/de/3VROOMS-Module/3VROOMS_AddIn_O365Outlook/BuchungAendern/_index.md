@@ -42,5 +42,15 @@ Die Terminänderung wird automatisch mit 3V ROOMS synchronisiert. Sollte die ROO
 
 Je nach Konfigurationen werden entsprechende Mitteilungen an Teilnehmende, organisierende und verantwortliche Personen versendet.
 
+### Synchronisierten Raum direkt in Outlook wechseln
+
+Wenn die bisherige und die neue Ressource mit Exchange synchronisiert sind, können Sie den Raum direkt im Outlook-Termin wechseln:
+
+1. Fügen Sie den neuen Raum über die Outlook-Raumsuche als Ressource hinzu.
+2. Entfernen Sie den bisherigen Raum aus dem Termin.
+3. Speichern oder senden Sie den Termin.
+
+ROOMS ordnet die Änderung der bestehenden Buchung zu und übernimmt den neuen Raum, sofern die Buchung dort zulässig ist. Lassen Sie nicht mehrere synchronisierte Räume im Termin stehen. Sind vorübergehend nur der bisherige und ein neuer Raum vorhanden, behandelt ROOMS den neuen Raum als Ersatz und bereinigt den bisherigen Raum bei der Synchronisation.
+
 
 Werden Änderungen an Terminen in der Vergangenheit vorgenommen, werden die neuen Information nicht mit 3V ROOMS synchronisiert.

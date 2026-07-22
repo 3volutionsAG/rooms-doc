@@ -18,7 +18,7 @@ Sie gilt grundsätzlich für:
 | ROOMS Bezeichnung | Exchange / Outlook Bezeichnung | ROOMS → Exchange | Exchange → ROOMS | Spezielle Bemerkungen |
 |---|---|---|---|---|
 | Titel | Subject | x | x | |
-| Ressource / Raum | Location | x |  | |
+| Ressource / Raum | Ressourcenpostfach / Location | x | x | Der Raumwechsel wird über das Ressourcenpostfach erkannt; ein reiner Location-Text löst keinen Raumwechsel aus. |
 | Organisator | Appointment-Ersteller | x | x | bestimmt die Mailbox, in welcher synchronisiert wird; in Exchange nicht änderbar |
 | ExternalReminder | ReminderInMinutes | x | x | |
 | Ist privat | Sensitivity / Privat | x | x | einzelne Serientermine direkt in Outlook anzupassen bleibt eingeschränkt |
