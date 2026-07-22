@@ -48,6 +48,8 @@ Sind keine Klassifikationen erfasst, werden keine Klassifikationen eingeblendet.
 
 ### Gliederung
 
+Welche Gliederungstypen und Gliederungen zur Auswahl stehen, richtet sich nach der gewählten Ressourcenart und dem Standort. ROOMS zeigt nur Einträge an, die mindestens einer aktiven Ressource der gewählten Ressourcenart am ausgewählten Standort zugeordnet sind. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl. Gibt es für den Standort keine passende Zuordnung, wird der betreffende Gliederungstyp nicht angezeigt.
+
 {{< bootstrap-table "table table-striped" >}}
 | Kriterium            | Funktion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
