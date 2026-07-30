@@ -65,6 +65,7 @@ Folgende Daten können Sie ändern:
 | 111 | Bulk print to single document | If set to true bulk printing creates a single merged document. If set to false bulk print creates a zip containing all documents. | true |
 | 86 | Calendar Block Times Color | The color for block times to be used in Calendar Integration calendar. | 88878A |
 | 156 | Calendar DatePicker Year Range | The year range of the calendar datepicker. Example: c-10:c+10 | c-10:c+10 |
+| 164 | FlexRules | Deklarative Regeln für kontextabhängige Resultate wie Kalendermarkierungen. | `{"schemaVersion":"1.0","ruleSets":[]}` |
 | 75 | Cateringblockzeit: Beginn der Blockzeit | Start der Blockzeit für Bestellungen [hh:mm]. | |
 | 74 | Cateringblockzeit: Gruppen ohne Blockzeiten | Semikolonseparierte Liste der Gruppen für welche die Blockzeiten nicht gelten. | |
 | 16 | CleanUpTimeout | Hält die Zeit in Minuten, nach deren Ablauf temporäre Daten ("UnitOfWork"-Kontext, Locking, System-Reservationen) gelöscht werden. | 15 |
@@ -134,3 +135,94 @@ Folgende Daten können Sie ändern:
 | 155 | Wizard Root-Url | The Root-Url of the Addin/Wizard if installed. Please add the url including the "#". Example: https://vnext.wizard.3vrooms.app/#/ | |
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
 {{< /bootstrap-table >}}
+
+## FlexRules für Kalendermarkierungen konfigurieren
+
+Mit dem globalen Parameter **FlexRules** (ID 164) können Administratoren Buchungen anhand ihres Erstellungsursprungs im Kalender farbig kennzeichnen. Der Standardwert enthält keine Regeln; ohne aktive Regel zeigt ROOMS keine kundenspezifischen Kalendermarkierungen an.
+
+Das folgende Beispiel markiert Buchungen, die über den Jobmanager erstellt wurden:
+
+```json
+{
+  "schemaVersion": "1.0",
+  "ruleSets": [
+    {
+      "id": "calendar-markers",
+      "revision": 1,
+      "rules": [
+        {
+          "id": "jobmanager-calendar-marker",
+          "name": "Jobmanager-Buchungen markieren",
+          "description": "Kennzeichnet Buchungen mit Erstellungsursprung Jobmanager.",
+          "enabled": true,
+          "priority": 100,
+          "context": "booking",
+          "scope": {
+            "resources": {
+              "mode": "all"
+            },
+            "timeFrame": {
+              "mode": "always"
+            }
+          },
+          "conditions": {
+            "any": [
+              {
+                "all": [
+                  {
+                    "expression": "booking.creationOrigin",
+                    "relation": "is-equal-to",
+                    "testValue": {
+                      "type": "creation-origin",
+                      "value": "jobmanager"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "result": {
+            "type": "calendar-appearance",
+            "markers": [
+              {
+                "key": "jobmanager",
+                "label": "Jobmanager",
+                "icon": "briefcase",
+                "color": "#F59E0B"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Unterstützte Werte
+
+Die erste FlexRules-Version unterstützt folgende Werte:
+
+{{< bootstrap-table "table table-striped" >}}
+| Bereich | Unterstützter Wert | Bedeutung |
+| --- | --- | --- |
+| Schema | `schemaVersion: "1.0"` | Versionsnummer des Konfigurationsformats. |
+| Kontext | `context: "booking"` | Die Regel wird für Buchungen ausgewertet. |
+| Ressourcen | `scope.resources.mode: "all"` | Die Regel gilt für alle Ressourcen. |
+| Zeitraum | `scope.timeFrame.mode: "always"` | Die Regel gilt unabhängig vom Buchungsdatum. |
+| Bedingung | `booking.creationOrigin` / `is-equal-to` | Vergleicht den Erstellungsursprung einer Buchung. |
+| Resultat | `type: "calendar-appearance"` | Fügt der Buchung eine Kalendermarkierung hinzu. |
+| Markierungsfarbe | `#RRGGBB` | Sechsstelliger Hex-Farbwert mit führendem `#`. |
+{{< /bootstrap-table >}}
+
+ROOMS kennt die systemseitigen Erstellungsursprünge `rooms`, `rooms-addin`, `rooms-old-addin`, `rooms-onsite` und `jobmanager`. Der Vergleich ignoriert Gross-/Kleinschreibung sowie Leerzeichen am Anfang und Ende.
+
+Jede Markierung benötigt einen `key`, eine `label`, eine `icon`-Kennung und eine `color`. Innerhalb eines Regelresultats muss der Schlüssel eindeutig sein. Derselbe Schlüssel darf in mehreren Regeln vorkommen, wenn Bezeichnung, Icon-Kennung und Farbe übereinstimmen. Die aktuelle Kalenderansicht stellt die Markierung über Farbe und Bezeichnung dar. Wenn mehrere Regeln passen, zeigt ROOMS die Markierungen aller passenden Regeln an. Regeln mit höherer `priority` werden zuerst ausgewertet; gleiche Markierungsschlüssel werden nur einmal angezeigt.
+
+In `conditions.any` können Sie alternative Bedingungsgruppen definieren. Innerhalb einer Gruppe müssen alle Bedingungen unter `all` erfüllt sein. In der aktuellen Version steht dafür nur der Vergleich des Erstellungsursprungs zur Verfügung.
+
+{{% alert title="Konfiguration vor dem Speichern prüfen" color="warning" %}}
+ROOMS prüft die gesamte JSON-Konfiguration beim Speichern. Ungültiges JSON, unbekannte Felder, nicht unterstützte Werte, fehlende Pflichtfelder oder widersprüchliche Markierungsdefinitionen werden abgewiesen. Dies gilt auch für Regeln mit `enabled: false`.
+
+Sichern Sie den bisherigen Wert vor einer Änderung. Falls eine ungültige Konfiguration ausserhalb der Anwendung gespeichert wird, ignoriert ROOMS sie bei der Auswertung; die betroffenen Markierungen erscheinen dann nicht im Kalender.
+{{% /alert %}}

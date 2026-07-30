@@ -13,6 +13,16 @@ Die Farbgebung Ihrer eigenen Buchungen können Sie in Ihren Einstellungen festle
 
 In jeder Kalenderansicht wird Ihnen oben links das Icon _Legende_ angezeigt. Dort sehen Sie mithilfe der Farbgebung, welchen Status eine Buchung hat, z.B. ob sie definitiv oder provisorisch belegt ist. Die Legende enthält auch weitere Kennzeichnungen wie Sperrzeiten, Feiertage, Wochenenden und eigene Reservationen.
 
+### Kundenspezifische Kalendermarkierungen
+
+Wenn in Ihrer ROOMS-Umgebung entsprechende Regeln aktiviert sind, können Buchungen am unteren Rand zusätzlich einen schmalen Farbbalken erhalten. Damit lassen sich beispielsweise Buchungen kennzeichnen, die über den Jobmanager erstellt wurden.
+
+Die Markierung wird anhand des Erstellungsursprungs automatisch gesetzt. Wenn Sie den Mauszeiger auf den Farbbalken bewegen, zeigt ROOMS die konfigurierte Bezeichnung an. Unter **Legende > Markierungen** finden Sie die Farben und Bezeichnungen aller aktiv konfigurierten Markierungen.
+
+{{% alert title="Hinweis" color="info" %}}
+Eine Kalendermarkierung ist nur eine zusätzliche visuelle Kennzeichnung. Sie ersetzt weder Status- oder Klassifikationsfarben noch die Kennzeichnung eigener Reservationen. Sie ändert auch keine Bearbeitungsrechte und sperrt die markierte Buchung nicht.
+{{% /alert %}}
+
 ### Abgrenzung zu anderen Farben
 
 - Die **Ressourcenfarbe** wird auf der Ressource unter [Spezifische Daten](/3vrooms/einstellungen/ressourcen/#spezifische-daten-der-ressource-bearbeiten) gepflegt. Sie kennzeichnet die Ressource, beschreibt aber nicht den Status einer konkreten Buchung.
