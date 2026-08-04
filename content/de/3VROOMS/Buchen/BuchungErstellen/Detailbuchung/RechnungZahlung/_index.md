@@ -1,7 +1,7 @@
 ---
 title: "Rechnung und Zahlung"
 linkTitle: "Rechnung und Zahlung"
-weight: 90
+weight: 75
 description: "Zahlungsanbieter, Zahlungsverarbeitung und Zahlungsexportstatus einer Reservation verwalten"
 ---
 
