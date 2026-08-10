@@ -48,7 +48,7 @@ Folgende Daten können Sie ändern:
 ### Liste der Konfigurationen
 
 {{% alert title="Achtung" color="warning" %}}
-Die Parameter zur Aufbewahrungsdauer steuern die automatische Datenbereinigung. Tragen Sie eine positive ganze Zahl in Monaten ein. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
+Die Parameter **Aufbewahrungsdauer Bewegungsdaten** (ID 161), **Aufbewahrungsdauer Stammdaten** (ID 162) und **Aufbewahrungsdauer Betriebsdaten** (ID 163) steuern die automatische Datenbereinigung. Tragen Sie für diese Parameter eine positive ganze Zahl in Monaten ein. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
 {{% /alert %}}
 
 {{< bootstrap-table "table table-striped" >}}
