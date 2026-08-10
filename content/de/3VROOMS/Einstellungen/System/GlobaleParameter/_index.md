@@ -47,6 +47,10 @@ Folgende Daten können Sie ändern:
 
 ### Liste der Konfigurationen
 
+{{% alert title="Achtung" color="warning" %}}
+Die Parameter zur Aufbewahrungsdauer steuern die automatische Datenbereinigung. Tragen Sie eine positive ganze Zahl in Monaten ein. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
+{{% /alert %}}
+
 {{< bootstrap-table "table table-striped" >}}
 | Id | Bezeichnung | Beschreibung | Standard |
 | --- | --- | --- | --- |
@@ -57,6 +61,9 @@ Folgende Daten können Sie ändern:
 | 60 | Applikation Root-Url Anonymous | Anonymouspfad der Applikation inkl. Mandantangabe (wird benötigt z.B. für Rest-Api) | |
 | 11 | Arbeitsbeginn | General end of work within the company. | 08:00 |
 | 12 | Arbeitsende | Default-Einstellung um welche Zeit der Dienstleister Feierabend macht. | 17:00 |
+| 161 | Aufbewahrungsdauer Bewegungsdaten | Aufbewahrungsdauer in Monaten für Bewegungsdaten wie Reservationen, Anlässe, Historie, Lektionen, Reservationsanfragen und Aktionshistorie. | 36 |
+| 163 | Aufbewahrungsdauer Betriebsdaten | Aufbewahrungsdauer in Monaten für Betriebsdaten wie Logs, Reports, TickerQ-Ausführungshistorie, Sperrzeiten, Feiertage und Öffnungszeit-Ausnahmen. | 1 |
+| 162 | Aufbewahrungsdauer Stammdaten | Aufbewahrungsdauer in Monaten für Stammdaten wie inaktive Benutzer. | 6 |
 | 82 | Archive User Id | This person is used for archiving purposes. For example, reservations made by former employees are transferred to this person. | |
 | 76 | Autorefresh Intervalle | Kommagetrennte Werte, welche von den Benutzern als Autorefresh Intervalle (in Sekunden) gewählt werden können. 0 (aus) wird automatisch hinzugefügt. | 15, 30, 60, 180 |
 | 105 | BackSync delay in minutes | Delay all backsync tasks, by specified amount of minutes. | 0 |
