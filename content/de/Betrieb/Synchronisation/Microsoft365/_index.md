@@ -43,7 +43,7 @@ Wichtig:
 | Thema | `AppOnly` | `Delegated` |
 |-------|-----------|-------------|
 | Zugriff wird erteilt durch | Administrator zentral | Benutzer selbst oder Administrator, je nach Tenant-Richtlinie |
-| Graph-Rechte | `Calendars.ReadWrite` (Application) | `Calendars.ReadWrite`, `User.Read` (Delegated) |
+| Graph-Rechte | `Calendars.ReadWrite`, `User.Read.All` (Application) | `Calendars.ReadWrite`, `User.Read` (Delegated) |
 | Refresh Tokens | nicht relevant | `offline_access` wird im OAuth-Flow angefordert |
 | UX für Enduser | kein Connect-/Disconnect-Flow, keine Consent-Maske | Connect-/Disconnect-Status sichtbar, Consent-Maske beim ersten Verbinden möglich |
 | Start des Personensyncs | automatisch nach Provisionierung | erst nach erfolgreichem Consent |
@@ -90,6 +90,7 @@ Der Unterschied `AppOnly` vs `Delegated` betrifft in der Praxis **vor allem Pers
 2. **API-Berechtigungen**
    - Microsoft Graph → **Application permissions**
    - **`Calendars.ReadWrite`**
+   - **`User.Read.All`**
    - **Admin Consent** für die Organisation erteilen
 
 3. **Secret oder Zertifikat**
