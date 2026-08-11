@@ -6,6 +6,13 @@ description: 'Die können unter anderem Raumtyp oder Equipmenttyp sein.'
 ---
 Die Unterkategorie Gliederung ist, wie die _Ressourcenspezifischen Kriterien_, von der Ressourcenart abhängig und geht auf firmenspezifische Gliederungen ein. Die Ressourcenart wählen Sie in der _Einfachen Suche_ aus.
 
+Wenn Sie mehrere Gliederungen auswählen, bestimmen Sie mit **UND** oder **ODER**, wie ROOMS die Auswahl verknüpft:
+
+- **ODER** (Standard): Die Liste zeigt Buchungen an, deren gebuchte Ressourcen mindestens einer ausgewählten Gliederung entsprechen.
+- **UND**: Die Liste zeigt nur Buchungen an, deren gebuchte Ressourcen gemeinsam allen ausgewählten Gliederungen entsprechen.
+
+Sie können dabei auch Gliederungen verschiedener Ressourcenarten kombinieren, zum Beispiel Raum und Parkplatz.
+
 Beispiel:
 
 

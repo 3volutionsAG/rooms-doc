@@ -27,6 +27,13 @@ Im Kalenderfilter grenzen Sie ein, welche Ressourcen im Kalender dargestellt wer
 
 Welche Gliederungstypen und Gliederungen zur Auswahl stehen, richtet sich nach den gewählten Ressourcenarten und Standorten. Bei mehreren Standorten berücksichtigt ROOMS Einträge, die mindestens einer aktiven Ressource der gewählten Ressourcenarten an einem der Standorte zugeordnet sind. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl. Gibt es keine passende Zuordnung, wird der betreffende Gliederungstyp nicht angezeigt.
 
+Wenn Sie mehrere Gliederungen auswählen, bestimmen Sie mit **UND** oder **ODER**, wie ROOMS die Auswahl verknüpft:
+
+- **ODER** (Standard): Der Kalender zeigt Ressourcen an, die mindestens einer ausgewählten Gliederung entsprechen.
+- **UND**: Der Kalender zeigt nur Ressourcen an, die allen ausgewählten Gliederungen entsprechen.
+
+Die Verknüpfung gilt über alle ausgewählten Gliederungstypen hinweg.
+
 {{< imgproc Kalender_Sidepanel Resize "960x" >}}
 Sidepanel im Kalender mit Filterfuntionen zur Suche
 {{< /imgproc >}}
