@@ -29,6 +29,23 @@ Die API liefert jeweils den aktuellen Zustand zum Zeitpunkt des Aufrufs. Es gibt
 Die technische Feldliste und die verfügbaren Operationen sind in der Swagger UI der installierten Umgebung dokumentiert. Verwenden Sie für Integrationen die Swagger-Dokumentation der Zielumgebung, da kundenspezifische Felder und Berechtigungen je Installation abweichen können.
 {{% /alert %}}
 
+## Personen aktualisieren
+
+Mit `PUT /{mandator}/api/v1.0/person/update` können Integrationen Personendaten einschliesslich kundenspezifischer Felder (`CustomFields`) aktualisieren. Die verfügbaren Felder und ihre Datentypen sind von der jeweiligen Installation abhängig.
+
+Für Einträge in `CustomFields` gilt:
+
+| Übermittelter Wert | Verhalten |
+|---|---|
+| Feld nicht im Request enthalten | Der bestehende beziehungsweise standardmässige Wert bleibt unverändert. |
+| Konkreter Wert | ROOMS übernimmt den Wert gemäss Datentyp des kundenspezifischen Feldes. |
+| `null` bei einem nicht-nullbaren Werttyp, beispielsweise `boolean` | ROOMS ignoriert den Eintrag. Der bestehende beziehungsweise standardmässige Wert bleibt unverändert. |
+| `null` bei einem Datentyp, der `null` zulässt, oder bei einem Referenztyp | ROOMS löscht den bisherigen Wert. |
+
+{{% alert title="Versionshinweis" color="info" %}}
+Diese `null`-Behandlung wird mit einer kommenden ROOMS-Version eingeführt. Bis die Zielumgebung aktualisiert ist, senden Sie für nicht-nullbare kundenspezifische Felder einen konkreten Wert oder lassen Sie das Feld weg. `null` kann in älteren Versionen zu einem Fehler beim Personen-Update führen.
+{{% /alert %}}
+
 ## Authentisierung
 
 Die Kommunikation mit dem REST-API erfolgt immer authentisiert mit einem Benutzer. Um API Calls mit einem spezifischen Benutzer durchzuführen müssen folgende Schritte durchgeführt werden.
