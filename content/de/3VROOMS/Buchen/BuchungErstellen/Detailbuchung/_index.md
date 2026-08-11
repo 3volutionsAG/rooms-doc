@@ -25,6 +25,7 @@ Indem Sie in der Ressourcenliste auf den Button _Detailbuchung eingeben_ klicken
 * Catering & Services
 * Teilnehmer
 * Reminder
+* Rechnung und Zahlung
 * Beilage
 
 Eine genauere Beschreibung der Menü-Reiter finden Sie in den Unterkapiteln.
