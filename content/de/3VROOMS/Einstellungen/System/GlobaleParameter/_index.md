@@ -5,6 +5,10 @@ weight: 1
 description: 'In diesem Bereich sehen Sie die Konfigurationsliste ein und bearbeiten bestehende globale Parameter.'
 ---
 
+## Voraussetzung
+
+Für den Zugriff auf die globalen Parameter benötigen Sie das globale Recht **Darf Konfiguration System verwalten**.
+
 Im linken Sidepanel sehen Sie die Filterfunktion, mit deren Hilfe Sie nach globalen Parametern suchen können. Im rechten Feld sehen Sie die Liste aller gespeicherten globalen Parameter. Diese können Sie bearbeiten und deren gespeicherten Daten einsehen.
 
 {{< imgproc Globaleparameter_bearbeiten_suchen Resize "960x" >}}
@@ -67,6 +71,7 @@ Die Parameter **Aufbewahrungsdauer Bewegungsdaten** (ID 161), **Aufbewahrungsdau
 | 82 | Archive User Id | This person is used for archiving purposes. For example, reservations made by former employees are transferred to this person. | |
 | 76 | Autorefresh Intervalle | Kommagetrennte Werte, welche von den Benutzern als Autorefresh Intervalle (in Sekunden) gewählt werden können. 0 (aus) wird automatisch hinzugefügt. | 15, 30, 60, 180 |
 | 105 | BackSync delay in minutes | Delay all backsync tasks, by specified amount of minutes. | 0 |
+| 165 | Benutzer ohne Firma gelten als extern | Wenn aktiviert, werden Benutzer ohne aktive Firmenzuordnung als externe Benutzer behandelt. | false |
 | 63 | Bis Zeit automatisch anpassen | Gibt an, ob im Datums- und Zeitpicker die Bis Zeit automatisch angepasst werden soll (Blockverschiebung) | true |
 | 115 | Booking requests: Support multiple datetime formats | If set to true, booking requests can support multiple datetime formats. The requests need to be specifically designed to do so. | false |
 | 111 | Bulk print to single document | If set to true bulk printing creates a single merged document. If set to false bulk print creates a zip containing all documents. | true |
@@ -142,6 +147,17 @@ Die Parameter **Aufbewahrungsdauer Bewegungsdaten** (ID 161), **Aufbewahrungsdau
 | 155 | Wizard Root-Url | The Root-Url of the Addin/Wizard if installed. Please add the url including the "#". Example: https://vnext.wizard.3vrooms.app/#/ | |
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
 {{< /bootstrap-table >}}
+
+## Benutzer ohne aktive Zuordnung zu einer Organisationseinheit oder Firma einstufen
+
+Mit dem globalen Parameter **Benutzer ohne Firma gelten als extern** (ID 165) legen Sie fest, wie ROOMS Personen ohne aktuell gültige Zuordnung zu einer Organisationseinheit (OE) oder Firma einstuft:
+
+- **Deaktiviert (Standard):** Die Person gilt als intern.
+- **Aktiviert:** Die Person gilt als extern.
+
+Eine aktive OE- oder Firmenzuordnung hat immer Vorrang. In diesem Fall bestimmt die dort hinterlegte Art **intern/extern** die Einstufung der Person.
+
+ROOMS verwendet diese Einstufung unter anderem bei der Preisberechnung einer Buchung, um für die organisierende Person interne oder externe Tarife auszuwählen. Prüfen Sie deshalb vor der Aktivierung die Tarife sowie die Personen ohne aktive Zuordnung.
 
 ## FlexRules für Kalendermarkierungen konfigurieren
 
