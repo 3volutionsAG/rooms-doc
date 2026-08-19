@@ -148,9 +148,9 @@ Die Parameter **Aufbewahrungsdauer Bewegungsdaten** (ID 161), **Aufbewahrungsdau
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
 {{< /bootstrap-table >}}
 
-## Benutzer ohne aktive Firmenzuordnung einstufen
+## Benutzer ohne aktive Zuordnung zu einer Organisationseinheit oder Firma einstufen
 
-Mit dem globalen Parameter **Benutzer ohne Firma gelten als extern** (ID 165) legen Sie fest, wie ROOMS Personen ohne aktuell gültige OE- oder Firmenzuordnung einstuft:
+Mit dem globalen Parameter **Benutzer ohne Firma gelten als extern** (ID 165) legen Sie fest, wie ROOMS Personen ohne aktuell gültige Zuordnung zu einer Organisationseinheit (OE) oder Firma einstuft:
 
 - **Deaktiviert (Standard):** Die Person gilt als intern.
 - **Aktiviert:** Die Person gilt als extern.
