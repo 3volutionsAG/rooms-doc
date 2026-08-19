@@ -33,6 +33,27 @@ Die technische Feldliste und die verfügbaren Operationen sind in der Swagger UI
 
 Mit `PUT /{mandator}/api/v1.0/person/update` können Integrationen Personendaten einschliesslich kundenspezifischer Felder (`CustomFields`) aktualisieren. Die verfügbaren Felder und ihre Datentypen sind von der jeweiligen Installation abhängig.
 
+### Firmendaten über die FFHS-Personenschnittstelle aktualisieren
+
+Der Endpunkt verarbeitet Firmendaten nur zusammen mit einer identifizierbaren Person. Eigenständige Firmendatensätze werden nicht unterstützt.
+
+Jeder Datensatz mit Firmendaten muss die Person auf eine der folgenden Arten identifizieren:
+
+- über eine vorhandene ROOMS-Personen-ID im Feld `Id`
+- über eine `ExternalId`, die weder leer noch `0` ist, zusammen mit einer nicht leeren `Kategorie`
+
+`CompanyExternalId` enthält die Adress-ID der Firma aus CAS. `CompanyId` bezeichnet die interne Firmen-ID in ROOMS.
+
+Kann ROOMS die Person nicht nach diesen Regeln bestimmen, wird der gesamte Request vor der Verarbeitung mit HTTP 400 zurückgewiesen. Die Antwort enthält folgende Validierungsmeldung:
+
+```text
+Company updates require either Id, or ExternalId and Kategorie, to identify the person.
+```
+
+{{% alert title="Versionshinweis" color="info" %}}
+Diese Validierung wird mit einer kommenden ROOMS-Version eingeführt. Bis die Zielumgebung aktualisiert ist, kann ein nicht unterstützter Firmendatensatz mit HTTP 200 beantwortet werden, obwohl ROOMS keine Daten aktualisiert.
+{{% /alert %}}
+
 Für Einträge in `CustomFields` gilt:
 
 | Übermittelter Wert | Verhalten |
