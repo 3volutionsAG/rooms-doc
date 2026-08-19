@@ -117,6 +117,8 @@ Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen.
 | **Eine Firma pro Zeitraum** | Eine Person kann immer nur einer Firma oder OE gleichzeitig zugeordnet sein. Überlappende Gültigkeitszeiträume bei verschiedenen Firmen sind nicht erlaubt. |
 | **Gültigkeitsdauer** | Jede Zuordnung basiert auf einem Zeitraum (Beginn- und Enddatum). Wird kein Datum gesetzt, gilt die Zuordnung als unbefristet. |
 | **Suchfilter** | Beim Hinzufügen einer Person erscheinen nur Personen, die im gewählten Zeitraum keiner anderen Firma oder OE zugewiesen sind. Bereits zugewiesene Personen werden in der Suche nicht angezeigt. |
+| **Personenart** | Die aktuell gültige Zuordnung bestimmt, ob eine Person intern oder extern ist. Personen ohne aktuell gültige Firmen- oder OE-Zuordnung gelten als intern. |
+| **Status der Person** | Die Firmen- oder OE-Zuordnung und der Status **Aktiv/Inaktiv** sind unabhängig. Das Beenden einer Zuordnung setzt die Person nicht automatisch auf inaktiv. |
 {{< /bootstrap-table >}}
 
 #### Zuordnung beenden oder ändern

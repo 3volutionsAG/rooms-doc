@@ -82,6 +82,8 @@ Die folgenden Daten legen Sie bei den Tarifen der Tarifkategorie fest:
 | Kosten Intern maximal  | Wenn Kumulatives Preismodell gewählt auf Tarifkategorie, erscheint das Textfeld für die maximalen Kosten. |
 {{< /bootstrap-table >}}
 
+Für Organisator:innen ohne aktuell gültige Firmen- oder OE-Zuordnung verwendet ROOMS die internen Kosten. Da keine Firma zugeordnet ist, gilt für diese Buchung kein firmenspezifischer Tarif.
+
 {{< imgproc Tarife_anlegen Resize "960x" >}}
 Tarifeinzelheiten und Gültigkeit festlegen
 {{< /imgproc >}}
