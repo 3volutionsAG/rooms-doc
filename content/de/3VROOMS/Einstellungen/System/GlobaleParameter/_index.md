@@ -57,7 +57,7 @@ Die folgenden globalen Parameter steuern, wie lange ROOMS Daten aufbewahrt:
 - **Aufbewahrungsdauer Stammdaten** (ID 162), Standard: 6 Monate
 - **Aufbewahrungsdauer Betriebsdaten** (ID 163), Standard: 1 Monat
 
-Tragen Sie im Feld **Wert** für jeden dieser drei Parameter eine ganze Zahl von 1 bis 1000 Monaten ein. Die Angaben im Feld **Standard** werden nicht automatisch als aktive Werte übernommen.
+Tragen Sie im Feld **Wert** für jeden dieser drei Parameter einen ganzzahligen Wert von 1 bis 1000 ein. Der jeweilige Wert entspricht der Aufbewahrungsdauer in Monaten. Die Angaben im Feld **Standard** werden nicht automatisch als aktive Werte übernommen.
 
 {{% alert title="Achtung" color="warning" %}}
 Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROOMS Worker nicht. Die Webanwendung bleibt verfügbar, damit Sie die Konfiguration korrigieren können. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
