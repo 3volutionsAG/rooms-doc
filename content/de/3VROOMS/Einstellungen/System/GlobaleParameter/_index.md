@@ -49,11 +49,21 @@ Folgende Daten können Sie ändern:
 | Benötigtes globales Recht | Falls der globale Parameter in direktem Zusammenhang mit einem globalen Recht steht, wird hier darauf hingewiesen. Standard: leer. nicht änderbar |
 {{< /bootstrap-table >}}
 
-### Liste der Konfigurationen
+### Aufbewahrungsdauern für die automatische Datenbereinigung festlegen
+
+Die folgenden globalen Parameter steuern, wie lange ROOMS Daten aufbewahrt:
+
+- **Aufbewahrungsdauer Bewegungsdaten** (ID 161), Standard: 36 Monate
+- **Aufbewahrungsdauer Stammdaten** (ID 162), Standard: 6 Monate
+- **Aufbewahrungsdauer Betriebsdaten** (ID 163), Standard: 1 Monat
+
+Tragen Sie im Feld **Wert** für jeden dieser drei Parameter eine ganze Zahl von 1 bis 1000 Monaten ein. Die Angaben im Feld **Standard** werden nicht automatisch als aktive Werte übernommen.
 
 {{% alert title="Achtung" color="warning" %}}
-Die Parameter **Aufbewahrungsdauer Bewegungsdaten** (ID 161), **Aufbewahrungsdauer Stammdaten** (ID 162) und **Aufbewahrungsdauer Betriebsdaten** (ID 163) steuern die automatische Datenbereinigung. Tragen Sie für diese Parameter eine positive ganze Zahl in Monaten ein. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
+Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROOMS Worker nicht. Die Webanwendung bleibt verfügbar, damit Sie die Konfiguration korrigieren können. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
 {{% /alert %}}
+
+### Liste der Konfigurationen
 
 {{< bootstrap-table "table table-striped" >}}
 | Id | Bezeichnung | Beschreibung | Standard |
