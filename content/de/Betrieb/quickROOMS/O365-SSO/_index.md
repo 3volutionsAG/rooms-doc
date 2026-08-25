@@ -76,7 +76,7 @@ ROOMS kann sich nach Ablauf des Schlüssels nicht mehr bei Microsoft Entra ID an
    - `openid`
    - `profile`
    - `email`
-4. Wählen Sie **Administratorzustimmung für `<Mandant>` erteilen** und bestätigen Sie den Dialog.
+4. Wählen Sie **Administratorzustimmung für Ihren Mandanten erteilen** und bestätigen Sie den Dialog.
 
 ## 4. API für das Outlook Add-In bereitstellen
 
@@ -161,6 +161,7 @@ Ergänzen Sie den Microsoft-Provider im Abschnitt `ExternalOpenIdConnectProvider
     "ClientId": "<CLIENT-ID>",
     "ClientSecret": "<CLIENT-SECRET>",
     "Scopes": [
+      "openid",
       "profile",
       "email"
     ],
@@ -202,10 +203,10 @@ Für eine manuelle Zuordnung:
 - Microsoft wird auf der IDP-Anmeldeseite als Login-Anbieter angezeigt.
 - Der Benutzer kann sich in ROOMS über Microsoft anmelden.
 - Das Outlook Add-In erhält ein SSO-Token und öffnet quickROOMS ohne zusätzliche Anmeldung.
-- In der [ROOMS-Ereignisanzeige]({{% relref "/3VROOMS/Einstellungen/System/Ereignisanzeige" %}}) erscheinen keine Fehler zur Tokenvalidierung oder Benutzerzuordnung.
+- In der [ROOMS-Ereignisanzeige]({{< relref "/3VROOMS/Einstellungen/System/Ereignisanzeige" >}}) erscheinen keine Fehler zur Tokenvalidierung oder Benutzerzuordnung.
 
 ## Weiterführende Dokumentation
 
-- [quickROOMS installieren und konfigurieren]({{% relref "../Installation" %}})
-- [Outlook Add-In über Microsoft 365 bereitstellen]({{% relref "../AddinDeployment/O365" %}})
+- [quickROOMS installieren und konfigurieren]({{< relref "../Installation" >}})
+- [Outlook Add-In über Microsoft 365 bereitstellen]({{< relref "../AddinDeployment/O365" >}})
 - [Microsoft: Office Add-In für Legacy Office SSO registrieren](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/register-sso-add-in-aad-v2)
