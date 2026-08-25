@@ -36,6 +36,65 @@ Halten Sie während der Einrichtung folgende Werte bereit. Die Platzhalter werde
 | Geheimer Clientschlüssel | `<CLIENT-SECRET>` | Vertrauliche Anmeldung des ROOMS IDP |
 {{< /bootstrap-table >}}
 
+## Zusammenhang zwischen Client-ID, Ressource und Add-In-Manifest
+
+{{% alert title="Kurz gesagt" color="primary" %}}
+Die **Client-ID** identifiziert die Entra-App-Registrierung. Die **Anwendungs-ID-URI** identifiziert die von dieser App bereitgestellte quickROOMS-Ressource und enthält dieselbe Client-ID. Im Add-In-Manifest muss `WebApplicationInfo/Id` der Client-ID und `WebApplicationInfo/Resource` der Anwendungs-ID-URI entsprechen.
+{{% /alert %}}
+
+Die App-Registrierung besitzt eine **Anwendungs-ID (Client-ID)**. Diese GUID identifiziert die Anwendung in Microsoft Entra ID, beispielsweise:
+
+```text
+0f879497-90db-494d-...
+```
+
+Die **Anwendungs-ID-URI** identifiziert die von dieser Anwendung bereitgestellte Ressource. quickROOMS verwendet dafür folgendes Format:
+
+```text
+api://<QUICKROOMS-DOMAIN>/<CLIENT-ID>
+```
+
+Für `wizard.example.com` ergibt sich beispielsweise:
+
+```text
+api://wizard.example.com/0f879497-90db-494d-...
+```
+
+Der delegierte Scope wird an diese Ressourcen-URI angehängt:
+
+```text
+api://wizard.example.com/0f879497-90db-494d-.../access_as_user
+```
+
+ROOMS übernimmt die Client-ID und die Anwendungs-ID-URI beim Erzeugen des Outlook-Add-In-Manifests in den Abschnitt `WebApplicationInfo`:
+
+```xml
+<WebApplicationInfo>
+  <Id>0f879497-90db-494d-...</Id>
+  <Resource>api://wizard.example.com/0f879497-90db-494d-...</Resource>
+  <Scopes>
+    <Scope>openid</Scope>
+  </Scopes>
+</WebApplicationInfo>
+```
+
+{{< bootstrap-table "table table-striped" >}}
+| Stelle | Wert | Bedeutung |
+|---|---|---|
+| Entra-App-Registrierung: **Anwendungs-ID (Client-ID)** | `<CLIENT-ID>` | Identifiziert die Microsoft-Anwendung |
+| Entra-App-Registrierung: **Anwendungs-ID-URI** | `api://<QUICKROOMS-DOMAIN>/<CLIENT-ID>` | Identifiziert die geschützte quickROOMS-Ressource |
+| Entra-App-Registrierung: **Scope** | `<ANWENDUNGS-ID-URI>/access_as_user` | Erlaubt den Zugriff im Namen des angemeldeten Benutzers |
+| Add-In-Manifest: `WebApplicationInfo/Id` | `<CLIENT-ID>` | Verknüpft das Add-In mit der Entra-App-Registrierung |
+| Add-In-Manifest: `WebApplicationInfo/Resource` | `<ANWENDUNGS-ID-URI>` | Bestimmt die Ressource, für die Outlook das SSO-Token anfordert |
+| ROOMS IDP: `ExternalOpenIdConnectProvider/ClientId` | `<CLIENT-ID>` | Verwendet dieselbe Entra-App-Registrierung zur Tokenvalidierung und Anmeldung |
+{{< /bootstrap-table >}}
+
+{{% alert title="Nicht mit der Add-In-ID verwechseln" color="warning" %}}
+Die oberste `OfficeApp/Id` im Manifest identifiziert das installierte Outlook Add-In und ist eine separate GUID. Sie ist nicht die Entra-Client-ID. Auch der ROOMS-IDP-Client `rooms-addin` ist eine separate Kennung für die Anmeldung von quickROOMS am ROOMS IDP.
+{{% /alert %}}
+
+Die Client-ID muss somit an drei Stellen übereinstimmen: in der Entra-App-Registrierung, unter `WebApplicationInfo/Id` im generierten Add-In-Manifest und in der Microsoft-Provider-Konfiguration des ROOMS IDP. Die Anwendungs-ID-URI muss mit `WebApplicationInfo/Resource` übereinstimmen.
+
 ## 1. App in Microsoft Entra ID registrieren
 
 1. Öffnen Sie im [Microsoft Entra Admin Center](https://entra.microsoft.com/) **Identität → Anwendungen → App-Registrierungen**.
