@@ -10,7 +10,9 @@ Mit dieser Konfiguration melden sich Benutzer im quickROOMS Outlook Add-In über
 {{% alert title="Wann ist diese Konfiguration erforderlich?" color="info" %}}
 Diese Anleitung gilt für das Microsoft-365-SSO des Outlook Add-Ins. Wenn das Add-In Forms- oder Windows-Authentisierung verwendet, beispielsweise mit Exchange On-Premises, können Sie diese Konfiguration überspringen.
 
-Microsoft bezeichnet dieses Verfahren inzwischen als **Legacy Office SSO**. quickROOMS verwendet für diese Integration weiterhin diesen Ablauf.
+Microsoft führt dieses Verfahren als **Legacy Office SSO** und stuft es als in Abkündigung ein. Für neue oder migrierte Office Add-Ins empfiehlt Microsoft **Nested App Authentication (NAA)** mit MSAL.js.
+
+quickROOMS verwendet aktuell `OfficeRuntime.auth.getAccessToken` und damit weiterhin Legacy Office SSO. NAA wird von quickROOMS noch nicht unterstützt und kann nicht allein über die App-Registrierung aktiviert werden. Die Umstellung erfordert eine Produktänderung. Diese Seite dokumentiert deshalb den aktuell unterstützten quickROOMS-Ablauf, nicht die Zielarchitektur.
 {{% /alert %}}
 
 ## Voraussetzungen
@@ -210,3 +212,4 @@ Für eine manuelle Zuordnung:
 - [quickROOMS installieren und konfigurieren]({{< relref "../Installation" >}})
 - [Outlook Add-In über Microsoft 365 bereitstellen]({{< relref "../AddinDeployment/O365" >}})
 - [Microsoft: Office Add-In für Legacy Office SSO registrieren](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/register-sso-add-in-aad-v2)
+- [Microsoft: Single Sign-On mit Nested App Authentication](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in?tabs=outlook)
