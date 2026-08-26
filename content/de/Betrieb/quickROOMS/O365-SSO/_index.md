@@ -91,6 +91,8 @@ ROOMS übernimmt die Client-ID und die Anwendungs-ID-URI beim Erzeugen des Outlo
 
 {{% alert title="Nicht mit der Add-In-ID verwechseln" color="warning" %}}
 Die oberste `OfficeApp/Id` im Manifest identifiziert das installierte Outlook Add-In und ist eine separate GUID. Sie ist nicht die Entra-Client-ID. Auch der ROOMS-IDP-Client `rooms-addin` ist eine separate Kennung für die Anmeldung von quickROOMS am ROOMS IDP.
+
+Beim zentralen Bereitstellen des Add-Ins erzeugt Microsoft 365 ausserdem automatisch eine weitere App-Registrierung. Diese gehört zum Deployment und ist nicht die hier konfigurierte SSO-App. Sie darf trotzdem weder gelöscht noch deaktiviert werden: Eine Löschung entfernt auch das bereitgestellte Add-In aus der Organisation, eine Deaktivierung blockiert die Ausgabe neuer Tokens. Weitere Informationen enthält die [O365-Deployment-Anleitung]({{< relref "../AddinDeployment/O365" >}}).
 {{% /alert %}}
 
 Die Client-ID muss somit an drei Stellen übereinstimmen: in der Entra-App-Registrierung, unter `WebApplicationInfo/Id` im generierten Add-In-Manifest und in der Microsoft-Provider-Konfiguration des ROOMS IDP. Die Anwendungs-ID-URI muss mit `WebApplicationInfo/Resource` übereinstimmen.
