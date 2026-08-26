@@ -18,4 +18,5 @@ Folgende Tabelle erläutert die Eingabefelder:
 |Kostenträger Geschäftsbereich ; Buchung|{{< imgproc Listen_Buchungen_ErweiterteSuche_KostSpezKrit_KTGB Resize "200x" >}}{{< /imgproc >}}|Tragen Sie den Geschäftsbereich des Kostenträgers der Buchung ein, um die Buchung zu finden.|
 |Checkbox: ; Nur Buchungen mit ; Kostenträgern|{{< imgproc Listen_Buchungen_ErweiterteSuche_KostSpezKrit_BGmitKT Resize "200x" >}}{{< /imgproc >}}|Bei aktivierter Checkbox werden nur Buchungen angezeigt, denen ein Kostenträger zugewiesen ist.|
 |Checkbox: ; Nur Buchungen mit ; Kosten > 0|{{< imgproc Listen_Buchungen_ErweiterteSuche_KostSpezKrit_Kosten Resize "200x" >}}{{< /imgproc >}}|Bei aktivierter Checkbox werden nur Buchungen angezeigt, bei denen Kosten anfallen.|
+|Checkbox: ; Mit Rabatten||Je nach Konfiguration können Sie diese Checkbox aktivieren, um nur Buchungen mit mindestens einem Rabatt anzuzeigen.|
 {{< /bootstrap-table >}}

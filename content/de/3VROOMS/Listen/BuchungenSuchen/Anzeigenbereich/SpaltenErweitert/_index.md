@@ -101,9 +101,26 @@ Detailansicht zur Ressource
 |Fahrzeuge (Tooltipp)|{{< imgproc Fahrzeug_TT Resize "200x" >}}{{< /imgproc >}}|Listet die gebuchten Fahrzeuge auf|
 |Fahrzeuge Aggregiert||Anzahl der gebuchten Fahrzeuge|
 |Serieninformationen|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|Kurzinformationen zur Serienbuchung. ; _Beginndatum, Enddatum, Intervall_|
-|Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}| Zuordnung eines virtuellen Raums ; _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrössen/ergänzen_ |
+|Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}| Zuordnung eines virtuellen Raums ; _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrössern/ergänzen_ |
 {{< /bootstrap-table >}}
 ---
+
+## Kundenspezifische Kostenspalten
+
+Je nach Konfiguration stehen in der Buchungsliste zusätzliche Kostenspalten zur Verfügung. Sie können diese über das Spaltensymbol einblenden und an der gewünschten Stelle anordnen. Die Spalten werden nur Benutzenden mit dem globalen Recht `Darf Kosten sehen` angezeigt und können nicht sortiert werden.
+
+{{< bootstrap-table "table table-striped" >}}
+|Spalte|Anmerkungen|
+|---|---|
+|Kosten: Ressource|Kosten der gebuchten Ressource|
+|Kosten: Zusätzliche Ressourcen|Kosten zusätzlich gebuchter Ressourcen|
+|Kosten: Catering & Services|Kosten der gebuchten Catering- und Serviceleistungen|
+|Kosten: Umstuhlungskosten|Positive Kostenpositionen der Bestuhlung bei Raumbuchungen|
+|Kosten: Rabatte|Summe der Rabattpositionen|
+|Kosten: Zuschläge|Summe der Zuschlagspositionen|
+{{< /bootstrap-table >}}
+
+Bei anonymisierten Buchungen bleiben die Werte in diesen Kostenspalten leer.
 
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.
 [^2]: Die Nummer und die Beschreibung des Kostenträgers ist in den Daten der jeweiligen Person oder des Geschäftsbereichs hinterlegt.
