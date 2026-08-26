@@ -55,3 +55,17 @@ Am Ende der Buchungsspezifischen Kriterien finden Sie vier weitere Checkboxen, d
 |Nicht Standard Bestuhlung ; *(gilt nur bei Raumbuchungen)*|Zeigt nur Buchungen, bei denen eine individuelle Bestuhlung bestellt wurde |
 |Nur letzte Buchung einer Serie|Zeigt nur die letzten Buchungen einer Buchungsserien|
 {{< /bootstrap-table >}}
+
+## SAP-Exportstatus filtern (kundenspezifisch)
+
+In Installationen mit dem kundenspezifischen SAP-Export enthält die erweiterte Buchungssuche zusätzlich das Feld **SAP Export**. Der Filter wird mit einer kommenden ROOMS-Version eingeführt. Er grenzt die Treffer anhand der SAP-Antwort und des Exportstatus der zuletzt erfassten Zahlung ein.
+
+{{< bootstrap-table "table table-striped" >}}
+|Auswahl|Ergebnis|
+|---|---|
+|Alle|Der SAP-Exportstatus schränkt die Suche nicht ein.|
+|Erfolgreich|Zeigt Buchungen mit einer SAP-Antwort, deren zuletzt erfasste Zahlung den Exportstatus `Exportiert` hat.|
+|Nicht erfolgreich|Zeigt Buchungen mit einer SAP-Antwort, für die keine zuletzt erfasste Zahlung mit dem Exportstatus `Exportiert` gefunden wird.|
+{{< /bootstrap-table >}}
+
+Die beiden Statusauswahlen berücksichtigen nur Buchungen mit einer vorhandenen SAP-Antwort. Buchungen ohne SAP-Antwort erscheinen nur bei **Alle**, sofern die übrigen Suchkriterien zutreffen.
