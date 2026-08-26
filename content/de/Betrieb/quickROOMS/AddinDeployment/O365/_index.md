@@ -58,6 +58,35 @@ https://learn.microsoft.com/en-us/office/dev/add-ins/design/add-in-icons
 6. Akzeptieren Sie die **Permissions** und klicken Sie auf **Next**.
 7. Klicken Sie auf **Finish Deployment**.
 
+{{% alert title="Automatisch erstellte App-Registrierung nicht löschen oder deaktivieren" color="warning" %}}
+Beim Abschluss des Deployments legt Microsoft 365 in Microsoft Entra ID automatisch eine separate App-Registrierung für das bereitgestellte Add-In an. Sie trägt normalerweise den Anzeigenamen des Add-Ins.
+
+Diese Registrierung kann ungenutzt wirken, weil sie weder die SSO-Konfiguration von quickROOMS enthält noch als reguläre Anwendung verwendet wird. Sie gehört jedoch zum **Centralized Deployment**. Wird sie unter **Microsoft Entra ID → App-Registrierungen** gelöscht, wird auch das zugehörige Add-In aus der Organisation und aus **Integrated apps** entfernt.
+
+Auch eine Deaktivierung ist für ein aktiv bereitgestelltes Add-In nicht vorgesehen: Die Verknüpfung bleibt dabei zwar bestehen, Microsoft Entra ID stellt für die Anwendung jedoch keine neuen Tokens mehr aus. Soll das Add-In vorübergehend ausgeschaltet werden, deaktivieren Sie es unter **Microsoft 365 Admin Center → Settings → Integrated apps**, nicht über die App-Registrierung.
+
+Die automatisch erzeugte Deployment-Registrierung darf deshalb nicht bereinigt, deaktiviert oder mit der [separaten SSO-App-Registrierung](../../o365-sso/) verwechselt werden.
+{{% /alert %}}
+
+## App-Registrierungen unterscheiden
+
+Bei einer O365-Bereitstellung mit SSO existieren zwei App-Registrierungen mit unterschiedlichen Aufgaben:
+
+| App-Registrierung | Erstellung | Aufgabe | Darf gelöscht oder deaktiviert werden? |
+|---|---|---|---|
+| quickROOMS SSO | Manuell gemäss [O365 SSO Konfiguration](../../o365-sso/) | Authentisierung; ihre Client-ID steht im Manifest unter `WebApplicationInfo/Id` | Nein, solange SSO verwendet wird |
+| Add-In-Deployment | Automatisch durch **Finish Deployment** im Microsoft 365 Admin Center | Repräsentiert das zentral bereitgestellte Add-In in Microsoft 365 | Nein, solange das Add-In bereitgestellt ist |
+
+Die Deployment-Registrierung wird nicht für die quickROOMS-SSO-Konfiguration verwendet. Dass sie keine offensichtlichen Anmeldungen, Secrets oder manuell konfigurierten API-Berechtigungen besitzt, ist daher kein Löschkriterium.
+
+## Versehentliche Löschung oder Deaktivierung untersuchen und beheben
+
+1. Öffnen Sie **Microsoft Entra ID → Überwachung und Integrität → Überwachungsprotokolle**.
+2. Filtern Sie nach der Kategorie **ApplicationManagement**. Eine Löschung erscheint als **Delete application** beziehungsweise **Delete application and service principal**; eine Deaktivierung als **Update application** mit der geänderten Eigenschaft `isDisabled`. Der Eintrag zeigt Zeitpunkt und ausführenden Benutzer.
+3. Wurde die Registrierung lediglich deaktiviert, öffnen Sie sie unter **Deaktivierte Anwendungen** und wählen Sie **Aktivieren**.
+4. Prüfen Sie nach einer Löschung unter **App-Registrierungen → Gelöschte Anwendungen**, ob die Registrierung noch wiederhergestellt werden kann. Gelöschte App-Registrierungen bleiben üblicherweise bis zu 30 Tage wiederherstellbar.
+5. Falls das Add-In weiterhin nicht unter **Microsoft 365 Admin Center → Settings → Integrated apps** erscheint, stellen Sie es mit dem Manifest erneut bereit. Dabei wird eine neue Deployment-Registrierung angelegt.
+
 Weitere Informationen zum Centralized Deployment finden Sie in der [Microsoft Dokumentation](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 ## Optional: Anpassung der Texte im Manifest
@@ -84,5 +113,7 @@ Die Textanpassungen müssen **vor** dem Herunterladen des Manifests vorgenommen 
 ## Referenzen
 
 - [Centralized Deployment von Add-Ins (Microsoft)](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+- [Deaktivieren und Reaktivieren von Entra-App-Registrierungen (Microsoft)](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/deactivate-app-registration)
+- [Löschen und Wiederherstellen von Entra-Anwendungen (Microsoft)](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/delete-recover-faq)
 - [Outlook Add-In API Requirement Sets (Microsoft)](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 - [Voraussetzungen für Office Add-Ins (Microsoft)](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
