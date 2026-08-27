@@ -28,9 +28,9 @@ Unter **Einstellungen → System → Globale Parameter** sind insbesondere folge
 
 ## `appsettings.json` - `CalendarSync`-Section
 
-Die Kalender-Synchronisation wird in der **`appsettings.json`** des IDP / `RoomsPro.Web` konfiguriert.
+Die Kalender-Synchronisation wird in der **`appsettings.json`** des IDP / `RoomsPro.Web` konfiguriert. Die Graph-Konfiguration muss zudem mit denselben Werten für `RoomsPro.Worker` bereitgestellt werden.
 
-Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **deployte** `appsettings.json` der `RoomsPro.Web`-Instanz.
+Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **deployte** Konfiguration der API- und Worker-Instanzen.
 
 ### Vollständiges Beispiel
 
@@ -39,12 +39,18 @@ Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **de
   "CalendarSync": {
     "Graph": {
       "AppId": "<entra-client-id>",
-      "TenantId": "<entra-tenant-id>",
+      "TenantId": "a7b8319c-49ca-4f85-849e-2e7c40c7080a",
       "AuthMode": "AppOnly",
       "ClientState": "<random-shared-secret-for-graph-webhooks>",
       "CallbackUrl": "https://idp.example.com",
       "ClientSecret": "<client-secret>",
-      "CertificateThumbprint": "<thumbprint-optional-for-apponly>"
+      "DomainOverrides": {
+        "subsidiary.onmicrosoft.com": {
+          "TenantId": "b8c942ad-50db-4096-950f-3f8d51d8191b",
+          "AppId": "<second-entra-client-id>",
+          "ClientSecret": "<second-client-secret>"
+        }
+      }
     },
     "Ews": {
       "Common": {
@@ -92,6 +98,7 @@ Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **de
 
 - `AuthMode` ist entweder `AppOnly` oder `Delegated`
 - für **`AppOnly`** unterstützen die Graph-Hintergrundpfade **`ClientSecret` oder `CertificateThumbprint`**
+- ersetzen Sie die Beispielwerte für `TenantId` durch die Verzeichnis-IDs Ihrer Tenants; Tenant-Domänen wie `contoso.onmicrosoft.com` sind hier nicht zulässig
 - `CallbackUrl` ist die **Basis-URL** - **ohne** `/api/webhooks/graph`
 - wenn `CallbackUrl` leer bleibt, verwendet ROOMS automatisch `IdpRootUrl`
 - `ClientState` sollte ein ausreichend zufälliges Shared Secret sein
@@ -102,6 +109,33 @@ Wichtig:
 - die legacy Graph-Client-Erzeugung unterstützt Zertifikate
 - die neuere RoomsPro-Graph-Infrastruktur unterstützt Zertifikate für **AppOnly- / Hintergrundoperationen**
 - der interaktive **`Delegated`-Consent-Flow** verwendet weiterhin **`ClientSecret`**
+
+### `DomainOverrides` für `Microsoft365` / Graph
+
+Mit `CalendarSync:Graph:DomainOverrides` können app-basierte Graph-Zugriffe abhängig von der Mail-Domäne der synchronisierten Mailbox auf einen anderen Microsoft-365-Tenant und eine andere Entra-App umgeschaltet werden.
+
+Der Schlüssel ist der Teil **nach dem `@`** der primären SMTP-Adresse:
+
+- Mailbox: `user@subsidiary.onmicrosoft.com`
+- Override-Schlüssel: `subsidiary.onmicrosoft.com`
+
+Gross- und Kleinschreibung werden bei der Zuordnung nicht berücksichtigt, die Domäne muss aber vollständig übereinstimmen. Der Schlüssel enthält kein `@`; Wildcards und automatische Treffer für Subdomains werden nicht unterstützt. Für nicht zugeordnete Domänen verwendet ROOMS die Standardwerte unter `CalendarSync:Graph`.
+
+Jeder Override ist ein **vollständiger Credential-Satz** und benötigt:
+
+- `TenantId` als Verzeichnis-ID im GUID-Format, nicht als Tenant-Domäne
+- `AppId`
+- entweder `ClientSecret` oder `CertificateThumbprint`
+
+Werte werden nicht einzeln aus der Standardkonfiguration geerbt. Jede Entra-App benötigt in ihrem Ziel-Tenant die erforderlichen Graph-Anwendungsberechtigungen und den Admin Consent.
+
+Die Overrides gelten nur für app-basierte Zugriffe. Dazu gehören alle Zugriffe bei `AuthMode = AppOnly` sowie Ressourcenpostfächer in einer `Delegated`-Umgebung. Delegierter Personen-Consent und Refresh Tokens verwenden weiterhin die globale Graph-App. Auch `AuthMode`, `CallbackUrl` und `ClientState` bleiben global.
+
+Stellen Sie die vollständige Graph-Konfiguration in **API und Worker** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
+
+{{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
+Die Konfigurationsänderung migriert bestehende Microsoft-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Stellen Sie die unterstützenden API- und Worker-Versionen bereit, bevor Sie `DomainOverrides` aktivieren.
+{{% /alert %}}
 
 ### Hinweise zur EWS-Konfiguration
 
@@ -140,9 +174,8 @@ Typischer Einsatz:
 
 Wichtig:
 
-- `DomainOverrides` gibt es **nur** für `CalendarSync:Ews:Providers:O365`
+- `CalendarSync:Ews:Providers:O365:DomainOverrides` und `CalendarSync:Graph:DomainOverrides` sind getrennte Konfigurationen; ein EWS-Override gilt nicht für Graph
 - für `EWS1` und `EWS2` gibt es keine entsprechende per-Mail-Domain-Umschaltung
-- für **`Microsoft365` / Graph** gibt es diese Funktion **derzeit nicht**
 
 ## `RoomsAppSettings.config` - legacy / Kompatibilitätswerte
 
