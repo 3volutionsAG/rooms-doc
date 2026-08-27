@@ -144,7 +144,7 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 25 | SchnellreservationPlanDauer | Konfiguriert die Laufzeit einer Schnellreservation (Plan). Numerischer Wert zwischen 0-...; 0 => Bis Tagesende; 1-... => Dauer in Minuten | 0 |
 | 56 | Schrittweite Suche alternative Zeiten | Konfiguration der Schrittweiten für die Suche nach alternativen Reservationszeiten (Werte in Minuten, kommasepariert: 30,45,60). | 30,60,90,120,180,210,240 |
 | 59 | Schwellwert Jobmanager | Steuert im Jobmanager die Grenze zwischen gelbem und rotem Prüfstatus in der Ressourcenwahl. Beispiel: `0.7` bedeutet 70 %. Ab 100 % bleibt der Status grün. Der Parameter hebt die 100-%-Anforderung für die direkte Verarbeitung nicht auf. | 0.7 |
-| 53 | Schwellwerte für Kosten auf Bestellungen | Enthält eine Liste mit den Bestellungs-Schwellwerten für jede Währung. Wenn die Gesamtkosten der Bestellungen in einer Reservation oder einem Anlass den Wert überschreiten muss die Bestellung vom Vorgesetzten genemigt werden. | <BestellungSchwellwerte></BestellungSchwellwerte> |
+| 53 | Schwellwerte für Kosten auf Bestellungen | Legt pro Währung fest, ab welchen Gesamtkosten für Bestellungen eine genehmigende Person erforderlich ist. | <BestellungSchwellwerte></BestellungSchwellwerte> |
 | 114 | Serie creation timezone adjustable | If set to true serie creation timezone is adjustable, meaning instead of using organizers timezone, the location or creator timezone can be used. | false |
 | 14 | Smtp From | E-Mail Adresse, die beim Versenden von Mails als Absender angegeben wird. | |
 | 15 | Smtp Server | Hostname des SMTP-Servers oder "graphapi" um E-Mails über Office365 zu versenden. | |
@@ -157,6 +157,25 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 155 | Wizard Root-Url | The Root-Url of the Addin/Wizard if installed. Please add the url including the "#". Example: https://vnext.wizard.3vrooms.app/#/ | |
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
 {{< /bootstrap-table >}}
+
+## Genehmigende Person für kostenpflichtige Bestellungen konfigurieren
+
+Mit dem globalen Parameter **Schwellwerte für Kosten auf Bestellungen** (ID 53) legen Sie für jede Währung einen Betrag fest, ab dem eine genehmigende Person erforderlich ist.
+
+Tragen Sie im Feld **Wert** beispielsweise folgende Konfiguration ein:
+
+```xml
+<BestellungSchwellwerte>
+  <Schwellwert Betrag="100" Waehrung="CHF" />
+  <Schwellwert Betrag="80" Waehrung="EUR" />
+</BestellungSchwellwerte>
+```
+
+Jede Währung darf nur einmal vorkommen. Die Attribute `Betrag` und `Waehrung` sind erforderlich. Im Beispiel ist eine genehmigende Person ab Bestellungen von CHF 100 oder EUR 80 erforderlich. Für Währungen ohne Eintrag gilt kein Schwellwert.
+
+Der quickROOMS Wizard summiert die ausgewählten, kostenpflichtigen Positionen unter **Catering & Services** pro Währung. Sobald die Summe in mindestens einer Währung den konfigurierten Betrag erreicht oder überschreitet, erscheint in der Buchung das Pflichtfeld **Genehmigende Person**. Geben Sie mindestens zwei Zeichen ein und wählen Sie die zuständige Person aus.
+
+Sinkt die Summe wieder unter den Schwellwert, blendet quickROOMS das Feld aus und verwirft die bereits gewählte Person.
 
 ## Benutzer ohne aktive Zuordnung zu einer Organisationseinheit oder Firma einstufen
 
