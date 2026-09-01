@@ -8,7 +8,7 @@ Folgende Tabelle erläutert die Eingabefelder:
 
 Status und Art sind unabhängige Merkmale. ROOMS leitet die Art aus der aktuell gültigen Organisationszuordnung ab. Personen ohne aktuell gültige Zuordnung gelten als intern.
 
-Unter **Organisationsspezifische Kriterien** können Sie nach Angaben zur Organisation suchen oder gezielt Personen ohne Organisationszuordnung anzeigen.
+Unter **Organisationsspezifischen Kriterien** können Sie nach Angaben zur Organisation suchen oder gezielt Personen ohne Organisationszuordnung anzeigen.
 
 {{< bootstrap-table "table table-striped" >}}
 |Feld|Funktion|
