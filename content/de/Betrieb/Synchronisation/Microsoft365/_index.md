@@ -10,7 +10,7 @@ Prüfen Sie vor dem Setup:
 
 - im Profil ist wirklich **`SyncModus = Microsoft365`** gesetzt und **nicht** `O365`
 - die **E-Mail-Adresse** der Person oder Ressource entspricht der **primären SMTP-Adresse**
-- `CalendarSync:Graph` ist vollständig konfiguriert
+- `CalendarSync:Graph` ist für API und Worker vollständig und identisch konfiguriert
 - die Basis-URL des IDP / `RoomsPro.Web` ist öffentlich erreichbar
 - die Pfade **`/api/webhooks/graph`** und **`/api/webhooks/graph/lifecycle`** werden anonym per `POST` akzeptiert
 - die **Hintergrundverarbeitung** läuft
@@ -137,12 +137,13 @@ Die Graph-Konfiguration liegt in der **`appsettings.json`** des IDP / `RoomsPro.
 | Schlüssel | Bedeutung |
 |-----------|-----------|
 | `AppId` | Client ID der Entra-App |
-| `TenantId` | Tenant ID |
+| `TenantId` | Verzeichnis-ID des Tenants im GUID-Format; Tenant-Domänen sind nicht zulässig |
 | `AuthMode` | `AppOnly` oder `Delegated` |
 | `ClientState` | gemeinsames Secret zur Validierung eingehender Graph-Webhooks |
 | `CallbackUrl` | optionale Override-Basis-URL für Graph-Webhooks |
 | `ClientSecret` | Secret für Graph-Authentisierung und den Delegated-Consent-Flow |
 | `CertificateThumbprint` | Zertifikat für AppOnly- / Hintergrundpfade |
+| `DomainOverrides` | optionale, vollständige app-basierte Credentials pro Mail-Domäne |
 {{< /bootstrap-table >}}
 
 Hinweise:
@@ -152,17 +153,28 @@ Hinweise:
 - `CallbackUrl` ist die **Basis-URL**, **ohne** `/api/webhooks/graph`
 - `AppOnly`-Pfad für Subscription- / Management-Operationen unterstützt **Client Secret oder Zertifikat**
 - `Delegated` benötigt für den interaktiven Consent-Flow weiterhin **`ClientSecret`**
-- eine per-Mail-Domain-Umschaltung wie `DomainOverrides` gibt es für Graph **nicht**
+- `DomainOverrides` gelten nur für app-basierte Graph-Zugriffe; der delegierte Personen-Consent bleibt global
 
-### Wichtige Limitationen der Graph-Implementierung
+### Mehrere M365-Tenants nach Mail-Domäne
 
-Anders als beim EWS-basierten Provider `O365` kennt die Graph-Konfiguration **keine** per-Mail-Domain-Overrides.
+Mit `CalendarSync:Graph:DomainOverrides` können app-basierte Graph-Zugriffe abhängig von der primären SMTP-Domäne einer Mailbox andere Tenant- und App-Credentials verwenden. Dies gilt für alle Zugriffe bei `AuthMode = AppOnly` sowie für Ressourcenpostfächer in einer `Delegated`-Umgebung.
 
-Das bedeutet:
+Beachten Sie dabei:
 
-- `CalendarSync:Graph` verwendet immer **eine gemeinsame Graph-Konfiguration**
-- es gibt **keine** tenant- oder credential-spezifische Umschaltung auf Basis der Mail-Domäne
-- mehrere unterschiedliche M365-Tenants lassen sich mit dem Graph-Sync **nicht** analog zu `O365:DomainOverrides` pro Mail-Domäne aufteilen
+- der Override-Schlüssel enthält die vollständige Domäne nach dem `@`, aber nicht das `@` selbst
+- Gross- und Kleinschreibung werden nicht berücksichtigt; Wildcards und automatische Treffer für Subdomains werden nicht unterstützt
+- nicht zugeordnete Domänen verwenden die Standard-Credentials unter `CalendarSync:Graph`
+- jeder Override benötigt eine vollständige `TenantId`, `AppId` und entweder `ClientSecret` oder `CertificateThumbprint`; einzelne Standardwerte werden nicht geerbt
+- `TenantId` muss eine Verzeichnis-ID im GUID-Format sein und darf keine Tenant-Domäne wie `contoso.onmicrosoft.com` enthalten
+- jede konfigurierte Entra-App benötigt die Graph-Anwendungsberechtigungen und den Admin Consent im jeweiligen Ziel-Tenant
+- `AuthMode`, `CallbackUrl`, `ClientState`, delegierter Consent und Refresh Tokens bleiben global
+- dieselbe Konfiguration muss für API und Worker bereitgestellt werden
+
+{{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
+`DomainOverrides` migrieren bestehende Graph-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Aktivieren Sie die Overrides erst, nachdem passende API- und Worker-Versionen bereitgestellt wurden.
+{{% /alert %}}
+
+Ein vollständiges JSON-Beispiel und das Schema für Umgebungsvariablen finden Sie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
 
 ### Zertifikatsauthentisierung: genauer Support-Umfang
 
