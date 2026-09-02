@@ -39,7 +39,7 @@ Windows-Host: rooms-web, rooms-service
 Beide Hosts:  Zugriff auf dieselbe SQL-Server-Umgebung
 ```
 
-Nur Nginx wird nach aussen veröffentlicht. Der Port `8080` des Windows-Hosts ist ausschliesslich vom Linux-Host erreichbar. API, Worker, Legacy Service und SQL Server erhalten keinen öffentlichen Ingress.
+Für Clients wird nur Nginx veröffentlicht. Der technisch am Windows-Host publizierte Port `8080` wird per Firewall ausschliesslich für die IP-Adresse des Linux-Hosts freigegeben. API, Worker, Legacy Service und SQL Server erhalten keinen öffentlichen Ingress.
 
 ## Verfügbare Images
 
@@ -61,6 +61,7 @@ Verwenden Sie für alle vier ROOMS-Images exakt dieselbe Version. Der Zugang zu 
 - Docker Compose auf dem Windows-Host; beachten Sie, dass eine manuell installierte Docker Engine für Windows Server Compose nicht mitliefert
 - DNS-Namen für Legacy Website und RoomsPro API, beispielsweise `rooms.example.ch` und `api.rooms.example.ch`
 - ein Zertifikat mit beiden DNS-Namen oder je ein Zertifikat pro Name, jeweils im PEM-Format für Nginx
+- eine feste IP-Adresse des Linux-Hosts für die Firewall-Freigabe zum Windows-Host
 - Netzwerkzugriff beider Hosts auf SQL Server sowie vom Linux-Host auf Port `8080` des Windows-Hosts
 - aktuelle [Baukasten-Datenbank]({{< relref "Betrieb/Installation/DatenbankBereitstellen/_index.md" >}}) und eine Sicherung unmittelbar vor der Migration
 
@@ -99,6 +100,21 @@ Auf dem Linux-Host wird folgende Struktur verwendet:
 ```
 
 Schützen Sie die Konfigurationsdateien und insbesondere `rooms.key` mit restriktiven Dateirechten. Konfiguration und Secrets werden nur schreibgeschützt in die Container eingebunden und gehören nicht in ein eigenes Image oder in die Versionsverwaltung.
+
+### Konfigurationsdateien beschaffen
+
+1. Laden Sie das aktuelle [Configuration Template](https://3volutions.atlassian.net/servicedesk/customer/kb/view/508690433) herunter. Kopieren Sie daraus `RoomsAppSettings.config`, `ConnectionStrings.config`, `DiagnosticsWeb.config`, `DiagnosticsWindowsService.config` und `MachineKey.config` in das oben angegebene Configuration-Verzeichnis auf dem Windows-Host.
+2. Beziehen Sie das MSI derselben ROOMS-Version aus dem [Downloadbereich](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536). Es enthält die zur Version passende Vorlage für `appsettings.json`. Ist ROOMS bereits mit den Standardpfaden installiert, liegt sie unter `C:\Program Files\3volutions\ROOMS\Configuration\appsettings.json`. Für einen reinen Container-Host können Sie das MSI stattdessen auf einem Windows-Administrationsrechner entpacken:
+
+   ```powershell
+   msiexec.exe /a 'C:\Download\ROOMS-<Version>.msi' TARGETDIR='C:\Temp\ROOMS-MSI' /qn
+   Get-ChildItem 'C:\Temp\ROOMS-MSI' -Filter appsettings.json -Recurse
+   ```
+
+3. Kopieren Sie die gefundene `appsettings.json` sicher nach `/opt/rooms/config/appsettings.json` auf dem Linux-Host.
+4. Passen Sie alle Dateien gemäss [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) an und laden Sie die [Lizenzdateien]({{< relref "Betrieb/Installation/LizenzenBeziehen/_index.md" >}}) in das Configuration-Verzeichnis auf dem Windows-Host.
+
+Verwenden Sie Vorlagen und MSI immer aus derselben freigegebenen ROOMS-Version wie die Container-Images.
 
 ### Gemeinsame Datenbankidentität
 
@@ -150,6 +166,17 @@ services:
 ```
 
 Die Images lesen alle Legacy-Dateien aus `C:\app\config`. Die IIS-Website im `rooms-web`-Container lauscht intern ohne kundenspezifisches Zertifikat auf Port `80`; TLS und Hostnamen werden später zentral durch Nginx behandelt.
+
+Beschränken Sie den am Windows-Host publizierten Port auf die feste IP-Adresse des Linux-Proxys. Bei einer Windows-Firewall mit standardmässig blockierten eingehenden Verbindungen genügt beispielsweise folgende gezielte Freigabe; ersetzen Sie den Platzhalter und stellen Sie sicher, dass keine breitere Freigaberegel für TCP `8080` besteht:
+
+```powershell
+New-NetFirewallRule `
+  -DisplayName 'ROOMS Legacy nur vom Reverse Proxy' `
+  -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8080 `
+  -RemoteAddress '<Linux-Proxy-IP>'
+```
+
+Prüfen Sie die Einschränkung von zwei verschiedenen Rechnern: Vom Linux-Host muss `http://<Windows-Container-Host>:8080/healthz` erreichbar sein, von einem normalen Client dagegen nicht. Falls eine vorgelagerte Netzwerk-Firewall den Zugriff steuert, setzen und prüfen Sie dort dieselbe Quell-IP-Einschränkung.
 
 Prüfen Sie die Datei, laden Sie die Images, starten Sie die Komponenten vor der Migration aber noch nicht dauerhaft:
 
