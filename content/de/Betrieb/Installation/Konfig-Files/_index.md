@@ -126,18 +126,35 @@ Verwenden Sie für den dokumentierten Windows-Standardweg die integrierte Authen
 
 1. Speichern Sie alle Änderungen im zentralen Configuration-Verzeichnis.
 2. Führen Sie `Config.bat` als Administrator aus.
-3. Prüfen Sie, ob die RoomsPro-Konfiguration an beiden Zielorten vorhanden ist:
+3. Prüfen Sie für jede lokal installierte RoomsPro-Komponente, ob die Zieldatei vorhanden und mit der zentralen Datei identisch ist. Das folgende Skript überspringt nicht installierte Komponenten und bricht bei einer fehlenden oder abweichenden Kopie ab:
 
    ```powershell
-   Test-Path 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.json'
-   Test-Path 'C:\inetpub\wwwroot\API\config\appsettings.json'
-   ```
+   $source = 'C:\Program Files\3volutions\ROOMS\Configuration\appsettings.json'
+   $sourceHash = (Get-FileHash $source).Hash
+   $targets = @(
+     [pscustomobject]@{
+       Name = 'RoomsPro Worker'
+       Executable = 'C:\Program Files\3volutions\ROOMS\Worker\RoomsPro.Worker.exe'
+       Config = 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.json'
+     }
+     [pscustomobject]@{
+       Name = 'RoomsPro API'
+       Executable = 'C:\inetpub\wwwroot\API\RoomsPro.Web.exe'
+       Config = 'C:\inetpub\wwwroot\API\config\appsettings.json'
+     }
+   )
 
-4. Vergleichen Sie die Hashwerte. Beide Werte müssen identisch sein:
-
-   ```powershell
-   Get-FileHash 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.json'
-   Get-FileHash 'C:\inetpub\wwwroot\API\config\appsettings.json'
+   foreach ($target in $targets) {
+     if (Test-Path $target.Executable) {
+       if (-not (Test-Path $target.Config)) {
+         throw "$($target.Name): appsettings.json fehlt"
+       }
+       if ((Get-FileHash $target.Config).Hash -ne $sourceHash) {
+         throw "$($target.Name): appsettings.json weicht von der zentralen Datei ab"
+       }
+       Write-Host "$($target.Name): appsettings.json ist aktuell"
+     }
+   }
    ```
 
 Die Konfiguration ist damit verteilt. Fahren Sie im [Installationsablauf]({{< relref "Betrieb/Installation/_index.md" >}}) mit der IIS-Konfiguration fort. Bei einer Neuinstallation bleiben Websites und Dienste bis zum erfolgreichen Abschluss der Migration gestoppt.

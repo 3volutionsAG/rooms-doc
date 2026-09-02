@@ -439,7 +439,19 @@ Prüfen Sie danach:
 
 ## Updates
 
-Ändern Sie bei einem späteren Update in beiden Compose-Dateien alle vier ROOMS-Image-Tags auf dieselbe neue Version. Sichern und migrieren Sie die Datenbank nach dem beschriebenen Ablauf, bevor Service und Worker wieder starten. Verwenden Sie keine schwebenden Tags wie `latest` für ROOMS oder Nginx.
+Ändern Sie bei einem späteren Update in beiden Compose-Dateien alle vier ROOMS-Image-Tags auf dieselbe neue Version. Verwenden Sie keine schwebenden Tags wie `latest` für ROOMS oder Nginx. Laden Sie die neuen Images vor dem Wartungsfenster mit `docker compose pull`.
+
+Stoppen Sie danach den laufenden Stack auf beiden Hosts, bevor Sie die Datenbank sichern und migrieren:
+
+```powershell
+docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml stop rooms-web rooms-service
+```
+
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml stop reverse-proxy rooms-api rooms-worker
+```
+
+Erstellen Sie nun die Datenbanksicherung, vergeben Sie vorübergehend `db_owner` und führen Sie Statusprüfung und Migration wie unter [Datenbankmigrationen](#datenbankmigrationen) beschrieben aus. Entfernen Sie `db_owner` erst nach einer abschliessenden Statusprüfung mit Exitcode `0`. Starten Sie anschließend beide Stacks mit den unter [Stack starten und prüfen](#stack-starten-und-prüfen) angegebenen `up -d`-Befehlen und wiederholen Sie die dortigen Prüfungen.
 
 ## Kubernetes
 
