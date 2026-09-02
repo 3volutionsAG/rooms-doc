@@ -171,9 +171,9 @@ Tragen Sie im Feld **Wert** beispielsweise folgende Konfiguration ein:
 </BestellungSchwellwerte>
 ```
 
-Jede Währung darf nur einmal vorkommen. Die Attribute `Betrag` und `Waehrung` sind erforderlich. Im Beispiel ist eine genehmigende Person ab Bestellungen von CHF 100 oder EUR 80 erforderlich. Für Währungen ohne Eintrag gilt kein Schwellwert.
+Jede Währung darf nur einmal vorkommen. Die Attribute `Betrag` und `Waehrung` sind erforderlich. Im Beispiel ist eine genehmigende Person erforderlich, sobald die Gesamtkosten in CHF den Schwellwert von CHF 100 oder die Gesamtkosten in EUR den Schwellwert von EUR 80 erreichen. Für Währungen ohne Eintrag gilt kein Schwellwert.
 
-Der quickROOMS Wizard summiert die ausgewählten, kostenpflichtigen Positionen unter **Catering & Services** pro Währung. Sobald die Summe in mindestens einer Währung den konfigurierten Betrag erreicht oder überschreitet, erscheint in der Buchung das Pflichtfeld **Genehmigende Person**. Geben Sie mindestens zwei Zeichen ein und wählen Sie die zuständige Person aus.
+Der quickROOMS Wizard summiert die ausgewählten, kostenpflichtigen Positionen unter **Catering & Services** pro Währung. Sobald die Summe in mindestens einer Währung den für diese Währung konfigurierten Betrag erreicht oder überschreitet, erscheint in der Buchung das Pflichtfeld **Genehmigende Person**. Geben Sie mindestens zwei Zeichen ein und wählen Sie die zuständige Person aus.
 
 Sinkt die Summe wieder unter den Schwellwert, blendet quickROOMS das Feld aus und verwirft die bereits gewählte Person.
 
