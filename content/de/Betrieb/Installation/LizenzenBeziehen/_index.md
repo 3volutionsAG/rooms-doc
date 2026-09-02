@@ -39,6 +39,6 @@ Ist der LicenseManager noch nicht installiert, kann er im [Downloadbereich](http
 
    {{< imgproc Lizenz Resize "640x" >}} {{< /imgproc >}}
 
-Führen Sie nach dem Download die gemäß [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) angepasste `Config.bat` als Administrator aus. Sie verteilt die Lizenzdateien an die installierten Legacy-Komponenten.
+Entfernen Sie bei einer Lizenzerneuerung nicht mehr ausgestellte `.lic`-Dateien aus dem zentralen Configuration-Verzeichnis. Führen Sie danach die gemäß [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) angepasste `Config.bat` als Administrator aus. Sie löscht die bisherigen Lizenzdateien in den Zielverzeichnissen und verteilt den aktuellen zentralen Bestand an die installierten Legacy-Komponenten.
 
 Prüfen Sie anschließend, dass die erwarteten `.lic`-Dateien in den Zielverzeichnissen vorhanden sind, bevor Sie Websites und Dienste starten.

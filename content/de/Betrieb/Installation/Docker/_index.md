@@ -73,15 +73,14 @@ Die Beispiele verwenden die Compose-V2-Syntax `docker compose`. Wird Compose auf
 Legen Sie auf dem Windows-Host folgendes Verzeichnis an:
 
 ```text
-C:\ProgramData\3volutions\ROOMS\
-`-- config\
-    `-- legacy\
-        |-- RoomsAppSettings.config
-        |-- ConnectionStrings.config
-        |-- DiagnosticsWeb.config
-        |-- DiagnosticsWindowsService.config
-        |-- MachineKey.config
-        `-- *.lic
+C:\Program Files\3volutions\ROOMS\
+`-- Configuration\
+    |-- RoomsAppSettings.config
+    |-- ConnectionStrings.config
+    |-- DiagnosticsWeb.config
+    |-- DiagnosticsWindowsService.config
+    |-- MachineKey.config
+    `-- *.lic
 ```
 
 Auf dem Linux-Host wird folgende Struktur verwendet:
@@ -123,7 +122,7 @@ services:
       - "8080:80"
     volumes:
       - type: bind
-        source: "C:/ProgramData/3volutions/ROOMS/config/legacy"
+        source: "C:/Program Files/3volutions/ROOMS/Configuration"
         target: "C:/app/config"
         read_only: true
     healthcheck:
@@ -139,7 +138,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: "C:/ProgramData/3volutions/ROOMS/config/legacy"
+        source: "C:/Program Files/3volutions/ROOMS/Configuration"
         target: "C:/app/config"
         read_only: true
     healthcheck:
@@ -321,14 +320,7 @@ server {
 
 Beide DNS-Namen zeigen auf die IP-Adresse des Linux-Hosts. Die beiden Default-Blöcke verwerfen Anforderungen mit einem unbekannten Hostnamen, statt sie versehentlich an ROOMS weiterzuleiten. Das Zertifikat muss beide Namen im Subject Alternative Name enthalten; alternativ verwenden Sie in den beiden anwendungsspezifischen `server`-Blöcken getrennte Zertifikate. Nginx erwartet Zertifikat und privaten Schlüssel im PEM-Format. Eine für IIS vorhandene PFX-Datei kann nicht unverändert eingebunden werden.
 
-Prüfen Sie nach jeder Proxy- oder Zertifikatsänderung zuerst die Konfiguration und laden Sie Nginx anschliessend neu:
-
-```bash
-docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -t
-docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -s reload
-```
-
-Die Erneuerung des Zertifikats erfolgt durch die vorhandene Unternehmens-PKI oder einen ACME-Client auf dem Host. Sorgen Sie dafür, dass die PEM-Dateien atomar ersetzt, die Zugriffsrechte beibehalten und Nginx nach erfolgreichem `nginx -t` neu geladen wird.
+Die Erneuerung des Zertifikats erfolgt durch die vorhandene Unternehmens-PKI oder einen ACME-Client auf dem Host. Sorgen Sie dafür, dass die PEM-Dateien atomar ersetzt und die Zugriffsrechte beibehalten werden. Die Prüfung und das Neuladen des laufenden Proxys sind unter [Stack starten und prüfen](#stack-starten-und-prüfen) beschrieben.
 
 ## Öffentliche URLs abstimmen
 
@@ -398,6 +390,13 @@ docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml ps
 ```bash
 docker compose -f /opt/rooms/compose.linux.yaml up -d
 docker compose -f /opt/rooms/compose.linux.yaml ps
+```
+
+Beim ersten Start lädt Nginx die Konfiguration; bei einem Fehler bleibt der Proxy gestoppt und `docker compose logs reverse-proxy` zeigt die Ursache. Sobald der Proxy läuft, prüfen Sie spätere Proxy- oder Zertifikatsänderungen vor dem Neuladen:
+
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -t
+docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -s reload
 ```
 
 Prüfen Sie danach:
