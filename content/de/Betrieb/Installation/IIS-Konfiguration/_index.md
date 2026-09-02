@@ -56,18 +56,19 @@ Wichtige Hinweise:
 - `AspNetCoreModuleV2` verfügbar
 - `Anonymous Authentication` aktiviert
 
-## Berechtigungen
+## Gemeinsame Identität
 
-Wenn ein Service-Domänen-Account für Application Pools verwendet wird:
+Beide Application Pools werden mit demselben ROOMS-Service-Account betrieben, der auch für die Windows-Dienste `ROOMS` und `RoomsPro Worker` verwendet wird.
 
-1. Den Account auf dem Webserver in die Gruppe **IIS_IUSRS** aufnehmen oder äquivalente Rechte vergeben.
-2. Dem Account Lese- und Ausführungsrechte auf die jeweiligen Installationsverzeichnisse geben.
-3. Falls Konfigurationsdateien oder Logs ausserhalb der Standardpfade liegen, auch dort die nötigen NTFS-Rechte vergeben.
+1. Nehmen Sie den Account auf dem Webserver in die Gruppe **IIS_IUSRS** auf oder vergeben Sie gleichwertige Rechte.
+2. Geben Sie ihm Lese- und Ausführungsrechte auf beide Installationsverzeichnisse.
+3. Geben Sie ihm Lesezugriff auf die verteilten Konfigurations- und Lizenzdateien.
+4. Geben Sie ihm Schreibrechte auf die vorgesehenen Logverzeichnisse.
 
 ## Legacy Website `ROOMS` konfigurieren
 
 1. Im IIS einen eigenen Application Pool für die Legacy Website anlegen, zum Beispiel `ROOMS`.
-2. Als **Identity** den vorgesehenen Service-Account verwenden.
+2. Verwenden Sie als **Identity** den gemeinsamen ROOMS-Service-Account.
 3. Die Website auf das Installationsverzeichnis der Legacy Website zeigen lassen, standardmässig:
 
    ```text
@@ -98,10 +99,18 @@ Hinweis:
    C:\inetpub\wwwroot\API
    ```
 
-3. Für die API einen separaten Application Pool verwenden.
-4. `Anonymous Authentication` aktivieren.
-5. Sicherstellen, dass das ASP.NET Core Hosting Bundle korrekt installiert ist und `AspNetCoreModuleV2` geladen werden kann.
-6. Die API-Konfiguration und Datenbankverbindung vor dem ersten Start prüfen.
+3. Verwenden Sie für die API einen separaten Application Pool.
+4. Verwenden Sie als **Identity** denselben ROOMS-Service-Account wie beim Legacy Application Pool und den Windows-Diensten.
+5. Stellen Sie für den API Application Pool **No Managed Code** ein. Die Anwendung wird über `AspNetCoreModuleV2` gestartet.
+6. Aktivieren Sie `Anonymous Authentication`.
+7. Stellen Sie sicher, dass das ASP.NET Core Hosting Bundle korrekt installiert ist und `AspNetCoreModuleV2` geladen werden kann.
+8. Prüfen Sie vor dem ersten Start, dass folgende Datei vorhanden ist und die richtige Datenbankverbindung enthält:
+
+   ```text
+   C:\inetpub\wwwroot\API\config\appsettings.json
+   ```
+
+9. Lassen Sie den Application Pool bis zum erfolgreichen Abschluss von `db migrate` gestoppt.
 
 ## SSL und Betrieb
 

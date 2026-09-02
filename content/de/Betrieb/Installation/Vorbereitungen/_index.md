@@ -2,114 +2,89 @@
 title: "Systemanforderungen"
 linkTitle: "Systemanforderungen"
 weight: 10
-description: 'Mindestanforderungen und Voraussetzungen für die aktuelle ROOMS-Installation.'
+description: 'Mindestanforderungen und Voraussetzungen für eine aktuelle ROOMS-Neuinstallation'
 ---
-Die aktuelle MSI-Installation kann je nach gewählten Features eine Kombination aus Legacy-Komponenten und RoomsPro-Komponenten enthalten:
+Das aktuelle MSI kann folgende Komponenten installieren:
 
 - Legacy Website `ROOMS`
 - Legacy Windows Service `ROOMS`
 - `RoomsPro API`
 - `RoomsPro Worker`
+- gemeinsame Konfigurationskomponenten
 
-Die Anforderungen hängen deshalb von der gewählten Topologie ab.
+Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demselben dedizierten ROOMS-Service-Account betrieben.
 
-## Mindestanforderungen
-
-### Serverrollen und Laufzeiten
+## Serverrollen und Laufzeiten
 
 {{< bootstrap-table "table table-striped" >}}
-| Rolle | Mindestanforderungen |
+| Komponente | Voraussetzung |
 |---|---|
-| Legacy Website `ROOMS` | Windows Server x64 mit IIS 10 oder neuer, `.NET Framework 4.8` |
-| Legacy Windows Service `ROOMS` | Windows Server x64, `.NET Framework 4.8` |
-| `RoomsPro API` | Windows Server x64 mit IIS 10 oder neuer, ASP.NET Core Hosting Bundle für `.NET 10` (x64) |
-| `RoomsPro Worker` | Windows Server x64, `.NET 10 Runtime` (x64) |
+| Aktuelles ROOMS-MSI | Windows Server x64 und `.NET 10 Runtime` (x64) |
+| Legacy Website `ROOMS` | IIS 10 oder neuer und `.NET Framework 4.8` |
+| Legacy Windows Service `ROOMS` | `.NET Framework 4.8` |
+| `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64) |
+| `RoomsPro Worker` | `.NET 10 Runtime` (x64) |
 {{< /bootstrap-table >}}
 
-### Basis-Hardware
+Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten Feature-Kombination. Installieren Sie das Hosting Bundle vor der IIS-Konfiguration der RoomsPro API.
+
+## Basis-Hardware
 
 {{< bootstrap-table "table table-striped" >}}
 | Bereich | Empfehlung |
 |---|---|
 | Applikations-/Webserver | 4 vCPU, 16 GB RAM |
 | Freier Speicher | mindestens 100 GB für Binärdateien, Logs, temporäre Dateien und Updates |
-| Datenbankserver | getrennt nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
+| Datenbankserver | nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
 {{< /bootstrap-table >}}
 
-### Datenbank
+## Datenbank
 
 - Microsoft SQL Server in einer aktuell unterstützten Version
-- TCP/IP-Konnektivität zwischen allen beteiligten Serverrollen und dem SQL Server
-- Für Updates und Migrationen ein Konto mit `db_owner`
+- SQL Server Management Studio für Restore und Berechtigungsvergabe
+- TCP/IP-Konnektivität zwischen allen ROOMS-Komponenten und SQL Server
+- Aktuelles ROOMS-Baukasten-Backup aus dem Downloadbereich
+- Backup- und Wiederherstellungsstrategie für jede Mandantendatenbank
 
-### quickROOMS / Outlook Add-In
+## Gemeinsamer ROOMS-Service-Account
 
-Für quickROOMS gelten zusätzlich die aktuellen Anforderungen aus [quickROOMS Installation]({{< relref "Betrieb/quickROOMS/Installation/_index.md" >}}):
+Stellen Sie vor der Installation einen dedizierten Domänen-Account bereit, zum Beispiel `Domäne\ROOMSSERVICE`. Derselbe Account wird verwendet für:
 
-- mindestens Outlook API Requirement Set `1.7`
-- Exchange Online oder Exchange on-premises 2016, 2019 beziehungsweise SE
-- Outlook für Windows: Microsoft 365 Subscription oder Outlook 2016, 2019, 2021, 2024
-- Outlook für Mac: Classic UI oder New UI
-- auf Windows-Clients für das Add-In zusätzlich die aktuelle WebView2 Runtime
+- IIS Application Pool der Legacy Website
+- IIS Application Pool der RoomsPro API
+- Windows-Dienst `ROOMS`
+- Windows-Dienst `RoomsPro Worker`
+- integrierte Anmeldung an den ROOMS-Datenbanken
 
-## Voraussetzungen vor der Installation
+Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md" >}}) beschrieben.
 
-### Installationspakete und Topologie
+## Installationspakete und Topologie
 
 - Aktuelles MSI aus dem [Downloadbereich](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/417300536) bereitstellen
-- Benötigte Drittanbieter-Software und Windows-Updates vorab installieren
-- Festlegen, welche Features auf welcher Maschine installiert werden
-- Für den dokumentierten Standardweg mindestens eine installierte `RoomsPro API` einplanen, da dort die aktuelle CLI für `db status` und `db migrate` verfügbar ist
+- Benötigte Windows-Rollen, Laufzeiten und Updates vorab installieren
+- Festlegen, auf welchen Maschinen die Komponenten installiert werden
+- Mindestens eine RoomsPro API einplanen, da sie die Datenbank-CLI bereitstellt
+- DNS-Namen und TLS-Zertifikate für Legacy Website und RoomsPro API festlegen
 
-### Standardpfade des Installers
+## Standardpfade
 
 {{< bootstrap-table "table table-striped" >}}
 | Komponente | Standardpfad |
 |---|---|
-| Konfiguration | `C:\Program Files\3volutions\ROOMS\Configuration` |
+| Zentrale Konfiguration | `C:\Program Files\3volutions\ROOMS\Configuration` |
 | Legacy Windows Service | `C:\Program Files\3volutions\ROOMS\WindowsService` |
-| `RoomsPro Worker` | `C:\Program Files\3volutions\ROOMS\Worker` |
-| Legacy Website `ROOMS` | `C:\inetpub\wwwroot\ROOMS` |
-| `RoomsPro API` | `C:\inetpub\wwwroot\API` |
+| RoomsPro Worker | `C:\Program Files\3volutions\ROOMS\Worker` |
+| Legacy Website | `C:\inetpub\wwwroot\ROOMS` |
+| RoomsPro API | `C:\inetpub\wwwroot\API` |
 {{< /bootstrap-table >}}
 
-Wenn im Setup andere Verzeichnisse gewählt werden, sind die nachfolgenden Beispiele entsprechend anzupassen.
+Wenn andere Verzeichnisse gewählt werden, müssen die nachfolgenden Befehle, IIS-Einstellungen und die manuelle API-Erweiterung der `Config.bat` entsprechend angepasst werden.
 
-### Service User
+## Netzwerk und externe Systeme
 
-Wir empfehlen einen dedizierten Service-Domänen-Account, zum Beispiel `ROOMSSERVICE`, mit folgenden Rechten:
+- SQL Server muss vom Applikationsserver erreichbar sein.
+- Legacy Website und RoomsPro API benötigen die vorgesehenen DNS- und HTTPS-Bindings.
+- Je nach Konfiguration werden zusätzlich Verbindungen zu LDAP, Exchange, Microsoft Graph oder weiteren Drittsystemen benötigt.
+- Firewall- und Proxyregeln müssen für den gemeinsamen Service-Account und die beteiligten Serverrollen vorbereitet sein.
 
-- Lese-/Schreibrechte auf die ROOMS-Datenbanken, jedoch nicht dauerhaft `db_owner`
-- Berechtigung zum Ausführen von IIS Application Pools
-- Berechtigung zum Ausführen der Windows-Dienste `ROOMS` und `RoomsPro Worker`
-- Erforderliche Zugriffe auf Drittanbieter-Systeme wie LDAP, Exchange oder Graph-Endpunkte
-
-Hinweis:
-
-- Derselbe Service-Account wird im aktuellen MSI für den Legacy Windows Service und den `RoomsPro Worker` verwendet.
-
-### Applications Admin
-
-Für Installation, Updates und Migrationen wird zusätzlich ein Administrationskonto benötigt mit:
-
-- `db_owner` auf den zu aktualisierenden Datenbanken
-- lokalen Administratorrechten auf den beteiligten Windows-Servern
-- Berechtigung zum Administrieren von IIS, Diensten, Firewall-Regeln und Installationsverzeichnissen
-
-### Netzwerk, URLs und DNS
-
-- Kommunikation zwischen allen beteiligten Maschinen sicherstellen, insbesondere SQL Server, IIS, Worker, Exchange, LDAP und gegebenenfalls IDP
-- Öffentliche oder interne DNS-Namen für die benötigten Web-Endpunkte definieren
-- Je nach Umgebung mindestens URLs für folgende Komponenten festlegen:
-  - Legacy Website `ROOMS`
-  - `RoomsPro API`
-  - optional IDP
-  - optional quickROOMS Wizard / Outlook Add-In
-  - optional Test- oder Staging-Umgebung
-
-### Backup und Dokumentation
-
-- Vor Updates immer Dateisystem und Datenbanken sichern
-- Gewählte Feature-Kombination, Pfade, Service-Accounts, DNS-Namen und Verbindungszeichenfolgen dokumentieren
-
-Es ist weiterhin möglich, Berechtigungen statt über einen einzelnen Service-Domänen-Account über Rollen oder Gruppen zu vergeben. Für die Standarddokumentation wird jedoch weiterhin von einem dedizierten Service-Account ausgegangen.
+Dokumentieren Sie vor Beginn Service-Account, Serverrollen, Pfade, DNS-Namen, Datenbanknamen und Verbindungszeichenfolgen.

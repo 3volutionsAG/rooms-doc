@@ -29,10 +29,16 @@ Ist der LicenseManager noch nicht installiert, kann er im [Downloadbereich](http
 4. **Herunterladen der Lizenzen**:
    1. In der Liste die herunterzuladenden Lizenzen **selektieren**,
    2. das **Zielverzeichnis** angeben
-   3. die Lizenzen müssen im **Configuration** Verzeichnis des bei der Installation angegebenen Verzeichnispfads hinterlegt werden
+   3. die Lizenzen im zentralen **Configuration**-Verzeichnis ablegen, standardmässig:
+
+      ```text
+      C:\Program Files\3volutions\ROOMS\Configuration
+      ```
+
    4. auf **Download** klicken.
 
    {{< imgproc Lizenz Resize "640x" >}} {{< /imgproc >}}
 
-Nach dem Download der Lizenzen muss im Zielverzeichnis **Config.bat** ausgeführt werden.
-Bei einem Update oder einer Erneuerung der Lizenzen sollten die _alten Lizenzen vor dem Ausführen der Config.bat aus den Zielverzeichnissen gelöscht_ werden.
+Entfernen Sie bei einer Lizenzerneuerung nicht mehr ausgestellte `.lic`-Dateien aus dem zentralen Configuration-Verzeichnis. Führen Sie danach die gemäss [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) angepasste `Config.bat` als Administrator aus. Sie löscht die bisherigen Lizenzdateien in den Zielverzeichnissen und verteilt den aktuellen zentralen Bestand an die installierten Legacy-Komponenten.
+
+Prüfen Sie anschliessend, dass die erwarteten `.lic`-Dateien in den Zielverzeichnissen vorhanden sind, bevor Sie Websites und Dienste starten.
