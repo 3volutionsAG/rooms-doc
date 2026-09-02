@@ -24,8 +24,9 @@ Bei Docker Compose gilt dasselbe Rollenmodell für die gemeinsame Datenbankident
 
 1. Öffnen Sie in SQL Server Management Studio unter **Security** > **Logins** die gemeinsame Datenbankidentität oder legen Sie diese neu an.
 2. Verwenden Sie beim Windows-Standardweg als Login-Name den vollständigen Wert `Domäne\Benutzer`.
-3. Ordnen Sie den Login jeder ROOMS-Mandantendatenbank zu.
-4. Weisen Sie ihm in jeder Datenbank die Rollen `db_datareader` und `db_datawriter` zu.
+3. Belassen Sie die **Default language** des Logins auf `<default>`. Eine abweichende login-spezifische Sprache kann die SQL-Konvertierung von Datumswerten verändern.
+4. Ordnen Sie den Login jeder ROOMS-Mandantendatenbank zu.
+5. Weisen Sie ihm in jeder Datenbank die Rollen `db_datareader` und `db_datawriter` zu.
 
 Die Rolle `public` muss nicht separat vergeben werden; jeder Datenbankbenutzer gehört ihr automatisch an.
 
