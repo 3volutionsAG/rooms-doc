@@ -4,7 +4,7 @@ linkTitle: "Konfigurationsdateien"
 weight: 50
 description: 'Zentrale ROOMS-Konfiguration mit Config.bat an Legacy-Komponenten, API und Worker verteilen'
 ---
-Das MSI installiert die zentrale Konfigurationsinfrastruktur standardmäßig unter:
+Das MSI installiert die zentrale Konfigurationsinfrastruktur standardmässig unter:
 
 ```text
 C:\Program Files\3volutions\ROOMS\Configuration
@@ -89,7 +89,7 @@ enthält die Konfiguration für API und Worker. Beide Komponenten müssen insbes
 }
 ```
 
-Der Konfigurationsschlüssel heißt `IdentityServer:RoomsDatabase`. Bei Konfiguration über Umgebungsvariablen entspricht dies `IdentityServer__RoomsDatabase`. Bewahren Sie Zugangsdaten nicht in Beispielen, Skripten oder ungeschützten Dateien auf.
+Der Konfigurationsschlüssel heisst `IdentityServer:RoomsDatabase`. Bei Konfiguration über Umgebungsvariablen entspricht dies `IdentityServer__RoomsDatabase`. Bewahren Sie Zugangsdaten nicht in Beispielen, Skripten oder ungeschützten Dateien auf.
 
 ## Legacy-Konfiguration
 

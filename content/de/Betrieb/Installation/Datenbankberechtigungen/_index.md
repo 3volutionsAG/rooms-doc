@@ -49,7 +49,7 @@ Bei der Windows-Installation benötigt der gemeinsame Service-Account zusätzlic
 
 ## Rechte nach der Migration reduzieren
 
-Nach erfolgreichem `db migrate` und abschließendem `db status`:
+Nach erfolgreichem `db migrate` und abschliessendem `db status`:
 
 1. Entfernen Sie die gemeinsame Datenbankidentität in jeder Mandantendatenbank aus `db_owner`.
 2. Belassen Sie `db_datareader` und `db_datawriter`.

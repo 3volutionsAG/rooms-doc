@@ -38,7 +38,7 @@ Das MSI kann folgende Features installieren:
 8. Deaktivieren Sie **Service nach der Installation automatisch starten**. Datenbank und Konfiguration sind zu diesem Zeitpunkt noch nicht vollständig geprüft.
 9. Starten Sie die Installation und prüfen Sie deren erfolgreichen Abschluss.
 
-Konfigurieren Sie denselben Account anschließend auch als Identität beider IIS Application Pools.
+Konfigurieren Sie denselben Account anschliessend auch als Identität beider IIS Application Pools.
 
 ## Nach der Installation
 

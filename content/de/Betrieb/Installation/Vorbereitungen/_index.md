@@ -35,7 +35,7 @@ Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten
 |---|---|
 | Applikations-/Webserver | 4 vCPU, 16 GB RAM |
 | Freier Speicher | mindestens 100 GB für Binärdateien, Logs, temporäre Dateien und Updates |
-| Datenbankserver | nach Mandantengröße, Datenvolumen und Backup-Strategie dimensionieren |
+| Datenbankserver | nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
 {{< /bootstrap-table >}}
 
 ## Datenbank

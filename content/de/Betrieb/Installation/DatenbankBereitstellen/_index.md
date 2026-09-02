@@ -36,7 +36,7 @@ Eine leere Datenbank ist kein unterstützter Standardweg für eine produktive Ne
 Das Baukasten-Backup enthält eine dafür vorgesehene, bereits berechtigte Administrator-Person mit einem vorbereiteten Logon. Durch die folgende Anpassung wird der Windows-Account dieser Person zugeordnet; es werden dabei keine Administratorrechte neu erzeugt.
 
 1. Öffnen Sie in der wiederhergestellten Datenbank die Tabelle `dbo.Logon`.
-2. Suchen Sie ausschließlich den für die initiale Administration vorgesehenen Baukasten-Logon.
+2. Suchen Sie ausschliesslich den für die initiale Administration vorgesehenen Baukasten-Logon.
 3. Ersetzen Sie dessen Feld `Name` durch den persönlichen Administrator-Account im Format `Domäne\Benutzer`.
 4. Ändern Sie weder `PersonId` noch `LogontypId` oder andere Logon-Zeilen.
 5. Wiederholen Sie die Zuordnung für jede Mandantendatenbank.
@@ -47,4 +47,4 @@ Falls der vorgesehene Baukasten-Logon nicht eindeutig identifiziert werden kann,
 
 1. Vergeben Sie die [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md" >}}) an die gemeinsame Datenbankidentität. Bei Docker Compose gelten ergänzend die [Hinweise zur gemeinsamen Anwendungsidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
 2. Installieren und konfigurieren Sie die ROOMS-Komponenten.
-3. Führen Sie anschließend die [Datenbankmigrationen]({{< relref "Betrieb/Installation/Datenbankmigrationen/_index.md" >}}) aus.
+3. Führen Sie anschliessend die [Datenbankmigrationen]({{< relref "Betrieb/Installation/Datenbankmigrationen/_index.md" >}}) aus.

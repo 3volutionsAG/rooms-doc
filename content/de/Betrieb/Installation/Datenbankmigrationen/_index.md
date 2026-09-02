@@ -41,7 +41,7 @@ Nach der Wiederherstellung der Baukasten-Datenbank wird ihr Schema über die CLI
 .\RoomsPro.Web.exe db migrate
 ```
 
-Standardmäßig gilt für einzelne SQL-Befehle ein Timeout von `600` Sekunden. Bei großen Datenbanken kann der Wert angepasst werden:
+Standardmässig gilt für einzelne SQL-Befehle ein Timeout von `600` Sekunden. Bei grossen Datenbanken kann der Wert angepasst werden:
 
 ```powershell
 .\RoomsPro.Web.exe db migrate --command-timeout 1200
@@ -55,7 +55,7 @@ Der Befehl aktualisiert die drei Datenbankkontexte in zeitlicher Reihenfolge:
 
 Zusätzlich werden erforderliche Kompatibilitätsanpassungen im selben Ablauf ausgeführt.
 
-## Status abschließend prüfen
+## Status abschliessend prüfen
 
 ```powershell
 .\RoomsPro.Web.exe db status
@@ -63,7 +63,7 @@ Zusätzlich werden erforderliche Kompatibilitätsanpassungen im selben Ablauf au
 
 Die Migration ist erst abgeschlossen, wenn keine offenen Migrationen mehr ausgegeben werden und der Befehl Exitcode `0` zurückgibt.
 
-Entfernen Sie danach gemäß [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md#rechte-nach-der-migration-reduzieren" >}}) die temporäre Mitgliedschaft in `db_owner`. Starten Sie Websites und Dienste erst anschließend.
+Entfernen Sie danach gemäss [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md#rechte-nach-der-migration-reduzieren" >}}) die temporäre Mitgliedschaft in `db_owner`. Starten Sie Websites und Dienste erst anschliessend.
 
 ## Mehrere Mandantendatenbanken
 

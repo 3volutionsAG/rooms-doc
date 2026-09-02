@@ -29,7 +29,7 @@ Ist der LicenseManager noch nicht installiert, kann er im [Downloadbereich](http
 4. **Herunterladen der Lizenzen**:
    1. In der Liste die herunterzuladenden Lizenzen **selektieren**,
    2. das **Zielverzeichnis** angeben
-   3. die Lizenzen im zentralen **Configuration**-Verzeichnis ablegen, standardmäßig:
+   3. die Lizenzen im zentralen **Configuration**-Verzeichnis ablegen, standardmässig:
 
       ```text
       C:\Program Files\3volutions\ROOMS\Configuration
@@ -39,6 +39,6 @@ Ist der LicenseManager noch nicht installiert, kann er im [Downloadbereich](http
 
    {{< imgproc Lizenz Resize "640x" >}} {{< /imgproc >}}
 
-Entfernen Sie bei einer Lizenzerneuerung nicht mehr ausgestellte `.lic`-Dateien aus dem zentralen Configuration-Verzeichnis. Führen Sie danach die gemäß [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) angepasste `Config.bat` als Administrator aus. Sie löscht die bisherigen Lizenzdateien in den Zielverzeichnissen und verteilt den aktuellen zentralen Bestand an die installierten Legacy-Komponenten.
+Entfernen Sie bei einer Lizenzerneuerung nicht mehr ausgestellte `.lic`-Dateien aus dem zentralen Configuration-Verzeichnis. Führen Sie danach die gemäss [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) angepasste `Config.bat` als Administrator aus. Sie löscht die bisherigen Lizenzdateien in den Zielverzeichnissen und verteilt den aktuellen zentralen Bestand an die installierten Legacy-Komponenten.
 
-Prüfen Sie anschließend, dass die erwarteten `.lic`-Dateien in den Zielverzeichnissen vorhanden sind, bevor Sie Websites und Dienste starten.
+Prüfen Sie anschliessend, dass die erwarteten `.lic`-Dateien in den Zielverzeichnissen vorhanden sind, bevor Sie Websites und Dienste starten.

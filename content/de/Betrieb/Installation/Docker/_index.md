@@ -451,7 +451,7 @@ docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml stop room
 docker compose -f /opt/rooms/compose.linux.yaml stop reverse-proxy rooms-api rooms-worker
 ```
 
-Erstellen Sie nun die Datenbanksicherung, vergeben Sie vorübergehend `db_owner` und führen Sie Statusprüfung und Migration wie unter [Datenbankmigrationen](#datenbankmigrationen) beschrieben aus. Entfernen Sie `db_owner` erst nach einer abschliessenden Statusprüfung mit Exitcode `0`. Starten Sie anschließend beide Stacks mit den unter [Stack starten und prüfen](#stack-starten-und-prüfen) angegebenen `up -d`-Befehlen und wiederholen Sie die dortigen Prüfungen.
+Erstellen Sie nun die Datenbanksicherung, vergeben Sie vorübergehend `db_owner` und führen Sie Statusprüfung und Migration wie unter [Datenbankmigrationen](#datenbankmigrationen) beschrieben aus. Entfernen Sie `db_owner` erst nach einer abschliessenden Statusprüfung mit Exitcode `0`. Starten Sie anschliessend beide Stacks mit den unter [Stack starten und prüfen](#stack-starten-und-prüfen) angegebenen `up -d`-Befehlen und wiederholen Sie die dortigen Prüfungen.
 
 ## Kubernetes
 
