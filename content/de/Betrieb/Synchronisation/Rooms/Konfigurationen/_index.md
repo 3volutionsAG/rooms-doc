@@ -39,14 +39,14 @@ Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **de
   "CalendarSync": {
     "Graph": {
       "AppId": "<entra-client-id>",
-      "TenantId": "a7b8319c-49ca-4f85-849e-2e7c40c7080a",
+      "TenantId": "<entra-tenant-guid>",
       "AuthMode": "AppOnly",
       "ClientState": "<random-shared-secret-for-graph-webhooks>",
       "CallbackUrl": "https://idp.example.com",
       "ClientSecret": "<client-secret>",
       "DomainOverrides": {
         "subsidiary.onmicrosoft.com": {
-          "TenantId": "b8c942ad-50db-4096-950f-3f8d51d8191b",
+          "TenantId": "<second-entra-tenant-guid>",
           "AppId": "<second-entra-client-id>",
           "ClientSecret": "<second-client-secret>"
         }
@@ -133,8 +133,10 @@ Die Overrides gelten nur für app-basierte Zugriffe. Dazu gehören alle Zugriffe
 
 Stellen Sie die vollständige Graph-Konfiguration in **API und Worker** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
 
+In Kubernetes kann dieser Schlüssel wegen der Punkte in der Domäne nicht als Name unter `env` verwendet werden. Stellen Sie die Domain-Overrides dort über eine eingebundene, dateibasierte .NET-Konfigurationsquelle bereit.
+
 {{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
-Die Konfigurationsänderung migriert bestehende Microsoft-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Stellen Sie die unterstützenden API- und Worker-Versionen bereit, bevor Sie `DomainOverrides` aktivieren.
+Die Konfigurationsänderung migriert bestehende Graph-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Stellen Sie die unterstützenden API- und Worker-Versionen bereit, bevor Sie `DomainOverrides` aktivieren.
 {{% /alert %}}
 
 ### Hinweise zur EWS-Konfiguration

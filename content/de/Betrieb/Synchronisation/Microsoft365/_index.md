@@ -171,7 +171,7 @@ Beachten Sie dabei:
 - dieselbe Konfiguration muss für API und Worker bereitgestellt werden
 
 {{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
-`DomainOverrides` migrieren bestehende Microsoft-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Aktivieren Sie die Overrides erst, nachdem passende API- und Worker-Versionen bereitgestellt wurden.
+`DomainOverrides` migrieren bestehende Graph-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Aktivieren Sie die Overrides erst, nachdem passende API- und Worker-Versionen bereitgestellt wurden.
 {{% /alert %}}
 
 Ein vollständiges JSON-Beispiel und das Schema für Umgebungsvariablen finden Sie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
