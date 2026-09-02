@@ -140,7 +140,4 @@ Verwenden Sie für den dokumentierten Windows-Standardweg die integrierte Authen
    Get-FileHash 'C:\inetpub\wwwroot\API\config\appsettings.json'
    ```
 
-5. Führen Sie danach die [Datenbankmigrationen]({{< relref "Betrieb/Installation/Datenbankmigrationen/_index.md" >}}) aus.
-6. Starten Sie anschließend beide Windows-Dienste neu und recyceln Sie die Application Pools von Legacy Website und RoomsPro API.
-
-Bei einer Neuinstallation bleiben Websites und Dienste bis zum erfolgreichen Abschluss der Migration gestoppt.
+Die Konfiguration ist damit verteilt. Fahren Sie im [Installationsablauf]({{< relref "Betrieb/Installation/_index.md" >}}) mit der IIS-Konfiguration fort. Bei einer Neuinstallation bleiben Websites und Dienste bis zum erfolgreichen Abschluss der Migration gestoppt.
