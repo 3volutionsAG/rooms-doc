@@ -1,7 +1,7 @@
 ---
 title: "Docker Compose unter Windows"
 linkTitle: "Docker"
-weight: 5
+weight: 90
 description: 'ROOMS als Neuinstallation mit Docker Compose und einem zentralen Reverse Proxy bereitstellen'
 aliases:
   - /de/betrieb/docker/

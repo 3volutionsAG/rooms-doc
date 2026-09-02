@@ -12,7 +12,9 @@ ROOMS kann als klassische Windows-Installation oder containerisiert mit Docker C
 - **Docker Compose bei vorhandener Container-Infrastruktur:** Private Images aus `ghcr.io` stellen Legacy Website, Legacy Service, RoomsPro API und RoomsPro Worker bereit. Nginx terminiert HTTPS und leitet zwei öffentliche Hostnamen an die passenden Container weiter. Für 4.30.x sind zwei Container-Hosts oder VMs erforderlich. Folgen Sie der vollständigen Anleitung [Docker Compose unter Windows]({{< relref "Betrieb/Installation/Docker/_index.md" >}}).
 - **Kubernetes:** Für grössere Installationen gelten derselbe Baukasten- und Migrationsablauf sowie dieselbe Trennung auf Windows- und Linux-Nodes. Hinweise finden Sie am Ende der [Docker-Anleitung]({{< relref "Betrieb/Installation/Docker/_index.md#kubernetes" >}}).
 
+{{% alert title="Ausblick auf ROOMS 4.32" color="info" %}}
 Eine vollständig unter Linux betreibbare Container-Auslieferung ist voraussichtlich ab ROOMS 4.32.0 vorgesehen. Solange diese Version nicht freigegeben und ihre Images nicht geprüft sind, gilt weiterhin die in der Docker-Anleitung beschriebene Trennung.
+{{% /alert %}}
 
 Verwenden Sie innerhalb einer Umgebung für alle Komponenten dieselbe ROOMS-Version. Datenbank, Konfiguration, Lizenzen und öffentliche URLs müssen auf dieselbe Umgebung abgestimmt sein.
 
