@@ -1,134 +1,420 @@
 ---
-title: "Docker"
+title: "Docker Compose unter Windows"
 linkTitle: "Docker"
-weight: 45
-description: 'ROOMS mit Docker oder Kubernetes bereitstellen und aktualisieren'
+weight: 5
+description: 'ROOMS als Neuinstallation mit Docker Compose und einem zentralen Reverse Proxy bereitstellen'
 aliases:
   - /de/betrieb/docker/
   - /betrieb/docker/
 ---
 
-ROOMS kann alternativ zur Windows-Installation mit Docker oder Kubernetes betrieben werden. Die Images werden als private Packages über die GitHub Container Registry `ghcr.io` bereitgestellt. Der Zugang muss bei 3volutions angefordert werden.
+Beim hier dokumentierten Stand 4.30.8 ist die containerisierte Bereitstellung eine gute Wahl, wenn je ein geeigneter Windows- und Linux-Container-Host bereits zur Verfügung steht. Docker Compose hält Images, Mounts, Ports und Neustartverhalten reproduzierbar fest; ein vorgeschalteter Nginx-Proxy übernimmt die Aufgaben, die bei einer klassischen Installation die IIS-Bindings erfüllen: DNS-Namen, TLS-Zertifikate und Weiterleitungs-Header. Für eine Neuinstallation auf einem einzelnen Windows-Server ist derzeit die [MSI-/IIS-Installation]({{< relref "Betrieb/Installation/InstallationROOMS/_index.md" >}}) einfacher.
+
+{{% alert title="Wichtig: zwei Container-Hosts" color="warning" %}}
+ROOMS besteht aus Windows- und Linux-Images. Ein einzelner Docker-Daemon kann diese Images nicht gemeinsam ausführen:
+
+- `rooms-web` und `rooms-service` sind Windows-Container auf Basis von Windows Server Core LTSC 2022.
+- `rooms-api`, `rooms-worker` und der Nginx-Proxy sind Linux-Container.
+
+Planen Sie deshalb zwei Hosts oder VMs ein. Das Umschalten von Docker Desktop zwischen Linux- und Windows-Containern ist kein Produktionsbetrieb für einen gleichzeitig laufenden ROOMS-Stack. Docker Desktop wird zudem nicht auf Windows Server unterstützt. Für einen einzelnen Windows-Server verwenden Sie stattdessen die [MSI-/IIS-Installation]({{< relref "Betrieb/Installation/InstallationROOMS/_index.md" >}}).
+{{% /alert %}}
+
+{{% alert title="Ausblick auf ROOMS 4.32" color="info" %}}
+Eine vollständig unter Linux betreibbare Container-Auslieferung ist voraussichtlich ab ROOMS 4.32.0 vorgesehen. Sie ist nicht Bestandteil von 4.30.8. Verwenden Sie die vereinfachte Ein-Host-Topologie erst, wenn eine entsprechende Version freigegeben wurde und die Release Notes die Linux-Images für alle Komponenten bestätigen. Bis dahin gilt die Zwei-Host-Topologie dieser Seite.
+{{% /alert %}}
+
+## Zielarchitektur
+
+```text
+Clients
+   |
+   | HTTPS 443
+   v
+Nginx-Reverse-Proxy auf dem Linux-Host
+   |-- rooms.example.ch      --> Windows-Host:8080 --> rooms-web:80
+   `-- api.rooms.example.ch  --> rooms-api:80
+
+Linux-Host:   rooms-api, rooms-worker, Nginx
+Windows-Host: rooms-web, rooms-service
+Beide Hosts:  Zugriff auf dieselbe SQL-Server-Umgebung
+```
+
+Nur Nginx wird nach aussen veröffentlicht. Der Port `8080` des Windows-Hosts ist ausschliesslich vom Linux-Host erreichbar. API, Worker, Legacy Service und SQL Server erhalten keinen öffentlichen Ingress.
 
 ## Verfügbare Images
 
 {{< bootstrap-table "table table-striped" >}}
-| Komponente | Image | Aufgabe | Netzwerk |
-|---|---|---|---|
-| Legacy Website | `ghcr.io/3volutionsag/rooms-web:<Version>-windowsservercore-ltsc2022` | Klassische ROOMS-Webanwendung | Über den bestehenden Web-Endpunkt veröffentlichen |
-| Legacy Windows Service | `ghcr.io/3volutionsag/rooms-service:<Version>-windowsservercore-ltsc2022` | Legacy-Hintergrunddienste | Kein öffentlicher Ingress erforderlich |
-| RoomsPro API | `ghcr.io/3volutionsag/rooms-api:<Version>` | OpenID Connect, RoomsPro API und Datenbank-CLI | Port `80`, Health Check `/healthz` |
-| RoomsPro Worker | `ghcr.io/3volutionsag/rooms-worker:<Version>` | Hintergrundaufgaben über TickerQ | Port `8081` nur für den Health Check `/healthz`, kein öffentlicher Ingress erforderlich |
+| Komponente | Image | Interner Endpunkt |
+|---|---|---|
+| Legacy Website | `ghcr.io/3volutionsag/rooms-web:<Version>-windowsservercore-ltsc2022` | HTTP `80`, Health Check `/healthz` |
+| Legacy Windows Service | `ghcr.io/3volutionsag/rooms-service:<Version>-windowsservercore-ltsc2022` | Health Check `http://localhost:9999/healthz` |
+| RoomsPro API | `ghcr.io/3volutionsag/rooms-api:<Version>` | HTTP `80`, Health Check `/healthz` |
+| RoomsPro Worker | `ghcr.io/3volutionsag/rooms-worker:<Version>` | Health Check `http://localhost:8081/healthz` |
 {{< /bootstrap-table >}}
 
-Verwenden Sie für alle Komponenten dieselbe ROOMS-Version. Die Windows-Images enthalten zusätzlich das Betriebssystem-Suffix im Tag. `rooms-web` und `rooms-service` benötigen Windows-Container-Hosts beziehungsweise Kubernetes-Nodes, die mit Windows Server Core LTSC 2022 kompatibel sind. `rooms-api` und `rooms-worker` sind Linux-Container.
+Verwenden Sie für alle vier ROOMS-Images exakt dieselbe Version. Der Zugang zu den privaten Packages in `ghcr.io` muss bei 3volutions angefordert und auf beiden Hosts mit `docker login ghcr.io` eingerichtet werden.
 
-Beispiel für Version 4.30.8:
+## Voraussetzungen
 
-```text
-ghcr.io/3volutionsag/rooms-web:4.30.8-windowsservercore-ltsc2022
-ghcr.io/3volutionsag/rooms-service:4.30.8-windowsservercore-ltsc2022
-ghcr.io/3volutionsag/rooms-api:4.30.8
-ghcr.io/3volutionsag/rooms-worker:4.30.8
-```
+- Windows Server 2022 mit einer unterstützten Windows-Container-Runtime für die LTSC-2022-Images
+- separater Linux-Host oder eine Linux-VM mit Docker Engine und Docker Compose
+- Docker Compose auf dem Windows-Host; beachten Sie, dass eine manuell installierte Docker Engine für Windows Server Compose nicht mitliefert
+- DNS-Namen für Legacy Website und RoomsPro API, beispielsweise `rooms.example.ch` und `api.rooms.example.ch`
+- ein Zertifikat mit beiden DNS-Namen oder je ein Zertifikat pro Name, jeweils im PEM-Format für Nginx
+- Netzwerkzugriff beider Hosts auf SQL Server sowie vom Linux-Host auf Port `8080` des Windows-Hosts
+- aktuelle [Baukasten-Datenbank]({{< relref "Betrieb/Installation/DatenbankBereitstellen/_index.md" >}}) und eine Sicherung unmittelbar vor der Migration
 
-## Änderung ab Version 4.30
+Die Installation von Docker Engine und Compose ist plattformspezifisch. Beachten Sie die offiziellen Hinweise zu [Docker auf Windows Server](https://docs.docker.com/engine/install/binaries/#install-server-and-client-binaries-on-windows) und zur [Installation von Docker Compose](https://docs.docker.com/compose/install/).
 
-Mit Version 4.30 wurde das frühere Image
+Die Beispiele verwenden die Compose-V2-Syntax `docker compose`. Wird Compose auf Windows Server als eigenständige V2-Binärdatei installiert, lautet derselbe Befehl je nach Installation `docker-compose`.
 
-```text
-ghcr.io/3volutionsag/rooms-idp
-```
+## Verzeichnisstruktur vorbereiten
 
-in folgendes Image umbenannt:
-
-```text
-ghcr.io/3volutionsag/rooms-api
-```
-
-`rooms-api` übernimmt weiterhin die OpenID-Connect- und API-Aufgaben des bisherigen `rooms-idp`. Zusätzlich ist `rooms-worker` als eigener Hintergrundprozess erforderlich.
-
-Die Umstellung ist deshalb kein reiner Austausch des Imagenamens. Bei einem Update auf 4.30 oder neuer müssen Sie:
-
-1. die Image-Referenz von `rooms-idp` auf `rooms-api` ändern
-2. `rooms-worker` als zusätzliches Deployment einrichten
-3. den veralteten `pushSubscriberService` aus der Legacy-Konfiguration entfernen
-4. die Datenbankmigrationen mit `rooms-api` ausführen
-
-## DNS und Ingress
-
-Der vorhandene DNS-Name des bisherigen IDP kann bestehen bleiben. Der Ingress beziehungsweise Reverse Proxy muss danach auf `rooms-api` Port `80` zeigen. Das ist insbesondere sinnvoll, wenn der bestehende Name bereits in den ROOMS- und OpenID-Connect-Einstellungen verwendet wird.
-
-Wenn Sie den öffentlichen Hostnamen ändern, müssen auch die konfigurierten öffentlichen URLs, OpenID-Connect-Einstellungen und Redirect-URLs angepasst werden.
-
-`rooms-worker` stellt keine öffentliche API bereit und benötigt keinen öffentlichen Ingress. Für interne Liveness- oder Readiness-Prüfungen steht auf Port `8081` der Endpunkt `/healthz` zur Verfügung.
-
-## Konfiguration und Verbindungen
-
-`rooms-api` und `rooms-worker` lesen ihre Konfiguration aus:
+Legen Sie auf dem Windows-Host folgendes Verzeichnis an:
 
 ```text
-/app/config/appsettings.json
+C:\ProgramData\3volutions\ROOMS\
+`-- config\
+    `-- legacy\
+        |-- RoomsAppSettings.config
+        |-- ConnectionStrings.config
+        |-- DiagnosticsWeb.config
+        |-- DiagnosticsWindowsService.config
+        |-- MachineKey.config
+        `-- *.lic
 ```
 
-Für eine konsistente Konfiguration kann bei beiden Containern dieselbe `appsettings.json` schreibgeschützt eingebunden werden. Insbesondere benötigen beide Zugriff auf dieselbe ROOMS-Datenbank. Zugangsdaten gehören in Secrets beziehungsweise in die externe Konfiguration und nicht in das Image.
+Auf dem Linux-Host wird folgende Struktur verwendet:
 
-Die API legt Hintergrundaufgaben in der gemeinsamen Datenbank ab. Der Worker verarbeitet diese Aufgaben direkt aus der Datenbank. Zwischen `rooms-api` und `rooms-worker` ist dafür keine direkte HTTP-Verbindung erforderlich.
+```text
+/opt/rooms/
+|-- compose.linux.yaml
+|-- config/
+|   `-- appsettings.json
+`-- proxy/
+    |-- conf.d/
+    |   `-- rooms.conf
+    `-- certs/
+        |-- rooms.fullchain.pem
+        `-- rooms.key
+```
+
+Schützen Sie die Konfigurationsdateien und insbesondere `rooms.key` mit restriktiven Dateirechten. Konfiguration und Secrets werden nur schreibgeschützt in die Container eingebunden und gehören nicht in ein eigenes Image oder in die Versionsverwaltung.
+
+### Gemeinsame Datenbankidentität
+
+Verwenden Sie in `ConnectionStrings.config` und `appsettings.json` dieselbe Datenbankidentität. Damit arbeiten Legacy Website, Legacy Service, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf jeder Mandantendatenbank `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
+
+Der Windows-Service-Account einer MSI-Installation lässt sich nicht unverändert auf Linux- und Windows-Containerprozesse übertragen. Verwenden Sie für den Compose-Standard deshalb eine gemeinsame Anwendungsidentität in den Datenbankverbindungen. Wenn zwingend integrierte Windows-Authentifizierung oder der Zugriff auf weitere AD-Ressourcen erforderlich ist, müssen die Windows-Container mit gMSA/Credential Spec und die Linux-Container mit einer passenden Kerberos-Konfiguration betrieben werden. Diese kundenspezifische Variante sollte mit 3volutions geplant werden.
+
+## Windows-Container mit Compose
+
+Speichern Sie auf dem Windows-Host diese Datei als `C:\ProgramData\3volutions\ROOMS\compose.windows.yaml` und ersetzen Sie `<Version>`:
+
+```yaml
+name: rooms
+
+services:
+  rooms-web:
+    image: "ghcr.io/3volutionsag/rooms-web:<Version>-windowsservercore-ltsc2022"
+    platform: windows/amd64
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - type: bind
+        source: "C:/ProgramData/3volutions/ROOMS/config/legacy"
+        target: "C:/app/config"
+        read_only: true
+    healthcheck:
+      test: ["CMD", "powershell", "-Command", "try { if ((Invoke-WebRequest -UseBasicParsing http://localhost/healthz).StatusCode -eq 200) { exit 0 } } catch {}; exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  rooms-service:
+    image: "ghcr.io/3volutionsag/rooms-service:<Version>-windowsservercore-ltsc2022"
+    platform: windows/amd64
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "C:/ProgramData/3volutions/ROOMS/config/legacy"
+        target: "C:/app/config"
+        read_only: true
+    healthcheck:
+      test: ["CMD", "powershell", "-Command", "try { if ((Invoke-WebRequest -UseBasicParsing http://localhost:9999/healthz).StatusCode -eq 200) { exit 0 } } catch {}; exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+```
+
+Die Images lesen alle Legacy-Dateien aus `C:\app\config`. Die IIS-Website im `rooms-web`-Container lauscht intern ohne kundenspezifisches Zertifikat auf Port `80`; TLS und Hostnamen werden später zentral durch Nginx behandelt.
+
+Prüfen Sie die Datei, laden Sie die Images, starten Sie die Komponenten vor der Migration aber noch nicht dauerhaft:
+
+```powershell
+docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml config
+docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml pull
+```
+
+## Linux-Container und Reverse Proxy mit Compose
+
+Speichern Sie auf dem Linux-Host folgende Datei als `/opt/rooms/compose.linux.yaml`. Ersetzen Sie `<Version>` und `<Nginx-Version>` durch freigegebene, feste Versionen:
+
+```yaml
+name: rooms
+
+services:
+  rooms-api:
+    image: "ghcr.io/3volutionsag/rooms-api:<Version>"
+    platform: linux/amd64
+    restart: unless-stopped
+    expose:
+      - "80"
+    volumes:
+      - type: bind
+        source: ./config/appsettings.json
+        target: /app/config/appsettings.json
+        read_only: true
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  rooms-worker:
+    image: "ghcr.io/3volutionsag/rooms-worker:<Version>"
+    platform: linux/amd64
+    restart: unless-stopped
+    expose:
+      - "8081"
+    volumes:
+      - type: bind
+        source: ./config/appsettings.json
+        target: /app/config/appsettings.json
+        read_only: true
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8081/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  reverse-proxy:
+    image: "nginx:<Nginx-Version>-alpine"
+    platform: linux/amd64
+    restart: unless-stopped
+    depends_on:
+      rooms-api:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - type: bind
+        source: ./proxy/conf.d
+        target: /etc/nginx/conf.d
+        read_only: true
+      - type: bind
+        source: ./proxy/certs
+        target: /etc/nginx/certs
+        read_only: true
+```
+
+API und Worker verwenden dieselbe zentrale `appsettings.json`. Die relevante RoomsPro-Verbindung heisst `IdentityServer:RoomsDatabase`; als Umgebungsvariable lautet sie `IdentityServer__RoomsDatabase`. Der Worker verarbeitet seine Aufträge direkt über die Datenbank und benötigt keine HTTP-Verbindung zur API.
+
+Prüfen und laden Sie auch diesen Stack, ohne ihn bereits vollständig zu starten:
+
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml config
+docker compose -f /opt/rooms/compose.linux.yaml pull
+```
+
+## Nginx für Hostnamen und TLS konfigurieren
+
+Die folgende Konfiguration ersetzt die Host-Header- und Zertifikat-Bindings aus IIS. Speichern Sie sie als `/opt/rooms/proxy/conf.d/rooms.conf` und ersetzen Sie die beiden Beispiel-DNS-Namen sowie `<Windows-Container-Host>`:
+
+```nginx
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+server {
+    listen 80 default_server;
+    server_name _;
+    return 444;
+}
+
+server {
+    listen 80;
+    server_name rooms.example.ch api.rooms.example.ch;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl default_server;
+    server_name _;
+
+    ssl_certificate     /etc/nginx/certs/rooms.fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/rooms.key;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+
+    return 444;
+}
+
+server {
+    listen 443 ssl;
+    server_name rooms.example.ch;
+
+    ssl_certificate     /etc/nginx/certs/rooms.fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/rooms.key;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+
+    client_max_body_size 5m;
+
+    location / {
+        proxy_pass http://<Windows-Container-Host>:8080;
+        proxy_http_version 1.1;
+        proxy_connect_timeout 120s;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-Port 443;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name api.rooms.example.ch;
+
+    ssl_certificate     /etc/nginx/certs/rooms.fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/rooms.key;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+
+    client_max_body_size 5m;
+
+    location / {
+        proxy_pass http://rooms-api:80;
+        proxy_http_version 1.1;
+        proxy_connect_timeout 120s;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-Port 443;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    }
+}
+```
+
+Beide DNS-Namen zeigen auf die IP-Adresse des Linux-Hosts. Die beiden Default-Blöcke verwerfen Anforderungen mit einem unbekannten Hostnamen, statt sie versehentlich an ROOMS weiterzuleiten. Das Zertifikat muss beide Namen im Subject Alternative Name enthalten; alternativ verwenden Sie in den beiden anwendungsspezifischen `server`-Blöcken getrennte Zertifikate. Nginx erwartet Zertifikat und privaten Schlüssel im PEM-Format. Eine für IIS vorhandene PFX-Datei kann nicht unverändert eingebunden werden.
+
+Prüfen Sie nach jeder Proxy- oder Zertifikatsänderung zuerst die Konfiguration und laden Sie Nginx anschliessend neu:
+
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -t
+docker compose -f /opt/rooms/compose.linux.yaml exec reverse-proxy nginx -s reload
+```
+
+Die Erneuerung des Zertifikats erfolgt durch die vorhandene Unternehmens-PKI oder einen ACME-Client auf dem Host. Sorgen Sie dafür, dass die PEM-Dateien atomar ersetzt, die Zugriffsrechte beibehalten und Nginx nach erfolgreichem `nginx -t` neu geladen wird.
+
+## Öffentliche URLs abstimmen
+
+Konfigurieren Sie ROOMS vollständig mit den öffentlichen HTTPS-Namen, nicht mit Container-, Host- oder HTTP-Adressen:
+
+- Legacy Website: `https://rooms.example.ch`
+- RoomsPro API beziehungsweise Identity Provider: `https://api.rooms.example.ch`
+- OpenID-Connect-Authority, Client-Redirect-URLs und Abmelde-URLs mit denselben Namen
+
+Die Weiterleitungs-Header in der Nginx-Konfiguration sind erforderlich, damit sichere Cookies, Redirects und von der API erzeugte Issuer-URLs trotz TLS-Terminierung am Proxy wieder HTTPS verwenden. Veröffentlichen Sie den API-Port nicht zusätzlich direkt, da die Anwendung Forwarded Headers vom kontrollierten Proxy erwartet.
 
 ## Datenbankmigrationen
 
-Datenbankstatus und Migrationen werden über die CLI im Image `rooms-api` ausgeführt. Stoppen Sie vor der Migration `rooms-service` und `rooms-worker` und erstellen Sie ein aktuelles Datenbank-Backup.
+Stellen Sie zuerst die aktuelle [Baukasten-Datenbank]({{< relref "Betrieb/Installation/DatenbankBereitstellen/_index.md" >}}) wieder her. Erteilen Sie der gemeinsamen Datenbankidentität vorübergehend `db_owner`, während `rooms-service` und `rooms-worker` noch nicht laufen.
 
-Da die 4.30-Images standardmässig die API starten, muss für einen einmaligen Migrationscontainer der Entrypoint überschrieben werden.
-
-Status prüfen:
+Der Migrationscontainer verwendet über Compose automatisch dasselbe Image, Netzwerk und dieselbe `appsettings.json` wie die API. Status prüfen:
 
 ```bash
-docker run --rm \
-  --entrypoint dotnet \
-  --mount type=bind,source="$PWD/config",target=/app/config,readonly \
-  ghcr.io/3volutionsag/rooms-api:4.30.8 \
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
   RoomsPro.Web.dll db status
 ```
 
-Migration ausführen:
+Bei offenen Migrationen endet `db status` erwartungsgemäss mit Exitcode `1`. Migration ausführen:
 
 ```bash
-docker run --rm \
-  --entrypoint dotnet \
-  --mount type=bind,source="$PWD/config",target=/app/config,readonly \
-  ghcr.io/3volutionsag/rooms-api:4.30.8 \
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
   RoomsPro.Web.dll db migrate
 ```
 
-Ersetzen Sie die Beispielversion durch die zu installierende ROOMS-Version. Der Migrationscontainer benötigt Netzwerkzugriff auf die Datenbank und dieselbe Datenbankkonfiguration wie `rooms-api`.
+Bei Bedarf kann das Zeitlimit ergänzt werden:
 
-Für einen Kubernetes Job entspricht dies folgendem Prozessaufruf:
-
-```yaml
-command: ["dotnet"]
-args: ["RoomsPro.Web.dll", "db", "migrate"]
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
+  RoomsPro.Web.dll db migrate --command-timeout 900
 ```
 
-Prüfen Sie nach der Migration erneut `db status`. Starten Sie die übrigen Komponenten erst, wenn keine offenen Migrationen mehr gemeldet werden.
+Führen Sie `db status` danach erneut aus. Der Befehl prüft `RoomsDb`, `LightWeight` und `TickerQ`. Für mehrere Mandantendatenbanken wiederholen Sie Status und Migration je Datenbank mit einer expliziten Verbindung:
 
-## Legacy-Konfiguration ab 4.30 bereinigen
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
+  RoomsPro.Web.dll db status --connection "<ConnectionString>"
 
-Der `pushSubscriberService` wird ab Version 4.30 durch den RoomsPro Worker verarbeitet. Entfernen Sie deshalb aus der kundenspezifischen `StructureMapXml.xml` den vollständigen `AddInstance`-Eintrag mit:
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
+  RoomsPro.Web.dll db migrate --connection "<ConnectionString>"
 
-```xml
-Key="pushSubscriberService"
+docker compose -f /opt/rooms/compose.linux.yaml run --rm --no-deps \
+  --entrypoint dotnet rooms-api \
+  RoomsPro.Web.dll db status --connection "<ConnectionString>"
 ```
 
-Bleibt dieser Eintrag bestehen, kann der Legacy-Service beim Start abbrechen, weil der frühere Plugin-Typ nicht mehr vorhanden ist.
+Verwenden Sie in Shell-History und Protokollen keine Klartextkennwörter. `db status` gibt eine explizit übergebene Verbindungszeichenfolge in der Konsole aus. Entfernen Sie `db_owner` nach der erfolgreichen Abschlussprüfung wieder. Ein leerer SQL-Katalog und `db migrate` allein ersetzen die Baukasten-Datenbank nicht.
 
-## Update-Checkliste
+## Stack starten und prüfen
 
-1. Prüfen Sie den Zugriff auf die privaten Images in `ghcr.io`.
-2. Aktualisieren Sie alle Komponenten auf dieselbe ROOMS-Version.
-3. Ersetzen Sie ab 4.30 `rooms-idp` durch `rooms-api`.
-4. Ergänzen Sie `rooms-worker` mit derselben externen Konfiguration und Datenbankverbindung.
-5. Entfernen Sie den veralteten `pushSubscriberService`-Eintrag.
-6. Sichern und migrieren Sie die Datenbank mit dem `rooms-api`-Image.
-7. Prüfen Sie die Health Checks von API und Worker.
-8. Testen Sie Anmeldung, ROOMS-Webzugriff und die benötigten Hintergrundprozesse.
+Starten Sie erst nach der Migration die Anwendungscontainer:
+
+```powershell
+docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml up -d
+docker compose -f C:\ProgramData\3volutions\ROOMS\compose.windows.yaml ps
+```
+
+```bash
+docker compose -f /opt/rooms/compose.linux.yaml up -d
+docker compose -f /opt/rooms/compose.linux.yaml ps
+```
+
+Prüfen Sie danach:
+
+1. Beide öffentlichen URLs liefern über HTTPS das erwartete Zertifikat.
+2. HTTP wird auf HTTPS umgeleitet und die Adresszeile behält den öffentlichen Hostnamen.
+3. `https://rooms.example.ch/healthz` und `https://api.rooms.example.ch/healthz` sind erreichbar.
+4. Anmeldung, Abmeldung und OpenID-Connect-Redirects verwenden ausschliesslich die öffentlichen HTTPS-Namen.
+5. Eine Anmeldung mit der vorgesehenen privilegierten Baukasten-Person ist möglich.
+6. Eine Buchung kann erstellt und gelesen werden.
+7. Legacy Service und RoomsPro Worker bleiben gesund und verarbeiten ihre Hintergrundaufgaben.
+8. Der Windows-Port `8080` ist nur vom Reverse-Proxy-Host und SQL Server nur von den beiden Container-Hosts erreichbar.
+
+## Updates
+
+Ändern Sie bei einem späteren Update in beiden Compose-Dateien alle vier ROOMS-Image-Tags auf dieselbe neue Version. Sichern und migrieren Sie die Datenbank nach dem beschriebenen Ablauf, bevor Service und Worker wieder starten. Verwenden Sie keine schwebenden Tags wie `latest` für ROOMS oder Nginx.
+
+## Kubernetes
+
+Für grössere oder hochverfügbare Installationen kann dieselbe Architektur auf einem Kubernetes-Cluster mit Windows- und Linux-Nodes umgesetzt werden. Verwenden Sie Node-Auswahl beziehungsweise Runtime Classes für die beiden Windows-Workloads, Secrets und ConfigMaps für die Konfiguration, einen einmaligen Job mit `rooms-api` für die Migration und einen Ingress Controller für DNS und TLS. Die Compose-Anleitung ist der einfachere Einstieg, Kubernetes aber keine Ein-Host-Alternative für die gemischten Betriebssysteme.
