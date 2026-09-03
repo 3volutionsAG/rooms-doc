@@ -46,3 +46,9 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
 9. Klicken Sie auf **Buchen**, um die Buchung verbindlich abzuschliessen. Die Buchung wird in 3V ROOMS übernommen und bestätigt.   Der Name der Ressource wird in das Feld Standort des Outlook-Termins übertragen.
    {{< imgproc O365Outlook_web_Buchungsbest Resize "960x">}} {{< /imgproc >}}
 10. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.
+
+{{% alert title="Privatstatus" color="info" %}}
+Markieren Sie den Outlook-Termin vor dem Abschluss der Buchung in quickROOMS als **Privat**. quickROOMS übernimmt diesen Status in die ROOMS-Buchung.
+
+In Office.js-basierten Outlook-Clients setzt die Übernahme mindestens Outlook API Version 1.14 (Requirement Set `Mailbox 1.14`) voraus. Unterstützt der Client diese API nicht oder kann die Einstellung nicht gelesen werden, kann quickROOMS den Outlook-Privatstatus nicht an ROOMS übertragen.
+{{% /alert %}}

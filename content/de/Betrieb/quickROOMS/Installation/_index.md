@@ -75,6 +75,7 @@ Das Add-In nutzt APIs aus verschiedenen [Outlook API Requirement Sets](https://l
 | Stellvertreterbuchungen / Shared Calendars | 1.8 | Shared Calendar Erkennung und Delegiertenberechtigungen | [Delegate Access](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/delegate-access) |
 | Enhanced Location / Raum-Ressourcen | 1.8 | Raum-Ressourcen als Enhanced Location auslesen | [Requirement Set 1.8](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8) |
 | Master-Kategorien | 1.10 | ROOMS-Kategorie in Mailbox-Master-Liste registrieren (Fallback auf Item-Level vorhanden) | [Requirement Set 1.10](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) |
+| Privatstatus des Termins | 1.14 | Outlook-Kennzeichnung **Privat** in die ROOMS-Buchung übernehmen | [Sensitivity](https://learn.microsoft.com/en-us/javascript/api/outlook/office.sensitivity) |
 {{< /bootstrap-table >}}
 
 **Warum Requirement Set 1.7 das Minimum ist:** Serienbuchungen gehören zu den meistgenutzten Funktionen und sind für den produktiven Einsatz unverzichtbar. Die dafür benötigte Recurrence-API ist erst ab Requirement Set 1.7 verfügbar. On-premises Exchange (2016/2019/SE) stellt via OWA nur Requirement Set 1.5–1.6 bereit — daher wird OWA auf on-premises Exchange nicht unterstützt. Der Desktop Outlook Client unterstützt auch auf on-premises Exchange höhere Requirement Sets, weshalb das Add-In dort funktioniert.
