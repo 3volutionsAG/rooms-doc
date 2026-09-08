@@ -12,6 +12,7 @@ Alle Zeitangeben sind immer in UTC. Eine konvertierung in Lokalzeit muss der Auf
 ## Guides
 
 - [JobManager REST API – Usage Guide]({{< relref "JobManager-Usage" >}}): Fachliche Verwendung (202 Accepted / asynchroner Batch-Flow, Polling, Fehlerhandling)
+- [Organisationen über die API verwalten]({{< relref "Organizations-Usage" >}}): Kommende RoomsPro API für Firmen und Adressen, sichere Änderungen und regelmässige Änderungsabfragen.
 
 ## Buchungs- und Anlass-Endpunkte
 

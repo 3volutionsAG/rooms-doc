@@ -35,6 +35,36 @@ Nach der Wiederherstellung der Baukasten-Datenbank wird ihr Schema über die CLI
 
 `db status` gibt Exitcode `1` zurück, solange Migrationen offen sind. Das ist vor der ersten Migration einer neu bereitgestellten Baukasten-Datenbank zu erwarten und bedeutet nicht, dass der Statusbefehl selbst fehlgeschlagen ist. Die Konsolenausgabe zeigt die offenen Migrationen.
 
+## Externe Firmen-IDs vor der Migration prüfen
+
+{{% alert title="Kommende Version: eindeutige externe Firmen-IDs" color="warning" %}}
+Diese Prüfung betrifft Versionen mit der Migration `20260908053826_AddOrganizationConcurrencyAndExternalIdUniqueness`. Sie führt eindeutige externe Firmen-IDs für die [Organisations-API]({{< relref "3VROOMS/API/Organizations-Usage.md" >}}) ein. Prüfen Sie mit `db status`, ob diese Migration in Ihrer Zielversion noch aussteht.
+{{% /alert %}}
+
+Nicht leere externe IDs dürfen nicht mehrfach vergeben sein. Bestehen solche Duplikate, bricht diese Migration vor ihren Schemaänderungen mit folgender Meldung ab:
+
+```text
+Duplicate organization external IDs exist in Firma. Correct them before applying this migration.
+```
+
+Lassen Sie die betroffene Mandantendatenbank vor dem Migrationslauf durch die Datenbankadministration prüfen. Diese Abfrage liest nur und verwendet dieselbe Duplikatprüfung wie die Migration:
+
+```sql
+SELECT [ExternalId], COUNT(*) AS [Anzahl]
+FROM [dbo].[Firma]
+WHERE [ExternalId] IS NOT NULL AND LTRIM(RTRIM([ExternalId])) <> ''
+GROUP BY [ExternalId]
+HAVING COUNT(*) > 1;
+```
+
+Bei Treffern:
+
+1. Klären Sie mit den Verantwortlichen der angebundenen Fremdsysteme, welche Firma zu welcher externen ID gehört.
+2. Lassen Sie die widersprüchlichen Zuordnungen nach einer Datensicherung gezielt korrigieren. Die Migration vergibt keine Ersatz-IDs und löst die Konflikte nicht automatisch. Entfernen Sie Kennungen nicht pauschal, da sie für externe Zuordnungen verwendet werden können.
+3. Wiederholen Sie die Prüfung und anschliessend den Migrationslauf. Starten Sie die Anwendung erst nach erfolgreicher abschliessender Statusprüfung.
+
+Leere oder nur aus Leerzeichen bestehende IDs werden bei dieser Migration in `NULL` umgewandelt; mehrere Firmen ohne externe ID bleiben zulässig.
+
 ## Migration ausführen
 
 ```powershell
