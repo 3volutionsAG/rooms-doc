@@ -84,7 +84,13 @@ Die Liste unterstützt `page` ab `1` und `limit` von `1` bis `1000`. Lesen Sie a
 Die API liefert den **aktuellen Zustand**, keinen historischen Stand und keine Liste gelöschter Organisationen. Während des Seitenabrufs können Änderungen Datensätze zwischen Seiten verschieben. Ein ausschliesslicher Filter auf verifizierte Organisationen meldet nicht, wenn einer Organisation die Verifizierung entzogen wird.
 {{% /alert %}}
 
-Planen Sie die Synchronisation deshalb mit überlappenden Zeitfenstern, gleichen Sie mehrfach gelieferte Einträge über die ROOMS-`id` ab und wiederholen Sie fehlgeschlagene Verarbeitungen. Führen Sie zusätzlich regelmässig einen vollständigen Bestandsabgleich innerhalb der berechtigten Organisationstypen durch. Leiten Sie eine Löschung nicht allein daraus ab, dass eine Organisation in einem Änderungsfenster fehlt.
+Planen Sie die Synchronisation deshalb mit überlappenden Zeitfenstern, gleichen Sie mehrfach gelieferte Einträge über die ROOMS-`id` ab und wiederholen Sie fehlgeschlagene Verarbeitungen. Führen Sie zusätzlich regelmässig einen vollständigen Bestandsabgleich innerhalb der berechtigten Organisationstypen durch.
+
+{{% alert title="Fehlender Eintrag ist kein Löschbeleg" color="warning" %}}
+Leiten Sie eine Löschung weder aus einem fehlenden Eintrag im Änderungsfenster noch allein aus dessen Fehlen beim vollständigen Bestandsabgleich ab. Wechselt eine Organisation zwischen intern und extern oder ändern sich die Rechte des Integrationsbenutzers, kann sie aus dessen Liste verschwinden, obwohl sie weiterhin existiert.
+
+Für einen Bestandsabgleich über beide Organisationstypen benötigt der Integrationsbenutzer beide Rechte (`FirmaInternAdmin` und `FirmaExternAdmin`). Prüfen Sie vor dem Entfernen lokaler Datensätze, ob die erforderlichen Rechte weiterhin gelten, keine einschränkenden Filter aktiv sind und alle Seiten erfolgreich verarbeitet wurden. Kann die Integration die betroffene Organisation nicht mehr einsehen, lassen Sie die Löschung unabhängig bestätigen, beispielsweise durch einen Administrator mit beiden Firmenrechten. Bis zur Klärung darf ein fehlender Eintrag nicht als gelöscht behandelt werden.
+{{% /alert %}}
 
 ## Organisation löschen
 
