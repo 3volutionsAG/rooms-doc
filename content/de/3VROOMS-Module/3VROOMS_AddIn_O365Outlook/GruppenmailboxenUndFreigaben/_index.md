@@ -7,8 +7,8 @@ description: "Verhalten des quickROOMS Add-Ins bei Gruppenmailboxen, freigegeben
 
 ## Übersicht
 
-Das quickROOMS Add-In liest den Mailbox-Kontext direkt von der Outlook-Plattform (Office.js API).
-ROOMS kann diesen Kontext nicht verändern — **Outlook bestimmt, wer als Ersteller und Organisator eines Termins gilt**.
+Das quickROOMS Add-In liest den Organisator und den Mailbox-Kontext des geöffneten Outlook-Termins aus.
+**Outlook bestimmt, wer als Ersteller und Organisator eines Termins gilt.** quickROOMS verwendet den ermittelten Outlook-Organisator für die ROOMS-Buchung.
 
 ### Begriffe
 
@@ -44,54 +44,41 @@ Das Postfach erscheint **unter dem persönlichen Konto** des Benutzers.
 - Outlook API Version 1.8 oder höher (Requirement Set `Mailbox 1.8`)
 - Der Benutzer benötigt mindestens **Schreibberechtigung** auf dem freigegebenen Kalender
 
-### 3. Separates Konto (eigenständiges Postfach) — Eingeschränkt
+### 3. Als separates Konto hinzugefügte Gruppenmailbox
 
-Die Gruppenmailbox wird als **eigenständiges Konto mit eigenen Anmeldedaten** in Outlook hinzugefügt.
+Die Gruppenmailbox ist in Outlook als **eigenständiges Konto mit eigenen Anmeldedaten** eingerichtet.
 
-- **Ersteller** = der Benutzer, der in diesem Konto angemeldet ist (nicht der persönliche Benutzer)
-- **Organisator** = das Konto selbst
-- **Add-In-Verhalten**: Outlook stellt dem Add-In als aktuellen Benutzer das **Konto des separaten Postfachs** bereit,
-  nicht den tatsächlichen Benutzer. Das Add-In kann nicht unterscheiden, ob eine natürliche Person oder
-  eine Gruppenmailbox angemeldet ist.
+- **Ersteller** = das Konto, in dessen Kalender der Termin erstellt wird
+- **Organisator** = die Gruppenmailbox
+- **Add-In-Verhalten**: Das Add-In liest den Organisator aus dem geöffneten Outlook-Termin und verwendet die dazugehörige ROOMS-Person als Organisator der Buchung.
 
-{{% alert title="Einschränkung" color="warning" %}}
-Wenn eine Gruppenmailbox als separates Konto hinzugefügt wird, ist der **Mailbox-Kontext** für das Add-In
-derjenige des Gruppenpostfachs. Dies ist ein **Outlook-/Exchange-Verhalten**, das ROOMS nicht beeinflussen kann.
+**Voraussetzungen:**
+- Bei Office.js: Outlook API Version 1.8 oder höher (Requirement Set `Mailbox 1.8`)
+- Die Gruppenmailbox ist mit derselben E-Mail-Adresse als Person in ROOMS hinterlegt
 
-**Mögliche Auswirkungen:**
-- Der Ersteller des Termins ist das Gruppenkonto, nicht der persönliche Benutzer
-- Die Synchronisation kann fehlschlagen, wenn das Gruppenkonto nicht als Person in ROOMS hinterlegt ist
-- Das Add-In hat keinen Zugriff auf den persönlichen Kontext des Benutzers
-
-Siehe Microsoft-Dokumentation:
-[Implement delegate access in an Outlook add-in](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/delegate-access)
+{{% alert title="Organisator nicht gefunden" color="warning" %}}
+Kann die E-Mail-Adresse des Outlook-Organisators keiner Person in ROOMS zugeordnet werden, wird die Buchung nicht fortgesetzt. Prüfen Sie die E-Mail-Adresse der Gruppenmailbox in ROOMS.
 {{% /alert %}}
 
-## Empfohlene Konfiguration für Gruppenmailboxen
+## Voraussetzungen für Gruppenmailboxen prüfen
 
-Damit das Add-In korrekt funktioniert, sollte der Zugriff auf Gruppenmailboxen über **Delegated Access** eingerichtet werden:
+Beide Outlook-Varianten werden unterstützt:
 
-1. Den Benutzern, die die Gruppenmailbox betreuen, **delegierten Zugriff** (Stellvertretung) auf die Mailbox einrichten
-2. Das Postfach erscheint dann zusätzlich unter dem persönlichen Outlook-Konto
-3. Das Add-In erkennt automatisch den freigegebenen Kontext und setzt den Organisator korrekt
+- **Delegierter Zugriff:** Der Benutzer benötigt mindestens Schreibberechtigung auf dem freigegebenen Kalender. Die Gruppenmailbox muss als Person in ROOMS hinterlegt sein.
+- **Separates Konto:** Die Gruppenmailbox muss mit ihrer Outlook-E-Mail-Adresse als Person in ROOMS hinterlegt sein. Bei Office.js ist mindestens Requirement Set `Mailbox 1.8` erforderlich.
 
-{{% alert title="Hinweis" color="info" %}}
-Das Einrichten von Delegated Access schliesst das Hinzufügen als separates Konto nicht aus.
-Beides kann parallel genutzt werden — für **Buchungen über das Add-In** sollte jedoch der
-freigegebene Kalender (Delegated Access) verwendet werden.
-{{% /alert %}}
+Das Add-In setzt den Outlook-Organisator als Organisator der ROOMS-Buchung. Dadurch kann ROOMS die Buchung bei einer späteren Synchronisation dem richtigen Kalender zuordnen.
 
 ## Technischer Hintergrund
 
-Das Add-In verwendet folgende Outlook-APIs:
+Für die Zuordnung verwendet das Add-In folgende Informationen:
 
 {{< bootstrap-table "table table-striped" >}}
-| API | Zweck |
-|-----|-------|
-| `Office.context.mailbox.userProfile` | Aktuell angemeldeter Benutzer ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.userprofile)) |
-| `item.organizer.getAsync()` | Organisator des Termins auslesen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.organizer)) |
-| `item.getSharedPropertiesAsync()` | Delegierungskontext und Berechtigungen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.sharedproperties)) |
+| Information | Zweck |
+|-------------|-------|
+| Angemeldetes ROOMS-Benutzerprofil | Persönlichen Kalender erkennen |
+| `item.organizer.getAsync()` | Organisator des Outlook-Termins auslesen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.organizer)) |
+| `item.getSharedPropertiesAsync()` | Delegierungskontext und Berechtigungen auslesen ([Dokumentation](https://learn.microsoft.com/en-us/javascript/api/outlook/office.sharedproperties)) |
 {{< /bootstrap-table >}}
 
-Die Erkennung des freigegebenen Kontexts erfolgt über `Office.context.mailbox.initialData.isFromSharedFolder`.
-Nur wenn dieses Flag gesetzt ist, werden die Shared Properties und der Organisator separat aufgelöst.
+Bei einem persönlichen Kalender stimmen Outlook-Organisator und angemeldeter ROOMS-Benutzer überein. Bei freigegebenen Kalendern und separat hinzugefügten Gruppenmailboxen löst das Add-In stattdessen den Outlook-Organisator über dessen E-Mail-Adresse in ROOMS auf. Bei delegiertem Zugriff prüft das Add-In zusätzlich die von Outlook gemeldete Schreibberechtigung.
