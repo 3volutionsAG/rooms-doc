@@ -15,7 +15,7 @@ Mit **Entfernen** löschen Sie Ressourcen endgültig. Verwenden Sie diese Funkti
 {{% alert title="Ressourcen nach Möglichkeit deaktivieren" color="warning" %}}
 Beim endgültigen Löschen werden die Buchungen der ausgewählten Ressourcen, davon abhängige Buchungen und Ressourcenzuordnungen unwiderruflich gelöscht. Bei kalendersynchronisierten Ressourcen entfernt ROOMS auch die zugehörigen Outlook-Termine.
 
-Soll eine Ressource nur nicht mehr buchbar sein, deaktivieren Sie stattdessen unter **Einstellungen → Ressourcen → Bearbeiten** in den [Stammdaten der Ressource]({{< relref "3VROOMS/Einstellungen/Ressourcen/_index.md#stammdaten-der-ressource-bearbeiten" >}}) den **Status** und speichern Sie die Änderung. Bestehende Buchungen und die Historie bleiben dabei erhalten. Inaktive Ressourcen zählen nicht zum Ressourcen-Lizenzlimit.
+Soll eine Ressource nur nicht mehr buchbar sein, deaktivieren Sie stattdessen unter **Einstellungen → Ressourcen → Bearbeiten** in den [Stammdaten der Ressource]({{< relref "3VROOMS/Einstellungen/Ressourcen/_index.md#stammdaten-der-ressource-bearbeiten" >}}) den **Status** und speichern Sie die Änderung. Bestehende Buchungen und die Historie bleiben in ROOMS erhalten. Alle zugehörigen Reservationen mit Exchange-Synchronisation werden jedoch von der Synchronisation abgekoppelt. Inaktive Ressourcen zählen nicht zum Ressourcen-Lizenzlimit.
 {{% /alert %}}
 
 1. Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang.
