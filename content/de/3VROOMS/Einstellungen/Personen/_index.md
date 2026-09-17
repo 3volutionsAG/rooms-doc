@@ -67,6 +67,20 @@ Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehen
 
 Eine genaue Beschreibung der Daten, die Sie bearbeiten können, finden Sie hier: [Persönliche Einstellungen](/3vrooms/einstellungen/pers%C3%B6nlicheeinstellungen/)
 
+### Organisation nach Firma oder Abteilung auswählen
+
+Unter **Einstellungen > Personen** öffnen Sie die gewünschte Person mit **Bearbeiten**. Im Register **Personen-Informationen** wählen Sie im Feld **Organisation** die OE/Firma aus.
+
+Zusätzlich zur Berechtigung, die Person zu bearbeiten, benötigen Sie für diese Auswahl das globale Recht **Darf Firmen mit Personen verwalten** (Recht 65). Ohne dieses Recht wird die Organisation nur angezeigt.
+
+1. Geben Sie den Anfang der Firmenbezeichnung oder der Abteilung in das Feld **Organisation** ein.
+2. Wählen Sie den passenden Eintrag aus der Vorschlagsliste. Ist bei der OE/Firma eine Abteilung hinterlegt, erscheint der Eintrag als **Firmenbezeichnung - Abteilung**. Ohne Abteilung wird nur die Firmenbezeichnung angezeigt.
+3. Klicken Sie auf **Speichern**, um die Auswahl zu übernehmen.
+
+Bei langen Einträgen können Sie den Mauszeiger über einen Vorschlag halten, um die vollständige Bezeichnung mit Abteilung zu sehen. Auch nach der Auswahl und in den Firmeninformationen der Person wird eine hinterlegte Abteilung zusammen mit der Firmenbezeichnung angezeigt.
+
+Die Abteilung stammt aus den [Stammdaten der OE/Firma]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/OEFirmen/_index.md" >}}). Sie wählen einen vorhandenen OE-/Firmeneintrag aus; im Personendetail wird keine separate Abteilung erfasst.
+
 ## Person neu hinzufügen
 
 Möchten Sie eine neue Person hinzufügen, klicken Sie auf den untenstehenden Button _neu_. Es öffent sich ein neues Fenster. In diesem geben Sie die gleichen Informationen wie im vorher beschriebenem Absatz ein.
