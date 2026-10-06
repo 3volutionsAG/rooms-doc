@@ -17,9 +17,9 @@ Mit den entsprechenden Einstellungen werden Buchungen, die mit dem 3V ROOMS Wiza
 
 ## Meine Buchungen schrittweise laden
 
-{{< alert title="Kommende Funktion" color="info" >}}
+{{% alert title="Kommende Funktion" color="info" %}}
 Das nachfolgend beschriebene schrittweise Laden ist für eine kommende quickROOMS-Version vorgesehen. In quickROOMS 1.29.4 ist es noch nicht enthalten. Diese Anleitung gilt erst, wenn die entsprechende Version in Ihrer Installation bereitgestellt ist.
-{{< /alert >}}
+{{% /alert %}}
 
 ### Wo finde ich meine Buchungen?
 
