@@ -52,6 +52,10 @@ Unter **Einstellungen → Ressourcen → Bearbeiten** werden die einzelnen Resso
 | **Ist Sync-Master** | steuert das Verhalten bei Konflikten |
 {{< /bootstrap-table >}}
 
+### E-Mail-Alias beim Speichern
+
+In einer kommenden ROOMS-Version kann beim Speichern einer aktiven Exchange-synchronisierten Ressource ein hinterlegter Alias automatisch durch die primäre SMTP-Adresse ersetzt werden. Wer die Ressource speichert, erhält bei einer Korrektur eine Informationsmeldung in ROOMS. Diese Funktion ist noch nicht Bestandteil der geprüften Produktiv- und Release-Candidate-Stände. Pflegen Sie weiterhin die primäre Adresse. Voraussetzungen, Grenzen und Prüfpunkte stehen unter [E-Mail-Alias und automatische Adresskorrektur]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#e-mail-alias-und-automatische-adresskorrektur" >}}).
+
 ### Ist Sync-Master
 
 Falls eine Buchung in Exchange nicht für ROOMS verfügbar ist (z. B. wegen bestehender Buchung oder Sperrzeit), wird die ROOMS-Buchung nicht erstellt und eine Fehler-E-Mail versendet.

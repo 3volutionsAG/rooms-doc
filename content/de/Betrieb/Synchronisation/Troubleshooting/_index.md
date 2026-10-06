@@ -26,6 +26,32 @@ Prüfen Sie zuerst:
 - bei `EWS1`, `EWS2`, `O365`: stimmt die **Sync-URL**?
 - bei `Microsoft365`: ist die Person ggf. noch **nicht verbunden** (`Delegated`)?
 
+### E-Mail-Alias und automatische Adresskorrektur
+
+Exchange meldet Organisatoren, Teilnehmer und Räume mit der **primären SMTP-Adresse** ihres Postfachs. Ein Alias ist eine zusätzliche Adresse desselben Postfachs. Steht in ROOMS nur der Alias, kann die Synchronisation eine Person oder einen Raum nicht korrekt zuordnen. Eine Outlook-Buchung kann deshalb auf der **Systemressource** landen, obwohl der Raum weiterhin im Outlook-Termin eingeladen ist.
+
+{{% alert title="Kommende Version" color="info" %}}
+Die folgende automatische Adresskorrektur beschreibt eine kommende ROOMS-Version. Sie ist noch nicht Bestandteil der geprüften Produktiv- und Release-Candidate-Stände. Bis zur Freigabe der entsprechenden Version müssen die primären SMTP-Adressen weiterhin korrekt in ROOMS gepflegt werden.
+{{% /alert %}}
+
+ROOMS prüft die Adresse bei aktiven Personen und Ressourcen mit Exchange-Synchronisation (`EWS1`, `EWS2`, `O365`, `Microsoft365`):
+
+- **Beim Speichern** einer Person oder Ressource kann ROOMS einen Alias durch die primäre Adresse ersetzen. Bei Personen darf die Synchronisation nicht deaktiviert sein.
+- **Nach dem Verbinden des Microsoft-365-Kalenders** mit Benutzerzustimmung (`Delegated`) wird die Adresse der Person ebenfalls geprüft. Ohne den erforderlichen Postfachzugriff ist keine Korrektur möglich.
+- **Vor dem Verschieben einer Raumbuchung auf die Systemressource** prüft die Synchronisation die Adresse des Raums. Ändert sich die gespeicherte Adresse, wird die Buchung mit der korrigierten Adresse erneut geprüft. Das verhindert die Fehlzuordnung wegen eines Alias, ersetzt aber nicht die Prüfung, ob der Raum tatsächlich noch eingeladen ist.
+
+Bei einer Korrektur erhält die betroffene Person eine Warnmeldung in ROOMS mit der bisherigen und der neuen Adresse sowie der Aufforderung, den Administrator zu kontaktieren. Wer eine andere Person oder eine Ressource gespeichert hat, erhält eine Informationsmeldung. Eine durch die Raum-Synchronisation ausgelöste Korrektur wird im Log festgehalten, ohne eine Benutzerbenachrichtigung auszulösen.
+
+**Was muss der Administrator prüfen?**
+
+- Vergleichen Sie die gespeicherte Adresse mit der primären SMTP-Adresse im Exchange-Postfach.
+- Prüfen Sie auch den Benutzerdatenimport und das Verzeichnis. Diese dürfen bei einem späteren Import nicht erneut den Alias in ROOMS eintragen.
+- Bleibt der Alias nach dem Speichern bestehen, prüfen Sie die Logs: ROOMS korrigiert die Adresse nicht, wenn Exchange das Postfach nicht auflösen kann, die primäre Adresse bereits bei einer anderen aktiven Person oder Ressource hinterlegt ist oder das Postfach unter der primären Adresse mit den konfigurierten Synchronisations-Zugangsdaten nicht erreichbar ist. Bei Graph bleibt der Alias auch bestehen, wenn die Domain der primären Adresse andere App-Zugangsdaten verwendet. Stimmen Sie einen solchen Zugangsdatenwechsel mit dem Support ab, statt nur die E-Mail-Adresse zu ändern.
+
+{{% alert title="Grenzen der automatischen Korrektur" color="warning" %}}
+Eine erfolgreich gespeicherte Person oder Ressource bedeutet nicht, dass die Adressprüfung erfolgreich war. Personen, die nur über Outlook buchen, werden nicht allein dadurch korrigiert. Bereits auf die Systemressource verschobene Buchungen werden durch die Adresskorrektur **nicht zurückverschoben**. Prüfen Sie diese Buchungen separat mit dem Support. Wird der Raum tatsächlich aus dem Outlook-Termin entfernt, bleibt das bisherige Verhalten bestehen.
+{{% /alert %}}
+
 ## Schritt 2: Synchronisationstest durchführen
 
 Der klassische Synchronisationstest ist vor allem für **EWS-basierte** Modi hilfreich.
