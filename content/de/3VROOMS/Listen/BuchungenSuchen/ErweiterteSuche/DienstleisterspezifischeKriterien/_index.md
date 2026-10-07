@@ -18,3 +18,20 @@ Folgende Tabelle erläutert die Bedeutung der Checkboxen:
 |Mit nicht freigegebenen ; Bestellungen|{{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_xfreiBest Resize "200x" >}}{{< /imgproc >}}| Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox. |
 |Dienstleistungen ; mit offener Menge|{{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_offeneMenge Resize "200x" >}}{{< /imgproc >}}| Um sich alle Buchungen anzeigen zu lassen, bei denen die Menge/Grösse der Bestellung noch nicht festgelegt ist, aktivieren Sie diese Checkbox. |
 {{< /bootstrap-table >}}
+
+## Buchungen mit mobilem Equipment finden
+
+{{% alert title="Gültigkeit: kommende Version" color="info" %}}
+Der Filter **Nur Buchungen mit mobilem Equipment** und die zusätzliche Textspalte **Mobiles Equipment** gehören zu einer kommenden ROOMS-Version. Sie sind im geprüften Produktions- und Release-Candidate-Stand noch nicht enthalten. Die folgende Anleitung gilt erst für eine Version mit diesen Funktionen.
+{{% /alert %}}
+
+Wenn Sie mobiles Equipment bereitstellen, können Sie sich eine Arbeitsliste der entsprechenden Buchungen zusammenstellen:
+
+1. Öffnen Sie **Listen → Buchungen → Erweiterte Suche** und wählen Sie den benötigten Zeitraum sowie die weiteren Suchkriterien.
+2. Aktivieren Sie unter **Dienstleisterspezifische Kriterien** die Checkbox **Nur Buchungen mit mobilem Equipment** und führen Sie die Suche aus.
+3. Blenden Sie über die Spaltenauswahl die [Textspalte **Mobiles Equipment**]({{< relref "3VROOMS/Listen/BuchungenSuchen/Anzeigenbereich/SpaltenErweitert/_index.md#mobiles-equipment-als-textspalte" >}}) ein. Sie zeigt die Bezeichnungen des gebuchten mobilen Equipments.
+4. Bei Bedarf [exportieren Sie die Liste als CSV-Datei]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/ListenExport/_index.md" >}}). Die eingeblendete Textspalte wird mit exportiert.
+
+Der Filter berücksichtigt Buchungen mit zugebuchtem mobilem Equipment sowie eigenständige Buchungen von mobilem Equipment. Fixes Equipment und annullierte Equipment-Buchungen zählen nicht. Hat eine Buchung nur fixes oder nur annulliertes Equipment, wird sie durch diesen Filter nicht gefunden.
+
+Die übrigen Suchkriterien schränken die Ergebnisse weiterhin ein. Aktivieren Sie zusätzlich **Nur Buchungen mit Catering/Services**, werden nur Buchungen angezeigt, die beide Bedingungen erfüllen.
