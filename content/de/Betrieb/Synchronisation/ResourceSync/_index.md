@@ -52,6 +52,10 @@ Unter **Einstellungen → Ressourcen → Bearbeiten** werden die einzelnen Resso
 | **Ist Sync-Master** | steuert das Verhalten bei Konflikten |
 {{< /bootstrap-table >}}
 
+### E-Mail-Alias beim Speichern
+
+Beim Speichern einer aktiven Exchange-synchronisierten Ressource kann ein hinterlegter Alias automatisch durch die primäre SMTP-Adresse ersetzt werden. Wer die Ressource speichert, erhält bei einer Korrektur eine Informationsmeldung in ROOMS. Pflegen Sie weiterhin die primäre Adresse. Voraussetzungen, Grenzen und Prüfpunkte stehen unter [E-Mail-Alias und automatische Adresskorrektur]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#e-mail-alias-und-automatische-adresskorrektur" >}}).
+
 ### Ist Sync-Master
 
 Falls eine Buchung in Exchange nicht für ROOMS verfügbar ist (z. B. wegen bestehender Buchung oder Sperrzeit), wird die ROOMS-Buchung nicht erstellt und eine Fehler-E-Mail versendet.
@@ -115,10 +119,6 @@ Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProce
 
 ### Regeln in ROOMS prüfen
 
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Die Anzeige **Exchange-Buchungsregeln**, der manuelle Abruf und die Prüfung gespeicherter Regeln beschreiben die kommende Version mit ITEM-2994. Diese Funktionen sind in den geprüften Produktions- und Release-Candidate-Versionen noch nicht enthalten. Die Exchange-Regeln selbst gelten unabhängig davon.
-{{% /alert %}}
-
 Öffnen Sie eine gespeicherte Ressource unter **Einstellungen → Ressourcen → Bearbeiten**. Im Abschnitt **Exchange-Synchronisation** werden bei einer Ressource mit Exchange-Postfach die **Exchange-Buchungsregeln** angezeigt. Das Exchange-Modul muss lizenziert und die Ressourcen-Synchronisation eingerichtet sein. Die Regeln sind auch in der Ressourcenansicht sichtbar.
 
 Für den manuellen Abruf benötigen Sie die Bearbeitungsrechte der Ressource: bei Räumen das globale Recht **Darf Ressourcetyp Raum verwalten** und das standortabhängige Recht **Darf Ressource bearbeiten**. In der Ansicht steht die Schaltfläche nur mit diesen Bearbeitungsrechten zur Verfügung.
@@ -171,9 +171,7 @@ Bei **Abruf fehlgeschlagen** nennt die Anzeige unter anderem deaktivierten Abruf
 
 ### Auswirkung auf Serien mit Konflikten
 
-{{% alert title="Kommende Version: teilweise Raumbuchung" color="info" %}}
-Mit ITEM-2994 prüft ROOMS die bekannten Exchange-Konfliktgrenzen bereits beim Erstellen und Speichern einer Serie. Sind Überschneidungen nicht erlaubt und beide Konfliktgrenzen bekannt, kann die Serie innerhalb dieser Grenzen teilweise angenommen werden. Kollidierende Termine bleiben dann ohne Raumbuchung erhalten. Beide Grenzen müssen eingehalten werden. Für den Konfliktanteil zählen nur die Termine innerhalb des Raumbuchungsfensters. Das erlaubt keine Doppelbuchung des Raums. Wählen Sie für Termine ohne Raum eine andere Ressource oder ändern Sie die Zeit.
-{{% /alert %}}
+ROOMS prüft die bekannten Exchange-Konfliktgrenzen bereits beim Erstellen und Speichern einer Serie. Sind Überschneidungen nicht erlaubt und beide Konfliktgrenzen bekannt, kann die Serie innerhalb dieser Grenzen teilweise angenommen werden. Kollidierende Termine bleiben dann ohne Raumbuchung erhalten. Beide Grenzen müssen eingehalten werden. Für den Konfliktanteil zählen nur die Termine innerhalb des Raumbuchungsfensters. Das erlaubt keine Doppelbuchung des Raums. Wählen Sie für Termine ohne Raum eine andere Ressource oder ändern Sie die Zeit.
 
 ROOMS kann Konflikte in einer Serie intern auflösen, z. B. durch Umbuchung einzelner Termine auf alternative Räume. Die Serie wird jedoch weiterhin an die Exchange-Ressource synchronisiert. Dort bestehen die Konflikte weiterhin auf Mailbox-Ebene.
 
@@ -182,10 +180,6 @@ Wenn Überschneidungen nicht erlaubt sind und `MaximumConflictInstances` oder `C
 {{% /alert %}}
 
 ### Serie länger als das Raumbuchungsfenster
-
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Der Erhalt der vollständigen Serie mit Terminen ohne Raum beschreibt die kommende Version mit ITEM-2994.
-{{% /alert %}}
 
 Wenn Exchange Serien erlaubt und **Serien über den Buchungshorizont hinaus** als **Bis zum Ende des Buchungshorizonts angenommen** ausweist, kann eine Serie länger sein als das Raumbuchungsfenster. Mindestens ein Termin muss innerhalb des Fensters liegen. Bei **Abgelehnt** oder einer vollständig ausserhalb liegenden neuen Serie müssen Sie die Serie verkürzen, frühere Zeiten wählen oder eine andere Ressource buchen.
 

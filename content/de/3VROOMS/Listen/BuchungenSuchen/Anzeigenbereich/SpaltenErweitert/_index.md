@@ -105,5 +105,13 @@ Detailansicht zur Ressource
 {{< /bootstrap-table >}}
 ---
 
+## Mobiles Equipment als Textspalte
+
+Über die [Spaltenauswahl]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/ListenansichtAnpassen/_index.md" >}}) können Sie **Mobiles Equipment** als zusätzliche Textspalte einblenden. Sie enthält die Bezeichnungen des nicht annullierten mobilen Equipments, durch Kommas getrennt. Bei einer eigenständigen Equipment-Buchung erscheint die Bezeichnung des gebuchten Equipments. Fixes Equipment wird nicht aufgeführt. Bei anonymisierten Buchungen bleibt die Spalte leer.
+
+Anders als die Symbol-/Tooltipp-Anzeige zeigt die Textspalte die Equipment-Bezeichnungen direkt in der Liste. Sie ist auch nicht mit **Mobiles Equipment Aggregiert** zu verwechseln: Die aggregierte Anzeige nennt die Anzahl je Equipmentart statt der einzelnen Bezeichnungen. Die neue Textspalte ist nicht sortierbar.
+
+Mit dem [Filter **Nur Buchungen mit mobilem Equipment**]({{< relref "3VROOMS/Listen/BuchungenSuchen/ErweiterteSuche/DienstleisterspezifischeKriterien/_index.md#buchungen-mit-mobilem-equipment-finden" >}}) können Sie die Liste auf entsprechende Buchungen eingrenzen. Beim [CSV-Export]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/ListenExport/_index.md" >}}) werden die Bezeichnungen der eingeblendeten Textspalte mit exportiert.
+
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.
 [^2]: Die Nummer und die Beschreibung des Kostenträgers ist in den Daten der jeweiligen Person oder des Geschäftsbereichs hinterlegt.

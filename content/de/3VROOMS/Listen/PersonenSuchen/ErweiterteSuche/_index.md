@@ -8,13 +8,12 @@ Folgende Tabelle erläutert die Eingabefelder:
 
 Status und Art sind unabhängige Merkmale. ROOMS leitet die Art aus der aktuell gültigen Organisationszuordnung ab. Personen ohne aktuell gültige Zuordnung gelten als intern.
 
-Unter **Organisationsspezifischen Kriterien** können Sie nach Angaben zur Organisation suchen oder gezielt Personen ohne Organisationszuordnung anzeigen.
+Unter **Organisationsspezifischen Kriterien** können Sie nach Angaben zur Organisation suchen.
 
 {{< bootstrap-table "table table-striped" >}}
 |Feld|Funktion|
 |---|---|
 |Personalnummer|Eindeutige Personalnummer einer firmeninternen Person|
-|Person ohne Organisation|Zeigt nur Personen ohne Organisationszuordnung. Solange die Checkbox aktiviert ist, leert und deaktiviert ROOMS die Felder **Organisation**, **Abteilung**, **Kostenstellencode** und **Kostenstellenname**.|
 |Organisation|Name der Organisation, welcher die gesuchte Person zugeordnet ist|
 |Abteilung|Abteilung der gesuchten Person innerhalb der Organisation|
 |Kostenstellencode|Nummer der zugehörigen Kostenstelle|

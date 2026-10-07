@@ -105,15 +105,11 @@ Wenn die Ressource mit einer Exchange-Raumressource synchronisiert wird, kann da
 
 ### Serientermine ohne Raumbuchung
 
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Die teilweise Raumbuchung und der Erhalt aller Serientermine beschreiben die kommende Version mit ITEM-2994. Dieses Verhalten ist in den geprüften Produktions- und Release-Candidate-Versionen noch nicht enthalten.
-{{% /alert %}}
-
 Bei synchronisierten Exchange-Ressourcen kann eine Besprechungsserie vollständig bestehen bleiben, obwohl nicht für jeden Termin ein Raum gebucht ist:
 
 - **Buchungsfenster:** Erlaubt Exchange eine teilweise Annahme, werden nur Termine bis zum Ende des Raumbuchungsfensters mit einem Raum gebucht. Spätere Termine bleiben ohne Raum in der Serie erhalten und zählen weiterhin zur Anzahl Wiederholungen.
 - **Konflikte:** Innerhalb der bekannten Exchange-Konfliktgrenzen können kollidierende Termine ohne Raumbuchung erhalten bleiben. Wird eine Grenze überschritten, müssen Sie die Zeit oder die Ressource ändern, bevor die Serie gespeichert werden kann.
-- **Annullierung nach Outlook-Änderung:** Im Konfliktmodus **Cancel** kann die betroffene Raumbuchung annulliert werden, während der Outlook-Termin mit seinen menschlichen Teilnehmenden erhalten bleibt.
+- **Annullierung nach Outlook-Änderung:** Im Konfliktmodus **Cancel** kann die betroffene Raumbuchung annulliert werden, während der Outlook-Termin mit seinen eingeladenen Personen erhalten bleibt.
 
 {{% alert title="Raum für jeden Termin prüfen" color="warning" %}}
 Ein vorhandener Serientermin bestätigt keine Raumbuchung. Termine ohne Raum belegen keinen Raum. Prüfen Sie die Hinweise und die Ressource für jeden Termin, bevor Sie die Serie bestätigen. Wählen Sie bei Bedarf einen anderen Raum, ändern Sie den Zeitraum oder verkürzen Sie die Serie. Ein späterer Regelabruf oder das Vorrücken des Buchungsfensters ergänzt fehlende Raumbuchungen nicht automatisch.

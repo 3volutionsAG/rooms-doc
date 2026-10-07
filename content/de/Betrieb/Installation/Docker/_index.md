@@ -120,6 +120,8 @@ Verwenden Sie Vorlagen und MSI immer aus derselben freigegebenen ROOMS-Version w
 
 Verwenden Sie in `ConnectionStrings.config` und `appsettings.json` dieselbe Datenbankidentität. Damit arbeiten Legacy Website, Legacy Service, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf jeder Mandantendatenbank `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
 
+Bei SQL-Authentifizierung mit Benutzername und Passwort ist für `rooms-web` und `rooms-service` zusätzlich `Persist Security Info=True` erforderlich. Ergänzen Sie den Parameter in deren `ConnectionStrings.config`. Das [Legacy-SQL-Beispiel]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#sql-authentifizierung-für-legacy" >}}) erklärt die Einstellung und den Schutz der Zugangsdaten. Die gemeinsame Datenbankidentität bedeutet nicht, dass alle Verbindungsparameter identisch sein müssen. Für RoomsPro API mit integriertem IDP und RoomsPro Worker ist dieser Legacy-Parameter nicht erforderlich.
+
 Der Windows-Service-Account einer MSI-Installation lässt sich nicht unverändert auf Linux- und Windows-Containerprozesse übertragen. Verwenden Sie für den Compose-Standard deshalb eine gemeinsame Anwendungsidentität in den Datenbankverbindungen. Wenn zwingend integrierte Windows-Authentifizierung oder der Zugriff auf weitere AD-Ressourcen erforderlich ist, müssen die Windows-Container mit gMSA/Credential Spec und die Linux-Container mit einer passenden Kerberos-Konfiguration betrieben werden. Diese kundenspezifische Variante sollte mit 3volutions geplant werden.
 
 ## Windows-Container mit Compose
