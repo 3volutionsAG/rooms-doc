@@ -41,4 +41,56 @@ Stammdaten der Importparameter bearbeiten
 
 Über das linke Sidepanel durchsuchen Sie die Importliste nach dem Namen des Importparameters.
 
+## E-Mail bei Import-/Exportfehlern
+
+{{% alert title="Kommende Version" color="info" %}}
+Die folgende Anleitung beschreibt die überarbeitete Fehlerbenachrichtigung für eine kommende ROOMS-Version. Die Auswahl des Typs **Import/Export: Fehler** bei Benutzergruppen, der Platzhalter `[TaskName]` und die gemeinsame Gruppenbenachrichtigung für den BFH WaveWare Import sind im geprüften Produktions- und Release-Candidate-Stand noch nicht enthalten. Ist der Typ bei Ihrer Benutzergruppe nicht verfügbar, lassen Sie die Verfügbarkeit für Ihre Installation durch den Support prüfen.
+{{% /alert %}}
+
+### Wozu gibt es die Fehlerbenachrichtigung?
+
+Bei einem fehlgeschlagenen geplanten Import oder Export des generischen Import-/Exportdiensts kann ROOMS die zuständigen Personen per E-Mail informieren. Dazu gehören auch Fehler beim Aufbau der Task-Konfiguration und Fehler in abhängigen Tasks. Bei abhängigen Tasks wird der Name des zuerst erkannten fehlgeschlagenen Tasks gemeldet.
+
+Auch der BFH WaveWare Import verwendet diese Benachrichtigung bei Validierungsfehlern und bei einem Abbruch durch einen Fehler. Andere kundenspezifische Import-/Exportdienste sind nicht automatisch abgedeckt.
+
+### Voraussetzungen und Empfänger
+
+Für die Konfiguration benötigen Sie die globalen Rechte **Darf Benutzergruppen verwalten** (2) und **Darf Notifikationen verwalten** (41). Ausserdem muss der E-Mail-Versand für Ihre Installation eingerichtet sein.
+
+Die Benachrichtigung geht an die aktiven Personen der konfigurierten Benutzergruppe mit hinterlegter E-Mail-Adresse. Zusätzlich werden die in der Vorlage erfassten CC-Adressen berücksichtigt. Eine Vorlage mit leerem **Email Body** löst keine E-Mail aus.
+
+{{% alert title="Empfängerkreis prüfen" color="warning" %}}
+Alle Benutzergruppen mit einer Vorlage des Typs **Import/Export: Fehler** erhalten die Fehlerbenachrichtigungen der abgedeckten Dienste. Es gibt keine Auswahl einzelner Import-/Exportjobs pro Gruppe und keine Einschränkung auf einen Standort. Prüfen Sie deshalb, welche Personen und CC-Adressen die Fehlermeldungen erhalten dürfen. Eine Vorlage am Standort wird für diesen Versand nicht verwendet.
+{{% /alert %}}
+
+### Fehlerbenachrichtigung einrichten
+
+1. Öffnen Sie `Einstellungen` → `Sicherheitsdaten` → [Benutzergruppen]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Benutzergruppen/_index.md" >}}) und bearbeiten Sie die zuständige Gruppe.
+2. Prüfen Sie im Reiter **Personen**, ob die vorgesehenen Empfänger zugeordnet sind. Diese Personen müssen aktiv sein und eine E-Mail-Adresse besitzen.
+3. Öffnen Sie den Reiter **Notifikationen** und fügen Sie eine Vorlage mit dem Typ **Import/Export: Fehler** hinzu. Besteht bereits eine Vorlage dieses Typs, bearbeiten Sie diese.
+4. Erfassen Sie **Titel** und **Email Body** in den benötigten Sprachen sowie bei Bedarf **Benachrichtigung im CC an**. Trennen Sie mehrere CC-Adressen mit einem Semikolon.
+5. Speichern Sie die Vorlage im Dialog und anschliessend die Benutzergruppe mit **Speichern**.
+6. Lassen Sie die Benachrichtigung vor dem Einsatz in einer kontrollierten Testumgebung mit einem fehlgeschlagenen Import oder Export prüfen. Kontrollieren Sie den tatsächlichen E-Mail-Eingang, Empfänger, CC und Inhalt.
+
+### Platzhalter in der Vorlage
+
+Tragen Sie die Platzhalter mit genau dieser Schreibweise in den Text ein:
+
+{{< bootstrap-table "table table-striped" >}}
+| Platzhalter | Verwendung |
+| --- | --- |
+| `[TaskName]` | Im Titel und im Email Body: Name des fehlgeschlagenen Import-/Exporttasks. Beim BFH WaveWare Import lautet der Wert `BFH WaveWare Import`. |
+| `[WavewareImportFehler]` | Nur im Email Body für Fehlermeldungen des BFH WaveWare Imports: die gesammelten Fehlerdetails. Bei generischen Import-/Exporttasks wird dieser Platzhalter nicht ersetzt. |
+{{< /bootstrap-table >}}
+
+Ein neutraler Titel für eine gemeinsame Vorlage ist beispielsweise `Import/Export fehlgeschlagen: [TaskName]`. Verwenden Sie `[WavewareImportFehler]` nur, wenn die Vorlage die BFH-Fehlerdetails enthalten soll. Diese Gruppe erhält trotzdem auch Fehler der anderen abgedeckten Import-/Exporttasks.
+
+{{% alert title="BFH WaveWare Import" color="warning" %}}
+In der kommenden Version setzt die Fehlerbenachrichtigung eine Gruppen-Vorlage des Typs **Import/Export: Fehler** voraus. Die bisherige standortbezogene BFH-Fehlervorlage und die bisherige separate Empfängereinstellung werden dafür nicht mehr verwendet. Ohne passende Gruppen-Vorlage und Empfänger bleibt diese Fehlerbenachrichtigung aus. Die separate Benachrichtigung über geänderte Übersetzungen bleibt unverändert.
+{{% /alert %}}
+
+### Wenn keine E-Mail ankommt
+
+Prüfen Sie zuerst die Gruppen-Vorlage, den nicht leeren Email Body, die aktiven Gruppenmitglieder und deren E-Mail-Adressen. Der Versand erfolgt über den E-Mail-Dienst, nicht direkt durch den Import-/Exportjob. Prüfen Sie bei Bedarf die [Ereignisanzeige]({{< relref "3VROOMS/Einstellungen/System/Ereignisanzeige/_index.md" >}}) und lassen Sie den E-Mail-Versand durch den Support kontrollieren. Eine ausbleibende E-Mail bestätigt nicht, dass der Import oder Export erfolgreich war.
+
 

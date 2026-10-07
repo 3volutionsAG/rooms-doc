@@ -92,6 +92,10 @@ Ansicht der aktualisierten Personen in der Benutzergruppe
 
 In diesem Bereich können Sie Notifikationsvorlagen für Benutzergruppen erfassen und verwalten. Ebenfalls stellen Sie ein, wie die Notifikationen versendet werden sollen.
 
+{{% alert title="Import-/Exportfehler: kommende Version" color="info" %}}
+Der Typ **Import/Export: Fehler** wird in einer kommenden ROOMS-Version bei Benutzergruppen auswählbar. Er ist im geprüften Produktions- und Release-Candidate-Stand noch nicht als Gruppentyp verfügbar. Die [Anleitung für Fehlerbenachrichtigungen]({{< relref "3VROOMS/Einstellungen/System/DatenImporteExporte/_index.md" >}}#e-mail-bei-import-exportfehlern) erklärt die erforderlichen Rechte, Empfänger, CC-Adressen und Platzhalter. Alle Gruppen mit einer solchen Vorlage erhalten Fehler der abgedeckten Dienste, nicht nur eines bestimmten Jobs oder Standorts.
+{{% /alert %}}
+
 #### Notifikationen bearbeiten
 
 Klicken Sie auf den Menü Reiter `Notifikationen`, wird Ihnen eine Liste aller gespeicherten Notifikationen angezeigt.
