@@ -107,10 +107,6 @@ Detailansicht zur Ressource
 
 ## Mobiles Equipment als Textspalte
 
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Die zusätzliche Textspalte **Mobiles Equipment** gehört zu einer kommenden ROOMS-Version. Sie ist im geprüften Produktions- und Release-Candidate-Stand noch nicht enthalten. Die folgende Beschreibung gilt erst für eine Version mit dieser Spalte.
-{{% /alert %}}
-
 Über die [Spaltenauswahl]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/ListenansichtAnpassen/_index.md" >}}) können Sie **Mobiles Equipment** als zusätzliche Textspalte einblenden. Sie enthält die Bezeichnungen des nicht annullierten mobilen Equipments, durch Kommas getrennt. Bei einer eigenständigen Equipment-Buchung erscheint die Bezeichnung des gebuchten Equipments. Fixes Equipment wird nicht aufgeführt. Bei anonymisierten Buchungen bleibt die Spalte leer.
 
 Anders als die Symbol-/Tooltipp-Anzeige zeigt die Textspalte die Equipment-Bezeichnungen direkt in der Liste. Sie ist auch nicht mit **Mobiles Equipment Aggregiert** zu verwechseln: Die aggregierte Anzeige nennt die Anzahl je Equipmentart statt der einzelnen Bezeichnungen. Die neue Textspalte ist nicht sortierbar.

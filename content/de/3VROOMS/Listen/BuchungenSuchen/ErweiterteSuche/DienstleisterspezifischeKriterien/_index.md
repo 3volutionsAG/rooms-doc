@@ -21,10 +21,6 @@ Folgende Tabelle erläutert die Bedeutung der Checkboxen:
 
 ## Buchungen mit mobilem Equipment finden
 
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Der Filter **Nur Buchungen mit mobilem Equipment** und die zusätzliche Textspalte **Mobiles Equipment** gehören zu einer kommenden ROOMS-Version. Sie sind im geprüften Produktions- und Release-Candidate-Stand noch nicht enthalten. Die folgende Anleitung gilt erst für eine Version mit diesen Funktionen.
-{{% /alert %}}
-
 Wenn Sie mobiles Equipment bereitstellen, können Sie sich eine Arbeitsliste der entsprechenden Buchungen zusammenstellen:
 
 1. Öffnen Sie **Listen → Buchungen → Erweiterte Suche** und wählen Sie den benötigten Zeitraum sowie die weiteren Suchkriterien.
