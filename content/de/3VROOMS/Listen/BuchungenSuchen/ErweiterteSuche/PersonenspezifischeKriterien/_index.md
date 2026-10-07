@@ -17,5 +17,4 @@ Folgende Tabelle erläutert die einzelnen Eingabefelder:
 |Ersteller:in|Tragen Sie hier den Namen der Person ein, welche die Buchung erstellt hat.|
 |Verantwortliche:r|Tragen Sie hier den Namen der Person ein, welche die Verantwortung für die Buchung trägt.|
 |Organisation des Organisators|Wählen Sie die Organisation aus, welcher der Organisator zugeordnet ist.|
-|Organisator ohne Organisation|Zeigt nur Buchungen, deren Organisator keiner Organisation zugeordnet ist. Solange die Checkbox aktiviert ist, leert und deaktiviert ROOMS das Feld **Organisation des Organisators**. Wenn Sie eine Organisation auswählen, wird die Checkbox deaktiviert.|
 {{< /bootstrap-table >}}
