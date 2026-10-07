@@ -103,6 +103,24 @@ Wählen Sie mittels des Datumspickers einen anderen Zeitraum für diese Reservat
 Wenn die Ressource mit einer Exchange-Raumressource synchronisiert wird, kann das Umbuchen einzelner Serientermine auf alternative Räume dazu führen, dass die Exchange-Ressource die gesamte Serie ablehnt. Grund: Die Termine, an denen die Ressource bereits belegt ist, werden von Exchange als Konflikte gewertet. Weitere Details und Konfigurationsmöglichkeiten unter [Exchange Ressource Sync — Buchungsrichtlinien](/betrieb/synchronisation/resourcesync/#buchungsrichtlinien-der-exchange-ressource-booking-policies).
 {{% /alert %}}
 
+### Serientermine ohne Raumbuchung
+
+{{% alert title="Gültigkeit: kommende Version" color="info" %}}
+Die teilweise Raumbuchung und der Erhalt aller Serientermine beschreiben die kommende Version mit ITEM-2994. Dieses Verhalten ist in den geprüften Produktions- und Release-Candidate-Versionen noch nicht enthalten.
+{{% /alert %}}
+
+Bei synchronisierten Exchange-Ressourcen kann eine Besprechungsserie vollständig bestehen bleiben, obwohl nicht für jeden Termin ein Raum gebucht ist:
+
+- **Buchungsfenster:** Erlaubt Exchange eine teilweise Annahme, werden nur Termine bis zum Ende des Raumbuchungsfensters mit einem Raum gebucht. Spätere Termine bleiben ohne Raum in der Serie erhalten und zählen weiterhin zur Anzahl Wiederholungen.
+- **Konflikte:** Innerhalb der bekannten Exchange-Konfliktgrenzen können kollidierende Termine ohne Raumbuchung erhalten bleiben. Wird eine Grenze überschritten, müssen Sie die Zeit oder die Ressource ändern, bevor die Serie gespeichert werden kann.
+- **Annullierung nach Outlook-Änderung:** Im Konfliktmodus **Cancel** kann die betroffene Raumbuchung annulliert werden, während der Outlook-Termin mit seinen menschlichen Teilnehmenden erhalten bleibt.
+
+{{% alert title="Raum für jeden Termin prüfen" color="warning" %}}
+Ein vorhandener Serientermin bestätigt keine Raumbuchung. Termine ohne Raum belegen keinen Raum. Prüfen Sie die Hinweise und die Ressource für jeden Termin, bevor Sie die Serie bestätigen. Wählen Sie bei Bedarf einen anderen Raum, ändern Sie den Zeitraum oder verkürzen Sie die Serie. Ein späterer Regelabruf oder das Vorrücken des Buchungsfensters ergänzt fehlende Raumbuchungen nicht automatisch.
+{{% /alert %}}
+
+Einzelne Termine können später erneut auf eine verfügbare Ressource geprüft werden. Erst eine erfolgreiche Raumbuchung gibt dem Termin wieder einen Raum. Die Raumkosten-Vorschau lässt Termine ausserhalb des Raumbuchungsfensters ohne Raum aus. Details zu den Voraussetzungen und Grenzen finden Sie unter [Exchange Ressource Sync — Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#buchungsrichtlinien-der-exchange-ressource-booking-policies" >}}) und [Konfliktverhalten bei der Synchronisation]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}).
+
 ## Bearbeiten einer Serie
 
 Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterationen beispielsweise die letzten beiden Termine eine halbe Stunde früher beginnen, kann dies in folgenden Schritten eingegeben werden:

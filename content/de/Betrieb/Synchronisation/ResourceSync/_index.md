@@ -113,14 +113,57 @@ Es wird empfohlen, Benutzenden keinen direkten Zugriff auf die Exchange-Ressourc
 
 Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt.
 
+### Regeln in ROOMS prüfen
+
+{{% alert title="Gültigkeit: kommende Version" color="info" %}}
+Die Anzeige **Exchange-Buchungsregeln**, der manuelle Abruf und die Prüfung gespeicherter Regeln beschreiben die kommende Version mit ITEM-2994. Diese Funktionen sind in den geprüften Produktions- und Release-Candidate-Versionen noch nicht enthalten. Die Exchange-Regeln selbst gelten unabhängig davon.
+{{% /alert %}}
+
+Öffnen Sie eine gespeicherte Ressource unter **Einstellungen → Ressourcen → Bearbeiten**. Im Abschnitt **Exchange-Synchronisation** werden bei einer Ressource mit Exchange-Postfach die **Exchange-Buchungsregeln** angezeigt. Das Exchange-Modul muss lizenziert und die Ressourcen-Synchronisation eingerichtet sein. Die Regeln sind auch in der Ressourcenansicht sichtbar.
+
+Für den manuellen Abruf benötigen Sie die Bearbeitungsrechte der Ressource: bei Räumen das globale Recht **Darf Ressourcetyp Raum verwalten** und das standortabhängige Recht **Darf Ressource bearbeiten**. In der Ansicht steht die Schaltfläche nur mit diesen Bearbeitungsrechten zur Verfügung.
+
+1. Prüfen Sie **Stand** und das Datum des letzten erfolgreichen Abrufs.
+2. Klicken Sie bei Bedarf auf **Jetzt aus Exchange abrufen**, beispielsweise nach einer Regeländerung in Exchange.
+3. Warten Sie auf die Rückmeldung und prüfen Sie den angezeigten Stand erneut. Bei einem Fehler prüfen Sie die Exchange-Verbindung und den Zugriff, bevor Sie den Abruf wiederholen.
+
+Der Abruf liest die Regeln. Er ändert weder die Exchange-Konfiguration noch bestehende Buchungen. Regeln werden in Exchange verwaltet, nicht in diesem ROOMS-Abschnitt.
+
+{{< bootstrap-table "table table-striped" >}}
+| Stand / Anzeige | Bedeutung und nächste Prüfung |
+|-----------------|-------------------------------|
+| **Aktuell** | Ein gültiger gespeicherter Stand liegt vor. Das Abrufdatum zeigt, wie alt er ist. |
+| **Noch nicht abgerufen** | Es liegt noch kein erfolgreicher Abruf vor. Warten Sie auf den Hintergrundabruf oder prüfen Sie die Verbindung mit dem manuellen Abruf. |
+| **Veraltet** | Die gespeicherten Werte sind abgelaufen. ROOMS prüft Buchungen nicht gegen diese Werte. Erneut abrufen und bei Fehlern Verbindung und Dienstprotokolle prüfen. |
+| **Abruf fehlgeschlagen** | Der letzte Abruf war nicht erfolgreich. Ein früherer Stand kann weiterhin angezeigt und bis zu seinem Ablauf verwendet werden. Der Fehler verlängert seine Gültigkeit nicht. |
+| **Von Exchange nicht geliefert** | Dieser einzelne Wert ist unbekannt. Das bedeutet nicht, dass die Buchung uneingeschränkt erlaubt ist. |
+{{< /bootstrap-table >}}
+
+Der Worker prüft alle sechs Stunden, welche Ressourcen erneut abgerufen werden müssen. Mit den Standardeinstellungen werden erfolgreich gelesene Regeln nach etwa 24 bis 30 Stunden erneuert und sind drei Tage gültig. Buchungsprüfung und Verfügbarkeitssuche verwenden den gespeicherten Stand, nicht eine neue Exchange-Abfrage pro Buchung. Für automatisch annehmende Ressourcen berücksichtigt ROOMS bekannte, gültige Regeln zu Dauer, Serien, Buchungshorizont und Konflikten. Arbeitszeiten sind nicht Bestandteil dieser Prüfung. Die tatsächliche Zusage oder Absage von Exchange bleibt massgebend.
+
+Wenn Exchange eine maximale Dauer liefert, ersetzt diese bei automatischer Annahme die maximale Buchungsdauer aus ROOMS. Ohne einen gültigen Exchange-Wert gilt weiterhin das ROOMS-Maximum. Die minimale Buchungsdauer aus ROOMS gilt in beiden Fällen. Eine spätere Verschärfung der Regeln hebt bestehende Raumbuchungen nicht automatisch auf. Neue Termine und Änderungen von Raum oder Zeitraum werden erneut geprüft.
+
+#### Besonderheit bei Microsoft365 / Graph
+
+Für `Microsoft365` ist der Regelabruf standardmässig deaktiviert. Er benötigt die ausdrückliche Aktivierung von `CalendarSync:ResourceSchedulingPolicies:EnableGraphBetaDiscovery` in Worker und RoomsPro.Web sowie die vorhandene Microsoft-365-Verbindung in beiden Komponenten. Das zusätzliche Leserecht **MailboxConfigItem.Read** muss ein Administrator manuell erteilen. Die normalen Kalenderberechtigungen genügen nicht. Bevorzugt wird die Exchange-RBAC-Rolle **Application MailboxConfigItem.Read**, auf die benötigten Ressourcen eingeschränkt. Eine tenantweite Entra-Anwendungsberechtigung mit Admin Consent ist eine weiter gefasste Alternative. ROOMS vergibt diese Rechte nicht selbst.
+
+Für EWS verwendet der Regelabruf die bereits konfigurierte EWS-Verbindung der Ressource. Eine separate Exchange-Management-Verbindung ist dafür nicht erforderlich.
+
+{{% alert title="Graph beta und Zugriffsrechte" color="warning" %}}
+Der Regelabruf verwendet Graph beta. Microsoft unterstützt beta-Schnittstellen nicht für Produktionsanwendungen. Prüfen Sie diese Einschränkung vor der Aktivierung. Das Leserecht umfasst Postfach-Konfigurationsobjekte, nicht nur Buchungsregeln. Ein eingeschränkter Exchange-RBAC-Geltungsbereich begrenzt keine zusätzlich erteilte tenantweite Entra-Berechtigung. Lassen Sie die effektiven Rechte prüfen, statt sie bei einem Abruffehler pauschal zu erweitern. Siehe [Microsoft: Graph-beta-Einschränkung](https://learn.microsoft.com/en-us/graph/api/userconfiguration-get?view=graph-rest-beta) und [Application RBAC](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac).
+{{% /alert %}}
+
+Bei **Abruf fehlgeschlagen** nennt die Anzeige unter anderem deaktivierten Abruf, unvollständige Verbindung oder verweigerten Postfachzugriff. Prüfen Sie Aktivierung, Verbindung, Berechtigung und Postfach-Geltungsbereich. Ein fehlgeschlagener Regelabruf allein beweist keinen Ausfall der Kalender-Synchronisation.
+
 ### Wichtige Parameter
 
 {{< bootstrap-table "table table-striped" >}}
 | Parameter | Beschreibung | Auswirkung auf Serien |
 |-----------|-------------|----------------------|
 | `AllowRecurringMeetings` | ob wiederkehrende Termine erlaubt sind | `$false` → alle Serien werden abgelehnt |
-| `BookingWindowInDays` | maximaler Buchungszeitraum in die Zukunft | Serie wird abgelehnt, wenn Termine ausserhalb des Fensters liegen |
-| `EnforceSchedulingHorizon` | ob `BookingWindowInDays` erzwungen wird | `$true` → Termine ausserhalb des Fensters werden abgelehnt |
+| `AllowConflicts` | ob Überschneidungen erlaubt sind | `$true` → Exchange ignoriert die beiden Konfliktgrenzen |
+| `BookingWindowInDays` | maximaler Buchungszeitraum in die Zukunft | begrenzt die Raumbuchungen, nicht zwingend die Länge der Organisatorserie |
+| `EnforceSchedulingHorizon` | Verhalten bei Serien über das Buchungsfenster hinaus | `$true` → Serie wird abgelehnt; `$false` → Raum wird nur bis zum Ende des Buchungsfensters gebucht |
 | `MaximumConflictInstances` | maximale Anzahl Konflikte in einer Serie | wird der Wert überschritten, lehnt Exchange die gesamte Serie ab |
 | `ConflictPercentageAllowed` | maximal erlaubter Konfliktanteil in % | Überschreitung → gesamte Serie wird abgelehnt |
 | `MaximumDurationInMinutes` | maximale Dauer eines einzelnen Termins | Einzeltermine über dem Limit werden abgelehnt |
@@ -128,10 +171,28 @@ Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProce
 
 ### Auswirkung auf Serien mit Konflikten
 
+{{% alert title="Kommende Version: teilweise Raumbuchung" color="info" %}}
+Mit ITEM-2994 prüft ROOMS die bekannten Exchange-Konfliktgrenzen bereits beim Erstellen und Speichern einer Serie. Sind Überschneidungen nicht erlaubt und beide Konfliktgrenzen bekannt, kann die Serie innerhalb dieser Grenzen teilweise angenommen werden. Kollidierende Termine bleiben dann ohne Raumbuchung erhalten. Beide Grenzen müssen eingehalten werden. Für den Konfliktanteil zählen nur die Termine innerhalb des Raumbuchungsfensters. Das erlaubt keine Doppelbuchung des Raums. Wählen Sie für Termine ohne Raum eine andere Ressource oder ändern Sie die Zeit.
+{{% /alert %}}
+
 ROOMS kann Konflikte in einer Serie intern auflösen, z. B. durch Umbuchung einzelner Termine auf alternative Räume. Die Serie wird jedoch weiterhin an die Exchange-Ressource synchronisiert. Dort bestehen die Konflikte weiterhin auf Mailbox-Ebene.
 
 {{% alert title="Wichtig" color="warning" %}}
-Wenn `MaximumConflictInstances` oder `ConflictPercentageAllowed` auf `0` gesetzt sind (Standard), lehnt die Exchange-Ressource eine Serie **komplett** ab, sobald auch nur ein einziger Konflikt besteht - obwohl ROOMS die Konflikte intern bereits gelöst hat.
+Wenn Überschneidungen nicht erlaubt sind und `MaximumConflictInstances` oder `ConflictPercentageAllowed` auf `0` gesetzt sind (Standard), lehnt die Exchange-Ressource eine Serie **komplett** ab, sobald auch nur ein einziger Konflikt besteht - obwohl ROOMS die Konflikte intern bereits gelöst hat.
+{{% /alert %}}
+
+### Serie länger als das Raumbuchungsfenster
+
+{{% alert title="Gültigkeit: kommende Version" color="info" %}}
+Der Erhalt der vollständigen Serie mit Terminen ohne Raum beschreibt die kommende Version mit ITEM-2994.
+{{% /alert %}}
+
+Wenn Exchange Serien erlaubt und **Serien über den Buchungshorizont hinaus** als **Bis zum Ende des Buchungshorizonts angenommen** ausweist, kann eine Serie länger sein als das Raumbuchungsfenster. Mindestens ein Termin muss innerhalb des Fensters liegen. Bei **Abgelehnt** oder einer vollständig ausserhalb liegenden neuen Serie müssen Sie die Serie verkürzen, frühere Zeiten wählen oder eine andere Ressource buchen.
+
+Bei teilweiser Annahme bleiben die späteren Termine in der Organisatorserie erhalten und zählen weiterhin zur Anzahl Wiederholungen. Sie haben aber **keine Raumbuchung**, belegen keinen Raum und werden in der Raumkosten-Vorschau nicht mitgerechnet. ROOMS weist bei diesen Terminen darauf hin, dass sie ohne Raumbuchung erhalten bleiben.
+
+{{% alert title="Termin vorhanden bedeutet nicht Raum gebucht" color="warning" %}}
+Prüfen Sie die Raumbuchung für jeden Termin. Das spätere Vorrücken des Buchungsfensters oder ein erneuter Regelabruf bucht die zuvor raumlosen Termine nicht automatisch. Bearbeiten und prüfen Sie die betreffenden Termine erneut oder wählen Sie einen anderen Raum. Weitere Hinweise unter [Serieninformationen]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/Serieninformationen/_index.md" >}}).
 {{% /alert %}}
 
 ### Aktuelle Einstellungen auslesen

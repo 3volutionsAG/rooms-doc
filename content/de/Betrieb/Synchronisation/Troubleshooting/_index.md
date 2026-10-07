@@ -143,6 +143,27 @@ Das Verhalten bei Synchronisationskonflikten wird pro Person über die Einstellu
 
 In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
 
+### Serien: Raumbuchung und Besprechung unterscheiden
+
+{{% alert title="Gültigkeit: kommende Version" color="info" %}}
+Die folgenden Hinweise zum Erhalt von Serien beschreiben die kommende Version mit ITEM-2994. Sie sind in den geprüften Produktions- und Release-Candidate-Versionen noch nicht enthalten. Die obige Tabelle beschreibt das grundlegende Konfliktverhalten.
+{{% /alert %}}
+
+Bei einer Serie ist eine annullierte Raumbuchung nicht gleichbedeutend mit einer gelöschten Besprechung:
+
+- **Cancel:** ROOMS annulliert die betroffenen Raumbuchungen und entfernt die jeweilige Raumzuordnung aus Outlook. Die Organisatortermine und menschlichen Teilnehmenden bleiben erhalten. Die übrigen Termine behalten ihre Raumbuchungen. Eine spätere Änderung eines anderen Serientermins soll die erhaltenen Termine ohne Raum nicht löschen.
+- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Unveränderte Termine werden nicht allein durch die Konfliktbehandlung zu Einzelausnahmen.
+
+Prüfen Sie nach abgeschlossener Synchronisation die betroffenen Termine in ROOMS, im Organisatorkalender und in der Exchange-Ressourcenbelegung. Eine Raumangabe oder angenommene Antwort beim Organisator allein bestätigt nicht für jeden Serientermin eine vorhandene Raumkopie. Insbesondere nach Outlook-Änderungen, die vorhandene Serienausnahmen zurücksetzen, können fehlende Raumkopien weiterhin auftreten. Bei einer Abweichung prüfen Sie [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}) und ziehen Sie den Support bei. Die neue Konfliktbehandlung repariert bereits beschädigte Serien nicht automatisch.
+
+Nach **Cancel** müssen Sie die Zeit anpassen oder einen anderen Raum wählen und die Raumbuchung erneut prüfen und abschliessen. Ein erhaltener Outlook-Termin ohne Raum ist keine bestätigte Raumbuchung. Warten Sie vor weiteren Serienänderungen, bis beide Systeme übereinstimmen.
+
+{{% alert title="Grenze bei vollständig raumlosen Serien" color="warning" %}}
+Die Bearbeitung eines erhaltenen Termins ohne Raum über **Bearbeiten** in ROOMS mit Übernahme auf die Serie ist nicht durchgängig unterstützt und kann einen Speicherfehler auslösen. Verwenden Sie diesen Weg nicht als Reparaturverfahren. Lassen Sie den Support den Zustand prüfen und prüfen Sie die passende Raumbuchung separat. Auch die neue Konfliktbehandlung ist keine Zusage, dass jede Bearbeitung vollständig raumloser Serien unterstützt wird.
+{{% /alert %}}
+
+Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
+
 ## Weiterführende Informationen
 
 - [Synchronisation testen]({{< relref "Betrieb/Synchronisation/TestSync/_index.md" >}}) - klassischer Test
