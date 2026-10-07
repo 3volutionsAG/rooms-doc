@@ -42,7 +42,7 @@ https://outlook.office365.com/EWS/Exchange.asmx
 
 ## E-Mail-Alias beim Speichern
 
-In einer kommenden ROOMS-Version kann ROOMS beim Speichern einer aktiven Person mit Exchange-Synchronisation einen Alias durch die primäre SMTP-Adresse ersetzen, sofern die Synchronisation nicht deaktiviert ist und der Postfachzugriff möglich ist. Bei `Microsoft365` mit `Delegated` wird die Adresse auch nach erfolgreicher Benutzerzustimmung geprüft. Die betroffene Person erhält bei einer Korrektur eine Warnmeldung mit der bisherigen und der neuen Adresse sowie der Aufforderung, den Administrator zu kontaktieren. Diese Funktion ist noch nicht Bestandteil der geprüften Produktiv- und Release-Candidate-Stände. Details und Prüfpunkte stehen unter [E-Mail-Alias und automatische Adresskorrektur]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#e-mail-alias-und-automatische-adresskorrektur" >}}).
+Beim Speichern einer aktiven Person mit Exchange-Synchronisation kann ROOMS einen Alias durch die primäre SMTP-Adresse ersetzen, sofern die Synchronisation nicht deaktiviert ist und der Postfachzugriff möglich ist. Bei `Microsoft365` mit `Delegated` wird die Adresse auch nach erfolgreicher Benutzerzustimmung geprüft. Die betroffene Person erhält bei einer Korrektur eine Warnmeldung mit der bisherigen und der neuen Adresse sowie der Aufforderung, den Administrator zu kontaktieren. Details und Prüfpunkte stehen unter [E-Mail-Alias und automatische Adresskorrektur]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#e-mail-alias-und-automatische-adresskorrektur" >}}).
 
 ## Zusätzliche Felder / Einstellungen
 

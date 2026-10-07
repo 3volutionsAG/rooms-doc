@@ -30,10 +30,6 @@ Prüfen Sie zuerst:
 
 Exchange meldet Organisatoren, Teilnehmer und Räume mit der **primären SMTP-Adresse** ihres Postfachs. Ein Alias ist eine zusätzliche Adresse desselben Postfachs. Steht in ROOMS nur der Alias, kann die Synchronisation eine Person oder einen Raum nicht korrekt zuordnen. Eine Outlook-Buchung kann deshalb auf der **Systemressource** landen, obwohl der Raum weiterhin im Outlook-Termin eingeladen ist.
 
-{{% alert title="Kommende Version" color="info" %}}
-Die folgende automatische Adresskorrektur beschreibt eine kommende ROOMS-Version. Sie ist noch nicht Bestandteil der geprüften Produktiv- und Release-Candidate-Stände. Bis zur Freigabe der entsprechenden Version müssen die primären SMTP-Adressen weiterhin korrekt in ROOMS gepflegt werden.
-{{% /alert %}}
-
 ROOMS prüft die Adresse bei aktiven Personen und Ressourcen mit Exchange-Synchronisation (`EWS1`, `EWS2`, `O365`, `Microsoft365`):
 
 - **Beim Speichern** einer Person oder Ressource kann ROOMS einen Alias durch die primäre Adresse ersetzen. Bei Personen darf die Synchronisation nicht deaktiviert sein.
