@@ -26,6 +26,28 @@ Prüfen Sie zuerst:
 - bei `EWS1`, `EWS2`, `O365`: stimmt die **Sync-URL**?
 - bei `Microsoft365`: ist die Person ggf. noch **nicht verbunden** (`Delegated`)?
 
+### E-Mail-Alias und automatische Adresskorrektur
+
+Exchange meldet Organisatoren, Teilnehmer und Räume mit der **primären SMTP-Adresse** ihres Postfachs. Ein Alias ist eine zusätzliche Adresse desselben Postfachs. Steht in ROOMS nur der Alias, kann die Synchronisation eine Person oder einen Raum nicht korrekt zuordnen. Eine Outlook-Buchung kann deshalb auf der **Systemressource** landen, obwohl der Raum weiterhin im Outlook-Termin eingeladen ist.
+
+ROOMS prüft die Adresse bei aktiven Personen und Ressourcen mit Exchange-Synchronisation (`EWS1`, `EWS2`, `O365`, `Microsoft365`):
+
+- **Beim Speichern** einer Person oder Ressource kann ROOMS einen Alias durch die primäre Adresse ersetzen. Bei Personen darf die Synchronisation nicht deaktiviert sein.
+- **Nach dem Verbinden des Microsoft-365-Kalenders** mit Benutzerzustimmung (`Delegated`) wird die Adresse der Person ebenfalls geprüft. Ohne den erforderlichen Postfachzugriff ist keine Korrektur möglich.
+- **Vor dem Verschieben einer Raumbuchung auf die Systemressource** prüft die Synchronisation die Adresse des Raums. Ändert sich die gespeicherte Adresse, wird die Buchung mit der korrigierten Adresse erneut geprüft. Das verhindert die Fehlzuordnung wegen eines Alias, ersetzt aber nicht die Prüfung, ob der Raum tatsächlich noch eingeladen ist.
+
+Bei einer Korrektur erhält die betroffene Person eine Warnmeldung in ROOMS mit der bisherigen und der neuen Adresse sowie der Aufforderung, den Administrator zu kontaktieren. Wer eine andere Person oder eine Ressource gespeichert hat, erhält eine Informationsmeldung. Eine durch die Raum-Synchronisation ausgelöste Korrektur wird im Log festgehalten, ohne eine Benutzerbenachrichtigung auszulösen.
+
+**Was muss der Administrator prüfen?**
+
+- Vergleichen Sie die gespeicherte Adresse mit der primären SMTP-Adresse im Exchange-Postfach.
+- Prüfen Sie auch den Benutzerdatenimport und das Verzeichnis. Diese dürfen bei einem späteren Import nicht erneut den Alias in ROOMS eintragen.
+- Bleibt der Alias nach dem Speichern bestehen, prüfen Sie die Logs: ROOMS korrigiert die Adresse nicht, wenn Exchange das Postfach nicht auflösen kann, die primäre Adresse bereits bei einer anderen aktiven Person oder Ressource hinterlegt ist oder das Postfach unter der primären Adresse mit den konfigurierten Synchronisations-Zugangsdaten nicht erreichbar ist. Bei Graph bleibt der Alias auch bestehen, wenn die Domain der primären Adresse andere App-Zugangsdaten verwendet. Stimmen Sie einen solchen Zugangsdatenwechsel mit dem Support ab, statt nur die E-Mail-Adresse zu ändern.
+
+{{% alert title="Grenzen der automatischen Korrektur" color="warning" %}}
+Eine erfolgreich gespeicherte Person oder Ressource bedeutet nicht, dass die Adressprüfung erfolgreich war. Personen, die nur über Outlook buchen, werden nicht allein dadurch korrigiert. Bereits auf die Systemressource verschobene Buchungen werden durch die Adresskorrektur **nicht zurückverschoben**. Prüfen Sie diese Buchungen separat mit dem Support. Wird der Raum tatsächlich aus dem Outlook-Termin entfernt, bleibt das bisherige Verhalten bestehen.
+{{% /alert %}}
+
 ## Schritt 2: Synchronisationstest durchführen
 
 Der klassische Synchronisationstest ist vor allem für **EWS-basierte** Modi hilfreich.
@@ -142,6 +164,23 @@ Das Verhalten bei Synchronisationskonflikten wird pro Person über die Einstellu
 {{< /bootstrap-table >}}
 
 In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
+
+### Serien: Raumbuchung und Besprechung unterscheiden
+
+Bei einer Serie ist eine annullierte Raumbuchung nicht gleichbedeutend mit einer gelöschten Besprechung:
+
+- **Cancel:** ROOMS annulliert die betroffenen Raumbuchungen und entfernt die jeweilige Raumzuordnung aus Outlook. Die Organisatortermine und eingeladenen Personen bleiben erhalten. Die übrigen Termine behalten ihre Raumbuchungen. Eine spätere Änderung eines anderen Serientermins löscht die erhaltenen Termine ohne Raum nicht.
+- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Unveränderte Termine werden nicht allein durch die Konfliktbehandlung zu Einzelausnahmen.
+
+Prüfen Sie nach abgeschlossener Synchronisation die betroffenen Termine in ROOMS, im Organisatorkalender und in der Exchange-Ressourcenbelegung. Eine Raumangabe oder angenommene Antwort beim Organisator allein bestätigt nicht für jeden Serientermin eine vorhandene Raumkopie. Insbesondere nach Outlook-Änderungen, die vorhandene Serienausnahmen zurücksetzen, können fehlende Raumkopien weiterhin auftreten. Bei einer Abweichung prüfen Sie [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}) und ziehen Sie den Support bei. Die neue Konfliktbehandlung repariert bereits beschädigte Serien nicht automatisch.
+
+Nach **Cancel** müssen Sie die Zeit anpassen oder einen anderen Raum wählen und die Raumbuchung erneut prüfen und abschliessen. Ein erhaltener Outlook-Termin ohne Raum ist keine bestätigte Raumbuchung. Warten Sie vor weiteren Serienänderungen, bis beide Systeme übereinstimmen.
+
+{{% alert title="Grenze bei vollständig raumlosen Serien" color="warning" %}}
+Die Bearbeitung eines erhaltenen Termins ohne Raum über **Bearbeiten** in ROOMS mit Übernahme auf die Serie ist nicht durchgängig unterstützt und kann einen Speicherfehler auslösen. Verwenden Sie diesen Weg nicht als Reparaturverfahren. Lassen Sie den Support den Zustand prüfen und prüfen Sie die passende Raumbuchung separat. Auch die neue Konfliktbehandlung ist keine Zusage, dass jede Bearbeitung vollständig raumloser Serien unterstützt wird.
+{{% /alert %}}
+
+Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
 
 ## Weiterführende Informationen
 

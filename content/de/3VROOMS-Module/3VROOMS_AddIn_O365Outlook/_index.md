@@ -45,9 +45,7 @@ Mit dem Buchungsassistenten können Sie die Ressourcenbuchung stornieren, der Te
 
 #### Raum aus einer Serie entfernen
 
-{{% alert title="Gültigkeit: kommende Version" color="info" %}}
-Die nachfolgend beschriebene Teilnehmererhaltung und Sicherheitsprüfung beim Entfernen eines Raumes sind für eine kommende Version vorgesehen. Sie sind in quickROOMS 1.29.4 und im geprüften Release-Candidate noch nicht enthalten. Für die vollständige Unterstützung müssen ROOMS und das Add-In gemeinsam aktualisiert werden, zuerst ROOMS.
-{{% /alert %}}
+Für diese Funktion benötigen Sie kompatible Versionen von ROOMS und dem Add-In. Aktualisieren Sie bei Bedarf zuerst ROOMS und anschliessend das Add-In.
 
 Verwenden Sie diese Funktion, wenn die Besprechung ohne den gebuchten Raum stattfinden soll. Der Outlook-Termin und die eingeladenen Personen bleiben erhalten. Das Entfernen des Raumes ist keine Absage der Besprechung.
 

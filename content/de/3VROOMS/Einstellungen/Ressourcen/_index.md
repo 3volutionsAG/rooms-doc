@@ -72,14 +72,15 @@ Weitere Informationen zum Ein- und Ausblenden sowie zum Speichern von Spalten fi
 
 ### Löschen von Ressourcen
 
-Sie können eine Mehrfachselektion über die linke Checkbox vornehmen und eine Ressource über den untenstehenden Button _entfernen_ löschen.
+Mit **Entfernen** löschen Sie Ressourcen endgültig. Verwenden Sie diese Funktion nur, wenn die Ressource und ihre Buchungsdaten nicht mehr benötigt werden. Zum Löschen benötigen Sie die entsprechenden standortabhängigen Rechte, insbesondere das Datenrecht **Darf Ressource bearbeiten**.
 
-Es erscheint ein Warnhinweis, Ausgabe im Actionpanel oder Fehlermeldung im Actionpanel.
+{{% alert title="Ressourcen nach Möglichkeit deaktivieren" color="warning" %}}
+Beim endgültigen Löschen werden die Buchungen der ausgewählten Ressourcen, davon abhängige Buchungen und Ressourcenzuordnungen unwiderruflich gelöscht. Bei kalendersynchronisierten Ressourcen entfernt ROOMS auch die zugehörigen Outlook-Termine.
 
-Zusätzliche Löschregel:
-* Nur möglich, wenn eine Ressource keine Reservationen hat
-* Löschweitergabe an alle Abhängigkeiten zur Ressource
-* Nur möglich, wenn Benutzer über die entsprechenden standortabhängigen Rechte verfügt.
+Soll eine Ressource nur nicht mehr buchbar sein, deaktivieren Sie stattdessen unter **Bearbeiten** in den [Stammdaten der Ressource]({{< relref "3VROOMS/Einstellungen/Ressourcen/_index.md#stammdaten-der-ressource-bearbeiten" >}}) den **Status** und speichern Sie die Änderung. Bestehende Buchungen und die Historie bleiben in ROOMS erhalten. Alle zugehörigen Reservationen mit Exchange-Synchronisation werden jedoch von der Synchronisation abgekoppelt. Inaktive Ressourcen zählen nicht zum Ressourcen-Lizenzlimit.
+{{% /alert %}}
+
+Hinweise zur Auswahl und Bestätigung finden Sie unter [Ressourcenliste → Entfernen]({{< relref "3VROOMS/Listen/RessourcenSuchen/Anzeigenbereich/Schaltflaechen/_index.md#entfernen" >}}). Bestätigen Sie nur, wenn die genannten Daten endgültig gelöscht werden sollen.
 
 ### Daten einsehen
 
