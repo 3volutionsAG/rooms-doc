@@ -43,10 +43,6 @@ Stammdaten der Importparameter bearbeiten
 
 ## E-Mail bei Import-/Exportfehlern
 
-{{% alert title="Kommende Version" color="info" %}}
-Die folgende Anleitung beschreibt die überarbeitete Fehlerbenachrichtigung für eine kommende ROOMS-Version. Die Auswahl des Typs **Import/Export: Fehler** bei Benutzergruppen, der Platzhalter `[TaskName]` und die gemeinsame Gruppenbenachrichtigung für den BFH WaveWare Import sind im geprüften Produktions- und Release-Candidate-Stand noch nicht enthalten. Ist der Typ bei Ihrer Benutzergruppe nicht verfügbar, lassen Sie die Verfügbarkeit für Ihre Installation durch den Support prüfen.
-{{% /alert %}}
-
 ### Wozu gibt es die Fehlerbenachrichtigung?
 
 Bei einem fehlgeschlagenen geplanten Import oder Export des generischen Import-/Exportdiensts kann ROOMS die zuständigen Personen per E-Mail informieren. Dazu gehören auch Fehler beim Aufbau der Task-Konfiguration und Fehler in abhängigen Tasks. Bei abhängigen Tasks wird der Name des zuerst erkannten fehlgeschlagenen Tasks gemeldet.
@@ -86,7 +82,7 @@ Tragen Sie die Platzhalter mit genau dieser Schreibweise in den Text ein:
 Ein neutraler Titel für eine gemeinsame Vorlage ist beispielsweise `Import/Export fehlgeschlagen: [TaskName]`. Verwenden Sie `[WavewareImportFehler]` nur, wenn die Vorlage die BFH-Fehlerdetails enthalten soll. Diese Gruppe erhält trotzdem auch Fehler der anderen abgedeckten Import-/Exporttasks.
 
 {{% alert title="BFH WaveWare Import" color="warning" %}}
-In der kommenden Version setzt die Fehlerbenachrichtigung eine Gruppen-Vorlage des Typs **Import/Export: Fehler** voraus. Die bisherige standortbezogene BFH-Fehlervorlage und die bisherige separate Empfängereinstellung werden dafür nicht mehr verwendet. Ohne passende Gruppen-Vorlage und Empfänger bleibt diese Fehlerbenachrichtigung aus. Die separate Benachrichtigung über geänderte Übersetzungen bleibt unverändert.
+Die Fehlerbenachrichtigung setzt eine Gruppen-Vorlage des Typs **Import/Export: Fehler** voraus. Die bisherige standortbezogene BFH-Fehlervorlage und die bisherige separate Empfängereinstellung werden dafür nicht mehr verwendet. Ohne passende Gruppen-Vorlage und Empfänger bleibt diese Fehlerbenachrichtigung aus. Die separate Benachrichtigung über geänderte Übersetzungen bleibt unverändert.
 {{% /alert %}}
 
 ### Wenn keine E-Mail ankommt
