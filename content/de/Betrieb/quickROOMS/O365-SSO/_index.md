@@ -252,7 +252,7 @@ Starten Sie den ROOMS IDP nach der Konfigurationsänderung neu.
 ### Optional: Kontenauswahl bei externer Anmeldung anfordern
 
 {{% alert title="Gültigkeit" color="info" %}}
-Die optionale Einstellung `Prompt` beschreibt eine kommende ROOMS-Version. Sie ist derzeit nur auf dem Entwicklungsstand `develop` verfügbar, noch nicht auf `main` oder `release-candidate`.
+Die optionale Einstellung `Prompt` gehört zu einer kommenden ROOMS-Version. Sie ist derzeit nur auf dem Entwicklungsstand `develop` verfügbar, noch nicht auf `main` oder `release-candidate`.
 {{% /alert %}}
 
 Wenn Personen mehrere Microsoft-Konten verwenden, kann die automatische Auswahl eines bereits angemeldeten Kontos zur Anmeldung mit dem falschen Konto führen. Mit `Prompt` kann der ROOMS IDP bei der Weiterleitung an den externen Anbieter eine Kontenauswahl anfordern.
