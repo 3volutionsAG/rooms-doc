@@ -119,6 +119,10 @@ Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProce
 
 ### Regeln in ROOMS prüfen
 
+{{% alert title="Verfügbarkeit in einer kommenden ROOMS-Version" color="info" %}}
+Die Anzeige und der Abruf von Exchange-Buchungsregeln in ROOMS sowie deren automatische Berücksichtigung bei der Buchungsprüfung und Verfügbarkeitssuche gehören zu einer kommenden ROOMS-Version. Dazu gehört auch der automatische Regelabruf bei `Microsoft365` ohne separaten Aktivierungsschalter. In der aktuell veröffentlichten Version stehen diese Funktionen noch nicht zur Verfügung. Die folgenden Hinweise zu diesen Funktionen gelten erst ab ihrer Freigabe.
+{{% /alert %}}
+
 Öffnen Sie eine gespeicherte Ressource unter **Einstellungen → Ressourcen → Bearbeiten**. Im Abschnitt **Exchange-Synchronisation** werden bei einer Ressource mit Exchange-Postfach die **Exchange-Buchungsregeln** angezeigt. Das Exchange-Modul muss lizenziert und die Ressourcen-Synchronisation eingerichtet sein. Die Regeln sind auch in der Ressourcenansicht sichtbar.
 
 Für den manuellen Abruf benötigen Sie die Bearbeitungsrechte der Ressource: bei Räumen das globale Recht **Darf Ressourcetyp Raum verwalten** und das standortabhängige Recht **Darf Ressource bearbeiten**. In der Ansicht steht die Schaltfläche nur mit diesen Bearbeitungsrechten zur Verfügung.
