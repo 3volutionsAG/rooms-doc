@@ -41,6 +41,39 @@ Stammdaten der Importparameter bearbeiten
 
 Über das linke Sidepanel durchsuchen Sie die Importliste nach dem Namen des Importparameters.
 
+## USZ-Leistungsexport: Zeitpunkt der Verrechnung
+
+{{% alert title="Gültigkeit" color="info" %}}
+Dieser Abschnitt beschreibt eine kommende Erweiterung des USZ-Leistungsexports. Die Prüfung von Endzeitpunkt und Wartezeit ist noch nicht Bestandteil der freigegebenen Version. Sie gilt nur für Installationen mit dieser Erweiterung, nicht für andere Verrechnungsexporte oder den älteren USZ-SAP-Dateiexport.
+{{% /alert %}}
+
+### Wann werden Buchungen und Anlässe exportiert?
+
+Die Freigabe zur Verrechnung kann weiterhin vor dem Ende einer Buchung oder eines Anlasses gesetzt werden. Ohne ausdrücklich konfigurierten Datumsbereich wartet der Leistungsexport jedoch, bis der Endzeitpunkt und eine allfällige zusätzliche Wartezeit verstrichen sind. Massgebend ist der Endzeitpunkt, nicht ein Abschlussstatus.
+
+Eine Buchung oder ein Anlass wird nur berücksichtigt, wenn:
+
+- die Verrechnung freigegeben ist,
+- mindestens eine Bestellung vorhanden ist,
+- noch kein erfolgreicher Verrechnungsexport gespeichert ist und
+- der Endzeitpunkt **vor** dem Exportzeitpunkt abzüglich der konfigurierten Wartezeit liegt.
+
+Beim exakten Erreichen dieser Zeitgrenze erfolgt noch kein Export. Der tatsächliche Versand erfolgt bei einem späteren Exportlauf, sobald die Voraussetzungen erfüllt sind; die Wartezeit legt keinen eigenen Ausführungstermin fest.
+
+### Wartezeit konfigurieren
+
+Die zusätzliche Wartezeit wird in der Anwendungskonfiguration über `UszLeistungsExportDataStrategyExportDelayHours` in ganzen Stunden festgelegt. Lassen Sie diese Einstellung durch den zuständigen Support konfigurieren und mit dem Ausführungsintervall des Exportjobs abstimmen. Sie ist kein zusätzliches Feld in den Stammdaten des Import-/Exportjobs.
+
+Ohne Einstellung, bei leerem Wert oder bei `0` entfällt nur die zusätzliche Wartezeit; die Buchung oder der Anlass muss trotzdem beendet sein. Zulässig sind nicht negative ganze Zahlen innerhalb des unterstützten Datumsbereichs. Ungültige Werte wie negative Zahlen, Dezimalzahlen oder Text führen zum Abbruch des Exportlaufs, sofern kein ausdrücklicher Datumsbereich konfiguriert ist.
+
+### Ausnahme: ausdrücklich konfigurierter Datumsbereich
+
+{{% alert title="Datumsbereich ersetzt die Zeitgrenze" color="warning" %}}
+Ist `UszLeistungsExportDataStrategyDateRangeFilter` gesetzt, ersetzt dieser Datumsbereich die automatische Prüfung von Endzeitpunkt und Wartezeit. Damit können auch laufende oder zukünftige Buchungen und Anlässe im ausgewählten Bereich exportiert werden. Lassen Sie einen solchen Export vor der Ausführung durch den zuständigen Support prüfen. Ein erfolgreicher Export wird gespeichert und im nächsten regulären Lauf nicht erneut berücksichtigt.
+{{% /alert %}}
+
+Die Freigabe zur Verrechnung, vorhandene Bestellungen und der noch ausstehende erfolgreiche Export bleiben auch mit einem Datumsbereich erforderlich. Eine Einschränkung auf eine einzelne Buchung oder einen einzelnen Anlass hebt diese Voraussetzungen und die jeweils geltende Zeitbegrenzung nicht auf.
+
 ## E-Mail bei Import-/Exportfehlern
 
 ### Wozu gibt es die Fehlerbenachrichtigung?
