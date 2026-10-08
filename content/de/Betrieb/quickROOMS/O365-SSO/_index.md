@@ -249,6 +249,32 @@ Ergänzen Sie den Microsoft-Provider im Abschnitt `ExternalOpenIdConnectProvider
 
 Starten Sie den ROOMS IDP nach der Konfigurationsänderung neu.
 
+### Optional: Kontenauswahl bei externer Anmeldung anfordern
+
+{{% alert title="Gültigkeit" color="info" %}}
+Die optionale Einstellung `Prompt` beschreibt eine kommende ROOMS-Version. Sie ist derzeit nur auf dem Entwicklungsstand `develop` verfügbar, noch nicht auf `main` oder `release-candidate`.
+{{% /alert %}}
+
+Wenn Personen mehrere Microsoft-Konten verwenden, kann die automatische Auswahl eines bereits angemeldeten Kontos zur Anmeldung mit dem falschen Konto führen. Mit `Prompt` kann der ROOMS IDP bei der Weiterleitung an den externen Anbieter eine Kontenauswahl anfordern.
+
+Sie benötigen Zugriff auf die IDP-Konfiguration und einen bereits eingerichteten externen OpenID-Connect-Provider. Die Einstellung gehört zum jeweiligen Provider unter `IdentityServer:ExternalOpenIdConnectProvider`, nicht zur Wizard-Konfiguration `config.json` oder zu den persönlichen ROOMS-Einstellungen.
+
+Ergänzen Sie im **bestehenden Microsoft-Provider-Objekt** folgende Eigenschaft und starten Sie den ROOMS IDP danach neu. Behalten Sie die übrige Konfiguration bei; der Ausschnitt ist keine vollständige Provider-Definition:
+
+```json
+"Prompt": "select_account"
+```
+
+Wirkung und Grenzen:
+
+- `select_account` fordert bei jeder Weiterleitung zur externen Anmeldung die Kontenauswahl an. Die Darstellung und Unterstützung hängen vom externen Anbieter ab.
+- Ohne `Prompt` sendet ROOMS keinen konfigurierten Provider-Prompt. Eine vom Client angeforderte erneute Anmeldung bleibt möglich.
+- Verlangt der Client ausdrücklich eine erneute Anmeldung mit `prompt=login`, hat diese Anforderung Vorrang vor dem konfigurierten Provider-Prompt.
+- Die Einstellung wirkt beim Anmeldeweg über diesen externen Provider. Sie steuert nicht die Kontenauswahl in Outlook selbst und erzwingt keine neue Anmeldung bei einer bestehenden ROOMS-Sitzung.
+- Die Einstellung ersetzt weder die Zuordnung des externen Kontos zu einem ROOMS-Login noch die Einrichtung eines lokalen Benutzernamens und Passworts.
+
+Prüfen Sie den externen Anmeldeweg nach der Änderung mit den betroffenen Konten: Wird die Kontenauswahl angeboten, und führt das ausgewählte Konto zum richtigen ROOMS-Benutzer? Um den konfigurierten Provider-Prompt zurückzunehmen, entfernen Sie die Eigenschaft `Prompt` aus dem Provider-Objekt und starten Sie den ROOMS IDP erneut.
+
 ## 7. Microsoft-Login einer ROOMS-Person zuordnen
 
 Der Wert aus dem Microsoft-Claim `preferred_username` muss als Login der Person in ROOMS vorhanden sein. Normalerweise erfolgt diese Zuordnung über den Benutzerdatenimport.
