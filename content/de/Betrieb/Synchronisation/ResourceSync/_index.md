@@ -115,7 +115,7 @@ Es wird empfohlen, Benutzenden keinen direkten Zugriff auf die Exchange-Ressourc
 
 ## Buchungsrichtlinien der Exchange-Ressource (Booking Policies)
 
-Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt.
+Exchange-Raumressourcen verarbeiten Buchungsanfragen standardmässig automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt. Eine abweichende Verarbeitung kann in Exchange konfiguriert sein.
 
 ### Regeln in ROOMS prüfen
 
@@ -123,29 +123,41 @@ Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProce
 Die Anzeige und der Abruf von Exchange-Buchungsregeln in ROOMS sowie deren automatische Berücksichtigung bei der Buchungsprüfung und Verfügbarkeitssuche gehören zu einer kommenden ROOMS-Version. Dazu gehört auch der automatische Regelabruf bei `Microsoft365` ohne separaten Aktivierungsschalter. In der aktuell veröffentlichten Version stehen diese Funktionen noch nicht zur Verfügung. Die folgenden Hinweise zu diesen Funktionen gelten erst ab ihrer Freigabe.
 {{% /alert %}}
 
-Öffnen Sie eine gespeicherte Ressource unter **Einstellungen → Ressourcen → Bearbeiten**. Im Abschnitt **Exchange-Synchronisation** werden bei einer Ressource mit Exchange-Postfach die **Exchange-Buchungsregeln** angezeigt. Das Exchange-Modul muss lizenziert und die Ressourcen-Synchronisation eingerichtet sein. Die Regeln sind auch in der Ressourcenansicht sichtbar.
+Öffnen Sie unter **Einstellungen → Ressourcen** eine gespeicherte, Exchange-synchronisierte Ressource. In der **Ressourcenansicht** zeigt der Abschnitt **Buchungsregeln**, welche Werte gelten und ob sie in ROOMS oder Exchange festgelegt sind. Unter **Bearbeiten** finden Sie die **Exchange-Buchungsregeln** im Abschnitt **Exchange-Synchronisation**. Das Exchange-Modul muss lizenziert und das Exchange-Postfach der Ressource eingerichtet sein.
 
 Für den manuellen Abruf benötigen Sie die Bearbeitungsrechte der Ressource: bei Räumen das globale Recht **Darf Ressourcetyp Raum verwalten** und das standortabhängige Recht **Darf Ressource bearbeiten**. In der Ansicht steht die Schaltfläche nur mit diesen Bearbeitungsrechten zur Verfügung.
 
-1. Prüfen Sie **Stand** und das Datum des letzten erfolgreichen Abrufs.
+1. Prüfen Sie die Meldung über der Tabelle: Wendet ROOMS die Exchange-Regeln an? Prüfen Sie auch das Datum des letzten erfolgreichen Abrufs.
 2. Klicken Sie bei Bedarf auf **Jetzt aus Exchange abrufen**, beispielsweise nach einer Regeländerung in Exchange.
-3. Warten Sie auf die Rückmeldung und prüfen Sie den angezeigten Stand erneut. Bei einem Fehler prüfen Sie die Exchange-Verbindung und den Zugriff, bevor Sie den Abruf wiederholen.
+3. Warten Sie auf die Rückmeldung und prüfen Sie Meldung und Werte erneut. Bei einem Fehler prüfen Sie die Exchange-Verbindung und den Zugriff, bevor Sie den Abruf wiederholen.
 
-Der Abruf liest die Regeln. Er ändert weder die Exchange-Konfiguration noch bestehende Buchungen. Regeln werden in Exchange verwaltet, nicht in diesem ROOMS-Abschnitt.
+Der Abruf liest die Regeln. Er ändert weder die Exchange-Konfiguration noch bestehende Buchungen. Exchange-Regeln werden in Exchange verwaltet, nicht in diesem ROOMS-Abschnitt.
 
 {{< bootstrap-table "table table-striped" >}}
-| Stand / Anzeige | Bedeutung und nächste Prüfung |
-|-----------------|-------------------------------|
-| **Aktuell** | Ein gültiger gespeicherter Stand liegt vor. Das Abrufdatum zeigt, wie alt er ist. |
-| **Noch nicht abgerufen** | Es liegt noch kein erfolgreicher Abruf vor. Warten Sie auf den Hintergrundabruf oder prüfen Sie die Verbindung mit dem manuellen Abruf. |
-| **Veraltet** | Die gespeicherten Werte sind abgelaufen. ROOMS prüft Buchungen nicht gegen diese Werte. Erneut abrufen und bei Fehlern Verbindung und Dienstprotokolle prüfen. |
-| **Abruf fehlgeschlagen** | Der letzte Abruf war nicht erfolgreich. Ein früherer Stand kann weiterhin angezeigt und bis zu seinem Ablauf verwendet werden. Der Fehler verlängert seine Gültigkeit nicht. |
-| **Von Exchange nicht geliefert** | Dieser einzelne Wert ist unbekannt. Das bedeutet nicht, dass die Buchung uneingeschränkt erlaubt ist. |
+| Meldung / Anzeige | Bedeutung und nächste Prüfung |
+|-------------------|-------------------------------|
+| **Rooms prüft Buchungen gegen diese Exchange-Regeln** | Ein gültiger gespeicherter Stand wird angewendet. Das Abrufdatum zeigt, wie alt er ist. |
+| **Exchange-Regeln noch nicht abgerufen** | Bis zum erfolgreichen Abruf gelten nur die ROOMS-Regeln. Warten Sie auf den Hintergrundabruf oder prüfen Sie die Verbindung mit dem manuellen Abruf. |
+| **Exchange-Regeln konnten nicht abgerufen werden** | Es liegt kein erfolgreicher Stand vor. Prüfen Sie Verbindung und Zugriff. Scheitert dagegen ein späterer Abruf, kann ein früherer Stand bis zu seinem Ablauf weiter gelten; der Fehler verlängert seine Gültigkeit nicht. |
+| **Rooms wendet die Exchange-Regeln nicht an: Der Stand … ist veraltet** | Der gespeicherte Stand ist nicht mehr gültig für die aktuelle Ressource. Erneut abrufen und bei Fehlern Verbindung und Dienstprotokolle prüfen. |
+| **Rooms wendet die Exchange-Regeln nicht an, weil Exchange Buchungsanfragen nicht automatisch annimmt** | Exchange meldet ausdrücklich einen anderen Verarbeitungsmodus. ROOMS wendet die gelesenen Exchange-Regeln nicht an; die tatsächliche Exchange-Antwort bleibt massgebend. |
+| **Exchange liefert für dieses Postfach keine Buchungsregeln** | Der Abruf war erfolgreich, hat aber keine Buchungsregeln geliefert. ROOMS kann nur seine eigenen Regeln prüfen. Das bedeutet nicht, dass Exchange jede Buchung annimmt. |
+| **Von Exchange nicht geliefert: …** | Die aufgelisteten Einzelwerte sind unbekannt. Die übrigen bekannten, gültigen Regeln können trotzdem gelten. |
 {{< /bootstrap-table >}}
 
-Der Worker prüft alle sechs Stunden, welche Ressourcen erneut abgerufen werden müssen. Mit den Standardeinstellungen werden erfolgreich gelesene Regeln nach etwa 24 bis 30 Stunden erneuert und sind drei Tage gültig. Buchungsprüfung und Verfügbarkeitssuche verwenden den gespeicherten Stand, nicht eine neue Exchange-Abfrage pro Buchung. Für automatisch annehmende Ressourcen berücksichtigt ROOMS bekannte, gültige Regeln zu Dauer, Serien, Buchungshorizont und Konflikten. Arbeitszeiten sind nicht Bestandteil dieser Prüfung. Die tatsächliche Zusage oder Absage von Exchange bleibt massgebend.
+#### Welche Werte gelten?
 
-Wenn Exchange eine maximale Dauer liefert, ersetzt diese bei automatischer Annahme die maximale Buchungsdauer aus ROOMS. Ohne einen gültigen Exchange-Wert gilt weiterhin das ROOMS-Maximum. Die minimale Buchungsdauer aus ROOMS gilt in beiden Fällen. Eine spätere Verschärfung der Regeln hebt bestehende Raumbuchungen nicht automatisch auf. Neue Termine und Änderungen von Raum oder Zeitraum werden erneut geprüft.
+In der Tabelle bedeuten **Regel** die geprüfte Einschränkung, **Gilt** den angewendeten Wert und **Festgelegt in** dessen Herkunft. Die Ressourcenansicht führt ROOMS- und Exchange-Werte zusammen; im Editor zeigt die Exchange-Tabelle die gelesenen Exchange-Regeln neben den separat bearbeitbaren ROOMS-Feldern.
+
+- **Maximale Buchungsdauer:** Ein gültiges, angewendetes Exchange-Maximum ersetzt den gespeicherten ROOMS-Wert. Die Spalte **Festgelegt in** nennt den ersetzten Wert. **Unbegrenzt** ist ebenfalls ein möglicher Exchange-Wert. Ohne ein angewendetes Exchange-Maximum gilt das ROOMS-Maximum. Die minimale Buchungsdauer aus ROOMS bleibt wirksam.
+- **Nicht angewendete Exchange-Werte:** Bei nicht angewendeten Einschränkungen zu Serien, Buchungshorizont oder Konflikten steht in **Gilt** ein Strich. **Festgelegt in** zeigt dann beispielsweise **Exchange meldet …, nicht angewendet**. Ein angezeigter Exchange-Wert allein beweist deshalb nicht, dass ROOMS ihn prüft.
+- **Vor- und Nachlaufdauer:** Die Ressourcenansicht zeigt bei synchronisierten Ressourcen **Entfällt** und nennt einen allenfalls gespeicherten Wert als **eingestellt, wird nicht angewendet**. Im Editor sind diese Felder schreibgeschützt. Die Werte bleiben gespeichert und gelten wieder, wenn die Synchronisation ausgeschaltet wird. Das Speichern der Ressource ist keine Neuberechnung bereits bestehender Buchungen.
+
+Beim Auswählen eines Sync-Modus erläutert der Editor die Folgen der Synchronisation. Unter **Maximale Buchungsdauer** weist er darauf hin, wenn ein aktuelles Exchange-Maximum den ROOMS-Wert ersetzt. Nach einem manuellen Regelabruf wird auch dieser Hinweis aktualisiert.
+
+Der Worker prüft alle sechs Stunden, welche Ressourcen erneut abgerufen werden müssen. Mit den Standardeinstellungen werden erfolgreich gelesene Regeln nach etwa 24 bis 30 Stunden erneuert und sind drei Tage gültig. Buchungsprüfung und Verfügbarkeitssuche verwenden den gespeicherten Stand, nicht eine neue Exchange-Abfrage pro Buchung. ROOMS berücksichtigt bekannte, gültige Regeln zu Dauer, Serien, Buchungshorizont und Konflikten, wenn Exchange automatisch annimmt **oder keinen Verarbeitungsmodus liefert**. Im zweiten Fall zeigt die Tabelle **Automatische Annahme** mit der Herkunft **Exchange-Standard, von Exchange nicht geliefert**. Fehlende Einzelregeln werden dadurch nicht ergänzt. Meldet Exchange ausdrücklich **Keine automatische Verarbeitung** oder **Kalenderaktualisierung; Annahme kann eine Genehmigung erfordern**, wendet ROOMS keine Exchange-Regeln an. Arbeitszeiten sind nicht Bestandteil dieser Prüfung. Die tatsächliche Zusage oder Absage von Exchange bleibt massgebend.
+
+Eine spätere Verschärfung der Regeln hebt bestehende Raumbuchungen nicht automatisch auf. Neue Termine und Änderungen von Raum oder Zeitraum werden erneut geprüft.
 
 #### Besonderheit bei Microsoft365 / Graph
 
@@ -157,7 +169,7 @@ Für EWS verwendet der Regelabruf die bereits konfigurierte EWS-Verbindung der R
 Der Regelabruf verwendet Graph beta. Microsoft unterstützt beta-Schnittstellen nicht für Produktionsanwendungen. Prüfen Sie diese Einschränkung, bevor Sie das Leserecht erteilen. Das Leserecht umfasst Postfach-Konfigurationsobjekte, nicht nur Buchungsregeln. Ein eingeschränkter Exchange-RBAC-Geltungsbereich begrenzt keine zusätzlich erteilte tenantweite Entra-Berechtigung. Lassen Sie die effektiven Rechte prüfen, statt sie bei einem Abruffehler pauschal zu erweitern. Siehe [Microsoft: Graph-beta-Einschränkung](https://learn.microsoft.com/en-us/graph/api/userconfiguration-get?view=graph-rest-beta) und [Application RBAC](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac).
 {{% /alert %}}
 
-Bei **Abruf fehlgeschlagen** nennt die Anzeige unter anderem eine unvollständige Verbindung oder verweigerten Postfachzugriff. Prüfen Sie Verbindung, Berechtigung und Postfach-Geltungsbereich. Ein fehlgeschlagener Regelabruf allein beweist keinen Ausfall der Kalender-Synchronisation.
+Bei einem fehlgeschlagenen Abruf nennt die Anzeige unter anderem eine unvollständige Verbindung oder verweigerten Postfachzugriff. Prüfen Sie Verbindung, Berechtigung und Postfach-Geltungsbereich. Ein fehlgeschlagener Regelabruf allein beweist keinen Ausfall der Kalender-Synchronisation.
 
 ### Wichtige Parameter
 
