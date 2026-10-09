@@ -52,3 +52,18 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
 10. Klicken Sie auf **Buchen**, um die Buchung verbindlich abzuschliessen. Die Buchung wird in 3V ROOMS übernommen und bestätigt.   Der Name der Ressource wird in das Feld Standort des Outlook-Termins übertragen.
     {{< imgproc O365Outlook_web_Buchungsbest Resize "960x">}} {{< /imgproc >}}
 11. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.
+
+## Serie konnte nicht erstellt werden
+
+{{% alert title="Kommende Version" color="info" %}}
+Die nachfolgende Buchungssperre ist erst für eine kommende quickROOMS-Version vorgesehen. Sie ist noch nicht als veröffentlichte Version bestätigt.
+{{% /alert %}}
+
+Kann ROOMS die gewünschte Serie nicht erstellen, erscheint **Serie konnte nicht erstellt werden.** Die Serienanzeige in der Buchungsübersicht wird rot und der verbindliche Buchungsabschluss bleibt gesperrt. quickROOMS bestätigt nicht stattdessen nur den ersten Termin.
+
+- **Weiterhin als Serie buchen:** Passen Sie das Serienmuster in Outlook oder die gewählte Ressource an und warten Sie die erneute Prüfung ab. Erst wenn die Serie gültig ist und die übrigen Buchungsvoraussetzungen erfüllt sind, können Sie die Buchung abschliessen.
+- **Bewusst nur einen Einzeltermin buchen:** Entfernen Sie bei der noch nicht bestätigten Buchung die Wiederholung im Outlook-Termin. Warten Sie, bis quickROOMS die Änderung übernommen hat, und prüfen Sie Datum, Uhrzeit und Ressource. Schliessen Sie anschliessend die Einzelbuchung ab.
+
+Die Fehlermeldung kann weiterhin nur einen technischen Fehler statt des konkreten Ablehnungsgrunds anzeigen. Eine noch vorhandene Wiederholung im Outlook-Entwurf bestätigt keine Raumbuchung. Senden Sie die Einladung nicht in der Annahme, die abgelehnte Serie sei gebucht; prüfen Sie zuerst die Buchungsbestätigung in quickROOMS.
+
+Im Browser-Wizard entfernen Sie das Serienmuster stattdessen im [Seriendialog]({{< relref "3VROOMS-Module/3VROOMS_Wizard/_index.md#serie-verwerfen-und-einen-einzeltermin-buchen" >}}).
