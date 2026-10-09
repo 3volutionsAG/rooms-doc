@@ -222,7 +222,7 @@ Wenn Überschneidungen nicht erlaubt sind und `MaximumConflictInstances` oder `C
 Der hier beschriebene Import einer teilweise angenommenen Outlook-Serie als zusammenhängende ROOMS-Serie gehört zu einer kommenden ROOMS-Version und ist noch nicht freigegeben.
 {{% /alert %}}
 
-Erstellen Sie eine neue Serie direkt in Outlook und laden Sie einen synchronisierten Raum für die **gesamte Serie** ein, kann ROOMS die Serie auch bei einzelnen Raumkonflikten zusammenhängend übernehmen. Voraussetzung sind eine eingerichtete Personen- und Ressourcen-Synchronisation, ein tägliches, wöchentliches oder monatliches Wiederholungsmuster mit Enddatum sowie mindestens ein vom Raum angenommener Termin. ROOMS muss ausserdem unterscheiden können, ob fehlende Raumbuchungen Konflikte sind oder ausserhalb des Raumbuchungsfensters liegen.
+Erstellen Sie eine neue Serie direkt in Outlook und laden Sie einen synchronisierten Raum für die **gesamte Serie** ein, kann ROOMS die Serie auch bei einzelnen Raumkonflikten zusammenhängend übernehmen. Voraussetzung sind eine eingerichtete Personen- und Ressourcen-Synchronisation, ein tägliches, wöchentliches oder monatliches Wiederholungsmuster sowie mindestens ein vom Raum angenommener Termin. Für Serien ohne Enddatum gilt zusätzlich die unten beschriebene [automatische Begrenzung beim Import](#in-outlook-erstellte-serie-ohne-enddatum). ROOMS muss ausserdem unterscheiden können, ob fehlende Raumbuchungen Konflikte sind oder ausserhalb des Raumbuchungsfensters liegen.
 
 Nach erfolgreicher Übernahme gehören die angenommenen Raumbuchungen und die Termine ohne Raum zur selben ROOMS-Serie. Der Outlook-Serientermin erhält die Kategorie **ROOMS**. Bei unveränderten Serienterminen mit Raumkonflikt entfernt ROOMS die Raumzuordnung nur für die betroffenen Termine; die Besprechungen und menschlichen Teilnehmenden bleiben erhalten. Für abgelehnte Änderungen gilt weiterhin das konfigurierte Konfliktverhalten **Rollback** oder **Cancel**. Termine ausserhalb eines bestätigten Raumbuchungsfensters behalten dagegen ihre Raumeinladung, haben aber noch keine Raumbuchung.
 
@@ -234,8 +234,40 @@ Nicht jede teilweise angenommene Outlook-Serie wird als ROOMS-Serie übernommen.
 - Fehlende letzte Termine könnten ausserhalb des Raumbuchungsfensters liegen, aber die verfügbaren Exchange-Regeln klären dieses Fenster nicht. ROOMS übernimmt dann die angenommenen Termine einzeln und lässt die übrigen Raumeinladungen unverändert. Ein unbekanntes Buchungsfenster bedeutet nicht, dass der Raum unbegrenzt buchbar ist.
 
 {{% alert title="Raumbelegung pro Termin prüfen" color="warning" %}}
-ROOMS übernimmt beim Serienimport die von Exchange gelieferten Termine und Zeiten. Das erhaltene Serienmuster und die Kategorie **ROOMS** bestätigen nicht, dass jeder Termin einen Raum hat. Prüfen Sie nach der Synchronisation die einzelnen Raumbuchungen und die Exchange-Ressourcenbelegung. Das Vorrücken des Buchungsfensters oder ein Regelabruf bucht fehlende Räume nicht automatisch. Legen Sie in Outlook ein Enddatum fest; Serien ohne Enddatum sind mit dieser Änderung nicht zuverlässig unterstützt. Bei Abweichungen oder vollständig raumlosen Serien beachten Sie die [Prüfpunkte und Bearbeitungsgrenzen im Troubleshooting]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}), statt die ganze Besprechungsserie vorsorglich zu annullieren.
+ROOMS übernimmt beim Serienimport die von Exchange gelieferten Termine und Zeiten. Das erhaltene Serienmuster und die Kategorie **ROOMS** bestätigen nicht, dass jeder Termin einen Raum hat. Prüfen Sie nach der Synchronisation die einzelnen Raumbuchungen und die Exchange-Ressourcenbelegung. Das Vorrücken des Buchungsfensters oder ein Regelabruf bucht fehlende Räume nicht automatisch. Legen Sie für planbare Serien vorzugsweise selbst ein Enddatum in Outlook fest; bei einem Import ohne Enddatum beachten Sie die unten beschriebene automatische Begrenzung und prüfen Sie das zurückgeschriebene Ende. Bei Abweichungen oder vollständig raumlosen Serien beachten Sie die [Prüfpunkte und Bearbeitungsgrenzen im Troubleshooting]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}), statt die ganze Besprechungsserie vorsorglich zu annullieren.
 {{% /alert %}}
+
+### In Outlook erstellte Serie ohne Enddatum
+
+{{% alert title="Verfügbarkeit in einer kommenden ROOMS-Version" color="info" %}}
+Die automatische Begrenzung beim Import einer Outlook-Serie ohne Enddatum gehört zu einer kommenden ROOMS-Version und ist noch nicht freigegeben. In älteren Versionen wird eine solche Serie nicht zuverlässig übernommen. Legen Sie dort vor der Synchronisation selbst ein Enddatum in Outlook fest.
+{{% /alert %}}
+
+ROOMS speichert keine endlose Serie. Wird eine Outlook-Serie ohne Enddatum als ROOMS-Serie übernommen, begrenzt ROOMS sie anhand der [Serieneinstellungen der Benutzergruppen]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Benutzergruppen/_index.md#serieneinstellungen" >}}) der organisierenden Person. Das gilt für EWS und `Microsoft365` / Graph, beim Import über den Raum sowie bei der erfolgreichen Umwandlung einer synchronisierten Einzelbuchung in eine Serie über Outlook.
+
+{{< bootstrap-table "table table-striped" >}}
+| Einstellung | Begrenzung beim Import |
+|-------------|------------------------|
+| **Iteration** mit Gruppenbegrenzung | Begrenzt die Anzahl künftiger Termine. |
+| **Zeitlich** mit Gruppenbegrenzung | Begrenzt den Zeitraum entsprechend dem Wiederholungsmuster. |
+| Keine passende Gruppenbegrenzung | Begrenzt die Serie auf ein Jahr. |
+{{< /bootstrap-table >}}
+
+Eine Serie, die jede Woche von Montag bis Freitag stattfindet, verwendet in beiden Modellen die tägliche Gruppenbegrenzung. Die Begrenzung zählt ab dem späteren Zeitpunkt von Serienbeginn und Import. Bei einer bereits laufenden Serie beginnt sie daher beim Import, nicht rückwirkend beim ursprünglichen Serienbeginn. Als effektives Ende speichert ROOMS den letzten übernommenen Serientermin. Prüfen Sie dieses Datum, statt aus der Gruppenbegrenzung eine genaue Anzahl Raumbuchungen abzuleiten.
+
+{{% alert title="Die Besprechungsserie wird auch in Outlook verkürzt" color="warning" %}}
+ROOMS schreibt das effektive Ende in den Outlook-Serientermin zurück und sendet die Änderung an alle Teilnehmenden, einschliesslich des Raums. Spätere Wiederholungen entfallen damit auch in den Kalendern der Teilnehmenden, nicht nur als Raumbuchungen in ROOMS. Prüfen Sie nach der Synchronisation das Ende in Outlook und ROOMS sowie die tatsächliche Raumbelegung pro Termin. Wenn die Serie länger dauern soll, planen Sie ihre Fortsetzung ausdrücklich; sie bleibt nicht unbegrenzt bestehen.
+{{% /alert %}}
+
+Das Serienende ist nicht das Raumbuchungsfenster: Innerhalb der begrenzten Serie können Termine weiterhin ohne Raum bleiben. Die oben beschriebenen Voraussetzungen und Fälle mit Einzelbuchungen bleiben bestehen. Ein striktes Exchange-Buchungsfenster kann eine endlose Anfrage bereits vor dem Import vollständig ablehnen.
+
+Weitere Grenzen bleiben bestehen:
+
+- **Einzelbuchung in Outlook zur Serie machen:** Termine nach dem Raumbuchungsfenster können die Übernahme weiterhin verhindern. Im Konfliktmodus **Cancel** kann dabei die bisherige Raumbuchung annulliert werden. Verwenden Sie diesen Weg nicht, um das Buchungsfenster zu umgehen.
+- **Enddatum einer bereits synchronisierten Serie entfernen:** ROOMS behält sein bisheriges Ende, schreibt es in diesem Fall aber noch nicht automatisch nach Outlook zurück. Auch eine gleichzeitig geänderte Wiederholung wird dabei nicht übernommen. Behalten Sie das Enddatum bei und lassen Sie Abweichungen vom Support prüfen.
+- **Lange Serien und verschobene Termine:** Die gelieferten Outlook-Termine begrenzen den Import; Gruppenbegrenzungen über zwei Jahre sind nicht vollständig abgedeckt. Bei EWS können hinter das Serienende verschobene Termine weiterhin fehlen. Prüfen Sie solche Termine gezielt. Auch ein fehlgeschlagenes Zurückschreiben nach Outlook wird bei der Umwandlung einer Einzelbuchung nicht automatisch nachgeholt.
+
+Die Beschränkungen bei der **Erstellung über das quickROOMS Outlook Add-In** bleiben unverändert; die Importkorrektur hebt sie nicht auf.
 
 ### Serie länger als das Raumbuchungsfenster
 
