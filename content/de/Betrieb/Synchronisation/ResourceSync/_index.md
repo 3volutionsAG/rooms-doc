@@ -99,9 +99,30 @@ Ein Text im Outlook-Feld **Ort** genügt nicht für einen Raumwechsel. Der neue 
 
 ## Limitationen
 
-{{% alert title="Vor- und Nachlaufzeiten" color="warning" %}}
-Ist die Ressourcen-Sync auf einer Ressource aktiviert, können Vor- und Nachlaufzeiten nicht mehr verwendet werden. Bei allen Buchungen der Ressource werden die Vor- und Nachlaufzeiten auf **0** gesetzt, da Exchange dieses Konzept nicht unterstützt.
+### Vor- und Nachlaufzeiten bei synchronisierten Ressourcen
+
+{{% alert title="Keine zusätzliche Belegungszeit" color="warning" %}}
+Ist die Ressourcen-Synchronisation auf einer Ressource aktiviert, berechnet ROOMS deren Buchungen ohne Vor- und Nachlaufzeit. Exchange unterstützt diese zusätzlichen Belegungszeiten nicht. Auch konfigurierte Zeiten aus Bestuhlung, Servicebestellungen oder der Buchung verlängern die Belegung dieser Ressource nicht. Wenn Vorbereitungs- oder Aufräumarbeiten Zeit benötigen, planen Sie diese innerhalb des gebuchten Zeitraums ein.
 {{% /alert %}}
+
+Das Aktivieren der Synchronisation und das Speichern der Ressource berechnen bestehende Buchungen **nicht automatisch neu**. Buchungen, die vor dem Aktivieren der Synchronisation erstellt wurden, können deshalb ihre bisher gespeicherten Vorlaufbeginn- und Nachlaufende-Zeiten behalten. Diese Zeiten werden erst beim erneuten Speichern der jeweiligen Buchung in ROOMS angepasst. Prüfen Sie betroffene Buchungen und deren Belegung; das Einschalten der Synchronisation allein bestätigt keine Bereinigung.
+
+{{% alert title="Verfügbarkeit in einer kommenden ROOMS-Version" color="info" %}}
+Die folgenden Korrekturen für Suche, Schnellbuchung, Türschild, Lektionen und mitgebuchte Ressourcen gehören zu einer kommenden ROOMS-Version und sind noch nicht freigegeben. In älteren Versionen können konfigurierte Vor- und Nachlaufzeiten dort noch zu abweichenden Ergebnissen führen, obwohl die Buchung auf der synchronisierten Ressource ohne diese Zeiten berechnet wird.
+{{% /alert %}}
+
+- **Verfügbarkeitssuche:** Konfigurierte Vor- und Nachlaufzeiten schliessen einen freien Zeitraum auf der synchronisierten Ressource nicht mehr zusätzlich aus. Das gilt auch für die entsprechende Suche im Kalender und nach Standort. Andere Buchungsregeln und tatsächliche Belegungen bleiben massgebend.
+- **Schnellbuchung und Bestuhlung:** Eine konfigurierte Nachlaufdauer verkürzt die vorgeschlagene Buchungszeit nicht mehr. Bei kurzfristigen Buchungen wird die Standardbestuhlung nicht allein deshalb ersetzt, weil ihre konfigurierte Vorlaufzeit in die Vergangenheit reichen würde.
+- **Türschild und Lektionenimport:** Für synchronisierte Ressourcen entfällt die konfigurierte Nachlaufdauer am Türschild. Die Verfügbarkeitsprüfung beim Lektionenimport verwendet Beginn und Ende der Lektion ohne zusätzliche Vor- und Nachlaufzeiten.
+- **Synchronisierte mitgebuchte Ressourcen:** Sie verlängern die Hauptbuchung nicht durch ihre eigenen Vor- und Nachlaufzeiten und übernehmen auch keine solchen Zeiten von der Hauptbuchung.
+
+Die Mehrfachbearbeitung kann weiterhin Eingaben für Vor- und Nachlaufzeiten anbieten. Für Buchungen auf synchronisierten Ressourcen werden diese Eingaben beim Speichern nicht als zusätzliche Belegungszeit angewendet. Eine bearbeitbare Eingabe bedeutet daher nicht, dass die Ressource damit vor oder nach dem Termin blockiert wird.
+
+{{% alert title="Vorbereitungsbedarf mitgebuchter Ressourcen prüfen" color="warning" %}}
+Nicht synchronisierte Ressourcen, die den Zeiten einer synchronisierten Hauptbuchung folgen, erhalten weiterhin deren Zeiten ohne eigene Vor- und Nachlaufzeit. Beispielsweise ist Equipment mit konfigurierter Vorbereitungszeit dadurch nicht automatisch länger belegt. Prüfen Sie die tatsächliche Belegung und planen Sie die benötigte Vorbereitungszeit ausdrücklich ein. Diese Einschränkung wird mit den oben beschriebenen Korrekturen nicht behoben.
+{{% /alert %}}
+
+Bestellfristen für Catering-Angebote bleiben unverändert: Sie bestimmen, bis wann eine Bestellung möglich ist, nicht die zusätzliche Belegung der synchronisierten Ressource.
 
 {{< bootstrap-table "table table-striped" >}}
 | Einschränkung | Beschreibung |
