@@ -37,6 +37,10 @@ Beispiel für ein Eingabefeld mit Schnellauswahl
 
 Dieses Eingabefeld befindet sich bei Suchfeldern, die sich auf Personen beziehen. Sobald ein Name eingetragen ist, öffnet sich über einen KLick auf das Kopf-Symbol die Detailansicht der entsprechenden Person.
 
+{{% alert title="Kommende ROOMS-Version" color="info" %}}
+Bereits zugeordnete inaktive Personen werden in der Personenanzeige bzw. im ausgewählten Eintrag grau und mit **(inaktiv)** gekennzeichnet. Die Zuordnung bleibt bestehen. Diese Kennzeichnung ist für eine kommende ROOMS-Version vorgesehen und kann in Ihrer installierten Version noch fehlen. Den Anzeigeumfang und die Grenzen finden Sie unter [Inaktive Personen erkennen]({{< relref "3VROOMS/Listen/BuchungenSuchen/Anzeigenbereich#inaktive-personen-erkennen" >}}).
+{{% /alert %}}
+
 {{< imgproc GrdlFKTen_EingabefeldKopf Resize "1280x" >}}
 Eingabefeld mit Kopf-Symbol zur Personensuche und Aufruf der Detailseite
 {{< /imgproc >}}
