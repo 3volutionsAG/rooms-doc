@@ -195,6 +195,27 @@ ROOMS kann Konflikte in einer Serie intern auflösen, z. B. durch Umbuchung einz
 Wenn Überschneidungen nicht erlaubt sind und `MaximumConflictInstances` oder `ConflictPercentageAllowed` auf `0` gesetzt sind (Standard), lehnt die Exchange-Ressource eine Serie **komplett** ab, sobald auch nur ein einziger Konflikt besteht - obwohl ROOMS die Konflikte intern bereits gelöst hat.
 {{% /alert %}}
 
+### In Outlook erstellte Serie mit teilweise angenommenem Raum
+
+{{% alert title="Verfügbarkeit in einer kommenden ROOMS-Version" color="info" %}}
+Der hier beschriebene Import einer teilweise angenommenen Outlook-Serie als zusammenhängende ROOMS-Serie gehört zu einer kommenden ROOMS-Version und ist noch nicht freigegeben.
+{{% /alert %}}
+
+Erstellen Sie eine neue Serie direkt in Outlook und laden Sie einen synchronisierten Raum für die **gesamte Serie** ein, kann ROOMS die Serie auch bei einzelnen Raumkonflikten zusammenhängend übernehmen. Voraussetzung sind eine eingerichtete Personen- und Ressourcen-Synchronisation, ein tägliches, wöchentliches oder monatliches Wiederholungsmuster mit Enddatum sowie mindestens ein vom Raum angenommener Termin. ROOMS muss ausserdem unterscheiden können, ob fehlende Raumbuchungen Konflikte sind oder ausserhalb des Raumbuchungsfensters liegen.
+
+Nach erfolgreicher Übernahme gehören die angenommenen Raumbuchungen und die Termine ohne Raum zur selben ROOMS-Serie. Der Outlook-Serientermin erhält die Kategorie **ROOMS**. Bei unveränderten Serienterminen mit Raumkonflikt entfernt ROOMS die Raumzuordnung nur für die betroffenen Termine; die Besprechungen und menschlichen Teilnehmenden bleiben erhalten. Für abgelehnte Änderungen gilt weiterhin das konfigurierte Konfliktverhalten **Rollback** oder **Cancel**. Termine ausserhalb eines bestätigten Raumbuchungsfensters behalten dagegen ihre Raumeinladung, haben aber noch keine Raumbuchung.
+
+Nicht jede teilweise angenommene Outlook-Serie wird als ROOMS-Serie übernommen. Die angenommenen Termine bleiben insbesondere in folgenden Fällen **Einzelbuchungen**:
+
+- Der Raum wurde nur für einzelne Termine statt für die gesamte Serie eingeladen.
+- Es handelt sich um eine jährliche Wiederholung.
+- Eine frühere ROOMS-Version hat die Serie bereits als Einzelbuchungen importiert. Diese werden nicht automatisch in eine Serie umgewandelt.
+- Fehlende letzte Termine könnten ausserhalb des Raumbuchungsfensters liegen, aber die verfügbaren Exchange-Regeln klären dieses Fenster nicht. ROOMS übernimmt dann die angenommenen Termine einzeln und lässt die übrigen Raumeinladungen unverändert. Ein unbekanntes Buchungsfenster bedeutet nicht, dass der Raum unbegrenzt buchbar ist.
+
+{{% alert title="Raumbelegung pro Termin prüfen" color="warning" %}}
+ROOMS übernimmt beim Serienimport die von Exchange gelieferten Termine und Zeiten. Das erhaltene Serienmuster und die Kategorie **ROOMS** bestätigen nicht, dass jeder Termin einen Raum hat. Prüfen Sie nach der Synchronisation die einzelnen Raumbuchungen und die Exchange-Ressourcenbelegung. Das Vorrücken des Buchungsfensters oder ein Regelabruf bucht fehlende Räume nicht automatisch. Legen Sie in Outlook ein Enddatum fest; Serien ohne Enddatum sind mit dieser Änderung nicht zuverlässig unterstützt. Bei Abweichungen oder vollständig raumlosen Serien beachten Sie die [Prüfpunkte und Bearbeitungsgrenzen im Troubleshooting]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}), statt die ganze Besprechungsserie vorsorglich zu annullieren.
+{{% /alert %}}
+
 ### Serie länger als das Raumbuchungsfenster
 
 Wenn Exchange Serien erlaubt und **Serien über den Buchungshorizont hinaus** als **Bis zum Ende des Buchungshorizonts angenommen** ausweist, kann eine Serie länger sein als das Raumbuchungsfenster. Mindestens ein Termin muss innerhalb des Fensters liegen. Bei **Abgelehnt** oder einer vollständig ausserhalb liegenden neuen Serie müssen Sie die Serie verkürzen, frühere Zeiten wählen oder eine andere Ressource buchen.
