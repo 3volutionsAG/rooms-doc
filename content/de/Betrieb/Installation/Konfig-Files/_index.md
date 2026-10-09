@@ -103,6 +103,38 @@ Der Konfigurationsschlüssel heisst `IdentityServer:RoomsDatabase`. Bei Konfigur
 </RoomsAppSettings>
 ```
 
+#### Buchungsschluss für die Baloise-Erweiterung
+
+{{% alert title="Kommende ROOMS-Version" color="warning" %}}
+Die folgenden Einstellungen und die neue Fristmeldung gehören zu einer kommenden Version. Sie sind noch nicht für eine veröffentlichte ROOMS-Version bestätigt. Ändern Sie `BedarfsmeldungGliederungId` in einer bestehenden Installation erst, wenn die eingesetzte Version den neuen Buchungsschluss unterstützt.
+{{% /alert %}}
+
+Diese Konfiguration gilt ausschliesslich für Installationen mit der kundenspezifischen Baloise-Buchungserweiterung. Sie aktiviert keine allgemeine Buchungsfrist in anderen ROOMS-Installationen. Stimmen Sie die betroffene Gliederung und die gewünschte Frist mit den zuständigen Administratoren ab.
+
+Die Werte werden in der zentralen `RoomsAppSettings.config` innerhalb des vorhandenen Elements `RoomsAppSettings` gesetzt. Falls gleichnamige Umgebungsvariablen vorhanden sind, haben deren nicht leere Werte Vorrang vor der Datei.
+
+{{< bootstrap-table "table table-striped" >}}
+| Schlüssel | Bedeutung | Standard bei fehlendem oder leerem Wert |
+|---|---|---|
+| `BaloiseBuchungsschlussGliederungId` | Numerische ID der Gliederung, deren Ressourcen dem Buchungsschluss unterliegen. | Die Regel ist nicht aktiv. Auch ein nicht als Ganzzahl lesbarer Wert deaktiviert sie. |
+| `BaloiseBuchungsschlussUhrzeit` | Uhrzeit im Format `HH:mm`, z. B. `14:00` oder `10:30`, in der lokalen Zeit des Benutzers. | `14:00` |
+| `BaloiseBuchungsschlussTageImVoraus` | Anzahl Kalendertage vor dem Datum des Buchungsbeginns; ganze Zahl ab `0`. Mit `0` liegt die Frist am Buchungstag. | `1` |
+{{< /bootstrap-table >}}
+
+Mit den Standardwerten muss eine betroffene Buchung **vor 14:00 Uhr am Vortag** erfolgen. Genau um 14:00 Uhr ist die Frist bereits erreicht; Buchungen am selben Tag sind damit ebenfalls nicht möglich. Bei `10:30` und `2` liegt die Frist vor 10:30 Uhr zwei Kalendertage vor dem Buchungsdatum, unabhängig von der Startuhrzeit der Buchung. Es handelt sich nicht um eine Anzahl Arbeitsstunden oder Werktage. Andere Buchungsregeln gelten weiterhin.
+
+Die Fristprüfung gilt für Original-/Hauptbuchungen auf Ressourcen der konfigurierten Gliederung. Benutzer mit dem wirksamen Recht **Kann ausserhalb von Öffnungszeiten buchen** (ID 151) für die betroffene Ressource sind von dieser Fristprüfung ausgenommen. Vergeben Sie dieses Recht nicht nur zur Umgehung der Frist: Es erlaubt auch Buchungen ausserhalb der Öffnungszeiten.
+
+{{% alert title="Buchungsschluss bei der Umstellung erhalten" color="warning" %}}
+In einer Version mit dem neuen Buchungsschluss wird der bisherige Schlüssel `BedarfsmeldungGliederungId` für diese Regel nicht mehr ausgewertet. Setzen Sie `BaloiseBuchungsschlussGliederungId` auf die ID der tatsächlich vorgesehenen Gliederung. Übernehmen Sie die bisherige ID nur, wenn weiterhin dieselben Ressourcen betroffen sein sollen. Ohne einen gültigen neuen Gliederungswert wird diese Frist **nicht mehr durchgesetzt**; die Standardwerte für Uhrzeit und Tage allein aktivieren sie nicht.
+{{% /alert %}}
+
+Eine ungültige Uhrzeit oder eine negative bzw. nicht lesbare Tageszahl führt bei der betroffenen Buchungsprüfung zu einem Fehler, nicht zu einem Rückfall auf die Standardfrist. Prüfen Sie die Werte deshalb vor dem Verteilen. Sichern Sie die bisherige Konfiguration, verteilen Sie die Änderung wie auf dieser Seite beschrieben und starten Sie die betroffenen Komponenten in einem abgestimmten Wartungsfenster neu.
+
+Kontrollieren Sie anschliessend in einer geeigneten Testumgebung mit einem Benutzer ohne das Ausnahme-Recht, ob die Frist auf den vorgesehenen Ressourcen wirksam ist: unmittelbar vor der Frist sowie genau an der Frist. Prüfen Sie auch eine Ressource ausserhalb der Gliederung. Bei überschrittener Frist zeigt ROOMS die konkrete Frist mit Datum und Uhrzeit an: «Diese Buchung hätte bis spätestens … erstellt werden müssen.» Eine gespeicherte Konfigurationsdatei allein bestätigt nicht, dass die Regel wirksam ist.
+
+Falls kundenspezifische Übersetzungen für die bisherigen Fristmeldungen bestehen, benötigen sie einen Text für `Entites_Plugins_Baloise_Buchungsschluss_Ueberschritten`. Der Platzhalter `{0}` muss erhalten bleiben; er wird durch Datum und Uhrzeit der Frist ersetzt.
+
 ### `ConnectionStrings.config`
 
 Für jede Mandantendatenbank ist ein eigener Eintrag erforderlich. Der Name wird in der Legacy-Webanwendung als Bestandteil der Mandanten-URL verwendet.
