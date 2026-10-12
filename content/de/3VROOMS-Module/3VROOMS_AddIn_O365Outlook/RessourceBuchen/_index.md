@@ -20,7 +20,7 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
    - *Datum und Uhrzeit* werden aus dem Outlook-Ereignis übernommen
    - *Teilnehmerzahl* wird mit den Standardeinstellungen des Benutzenden aus 3V ROOMS ausgefüllt
    - Die Einstellung *Alle Bestuhlungsarten* berücksichtigt auch Räume für mehr Personen als die angegebene Teilnehmerzahl.
-   - *Standort* grenzt die Suche lokal ein; es können mehrere Standorte ausgewählt werden.
+   - *Standort* grenzt die Suche lokal ein. Es können mehrere Standorte ausgewählt werden.
    - Welche *Gliederungstypen* (z. B. Raumtyp oder Raumlabel) und *Gliederungen* zur Auswahl stehen, richtet sich nach der gewählten Ressourcenart und den Standorten. Das Add-In zeigt nur Einträge an, die mindestens einer aktiven Ressource an einem gewählten Standort oder dessen Unterstandorten zugeordnet sind. Ändern Sie die Standortauswahl, werden die verfügbaren Gliederungen aktualisiert und nicht mehr passende Auswahlen entfernt. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl.
 
       {{< imgproc O365Outlook_web_RaumFilter Resize "960x">}} {{< /imgproc >}}
@@ -55,15 +55,11 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
 
 ## Serie konnte nicht erstellt werden
 
-{{% alert title="Kommende Version" color="info" %}}
-Die nachfolgende Buchungssperre ist erst für eine kommende quickROOMS-Version vorgesehen. Sie ist noch nicht als veröffentlichte Version bestätigt.
-{{% /alert %}}
+Kann ROOMS die gewünschte Serie nicht erstellen, erscheint **Serie konnte nicht erstellt werden.** Die Serienanzeige in der Buchungsübersicht wird rot und der verbindliche Buchungsabschluss bleibt gesperrt. Eine Serienbuchung kann nur nach erfolgreicher Serienprüfung abgeschlossen werden.
 
-Kann ROOMS die gewünschte Serie nicht erstellen, erscheint **Serie konnte nicht erstellt werden.** Die Serienanzeige in der Buchungsübersicht wird rot und der verbindliche Buchungsabschluss bleibt gesperrt. quickROOMS bestätigt nicht stattdessen nur den ersten Termin.
-
-- **Weiterhin als Serie buchen:** Passen Sie das Serienmuster in Outlook oder die gewählte Ressource an und warten Sie die erneute Prüfung ab. Erst wenn die Serie gültig ist und die übrigen Buchungsvoraussetzungen erfüllt sind, können Sie die Buchung abschliessen.
+- **Serie buchen:** Passen Sie das Serienmuster in Outlook oder die gewählte Ressource an und warten Sie die erneute Prüfung ab. Erst wenn die Serie gültig ist und die übrigen Buchungsvoraussetzungen erfüllt sind, können Sie die Buchung abschliessen.
 - **Bewusst nur einen Einzeltermin buchen:** Entfernen Sie bei der noch nicht bestätigten Buchung die Wiederholung im Outlook-Termin. Warten Sie, bis quickROOMS die Änderung übernommen hat, und prüfen Sie Datum, Uhrzeit und Ressource. Schliessen Sie anschliessend die Einzelbuchung ab.
 
-Die Fehlermeldung kann weiterhin nur einen technischen Fehler statt des konkreten Ablehnungsgrunds anzeigen. Eine noch vorhandene Wiederholung im Outlook-Entwurf bestätigt keine Raumbuchung. Senden Sie die Einladung nicht in der Annahme, die abgelehnte Serie sei gebucht; prüfen Sie zuerst die Buchungsbestätigung in quickROOMS.
+Die Fehlermeldung kann einen technischen Fehler statt des konkreten Ablehnungsgrunds anzeigen. Eine noch vorhandene Wiederholung im Outlook-Entwurf bestätigt keine Raumbuchung. Prüfen Sie vor dem Senden der Einladung die Buchungsbestätigung in quickROOMS.
 
 Im Browser-Wizard entfernen Sie das Serienmuster stattdessen im [Seriendialog]({{< relref "3VROOMS-Module/3VROOMS_Wizard/_index.md#serie-verwerfen-und-einen-einzeltermin-buchen" >}}).

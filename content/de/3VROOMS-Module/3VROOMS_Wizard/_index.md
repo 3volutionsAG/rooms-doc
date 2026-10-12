@@ -17,10 +17,6 @@ Mit den entsprechenden Einstellungen werden Buchungen, die mit dem 3V ROOMS Wiza
 
 ## Serie verwerfen und einen Einzeltermin buchen
 
-{{% alert title="Kommende Version" color="info" %}}
-Die nachfolgende Buchungssperre und das Verwerfen einer abgelehnten Serie sind erst für eine kommende quickROOMS-Version vorgesehen. Sie sind noch nicht als veröffentlichte Version bestätigt.
-{{% /alert %}}
-
 Kann ROOMS eine gewünschte Serie nicht erstellen, erscheint **Serie konnte nicht erstellt werden.** Die Serienanzeige wird rot und der verbindliche Buchungsabschluss bleibt gesperrt. Passen Sie das Serienmuster oder die Ressource an und lassen Sie die Serie erneut prüfen, wenn Sie weiterhin eine Serie buchen möchten.
 
 Wenn Sie bei einer **neuen oder kopierten Buchung** stattdessen bewusst nur einen Einzeltermin buchen möchten:
@@ -28,7 +24,7 @@ Wenn Sie bei einer **neuen oder kopierten Buchung** stattdessen bewusst nur eine
 1. Öffnen Sie über die Serienanzeige in der Buchungsübersicht den Dialog **Ihre Seriebuchung**.
 2. Warten Sie eine laufende Serienprüfung ab. Währenddessen ist **Löschen** gesperrt.
 3. Wählen Sie **Löschen**, um das Serienmuster zu verwerfen. Dies ist auch möglich, wenn bereits das erste Serienmuster abgelehnt wurde.
-4. Prüfen Sie Datum, Uhrzeit und Ressource der verbleibenden Einzelbuchung und schliessen Sie diese ab. Die übrigen Buchungsvoraussetzungen müssen weiterhin erfüllt sein.
+4. Prüfen Sie Datum, Uhrzeit und Ressource der verbleibenden Einzelbuchung und schliessen Sie diese ab. Dabei müssen die übrigen Buchungsvoraussetzungen erfüllt sein.
 
 **Löschen** verwirft hier das Serienmuster der noch nicht bestätigten Buchung. Es storniert keine bestehende Serie. Beim Bearbeiten einer bestehenden Buchung steht diese Aktion nicht zur Verfügung.
 
