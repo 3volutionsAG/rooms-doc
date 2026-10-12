@@ -102,7 +102,7 @@ Ein Text im Outlook-Feld **Ort** genügt nicht für einen Raumwechsel. Der neue 
 ### Vor- und Nachlaufzeiten bei synchronisierten Ressourcen
 
 {{% alert title="Keine zusätzliche Belegungszeit" color="warning" %}}
-Ist die Ressourcen-Synchronisation auf einer Ressource aktiviert, berechnet ROOMS deren Buchungen ohne Vor- und Nachlaufzeit. Exchange unterstützt diese zusätzlichen Belegungszeiten nicht. Auch konfigurierte Zeiten aus Bestuhlung, Servicebestellungen oder der Buchung verlängern die Belegung dieser Ressource nicht. Wenn Vorbereitungs- oder Aufräumarbeiten Zeit benötigen, planen Sie diese innerhalb des gebuchten Zeitraums ein.
+Bei der Erstellung und beim erneuten Speichern einer Buchung auf einer synchronisierten Ressource berücksichtigt ROOMS keine Vor- und Nachlaufzeit als zusätzliche Belegung. Die konfigurierten Ressourcenwerte bleiben dabei gespeichert. Exchange unterstützt diese zusätzlichen Belegungszeiten nicht. Auch konfigurierte Zeiten aus Bestuhlung, Servicebestellungen oder der Buchung verlängern die Belegung dieser Ressource nicht. Wenn Vorbereitungs- oder Aufräumarbeiten Zeit benötigen, planen Sie diese innerhalb des gebuchten Zeitraums ein.
 {{% /alert %}}
 
 Das Aktivieren der Synchronisation und das Speichern der Ressource berechnen bestehende Buchungen **nicht automatisch neu**. Buchungen, die vor dem Aktivieren der Synchronisation erstellt wurden, können deshalb ihre gespeicherten Vorlaufbeginn- und Nachlaufende-Zeiten behalten. Diese Zeiten werden erst beim erneuten Speichern der jeweiligen Buchung in ROOMS angepasst. Prüfen Sie betroffene Buchungen und deren Belegung. Das Einschalten der Synchronisation allein passt diese Buchungen nicht an.
