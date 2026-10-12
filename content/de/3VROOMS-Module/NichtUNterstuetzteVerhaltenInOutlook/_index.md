@@ -6,9 +6,10 @@ description: 'Nicht unterstützte Verhalten in Outlook'
 ---
 ## Nicht unterstützte Verhalten in Outlook
 
+Eine bereits mit ROOMS synchronisierte Einzelbuchung kann in Outlook zur Serie werden. Beachten Sie die [Voraussetzungen und das Raumbuchungsfenster]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#synchronisierte-einzelbuchung-in-outlook-zur-serie-machen" >}}). Die Übernahme der Serie bestätigt nicht, dass alle Termine einen Raum haben. Für Serien ohne Ende und das Entfernen eines bestehenden Serienendes gelten die dort beschriebenen Begrenzungen.
+
 {{% alert title="Warning" color="warning" %}}
 
-- Aus einem mit Rooms synchronisierten Einzeltermins eine Serie erstellen --> Serie wird nicht erstellt in Rooms --> Beim nächsten Update der Reservation wird die Serie/Serientermin in Outlook entfernt
 - Serie erweitern (mehr Appointments als Reservationen) --> Zusätzliche Appointments werden wieder gelöscht / Serieappointments werden zurückgesetzt
 - Sofortiges löschen des Appointmens nach der Erstellung --> Reservation bleibt bestehen
 - Datum/Zeitanpassung auf Outlook auf einen Zeitpunkt wo der Raum bereits besetzt ist oder das Buchen nicht erlaubt ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
