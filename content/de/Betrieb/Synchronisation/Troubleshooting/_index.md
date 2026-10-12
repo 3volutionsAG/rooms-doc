@@ -182,6 +182,12 @@ Die Bearbeitung eines erhaltenen Termins ohne Raum über **Bearbeiten** in ROOMS
 
 Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
 
+### Serienende wiederhergestellt, Raumantwort ausstehend
+
+Entfernt die organisierende Person das Enddatum einer synchronisierten Serie in Outlook, schreibt ROOMS sein bestehendes Ende an alle Teilnehmenden zurück. Hat der Raum die Anfrage ohne Ende bereits abgelehnt, kann diese ältere Ablehnung noch sichtbar sein. ROOMS wartet dann auf eine neue Antwort des Raums zur wieder begrenzten Serie, bevor es den weiteren Abgleich ausführt. Dieser Wartezustand zählt nicht als fehlgeschlagener Synchronisationsversuch und gibt die gültigen Raumbuchungen nicht aufgrund der älteren Ablehnung frei.
+
+Bleibt eine neue Antwort aus, kann die Synchronisation weiter ausstehen. Prüfen Sie das Ende im Organisatorkalender, die Antwort und Belegung des Raums sowie die Dienstprotokolle. Lassen Sie den Support die fehlende Antwort untersuchen; annullieren Sie die Serie nicht allein wegen dieses Wartezustands. Eine neue Ablehnung folgt weiterhin **Rollback** oder **Cancel**. Der vollständige Ablauf ist unter [Enddatum einer synchronisierten Serie in Outlook entfernen]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#enddatum-einer-synchronisierten-serie-in-outlook-entfernen" >}}) beschrieben.
+
 ## Weiterführende Informationen
 
 - [Synchronisation testen]({{< relref "Betrieb/Synchronisation/TestSync/_index.md" >}}) - klassischer Test
