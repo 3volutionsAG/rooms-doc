@@ -251,15 +251,11 @@ Starten Sie den ROOMS IDP nach der Konfigurationsänderung neu.
 
 ### Optional: Kontenauswahl bei externer Anmeldung anfordern
 
-{{% alert title="Gültigkeit" color="info" %}}
-Die optionale Einstellung `Prompt` gehört zu einer kommenden ROOMS-Version. Sie ist derzeit nur auf dem Entwicklungsstand `develop` verfügbar, noch nicht auf `main` oder `release-candidate`.
-{{% /alert %}}
-
 Wenn Personen mehrere Microsoft-Konten verwenden, kann die automatische Auswahl eines bereits angemeldeten Kontos zur Anmeldung mit dem falschen Konto führen. Mit `Prompt` kann der ROOMS IDP bei der Weiterleitung an den externen Anbieter eine Kontenauswahl anfordern.
 
 Sie benötigen Zugriff auf die IDP-Konfiguration und einen bereits eingerichteten externen OpenID-Connect-Provider. Die Einstellung gehört zum jeweiligen Provider unter `IdentityServer:ExternalOpenIdConnectProvider`, nicht zur Wizard-Konfiguration `config.json` oder zu den persönlichen ROOMS-Einstellungen.
 
-Ergänzen Sie im **bestehenden Microsoft-Provider-Objekt** folgende Eigenschaft und starten Sie den ROOMS IDP danach neu. Behalten Sie die übrige Konfiguration bei; der Ausschnitt ist keine vollständige Provider-Definition:
+Ergänzen Sie im **bestehenden Microsoft-Provider-Objekt** folgende Eigenschaft und starten Sie den ROOMS IDP danach neu. Behalten Sie die übrige Konfiguration bei. Der Ausschnitt ist keine vollständige Provider-Definition:
 
 ```json
 "Prompt": "select_account"
