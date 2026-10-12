@@ -12,10 +12,6 @@ Position der Listensymbole und Übersicht der zur Verfügung stehenden Schaltfl�
 
 ## Inaktive Personen erkennen
 
-{{% alert title="Kommende ROOMS-Version" color="info" %}}
-Die hier beschriebene Kennzeichnung inaktiver Personen ist für eine kommende ROOMS-Version vorgesehen. In Ihrer installierten Version kann sie noch fehlen.
-{{% /alert %}}
-
 Ist eine Person in ROOMS auf **Inaktiv** gesetzt, erscheint in den unterstützten Ansichten der Zusatz **(inaktiv)** beim Namen. In Listen und Personenfeldern wird der Name zusätzlich grau dargestellt. Der Zusatz bezieht sich auf die Person, nicht auf den Status der Buchung oder Bestellung.
 
 Die Kennzeichnung erscheint an folgenden Stellen in der ROOMS-Webapplikation:
@@ -31,11 +27,11 @@ Die Kennzeichnung erscheint an folgenden Stellen in der ROOMS-Webapplikation:
 | Teilnehmendentabellen einer Buchung oder eines Anlasses | Die teilnehmende Person, sofern sie als Person in ROOMS hinterlegt ist |
 | Bestellliste | Besteller:in, Ersteller:in, Organisator:in und die in der Spalte für die verantwortliche Person angezeigte Person |
 
-Die Kennzeichnung ändert weder den gespeicherten Namen noch die Personenzuordnung. Sie annulliert keine Buchung oder Bestellung. Die bestehenden Sichtbarkeitsrechte bleiben unverändert; anonymisierte Buchungszeilen zeigen keinen Personenstatus.
+Die Kennzeichnung ändert weder den gespeicherten Namen noch die Personenzuordnung. Sie annulliert keine Buchung oder Bestellung. Die Sichtbarkeit richtet sich nach den geltenden Berechtigungen. Anonymisierte Buchungszeilen zeigen keinen Personenstatus.
 
-Nicht jede Personenanzeige erhält diese Kennzeichnung. Benachrichtigungen, das Anlass-Seitenpanel und die Buchungsansicht im Outlook-Add-in sind nicht Bestandteil dieser Änderung. Auch die zusammengefasste Teilnehmendenspalte und die Spalte für die annullierende Person in der Buchungsliste bleiben unverändert. Ein fehlender Zusatz ist deshalb kein sicherer Nachweis dafür, dass eine Person aktiv ist.
+Nicht jede Personenanzeige erhält diese Kennzeichnung. Benachrichtigungen, das Anlass-Seitenpanel und die Buchungsansicht im Outlook-Add-in zeigen keinen Inaktiv-Zusatz. Das gilt auch für die zusammengefasste Teilnehmendenspalte und die Spalte für die annullierende Person in der Buchungsliste. Ein fehlender Zusatz ist deshalb kein sicherer Nachweis dafür, dass eine Person aktiv ist.
 
-Um gezielt nach entsprechenden Buchungen zu suchen, verwenden Sie den bestehenden Filter **Buchungen inaktiver Benutzer:innen** unter [Personenspezifische Kriterien]({{< relref "3VROOMS/Listen/BuchungenSuchen/ErweiterteSuche/PersonenspezifischeKriterien" >}}).
+Um gezielt nach entsprechenden Buchungen zu suchen, verwenden Sie den Filter **Buchungen inaktiver Benutzer:innen** unter [Personenspezifische Kriterien]({{< relref "3VROOMS/Listen/BuchungenSuchen/ErweiterteSuche/PersonenspezifischeKriterien" >}}).
 
 ## Anpassung der Darstellung
 Mit Hilfe der Listensymbole können Sie die Darstellung nach Ihren Bedürfnissen anpassen. Die einzelnen Symbole werden im Kapitel [Grundlegende Funktionen](/3vrooms/generell/grundlegendefunktionen/) erläutert.
