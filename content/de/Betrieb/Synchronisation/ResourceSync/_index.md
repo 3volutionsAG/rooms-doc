@@ -89,7 +89,7 @@ Bei einer bereits synchronisierten Buchung kann die organisierende Person den Ra
 2. bisherigen Raum aus dem Termin entfernen
 3. Termin speichern oder senden
 
-ROOMS ordnet den Outlook-Termin der bestehenden Buchung zu und wechselt die ROOMS-Ressource, wenn die Buchung auf dem neuen Raum zulässig ist. Titel, Zeitraum und menschliche Teilnehmende werden aus demselben Outlook-Stand übernommen. Ein Raumwechsel gilt als notifikationsrelevante Änderung; ROOMS versendet die dafür konfigurierten Änderungsmitteilungen.
+ROOMS ordnet den Outlook-Termin der bestehenden Buchung zu und wechselt die ROOMS-Ressource, wenn die Buchung auf dem neuen Raum zulässig ist. Titel, Zeitraum und menschliche Teilnehmende werden aus demselben Outlook-Stand übernommen. Ein Raumwechsel gilt als notifikationsrelevante Änderung. ROOMS versendet die dafür konfigurierten Änderungsmitteilungen.
 
 Sind vorübergehend der bisherige und genau ein neuer synchronisierter Raum im Termin vorhanden, behandelt ROOMS den neuen Raum als Ersatz und bereinigt den bisherigen Raum bei der Synchronisation. Trotzdem soll am Ende nur ein synchronisierter Raum eingeladen sein. Mehrere zusätzliche Räume führen zu einem mehrdeutigen Zustand und sollen vermieden werden.
 
@@ -99,49 +99,75 @@ Ein Text im Outlook-Feld **Ort** genügt nicht für einen Raumwechsel. Der neue 
 
 ## Limitationen
 
-{{% alert title="Vor- und Nachlaufzeiten" color="warning" %}}
-Ist die Ressourcen-Sync auf einer Ressource aktiviert, können Vor- und Nachlaufzeiten nicht mehr verwendet werden. Bei allen Buchungen der Ressource werden die Vor- und Nachlaufzeiten auf **0** gesetzt, da Exchange dieses Konzept nicht unterstützt.
+### Vor- und Nachlaufzeiten bei synchronisierten Ressourcen
+
+{{% alert title="Keine zusätzliche Belegungszeit" color="warning" %}}
+Bei der Erstellung und beim erneuten Speichern einer Buchung auf einer synchronisierten Ressource berücksichtigt ROOMS keine Vor- und Nachlaufzeit als zusätzliche Belegung. Die konfigurierten Ressourcenwerte bleiben dabei gespeichert. Exchange unterstützt diese zusätzlichen Belegungszeiten nicht. Auch konfigurierte Zeiten aus Bestuhlung, Servicebestellungen oder der Buchung verlängern die Belegung dieser Ressource nicht. Wenn Vorbereitungs- oder Aufräumarbeiten Zeit benötigen, planen Sie diese innerhalb des gebuchten Zeitraums ein.
 {{% /alert %}}
+
+Das Aktivieren der Synchronisation und das Speichern der Ressource berechnen bestehende Buchungen **nicht automatisch neu**. Buchungen, die vor dem Aktivieren der Synchronisation erstellt wurden, können deshalb ihre gespeicherten Vorlaufbeginn- und Nachlaufende-Zeiten behalten. Diese Zeiten werden erst beim erneuten Speichern der jeweiligen Buchung in ROOMS angepasst. Prüfen Sie betroffene Buchungen und deren Belegung. Das Einschalten der Synchronisation allein passt diese Buchungen nicht an.
+
+Die Verfügbarkeit synchronisierter Ressourcen wird für den angefragten Terminzeitraum ohne zusätzliche Vor- und Nachlaufzeit geprüft. Für synchronisierte mitgebuchte Ressourcen gilt derselbe Grundsatz. Tatsächliche Belegungen und weitere Buchungsregeln werden zusätzlich berücksichtigt.
+
+Die Mehrfachbearbeitung kann Eingaben für Vor- und Nachlaufzeiten anbieten. Für Buchungen auf synchronisierten Ressourcen werden diese Eingaben beim Speichern nicht als zusätzliche Belegungszeit angewendet. Eine bearbeitbare Eingabe bedeutet daher nicht, dass die Ressource damit vor oder nach dem Termin blockiert wird.
+
+{{% alert title="Vorbereitungsbedarf mitgebuchter Ressourcen prüfen" color="warning" %}}
+Nicht synchronisierte Ressourcen, die den Zeiten einer synchronisierten Hauptbuchung folgen, erhalten deren Zeiten ohne eigene Vor- und Nachlaufzeit. Beispielsweise ist Equipment mit konfigurierter Vorbereitungszeit dadurch nicht automatisch länger belegt. Prüfen Sie die tatsächliche Belegung und planen Sie die benötigte Vorbereitungszeit ausdrücklich ein.
+{{% /alert %}}
+
+Bestellfristen für Catering-Angebote bestimmen, bis wann eine Bestellung möglich ist. Sie legen keine zusätzliche Belegungszeit der synchronisierten Ressource fest.
 
 {{< bootstrap-table "table table-striped" >}}
 | Einschränkung | Beschreibung |
 |---------------|-------------|
 | **Nur eine Ressource pro Termin** | Grundsätzlich darf bei einem Outlook-Termin nur eine synchronisierte Ressource hinzugefügt oder eingeladen sein. Beim oben beschriebenen Raumwechsel dürfen vorübergehend der bisherige und genau ein neuer synchronisierter Raum vorhanden sein. |
 | **Add-in: Ressource nicht manuell einladen** | Wird über das Add-in eine synchronisierte Ressource gebucht, darf sie nicht zusätzlich als Teilnehmer hinzugefügt werden |
-| **Kein direkter Zugriff auf Exchange-Kalender** | Termine sollen nicht direkt auf der Ressourcenmailbox erstellt werden; die Synchronisation ist auf den ROOMS-Flow ausgerichtet |
+| **Kein direkter Zugriff auf Exchange-Kalender** | Termine sollen nicht direkt auf der Ressourcenmailbox erstellt werden. Die Synchronisation ist auf den ROOMS-Flow ausgerichtet. |
 {{< /bootstrap-table >}}
 
 Es wird empfohlen, Benutzenden keinen direkten Zugriff auf die Exchange-Ressourcen-Mailboxen zu gewähren.
 
 ## Buchungsrichtlinien der Exchange-Ressource (Booking Policies)
 
-Exchange-Raumressourcen verarbeiten Buchungsanfragen automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt.
+Exchange-Raumressourcen verarbeiten Buchungsanfragen standardmässig automatisch (`AutomateProcessing: AutoAccept`). Die Ressource entscheidet anhand von Buchungsrichtlinien (Booking Policies), ob sie eine Anfrage annimmt oder ablehnt. Eine abweichende Verarbeitung kann in Exchange konfiguriert sein.
 
 ### Regeln in ROOMS prüfen
 
-Öffnen Sie eine gespeicherte Ressource unter **Einstellungen → Ressourcen → Bearbeiten**. Im Abschnitt **Exchange-Synchronisation** werden bei einer Ressource mit Exchange-Postfach die **Exchange-Buchungsregeln** angezeigt. Das Exchange-Modul muss lizenziert und die Ressourcen-Synchronisation eingerichtet sein. Die Regeln sind auch in der Ressourcenansicht sichtbar.
+Öffnen Sie unter **Einstellungen → Ressourcen** eine gespeicherte, Exchange-synchronisierte Ressource. In der **Ressourcenansicht** zeigt der Abschnitt **Buchungsregeln**, welche Werte gelten und ob sie in ROOMS oder Exchange festgelegt sind. Unter **Bearbeiten** finden Sie die **Exchange-Buchungsregeln** im Abschnitt **Exchange-Synchronisation**. Das Exchange-Modul muss lizenziert und das Exchange-Postfach der Ressource eingerichtet sein.
 
 Für den manuellen Abruf benötigen Sie die Bearbeitungsrechte der Ressource: bei Räumen das globale Recht **Darf Ressourcetyp Raum verwalten** und das standortabhängige Recht **Darf Ressource bearbeiten**. In der Ansicht steht die Schaltfläche nur mit diesen Bearbeitungsrechten zur Verfügung.
 
-1. Prüfen Sie **Stand** und das Datum des letzten erfolgreichen Abrufs.
+1. Prüfen Sie die Meldung über der Tabelle: Wendet ROOMS die Exchange-Regeln an? Prüfen Sie auch das Datum des letzten erfolgreichen Abrufs.
 2. Klicken Sie bei Bedarf auf **Jetzt aus Exchange abrufen**, beispielsweise nach einer Regeländerung in Exchange.
-3. Warten Sie auf die Rückmeldung und prüfen Sie den angezeigten Stand erneut. Bei einem Fehler prüfen Sie die Exchange-Verbindung und den Zugriff, bevor Sie den Abruf wiederholen.
+3. Warten Sie auf die Rückmeldung und prüfen Sie Meldung und Werte erneut. Bei einem Fehler prüfen Sie die Exchange-Verbindung und den Zugriff, bevor Sie den Abruf wiederholen.
 
-Der Abruf liest die Regeln. Er ändert weder die Exchange-Konfiguration noch bestehende Buchungen. Regeln werden in Exchange verwaltet, nicht in diesem ROOMS-Abschnitt.
+Der Abruf liest die Regeln. Er ändert weder die Exchange-Konfiguration noch bestehende Buchungen. Exchange-Regeln werden in Exchange verwaltet, nicht in diesem ROOMS-Abschnitt.
 
 {{< bootstrap-table "table table-striped" >}}
-| Stand / Anzeige | Bedeutung und nächste Prüfung |
-|-----------------|-------------------------------|
-| **Aktuell** | Ein gültiger gespeicherter Stand liegt vor. Das Abrufdatum zeigt, wie alt er ist. |
-| **Noch nicht abgerufen** | Es liegt noch kein erfolgreicher Abruf vor. Warten Sie auf den Hintergrundabruf oder prüfen Sie die Verbindung mit dem manuellen Abruf. |
-| **Veraltet** | Die gespeicherten Werte sind abgelaufen. ROOMS prüft Buchungen nicht gegen diese Werte. Erneut abrufen und bei Fehlern Verbindung und Dienstprotokolle prüfen. |
-| **Abruf fehlgeschlagen** | Der letzte Abruf war nicht erfolgreich. Ein früherer Stand kann weiterhin angezeigt und bis zu seinem Ablauf verwendet werden. Der Fehler verlängert seine Gültigkeit nicht. |
-| **Von Exchange nicht geliefert** | Dieser einzelne Wert ist unbekannt. Das bedeutet nicht, dass die Buchung uneingeschränkt erlaubt ist. |
+| Meldung / Anzeige | Bedeutung und nächste Prüfung |
+|-------------------|-------------------------------|
+| **Rooms prüft Buchungen gegen diese Exchange-Regeln** | Ein gültiger gespeicherter Stand wird angewendet. Das Abrufdatum zeigt, wie alt er ist. |
+| **Exchange-Regeln noch nicht abgerufen** | Bis zum erfolgreichen Abruf gelten nur die ROOMS-Regeln. Warten Sie auf den Hintergrundabruf oder prüfen Sie die Verbindung mit dem manuellen Abruf. |
+| **Exchange-Regeln konnten nicht abgerufen werden** | Es liegt kein erfolgreicher Stand vor. Prüfen Sie Verbindung und Zugriff. Scheitert dagegen ein späterer Abruf, kann ein früherer Stand bis zu seinem Ablauf weiter gelten. Der Fehler verlängert seine Gültigkeit nicht. |
+| **Rooms wendet die Exchange-Regeln nicht an: Der Stand … ist veraltet** | Der gespeicherte Stand ist nicht mehr gültig für die aktuelle Ressource. Erneut abrufen und bei Fehlern Verbindung und Dienstprotokolle prüfen. |
+| **Rooms wendet die Exchange-Regeln nicht an, weil Exchange Buchungsanfragen nicht automatisch annimmt** | Exchange meldet ausdrücklich einen anderen Verarbeitungsmodus. ROOMS wendet die gelesenen Exchange-Regeln nicht an. Die tatsächliche Exchange-Antwort bleibt massgebend. |
+| **Exchange liefert für dieses Postfach keine Buchungsregeln** | Der Abruf war erfolgreich, hat aber keine Buchungsregeln geliefert. ROOMS kann nur seine eigenen Regeln prüfen. Das bedeutet nicht, dass Exchange jede Buchung annimmt. |
+| **Von Exchange nicht geliefert: …** | Die aufgelisteten Einzelwerte sind unbekannt. Die übrigen bekannten, gültigen Regeln können trotzdem gelten. |
 {{< /bootstrap-table >}}
 
-Der Worker prüft alle sechs Stunden, welche Ressourcen erneut abgerufen werden müssen. Mit den Standardeinstellungen werden erfolgreich gelesene Regeln nach etwa 24 bis 30 Stunden erneuert und sind drei Tage gültig. Buchungsprüfung und Verfügbarkeitssuche verwenden den gespeicherten Stand, nicht eine neue Exchange-Abfrage pro Buchung. Für automatisch annehmende Ressourcen berücksichtigt ROOMS bekannte, gültige Regeln zu Dauer, Serien, Buchungshorizont und Konflikten. Arbeitszeiten sind nicht Bestandteil dieser Prüfung. Die tatsächliche Zusage oder Absage von Exchange bleibt massgebend.
+#### Welche Werte gelten?
 
-Wenn Exchange eine maximale Dauer liefert, ersetzt diese bei automatischer Annahme die maximale Buchungsdauer aus ROOMS. Ohne einen gültigen Exchange-Wert gilt weiterhin das ROOMS-Maximum. Die minimale Buchungsdauer aus ROOMS gilt in beiden Fällen. Eine spätere Verschärfung der Regeln hebt bestehende Raumbuchungen nicht automatisch auf. Neue Termine und Änderungen von Raum oder Zeitraum werden erneut geprüft.
+In der Tabelle bedeuten **Regel** die geprüfte Einschränkung, **Gilt** den angewendeten Wert und **Festgelegt in** dessen Herkunft. Die Ressourcenansicht führt ROOMS- und Exchange-Werte zusammen. Im Editor zeigt die Exchange-Tabelle die gelesenen Exchange-Regeln neben den separat bearbeitbaren ROOMS-Feldern.
+
+- **Maximale Buchungsdauer:** Ein gültiges, angewendetes Exchange-Maximum ersetzt den gespeicherten ROOMS-Wert. Die Spalte **Festgelegt in** nennt den ersetzten Wert. **Unbegrenzt** ist ebenfalls ein möglicher Exchange-Wert. Ohne ein angewendetes Exchange-Maximum gilt das ROOMS-Maximum. Die minimale Buchungsdauer aus ROOMS bleibt wirksam.
+- **Nicht angewendete Exchange-Werte:** Bei nicht angewendeten Einschränkungen zu Serien, Buchungshorizont oder Konflikten steht in **Gilt** ein Strich. **Festgelegt in** zeigt dann beispielsweise **Exchange meldet …, nicht angewendet**. Ein angezeigter Exchange-Wert allein beweist deshalb nicht, dass ROOMS ihn prüft.
+- **Vor- und Nachlaufdauer:** Die Ressourcenansicht zeigt bei synchronisierten Ressourcen **Entfällt** und nennt einen allenfalls gespeicherten Wert als **eingestellt, wird nicht angewendet**. Im Editor sind diese Felder schreibgeschützt. Die Werte bleiben gespeichert und gelten wieder, wenn die Synchronisation ausgeschaltet wird. Das Speichern der Ressource ist keine Neuberechnung bereits bestehender Buchungen.
+
+Beim Auswählen eines Sync-Modus erläutert der Editor die Folgen der Synchronisation. Unter **Maximale Buchungsdauer** weist er darauf hin, wenn ein aktuelles Exchange-Maximum den ROOMS-Wert ersetzt. Nach einem manuellen Regelabruf wird auch dieser Hinweis aktualisiert.
+
+Der Worker prüft alle sechs Stunden, welche Ressourcen erneut abgerufen werden müssen. Mit den Standardeinstellungen werden erfolgreich gelesene Regeln nach etwa 24 bis 30 Stunden erneuert und sind drei Tage gültig. Buchungsprüfung und Verfügbarkeitssuche verwenden den gespeicherten Stand, nicht eine neue Exchange-Abfrage pro Buchung. ROOMS berücksichtigt bekannte, gültige Regeln zu Dauer, Serien, Buchungshorizont und Konflikten, wenn Exchange automatisch annimmt **oder keinen Verarbeitungsmodus liefert**. Im zweiten Fall zeigt die Tabelle **Automatische Annahme** mit der Herkunft **Exchange-Standard, von Exchange nicht geliefert**. Fehlende Einzelregeln werden dadurch nicht ergänzt. Meldet Exchange ausdrücklich **Keine automatische Verarbeitung** oder **Kalenderaktualisierung; Annahme kann eine Genehmigung erfordern**, wendet ROOMS keine Exchange-Regeln an. Arbeitszeiten sind nicht Bestandteil dieser Prüfung. Die tatsächliche Zusage oder Absage von Exchange bleibt massgebend.
+
+Eine spätere Verschärfung der Regeln hebt bestehende Raumbuchungen nicht automatisch auf. Neue Termine und Änderungen von Raum oder Zeitraum werden erneut geprüft.
 
 #### Besonderheit bei Microsoft365 / Graph
 
@@ -153,7 +179,7 @@ Für EWS verwendet der Regelabruf die bereits konfigurierte EWS-Verbindung der R
 Der Regelabruf verwendet Graph beta. Microsoft unterstützt beta-Schnittstellen nicht für Produktionsanwendungen. Prüfen Sie diese Einschränkung, bevor Sie das Leserecht erteilen. Das Leserecht umfasst Postfach-Konfigurationsobjekte, nicht nur Buchungsregeln. Ein eingeschränkter Exchange-RBAC-Geltungsbereich begrenzt keine zusätzlich erteilte tenantweite Entra-Berechtigung. Lassen Sie die effektiven Rechte prüfen, statt sie bei einem Abruffehler pauschal zu erweitern. Siehe [Microsoft: Graph-beta-Einschränkung](https://learn.microsoft.com/en-us/graph/api/userconfiguration-get?view=graph-rest-beta) und [Application RBAC](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac).
 {{% /alert %}}
 
-Bei **Abruf fehlgeschlagen** nennt die Anzeige unter anderem eine unvollständige Verbindung oder verweigerten Postfachzugriff. Prüfen Sie Verbindung, Berechtigung und Postfach-Geltungsbereich. Ein fehlgeschlagener Regelabruf allein beweist keinen Ausfall der Kalender-Synchronisation.
+Bei einem fehlgeschlagenen Abruf nennt die Anzeige unter anderem eine unvollständige Verbindung oder verweigerten Postfachzugriff. Prüfen Sie Verbindung, Berechtigung und Postfach-Geltungsbereich. Ein fehlgeschlagener Regelabruf allein beweist keinen Ausfall der Kalender-Synchronisation.
 
 ### Wichtige Parameter
 
@@ -163,7 +189,7 @@ Bei **Abruf fehlgeschlagen** nennt die Anzeige unter anderem eine unvollständig
 | `AllowRecurringMeetings` | ob wiederkehrende Termine erlaubt sind | `$false` → alle Serien werden abgelehnt |
 | `AllowConflicts` | ob Überschneidungen erlaubt sind | `$true` → Exchange ignoriert die beiden Konfliktgrenzen |
 | `BookingWindowInDays` | maximaler Buchungszeitraum in die Zukunft | begrenzt die Raumbuchungen, nicht zwingend die Länge der Organisatorserie |
-| `EnforceSchedulingHorizon` | Verhalten bei Serien über das Buchungsfenster hinaus | `$true` → Serie wird abgelehnt; `$false` → Raum wird nur bis zum Ende des Buchungsfensters gebucht |
+| `EnforceSchedulingHorizon` | Verhalten bei Serien über das Buchungsfenster hinaus | `$true`: Serie wird abgelehnt. `$false`: Raum wird nur bis zum Ende des Buchungsfensters gebucht. |
 | `MaximumConflictInstances` | maximale Anzahl Konflikte in einer Serie | wird der Wert überschritten, lehnt Exchange die gesamte Serie ab |
 | `ConflictPercentageAllowed` | maximal erlaubter Konfliktanteil in % | Überschreitung → gesamte Serie wird abgelehnt |
 | `MaximumDurationInMinutes` | maximale Dauer eines einzelnen Termins | Einzeltermine über dem Limit werden abgelehnt |
@@ -178,6 +204,51 @@ ROOMS kann Konflikte in einer Serie intern auflösen, z. B. durch Umbuchung einz
 {{% alert title="Wichtig" color="warning" %}}
 Wenn Überschneidungen nicht erlaubt sind und `MaximumConflictInstances` oder `ConflictPercentageAllowed` auf `0` gesetzt sind (Standard), lehnt die Exchange-Ressource eine Serie **komplett** ab, sobald auch nur ein einziger Konflikt besteht - obwohl ROOMS die Konflikte intern bereits gelöst hat.
 {{% /alert %}}
+
+### In Outlook erstellte Serie mit teilweise angenommenem Raum
+
+Erstellen Sie eine neue Serie direkt in Outlook und laden Sie einen synchronisierten Raum für die **gesamte Serie** ein, kann ROOMS die Serie auch bei einzelnen Raumkonflikten zusammenhängend übernehmen. Voraussetzung sind eine eingerichtete Personen- und Ressourcen-Synchronisation, ein tägliches, wöchentliches oder monatliches Wiederholungsmuster sowie mindestens ein vom Raum angenommener Termin. Für Serien ohne Enddatum gilt zusätzlich die unten beschriebene [automatische Begrenzung beim Import](#in-outlook-erstellte-serie-ohne-enddatum). ROOMS muss ausserdem unterscheiden können, ob fehlende Raumbuchungen Konflikte sind oder ausserhalb des Raumbuchungsfensters liegen.
+
+Nach erfolgreicher Übernahme gehören die angenommenen Raumbuchungen und die Termine ohne Raum zur selben ROOMS-Serie. Der Outlook-Serientermin erhält die Kategorie **ROOMS**. Bei unveränderten Serienterminen mit Raumkonflikt entfernt ROOMS die Raumzuordnung nur für die betroffenen Termine. Die Besprechungen und menschlichen Teilnehmenden bleiben erhalten. Für abgelehnte Änderungen gilt weiterhin das konfigurierte Konfliktverhalten **Rollback** oder **Cancel**. Termine ausserhalb eines bestätigten Raumbuchungsfensters behalten dagegen ihre Raumeinladung, haben aber noch keine Raumbuchung.
+
+Nicht jede teilweise angenommene Outlook-Serie wird als ROOMS-Serie übernommen. Die angenommenen Termine bleiben insbesondere in folgenden Fällen **Einzelbuchungen**:
+
+- Der Raum wurde nur für einzelne Termine statt für die gesamte Serie eingeladen.
+- Es handelt sich um eine jährliche Wiederholung.
+- Bereits als Einzelbuchungen importierte Termine werden nicht automatisch in eine Serie umgewandelt.
+- Fehlende letzte Termine könnten ausserhalb des Raumbuchungsfensters liegen, aber die verfügbaren Exchange-Regeln klären dieses Fenster nicht. ROOMS übernimmt dann die angenommenen Termine einzeln und lässt die übrigen Raumeinladungen unverändert. Ein unbekanntes Buchungsfenster bedeutet nicht, dass der Raum unbegrenzt buchbar ist.
+
+{{% alert title="Raumbelegung pro Termin prüfen" color="warning" %}}
+ROOMS übernimmt beim Serienimport die von Exchange gelieferten Termine und Zeiten. Das erhaltene Serienmuster und die Kategorie **ROOMS** bestätigen nicht, dass jeder Termin einen Raum hat. Prüfen Sie nach der Synchronisation die einzelnen Raumbuchungen und die Exchange-Ressourcenbelegung. Das Vorrücken des Buchungsfensters oder ein Regelabruf bucht fehlende Räume nicht automatisch. Legen Sie für planbare Serien vorzugsweise selbst ein Enddatum in Outlook fest. Bei einem Import ohne Enddatum beachten Sie die unten beschriebene automatische Begrenzung und prüfen Sie das zurückgeschriebene Ende. Bei Abweichungen oder vollständig raumlosen Serien beachten Sie die [Prüfpunkte und Bearbeitungsgrenzen im Troubleshooting]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}), statt die ganze Besprechungsserie vorsorglich zu annullieren.
+{{% /alert %}}
+
+### In Outlook erstellte Serie ohne Enddatum
+
+ROOMS speichert keine endlose Serie. Wird eine Outlook-Serie ohne Enddatum als ROOMS-Serie übernommen, begrenzt ROOMS sie anhand der [Serieneinstellungen der Benutzergruppen]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Benutzergruppen/_index.md#serieneinstellungen" >}}) der organisierenden Person. Das gilt für EWS und `Microsoft365` / Graph, beim Import über den Raum sowie bei der erfolgreichen Umwandlung einer synchronisierten Einzelbuchung in eine Serie über Outlook.
+
+{{< bootstrap-table "table table-striped" >}}
+| Einstellung | Begrenzung beim Import |
+|-------------|------------------------|
+| **Iteration** mit Gruppenbegrenzung | Begrenzt die Anzahl künftiger Termine. |
+| **Zeitlich** mit Gruppenbegrenzung | Begrenzt den Zeitraum entsprechend dem Wiederholungsmuster. |
+| Keine passende Gruppenbegrenzung | Begrenzt die Serie auf ein Jahr. |
+{{< /bootstrap-table >}}
+
+Eine Serie, die jede Woche von Montag bis Freitag stattfindet, verwendet in beiden Modellen die tägliche Gruppenbegrenzung. Die Begrenzung zählt ab dem späteren Zeitpunkt von Serienbeginn und Import. Bei einer bereits laufenden Serie beginnt sie daher beim Import, nicht rückwirkend beim ursprünglichen Serienbeginn. Als effektives Ende speichert ROOMS den letzten übernommenen Serientermin. Prüfen Sie dieses Datum, statt aus der Gruppenbegrenzung eine genaue Anzahl Raumbuchungen abzuleiten.
+
+{{% alert title="Die Besprechungsserie wird auch in Outlook verkürzt" color="warning" %}}
+ROOMS schreibt das effektive Ende in den Outlook-Serientermin zurück und sendet die Änderung an alle Teilnehmenden, einschliesslich des Raums. Spätere Wiederholungen entfallen damit auch in den Kalendern der Teilnehmenden, nicht nur als Raumbuchungen in ROOMS. Prüfen Sie nach der Synchronisation das Ende in Outlook und ROOMS sowie die tatsächliche Raumbelegung pro Termin. Wenn die Serie länger dauern soll, planen Sie ihre Fortsetzung ausdrücklich. Sie bleibt nicht unbegrenzt bestehen.
+{{% /alert %}}
+
+Das Serienende ist nicht das Raumbuchungsfenster: Innerhalb der begrenzten Serie können Termine weiterhin ohne Raum bleiben. Die oben beschriebenen Voraussetzungen und Fälle mit Einzelbuchungen bleiben bestehen. Ein striktes Exchange-Buchungsfenster kann eine endlose Anfrage bereits vor dem Import vollständig ablehnen.
+
+Beachten Sie beim Serienimport folgende Grenzen:
+
+- **Einzelbuchung in Outlook zur Serie machen:** Termine nach dem Raumbuchungsfenster können die Übernahme verhindern. Im Konfliktmodus **Cancel** kann dabei die bisherige Raumbuchung annulliert werden. Verwenden Sie diesen Weg nicht, um das Buchungsfenster zu umgehen.
+- **Enddatum einer bereits synchronisierten Serie entfernen:** ROOMS behält sein gespeichertes Ende. Es wird in diesem Fall nicht automatisch nach Outlook zurückgeschrieben. Auch eine gleichzeitig geänderte Wiederholung wird dabei nicht übernommen. Behalten Sie das Enddatum bei und lassen Sie Abweichungen vom Support prüfen.
+- **Lange Serien und verschobene Termine:** Die gelieferten Outlook-Termine begrenzen den Import. Gruppenbegrenzungen über zwei Jahre sind nicht vollständig abgedeckt. Bei EWS können hinter das Serienende verschobene Termine fehlen. Prüfen Sie solche Termine gezielt. Auch ein fehlgeschlagenes Zurückschreiben nach Outlook wird bei der Umwandlung einer Einzelbuchung nicht automatisch nachgeholt.
+
+Für die **Erstellung über das quickROOMS Outlook Add-In** gelten die dort beschriebenen Serienbegrenzungen. Der Import einer direkt in Outlook erstellten Serie ist ein anderer Ablauf.
 
 ### Serie länger als das Raumbuchungsfenster
 
