@@ -120,6 +120,10 @@ Standort Feiertage bearbeiten
 
 Sie fügen einen neuen Feiertag hinzu, indem Sie auf den untenstehenden Button "hinzufügen" klicken. Es öffnet sich ein Feld. In diesem wählen Sie einen oder mehrere Feiertage über das Aktivieren der Checkbox aus.
 
+Die Option **Rekursiv** ist beim Hinzufügen standardmässig aktiviert. Sie legt fest, ob die ausgewählten Feiertage auch an untergeordnete Standorte und deren Ressourcen weitergegeben werden. Ohne **Rekursiv** gilt diese Zuordnung für den gewählten Standort und seine direkt zugeordneten Ressourcen; sie wird nicht an untergeordnete Standorte weitergegeben. Festes Equipment ist von der Übernahme der Standortfeiertage ausgenommen.
+
+Sie legen die Vererbung je Standortzuordnung fest. Derselbe Feiertag kann deshalb in einem Standortzweig rekursiv und in einem anderen nicht rekursiv zugeordnet sein. Bestätigen Sie die Auswahl mit **Hinzufügen** und speichern Sie anschliessend den Standort mit **Speichern**.
+
 {{< imgproc Standort_Feiertage_hinzufügen Resize "960x" >}}
 Einen oder mehrere Feiertage hinzufügen
 {{< /imgproc >}}
