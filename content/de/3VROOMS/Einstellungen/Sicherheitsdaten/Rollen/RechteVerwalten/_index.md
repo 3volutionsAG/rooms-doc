@@ -86,7 +86,7 @@ Beispiel: Am 05.03.2026 um 14:00 Uhr in der Zeitzone des Benutzers gelten folgen
 | ab 24 Stunden | Ab 06.03.2026 um 14:00 Uhr. |
 | bis 24 Stunden | Bis einschliesslich 06.03.2026 um 14:00 Uhr. |
 
-Bei zeitlich eingegrenzten Sichtrechten wird der Beginn jeder Reservation bzw. jedes Anlasses geprüft. Auch in Listen gelten die Tagesgrenzen in der Zeitzone des Benutzers.
+Die zeitliche Eingrenzung gilt auch für Rechte zum Anzeigen von Reservationen, beispielsweise _Darf Reservationen lesen_ und _Darf Reservationen für Dritte sehen_. Bei der Prüfung, ob eine Reservation oder ein Anlass angezeigt werden darf, ist der jeweilige Beginn massgebend. Auch in Listen gelten die Tagesgrenzen in der Zeitzone des Benutzers.
 
 Weitere Auswirkungen auf den Reservationsprozess:
 
