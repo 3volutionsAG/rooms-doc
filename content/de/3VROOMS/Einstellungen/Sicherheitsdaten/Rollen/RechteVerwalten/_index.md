@@ -68,18 +68,25 @@ Es ist nicht möglich bei einer Ressource, welche Rechte erbt, die Vererbung zu 
 
 ### Spezialfall „Reservation Eingrenzung“
 
-Beim Hinzufügen des Reservationsrechts _Darf def. Reservation buchen_ oder _Darf prov. Reservation buchen_ werden drei Felder eingeblendet:
+Für Reservationsrechte wie _Darf def. Reservation buchen_ oder _Darf prov. Reservation buchen_ können Sie unter **Gültigkeit** eine zeitliche Eingrenzung festlegen. Wählen Sie **ab** oder **bis**, geben Sie eine ganze Zahl ein und wählen Sie **Tage** oder **Stunden**. Ohne Angabe einer Dauer ist das Recht zeitlich nicht eingeschränkt.
 
-1. Dropdown 1 hat folgende Werte
-* NULL (leer) = Zeitfunktion deaktiviert
-* ab=Recht gilt erst ab xxx (Tagen/Stunden)
-* bis=Recht gilt nur bis xxx (Tagen/Stunden)
+Die Eingrenzung bezieht sich auf den **Beginn der Reservation**, nicht auf den Zeitpunkt, zu dem die Rolle zugewiesen wurde. ROOMS prüft den Abstand vom aktuellen Zeitpunkt zum Reservationsbeginn bei jeder Rechteprüfung neu.
 
-2. Textfeld (leer oder numerische Ganzzahl): gibt an wieviele Tage oder Stunden die Eingrenzung des Rechts Gültigkeit hat:
-* Dropdown (Tage / Stunden)
-* Tage= Recht gilt ab Anzahl Tage, wobei ein Tag um 00:00 startet. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00; Eingabe: ab 1 Tage, hat zur Folge, dass der Raum erst am 6.3.2010 ab 00:01 gebucht werden kann
-* Stunden= Recht gilt ab sofort + Anzahl Stunden. Beispiel: Aktuelles Datum/Zeit= 05.03.2010 14:00, Eingabe: ab 24 Stunden, hat zur Folge das der Raum erst am 6.3.2010 ab 14:01 gebucht werden kann
-* Standardmässig sind alle Felder leer
+- **ab**: Das Recht gilt für Reservationen, deren Beginn mindestens die angegebene Anzahl Tage oder Stunden in der Zukunft liegt.
+- **bis**: Das Recht gilt für Reservationen, deren Beginn höchstens die angegebene Anzahl Tage oder Stunden in der Zukunft liegt. Bei Tagen zählt der gesamte letzte Kalendertag mit.
+
+**Tage** sind Kalendertage in der im Benutzerprofil eingestellten Zeitzone der Person, deren Rechte geprüft werden. Die Tagesgrenze liegt bei 00:00 Uhr dieser Zeitzone, auch beim Wechsel zwischen Sommer- und Winterzeit. Ein Tag entspricht deshalb nicht immer 24 Stunden. **Stunden** werden dagegen als Zeitspanne ab dem aktuellen Zeitpunkt berechnet; der genaue Grenzzeitpunkt ist eingeschlossen.
+
+Beispiel: Am 05.03.2026 um 14:00 Uhr in der Zeitzone des Benutzers gelten folgende Grenzen:
+
+| Eingrenzung | Reservationsbeginn, für den das Recht gilt |
+|---|---|
+| ab 1 Tag | Ab 06.03.2026 um 00:00 Uhr. |
+| bis 1 Tag | Bis zum Ende des 06.03.2026; ab 07.03.2026 um 00:00 Uhr gilt dieses Recht nicht. |
+| ab 24 Stunden | Ab 06.03.2026 um 14:00 Uhr. |
+| bis 24 Stunden | Bis einschliesslich 06.03.2026 um 14:00 Uhr. |
+
+Bei zeitlich eingegrenzten Sichtrechten wird der Beginn jeder Reservation bzw. jedes Anlasses geprüft. Auch in Listen gelten die Tagesgrenzen in der Zeitzone des Benutzers.
 
 Weitere Auswirkungen auf den Reservationsprozess:
 
