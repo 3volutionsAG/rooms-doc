@@ -91,6 +91,57 @@ enthält die Konfiguration für API und Worker. Beide Komponenten müssen insbes
 
 Der Konfigurationsschlüssel heisst `IdentityServer:RoomsDatabase`. Bei Konfiguration über Umgebungsvariablen entspricht dies `IdentityServer__RoomsDatabase`. Bewahren Sie Zugangsdaten nicht in Beispielen, Skripten oder ungeschützten Dateien auf.
 
+### Schutz vor wiederholten Anmeldeversuchen
+
+RoomsPro begrenzt fehlgeschlagene Prüfungen von Benutzername und Passwort, persönlichen PINs und QR-Codes. Für Buchungs-PINs am Türschild gilt zusätzlich eine Grenze pro Raum. Diese Grenzen betreffen die Anmeldung über den integrierten Identity Provider der RoomsPro API, nicht die direkte Anmeldung an der Legacy Website oder die Anmeldung beim externen Anbieter, etwa Microsoft.
+
+{{< bootstrap-table "table table-striped" >}}
+| Grenze | Standardwert | Konfigurationsschlüssel |
+|---|---|---|
+| Fehlgeschlagene Prüfungen pro Client-IP, gemeinsam über die genannten Anmeldearten | 30 pro Zeitfenster | `IdentityServer:LoginThrottle:FailuresPerClient` |
+| Fehlgeschlagene Buchungs-PINs pro Raum, über alle Clients hinweg | 10 pro Zeitfenster | `IdentityServer:LoginThrottle:FailuresPerDoormanResource` |
+| Zeitfenster für IP- und Raumgrenze | 15 Minuten | `IdentityServer:LoginThrottle:Window` |
+| Fehlgeschlagene Passwortversuche pro Forms-Logon | 5, danach 20 Minuten gesperrt | `IdentityServer:FailedLoginLimit` |
+{{< /bootstrap-table >}}
+
+Die IP- und Raumgrenze sperrt weitere Prüfungen bis zum Ende des jeweiligen Zeitfensters. Das Fenster beginnt mit dem ersten Prüfversuch für die IP beziehungsweise den Raum. Erfolgreiche Prüfungen zählen nicht als Fehlversuch; sie löschen jedoch nicht die bereits gezählten Fehlversuche anderer Anmeldungen. IPv6-Adressen mit demselben `/64`-Präfix teilen sich die IP-Grenze. Die IP- und Raumzähler gelten je laufender RoomsPro-API-Instanz, nicht gemeinsam für alle Instanzen.
+
+Die Kontosperre ist davon unabhängig: Während der 20 Minuten wird auch das richtige Passwort abgewiesen. Eine erfolgreiche Passwortprüfung setzt den Fehlversuchszähler dieses Forms-Logons zurück. Nach Ablauf einer Kontosperre sollten Sie deshalb nur das geprüfte Passwort verwenden; ein weiterer Fehlversuch kann das Konto erneut sperren.
+
+#### Bei einer vorübergehenden Sperre
+
+- Bei der Meldung **Zu viele fehlgeschlagene Anmeldeversuche. Bitte versuchen Sie es später erneut.** stoppen Sie weitere Versuche und warten bis zum Ende des Zeitfensters. Die Anmeldeseite liefert dabei HTTP-Status `429`.
+- Mehrere Personen hinter derselben öffentlichen IP teilen sich die IP-Grenze. Deshalb kann die Sperre auch Personen mit richtigen Zugangsdaten betreffen. Prüfen Sie bei wiederholten Vorfällen auch Geräte oder Integrationen mit veralteten Zugangsdaten.
+- Ist die Raumgrenze erreicht, sind weitere Prüfungen von Buchungs-PINs für diesen Raum während des verbleibenden Fensters blockiert, auch mit dem richtigen PIN und von einem anderen Gerät. Ein persönlicher PIN oder QR-Code unterliegt der IP-Grenze, nicht dieser zusätzlichen Raumgrenze.
+- Prüfen Sie als Betriebsteam die RoomsPro-API-Logs. Beim Abweisen wegen einer erreichten IP- oder Raumgrenze protokolliert die Anwendung eine Warnung mit dem betroffenen Schlüssel und dem Ende des Zeitfensters in UTC. Ein weiteres Konto oder ein neuer PIN hebt eine solche Sperre nicht auf.
+
+#### Grenzen konfigurieren
+
+Ergänzen Sie bei Bedarf die folgenden Werte im bestehenden `IdentityServer`-Abschnitt der `appsettings.json`. Das Beispiel zeigt die Standardwerte; ersetzen Sie damit nicht die übrige Konfiguration.
+
+```json
+{
+  "IdentityServer": {
+    "FailedLoginLimit": 5,
+    "LoginThrottle": {
+      "FailuresPerClient": 30,
+      "FailuresPerDoormanResource": 10,
+      "Window": "00:15:00"
+    }
+  }
+}
+```
+
+Die drei Werte unter `LoginThrottle` müssen positiv sein; ungültige Werte verhindern den Anwendungsstart. `FailedLoginLimit` verwendet bei fehlendem oder nicht positivem Wert die Grenze von fünf Versuchen. Die Dauer der Kontosperre beträgt 20 Minuten und wird nicht durch `Window` geändert. Die Einstellungen sind keine globalen Parameter in der ROOMS-Oberfläche.
+
+Verteilen Sie Änderungen wie unter [Konfiguration verteilen und prüfen](#konfiguration-verteilen-und-prüfen) beschrieben und starten Sie die betroffenen RoomsPro-API-Instanzen in einem abgestimmten Wartungsfenster neu. Kontrollieren Sie den erfolgreichen Start. Erhöhen Sie Grenzen nicht als erste Massnahme gegen wiederholte Sperren: Klären Sie zuerst fehlerhafte Zugangsdaten und die Zuordnung der Client-Adressen.
+
+{{% alert title="Vertrauenswürdige Client-Adresse erforderlich" color="warning" %}}
+Die RoomsPro API muss ausschliesslich über einen kontrollierten Reverse Proxy erreichbar sein. Dieser muss vom Client gelieferte `X-Forwarded-For`-, `X-Forwarded-Proto`- und `X-Forwarded-Host`-Header entfernen und durch vertrauenswürdige Werte ersetzen. Ohne verlässliche Client-Adresse können alle Benutzer dieselbe IP-Grenze teilen; bei manipulierbaren Headern lässt sich die IP-Grenze umgehen. Die Kontosperre und die Raumgrenze sind nicht von der Client-IP abhängig.
+{{% /alert %}}
+
+Für den direkt aus dem Internet erreichbaren Nginx im [Docker-Beispiel]({{< relref "Betrieb/Installation/Docker/_index.md#öffentliche-urls-abstimmen" >}}) wird `X-Forwarded-For` mit `$remote_addr` neu gesetzt. Bei zusätzlichen vorgeschalteten Proxys muss das Betriebsteam die vertrauenswürdige Weiterleitung über die gesamte Kette sicherstellen; übernehmen Sie weder ungeprüft einen Client-Header noch pauschal die Adresse eines vorgeschalteten Proxys als Benutzeradresse.
+
 ## Legacy-Konfiguration
 
 ### `RoomsAppSettings.config`

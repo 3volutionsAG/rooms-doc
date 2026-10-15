@@ -314,7 +314,7 @@ server {
         proxy_set_header X-Forwarded-Host $host;
         proxy_set_header X-Forwarded-Proto https;
         proxy_set_header X-Forwarded-Port 443;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection $connection_upgrade;
     }
@@ -340,7 +340,7 @@ server {
         proxy_set_header X-Forwarded-Host $host;
         proxy_set_header X-Forwarded-Proto https;
         proxy_set_header X-Forwarded-Port 443;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection $connection_upgrade;
     }
@@ -360,6 +360,8 @@ Konfigurieren Sie ROOMS vollständig mit den öffentlichen HTTPS-Namen, nicht mi
 - OpenID-Connect-Authority, Client-Redirect-URLs und Abmelde-URLs mit denselben Namen
 
 Die Weiterleitungs-Header in der Nginx-Konfiguration sind erforderlich, damit sichere Cookies, Redirects und von der API erzeugte Issuer-URLs trotz TLS-Terminierung am Proxy wieder HTTPS verwenden. Veröffentlichen Sie den API-Port nicht zusätzlich direkt, da die Anwendung Forwarded Headers vom kontrollierten Proxy erwartet.
+
+Das Beispiel setzt voraus, dass dieser Nginx der direkt erreichbare Eingangsproxy ist. `X-Forwarded-For` wird mit `$remote_addr` ersetzt, statt einen vom Client gelieferten Wert zu übernehmen oder zu ergänzen. Auch `X-Forwarded-Proto` und `X-Forwarded-Host` werden vom Proxy gesetzt. Bei einem zusätzlichen vorgeschalteten Load Balancer oder Proxy muss die gesamte vertrauenswürdige Header-Kette separat geprüft werden, damit die API die tatsächliche Client-Adresse erhält. Eine fehlende oder manipulierbare Client-Adresse beeinträchtigt die [IP-bezogenen Anmeldegrenzen]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#schutz-vor-wiederholten-anmeldeversuchen" >}}) und kann gemeinsame Anmeldesperren auslösen.
 
 ## Datenbankmigrationen
 
