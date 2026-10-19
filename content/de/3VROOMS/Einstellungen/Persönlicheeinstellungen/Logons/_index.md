@@ -53,6 +53,18 @@ Logons erstellen und bearbeiten
 
 Die Berechtigung für die Maske bearbeiten.
 
+##### Vorübergehend blockierte Anmeldung
+
+Bei der Anmeldung mit Benutzername und Passwort über den RoomsPro Identity Provider können zu viele Fehlversuche eine vorübergehende Sperre auslösen. Während einer Kontosperre wird auch das richtige Passwort abgewiesen. Die Kontosperre dauert 20 Minuten; die Anzahl erlaubter Fehlversuche wird vom Betriebsteam festgelegt.
+
+Erscheint **Zu viele fehlgeschlagene Anmeldeversuche. Bitte versuchen Sie es später erneut.**, warten Sie vor weiteren Versuchen. Diese Grenze gilt für die gemeinsame Client-IP und kann deshalb auch durch Fehlversuche anderer Personen oder Geräte im selben Netzwerk erreicht werden. Wiederholen Sie die Anmeldung nicht laufend und wenden Sie sich bei wiederholten Sperren an Ihr Betriebsteam. Für persönliche PINs und QR-Codes gilt ebenfalls diese IP-Grenze.
+
+Die [Betriebshinweise zu Anmeldegrenzen]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#schutz-vor-wiederholten-anmeldeversuchen" >}}) erklären die Standardwerte, die Wartezeit und die Prüfung der Proxy-Konfiguration. Die hier beschriebenen Grenzen gelten nicht für die Anmeldung beim externen Anbieter oder die direkte Anmeldung an der Legacy Website.
+
+##### Zu viele Anfragen beim Passwort-Reset
+
+Erscheint beim Zurücksetzen des Passworts über den RoomsPro Identity Provider **Zu viele Anfragen. Bitte versuchen Sie es später erneut.**, lösen Sie vorerst keine weiteren Anfragen aus. Diese Grenze ist von den fehlgeschlagenen Anmeldeversuchen getrennt. Sie gilt gemeinsam für Passwort-Reset-Anfragen und Verfügbarkeitsprüfungen von E-Mail-Adressen und Benutzernamen über dieselbe Client-IP. Deshalb können auch Anfragen anderer Personen im selben Netzwerk dazu beitragen. Warten Sie bis zum Ende des Zeitfensters und wenden Sie sich bei wiederholten Meldungen an Ihr Betriebsteam. Die [Betriebshinweise zu Passwort-Reset und Verfügbarkeitsprüfungen]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#passwort-reset-und-verfügbarkeitsprüfungen" >}}) erklären die gemeinsame Grenze und ihre Konfiguration.
+
 #### Custom Servervariable
 
 {{< imgproc Logons_Custom Resize "960x" >}}
