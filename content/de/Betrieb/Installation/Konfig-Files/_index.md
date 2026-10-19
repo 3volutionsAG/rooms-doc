@@ -100,13 +100,22 @@ RoomsPro begrenzt fehlgeschlagene Prüfungen von Benutzername und Passwort, pers
 |---|---|---|
 | Fehlgeschlagene Prüfungen pro Client-IP, gemeinsam über die genannten Anmeldearten | 30 pro Zeitfenster | `IdentityServer:LoginThrottle:FailuresPerClient` |
 | Fehlgeschlagene Buchungs-PINs pro Raum, über alle Clients hinweg | 10 pro Zeitfenster | `IdentityServer:LoginThrottle:FailuresPerDoormanResource` |
-| Zeitfenster für IP- und Raumgrenze | 15 Minuten | `IdentityServer:LoginThrottle:Window` |
+| Passwort-Reset-Anfragen und Verfügbarkeitsprüfungen für E-Mail-Adressen und Benutzernamen, gemeinsam pro Client-IP | 60 pro Zeitfenster | `IdentityServer:LoginThrottle:AccountRequestsPerClient` |
+| Zeitfenster für Fehlversuche, Passwort-Reset und Verfügbarkeitsprüfungen | 15 Minuten | `IdentityServer:LoginThrottle:Window` |
 | Fehlgeschlagene Passwortversuche pro Forms-Logon | 5, danach 20 Minuten gesperrt | `IdentityServer:FailedLoginLimit` |
 {{< /bootstrap-table >}}
 
 Die IP- und Raumgrenze sperrt weitere Prüfungen bis zum Ende des jeweiligen Zeitfensters. Das Fenster beginnt mit dem ersten Prüfversuch für die IP beziehungsweise den Raum. Erfolgreiche Prüfungen zählen nicht als Fehlversuch; sie löschen jedoch nicht die bereits gezählten Fehlversuche anderer Anmeldungen. IPv6-Adressen mit demselben `/64`-Präfix teilen sich die IP-Grenze. Die IP- und Raumzähler gelten je laufender RoomsPro-API-Instanz, nicht gemeinsam für alle Instanzen.
 
 Die Kontosperre ist davon unabhängig: Während der 20 Minuten wird auch das richtige Passwort abgewiesen. Eine erfolgreiche Passwortprüfung setzt den Fehlversuchszähler dieses Forms-Logons zurück. Nach Ablauf einer Kontosperre sollten Sie deshalb nur das geprüfte Passwort verwenden; ein weiterer Fehlversuch kann das Konto erneut sperren.
+
+#### Passwort-Reset und Verfügbarkeitsprüfungen
+
+Anfragen zum Zurücksetzen des Passworts teilen sich eine separate IP-Grenze mit Prüfungen, ob eine E-Mail-Adresse oder ein Benutzername verfügbar ist, etwa bei der Registrierung oder Profilbearbeitung. Jede zugelassene Anfrage zählt, nicht nur fehlgeschlagene. Die Grenze von standardmässig 60 Anfragen gilt gemeinsam für diese Vorgänge, nicht je Benutzerkonto oder Vorgang. Ohne aktivierte Selbstregistrierung werden für nicht angemeldete Besucher keine Konten auf Verfügbarkeit geprüft.
+
+Das Zeitfenster beginnt mit der ersten gezählten Anfrage. IPv6-Adressen mit demselben `/64`-Präfix teilen sich diese Grenze ebenfalls. Der Zähler gilt je laufender RoomsPro-API-Instanz und ist von den Fehlversuchszählern und der Kontosperre getrennt. Eine erfolgreiche Anmeldung setzt ihn nicht zurück; eine erreichte Anfragegrenze blockiert für sich allein keine Anmeldung.
+
+Bei **Zu viele Anfragen. Bitte versuchen Sie es später erneut.** stoppen Sie weitere Anfragen und warten bis zum Ende des Zeitfensters. Das Passwort-Reset-Formular liefert dabei HTTP-Status `429` und löst keinen weiteren Reset aus. Die Meldung kann auch bei einer Verfügbarkeitsprüfung erscheinen. Mehrere Personen im selben Netzwerk können die gemeinsame Grenze erreichen. Prüfen Sie bei wiederholten Meldungen die Client-Adressen und die RoomsPro-API-Logs; die Warnung enthält den betroffenen Schlüssel und das Ende des Zeitfensters in UTC.
 
 #### Bei einer vorübergehenden Sperre
 
@@ -126,13 +135,14 @@ Ergänzen Sie bei Bedarf die folgenden Werte im bestehenden `IdentityServer`-Abs
     "LoginThrottle": {
       "FailuresPerClient": 30,
       "FailuresPerDoormanResource": 10,
+      "AccountRequestsPerClient": 60,
       "Window": "00:15:00"
     }
   }
 }
 ```
 
-Die drei Werte unter `LoginThrottle` müssen positiv sein; ungültige Werte verhindern den Anwendungsstart. `FailedLoginLimit` verwendet bei fehlendem oder nicht positivem Wert die Grenze von fünf Versuchen. Die Dauer der Kontosperre beträgt 20 Minuten und wird nicht durch `Window` geändert. Die Einstellungen sind keine globalen Parameter in der ROOMS-Oberfläche.
+Die vier Werte unter `LoginThrottle` müssen positiv sein; ungültige Werte verhindern den Anwendungsstart. `FailedLoginLimit` verwendet bei fehlendem oder nicht positivem Wert die Grenze von fünf Versuchen. Die Dauer der Kontosperre beträgt 20 Minuten und wird nicht durch `Window` geändert. Die Einstellungen sind keine globalen Parameter in der ROOMS-Oberfläche.
 
 Verteilen Sie Änderungen wie unter [Konfiguration verteilen und prüfen](#konfiguration-verteilen-und-prüfen) beschrieben und starten Sie die betroffenen RoomsPro-API-Instanzen in einem abgestimmten Wartungsfenster neu. Kontrollieren Sie den erfolgreichen Start. Erhöhen Sie Grenzen nicht als erste Massnahme gegen wiederholte Sperren: Klären Sie zuerst fehlerhafte Zugangsdaten und die Zuordnung der Client-Adressen.
 

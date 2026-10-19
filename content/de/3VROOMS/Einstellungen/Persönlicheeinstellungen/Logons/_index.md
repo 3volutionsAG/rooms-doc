@@ -61,6 +61,10 @@ Erscheint **Zu viele fehlgeschlagene Anmeldeversuche. Bitte versuchen Sie es sp�
 
 Die [Betriebshinweise zu Anmeldegrenzen]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#schutz-vor-wiederholten-anmeldeversuchen" >}}) erklären die Standardwerte, die Wartezeit und die Prüfung der Proxy-Konfiguration. Die hier beschriebenen Grenzen gelten nicht für die Anmeldung beim externen Anbieter oder die direkte Anmeldung an der Legacy Website.
 
+##### Zu viele Anfragen beim Passwort-Reset
+
+Erscheint beim Zurücksetzen des Passworts über den RoomsPro Identity Provider **Zu viele Anfragen. Bitte versuchen Sie es später erneut.**, lösen Sie vorerst keine weiteren Anfragen aus. Diese Grenze ist von den fehlgeschlagenen Anmeldeversuchen getrennt. Sie gilt gemeinsam für Passwort-Reset-Anfragen und Verfügbarkeitsprüfungen von E-Mail-Adressen und Benutzernamen über dieselbe Client-IP. Deshalb können auch Anfragen anderer Personen im selben Netzwerk dazu beitragen. Warten Sie bis zum Ende des Zeitfensters und wenden Sie sich bei wiederholten Meldungen an Ihr Betriebsteam. Die [Betriebshinweise zu Passwort-Reset und Verfügbarkeitsprüfungen]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#passwort-reset-und-verfügbarkeitsprüfungen" >}}) erklären die gemeinsame Grenze und ihre Konfiguration.
+
 #### Custom Servervariable
 
 {{< imgproc Logons_Custom Resize "960x" >}}
