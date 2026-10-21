@@ -32,8 +32,10 @@ Bei Serienterminen:
 
 **Hinweis**:
 
-Ist zum neuen Termin eine der gebuchten Ressourcen oder Catering & Service nicht verfügbar, wird der Termin auf den ursprünglichen Termin zurückgesetzt.
+Ändern Sie den Zeitpunkt direkt in Outlook und ist zum neuen Termin eine der gebuchten Ressourcen oder Catering & Service nicht verfügbar, wird der Termin auf den ursprünglichen Termin zurückgesetzt.
 Termine, die in der Vergangenheit liegen, werden nach einer Änderung nicht synchronisiert.
+
+Den Ablauf für vorgemerkte Zeitänderungen und den verbindlichen Abschluss beschreibt [Zeitpunkt einer Einzelbuchung im Add-In ändern]({{< relref "3VROOMS-Module/3VROOMS_AddIn_O365Outlook/BuchungAendern/_index.md#zeitpunkt-einer-einzelbuchung-im-add-in-ändern" >}}).
 
 #### Termin/Serientermin stornieren
 
