@@ -53,6 +53,20 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
     {{< imgproc O365Outlook_web_Buchungsbest Resize "960x">}} {{< /imgproc >}}
 11. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.
 
+## Teilnehmende aus Outlook übernehmen
+
+Für die beschriebene Übernahme im klassischen Outlook benötigen Sie kompatible Versionen von quickROOMS und dem installierten Add-In. Lassen Sie bei abweichendem Verhalten beide Komponenten durch Ihre Administration prüfen und aktualisieren.
+
+quickROOMS übernimmt die eingeladenen Personen aus dem Outlook-Termin in die Teilnehmerliste der Buchung. Die organisierende Person wird dabei nicht zusätzlich als Teilnehmer erfasst. Prüfen Sie die Teilnehmerliste vor dem verbindlichen Buchungsabschluss.
+
+- **Exchange-Verteiler:** Ein Verteiler mit eigener SMTP-E-Mail-Adresse wird als ein Eintrag übernommen. Seine Mitglieder werden nicht automatisch einzeln in quickROOMS erfasst. Benötigen Sie die einzelnen Personen in der ROOMS-Teilnehmerliste, fügen Sie diese in Outlook einzeln hinzu und prüfen Sie die Liste im Add-In.
+- **Lokale Kontaktgruppen im klassischen Outlook:** Eine Kontaktgruppe wird nicht in ihre Mitglieder aufgelöst. Ohne eigene SMTP-E-Mail-Adresse wird die Gruppe nicht in die Teilnehmerliste übernommen.
+- **Raumressourcen:** Ein von Outlook als Ressource gemeldeter Raum wird nicht als Person in die Teilnehmerliste übernommen.
+
+{{% alert title="Räume im Feld «An»" color="warning" %}}
+Ein Raum, der in Outlook als erforderlicher Empfänger im Feld **An** eingetragen ist, kann in quickROOMS als Teilnehmer erscheinen. Die Teilnehmerliste ist deshalb kein Nachweis einer Raumbuchung. Buchen Sie den Raum über das Add-In und prüfen Sie die gewählte Ressource sowie die Buchungsbestätigung, bevor Sie die Einladung senden.
+{{% /alert %}}
+
 ## Serie konnte nicht erstellt werden
 
 Kann ROOMS die gewünschte Serie nicht erstellen, erscheint **Serie konnte nicht erstellt werden.** Die Serienanzeige in der Buchungsübersicht wird rot und der verbindliche Buchungsabschluss bleibt gesperrt. Eine Serienbuchung kann nur nach erfolgreicher Serienprüfung abgeschlossen werden.
