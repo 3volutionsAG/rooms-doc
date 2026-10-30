@@ -109,13 +109,17 @@ Bei synchronisierten Exchange-Ressourcen kann eine Besprechungsserie vollständi
 
 - **Buchungsfenster:** Erlaubt Exchange eine teilweise Annahme, werden nur Termine bis zum Ende des Raumbuchungsfensters mit einem Raum gebucht. Spätere Termine bleiben ohne Raum in der Serie erhalten und zählen weiterhin zur Anzahl Wiederholungen.
 - **Konflikte:** Innerhalb der bekannten Exchange-Konfliktgrenzen können kollidierende Termine ohne Raumbuchung erhalten bleiben. Wird eine Grenze überschritten, müssen Sie die Zeit oder die Ressource ändern, bevor die Serie gespeichert werden kann.
-- **Annullierung nach Outlook-Änderung:** Im Konfliktmodus **Cancel** kann die betroffene Raumbuchung annulliert werden, während der Outlook-Termin mit seinen eingeladenen Personen erhalten bleibt.
+- **Raumentfernung oder Annullierung nach Outlook-Änderung:** Wird der Raum eines einzelnen Serientermins im Add-In oder direkt in Outlook entfernt oder im Konfliktmodus **Cancel** abgelehnt, wird die Raumbuchung annulliert. Der Outlook-Termin bleibt ohne Raum mit der Serie verknüpft, auch wenn dies die letzte Raumbuchung der Serie war. Betrifft die Raumentfernung oder Ablehnung dagegen die ganze Serie und bleibt keine künftige Raumbuchung übrig, endet die Synchronisation. Vergangene Raumbuchungen allein halten sie nicht aufrecht. Die Add-In-Aktion **Raum entfernen (Serie)** hebt alle künftigen Raumbuchungen auf, auch in anderen Räumen.
 
 {{% alert title="Raum für jeden Termin prüfen" color="warning" %}}
 Ein vorhandener Serientermin bestätigt keine Raumbuchung. Termine ohne Raum belegen keinen Raum. Prüfen Sie die Hinweise und die Ressource für jeden Termin, bevor Sie die Serie bestätigen. Wählen Sie bei Bedarf einen anderen Raum, ändern Sie den Zeitraum oder verkürzen Sie die Serie. Ein späterer Regelabruf oder das Vorrücken des Buchungsfensters ergänzt fehlende Raumbuchungen nicht automatisch.
 {{% /alert %}}
 
-Einzelne Termine können später erneut auf eine verfügbare Ressource geprüft werden. Erst eine erfolgreiche Raumbuchung gibt dem Termin wieder einen Raum. Die Raumkosten-Vorschau lässt Termine ausserhalb des Raumbuchungsfensters ohne Raum aus. Details zu den Voraussetzungen und Grenzen finden Sie unter [Exchange Ressource Sync — Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#buchungsrichtlinien-der-exchange-ressource-booking-policies" >}}) und [Konfliktverhalten bei der Synchronisation]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}).
+Einzelne Termine können später erneut auf eine verfügbare Ressource geprüft werden. Erst eine erfolgreiche Raumbuchung gibt dem Termin wieder einen Raum.
+
+Ein erhaltener Termin ohne Raum ist keine eigenständig bearbeitbare Buchung. Ein direkter Aufruf in ROOMS kann zu einem anderen, gebuchten Termin der Serie führen. Prüfen Sie Datum und Raum, bevor Sie die geöffnete Buchung ändern. Um den raumlosen Termin erneut zu buchen, öffnen Sie ihn in Outlook und verwenden die Raumauswahl im quickROOMS-Add-In. Der Ablauf und die Grenzen sind unter [Termin ohne Raumbuchung öffnen oder erneut buchen]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#termin-ohne-raumbuchung-öffnen-oder-erneut-buchen" >}}) beschrieben.
+
+Die Raumkosten-Vorschau lässt Termine ausserhalb des Raumbuchungsfensters ohne Raum aus. Details zu den Voraussetzungen und Grenzen finden Sie unter [Exchange Ressource Sync — Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#buchungsrichtlinien-der-exchange-ressource-booking-policies" >}}) und [Konfliktverhalten bei der Synchronisation]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}).
 
 ## Bearbeiten einer Serie
 
