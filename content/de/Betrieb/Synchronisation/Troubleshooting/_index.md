@@ -170,11 +170,19 @@ In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
 Bei einer Serie ist eine annullierte Raumbuchung nicht gleichbedeutend mit einer gelöschten Besprechung:
 
 - **Cancel:** ROOMS annulliert die betroffenen Raumbuchungen und entfernt die jeweilige Raumzuordnung aus Outlook. Die Organisatortermine und eingeladenen Personen bleiben erhalten. Die übrigen Termine behalten ihre Raumbuchungen. Eine spätere Änderung eines anderen Serientermins löscht die erhaltenen Termine ohne Raum nicht.
-- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Bei Serien mit einer Ausnahme in einem anderen Raum können dabei auch gewöhnliche Termine zu Einzelausnahmen werden und zusätzliche Einladungen entstehen. Prüfen Sie die Termine nach der Rücksetzung. Löschen Sie die Outlook-Serie nicht während einer noch ausstehenden Rücksetzung. Ziehen Sie bei wiederholten Einladungen oder anhaltenden Abweichungen den Support bei.
+- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Auch bei einer Serie mit einem Termin in einem anderen Raum bleiben die gewöhnlichen Termine gewöhnliche Serientermine. Der Termin im anderen Raum bleibt eine Ausnahme. Unveränderte Termine erhalten durch die Rücksetzung keine eigenen Einladungen.
 
 Prüfen Sie nach abgeschlossener Synchronisation die betroffenen Termine in ROOMS, im Organisatorkalender und in der Exchange-Ressourcenbelegung. Eine Raumangabe oder angenommene Antwort beim Organisator allein bestätigt nicht für jeden Serientermin eine vorhandene Raumkopie. Insbesondere nach Outlook-Änderungen, die vorhandene Serienausnahmen zurücksetzen, können fehlende Raumkopien weiterhin auftreten. Bei einer Abweichung prüfen Sie [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}) und ziehen Sie den Support bei. Bereits beschädigte Serien werden nicht automatisch repariert.
 
 Nach **Cancel** müssen Sie die Zeit anpassen oder einen anderen Raum wählen und die Raumbuchung erneut prüfen und abschliessen. Ein erhaltener Outlook-Termin ohne Raum ist keine bestätigte Raumbuchung. Warten Sie vor weiteren Serienänderungen, bis beide Systeme übereinstimmen.
+
+### Besprechungsserie in Outlook löschen
+
+Löscht die organisierende Person die ganze Besprechungsserie in Outlook, verarbeitet ROOMS die Löschung auch dann, wenn noch eine Rücksetzung der Serie aussteht, und annulliert die zugehörigen Buchungen. Prüfen Sie nach der Synchronisation, dass die künftigen Raumbuchungen in ROOMS annulliert und die Räume in Exchange freigegeben sind. Das Löschen der Besprechungsserie ist nicht dasselbe wie das nachfolgend beschriebene Entfernen eines Raums.
+
+{{% alert title="Gleichzeitige Löschung während einer Wiederherstellung" color="warning" %}}
+Ersetzt ROOMS während einer Wiederherstellung einen fehlerhaft verknüpften Outlook-Termin und löschen Sie genau diesen Termin gleichzeitig, kann die Serie erneut angelegt werden. Erscheint eine gelöschte Serie wieder oder bleiben Raumbuchungen bestehen, ziehen Sie den Support bei, statt die Serie wiederholt zu löschen oder neu anzulegen.
+{{% /alert %}}
 
 ### Raum aus einem Outlook-Termin entfernt
 

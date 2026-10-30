@@ -12,7 +12,7 @@ Eine bereits mit ROOMS synchronisierte Einzelbuchung kann in Outlook zur Serie w
 
 - Serie erweitern (mehr Appointments als Reservationen) --> Zusätzliche Appointments werden wieder gelöscht / Serieappointments werden zurückgesetzt
 - Sofortiges löschen des Appointmens nach der Erstellung --> Reservation bleibt bestehen
-- Datum/Zeitanpassung auf Outlook auf einen Zeitpunkt wo der Raum bereits besetzt ist oder das Buchen nicht erlaubt ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
+- Datum-/Zeitänderungen in Outlook, bei denen der Raum bereits belegt oder das Buchen nicht erlaubt ist, werden gemäss dem konfigurierten [Konfliktverhalten **Rollback** oder **Cancel**]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md#serien-raumbuchung-und-besprechung-unterscheiden" >}}) behandelt. Prüfen Sie nach der Synchronisation die betroffenen Termine und Raumbuchungen.
 - Anpassen von Serie/Reservation welche zurzeit in Rooms geöffnet ist --> Appointment wird zurückgesetzt --> Serieappointment bleibt aber ein Ausnahmetermin (Teilnehmer erhalten für diesen Termin ein extra Updatemail)
 - Bei Serie: Jährliche oder Wiederholung ohne Enddatum --> Bei der Erstellung wird dies vom Add-In unterbunden
 {{% /alert %}}
