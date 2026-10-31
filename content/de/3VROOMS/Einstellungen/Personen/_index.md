@@ -73,9 +73,13 @@ Unter **Einstellungen > Personen** öffnen Sie die gewünschte Person mit **Bear
 
 Zusätzlich zur Berechtigung, die Person zu bearbeiten, benötigen Sie für diese Auswahl das globale Recht **Darf Firmen mit Personen verwalten** (Recht 65). Ohne dieses Recht wird die Organisation nur angezeigt.
 
-1. Geben Sie den Anfang der Organisationsbezeichnung oder der Abteilung in das Feld **Organisation** ein.
+1. Geben Sie die Organisationsbezeichnung, die Abteilung oder einen Teil davon in das Feld **Organisation** ein. Sie können auch mehrere Suchwörter eingeben.
 2. Wählen Sie den passenden Eintrag aus der Vorschlagsliste. Ist bei der Organisation eine Abteilung hinterlegt, erscheint der Eintrag als **Organisationsbezeichnung - Abteilung**. Ohne Abteilung wird nur die Organisationsbezeichnung angezeigt.
 3. Klicken Sie auf **Speichern**, um die Auswahl zu übernehmen.
+
+Die Vorschläge sind nach Relevanz geordnet: Zuerst erscheinen Einträge, deren Bezeichnung oder Abteilung der gesamten Eingabe entspricht, danach solche, die damit beginnen, und anschliessend solche, die die Eingabe als zusammenhängende Wortfolge enthalten. Innerhalb dieser Gruppen stehen Einträge mit mehr passenden Suchwörtern weiter oben. Bei mehreren Suchwörtern genügt ein Treffer in der Bezeichnung oder Abteilung; es müssen nicht alle Wörter vorkommen.
+
+Die Vorschlagsliste zeigt nur eine begrenzte Anzahl Einträge. Fehlt die gesuchte Organisation, verwenden Sie einen möglichst eindeutigen Teil ihrer Bezeichnung oder Abteilung.
 
 Bei langen Einträgen können Sie den Mauszeiger über einen Vorschlag halten, um die vollständige Bezeichnung mit Abteilung zu sehen. Auch nach der Auswahl und bei den Organisationsangaben der Person wird eine hinterlegte Abteilung zusammen mit der Organisationsbezeichnung angezeigt.
 
