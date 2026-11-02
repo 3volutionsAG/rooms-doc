@@ -232,6 +232,25 @@ Dieser Weg umgeht keine Exchange-Buchungsregeln. Lehnt ein Raum mit striktem Buc
 
 Ist die ROOMS-Serie bereits gespeichert und scheitert danach das Zurückschreiben nach Outlook, stösst ROOMS die Serien-Synchronisation erneut an. Prüfen Sie nach deren Abschluss die Verknüpfung, das Serienende und die Raumbelegung in beiden Systemen. Bleiben Abweichungen bestehen, ziehen Sie den Support bei.
 
+### Synchronisierte Serie in Outlook teilen
+
+Ändert die organisierende Person in Outlook einen Termin **und alle folgenden Termine** einer bereits synchronisierten Serie, teilt Outlook die Besprechungsserie. Wird der abgetrennte Teil erfolgreich in ROOMS übernommen, führt ROOMS beide Teile als getrennte Serien:
+
+- Die früheren Termine bleiben als bestehende Buchungen in der ursprünglichen Serie.
+- Für die übernommenen Termine entstehen neue Buchungen in einer neuen Serie; ihre bisherigen Buchungen in der ursprünglichen Serie werden annulliert. Für vergangene Termine ohne das unten genannte Recht gilt eine Ausnahme. Auch die neue Serie kann Termine ohne Raumbuchung enthalten.
+
+{{% alert title="ROOMS-spezifische Angaben vor der Teilung sichern" color="warning" %}}
+Der spätere Teil wird aus den Outlook-Daten neu gebucht, nicht aus den bisherigen ROOMS-Buchungen kopiert. Angaben, die nur in ROOMS gespeichert sind, werden deshalb nicht übernommen. Prüfen und sichern Sie diese Angaben vor der Teilung und ergänzen Sie sie nach erfolgreicher Übernahme in den neuen Buchungen. Prüfen Sie anschliessend beide Serien und die tatsächliche Raumbelegung pro Termin.
+{{% /alert %}}
+
+Hat der abgetrennte Teil einen synchronisierten Raum, erfolgt seine Übernahme über diesen Raum. Bei einer bereits synchronisierten Serie in einem Raum **ohne eigenen Exchange-Kalender** übernimmt ROOMS den abgetrennten Teil in denselben Raum. Ist dort einer der zu übernehmenden Termine nicht buchbar, scheitert die Übernahme des ganzen neuen Teils. Die Outlook-Termine bleiben bestehen; nach ausgeschöpften Wiederholungen bleiben sie ohne ROOMS-Verknüpfung und ohne neue Raumbuchungen. Die organisierende Person erhält eine Fehler-E-Mail, sofern bei ihr **Mail bei Synchronisationsfehler** aktiviert und die Benachrichtigung **Synchronisationsfehler** für den betreffenden Standort eingerichtet ist. Prüfen Sie Zeit und Raum, bevor Sie die Buchungen erneut abschliessen; ein erhaltener Outlook-Termin allein bestätigt keine Raumbelegung.
+
+Wird dagegen der synchronisierte Raum beim Teilen aus allen abgetrennten Terminen entfernt und kein anderer synchronisierter Raum eingeladen, bleiben diese als gewöhnliche Outlook-Serie ohne ROOMS-Verknüpfung bestehen. Die früheren Termine behalten ihre Raumbuchungen.
+
+Beginnt der abgetrennte Teil bei einem bereits vergangenen Termin, entscheidet das standortbezogene Recht **Darf Reservationen in Vergangenheit buchen** der organisierenden Person: Mit diesem Recht darf ROOMS auch die betroffenen vergangenen Termine in der neuen Serie neu buchen; die Übernahme muss weiterhin erfolgreich sein und die Raumbuchung zulässig bleiben. Ohne dieses Recht bleiben diese Raumbuchungen in der ursprünglichen Serie; die neue Serie führt die betreffenden Termine ohne Raum und bucht nur die künftigen Termine. Ob ein laufender Termin bereits als vergangen gilt, hängt von **LaufendeReservationenGeltenAlsVergangen** ab. Ein Termin ohne Raum in der neuen Serie bedeutet in diesem Fall daher nicht, dass seine bisherige Raumbuchung aufgehoben wurde.
+
+Warten Sie auf den Abschluss des Abgleichs, bevor Sie einen der beiden Teile weiter ändern. Bei fehlenden oder doppelten Buchungen ziehen Sie den Support bei. Die Teilung direkt in Outlook ist vom [Bearbeiten und Aufteilen einer Serie in ROOMS]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/Serieninformationen/_index.md#bearbeiten-einer-serie" >}}) zu unterscheiden.
+
 ### In Outlook erstellte Serie ohne Enddatum
 
 ROOMS speichert keine endlose Serie. Wird eine Outlook-Serie ohne Enddatum als ROOMS-Serie übernommen, begrenzt ROOMS sie anhand der [Serieneinstellungen der Benutzergruppen]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Benutzergruppen/_index.md#serieneinstellungen" >}}) der organisierenden Person. Das gilt für EWS und `Microsoft365` / Graph, beim Import über den Raum sowie bei der erfolgreichen Umwandlung einer synchronisierten Einzelbuchung in eine Serie über Outlook.

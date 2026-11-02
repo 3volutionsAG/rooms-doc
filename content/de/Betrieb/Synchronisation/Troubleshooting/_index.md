@@ -215,6 +215,12 @@ ROOMS veranlasst die Freigabe des Raums in Outlook, sofern die Synchronisation d
 
 Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
 
+### Buchungen nach einer Teilung in Outlook prüfen
+
+Nach einer Outlook-Änderung für einen Termin und alle folgenden Termine gehören die früheren und die abgetrennten Termine zu getrennten Serien. Prüfen Sie nach abgeschlossener Synchronisation beide Teile, die neuen Buchungen und die tatsächliche Raumbelegung. Angaben, die nur in ROOMS gespeichert sind, werden nicht in die neuen Buchungen kopiert. Beginnt die Teilung in der Vergangenheit, können vergangene Raumbuchungen je nach Recht der organisierenden Person in der ursprünglichen Serie bleiben.
+
+Fehlt der neue Teil in ROOMS, prüfen Sie die Synchronisationsfehler, die Buchbarkeit der betroffenen Termine und die Raumantworten. Bei einem Raum ohne eigenen Exchange-Kalender kann ein nicht buchbarer Termin die Übernahme des ganzen neuen Teils verhindern; die Outlook-Termine bleiben dennoch bestehen. Lassen Sie fehlende oder doppelte Buchungen vom Support prüfen, statt die ganze Besprechungsserie vorsorglich zu löschen oder neu anzulegen. Die Regeln und Prüfhinweise stehen unter [Synchronisierte Serie in Outlook teilen]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#synchronisierte-serie-in-outlook-teilen" >}}).
+
 ### Serienende wiederhergestellt, Raumantwort ausstehend
 
 Entfernt die organisierende Person das Enddatum einer synchronisierten Serie in Outlook, schreibt ROOMS sein bestehendes Ende an alle Teilnehmenden zurück. Hat der Raum die Anfrage ohne Ende bereits abgelehnt, kann diese ältere Ablehnung noch sichtbar sein. ROOMS wartet dann auf eine neue Antwort des Raums zur wieder begrenzten Serie, bevor es den weiteren Abgleich ausführt. Dieser Wartezustand zählt nicht als fehlgeschlagener Synchronisationsversuch und gibt die gültigen Raumbuchungen nicht aufgrund der älteren Ablehnung frei.
