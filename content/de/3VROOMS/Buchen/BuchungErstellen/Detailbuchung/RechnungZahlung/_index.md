@@ -31,7 +31,7 @@ Der Reiter erscheint, wenn bereits eine Zahlung vorhanden ist oder für die Rese
 
 ## Zahlung über Kostenstellen
 
-Ein Zahlungsanbieter vom Typ `CostCenter` ordnet die Zahlung intern den Kostenstellen der Reservation zu. Es findet keine Geldübertragung über einen externen Zahlungsdienst statt. Die Einrichtung ist unter [Zahlungsprovider]({{< relref "/3VROOMS/Einstellungen/System/Zahlungsprovider/_index.md" >}}#kostenstelle-einrichten) beschrieben.
+Ein Zahlungsanbieter vom Typ `CostCenter` ordnet die Zahlung intern den Kostenstellen der Reservation zu. Es findet keine Geldübertragung über einen externen Zahlungsdienst statt. Die Einrichtung ist unter [Zahlungsprovider]({{< relref "3VROOMS/Einstellungen/System/Zahlungsprovider/_index.md" >}}#kostenstelle-einrichten) beschrieben.
 
 Bei diesem Zahlungsweg erscheint das Feld **Belastete Kostenstellen** anstelle der Felder für **Versand** und **Rechnungsadresse**. Angezeigt werden Nummer und Beschreibung sowie vorhandene prozentuale Anteile. Fehlt ein verteilter Anteil, erscheint die Kostenstelle ohne Prozentangabe. Auch Kostenstellen ohne die Markierung **Verrechenbar** sind enthalten.
 
@@ -39,7 +39,7 @@ Mindestens eine Kostenstelle muss der Reservation zugeordnet sein. Bei einer bes
 
 ### Kostenstellen prüfen und ändern
 
-Die Zuordnung bearbeiten Sie im Reiter [Allgemein]({{< relref "/3VROOMS/Buchen/BuchungErstellen/Detailbuchung/Allgemein/_index.md" >}}), nicht im Zahlungsfeld. Dafür benötigen Sie das Recht **Darf Kostenträger anpassen**. Für Änderungen an der prozentualen Verteilung benötigen Sie zusätzlich **Darf Kostenstellensplitt ändern**.
+Die Zuordnung bearbeiten Sie im Reiter [Allgemein]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/Allgemein/_index.md" >}}), nicht im Zahlungsfeld. Dafür benötigen Sie das Recht **Darf Kostenträger anpassen**. Für Änderungen an der prozentualen Verteilung benötigen Sie zusätzlich **Darf Kostenstellensplitt ändern**.
 
 Solange die Zahlungsangaben bearbeitbar sind, folgt **Belastete Kostenstellen** der Auswahl im Reiter `Allgemein`. Prüfen Sie nach dem Speichern auch die Zahlungsdetails. Dort sehen Sie die auf der jeweiligen Zahlung gespeicherten Kostenstellen und Anteile.
 

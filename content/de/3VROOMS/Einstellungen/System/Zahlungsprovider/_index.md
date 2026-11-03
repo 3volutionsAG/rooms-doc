@@ -52,7 +52,7 @@ Im Feld **Typ** heissen die Auswahlwerte `Saferpay`, `Invoice` (Rechnung) und `C
   - Verwenden Sie einen **klaren, stabilen Namen**, damit im Betrieb keine Verwechslungen entstehen.
   - Falls der Provider im Buchungsprozess «per Name» referenziert wird, muss dieser Name **exakt** passen (Gross-/Kleinschreibung beachten).
 - **Typ**: Wählen Sie `Saferpay`, `Invoice` oder `CostCenter` entsprechend dem gewünschten Zahlungsweg.
-- **Zahlungsverarbeitung**: Wählen Sie mindestens eine erlaubte Verarbeitung aus. Die Auswahlwerte heissen `None`, `Manual` und `Automatic`.
+- **Zahlungsverarbeitung**: Wählen Sie mindestens eine erlaubte Verarbeitung aus. Die Auswahlwerte heissen hier `None`, `Manual` und `Automatic`. Im Reservationsdetail erscheinen dafür die konfigurierten Bezeichnungen, beispielsweise `Keine`, `Manuell` und `Automatisch`.
 - **Default**: Wählen Sie eine der erlaubten Verarbeitungen als Vorgabe. Ohne erlaubte Verarbeitung und Vorgabe lässt sich der Provider nicht speichern.
 - **URL** (nur Saferpay): Basis-URL des Saferpay-Systems (Test oder Produktion).
 - **Benutzername / Passwort** (nur Saferpay): Zugangsdaten, die Sie von Saferpay erhalten.
@@ -170,7 +170,7 @@ Für **Rechnung** wählen Sie:
 
 Eine Zahlung über diesen Provider benötigt mindestens eine Kostenstelle auf der Reservation. Die Zahlung hält Nummer, Beschreibung und vorhandene prozentuale Anteile der zugeordneten Kostenstellen fest. Auch Kostenstellen ohne die Markierung **Verrechenbar** werden dabei aufgenommen. Die Markierung ist für diesen Zahlungsweg kein Ausschlusskriterium.
 
-Wo Sie die belasteten Kostenstellen prüfen und ändern, beschreibt [Rechnung und Zahlung]({{< relref "/3VROOMS/Buchen/BuchungErstellen/Detailbuchung/RechnungZahlung/_index.md" >}}#zahlung-über-kostenstellen).
+Wo Sie die belasteten Kostenstellen prüfen und ändern, beschreibt [Rechnung und Zahlung]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/RechnungZahlung/_index.md" >}}#zahlung-über-kostenstellen).
 
 ## Wie läuft der Zahlungsprozess ab?
 
