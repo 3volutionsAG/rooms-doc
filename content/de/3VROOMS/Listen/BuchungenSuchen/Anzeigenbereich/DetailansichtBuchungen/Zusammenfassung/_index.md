@@ -71,6 +71,7 @@ Wie bei den Einzellöschungen werden die Verantwortlichen und Organisierenden in
 
   Über diese Schaltfläche kopieren Sie die vorliegende Buchung. Dies ist z.B. hilfreich, wenn Sie eine neue Buchung mit den vorliegenden Rahmenbedingungen und/oder Teilnehmenden zu einem späteren Zeitpunkt erstellen wollen.
 
+Sie benötigen das Bearbeitungsrecht für die Ausgangsbuchung. Ein Leserecht allein genügt nicht. Nach dem Klick auf **Kopieren** bestätigen Sie die Rückfrage, bevor die Kopie erstellt wird.
 
 Danach öffnet sich die Eingabemaske zur Detailbuchung. Alle Details aus der ursprünglichen Buchung wurden übernommen. Sie haben nun die Möglichkeit einzelne Details, wie z.B. das Datum, zu ändern.
 
