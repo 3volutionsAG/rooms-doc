@@ -180,9 +180,7 @@ Nach **Cancel** müssen Sie die Zeit anpassen oder einen anderen Raum wählen un
 
 Löscht die organisierende Person die ganze Besprechungsserie in Outlook, verarbeitet ROOMS die Löschung auch dann, wenn noch eine Rücksetzung der Serie aussteht, und annulliert die zugehörigen Buchungen. Prüfen Sie nach der Synchronisation, dass die künftigen Raumbuchungen in ROOMS annulliert und die Räume in Exchange freigegeben sind. Das Löschen der Besprechungsserie ist nicht dasselbe wie das nachfolgend beschriebene Entfernen eines Raums.
 
-{{% alert title="Gleichzeitige Löschung während einer Wiederherstellung" color="warning" %}}
-Ersetzt ROOMS während einer Wiederherstellung einen fehlerhaft verknüpften Outlook-Termin und löschen Sie genau diesen Termin gleichzeitig, kann die Serie erneut angelegt werden. Erscheint eine gelöschte Serie wieder oder bleiben Raumbuchungen bestehen, ziehen Sie den Support bei, statt die Serie wiederholt zu löschen oder neu anzulegen.
-{{% /alert %}}
+Erscheint eine gelöschte Serie wieder oder bleiben Raumbuchungen bestehen, ziehen Sie den Support bei, statt die Serie wiederholt zu löschen oder neu anzulegen.
 
 ### Raum aus einem Outlook-Termin entfernt
 
@@ -205,13 +203,13 @@ Beim Beenden der Synchronisation einer ganzen Serie über `Microsoft365` (Graph)
 
 Ein mit der Serie verknüpfter Termin ohne Raum ist keine eigenständig bearbeitbare Buchung. Er erscheint nicht als Raumbuchung in Buchungslisten oder im Kalender. Beim direkten Öffnen in ROOMS erscheint **Für diesen Termin besteht keine Raumbuchung mehr.** ROOMS öffnet einen gebuchten Termin der Serie oder führt zurück zur Suche, wenn keiner vorhanden ist. Prüfen Sie deshalb Datum und Raum der geöffneten Buchung, bevor Sie sie bearbeiten. Termine ausserhalb des Raumbuchungsfensters können weiterhin als geplante Termine in den Serieninformationen erscheinen.
 
-Um einen erhaltenen Serientermin erneut zu buchen, öffnen Sie genau diesen Termin in Outlook und starten das quickROOMS-Add-In. Es zeigt die Raumauswahl statt einer bestehenden Buchung. Wählen Sie einen verfügbaren Raum, schliessen Sie die Buchung ab und senden Sie die Aktualisierung in Outlook. Nach erfolgreicher Buchung gehört der Termin wieder mit Raum zur ROOMS-Serie. Ein direkter Aufruf dieses Termins im quickROOMS-Browser zeigt nur den Hinweis auf die fehlende Raumbuchung und führt zur Suche.
+Wie Sie einen erhaltenen Serientermin erneut buchen, beschreibt [Raum für einen erhaltenen Outlook-Termin erneut buchen]({{< relref "3VROOMS-Module/3VROOMS_AddIn_O365Outlook/_index.md#raum-für-einen-erhaltenen-outlook-termin-erneut-buchen" >}}).
 
 ### No Show bei einem synchronisierten Serientermin
 
 Mit dem Recht **Darf Reservationen als No Show kennzeichnen** können Sie eine nicht genutzte Buchung als **No Show** markieren. ROOMS annulliert die Raumbuchung und behält die No-Show-Markierung für die Auswertung. Bei einem mit Outlook verknüpften Serientermin bleibt der Besprechungstermin ohne Raum in der Serie erhalten. Die übrigen Raumbuchungen bleiben bestehen.
 
-ROOMS veranlasst die Freigabe des Raums in Outlook, sofern die Synchronisation des Termins aktiv und die Serie mit Outlook verknüpft ist. Zählt ein bereits gestarteter Termin gemäss **LaufendeReservationenGeltenAlsVergangen** als vergangen und darf die organisierende Person vergangene Buchungen nicht bearbeiten, kann der Raum in Outlook weiterhin belegt bleiben. Prüfen Sie nach **No Show** auch die Exchange-Ressourcenbelegung und ziehen Sie bei einer Abweichung den Support bei. Die No-Show-Markierung allein bestätigt keine Freigabe in beiden Systemen.
+ROOMS veranlasst die Freigabe des Raums in Outlook, sofern die Synchronisation des Termins aktiv und die Serie mit Outlook verknüpft ist. Zählt ein bereits gestarteter Termin gemäss dem globalen Parameter **Laufende Buchungen gelten als vergangen** als vergangen und darf die organisierende Person vergangene Buchungen nicht bearbeiten, kann der Raum in Outlook weiterhin belegt bleiben. Prüfen Sie nach **No Show** auch die Exchange-Ressourcenbelegung und ziehen Sie bei einer Abweichung den Support bei. Die No-Show-Markierung allein bestätigt keine Freigabe in beiden Systemen.
 
 Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
 
@@ -223,7 +221,7 @@ Fehlt der neue Teil in ROOMS, prüfen Sie die Synchronisationsfehler, die Buchba
 
 ### Serienende wiederhergestellt, Raumantwort ausstehend
 
-Entfernt die organisierende Person das Enddatum einer synchronisierten Serie in Outlook, schreibt ROOMS sein bestehendes Ende an alle Teilnehmenden zurück. Hat der Raum die Anfrage ohne Ende bereits abgelehnt, kann diese ältere Ablehnung noch sichtbar sein. ROOMS wartet dann auf eine neue Antwort des Raums zur wieder begrenzten Serie, bevor es den weiteren Abgleich ausführt. Dieser Wartezustand zählt nicht als fehlgeschlagener Synchronisationsversuch und gibt die gültigen Raumbuchungen nicht aufgrund der älteren Ablehnung frei.
+Entfernt die organisierende Person das Enddatum einer synchronisierten Serie in Outlook, schreibt ROOMS sein bestehendes Ende an alle Teilnehmenden zurück. Hat der Raum die Anfrage ohne Ende bereits abgelehnt, kann diese ältere Ablehnung noch sichtbar sein. ROOMS wartet dann auf eine neue Antwort des Raums zur wieder begrenzten Serie, bevor es den weiteren Abgleich ausführt. Die gültigen Raumbuchungen bleiben dabei bestehen.
 
 Bleibt eine neue Antwort aus, kann die Synchronisation weiter ausstehen. Prüfen Sie das Ende im Organisatorkalender, die Antwort und Belegung des Raums sowie die Dienstprotokolle. Lassen Sie den Support die fehlende Antwort untersuchen; annullieren Sie die Serie nicht allein wegen dieses Wartezustands. Eine neue Ablehnung folgt weiterhin **Rollback** oder **Cancel**. Der vollständige Ablauf ist unter [Enddatum einer synchronisierten Serie in Outlook entfernen]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#enddatum-einer-synchronisierten-serie-in-outlook-entfernen" >}}) beschrieben.
 
