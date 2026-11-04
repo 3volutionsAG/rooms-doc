@@ -29,7 +29,7 @@ Die native Add-In-DLL und das MSI sind nicht codesigniert. Klären Sie vor der V
 4. Schliessen Sie das Setup ab und starten Sie Outlook.
 5. Öffnen oder erstellen Sie einen Termin. Wählen Sie im Menüband in der Gruppe **quickROOMS** die Schaltfläche **Raum buchen**. Prüfen Sie, ob der Buchungsassistent mit der vorgesehenen Umgebung lädt.
 
-Das native Add-In kann neben dem VSTO-Add-In installiert sein. In diesem Fall können beide eine Schaltfläche **Raum buchen** anzeigen; die native Schaltfläche trägt das quickROOMS-Logo. Legen Sie bei einer parallelen Bereitstellung fest, welches Add-In die Benutzer verwenden sollen. Die Installation des nativen Add-Ins entfernt das VSTO-Add-In nicht.
+Das native Add-In kann neben dem bisherigen quickROOMS-Add-In für klassisches Outlook (VSTO-Add-In) installiert sein. In diesem Fall können beide eine Schaltfläche **Raum buchen** anzeigen; die native Schaltfläche trägt das quickROOMS-Logo. Legen Sie bei einer parallelen Bereitstellung fest, welches Add-In die Benutzer verwenden sollen. Die Installation des nativen Add-Ins entfernt das VSTO-Add-In nicht.
 
 ### Unbeaufsichtigte Installation
 
