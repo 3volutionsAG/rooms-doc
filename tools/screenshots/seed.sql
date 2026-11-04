@@ -58,6 +58,11 @@ GO
 SET XACT_ABORT ON;
 BEGIN TRAN;
 
+-- rooms_init hat diese Tabellen auf 0 zurückgesetzt und nie benutzt. Die erste Zeile bekäme sonst die Id 0, und mit einer Bestellung mit Id 0 scheitert die Buchungsliste beim Laden.
+DBCC CHECKIDENT (KostentraegerReservation, RESEED, 1) WITH NO_INFOMSGS;
+DBCC CHECKIDENT (Teilnehmer, RESEED, 1) WITH NO_INFOMSGS;
+DBCC CHECKIDENT (Bestellung, RESEED, 1) WITH NO_INFOMSGS;
+
 -----------------------------------------------------------------------------------------------------
 -- Logons. Das Passwort "Docs-Demo-2026!" gilt nur in dieser lokalen Demo-Datenbank.
 -----------------------------------------------------------------------------------------------------
@@ -297,7 +302,7 @@ EXEC #Book @b OUTPUT,@rJungfrau,@pNina,-2,'10:00','12:00',N'Kundenpräsentation'
 EXEC #Book @b OUTPUT,@rPilatus,@pClaudia,1,'14:00','15:00',N'Abgesagtes Teammeeting',5,4;
 EXEC #Book @b OUTPUT,@rNiesen,@pClaudia,-7,'08:30','17:00',N'Einführungstag neue Mitarbeitende',4,16,NULL,@a3;
 EXEC #Book @b OUTPUT,@rSaentis,5,7,'13:30','16:30',N'Mitarbeiterversammlung',4,80,N'Bühne, Mikrofon und Beamer vorbereiten',@a1;
-INSERT Bestellung(AngebotId,AngebotszoneId,ReservationId,AnlassId,PersonId,BestellungNr,Beginn,Ende,Menge,Bezeichnung,Teilnehmer) SELECT 6,1,@b,@a1,5,'B-1002',DATEADD(hour,3,Beginn),DATEADD(hour,4,Beginn),80,N'Apéro riche',80 FROM Reservation WHERE Id=@b;
+INSERT Bestellung(AngebotId,AngebotszoneId,AnlassId,PersonId,BestellungNr,Beginn,Ende,Menge,Bezeichnung,Teilnehmer) SELECT 6,1,@a1,5,'B-1002',DATEADD(hour,3,Beginn),DATEADD(hour,4,Beginn),80,N'Apéro riche',80 FROM Reservation WHERE Id=@b;
 EXEC #Book @b OUTPUT,@eBeamer2,5,7,'13:30','16:30',N'Mitarbeiterversammlung',4,NULL,NULL,@a1;
 EXEC #Book @b OUTPUT,@rSaentis,@pJulia,14,'09:00','17:00',N'Kundentag Muster AG',2,60,NULL,@a2;
 EXEC #Book @b OUTPUT,@rJungfrau,@pJulia,14,'09:00','12:00',N'Kundentag Workshop',4,20,NULL,@a2;
