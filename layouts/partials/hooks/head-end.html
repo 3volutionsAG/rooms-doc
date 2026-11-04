@@ -1,3 +1,6 @@
+{{/* Docsy also emits "index, follow" in production. Search engines apply the more restrictive rule. */}}
+<meta name="robots" content="noindex, nofollow">
+
 {{ with .Site.Params.algolia_docsearch }}
 <!-- stylesheet for algolia docsearch -->
 {{ end }}
