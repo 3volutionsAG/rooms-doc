@@ -25,7 +25,7 @@ Im Menü **Weitere Aktionen** finden Sie je nach Buchung:
 * **Zum Anlass**: den zugehörigen Anlass öffnen
 * **Annullieren** oder **Serie annullieren**: die Buchung oder Serie annullieren
 * **Terminieren** und **Freigeben**: eine laufende Reservation beenden
-* **No Show**: eine nicht genutzte Buchung annullieren und als No-Show kennzeichnen. Sie kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung ist das Recht **Darf Reservationen als No-Show kennzeichnen**.
+* **No Show**: eine nicht genutzte Buchung annullieren und als No-Show kennzeichnen. Sie kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung ist das Recht **Darf Reservationen als No Show kennzeichnen**.
 * **Löschen** oder **Serie löschen**: die Buchung oder Serie aus dem System löschen
 
 Prüfen Sie vor dem Bestätigen einer Annullation oder Löschung, ob die Aktion eine einzelne Buchung oder die Serie betrifft. Das Schliessen des Bestätigungsdialogs führt die Aktion nicht aus.
@@ -51,7 +51,12 @@ Das Schliessen eines Buchungs- oder Schnellbuchungsfensters speichert keine Eing
 {{% /alert %}}
 
 {{% alert title="Info: Tab „Fragenkatalog“ in Buchungen" color="info" %}}
-In einigen Buchungen sehen Sie zusätzlich den Tab **„Fragenkatalog“**. Dieser erscheint nur, wenn für die ausgewählte Ressource (z.B. Raum) ein Fragenkatalog hinterlegt ist und relevante Fragen vorhanden sind.\n\nMehr dazu:\n- [Fragenkatalog](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragenkatalog/)\n- [Fragen](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/)\n{{% /alert %}}
+In einigen Buchungen sehen Sie zusätzlich den Tab **„Fragenkatalog“**. Dieser erscheint nur, wenn für die ausgewählte Ressource (z.B. Raum) ein Fragenkatalog hinterlegt ist und relevante Fragen vorhanden sind.
+
+Mehr dazu:
+- [Fragenkatalog](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragenkatalog/)
+- [Fragen](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/)
+{{% /alert %}}
 
 ### Bearbeiten einer Buchung mittels Checkbox
 
