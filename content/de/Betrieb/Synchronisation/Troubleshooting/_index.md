@@ -28,13 +28,13 @@ Prüfen Sie zuerst:
 
 ### E-Mail-Alias und automatische Adresskorrektur
 
-Exchange meldet Organisatoren, Teilnehmer und Räume mit der **primären SMTP-Adresse** ihres Postfachs. Ein Alias ist eine zusätzliche Adresse desselben Postfachs. Steht in ROOMS nur der Alias, kann die Synchronisation eine Person oder einen Raum nicht korrekt zuordnen. Eine Outlook-Buchung kann deshalb auf der **Systemressource** landen, obwohl der Raum weiterhin im Outlook-Termin eingeladen ist.
+Exchange meldet Organisatoren, Teilnehmer und Räume mit der **primären SMTP-Adresse** ihres Postfachs. Ein Alias ist eine zusätzliche Adresse desselben Postfachs. Steht in ROOMS nur der Alias, kann die Synchronisation eine Person oder einen Raum nicht korrekt zuordnen. Dadurch kann ROOMS eine Raumbuchung annullieren, obwohl der Raum weiterhin im Outlook-Termin eingeladen ist.
 
 ROOMS prüft die Adresse bei aktiven Personen und Ressourcen mit Exchange-Synchronisation (`EWS1`, `EWS2`, `O365`, `Microsoft365`):
 
 - **Beim Speichern** einer Person oder Ressource kann ROOMS einen Alias durch die primäre Adresse ersetzen. Bei Personen darf die Synchronisation nicht deaktiviert sein.
 - **Nach dem Verbinden des Microsoft-365-Kalenders** mit Benutzerzustimmung (`Delegated`) wird die Adresse der Person ebenfalls geprüft. Ohne den erforderlichen Postfachzugriff ist keine Korrektur möglich.
-- **Vor dem Verschieben einer Raumbuchung auf die Systemressource** prüft die Synchronisation die Adresse des Raums. Ändert sich die gespeicherte Adresse, wird die Buchung mit der korrigierten Adresse erneut geprüft. Das verhindert die Fehlzuordnung wegen eines Alias, ersetzt aber nicht die Prüfung, ob der Raum tatsächlich noch eingeladen ist.
+- **Wenn der Raum im Outlook-Termin zu fehlen scheint**, prüft die Synchronisation vor der Annullierung die Adresse des Raums. Das gilt auch beim Entfernen des Raums aus einem einzelnen Serientermin. Ändert sich die gespeicherte Adresse, wird die Buchung mit der korrigierten Adresse erneut geprüft. Die Adressprüfung ersetzt nicht die Prüfung, ob der Raum tatsächlich noch eingeladen ist.
 
 Bei einer Korrektur erhält die betroffene Person eine Warnmeldung in ROOMS mit der bisherigen und der neuen Adresse sowie der Aufforderung, den Administrator zu kontaktieren. Wer eine andere Person oder eine Ressource gespeichert hat, erhält eine Informationsmeldung. Eine durch die Raum-Synchronisation ausgelöste Korrektur wird im Log festgehalten, ohne eine Benutzerbenachrichtigung auszulösen.
 
@@ -45,7 +45,7 @@ Bei einer Korrektur erhält die betroffene Person eine Warnmeldung in ROOMS mit 
 - Bleibt der Alias nach dem Speichern bestehen, prüfen Sie die Logs: ROOMS korrigiert die Adresse nicht, wenn Exchange das Postfach nicht auflösen kann, die primäre Adresse bereits bei einer anderen aktiven Person oder Ressource hinterlegt ist oder das Postfach unter der primären Adresse mit den konfigurierten Synchronisations-Zugangsdaten nicht erreichbar ist. Bei Graph bleibt der Alias auch bestehen, wenn die Domain der primären Adresse andere App-Zugangsdaten verwendet. Stimmen Sie einen solchen Zugangsdatenwechsel mit dem Support ab, statt nur die E-Mail-Adresse zu ändern.
 
 {{% alert title="Grenzen der automatischen Korrektur" color="warning" %}}
-Eine erfolgreich gespeicherte Person oder Ressource bedeutet nicht, dass die Adressprüfung erfolgreich war. Personen, die nur über Outlook buchen, werden nicht allein dadurch korrigiert. Bereits auf die Systemressource verschobene Buchungen werden durch die Adresskorrektur **nicht zurückverschoben**. Prüfen Sie diese Buchungen separat mit dem Support. Wird der Raum tatsächlich aus dem Outlook-Termin entfernt, bleibt das bisherige Verhalten bestehen.
+Eine erfolgreich gespeicherte Person oder Ressource bedeutet nicht, dass die Adressprüfung erfolgreich war. Personen, die nur über Outlook buchen, werden nicht allein dadurch korrigiert. Eine Adresskorrektur stellt eine fehlende Raumbuchung **nicht automatisch wieder her**. Prüfen Sie betroffene Termine separat mit dem Support. Wird der Raum tatsächlich aus dem Outlook-Termin entfernt, gelten die unten beschriebenen [Regeln zur Raumentfernung](#raum-aus-einem-outlook-termin-entfernt).
 {{% /alert %}}
 
 ## Schritt 2: Synchronisationstest durchführen
@@ -160,7 +160,7 @@ Das Verhalten bei Synchronisationskonflikten wird pro Person über die Einstellu
 | Modus | Verhalten | Versuche |
 |-------|-----------|----------|
 | **Rollback** (Standard) | Der Outlook-Termin wird auf den ROOMS-Stand zurückgesetzt. Erst bei wiederholtem Fehlschlag wird die Buchung als `SyncDisabled` markiert. | 5 (konfigurierbar) |
-| **Cancel** | Die ROOMS-Buchung wird automatisch annulliert. Der Outlook-Termin verliert seine ROOMS-Verknüpfung. | 2 |
+| **Cancel** | Die betroffene Raumbuchung wird annulliert. Bei einer Ablehnung eines einzelnen ROOMS-Serientermins bleibt dessen Serienverknüpfung erhalten. Bei Ablehnung eines ganzen Termins oder einer ganzen Serie endet die Synchronisation, wenn keine künftige Raumbuchung verbleibt. | 2 |
 {{< /bootstrap-table >}}
 
 In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
@@ -170,17 +170,60 @@ In beiden Fällen erhält der Organisator eine Fehler-E-Mail mit den Details.
 Bei einer Serie ist eine annullierte Raumbuchung nicht gleichbedeutend mit einer gelöschten Besprechung:
 
 - **Cancel:** ROOMS annulliert die betroffenen Raumbuchungen und entfernt die jeweilige Raumzuordnung aus Outlook. Die Organisatortermine und eingeladenen Personen bleiben erhalten. Die übrigen Termine behalten ihre Raumbuchungen. Eine spätere Änderung eines anderen Serientermins löscht die erhaltenen Termine ohne Raum nicht.
-- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Unveränderte Termine werden nicht allein durch die Konfliktbehandlung zu Einzelausnahmen.
+- **Rollback:** ROOMS setzt die abgelehnte Änderung auf die ursprünglichen Zeiten und Raumzuordnungen zurück und übermittelt die Rücksetzung auch an die eingeladenen Räume. Die Serie bleibt erhalten. Auch bei einer Serie mit einem Termin in einem anderen Raum bleiben die gewöhnlichen Termine gewöhnliche Serientermine. Der Termin im anderen Raum bleibt eine Ausnahme. Unveränderte Termine erhalten durch die Rücksetzung keine eigenen Einladungen.
 
-Prüfen Sie nach abgeschlossener Synchronisation die betroffenen Termine in ROOMS, im Organisatorkalender und in der Exchange-Ressourcenbelegung. Eine Raumangabe oder angenommene Antwort beim Organisator allein bestätigt nicht für jeden Serientermin eine vorhandene Raumkopie. Insbesondere nach Outlook-Änderungen, die vorhandene Serienausnahmen zurücksetzen, können fehlende Raumkopien weiterhin auftreten. Bei einer Abweichung prüfen Sie [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}) und ziehen Sie den Support bei. Die neue Konfliktbehandlung repariert bereits beschädigte Serien nicht automatisch.
+Prüfen Sie nach abgeschlossener Synchronisation die betroffenen Termine in ROOMS, im Organisatorkalender und in der Exchange-Ressourcenbelegung. Eine Raumangabe oder angenommene Antwort beim Organisator allein bestätigt nicht für jeden Serientermin eine vorhandene Raumkopie. Insbesondere nach Outlook-Änderungen, die vorhandene Serienausnahmen zurücksetzen, können fehlende Raumkopien weiterhin auftreten. Bei einer Abweichung prüfen Sie [Sync-Differenzen]({{< relref "3VROOMS/Einstellungen/System/SyncDifferenzen/_index.md" >}}) und ziehen Sie den Support bei. Bereits beschädigte Serien werden nicht automatisch repariert.
 
 Nach **Cancel** müssen Sie die Zeit anpassen oder einen anderen Raum wählen und die Raumbuchung erneut prüfen und abschliessen. Ein erhaltener Outlook-Termin ohne Raum ist keine bestätigte Raumbuchung. Warten Sie vor weiteren Serienänderungen, bis beide Systeme übereinstimmen.
 
-{{% alert title="Grenze bei vollständig raumlosen Serien" color="warning" %}}
-Die Bearbeitung eines erhaltenen Termins ohne Raum über **Bearbeiten** in ROOMS mit Übernahme auf die Serie ist nicht durchgängig unterstützt und kann einen Speicherfehler auslösen. Verwenden Sie diesen Weg nicht als Reparaturverfahren. Lassen Sie den Support den Zustand prüfen und prüfen Sie die passende Raumbuchung separat. Auch die neue Konfliktbehandlung ist keine Zusage, dass jede Bearbeitung vollständig raumloser Serien unterstützt wird.
+### Besprechungsserie in Outlook löschen
+
+Löscht die organisierende Person die ganze Besprechungsserie in Outlook, verarbeitet ROOMS die Löschung auch dann, wenn noch eine Rücksetzung der Serie aussteht, und annulliert die zugehörigen Buchungen. Prüfen Sie nach der Synchronisation, dass die künftigen Raumbuchungen in ROOMS annulliert und die Räume in Exchange freigegeben sind. Das Löschen der Besprechungsserie ist nicht dasselbe wie das nachfolgend beschriebene Entfernen eines Raums.
+
+Erscheint eine gelöschte Serie wieder oder bleiben Raumbuchungen bestehen, ziehen Sie den Support bei, statt die Serie wiederholt zu löschen oder neu anzulegen.
+
+### Raum aus einem Outlook-Termin entfernt
+
+Entfernen Sie den Raum direkt in Outlook, annulliert ROOMS die betroffene Raumbuchung. Eine Ablehnung des Raums im Konfliktmodus **Cancel** folgt denselben Regeln. Entscheidend ist, ob die Raumentfernung oder Ablehnung einen einzelnen Termin einer ROOMS-Serie oder den ganzen Termin beziehungsweise die ganze Serie betrifft:
+
+- **Einzelner Termin einer ROOMS-Serie:** Die Raumbuchung wird annulliert. Der Outlook-Termin bleibt als Termin ohne Raum mit der Serie verknüpft, damit Änderungen an der ganzen Serie auch diesen Termin erreichen. Das gilt auch dann, wenn die übrigen Termine bereits keinen Raum mehr haben.
+- **Einzeltermin oder unabhängig gebuchter Outlook-Serientermin:** Die Raumbuchung wird annulliert und die Synchronisation endet. Der Outlook-Termin bleibt bestehen und verliert seine ROOMS-Kategorie und -Verknüpfung.
+- **Ganze Serie ohne verbleibende künftige Raumbuchung:** ROOMS annulliert die künftigen Buchungen und beendet die Synchronisation der Serie. Bereits vergangene Buchungen bleiben erhalten, halten die Synchronisation aber nicht aufrecht. Die Outlook-Serie bleibt bestehen und verliert ihre ROOMS-Kategorie und -Verknüpfung. Spätere Änderungen ohne erneute Raumbuchung werden nur noch in Outlook geführt.
+- **Ganze Serie mit verbleibender künftiger Raumbuchung:** Beispielsweise bleibt eine von einem anderen Raum angenommene Ausnahme gebucht. Die übrigen Termine bleiben ohne Raum mit der Serie verknüpft.
+
+Im quickROOMS-Add-In folgt **Raum entfernen** bei einem einzelnen Serientermin der Einzeltermin-Regel. **Raum entfernen (Serie)** hebt dagegen alle künftigen Raumbuchungen der ROOMS-Serie auf, einschliesslich Buchungen in anderen Räumen, und beendet die Serienverknüpfung. Prüfen Sie deshalb vor der Bestätigung, ob Sie die ganze Serie oder nur einen Termin freigeben möchten. Die Besprechungstermine bleiben in Outlook.
+
+Die bewusste Raumentfernung ist kein Konflikt, den **Rollback** rückgängig macht. Warten Sie nach dem Senden der Outlook-Änderung auf die Synchronisation und prüfen Sie die Raumbuchung und die Exchange-Ressourcenbelegung. Wenn Sie einen Raum erneut hinzufügen, muss die Raumbuchung erneut erfolgreich abgeschlossen werden. Nach beendeter Synchronisation entstehen neue ROOMS-Buchungen. Die annullierten Buchungen bleiben annulliert.
+
+{{% alert title="Einzelne Termindetails bei Microsoft365 prüfen" color="warning" %}}
+Beim Beenden der Synchronisation einer ganzen Serie über `Microsoft365` (Graph) können abweichende Titel oder Teilnehmende einzelner Termine verloren gehen. Halten Sie solche Abweichungen vor der Raumentfernung fest und prüfen Sie die Termine danach im Organisatorkalender. Lassen Sie ungewollte Änderungen durch den Support prüfen.
 {{% /alert %}}
 
+### Termin ohne Raumbuchung öffnen oder erneut buchen
+
+Ein mit der Serie verknüpfter Termin ohne Raum ist keine eigenständig bearbeitbare Buchung. Er erscheint nicht als Raumbuchung in Buchungslisten oder im Kalender. Beim direkten Öffnen in ROOMS erscheint **Für diesen Termin besteht keine Raumbuchung mehr.** ROOMS öffnet einen gebuchten Termin der Serie oder führt zurück zur Suche, wenn keiner vorhanden ist. Prüfen Sie deshalb Datum und Raum der geöffneten Buchung, bevor Sie sie bearbeiten. Termine ausserhalb des Raumbuchungsfensters können weiterhin als geplante Termine in den Serieninformationen erscheinen.
+
+Wie Sie einen erhaltenen Serientermin erneut buchen, beschreibt [Raum für einen erhaltenen Outlook-Termin erneut buchen]({{< relref "3VROOMS-Module/3VROOMS_AddIn_O365Outlook/_index.md#raum-für-einen-erhaltenen-outlook-termin-erneut-buchen" >}}).
+
+### No Show bei einem synchronisierten Serientermin
+
+Mit dem Recht **Darf Reservationen als No Show kennzeichnen** können Sie eine nicht genutzte Buchung als **No Show** markieren. ROOMS annulliert die Raumbuchung und behält die No-Show-Markierung für die Auswertung. Bei einem mit Outlook verknüpften Serientermin bleibt der Besprechungstermin ohne Raum in der Serie erhalten. Die übrigen Raumbuchungen bleiben bestehen.
+
+ROOMS veranlasst die Freigabe des Raums in Outlook, sofern die Synchronisation des Termins aktiv und die Serie mit Outlook verknüpft ist. Zählt ein bereits gestarteter Termin gemäss dem globalen Parameter **Laufende Buchungen gelten als vergangen** als vergangen und darf die organisierende Person vergangene Buchungen nicht bearbeiten, kann der Raum in Outlook weiterhin belegt bleiben. Prüfen Sie nach **No Show** auch die Exchange-Ressourcenbelegung und ziehen Sie bei einer Abweichung den Support bei. Die No-Show-Markierung allein bestätigt keine Freigabe in beiden Systemen.
+
 Wenn die Synchronisation ihre Wiederholungen erfolglos beendet, bedeutet das nicht, dass die Systeme übereinstimmen. Prüfen Sie die Fehlermeldung, die Dienstprotokolle und die Buchungsfilter für Synchronisationsprobleme. Annullieren Sie nicht vorsorglich die gesamte Besprechungsserie, nur weil einzelne Raumbuchungen fehlen. Termine ohne Raum aufgrund des Buchungsfensters werden unter [Exchange-Buchungsrichtlinien]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#serie-länger-als-das-raumbuchungsfenster" >}}) erklärt.
+
+### Buchungen nach einer Teilung in Outlook prüfen
+
+Nach einer Outlook-Änderung für einen Termin und alle folgenden Termine gehören die früheren und die abgetrennten Termine zu getrennten Serien. Prüfen Sie nach abgeschlossener Synchronisation beide Teile, die neuen Buchungen und die tatsächliche Raumbelegung. Angaben, die nur in ROOMS gespeichert sind, werden nicht in die neuen Buchungen kopiert. Beginnt die Teilung in der Vergangenheit, können vergangene Raumbuchungen je nach Recht der organisierenden Person in der ursprünglichen Serie bleiben.
+
+Fehlt der neue Teil in ROOMS, prüfen Sie die Synchronisationsfehler, die Buchbarkeit der betroffenen Termine und die Raumantworten. Bei einem Raum ohne eigenen Exchange-Kalender kann ein nicht buchbarer Termin die Übernahme des ganzen neuen Teils verhindern; die Outlook-Termine bleiben dennoch bestehen. Lassen Sie fehlende oder doppelte Buchungen vom Support prüfen, statt die ganze Besprechungsserie vorsorglich zu löschen oder neu anzulegen. Die Regeln und Prüfhinweise stehen unter [Synchronisierte Serie in Outlook teilen]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#synchronisierte-serie-in-outlook-teilen" >}}).
+
+### Serienende wiederhergestellt, Raumantwort ausstehend
+
+Entfernt die organisierende Person das Enddatum einer synchronisierten Serie in Outlook, schreibt ROOMS sein bestehendes Ende an alle Teilnehmenden zurück. Hat der Raum die Anfrage ohne Ende bereits abgelehnt, kann diese ältere Ablehnung noch sichtbar sein. ROOMS wartet dann auf eine neue Antwort des Raums zur wieder begrenzten Serie, bevor es den weiteren Abgleich ausführt. Die gültigen Raumbuchungen bleiben dabei bestehen.
+
+Bleibt eine neue Antwort aus, kann die Synchronisation weiter ausstehen. Prüfen Sie das Ende im Organisatorkalender, die Antwort und Belegung des Raums sowie die Dienstprotokolle. Lassen Sie den Support die fehlende Antwort untersuchen; annullieren Sie die Serie nicht allein wegen dieses Wartezustands. Eine neue Ablehnung folgt weiterhin **Rollback** oder **Cancel**. Der vollständige Ablauf ist unter [Enddatum einer synchronisierten Serie in Outlook entfernen]({{< relref "Betrieb/Synchronisation/ResourceSync/_index.md#enddatum-einer-synchronisierten-serie-in-outlook-entfernen" >}}) beschrieben.
 
 ## Weiterführende Informationen
 

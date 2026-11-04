@@ -59,6 +59,21 @@ Bei einem Einzeltermin bleibt die Serie erhalten. Bei **Raum entfernen (Serie)**
 
 Kann das Add-In den gebuchten Raum nicht eindeutig erkennen, bricht es vor einer Änderung ab. Die Buchung und die Outlook-Teilnehmer bleiben unverändert. Lassen Sie durch Ihre Administration prüfen, ob ROOMS und das Add-In auf einem kompatiblen Versionsstand sind. Alternativ können Sie den Raum direkt in Outlook entfernen und die Änderung senden. Entfernen Sie dabei nur den Raum, nicht die eingeladenen Personen oder den Termin. Prüfen Sie anschliessend auch die Buchung in ROOMS.
 
+#### Raum für einen erhaltenen Outlook-Termin erneut buchen
+
+Ein Outlook-Termin kann nach dem Entfernen des Raumes weiterhin bestehen. Der Termin und seine eingeladenen Personen sind keine Bestätigung einer Raumbuchung. Buchen Sie einen benötigten Raum ausdrücklich erneut:
+
+1. Öffnen Sie den betroffenen Termin in Outlook. Wählen Sie bei einer Serie den einzelnen Termin, für den Sie wieder einen Raum benötigen.
+2. Öffnen Sie das quickROOMS Add-In. Bei einem erhaltenen, weiterhin mit ROOMS verknüpften Serientermin ohne Raum gelangen Sie zur Raumauswahl statt zur Buchungsübersicht. Prüfen Sie Datum und Uhrzeit.
+3. Wählen Sie einen verfügbaren Raum und schliessen Sie die [Ressourcenbuchung]({{< relref "3VROOMS-Module/3VROOMS_AddIn_O365Outlook/RessourceBuchen/_index.md" >}}) mit **Buchen** verbindlich ab. Prüfen Sie die Buchungsbestätigung.
+4. Senden Sie die Änderung in Outlook und prüfen Sie anschliessend die Raumangabe und die Raumbuchung in ROOMS.
+
+Der erneut gebuchte Serientermin bleibt Teil derselben ROOMS-Serie. Andere Termine ohne Raum erhalten dadurch keine Raumbuchung.
+
+**Meldung im Browser: «Für diesen Termin besteht keine Raumbuchung mehr.»**
+
+Wenn Sie einen solchen Termin über einen Buchungslink im Browser-Wizard öffnen, zeigt quickROOMS diesen Hinweis statt einer Buchungsübersicht. Öffnen Sie den bestehenden Outlook-Termin und verwenden Sie das Add-In, um für diesen Termin wieder einen Raum zu buchen.
+
 #### Einzelne Rooms Reservation aus einzelnem Serientermin einer Outlook Serie erstellen
 
 Mit dem Addin Release 1.4.0 und Rooms Release 4.7.2207 ist es möglich, aus einer Outlook Serie, einzelne Termine auszuwählen und nur genau zu diesen eine Rooms Buchung zu erstellen.
