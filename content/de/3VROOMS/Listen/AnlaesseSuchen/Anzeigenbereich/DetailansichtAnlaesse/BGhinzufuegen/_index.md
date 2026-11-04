@@ -23,7 +23,16 @@ Nach dem Bestätigen öffnet sich die Eingabemaske zur Massenbearbeitung, in der
 Eingabemaske zur Massenbearbeitung der gewählten Buchungen
 {{< /imgproc >}}
 
-Bestätigen Sie die Änderungen über die Schaltfläche "Für Alle Übernehmen". Sie werden auf die Detailansicht des Anlasses zurückgeleitet. Dort wird über das Actionpanel das erfolgreiche Hinzufügen der Buchung bestätigt. Die Buchung erscheint nun im Abschnitt "Hinzugefügte Buchungen".
+Bestätigen Sie die Auswahl und allfällige Änderungen über die Schaltfläche _Für alle übernehmen_. Sie werden auf die Detailansicht des Anlasses zurückgeleitet.
+
+- **Bis zu fünf ausgewählte Buchungen:** ROOMS verarbeitet die Auswahl direkt beim Bestätigen.
+- **Ab sechs ausgewählten Buchungen:** ROOMS verarbeitet die Auswahl im Hintergrund. Die Bestätigung des Auftrags bedeutet noch nicht, dass die Buchungen dem Anlass hinzugefügt wurden. Dies gilt auch, wenn Sie keine Buchungsdetails ändern.
+
+Nach Abschluss erhalten Sie eine Mitteilung mit einem Link zur Zusammenfassung als CSV-Datei. Prüfen Sie die Ergebnisse für die einzelnen Buchungen und laden Sie anschliessend die Detailansicht des Anlasses neu. Erfolgreich hinzugefügte Buchungen erscheinen im Abschnitt _Hinzugefügte Buchungen_.
+
+{{% alert title="Ergebnis prüfen" color="warning" %}}
+Die Buchungsänderungen werden vor der Zuordnung zum Anlass verarbeitet. Schlägt eine Zuordnung fehl, können bereits gespeicherte Änderungen an der Buchung bestehen bleiben. Prüfen Sie deshalb sowohl die Meldungen in der Zusammenfassung als auch die Anlasszuordnung, bevor Sie betroffene Buchungen erneut bearbeiten. Andere Buchungen der Auswahl können erfolgreich hinzugefügt worden sein.
+{{% /alert %}}
 
 {{< imgproc List_ANL_DS_bestBGhinzu_Best_b Resize "960x" >}}
 Detailansicht des Anlasses mit hinzugefügter Buchung und Bestätigung im Actionpanel

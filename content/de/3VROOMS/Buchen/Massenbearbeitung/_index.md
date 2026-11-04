@@ -12,6 +12,19 @@ Sie führen eine Massenbearbeitung in drei Schritten durch. Diese drei Schritte 
 2. Auf den Button **Bearbeiten**, **Freigeben** oder **Terminieren** klicken.
 3. Eingaben für alle übernehmen, terminieren oder freigeben
 
+## Verarbeitung und Ergebnis beim Bearbeiten
+
+Wenn Sie mehrere Buchungen über _Bearbeiten_ ändern und mit _Für alle übernehmen_ bestätigen, hängt die Verarbeitung von der Anzahl ausgewählter Buchungen ab:
+
+- **Bis zu fünf Buchungen:** ROOMS verarbeitet die Änderungen direkt beim Bestätigen.
+- **Ab sechs Buchungen:** ROOMS verarbeitet die Änderungen im Hintergrund. Die Meldung «Die Änderungen werden nun übernommen. Sie werden wieder informiert, sobald der Vorgang abgeschlossen ist.» bestätigt den Auftrag, nicht die erfolgreiche Änderung aller Buchungen.
+
+Dies gilt sowohl für einzelne Buchungen ohne Anlasszuordnung als auch für Buchungen eines Anlasses.
+
+Nach Abschluss erhalten Sie eine Mitteilung mit einem Link zur Zusammenfassung als CSV-Datei. Prüfen Sie darin die Ergebnisse der einzelnen Buchungen, insbesondere Warnungen und Fehler. Eine Massenbearbeitung kann teilweise erfolgreich sein, beispielsweise wenn Ihnen für einzelne Buchungen das Bearbeitungsrecht fehlt.
+
+Die gleiche Verarbeitung gilt beim [Hinzufügen bestehender Buchungen zu einem Anlass]({{< relref "/3VROOMS/Listen/AnlaesseSuchen/Anzeigenbereich/DetailansichtAnlaesse/BGhinzufuegen" >}}).
+
 ### Massenbearbeitung im Reiter Kalender
 
 
