@@ -77,7 +77,7 @@ Zusätzlich zur Berechtigung, die Person zu bearbeiten, benötigen Sie für dies
 2. Wählen Sie den passenden Eintrag aus der Vorschlagsliste. Ist bei der Organisation eine Abteilung hinterlegt, erscheint der Eintrag als **Organisationsbezeichnung - Abteilung**. Ohne Abteilung wird nur die Organisationsbezeichnung angezeigt.
 3. Klicken Sie auf **Speichern**, um die Auswahl zu übernehmen.
 
-Die Vorschläge sind nach Relevanz geordnet: Zuerst erscheinen Einträge, deren Bezeichnung oder Abteilung der gesamten Eingabe entspricht, danach solche, die damit beginnen, und anschliessend solche, die die Eingabe als zusammenhängende Wortfolge enthalten. Innerhalb dieser Gruppen stehen Einträge mit mehr passenden Suchwörtern weiter oben. Bei mehreren Suchwörtern genügt ein Treffer in der Bezeichnung oder Abteilung; es müssen nicht alle Wörter vorkommen.
+Die Vorschläge sind nach Relevanz geordnet: Einträge, die Ihrer Eingabe am genauesten entsprechen, stehen zuoberst. Bei mehreren Suchwörtern genügt ein Treffer in der Bezeichnung oder Abteilung; es müssen nicht alle Wörter vorkommen.
 
 Die Vorschlagsliste zeigt nur eine begrenzte Anzahl Einträge. Fehlt die gesuchte Organisation, verwenden Sie einen möglichst eindeutigen Teil ihrer Bezeichnung oder Abteilung.
 
