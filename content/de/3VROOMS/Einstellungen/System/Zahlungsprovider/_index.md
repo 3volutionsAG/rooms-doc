@@ -21,17 +21,21 @@ Sie finden die Administration unter:
 
 ## Wozu gibt es Zahlungsprovider?
 
-Mit **Zahlungsprovidern** steuern Sie, **wie Zahlungen für kostenpflichtige Reservationen** abgewickelt werden – z.B. über eine externe Zahlungsseite (Kreditkarte/Wallet) oder über **Rechnung**.
+Mit **Zahlungsprovidern** steuern Sie, **wie Zahlungen für kostenpflichtige Reservationen** abgewickelt werden – z.B. über eine externe Zahlungsseite (Kreditkarte/Wallet), über **Rechnung** oder intern über **Kostenstellen**.
 
 Typische Einsatzfälle:
 
 - Sie möchten Reservationen direkt online bezahlen lassen (z.B. Saferpay).
 - Sie möchten Reservationen freigeben und später per Rechnung abrechnen (ohne externe Zahlungsabwicklung).
+- Sie möchten die Kosten einer Reservation intern den zugeordneten Kostenstellen belasten.
 
 ## Welche Zahlungsprovider werden unterstützt?
 
 - **Saferpay**: Externe Zahlungsabwicklung über Worldline/SIX (z.B. Kreditkarten, Wallets – je nach Vertrag).
 - **Rechnung**: Keine externe Zahlungsabwicklung; die Reservation wird bestätigt und die Rechnung wird später gestellt/versendet (gemäss Ihrem Prozess).
+- **Kostenstelle (`CostCenter`)**: Interne Zuordnung zu den Kostenstellen der Reservation. Beim Auslösen der Zahlung wird die Reservation bestätigt. Es findet keine Geldübertragung über einen externen Zahlungsdienst statt. Die anschliessende interne Verrechnung erfolgt gemäss Ihrem Prozess.
+
+Im Feld **Typ** heissen die Auswahlwerte `Saferpay`, `Invoice` (Rechnung) und `CostCenter` (Kostenstelle). Der **Name** ist die von Ihnen gewählte Bezeichnung, nicht der Typ.
 
 ## Zahlungsprovider anlegen oder bearbeiten
 
@@ -47,6 +51,9 @@ Typische Einsatzfälle:
 - **Name**: Eindeutige Bezeichnung des Providers (z.B. „Saferpay“ oder „Rechnung“).
   - Verwenden Sie einen **klaren, stabilen Namen**, damit im Betrieb keine Verwechslungen entstehen.
   - Falls der Provider im Buchungsprozess «per Name» referenziert wird, muss dieser Name **exakt** passen (Gross-/Kleinschreibung beachten).
+- **Typ**: Wählen Sie `Saferpay`, `Invoice` oder `CostCenter` entsprechend dem gewünschten Zahlungsweg.
+- **Zahlungsverarbeitung**: Wählen Sie mindestens eine erlaubte Verarbeitung aus. Die Auswahlwerte heissen hier `None`, `Manual` und `Automatic`. Im Reservationsdetail erscheinen dafür die konfigurierten Bezeichnungen, beispielsweise `Keine`, `Manuell` und `Automatisch`.
+- **Default**: Wählen Sie eine der erlaubten Verarbeitungen als Vorgabe. Ohne erlaubte Verarbeitung und Vorgabe lässt sich der Provider nicht speichern.
 - **URL** (nur Saferpay): Basis-URL des Saferpay-Systems (Test oder Produktion).
 - **Benutzername / Passwort** (nur Saferpay): Zugangsdaten, die Sie von Saferpay erhalten.
 - **Konfiguration** (nur Saferpay): Saferpay-spezifische Optionen im JSON-Format.
@@ -144,19 +151,26 @@ Welche Zahlungsmittel Sie verwenden dürfen, hängt von Ihrem Saferpay-Vertrag a
 
 ## Rechnung einrichten
 
-Für **Rechnung** genügt in der Regel:
+Für **Rechnung** wählen Sie:
 
 - **Name**: z.B. „Rechnung“
+- **Typ**: `Invoice`
+- **Zahlungsverarbeitung** und **Default**: gemäss Ihrem Rechnungsprozess
 
-Die restlichen Felder bleiben leer (keine externe Verbindung).
+**URL**, **Benutzername** und **Passwort** bleiben leer. Es wird keine externe Verbindung benötigt.
 
-Beispiel (ohne Konfiguration):
+## Kostenstelle einrichten
 
-```json
-{
-  "name": "Rechnung"
-}
-```
+1. Öffnen Sie einen neuen Zahlungsprovider.
+2. Erfassen Sie einen **Namen**, z.B. „Interne Kostenstelle“.
+3. Wählen Sie **Typ** `CostCenter`.
+4. Wählen Sie mindestens eine **Zahlungsverarbeitung** und unter **Default** die gewünschte Vorgabe.
+5. Lassen Sie **URL**, **Benutzername** und **Passwort** leer. Saferpay-Zugangsdaten werden nicht benötigt.
+6. Klicken Sie auf **Speichern**.
+
+Eine Zahlung über diesen Provider benötigt mindestens eine Kostenstelle auf der Reservation. Die Zahlung hält Nummer, Beschreibung und vorhandene prozentuale Anteile der zugeordneten Kostenstellen fest. Auch Kostenstellen ohne die Markierung **Verrechenbar** werden dabei aufgenommen. Die Markierung ist für diesen Zahlungsweg kein Ausschlusskriterium.
+
+Wo Sie die belasteten Kostenstellen prüfen und ändern, beschreibt [Rechnung und Zahlung]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/RechnungZahlung/_index.md" >}}#zahlung-über-kostenstellen).
 
 ## Wie läuft der Zahlungsprozess ab?
 
@@ -167,6 +181,7 @@ Im Alltag läuft es typischerweise so:
 3. Je nach Provider:
    - **Saferpay**: Weiterleitung zur Zahlungsseite und anschliessend Rückkehr in 3V-ROOMS.
    - **Rechnung**: Keine Weiterleitung; die Reservation wird bestätigt und anschliessend gemäss Ihrem Prozess abgerechnet.
+   - **Kostenstelle**: Die zugeordneten Kostenstellen werden auf der Zahlung festgehalten und die Reservation wird bestätigt. Ohne Kostenstelle kann die Zahlung nicht abgeschlossen werden.
 
 ### Statusmodell
 
@@ -258,5 +273,6 @@ Wenn ein Zahlungsprovider im Betrieb verwendet wird, kann Löschen zu Rückfrage
 ## Häufige Probleme
 
 - **Zahlungsart/Provider steht nicht zur Verfügung**: Prüfen Sie, ob der Zahlungsprovider korrekt angelegt und vollständig gepflegt ist.
+- **Zahlung über Kostenstelle kann nicht abgeschlossen werden**: Prüfen Sie, ob der Reservation mindestens eine Kostenstelle zugeordnet ist. Ergänzen Sie diese im Reiter `Allgemein`.
 - **Saferpay-Verbindung klappt nicht**: URL (Test/Produktion) sowie Benutzername/Passwort prüfen; bei Bedarf Saferpay-Zugang testen lassen.
 - **Bestimmte Zahlungsmittel fehlen**: Konfiguration (z.B. `paymentMethods`/`wallets`) sowie Saferpay-Vertrag prüfen.

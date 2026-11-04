@@ -29,6 +29,24 @@ Der Reiter erscheint, wenn bereits eine Zahlung vorhanden ist oder für die Rese
 - **Zahlungsstatus**: Zeigt den fachlichen Status der Zahlung, beispielsweise offen oder bezahlt.
 - **Zahlungsexportstatus**: Steuert, ob eine Zahlung für den Export vorbereitet, exportiert oder zurückgezogen ist.
 
+## Zahlung über Kostenstellen
+
+Ein Zahlungsanbieter vom Typ `CostCenter` ordnet die Zahlung intern den Kostenstellen der Reservation zu. Es findet keine Geldübertragung über einen externen Zahlungsdienst statt. Die Einrichtung ist unter [Zahlungsprovider]({{< relref "3VROOMS/Einstellungen/System/Zahlungsprovider/_index.md" >}}#kostenstelle-einrichten) beschrieben.
+
+Bei diesem Zahlungsweg erscheint das Feld **Belastete Kostenstellen** anstelle der Felder für **Versand** und **Rechnungsadresse**. Angezeigt werden Nummer und Beschreibung sowie vorhandene prozentuale Anteile. Fehlt ein verteilter Anteil, erscheint die Kostenstelle ohne Prozentangabe. Auch Kostenstellen ohne die Markierung **Verrechenbar** sind enthalten.
+
+Mindestens eine Kostenstelle muss der Reservation zugeordnet sein. Bei einer bestehenden, nicht annullierten Kostenstellenzahlung lässt sich die Reservation nicht ohne Kostenstelle speichern. Es erscheint die Meldung: „Eine Zahlung über Kostenstelle benötigt mindestens eine Kostenstelle auf der Buchung.“
+
+### Kostenstellen prüfen und ändern
+
+Die Zuordnung bearbeiten Sie im Reiter [Allgemein]({{< relref "3VROOMS/Buchen/BuchungErstellen/Detailbuchung/Allgemein/_index.md" >}}), nicht im Zahlungsfeld. Dafür benötigen Sie das Recht **Darf Kostenträger anpassen**. Für Änderungen an der prozentualen Verteilung benötigen Sie zusätzlich **Darf Kostenstellensplitt ändern**.
+
+Solange die Zahlungsangaben bearbeitbar sind, folgt **Belastete Kostenstellen** der Auswahl im Reiter `Allgemein`. Prüfen Sie nach dem Speichern auch die Zahlungsdetails. Dort sehen Sie die auf der jeweiligen Zahlung gespeicherten Kostenstellen und Anteile.
+
+{{% alert title="Bereits exportierte Zahlung" color="warning" %}}
+Bei einer bereits gespeicherten Zahlung mit Exportstatus `Exportiert` zeigt das Feld die auf dieser Zahlung festgehaltenen Kostenstellen. Wenn Sie die Kostenstellen im Reservationsdetail ändern und speichern, bleibt diese gespeicherte Zahlungszuordnung erhalten. Prüfen Sie die Zahlung vor einer Korrektur und stimmen Sie die weitere Verarbeitung mit der zuständigen Verrechnungsstelle ab.
+{{% /alert %}}
+
 ## Zahlungsexportstatus
 
 {{< bootstrap-table "table table-striped" >}}
