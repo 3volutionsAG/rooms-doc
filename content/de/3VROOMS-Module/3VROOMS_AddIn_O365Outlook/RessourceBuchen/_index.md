@@ -12,8 +12,7 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
 3. Geben Sie **Titel** und **Beschreibung** ein. Nehmen Sie ggf. **Einstellungen für einen Serientermin** vor.
 4. Öffnen Sie das Outlook Add-In, indem Sie
 
-      - in der *Web-Anwendung* in der Menüzeile auf **...** klicken und aus dem Auswahlmenü **3V-ROOMS add-in** wählen.
-         {{< imgproc O365Outlook_web Resize "960x">}} {{< /imgproc >}}
+      - in der *Web-Anwendung* in der Symbolleiste des Ereignisses auf das Add-In klicken. Findet es dort keinen Platz, steht es unter **Apps** oder **...**.
       - in der *lokalen Anwendung* im Aktionsmenü auf **Raum buchen** klicken.
          {{< imgproc O365Outlook_lokal Resize "960x">}} {{< /imgproc >}}
 5. Klicken Sie auf den **Ressourcentyp**, den Sie buchen möchten, z.B. Raum. Es öffnet sich eine Filtermaske:

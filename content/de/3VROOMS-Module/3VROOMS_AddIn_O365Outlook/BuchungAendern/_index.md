@@ -16,7 +16,7 @@ Bei beiden Arten sind Besonderheiten zu beachten.
 1. **Öffnen** Sie den Termin im Outlook-Kalender durch Doppelklicken oder markieren Sie den Termin un klicken Sie auf Bearbeiten.
 2. Öffnen Sie das **Outlook Add-In**, indem Sie
 
-      - in der *Web-Anwendung* in der Menüzeile auf **...** klicken und aus dem Auswahlmenü **3V-ROOMS add-in** wählen.
+      - in der *Web-Anwendung* in der Symbolleiste des Ereignisses auf das Add-In klicken. Findet es dort keinen Platz, steht es unter **Apps** oder **...**.
       - in der *lokalen Anwendung* im Aktionsmenü auf **Raum buchen** klicken.
 
 

@@ -21,7 +21,7 @@ Nachdem alles eingerichtet ist, kann die Synchronisation wie folgt überprüft w
 
 Ein erfolgreicher Synchronisationstest sieht wie folgt aus:
 
-{{< imgproc sync-test Resize "1024x" >}}{{< /imgproc >}}
+{{< imgproc sync-test Resize "900x" >}}{{< /imgproc >}}
 
 ## Interpretation
 

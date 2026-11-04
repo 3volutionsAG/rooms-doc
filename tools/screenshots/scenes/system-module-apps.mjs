@@ -7,6 +7,7 @@ import path from 'node:path';
 import { chromium, CONTENT, REPO, PASSWORD, mark, clearMarks } from '../lib.mjs';
 
 const GIT = path.resolve(REPO, '..', '..');
+const STOCKHORN_BOOKING = 48; // Buchungsnummer von "Schulung neue Kassensoftware" nach seed-all.ps1
 const QR = '3VROOMS-Module/3VROOMS_AddIn_O365Outlook';
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.ico': 'image/x-icon' };
 const CONTENT_ROOT = 'http://localhost:5080/Default';
@@ -53,7 +54,32 @@ async function save(page, file, opts = {}) {
 
 export default async function () {
   await quickRooms();
+  await bookingNotes();
   await onsite();
+}
+
+// Buchungshinweise im Add-In: Stockhorn hat Hinweise aus seed-einst-basisdaten.sql, und Thomas Meier organisiert dort eine Buchung.
+export async function bookingNotes() {
+  const config = JSON.parse(readFileSync(path.join(GIT, 'rooms', 'RoomsPro.AppHost', 'obj', 'quickrooms', 'config', 'config.json'), 'utf8'));
+  const server = await serve(path.join(GIT, 'quickrooms', 'dist'), { '/assets/config/config.json': JSON.stringify(config) });
+  const { browser, page } = await browserFor(server, { width: 440, height: 760 });
+  try {
+    await page.goto('http://localhost:4210/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForSelector('#Username', { timeout: 60000 });
+    await page.fill('#Username', 'thomas.meier');
+    await page.fill('#Password', PASSWORD);
+    await page.click('button[value=login], button[name=button]');
+    await page.waitForURL('http://localhost:4210/**', { timeout: 60000 });
+    await page.getByText('Raum', { exact: true }).first().waitFor();
+    await page.waitForTimeout(1500);
+    await page.goto(`http://localhost:4210/#/book/view/${STOCKHORN_BOOKING}`, { waitUntil: 'domcontentloaded' });
+    await page.getByText('BUCHUNGSNUMMER').first().waitFor();
+    await page.waitForTimeout(2000);
+    await save(page, `3VROOMS/Einstellungen/ErweiterteBasisdatenfuerRessourcen/Benachrichtigungen/messages_addin.png`);
+  } finally {
+    await browser.close();
+    server.close();
+  }
 }
 
 async function quickRooms() {
