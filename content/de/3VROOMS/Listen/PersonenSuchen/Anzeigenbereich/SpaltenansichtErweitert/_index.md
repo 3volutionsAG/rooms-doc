@@ -22,10 +22,6 @@ Folgende Tabelle erläutert die Spalteneinträge:
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_Pers_Anzeige_RE Resize "960x" >}}
-Detailansicht der Raumeinheit
-{{< /imgproc >}}
-
 
 Detaillierte Informationen zur Detailseite und den Bearbeitungsmöglichkeiten der Raumeinheit finden Sie im Kapitel [Einstellungen](/3vrooms/einstellungen/raumeinheiten/).
 

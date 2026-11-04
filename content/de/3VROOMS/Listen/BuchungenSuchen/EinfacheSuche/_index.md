@@ -12,10 +12,10 @@ Einfache Suche um Buchungen zu finden
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Ressourcenart|{{< imgproc Listen_Buchungen_EinfacheSuche_Ressourcenart Resize "200x" >}}{{< /imgproc >}}|Über das _Plus_ wählen Sie vorhandene Ressourcen (Räume, Parkplätze, Arbeitsplätze,...) aus. |
-|Datum/Zeit|{{< imgproc Listen_Buchungen_EinfacheSuche_Datum Resize "200x" >}}{{< /imgproc >}}|Wählen Sie hier das Datum und den Zeitraum der gesuchten Buchung aus |
-|Buchungszeitpunkt  ; (alternativ zu Datum/Zeit)|{{< imgproc Listen_Buchungen_EinfacheSuche_Buchungszeitraum Resize "200x" >}}{{< /imgproc >}}|**Alle**: ; Es werden alle Zeitäume berücksichtigt ; **Heute laufende und künftige Buchungen**:  ; Alle Buchungen ab jetzt am heutigen Tag ; **laufende und künftige Buchungen**: ; Alle Buchungen ab dem morgigen Tag ; **vergangene Buchungen**: ; Alle bereits vergangenen Buchungen |
-|Standort|{{< imgproc Listen_Buchungen_EinfacheSuche_Standort Resize "200x" >}}{{< /imgproc >}}|Werden über ROOMS die Ressourcen mehrerer Standorte (verschiedene Städte, unterschiedliche Filialen,...) verwaltet, wählen Sie hier den entsprechenden Standort aus. |
+|Feld|Funktion|
+|---|---|
+|Ressourcenart|Über das _Plus_ wählen Sie vorhandene Ressourcen (Räume, Parkplätze, Arbeitsplätze,...) aus. |
+|Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum der gesuchten Buchung aus |
+|Buchungszeitpunkt  ; (alternativ zu Datum/Zeit)|**Alle**: ; Es werden alle Zeitäume berücksichtigt ; **Heute (laufende und künftige Buchungen)**:  ; Alle Buchungen ab jetzt am heutigen Tag ; **Laufende und künftige Buchungen**: ; Alle laufenden und alle künftigen Buchungen ; **Vergangene Buchungen**: ; Alle bereits vergangenen Buchungen |
+|Standort|Werden über ROOMS die Ressourcen mehrerer Standorte (verschiedene Städte, unterschiedliche Filialen,...) verwaltet, wählen Sie hier den entsprechenden Standort aus. |
 {{< /bootstrap-table >}}

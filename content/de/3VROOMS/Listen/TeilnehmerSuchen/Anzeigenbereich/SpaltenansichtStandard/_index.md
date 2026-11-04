@@ -17,10 +17,6 @@ Standardmässig sind folgende Spalten sichtbar:
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_TN_Anz_DSAnl Resize "960x" >}}
-Detailseite des Anlasses bzw. der Besuchsgruppe
-{{< /imgproc >}}
-
 Näheres zur Detailseite und wie Sie diese bearbeiten können, finden Sie unter [Detailansicht Anlässe](/3vrooms/listen/anlaessesuchen/anzeigenbereich/detailansichtanlaesse/).
 
 {{< bootstrap-table "table table-striped" >}}

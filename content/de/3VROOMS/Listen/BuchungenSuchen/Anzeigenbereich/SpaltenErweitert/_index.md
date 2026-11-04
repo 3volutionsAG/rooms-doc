@@ -61,10 +61,6 @@ Neues Fenster mit Anzeige der Ressource auf dem Plan
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_BG_Anzeige_ResInfo Resize "960x" >}}
-Detailansicht zur Ressource
-{{< /imgproc >}}
-
 
 {{< bootstrap-table "table table-striped" >}}
 |Spalte|Symbol|Anmerkungen|
@@ -81,10 +77,10 @@ Detailansicht zur Ressource
 |Kostenträger [^2] Bezeichnung ; Verantwortliche:r||eindeutige Kennung des Kostentrgers, welcher der die verantwortliche Person zugeordnet ist|
 |Logon Organisator:in|| Log-In Name, welcher der organisierenden Person zum Anmelden in ROOMS zugeteilt wurde. |
 |Logon Verantwortliche:r|| Log-In Name, welcher der verantwortlichen Person zum Anmelden in ROOMS zugeteilt wurde. |
-|Firma Nummer ; Organisator:in|| Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet |
-|Firma Nummer ; Verantwortliche:r|| Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet |
-|Firma Bezeichnung ; Organisator:in|| Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet |
-|Firma Bezeichnung ; Verantwortliche:r|| Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet |
+|Organisation Nr. ; Organisator:in|| Eindeutige Nummer der Firma oder Abteilung, bei welcher die organisierende Person arbeitet |
+|Organisation Nr. ; Verantwortliche:r|| Eindeutige Nummer der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet |
+|Organisation Bez. ; Organisator:in|| Bezeichnung der Firma oder Abteilung, bei welcher die organisierende Person arbeitet |
+|Organisation Bez. ; Verantwortliche:r|| Bezeichnung der Firma oder Abteilung, bei welcher die verantwortliche Person arbeitet |
 |Hauptbuchung||In einem Anlass kann eine Buchung als Hauptbuchung gekennzeichnet sein.|
 |Folgebuchung|| Anzeige der Minuten bis zum Start der nächsten Buchung (ohne Vorlaufzeit). Bei 0 min ist die reservierte Buchungszeit abgelaufen. ; _Es erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ |
 |Wartezeit Kunde|| Zeit, welche der Kunde der Folgebuchung bereits auf die Nutzung des Raumes wartet (bezieht sich nur auf die Ressource Raum) ; _Hier erscheint nur ein Eintrag sofern die Alarmierung bei der Buchung aktiviert wurde._ |

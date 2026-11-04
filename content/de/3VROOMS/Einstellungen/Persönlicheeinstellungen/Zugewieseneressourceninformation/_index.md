@@ -46,10 +46,6 @@ Geänderte Ressourcen speichern
 
 Klicken Sie auf den Button **Ressourcen hinzufügen**, um eine neue Ressource einer Mitarbeiter:in zuzuordnen.
 
-{{< imgproc Zugewiesene_Ressourcen_speichern Resize "960x" >}}
-Eine Ressource hinzufügen über den Button "Ressource hinzufügen"
-{{< /imgproc >}}
-
 Es öffnet sich ein neues Feld. In diesem wählen Sie die entsprechende Ressource aus, indem Sie die Checkbox am Anfang der Liste betätigen. Über das Stift-Icon können Sie die Ressource ebenfalls bearbeiten.
 
 {{< imgproc Zugewiesene_Ressource_hinzufügen Resize "960x" >}}
@@ -60,18 +56,14 @@ Ressource neu hinzufügen
 
 Im View-Modus unter dem Menüpunkt **Einstellungen → Persönliche Einstellungen** sehen Sie eine Zusammenfassung der Informationen zur Person und den zugewiesenen Ressourcen.
 
-{{< imgproc Zugewiesene_Ressourcen_Information Resize "960x" >}}
-Informationen zur Person und zugewiesenen Ressourcen einsehen
-{{< /imgproc >}}
-
 ## Ressourcen freigeben
 
 ### Freigabe in einem Kalender bearbeiten
 
-Im View-Modus der Person können Sie die fixen Ressourcen für selbst definierte Zeiträume freigeben. Klicken Sie auf das Icon **Freigabe bearbeiten**, um ein modales Popup zu öffnen.
+Im View-Modus der Person können Sie die fixen Ressourcen für selbst definierte Zeiträume freigeben. Klicken Sie auf das Icon **Freigeben bearbeiten**, um ein modales Popup zu öffnen.
 
 {{< imgproc Zugewiesene_Ressourcen_Info_bearbeiten Resize "960x" >}}
-Ressourcen "Freigabe bearbeiten" Button
+Icon "Freigeben bearbeiten" in der Liste der zugewiesenen Ressourcen
 {{< /imgproc >}}
 
 Weisse Felder im Kalender sind Tage, an denen die Ressource freigegeben ist, und blaue sind gebuchte Tage. Klicken Sie auf ein Datum, ermöglicht dies das Buchen oder Freigeben der Ressource für diesen Tag. Tage in der Vergangenheit werden ausgegraut und können nicht mehr verändert werden.

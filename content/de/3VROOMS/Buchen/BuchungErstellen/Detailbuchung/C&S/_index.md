@@ -9,6 +9,10 @@ Im Bereich `Catering & Services` können Angebote der Reservation hinzugefügt w
 
 Der Dienstleister legt fest, zu welchen Zeiten das Angebot verfügbar ist. Derjenige, der bestellt, die Möglichkeit festzulegen, wann ein Angebot geliefert und wieder abgeholt werden soll. Falls diese Zeiten nicht explizit festgelegt werden, erfolgt die Lieferung zu Beginn der Reservation und die Abholung zum Ende der Reservation.
 
+{{< imgproc Detailbuchung_Catering_Service Resize "960x" >}}
+Bestellung im Reiter Catering & Services
+{{< /imgproc >}}
+
 ### Einzelbestellung
 
 Mit einem Klick auf den Button `+` öffnet sich das Fenster zur Auswahl der verfügbaren Dienstleistungen. Daneben kann die Anzahl dieser Dienstleistung angegeben werden. Zusätzlich kann dem Dienstleister durche den Button `@` eine Notiz hinterlegt werden.

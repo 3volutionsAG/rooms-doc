@@ -11,12 +11,8 @@ Klicken Sie auf die Schaltfläche _Erstellen_, um die Eingabemaske zur Erstellun
 Eingabemaske zur Erstellung eines Anlasses
 {{< /imgproc >}}
 
-Die Eingabemaske gliedert sich drei Bereiche, die Sie über die Reiter im oberen Bereich des Anzeigenbereichs erreichen - den Stammdaten, Catering & Servcie sowie dem Reiter Teilnehmer.
+Die Eingabemaske gliedert sich in vier Bereiche, die Sie über die Reiter im oberen Bereich des Anzeigenbereichs erreichen: Stammdaten, Catering & Services, Teilnehmer und Beilage. Bei einem bestehenden Anlass kommt der Reiter Buchungen dazu.
 Nachdem Sie die Eingabemaske ausgefüllt haben, klicken Sie auf "Speichern" am unteren Rand des Anzeigenbereichs. Die Daten werden gespeichert und die Detailansicht des Anlasses angezeigt.
-
-{{< imgproc BG_ANL_ANLerst_DS Resize "960x" >}}
-Detailansicht des Anlasses nach dem Speichern der eingegebenen Daten
-{{< /imgproc >}}
 
 ## Gliederung der Eingabemaske
 ### Stammdaten
@@ -27,17 +23,16 @@ Folgende Tabelle gibt einen Überblick mit kurzen Erklärungen der Eingabefelder
 |Feld||Beschreibung|
 |---|---|---|
 |Titel||Bezeichnung des Anlasses|
-|Anlasstyp|{{< imgproc BG_ANL_ANLerst_Eing_Typ Resize "200x" >}}{{< /imgproc >}}|Anlasstypen sind kundenspezifisch definiert. Dies könnten Klassifizierungen wie _internes Meeting_, _externe Buchung_ usw. sein|
+|Anlasstyp||Anlasstypen sind kundenspezifisch definiert. Dies könnten Klassifizierungen wie _internes Meeting_, _externe Buchung_ usw. sein|
 |Beschreibung||Freies Eingabefeld, um Anlass zu beschreiben|
-|Datum|{{< imgproc BG_ANL_ANLerst_Eing_Datum Resize "200x" >}}{{< /imgproc >}}|Die Datumsauswahl an dieser Stelle spielt eine untergeordnete Rolle, da der Zeitraum des Anlasses automatisch an die Startzeit der ersten Buchung und die Endzeit der letzten Buchung angepasst wird. Sinnvoll wäre es das Datum, ohne Anpassung der Uhrzeit, für einen Tag zu wählen, an dem eine Buchung stattfinden soll. |
+|Datum||Die Datumsauswahl an dieser Stelle spielt eine untergeordnete Rolle, da der Zeitraum des Anlasses automatisch an die Startzeit der ersten Buchung und die Endzeit der letzten Buchung angepasst wird. Sinnvoll wäre es das Datum, ohne Anpassung der Uhrzeit, für einen Tag zu wählen, an dem eine Buchung stattfinden soll. |
 |Standort|{{< imgproc BG_ANL_ANLerst_Eing_Intelibox Resize "200x" >}}{{< /imgproc >}}|Name des Stanortes eingeben und aus den Vorschlägen wählen oder über das Plus entlang des Pfades den Standort auswählen |
 |Anzahl Teilnehmende||Nummerische Angabe der Anzahl der teilnehmenden Personen|
 |Verantwortliche:r*|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxPers Resize "200x" >}}{{< /imgproc >}}|Person, welche für den Anlass verantwortlich ist, standardmässig wird die erstellende Person eingetragen|
-|Ersteller:in*|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxPers Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass erstellt, wird automatisch eingegeben|
-|Organisator:in*|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxPers Resize "200x" >}}{{< /imgproc >}}|Person, welche den Anlass organisiert, standardmässig wird die erstellende Person eingetragen|
+|Ersteller:in*||Person, welche den Anlass erstellt, wird automatisch eingegeben|
+|Organisator:in*||Person, welche den Anlass organisiert, standardmässig wird die erstellende Person eingetragen|
 |Kostenstelle Organisator:in|{{< imgproc BG_ANL_ANLerst_Eing_InteliboxKost Resize "200x" >}}{{< /imgproc >}}|Ist der organisierenden Person eine Kostenstelle zugeordnet, wird diese hier automatisch eingetragen. Über das Eingabefeld können weitere Kostenstellen hinzugefügt werden. Diese kann aus den Vorschlägen während des Tippens ausgewählt oder frei eingegeben werden.|
-||{{< imgproc BG_ANL_ANLerst_Eing_Inteliboxkost2 Resize "200x" >}}{{< /imgproc >}}|Die Verteilung der Kosten kann prozentual auf verschiedene Kostenstellen aufgeteilt werden. ; _Im Beispiel trägt die Kostenstelle 1234 30% der Kosten und die Kostenstelle 5678 70% der Kosten_|
-|VC Buchung|{{< imgproc BG_ANL_ANLerst_Eing_VC Resize "200x" >}}{{< /imgproc >}}|Handelt es sich um einen Anlass mit Videokonferenz, lässt sich dies hier durch Markierung der Checkbox gebucht werden|
+||{{< imgproc BG_ANL_ANLerst_Eing_Inteliboxkost2 Resize "200x" >}}{{< /imgproc >}}|Die Verteilung der Kosten kann prozentual auf verschiedene Kostenstellen aufgeteilt werden. ; _Im Beispiel trägt die Kostenstelle 1000 70% der Kosten und die Kostenstelle 4000 30% der Kosten_|
 |Anmeldeschluss||Freie Eingabe des Anmeldeschlusses|
 |Anlassstatus||Der Anlassstatus ist kundenspezifisch definiert. ; _Im Beispiel kann der Status auf angefragt - der Anlass wurde noch nicht genehmigt - oder gebucht gesetzt werden - der Anlass wird verbindlich erstellt._|
 |Kosten||Automatische Anzeige der aggregierten Kosten, die durch Catering & Service oder Mietgebühren zustande kommen.|
@@ -49,15 +44,11 @@ _* Ist ein Name ausgewählt, können Sie über das Portraitsymbol an der rechten
 
 Im Reiter Catering & Service haben Sie die Möglichkeit dem Anlass unabhängig von einer Buchung Dienstleistungen hinzuzufügen oder diese zu bearbeiten.
 
-{{< imgproc BG_ANL_ANLerst_Eing_CS Resize "960x" >}}
-Eingabemaske Catering & Service dem Anlass hinzufügen
-{{< /imgproc >}}
-
 Um eine Dienstleistung hinzuzufügen geben Sie die Bezeichnung im Eingabefeld ein oder wählen diese über die Schnellauswahl. Das Datum sollte dem Zeitpunkt einer Buchung entsprechen.
-Über das Symbol rechts neben der Datumsauswahl können Sie eine Notiz an den Diesntleister, z.B. für spezielle Wünsche, eintragen.
+In der Spalte _Notiz an Dienstleister_ können Sie eine Notiz, z.B. für spezielle Wünsche, eintragen.
 
 {{< imgproc BG_ANL_ANLerst_Eing_CSsuche Resize "960x" >}}
-Auswahl der gwünschten Dienstleistung
+Schnellauswahl der gewünschten Dienstleistung über das Plus
 {{< /imgproc >}}
 
 Hat sich die Anzahl der Teilnehmenden geändert, können Sie die Menge z.B. des bestellten Caterings aktualisieren. Markieren Sie hierzu die Checkbox der Dienstleistung klicken Sie unten auf die Schaltfläche _Menge aktualisieren_.

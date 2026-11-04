@@ -44,10 +44,10 @@ Die Wochenendtage werden je nach eingestellter Landessprache und Zeitzone (Kultu
 #### Listen Icon
 
 
-Wenn mehrere Ressourcen in der Liste im Kalender angezeigt werden, können Sie mithilfe des Buttons neben dem Fadenkreuz diese Listenelemente verkleinert darstellen. So haben Sie alle Ressourcen im Blick.
+Wenn mehrere Ressourcen in der Liste im Kalender angezeigt werden, können Sie mit dem Button neben dem Fadenkreuz zwischen der mehrzeiligen und der verkleinerten Darstellung wechseln. In der verkleinerten Darstellung haben Sie alle Ressourcen im Blick.
 
 {{< imgproc Kalender_Liste_verkleinert_anzeigen Resize "960x" >}}
-Abbildung kl: Listenelemente verkleinert darstellen
+Listenelemente verkleinert darstellen
 {{< /imgproc >}}
 
 #### Personen Icon

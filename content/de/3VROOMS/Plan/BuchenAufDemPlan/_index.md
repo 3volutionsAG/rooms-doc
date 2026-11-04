@@ -7,10 +7,6 @@ description: 'Buchen Sie Ihren Raum und Ihre Ressourcen über den virtuellen Pla
 
 Wenn Sie den passenden Plan gefunden haben, sehen Sie, ob der Raum frei oder belegt ist durch das angezeigte Symbol in der Mitte des Raumes.
 
-{{< imgproc plan_free_busy Resize "960x" >}}
-Anzeigen des Planstatus im Raum
-{{< /imgproc >}}
-
 
 Sie buchen diesen Raum mittels Klick auf die Verknüpfung. Dabei erscheint ein kleines Fenster mit der Option Schnellbuchung.
 
@@ -42,10 +38,6 @@ Hier gelangen Sie zur weiteren Beschreibung der Schnellbuchung:
 
 
 Möchten Sie weitere Angaben zu Ihrer Buchung machen, gehen Sie auf den Button _Detailbuchung_. Es öffnet sich das Feld zur Detailbuchung.
-
-{{< imgproc plan_detailbuchung Resize "960x" >}}
-Detailbuchung im Plan
-{{< /imgproc >}}
 
 
 Hier geben Sie die benötigten Informationen für Ihre Buchung ein. Sie können Allgemeine und Serieninformationen einstellen.

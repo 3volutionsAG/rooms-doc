@@ -4,10 +4,10 @@ linkTitle: "Suchmaske"
 weight: 10
 description: 'Über diese Suchmaske finden Sie gebuchte Catering & Services anhand von Dienstleistenden und Angeboten.'
 ---
-Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen _Catering & Service_. Dadurch öffnet sich die Suchmaske.
+Um geordertes Catering oder gebuchten Service zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen _Catering & Services_. Dadurch öffnet sich die Suchmaske.
 
-{{< imgproc List_CS_Such Resize "960x" >}}
-Übersicht der Suche nach Catering & Service mit Ergebnisliste
+{{< imgproc List_CS_Such Resize "320x" >}}
+Suchmaske für Catering & Service im Sidepanel
 {{< /imgproc >}}
 
 Folgende Tabelle erläutert die Eingabefelder:
@@ -21,7 +21,7 @@ Folgende Tabelle erläutert die Eingabefelder:
 |Angebotszone||Angebote eines Dienstleisters|
 |Angebotskategorie||Gruppierung von Angeboten aller Dienstleister, z.B. Getränke, Snacks,...|
 |Angebot||spezifisches Angebot eines Dienstleisters|
-|Status|{{< imgproc List_CS_Such_Stat Resize "200x" >}}{{< /imgproc >}}|Status über die Schnellauswahl wählen|
+|Status||Status über die Schnellauswahl wählen|
 {{< /bootstrap-table >}}
 ---
 

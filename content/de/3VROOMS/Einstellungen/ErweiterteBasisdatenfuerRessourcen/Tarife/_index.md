@@ -26,10 +26,6 @@ Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehen
 
 Neu eingetragene Tarife sehen Sie anschliessend in der Liste. Sie können von hier aus über das Stift Icon den Tarif bearbeiten. Mit Aktivierung der Checkbox können Sie den Tarif löschen.
 
-{{< imgproc Tarife_hinzugefügt_in_Liste Resize "960x" >}}
-Erstellen von Tarifkategorien
-{{< /imgproc >}}
-
 ### Stammdaten der Tarifkategorie bearbeiten
 
 Die folgenden Daten legen Sie bei den Stammdaten der Tarife fest:
@@ -44,7 +40,7 @@ Ressourcen innerhalb derselben Gliederung müssen dasselbe Tarifmodell verwenden
 | Bezeichnung        | Die Bezeichnung der Tarifkategorie festlegen |
 | Tarifmodell   | Über das _drop-down_ Menü aus kumultativem, pauschalem oder zeitabhängigem Tarif auswählen  |
 | Mehrwertsteuer  | Angeben, ob die Mehrwertsteuer berücksichtigt werden soll oder nicht    |
-| Tarife von Firma bevorzugen  |  Ankreuzen, wenn zutreffend   |
+| Nur Organisationstarife berücksichtigen  |  Ankreuzen, wenn zutreffend   |
 {{< /bootstrap-table >}}
 
 {{< imgproc Tarife_neu_erstellen Resize "960x" >}}
@@ -53,11 +49,7 @@ Stammdaten des Tarifkategorien bearbeiten
 
 ### Tarif der Tarifkategorie bearbeiten
 
-Wenn Sie eine neue Tarifkategorie erstellen, sehen Sie in der Liste noch keine Tarife. Fügen Sie neue Tarifkategorien über den Button `Neu` hinzu.
-
-{{< imgproc Tarife_neue_Tarife_hinzufügen Resize "960x" >}}
-Eine neue Tarifkategorie hinzufügen
-{{< /imgproc >}}
+Wenn Sie eine neue Tarifkategorie erstellen, sehen Sie in der Liste noch keine Tarife. Fügen Sie neue Tarife über den Button `Hinzufügen` hinzu.
 
 Es öffnet sich ein Fenster, in welchem Sie die Daten der Tarife festlegen.
 
@@ -67,8 +59,8 @@ Die folgenden Daten legen Sie bei den Tarifen der Tarifkategorie fest:
 | Feld         | Funktion         |
 | ------------- |-------------  |
 | Bezeichnung        | Geben Sie eine Bezeichnung für den Tarif ein (in der Sprache des angmeldeten Benutzers)  |
-| Art   |  Wählen Sie mittels Drop-Down das Tarifmodell aus. Es stehen die Werte _Buchung_ und _Annullation_ zur Verfügung. Es wird definiert, ob es sich um eine Annullationspauschale handelt oder um eine Buchungspauschale. Bei Annullation sind die Werte Zeitrange und _Aktiviert am_ nicht auszufüllen   |
-| Annullation in %  | wird nur angezeigt, wenn in der Dropdown _Tarif Art_ eine Annullation selektiert wurde Validierung auf Ganzzahlen (nummerischer Wert).|
+| Berechnungsbasis   |  Wählen Sie mittels Drop-Down die Berechnungsbasis aus. Es stehen die Werte _Buchungsdatum_, _Erstelldatum_ und _Annullation_ zur Verfügung. Es wird definiert, ob es sich um eine Annullationspauschale handelt oder um eine Buchungspauschale. Bei Annullation sind die Werte Zeitrange und _Aktiviert am_ nicht auszufüllen   |
+| Annullation in %  | wird nur angezeigt, wenn in der Dropdown _Berechnungsbasis_ eine Annullation selektiert wurde Validierung auf Ganzzahlen (nummerischer Wert).|
 | Gültigkeit  | Datumspicker, über welchen die Laufzeit eines Tarifs selektiert wird. |
 | Aktivitätsstatus für die einzelnen Wochentage  | Alle Wochentage werden in Form von Checkboxen und Zeitrange Textboxen aufgelistet. Durch Selektion kann definiert werden, dass an diesem Tag der Tarif gültig ist und zu welcher Zeit am Tag er gültig ist.  |
 | Dauer in Minuten  | Definiert das Kostenintervall - für welche Zeiteinheit wird der Tarif berechnet. Beispiel: wird 60 angegeben wird auf Stundenbasis abgerechnet. Bei Annullationen bezieht sich die Dauer in Minuten auf die Annullation vor Reservationstart. Erläuterung an einem Beispiel: 0 = Annullation zur Laufzeit der Reservation = 100% der Reservationskosten (100=Tarif, %-Checkbox selektiert) 60 = Annullation zwischen 0 und 60 Minuten vor Reservationsstart = 50% der Reservationskosten (50=Tarif, %-Checkbox selektiert) 1440 = Annullation zwischen 60 Minuten und einem Tag vor Reservationsstart = fix 100.00 Franken (100 = Tarif, %-Checkbox nicht selektiert)  |
@@ -88,10 +80,10 @@ Für Organisator:innen ohne aktuell gültige Firmen- oder OE-Zuordnung verwendet
 Tarifeinzelheiten und Gültigkeit festlegen
 {{< /imgproc >}}
 
-Speichern Sie die Tarifkategorie über den Button _Speichern_. Die Liste aktualisiert sich automatisch und Sie sehen die neue Tarifkategorie.
+Speichern Sie die Tarifkategorie über den Button _Speichern_. Die Liste der Tarifkategorien aktualisiert sich automatisch.
 
 {{< imgproc Tarife_neu_angelegt_in_Liste Resize "960x" >}}
-Neu angelegte Tarifkategorie in der Liste
+Tarife der Tarifkategorie in der Liste
 {{< /imgproc >}}
 
 ## Tarifberechnung bei Buchungen

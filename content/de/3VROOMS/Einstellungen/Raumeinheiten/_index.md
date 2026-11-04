@@ -17,7 +17,7 @@ Ansicht Raumeinheiten
 
 
 Sie speichern alle Änderungen über den Button _Speichern_.
-Zum Löschen von Listenelementen, aktivieren Sie die Checkbox und klicken Sie auf den Button _Entfernen_. Die Liste aktualisiert sich automatisch.
+Zum Löschen von Listenelementen, aktivieren Sie die Checkbox und klicken Sie auf den Button _Löschen_. Die Liste aktualisiert sich automatisch.
 
 
 Über das Icon _Im Plan anzeigen_ öffnet sich ein neues Fenster und Sie sehen im Plan die zugeteilten Räume. Der Inhalt wird nur angezeigt, sofern Verknüpfung auf Plan erfolgt ist.
@@ -33,7 +33,7 @@ Im Sidepanel können Sie nach den folgenden Kriterien filtern:
 * Standort: Über das Plus Zeichen einen gespeicherten Standort auswählen
 
 
-Über den Button _Anzeigen_ finden Sie die Raumeinheiten in der Liste. Diese aktualisiert sich automatisch.
+Über den Button _Finden_ finden Sie die Raumeinheiten in der Liste. Diese aktualisiert sich automatisch.
 
 ### Daten einsehen
 
@@ -85,11 +85,7 @@ Stammdaten der Raumeinheiten bearbeiten
 Sie können eine oder mehrere Personen einer Raumeinheit zuweisen. Bereits hinzugefügte Personen sehen Sie in der Personenliste. Eine Person kann mehrmals der gleichen Raum Einheit zugeordnet werden (auch zeitlich überschneidend) und eine Person kann in verschiedenen Raum Einheiten vorkommen (auch zeitlich überschneidend).
 
 
-Wählen Sie Personen für die Raumeinheit über den untenstehenden Button _Hinzufügen_ aus.
-
-{{< imgproc Raumeinheiten_Personen Resize "960x" >}}
-Personen der Raumeinheiten bearbeiten
-{{< /imgproc >}}
+Wählen Sie Personen für die Raumeinheit über den untenstehenden Button _Person hinzufügen_ aus.
 
 
 Es öffnet sich ein Feld, in welchem Sie über die Checkbox eine oder mehrere Personen auswählen können. Speichern Sie Ihre Auswahl über den Button _Hinzufügen_.
@@ -100,10 +96,6 @@ Eine oder mehrere Personen hinzufügen
 
 
 Die Liste aktualisiert sich automatisch und Sie sehen die hinzugefügten Personen in dieser.
-
-{{< imgproc Raumeinheiten_Personen_in_Liste Resize "960x" >}}
-Aktualisierte Liste der Personen einer Raumeinheit
-{{< /imgproc >}}
 
 
 Im unteren Feld haben Sie die Möglichkeit _Gültig von_ und _Gültig bis_ auszuwählen. Die Felder können leer bleiben oder Sie weisen ein bestimmtes Start- und Enddatum einer Person zu.
@@ -120,10 +112,3 @@ Eine neue Raumeinheit erstellen Sie über den untenstehenden Button _Erstellen_.
 
 Die neu eingetragenen Daten speichern Sie über den untenstehenden Button _Speichern_.
 
-{{< imgproc Raumeinheit_erstellen Resize "960x" >}}
-Erstellen und suchen einer Raumeinheit
-{{< /imgproc >}}
-
-{{< imgproc Raumeinheit_neu_in_Liste Resize "960x" >}}
-Neue Raumeinheit in der Liste
-{{< /imgproc >}}

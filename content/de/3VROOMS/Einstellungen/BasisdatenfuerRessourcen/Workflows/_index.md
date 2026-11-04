@@ -26,10 +26,6 @@ Bestätigen Sie Ihre Suche über den Button _Finden_.
 
 Den Workflow in der Workflowliste bearbeiten Sie indem Sie auf das Stift Icon _Bearbeiten_ auswählen . Es öffnet sich ein Feld, in welchem Sie die Bezeichnung des Workflows ändern können.
 
-{{< imgproc Workflow_bearbeiten Resize "960x" >}}
-Workflow: Informationen bearbeiten und speichern
-{{< /imgproc >}}
-
 ### Ereignisse bearbeiten
 
 
@@ -72,21 +68,13 @@ Ein Ereignis setzt sich immer zusammen aus einem Wechsel von einem Status in ein
 
 Indem Sie auf den Button _Erstellen_ klicken, können Sie einen neuen Workflow erstellen. Es öffnen sich die gleichen Felder mit zu bearbeitenden Informationen.
 
-{{< imgproc Workflow_erstellen Resize "960x" >}}
-Neuen Workflow erstellen
-{{< /imgproc >}}
-
 
 Haben Sie einen Workflow erfolgreich bearbeitet oder neu erstellt, aktualisiert sich die Liste automatisch. Sie sehen das Element im View Modus.
-
-{{< imgproc Workflo_neu_in_Liste Resize "960x" >}}
-Bearbeiteter oder neuer Workflow in aktualisierter Liste
-{{< /imgproc >}}
 
 ### Workflow: Daten einsehen
 
 
-Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Bestuhlung und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu diesem Workflow. Dort sehen Sie die Stammdaten, die Ereignisse und die Historie. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Personenliste.
+Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen des Workflows und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu diesem Workflow. Dort sehen Sie die Stammdaten, die Ereignisse und die Historie. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Workflowliste.
 
 {{< imgproc Workflow_Daten_einsehen Resize "960x" >}}
 Workflow:Daten einsehen und bearbeiten

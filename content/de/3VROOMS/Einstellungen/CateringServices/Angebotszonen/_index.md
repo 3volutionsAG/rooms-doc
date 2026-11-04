@@ -17,7 +17,7 @@ Angebotszonen bearbeiten und durchsuchen
 {{< /imgproc >}}
 
 
-Zum Löschen aktivieren Sie die Checkbox neben einem Listenelement und wählen den untenstehenden Button _Entfernen_ aus. Die Liste aktualisiert sich automatisch.
+Zum Löschen aktivieren Sie die Checkbox neben einem Listenelement und wählen den untenstehenden Button _Löschen_ aus. Die Liste aktualisiert sich automatisch.
 
 **Hinweis zum Löschen** :
 * eine oder mehrere Angebotszonen können selektiert werden

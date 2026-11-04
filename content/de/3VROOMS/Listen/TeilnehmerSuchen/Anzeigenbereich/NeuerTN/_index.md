@@ -9,12 +9,8 @@ description: 'Unabhängig von einer Buchung können in ROOMS Besucher bzw. Teiln
 Um diese Funktion nutzen zu können wird das Stanortbezogene Recht `Darf Anlässe buchen` benötigt.
 {{% /alert %}}
 
-Um sogenannten Walk-In-Besuch, ohne Zuordnung zu einer Buchung, in ROOMS zu registrieren, navigieren Sie im Menüpunkt Listen auf das Subpanel Teilnehmende.  *
-Am unteren Rand des Anzeigenbereichs finden Sie eine Schaltfläche _Teilnehmende hinzufügen_
-
-{{< imgproc List_TN_Anz_Schalt Resize "960x" >}}
-Schaltfläche um neue Teilnehmende zu erfassen
-{{< /imgproc >}}
+Um sogenannten Walk-In-Besuch, ohne Zuordnung zu einer Buchung, in ROOMS zu registrieren, navigieren Sie im Menüpunkt Listen auf das Subpanel Teilnehmer.  *
+Am unteren Rand des Anzeigenbereichs finden Sie die Schaltfläche _Neuer Teilnehmer_.
 
 Sie werden zur Eingabemaske weitergeleitet:
 
@@ -23,10 +19,6 @@ Eingabemaske um neue Teilnehmende zu erfassen
 {{< /imgproc >}}
 
 Es gibt die Möglichkeit zur Listenansicht eine einzelne Person und  zurück zu kehren oder mehrere Einzelpersonen in Serie hinzuzufügen. Ausserdem lassen sich über einen vereinfachten Modus Gruppe schneller erfassen.
-
-{{< imgproc List_TNneu_Schalt Resize "960x" >}}
-Varianten um Teilnehmende zu erfassen
-{{< /imgproc >}}
 
 ## Einzelbesuch hinzufügen
 
@@ -55,7 +47,7 @@ _Anmerkung: Es müssen entweder Vorname und Nachname oder die E-mail-Adresse des
 |Organisator:in||Person, welche den Besuch hinzufügt ; _Wird automatisch ausgefüllt._|
 |Datum/Zeit||Datum und Zeitspanne, in der der Besuch anwesend sein wird|
 |Standort||Ort, an dem der Besuch sein wird ; _Angabe ist zwingend erforderlich_|
-|Anlasstyp|{{< imgproc List_TN_TNneu_Art Resize "200x" >}}{{< /imgproc >}}|Grund des Besuchs|
+|Anlasstyp||Grund des Besuchs|
 |Optional||Teilnehmer gehört zum erweiterten Kreis der Teilnehmenden und ist für den Termin nicht erforderlich.|
 |VIP||Besuch wird als VIP gekennzeichnet|
 |Besuchspass Nummer||eindeutige Zuordnung des Besucherpasses|
@@ -79,7 +71,7 @@ Vereinfachte Eingabemaske für weitere Teilnehmende einer Besuchsgruppe
 Wenn Sie keine weiteren Personen der Gruppe hinzufügen möchten, klicken Sie auf abbrechen. Die Eingabemaske wird geschlossen und Sie kehren zur Listenansicht zurück.
 
 {{< imgproc List_TN_TNneu_List_b Resize "960x" >}}
-Vereinfachte Eingabemaske für weitere Teilnehmende einer Besuchsgruppe
+Mitglieder einer Besuchsgruppe in der Ergebnisliste
 {{< /imgproc >}}
 
 

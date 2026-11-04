@@ -17,9 +17,6 @@ Detailansicht zu einer Buchung
 
 Der Anzeigenbereich gliedert sich in _Zusammenfassung_, _Historik_ und _Mails_. Die einzelnen Kategorien sind über die Reiter am oberen Rand des Anzeigenbereichs zugänglich und werden in den folgenden Unterkapiteln beschrieben.
 
-{{< imgproc List_BG_Anzeige_DS_Reiter Resize "960x" >}}
-Reiter "Zusammenfassung", "Historik", und "Mails" der Buchungsdetails
-{{< /imgproc >}}
 
 ## Sidepanel
 

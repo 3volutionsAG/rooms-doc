@@ -5,7 +5,7 @@ weight: 2
 description: 'Die Planansicht ermöglicht es Ihnen, Räume mittels Stockwerk- oder Gebäudeplänen interaktiv auf grafischer Ebene zu suchen und direkt zu buchen. Mithilfe der Plansuche ermitteln Sie freie Räume und zur Verfügung stehende Ressourcen.'
 ---
 
-Im Sidepanel der Planansicht (Planfilter) verändern Sie Einstellungen für die Anzeige des Plans und stellen die Kriterien für die Suche ein.
+Im Sidepanel der Planansicht (Planfilter) und im Filter direkt auf dem Plan verändern Sie Einstellungen für die Anzeige des Plans und stellen die Kriterien für die Suche ein.
 Erweitern Sie die Suche mittels drop-down, stehen Ihnen folgende Kriterien zur Verfügung:
 
 ---

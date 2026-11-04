@@ -24,7 +24,7 @@ Im linken Menü finden Sie unter der Kategorie *Person* eine Suchfunktion, mit d
 * Sync. Deaktiviert
 * Telefon (Intern/Extern)
 
-{{< imgproc Personenliste_bearbeiten_suchen Resize "960x" >}}
+{{< imgproc Personenliste_bearbeiten_suchen Resize "320x" >}}
 Personenlisten bearbeiten und durchsuchen
 {{< /imgproc >}}
 
@@ -34,30 +34,31 @@ Die Suchfunktionen erweitern Sie über den Drop Down des Menü-Punktes *Erweiter
 Hierbei können Sie nach den folgenden Kriterien suchen:
 
 * Personalnummer
-* OE/Firma
-* Kostenstellencode
-* Kostenstellenname
 * Status (Aktiv/Inaktiv)
+* Ist Formular erstellt
 * Art (Intern/Extern)
+* E-Mail bestätigt
+* Standard Standort
+* Sprache
+
+Unter *Organisationsspezifische Kriterien* suchen Sie nach Organisation, Abteilung, Kostenstellencode und Kostenstellenname.
 
 Das Ergebnis der Suche wird Ihnen in der Liste angezeigt, nachdem Sie auf den Button _Finden_ geklickt haben.
 
-{{< imgproc Person_suche_Ergebnis Resize "960x" >}}
-Suchergebnis in der Personenliste
-{{< /imgproc >}}
 
 ## Personenlisten bearbeiten
 
 Die Person in der Personenliste bearbeiten Sie, indem Sie auf das Stift Icon `Bearbeiten` auswählen. Dort ändern Sie:
 
 * Stammdaten
-* Personen-Information
+* Personen-Informationen
+* Adressen
 * Navigation
-* Notifikation
+* Notifikationen
 * Eigene Listen
-* Firmen- und Gruppen Informationen
-* Logons
-* zugewiesene Ressourcen
+* Zugewiesene Ressourcen
+* Logins
+* Gruppen
 
 {{< imgproc Person_bearbeiten Resize "960x" >}}
 Personen Informationen bearbeiten und speichern
@@ -89,9 +90,6 @@ Die Abteilung stammt aus den [Stammdaten der Organisation]({{< relref "3VROOMS/E
 
 Möchten Sie eine neue Person hinzufügen, klicken Sie auf den untenstehenden Button _neu_. Es öffent sich ein neues Fenster. In diesem geben Sie die gleichen Informationen wie im vorher beschriebenem Absatz ein.
 
-{{< imgproc Person_neu_hinzufügen Resize "960x" >}}
-Neue Person zu Personenliste hinzufügen
-{{< /imgproc >}}
 
 ## Person: Daten einsehen
 
@@ -102,7 +100,7 @@ Dort sehen Sie die
 * Personen-Information
 * Mails: gesendete Mails und Notifikationen zu Buchungen
 * Meine Arbeit: Verlauf der ausgeführten Buchungen und Stornierungen
-* Historie: kompletter Verlauf der ausgeführten Aktivitäten in Rooms
+* Historik: kompletter Verlauf der ausgeführten Aktivitäten in Rooms
 
 {{< imgproc Personendaten_einsehen Resize "960x" >}}
 Personen Informationen einsehen und bearbeiten
@@ -110,18 +108,12 @@ Personen Informationen einsehen und bearbeiten
 
 Über den untenstehenden Button `Bearbeiten` können Sie diese Daten auch aus dem Feld heraus bearbeiten, löschen oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Personenliste.
 
-{{< imgproc Person_daten_einsehen2 Resize "960x" >}}
-Personendaten einsehen
-{{< /imgproc >}}
 
 {{< imgproc Person_Daten_Historie Resize "960x" >}}
-Personendaten zur Historie einsehen
+Personendaten zur Historik einsehen
 {{< /imgproc >}}
 
 {{< imgproc Person_Daten_Mails Resize "960x" >}}
 Personendaten zu Mails einsehen
 {{< /imgproc >}}
 
-{{< imgproc Person_Daten_Arbeit Resize "960x" >}}
-Personendaten zur Arbeit einsehen
-{{< /imgproc >}}

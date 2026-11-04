@@ -23,7 +23,7 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
    - *Standort* grenzt die Suche lokal ein. Es können mehrere Standorte ausgewählt werden.
    - Welche *Gliederungstypen* (z. B. Raumtyp oder Raumlabel) und *Gliederungen* zur Auswahl stehen, richtet sich nach der gewählten Ressourcenart und den Standorten. Das Add-In zeigt nur Einträge an, die mindestens einer aktiven Ressource an einem gewählten Standort oder dessen Unterstandorten zugeordnet sind. Ändern Sie die Standortauswahl, werden die verfügbaren Gliederungen aktualisiert und nicht mehr passende Auswahlen entfernt. Ist kein Standort gewählt, stehen die standortübergreifend verfügbaren Gliederungen zur Auswahl.
 
-      {{< imgproc O365Outlook_web_RaumFilter Resize "960x">}} {{< /imgproc >}}
+      {{< imgproc O365Outlook_web_RaumFilter Resize "440x">}} {{< /imgproc >}}
 
 6. Klicken Sie auf **Weiter zu den Räumen**, die Zahl auf der Schaltfläche gibt die Anzahl der verfügbaren Ressourcen an. Es öffnet sich eine Liste mit den entsprechenden Ressourcen. Die Einträge enthalten folgenden Informationen:
    - Ressourcenname
@@ -31,18 +31,18 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
    - Standort
    - bei Räumen: maximale Personenzahl bei Standardbestuhlung, in Klammern Mindestpersonenzahl und maximale Personenzahl bei alternativer Bestuhlung
    - Catering & Service, falls bei diesem Raum grundsätzlich verfügbar
-   - Schaltfläche Buchen mit Preisangabe, falls der Preis hinterlegt ist
+   - Schaltfläche Auswählen, mit Preisangabe, falls der Preis hinterlegt ist
 
-   {{< imgproc O365Outlook_web_ResErgebnis Resize "960x">}} {{< /imgproc >}}
+   {{< imgproc O365Outlook_web_ResErgebnis Resize "440x">}} {{< /imgproc >}}
 
-7. Wählen Sie eine Ressource und klicken Sie auf **Buchen**. Die Ressource wird in 3V ROOMS blockiert, jedoch noch nicht gebucht. Es öffnet sich die Zusammenfassung der Buchung.
+7. Wählen Sie eine Ressource und klicken Sie auf **Auswählen**. Die Ressource wird in 3V ROOMS blockiert, jedoch noch nicht gebucht. Es öffnet sich die Zusammenfassung der Buchung.
 
    **Die Buchungsdetails, ausser der Titel, können nicht mehr geändert werden. Wird das Datum oder die Uhrzeit in Outlook geändert, startet der Buchungsassistent neu. Die Blockierung der Ressource wird aufgehoben.**
 
-   {{< imgproc O365Outlook_web_Zus Resize "960x">}} {{< /imgproc >}}
+   {{< imgproc O365Outlook_web_Zus Resize "440x">}} {{< /imgproc >}}
 
 8. Je nach Konfiguration können Sie weitere Informationen hinterlegen (Kostenträger, Bestuhlungsart, Equipment, ...). Schieben Sie dazu den Laufbalken rechts neben der Zusammenfassung runter.
-   {{< imgproc O365Outlook_web_weitereInfos Resize "960x">}} {{< /imgproc >}}
+   {{< imgproc O365Outlook_web_weitereInfos Resize "440x">}} {{< /imgproc >}}
 9. Wenn die Buchung privat sein soll, markieren Sie den Outlook-Termin vor dem Abschluss der Buchung in quickROOMS als **Privat**. quickROOMS übernimmt diesen Status in die ROOMS-Buchung.
 
    {{% alert title="Privatstatus" color="info" %}}
@@ -50,7 +50,7 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
    {{% /alert %}}
 
 10. Klicken Sie auf **Buchen**, um die Buchung verbindlich abzuschliessen. Die Buchung wird in 3V ROOMS übernommen und bestätigt.   Der Name der Ressource wird in das Feld Standort des Outlook-Termins übertragen.
-    {{< imgproc O365Outlook_web_Buchungsbest Resize "960x">}} {{< /imgproc >}}
+    {{< imgproc O365Outlook_web_Buchungsbest Resize "440x">}} {{< /imgproc >}}
 11. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.
 
 ## Teilnehmende aus Outlook übernehmen

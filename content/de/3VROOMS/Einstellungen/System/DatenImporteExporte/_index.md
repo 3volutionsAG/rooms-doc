@@ -11,7 +11,7 @@ description: 'Im Bereich Daten Importe- & Exporte sehen Sie die Importliste und 
 Über den untenstehenden Button _Hinzufügen_ fügen Sie einen neuen Import Parameter zur Importliste hinzu. Bei diesem bearbeiten Sie die Stammdaten.
 
 {{< imgproc Importe_hinzufügen_suchen Resize "960x" >}}
-Globale Parameter, Konfigurationsdaten bearbeiten
+Importliste mit geplanten Importen und Exporten
 {{< /imgproc >}}
 
 ### Stammdaten bearbeiten
@@ -32,9 +32,6 @@ Folgende Daten können für den Import Parameter bearbeitet werden:
 Für file-basierte Datenstrategien kann SFTP als Transportweg konfiguriert werden. Die konkrete Konfiguration hängt vom jeweiligen Import/Export ab und sollte vor der Aktivierung mit den Zugangsdaten und Pfaden des Zielsystems getestet werden.
 {{% /alert %}}
 
-{{< imgproc Importe_Stammdaten_bearbeiten Resize "960x" >}}
-Stammdaten der Importparameter bearbeiten
-{{< /imgproc >}}
 
 ## Daten Importe/Exporte durchsuchen
 

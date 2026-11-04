@@ -52,9 +52,6 @@ Speichern Sie Ihre Änderungen über den Button _Speichern_.
 
 Sie sehen bereits hinzugefügte Angebote in der Liste. Indem Sie den Button "Hinzufügen" betätigen, öffnet sich das Angebotsfeld, welches Sie bearbeiten können.
 
-{{< imgproc Angebotszone_Angebote Resize "960x" >}}
-Angebote bestehender Angebotszonen bearbeiten
-{{< /imgproc >}}
 
 Wählen Sie ein bereits gespeichertes Angebot über die Aktivierung der Checkbox aus und fügen Sie es zur Liste hinzu.
 
@@ -94,15 +91,9 @@ Ressourcen der Angebotszone in der Liste
 
 Möchten Sie weitere Ressourcen hinzufügen, betätigen Sie den Button _Hinzufügen_ und wählen Sie aus der Liste bestehender Ressourcen aus. Diese Ressource ordnen Sie der entsprechenden Angebotszone somit zu. Oder bestätigen Sie eine Ressource in der angezeigten Liste über die Aktivierung der Checkbox.
 
-{{< imgproc Angebotszone_Ressourcen_hinzufügen Resize "960x" >}}
-Ressourcen zur Angebotszone hinzufügen
-{{< /imgproc >}}
 
 Speichern Sie Ihre Auswahl über den Button _Hinzufügen_. Die Liste aktualisiert sich automatisch.
 
-{{< imgproc Angebotszone_Ressourcen_in_Liste Resize "960x" >}}
-Hinzugefügte Ressourcen in der Liste
-{{< /imgproc >}}
 
 ### Gruppen hinzufügen
 
@@ -116,12 +107,6 @@ Zugewiesene Gruppen einer Angebotszone
 
 Möchten Sie weitere Gruppe hinzufügen, betätigen Sie den Button "Hinzufügen" und wählen Sie aus der Liste bestehender Gruppen aus. Aktivieren Sie die Checkbox neben der Gruppe, um diese auszuwählen.
 
-{{< imgproc Angebotszone_Gruppen_hinzufügen Resize "960x" >}}
-Gruppen zu einer Angebotszone hinzufügen
-{{< /imgproc >}}
 
 Speichern Sie Ihre Auswahl über den Button _Hinzufügen_. Die Liste aktualisiert sich automatisch.
 
-{{< imgproc Angebotszone_Gruppen_in_Liste Resize "960x" >}}
-Aktualisierte Gruppen in der Liste
-{{< /imgproc >}}

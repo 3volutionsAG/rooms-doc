@@ -46,15 +46,11 @@ Die Anzeige wird beim Bearbeiten aktualisiert, wenn Sie Einträge hinzufügen od
 
 Sobald Sie alle Daten ausgefüllt haben, schliessen Sie die Buchung über den Button _Buchung abschliessen_ ab.
 
+
+Danach erhalten Sie die Ansicht _Zusammenfassung_ und mit Klick auf _Buchung bestätigen_ speichern Sie die Reservation definitiv.
+
 {{< imgproc Detailbuchung_abschliessen Resize "960x" >}}
-Detailbuchung abschliessen
-{{< /imgproc >}}
-
-
-Danach erhalten Sie die Ansicht _Zusammenfassung_ und mit Klick auf _Reservation bestätigen_ speichern Sie die Reservation definitiv.
-
-{{< imgproc Detailbuchung_bestätigen Resize "960x" >}}
-Detailbuchung bestätigen
+Ansicht Zusammenfassung vor dem Bestätigen der Buchung
 {{< /imgproc >}}
 
 

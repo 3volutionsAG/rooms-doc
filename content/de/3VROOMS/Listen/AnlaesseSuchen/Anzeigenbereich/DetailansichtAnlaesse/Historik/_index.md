@@ -12,10 +12,6 @@ description: 'Im Reiter Historik werden Ihnen Details zum Änderungsverlauf des 
 
 Über das Dreieck am rechten Rand der Zeile lassen sich die Details zur Erstellung und den Änderungen aufklappen.
 
-{{< imgproc List_ANL_DS_HistErst_b Resize "960x" >}}
-Drop-Down-Ansicht mit den Details der Erstellung
-{{< /imgproc >}}
-
 {{< imgproc List_ANL_DS_HistAend_b Resize "960x" >}}
 Drop-Down-Ansicht mit Details zu Änderungen
 {{< /imgproc >}}

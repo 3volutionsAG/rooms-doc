@@ -37,9 +37,6 @@ Mit den Buttons `Equipment hinzufügen` oder `Parkplatz hinzufügen` können Sie
 Ausgewähltes Equipment hinzufügen
 {{< /imgproc >}}
 
-{{< imgproc Detailbuchung_Parkplatz_hinzufügen Resize "960x" >}}
-Ausgewählten Parkplatz hinzufügen
-{{< /imgproc >}}
 
 In dieser Liste fügen Sie mittels Auswahl der Ressourcen mit den Checkboxen und Klick auf den Button `Hinzufügen` das ausgewählte Equipment hinzu. Das Equipment erscheint sofort in der Liste der verfügbaren Ressourcen.
 

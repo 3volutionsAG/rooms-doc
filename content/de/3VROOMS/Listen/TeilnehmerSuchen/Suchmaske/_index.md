@@ -4,9 +4,9 @@ linkTitle: "Suchmaske"
 weight: 10
 description: 'Über diese Suchmaske finden Sie Teilnehmende anhand von Buchungsdetails oder Details zu den Teilnehmenden.'
 ---
-Um Teilnehmende zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen _Teilnehmende_. Dadurch öffnet sich die Suchmaske.
+Um Teilnehmende zu finden, navigieren Sie im Sidepanel auf das Subpanel mit dem Namen _Teilnehmer_. Dadurch öffnet sich die Suchmaske.
 
-{{< imgproc List_TN_Such Resize "960x" >}}
+{{< imgproc List_TN_Such Resize "320x" >}}
 Suchmaske zur Suche nach Teilnehmenden
 {{< /imgproc >}}
 
@@ -19,7 +19,7 @@ Folgende Tabelle erläutert die Eingabefelder:
 |Standort||Geben Sie den Standort für welchen die Buchung gilt ein oder wählen Sie diesen über die Schnellauswahl aus.|
 |Titel||Bezeichnung der Buchung|
 |Name/Vorname||Vor- oder Nachname der teilnehmenden Person|
-|Reservations Status|{{< imgproc List_TN_Such_ResStat Resize "200x" >}}{{< /imgproc >}}|Buchungsstatus wählen ; *Erläuterungen siehe nächsten Abschnnitt*|
+|Reservations Status||Buchungsstatus wählen ; *Erläuterungen siehe nächsten Abschnnitt*|
 {{< /bootstrap-table >}}
 ---
 
@@ -42,8 +42,8 @@ Fortsetzung der EIngabefelder in der Suchmaske:
 {{< bootstrap-table "table table-striped" >}}
 |Feld||Funktion|
 |---|---|---|
-|Teilnehmer:in|{{< imgproc List_TN_Such_TN Resize "200x" >}}{{< /imgproc >}}|__intern:__ unternehmenszugehörig ; __extern:__ fremdfirmenzugehörig|
+|Teilnehmer:in||__intern:__ unternehmenszugehörig ; __extern:__ fremdfirmenzugehörig|
 |Visitorpass Number||Nummer des Besucherausweises|
-|Besucherpass Status|{{< imgproc List_TN_Such_PassStat Resize "200x" >}}{{< /imgproc >}}| Status des Besucherausweises gibt an, ob der Ausweis bereits zurückgegeben wurde oder noch im Umlauf ist|
+|Besucherpass Status|| Status des Besucherausweises gibt an, ob der Ausweis bereits zurückgegeben wurde oder noch im Umlauf ist|
 {{< /bootstrap-table >}}
 ---

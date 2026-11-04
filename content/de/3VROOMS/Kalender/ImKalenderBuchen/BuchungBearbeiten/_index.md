@@ -12,6 +12,10 @@ Um eine Buchung zu bearbeiten, wählen Sie das **+** in der Reservation im Kalen
 
 Klicken Sie auf das **+**, öffnet sich das Buchungsfenster. Unter dem Titel stehen die Ressource und der Buchungszeitraum. Welche Aktionen angezeigt werden, hängt von Ihren Rechten und dem Zustand der Buchung ab.
 
+{{< imgproc Kalender_Buchung_Plus Resize "960x" >}}
+Buchungsfenster nach dem Klick auf das +
+{{< /imgproc >}}
+
 ### Aktionen im Buchungsfenster
 
 Die häufig verwendeten Aktionen stehen direkt oben im Fenster:
@@ -96,7 +100,7 @@ Eine bestehende Buchung im Kalender verschieben
 {{< /imgproc >}}
 
 ### Buchung annullieren
-Falls der Benutzer die Berechtigung "Darf Reservationen mit Kosten editieren" hat, kann bei der Annullation einer Buchung angegeben werden, was mit den anfälligen Kosten auf der geschehen soll. Es gibt drei optionen:
+Falls der Benutzer die Berechtigung "Darf Reservationen mit Kosten editieren" hat und die Buchung Kosten enthält, kann bei der Annullation angegeben werden, was mit den anfälligen Kosten auf der geschehen soll. Es gibt drei optionen:
 * Annullierungskosten verrechnen (Standardverhalten)
 * Alle kosten verrechnen
 * Keine kosten verrechnen
@@ -111,9 +115,6 @@ Buchung annullieren
 Wählen Sie mehrere Buchungen mittels der Checkbox aus, steht Ihnen die Funktion der Massenbearbeitung zur Verfügung.
 Sie können dann mehrere Buchungen gleichzeitig bearbeiten, freigeben, verschieben oder annulieren.
 
-{{< imgproc Kalender_Massenbearbeitung Resize "960x" >}}
-Mehrere Buchungen im Kalender bearbeiten (Massenbearbeitung)
-{{< /imgproc >}}
 
 Eine genaue Beschreibung der Massenbearbeitung finden Sie hier:
 [Massenbearbeitung](/3vrooms/buchen/massenbearbeitung/)

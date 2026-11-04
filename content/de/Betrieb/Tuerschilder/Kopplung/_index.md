@@ -54,8 +54,8 @@ Authentifizierung mit PIN-Code oder QR-Code
 
 Nach erfolgreicher Authentifizierung sehen Sie eine Liste aller verfügbaren Ressourcen, gruppiert nach Standort:
 
-- **(1) Pairen**: Klicken Sie auf diesen Button um eine neue Ressource mit dem Türschild zu koppeln
-- **(2) Unpair**: Bei bereits gekoppelten Ressourcen erscheint dieser Button um die Kopplung aufzuheben
+- **Pairen**: Klicken Sie auf diesen Button um eine neue Ressource mit dem Türschild zu koppeln
+- **Unpair**: Bei bereits gekoppelten Ressourcen erscheint dieser Button um die Kopplung aufzuheben
 
 {{< imgproc pairing04 Resize "960x" >}}
 Ressourcenliste mit Pairen und Unpair Buttons
@@ -65,9 +65,6 @@ Ressourcenliste mit Pairen und Unpair Buttons
 
 Nach erfolgreicher Kopplung erscheint eine Bestätigungsmeldung. Die Ressource ist nun mit dem Türschild verbunden.
 
-{{< imgproc pairing05 Resize "960x" >}}
-Erfolgreiche Kopplung bestätigt
-{{< /imgproc >}}
 
 ---
 
@@ -124,9 +121,6 @@ Reset URL in einem freien Slot erfassen
 
 7. **Zum Hauptmenü navigieren**
 
-{{< imgproc step4 Resize "960x" >}}
-Home Screen mit Button zum Hauptmenü
-{{< /imgproc >}}
 
 8. **Ressource koppeln**
    - Administration aufrufen

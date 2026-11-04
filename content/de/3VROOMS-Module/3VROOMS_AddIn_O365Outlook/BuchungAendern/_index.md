@@ -17,24 +17,21 @@ Bei beiden Arten sind Besonderheiten zu beachten.
 2. Öffnen Sie das **Outlook Add-In**, indem Sie
 
       - in der *Web-Anwendung* in der Menüzeile auf **...** klicken und aus dem Auswahlmenü **3V-ROOMS add-in** wählen.
-         {{< imgproc O365Outlook_web Resize "960x">}} {{< /imgproc >}}
       - in der *lokalen Anwendung* im Aktionsmenü auf **Raum buchen** klicken.
-         {{< imgproc O365Outlook_lokal Resize "960x">}} {{< /imgproc >}}
 
 
     Es wird die ROOMS Buchungsbestätigung angezeigt.
 
-   {{< imgproc O365Outlook_web_BGbest Resize "960x">}} {{< /imgproc >}}
+   {{< imgproc O365Outlook_web_BGbest Resize "440x">}} {{< /imgproc >}}
 
 3. Klicken Sie oben rechts in der Buchungsbestätigung auf das Zahnrad.
 
-   {{< imgproc O365Outlook_web_BGedit Resize "960x">}} {{< /imgproc >}}
+   {{< imgproc O365Outlook_web_BGedit Resize "440x">}} {{< /imgproc >}}
 
     Sie können die Buchungsdetails nun ändern.
 
 Alternativ können Sie den Termineintrag im Kalender verschieben, um Datum und Zeit zu ändern.
 
-    {{< imgproc O365Outlook_web_BGaendern Resize "960x">}} {{< /imgproc >}}
 
 
 Die Terminänderung wird automatisch mit 3V ROOMS synchronisiert. Sollte die ROOMS Ressource zum neuen Termin nicht verfügbar sein, wird die Buchung auf den ursprünglichen Termin zurück gesetzt.

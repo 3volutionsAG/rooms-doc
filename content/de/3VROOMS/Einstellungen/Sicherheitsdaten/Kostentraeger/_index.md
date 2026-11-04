@@ -63,9 +63,6 @@ In Auswahllisten werden üblicherweise nur **aktuell gültige** Kostenträger an
    - **Verrechenbar** (wenn der Kostenträger in der Verrechnung genutzt werden soll)
 4. Speichern Sie.
 
-{{< imgproc Kostentraeger-Bearbeiten Resize "960x" >}}
-Kostenträger bearbeiten (Nummer, Beschreibung, Geschäftsbereich, Gültigkeit, Verrechenbar)
-{{< /imgproc >}}
 
 ### Kostenträger löschen
 

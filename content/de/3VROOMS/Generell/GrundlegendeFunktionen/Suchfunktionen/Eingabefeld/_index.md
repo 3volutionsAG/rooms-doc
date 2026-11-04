@@ -12,10 +12,6 @@ In den Suchoptionen gibt es verschiedene Eingabefelder.
 Es gibt einige Felder, z.B. Buchungstitel, in der eine völlig freie Texteingabe möglich ist.
 Falls Sie den genauen Wortlaut, z.B. des gesuchten Buchungstitels, nicht mehr erinnern, können Sie eine Schlagwortsuche durchführen, in dem Sie ein Wort oder Teilwort zwischen zwei * setzen.
 
-{{< imgproc Eingabefeld_frei_beschriftet Resize "1280x" >}}
-Beispiel für ein Feld zur freien Texteingabe
-{{< /imgproc >}}
-
 ### Eingabefeld mit Lupensymbol
 
 Während Sie das Suchwort eingeben, werden Ihnen bereits Vorschläge zu Ihrem Suchwort unterbreitet, aus denen Sie auswählen können.

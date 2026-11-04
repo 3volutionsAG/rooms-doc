@@ -11,10 +11,6 @@ Zum Bearbeiten eines schon bestehenden Feiertags klicken Sie auf das Stift Icon 
 
 Es öffnet sich ein neues Fenster. In diesem bearbeiten Sie die Bezeichnung des Feiertags.
 
-{{< imgproc Feiertag_Feier Resize "960x" >}}
-Bezeichnung des Feiertags festlegen oder ändern
-{{< /imgproc >}}
-
 
 Im nächsten Reiter _Feiertag_ legen Sie den Beginn und das Ende des Feiertags fest. Sie sehen eine Liste mit schon eingetragenen Daten für die nächsten Jahre. Möchten Sie diese Daten löschen, aktivieren Sie die Checkbox neben dem Datum und klicken Sie auf den untenstehenden Button _Entfernen_.
 

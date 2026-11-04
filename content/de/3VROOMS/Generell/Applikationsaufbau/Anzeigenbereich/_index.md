@@ -7,6 +7,3 @@ description: 'Der Anzeigenbereich nimmt den grössten Teil des Fensters ein. Hie
 ---
 Eine genaue Beschreibung des Anezigenbereichs der Menüpunkte, finden Sie in den zuehörigen Kapiteln. Dort wird detailliert auf jeden Bereich eingegangen.
 
-{{< imgproc Fensteraufteilung_Anzeigenbereich Resize "1280x" >}}
-rot umrandet der Anzeigenbereich {{< /imgproc >}}
-

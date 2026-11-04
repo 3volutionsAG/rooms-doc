@@ -20,9 +20,6 @@ Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehen
 
 Bei den Stammdaten geben Sie die Bezeichnung der Rolle ein.
 
-{{< imgproc Rollen_Stammdaten_bearbeiten Resize "960x" >}}
-Stammdaten bearbeiten
-{{< /imgproc >}}
 
 ### Rechte verwalten
 
@@ -30,9 +27,7 @@ Stammdaten bearbeiten
 Hier verwalten Sie die Rechte von verschiedenen Rollen, welche dem Nutzungsverhalten der verschiedenen Zielgruppen entspricht.
 Möchten Sie Rechte einer Rolle hinzufügen oder entfernen, aktivieren Sie die Checkbox neben dem Listenelement. Klicken Sie anschliessend auf den Button _Hinzufügen_.
 
-{{< imgproc Rolle_Rechte_bearbeiten Resize "960x" >}}
-Rechte der Rollen bearbeiten
-{{< /imgproc >}}
+Globale Rechte gelten standortunabhängig. Lokale Rechte können pro Standort oder Ressource unterschiedlich vergeben werden. Wir empfehlen deshalb, globale und lokale Rechte nicht zu mischen: Legen Sie eine Rolle an, die nur globale Rechte enthält, und separate Rollen, die nur lokale Rechte enthalten.
 
 
 Mehr zu Rechten verwalten finden Sie hier:
@@ -41,13 +36,10 @@ Mehr zu Rechten verwalten finden Sie hier:
 ### Rollen: Daten einsehen
 
 
-Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Firma und klicken Sie auf diese. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Firma. Dort sehen Sie die Stammdaten und Rechte. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus dem Feld heraus bearbeiten.
+Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Rolle und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Rolle. Dort sehen Sie die Stammdaten und Rechte. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus dem Feld heraus bearbeiten.
 
 {{< imgproc Rollen_Daten_einsehen Resize "960x" >}}
 Daten der einzelnen Rollen einsehen
 {{< /imgproc >}}
 
 
-{{< imgproc Rollen_Stammdaten_bearbeiten Resize "960x" >}}
-Bearbeitete Eigenschaften unter Rollen speichern
-{{< /imgproc >}}

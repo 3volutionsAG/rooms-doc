@@ -4,7 +4,7 @@ linkTitle: "Detailansicht"
 weight: 4
 description: 'Die Detailansicht fasst alle Informationen zur ausgewählten Ressource übersichtlich zusammen.'
 ---
-Die Ressourcen ID in der Listenansicht ist mit der Detailseite des entsprechenden Anlasses verlinkt. Mit einem Klick auf die blau gefärbte Ressourcen ID werden Sie auf diese weitergeleitet.
+Die Ressourcen ID in der Listenansicht ist mit der Detailseite der entsprechenden Ressource verlinkt. Mit einem Klick auf die blau gefärbte Ressourcen ID werden Sie auf diese weitergeleitet.
 
 {{< imgproc List_RES_DS Resize "960x" >}}
 Detailansicht der Ressource mit übersichtlich dargestellten Informationen
@@ -13,16 +13,8 @@ Detailansicht der Ressource mit übersichtlich dargestellten Informationen
 ## Gliederung der Ansicht
 Der Anzeigenbereich ist in _Ressource_ und _Historik_ aufgeteilt. Diese Kategorien erreichen Sie über die Reiter am oberen Rand des Anzeigenbereichs.
 
-{{< imgproc List_RES_DS_Reiter Resize "960x" >}}
-Reiter "Ressource" und "Historik"
-{{< /imgproc >}}
-
 ### Reiter Ressource
 Im Reiter Ressourcen sind alle hinterlegten Details der Ressource übersichtlich dargestellt.
-
-{{< imgproc List_RES_DS_Reiter_Res Resize "960x" >}}
-Reiter "Ressource" stellt übersichtlich alle hinterlegten Details dar
-{{< /imgproc >}}
 
 ### Reiter Historik
 Hier ist die Historie der Erstellung und des Änderungsverlaufs der Ressource aufgelistet.
@@ -36,10 +28,6 @@ Reiter "Historik" zeigt Details zur Erstellung und Änderungsvorgängen
 ## Schaltflächen
 
 Am unteren Rand des Anzeigenbereichs befinden sich die Schaltflächen _Bearbeiten, Zurück_ und _Drucken_.
-
-{{< imgproc List_RES_DS_Schalt Resize "960x" >}}
-Schaltflächen zur Bearbeitung der Ressource
-{{< /imgproc >}}
 
 ### Bearbeiten
 
@@ -60,6 +48,3 @@ Weitere Informationen zur Eingabemaske finden Sie im Kapitel [Ressourcen bearbei
 
 Sie haben die Möglichkeit die Detailansicht auszudrucken. Nach dem Drücken der Schaltfläche öffnet sich das Drucker Dialogfeld.
 
-{{< imgproc List_RES_DS_Druck_b Resize "960x" >}}
-Dialogfenster Drucken
-{{< /imgproc >}}

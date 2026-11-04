@@ -21,9 +21,6 @@ Einem Standort einen Plan zuweisen und hochladen
 
 6. Im nächsten Reiter **Plan** zeichnen Sie nun die zur Verfügung stehenden Räume ein. Um mit dem einzeichnen zu beginnen, müssen Sie erst eine Verknüpfung wählen (Resource, Standort oder Raumeinheit)
 
-  {{< imgproc plan_verknuepfungen Resize "960x" >}}
-  Mögliche Verknüpfungen im Plan
-  {{< /imgproc >}}
 
 7. Wählen Sie die gewünschte Form, welche die Verknüpfung auf dem Plan haben soll
   {{< imgproc plan_feature_forms Resize "960x" >}}
@@ -32,5 +29,5 @@ Einem Standort einen Plan zuweisen und hochladen
 
 8. Zeichnen Sie die Verknüpfung am gewünschten Ort ein
   {{< imgproc plan_neue_verknuepfung Resize "960x" >}}
-  Fertige Verknüpfung im Plan
+  Ausgewählte Verknüpfung im Plan
   {{< /imgproc >}}

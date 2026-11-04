@@ -17,8 +17,8 @@ Feiertage aus einer Datei importieren
 
 ### Sprache der importierten Datei
 
-* Die Dropdown-Sprache beinhaltet die entsprechenden Sprachen, wovon die Benutzersprache vordefiniert ist.
-* Nach Klick auf Upload werden die Feiertage als Liste zur Vorschau angezeigt (siehe Abbildung). Gespeichert werden diese erst, wenn der „Speichern“ geklickt wird
+* Beim Import gibt es keine Sprachauswahl.
+* Nach der Auswahl der Datei werden die Feiertage als Liste zur Vorschau angezeigt (siehe Abbildung). Gespeichert werden diese erst, wenn der „Speichern“ geklickt wird
 
 ### Datei Format der importierten Datei
 
@@ -32,7 +32,7 @@ Sie können nun nach und nach die Files in den anderen Sprachen importieren. Sol
 Unterstützt werden die Dateien TXT und CSV (mittels Delimiter Untertrennung).
 
 
-Es reichen die Angaben Zeit, und Bezeichnung - eine Überschriftszeile darf nicht vorhanden sein (siehe Abbildung).
+Es reichen die Angaben Zeit, und Bezeichnung - eine Überschriftszeile darf nicht vorhanden sein.
 Die Delimiter Komma (,) und (Semikolon) ( ; ) werden unterstützt.
 
 

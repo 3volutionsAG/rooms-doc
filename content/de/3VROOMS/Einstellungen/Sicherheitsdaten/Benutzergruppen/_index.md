@@ -14,7 +14,7 @@ Benutzergruppen bearbeiten und suchen
 
 ### Benutzergruppen bearbeiten und neu hinzufügen
 
-Die Stammdaten, Personen und Notifikationen bearbeiten Sie, indem Sie auf das Stift Icon `Bearbeiten` auswählen. Wenn Sie eine Benutzergruppe neu hinzufügen möchten, klicken Sie auf den untenstehenden Button `Hinzufügen`.
+Die Stammdaten, Personen und Notifikationen bearbeiten Sie, indem Sie auf das Stift Icon `Bearbeiten` auswählen. Wenn Sie eine Benutzergruppe neu hinzufügen möchten, klicken Sie auf den untenstehenden Button `Erstellen`.
 
 In beiden Fällen öffnen sich die neuen Fenster zur Eingabe der Informationen.
 
@@ -36,9 +36,9 @@ Unter den Stammdaten der Benutzergruppe tragen Sie folgende Informationen ein:
 Eine Serie kann pro Benutzergruppe maximiert werden (z.B. 50 Iterationen). Die Maximierung erfolgt auf Iterationen oder Laufdauer unterteilt in Monate, Wochen, Tage.
 
 * Max. series duration yearly
-* Max. Seriendauer monatlich
-* Max. Seriendauer wöchentlich Serie
-* Max. Seriendauer täglich
+* Max. Seriedauer monatlich
+* Max. Seriedauer wöchentlich Serie
+* Max. Seriedauer täglich
 * Absolute Serienbegrenzung 1
 * Absolute Serienbegrenzung 2
 
@@ -72,11 +72,8 @@ Zusätzlich kann das Recht `Check-In-Delegation erzwingen` vergeben werden. Dadu
 
 Sie können einer Benutzergruppe eine oder mehrere Personen zuweisen. Haben Sie noch keine Personen einer Benutzerguppe hinzugefügt, sehen Sie diese auch nicht in der Liste.
 
-{{< imgproc Benutzergruppen_Personen_Ansicht Resize "960x" >}}
-Ansicht: Personen einer Benutzergruppe
-{{< /imgproc >}}
 
-Möchten Sie der Benutzerguppe Personen hinzufügen, klicken Sie auf den Button `Person hinzufügen`. Es öffnet sich ein Fenster, in dem Sie eine oder mehrere Personen auswählen über das aktivieren der Checkbox. Anschliessend klicken Sie auf den Button `hinzufügen`.
+Möchten Sie der Benutzerguppe Personen hinzufügen, klicken Sie auf den Button `Personen hinzufügen`. Es öffnet sich ein Fenster, in dem Sie eine oder mehrere Personen auswählen über das aktivieren der Checkbox. Anschliessend klicken Sie auf den Button `Personen hinzufügen`.
 
 {{< imgproc Benutzergruppen_Personen_hinzufügen Resize "960x" >}}
 Personen zu Benutzergruppen hinzufügen
@@ -84,9 +81,6 @@ Personen zu Benutzergruppen hinzufügen
 
 Die Liste aktualisiert sich automatisch. Sie sehen die ausgewählten Personen in der Liste.
 
-{{< imgproc Benutzergruppen_Personen_aktualisierte_Liste Resize "960x" >}}
-Ansicht der aktualisierten Personen in der Benutzergruppe
-{{< /imgproc >}}
 
 ### Notifikationen
 
@@ -114,14 +108,11 @@ Klicken Sie auf den Menü Reiter `Notifikationen`, wird Ihnen eine Liste aller g
 | Notifikationsplatzhalter | Neben dem Feld zur Eingabe der Email sehen Sie eine Liste mit Platzhaltern. Es steht eine Reihe von Platzhaltern zur Verfügung, welche zur Laufzeit mit dem entsprechenden Text abgefüllt werden. Platzhalter können im Titel (Subject) und im E-Mail Body verwendet werden. Die Werte werden immer in der aktuellen Benutzersprache abgefüllt. Auf Klick eines Platzhalters wird dieser an der aktuellen Stelle im Editor platziert. Die verfügbaren Platzhalter sind in Notifikationsplatzhalter ersichtlich. Klick auf einen Platzhalter fügt diesen an der aktuellen Cursor Position ein. Ist kein Cursor positioniert, wird der Platzhalter am Anfang des Body Textes eingefügt. Es ist immer nur eine Platzahlter Sektion gleichzeitig geöffnet. Die Platzhalter übernehmen die Formatierung des Body Editors.|
 {{< /bootstrap-table >}}
 
-{{< imgproc Benutzergruppen_Notifikationen_bearbeiten Resize "960x" >}}
-Benutzergruppen in der Liste bearbeiten
-{{< /imgproc >}}
 
 Sollten Sie keine Notifikationen in der Liste sehen, können Sie eine neue hinzufügen. Dafür klicken Sie auf den Button `hinzufügen`. Es öffnet sich das gleiche Feld mit den oben beschriebenen Funktionen.
 
 {{< imgproc Benutzergruppen_Notifikationen_hinzufügen Resize "960x" >}}
-Benutzergruppen hinzufügen
+Notifikation hinzufügen
 {{< /imgproc >}}
 
 #### Änderungen an Bestellungen im E-Mail anzeigen
@@ -177,4 +168,4 @@ Der allgemeine Block **Änderungsprotokoll** mit `[History]…[/History]` ist da
 1. Legen Sie die **Anzahl** der maximalen jährlichen, monatlichen, wöchentlichen und täglichen Serienbuchungen fest.
 2. Klicken Sie auf **Speichern**.
 
-{{< imgproc SerienBGbegrenzen_BGr Resize "960x" >}} {{< /imgproc >}}
+{{< imgproc SerienBGbegrenzen_BGr Resize "500x" >}} {{< /imgproc >}}

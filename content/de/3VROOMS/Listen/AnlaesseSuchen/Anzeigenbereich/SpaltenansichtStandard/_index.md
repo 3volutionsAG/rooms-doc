@@ -14,10 +14,6 @@ Folgende Tabelle zeigt die Spalten der Standardansicht auf:
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_ANL_ANLbearb Resize "1280x" >}}
-Eingabemaske um Anlass zu bearbeiten
-{{< /imgproc >}}
-
 Details zur Handhabung der Eingabemaske sind im Kapitel [Anlass erstellen](/3vrooms/listen/anlaessesuchen/anlasserstellen/) beschrieben.
 
 {{< bootstrap-table "table table-striped" >}}

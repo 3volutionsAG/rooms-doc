@@ -54,7 +54,6 @@ Der klassische Synchronisationstest ist vor allem für **EWS-basierte** Modi hil
 
 **Pfad:** `Personen` → betroffene Person → `Ansicht` → Tab **Synchronisationstest**
 
-{{< imgproc sync-test Resize "1024x" >}}{{< /imgproc >}}
 
 ### Ergebnis interpretieren
 
@@ -138,7 +137,7 @@ Prüfen Sie, ob folgende Endpunkte extern erreichbar sind:
 
 Unter `Listen` → `Buchungen` können Buchungen mit Synchronisationsproblemen gefiltert werden:
 
-{{< imgproc buchungen_mit_sync_problemen Resize "200x" >}}{{< /imgproc >}}
+{{< imgproc buchungen_mit_sync_problemen Resize "279x" >}}{{< /imgproc >}}
 
 {{< bootstrap-table "table table-striped" >}}
 | Filter | Bedeutung |

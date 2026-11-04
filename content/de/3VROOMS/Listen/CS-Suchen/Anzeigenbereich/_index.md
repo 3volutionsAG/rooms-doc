@@ -20,9 +20,9 @@ Standardmässig sind folgende Spalten sichtbar:
 |---|---|---|
 |Menge||Anzahl des bestellten Angebots|
 |Angebot Bezeichnung||Titel des Angebots|
-|Dienstleistender||Firma/Abteilung, welche den Service zur Verfügung stellt|
+|Dienstleister||Firma/Abteilung, welche den Service zur Verfügung stellt|
 |Lieferort||Standort/Raum, für welchen der Service bestellt wurde|
-|Beginn||Startdatum und -uhrzeit der Dienstleistung ; _Kann von Buchungsbeginn abweichen_|
+|Lieferung Bestellung||Startdatum und -uhrzeit der Dienstleistung ; _Kann von Buchungsbeginn abweichen_|
 |Titel||Titel der Buchung, zu welcher der Service gebucht wurde|
 |Notiz an Dienstleistende|{{< imgproc note Resize "40x" >}}{{< /imgproc >}}{{< imgproc List_CS_Anz_Notiz Resize "200x" >}}{{< /imgproc >}}|Klicken Sie auf das Symbol um eine Notiz an den Dienstleister zu lesen, einzutragen oder zu bearbeiten. Denken Sie daran, nach dem Bearbeiten auf _speichern_ zu klicken.|
 |Bestellung Nummer||Anzahl der Bestellungen, die für diese Buchung aufgegeben wurden|

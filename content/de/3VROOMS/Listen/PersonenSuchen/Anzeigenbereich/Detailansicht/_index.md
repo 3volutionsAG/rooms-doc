@@ -24,17 +24,10 @@ Weitere Informationen zur Eingabemaske finden Sie im Kapitel Einstellungen unter
 ## Filtereinstellungen zurücksetzen
 
 
-Nachdem Sie eine Suche durchgeführt haben, werden die Filtereinstellungen und die Anordnung der Spalten im Hintergrund gespeichert. Beim nächsten Aufruf der Suchmaske werden diese Einstellungen automatisch aufgerufen. Über diese Schaltfläche setzen Sie die gespeicherten Einstellungen auf die Standardeinstellungen zurück.
-
-{{< imgproc List_Pers_DS_FiltDel_b Resize "960x" >}}
-Zurücksetzen der automatisch gespeicherten Filter- und Spalteneinstellungen
-{{< /imgproc >}}
+Nachdem Sie eine Suche durchgeführt haben, werden die Filtereinstellungen und die Anordnung der Spalten im Hintergrund gespeichert. Beim nächsten Aufruf der Suchmaske werden diese Einstellungen automatisch aufgerufen. Über die Schaltfläche _Filtereinstellungen löschen_ setzen Sie die gespeicherten Einstellungen auf die Standardeinstellungen zurück.
 
 ## Drucken
 
 
 Sie können die Detailansicht für Ihre Unterlagen ausdrucken. Über die Schaltfläche öffnet sich das Drucker Dialogfenster.
 
-{{< imgproc List_Pers_DS_Druck_b Resize "960x" >}}
-Individuelles Drucker Dialogfenster
-{{< /imgproc >}}

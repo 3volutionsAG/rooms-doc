@@ -23,13 +23,9 @@ Es öffnet sich die Eingabemaske zur Erstellung eines Anlasses. Alle Details wer
 
 _Bitte achten Sie darauf das Datum anzupassen, da dieses auch übernommen wird._
 
-{{< imgproc List_ANL_DS_Copy Resize "960x" >}}
-Eingabemaske um einen kopierten Anlass zu bearbeiten und zu speichern
-{{< /imgproc >}}
-
 Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel [Anlass erstellen](/3vrooms/listen/anlaessesuchen/anlasserstellen/).
 
-### Anlass für Serien
+### Anlässe für Serien
 
 Neben der Möglichkeit einen Anlass für eine komplette Serie zu erstellen, gibt es an dieser Stelle auch die Möglichkeit je einen Anlass für die Serienbuchungseinträge zu erstellen. Hierzu muss bereits ein Anlass vorliegen und eine Serienbuchung enthalten sein. Die Stammdaten des ursprünglichen Anlasses werden in die Folgeanlässe kopiert. Ebenso werden Catering & Service Bestellungen sowie die Teilnehmenden übernommen.
 Sind mehrere Buchungen mit einem Anlass verbunden, so müssen alle Buchungen zeitlich identische (Wochentag und Uhrzeit) Serienbuchungen sein. Gebuchte Räume dürfen innerhalb einer Serie variieren.
@@ -40,15 +36,7 @@ Fehlermeldung: Nicht alle, dem Anlass zugeordneten Buchungen, sind Serienbuchung
 
 Sollten einzelne Buchungen zeitlich nicht synchron stattfinden (z.B. weil an einem Tag der gewünschte Raum erst später verfügbar sein sollte), so wird für diesen Tag kein Anlass erstellt. Das gleiche gilt für Buchungsserien, die nicht die gleiche Serienlänge haben.
 
-{{< imgproc List_ANL_DS_Serie_Error_b Resize "960x" >}}
-Hinweis, dass nicht alle Serienbuchungseinträge zu einem Anlass zusammen gefügt werden konnten
-{{< /imgproc >}}
-
 Konnten alle Serienbuchungselemente zu Anlässen zusammengeführt werden, erscheint eine entsprechende Bestätigung im Actionpanel.
-
-{{< imgproc List_ANL_DS_Serie_Best_b Resize "960x" >}}
-Bestätigung im Actionpanel, dass alle Serienbuchungselemente erfolgreich in je einem Anlass zusammengeführt werden konnten
-{{< /imgproc >}}
 
 _**Beispiel 1:**_
 **Anlass:** Teambesprechungen
@@ -81,10 +69,6 @@ Ausnahme: 27.10. 15:00-16:00 Uhr
 ### Drucken
 
 Sie haben die Möglichkeit die Detailansicht des Anlasses auszudrucken. Über die Schaltfläche _Drucken_ öffnet sich das Drucker Dialogfenster mit Ihren persönlichen und firmeninternen Voreinstellungen.
-
-{{< imgproc List_ANL_DS_Druck Resize "960x" >}}
-Drucker Dialogfenster um die Detailsansicht zum Anlass auszudrucken
-{{< /imgproc >}}
 
 ### Anlass stornieren
 

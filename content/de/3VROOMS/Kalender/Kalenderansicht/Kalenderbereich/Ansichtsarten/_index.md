@@ -29,9 +29,6 @@ Mithilfe des Datumspickers oder den Pfeiltasten wechseln Sie zwischen den Wochen
 Ansicht der Arbeitswoche im Kalender
 {{< /imgproc >}}
 
-{{< imgproc Kalender_Wochenansicht Resize "960x" >}}
-Ansicht der kompletten Woche im Kalender
-{{< /imgproc >}}
 
 ### Monatsansicht
 

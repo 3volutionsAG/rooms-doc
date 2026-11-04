@@ -26,11 +26,8 @@ Die maximale Iteration ist von zwei Konfigurationswerten abhängig. In den [Eins
 ### Begrenzungsmodell
 Es kann zwischen zwei verschiedenen Iterationsmodellen gewählt werden in den [Globalen Parametern](/3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen) [ModellSerieBegerenzung]. Als Standardwert wird das Zeitlichenmodel verwendet, welches Iteration auf eine bestimmte Anzahl Tage, Wochen oder Monate in die Zukunft begrenzt.
 
-{{< imgproc Detailbuchung_Serieninformation_MaxSerie Resize "960x" >}}
-Eingabe der Serienbegrenzung
-{{< /imgproc >}}
 
-Im obigen Screenshot wird die Serienbegrenzug auf das Datum 365 Tage in der Zukunft oder auf maximal 365 tägliche Iterationen gesetzt. Das gleiche gilt für Wochen, Monate und Jahre.
+Steht die Serienbegrenzung zum Beispiel auf 365, ist die Serie auf das Datum 365 Tage in der Zukunft oder auf maximal 365 tägliche Iterationen begrenzt. Das gleiche gilt für Wochen, Monate und Jahre.
 
 #### Beispiele
 
@@ -53,17 +50,10 @@ Bei den Serieneinstellungen kann angegeben werden, wie sich die Serie wiederholt
 
 Falls eine Serie täglich stattfinden soll, kann dies hier eingestellt werden. Es kann angegeben werden, wie viele Tage jeweils zwischen den Buchungen liegen sollen oder ob der Termin grundsätzlich an allen Wochentagen stattfinden soll.
 
-{{< imgproc DetailbuchungSerieninformation Resize "960x" >}}
-Eingabe tägliche Serieninformation
-{{< /imgproc >}}
-
 #### Wöchentlich
 
 In diesem Bereich kann eingestellt werden, in welchem wöchentlichen Abstand und an welchen Wochentagen die Buchungen erstellt werden sollen. Der Wochentag, an welchem die Serie startet, ist dabei bereits vorselektiert und kann nicht verändert werden (das System gibt eine Fehlermeldung aus).
 
-{{< imgproc Detailbuchung_Serieninformation_wächentlich Resize "960x" >}}
-Eingabe wöchentliche Serieninformation
-{{< /imgproc >}}
 
 #### Monatlich
 
@@ -129,9 +119,9 @@ Bei Bedarf kann eine Serie angepasst werden. Sollen bei einer Serie mit 5 Iterat
 2.	Mit Klick auf das **+**-Icon öffnet sich ein Fenster und man klickt den Button **Bearbeiten**.
 3.	Aktivieren der Checkbox **Auf nachfolgende Serieneinträge übernehmen** unten in der Ansicht.
 4.	Durch Eingabe der gewünschten Startzeit, Reservation um eine halbe Stunde vorziehen. Bestätigung durch grünes Häkchen erfolgt.
-5.	Klick auf **Reservation abschliessen**.
+5.	Klick auf **Buchung abschliessen**.
 6.	Seite mit Zusammenfassung wird ausgegeben, darauf ist die Änderung der Zeiten für die beiden letzten Termine ersichtlich.
-7.	Klick auf **Reservation bestätigen**. Die Teilnehmer der Serie erhalten für die bearbeiteten Termine zuerst einzelne Absagen und danach für den bearbeiteten Teil der Serie eine einzelne neue Einladung.
+7.	Klick auf **Buchung bestätigen**. Die Teilnehmer der Serie erhalten für die bearbeiteten Termine zuerst einzelne Absagen und danach für den bearbeiteten Teil der Serie eine einzelne neue Einladung.
 
 Die Checkbox _Auf nachfolgende Serieneinträge übernehmen_ ist nur im Bearbeitungsmodus vorhanden und übernimmt mit ihrer Aktivierung alle Änderungen der aktuellen Reservation auf alle künftigen Reservationen dieser Serie.
 
@@ -198,15 +188,9 @@ Dieses Standardverhalten kann ab der Version `4.7.2107` überschrieben werden:
 
 Bei der Serienerstellung erscheint nun ein Dropdown, bei welchem ausgewählt werden kann, welche Zeitzone als Berechnungsgrundlage genutzt werden soll.
 
-{{< imgproc Detailbuchung_Serieninformation_Zeitzone Resize "960x" >}}
-Auswahl der Zeitzone für die Erstellung der Serie.
-{{< /imgproc >}}
 
 Zudem kann in den Profileinstellungen einer Person im Tab `Stammdaten` kann die Standard Zeitzonen Quelle definiert werden.
 
-{{< imgproc Detailbuchung_Serieninformation_Zeitzone_PersonSettings Resize "960x" >}}
-Auswahl der Standard Zeitzonen Quelle für Person
-{{< /imgproc >}}
 
 ### Berechnungsbeispiel
 

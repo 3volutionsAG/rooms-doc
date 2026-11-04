@@ -7,7 +7,7 @@ description: 'Fügen Sie in den Einstellungen zur Oberfläche Themenlisten hinzu
 
 Im linken Bereich sehen Sie das Sidepanel mit den Filterfunktionen.
 Im rechten Feld sehen Sie die Themenliste. Sind keine Themen gespeichert, ist die Liste leer.
-Sie können Themen aus der Liste löschen, indem Sie die Checkbox neben dem Listenelement aktivieren und auf den Button _Entfernen_ klicken.
+Sie können Themen aus der Liste löschen, indem Sie die Checkbox neben dem Listenelement aktivieren und auf den Button _Löschen_ klicken.
 
 {{< imgproc Oberfläche_bearbeiten Resize "960x" >}}
 Themenlisten auf der Oberfläche bearbeiten und durchsuchen
@@ -53,9 +53,6 @@ Unterstützte Formate:
 * JPG, JPEG, PNG, GIF
 * ZIP (beinhaltet alle Themenfiles)
 
-{{< imgproc Oberfläche_Stammdaten Resize "960x" >}}
-Themenlisten auf der Oberfläche bearbeiten und durchsuchen
-{{< /imgproc >}}
 
 
 

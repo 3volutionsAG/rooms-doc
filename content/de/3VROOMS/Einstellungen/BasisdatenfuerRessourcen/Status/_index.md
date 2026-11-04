@@ -54,16 +54,8 @@ Folgende Haupt Reservation-Status gibt es (System, bzw. Workflow Status)
 ### Status ansehen
 Klicken Sie auf das Icon "Auge": Sie können hier die gespeicherten Informationen zum Status ansehen und über den untenstehenden Button "bearbeiten" auch bearbeiten.
 
-{{< imgproc Status_ansehen Resize "1280x" >}}
-Abbildung sb: Die Informationen eines Status einsehen und ggf. bearbeiten
-{{< /imgproc >}}
-
 ### Status bearbeiten
 Klicken Sie auf das Stift Icon, können Sie die bestehenden Informationen zum Status bearbeiten. Es öffnet sich dazu ein neues Feld.
-
-{{< imgproc Status_bearbeiten2 Resize "1280x" >}}
-Abbildung sc: EInen bestehenden Status bearbeiten
-{{< /imgproc >}}
 
 Speichern Sie Ihre geänderten Angaben über den untenstehenden Button "speichern".
 
@@ -91,7 +83,3 @@ Beispiele von bekannte individuelle Status, welche an einem System Status angeh�
 * Reinigung
 
 Den hinzugefügten Status sehen Sie in der Übersicht. Über das kleine Plus Zeichen am System Status können Sie diesen aufklappen.
-
-{{< imgproc Status_gespeichert_in_tree Resize "1280x" >}}
-Abbildung se: Ansicht des hinzugefügten Status
-{{< /imgproc >}}
