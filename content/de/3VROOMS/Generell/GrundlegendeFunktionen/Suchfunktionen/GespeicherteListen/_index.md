@@ -15,7 +15,7 @@ Schritte um ausgewählte Filter zu speichern
 
 ## Unter einem bestehenden Namen speichern
 
-Speichern Sie im gleichen Suchbereich unter dem Namen einer eigenen Liste, werden deren Einstellungen aktualisiert. Eine gleichnamige globale Liste bleibt dabei unverändert.
+Wenn Sie im gleichen Suchbereich unter dem Namen einer eigenen Liste speichern, aktualisieren Sie deren Einstellungen. Eine gleichnamige globale Liste bleibt dabei unverändert.
 
 Mit dem globalen Recht **Darf globale Filter editieren** können Sie auch eine globale Liste überschreiben, wenn keine eigene Liste mit diesem Namen vorhanden ist. Ohne dieses Recht wird eine eigene Liste gespeichert.
 

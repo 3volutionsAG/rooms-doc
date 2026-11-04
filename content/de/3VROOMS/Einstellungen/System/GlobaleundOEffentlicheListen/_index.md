@@ -20,7 +20,7 @@ Entfernen von _globalen_ Listen
 **Unterschied zwischen _globalen_ und _öffentlichen_ Listen**:
 
 * eine öffentliche Liste gehört einer Person. Diese Person ist der Owner und kann die Liste jederzeit verändern. Jeder Benutzer kann über das Abonnementen System selber entscheiden ob er eine _public_ Liste nutzen will.
-* Globale Listen haben keinen Besitzer und stehen allen Benutzern in der Auswahl der gespeicherten Listen zur Verfügung. Sie werden unter **Globale und öffentliche Listen** verwaltet. Mit dem globalen Recht **Darf globale Filter editieren** können ihre Filtereinstellungen auch im Speicherdialog einer Suche überschrieben werden, sofern keine eigene gleichnamige Liste vorhanden ist. Beachten Sie dazu die Hinweise unter [Gespeicherte Listen]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/Suchfunktionen/GespeicherteListen/_index.md#unter-einem-bestehenden-namen-speichern" >}}).
+* Globale Listen haben keinen Besitzer und stehen allen Benutzern in der Auswahl der gespeicherten Listen zur Verfügung. Sie werden unter **Globale und öffentliche Listen** verwaltet. Mit dem globalen Recht **Darf globale Filter editieren** können Sie auch im Speicherdialog einer Suche die Filtereinstellungen einer globalen Liste überschreiben, sofern Sie keine eigene gleichnamige Liste haben. Beachten Sie dazu die Hinweise unter [Gespeicherte Listen]({{< relref "3VROOMS/Generell/GrundlegendeFunktionen/Suchfunktionen/GespeicherteListen/_index.md#unter-einem-bestehenden-namen-speichern" >}}).
 
 Listenart
 
