@@ -28,13 +28,15 @@ export default async function ({ page, go, shot, mark }) {
   await page.locator('#JobmanagerCheckVerfuegbarkeit').click();
   await page.waitForFunction(() => document.querySelectorAll('#LektionList .verfuegbarkeitGeprueft').length >= 12, null, { timeout: 120000 });
   await page.waitForTimeout(500);
-  // Säntis (gelb) soll sichtbar sein, deshalb die Liste ans Ende rollen.
-  await page.locator('tr', { hasText: 'Töss' }).scrollIntoViewIfNeeded();
-  await page.waitForTimeout(300);
+  // Höheres Fenster, damit alle zwölf Räume ohne Scrollen sichtbar sind und keine Zeile abgeschnitten wird.
+  await page.setViewportSize({ width: 1280, height: 960 });
+  await page.waitForTimeout(600);
   await shot(`${J}/Ressourcenwahl/Jobmanager_Ressourcenwahl.jpg`);
   await mark(page.locator('label', { hasText: /^Gewünschte Ressourcen$/ }).locator('xpath=..'));
   await mark(page.locator('label', { hasText: /^Präferenzen/ }).locator('xpath=..'));
   await shot(`${J}/Ressourcenwahl/Jobmanager_Ressourcenwahl_OhnePraeferenz.jpg`);
+  await page.setViewportSize({ width: 1280, height: 768 });
+  await page.waitForTimeout(300);
 
   // Detailprüfung für den Raum mit Konflikten
   await page.locator('tr', { hasText: 'Mönch' }).getByRole('button', { name: 'Details' }).click();

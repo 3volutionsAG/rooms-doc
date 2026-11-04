@@ -22,6 +22,7 @@ Die Logins `admin` (Systemadministrator), `thomas.meier` (SuperUser), `sandra.fr
 
 - Alle Szenen: `node run.mjs`
 - Eine Szene: `node run.mjs kalender`
+- Grüner Synchronisationstest: `node sync-test.mjs`. Er läuft nicht auf der Demo-Instanz, sondern braucht echtes Exchange und die Umgebung aus `.shared/skills/sync-e2e` im `rooms`-Repo.
 
 Die Buchungen des Seeds liegen auf dem Einspieldatum zwischen 08:00 und 17:00 Uhr. Am besten läuft alles am Vormittag des Seed-Tags, sonst zeigen manche Bilder andere Zustände. Die Szenen `generell` und `buchen-kalender-plan-kalender` hängen davon besonders ab. Einige Szenen brauchen die gebauten `dist`-Ordner von `quickrooms` und `onsite-rooms`.
 

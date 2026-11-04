@@ -9,7 +9,8 @@ export const REPO = path.resolve(here, '..', '..');
 export const CONTENT = path.join(REPO, 'content', 'de');
 
 // Playwright kommt aus dem rooms-Repo (e2e/calendar-sync), damit dieses Repo keine eigene Abhängigkeit braucht.
-const ROOMS_REPO = process.env.ROOMS_REPO ?? path.resolve(REPO, '..', '..', 'rooms');
+const sibling = path.resolve(REPO, '..', 'rooms');
+export const ROOMS_REPO = process.env.ROOMS_REPO ?? (existsSync(sibling) ? sibling : path.resolve(REPO, '..', '..', 'rooms'));
 const require = createRequire(path.join(ROOMS_REPO, 'e2e', 'calendar-sync', 'package.json'));
 export const { chromium } = require('@playwright/test');
 
