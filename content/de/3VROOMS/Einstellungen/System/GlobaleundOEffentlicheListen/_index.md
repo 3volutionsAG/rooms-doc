@@ -50,9 +50,6 @@ Mehr Information finden Sie hierzu im Kapitel [Listen](/3vrooms/listen/).
 
 Fahren Sie mit dem Mauszeiger über das Listenelement und klicken Sie darauf. Sie sehen nun die eingetragenen Daten und können diese bei Bedarf auch bearbeiten.
 
-{{< imgproc Globale_Daten_einsehen Resize "960x" >}}
-Globale und öffentliche Listen: Daten einsehen
-{{< /imgproc >}}
 
 ## Globale und öffentliche Listen bearbeiten
 
@@ -65,9 +62,6 @@ Die Elemente aus der Liste bearbeiten Sie, indem Sie auf das Stift Icon klicken.
 
 **Hinweis zu Besitzer**: ist eine Person erfasst, handelt es sich um eine _Public_ Liste der erfassten Person. Ist keine Person erfasst, handelt es sich um eine _Globale_ Liste.
 
-{{< imgproc Globale_Daten_bearbeiten Resize "960x" >}}
-Globale und öffentliche Listen: Stammdaten bearbeiten
-{{< /imgproc >}}
 
 
 

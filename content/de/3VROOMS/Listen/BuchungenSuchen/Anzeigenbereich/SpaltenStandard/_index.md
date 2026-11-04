@@ -12,34 +12,28 @@ Tabelle: Übersicht und Erläuterung der standardmässig angezeigten Spalten
 |Von||Wochentag, Datum und Uhrzeit des Startzeitpunktes der Buchung|
 |Bis||Wochentag, Datum und Uhrzeit des Endzeitpunktes der Buchung|
 |Organisator:in||Person, welche die Buchung organisiert|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}| Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen. ; _Das Symbol steht immer in der zweiten Spalte_|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}| Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen.|
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_BG_Anzeige_BGbearbeiten Resize "960x" >}}
-Eingabemaske, um Buchungen zu bearbeiten
-{{< /imgproc >}}
 
 Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel [Buchung erstellen](/3vrooms/buchen/buchungerstellen/)
 
 {{< bootstrap-table "table table-striped" >}}
 |Spalte|Symbol|Anmerkungen|
 |---|---|---|
-|Firma ; Bezeichnung Organisator||Firma der organisierenden Person|
+|Organisation ; Bez. Organisator||Firma der organisierenden Person|
 |Buchungs Titel|| Mit einem Klick auf den Buchungstitel öffnen Sie die Detailansicht. |
 {{< /bootstrap-table >}}
 ---
 
-{{< imgproc List_BG_Anzeige_Detailansicht Resize "960x" >}}
-Detailansicht einer Buchung
-{{< /imgproc >}}
 
 Weitere Informationen zur Detailansicht und Bearbeitungsmöglichkeiten finden Sie im Unterkapitel [Detailansicht Buchungen](/3vrooms/listen/buchungensuchen/anzeigenbereich/detailansichtbuchungen/)
 
 {{< bootstrap-table "table table-striped" >}}
 |Spalte|Symbol|Anmerkungen|
 |---|---|---|
-|Ressourcen Bezeichnung||_z.B. Name des Raumes, Druckerbezeichnung_|
+|Ressource Bezeichnung||_z.B. Name des Raumes, Druckerbezeichnung_|
 |Anzahl Personen||Anzahl der angemeldeten Personen|
 |Mobiles Equipment|{{< imgproc List_BG_Anzeige_SymMobEqu Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTMobEqu Resize "200x" >}}{{< /imgproc >}}| zugebuchtes Equipment, welches der Ressource nicht permanent zugeordnet ist ; _z.B. ein mobiler Beamer für einen Besprechnungsraum_ |
 |Catering & Service|| Name des Dienstleisters und gebuchte Leistungen mit Angabe der Lieferzeit und -ort  _z.B. Kaffee oder Bestuhlung_|

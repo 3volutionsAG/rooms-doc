@@ -42,10 +42,6 @@ Mit der Toolleiste können Sie einen bereits bestehenden Standort bearbeiten, di
 Mit Klick auf das entsprechende Icon öffnet sich das Feld, in welchem Sie die Informationen für einen neuen Unterstandort eintragen können.
 Untenstehend finden Sie die Beschreibungen zu den einzelnen Feldern.
 
-{{< imgproc Standort_hinzufügen Resize "960x" >}}
-Unterstandort zu Hauptstandort hinzufügen
-{{< /imgproc >}}
-
 ### Informationen und Daten zu Standort einsehen
 
 

@@ -15,7 +15,7 @@ Ansicht der Anlasstypen in Rooms
 {{< /imgproc >}}
 
 
-Über das Aktivieren der Checkbox können Sie ein Listenelement über den Button _Entfernen_ löschen.
+Über das Aktivieren der Checkbox können Sie ein Listenelement über den Button _Löschen_ löschen.
 
 ### Anlasstypen durchsuchen
 
@@ -39,7 +39,7 @@ Anlasstypen Daten einsehen
 ## Anlasstypen bearbeiten
 
 
-Einen neuen Anlasstypen erstellen Sie über den untenstehenden Button _Erstellen_. Einen bereits bestehenden Anlasstypen bearbeiten Sie, indem Sie auf das Stift Icon neben dem Anlasstypen in der Liste klicken. In beiden Fällen öffnet sich ein Feld, in dem Sie folgende Daten festlegen:
+Einen neuen Anlasstypen erstellen Sie über den untenstehenden Button _Hinzufügen_. Einen bereits bestehenden Anlasstypen bearbeiten Sie, indem Sie auf das Stift Icon neben dem Anlasstypen in der Liste klicken. In beiden Fällen öffnet sich ein Feld, in dem Sie folgende Daten festlegen:
 
 * die Stammdaten
 * Buchungsanfragen
@@ -48,7 +48,7 @@ Einen neuen Anlasstypen erstellen Sie über den untenstehenden Button _Erstellen
 
 Die neu eingetragenen Daten speichern Sie über den untenstehenden Button _Speichern_.
 
-### Stammdaten der Raumeinheit bearbeiten
+### Stammdaten des Anlasstypen bearbeiten
 
 
 Die folgenden Stammdaten können Sie ändern und bearbeiten:
@@ -65,7 +65,7 @@ Die folgenden Stammdaten können Sie ändern und bearbeiten:
 Die geänderten Daten speichern Sie über den untenstehenden Button _Speichern_. Das Actionpanel bestätigt die Speicherung und springt zurück auf den Ursprungsort
 
 {{< imgproc Anlasstypen_Stammdaten Resize "960x" >}}
-Stammdaten der Raumeinheiten bearbeiten
+Stammdaten der Anlasstypen bearbeiten
 {{< /imgproc >}}
 
 ### Buchungsanfrage bearbeiten
@@ -93,10 +93,6 @@ Buchungsanfragen zum Anlasstypen bearbeiten
 
 Bereits zugewiesene Benutzergruppen sehen Sie im rechten Feld. DIese können Sie über dei Checkbox auswählen und entfernen. Dazu klicken Sie auf den untenstehenden Button _Entfernen_. Die Liste aktualisiert sich automatisch.
 
-{{< imgproc Anlasstypen_Benutzergruppen Resize "960x" >}}
-zugewiesene Benutzergruppen beim Anlasstyp
-{{< /imgproc >}}
-
 
 Fügen Sie eine neue Benutzergruppe hinzu, indem Sie auf den Button _Hinzufügen_ klicken. In dem neuen Feld können Sie eine oder mehrere Benutzergruppen über die Checkbox auswählen. Speichern Sie Ihre Auswahl über den Button _Hinzufügen_.
 
@@ -107,26 +103,15 @@ Benutzergruppen zum Anlasstypen hinzufügen
 
 Die Liste aktualisiert sich automatisch und Sie sehen Ihre Auswahl in der Benutzergruppenliste.
 
-{{< imgproc Anlasstypen_Benutzergruppen_in_Liste Resize "960x" >}}
-Benutzergruppen in aktualisierter Liste
-{{< /imgproc >}}
 
 ## Einen neuen Anlasstypen erstellen
 
 
-Einen neuen Anlasstypen erstellen Sie über den untenstehenden Button _Erstellen_. In dem Feld, welches sich öffnet, tragen Sie die oben beschriebenen Daten ein.
+Einen neuen Anlasstypen erstellen Sie über den untenstehenden Button _Hinzufügen_. In dem Feld, welches sich öffnet, tragen Sie die oben beschriebenen Daten ein.
 
 * Stammdaten
 * Buchungsanfragen
 * Benutzergruppen
 
-{{< imgproc Anlasstypen_neu_hinzufügen Resize "960x" >}}
-Neuen Anlasstyp erstellen
-{{< /imgproc >}}
-
 
 Speichern Sie Ihre Eingaben über den untenstehenden Button _Speichern_. Die Liste aktualisiert sich automatisch und Sie sehen den gespeicherten Anlasstyp in der Liste.
-
-{{< imgproc Anlasstypen_neu_in_Liste Resize "960x" >}}
-Neuer Anlasstyp in aktualisierter Liste
-{{< /imgproc >}}

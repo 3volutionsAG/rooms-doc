@@ -17,7 +17,7 @@ Ist eine Buchung ausgewählt, werden die Schaltflächen aktiviert
 Über die Schaltfläche _Anlass erstellen_ öffnet sich die Eingabemaske zur Schnellbuchung für Anlässe. Sie können nun einen Anlass erstellen, dem die ausgewählte Buchung zugeordnet wird.
 
 {{< imgproc List_BG_Anzeige_weitFkt_AnlErst_beschriftet Resize "960x" >}}
-Über die Schaltfläche "Anzeige erstellen" öffnet sich das Fenster für die Schnellbuchung eines Anlasses
+Über die Schaltfläche "Anlass erstellen" öffnet sich das Fenster für die Schnellbuchung eines Anlasses
 {{< /imgproc >}}
 
 Eine genaue Beschreibung zum Erstellen eines Anlasses  finden Sie im Kapitel [Anlass erstellen](/3vrooms/listen/anlaessesuchen/anlasserstellen/).
@@ -26,9 +26,6 @@ Eine genaue Beschreibung zum Erstellen eines Anlasses  finden Sie im Kapitel [An
 
 Über "Bearbeiten" kommen Sie auf die Eingabemaske der Detailbuchung. Dort können Sie die Buchung bearbeiten und ändern.
 
-{{< imgproc List_BG_Anzeige_weitFkt_BGbearbeiten Resize "960x" >}}
-Eingabemaske zur Bearbeitung einer Buchung
-{{< /imgproc >}}
 
   Eine genaue Beschreibung der Eingabemaske finden sie im Kapitel [Buchung erstellen](/3vrooms/buchen/buchungerstellen/)
 
@@ -46,17 +43,14 @@ Dialogfenster zur Schaltfläche "Freigeben"
 Die Schaltfläche _Terminieren_ bezieht sich nur auf eine laufende Buchungen. Markieren Sie ein laufende Buchung und klicken Sie auf _Terminieren_, um die Buchung zu beenden. Es erscheint ein Dialogfenster mit der Überschrift _Massenterminierung_. Dieser Titel bezieht sich auf die Möglichkeit, mehrere laufende Buchungen zu markieren und in einem Zug zu terminieren.
 Die Nachlaufzeit bleibt in diesem Fall bestehen. Die Buchungsdauer wird minutengenau gespeichert.
 
-{{< imgproc List_BG_Anzeige_weitFkt_term_beschriftet Resize "960x" >}}
-Dialogfenster zur Schaltfläche "Terminieren"
-{{< /imgproc >}}
 
 ### Annullieren
 
 Über die Schaltfläche _Annullieren_ löschen Sie eine Buchung aus dem Kalender. Die Buchung bleibt jedoch über die Suchfunktionen einsehbar.
-Markieren Sie ein Buchung und klicken Sie auf _Annulieren_, um die Buchung zu löschen. Dabei können Stornierungskosten anfallen. Die Buchung wird dabei aus dem Kalender gelöscht, kann jedoch weiterhin über die Suchfunktionen aufgerufen werden.
-Es erscheint ein Dialogfenster mit der Überschrift _Massenannulierung_. Dieser Titel bezieht sich auf die Möglichkeit mehrere Buchungen zu markieren und in einem Zug zu annullieren.
+Markieren Sie ein Buchung und klicken Sie auf _Annullieren_, um die Buchung zu löschen. Dabei können Stornierungskosten anfallen. Die Buchung wird dabei aus dem Kalender gelöscht, kann jedoch weiterhin über die Suchfunktionen aufgerufen werden.
+Es erscheint ein Dialogfenster mit der Überschrift _Massenannullierung_. Dieser Titel bezieht sich auf die Möglichkeit mehrere Buchungen zu markieren und in einem Zug zu annullieren.
 
-Bei ausreichender Berechtigung zeigt der Dialog zusätzlich die Auswahl **Verrechnung**. Damit legen Sie fest, wie ROOMS die Kosten der annullierten Buchung behandelt:
+Annullieren Sie eine einzelne Buchung über das Symbol in der Liste oder in der Detailansicht, zeigt der Dialog bei ausreichender Berechtigung und bestehender Zahlung zusätzlich die Auswahl **Verrechnung**. Damit legen Sie fest, wie ROOMS die Kosten der annullierten Buchung behandelt:
 
 {{< bootstrap-table "table table-striped" >}}
 | Option | Bedeutung |
@@ -73,7 +67,7 @@ Die Verrechnungsoptionen stehen auch beim Annullieren einer Serie zur Verfügung
 {{% /alert %}}
 
 {{< imgproc List_BG_Anzeige_weitFkt_ann_beschriftet Resize "960x" >}}
-Dialogfenster zur Schaltfläche _Annulieren_
+Dialogfenster zur Schaltfläche _Annullieren_
 {{< /imgproc >}}
 
 ### Aktualisieren
@@ -87,6 +81,3 @@ Dialogfenster zur Schaltfläche "Aktualisieren"
 
 Im Actionpanel werden Sie benachrichtigt, wenn die Aktualisierung abgeschlossen ist.
 
-{{< imgproc List_BG_Anzeige_weitFkt_Akt_ActPan_beschriftet Resize "960x" >}}
-Bestätigung im Actionpanel über die erfolgreich durchgeführte Aktualisierung
-{{< /imgproc >}}

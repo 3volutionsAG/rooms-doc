@@ -31,9 +31,5 @@ Ihre Liste im Menü Gruppen aktualisiert sich automatisch und zeigt Ihnen nun al
 
 Im Startmenü unter Einstellungen - Persönliche Einstellungen -Person haben Sie alle Ihre Informationen zur Person als Übersicht. Dort finden Sie ebenfalls eine Übersicht über Ihre Gruppen. Diese können Sie aus dem Start heraus bearbeiten.
 
-{{< imgproc Gruppen_Ansicht_PI Resize "960x" >}}
-Informationen Ansicht im Überblick Start
-{{< /imgproc >}}
-
 
 

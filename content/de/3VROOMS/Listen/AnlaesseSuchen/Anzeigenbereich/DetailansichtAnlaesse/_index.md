@@ -14,10 +14,6 @@ Detailansicht eines Anlasses
 
 Der Anzeigenbereich ist in "Anlass", "Anlass Kalender" und "Historik" aufgeteilt. Diese Kategorien erreichen Sie über die Reiter am oberen Rand des Anzeigenbereichs.
 
-{{< imgproc List_ANL_DS_Reiter Resize "1280x" >}}
-Reiter "Anlass", "Anlass Kalender" und "Historik" der Detailansicht
-{{< /imgproc >}}
-
 ## Schaltflächen
 
 Die Schaltflächen zur Anlassverwaltung am unteren Rand des Anzeigenbereichs werden im Unterkapitel [Reiter Anlass](/3vrooms/listen/anlaessesuchen/anzeigenbereich/detailansichtanlaesse/anlass/schaltflaechen/) beschrieben.

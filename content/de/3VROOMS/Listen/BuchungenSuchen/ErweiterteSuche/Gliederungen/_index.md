@@ -26,8 +26,8 @@ Beispiel:
 {{< /imgproc >}}
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Raumtyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_Raumtyp Resize "200x" >}}{{< /imgproc >}}| Über die Schnellauswahl wählen Sie einen Raumtypen aus (z.B. einen Sitzungssaal), um alle Buchungen, die in diesem Raumtyp stattfinden, anzeigen zu lassen. |
-|Raum: Equipmenttyp|{{< imgproc Listen_Buchungen_ErweiterteSuche_Glied_RaumEquiptyp Resize "200x" >}}{{< /imgproc >}}| Über die Schnellauswahl wählen Sie einen Equipmentyp (z.B. die Anzahl der Beamer), um alle Buchungen anzeigen zu lassen, in welchen 2 Beamer verwendet werden. |
+|Feld|Funktion|
+|---|---|
+|Raumtyp| Über die Schnellauswahl wählen Sie einen Raumtypen aus (z.B. einen Sitzungssaal), um alle Buchungen, die in diesem Raumtyp stattfinden, anzeigen zu lassen. |
+|Raum: Equipmenttyp| Über die Schnellauswahl wählen Sie einen Equipmentyp (z.B. die Anzahl der Beamer), um alle Buchungen anzeigen zu lassen, in welchen 2 Beamer verwendet werden. |
 {{< /bootstrap-table >}}

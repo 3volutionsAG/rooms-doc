@@ -7,7 +7,7 @@ description: 'Suchen Sie Ihre Ressource nach Kriterien wie z.B. Datum, Zeit oder
 Das Startfenster unter der Kategorie _Buchen_ ist in zwei Bereiche eingeteilt. Im linken Bereich sehen Sie das Sidepanel. In diesem Panel stellen Sie die Kriterien für die Suche ein und erweitern oder schränken diese ein.
 Im rechten Bereich sehen Sie die Suchresultate (meistens in Listenform).
 
-Wenn Sie die Kriterien gemäss den eigenen Wünschen und Präferenzen eingestellt haben, können Sie die Suchresultate mit dem Button _Finden_ im rechten Fensterbereich aktualisieren.
+Wenn Sie die Kriterien gemäss den eigenen Wünschen und Präferenzen eingestellt haben, können Sie die Suchresultate mit dem Button _Finden_ unten im Sidepanel aktualisieren.
 
 {{< imgproc Freie_Ressourcen_suchen_nach_Kriterien Resize "960x" >}}
 Freie Ressourcen nach Kriterien durchsuchen
@@ -25,9 +25,6 @@ Folgende Tabelle erläutert die Suchfunktionen im Sidepanel
 | Standort                  | Mittels Standort kann eingeschränkt werden, wo sich die Ressource geografisch befinden soll. Standardmässig wird hier der vom Benutzer eingestellte Standard-Standort angezeigt. Falls in diesem Feld nichts steht, wird global über alle Standorte gesucht. Mittels des Buttons **+** kann der Standortbaum angezeigt und der entsprechende Standort ausgewählt werden. Falls der Standort bekannt ist, beispielsweise _VZA1_, kann dies im Textfeld eingegeben werden. ROOMS schlägt dann direkt Standorte vor, welche auf diese Eingabe passen könnten.  |
 {{< /bootstrap-table >}}
 
-{{< imgproc FR_suchen_Ressourcen Resize "960x" >}}
-Freie Ressourcen im Sidepanel suchen
-{{< /imgproc >}}
 
 ### Erweiterte Kriterien
 
@@ -57,17 +54,11 @@ Welche Gliederungstypen und Gliederungen zur Auswahl stehen, richtet sich nach d
 | Raum: Equipmenttyp   | Mittels _Plus Symbol_ wählen Sie den zur Verfügung stehenden Equipmenttyp aus. |
 {{< /bootstrap-table >}}
 
-{{< imgproc FR_suchen_Gliederung Resize "960x" >}}
-Suche nach freien Ressourcen mittels Gliederung einschränken
-{{< /imgproc >}}
 
 ## Anlass
 
 Sie erweitern das Sidepanel und finden darunter den Reiter _Anlass_. Wenn bestimmte Anlässe gespeichert sind, können Sie die zur Verfügung stehenden Ressourcen nach einem Anlass durchsuchen.
 
-{{< imgproc FR_suche_Anlass Resize "960x" >}}
-Freie Ressourcen nach einem Anlass durchsuchen oder einen Anlass erstellen
-{{< /imgproc >}}
 
 Möchten Sie selber einen Anlass erstellen, tun Sie dies, indem Sie auf den Button _erstellen_ klicken. Es öffnet sich ein neues Feld. Hier geben Sie alle Informationen zum Anlass ein. SIe speichern den Anlass über den untenstehenden Button `Speichern`.
 
@@ -81,6 +72,3 @@ Erweitern Sie das Sidepanel weiterhin, finden Sie den Reiter Buchungsanfragen.
 
 Hier durchsuchen Sie die Ressourcen nach bestehenden Buchungsanfragen.
 
-{{< imgproc FR_suchen_Buchungsanfrage Resize "960x" >}}
-Freie Ressourcen aufgrund von Buchungsanfragen suchen
-{{< /imgproc >}}

@@ -50,22 +50,10 @@ Sie können eine neue Bestuhlung zur Liste hinzufügen, indem Sie auf den untens
 
 Sie bestätigen Ihre Eingabe über den Button _Speichern_.
 
-{{< imgproc Bestuhlung_hinzufügen Resize "960x" >}}
-Neue Bestuhlung hinzufügen
-{{< /imgproc >}}
-
 Die Liste aktualisiert sich automatisch und Sie sehen die neu hinzugefügte Bestuhlung in der Liste.
-
-{{< imgproc Bestuhlung_neu_hinzugefügt_Liste Resize "960x" >}}
-Aktualisierte Liste mit neuem Bestuhlungselement
-{{< /imgproc >}}
 
 ### Bestuhlung: Daten einsehen
 
 
-Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Bestuhlung und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Bestuhlung. Dort sehen Sie die Stammdaten der Bestuhlung und die Historie. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Personenliste.
-
-{{< imgproc Bestuhlung_Daten_einsehen Resize "960x" >}}
-Bestuhlung:Daten einsehen und bearbeiten
-{{< /imgproc >}}
+Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Bestuhlung und klicken Sie auf diesen. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Bestuhlung. Dort sehen Sie die Stammdaten der Bestuhlung und die Historie. Über den untenstehenden Button _Bearbeiten_ können Sie diese Daten auch aus diesem Feld heraus bearbeiten oder drucken. Mit dem Zurück-Button gelangen Sie zurück zur Bestuhlungsliste.
 

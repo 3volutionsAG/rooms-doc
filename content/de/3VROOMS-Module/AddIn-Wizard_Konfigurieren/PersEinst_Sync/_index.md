@@ -24,7 +24,7 @@ Die Aktivierung erfolgt in zwei Schritten:
 
 1. Klicken Sie in der Menüzeile auf **Einstellungen**.
 2. Wählen Sie im Sidepanel **Persönliche Einstellungen**.
-3. Setzen Sie im Reiter **Personen-Informationen** die passenden Parameter:
+3. Setzen Sie im Reiter **Stammdaten** die passenden Parameter:
 
 #### Variante A: klassische EWS-basierte O365-Umgebung
 

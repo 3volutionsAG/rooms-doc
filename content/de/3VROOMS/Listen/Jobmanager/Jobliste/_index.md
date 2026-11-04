@@ -18,7 +18,7 @@ Folgende Felder sind in der Praxis relevant:
 |---|---|
 | Bildungszentrum | Definiert den Standort, für den Jobs angezeigt werden sollen. Ohne passenden Standort erscheinen keine Jobs. |
 | Klasse / Veranstaltung | Zusätzlicher Filter für die Jobliste, verfügbar mit erweiterter Jobmanager-Funktionalität. |
-| Zeitraum von / bis | Grenzt die angezeigten Jobs zeitlich ein. |
+| Datum/Zeit von / bis | Grenzt die angezeigten Jobs zeitlich ein. |
 {{< /bootstrap-table >}}
 
 {{< imgproc Jobmanager_Jobliste Resize "1280x" >}}
@@ -46,9 +46,9 @@ Die Jobliste zeigt je nach Konfiguration zusätzliche Spalten. Die wichtigsten S
 {{< bootstrap-table "table table-striped table-bordered" >}}
 | Spalte | Bedeutung |
 |---|---|
-| Job | Hauptaktion für den Job; je nach Status werden `Prüfen`, `Edit`, `Geplant`, `Definitiv`, `Reset` oder `Delete/Annullieren` angeboten |
-| Start / Ende | Frühester Beginn und spätestes Ende der Lektionen im Job |
-| Reservationsanfrage | Link zur Reservationsanfrage, sofern der Job aus einem Formular entstanden ist |
+| Aktion | Hauptaktion für den Job. Je nach Status werden `Prüfen`, `Verarbeiten`, `Bearbeiten`, `Geplant`, `Definitiv`, `Zurücksetzen`, `Löschen` oder `Annullieren` angeboten |
+| Beginn / Ende | Frühester Beginn und spätestes Ende der Lektionen im Job |
+| Buchungsanfrage | Link zur Buchungsanfrage, sofern der Job aus einem Formular entstanden ist |
 | Job-ID | Fachliche Kennung des Jobs |
 | Automatische Verarbeitung | Zeigt an, ob der Job für automatische Verarbeitung vorgesehen ist. |
 | Organisator / Verantwortlicher | Personen, auf welche die Jobverarbeitung fachlich referenziert |
@@ -60,18 +60,14 @@ Die Jobliste zeigt je nach Konfiguration zusätzliche Spalten. Die wichtigsten S
 Wichtige Aktionen:
 
 - **Prüfen** öffnet die Ressourcenwahl
-- **Edit** öffnet direkt die Detailprüfung eines bereits verarbeiteten Jobs
+- **Bearbeiten** öffnet direkt die Detailprüfung eines bereits verarbeiteten Jobs
 - **Geplant** und **Definitiv** wechseln den Workflow bestehender Jobs
-- **Reset** setzt verarbeitete Jobs zurück, sofern dies für das Quellsystem erlaubt ist
-- **Delete/Annullieren** entfernt Jobs oder hebt bereits verarbeitete Buchungen auf
+- **Zurücksetzen** setzt verarbeitete Jobs zurück, sofern dies für das Quellsystem erlaubt ist
+- **Löschen** beziehungsweise **Annullieren** entfernt Jobs oder hebt bereits verarbeitete Buchungen auf
 
-Ohne das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** erscheint **Delete/Annullieren** nur in den eingeschränkten Fällen, in denen ein Job vollständig als Löschfall verarbeitet werden kann.
+Ohne das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** erscheinen **Löschen** und **Annullieren** nur in den eingeschränkten Fällen, in denen ein Job vollständig als Löschfall verarbeitet werden kann.
 
 Beim Annullieren eines verarbeiteten Jobs zeigt ROOMS einen Bestätigungsdialog. Dort kann bei entsprechender Konfiguration ausgewählt werden, ob Annullationsmails versendet werden sollen.
-
-{{< imgproc Jobmanager_Jobliste Resize "1280x" >}}
-Beispiel einer Jobliste mit offenen Jobs
-{{< /imgproc >}}
 
 ## Woher kommen Jobs?
 

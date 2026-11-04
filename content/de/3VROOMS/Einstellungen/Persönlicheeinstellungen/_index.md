@@ -12,39 +12,29 @@ Sie haben die Möglichkeit Ihre und die Daten Ihrer Mitarbeiter in der Übersich
 * Meine Arbeit: Alle Änderungen im System sind hier einsehbar z.B. Buchungsänderungen
 
 {{< imgproc Einstellung_PE_bearbeiten1 Resize "1280x" >}}
-Abbildung p: Ansicht der Persönlichen Einstellungen
-{{< /imgproc >}}
-
-{{< imgproc Einstellung_PE_bearbeiten_Historie Resize "1280x" >}}
-Abbildung ph: Ansicht Historie in der Menüleiste
-{{< /imgproc >}}
-
-{{< imgproc Einstellung_PE_bearbeiten_Mails Resize "1280x" >}}
-Abbildung pm: Ansicht der erhaltenen Mails zu Buchungen und Änderungen
+Ansicht der Persönlichen Einstellungen
 {{< /imgproc >}}
 
 {{< imgproc Einstellung_PE_bearbeiten_Arbeit Resize "1280x" >}}
-Abbildung pb: Übersicht der erfolgten Änderungen und Bearbeitungen in Rooms
+Übersicht der erfolgten Änderungen und Bearbeitungen in Rooms
 {{< /imgproc >}}
 
 Alle Funktionen können Sie über den untenstehenden Button "Bearbeiten" bearbeiten und anpassen.
 
 ## Persönliche Einstellungen bearbeiten
-Beim Klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten (Abbildung p, pa).
+Beim Klicken auf den Button "Bearbeiten" im Tab-Menü "Person" können Sie die Mitarbeiterdaten bearbeiten.
 Alle Daten im Tap-Menü:
-* Personen Information
+* Personen-Informationen
 * Stammdaten
+* Adressen
 * Navigation
 * Notifikationen
 * Eigene Listen
 * Zugewiesene Ressourcen
-* Logons
+* Logins
 * Gruppen
+* Raumzutritt
 können Sie hier bearbeiten. Diese Änderungen speichern Sie über den untenstehenden Button "Speichern".
-
-{{< imgproc Personeninformationen_bearbeiten_speichern Resize "1280x" >}}
-Abbildung pa: Ansicht der Personeninformationen und verschiedenen Reiter in der Menüleiste
-{{< /imgproc >}}
 
 ### Anmerkung zum Ändern der Mitarbeiterdaten
 Um diese Einstellungen verändern zu können sind Spezialrechte notwendig. Oft werden die Daten über eine Importschnittstelle periodisch in ROOMS geladen und somit nicht manuell gepflegt.

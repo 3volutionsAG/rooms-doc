@@ -1,26 +1,25 @@
 ---
-title: "Action Tracking"
-linkTitle: "Action Tracking"
+title: "Notification Tracking"
+linkTitle: "Notification Tracking"
 weight: 9
-description: 'Sie sehen hier die Action Tracking list mit Zeitstempel, Ereignistyp, Meldungen, Exception.'
+description: 'Sie sehen hier die versendeten Notifikationen mit Zeitstempel, Notifikationstyp, Buchung und Anlass.'
 ---
-## Action Tracking
+## Notification Tracking
 
 
-Elemente aus der Action Tracking list können Sie durchsuchen oder etfernen.
+Elemente aus der Liste der versendeten Notifikationen können Sie durchsuchen oder löschen.
 
 {{< imgproc Actiontracking_liste Resize "960x" >}}
-Action Tracking Liste durchsuchen
+Liste der versendeten Notifikationen durchsuchen
 {{< /imgproc >}}
 
 
-## Action Tracking durchsuchen
+## Notification Tracking durchsuchen
 
 
-Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folgenden Kriterien die Ereignisanzeige:
+Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie die Liste nach folgenden Kriterien:
 
-* Ereignistyp
-* Zeitstempel
-* Meldungen
-* Exceptions
-* Aktion
+* Zustand
+* Notifikationstyp
+* Buchungsnummer
+* Anlass Nummer

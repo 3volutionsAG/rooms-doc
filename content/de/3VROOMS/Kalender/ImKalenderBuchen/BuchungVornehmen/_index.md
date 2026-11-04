@@ -42,10 +42,6 @@ Klicken Sie auf den Button _Buchen_ wird der Raum ohne Eingabe weiterer Informat
 
 Wählen Sie im Fenster der Schnellbuchung den Button _Detailbuchung_ aus, gelangen Sie zum Eingabefeld für detaillierte Informationen.
 
-{{< imgproc Kalender_neue_Buchung_Detailbuchung Resize "960x" >}}
-Schnellbuchung im Kalender vornehmen
-{{< /imgproc >}}
-
 
 Sie schliessen die Buchung ab, indem Sie auf den Button _Buchung abschliessen_ klicken.
 

@@ -9,7 +9,7 @@ Nach dem Klick auf **Prüfen** zeigt der Jobmanager die Seite **Verfügbarkeit d
 
 ## Was wird angezeigt?
 
-Die Liste zeigt pro Raum einen Prüfstatus und erlaubt zwei Wege:
+Markieren Sie die Räume und klicken Sie oben auf **Prüfen**. Die Liste zeigt danach pro Raum einen Prüfstatus und erlaubt zwei Wege:
 
 - **Verarbeiten**: den Job direkt auf einen Raum buchen, wenn der Job vollständig passt
 - **Details**: in die Detailprüfung wechseln, wenn einzelne Lektionen separat überprüft oder angepasst werden müssen
@@ -52,7 +52,7 @@ Wichtig für die fachliche Bedeutung:
 
 ## Präferenzräume und weitere Räume
 
-Standardmässig prüft der Jobmanager vor allem Räume, die fachlich bevorzugt sind. Je nach Datenlage werden folgende Raumarten berücksichtigt:
+Der Jobmanager kann die Prüfung auf Räume einschränken, die fachlich bevorzugt sind. Je nach Datenlage sind das folgende Raumarten:
 
 - Präferenzräume der Firma oder Organisation
 - Wunschräume aus der Lektion
@@ -64,10 +64,14 @@ Zusätzliche Optionen auf dieser Seite:
 | Funktion | Wirkung |
 |---|---|
 | Gewünschte Ressourcen bevorzugen | Bevorzugt Wunsch- oder Spezialräume bei der Auswahl und Verarbeitung |
-| Ohne Präferenzen prüfen | Erweitert die Prüfung auf weitere Räume ausserhalb der Präferenzlogik |
-| Zusätzliche Ressourcen | Fügt einen manuell ausgewählten Raum zusätzlich zur Prüfung hinzu |
+| Gewünschte Ressourcen, Präferenzen | Schränken die Liste auf Wunschräume oder auf die bei der Organisation hinterlegten Räume ein. Ohne Auswahl erscheinen alle Räume. |
+| Ressource Name | Fügt einen manuell ausgewählten Raum zusätzlich zur Prüfung hinzu |
 | Standort | Schränkt die angezeigten Alternativräume weiter ein |
 {{< /bootstrap-table >}}
+
+{{< imgproc Jobmanager_Ressourcenwahl_OhnePraeferenz Resize "1280x" >}}
+Optionen zum Einschränken der Ressourcenwahl
+{{< /imgproc >}}
 
 ## Mehrheitslogik bei bestehenden Jobs
 
@@ -82,10 +86,6 @@ Das ist vor allem relevant, wenn:
 Der so abgeleitete Raum dient als Standard für die erneute Verarbeitung. Er ersetzt jedoch nicht den in der Lektion hinterlegten **gewünschten Raum** in der Anzeige.
 
 Über den globalen Parameter **Jobmanager darf bei gewünschtem Raum auf Fallback-Raum wechseln** wird gesteuert, ob der Jobmanager diesen ausgewählten beziehungsweise abgeleiteten Raum auch als automatischen Fallback verwenden darf.
-
-{{< imgproc Jobmanager_Ressourcenwahl_OhnePraeferenz Resize "1280x" >}}
-Ressourcenwahl mit erweiterten Alternativen
-{{< /imgproc >}}
 
 ## Wann direkt verarbeiten, wann in die Details?
 

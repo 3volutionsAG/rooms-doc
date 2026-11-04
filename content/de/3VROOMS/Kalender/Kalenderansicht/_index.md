@@ -18,7 +18,7 @@ Startbildschirm der Kalenderansicht
 {{< /imgproc >}}
 
 {{< imgproc Kalender_Tooltip_Mouseover Resize "960x" >}}
-Mit dem Mouseover über eine Ressource im Kalender fahren und zusätzliche Informationen erhalten
+Mit dem Mouseover über eine Buchung im Kalender fahren und zusätzliche Informationen erhalten
 {{< /imgproc >}}
 
 

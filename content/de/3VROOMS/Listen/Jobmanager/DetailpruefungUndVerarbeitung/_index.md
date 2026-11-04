@@ -65,21 +65,21 @@ Diese Filter helfen vor allem bei grösseren Jobs mit vielen bereits verarbeitet
 
 ## Einzelne Lektionen anpassen
 
-Über **Ändern** können selektierte Zeilen gemeinsam bearbeitet werden. Typische Anpassungen sind:
+Über **Auswahl bearbeiten** können selektierte Zeilen gemeinsam bearbeitet werden. Typische Anpassungen sind:
 
 - Raum wechseln
 - Status anpassen
 - Beginn, Dauer oder Wochentag verändern
 
 {{< imgproc Jobmanager_Raumwechsel Resize "1280x" >}}
-Dialog zum Ändern des ausgewählten Raums
+Dialog Auswahl bearbeiten zum Ändern von Raum, Status und Zeiten
 {{< /imgproc >}}
 
 Zusätzliche Aktionen mit erweiterter Jobmanager-Funktionalität:
 
-- **Annullieren** von selektierten, bereits verarbeiteten Jobmanager-Zeilen
-- **Löschen** von selektierten, noch nicht verarbeiteten Jobmanager-Zeilen
-- **Ergänzen** neuer Lektionen zum aktuellen Job
+- **Auswahl Annullieren** für selektierte, bereits verarbeiteten Jobmanager-Zeilen
+- **Auswahl Löschen** für selektierte, noch nicht verarbeiteten Jobmanager-Zeilen
+- **Lektion hinzufügen** für neue Lektionen zum aktuellen Job
 
 Ohne das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** stehen diese Zusatzaktionen nicht zur Verfügung. Ebenfalls bleiben im Sammelbearbeitungsdialog die Felder **Beginn**, **Dauer** und **Wochentag** ausgeblendet.
 

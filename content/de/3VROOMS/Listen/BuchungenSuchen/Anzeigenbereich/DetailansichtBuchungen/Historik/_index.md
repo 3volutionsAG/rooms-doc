@@ -24,9 +24,6 @@ ROOMS zeigt die Erstellung und die Änderungen an der Buchung in zeitlicher Reih
 
 Über das Drop-down-Dreieck können Sie die Details einer Erstellung oder Änderung aufklappen. Die Tabelle zeigt für jedes geänderte Feld den alten und den neuen Wert.
 
-{{< imgproc List_BG_Anzeige_DS_HistErst_beschriftet Resize "960x" >}}
-Details zur Erstellung
-{{< /imgproc >}}
 
 {{< imgproc List_BG_Anzeige_DS_HistChange_beschriftet Resize "960x" >}}
 Details zu Änderungen an einer Buchung

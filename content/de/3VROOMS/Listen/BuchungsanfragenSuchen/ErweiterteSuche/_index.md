@@ -23,12 +23,12 @@ Anfragepezifische Kriterien sind zum Beispiel der Titel der Anfrage oder der Typ
 Folgende Tabelle gibt Ihnen einen Überblick der Filterkriterien und erläutert diese:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Titel||Titel der Buchungsanfrage|
-|Anlasstyp|{{< imgproc List_BA_AnfSpezKrit_Typ Resize "200x" >}}{{< /imgproc >}}|Kategorie des Anlasses ; _z.B. Kundenmeeting, Konfernez,..._|
-|Status|{{< imgproc List_BA_AnfSpezKrit_Stat Resize "200x" >}}{{< /imgproc >}}|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus|
-|Mit Anlass|{{< imgproc List_BA_AnfSpezKrit_Anl Resize "200x" >}}{{< /imgproc >}}| **Ja:** Die Anfrage bezieht sich auf einen Anlass ; **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
+|Feld|Funktion|
+|---|---|
+|Titel|Titel der Buchungsanfrage|
+|Anlasstyp|Kategorie des Anlasses ; _z.B. Kundenmeeting, Konfernez,..._|
+|Status|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus|
+|Mit Anlass| **Ja:** Die Anfrage bezieht sich auf einen Anlass ; **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
 {{< /bootstrap-table >}}
 ---
 

@@ -54,10 +54,6 @@ Die geänderten oder neu eingetragenen Daten speichern Sie über den untenstehen
 
 Der Baum in der Klassifikationsliste aktualisiert sich automatisch und Sie sehen Ihren neuen Klassifikationstyp in der Übersicht.
 
-{{< imgproc Klassifikationen_neuer_Typ_in_Baum Resize "960x" >}}
-Aktualisierter Baum mit neuem Klassifikationstyp
-{{< /imgproc >}}
-
 ### Stammdaten des Klassifikationstypes bearbeiten
 
 
@@ -99,25 +95,13 @@ Ressourcen zum Klassifikationstypen hinzufügen
 
 Die Liste aktualisiert sich automatisch und Sie sehen die Ressourcen. Die hinzugefügten Ressourcen können Sie wieder bearbeiten über das Stift Icon oder löschen.
 
-{{< imgproc Klassifikationen_Ressourcen_in_Liste Resize "960x" >}}
-Hinzugefügte Ressourcen in der Liste
-{{< /imgproc >}}
-
 ### Gruppe des Klassifikationstypes bearbeiten
 
 
 Legen Sie die zugehörige Gruppe des Klassifikationstypes fest, indem Sie auf den untenstehenden Button "Gruppe hinzufügen" klicken. Es öffnet sich ein Feld mit den zur Verfügung stehenden Gruppen. Wählen Sie eine oder mehrere Gruppen über die Checkbox aus.
 
-{{< imgproc Klassifikationen_neuen_Klassifikationtyp_Gruppe Resize "960x" >}}
-Gruppen des Klassifikationstypen bearbeiten
-{{< /imgproc >}}
-
 
 Klicken Sie auf den untenstehenden Button _hinzufügen_ und die Liste aktualisiert sich automatisch. Sie sehen die ausgewählten Gruppen nun in der Liste. Sie können die Gruppen dort auch wieder löschen oder bearbeiten über das Stift Icon.
-
-{{< imgproc Klassifikationen_Gruppe_in_Liste Resize "960x" >}}
-Hinzugefügte Gruppe in der Liste
-{{< /imgproc >}}
 
 ## Untergeordnete Buchungsklassifikation erstellen
 
@@ -143,7 +127,3 @@ Neue Buchungsklassifikation erstellen
 
 
 Speichern Sie die neue Buchungsklassifikation mit dem Button _Speichern_. Der Baum aktualisiert sich automatisch.
-
-{{< imgproc Klassifikationen_neue_buchungsklassifikation_im_Baum Resize "960x" >}}
-Neue Buchungsklassifikation im Baum
-{{< /imgproc >}}

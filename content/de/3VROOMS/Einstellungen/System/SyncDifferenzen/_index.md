@@ -79,7 +79,7 @@ Falls Sie eine Differenz auf eine Serie zurückführen müssen, können Sie die 
 
 Im Sidepanel kann ein manueller Scan gestartet werden.
 
-{{< imgproc sync-differenzen-manueller-scan Resize "400x" >}}{{< /imgproc >}}
+{{< imgproc sync-differenzen-manueller-scan Resize "322x" >}}{{< /imgproc >}}
 
 Mögliche Scan-Ziele:
 

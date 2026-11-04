@@ -15,10 +15,6 @@ Kalendersymbol um den Datumspicker zu öffnen und geöffneter Datumspicker
 
 Sollte ein anderes Datum eingestellt sein, können Sie über die Schaltfläche "Heute" auf das aktuelle Datum springen. Über das "X" oben rechts am Datumspicker lässt sich dieser schliessen, ohne Änderungen zu übernehmen.
 
-{{< imgproc Datumspicker_Schaltflaechen Resize "1280x" >}}
-Heute springt auf das aktuelle Datum, "x" schliesst ohne Änderungen zu übernehmen
-{{< /imgproc >}}
-
 Möchten Sie einen Zeitraum, der über einen Tag hinausreicht auswählen, so können Sie dies nur über den Datumspicker machen. Dazu wählen Sie auf der linken Kalenderansicht das Startdatum und anschliessend auf der rechten Kalenderansicht das Enddatum.
 Zwischen den Kalenderansichten lässt sich ausserdem noch die Spanne der Uhrzeit einstellen.
 

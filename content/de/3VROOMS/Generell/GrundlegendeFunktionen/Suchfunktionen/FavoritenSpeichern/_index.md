@@ -15,6 +15,3 @@ gelber Stern markiert favorisiertes Subpanel
 
 Wollen Sie Ihre ausgewählten Favoriten zurücksetzen, wählen Sie unter Einstellungen "Filtereinstellungen löschen". [Persönlichen Einstellungen](/3vrooms/Einstellungen/PersönlicheEinstellungen/)
 
-{{< imgproc FavoritenZuruecksetzen_beschriftet Resize "1280x" >}}
-Markierte Favoriten zurücksetzen
-{{< /imgproc >}}

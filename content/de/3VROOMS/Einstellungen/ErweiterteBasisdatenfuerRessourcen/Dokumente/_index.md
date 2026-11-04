@@ -14,14 +14,10 @@ Im linken Menü finden Sie unter der Kategorie _Dokumente_ eine Suchfunktion, mi
 
 * Bezeichnung
 
-{{< imgproc Dokumente_erstellen Resize "960x" >}}
-Dokument erstellen und suchen
-{{< /imgproc >}}
-
 ## Dokumente erstellen
 
 
-Die Dokumente erstellen Sie, indem Sie auf den untenstehenden Button "Erstellen" klicken (Abbildung d). In dem sich öffnendem Feld legen Sie eine Vorlage fest.
+Die Dokumente erstellen Sie, indem Sie auf den untenstehenden Button "Erstellen" klicken. In dem sich öffnendem Feld legen Sie eine Vorlage fest.
 In der Vorlage ändern Sie die folgenden Daten:
 
 * Bezeichnung
@@ -41,10 +37,6 @@ Neues Dokument eintragen
 
 
 Wenn Sie ein Dokument auswählen, öffnen sich Ihr Explorer und Sie können die gewünschte Datei hochladen.
-
-{{< imgproc Dokumente_Upload_Test Resize "960x" >}}
-Vorlage hochladen
-{{< /imgproc >}}
 
 ### Daten der Dokumentenvorlage bearbeiten
 

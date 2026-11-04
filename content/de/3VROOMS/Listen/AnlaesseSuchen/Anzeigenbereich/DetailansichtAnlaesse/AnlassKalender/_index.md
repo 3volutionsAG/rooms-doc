@@ -8,10 +8,6 @@ description: 'Im Reiter "Anlass Kalender" wird Ihnen die Kalenderansicht zu dies
 
 Im Reiter _Anlass_ sind alle dem Anlass zu zugeordneten Buchungen im Abschnitt "Hinzugefügte Buchungen aufgeführt.
 
-{{< imgproc List_ANL_zugefBGen_b Resize "960x" >}}
-Dem Anlass zugeordnete Buchungen in der Detailansicht des Anlasses
-{{< /imgproc >}}
-
 Wechseln Sie nun auf den Reiter _Anlass Kalender_, finden Sie genau diese Buchungen in der Kalenderansicht vor.
 
 {{< imgproc List_ANL_KalAn_b Resize "960x" >}}
@@ -44,10 +40,6 @@ Dialogfenster für die Schnellbuchung einer weiteren Ressource
 {{< /imgproc >}}
 
 In diesem Dialogfenster haben Sie auch die Möglichkeit zur Eingabemaske der Detailbuchung zu wechseln.
-
-{{< imgproc List_ANL_KalAn_DetailBG Resize "960x" >}}
-Eingabemaske Deatailbuchung
-{{< /imgproc >}}
 
 Detaillierte Informationen zur [Schnellbuchung](/3vrooms/buchen/buchungerstellen/schnellbuchung/) und [Detailbuchung](/3vrooms/buchen/buchungerstellen/detailbuchung/) einer Ressource finden Sie über den Link in den entsprechenden Kapiteln.
 

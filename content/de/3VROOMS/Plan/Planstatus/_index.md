@@ -18,10 +18,10 @@ Status Anzeige der Ressourcen im Plan
 | --------- | --------- |
 | {{< color-swatch "#22c55e" "Grün" >}} Grün | Der Raum ist zum gewünschten Zeitpunkt frei. |
 | {{< color-swatch "#f97316" "Orange" >}} Orange | Der Raum ist besetzt, jedoch muss die Buchung noch via Check-in bestätigt werden. |
-| {{< color-swatch "#dc2626" "Rot" >}} Rot | Der Raum ist definitiv besetzt. |
+| Statusfarbe | Der Raum ist besetzt. Der Punkt zeigt die Farbe des Buchungsstatus. Rot erscheint nur, wenn für den Status keine Farbe definiert ist. |
 {{< /bootstrap-table >}}
 
-Diese Planfarben zeigen die Verfügbarkeit der Ressource zum gewählten Zeitpunkt. Sie sind nicht identisch mit der Ressourcenfarbe oder der Statusfarbe einer Buchung im Kalender. Siehe auch [Farbdarstellung im Kalender](/3vrooms/kalender/kalenderansicht/kalenderbereich/farbdarstellung/).
+Diese Punkte zeigen die Verfügbarkeit der Ressource zum gewählten Zeitpunkt. Die Fläche zeigt die Ressourcenfarbe, der Rahmen bei einer Buchung die Statusfarbe. Siehe auch [Farbdarstellung im Kalender](/3vrooms/kalender/kalenderansicht/kalenderbereich/farbdarstellung/).
 
 ## Check-in Status hervorheben
 
@@ -32,5 +32,5 @@ Wenn die Option aktiv ist, markiert ROOMS eingecheckte Reservationen zusätzlich
 Diese Anzeige ist hilfreich, wenn vor Ort geprüft werden soll, ob Räume zwar reserviert, aber noch nicht bestätigt wurden.
 
 {{< imgproc plan_colors Resize "960x" >}}
-Farbcode
+Farbcode: Rahmen in der Statusfarbe, Fläche in der Ressourcenfarbe, Punkt für die Verfügbarkeit
 {{< /imgproc >}}

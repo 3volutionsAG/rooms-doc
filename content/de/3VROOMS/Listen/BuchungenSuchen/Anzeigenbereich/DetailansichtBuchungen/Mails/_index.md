@@ -8,9 +8,6 @@ description: 'In diesem Reiter werden alle Mails, die aus der Buchung heraus ver
 
 Aufgelistet sehen Sie hier alle Mails, die aus diesem Vorgang heraus versendet wurden.
 
-{{< imgproc List_BG_Anzeige_DS_Mail Resize "960x" >}}
-Auflistung aller Mails, die aus dem Vorgang versendet wurden
-{{< /imgproc >}}
 
 
 Über den Drop-Down-Pfeil öffnet sich die Mailansicht.

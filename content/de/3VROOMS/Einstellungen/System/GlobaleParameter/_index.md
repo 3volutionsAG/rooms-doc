@@ -23,9 +23,6 @@ Globale Parameter bearbeiten und durchsuchen
 
 Fahren Sie mit dem Mauszeiger auf den Namen des globalen Parameters aus der Konfigurationsliste. Beim Klicken auf den Namen sehen Sie die Stammdaten und die Historie des Parameters ein.
 
-{{< imgproc Globaleparameter_Daten_einsehen Resize "960x" >}}
-Stammdaten und Historie des globalen Parameters einsehen
-{{< /imgproc >}}
 
 ## Globale Parameter bearbeiten
 
@@ -33,9 +30,6 @@ Einen globalen Parameter aus der Konfigurationsliste bearbeiten Sie, indem Sie a
 
 Die geänderten Daten speichern Sie über den untenstehenden Button `Speichern`.
 
-{{< imgproc Globaleparameter_bearbeiten Resize "960x" >}}
-Globale Parameter, Konfigurationsdaten bearbeiten
-{{< /imgproc >}}
 
 Folgende Daten können Sie ändern:
 

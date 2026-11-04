@@ -15,7 +15,7 @@ Im oberen Bereich kann zwischen den verschiedenen Kalenderansichten gewählt wer
 Es stehen Ihnen mehrere Anzeigeoptionen in jeder Ansicht zur Verfügung. Ausserdem können Sie sich Buchungen hervorgehoben anzeigen lassen, die z.B. einen Parkplatz oder eine Bestellung enthalten. Ausser in der Monatsansicht befindet sich in allen Kalenderansichten unten rechts eine Reihe von Icons, welche unterschiedliche Darstellungsfilter aktivieren. Dadurch werden Buchungen mit verknüpften Ressourcen mit einem entsprechenden Symbol gekennzeichnet und farblich hervorgehoben, was Ihnen eine rasche Erkennung ermöglicht.
 
 {{< imgproc Kalender_ansicht_Toolleiste Resize "960x" >}}
-Tollleiste im Kalender (Anzeige nicht in der Monatsansicht)
+Toolleiste im Kalender (Anzeige nicht in der Monatsansicht)
 {{< /imgproc >}}
 
 
@@ -32,6 +32,6 @@ Fahren Sie mit dem Mauszeiger über ein Icon, öffnet sich ein Tooltip, das Sie 
 | Viereck | Buchungen von virtuellen Räumen werden hervorgehoben angezeigt | {{< imgproc Icon_virtuelleräume Resize "50x" >}}{{< /imgproc >}} |
 | Board | Buchungen mit mobilem Equipment werden hervorgehoben angezeigt | {{< imgproc Icon_mobiles_Equipment Resize "50x" >}}{{< /imgproc >}} |
 | P |  Buchungen mit Parkplätzen werden hervorgehoben angezeigt | {{< imgproc Icon_Parkplätze Resize "50x" >}}{{< /imgproc >}} |
-| und |  Bei gleichzeitiger Selektion mehrerer Buttons werden nur die Reservationen hervorgehoben, welche alle selektierten Kriterien erfüllen. Das bedeutet, sie gehören zu einer Serie und enthalten Bestellungen und mobiles Equipment. | {{< imgproc Icon_und Resize "50x" >}}{{< /imgproc >}} |
-| oder |  Bei gleichzeitiger Selektion mehrerer Buttons werden die Reservationen hervorgehoben, welche mindestens ein selektiertes Kriterium erfüllen. Sie gehören z.B. zu einer Serie oder enthalten Bestellungen oder mobiles Equipment | {{< imgproc Icon_oder Resize "50x" >}}{{< /imgproc >}} |
+| und |  Bei gleichzeitiger Selektion mehrerer Buttons werden nur die Reservationen hervorgehoben, welche alle selektierten Kriterien erfüllen. Das bedeutet, sie gehören zu einer Serie und enthalten Bestellungen und mobiles Equipment. |  |
+| oder |  Bei gleichzeitiger Selektion mehrerer Buttons werden die Reservationen hervorgehoben, welche mindestens ein selektiertes Kriterium erfüllen. Sie gehören z.B. zu einer Serie oder enthalten Bestellungen oder mobiles Equipment |  |
 {{< /bootstrap-table >}}

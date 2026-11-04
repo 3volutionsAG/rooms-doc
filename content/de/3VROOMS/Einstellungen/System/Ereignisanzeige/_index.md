@@ -12,7 +12,7 @@ Ereignisliste durchsuchen
 {{< /imgproc >}}
 
 
-Sie löschen ein Element über die Aktivierung der Checkbox und den untenstehenden Button "Entfernen". Die Liste aktualisiert sich automatisch.
+Sie löschen ein Element über die Aktivierung der Checkbox und den untenstehenden Button "Löschen". Die Liste aktualisiert sich automatisch.
 
 ### Ereignisanzeige durchsuchen
 
@@ -37,6 +37,3 @@ Im linken Sidepanel finden Sie eine Suchfunktion. Hier durchsuchen Sie nach folg
 
 Indem Sie auf den Namen des Ereignisses in der Liste klicken, erscheint ein neues Feld. In diesem sehen Sie die eingetragenen Loggin Stammdaten des Ereignisses. Diese können Sie teilweise bearbeiten oder drucken.
 
-{{< imgproc Ereignisanzeige_Daten_einsehen Resize "960x" >}}
-Daten des angezeigten Ereignisses einsehen
-{{< /imgproc >}}

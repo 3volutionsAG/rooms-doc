@@ -43,10 +43,6 @@ Die folgenden Daten können Sie für die Standort-Bestimmung einfügen und ände
 | Zugewiesener Plan    | Z.B. einen Anfahrtsplan als Bilddatei einfügen     |
 {{< /bootstrap-table >}}
 
-{{< imgproc Standort_Stammdaten_bearbeiten Resize "960x" >}}
-Stammdaten eines Standortes bearbeiten
-{{< /imgproc >}}
-
 #### Plan
 
 
@@ -83,10 +79,6 @@ Haben Sie Berechtigungen hinzugefügt, aktualisiert sich die Liste automatisch.
 Fügen Sie Sperrzeiten zu einem Standort hinzu, bearbeiten Sie diese oder löschen Sie Sperrzeiten aus der Liste.
 Sehen Sie die bereits bestehenden Sperrzeiten in der Liste, können Sie diese über Aktivieren der Checkbox bearbeiten.
 
-{{< imgproc Standorte_Sperrzeiten Resize "960x" >}}
-Standort Sperrzeiten bearbeiten
-{{< /imgproc >}}
-
 
 Wollen Sie neue Sperrzeiten zu einem Standort hinzufügen, klicken Sie auf den Button "hinzufügen". Es öffnet sich ein neues Fenster. In diesem tragen Sie folgende Informationen ein:
 
@@ -99,10 +91,6 @@ Wollen Sie neue Sperrzeiten zu einem Standort hinzufügen, klicken Sie auf den B
 Standort Sperrzeiten hinzufügen
 {{< /imgproc >}}
 
-{{< imgproc Standort_Sperrzeit_Liste Resize "960x" >}}
-Standort Sperrzeiten Ansicht aktualisiert in der Liste
-{{< /imgproc >}}
-
 #### Feiertage
 
 
@@ -112,10 +100,6 @@ Im Reservationsprozess wird ein Warnhinweis ausgegeben.
 
 
 Sie sehen die bereits hinzugefügten Feiertage in Listenform. Diesen können Sie über die Checkbox wieder entfernen.
-
-{{< imgproc Standort_Feiertage Resize "960x" >}}
-Standort Feiertage bearbeiten
-{{< /imgproc >}}
 
 
 Sie fügen einen neuen Feiertag hinzu, indem Sie auf den untenstehenden Button "hinzufügen" klicken. Es öffnet sich ein Feld. In diesem wählen Sie einen oder mehrere Feiertage über das Aktivieren der Checkbox aus.
@@ -156,10 +140,6 @@ Eine genaue Beschreibung der Notifikationen und möglichen Eingabefelder finden 
 Sie legen hier fest, welche Gruppen eine Buchungsanfrage erhalten sollen, die Sie für den Standort auswählen. Das „Verschicken“ der Anfrage wird im Actionpanel bestätigt.
 Eine E-Mail wird an die Benutzer der  Benutzergruppe, welche dem Anlasstyp hinterlegt worden ist, verschickt. Die Notifikation hierfür legen Sie bei Notifikationen fest.
 
-{{< imgproc Standort_Buchungsanfrage Resize "960x" >}}
-Standort Buchungsanfragen bearbeiten
-{{< /imgproc >}}
-
 
 Sie fügen neue Buchungsanfragen über den untenstehenden Button _hinzufügen_ hinzu. Wählen Sie eine oder mehrere Anlasstypen aus und bestätigen Sie Ihre Eingabe mit "hinzufügen".
 
@@ -169,7 +149,3 @@ Eine Buchungsanfrage hinzufügen
 
 
 Die hinzugefügten Buchungsanfragen sehen Sie in der automatisch aktualisierten Liste.
-
-{{< imgproc Standort_Buchungsafrage_aktualisierte_Liste Resize "960x" >}}
-Ansicht der aktualisierten Liste in Buchungsanfragen
-{{< /imgproc >}}

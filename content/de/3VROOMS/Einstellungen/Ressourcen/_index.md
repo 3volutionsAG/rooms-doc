@@ -16,9 +16,6 @@ Ansicht und Überblick über Ressourcen
 
 Beispiel: Wählen Sie im linken Sidepanel unter Ressourcenart _Equipment_ aus und drücken Sie auf finden, werden Ihnen alle Equipmenttypen in der Liste angezeigt.
 
-{{< imgproc Ressourcen_Equipment_finden_in_Liste Resize "960x" >}}
-Equipment in der Ressourcenliste anzeigen
-{{< /imgproc >}}
 
 ### Ressourcen suchen
 
@@ -36,10 +33,9 @@ Nach einem Wechsel des Eintrages, wird das Sidepanel und der Inhaltsbereich auto
 **Achtung**: Damit eine Liste gespeichert wird, muss der `Finden` Button geklickt werden, um alle Kriterien anzuwenden.
 {{% /alert %}}
 
-#### Suchen durch Erweiterte Kriterien
+#### Weitere Suchkriterien
 
-Die Suchfunktionen erweitern Sie über den Drop-Down des Menü-Punktes `Erweiterte Kriterien`.
-Hierbei können Sie nach den folgenden Kriterien suchen:
+Im selben Bereich können Sie zusätzlich nach den folgenden Kriterien suchen:
 
 * Ressourcen ID/Bezeichnung
 * Ressourcenpicker (Plus Zeichen) : Der Ressourcenpicker zeigt alle Ressourcen - unabhängig davon was im Feld "Ressourcenart" selektiert worden ist
@@ -116,17 +112,9 @@ Benötigte Daten für die Erstellung einer neuen Ressource
 
 Haben Sie eine Ressource neu erstellt und gespeichert, aktualisiert sich die Liste automatisch. Ihre eingetragene Ressource sehen Sie nun im View Modus.
 
-Beispiel:   Erstellung eines neuen Equipmenttyps (Whiteboard)
-
-{{< imgproc Ressourcen_Beispiel_neu_Equipment Resize "960x" >}}
-Beispiel einer neu erstellten Ressource, Equipment
-{{< /imgproc >}}
 
 Nach dem Speichern erscheint die neue Ressource in der aktualisierten Liste.
 
-{{< imgproc Ressourcen_neues_Equipment_in_Liste Resize "960x" >}}
-Neu erstellte Ressource in der aktualisierten Liste
-{{< /imgproc >}}
 
 ## Ressource bearbeiten
 
@@ -214,10 +202,6 @@ Fügen Sie Medien und Beilagen zur bestehenden Ressource hinzu, indem Sie den un
 {{< /bootstrap-table >}}
 
 
-{{< imgproc Ressourcen_Medien_Beilagen Resize "960x" >}}
-Medien und Beilagen der Ressourcen bearbeiten
-{{< /imgproc >}}
-
 {{< imgproc Ressourcen_Medien_hinzufügen Resize "960x" >}}
 Medien und Beilagen einer Ressource hinzufügen
 {{< /imgproc >}}
@@ -227,9 +211,6 @@ Medien und Beilagen einer Ressource hinzufügen
 Fügen Sie entweder eine Sperrzeitserie oder eine einzelne Sperrzeit zur Ressource hinzu.
 Dazu klicken Sie auf den untenstehenden Button _Hinzufügen_. Es öffnet sich ein neues Feld, in welchem Sie die geforderten Daten eingeben.
 
-{{< imgproc Ressourcen_Sperrzeiten Resize "960x" >}}
-Sperrzeiten einer Ressource bearbeiten
-{{< /imgproc >}}
 
 Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld _Bezeichnung_. Mittels Datumspicker können Sie das gewünschte Datum auswählen.
 
@@ -237,9 +218,6 @@ Wählen Sie dazu die Sperrzeit (Von/Bis) aus und beschreiben Sie diese im Feld _
 Sperrzeiten einer Ressource hinzufügen
 {{< /imgproc >}}
 
-{{< imgproc Ressourcen_Sperrzeiten_hinzugefügt_Liste Resize "960x" >}}
-Sperrzeiten einer Ressource hinzufügen
-{{< /imgproc >}}
 
 #### Sperrzeitserie
 
@@ -257,9 +235,6 @@ Sperrzeitserie hinzufügen
 
 Fügen Sie Berechtigungen hinzu oder entfernen Sie diese. Beim Betätigen des untenstehenden Button _Hinzufügen_ wählen Sie eine der bereits gespeicherten Berechtigungen aus z.B. Admin.
 
-{{< imgproc Ressourcen_Berechtigungen Resize "960x" >}}
-Berechtigungen einer Ressource bearbeiten
-{{< /imgproc >}}
 
 Sie können eine oder mehrere Berechtigungen auswählen. Aktivieren Sie dafür die Checkbox. Speichern Sie Ihre Auswahl über den Button _Speichern_.
 
@@ -273,9 +248,6 @@ Mehr Information zum Thema Berechtigungen finden Sie hier: [Benutzergruppen](/3v
 
 Sie können einen der bereits gespeicherten Feiertage (z.B. Weihnachten) der Ressource zuordnen. Dazu klicken Sie auf den untenstehenden Button _Hinzufügen_. In dem Feld, welches sich öffnet, wählen Sie einen oder mehrere Feiertage über das linke Kästchen aus.
 
-{{< imgproc Ressourcen_Feiertage Resize "960x" >}}
-Feiertage für eine Ressource bearbeiten
-{{< /imgproc >}}
 
 {{< imgproc Ressourcen_Feiertage_hinzufügen Resize "960x" >}}
 Einer Ressource einen Feiertag zuweisen
@@ -283,9 +255,6 @@ Einer Ressource einen Feiertag zuweisen
 
 Speichern Sie Ihre Auswahl über den untenstehenden Button _Speichern_. Die Liste aktualisiert sich automatisch und die ausgewählten Feiertage erscheinen in der Liste.
 
-{{< imgproc Ressourcen_Feiertage_in_Liste Resize "960x" >}}
-Hinzugefügte Feiertage in der aktualisierten Liste
-{{< /imgproc >}}
 
 Mehr über Feiertage erfahren Sie hier: [Feiertage](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/feiertage/)
 
@@ -293,19 +262,13 @@ Mehr über Feiertage erfahren Sie hier: [Feiertage](/3vrooms/einstellungen/erwei
 
 Für das Türschild wählen Sie den Konfigurationsbenutzer aus und aktivieren das Türschild.
 
-{{< imgproc Ressource_Türschild Resize "960x" >}}
-Türschild einer Ressource bearbeiten
-{{< /imgproc >}}
 
 ### Fixes Equipment der Ressource bearbeiten
 
 Wenn Sie die Ressourcenart _Raum_ bearbeiten, können Sie diesem fixes Equipment zuordnen.
 
-{{< imgproc Ressource_fixes_Equipment Resize "960x" >}}
-Fixes Equipment auswählen
-{{< /imgproc >}}
 
-Sollten Sie eine neue Ressource erstellen oder weiteres Equipment hinzufügen, klicken Sie auf den untenstehenden Button _hinzufügen_. Es öffnet sich ein Feld, in welchem Sie ein oder mehrere Equipments auswählen können über die Aktivierung der Checkbox.
+Sollten Sie eine neue Ressource erstellen oder weiteres Equipment hinzufügen, klicken Sie auf den untenstehenden Button _Equipment hinzufügen_. Es öffnet sich ein Feld, in welchem Sie ein oder mehrere Equipments auswählen können über die Aktivierung der Checkbox.
 
 {{< imgproc Ressourcen_fixes_Equipment_hinzufügen Resize "960x" >}}
 Fixes Equipment zuordnen und hinzufügen
@@ -313,9 +276,6 @@ Fixes Equipment zuordnen und hinzufügen
 
 Speichern Sie Ihre Auswahl über den Button _Speichern_. Die Liste aktualisiert sich automatisch und Sie sehen das hinzugefügte Equipment.
 
-{{< imgproc Ressourcen_fixes_Equipment_in_Liste Resize "960x" >}}
-Ansicht fixes Equipment in aktualisierter Liste
-{{< /imgproc >}}
 
 #### Equipment Schnellerfassung
 
@@ -336,9 +296,6 @@ Bestuhlung zu einer Ressource hinzufügen
 
 Wollen Sie der Ressource neue Bestuhlungen hinzufügen, klicken Sie auf den untenstehenden Button _hinzufügen_. Es öffnet sich ein Feld, in welchem Sie durch Aktivieren der Checkbox den Bestuhlungstyp auswählen können.
 
-{{< imgproc Ressourcen_Bestuhlung_hinzufügen Resize "960x" >}}
-Bestuhlung zu einer Ressource hinzufügen
-{{< /imgproc >}}
 
 #### Informationen zur Bestuhlung
 

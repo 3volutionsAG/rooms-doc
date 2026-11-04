@@ -18,8 +18,12 @@ Folgende Schritte führen Sie dazu aus:
    * Organisator:in
    * Anlasstyp: Mittels Pfeiltaste Rechts wählen Sie einen Anlass aus den gespeicherten Anlasstypen aus z.B. Kundenmeeting
    * Bemerkungen
-   * **Mail**: Legen Sie pro Ressource fest, ob eine Buchungsbenachrichtigung verschickt werden soll. Mit der Checkbox in der Spaltenüberschrift schalten Sie die angezeigten Mail-Checkboxen gemeinsam um.
+   * **E-Mail**: Legen Sie pro Ressource fest, ob eine Buchungsbenachrichtigung verschickt werden soll. Mit der Checkbox in der Spaltenüberschrift schalten Sie die angezeigten E-Mail-Checkboxen gemeinsam um.
    * **Sync**: Wenn die Synchronisationsspalte vorhanden ist, wählen Sie die Kalender-Synchronisation pro Ressource. Die Checkbox in der Spaltenüberschrift schaltet die veränderbaren Sync-Checkboxen gemeinsam um. Die Auswahl hängt davon ab, für welche Ressourcenarten Sie die Synchronisation aktiviert haben. Eine von der Ressource vorgeschriebene Synchronisation ist fest aktiviert.
+
+   {{< imgproc Buchen_Massenschnellbuchung Resize "960x" >}}
+   Massen-Schnellbuchung mit den Spalten E-Mail und Sync pro Ressource
+   {{< /imgproc >}}
 
    Prüfen Sie die Ressourcenliste vor dem Erstellen. Rote Zeitangaben kennzeichnen eine Ressource, die im gewählten Zeitraum nicht gebucht werden kann. Passen Sie den Zeitraum an oder entfernen Sie die Ressource mit **×** am Ende ihrer Zeile aus der Auswahl.
 
@@ -36,13 +40,13 @@ Folgende Schritte führen Sie dazu aus:
 Im rechten Sidepanel wird Ihnen bei der Zusammenfassung der Massen-Schnellbuchung angezeigt, dass Sie weitere Ressourcen hinzufügen können.
 
 1. Bestehende Buchungen hinzufügen
-2. Ressourcen zum Anlass buchen (Liste)
-3. Ressourcen zum Anlass buchen (Kalender)
+2. Ressourcen zu Anlass buchen (Liste)
+3. Ressourcen zu Anlass buchen (Kalender)
 
 #### Ressourcen zum Anlass buchen in Listen
 
 
-Wählen Sie den Button _Ressourcen zum Anlass buchen (Liste)_, gelangen Sie zur Liste der zur Verfügung stehenden Ressourcen.
+Wählen Sie den Button _Ressourcen zu Anlass buchen (Liste)_, gelangen Sie zur Liste der zur Verfügung stehenden Ressourcen.
 
 Um eine Ressource hinzuzufügen gehen Sie wie folgt vor:
 
@@ -60,14 +64,11 @@ Um eine Ressource hinzuzufügen gehen Sie wie folgt vor:
 
 6. Klicken Sie auf den Button **Erstellen** im Popup Fenster und Sie gelangen zurück zur Übersicht Ihrer Massen-Schnellbuchung.
 
-    {{< imgproc Buchen_Massenschnellbuchung_Ressourcen_hinzugefügt Resize "960x" >}}
-    Ressourcen zur Massenschnellbuchung hinzugefügt
-    {{< /imgproc >}}
 
 #### Ressourcen buchen zum Anlass im Kalender
 
 
-Wählen Sie den Button _Ressourcen zum Anlass buchen (Kalender)_, gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen, gehen Sie wie folgt vor:
+Wählen Sie den Button _Ressourcen zu Anlass buchen (Kalender)_, gelangen Sie zur Kalenderübersicht. Hier sehen Sie die Ressourcen. Um eine Ressource Ihrer Massen-Schnellbuchung hinzuzufügen, gehen Sie wie folgt vor:
 
 1. Suchen Sie eine freie Ressource über das Sidepanel und der Filterfunktion.
 2. Lassen Sie sich die freien Ressourcen über den Button **Anzeigen** im Kalender anzeigen.

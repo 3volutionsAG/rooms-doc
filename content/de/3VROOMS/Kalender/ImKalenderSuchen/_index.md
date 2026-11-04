@@ -41,7 +41,7 @@ Sidepanel im Kalender mit Filterfuntionen zur Suche
 ### Suchen über mehrere Standorte
 
 
-Mit Hilfe von mehreren Standortpickern ist es, wie auf Abbildung ko gezeigt, möglich, mehrere Standorte anzuzeigen und Schnellreservationen darauf zu tätigen. Sie können den Standortpicker beliebig vervielfachen.
+Mit Hilfe von mehreren Standortpickern ist es möglich, mehrere Standorte anzuzeigen und Schnellreservationen darauf zu tätigen. Sie können den Standortpicker beliebig vervielfachen.
 Durch Eingabe eines Standortes wird Ihnen automatisch ein weiterer Standort eingeblendet. Wird im zweiten Standortpicker auch ein Standort erfasst, erscheint ein Dritter, usw.
 
 {{< imgproc Kalender_Standort_Sidepanel Resize "960x" >}}

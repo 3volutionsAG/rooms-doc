@@ -10,7 +10,7 @@ Das Ergebnis ist tabellarisch angeordnet. Jede teilnehmende Person wird in je ei
 Anzeigenbereich mit Ergebnisliste der Teilnehmendensuche
 {{< /imgproc >}}
 
-Am unteren Rand des Anzeigenbereichs befindet sich die Schaltfläche "Neue Teilnehmende".
+Am unteren Rand des Anzeigenbereichs befindet sich die Schaltfläche "Neuer Teilnehmer".
 
 Über diese Schaltfläche können Sie weitere Teilnehmende unabhängig einer Buchung, sogenannten Walk-In-Teilnehmende, hinzufügen. Teilnehmende, die einer Buchung zugeordnet sein sollen, werden direkt über die Buchung hinzugefügt.
 

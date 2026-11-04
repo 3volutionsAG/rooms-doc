@@ -16,23 +16,19 @@ Ansicht der Organisationen
 
 Mit der Suchfunktion können Sie nach folgenden Kriterien filtern:
 
-* Bezeichnung
+* Organisationsname
 * Strasse
 * Postleitzahl
 * Ort
 * Art der Organisation (intern oder extern)
 
 
-Betätigen Sie den Button _Anzeigen_, um sich Ihre gefilterten Organisationen anzeigen zu lassen.
+Betätigen Sie den Button _Finden_, um sich Ihre gefilterten Organisationen anzeigen zu lassen.
 
 ## Organisationen bearbeiten oder neu eintragen {#oefirmen-bearbeiten-oder-neu-eintragen}
 
 
 Die Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten Sie, indem Sie das Stift Icon _Bearbeiten_ auswählen. Ebenfalls können Sie eine Organisation neu eintragen, indem Sie auf den untenstehenden Button _Neu_ klicken. Es öffnet sich in beiden Fällen das gleiche Feld zur Bearbeitung.
-
-{{< imgproc OE_Firmen_bearbeiten Resize "960x" >}}
-Bearbeitete Eigenschaften unter Organisationen speichern
-{{< /imgproc >}}
 
 
 Speichern Sie alle Ihre Einträge über den untenstehenden Button _Speichern_
@@ -46,12 +42,11 @@ In den Stammdaten tragen Sie folgende Informationen ein:
 * E-Mail
 * Verifiziert
   * Zeigt an, ob die Organisation verifiziert ist. Bei der Benutzer-Registration neu erstellte Organisationen werden als unverifiziert markiert.
-* Firmennummer
+* Organisationsnummer
 * Abteilung
 * Art (intern/extern*) *=markiert
 * Kostenstellen Code
 * Kostenstellen Name
-* Standard Rabatt in %
 
 {{< imgproc OE_Firmen_Stammdaten_bearbeiten Resize "960x" >}}
 Stammdaten bearbeiten
@@ -62,12 +57,8 @@ Stammdaten bearbeiten
 
 Sie sehen die eingetragene Adresse einer Organisation in diesem Menüreiter. Tragen Sie eine neue Organisation ein, geben Sie hier die Adressdaten der neu-eingetragenen Organisation ein.
 
-{{< imgproc OE_Firmen_bearbeiten_Adressen Resize "960x" >}}
-Ansicht Adressen der Organisationen
-{{< /imgproc >}}
 
-
-Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Erstellen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Ausserdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren.
+Sie tragen eine Adresse ein, indem Sie auf den untenstehenden Button "Hinzufügen" klicken. Es öffnet sich ein Feld. Hier tragen Sie Adresse, PLZ, Ort und Land ein. Ausserdem können Sie die Adresse als Standardadresse festlegen, indem Sie die Checkbox aktivieren.
 
 {{< imgproc OE_Firmen_bearbeiten_Adresse_eintragen Resize "960x" >}}
 Neue Adresse zu einer Organisation hinzufügen
@@ -75,10 +66,6 @@ Neue Adresse zu einer Organisation hinzufügen
 
 
 Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sich die Liste automatisch und Sie sehen die neu eingetragene Adresse in der Liste.
-
-{{< imgproc OE_Firmen_bearbeiten_Adressen_Ansicht Resize "960x" >}}
-Einsehen der Adressen in Listenform
-{{< /imgproc >}}
 
 
 **Hinweis**: Es kann immer nur eine Adresse pro Organisation als Standard definiert werden. Eine Adresse muss als Standard definiert werden
@@ -95,7 +82,7 @@ Eingetragene Personen in Listenform
 {{< /imgproc >}}
 
 
-Möchten Sie eine Person einer Organisation zuweisen, klicken Sie unten auf den Button _Person hinzufügen_. Es öffnet sich ein Fenster. In diesem wählen Sie eine oder mehrere Personen aus dem System aus.
+Möchten Sie eine Person einer Organisation zuweisen, klicken Sie unten auf den Button _Hinzufügen_. Es öffnet sich ein Fenster. In diesem wählen Sie eine oder mehrere Personen aus dem System aus.
 Anschliessend können Sie noch eintragen:
 
 * Gültigkeitsdauer,
@@ -127,7 +114,7 @@ Die Liste aktualisiert sich automatisch und Sie sehen die zugewiesenen Personen.
 Sie können eine Person direkt bei der neuen Organisation hinzufügen, ohne die aktuell gültige Zuordnung bei der bisherigen Organisation zuerst manuell zu beenden.
 
 1. Öffnen Sie die **neue** Organisation zum Bearbeiten und wechseln Sie ins Register **Personen**.
-2. Klicken Sie auf **Person hinzufügen**. Prüfen Sie in der Spalte **Organisation** die aktuell zugewiesene Organisation. Bei hinterlegter Abteilung erscheint sie als **Organisationsbezeichnung - Abteilung**. Wählen Sie die gewünschte Person oder mehrere Personen aus und bestätigen Sie das Hinzufügen.
+2. Klicken Sie auf **Hinzufügen**. Prüfen Sie in der Spalte **Organisation** die aktuell zugewiesene Organisation. Bei hinterlegter Abteilung erscheint sie als **Organisationsbezeichnung - Abteilung**. Wählen Sie die gewünschte Person oder mehrere Personen aus und bestätigen Sie das Hinzufügen.
 3. Prüfen Sie den Warnhinweis, sofern er erscheint: **Bestehende Organisationszuweisungen der hinzugefügten Benutzer werden beim Speichern terminiert.** Er zeigt an, dass beim Speichern bisherige Zuordnungen geändert werden. Das Hinzufügen allein speichert den Organisationswechsel noch nicht dauerhaft.
 4. Prüfen Sie in der Personenliste den **Beginn** und bei Bedarf das **Ende** der neuen Zuordnung. Ein zukünftiger Beginn legt den Zeitpunkt des Wechsels fest.
 5. Speichern Sie die **Organisation** mit **Speichern**. Erst beim erfolgreichen Speichern übernimmt ROOMS die neue Zuordnung und setzt das Ende der bisher aktuell gültigen Zuordnung auf den Beginn der neuen Zuordnung.
@@ -145,7 +132,7 @@ Sie können Beginn und Ende einer Zuordnung auch manuell ändern, beispielsweise
 1. Navigieren Sie zur Organisation, der die Person aktuell zugeordnet ist, und öffnen Sie die Bearbeitung.
 2. Öffnen Sie den Reiter **Personen** und suchen Sie die betreffende Person in der Liste.
 3. Tragen Sie in der Personenliste das gewünschte **Ende** der bisherigen Zuordnung ein und speichern Sie die Organisation.
-4. Fügen Sie die Person bei der neuen Organisation über **Person hinzufügen** hinzu. Prüfen Sie den **Beginn**, damit sich die Zeiträume nicht überschneiden, und speichern Sie die neue Organisation.
+4. Fügen Sie die Person bei der neuen Organisation über **Hinzufügen** hinzu. Prüfen Sie den **Beginn**, damit sich die Zeiträume nicht überschneiden, und speichern Sie die neue Organisation.
 
 **Hinweis**: Sie müssen die Person nicht neu erfassen. Durch das Setzen eines Ende-Datums wird die bisherige Zuordnung zeitlich begrenzt.
 
@@ -163,10 +150,6 @@ Sie können Beginn und Ende einer Zuordnung auch manuell ändern, beispielsweise
 
 Sie sehen die zugewiesenen Kostenträger einer Organisation in Listenform.
 
-{{< imgproc OE_Firmen_Kostenträger_Liste Resize "960x" >}}
-Kostenträger in Listenform
-{{< /imgproc >}}
-
 
 Möchten Sie einen neuen Kostenträger zu einer Organisation hinzufügen, machen Sie dies wie folgt: Klicken Sie auf den Button hinzufügen, im geöffnetem Feld wählen Sie den Kostenträger aus und bestätigen die Auswahl mit dem Button _hinzufügen_.
 
@@ -177,18 +160,11 @@ Kostenträger einer Organisation zuweisen und neu hinzufügen
 
 Die Liste aktualisiert sich automatisch. Sie können mehrere Kostenträger auswählen.
 
-{{< imgproc OE_Firmen_Kostenträger_aktualisierte_Liste Resize "960x" >}}
-Aktualisierte Liste mit Kostenträgern, nachdem sie zugewiesen wurden
-{{< /imgproc >}}
 
 ### Organisationen: Präferenzen bearbeiten {#oefirmen-präferenzen-bearbeiten}
 
 
 Sie können einen präferierten Standort hinzufügen. Ist dieser bereits ausgewählt, sehen Sie die Präferenz in Listenform.
-
-{{< imgproc OE_Firmen_Präferenzen_Liste Resize "960x" >}}
-Ansicht Ihrer Präferenzen in der Liste
-{{< /imgproc >}}
 
 
 Möchten Sie eine Präferenz hinzufügen, klicken Sie auf den Button _Präferenz hinzufügen_. Es öffnet sich ein Feld, in welchem Sie über aktivieren der Checkbox, den präferierten Standort auswählen und bestätigen.
@@ -202,10 +178,6 @@ Präferenzen zu einer Organisation hinzufügen und zuweisen
 
 
 Wenn Sie die gespeicherten Daten nur einsehen wollen, fahren Sie mit dem Mauszeiger über den Namen der Organisation und klicken Sie auf diese. Es öffnet sich eine Zusammenfassung der eingetragenen und gespeicherten Daten zu dieser Organisation.
-
-{{< imgproc OE_Firmen_Informationen_einsehen Resize "960x" >}}
-Informationen einer Organisation einsehen
-{{< /imgproc >}}
 
 
 Mit Klick auf den Button _Bearbeiten_ können Sie auch aus dieser Ansicht die Daten der Organisation bearbeiten.

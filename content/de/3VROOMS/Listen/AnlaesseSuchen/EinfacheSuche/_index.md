@@ -13,9 +13,9 @@ Anlässe über die Einfache Suche finden
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Datum/Zeit|{{< imgproc List_ANL_EinfSuch_Datum Resize "200x" >}}{{< /imgproc >}}|Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlasses über den Datumspicker aus|
-|Anlasszeitpunkt  ; (alternativ zu Datum/Zeit)|{{< imgproc List_ANL_EinfSuch_Zeitp Resize "200x" >}}{{< /imgproc >}}|**Alle** ; Es werden alle Zeitäume berücksichtigt ; **Heute laufende und künftige Anlässe** ; Alle Anlässe ab jetzt am heutigen Tag ; **laufende und künftige Anlässe** ; Alle Anlässe ab dem morgigen Tag ; **vergangene Anlässe** ; Alle bereits vergangenen Anlässe|
-|Standort|{{< imgproc List_ANL_EinfSuch_Ort Resize "200x" >}}{{< /imgproc >}}|Werden über ROOMS Anlässe verschiedener Standorte (Länder, Städte, Filialen) verwaltet, kann hier der entsprechende Standort ausgewählt werden. ; Über das Plus (+) wählen Sie einen Standort aus oder geben ihn in der Eingabezeile ein.|
+|Feld|Funktion|
+|---|---|
+|Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlasses über den Datumspicker aus|
+|Anlasszeitpunkt  ; (alternativ zu Datum/Zeit)|**Alle** ; Es werden alle Zeitäume berücksichtigt ; **Heute laufende und künftige Anlässe** ; Alle Anlässe ab jetzt am heutigen Tag ; **laufende und künftige Anlässe** ; Alle Anlässe ab dem morgigen Tag ; **vergangene Anlässe** ; Alle bereits vergangenen Anlässe|
+|Standort|Werden über ROOMS Anlässe verschiedener Standorte (Länder, Städte, Filialen) verwaltet, kann hier der entsprechende Standort ausgewählt werden. ; Über das Plus (+) wählen Sie einen Standort aus oder geben ihn in der Eingabezeile ein.|
 {{< /bootstrap-table >}}

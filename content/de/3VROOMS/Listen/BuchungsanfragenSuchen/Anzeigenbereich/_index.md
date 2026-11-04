@@ -19,7 +19,7 @@ Standardmässig sind folgende Spalten sichtbar:
 |Spalte|Symbol|Anmerkungen|
 |---|---|---|
 |Titel||Titel der Buchungsanfrage|
-||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Buchungsanfrage bearbeiten ; _steht immer automatisch in der zweiten Spalte_|
+||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Buchungsanfrage bearbeiten ; _steht standardmässig in der dritten Spalte_|
 |Anlasstyp||Anlasstypen sind kundenspezifisch definiert ; _z.B. Kundenmeeting oder Konferenz_|
 |Status||Gibt den Bearbeitungsstand an|
 |Von||Startdatum|
@@ -52,12 +52,5 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 
 Am unteren Rand des Anzeigenbereichs finden Sie die Schaltfläche _Löschen_. Um eine Buchungsanfrage zu löschen, markieren Sie diese über die Checkbox am Zeilenanfang und klicken dann auf _Löschen_.
 
-{{< imgproc List_BA_del_b Resize "960x" >}}
-Löschen einer Buchungsanfrage
-{{< /imgproc >}}
-
 In dem erscheinenden Dialogfenster bestätigen Sie nun den Löschvorgang.
 
-{{< imgproc List_BA_del_best Resize "960x" >}}
-Dialogfenster zur Bestätigung des Löschvorgangs
-{{< /imgproc >}}

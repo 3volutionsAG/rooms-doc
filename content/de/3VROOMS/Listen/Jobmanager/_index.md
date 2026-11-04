@@ -34,10 +34,10 @@ Wichtige Abhängigkeiten:
 
 Das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** ist nicht notwendig, um Jobs grundsätzlich zu sehen oder zu verarbeiten. Es erweitert den Jobmanager aber um zusätzliche Eingriffe:
 
-- In der **Jobliste** steht die Aktion **Delete/Annullieren** auch dann zur Verfügung, wenn ein Job nicht ausschliesslich aus Lösch-Lektionen besteht.
-- In der **Detailprüfung** können selektierte Zeilen zusätzlich **annulliert** oder **gelöscht** werden.
-- In der **Detailprüfung** kann über **Ergänzen** eine neue Lektion zum aktuellen Job hinzugefügt werden.
-- Im Dialog **Ändern** werden zusätzlich die Felder **Beginn**, **Dauer** und **Wochentag** eingeblendet.
+- In der **Jobliste** steht die Aktion **Löschen** beziehungsweise **Annullieren** auch dann zur Verfügung, wenn ein Job nicht ausschliesslich aus Lösch-Lektionen besteht.
+- In der **Detailprüfung** können selektierte Zeilen zusätzlich über **Auswahl Annullieren** oder **Auswahl Löschen** annulliert oder gelöscht werden.
+- In der **Detailprüfung** kann über **Lektion hinzufügen** eine neue Lektion zum aktuellen Job hinzugefügt werden.
+- Im Dialog **Auswahl bearbeiten** werden zusätzlich die Felder **Beginn**, **Dauer** und **Wochentag** eingeblendet.
 - Bestimmte bereits importierte Jobmanager-Buchungen können nur mit diesem Recht annulliert werden.
 
 ## Ablauf

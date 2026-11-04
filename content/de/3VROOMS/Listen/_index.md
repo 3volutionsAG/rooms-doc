@@ -14,7 +14,7 @@ Der Inhaltsbereich ist, wie alle Bereiche in ROOMS, in das Sidepanel und den Anz
 Das Sidepanel bietet Ihnen vielfältige Filterkriterien, anhand derer Sie u.a. eine Buchung, eine Ressource oder einen Anlass finden können. Haben Sie die Kriterien ausgewählt, klicken Sie auf die Schaltfläche _Finden_, um die Ergebnisliste anzupassen.
 Über die Schaltfläche _Zurücksetzen_ löschen Sie die Filter und es werden wieder alle Einträge angezeigt.
 
-{{< imgproc List_Faufbau_FindReset Resize "960x" >}}
+{{< imgproc List_Faufbau_FindReset Resize "320x" >}}
 Schaltflächen um Suche zu starten und Filter zu löschen
 {{< /imgproc >}}
 

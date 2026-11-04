@@ -7,53 +7,41 @@ description: 'Bearbeiten Sie bestehende Dienstleister und deren Angebote und fü
 ## Ansicht Dienstleister
 Im linken Sidepanel sehen Sie die Filterfunktionen, mit denen Sie nach Dienstleistern suchen können.
 
-Im rechten Feld sehen Sie die Dienstleister Liste. Hier finden Sie alle eingespeicherten Dienstleister und deren Angebote. (Abbildung d)
+Im rechten Feld sehen Sie die Dienstleister Liste. Hier finden Sie alle eingespeicherten Dienstleister und deren Angebote (Abbildung d).
 
 {{< imgproc Dienstleister_bearbeiten_suchen Resize "1280x" >}}
 Abbildung d: Dienstleister bearbeiten und suchen
 {{< /imgproc >}}
 
-Über die Aktivierung der Checkbox können Sie Dienstleister aus der Liste entfernen. Dazu klicken Sie auf den untenstehenden Button "Entfernen". Die Liste aktualisiert sich dann automatisch.
+Über die Aktivierung der Checkbox können Sie Dienstleister aus der Liste entfernen. Dazu klicken Sie auf den untenstehenden Button "Löschen". Die Liste aktualisiert sich dann automatisch.
 
 ### Dienstleister suchen
 Im linken Sidepanel suchen Sie nach betsimmten Dienstleistern. Hierbei können Sie nach der Bezeichnung des Dienstleisters suchen (Abbildung d). Die Bezeichnung wird in der von Ihnen gespeicherten Sprache angezeigt.
 
 ### Dienstleister Daten einsehen
-Die Daten eines bestehenden Dienstleisters sehen Sie ein, indem Sie mit dem Mauszeiger auf den Namen des Dienstleisters in der Liste klicken (Abbildung di). Dort sehen Sie die Stammdaten und Historie ein und können diese bearbeiten.
+Die Daten eines bestehenden Dienstleisters sehen Sie ein, indem Sie mit dem Mauszeiger auf den Namen des Dienstleisters in der Liste klicken. Dort sehen Sie die Stammdaten und Historie ein und können diese bearbeiten.
 
 
-{{< imgproc Dienstleister_Daten_einsehen Resize "1280x" >}}
-Abbildung di: Einsehen der Daten eines Dienstleisters
-{{< /imgproc >}}
 
 ## Dienstleister bearbeiten
 Sie bearbeiten einen bestehenden Dienstleister, indem Sie auf das Stift Icon "Bearbeiten" neben dem Namen des Dienstleisters klicken (Abbildung d).
 
-In dem Feld, welches sich öffnet, legen Sie die Stammdaten des Dienstleisters fest (Abbildung db):
+In dem Feld, welches sich öffnet, legen Sie die Stammdaten des Dienstleisters fest:
 * Bezeichnung
 * Beschreibung
 
-Die neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung db).
+Die neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern".
 
-{{< imgproc Dienstleister_Stammdaten_bearbeiten Resize "1280x" >}}
-Abbildung db: Stammdaten des Dienstleister bearbeiten
-{{< /imgproc >}}
 
 ## Neue Dienstleister erstellen
-Einen neuen Dienstleister legen Sie über den untenstehenden Button "Neu" an (Abbildung d). In dem Feld, welches sich öffnet, legen Sie folgende Daten fest (Abbildung aa)
+Einen neuen Dienstleister legen Sie über den untenstehenden Button "Neu" an (Abbildung d). In dem Feld, welches sich öffnet, legen Sie folgende Daten fest:
 * die Stammdaten
 
-Die neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern" (Abbildung da).
+Die neu eingetragenen Daten speichern Sie über den untenstehenden Button "Speichern".
 
-{{< imgproc Dienstleister_neu_erstellen Resize "1280x" >}}
-Abbildung da: Festlegen eines neuen Dienstleisters
-{{< /imgproc >}}
 
-Die Liste aktualisiert sich automatisch und Sie sehen den neu eingetragenen Dienstleister in der Liste (Abbildung dc).
+Die Liste aktualisiert sich automatisch und Sie sehen den neu eingetragenen Dienstleister in der Liste.
 
-{{< imgproc Dienstleister_neu_in_Liste Resize "1280x" >}}
-Abbildung dc: Aktualisierte Liste mit neuem Dienstleister
-{{< /imgproc >}}
 
 ## Angebot bearbeiten und hinzufügen
 Um ein Angebot von einem Dienstleister hinzuzufügen oder zu bearbeiten, klicken Sie auf das EInkaufskorb Icon neben dem Listenelement (Abbildung d).
@@ -80,20 +68,14 @@ Fehlermeldungen, bzw. Regelverletzungen werden im Actionpanel ausgegeben.
 Bestätigungsmeldung wird im Actionpanel ausgegeben
 
 ### Neue Angebotskategorie
-Klicken Sie auf das erste Plus Zeichen neben einer Hauptkategorie, erstellen Sie eine übergeordnete Angebotskategorie. Es öffnet sich ein Fenster, in welchem Sie die Stammdaten eingeben (ABbildung dx):
+Klicken Sie auf das erste Plus Zeichen neben einer Hauptkategorie, erstellen Sie eine übergeordnete Angebotskategorie. Es öffnet sich ein Fenster, in welchem Sie die Stammdaten eingeben:
 
 * Bezeichnung: muss in allen verwendeten Sprachen eingetragen werden
 * Sortierung: Gewichtung der Kategorie im Angebotsbaum
 
-{{< imgproc Angebot_Plus1_hinzufügen Resize "1280x" >}}
-Abbildung dx: Neue Angebotskategorie hinzufügen
-{{< /imgproc >}}
 
-Speichern Sie Ihre Eingabe. Die Liste aktualisiert sich automatisch und Sie sehen die neue Angebotskategorie im Baum (Abbildung dy). Hier können Sie dann untergeordnete Angebote hinzufügen.
+Speichern Sie Ihre Eingabe. Die Liste aktualisiert sich automatisch und Sie sehen die neue Angebotskategorie im Baum. Hier können Sie dann untergeordnete Angebote hinzufügen.
 
-{{< imgproc Angebot_Plus1_neu Resize "1280x" >}}
-Abbildung dy: Angebotskategorie im Angebotsbaum
-{{< /imgproc >}}
 
 ### Neues Angebot
 Sie erstellen ein neues Angebot, indem Sie auf das zweite Plus Zeichen klicken. (Abbildung dd)
@@ -107,7 +89,7 @@ Sobald einem Angebot weitere Unterangebote zugeordnet werden, handelt es sich um
 Abbildung dz: Neues Angebot hinzufügen
 {{< /imgproc >}}
 
-Speichern Sie Ihre Angaben mit dem Button "Speichern". DIe Liste aktualisiert sich automatisch und Sie sehen Ihr neues Angebot im Baum. (Abbildung dv)
+Speichern Sie Ihre Angaben mit dem Button "Speichern". DIe Liste aktualisiert sich automatisch und Sie sehen Ihr neues Angebot im Baum.
 
 {{< bootstrap-table "table table-striped" >}}
 | Feld         | Funktion         |
@@ -130,24 +112,15 @@ Speichern Sie Ihre Angaben mit dem Button "Speichern". DIe Liste aktualisiert si
 {{< /bootstrap-table >}}
 
 
-{{< imgproc Angebot_Plus2_neu Resize "1280x" >}}
-Abbildung dv: Neues Angebot im Angebotsbaum
-{{< /imgproc >}}
 
 
 ### Neue Hauptkategorie
-Eine neue Hauptkategorie erstellen Sie über den untenstehenden gleichnamigen Button. Es öffnet sich ein Feld, in welchem Sie die Stammdaten des Angebots eingeben:
+Eine neue Hauptkategorie erstellen Sie über den untenstehenden Button "Hauptkategorie hinzufügen". Es öffnet sich ein Feld, in welchem Sie die Stammdaten des Angebots eingeben:
 
 * Bezeichnung: muss in allen verwendeten Sprachen eingetragen werden
 * Sortierung: Gewichtung der Kategorie im Angebotsbaum
 
-{{< imgproc Angebot_neue_Hauptkategorie Resize "1280x" >}}
-Abbildung df: Neue Hauptkategorie hinzufügen
-{{< /imgproc >}}
 
 Speichern Sie die neue Hauptkategorie über den Button "Speichern". Die Liste aktualisiert sich automatisch und Sie sehen die Kategorie im Angebotsbaum.
 
-{{< imgproc Angebot_Hauptkategorie_in_tree Resize "1280x" >}}
-Abbildung dg: Neue Hauptkategorie im Angebotsbaum
-{{< /imgproc >}}
 

@@ -4,13 +4,9 @@ linkTitle: "Schaltflächen"
 weight: 3
 description: 'Am unteren Rand des Anzeigenbereichs befinden sich Schaltflächen zur Verwaltung der Ressourcen.'
 ---
-{{< imgproc List_RES_Anz_Schalt Resize "960x" >}}
-Schaltflächen zur Verwaltung von Ressourcen
-{{< /imgproc >}}
+## Löschen {#entfernen}
 
-## Entfernen
-
-Mit **Entfernen** löschen Sie Ressourcen endgültig. Verwenden Sie diese Funktion nur, wenn die Ressource und ihre Buchungsdaten nicht mehr benötigt werden.
+Mit **Löschen** entfernen Sie Ressourcen endgültig. Verwenden Sie diese Funktion nur, wenn die Ressource und ihre Buchungsdaten nicht mehr benötigt werden.
 
 {{% alert title="Ressourcen nach Möglichkeit deaktivieren" color="warning" %}}
 Beim endgültigen Löschen werden die Buchungen der ausgewählten Ressourcen, davon abhängige Buchungen und Ressourcenzuordnungen unwiderruflich gelöscht. Bei kalendersynchronisierten Ressourcen entfernt ROOMS auch die zugehörigen Outlook-Termine.
@@ -19,7 +15,7 @@ Soll eine Ressource nur nicht mehr buchbar sein, deaktivieren Sie stattdessen un
 {{% /alert %}}
 
 1. Markieren Sie eine oder mehrere Checkboxen am Zeilenanfang.
-2. Klicken Sie auf **Entfernen**.
+2. Klicken Sie auf **Löschen**.
 3. Prüfen Sie die Angaben im Bestätigungsdialog. Bestätigen Sie nur, wenn die genannten Daten endgültig gelöscht werden sollen.
 
 {{< imgproc List_RES_Anz_del_b Resize "960x" >}}

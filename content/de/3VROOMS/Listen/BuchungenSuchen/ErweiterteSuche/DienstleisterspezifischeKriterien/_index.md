@@ -13,10 +13,10 @@ Es besteht die Möglichkeit, bestimmte Dienstleistungen zu einer Buchung hinzuzu
 Folgende Tabelle erläutert die Bedeutung der Checkboxen:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funkion|
-|---|---|---|
-|Mit nicht freigegebenen ; Bestellungen|{{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_xfreiBest Resize "200x" >}}{{< /imgproc >}}| Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox. |
-|Dienstleistungen ; mit offener Menge|{{< imgproc Listen_Buchungen_ErweiterteSuche_DienstSpezKrit_offeneMenge Resize "200x" >}}{{< /imgproc >}}| Um sich alle Buchungen anzeigen zu lassen, bei denen die Menge/Grösse der Bestellung noch nicht festgelegt ist, aktivieren Sie diese Checkbox. |
+|Feld|Funktion|
+|---|---|
+|Mit nicht freigegebenen ; Bestellungen| Um sich alle Buchungen anzeigen zu lassen, bei denen die bestellten Dienstleistungen noch nicht freigegeben wurden, aktivieren Sie diese Checkbox. |
+|Dienstleistungen ; mit offener Menge| Um sich alle Buchungen anzeigen zu lassen, bei denen die Menge/Grösse der Bestellung noch nicht festgelegt ist, aktivieren Sie diese Checkbox. |
 {{< /bootstrap-table >}}
 
 ## Buchungen mit mobilem Equipment finden

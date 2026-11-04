@@ -24,10 +24,6 @@ Klicken Sie auf die Schaltfläche _Bearbeiten_ und tragen Sie in das Feld _Wert_
 ## Neue Person hinzufügen
 
 
-Über diese Schaltfläche erstellen Sie einen [neuen Personeneintrag](/3vrooms/einstellungen/personen/) in der Datenbank.
-
-{{< imgproc List_Pers_neu Resize "960x" >}}
-Eingabemaske um eine neue Person der Datenbank hinzuzufügen
-{{< /imgproc >}}
+Über die Schaltfläche _Neu_ erstellen Sie einen [neuen Personeneintrag](/3vrooms/einstellungen/personen/) in der Datenbank.
 
 Eine detaillierte Beschreibung zum Hinzufügen von Personen finden Sie unter Einstellungen im Kapitel [Person](/einstellungen/personen).

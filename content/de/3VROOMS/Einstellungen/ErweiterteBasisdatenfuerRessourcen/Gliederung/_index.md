@@ -54,10 +54,6 @@ Neuen Hauptgliederungstypen hinzufügen und Stammdaten bearbeiten
 
 Haben Sie die eingetragenen Daten gespeichert, aktualisiert sich die Liste automatisch und der neue Gliederungstyp erscheint im Stamm.
 
-{{< imgproc Gliederung_neu_in_Liste Resize "960x" >}}
-Ansicht des neuen Hauptgliederungstypen in der Liste
-{{< /imgproc >}}
-
 ### Stammdaten des Gliederungstypen bearbeiten
 
 {{< bootstrap-table "table table-striped" >}}
@@ -78,10 +74,6 @@ Klicken Sie auf das Plus Symbol bei einem der Hauptgliederungstypen, können Sie
 Es öffnet sich ein neues Feld, in welchem Sie die Stammdaten, Ressourcen, Gruppen und Verfügbarkeit eingeben oder hinzufügen.
 
 Speichern Sie Ihre Angaben über den untenstehenden Button `Speichern`. Die Liste aktualisiert sich automatisch und Sie sehen die neu Gliederung im Startmodus.
-
-{{< imgproc Gliederung_in_tree Resize "960x" >}}
-Neuer Subgliederungstyp im Stamm
-{{< /imgproc >}}
 
 ### Stammdaten
 
@@ -133,10 +125,6 @@ Sie sehen hinzugefügte Ressourcen in der Liste. Sind dort keine vorhanden, kön
 Ressourcen derselben Gliederung müssen dasselbe Tarifmodell verwenden. Beim Hinzufügen einer Ressource prüft das System deshalb, ob das Tarifmodell der ausgewählten Ressource mit den bereits zugeordneten Ressourcen dieser Gliederung übereinstimmt. Bei Abweichungen erscheint eine Validierungsmeldung und die Zuordnung wird nicht gespeichert.
 {{% /alert %}}
 
-{{< imgproc Gliederung_hinzufügen_Ressourcen Resize "960x" >}}
-Ressourcen zu Gliederungstypen hinzufügen
-{{< /imgproc >}}
-
 Es öffnet sich ein Feld und Sie wählen eine oder mehrere Ressourcen über die Checkbox aus und fügen diese über den untenstehenden Button "hinzufügen" hinzu.
 
 {{< imgproc Gliederung_hinzufügen_Ressourcen2 Resize "960x" >}}
@@ -144,10 +132,6 @@ Ressourcen auswählen und speichern
 {{< /imgproc >}}
 
 Die Liste aktualisiert sich automatisch. Sie sehen die neu hinzugefügten Ressourcen in der Liste.
-
-{{< imgproc Gliederung_hinzufügen_Ressourcen_in_Liste Resize "960x" >}}
-Ressourcenübersicht in der Liste
-{{< /imgproc >}}
 
 ### Gruppe
 
@@ -159,10 +143,6 @@ Eine oder mehrere Gruppen zum Gliederungstypen auswählen und hinzufügen
 
 Bestätigen Sie Ihre Auswahl über den Button "Gruppe hinzufügen". Die Liste aktualisiert sich automatisch und Sie sehen die hinzugefügten Gruppen in der Liste.
 
-{{< imgproc Gliederung_Gruppe_hinzufügen_Liste Resize "960x" >}}
-Ansicht der neuen Gruppe in der Liste
-{{< /imgproc >}}
-
 ### Verfügbarkeit
 
 Im Reiter Verfügbarkeit können Sie weitere Ressourcen auswählen. Wählen Sie dafür den untenstehenden Button `Hinzufügen` aus und wählen Sie über die Checkbox eine oder mehrere Ressourcen aus.
@@ -172,10 +152,6 @@ Verfügbarkeiten auswählen und hinzufügen
 {{< /imgproc >}}
 
 Bestätigen Sie Ihre Auswahl über "Ressource hinzufügen". Die Liste aktualisiert sich automatisch.
-
-{{< imgproc Gliederung_Verfügbarkeit_hinzufügen_Liste Resize "960x" >}}
-Verfügbarkeiten auswählen und hinzufügen
-{{< /imgproc >}}
 
 ## Gliederungstypen löschen
 

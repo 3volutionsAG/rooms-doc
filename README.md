@@ -32,6 +32,8 @@ You can learn more about Docsy and find detailed theme instructions in the Docsy
 To just start adding content a good introduction can be found here: https://www.docsy.dev/docs/adding-content/content/#
 
 # Screenshots
+Screenshots entstehen aus Skripten gegen eine lokale Demo-Instanz mit fiktiven Daten, siehe [tools/screenshots](tools/screenshots/README.md).
+
 Any screenshot to illustrate a specific feature has to met the following criteria:
 - Format is png/jpg
 - If you clip the whole screen make sure the size is 1280x768 px
