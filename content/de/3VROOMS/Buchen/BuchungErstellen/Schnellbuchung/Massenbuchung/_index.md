@@ -18,11 +18,10 @@ Folgende Schritte führen Sie dazu aus:
    * Organisator:in
    * Anlasstyp: Mittels Pfeiltaste Rechts wählen Sie einen Anlass aus den gespeicherten Anlasstypen aus z.B. Kundenmeeting
    * Bemerkungen
-   * Mail (Checkbox aktivieren)
+   * **Mail**: Legen Sie pro Ressource fest, ob eine Buchungsbenachrichtigung verschickt werden soll. Mit der Checkbox in der Spaltenüberschrift schalten Sie die angezeigten Mail-Checkboxen gemeinsam um.
+   * **Sync**: Wenn die Synchronisationsspalte vorhanden ist, wählen Sie die Kalender-Synchronisation pro Ressource. Die Checkbox in der Spaltenüberschrift schaltet die veränderbaren Sync-Checkboxen gemeinsam um. Die Auswahl hängt davon ab, für welche Ressourcenarten Sie die Synchronisation aktiviert haben. Eine von der Ressource vorgeschriebene Synchronisation ist fest aktiviert.
 
-    {{< imgproc Buchen_Massenschnellbuchung Resize "960x" >}}
-    Schnellbuchung von mehreren Ressourcen durchführen
-    {{< /imgproc >}}
+   Prüfen Sie die Ressourcenliste vor dem Erstellen. Rote Zeitangaben kennzeichnen eine Ressource, die im gewählten Zeitraum nicht gebucht werden kann. Passen Sie den Zeitraum an oder entfernen Sie die Ressource mit **×** am Ende ihrer Zeile aus der Auswahl.
 
 4. Klicken Sie auf den Button **Erstellen** im Popup-Fenster
 5. Sie sehen eine Zusammenfassung Ihrer Buchung. In der unteren Leiste sehen Sie, dass Sie die bestehende Buchung bearbeiten, kopieren, drucken, stornieren oder für eine Serie verwenden können.
@@ -59,10 +58,6 @@ Um eine Ressource hinzuzufügen gehen Sie wie folgt vor:
    * Anlasstyp
    * Bemerkung
 
-    {{< imgproc Buchen_Massenschnellbuchung_Anlass Resize "960x" >}}
-    Massenschnellbuchung Ressourcen zu Anlässen hinzufügen
-    {{< /imgproc >}}
-
 6. Klicken Sie auf den Button **Erstellen** im Popup Fenster und Sie gelangen zurück zur Übersicht Ihrer Massen-Schnellbuchung.
 
     {{< imgproc Buchen_Massenschnellbuchung_Ressourcen_hinzugefügt Resize "960x" >}}
@@ -84,10 +79,6 @@ Wählen Sie den Button _Ressourcen zum Anlass buchen (Kalender)_, gelangen Sie z
     - Organisator:in
     - Anlasstyp
     - Bemerkung
-
-    {{< imgproc Buchen_Massenschnellbuchung_RessourceimKalender Resize "960x" >}}
-    Ressource im Kalender zum Anlass hinzufügen
-    {{< /imgproc >}}
 
 5. Klicken Sie auf den Button **Erstellen** im Popup-Fenster und Ihre ausgewählte Ressource wird der Massenschnellbuchung hinzugefügt.
 

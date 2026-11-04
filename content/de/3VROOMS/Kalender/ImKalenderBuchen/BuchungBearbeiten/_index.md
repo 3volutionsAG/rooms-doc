@@ -10,25 +10,53 @@ description: 'Im Kalender können Sie eine bereits bestehende Buchung bearbeiten
 Um eine Buchung zu bearbeiten, wählen Sie das **+** in der Reservation im Kalender aus. Dafür fahren Sie mit der Maus auf die Buchung und es erscheinen ein **+** und eine Checkbox.
 
 
-Klicken Sie auf das Plus Zeichen, erscheint ein Fenster mit mehreren Funktionen:
+Klicken Sie auf das **+**, öffnet sich das Buchungsfenster. Unter dem Titel stehen die Ressource und der Buchungszeitraum. Welche Aktionen angezeigt werden, hängt von Ihren Rechten und dem Zustand der Buchung ab.
 
-* Detail Informationen ansehen: Zusammenfassung der Detailreservation
-* Buchung bearbeiten: Detailbuchung bearbeiten
-* Annulieren: Buchung wird annuliert aber bleibt für Sie als Benutzer:in unsichtbar bestehen
-* Löschen: Buchung wird aus dem System gelöscht
-* No Show (verbergen): Wird eine Ressource nicht genutzt ohne annulliert zu werden, können Sie die Buchung mit entsprechendem Button als _No-Show_ kennzeichnen. Das Verhalten ist analog der Annullation, die annullierte Buchung wird aber als _No-show_ gekennzeichnet und kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung zur Nutzung ist das Recht _Darf Reservationen als No-Show kennzeichnen_.
-* Kopieren der Buchung
+### Aktionen im Buchungsfenster
 
-{{< imgproc Kalender_Buchung_Plus Resize "960x" >}}
-Buchung im Kalender auswählen und bearbeiten über das **+** Zeichen
-{{< /imgproc >}}
+Die häufig verwendeten Aktionen stehen direkt oben im Fenster:
 
+* **Detail**: Zusammenfassung der Detailreservation ansehen
+* **Bearbeiten**: Detailbuchung bearbeiten
+* **Kopieren**: Buchung kopieren
 
-**Hinweis**:
-Bei einer laufenden Reservation stehen zusätzlich die Buttons _Terminieren_ und _Freigeben_ zur Verfügung, sofern die erforderlichen Funktionsrechte vorhanden sind. Diese terminieren laufende Reservationen. Terminieren unter Berücksichtigung der Nachlaufzeit und Freigabe per sofort (auch Nachlaufzeit wird terminiert).
+Im Menü **Weitere Aktionen** finden Sie je nach Buchung:
+
+* **Zum Anlass**: den zugehörigen Anlass öffnen
+* **Annullieren** oder **Serie annullieren**: die Buchung oder Serie annullieren
+* **Terminieren** und **Freigeben**: eine laufende Reservation beenden
+* **No Show**: eine nicht genutzte Buchung annullieren und als No-Show kennzeichnen. Sie kann in der Listenansicht gefunden und ausgewertet werden. Voraussetzung ist das Recht **Darf Reservationen als No Show kennzeichnen**.
+* **Löschen** oder **Serie löschen**: die Buchung oder Serie aus dem System löschen
+
+Prüfen Sie vor dem Bestätigen einer Annullation oder Löschung, ob die Aktion eine einzelne Buchung oder die Serie betrifft. Das Schliessen des Bestätigungsdialogs führt die Aktion nicht aus.
+
+**Terminieren und Freigeben:** Beim Terminieren bleibt die Nachlaufzeit berücksichtigt. Beim Freigeben wird auch die Nachlaufzeit beendet. Mit dem Recht **Darf Reservationen terminieren mit Zeitpunkt** beziehungsweise **Darf Reservationen freigeben mit Zeitpunkt** öffnet der Menüeintrag zuerst die passende Zeiteingabe. Wählen Sie den Zeitpunkt und klicken Sie anschliessend auf **Terminieren** beziehungsweise **Freigeben** bei der Zeiteingabe.
+
+### Status ändern
+
+Der aktuelle Buchungsstatus wird mit einem farbigen Punkt in der konfigurierten Statusfarbe angezeigt. Wenn ein Statuswechsel möglich ist, wählen Sie unter **Status Wechsel** den Zielstatus aus. Prüfen Sie die angebotenen E-Mail-Optionen und bei Serien die Option **Änderungen auf Serie übernehmen**, bevor Sie auf **Übernehmen** klicken und die Rückfrage bestätigen.
+
+### Kalender-Synchronisation
+
+Wenn die Kalender-Synchronisation für die Buchung angezeigt wird, steht ihr Status in der Fusszeile. Die Aktion **Synchronisieren** erscheint dort direkt, sofern sie für die Buchung verfügbar ist.
+
+Zusätzliche Eingriffe finden Sie im Drei-Punkte-Menü **Synchronisationsaktionen** neben dem Status. Dieses Menü zeigt nur die für die Buchung verfügbaren Aktionen und setzt das Recht **Darf Konfiguration System verwalten** voraus. Bei Synchronisationsproblemen prüfen Sie zuerst die [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}), statt die Synchronisation ungeprüft zu erzwingen.
+
+### Fenster schliessen
+
+Sie können das Buchungsfenster über das Schliessen-Symbol, mit **Escape** oder durch einen Klick ausserhalb schliessen. Ein offenes Menü oder eine Auswahlliste wird mit Escape zuerst geschlossen. Ist ein vergrössertes Bemerkungsfeld geöffnet, wird zuerst dieses Fenster geschlossen. Der Klick ausserhalb schliesst das Fenster, ohne gleichzeitig eine andere Buchung zu öffnen.
+
+{{% alert title="Ungespeicherte Eingaben" color="warning" %}}
+Das Schliessen eines Buchungs- oder Schnellbuchungsfensters speichert keine Eingaben und erstellt keine Buchung. Schliessen Sie die Eingabe mit der vorgesehenen Aktion ab, bevor Sie das Fenster verlassen.
+{{% /alert %}}
 
 {{% alert title="Info: Tab „Fragenkatalog“ in Buchungen" color="info" %}}
-In einigen Buchungen sehen Sie zusätzlich den Tab **„Fragenkatalog“**. Dieser erscheint nur, wenn für die ausgewählte Ressource (z.B. Raum) ein Fragenkatalog hinterlegt ist und relevante Fragen vorhanden sind.\n\nMehr dazu:\n- [Fragenkatalog](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragenkatalog/)\n- [Fragen](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/)\n{{% /alert %}}
+In einigen Buchungen sehen Sie zusätzlich den Tab **„Fragenkatalog“**. Dieser erscheint nur, wenn für die ausgewählte Ressource (z.B. Raum) ein Fragenkatalog hinterlegt ist und relevante Fragen vorhanden sind.
+
+Mehr dazu:
+- [Fragenkatalog](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragenkatalog/)
+- [Fragen](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/fragen/)
+{{% /alert %}}
 
 ### Bearbeiten einer Buchung mittels Checkbox
 
