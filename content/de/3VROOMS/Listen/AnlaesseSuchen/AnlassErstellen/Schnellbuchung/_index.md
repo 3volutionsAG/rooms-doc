@@ -15,4 +15,4 @@ Achten Sie darauf, dass Sie den Zeitraum des Anlasses so wählen, dass die Buchu
 
 Nach dem Bestätigen der Eingaben wir die Detailseite des Anlasses erstellt. Hier sind alle Informationen zum Anlass übersichtlich dargestellt und alle hinzugefügten Buchungen aufgelistet. Über diese Seite können Sie den Anlass bearbeiten sowie weitere Buchungen hinzufügen.
 
-Eine Beschreibung der Verwaltungs- und Bearbeitungsmöglichkeiten finden Sie im Kapitel [Detailansicht Anlässe](/3vrooms/listen/anlässe-suchen/anzeigenbereich/detailansicht-anlässe/) sowie [Buchung einem Anlass hinzufügen](/3vrooms/listen/anlässe-suchen/anzeigenbereich/detailansicht-anlässe/bghinzufuegen/)
+Eine Beschreibung der Verwaltungs- und Bearbeitungsmöglichkeiten finden Sie im Kapitel [Detailansicht Anlässe](/3vrooms/listen/anlaessesuchen/anzeigenbereich/detailansichtanlaesse/) sowie [Buchung einem Anlass hinzufügen](/3vrooms/listen/anlaessesuchen/anzeigenbereich/detailansichtanlaesse/bghinzufuegen/)

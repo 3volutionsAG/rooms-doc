@@ -132,7 +132,7 @@ Sie sehen im Startmodus, welche Notifikationstypen bereits eingetragen sind. Sol
 Standort Notifikationen bearbeiten
 {{< /imgproc >}}
 
-Eine genaue Beschreibung der Notifikationen und möglichen Eingabefelder finden Sie hier: [Notifikationen](/einstellungen/pers%C3%B6nlicheeinstellungen/notifikation/)
+Eine genaue Beschreibung der Notifikationen und möglichen Eingabefelder finden Sie hier: [Notifikationen](/3vrooms/einstellungen/persönlicheeinstellungen/notifikation/)
 
 #### Buchungsanfrage
 

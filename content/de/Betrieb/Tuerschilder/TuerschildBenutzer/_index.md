@@ -9,7 +9,7 @@ Generell kann jede Person in ROOMS als System Person hinterlegt werden (solange 
 
 ## System Person erstellen und konfigurieren
 
-Zuerst muss eine Person in ROOMS erstellt werden, welche dann als System Person verwendet wird. Dazu gemäss Anleitung unter [Person neu hinzufügen](/einstellungen/personen/#person-neu-hinzuf%C3%BCgen) eine neue Person anlegen.
+Zuerst muss eine Person in ROOMS erstellt werden, welche dann als System Person verwendet wird. Dazu gemäss Anleitung unter [Person neu hinzufügen](/3vrooms/einstellungen/personen/#person-neu-hinzufügen) eine neue Person anlegen.
 
 Wir empfehlen folgende Angaben für diese System Person, damit der Betrieb mit den Türschildern einwandfrei funktioniert:
 

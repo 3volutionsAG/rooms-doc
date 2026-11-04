@@ -26,4 +26,4 @@ Klicken Sie auf die Schaltfläche _Bearbeiten_ und tragen Sie in das Feld _Wert_
 
 Über die Schaltfläche _Neu_ erstellen Sie einen [neuen Personeneintrag](/3vrooms/einstellungen/personen/) in der Datenbank.
 
-Eine detaillierte Beschreibung zum Hinzufügen von Personen finden Sie unter Einstellungen im Kapitel [Person](/einstellungen/personen).
+Eine detaillierte Beschreibung zum Hinzufügen von Personen finden Sie unter Einstellungen im Kapitel [Person](/3vrooms/einstellungen/personen/).

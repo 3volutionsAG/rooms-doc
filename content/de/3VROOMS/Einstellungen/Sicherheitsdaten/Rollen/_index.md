@@ -31,7 +31,7 @@ Globale Rechte gelten standortunabhängig. Lokale Rechte können pro Standort od
 
 
 Mehr zu Rechten verwalten finden Sie hier:
-[Rechte verwalten](/3vrooms/einstellungen/sicherheitsdaten/rollen/rechte-verwalten/)
+[Rechte verwalten](/3vrooms/einstellungen/sicherheitsdaten/rollen/rechteverwalten/)
 
 ### Rollen: Daten einsehen
 
