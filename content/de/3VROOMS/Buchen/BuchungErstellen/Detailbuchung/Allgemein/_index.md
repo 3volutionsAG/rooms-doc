@@ -16,7 +16,6 @@ In der Detailbuchung geben Sie folgende Daten zur Buchung der Ressource ein:
 | Titel   |  Hier kann der Titel der Reservation eingegeben werden.    |
 | Bemerkungen  |  In diesem Feld können zusätzliche Bemerkungen zur Reservation hinterlegt werden. Damit Informationen, die mehr Platz brauchen, übersichtlicher gelesen und erfasst werden können, kann mit Klick auf das Zoom Icon ein editierbares Popup geöffnet werden.   |
 | Bemerkungen intern  |  In diesem Feld können ebenfalls zusätzliche Reservationsinformationen hinterlegt werden. Im Gegensatz zu den anderen Bemerkungen, sind die internen Bemerkungen nur mit Spezialrechten les- und editierbar.   |
-| Test Demo   |  |
 | Status   |  Durch die Definition eines Workflows können Hauptstatus (vom System vorgegeben) und Substatus in eine logische Reihenfolge gebracht werden.  |
 | Anzahl Personen (1-20)  |  Dies ist die einzige Angabe, welche nur bei der Reservation eines Raumes zusätzlich auf dieser Maske erscheint. Hier kann eingegeben werden, wie viele Personen an diesem Meeting teilnehmen. Bei einer Eingabe wird diese Angabe mit der maximalen Kapazität verglichen und verunmöglicht, falls eine falsche Angabe eingegeben wurde, das Abschliessen der Reservation.   |
 | Davon Externe  |  Optionaler Anteil der externen Personen an der gesamten Personenanzahl. Der Wert darf nicht grösser sein als die gesamte Anzahl Personen.  |

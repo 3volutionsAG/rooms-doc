@@ -20,6 +20,7 @@ Sie haben die Möglichkeit mit mehreren Icons die Ansicht Ihres Kalenders zu ver
 | Person | Lassen Sie sich die Belegung für einzelne Personen anzeigen | {{< imgproc Icon_Personen_anzeigen Resize "50x" >}}{{< /imgproc >}} |
 | Exchange Free/Busy | Lassen Sie sich die Belegung von synchronisierten Exchange-Ressourcen anzeigen. Diese Funktion ist nur mit entsprechender Berechtigung sichtbar. | |
 {{< /bootstrap-table >}}
+
 ---
 
 

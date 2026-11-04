@@ -14,17 +14,19 @@ Tabelle: Übersicht und Erläuterung der standardmässig angezeigten Spalten
 |Organisator:in||Person, welche die Buchung organisiert|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}| Über diese Schaltfläche gelangen Sie auf die Eingabemaske der Buchung und können Änderungen vornehmen.|
 {{< /bootstrap-table >}}
+
 ---
 
 
 Eine genaue Beschreibung der Eingabemaske finden Sie im Kapitel [Buchung erstellen](/3vrooms/buchen/buchungerstellen/)
 
 {{< bootstrap-table "table table-striped" >}}
-|Spalte|Symbol|Anmerkungen|
-|---|---|---|
-|Organisation ; Bez. Organisator||Firma der organisierenden Person|
-|Buchungs Titel|| Mit einem Klick auf den Buchungstitel öffnen Sie die Detailansicht. |
+|Spalte|Anmerkungen|
+|---|---|
+|Organisation ; Bez. Organisator|Firma der organisierenden Person|
+|Buchungs Titel| Mit einem Klick auf den Buchungstitel öffnen Sie die Detailansicht. |
 {{< /bootstrap-table >}}
+
 ---
 
 
@@ -47,6 +49,7 @@ Weitere Informationen zur Detailansicht und Bearbeitungsmöglichkeiten finden Si
 |Ersteller:in||Person, welche die Buchung erstellt hat|
 |Annullieren|{{< imgproc List_BG_Anzeige_SymAnn Resize "40x" >}}{{< /imgproc >}}| Über diese Schaltfläche können Sie zukünftige Buchungen stornieren, vergangene oder laufende Buchungen aus einer Serie bleiben bestehen.|
 {{< /bootstrap-table >}}
+
 ---
 
 __Einschub Anmerkungen zum Annullieren__
@@ -67,4 +70,5 @@ In den Kalenderansichten sind stornierte Buchungen nicht mehr sichtbar, jedoch t
 |Buchungsnummer||Eindeutig zugeordnete Nummer der Buchung|
 |Fixes Equipment|{{< imgproc List_BG_Anzeige_SymFixEqu Resize "40x" >}}{{< /imgproc >}} {{< imgproc List_BG_Anzeige_TTFixEqu Resize "200x" >}}{{< /imgproc >}}|Equipment, welches der Ressource permanent zugeordnet ist und zur Verfügung steht ; _z.B. festinstallierter Beamer_ |
 {{< /bootstrap-table >}}
+
 ---

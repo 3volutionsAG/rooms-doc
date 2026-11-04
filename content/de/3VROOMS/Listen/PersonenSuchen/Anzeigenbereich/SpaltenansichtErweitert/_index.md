@@ -20,6 +20,7 @@ Folgende Tabelle erläutert die Spalteneinträge:
 |Aktive Buchungen|Buchungen, die von dieser Person getätigt wurden oder der diese Person zugeordnet wurden. Vergangene oder stornierte Buchungen werden nicht angezeigt.|
 |Aktive Raumeinheiten|Raumeinheit, z.B. Arbeitsplatz, der die Person zugeordnet ist. Der Eintrag ist mit der Detailansicht der Raumeinheit verknüpft.|
 {{< /bootstrap-table >}}
+
 ---
 
 
@@ -35,4 +36,5 @@ Detaillierte Informationen zur Detailseite und den Bearbeitungsmöglichkeiten de
 |Telefon extern|nicht-interne Telefonnummer|
 |E-Mail bestätigt|Ja/Nein|
 {{< /bootstrap-table >}}
+
 ---

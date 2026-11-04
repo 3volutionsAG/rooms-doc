@@ -16,4 +16,5 @@ Folgende Tabelle erläutert die Eingabefelder:
 |Datum/Zeit|Wählen Sie hier das Datum und den Zeitraum des gesuchten Anlasses über den Datumspicker aus oder geben Sie ihn nach Aktivierung der Checkbox manuell ein.|
 |Standort|Wählen Sie den Standort der angefragten Ressource an.|
 {{< /bootstrap-table >}}
+
 ---

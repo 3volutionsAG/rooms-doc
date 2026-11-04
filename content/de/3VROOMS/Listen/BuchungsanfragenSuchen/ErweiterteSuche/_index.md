@@ -30,6 +30,7 @@ Folgende Tabelle gibt Ihnen einen Überblick der Filterkriterien und erläutert 
 |Status|Wählen Sie den Bearbeitungsstatus der Buchungsanfrage aus|
 |Mit Anlass| **Ja:** Die Anfrage bezieht sich auf einen Anlass ; **Nein:** Die Anfrage wurde unabhängig von einem Anlass gestellt|
 {{< /bootstrap-table >}}
+
 ---
 
 ## Personenspezifische Kriterien
@@ -48,4 +49,5 @@ Unter Personenspezifischen Kriterien versteht man Merkmale, welche die erstellen
 |Ersteller:in|Person, welche den Anlass erstellt hat|
 |Verantwortliche:r|Person, welche verantwortlich für den Anlass ist|
 {{< /bootstrap-table >}}
+
 ---

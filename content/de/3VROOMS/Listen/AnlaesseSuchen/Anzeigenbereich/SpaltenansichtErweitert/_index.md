@@ -34,4 +34,5 @@ description: 'Neben den standardmässig angezeigten Spalten können Sie weitere 
 |Kosten|Kosten, die bei dem Anlass durch Catering&Service entstehen ; _z.B. Bestuhlungsservice oder Stehimbiss_|
 |Anzahl Personen|Anzahl der teilnehmenden bzw. angemeldeten Personen|
 {{< /bootstrap-table >}}
+
 ---

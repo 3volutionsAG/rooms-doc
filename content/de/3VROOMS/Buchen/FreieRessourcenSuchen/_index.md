@@ -27,8 +27,9 @@ Sie bearbeiten die Suchresultate in der Liste mit den folgenden Funktionen:
 | ------------- |-------------  | -------------|
 | Icon Schnellreservation         | Vor jedem Suchresultat sehen Sie eine Checkbox. Damit können mehrere Räume zusammen oder einzeln ausgewählt werden. Mittels Icon „Schnellreservation“ (wird nur angezeigt, sofern der Benutzer über das Funktionsrecht „Darf Schnellreservation durchführen“ verfügt) wird direkt eine Einzelbuchung mit Standardtitel für diese Reservationen erstellt. Die Ressourcen werden blockiert und können dann nachbearbeitet werden.  | {{< imgproc Button_Schnellreservation Resize "60x" >}}{{< /imgproc >}} |
 | Direkter Link Ressource |  Über das Klicken auf den Namen der Ressource in der Liste gelangen Sie zu den Buchungsfunktionen für diese Ressource. | |
-{{< /bootstrap-table >}}
 | Detailreservation  |  Der Button „Detailreservation“ verfügt über die gleiche Funktion wie der direkte Link auf die Ressource. Mit dem Aktivieren der Checkbox einer Ressource und dem Klick auf diesen Button kann also eine Detailreservation vorgenommen werden. Der Button wird nur angezeigt, wenn genau eine Ressource selektiert wurde. Mehrfachselektion und Buchung ist nur über Schnellreservation möglich. | {{< imgproc Button_Detailbuchung Resize "60x" >}}{{< /imgproc >}}
 | Sortierung  |  Falls der Titel einer Spalte einen Link aufweist, ist es möglich, mittels Klick auf diesen Link die Suchresultate nach diesem Kriterium zu sortieren.  | |
 | Ressourcen Info  |  Über den Info Button gelangen Sie zu den Stammdaten und der Historie der Ressource. | {{< imgproc Button_Ressourceninfo Resize "60x" >}}{{< /imgproc >}}|
+{{< /bootstrap-table >}}
+
 ---

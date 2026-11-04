@@ -13,4 +13,5 @@ description: 'Standardmässig sind hier aufgeführte Spalten sichtbar'
 |Telefon intern||firmeninterne Telefonnummer|
 |Mail||E-Mail-Adresse|
 {{< /bootstrap-table >}}
+
 ---

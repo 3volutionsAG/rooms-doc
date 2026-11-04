@@ -13,9 +13,10 @@ Suchmaske für Ressourcen im Sidepanel
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Ressourcenart|| Wählen Sie aus dem Drop-Down-Menü die gesuchte Ressourcenart aus. Die Ressourcenarten sind firmenspezifisch definiert.|
-|Standort||Geben Sie den Standort der Ressource ein oder wählen Sie diesen über die Schnellauswahl aus.|
+|Feld|Funktion|
+|---|---|
+|Ressourcenart| Wählen Sie aus dem Drop-Down-Menü die gesuchte Ressourcenart aus. Die Ressourcenarten sind firmenspezifisch definiert.|
+|Standort|Geben Sie den Standort der Ressource ein oder wählen Sie diesen über die Schnellauswahl aus.|
 {{< /bootstrap-table >}}
+
 ---

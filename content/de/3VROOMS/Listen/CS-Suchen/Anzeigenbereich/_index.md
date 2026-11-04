@@ -28,6 +28,7 @@ Standardmässig sind folgende Spalten sichtbar:
 |Bestellung Nummer||Anzahl der Bestellungen, die für diese Buchung aufgegeben wurden|
 |Buchungsstatus||Status der Buchung|
 {{< /bootstrap-table >}}
+
 ---
 
 Die Buchungsstatus im Einzelnen:
@@ -42,6 +43,7 @@ Die Buchungsstatus im Einzelnen:
 |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert werden.|
 |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wir die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
 {{< /bootstrap-table >}}
+
 ---
 
 ## Spaltenansicht Erweitert
@@ -75,4 +77,5 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Anlass Nummer|Eindeutige Nummer des Anlasses, zu welcher die Diesntleistung gebucht wurde|
 |Buchung Nummer|Buchungsnummer der Buchung, zu welcher die Dienstleistung gebucht wurde|
 {{< /bootstrap-table >}}
+
 ---

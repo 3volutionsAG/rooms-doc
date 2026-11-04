@@ -37,6 +37,7 @@ Folgende Tabelle gibt einen Überblick mit kurzen Erklärungen der Eingabefelder
 |Anlassstatus||Der Anlassstatus ist kundenspezifisch definiert. ; _Im Beispiel kann der Status auf angefragt - der Anlass wurde noch nicht genehmigt - oder gebucht gesetzt werden - der Anlass wird verbindlich erstellt._|
 |Kosten||Automatische Anzeige der aggregierten Kosten, die durch Catering & Service oder Mietgebühren zustande kommen.|
 {{< /bootstrap-table >}}
+
 ---
 _* Ist ein Name ausgewählt, können Sie über das Portraitsymbol an der rechten Seite des Eingabefelds die Detailansicht zu der Person einsehen. Dazu öffnet sich ein extra Fenster in Ihrem Browser_
 

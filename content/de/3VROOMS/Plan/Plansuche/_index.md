@@ -33,6 +33,7 @@ Filtermöglichkeiten im Plan
 | Typ | Ein- / Ausblenden von bestimmten Ressourcen-Typen. Nur Typen welche auch auf dem Plan vorhanden sind werden dargestellt. |
 | Datum / Zeit | Gewünschtes Datum sowie Begin und Ende für die Prüfung der Verfügbarkeit |
 {{< /bootstrap-table >}}
+
 ---
 
 
@@ -49,4 +50,5 @@ Filtermöglichkeiten im Plan
 | Gliederungen | Mit Hilfe von Gliederungen (Zusammenfassung bestimmter Attribute einer Ressource wie z.B. Raumtypen Sitzungszimmer, Schulungsraum, Kundenraum etc.) können Sie eine Suche zum Beispiel nach gewünschtem Equipment eingrenzen. Die Auswahl wird mit Klick auf das _Plus Symbol_ getätigt.  |
 | Klassifikationen | Mit Hilfe von Klassifikationen (Attribute zur spezifischen Kennzeichnung von Reservationen wie z.B. internes Meeting, Beratungsgespräch etc.) kann eine Eingrenzung der Suche nach Ressourcen, denen die gewünschten Klassifikationen zu Grunde liegen, erfolgen. Die Auswahl wird mit Klick auf das _Plus Symbol_ vorgenommen. Die Inhalte sind kundenspezifisch.  |
 {{< /bootstrap-table >}}
+
 ---

@@ -15,6 +15,7 @@ Standardmässig sind folgende Spalten sichtbar:
 |Ende|Enddatum und -uhrzeit der Buchung|
 |Titel/Gruppe|Bezeichnung des Anlasses oder der Besuchsgruppe, diese ist mit der Detailseite des Anlasses verlinkt.|
 {{< /bootstrap-table >}}
+
 ---
 
 Näheres zur Detailseite und wie Sie diese bearbeiten können, finden Sie unter [Detailansicht Anlässe](/3vrooms/listen/anlaessesuchen/anzeigenbereich/detailansichtanlaesse/).
@@ -26,4 +27,5 @@ Näheres zur Detailseite und wie Sie diese bearbeiten können, finden Sie unter 
 |Ressource|Art der Ressource, die gebucht wurde|
 |Standort|Standort der Ressource|
 {{< /bootstrap-table >}}
+
 ---

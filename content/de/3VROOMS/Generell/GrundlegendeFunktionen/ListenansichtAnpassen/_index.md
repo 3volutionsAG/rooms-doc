@@ -19,6 +19,7 @@ Folgende Tabelle erläutert die Listensymbole:
 |{{< imgproc Listensymbol_Spaltenauswahl Resize "40x" >}}{{< /imgproc >}}|Spaltenauswahl und -reihenfolge|Über das Spaltensymbol kann ausgewählt werden, welche Spalten angezeigt und in welcher Reihenfolge diese angeordnet werden sollen.; Durch Setzen eines Häkchens in der Checkbox vor dem Spaltennamen wird diese Spalte ausgewählt bzw. kann durch Entfernen des Häkchens die Spalte in der Ansicht entfernt werden.; Mit gehaltener linker Maustaste kann ein Spaltennamen an die gewünschte Position in der Bearbeitungsbox geschoben werden.; Um die Änderungen zu speichern, klicken Sie auf die Schaltfläche "Übernehmen". ; Die Spaltenauswahl und -sortierung wird für die nächste Suche gespeichert. Unter [Persönliche Einstellungen](/3vrooms/Einstellungen/PersönlicheEinstellungen) können Sie diese Einstellung wieder löschen. |
 |{{< imgproc Listensymbol_Refresh Resize "40x" >}}{{< /imgproc >}}|Refresh Intervall einstellen|Ein sogenannter Auto-Refresh sorgt dafür, dass die angezeigte Liste gemäss des eingestellten Refresh Intervalls aktualisiert wird. ; Das Refresh Intervall kann auf die gewünschte Länge durch Klicken auf die gewünschte Zeit ausgewählt werden. |
 {{< /bootstrap-table >}}
+
 ---
 
 _**TIPP**: Es ist nicht zu empfehlen, die Refresh-Rate unter 30 Sekunden zu setzen, da ansonsten die Arbeitsgeschwindigkeit des Programms verlangsamt werden könnte._

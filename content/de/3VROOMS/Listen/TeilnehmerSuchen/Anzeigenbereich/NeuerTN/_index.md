@@ -34,24 +34,25 @@ Folgende Tabelle erläutert die Eingabefehler.
 |Nachname|Nachname des Besuchs|
 |Mail|E-Mail-Adresse des Besuchs|
 {{< /bootstrap-table >}}
+
 ---
 
 _Anmerkung: Es müssen entweder Vorname und Nachname oder die E-mail-Adresse des Besuchs eingetragen werden._
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
+|Feld|Funktion|
+|---|---|
+|Gruppe| Standardmässig ist hier eine Einzelteilnehmer:in eingetragen. Sie können aber auch Besuchsgruppen hinzufügen. Siehe dazu Abschnitt [Besuchsgruppe hinzufügen](/3vrooms/listen/teilnehmersuchen/anzeigenbereich/neuertn/#besuchsgruppe-hinzufügen).|
+|Kommentar| Notieren Sie hier Informationen, die an einen Dienstleister weitergegeben werden müssen.|
+|Organisator:in|Person, welche den Besuch hinzufügt ; _Wird automatisch ausgefüllt._|
+|Datum/Zeit|Datum und Zeitspanne, in der der Besuch anwesend sein wird|
+|Standort|Ort, an dem der Besuch sein wird ; _Angabe ist zwingend erforderlich_|
+|Anlasstyp|Grund des Besuchs|
+|Optional|Teilnehmer gehört zum erweiterten Kreis der Teilnehmenden und ist für den Termin nicht erforderlich.|
+|VIP|Besuch wird als VIP gekennzeichnet|
+|Besuchspass Nummer|eindeutige Zuordnung des Besucherpasses|
+|Besuchspass zurück| Vermerk, ob der Besuchspass bereits zurückgegeben wurde oder noch im Umlauf ist |
 {{< /bootstrap-table >}}
-|Gruppe|| Standardmässig ist hier eine Einzelteilnehmer:in eingetragen. Sie können aber auch Besuchsgruppen hinzufügen. Siehe dazu Abschnitt [Besuchsgruppe hinzufügen](/3vrooms/listen/teilnehmersuchen/anzeigenbereich/neuertn/#besuchsgruppe-hinzufügen).
-|Kommentar|| Notieren Sie hier Informationen, die an einen Dienstleister weitergegeben werden müssen.|
-|Organisator:in||Person, welche den Besuch hinzufügt ; _Wird automatisch ausgefüllt._|
-|Datum/Zeit||Datum und Zeitspanne, in der der Besuch anwesend sein wird|
-|Standort||Ort, an dem der Besuch sein wird ; _Angabe ist zwingend erforderlich_|
-|Anlasstyp||Grund des Besuchs|
-|Optional||Teilnehmer gehört zum erweiterten Kreis der Teilnehmenden und ist für den Termin nicht erforderlich.|
-|VIP||Besuch wird als VIP gekennzeichnet|
-|Besuchspass Nummer||eindeutige Zuordnung des Besucherpasses|
-|Besuchspass zurück|| Vermerk, ob der Besuchspass bereits zurückgegeben wurde oder noch im Umlauf ist |
 
 Wenn Sie alle Eingaben getätigt haben, klicken Sie auf Speichern, um den Besuch hinzuzufügen und zur Listenansicht zurückzukehren.
 Über die Schaltfläche _Speichern & Neu_ speichern Sie den eingegebenen Besuch und öffnen eine neue leere Eingabemaske zur Erfassung eines weiteren Einzelbesuchs.

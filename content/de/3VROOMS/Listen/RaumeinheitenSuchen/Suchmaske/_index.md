@@ -13,10 +13,11 @@ Filter für die Suche nach Raumeinheiten
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Bezeichnung||Name der Raumeinheit|
-|Status||__aktiv:__ von der Belegung unabhängig, grundsätzlich nutzbar ; __inaktiv:__ Raumeinheit ist nicht zur Nutzung freigegeben|
-|Standort||Standortauswahl|
+|Feld|Funktion|
+|---|---|
+|Bezeichnung|Name der Raumeinheit|
+|Status|__aktiv:__ von der Belegung unabhängig, grundsätzlich nutzbar ; __inaktiv:__ Raumeinheit ist nicht zur Nutzung freigegeben|
+|Standort|Standortauswahl|
 {{< /bootstrap-table >}}
+
 ---

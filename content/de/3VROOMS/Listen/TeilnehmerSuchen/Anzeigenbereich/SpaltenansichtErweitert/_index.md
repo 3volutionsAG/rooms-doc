@@ -25,4 +25,5 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Organisator tel. (intern)||Firmeninterne Telefonnummer der Person, welche die Buchung organisiert|
 |Verantwortlicher||Person, welche für die Buchung verantworltich ist|
 {{< /bootstrap-table >}}
+
 ---

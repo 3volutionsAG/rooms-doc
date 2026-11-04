@@ -17,4 +17,5 @@ Standardmässig sind folgende Spalten sichtbar:
 |Fläche||Grösse der definierten Fläche|
 |Personen||Auflistung der zugewiesenen Personen|
 {{< /bootstrap-table >}}
+
 ---

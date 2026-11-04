@@ -43,6 +43,7 @@ Tabelle: Übersicht und Erläuterung der Spaltenbezeichnungen
 |Standort hierachisch|| Gibt es mehrere Standorte z.B. in verschiedenen Ländern, wird hier heruntergebrochen dargestellt, in welchem Land und in welcher Stadt sich der Standort befindet ; _z.B. CH/Basel/Südstadt, der Standort befindet sich in der Südstadt in Basel in der Schweiz_ |
 |Plan|{{< imgproc List_BG_Anzeige_SymPlan Resize "40x" >}}{{< /imgproc >}}| Über diese Schaltfläche öffnen Sie ein neues Fenster, in dem der Standort der Ressource auf einer Karte dargestellt wird |
 {{< /bootstrap-table >}}
+
 ---
 
 {{< imgproc List_BG_Anzeige_Plan Resize "960x" >}}
@@ -59,6 +60,7 @@ Neues Fenster mit Anzeige der Ressource auf dem Plan
 |Bemerkungen Annullation|{{< imgproc List_BG_Anzeige_TTBemAnn Resize "200x" >}}{{< /imgproc >}}|Bemerkungen, die bei der Stornierung vermerkt wurden ; _z.B. wegen Krankheit abgesagt_|
 |Ressource Info|{{< imgproc List_BG_Anzeige_SymResInfo Resize "40x" >}}{{< /imgproc >}}|Über diese Schaltfläche werden Sie auf die Detailansicht der Ressource weiter geleitet.|
 {{< /bootstrap-table >}}
+
 ---
 
 
@@ -99,6 +101,7 @@ Neues Fenster mit Anzeige der Ressource auf dem Plan
 |Serieninformationen|{{< imgproc Serienbuchung Resize "40x" >}}{{< /imgproc >}}|Kurzinformationen zur Serienbuchung. ; _Beginndatum, Enddatum, Intervall_|
 |Virtuelle Räume|{{< imgproc List_BG_Anzeige_TTVR Resize "200x" >}}{{< /imgproc >}}| Zuordnung eines virtuellen Raums ; _z.B. wurde der Raum "Matterhorn" gebucht, durch eine Verbindungstüre oder Herausnehmen einer Trennwand, können Sie den Raum um einen virtuellen Raum vergrössen/ergänzen_ |
 {{< /bootstrap-table >}}
+
 ---
 
 ## Mobiles Equipment als Textspalte

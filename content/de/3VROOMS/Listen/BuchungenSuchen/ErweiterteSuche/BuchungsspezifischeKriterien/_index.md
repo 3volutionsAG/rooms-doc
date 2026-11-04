@@ -19,6 +19,7 @@ Dies sind zum Beispiel die Buchungsnummer, der Titel oder auch eine Bemerkung.
 |Bemerkungen intern|Suchen Sie anhand einer eingefügten internen Bemerkung. ; *Interne Bemerkungen sind nur für berechtigte Personenkreise sichtbar.*|
 |Status|Den Status können Sie über die Schnellauswahl wählen.|
 {{< /bootstrap-table >}}
+
 ---
 
 
@@ -34,6 +35,7 @@ Folgende Tabelle erläutert die Bedeutung der Status:
 |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert weden.|
 |Besetzt (Temporär)| Eine Buchung wurde erstellt, muss jedoch noch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht. |
 {{< /bootstrap-table >}}
+
 ---
 
 <!-- Thema Slot vorerst aussenvor -->

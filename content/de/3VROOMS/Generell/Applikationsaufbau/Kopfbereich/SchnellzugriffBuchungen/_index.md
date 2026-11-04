@@ -24,7 +24,8 @@ Folgende Tabelle zeigt die vier Symbole und ihre Funktionen:
 {{< bootstrap-table "table table-striped" >}}
 |Symbol|Bedeutung|Symbol|Bedeutung|
 |---|---|---|---|
-|{{< imgproc Lupe Resize "40x" >}}{{< /imgproc >}}|Öffnen der [Detailansicht](/3vrooms/listen/buchungen-suchen/anzeigenbereich/detailansicht-buchungen/)|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|[Buchung bearbeiten](/3vrooms/buchen/buchung-erstellen/)|
-|{{< imgproc AbbruchX Resize "40x" >}}{{< /imgproc >}}|Buchung [terminieren](/3vrooms/listen/buchungen-suchen/anzeigenbereich/weitere-funktionen/#terminieren)|{{< imgproc grünerHaken Resize "40x" >}}{{< /imgproc >}}|Buchung [freigeben](/3vrooms/listen/buchungen-suchen/anzeigenbereich/weitere-funktionen/#freigeben)|
+|{{< imgproc Lupe Resize "40x" >}}{{< /imgproc >}}|Öffnen der [Detailansicht](/3vrooms/listen/buchungensuchen/anzeigenbereich/detailansichtbuchungen/)|{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|[Buchung bearbeiten](/3vrooms/buchen/buchungerstellen/)|
+|{{< imgproc AbbruchX Resize "40x" >}}{{< /imgproc >}}|Buchung [terminieren](/3vrooms/listen/buchungensuchen/anzeigenbereich/weiterefunktionen/#terminieren)|{{< imgproc grünerHaken Resize "40x" >}}{{< /imgproc >}}|Buchung [freigeben](/3vrooms/listen/buchungensuchen/anzeigenbereich/weiterefunktionen/#freigeben)|
 {{< /bootstrap-table >}}
+
 ---

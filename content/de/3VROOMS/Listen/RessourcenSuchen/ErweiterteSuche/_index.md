@@ -20,6 +20,7 @@ Weitere Kriterien im unteren Teil der Suchmaske
 |Status||Filter für aktive bzw. inaktive Ressourcen|
 |Verantwortliche Person||Vor- und/oder Nachname der Person, welche für die Ressource verantwortlich ist|
 {{< /bootstrap-table >}}
+
 ---
 
 ## Gliederung
@@ -31,8 +32,8 @@ Gliederung zur Suche nach Ressourcen
 {{< /imgproc >}}
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Raum: Raumtyp||Räume sind firemenspezifisch gegliedert ; _z.B. Konferenzraum, Seminarraum,..._|
-|Equipment: Equipmenttyp||Typ des Equipments ; _z.B. Beamer oder Flipchart_)|
+|Feld|Funktion|
+|---|---|
+|Raum: Raumtyp|Räume sind firemenspezifisch gegliedert ; _z.B. Konferenzraum, Seminarraum,..._|
+|Equipment: Equipmenttyp|Typ des Equipments ; _z.B. Beamer oder Flipchart_)|
 {{< /bootstrap-table >}}

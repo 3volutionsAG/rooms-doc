@@ -13,4 +13,5 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Höhe|Deckenhöhe der Raumeinheit|
 |Status|__aktiv:__ zur Nutzung freigegeben ; __inaktiv:__ Raumeinheit ist zur Nutzung nicht freigegeben|
 {{< /bootstrap-table >}}
+
 ---

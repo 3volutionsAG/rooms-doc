@@ -13,14 +13,15 @@ Suchmaske zur Suche nach Teilnehmenden
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Datum/Zeit|| Geben Sie das Datum und die Uhrzeit der Buchung manuell oder über den Datumspicker ein, für welche die Teilnehmenden angemeldet sind. |
-|Standort||Geben Sie den Standort für welchen die Buchung gilt ein oder wählen Sie diesen über die Schnellauswahl aus.|
-|Titel||Bezeichnung der Buchung|
-|Name/Vorname||Vor- oder Nachname der teilnehmenden Person|
-|Reservations Status||Buchungsstatus wählen ; *Erläuterungen siehe nächsten Abschnnitt*|
+|Feld|Funktion|
+|---|---|
+|Datum/Zeit| Geben Sie das Datum und die Uhrzeit der Buchung manuell oder über den Datumspicker ein, für welche die Teilnehmenden angemeldet sind. |
+|Standort|Geben Sie den Standort für welchen die Buchung gilt ein oder wählen Sie diesen über die Schnellauswahl aus.|
+|Titel|Bezeichnung der Buchung|
+|Name/Vorname|Vor- oder Nachname der teilnehmenden Person|
+|Reservations Status|Buchungsstatus wählen ; *Erläuterungen siehe nächsten Abschnnitt*|
 {{< /bootstrap-table >}}
+
 ---
 
 Folgende Tabelle erläutert die Buchungsstatus:
@@ -35,15 +36,17 @@ Folgende Tabelle erläutert die Buchungsstatus:
 |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert werden.|
 |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wir die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
 {{< /bootstrap-table >}}
+
 ---
 
 Fortsetzung der EIngabefelder in der Suchmaske:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Teilnehmer:in||__intern:__ unternehmenszugehörig ; __extern:__ fremdfirmenzugehörig|
-|Visitorpass Number||Nummer des Besucherausweises|
-|Besucherpass Status|| Status des Besucherausweises gibt an, ob der Ausweis bereits zurückgegeben wurde oder noch im Umlauf ist|
+|Feld|Funktion|
+|---|---|
+|Teilnehmer:in|__intern:__ unternehmenszugehörig ; __extern:__ fremdfirmenzugehörig|
+|Visitorpass Number|Nummer des Besucherausweises|
+|Besucherpass Status| Status des Besucherausweises gibt an, ob der Ausweis bereits zurückgegeben wurde oder noch im Umlauf ist|
 {{< /bootstrap-table >}}
+
 ---

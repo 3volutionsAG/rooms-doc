@@ -20,6 +20,7 @@ Erweitern Sie die Suche mittels drop-down, stehen Ihnen folgende Kriterien zur V
 | Raum:Raumtyp| Klicken Sie auf das _Plus Symbol_ und wählen Sie einen Raumtyp aus. Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der Webapplikation durch berechtigte Personen verändert werden. |
 | Equipment:Equipmenttyp|  Klicken Sie auf das _Plus Symbol_ und wählen Sie einen Equipmenttyp aus. Die Inhalte sind kundenspezifisch und können im Bereich der Gliederungen in der Webapplikation durch berechtigte Personen verändert werden. |
 {{< /bootstrap-table >}}
+
 ---
 
 {{< imgproc Plan_suche_Sidepanel Resize "960x" >}}

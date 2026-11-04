@@ -19,11 +19,11 @@ Eine bereits mit ROOMS synchronisierte Einzelbuchung kann in Outlook zur Serie w
 
 ### Vorbereitung
 
-|Möglicher Fehler|Resultat|Intervall|Logmeldung
 {{< bootstrap-table "table table-striped" >}}
+|Möglicher Fehler|Resultat|Intervall|Logmeldung|
 |---|---|---|---|
+|Keine Lizenzen|Abbruch|5 Minuten|[BackSync] - Missing license|
 {{< /bootstrap-table >}}
-|Keine Lizenzen|Abbruch|5 Minuten|[BackSync] - Missing license
 
 Für weitere Informationen wenden Sie sich bitte an das Support-Team der 3Volutions AG:
 

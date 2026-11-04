@@ -12,6 +12,7 @@ Folgende Tabelle zeigt die Spalten der Standardansicht auf:
 |Anlassbezeichnung||Titel des Anlasses|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Anlass bearbeiten ; _steht automatisch in der zweiten Spalte_|
 {{< /bootstrap-table >}}
+
 ---
 
 Details zur Handhabung der Eingabemaske sind im Kapitel [Anlass erstellen](/3vrooms/listen/anlaessesuchen/anlasserstellen/) beschrieben.
@@ -27,4 +28,5 @@ Details zur Handhabung der Eingabemaske sind im Kapitel [Anlass erstellen](/3vro
 |Ende|End-Datum und -Uhrzeit des Anlasses|
 |Anlasstyp|firmenspezifische Festlegung|
 {{< /bootstrap-table >}}
+
 ---

@@ -19,6 +19,7 @@ Folgende Tabelle erläutert die Spaltenkategorien:
 |Priorisierung|Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 |Ist fixes Equipment|  Gibt an, ob es sich um fixes oder mobiles Equipment handelt. ; _Wird beim Ressourcentyp "Equipment" angezeigt._ |
 {{< /bootstrap-table >}}
+
 ---
 
 [^1]: Die Priorisierung wird in den Daten der Ressource hinterlegt. Bei einer automatischen Vergabe der Ressourcen zu einer Buchung, wird die Ressource mit der obersten Priorisierung, beginnend mit 1, vergeben.

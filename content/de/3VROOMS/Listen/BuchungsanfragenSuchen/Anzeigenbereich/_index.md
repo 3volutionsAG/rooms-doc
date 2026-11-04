@@ -28,6 +28,7 @@ Standardmässig sind folgende Spalten sichtbar:
 |Ersteller:in||Person, welche die Buchungsanfrage erstellte|
 |Anlass vorhanden?||Gibt an, ob die Buchungsanfrage zu einem bestehenden Anlass gehört|
 {{< /bootstrap-table >}}
+
 ---
 
 ## Spaltenansicht Erweitert
@@ -45,6 +46,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Anzahl Teilnehmende|Gibt die Anzahl der erwarteten Teilnehmenden an|
 |Verantwortliche:r|Person, welche für die Buchungsanfrage verantwortlich ist|
 {{< /bootstrap-table >}}
+
 ---
 
 ## Schaltflächen

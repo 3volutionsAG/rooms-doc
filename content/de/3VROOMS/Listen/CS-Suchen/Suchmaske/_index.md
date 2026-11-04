@@ -13,16 +13,17 @@ Suchmaske für Catering & Service im Sidepanel
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Datum/Zeit|| Datum/Uhrzeit der bestellten Dienstleistung |
-|Standort|| Standort, an dem die Dienstleistung ausgeführt wird </p|
-|Dienstleistende||Bezeichnung der Dienstleistenden|
-|Angebotszone||Angebote eines Dienstleisters|
-|Angebotskategorie||Gruppierung von Angeboten aller Dienstleister, z.B. Getränke, Snacks,...|
-|Angebot||spezifisches Angebot eines Dienstleisters|
-|Status||Status über die Schnellauswahl wählen|
+|Feld|Funktion|
+|---|---|
+|Datum/Zeit| Datum/Uhrzeit der bestellten Dienstleistung |
+|Standort| Standort, an dem die Dienstleistung ausgeführt wird </p|
+|Dienstleistende|Bezeichnung der Dienstleistenden|
+|Angebotszone|Angebote eines Dienstleisters|
+|Angebotskategorie|Gruppierung von Angeboten aller Dienstleister, z.B. Getränke, Snacks,...|
+|Angebot|spezifisches Angebot eines Dienstleisters|
+|Status|Status über die Schnellauswahl wählen|
 {{< /bootstrap-table >}}
+
 ---
 
 Erläuterung der einzelnen Buchungsstatus:
@@ -37,4 +38,5 @@ Erläuterung der einzelnen Buchungsstatus:
 |Besetzt (System)|Eine Buchung wird gerade erstellt. Der Zeitraum wird vom System geblockt, damit keine Doppelbuchungen generiert werden.|
 |Besetzt (Temporär)|Eine Buchung wurde erstellt, muss jedoch entsprechend dem hinterlegten Workflow bestätigt werden. Wird die Buchung nicht im vorgegebenen Zeitraum bestätigt, wird der Eintrag automatisch gelöscht.||
 {{< /bootstrap-table >}}
+
 ---

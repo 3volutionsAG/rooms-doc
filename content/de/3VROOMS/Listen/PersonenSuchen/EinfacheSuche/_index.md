@@ -13,11 +13,11 @@ Filter der Einfachen Suche, um Personen zu finden
 Folgende Tabelle erläutert die Eingabefelder:
 
 {{< bootstrap-table "table table-striped" >}}
-|Feld||Funktion|
-|---|---|---|
-|Nachname/Vorname||Vor- und/oder Nachnamen der gesuchten Person, ; die Reihenfolge spielt keine Rolle|
-|E-Mail||E-Mail-Adresse der gesuchten Person|
-|Sync. Modus||Modus, über welchen die Einträge der gesuchten Person synchronisiert werden, z.B. _EWS1_, _O365_ oder _Microsoft365_.|
-|Sync. deaktiviert||**Ja:** Synchronisation ist deaktiviert ; **Nein:** Synchronisation ist aktiv|
-|Telefon (intern oder extern)||Telefonnummer der gesuchten Person|
+|Feld|Funktion|
+|---|---|
+|Nachname/Vorname|Vor- und/oder Nachnamen der gesuchten Person, ; die Reihenfolge spielt keine Rolle|
+|E-Mail|E-Mail-Adresse der gesuchten Person|
+|Sync. Modus|Modus, über welchen die Einträge der gesuchten Person synchronisiert werden, z.B. _EWS1_, _O365_ oder _Microsoft365_.|
+|Sync. deaktiviert|**Ja:** Synchronisation ist deaktiviert ; **Nein:** Synchronisation ist aktiv|
+|Telefon (intern oder extern)|Telefonnummer der gesuchten Person|
 {{< /bootstrap-table >}}

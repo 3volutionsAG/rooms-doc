@@ -12,6 +12,7 @@ Standardmässig sind folgende Spalten sichtbar:
 |Ressourcen ID||Eindeutige Zuordnung der Ressource|
 ||{{< imgproc Bleistift Resize "40x" >}}{{< /imgproc >}}|Details zu Ressourcen bearbeiten |
 {{< /bootstrap-table >}}
+
 ---
 
 Weitere Informationen zur Eingabemaske finden Sie im Kapitel [Ressourcen bearbeiten](/3vrooms/einstellungen/ressourcen/#ressource-bearbeiten).
@@ -24,4 +25,5 @@ Weitere Informationen zur Eingabemaske finden Sie im Kapitel [Ressourcen bearbei
 |Standort||hierarchische Darstellung des Standortes|
 ||{{< imgproc StandSort Resize "40x" >}}{{< /imgproc >}}|Über diese Schaltfläche wird die Standardsortierung der Spalten wiederhergestellt. Das Symbol erscheint am Ende der Kopfzeile, sobald Sie die Liste umsortiert haben.|
 {{< /bootstrap-table >}}
+
 ---

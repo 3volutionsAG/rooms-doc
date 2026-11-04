@@ -22,6 +22,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Annullieren| Absagen einer Buchung. Diese wird nicht mehr im Kalender oder Plan angezeigt, kann jedoch in den Suchen unter Listen gefunden werden. |
 |Anzeigenbereich| Im Anzeigenbereich ist der grösste Abschnitt im Fenster, in dem Listen, Pläne, Kalender, Ansichten und Eingabemasken dargestellt werden. |
 {{< /bootstrap-table >}}
+
 ---
 
 ## B
@@ -33,6 +34,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Buchungsdauer, max|Definierte Zeit, die eine Buchung maximal dauern darf|
 |Buchungsdauer, min|Definierte Zeit, die eine Buchung mindestens dauern muss|
 {{< /bootstrap-table >}}
+
 ---
 
 ## C
@@ -44,6 +46,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Custom Servervariable|Individueller Wert zur Zuordnung der Benutzerdaten in der Datenbank, hier Benutzername.|
 |.CSV-Datei|Eine .csv-Datei, ist eine Datei, die in einem Tabellenkalkulationsprogramm (z.B. Excel) verarbeitet werden kann.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## D
@@ -55,6 +58,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Detailansicht|Übersichtliche Darstellung aller hinterlegter Informationen einer Buchung, Ressource, Person,... auf einer Seite. Auch View Modus genannt|
 |Drop-Down-Menü|Mit Klick auf den nach unten gerichteten Pfeil öffnet sich eine Auswahl an Möglichkeiten, von welchen Sie eine auswählen können. Diese erscheint dann im Eingabefeld.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## E
@@ -68,6 +72,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Equipment (mobil)|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
 |External Identifier|Eindeutige Kennung einer Ressource, um diese von ausserhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## F
@@ -80,6 +85,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Form Credentials||
 |Freigeben|Eine laufende Buchung kann freigegeben werden, z. B. wenn eine Besprechung früher endet. Die Nachlaufzeit wird dann ebenfalls freigegeben und die Buchungsdauer minutengenau hinterlegt.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## G
@@ -92,6 +98,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Hauptbuchung|Bei einem Anlass mit mehreren Buchungen kann eine Buchung als Hauptbuchung markiert werden. ; _Z.B. wurde für eine Besprechung ein Raum und Parkplätze für die Teilnehmenden gebucht. Der Raum kann hierbei als Hauptbuchung markiert werden, da die Besprechung auch ohne Parkplätze stattfinden könnte/würde._|
 |hierachisch|Eine hierachische Darstellung wird z.B. beim Standort verwendet. Dies ist vor allem dann sinnvoll, wenn es in einer Stadt oder einem Land mehrere Standorte gibt. ; _Z.B. /Europa/CH/Bern/Filiale West_.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## I
@@ -104,6 +111,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Info URL|Link zu einer externen Seite mit Informationen zur Ressource oder Dienstleistung|
 |Intelibox|Eingabefeld mit Vorschlägen während der Eingabe und der Möglichkeit, über das Plus, entlang des hierachischen Pfads, eine Auswahl zu treffen|
 {{< /bootstrap-table >}}
+
 ---
 
 ## J
@@ -115,6 +123,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |---|---|
 |Kopfbereich|Der Kopfbereich ist der obere Bereich im Fenster, der u.a. die Menüleiste beinhaltet.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## L
@@ -126,6 +135,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |---|---|
 |mobiles Equipment|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## N
@@ -135,6 +145,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |---|---|
 |Nachlaufzeit|Zeit, die an eine Buchung angehängt wird, um die Ressource für eine neue Buchung vorbereiten zu können|
 {{< /bootstrap-table >}}
+
 ---
 
 ## O
@@ -145,6 +156,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |OAuth 2.0|offenes Protokoll, das eine sichere Autorisierung von Webservices oder mobilen Anwendungen ermöglicht, ohne Drittanbietern Passwörter offenlegen zu müssen.|
 |Organisator:in|Person, welche die Buchung organisiert ; _Z.B. Besprechung in einem Raum, Anlass|
 {{< /bootstrap-table >}}
+
 ---
 
 ## P
@@ -158,9 +170,10 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 {{< bootstrap-table "table table-striped" >}}
 |Begriff|Erklärung|
 |---|---|
-{{< /bootstrap-table >}}
 |Raumeinheit|Definierte Fläche (Z.B. Bürofläche), der eine bestimmte Anzahl an Personen zugewiesen werden kann.
 |Ressource|Eine Ressource ist eine buchbare Einheit, wie z.B. ein Raum, ein Parkplatz, aber auch Equipment (Beamer, Flipchart,...)|
+{{< /bootstrap-table >}}
+
 ---
 
 ## S
@@ -169,7 +182,6 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Begriff|Erklärung|
 |---|---|
 |Schaltfläche|Bereich auf der Oberfläche, der angeklickt werden kann, um eine bestimmte Aktion auszuführen. ; _Z.B. eine Diskette, um etwas zu speichern_|
-{{< /bootstrap-table >}}
 |Schnellauswahl|Plus-Zeichen neben einem Eingabefeld, das durch klicken ein kleines Fenster mit Auswahlmöglichkeiten öffnet.
 |Sidepanel|Menü auf der linken Seite im Fenster|
 |Status|Der Status gibt an, an welcher Stelle der Bearbeitungsvorgänge eine Buchung gerade steht, z.B. ob die Buchung noch genehmigt werden muss.|
@@ -177,6 +189,8 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Standort|Über ROOMS können mehrere Standorte ortsunabhängig verwaltet werden. Standort kann also das Land, die Stadt oder auch der Name einer Filiale sein.|
 |Standort (hierachisch)|Eine hierachische Darstellung wird verwendet, wenn es in einer Stadt oder einem Land mehrere Standorte gibt. ; _Z.B. /Europa/CH/Bern/Filiale West_.|
 |Sync. Modus|Schnittstelle, über welche Daten synchronisiert werden|
+{{< /bootstrap-table >}}
+
 ---
 
 ## T
@@ -189,6 +203,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |TMS System Id|TelePresence Management Suite System ID: eindeutige Kennzeichnung einer Ressource, die gebucht werden kann, z.B. Raumkennzeichnung.|
 |Tooltipp|Ein Tooltipp ist eine kleine Informationsblase, die erscheint, wenn man mit dem Mauszeiger über ein Symbol fährt.|
 {{< /bootstrap-table >}}
+
 ---
 
 ## U
@@ -199,12 +214,13 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 {{< bootstrap-table "table table-striped" >}}
 |Begriff|Erklärung|
 |---|---|
-{{< /bootstrap-table >}}
 |Verantwortliche:r|Person, die für die Buchung verantwortlich ist und diese, je nach Workflow, genehmigen muss.
 |VC|Abkürzung für Video Confernce (= Videokonferenz)|
 |View Modus|Übersichtliche Darstellung aller hinterlegten Informationen einer Buchung, Ressource, Person,... auf einer Seite. Auch Detailansicht genannt.|
 |virtuelle Räume|Raum, der durch das Ziehen von Trennwänden entsteht|
 |Vorlaufzeit|Zeit, die vor einer Buchung reserviert wird, um die Ressource auf die kommende Buchung vorbereiten zu können|
+{{< /bootstrap-table >}}
+
 ---
 
 ## W
@@ -215,6 +231,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Windows Credentials|Zugangsdaten (Benutzername und Passwort) für das Betriebssystem Windows|
 |Workflow|Ablauf festgelegter aufeinanderfolgender Arbeitsschritte, z.B. Genehmigungsprozess|
 {{< /bootstrap-table >}}
+
 ---
 
 ## X
