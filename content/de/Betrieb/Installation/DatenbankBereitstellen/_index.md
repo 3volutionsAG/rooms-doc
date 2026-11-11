@@ -7,7 +7,7 @@ aliases:
   - /de/betrieb/installation/datenbankerstellen/
   - /betrieb/installation/datenbankerstellen/
 ---
-Für eine ROOMS-Neuinstallation wird eine aktuelle Baukasten-Datenbank von 3volutions wiederhergestellt. Sie enthält die benötigten ROOMS-Stammdaten und Datenbankobjekte. Das Backup steht im Downloadbereich als [3volutions Datenbank – Baukasten.bak](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/529432586) zur Verfügung.
+Jede ROOMS-Installation verwendet eine eigene Datenbank. Für eine Neuinstallation wird eine aktuelle Baukasten-Datenbank von 3volutions wiederhergestellt. Sie enthält die benötigten ROOMS-Stammdaten und Datenbankobjekte. Das Backup steht im Downloadbereich als [3volutions Datenbank – Baukasten.bak](https://3volutions.atlassian.net/servicedesk/customer/portal/1/article/529432586) zur Verfügung.
 
 Eine leere Datenbank ist kein unterstützter Standardweg für eine produktive Neuinstallation. Die aktuelle RoomsPro CLI stellt keinen Befehl `db create` bereit und erzeugt mit `db migrate` allein keine vollständigen ROOMS-Stammdaten.
 
@@ -28,8 +28,7 @@ Eine leere Datenbank ist kein unterstützter Standardweg für eine produktive Ne
 5. Tragen Sie unter **Destination** den vorgesehenen Namen der ROOMS-Datenbank ein.
 6. Prüfen Sie unter **Files**, **Options** beziehungsweise **Restore As** die physischen Namen und Ablagepfade der Daten- und Logdateien. Sie dürfen nicht mit Dateien einer bestehenden Datenbank kollidieren.
 7. Starten Sie den Restore und warten Sie auf dessen erfolgreichen Abschluss.
-8. Wiederholen Sie den Vorgang für jede weitere Mandantendatenbank mit einem eigenen Datenbanknamen und eigenen Dateipfaden.
-9. Erstellen Sie vor der weiteren Bearbeitung eine Sicherung der frisch wiederhergestellten Datenbank.
+8. Erstellen Sie vor der weiteren Bearbeitung eine Sicherung der frisch wiederhergestellten Datenbank.
 
 ## Initialen Administrator zuordnen
 
@@ -39,7 +38,6 @@ Das Baukasten-Backup enthält eine dafür vorgesehene, bereits berechtigte Admin
 2. Suchen Sie ausschliesslich den für die initiale Administration vorgesehenen Baukasten-Logon.
 3. Ersetzen Sie dessen Feld `Name` durch den persönlichen Administrator-Account im Format `Domäne\Benutzer`.
 4. Ändern Sie weder `PersonId` noch `LogontypId` oder andere Logon-Zeilen.
-5. Wiederholen Sie die Zuordnung für jede Mandantendatenbank.
 
 Falls der vorgesehene Baukasten-Logon nicht eindeutig identifiziert werden kann, darf keine beliebige Zeile angepasst werden. Wenden Sie sich in diesem Fall an 3volutions.
 

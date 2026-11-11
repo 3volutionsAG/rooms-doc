@@ -35,7 +35,7 @@ Das MSI prüft die installierte ASP.NET Core Runtime unabhängig von der gewähl
 |---|---|
 | Applikations-/Webserver | 4 vCPU, 16 GB RAM |
 | Freier Speicher | mindestens 100 GB für Binärdateien, Logs, temporäre Dateien und Updates |
-| Datenbankserver | nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
+| Datenbankserver | nach Installationsgrösse, Datenvolumen und Backup-Strategie dimensionieren |
 {{< /bootstrap-table >}}
 
 ## Datenbank
@@ -44,7 +44,7 @@ Das MSI prüft die installierte ASP.NET Core Runtime unabhängig von der gewähl
 - SQL Server Management Studio für Restore und Berechtigungsvergabe
 - TCP/IP-Konnektivität zwischen allen ROOMS-Komponenten und SQL Server
 - Aktuelles ROOMS-Baukasten-Backup aus dem Downloadbereich
-- Backup- und Wiederherstellungsstrategie für jede Mandantendatenbank
+- Genau eine ROOMS-Datenbank pro Installation mit eigener Backup- und Wiederherstellungsstrategie
 
 ## Gemeinsamer ROOMS-Service-Account
 
@@ -54,7 +54,7 @@ Stellen Sie vor der Installation einen dedizierten Domänen-Account bereit, zum 
 - IIS Application Pool der RoomsPro API
 - Windows-Dienst `ROOMS`
 - Windows-Dienst `RoomsPro Worker`
-- integrierte Anmeldung an den ROOMS-Datenbanken
+- integrierte Anmeldung an der ROOMS-Datenbank der Installation
 
 Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md" >}}) beschrieben.
 

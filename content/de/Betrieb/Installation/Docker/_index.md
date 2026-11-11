@@ -71,7 +71,7 @@ Erstellen Sie die Operator-Datei nach [Konfigurationsdateien]({{< relref "Betrie
 
 ### Gemeinsame Datenbankidentität
 
-Verwenden Sie für `ConnectionStrings:<Mandant>` und `IdentityServer:RoomsDatabase` dieselbe Datenbankidentität. Damit arbeiten ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf jeder Mandantendatenbank `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
+Verwenden Sie für den einen nicht leeren Eintrag `ConnectionStrings:<Eintragsname>` und für `IdentityServer:RoomsDatabase` dieselbe Datenbank und dieselbe Datenbankidentität. Damit arbeiten ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf der Datenbank dieser Installation `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
 
 Bei SQL-Authentifizierung mit Benutzername und Passwort ist für `rooms-web` und `rooms-service` zusätzlich `Persist Security Info=True` erforderlich. Das [Legacy-SQL-Beispiel]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#sql-authentifizierung-für-legacy" >}}) erklärt die Einstellung und den Schutz der Zugangsdaten. Die gemeinsame Datenbankidentität bedeutet nicht, dass alle Verbindungsparameter identisch sein müssen. Für RoomsPro API mit integriertem IDP und RoomsPro Worker ist dieser Legacy-Parameter nicht erforderlich.
 
