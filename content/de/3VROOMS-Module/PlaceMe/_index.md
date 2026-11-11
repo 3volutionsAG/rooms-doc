@@ -80,7 +80,7 @@ Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Ein geteilter 
 
 Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Sichtbarkeit ändern oder den Filter löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diesen Filter verwenden. Kopieren Sie einen fremden Filter für eigene Abweichungen, statt eine gemeinsame Definition vorauszusetzen.
 
-Beim Wechsel mit ungespeicherten Änderungen erscheint eine Rückfrage. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten.
+Wenn Sie einen bereits ausgewählten gespeicherten Filter ändern und anschliessend zu einem anderen Filter wechseln, erscheint eine Rückfrage. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählten gespeicherten Filter kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vor dem Wechsel, wenn Sie sie behalten möchten.
 
 ### Datumsangaben in gespeicherten Scheduling-Filtern
 
