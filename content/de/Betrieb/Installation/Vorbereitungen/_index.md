@@ -19,14 +19,14 @@ Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demse
 {{< bootstrap-table "table table-striped" >}}
 | Komponente | Voraussetzung |
 |---|---|
-| Aktuelles ROOMS-MSI | Windows Server x64 und `.NET 10 Runtime` (x64) |
-| Legacy Website `ROOMS` | IIS 10 oder neuer und `.NET Framework 4.8` |
-| Legacy Windows Service `ROOMS` | `.NET Framework 4.8` |
-| `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64) |
+| Aktuelles ROOMS-MSI | Windows Server x64 und ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
+| Legacy Website `ROOMS` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
+| Legacy Windows Service `ROOMS` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
+| `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
 | `RoomsPro Worker` | `.NET 10 Runtime` (x64) |
 {{< /bootstrap-table >}}
 
-Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten Feature-Kombination. Installieren Sie das Hosting Bundle vor der IIS-Konfiguration der RoomsPro API.
+Das MSI prüft die installierte ASP.NET Core Runtime unabhängig von der gewählten Feature-Kombination. Die reine .NET Runtime genügt dafür nicht. Installieren Sie auf IIS-Servern das Hosting Bundle vor der Konfiguration der beiden Websites. Beide verwenden `AspNetCoreModuleV2` und einen Application Pool mit **No Managed Code**.
 
 ## Basis-Hardware
 
@@ -78,7 +78,7 @@ Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechti
 | RoomsPro API | `C:\inetpub\wwwroot\API` |
 {{< /bootstrap-table >}}
 
-Wenn andere Verzeichnisse gewählt werden, müssen die nachfolgenden Befehle, IIS-Einstellungen und die manuelle API-Erweiterung der `Config.bat` entsprechend angepasst werden.
+Wenn andere Verzeichnisse gewählt werden, passen Sie die nachfolgenden Befehle und IIS-Einstellungen entsprechend an. `Config.bat` verwendet die registrierten Installationspfade.
 
 ## Netzwerk und externe Systeme
 
