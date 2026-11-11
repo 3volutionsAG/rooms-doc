@@ -23,7 +23,7 @@ Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demse
 | Legacy Website `ROOMS` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
 | Legacy Windows Service `ROOMS` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 | `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
-| `RoomsPro Worker` | `.NET 10 Runtime` (x64) |
+| `RoomsPro Worker` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 {{< /bootstrap-table >}}
 
 Das MSI prüft die installierte ASP.NET Core Runtime unabhängig von der gewählten Feature-Kombination. Die reine .NET Runtime genügt dafür nicht. Installieren Sie auf IIS-Servern das Hosting Bundle vor der Konfiguration der beiden Websites. Beide verwenden `AspNetCoreModuleV2` und einen Application Pool mit **No Managed Code**.
