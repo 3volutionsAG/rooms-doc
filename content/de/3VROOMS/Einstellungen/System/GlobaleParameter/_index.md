@@ -65,8 +65,8 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 154 | Active reservation refresh time | Refresh time in seconds, a value of 0 disables the active reservation view | 120 |
 | 112 | Anlassersteller anhand der Buchungsanfrage gesetzt | Wenn selektiert, dann wird der Anlassersteller anhand der Buchungsanfrage gesetzt sonst wird der aktuell angemeldete Benutzer verwendet. | true |
 | 95 | Anzahl Personen Detailansicht kein Initialwert | Falls aktiviert wird bei der Detailansicht keinen Initialwert bei Anzahl Personen gesetzt | false |
-| 18 | Applikation Root-Url | Hauptpfad der Applikation inkl. Mandantangabe (wird benötigt z.B. bei Notifikationen) | |
-| 60 | Applikation Root-Url Anonymous | Anonymouspfad der Applikation inkl. Mandantangabe (wird benötigt z.B. für Rest-Api) | |
+| 18 | Applikation Root-Url | Öffentliche Basis-URL der ROOMS-Installation ohne Mandantenpräfix, z.B. für Notifikationen. Einen Installationspfad wie `/Rooms` beibehalten. | |
+| 60 | Applikation Root-Url Anonymous | Öffentliche anonyme Basis-URL der ROOMS-Installation ohne Mandantenpräfix. Einen Installationspfad wie `/Rooms` beibehalten. | |
 | 11 | Arbeitsbeginn | General end of work within the company. | 08:00 |
 | 12 | Arbeitsende | Default-Einstellung um welche Zeit der Dienstleister Feierabend macht. | 17:00 |
 | 161 | Aufbewahrungsdauer Bewegungsdaten | Aufbewahrungsdauer in Monaten für Bewegungsdaten wie Reservationen, Anlässe, Historie, Lektionen, Reservationsanfragen und Aktionshistorie. | 36 |
