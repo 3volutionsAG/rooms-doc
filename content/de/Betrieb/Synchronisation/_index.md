@@ -35,7 +35,7 @@ Die Unterschiede liegen dort vor allem in:
 - dem Zielsystem (On-Premises vs Exchange Online)
 - der verwendeten Authentisierung
 
-Nur `Microsoft365` ist ein **grundsätzlich anderer** Modus: dieser Sync läuft über die **Microsoft Graph API** inklusive Graph-Webhooks, Graph-Berechtigungen und der separaten `CalendarSync`-Konfiguration in `appsettings.json`.
+Nur `Microsoft365` ist ein **grundsätzlich anderer** Modus: dieser Sync läuft über die **Microsoft Graph API** inklusive Graph-Webhooks, Graph-Berechtigungen und dem Abschnitt `CalendarSync:Graph` in der gemeinsamen `appsettings.operator.json`.
 
 Explizite Exchange-Serverversionen wie `Exchange2010`, `Exchange2013` oder `Exchange2016` sind **keine Benutzer- oder Ressourcen-SyncModi**.
 

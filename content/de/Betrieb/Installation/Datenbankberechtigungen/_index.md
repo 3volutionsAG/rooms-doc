@@ -18,7 +18,7 @@ Der Account betreibt:
 - den Windows-Dienst `ROOMS`
 - den Windows-Dienst `RoomsPro Worker`
 
-Bei Docker Compose gilt dasselbe Rollenmodell. Der eine Legacy-Verbindungseintrag unter `ConnectionStrings` und `IdentityServer:RoomsDatabase` für API und Worker zeigen auf dieselbe Datenbank dieser Installation. Die gemeinsame Datenbankidentität wird in `appsettings.operator.json` hinterlegt. Beachten Sie [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
+Bei Docker Compose gilt dasselbe Rollenmodell. Alle vier Komponenten verwenden den gemeinsamen `ConnectionString` auf der obersten Ebene von `appsettings.operator.json` für dieselbe Datenbank dieser Installation. Beachten Sie [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
 
 ## SQL-Login und Laufzeitrechte
 

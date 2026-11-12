@@ -54,9 +54,7 @@ flowchart LR
   RoomsProWeb -->|"persist_notification"| RoomsDB
 ```
 
-## Wichtige Änderung gegenüber älteren Setups
-
-Die frühere explizite Service-Session `pushSubscriberServiceSession` wird in produktiven Setups **nicht mehr separat aktiviert**.
+## Hintergrundverarbeitung
 
 Subscription-Erstellung und -Erneuerung laufen über die Hintergrundverarbeitung / `RoomsPro.Worker`, insbesondere über:
 
@@ -84,30 +82,11 @@ Empfehlungen:
 - [IDP Root-Url]({{< relref "3vrooms/einstellungen/system/globaleparameter/#liste-der-konfigurationen" >}})
 - Standard-Callback: `IdpRootUrl + /api/webhooks/exchange`
 
-## Konfiguration (RoomsAppSettings / Environment Variables)
+## Callback konfigurieren
 
-Die Werte werden aus `RoomsContext.AppSettings` gelesen (Konfiguration via `RoomsAppSettings.config`) und können via Environment Variables überschrieben werden.
+Pflegen Sie die optionale absolute Callback-URL unter `CalendarSync:Ews:Common:NotificationEndpointUrl` in der gemeinsamen `appsettings.operator.json`. Ohne diesen Wert verwendet ROOMS `IdpRootUrl + /api/webhooks/exchange`. Mindestens eine dieser Angaben muss eine gültige öffentliche Callback-URL ergeben.
 
-- **`ExchangePushNotificationEndpointUrl`** - optionale absolute Override-URL
-- **`ExchangePushNotificationUseLegacyEndpoint`** - optionaler Rollback auf `SyncNotification.svc`
-
-Precedence:
-
-1. `ExchangePushNotificationEndpointUrl`
-2. `ExchangePushNotificationUseLegacyEndpoint=true`
-3. Default: `IdpRootUrl + /api/webhooks/exchange`
-
-**Local dev**
-
-```text
-https://<your-tunnel-host>/api/webhooks/exchange
-```
-
-**Prod rollback**
-
-```text
-https://<rooms-host>/WebServices/SyncNotification.svc?{tenant}
-```
+Stellen Sie die Datei für alle vier Komponenten bereit und starten Sie betroffene Prozesse neu, wie unter [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschrieben. Die entsprechende Umgebungsvariable lautet `CalendarSync__Ews__Common__NotificationEndpointUrl`. Ein [JSON-Beispiel]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}) zeigt den vollständigen Abschnitt.
 
 ## Funktionsablauf
 

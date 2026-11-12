@@ -51,7 +51,7 @@ Damit können Sie in einem gemeinsamen ROOMS-Setup mehrere Exchange-Online-Tenan
 
 Die Konfiguration erfolgt in:
 
-- `appsettings.json`
+- gemeinsame `appsettings.operator.json`, identisch für alle vier Komponenten
 - `CalendarSync:Ews:Providers:O365:DomainOverrides`
 
 Ein vollständiges Beispiel finden Sie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
@@ -66,33 +66,39 @@ Einrichtung der App-Only-Authentifizierung via Microsoft Entra ID mit EWS-Anwend
 4. Secret oder Zertifikat konfigurieren.
 5. ROOMS konfigurieren.
 
-### ROOMS konfigurieren (`RoomsAppSettings.config`)
+### ROOMS konfigurieren (`appsettings.operator.json`)
+
+Die folgenden Beispiele ergänzen Anwendungseinstellungen unter `Rooms`. Stellen Sie auch die benötigten Werte unter `CalendarSync:Ews:Providers:O365` bereit, wie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}) beschrieben. Ersetzen Sie mit den Beispielen nicht die übrige Konfiguration. Verteilen Sie die gemeinsame Datei an alle vier Komponenten und starten Sie betroffene Prozesse neu.
 
 Geheimnis-basierte Anmeldung:
 
-```xml
-<RoomsAppSettings>
-  <add key="ExchangeTenantId" value="xxx" />
-  <add key="ExchangeAppId" value="xxx" />
-  <add key="ExchangeClientSecret" value="xxx" />
-</RoomsAppSettings>
+```json
+{
+  "Rooms": {
+    "ExchangeTenantId": "<tenant-id>",
+    "ExchangeAppId": "<client-id>",
+    "ExchangeClientSecret": "<client-secret>"
+  }
+}
 ```
 
 Zertifikat-basierte Anmeldung:
 
-```xml
-<RoomsAppSettings>
-  <add key="ExchangeTenantId" value="xxx" />
-  <add key="ExchangeAppId" value="xxx" />
-  <add key="ExchangeCertThumbprint" value="xxx" />
-</RoomsAppSettings>
+```json
+{
+  "Rooms": {
+    "ExchangeTenantId": "<tenant-id>",
+    "ExchangeAppId": "<client-id>",
+    "ExchangeCertThumbprint": "<certificate-thumbprint>"
+  }
+}
 ```
 
-### Zertifikatsauthentisierung - was der Code tatsächlich macht
+### Voraussetzungen für Zertifikatsauthentisierung
 
 Die EWS-Implementierung für `O365` unterstützt Zertifikatsauthentisierung **im App-Only- / Impersonation-Modus**.
 
-Code-verifiziert:
+Beachten Sie:
 
 - das Zertifikat wird anhand des Thumbprints aus **`LocalMachine\My`** geladen
 - ROOMS / der Windows-Dienst bzw. Worker-Prozess benötigt Zugriff auf den **privaten Schlüssel**
@@ -157,12 +163,25 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 ### Voraussetzungen und ROOMS-Konfiguration
 
 - der Service-User **muss** ein eigenes Exchange-Postfach besitzen
-- Delegation in `RoomsAppSettings.config` aktivieren:
+- Delegation unter `Rooms` in `appsettings.operator.json` aktivieren:
 
-```xml
-<RoomsAppSettings>
-  <add key="ExchangeUseImpersonation" value="false" />
-</RoomsAppSettings>
+Setzen Sie auch `CalendarSync:Ews:Providers:O365:UseImpersonation` auf `false`. Bei verwendeten `DomainOverrides` muss der jeweilige Override ebenfalls zum delegierten Modus passen. Hinterlegen Sie Tenant, App, Service-User und Passwort passend in beiden Konfigurationsbereichen. Beispiel für die Moduswahl, ergänzend zu den Zugangsdaten:
+
+```json
+{
+  "Rooms": {
+    "ExchangeUseImpersonation": false
+  },
+  "CalendarSync": {
+    "Ews": {
+      "Providers": {
+        "O365": {
+          "UseImpersonation": false
+        }
+      }
+    }
+  }
+}
 ```
 
 ### App in Microsoft Entra ID registrieren
@@ -174,13 +193,15 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 
 ### ROOMS mit Benutzeranmeldeinformationen konfigurieren
 
-```xml
-<RoomsAppSettings>
-  <add key="ExchangeTenantId" value="{GUID}" />
-  <add key="ExchangeAppId" value="{GUID}" />
-  <add key="ExchangeServiceUser" value="roomsdelegated@rooms.myo365.site" />
-  <add key="ExchangeServicePassword" value="mySecretPassword" />
-</RoomsAppSettings>
+```json
+{
+  "Rooms": {
+    "ExchangeTenantId": "<tenant-id>",
+    "ExchangeAppId": "<client-id>",
+    "ExchangeServiceUser": "roomsdelegated@example.ch",
+    "ExchangeServicePassword": "<service-password>"
+  }
+}
 ```
 
 ### Berechtigungen pro Postfach setzen
