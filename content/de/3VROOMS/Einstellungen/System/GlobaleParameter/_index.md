@@ -65,8 +65,8 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 154 | Active reservation refresh time | Refresh time in seconds, a value of 0 disables the active reservation view | 120 |
 | 112 | Anlassersteller anhand der Buchungsanfrage gesetzt | Wenn selektiert, dann wird der Anlassersteller anhand der Buchungsanfrage gesetzt sonst wird der aktuell angemeldete Benutzer verwendet. | true |
 | 95 | Anzahl Personen Detailansicht kein Initialwert | Falls aktiviert wird bei der Detailansicht keinen Initialwert bei Anzahl Personen gesetzt | false |
-| 18 | Applikation Root-Url | Hauptpfad der Applikation inkl. Mandantangabe (wird benötigt z.B. bei Notifikationen) | |
-| 60 | Applikation Root-Url Anonymous | Anonymouspfad der Applikation inkl. Mandantangabe (wird benötigt z.B. für Rest-Api) | |
+| 18 | Applikation Root-Url | Öffentliche Basis-URL der ROOMS-Installation ohne Mandantenpräfix, z.B. für Notifikationen. Einen Installationspfad wie `/Rooms` beibehalten. | |
+| 60 | Applikation Root-Url Anonymous | Öffentliche anonyme Basis-URL der ROOMS-Installation ohne Mandantenpräfix. Einen Installationspfad wie `/Rooms` beibehalten. | |
 | 11 | Arbeitsbeginn | General end of work within the company. | 08:00 |
 | 12 | Arbeitsende | Default-Einstellung um welche Zeit der Dienstleister Feierabend macht. | 17:00 |
 | 161 | Aufbewahrungsdauer Bewegungsdaten | Aufbewahrungsdauer in Monaten für Bewegungsdaten wie Reservationen, Anlässe, Historie, Lektionen, Reservationsanfragen und Aktionshistorie. | 36 |
@@ -78,7 +78,7 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 165 | Benutzer ohne Firma gelten als extern | Wenn aktiviert, werden Benutzer ohne aktive Firmenzuordnung als externe Benutzer behandelt. | false |
 | 63 | Bis Zeit automatisch anpassen | Gibt an, ob im Datums- und Zeitpicker die Bis Zeit automatisch angepasst werden soll (Blockverschiebung) | true |
 | 115 | Booking requests: Support multiple datetime formats | If set to true, booking requests can support multiple datetime formats. The requests need to be specifically designed to do so. | false |
-| 111 | Bulk print to single document | If set to true bulk printing creates a single merged document. If set to false bulk print creates a zip containing all documents. | true |
+| 111 | Bulk print to single document | Sammelausgabe mehrerer Datensätze mit Einzeldokument-Vorlagen: `true` erstellt eine zusammengefasste PDF-Datei, auch bei Word als Export-Format. `false` erstellt eine ZIP-Datei mit den Einzeldokumenten im Format der Vorlage. Siehe [Ausgabe von Einzeldokumenten]({{< relref "3VROOMS/Einstellungen/ErweiterteBasisdatenfuerRessourcen/Dokumente/_index.md#ausgabe-von-einzeldokumenten" >}}). | true |
 | 86 | Calendar Block Times Color | The color for block times to be used in Calendar Integration calendar. | 88878A |
 | 156 | Calendar DatePicker Year Range | The year range of the calendar datepicker. Example: c-10:c+10 | c-10:c+10 |
 | 164 | FlexRules | Deklarative Regeln für kontextabhängige Resultate wie Kalendermarkierungen. | `{"schemaVersion":"1.0","ruleSets":[]}` |
