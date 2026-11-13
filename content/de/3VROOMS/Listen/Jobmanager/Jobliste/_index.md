@@ -69,6 +69,18 @@ Ohne das globale Recht **Darf erweiterte Jobmanager-Funktionalität verwenden** 
 
 Beim Annullieren eines verarbeiteten Jobs zeigt ROOMS einen Bestätigungsdialog. Dort kann bei entsprechender Konfiguration ausgewählt werden, ob Annullationsmails versendet werden sollen.
 
+### Berechtigung zum Zurücksetzen
+
+Beim Zurücksetzen werden die zu den Lektionen des Jobs gehörenden Buchungen gelöscht. Der Anlass wird ebenfalls gelöscht, wenn er keine weiteren Buchungen enthält.
+
+Für **Zurücksetzen** benötigen Sie das standortbezogene Recht **Darf Jobmanager auf Standort verwenden**. Massgebend ist der Standortname aus den Lektionen des Jobs:
+
+- Ist der Name eindeutig, benötigen Sie das Recht auf diesem Standort.
+- Gibt es mehrere gleichnamige Standorte und liegt der Anlass des Jobs auf einem davon, benötigen Sie das Recht auf dem Standort dieses Anlasses.
+- Ist keine solche Zuordnung über den Anlass möglich, benötigen Sie das Recht auf allen Standorten mit diesem Namen.
+
+Ohne passenden Standort oder ausreichendes Recht wird der Job nicht zurückgesetzt.
+
 ## Woher kommen Jobs?
 
 Jobs erscheinen in der Liste nicht manuell, sondern weil passende Einträge in `Lektion` vorhanden sind. Typische Quellen sind:

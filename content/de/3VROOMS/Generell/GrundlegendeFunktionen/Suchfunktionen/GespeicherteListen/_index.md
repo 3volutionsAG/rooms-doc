@@ -13,6 +13,22 @@ In diesem Beispiel wird die Suche nach Raum-Buchungen gespeichert und mit dem Na
 Schritte um ausgewählte Filter zu speichern
 {{< /imgproc >}}
 
+## Unter einem bestehenden Namen speichern
+
+Wenn Sie im gleichen Suchbereich unter dem Namen einer eigenen Liste speichern, aktualisieren Sie deren Einstellungen. Eine gleichnamige globale Liste bleibt dabei unverändert.
+
+Mit dem globalen Recht **Darf globale Filter editieren** können Sie auch eine globale Liste überschreiben, wenn keine eigene Liste mit diesem Namen vorhanden ist. Ohne dieses Recht wird eine eigene Liste gespeichert.
+
+{{% alert color="warning" title="Globale Listen gelten für alle Benutzer" %}}
+Prüfen Sie vor dem Speichern, ob der Name zu einer globalen Liste gehört. Erscheint die Frage **Die globale Liste "…" wird für alle Benutzer überschrieben. Fortfahren?**, bestätigen Sie nur, wenn die Änderung für alle Benutzer gelten soll. Für eine neue persönliche Liste verwenden Sie einen anderen, noch nicht verwendeten Namen.
+{{% /alert %}}
+
+## Favorit entfernen
+
+Wählen Sie Ihre eigene, als Favorit gespeicherte Liste aus, öffnen Sie den Speicherdialog über das Diskettensymbol und entfernen Sie das Häkchen bei **Ist Favorit**. Speichern Sie unter demselben Namen. Die Liste bleibt gespeichert, wird aber nicht mehr als Ihr Favorit für diesen Suchbereich verwendet.
+
+## Gespeicherte Liste aufrufen oder löschen
+
 Wollen Sie zu einem späteren Zeitpunkt die gleiche Suche durchführen, öffnen Sie das Drop-Down-Menü und wählen Sie die entsprechende gespeicherte Suche aus. In diesem Beispiel die Liste _Sitzungszimmer Bern_.
 
 {{< imgproc GespeicherteListeAuswaehlen_beschriftet Resize "1280x" >}}
