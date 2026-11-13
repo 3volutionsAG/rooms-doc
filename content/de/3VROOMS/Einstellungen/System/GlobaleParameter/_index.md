@@ -51,7 +51,9 @@ Die folgenden globalen Parameter steuern, wie lange ROOMS Daten aufbewahrt:
 - **Aufbewahrungsdauer Stammdaten** (ID 162), Standard: 6 Monate
 - **Aufbewahrungsdauer Betriebsdaten** (ID 163), Standard: 1 Monat
 
-Tragen Sie im Feld **Wert** für jeden dieser drei Parameter einen ganzzahligen Wert von 1 bis 1000 ein. Der jeweilige Wert entspricht der Aufbewahrungsdauer in Monaten. Die Angaben im Feld **Standard** werden nicht automatisch als aktive Werte übernommen.
+Prüfen Sie im Feld **Wert** für jeden dieser drei Parameter einen ganzzahligen Wert von 1 bis 1000 und passen Sie ihn bei Bedarf an. Der jeweilige Wert entspricht der Aufbewahrungsdauer in Monaten. Bei einer mit dem Onboarding- oder Demo-Profil neu eingerichteten Datenbank sind 36, 6 und 1 Monate als aktive Werte gesetzt. Eine leere Angabe im Feld **Wert** wird beim Betrieb nicht durch die Angabe im Feld **Standard** ersetzt.
+
+Die [Job-Ausführungshistorie]({{< relref "Betrieb/Hintergrundjobs/_index.md#ausführungshistorie-und-aufbewahrung" >}}) hat eine eigene Begrenzung von 30 Tagen und höchstens 2'000 Ausführungen. Der Parameter **Aufbewahrungsdauer Betriebsdaten** gilt nicht für diese Historie.
 
 {{% alert title="Achtung" color="warning" %}}
 Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROOMS Worker nicht. Die Webanwendung bleibt verfügbar, damit Sie die Konfiguration korrigieren können. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
@@ -70,7 +72,7 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 11 | Arbeitsbeginn | General end of work within the company. | 08:00 |
 | 12 | Arbeitsende | Default-Einstellung um welche Zeit der Dienstleister Feierabend macht. | 17:00 |
 | 161 | Aufbewahrungsdauer Bewegungsdaten | Aufbewahrungsdauer in Monaten für Bewegungsdaten wie Reservationen, Anlässe, Historie, Lektionen, Reservationsanfragen und Aktionshistorie. | 36 |
-| 163 | Aufbewahrungsdauer Betriebsdaten | Aufbewahrungsdauer in Monaten für Betriebsdaten wie Logs, Reports, TickerQ-Ausführungshistorie, Sperrzeiten, Feiertage und Öffnungszeit-Ausnahmen. | 1 |
+| 163 | Aufbewahrungsdauer Betriebsdaten | Aufbewahrungsdauer in Monaten für Betriebsdaten wie Logs, Reports, Sperrzeiten, Feiertage und Öffnungszeit-Ausnahmen. Die Job-Ausführungshistorie hat eine eigene Begrenzung. | 1 |
 | 162 | Aufbewahrungsdauer Stammdaten | Aufbewahrungsdauer in Monaten für Stammdaten wie inaktive Benutzer. | 6 |
 | 82 | Archive User Id | This person is used for archiving purposes. For example, reservations made by former employees are transferred to this person. | |
 | 76 | Autorefresh Intervalle | Kommagetrennte Werte, welche von den Benutzern als Autorefresh Intervalle (in Sekunden) gewählt werden können. 0 (aus) wird automatisch hinzugefügt. | 15, 30, 60, 180 |

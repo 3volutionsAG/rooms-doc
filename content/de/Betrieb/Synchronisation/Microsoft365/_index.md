@@ -244,18 +244,18 @@ Der Graph-Sync nutzt einen separaten **Hintergrundverarbeitungsdienst**.
 
 Wichtige Jobs:
 
-- `GraphSubscriptionProvisioning`
-- `GraphSubscriptionRenewal`
-- `DelegatedTokenRefresh`
-- `MigrateSyncItemIds`
-- `PrepareGraphToEwsBackSync`
+- `GraphSubscriptionProvisioningJob`
+- `GraphSubscriptionRenewalJob`
+- `DelegatedTokenRefreshJob`
+- `SyncItemIdMigrationJob`
+- `PrepareGraphToEwsBackSyncJob`
 
 Es ist **keine** manuelle `StructureMapXml`-Aktivierung für Graph-Subscription-Management nötig.
 
 Zur Betriebsprüfung:
 
 - `RoomsPro.Worker` muss laufen
-- Dashboard für Hintergrundjobs unter `/tickerq` prüfen
+- [Dashboard für Hintergrundjobs]({{< relref "Betrieb/Hintergrundjobs/_index.md" >}}) unter `/jobs` an der RoomsPro.Web-Adresse prüfen. Dafür ist das globale Recht **Darf Konfiguration Datenimport verwalten** (ID 29) erforderlich.
 
 ## Was passiert im Hintergrund?
 
