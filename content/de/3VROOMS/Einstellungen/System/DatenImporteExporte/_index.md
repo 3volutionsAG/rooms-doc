@@ -44,7 +44,7 @@ Für file-basierte Datenstrategien kann SFTP als Transportweg konfiguriert werde
 
 Bei einem fehlgeschlagenen geplanten Import oder Export des generischen Import-/Exportdiensts kann ROOMS die zuständigen Personen per E-Mail informieren. Dazu gehören auch Fehler beim Aufbau der Task-Konfiguration und Fehler in abhängigen Tasks. Bei abhängigen Tasks wird der Name des zuerst erkannten fehlgeschlagenen Tasks gemeldet.
 
-Auch der BFH WaveWare Import verwendet diese Benachrichtigung bei Validierungsfehlern und bei einem Abbruch durch einen Fehler. Andere kundenspezifische Import-/Exportdienste sind nicht automatisch abgedeckt.
+Kundenspezifische Import-/Exportdienste sind nicht automatisch abgedeckt.
 
 ### Voraussetzungen und Empfänger
 
@@ -72,15 +72,10 @@ Tragen Sie die Platzhalter mit genau dieser Schreibweise in den Text ein:
 {{< bootstrap-table "table table-striped" >}}
 | Platzhalter | Verwendung |
 | --- | --- |
-| `[TaskName]` | Im Titel und im Email Body: Name des fehlgeschlagenen Import-/Exporttasks. Beim BFH WaveWare Import lautet der Wert `BFH WaveWare Import`. |
-| `[WavewareImportFehler]` | Nur im Email Body für Fehlermeldungen des BFH WaveWare Imports: die gesammelten Fehlerdetails. Bei generischen Import-/Exporttasks wird dieser Platzhalter nicht ersetzt. |
+| `[TaskName]` | Im Titel und im Email Body: Name des fehlgeschlagenen Import-/Exporttasks. |
 {{< /bootstrap-table >}}
 
-Ein neutraler Titel für eine gemeinsame Vorlage ist beispielsweise `Import/Export fehlgeschlagen: [TaskName]`. Verwenden Sie `[WavewareImportFehler]` nur, wenn die Vorlage die BFH-Fehlerdetails enthalten soll. Diese Gruppe erhält trotzdem auch Fehler der anderen abgedeckten Import-/Exporttasks.
-
-{{% alert title="BFH WaveWare Import" color="warning" %}}
-Die Fehlerbenachrichtigung setzt eine Gruppen-Vorlage des Typs **Import/Export: Fehler** voraus. Die bisherige standortbezogene BFH-Fehlervorlage und die bisherige separate Empfängereinstellung werden dafür nicht mehr verwendet. Ohne passende Gruppen-Vorlage und Empfänger bleibt diese Fehlerbenachrichtigung aus. Die separate Benachrichtigung über geänderte Übersetzungen bleibt unverändert.
-{{% /alert %}}
+Ein Titel für die Vorlage ist beispielsweise `Import/Export fehlgeschlagen: [TaskName]`.
 
 ### Wenn keine E-Mail ankommt
 
