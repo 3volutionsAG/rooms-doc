@@ -9,7 +9,7 @@ ROOMS kann als Windows-Installation mit MSI und IIS oder mit Linux-Containern be
 ## Bereitstellungsvarianten
 
 - **Windows-Installation mit MSI und IIS:** Verwenden Sie diesen Weg für Windows-Anmeldung, integrierte Windows-Zugangsdaten oder hardwaregebundene Lizenzen. Das MSI installiert die ausgewählten Legacy- und RoomsPro-Komponenten. Die nachfolgende Reihenfolge beschreibt diesen Weg.
-- **Docker Compose auf Linux:** Private Images aus `ghcr.io` stellen ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker bereit. Alle vier Komponenten können auf einem Linux-Container-Host laufen. Nginx terminiert HTTPS und leitet zwei öffentliche Hostnamen an die passenden Container weiter. Folgen Sie der Anleitung [Docker Compose auf Linux]({{< relref "Betrieb/Installation/Docker/_index.md" >}}).
+- **Docker Compose auf Linux:** Private Images aus `ghcr.io` stellen ROOMS-Website, RoomsPro API und RoomsPro Worker bereit. Alle drei Komponenten können auf einem Linux-Container-Host laufen. Nginx terminiert HTTPS und leitet zwei öffentliche Hostnamen an die passenden Container weiter. Folgen Sie der Anleitung [Docker Compose auf Linux]({{< relref "Betrieb/Installation/Docker/_index.md" >}}).
 - **Kubernetes:** Hinweise zur Bereitstellung auf Linux-Nodes finden Sie am Ende der [Docker-Anleitung]({{< relref "Betrieb/Installation/Docker/_index.md#kubernetes" >}}).
 
 

@@ -8,7 +8,7 @@ aliases:
   - /betrieb/docker/
 ---
 
-ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker werden als Linux-Container bereitgestellt. Docker Compose hält Images, Mounts, Ports und Neustartverhalten fest. Ein vorgeschalteter Nginx-Proxy übernimmt DNS-Namen, TLS-Zertifikate und Weiterleitungs-Header.
+ROOMS-Website, RoomsPro API und RoomsPro Worker werden als Linux-Container bereitgestellt. Docker Compose hält Images, Mounts, Ports und Neustartverhalten fest. Ein vorgeschalteter Nginx-Proxy übernimmt DNS-Namen, TLS-Zertifikate und Weiterleitungs-Header.
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ Clients -- HTTPS 443 --> Nginx
                          |-- rooms.example.ch     --> rooms-web:80
                          `-- api.rooms.example.ch --> rooms-api:80
 
-Linux-Host: rooms-web, rooms-service, rooms-api, rooms-worker, Nginx
+Linux-Host: rooms-web, rooms-api, rooms-worker, Nginx
 Alle ROOMS-Komponenten: Zugriff auf dieselbe SQL-Server-Umgebung
 ```
 
@@ -40,12 +40,11 @@ Nur Nginx erhält veröffentlichte Ports. ROOMS-Website, API, Dienste und SQL Se
 | Komponente | Image | Interner Endpunkt |
 |---|---|---|
 | ROOMS-Website | `ghcr.io/3volutionsag/rooms-web:<Version>` | HTTP `80`, Health Check `/healthz` |
-| ROOMS-Dienst | `ghcr.io/3volutionsag/rooms-service:<Version>` | Port `9969`, `/healthz/startup` und `/healthz/live` |
 | RoomsPro API | `ghcr.io/3volutionsag/rooms-api:<Version>` | HTTP `80`, Health Check `/healthz` |
 | RoomsPro Worker | `ghcr.io/3volutionsag/rooms-worker:<Version>` | Port `8081`, Health Check `/healthz` |
 {{< /bootstrap-table >}}
 
-Verwenden Sie für alle vier ROOMS-Images exakt dieselbe freigegebene Version und feste Tags. Das gilt auch für die separat gewählte Nginx-Version.
+Verwenden Sie für alle drei ROOMS-Images exakt dieselbe freigegebene Version und feste Tags. Das gilt auch für die separat gewählte Nginx-Version.
 
 ## Konfiguration vorbereiten
 
@@ -71,11 +70,11 @@ Erstellen Sie die Operator-Datei nach [Konfigurationsdateien]({{< relref "Betrie
 
 ### Gemeinsame Datenbankidentität
 
-Alle vier Komponenten lesen dieselbe Datenbankverbindung aus `ConnectionString` auf der obersten Ebene der Operator-Datei oder aus der gleichnamigen Umgebungsvariable. Damit arbeiten ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf der Datenbank dieser Installation `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
+Alle drei Komponenten lesen dieselbe Datenbankverbindung aus `ConnectionString` auf der obersten Ebene der Operator-Datei oder aus der gleichnamigen Umgebungsvariable. Damit arbeiten ROOMS-Website, RoomsPro API und RoomsPro Worker gegenüber SQL Server unter einem gemeinsamen Konto. Dieses Konto erhält im Normalbetrieb auf der Datenbank dieser Installation `db_datareader` und `db_datawriter`; nur für die Migration kommt vorübergehend `db_owner` hinzu.
 
-Bei SQL-Authentifizierung mit Benutzername und Passwort ist wegen `rooms-web` und `rooms-service` zusätzlich `Persist Security Info=True` im gemeinsamen `ConnectionString` erforderlich. Das [SQL-Beispiel und die TLS-Hinweise]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#sql-authentifizierung-für-legacy" >}}) erklären die Einstellung und den Schutz der Zugangsdaten. Legen Sie die SQL-Verschlüsselung ausdrücklich mit `Encrypt=True` fest, wenn sie erforderlich ist.
+Bei SQL-Authentifizierung mit Benutzername und Passwort ist wegen `rooms-web` und der Service-Sessions in `rooms-worker` zusätzlich `Persist Security Info=True` im gemeinsamen `ConnectionString` erforderlich. Das [SQL-Beispiel und die TLS-Hinweise]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#sql-authentifizierung-für-legacy" >}}) erklären die Einstellung und den Schutz der Zugangsdaten. Legen Sie die SQL-Verschlüsselung ausdrücklich mit `Encrypt=True` fest, wenn sie erforderlich ist.
 
-Verwenden Sie für Anwendungseinstellungen hierarchische Umgebungsvariablen wie `Rooms__DefaultAuth`. Stellen Sie benötigte `CalendarSync`-Werte und gegebenenfalls denselben `DataProtection:EncryptionKey` allen vier Komponenten bereit. Die Host-Verzeichnisse unter `config` enthalten keine `RoomsAppSettings.config` oder `ConnectionStrings.config`; solche Dateien verhindern den Start. Für alte URLs mit Mandantenpräfix ist `Rooms__LegacyTenant` separat erforderlich; neue Links verwenden kein Präfix. Die [zentrale Konfigurationsanleitung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschreibt die Grenzen und die Startvoraussetzungen für den Schlüsselbund.
+Verwenden Sie für Anwendungseinstellungen hierarchische Umgebungsvariablen wie `Rooms__DefaultAuth`. Stellen Sie benötigte `CalendarSync`-Werte und gegebenenfalls denselben `DataProtection:EncryptionKey` allen drei Komponenten bereit. Die Host-Verzeichnisse unter `config` enthalten keine `RoomsAppSettings.config` oder `ConnectionStrings.config`; solche Dateien verhindern den Start. Für alte URLs mit Mandantenpräfix ist `Rooms__LegacyTenant` separat erforderlich; neue Links verwenden kein Präfix. Die [zentrale Konfigurationsanleitung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschreibt die Grenzen und die Startvoraussetzungen für den Schlüsselbund.
 
 ### Active-Directory-Import und Lizenzen
 
@@ -109,24 +108,6 @@ services:
       retries: 5
       start_period: 30s
 
-  rooms-service:
-    image: "ghcr.io/3volutionsag/rooms-service:<Version>"
-    platform: linux/amd64
-    restart: unless-stopped
-    stop_grace_period: 320s
-    expose:
-      - "9969"
-    volumes:
-      - type: bind
-        source: ./config
-        target: /app/config
-        read_only: true
-    healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:9969/healthz/live"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 60s
 
   rooms-api:
     image: "ghcr.io/3volutionsag/rooms-api:<Version>"
@@ -150,6 +131,7 @@ services:
     image: "ghcr.io/3volutionsag/rooms-worker:<Version>"
     platform: linux/amd64
     restart: unless-stopped
+    stop_grace_period: 340s
     expose:
       - "8081"
     volumes:
@@ -187,7 +169,13 @@ services:
         read_only: true
 ```
 
-Der Worker verarbeitet seine Aufträge direkt über die Datenbank und benötigt keine HTTP-Verbindung zur API. Für einen geordneten Stopp des ROOMS-Diensts sind mindestens **320 Sekunden** erforderlich. Lassen Sie auch dem Container-Host genügend Zeit, bevor er die Prozesse beendet.
+Der Worker verarbeitet die Service-Sessions und die übrigen Hintergrundjobs direkt über die Datenbank und benötigt dafür keine HTTP-Verbindung zur API. Betreiben Sie genau einen `rooms-worker` pro Installation. Ein zusätzlich laufender separater ROOMS-Service einer älteren Installation würde die Service-Aufgaben doppelt ausführen. Für einen geordneten Stopp des Workers sind mindestens **340 Sekunden** erforderlich. Lassen Sie auch dem Container-Host genügend Zeit, bevor er den Prozess beendet.
+
+{{% alert title="Worker-Status überwachen" color="warning" %}}
+Der Health Check des Workers kann bei Fehlern in Service-Sessions, ihrer Planung oder der Datenbankverbindung **Degraded** melden und trotzdem HTTP `200` zurückgeben. Der einfache HTTP-Check im Compose-Beispiel erkennt diesen Zustand nicht. Lassen Sie Ihr Monitoring den gemeldeten Status und die Fehlerdetails auswerten. Prüfen Sie zusätzlich [Services und fachliche Ergebnisse]({{< relref "Betrieb/Hintergrundjobs/_index.md#services-auf-der-about-seite-prüfen" >}}), statt allein aus einer erfolgreichen HTTP-Antwort auf funktionierende Synchronisation zu schliessen.
+{{% /alert %}}
+
+Bei Google-Synchronisation benötigt der Worker zusätzlich die [Zertifikatsdatei direkt unter `/app`]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#dateien-für-google-synchronisation" >}}). Der Konfigurations-Mount allein stellt diese Datei nicht bereit.
 
 Prüfen und laden Sie den Stack, ohne ihn bereits vollständig zu starten:
 
@@ -360,21 +348,21 @@ Prüfen Sie danach:
 4. Anmeldung, Abmeldung und OpenID-Connect-Redirects verwenden ausschliesslich die öffentlichen HTTPS-Namen.
 5. Eine Anmeldung mit der vorgesehenen privilegierten Baukasten-Person ist möglich.
 6. Eine Buchung kann erstellt und gelesen werden.
-7. ROOMS-Dienst und RoomsPro Worker bleiben gesund und verarbeiten ihre Hintergrundaufgaben.
+7. RoomsPro Worker läuft. Sein Health-Status und die fachlichen Ergebnisse der Hintergrundaufgaben sind geprüft.
 8. Nur die Proxy-Ports sind veröffentlicht. SQL Server ist nur aus dem vorgesehenen Anwendungsnetz erreichbar.
 
 ## Updates
 
-Ändern Sie in der Compose-Datei alle vier ROOMS-Image-Tags auf dieselbe neue Version. Verwenden Sie keine schwebenden Tags wie `latest` für ROOMS oder Nginx. Laden Sie die neuen Images vor dem Wartungsfenster mit `docker compose pull`.
+Ändern Sie in der Compose-Datei alle drei ROOMS-Image-Tags auf dieselbe neue Version. Verwenden Sie keine schwebenden Tags wie `latest` für ROOMS oder Nginx. Laden Sie die neuen Images vor dem Wartungsfenster mit `docker compose pull`.
 
 Stoppen Sie danach den laufenden Stack, bevor Sie die Datenbank sichern und migrieren:
 
 ```bash
-docker compose -f /opt/rooms/compose.linux.yaml stop reverse-proxy rooms-web rooms-service rooms-api rooms-worker
+docker compose -f /opt/rooms/compose.linux.yaml stop reverse-proxy rooms-web rooms-api rooms-worker
 ```
 
 Erstellen Sie nun die Datenbanksicherung, vergeben Sie vorübergehend `db_owner` und führen Sie Statusprüfung und Migration wie unter [Datenbankmigrationen](#datenbankmigrationen) beschrieben aus. Entfernen Sie `db_owner` erst nach einer abschliessenden Statusprüfung mit Exitcode `0`. Starten Sie anschliessend den Stack mit dem unter [Stack starten und prüfen](#stack-starten-und-prüfen) angegebenen `up -d`-Befehl und wiederholen Sie die dortigen Prüfungen.
 
 ## Kubernetes
 
-Verwenden Sie Linux-Nodes für die vier ROOMS-Komponenten, Secrets und ConfigMaps für die Konfiguration sowie einen Ingress Controller für DNS und TLS. Der ROOMS-Dienst benötigt eine `terminationGracePeriodSeconds` von mindestens `320`. Verwenden Sie Port `9969` mit `/healthz/startup` für die Startprüfung und `/healthz/live` für die Liveness-Prüfung. Der Container wird über das normale Stoppsignal beendet.
+Verwenden Sie Linux-Nodes für die drei ROOMS-Komponenten, Secrets und ConfigMaps für die Konfiguration sowie einen Ingress Controller für DNS und TLS. Betreiben Sie genau eine Worker-Replik und geben Sie ihr eine `terminationGracePeriodSeconds` von mindestens `340`. Der Worker wird über das normale Stoppsignal beendet. Prüfen Sie ihn intern über Port `8081` und `/healthz`. Ein HTTP-Erfolg allein erkennt **Degraded** nicht. Stimmen Sie Alarmierung und Neustartregeln mit der Betriebsverantwortung ab, statt aus einem einzelnen Verarbeitungsfehler einen automatischen Neustart abzuleiten.

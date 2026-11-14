@@ -11,7 +11,7 @@ Die Kalender-Synchronisation wird in der gemeinsamen **`appsettings.operator.jso
 - **EWS-basierte Modi** (`EWS1`, `EWS2`, `O365`) nutzen `CalendarSync:Ews` sowie die benötigten Anwendungseinstellungen unter `Rooms`.
 - **Graph-basierter Modus** (`Microsoft365`) nutzt `CalendarSync:Graph` und für app-basierte Kalenderzugriffe die passenden Zugangsdaten unter `Rooms`.
 
-Stellen Sie die benötigten Werte identisch für ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker bereit. Die [zentrale Konfigurationsanleitung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschreibt Verteilung, Priorität der Quellen und Neustart.
+Stellen Sie die benötigten Werte identisch für ROOMS-Website, RoomsPro API und RoomsPro Worker bereit. Die [zentrale Konfigurationsanleitung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschreibt Verteilung, Priorität der Quellen und Neustart.
 {{% /alert %}}
 
 ## Relevante globale Parameter
@@ -30,7 +30,7 @@ Unter **Einstellungen → System → Globale Parameter** sind insbesondere folge
 
 Ergänzen Sie die Section `CalendarSync` in der zentralen **`appsettings.operator.json`**, ohne die übrigen Abschnitte zu ersetzen.
 
-Der genaue Installationspfad hängt vom Deployment ab. Alle vier Komponenten lesen die bereitgestellte Datei aus ihrem Verzeichnis `config`.
+Der genaue Installationspfad hängt vom Deployment ab. Alle drei Komponenten lesen die bereitgestellte Datei aus ihrem Verzeichnis `config`.
 
 ### Beispiel für `CalendarSync`
 
@@ -133,7 +133,7 @@ Werte werden nicht einzeln aus der Standardkonfiguration geerbt. Jede Entra-App 
 
 Die Overrides gelten nur für app-basierte Zugriffe. Dazu gehören alle Zugriffe bei `AuthMode = AppOnly` sowie Ressourcenpostfächer in einer `Delegated`-Umgebung. Delegierter Personen-Consent und Refresh Tokens verwenden weiterhin die globale Graph-App. Auch `AuthMode`, `CallbackUrl` und `ClientState` bleiben global.
 
-Stellen Sie die vollständige Graph-Konfiguration in **allen vier Komponenten** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
+Stellen Sie die vollständige Graph-Konfiguration in **allen drei Komponenten** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
 
 In Kubernetes kann dieser Schlüssel wegen der Punkte in der Domäne nicht als Name unter `env` verwendet werden. Stellen Sie die Domain-Overrides dort über eine eingebundene, dateibasierte .NET-Konfigurationsquelle bereit.
 

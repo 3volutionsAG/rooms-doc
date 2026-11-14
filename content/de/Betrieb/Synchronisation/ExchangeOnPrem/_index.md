@@ -81,7 +81,7 @@ Delegated Access vergibt gezielte Ordnerberechtigungen pro Postfach. ROOMS agier
 ### Voraussetzungen und ROOMS-Konfiguration
 
 - der Service-User **muss** ein eigenes Exchange-Postfach besitzen
-- Delegation unter `Rooms` in der gemeinsamen `appsettings.operator.json` aktivieren. Stellen Sie die benötigte EWS-Konfiguration in allen vier Komponenten bereit; siehe [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
+- Delegation unter `Rooms` in der gemeinsamen `appsettings.operator.json` aktivieren. Stellen Sie die benötigte EWS-Konfiguration in allen drei Komponenten bereit; siehe [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
 
 Setzen Sie für den verwendeten Slot sowohl `Rooms:Ews1UseImpersonation` beziehungsweise `Rooms:Ews2UseImpersonation` als auch `CalendarSync:Ews:Providers:Ews1:UseImpersonation` beziehungsweise `CalendarSync:Ews:Providers:Ews2:UseImpersonation` auf `false`. Beispiel für `EWS1`, ergänzend zu dessen Zugangsdaten:
 

@@ -51,7 +51,7 @@ Damit können Sie in einem gemeinsamen ROOMS-Setup mehrere Exchange-Online-Tenan
 
 Die Konfiguration erfolgt in:
 
-- gemeinsame `appsettings.operator.json`, identisch für alle vier Komponenten
+- gemeinsame `appsettings.operator.json`, identisch für alle drei Komponenten
 - `CalendarSync:Ews:Providers:O365:DomainOverrides`
 
 Ein vollständiges Beispiel finden Sie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}).
@@ -68,7 +68,7 @@ Einrichtung der App-Only-Authentifizierung via Microsoft Entra ID mit EWS-Anwend
 
 ### ROOMS konfigurieren (`appsettings.operator.json`)
 
-Die folgenden Beispiele ergänzen Anwendungseinstellungen unter `Rooms`. Stellen Sie auch die benötigten Werte unter `CalendarSync:Ews:Providers:O365` bereit, wie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}) beschrieben. Ersetzen Sie mit den Beispielen nicht die übrige Konfiguration. Verteilen Sie die gemeinsame Datei an alle vier Komponenten und starten Sie betroffene Prozesse neu.
+Die folgenden Beispiele ergänzen Anwendungseinstellungen unter `Rooms`. Stellen Sie auch die benötigten Werte unter `CalendarSync:Ews:Providers:O365` bereit, wie unter [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}) beschrieben. Ersetzen Sie mit den Beispielen nicht die übrige Konfiguration. Verteilen Sie die gemeinsame Datei an alle drei Komponenten und starten Sie betroffene Prozesse neu.
 
 Geheimnis-basierte Anmeldung:
 

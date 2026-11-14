@@ -17,7 +17,7 @@ Passen Sie die Originaldateien nur in diesem Verzeichnis an. Die als Administrat
 {{< bootstrap-table "table table-striped" >}}
 | Zentrale Dateien | Zielkomponenten |
 |---|---|
-| `appsettings.json`, `appsettings.operator.json`, `*.lic` | Verzeichnis `config` aller vier installierten Komponenten: ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker |
+| `appsettings.json`, `appsettings.operator.json`, `*.lic` | Verzeichnis `config` aller drei installierten Komponenten: ROOMS-Website, RoomsPro API und RoomsPro Worker |
 {{< /bootstrap-table >}}
 
 `Config.bat` erkennt die installierten Komponenten und ihre registrierten Zielpfade. Die API-Verteilung ist enthalten. Verwenden Sie die ausgelieferte Datei ohne manuelle Kopierroutinen.
@@ -30,13 +30,13 @@ Legen Sie individuelle Werte in dieser selbst verwalteten Datei ab:
 C:\Program Files\3volutions\ROOMS\Configuration\appsettings.operator.json
 ```
 
-Das MSI liefert die Basiskonfiguration in `appsettings.json`. Die Operator-Datei wird nicht vom MSI geliefert und bleibt bei einer erneuten Installation erhalten. Alle vier Komponenten lesen aus ihrem Verzeichnis `config` zuerst `appsettings.json`, dann `appsettings.{Umgebung}.json` und danach `appsettings.operator.json`. Spätere Werte überschreiben frühere. Umgebungsvariablen haben Vorrang vor diesen Dateien; für hierarchische Schlüssel verwenden Sie `__`, beispielsweise `Rooms__DefaultAuth` für `Rooms:DefaultAuth`. Ein flacher Name wie `DefaultAuth` konfiguriert diese Einstellung nicht. Starten Sie betroffene Websites und Dienste nach dem Verteilen neu. Änderungen an der Operator-Datei werden nicht automatisch eingelesen.
+Das MSI liefert die Basiskonfiguration in `appsettings.json`. Die Operator-Datei wird nicht vom MSI geliefert und bleibt bei einer erneuten Installation erhalten. Alle drei Komponenten lesen aus ihrem Verzeichnis `config` zuerst `appsettings.json`, dann `appsettings.{Umgebung}.json` und danach `appsettings.operator.json`. Spätere Werte überschreiben frühere. Umgebungsvariablen haben Vorrang vor diesen Dateien; für hierarchische Schlüssel verwenden Sie `__`, beispielsweise `Rooms__DefaultAuth` für `Rooms:DefaultAuth`. Ein flacher Name wie `DefaultAuth` konfiguriert diese Einstellung nicht. Starten Sie betroffene Websites und Dienste nach dem Verteilen neu. Änderungen an der Operator-Datei werden nicht automatisch eingelesen.
 
-Da alle vier Komponenten dieselbe Operator-Datei erhalten, gehören nur gemeinsam passende Werte hinein. Konfigurieren Sie hostabhängige Listener wie `Urls` oder `Kestrel` nicht pauschal in dieser Datei.
+Da alle drei Komponenten dieselbe Operator-Datei erhalten, gehören nur gemeinsam passende Werte hinein. Konfigurieren Sie hostabhängige Listener wie `Urls` oder `Kestrel` nicht pauschal in dieser Datei.
 
 ### Eine Datenbank pro Installation
 
-Jede ROOMS-Installation verwendet genau eine Datenbank. Alle vier Komponenten lesen deren Verbindung aus dem Schlüssel `ConnectionString` auf der obersten JSON-Ebene. Verteilen Sie dieselbe Verbindung und Datenbankidentität an alle vier Komponenten.
+Jede ROOMS-Installation verwendet genau eine Datenbank. Alle drei Komponenten lesen deren Verbindung aus dem Schlüssel `ConnectionString` auf der obersten JSON-Ebene. Verteilen Sie dieselbe Verbindung und Datenbankidentität an alle drei Komponenten.
 
 Ohne einen nicht leeren `ConnectionString` startet die jeweilige Komponente nicht. `ConnectionStrings:<Name>` und `IdentityServer:RoomsDatabase` liefern keine Datenbankverbindung. Prüfen Sie bei Startproblemen auch Überschreibungen durch Umgebungsvariablen.
 
@@ -146,7 +146,7 @@ Individuelle Anwendungseinstellungen stehen unter `Rooms` in `appsettings.operat
 
 ### SQL-Authentifizierung für Legacy
 
-Wenn sich die Legacy Website und der ROOMS-Dienst mit SQL-Benutzername und Passwort anmelden, muss der gemeinsame `ConnectionString` zusätzlich `Persist Security Info=True` enthalten. Das gilt sowohl bei MSI- als auch bei Container-Installationen.
+Wenn sich die Legacy Website und die im Worker ausgeführten Service-Sessions mit SQL-Benutzername und Passwort anmelden, muss der gemeinsame `ConnectionString` zusätzlich `Persist Security Info=True` enthalten. Das gilt sowohl bei MSI- als auch bei Container-Installationen.
 
 ```json
 {
@@ -158,23 +158,29 @@ Das Beispiel verwendet Platzhalter und verlangt ein vertrauenswürdiges SQL-Serv
 
 Ohne diesen Parameter gilt standardmässig `False`. Eine erste Datenbankanmeldung kann dann erfolgreich sein, während ein späterer erneuter Verbindungsaufbau das Passwort verliert. Dadurch können beispielsweise Hintergrundaufträge oder Exporte mit einem SQL-Anmeldefehler abbrechen. Der Parameter verhindert diesen Passwortverlust, behebt aber nicht automatisch andere Ursachen eines fehlgeschlagenen Auftrags.
 
-Diese Anforderung entsteht durch die Verbindungsverwaltung der Legacy-Komponenten. Bei integrierter Windows-Authentifizierung wird kein SQL-Passwort im Connection String hinterlegt. RoomsPro API und Worker benötigen den Parameter für ihre eigene Verbindungsverwaltung nicht, lesen jedoch dieselbe gemeinsame Verbindung.
+Diese Anforderung entsteht durch die Verbindungsverwaltung der Legacy-Anwendungslogik, die auch in den Service-Sessions des Workers verwendet wird. Bei integrierter Windows-Authentifizierung wird kein SQL-Passwort im Connection String hinterlegt. Alle drei Komponenten lesen dieselbe gemeinsame Verbindung.
 
 {{% alert title="Zugangsdaten schützen" color="warning" %}}
 Mit `Persist Security Info=True` bleibt das Passwort über die Verbindungszeichenfolge einer geöffneten Verbindung auslesbar. Beschränken Sie den Zugriff auf Konfigurationsdateien und protokollieren oder versenden Sie keine vollständigen Connection Strings mit Zugangsdaten.
 {{% /alert %}}
 
-Prüfen Sie vor der Änderung, ob die Verbindung zur betroffenen Installation und Datenbank gehört. Sichern Sie die bisherige Konfiguration und verteilen Sie die geänderte Datei an alle vier Komponenten. Starten Sie die betroffenen Komponenten in einem abgestimmten Wartungsfenster neu. Wiederholen Sie anschliessend den zuvor fehlgeschlagenen Auftrag und prüfen Sie dessen Ergebnis sowie die Ereignisanzeige. Eine erfolgreiche Anmeldung allein bestätigt noch keinen erfolgreichen Export.
+Prüfen Sie vor der Änderung, ob die Verbindung zur betroffenen Installation und Datenbank gehört. Sichern Sie die bisherige Konfiguration und verteilen Sie die geänderte Datei an alle drei Komponenten. Starten Sie die betroffenen Komponenten in einem abgestimmten Wartungsfenster neu. Wiederholen Sie anschliessend den zuvor fehlgeschlagenen Auftrag und prüfen Sie dessen Ergebnis sowie die Ereignisanzeige. Eine erfolgreiche Anmeldung allein bestätigt noch keinen erfolgreichen Export.
 
 ### Logging und Lizenzen
 
-Logstufen und Logziele der Legacy-Komponenten werden über `Serilog` in der `appsettings.operator.json` konfiguriert. `DiagnosticsWeb.config` und `DiagnosticsWindowsService.config` steuern das Logging nicht. Beim Start weist eine Warnung auf solche vorhandenen Dateien hin.
+Logstufen und Logziele der Legacy-Anwendungslogik werden über `Serilog` in der `appsettings.operator.json` konfiguriert. `Serilog:LegacySql` steuert auch die entsprechenden Einträge des Workers in der Ereignisanzeige. Dessen Service-Sessions protokollieren mit der Quelle `RoomsPro.Worker`. `DiagnosticsWeb.config` und `DiagnosticsWindowsService.config` steuern das Logging nicht. Beim Start weist eine Warnung auf solche vorhandenen Dateien hin.
 
 Die ROOMS-Website speichert ihren Data-Protection-Schlüsselbund in der Datenbank der Installation. Eine gemeinsame `MachineKey.config` ist dafür nicht vorgesehen.
 
-Für die von allen vier Komponenten verwendeten RoomsPro-Funktionen müssen auch die benötigten `CalendarSync`-Werte und gegebenenfalls `DataProtection:EncryptionKey` übereinstimmen. Verteilen Sie einen konfigurierten Verschlüsselungsschlüssel unverändert und schützen Sie ihn wie andere Secrets. RoomsPro API erzeugt den gemeinsamen RoomsPro-Schlüsselbund; bei einer Datenbank ohne Schlüsselbund starten Sie zuerst die API. ROOMS-Website und ROOMS-Dienst erzeugen diesen Schlüsselbund nicht selbst. `RoomsPro.Worker` muss für die Ausführung der Hintergrundaufträge laufen.
+Für die von allen drei Komponenten verwendeten RoomsPro-Funktionen müssen auch die benötigten `CalendarSync`-Werte und gegebenenfalls `DataProtection:EncryptionKey` übereinstimmen. Verteilen Sie einen konfigurierten Verschlüsselungsschlüssel unverändert und schützen Sie ihn wie andere Secrets. RoomsPro API erzeugt den gemeinsamen RoomsPro-Schlüsselbund. Bei einer Datenbank ohne Schlüsselbund starten Sie zuerst die API. Die ROOMS-Website erzeugt diesen Schlüsselbund nicht selbst. `RoomsPro.Worker` muss für die Ausführung der Hintergrundaufträge laufen.
 
 Lizenzdateien mit der Endung `.lic` werden aus dem zentralen Configuration-Verzeichnis verteilt.
+
+Änderungen an JSON-Dateien, Umgebungsvariablen und Lizenzen erfordern einen Neustart der betroffenen Prozesse. Davon getrennt prüft der Worker globale Parameter aus der Datenbank und die dort gespeicherte `StructureMapXml`-Konfiguration jede Minute für nachfolgende Service-Session-Läufe. Diese Prüfung lädt keine geänderten JSON-Dateien nach.
+
+### Dateien für Google-Synchronisation
+
+Die Google-Synchronisation erwartet `GoogleServiceUserCertificate.p12` direkt im Installationsverzeichnis des ausführenden Workers, neben `RoomsPro.Worker.exe`. Verwenden Sie den tatsächlich gewählten Worker-Pfad. In Containern binden Sie die Datei schreibgeschützt unter `/app/GoogleServiceUserCertificate.p12` in `rooms-worker` ein. Das Verzeichnis `config` ist dafür nicht der Suchpfad. `Config.bat` verteilt diese Zertifikatsdatei nicht. Beschränken Sie den Dateizugriff auf die benötigten Betriebskonten und den Worker.
 
 ### Schriftarten für PDF-Dokumente
 
@@ -195,15 +201,11 @@ Für die lokale PDF-Erstellung mit FlexDoc kann das Betriebsteam unter `Document
        Executable = 'C:\inetpub\wwwroot\ROOMS\Garaio.Products.Rooms.Web.dll'
        Config = 'C:\inetpub\wwwroot\ROOMS\config\appsettings.operator.json'
      }
-     [pscustomobject]@{
-       Name = 'ROOMS-Dienst'
-       Executable = 'C:\Program Files\3volutions\ROOMS\WindowsService\Garaio.Products.Rooms.WindowsService.exe'
-       Config = 'C:\Program Files\3volutions\ROOMS\WindowsService\config\appsettings.operator.json'
-     }
+
      [pscustomobject]@{
        Name = 'RoomsPro Worker'
-       Executable = 'C:\Program Files\3volutions\ROOMS\Worker\RoomsPro.Worker.exe'
-       Config = 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.operator.json'
+       Executable = 'C:\Program Files\3volutions\Worker\RoomsPro.Worker.exe'
+       Config = 'C:\Program Files\3volutions\Worker\config\appsettings.operator.json'
      }
      [pscustomobject]@{
        Name = 'RoomsPro API'

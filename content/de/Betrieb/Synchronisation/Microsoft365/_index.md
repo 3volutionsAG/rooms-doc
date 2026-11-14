@@ -10,7 +10,7 @@ Prüfen Sie vor dem Setup:
 
 - im Profil ist wirklich **`SyncModus = Microsoft365`** gesetzt und **nicht** `O365`
 - die **E-Mail-Adresse** der Person oder Ressource entspricht der **primären SMTP-Adresse**
-- `CalendarSync:Graph` ist für ROOMS-Website, ROOMS-Dienst, API und Worker vollständig und identisch konfiguriert
+- `CalendarSync:Graph` ist für ROOMS-Website, API und Worker vollständig und identisch konfiguriert
 - die Basis-URL des IDP / `RoomsPro.Web` ist öffentlich erreichbar
 - die Pfade **`/api/webhooks/graph`** und **`/api/webhooks/graph/lifecycle`** werden anonym per `POST` akzeptiert
 - die **Hintergrundverarbeitung** läuft
@@ -129,7 +129,7 @@ Der Unterschied `AppOnly` vs `Delegated` betrifft in der Praxis **vor allem Pers
 
 ## ROOMS konfigurieren
 
-Pflegen Sie die Graph-Konfiguration unter `CalendarSync:Graph` in der gemeinsamen **`appsettings.operator.json`** und stellen Sie sie identisch für alle vier Komponenten bereit. Ergänzen Sie für app-basierte Kalenderzugriffe die passenden Zugangsdaten unter `Rooms`, auch für Ressourcenpostfächer in einer `Delegated`-Umgebung. Die [Konfigurationsübersicht]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md#anwendungseinstellungen-unter-rooms" >}}) zeigt die Schlüssel und die getrennte Zuordnung für Mail-Domänen. Verteilung und Neustart sind unter [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschrieben.
+Pflegen Sie die Graph-Konfiguration unter `CalendarSync:Graph` in der gemeinsamen **`appsettings.operator.json`** und stellen Sie sie identisch für alle drei Komponenten bereit. Ergänzen Sie für app-basierte Kalenderzugriffe die passenden Zugangsdaten unter `Rooms`, auch für Ressourcenpostfächer in einer `Delegated`-Umgebung. Die [Konfigurationsübersicht]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md#anwendungseinstellungen-unter-rooms" >}}) zeigt die Schlüssel und die getrennte Zuordnung für Mail-Domänen. Verteilung und Neustart sind unter [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschrieben.
 
 ### Erforderliche Schlüssel
 
@@ -168,7 +168,7 @@ Beachten Sie dabei:
 - `TenantId` muss eine Verzeichnis-ID im GUID-Format sein und darf keine Tenant-Domäne wie `contoso.onmicrosoft.com` enthalten
 - jede konfigurierte Entra-App benötigt die Graph-Anwendungsberechtigungen und den Admin Consent im jeweiligen Ziel-Tenant
 - `AuthMode`, `CallbackUrl`, `ClientState`, delegierter Consent und Refresh Tokens bleiben global
-- dieselbe Konfiguration muss für ROOMS-Website, ROOMS-Dienst, API und Worker bereitgestellt werden
+- dieselbe Konfiguration muss für ROOMS-Website, API und Worker bereitgestellt werden
 
 {{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
 `DomainOverrides` migrieren bestehende Graph-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Aktivieren Sie die Overrides erst, nachdem passende API- und Worker-Versionen bereitgestellt wurden.
@@ -269,7 +269,7 @@ Zur Betriebsprüfung:
 
 - [Konfigurationen]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md" >}}) - vollständiges `CalendarSync`-Beispiel
 - [Personen konfigurieren]({{< relref "Betrieb/Synchronisation/Rooms/SyncAufPersonAktivieren/_index.md" >}}) - Profile sauber setzen
-- [Aktivieren der Services]({{< relref "Betrieb/Synchronisation/Rooms/ServiceAktivierung/_index.md" >}}) - Hintergrundverarbeitung und legacy Sessions
+- [Aktivieren der Services]({{< relref "Betrieb/Synchronisation/Rooms/ServiceAktivierung/_index.md" >}}) - Hintergrundjobs und Service-Sessions im Worker
 - [Problembehandlung]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}) - Fehlersuche im Betrieb
 
 ## Referenzen

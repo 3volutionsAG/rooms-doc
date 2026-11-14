@@ -7,10 +7,11 @@ description: 'Mindestanforderungen und Voraussetzungen für eine aktuelle ROOMS-
 Das aktuelle MSI kann folgende Komponenten installieren:
 
 - Legacy Website `ROOMS`
-- Legacy Windows Service `ROOMS`
 - `RoomsPro API`
 - `RoomsPro Worker`
 - gemeinsame Konfigurationskomponenten
+
+**RoomsPro Worker** führt die Service-Sessions und die übrigen Hintergrundjobs aus. Betreiben Sie genau einen Worker pro Installation, auch wenn die Websites auf mehreren Servern laufen. Ein parallel laufender separater ROOMS-Service einer älteren Installation würde dieselben Service-Aufgaben zusätzlich ausführen.
 
 Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demselben dedizierten ROOMS-Service-Account betrieben.
 
@@ -21,7 +22,6 @@ Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demse
 |---|---|
 | Aktuelles ROOMS-MSI | Windows Server x64 und ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 | Legacy Website `ROOMS` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
-| Legacy Windows Service `ROOMS` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 | `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
 | `RoomsPro Worker` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 {{< /bootstrap-table >}}
@@ -52,7 +52,6 @@ Stellen Sie vor der Installation einen dedizierten Domänen-Account bereit, zum 
 
 - IIS Application Pool der Legacy Website
 - IIS Application Pool der RoomsPro API
-- Windows-Dienst `ROOMS`
 - Windows-Dienst `RoomsPro Worker`
 - integrierte Anmeldung an der ROOMS-Datenbank der Installation
 
@@ -72,8 +71,7 @@ Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechti
 | Komponente | Standardpfad |
 |---|---|
 | Zentrale Konfiguration | `C:\Program Files\3volutions\ROOMS\Configuration` |
-| Legacy Windows Service | `C:\Program Files\3volutions\ROOMS\WindowsService` |
-| RoomsPro Worker | `C:\Program Files\3volutions\ROOMS\Worker` |
+| RoomsPro Worker | `C:\Program Files\3volutions\Worker` |
 | Legacy Website | `C:\inetpub\wwwroot\ROOMS` |
 | RoomsPro API | `C:\inetpub\wwwroot\API` |
 {{< /bootstrap-table >}}

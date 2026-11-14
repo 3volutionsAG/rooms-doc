@@ -50,7 +50,7 @@ Wichtige Hinweise:
 
 ## Gemeinsame Identität
 
-Beide Application Pools werden mit demselben ROOMS-Service-Account betrieben, der auch für die Windows-Dienste `ROOMS` und `RoomsPro Worker` verwendet wird.
+Beide Application Pools werden mit demselben ROOMS-Service-Account betrieben, der auch für den Windows-Dienst `RoomsPro Worker` verwendet wird.
 
 1. Nehmen Sie den Account auf dem Webserver in die Gruppe **IIS_IUSRS** auf oder vergeben Sie gleichwertige Rechte.
 2. Geben Sie ihm Lese- und Ausführungsrechte auf beide Installationsverzeichnisse.
@@ -92,7 +92,7 @@ Hinweis:
    ```
 
 3. Verwenden Sie für die API einen separaten Application Pool.
-4. Verwenden Sie als **Identity** denselben ROOMS-Service-Account wie beim Legacy Application Pool und den Windows-Diensten.
+4. Verwenden Sie als **Identity** denselben ROOMS-Service-Account wie beim Legacy Application Pool und beim Windows-Dienst `RoomsPro Worker`.
 5. Stellen Sie für den API Application Pool **No Managed Code** ein. Die Anwendung wird über `AspNetCoreModuleV2` gestartet.
 6. Aktivieren Sie `Anonymous Authentication`.
 7. Stellen Sie sicher, dass das ASP.NET Core Hosting Bundle korrekt installiert ist und `AspNetCoreModuleV2` geladen werden kann.

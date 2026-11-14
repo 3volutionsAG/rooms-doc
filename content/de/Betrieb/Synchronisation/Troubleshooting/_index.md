@@ -92,9 +92,7 @@ Die Meldungen geben meist direkt Aufschluss über:
 - ungültige Mailadressen
 - Konflikte bei BackSync / Collaboration
 
-## Schritt 4: Hintergrundverarbeitung bzw. Dienste prüfen
-
-### Aktuelle Setups
+## Schritt 4: Hintergrundverarbeitung prüfen
 
 - prüfen, ob **`RoomsPro.Worker`** läuft
 - [Dashboard für Hintergrundjobs]({{< relref "Betrieb/Hintergrundjobs/_index.md" >}}) unter **`/jobs`** an der RoomsPro.Web-Adresse öffnen. Dafür ist das globale Recht **Darf Konfiguration Datenimport verwalten** (ID 29) erforderlich.
@@ -102,11 +100,9 @@ Die Meldungen geben meist direkt Aufschluss über:
 
 Prüfen Sie auch pausierte Auslöser und die Verbindung des Dashboards. Führen Sie wartende oder nach einem Worker-Neustart wieder aufgenommene Arbeit nicht vorsorglich nochmals aus. Beachten Sie die [Auswirkungen von Planungseingriffen]({{< relref "Betrieb/Hintergrundjobs/_index.md#planung-ändern-auswirkungen-beachten" >}}).
 
-### Legacy Setups
+Unter **Einstellungen → System → About**, Abschnitt **Services**, prüfen Sie auch die Service-Sessions und wiederkehrenden Jobs mit Zeitplan, letztem protokolliertem Lauf und Zustand. **Paused** bleibt über einen Worker-Neustart erhalten. Prüfen Sie bei **Failed** die Fehlermeldung und bei **Collaboration licence missing** die Lizenz. Die [Anleitung zur About-Seite]({{< relref "Betrieb/Hintergrundjobs/_index.md#services-auf-der-about-seite-prüfen" >}}) erklärt die Rechte und die Auswirkungen von **Pause**, **Resume** und **Run now**.
 
-**Pfad:** `Einstellungen` → `System` → `About`
-
-Wenn die klassischen Synchronisationsdienste dort nicht laufen, muss der entsprechende Windows-Dienst geprüft bzw. neu gestartet werden.
+Service-Sessions laufen im selben Worker wie die übrigen Hintergrundjobs. Ein leerer oder alter **Last run** ist bei automatischen Prüfläufen ohne Arbeit normal und beweist keinen Ausfall. Kontrollieren Sie zusätzlich die Ereignisanzeige und das tatsächliche Synchronisationsergebnis. Beim Worker-Monitoring kann **Degraded** trotz HTTP `200` auf Verarbeitungs- oder Konfigurationsfehler hinweisen. Ein erfolgreicher HTTP-Check allein genügt nicht.
 
 ## Schritt 5: Graph-spezifische Prüfungen
 

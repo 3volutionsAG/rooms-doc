@@ -15,10 +15,9 @@ Der Account betreibt:
 
 - den IIS Application Pool der Legacy Website `ROOMS`
 - den IIS Application Pool der `RoomsPro API`
-- den Windows-Dienst `ROOMS`
 - den Windows-Dienst `RoomsPro Worker`
 
-Bei Docker Compose gilt dasselbe Rollenmodell. Alle vier Komponenten verwenden den gemeinsamen `ConnectionString` auf der obersten Ebene von `appsettings.operator.json` für dieselbe Datenbank dieser Installation. Beachten Sie [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
+Bei Docker Compose gilt dasselbe Rollenmodell. Alle drei Komponenten verwenden den gemeinsamen `ConnectionString` auf der obersten Ebene von `appsettings.operator.json` für dieselbe Datenbank dieser Installation. Beachten Sie [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
 
 ## SQL-Login und Laufzeitrechte
 
@@ -40,7 +39,7 @@ Verwenden Sie `db_owner` nicht als dauerhaftes Laufzeitrecht.
 
 Bei der Windows-Installation benötigt der gemeinsame Service-Account zusätzlich:
 
-- das Recht **Anmelden als Dienst** für `ROOMS` und `RoomsPro Worker`
+- das Recht **Anmelden als Dienst** für `RoomsPro Worker`
 - die Mitgliedschaft in `IIS_IUSRS` oder gleichwertige Berechtigungen für beide IIS Application Pools
 - Lese- und Ausführungsrechte auf den Installationsverzeichnissen
 - Lesezugriff auf die verteilten Konfigurations- und Lizenzdateien
