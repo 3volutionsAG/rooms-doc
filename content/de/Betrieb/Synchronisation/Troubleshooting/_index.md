@@ -97,8 +97,10 @@ Die Meldungen geben meist direkt Aufschluss über:
 ### Aktuelle Setups
 
 - prüfen, ob **`RoomsPro.Worker`** läuft
-- Dashboard für Hintergrundjobs unter **`/tickerq`** öffnen
+- [Dashboard für Hintergrundjobs]({{< relref "Betrieb/Hintergrundjobs/_index.md" >}}) unter **`/jobs`** an der RoomsPro.Web-Adresse öffnen. Dafür ist das globale Recht **Darf Konfiguration Datenimport verwalten** (ID 29) erforderlich.
 - prüfen, ob die relevanten Jobs vorhanden und nicht dauerhaft fehlerhaft sind
+
+Prüfen Sie auch pausierte Auslöser und die Verbindung des Dashboards. Führen Sie wartende oder nach einem Worker-Neustart wieder aufgenommene Arbeit nicht vorsorglich nochmals aus. Beachten Sie die [Auswirkungen von Planungseingriffen]({{< relref "Betrieb/Hintergrundjobs/_index.md#planung-ändern-auswirkungen-beachten" >}}).
 
 ### Legacy Setups
 

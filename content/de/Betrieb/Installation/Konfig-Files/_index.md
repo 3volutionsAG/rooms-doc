@@ -17,79 +17,65 @@ Passen Sie die Originaldateien nur in diesem Verzeichnis an. Die als Administrat
 {{< bootstrap-table "table table-striped" >}}
 | Zentrale Dateien | Zielkomponenten |
 |---|---|
-| `RoomsAppSettings.config`, `ConnectionStrings.config`, `DiagnosticsWeb.config`, `DiagnosticsWindowsService.config`, `MachineKey.config`, `*.lic` | Legacy Website `ROOMS` und Windows-Dienst `ROOMS` |
-| `appsettings.json` | `RoomsPro Worker` und `RoomsPro API` |
+| `appsettings.json`, `appsettings.operator.json`, `*.lic` | Verzeichnis `config` aller vier installierten Komponenten: ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker |
 {{< /bootstrap-table >}}
 
-Das ausgelieferte `Config.bat` verteilt `appsettings.json` bereits an den Worker. Nach der Installation muss die Datei einmalig erweitert werden, damit dieselbe zentrale Datei auch an die API verteilt wird.
+`Config.bat` erkennt die installierten Komponenten und ihre registrierten Zielpfade. Die API-Verteilung ist enthalten. Verwenden Sie die ausgelieferte Datei ohne manuelle Kopierroutinen.
 
-## `Config.bat` für die API erweitern
+## Individuelle Betriebseinstellungen
 
-Öffnen Sie folgende Datei als Administrator:
-
-```text
-C:\Program Files\3volutions\ROOMS\Configuration\Config.bat
-```
-
-### 1. API-Zielverzeichnis definieren
-
-Ergänzen Sie bei den vorhandenen Definitionen der Zielverzeichnisse:
-
-```bat
-SET API_CONFIG_DIR=C:\inetpub\wwwroot\API\config
-```
-
-Falls im MSI ein anderes API-Verzeichnis gewählt wurde, passen Sie diesen Wert entsprechend an.
-
-### 2. Kopierroutine aufrufen
-
-Ergänzen Sie direkt nach dem vorhandenen Aufruf
-
-```bat
-CALL :CopyWorkerAppSettingsIfInstalled
-```
-
-folgenden Aufruf:
-
-```bat
-CALL :CopyApiAppSettingsIfInstalled
-```
-
-### 3. Kopierroutine einfügen
-
-Fügen Sie am Ende der Datei folgenden vollständigen Block ein:
-
-```bat
-:CopyApiAppSettingsIfInstalled
-IF NOT EXIST "%API_CONFIG_DIR%\..\RoomsPro.Web.exe" GOTO :EOF
-IF NOT EXIST "%API_CONFIG_DIR%" MKDIR "%API_CONFIG_DIR%"
-IF EXIST "%~dp0appsettings.json" COPY /Y "%~dp0appsettings.json" "%API_CONFIG_DIR%\appsettings.json"
-GOTO :EOF
-```
-
-`%~dp0` verweist auf das Verzeichnis der ausgeführten `Config.bat` und damit auf die zentrale `appsettings.json`.
-
-Kontrollieren Sie diese manuelle Erweiterung nach einer Reparatur oder erneuten Installation des MSI, bevor Sie `Config.bat` wieder ausführen.
-
-## RoomsPro-Konfiguration
-
-Die zentrale Datei
+Legen Sie individuelle Werte in dieser selbst verwalteten Datei ab:
 
 ```text
-C:\Program Files\3volutions\ROOMS\Configuration\appsettings.json
+C:\Program Files\3volutions\ROOMS\Configuration\appsettings.operator.json
 ```
 
-enthält die Konfiguration für API und Worker. Beide Komponenten müssen insbesondere dieselbe ROOMS-Datenbank verwenden:
+Das MSI liefert die Basiskonfiguration in `appsettings.json`. Die Operator-Datei wird nicht vom MSI geliefert und bleibt bei einer erneuten Installation erhalten. Alle vier Komponenten lesen aus ihrem Verzeichnis `config` zuerst `appsettings.json`, dann `appsettings.{Umgebung}.json` und danach `appsettings.operator.json`. Spätere Werte überschreiben frühere. Umgebungsvariablen haben Vorrang vor diesen Dateien; für hierarchische Schlüssel verwenden Sie `__`, beispielsweise `Rooms__DefaultAuth` für `Rooms:DefaultAuth`. Ein flacher Name wie `DefaultAuth` konfiguriert diese Einstellung nicht. Starten Sie betroffene Websites und Dienste nach dem Verteilen neu. Änderungen an der Operator-Datei werden nicht automatisch eingelesen.
+
+Da alle vier Komponenten dieselbe Operator-Datei erhalten, gehören nur gemeinsam passende Werte hinein. Konfigurieren Sie hostabhängige Listener wie `Urls` oder `Kestrel` nicht pauschal in dieser Datei.
+
+### Eine Datenbank pro Installation
+
+Jede ROOMS-Installation verwendet genau eine Datenbank. Alle vier Komponenten lesen deren Verbindung aus dem Schlüssel `ConnectionString` auf der obersten JSON-Ebene. Verteilen Sie dieselbe Verbindung und Datenbankidentität an alle vier Komponenten.
+
+Ohne einen nicht leeren `ConnectionString` startet die jeweilige Komponente nicht. `ConnectionStrings:<Name>` und `IdentityServer:RoomsDatabase` liefern keine Datenbankverbindung. Prüfen Sie bei Startproblemen auch Überschreibungen durch Umgebungsvariablen.
+
+Die Kompatibilität mit alten URLs wird separat über `Rooms:LegacyTenant` konfiguriert, wie unter [Bestehende Links mit Mandantenpräfix](#bestehende-links-mit-mandantenpräfix) beschrieben. Eine neue Installation benötigt diesen Wert nicht. `Rooms:DefaultMandator` wählt keine Datenbank aus.
+
+Beispiel für den Windows-Standardaufbau mit integriertem Service-Account:
 
 ```json
 {
-  "IdentityServer": {
-    "RoomsDatabase": "Server=SQLSERVER;Database=ROOMS;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True"
-  }
+  "ConnectionString": "Server=SQLSERVER;Database=ROOMS;Integrated Security=True;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False"
 }
 ```
 
-Der Konfigurationsschlüssel heisst `IdentityServer:RoomsDatabase`. Bei Konfiguration über Umgebungsvariablen entspricht dies `IdentityServer__RoomsDatabase`. Bewahren Sie Zugangsdaten nicht in Beispielen, Skripten oder ungeschützten Dateien auf.
+Passen Sie Server, Datenbank und TLS-Vertrauen an Ihre Umgebung an. Das Beispiel verlangt Verschlüsselung und ein vertrauenswürdiges SQL-Server-Zertifikat. Die Umgebungsvariable heisst ebenfalls `ConnectionString`. Bewahren Sie Zugangsdaten nicht in Beispielen, Skripten oder ungeschützten Dateien auf.
+
+{{% alert title="SQL-Verschlüsselung ausdrücklich festlegen" color="warning" %}}
+Enthält die Verbindung weder `Encrypt` noch `TrustServerCertificate`, ergänzt ROOMS `Encrypt=False`. Setzen Sie `Encrypt=True`, wenn eine verschlüsselte Verbindung erforderlich ist, und stimmen Sie die Zertifikatsprüfung mit Ihrer SQL-Server-Umgebung ab.
+{{% /alert %}}
+
+Weitere ROOMS-Einstellungen gehören unter `Rooms`, beispielsweise `Rooms:DefaultAuth`. Die OpenID-Connect-Einstellungen der Legacy Website stehen unter `Authentication:OpenIdConnect`.
+
+### Öffentliche ROOMS-URL und Anmeldung
+
+Die öffentliche ROOMS-URL enthält kein Mandantenpräfix. Beispiel: `https://rooms.example.ch` beziehungsweise `https://example.ch/Rooms`, wenn die Anwendung unter `/Rooms` installiert ist. Der Installationspfad bleibt erhalten.
+
+- Verwenden Sie diese Basis für **Applikation Root-Url** (Parameter 18) und die entsprechende öffentliche anonyme Basis für **Applikation Root-Url Anonymous** (Parameter 60).
+- Ein expliziter Wert für `Authentication:OpenIdConnect:RedirectUri` muss auf die öffentliche ROOMS-Anwendungswurzel zeigen, ohne Mandantenpräfix. Ohne diesen Wert verwendet die Website Parameter 18. Der Anmelde-Callback wird aus dieser URL abgeleitet.
+- Stimmen Sie gegebenenfalls eigene Einträge für den Client `rooms` unter `IdentityServer:Clients` auf diese URLs ab. RoomsPro ergänzt dessen Anmelde-, Abmelde- und CORS-Adressen beim Start aus den konfigurierten Root-URLs. CORS-Origins enthalten nur Schema, Host und gegebenenfalls Port, keinen Pfad.
+- Verwenden Sie die passende Basis auch in quickROOMS `rootUrl`, Add-In-Manifesten sowie Türschild- und Welcome-Screen-URLs. Prüfen Sie Reverse-Proxy-Regeln, die ein Mandantenpräfix voraussetzen. Die eigenen Callback-URLs des Wizards bleiben davon getrennt.
+
+#### Bestehende Links mit Mandantenpräfix
+
+Wenn Geräte oder gespeicherte Links ein Mandantenpräfix verwenden, setzen Sie `Rooms:LegacyTenant` auf genau dieses frühere Präfix, beispielsweise `Default`. Als Umgebungsvariable heisst der Schlüssel `Rooms__LegacyTenant`. Ohne diesen Wert ist keine Kompatibilitätsbehandlung aktiv. Normale Browser-Seitenaufrufe mit diesem Präfix werden dauerhaft auf die URL ohne Präfix weitergeleitet. Aufrufe für Add-In-Seiten, Inhalte und Schnittstellen sowie Nicht-GET/HEAD-Anfragen und Anmelde-Callbacks werden unter dem alten Pfad verarbeitet. Das ersetzt keine Prüfung der konfigurierten URLs und ist keine Zusage, dass jede alte Adresse erfolgreich ist. Verwenden Sie für neue Links die URL ohne Mandantenpräfix.
+
+{{% alert title="Grenzen der alten URLs" color="warning" %}}
+Nur das unter `Rooms:LegacyTenant` konfigurierte Präfix wird erkannt. Andere frühere Mandantennamen erhalten keine solche Kompatibilitätsbehandlung. Entspricht der Wert dem Anfang einer aktuellen Route, beispielsweise `Home`, `Calendar` oder `api`, ist die gesamte Kompatibilitätsbehandlung deaktiviert. Der Webhost protokolliert dazu eine Warnung. Prüfen Sie in diesem Fall die betroffenen Geräte und Links direkt mit der aktuellen URL.
+{{% /alert %}}
+
+## RoomsPro-Konfiguration
 
 ### Schutz vor wiederholten Anmeldeversuchen
 
@@ -126,7 +112,7 @@ Bei **Zu viele Anfragen. Bitte versuchen Sie es später erneut.** stoppen Sie we
 
 #### Grenzen konfigurieren
 
-Ergänzen Sie bei Bedarf die folgenden Werte im bestehenden `IdentityServer`-Abschnitt der `appsettings.json`. Das Beispiel zeigt die Standardwerte; ersetzen Sie damit nicht die übrige Konfiguration.
+Ergänzen Sie bei Bedarf die folgenden Werte im `IdentityServer`-Abschnitt der `appsettings.operator.json`. Das Beispiel zeigt die Standardwerte. Ersetzen Sie damit nicht die übrige Konfiguration.
 
 ```json
 {
@@ -154,89 +140,87 @@ Für den direkt aus dem Internet erreichbaren Nginx im [Docker-Beispiel]({{< rel
 
 ## Legacy-Konfiguration
 
-### `RoomsAppSettings.config`
+### Einstellungen unter `Rooms`
 
-`DefaultMandator` verweist auf den Namen eines Eintrags aus `ConnectionStrings.config`:
-
-```xml
-<RoomsAppSettings>
-  <add key="DefaultMandator" value="PROD" />
-</RoomsAppSettings>
-```
-
-### `ConnectionStrings.config`
-
-Für jede Mandantendatenbank ist ein eigener Eintrag erforderlich. Der Name wird in der Legacy-Webanwendung als Bestandteil der Mandanten-URL verwendet.
-
-```xml
-<connectionStrings>
-  <clear />
-  <add name="PROD" connectionString="Data Source=SQLSERVER;Initial Catalog=ROOMS;Integrated Security=SSPI;MultipleActiveResultSets=True" />
-</connectionStrings>
-```
-
-Verwenden Sie für den dokumentierten Windows-Standardweg die integrierte Authentifizierung mit dem gemeinsamen ROOMS-Service-Account.
+Individuelle Anwendungseinstellungen stehen unter `Rooms` in `appsettings.operator.json`. `RoomsAppSettings.config` und `ConnectionStrings.config` sind keine aktiven Konfigurationsquellen. Liegt eine dieser Dateien im Verzeichnis `config` einer Komponente, verweigert diese den Start mit einer Konfigurationsmeldung. Prüfen Sie in diesem Fall die zentrale JSON-Konfiguration und deren Verteilung, bevor Sie die Komponente starten.
 
 ### SQL-Authentifizierung für Legacy
 
-Wenn sich die Legacy Website und der Legacy Windows-Dienst mit SQL-Benutzername und Passwort anmelden, muss der jeweilige Eintrag in `ConnectionStrings.config` zusätzlich `Persist Security Info=True` enthalten. Das gilt für die Legacy-Komponenten von ROOMS 4.30 auf .NET Framework 4.8, sowohl bei MSI- als auch bei Container-Installationen.
+Wenn sich die Legacy Website und der ROOMS-Dienst mit SQL-Benutzername und Passwort anmelden, muss der gemeinsame `ConnectionString` zusätzlich `Persist Security Info=True` enthalten. Das gilt sowohl bei MSI- als auch bei Container-Installationen.
 
-```xml
-<connectionStrings>
-  <clear />
-  <add name="PROD" connectionString="Data Source=SQLSERVER;Initial Catalog=ROOMS;User ID=ROOMS_APP;Password='BESTEHENDES_PASSWORT';MultipleActiveResultSets=True;Persist Security Info=True" />
-</connectionStrings>
+```json
+{
+  "ConnectionString": "Server=SQLSERVER;Database=ROOMS;User ID=ROOMS_APP;Password='BESTEHENDES_PASSWORT';MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Persist Security Info=True"
+}
 ```
 
-Das Beispiel verwendet Platzhalter. Behalten Sie bei einem bestehenden Eintrag Server, Datenbank, Benutzername, Passwort und weitere Verbindungsparameter unverändert bei. Ergänzen Sie nur `Persist Security Info=True`. Ersetzen Sie nicht die gesamte Datei durch das Beispiel, wenn weitere Mandanteneinträge vorhanden sind. Das Passwort muss weiterhin korrekt für die Verbindungszeichenfolge und das XML-Attribut maskiert sein.
+Das Beispiel verwendet Platzhalter und verlangt ein vertrauenswürdiges SQL-Server-Zertifikat. Behalten Sie Server, Datenbank, Benutzername, Passwort und weitere Verbindungsparameter Ihrer Installation bei. Ergänzen Sie bei einer entsprechenden SQL-Anmeldung `Persist Security Info=True`. Ersetzen Sie nicht die gesamte Datei durch das Beispiel. Das Passwort muss korrekt für die Verbindungszeichenfolge und die JSON-Zeichenfolge maskiert sein.
 
 Ohne diesen Parameter gilt standardmässig `False`. Eine erste Datenbankanmeldung kann dann erfolgreich sein, während ein späterer erneuter Verbindungsaufbau das Passwort verliert. Dadurch können beispielsweise Hintergrundaufträge oder Exporte mit einem SQL-Anmeldefehler abbrechen. Der Parameter verhindert diesen Passwortverlust, behebt aber nicht automatisch andere Ursachen eines fehlgeschlagenen Auftrags.
 
-Diese Anforderung entsteht durch die Verbindungsverwaltung der Legacy-Komponenten. Sie ist keine allgemeine Voraussetzung von .NET Framework 4.8. Bei integrierter Windows-Authentifizierung wird kein SQL-Passwort im Connection String hinterlegt. RoomsPro API mit integriertem IDP und RoomsPro Worker verwenden in ROOMS 4.30 eine andere Verbindungsverwaltung und benötigen diese Legacy-Einstellung nicht. Übertragen Sie den Parameter deshalb nicht pauschal in deren `appsettings.json`.
+Diese Anforderung entsteht durch die Verbindungsverwaltung der Legacy-Komponenten. Bei integrierter Windows-Authentifizierung wird kein SQL-Passwort im Connection String hinterlegt. RoomsPro API und Worker benötigen den Parameter für ihre eigene Verbindungsverwaltung nicht, lesen jedoch dieselbe gemeinsame Verbindung.
 
 {{% alert title="Zugangsdaten schützen" color="warning" %}}
 Mit `Persist Security Info=True` bleibt das Passwort über die Verbindungszeichenfolge einer geöffneten Verbindung auslesbar. Beschränken Sie den Zugriff auf Konfigurationsdateien und protokollieren oder versenden Sie keine vollständigen Connection Strings mit Zugangsdaten.
 {{% /alert %}}
 
-Prüfen Sie vor der Änderung, ob der Eintrag zur betroffenen Umgebung und Mandantendatenbank gehört. Sichern Sie die bisherige Konfiguration und verteilen Sie die geänderte Datei an beide Legacy-Komponenten. Bei einer bestehenden Installation starten Sie die betroffenen Legacy-Komponenten in einem abgestimmten Wartungsfenster neu. Wiederholen Sie anschliessend den zuvor fehlgeschlagenen Auftrag und prüfen Sie dessen Ergebnis sowie die Ereignisanzeige. Eine erfolgreiche Anmeldung allein bestätigt noch keinen erfolgreichen Export.
+Prüfen Sie vor der Änderung, ob die Verbindung zur betroffenen Installation und Datenbank gehört. Sichern Sie die bisherige Konfiguration und verteilen Sie die geänderte Datei an alle vier Komponenten. Starten Sie die betroffenen Komponenten in einem abgestimmten Wartungsfenster neu. Wiederholen Sie anschliessend den zuvor fehlgeschlagenen Auftrag und prüfen Sie dessen Ergebnis sowie die Ereignisanzeige. Eine erfolgreiche Anmeldung allein bestätigt noch keinen erfolgreichen Export.
 
-### Weitere Legacy-Dateien
+### Logging und Lizenzen
 
-- `DiagnosticsWeb.config` und `DiagnosticsWindowsService.config` steuern das Legacy-Logging und werden nur bei einem konkreten Diagnosebedarf angepasst.
-- `MachineKey.config` muss innerhalb einer Umgebung auf allen Webservern identisch sein.
-- Lizenzdateien mit der Endung `.lic` werden ebenfalls aus dem zentralen Configuration-Verzeichnis verteilt.
+Logstufen und Logziele der Legacy-Komponenten werden über `Serilog` in der `appsettings.operator.json` konfiguriert. `DiagnosticsWeb.config` und `DiagnosticsWindowsService.config` steuern das Logging nicht. Beim Start weist eine Warnung auf solche vorhandenen Dateien hin.
+
+Die ROOMS-Website speichert ihren Data-Protection-Schlüsselbund in der Datenbank der Installation. Eine gemeinsame `MachineKey.config` ist dafür nicht vorgesehen.
+
+Für die von allen vier Komponenten verwendeten RoomsPro-Funktionen müssen auch die benötigten `CalendarSync`-Werte und gegebenenfalls `DataProtection:EncryptionKey` übereinstimmen. Verteilen Sie einen konfigurierten Verschlüsselungsschlüssel unverändert und schützen Sie ihn wie andere Secrets. RoomsPro API erzeugt den gemeinsamen RoomsPro-Schlüsselbund; bei einer Datenbank ohne Schlüsselbund starten Sie zuerst die API. ROOMS-Website und ROOMS-Dienst erzeugen diesen Schlüsselbund nicht selbst. `RoomsPro.Worker` muss für die Ausführung der Hintergrundaufträge laufen.
+
+Lizenzdateien mit der Endung `.lic` werden aus dem zentralen Configuration-Verzeichnis verteilt.
+
+### Schriftarten für PDF-Dokumente
+
+Für die lokale PDF-Erstellung mit FlexDoc kann das Betriebsteam unter `DocumentConversion:FlexDoc:FontDirectory` ein Schriftverzeichnis festlegen. Als Umgebungsvariable lautet der Schlüssel `DocumentConversion__FlexDoc__FontDirectory`. Der ausführende Web- oder Dienstprozess benötigt Lesezugriff auf dieses Verzeichnis. Die Linux-Images verwenden `/usr/share/fonts/rooms` und enthalten Arial, Arial Bold und Source Sans Pro Regular. Prüfen Sie das Ergebnis mit den tatsächlich eingesetzten Vorlagen. Ein PDF muss nicht in jedem Layout mit der Word-Darstellung übereinstimmen.
 
 ## Konfiguration verteilen und prüfen
 
 1. Speichern Sie alle Änderungen im zentralen Configuration-Verzeichnis.
 2. Führen Sie `Config.bat` als Administrator aus.
-3. Prüfen Sie für jede lokal installierte RoomsPro-Komponente, ob die Zieldatei vorhanden und mit der zentralen Datei identisch ist. Das folgende Skript überspringt nicht installierte Komponenten und bricht bei einer fehlenden oder abweichenden Kopie ab:
+3. Prüfen Sie bei jeder installierten Komponente die Kopie unter `config\appsettings.operator.json`. Das folgende Beispiel überspringt nicht installierte Komponenten und bricht bei einer fehlenden oder abweichenden Kopie ab. Passen Sie abweichende Installationspfade an:
 
    ```powershell
-   $source = 'C:\Program Files\3volutions\ROOMS\Configuration\appsettings.json'
+   $source = 'C:\Program Files\3volutions\ROOMS\Configuration\appsettings.operator.json'
    $sourceHash = (Get-FileHash $source).Hash
    $targets = @(
      [pscustomobject]@{
+       Name = 'ROOMS-Website'
+       Executable = 'C:\inetpub\wwwroot\ROOMS\Garaio.Products.Rooms.Web.dll'
+       Config = 'C:\inetpub\wwwroot\ROOMS\config\appsettings.operator.json'
+     }
+     [pscustomobject]@{
+       Name = 'ROOMS-Dienst'
+       Executable = 'C:\Program Files\3volutions\ROOMS\WindowsService\Garaio.Products.Rooms.WindowsService.exe'
+       Config = 'C:\Program Files\3volutions\ROOMS\WindowsService\config\appsettings.operator.json'
+     }
+     [pscustomobject]@{
        Name = 'RoomsPro Worker'
        Executable = 'C:\Program Files\3volutions\ROOMS\Worker\RoomsPro.Worker.exe'
-       Config = 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.json'
+       Config = 'C:\Program Files\3volutions\ROOMS\Worker\config\appsettings.operator.json'
      }
      [pscustomobject]@{
        Name = 'RoomsPro API'
-       Executable = 'C:\inetpub\wwwroot\API\RoomsPro.Web.exe'
-       Config = 'C:\inetpub\wwwroot\API\config\appsettings.json'
+       Executable = 'C:\inetpub\wwwroot\API\RoomsPro.Web.dll'
+       Config = 'C:\inetpub\wwwroot\API\config\appsettings.operator.json'
      }
    )
 
    foreach ($target in $targets) {
      if (Test-Path $target.Executable) {
        if (-not (Test-Path $target.Config)) {
-         throw "$($target.Name): appsettings.json fehlt"
+         throw "$($target.Name): appsettings.operator.json fehlt"
        }
        if ((Get-FileHash $target.Config).Hash -ne $sourceHash) {
-         throw "$($target.Name): appsettings.json weicht von der zentralen Datei ab"
+         throw "$($target.Name): appsettings.operator.json weicht von der zentralen Datei ab"
        }
-       Write-Host "$($target.Name): appsettings.json ist aktuell"
+       Write-Host "$($target.Name): appsettings.operator.json ist aktuell"
      }
    }
    ```

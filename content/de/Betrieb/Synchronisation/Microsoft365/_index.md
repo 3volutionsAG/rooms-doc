@@ -10,7 +10,7 @@ Prüfen Sie vor dem Setup:
 
 - im Profil ist wirklich **`SyncModus = Microsoft365`** gesetzt und **nicht** `O365`
 - die **E-Mail-Adresse** der Person oder Ressource entspricht der **primären SMTP-Adresse**
-- `CalendarSync:Graph` ist für API und Worker vollständig und identisch konfiguriert
+- `CalendarSync:Graph` ist für ROOMS-Website, ROOMS-Dienst, API und Worker vollständig und identisch konfiguriert
 - die Basis-URL des IDP / `RoomsPro.Web` ist öffentlich erreichbar
 - die Pfade **`/api/webhooks/graph`** und **`/api/webhooks/graph/lifecycle`** werden anonym per `POST` akzeptiert
 - die **Hintergrundverarbeitung** läuft
@@ -23,7 +23,7 @@ Der SyncModus `Microsoft365` ist der **Graph-basierte** Kalender-Sync für Excha
 Wichtig:
 
 - `EWS1`, `EWS2` und `O365` sind weiterhin **EWS-basierte** Modi gegen eine `.asmx`-Schnittstelle
-- `Microsoft365` ist ein **eigener Modus** mit **Microsoft Graph API**, Graph-Webhooks und separater `CalendarSync`-Konfiguration in `appsettings.json`
+- `Microsoft365` ist ein **eigener Modus** mit **Microsoft Graph API**, Graph-Webhooks und dem Abschnitt `CalendarSync:Graph` in der gemeinsamen `appsettings.operator.json`
 
 ## EWS-Modi vs `Microsoft365`
 
@@ -33,7 +33,7 @@ Wichtig:
 | Grundtechnologie | Exchange Web Services (`.asmx`) | Microsoft Graph API |
 | Sync-URL im Profil | erforderlich | nicht relevant |
 | Webhook-Endpunkt | `/api/webhooks/exchange` | `/api/webhooks/graph` und `/api/webhooks/graph/lifecycle` |
-| Hauptkonfiguration | `RoomsAppSettings.config` / EWS-Konfiguration | `appsettings.json` → `CalendarSync:Graph` |
+| Hauptkonfiguration in `appsettings.operator.json` | `CalendarSync:Ews` und Anwendungseinstellungen unter `Rooms` | `CalendarSync:Graph` |
 | Typischer Einsatz | EWS-basierte Setups | Graph-basierte Exchange-Online-Setups |
 {{< /bootstrap-table >}}
 
@@ -129,7 +129,7 @@ Der Unterschied `AppOnly` vs `Delegated` betrifft in der Praxis **vor allem Pers
 
 ## ROOMS konfigurieren
 
-Die Graph-Konfiguration liegt in der **`appsettings.json`** des IDP / `RoomsPro.Web` unter `CalendarSync:Graph`.
+Pflegen Sie die Graph-Konfiguration unter `CalendarSync:Graph` in der gemeinsamen **`appsettings.operator.json`** und stellen Sie sie identisch für alle vier Komponenten bereit. Ergänzen Sie für app-basierte Kalenderzugriffe die passenden Zugangsdaten unter `Rooms`, auch für Ressourcenpostfächer in einer `Delegated`-Umgebung. Die [Konfigurationsübersicht]({{< relref "Betrieb/Synchronisation/Rooms/Konfigurationen/_index.md#anwendungseinstellungen-unter-rooms" >}}) zeigt die Schlüssel und die getrennte Zuordnung für Mail-Domänen. Verteilung und Neustart sind unter [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschrieben.
 
 ### Erforderliche Schlüssel
 
@@ -168,7 +168,7 @@ Beachten Sie dabei:
 - `TenantId` muss eine Verzeichnis-ID im GUID-Format sein und darf keine Tenant-Domäne wie `contoso.onmicrosoft.com` enthalten
 - jede konfigurierte Entra-App benötigt die Graph-Anwendungsberechtigungen und den Admin Consent im jeweiligen Ziel-Tenant
 - `AuthMode`, `CallbackUrl`, `ClientState`, delegierter Consent und Refresh Tokens bleiben global
-- dieselbe Konfiguration muss für API und Worker bereitgestellt werden
+- dieselbe Konfiguration muss für ROOMS-Website, ROOMS-Dienst, API und Worker bereitgestellt werden
 
 {{% alert color="warning" title="Bestehende Graph-Subscriptions" %}}
 `DomainOverrides` migrieren bestehende Graph-Subscriptions nicht. Löschen Sie bestehende Subscriptions mit den ursprünglichen Credentials, bevor Sie Tenant, App oder Mail-Domäne ändern, und lassen Sie sie danach neu erstellen. Aktivieren Sie die Overrides erst, nachdem passende API- und Worker-Versionen bereitgestellt wurden.
@@ -183,7 +183,7 @@ Die Codebasis enthält **zwei** Graph-Pfade:
 - ein Graph-Client-/Session-Pfad in der legacy ROOMS-Logik
 - die neuere RoomsPro-Graph-Infrastruktur für Subscription-Provisionierung, Renewal und weitere Verwaltungsoperationen
 
-Code-verifiziert gilt:
+Für die Konfiguration gilt:
 
 - die **legacy Graph-Client-Erzeugung** unterstützt **Client Secret oder Zertifikat**
 - die **RoomsPro-Graph-Infrastruktur** unterstützt für **AppOnly- / Hintergrundoperationen** ebenfalls **Client Secret oder Zertifikat**
@@ -244,18 +244,18 @@ Der Graph-Sync nutzt einen separaten **Hintergrundverarbeitungsdienst**.
 
 Wichtige Jobs:
 
-- `GraphSubscriptionProvisioning`
-- `GraphSubscriptionRenewal`
-- `DelegatedTokenRefresh`
-- `MigrateSyncItemIds`
-- `PrepareGraphToEwsBackSync`
+- `GraphSubscriptionProvisioningJob`
+- `GraphSubscriptionRenewalJob`
+- `DelegatedTokenRefreshJob`
+- `SyncItemIdMigrationJob`
+- `PrepareGraphToEwsBackSyncJob`
 
 Es ist **keine** manuelle `StructureMapXml`-Aktivierung für Graph-Subscription-Management nötig.
 
 Zur Betriebsprüfung:
 
 - `RoomsPro.Worker` muss laufen
-- Dashboard für Hintergrundjobs unter `/tickerq` prüfen
+- [Dashboard für Hintergrundjobs]({{< relref "Betrieb/Hintergrundjobs/_index.md" >}}) unter `/jobs` an der RoomsPro.Web-Adresse prüfen. Dafür ist das globale Recht **Darf Konfiguration Datenimport verwalten** (ID 29) erforderlich.
 
 ## Was passiert im Hintergrund?
 

@@ -6,12 +6,12 @@ description: "Konfigurationseinstellungen für EWS- und Graph-basierte Kalender-
 ---
 
 {{% alert title="Voraussetzung (häufige Fehlerquelle)" color="info" %}}
-Für die Kalender-Synchronisation gibt es **zwei Konfigurationswelten**:
+Die Kalender-Synchronisation wird in der gemeinsamen **`appsettings.operator.json`** konfiguriert:
 
-- **EWS-basierte Modi** (`EWS1`, `EWS2`, `O365`) nutzen primär EWS-/Legacy-Konfiguration
-- **Graph-basierter Modus** (`Microsoft365`) nutzt die **`CalendarSync`**-Section in `appsettings.json`
+- **EWS-basierte Modi** (`EWS1`, `EWS2`, `O365`) nutzen `CalendarSync:Ews` sowie die benötigten Anwendungseinstellungen unter `Rooms`.
+- **Graph-basierter Modus** (`Microsoft365`) nutzt `CalendarSync:Graph` und für app-basierte Kalenderzugriffe die passenden Zugangsdaten unter `Rooms`.
 
-Die Graph-Konfiguration gehört **nicht** in `RoomsAppSettings.config`.
+Stellen Sie die benötigten Werte identisch für ROOMS-Website, ROOMS-Dienst, RoomsPro API und RoomsPro Worker bereit. Die [zentrale Konfigurationsanleitung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}) beschreibt Verteilung, Priorität der Quellen und Neustart.
 {{% /alert %}}
 
 ## Relevante globale Parameter
@@ -26,13 +26,15 @@ Unter **Einstellungen → System → Globale Parameter** sind insbesondere folge
 | `IDP Root-Url` | Basis-URL des IDP / `RoomsPro.Web`; relevant für Webhook-Callbacks und Health-Checks |
 {{< /bootstrap-table >}}
 
-## `appsettings.json` - `CalendarSync`-Section
+## `appsettings.operator.json` - `CalendarSync`-Section
 
-Die Kalender-Synchronisation wird in der **`appsettings.json`** des IDP / `RoomsPro.Web` konfiguriert. Die Graph-Konfiguration muss zudem mit denselben Werten für `RoomsPro.Worker` bereitgestellt werden.
+Ergänzen Sie die Section `CalendarSync` in der zentralen **`appsettings.operator.json`**, ohne die übrigen Abschnitte zu ersetzen.
 
-Der genaue Installationspfad hängt vom Deployment ab. Entscheidend ist die **deployte** Konfiguration der API- und Worker-Instanzen.
+Der genaue Installationspfad hängt vom Deployment ab. Alle vier Komponenten lesen die bereitgestellte Datei aus ihrem Verzeichnis `config`.
 
-### Vollständiges Beispiel
+### Beispiel für `CalendarSync`
+
+Dieses Beispiel zeigt den Abschnitt `CalendarSync`. Ergänzen Sie die passenden [Anwendungseinstellungen unter `Rooms`](#anwendungseinstellungen-unter-rooms) für die verwendeten SyncModi.
 
 ```json
 {
@@ -131,7 +133,7 @@ Werte werden nicht einzeln aus der Standardkonfiguration geerbt. Jede Entra-App 
 
 Die Overrides gelten nur für app-basierte Zugriffe. Dazu gehören alle Zugriffe bei `AuthMode = AppOnly` sowie Ressourcenpostfächer in einer `Delegated`-Umgebung. Delegierter Personen-Consent und Refresh Tokens verwenden weiterhin die globale Graph-App. Auch `AuthMode`, `CallbackUrl` und `ClientState` bleiben global.
 
-Stellen Sie die vollständige Graph-Konfiguration in **API und Worker** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
+Stellen Sie die vollständige Graph-Konfiguration in **allen vier Komponenten** bereit. Bei einer Konfiguration über Umgebungsvariablen lautet ein Schlüssel beispielsweise `CalendarSync__Graph__DomainOverrides__subsidiary.onmicrosoft.com__TenantId`; `AppId`, `ClientSecret` und `CertificateThumbprint` folgen demselben Schema.
 
 In Kubernetes kann dieser Schlüssel wegen der Punkte in der Domäne nicht als Name unter `env` verwendet werden. Stellen Sie die Domain-Overrides dort über eine eingebundene, dateibasierte .NET-Konfigurationsquelle bereit.
 
@@ -179,26 +181,34 @@ Wichtig:
 - `CalendarSync:Ews:Providers:O365:DomainOverrides` und `CalendarSync:Graph:DomainOverrides` sind getrennte Konfigurationen; ein EWS-Override gilt nicht für Graph
 - für `EWS1` und `EWS2` gibt es keine entsprechende per-Mail-Domain-Umschaltung
 
-## `RoomsAppSettings.config` - legacy / Kompatibilitätswerte
+## Anwendungseinstellungen unter `Rooms`
 
-Die Datei **`RoomsAppSettings.config`** bleibt für legacy oder kompatibilitätsbezogene Einstellungen relevant.
+Kalenderzugriffe der ROOMS-Anwendungslogik lesen zusätzlich Werte unter **`Rooms`** in derselben `appsettings.operator.json`. Die gemeinsame Datei ersetzt diese getrennten Schlüssel nicht durch eine automatische Zuordnung aus `CalendarSync`. Stimmen Sie die Zugangsdaten und den Authentisierungsmodus für beide Abschnitte ab.
 
-Beispiel:
+{{< bootstrap-table "table table-striped" >}}
+| SyncModus | Anwendungseinstellungen unter `Rooms` | Passender Bereich unter `CalendarSync` |
+|---|---|---|
+| `EWS1` | `Ews1ServiceUser`, `Ews1ServicePassword`, `Ews1ServiceDomain`, `Ews1UseImpersonation` | `Ews:Providers:Ews1`: `ServiceUser`, `ServicePassword`, `ServiceDomain`, `UseImpersonation` |
+| `EWS2` | Entsprechende Schlüssel mit `Ews2` statt `Ews1` | `Ews:Providers:Ews2` |
+| `O365` | `ExchangeTenantId`, `ExchangeAppId`, `ExchangeClientSecret` oder `ExchangeCertThumbprint`; bei Delegation zusätzlich `ExchangeServiceUser`, `ExchangeServicePassword`, `ExchangeUseImpersonation=false` | `Ews:Providers:O365`: `TenantId`, `AppId`, `ClientSecret` oder `CertificateThumbprint`; bei Delegation `ServiceUser`, `ServicePassword`, `UseImpersonation=false` |
+| `Microsoft365`, app-basierter Zugriff | `Microsoft365TenantId`, `Microsoft365AppId`, `Microsoft365ClientSecret` oder `Microsoft365CertificateThumbprint` | `Graph`: `TenantId`, `AppId`, `ClientSecret` oder `CertificateThumbprint` |
+{{< /bootstrap-table >}}
 
-```xml
-<RoomsAppSettings>
-  <add key="ExchangeSyncResolveDistributionGroups" value="true" />
-</RoomsAppSettings>
+Beispiel für die app-basierten Graph-Zugangsdaten passend zum Standard-Tenant im obigen `CalendarSync`-Beispiel:
+
+```json
+{
+  "Rooms": {
+    "Microsoft365TenantId": "<entra-tenant-guid>",
+    "Microsoft365AppId": "<entra-client-id>",
+    "Microsoft365ClientSecret": "<client-secret>"
+  }
+}
 ```
 
-Wenn dieser Wert `true` ist, werden Distribution Groups bei der Synchronisation von Exchange nach ROOMS in die entsprechenden Teilnehmer aufgelöst.
+Auch bei Graph-Ressourcenpostfächern in einer `Delegated`-Umgebung werden app-basierte Zugangsdaten benötigt. Für abweichende Mail-Domänen verwenden die Anwendungseinstellungen flache Schlüssel wie `Rooms:subsidiary.onmicrosoft.com_Microsoft365TenantId`; `Microsoft365AppId` und der Secret- oder Zertifikatsschlüssel folgen demselben Schema. Hinterlegen Sie dort einen vollständigen, zum `CalendarSync:Graph:DomainOverrides`-Eintrag passenden Satz. Für `O365` gilt dasselbe Domänenpräfix mit den `Exchange`-Schlüsseln. Ein `DomainOverrides`-Eintrag allein setzt diese `Rooms`-Werte nicht.
 
-Weitere EWS-/Legacy-spezifische Overrides:
-
-- `ExchangePushNotificationEndpointUrl` - absolute Override-URL für EWS-Webhooks
-- `ExchangePushNotificationUseLegacyEndpoint` - Rollback auf `SyncNotification.svc`
-
-Diese beiden Werte gelten **nicht** für `Microsoft365` / Graph.
+Der EWS-Webhook wird über `CalendarSync:Ews:Common:NotificationEndpointUrl` konfiguriert. Ohne diesen Wert verwendet ROOMS `IdpRootUrl + /api/webhooks/exchange`.
 
 ## Passende Detailseiten
 

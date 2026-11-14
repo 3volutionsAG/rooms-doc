@@ -24,18 +24,18 @@ Für bereits migrierte Jobs ist **keine** manuelle `StructureMapXml`-Aktivierung
 
 ### Über die Hintergrundverarbeitung laufende Jobs
 
-- `EwsSubscriptionManagement`
-- `ProvisionEwsSubscription`
-- `GraphSubscriptionProvisioning`
-- `GraphSubscriptionRenewal`
-- `DelegatedTokenRefresh`
-- `MigrateSyncItemIds`
-- `PrepareGraphToEwsBackSync`
+- `EwsSubscriptionManagementJob`
+- `EwsProvisionSubscriptionJob`
+- `GraphSubscriptionProvisioningJob`
+- `GraphSubscriptionRenewalJob`
+- `DelegatedTokenRefreshJob`
+- `SyncItemIdMigrationJob`
+- `PrepareGraphToEwsBackSyncJob`
 
 Zur Betriebsprüfung:
 
 - prüfen, ob **`RoomsPro.Worker`** läuft
-- Dashboard für Hintergrundjobs unter **`/tickerq`** öffnen
+- [Dashboard für Hintergrundjobs]({{< relref "Betrieb/Hintergrundjobs/_index.md" >}}) unter **`/jobs`** an der RoomsPro.Web-Adresse öffnen. Dafür ist das globale Recht **Darf Konfiguration Datenimport verwalten** (ID 29) erforderlich.
 
 ## Legacy Service Sessions
 

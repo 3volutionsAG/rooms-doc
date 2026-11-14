@@ -18,15 +18,15 @@ Der Account betreibt:
 - den Windows-Dienst `ROOMS`
 - den Windows-Dienst `RoomsPro Worker`
 
-Bei Docker Compose gilt dasselbe Rollenmodell für die gemeinsame Datenbankidentität aus `ConnectionStrings.config` und `appsettings.json`. Da Linux- und Windows-Container keinen gemeinsamen Windows-Prozessaccount verwenden können, sind die Besonderheiten unter [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}) beschrieben.
+Bei Docker Compose gilt dasselbe Rollenmodell. Alle vier Komponenten verwenden den gemeinsamen `ConnectionString` auf der obersten Ebene von `appsettings.operator.json` für dieselbe Datenbank dieser Installation. Beachten Sie [Docker: Gemeinsame Datenbankidentität]({{< relref "Betrieb/Installation/Docker/_index.md#gemeinsame-datenbankidentität" >}}).
 
 ## SQL-Login und Laufzeitrechte
 
 1. Öffnen Sie in SQL Server Management Studio unter **Security** > **Logins** die gemeinsame Datenbankidentität oder legen Sie diese neu an.
 2. Verwenden Sie beim Windows-Standardweg als Login-Name den vollständigen Wert `Domäne\Benutzer`.
 3. Belassen Sie die **Default language** des Logins auf `<default>`. Eine abweichende login-spezifische Sprache kann die SQL-Konvertierung von Datumswerten verändern.
-4. Ordnen Sie den Login jeder ROOMS-Mandantendatenbank zu.
-5. Weisen Sie ihm in jeder Datenbank die Rollen `db_datareader` und `db_datawriter` zu.
+4. Ordnen Sie den Login der ROOMS-Datenbank dieser Installation zu.
+5. Weisen Sie ihm in dieser Datenbank die Rollen `db_datareader` und `db_datawriter` zu.
 
 Die Rolle `public` muss nicht separat vergeben werden; jeder Datenbankbenutzer gehört ihr automatisch an.
 

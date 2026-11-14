@@ -14,14 +14,12 @@ Beide Rollen können auf demselben Server oder getrennt betrieben werden. Wenn b
 ## Voraussetzungen
 
 - Windows Server x64 mit IIS 10 oder neuer
-- Für die Legacy Website `ROOMS`: `.NET Framework 4.8`
-- Für die `RoomsPro API`: ASP.NET Core Hosting Bundle für `.NET 10` (x64)
+- Für beide Websites: ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14`
 
 Wichtige Hinweise:
 
 - **WebDAV** auf der ROOMS Website nicht aktivieren
-- Die `RoomsPro API` ist **keine** klassische ASP.NET-4.x-Anwendung und benötigt stattdessen `AspNetCoreModuleV2`
-- Die Legacy Website verwendet weiterhin klassische ASP.NET-4.x-Komponenten
+- Beide Websites benötigen `AspNetCoreModuleV2` und je einen eigenen Application Pool mit **No Managed Code**.
 
 ## Empfohlene IIS-Rollen und Features
 
@@ -41,18 +39,12 @@ Wichtige Hinweise:
   - Request Filtering
   - Anonymous Authentication
   - Windows Authentication oder Basic Authentication nur für explizite Legacy-Sonderfälle
-- Application Development
-  - `.NET Extensibility 4.8`
-  - `ASP.NET 4.8`
-  - `ISAPI Extensions`
-  - `ISAPI Filters`
-- Windows Features
-  - `.NET Framework 4.8 Features`
+- ASP.NET Core Hosting Bundle mit `AspNetCoreModuleV2`
 
 ### Für die `RoomsPro API`
 
 - IIS mit eigenem Site- oder Application-Eintrag
-- installiertes ASP.NET Core Hosting Bundle für `.NET 10` (x64)
+- installiertes ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14`
 - `AspNetCoreModuleV2` verfügbar
 - `Anonymous Authentication` aktiviert
 
@@ -68,7 +60,7 @@ Beide Application Pools werden mit demselben ROOMS-Service-Account betrieben, de
 ## Legacy Website `ROOMS` konfigurieren
 
 1. Im IIS einen eigenen Application Pool für die Legacy Website anlegen, zum Beispiel `ROOMS`.
-2. Verwenden Sie als **Identity** den gemeinsamen ROOMS-Service-Account.
+2. Verwenden Sie als **Identity** den gemeinsamen ROOMS-Service-Account und stellen Sie **No Managed Code** ein. Die ausgelieferte `web.config` startet die Anwendung über `AspNetCoreModuleV2`.
 3. Die Website auf das Installationsverzeichnis der Legacy Website zeigen lassen, standardmässig:
 
    ```text
@@ -107,14 +99,14 @@ Hinweis:
 8. Prüfen Sie vor dem ersten Start, dass folgende Datei vorhanden ist und die richtige Datenbankverbindung enthält:
 
    ```text
-   C:\inetpub\wwwroot\API\config\appsettings.json
+   C:\inetpub\wwwroot\API\config\appsettings.operator.json
    ```
 
 9. Lassen Sie den Application Pool bis zum erfolgreichen Abschluss von `db migrate` gestoppt.
 
 ## SSL und Betrieb
 
-- Für produktive Umgebungen ist HTTPS für Legacy Website und `RoomsPro API` empfohlen.
+- Verwenden Sie für produktive Umgebungen HTTPS für beide Websites. Der integrierte Identity Provider setzt HTTPS voraus. Bei TLS-Terminierung an einem Reverse Proxy muss dieser `X-Forwarded-Proto: https` vertrauenswürdig setzen und der direkte Zugriff auf die Anwendung gesperrt sein.
 - DNS-Namen und Zertifikate für beide Sites sauber trennen und dokumentieren.
 - Nach Änderungen an IIS, Bindings oder Hosting Bundle die Sites neu starten und die Logs prüfen.
 

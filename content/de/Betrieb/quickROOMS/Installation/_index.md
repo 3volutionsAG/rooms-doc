@@ -10,7 +10,7 @@ In dieser Anleitung werden folgende Platzhalter-URLs verwendet:
 {{< bootstrap-table "table table-striped" >}}
 | Komponente | Beispiel-URL |
 |---|---|
-| ROOMS | `https://rooms.example.com/Default` |
+| ROOMS | `https://rooms.example.com` |
 | IDP | `https://idp.example.com` |
 | quickROOMS (Wizard) | `https://wizard.example.com` |
 {{< /bootstrap-table >}}
@@ -20,21 +20,8 @@ In dieser Anleitung werden folgende Platzhalter-URLs verwendet:
 Folgende Voraussetzungen müssen erfüllt sein:
 
 - Eine laufende **ROOMS**- und **IDP**-Instanz.
-- ROOMS muss den IDP als Authentisierung nutzen. Dies wird über die `RoomsAppSettings` aktiviert:
-
-```xml
-<RoomsAppSettings>
-	...
-	<!-- IDP Communication -->
-	<add key="UseLegacyAuth" value="false"/>
-	<add key="Authority" value="https://idp.example.com"/>
-	<add key="ClientSecret" value="xxx"/>
-	<add key="RedirectUri" value="https://rooms.example.com/Default/"/>
-	<add key="CallbackPath" value="/Default/"/>
-	<add key="CorsOrigins" value="https://rooms.example.com,https://wizard.example.com,https://idp.example.com" />
-	...
-</RoomsAppSettings>
-```
+- Die ROOMS-Website muss für die Anmeldung am IDP eingerichtet sein. Pflegen Sie die Verbindung unter `Authentication:OpenIdConnect` in der zentralen `appsettings.operator.json` und verteilen Sie diese gemäss [Konfigurationsdateien]({{< relref "Betrieb/Installation/Konfig-Files/_index.md" >}}).
+- Die öffentliche ROOMS-Basis und ein expliziter `Authentication:OpenIdConnect:RedirectUri` enthalten kein Mandantenpräfix. Ein Installationspfad wie `/Rooms` bleibt erhalten. Der ROOMS-Anmelde-Callback ergibt sich aus der Root-URL. Beachten Sie [Öffentliche ROOMS-URL und Anmeldung]({{< relref "Betrieb/Installation/Konfig-Files/_index.md#öffentliche-rooms-url-und-anmeldung" >}}).
 
 ### Unterstützte Browser
 
@@ -113,7 +100,7 @@ Die Konfiguration erfolgt in der Datei `config.json`:
 ```json
 {
   "deployUrl": "",
-  "rootUrl": "https://rooms.example.com/Default",
+  "rootUrl": "https://rooms.example.com",
   "oauthConfig": {
     "authority": "https://idp.example.com",
     "clientId": "rooms-addin",
@@ -142,7 +129,7 @@ Die Konfiguration erfolgt in der Datei `config.json`:
 {{< bootstrap-table "table table-striped" >}}
 | Einstellung | Beschreibung |
 |---|---|
-| `rootUrl` | URL der ROOMS-Instanz |
+| `rootUrl` | Öffentliche Basis-URL der ROOMS-Installation ohne Mandantenpräfix. Einen Installationspfad wie `/Rooms` beibehalten |
 | `oauthConfig.authority` | URL des IDP-Servers |
 | `oauthConfig.clientId` | Client-ID im IDP (Standard: `rooms-addin`) |
 | `oauthConfig.redirectUri` | Callback-URL des Wizards |
