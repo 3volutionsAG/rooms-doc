@@ -115,15 +115,10 @@ Folgende Stammdaten können Sie eintragen:
 | ------------- |-------------  |
 | Bezeichnung   | Die Bezeichnung des Klassifikationstypen festlegen. DIe Erfassung muss Mehrsprachig erfolgen. |
 | Sortierung  | Die Reihenfolge der Buchungsklassifikationen innerhalb eines Klassifkationstyps wird durch das Feld _Sortierung_ bestimmt (Dargestellt sowohl in der Baumstruktur, wie auch im Sidepanel und Detailreservation in Form einer Dropdown). |
-| Farbe     | Farben können selektiert werden. Diese wird dann im Kalender visualisiert.  |
 {{< /bootstrap-table >}}
 
 
-**Hinweis zur Farbauswahl**: Die Farbe speichern Sie über das Farbtopfzeichen unten rechts.
-
-{{< imgproc Klassifikationen_neue_Buchungsklassifikation Resize "960x" >}}
-Neue Buchungsklassifikation erstellen
-{{< /imgproc >}}
+Soll eine Buchung anhand ihrer Klassifikation eingefärbt werden, definieren Sie in PlaceMe eine [Buchungsfarbregel]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}) mit der Bedingung **Buchungsklassifikation**. Die Reihenfolge entscheidet, ob diese Regel vor einer allgemeineren Statusregel angewendet wird.
 
 
 Speichern Sie die neue Buchungsklassifikation mit dem Button _Speichern_. Der Baum aktualisiert sich automatisch.

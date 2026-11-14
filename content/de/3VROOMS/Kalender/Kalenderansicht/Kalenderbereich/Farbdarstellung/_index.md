@@ -3,33 +3,30 @@ title: "Farbdarstellung"
 linkTitle: "Farbdarstellung"
 weight: 300
 date: 2020-06-30
-description: 'Diese Seite erklärt, welche Farben im Kalender angezeigt werden und wie sie sich von Ressourcenfarben und Planfarben unterscheiden.'
+description: 'Buchungsfarben, Ressourcenfarben und persönliche Kennzeichnungen im klassischen Kalender unterscheiden'
 ---
-### Farbgebung im Kalender
+## Farbgebung im Kalender
 
-Sie sehen Buchungen im Kalender farbig markiert. Die Farbe des Buchungsblocks richtet sich nach dem Buchungsstatus. Die Statusfarben inklusive Vorlauf- und Nachlaufzeit werden unter [Status](/3vrooms/einstellungen/basisdatenfuerressourcen/status/) definiert.
+Die Farbe eines Buchungsblocks wird durch die **erste zutreffende aktive Buchungsfarbregel** bestimmt. Eine Regel kann beispielsweise den Buchungsstatus oder eine Buchungsklassifikation berücksichtigen. Die Administration verwaltet die [Farbregeln in PlaceMe unter Einstellungen → Farben]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Dort wird auch die Reihenfolge festgelegt.
 
-Die Farbgebung Ihrer eigenen Buchungen können Sie in Ihren Einstellungen festlegen. Wenn diese Anzeige aktiv ist, wird die persönliche Farbe zusätzlich zur Statusfarbe angezeigt.
+Vorlauf- und Nachlaufzeiten erhalten dieselbe, aus der Buchungsfarbe abgeleitete hellere Farbe. Ob Sie eine Buchung bearbeiten dürfen, beeinflusst ebenfalls ihre Darstellung. Ohne passende Farbregel verwendet der Kalender seine Standarddarstellung.
 
-In jeder Kalenderansicht wird Ihnen oben links das Icon _Legende_ angezeigt. Dort sehen Sie mithilfe der Farbgebung, welchen Status eine Buchung hat, z.B. ob sie definitiv oder provisorisch belegt ist. Die Legende enthält auch weitere Kennzeichnungen wie Sperrzeiten, Feiertage, Wochenenden und eigene Reservationen.
+## Persönliche Organisatorfarbe
 
-### Kundenspezifische Kalendermarkierungen
+Bei Buchungen, für die Sie Organisator sind, erscheint Ihre persönliche Farbe als schmaler Balken am oberen Rand. Sie ergänzt die regelbasierte Füllfarbe. Die [persönlichen Einstellungen]({{< relref "3VROOMS/Einstellungen/Persönlicheeinstellungen/Stammdaten/_index.md" >}}) bestimmen diese Farbe und ob auch die persönlichen Farben anderer Organisatoren eingeblendet werden.
 
-Wenn in Ihrer ROOMS-Umgebung entsprechende Regeln aktiviert sind, können Buchungen am unteren Rand zusätzlich einen schmalen Farbbalken erhalten. Damit lassen sich beispielsweise Buchungen kennzeichnen, die über den Jobmanager erstellt wurden.
+## Legende und Berechtigungen {#kundenspezifische-kalendermarkierungen}
 
-Die Markierung wird anhand des Erstellungsursprungs automatisch gesetzt. Wenn Sie den Mauszeiger auf den Farbbalken bewegen, zeigt ROOMS die konfigurierte Bezeichnung an. Unter **Legende > Markierungen** finden Sie die Farben und Bezeichnungen aller aktiv konfigurierten Markierungen.
+Über das Icon **Legende** öffnen Sie die Erläuterungen zu Farben und Symbolen. Unter **Markierungen** sind die für Sie sichtbaren Einträge aktiver Buchungsfarbregeln aufgeführt. Die Liste ist nicht auf Buchungen im angezeigten Kalenderausschnitt beschränkt. Sie zeigt auch Regeln, die im konkreten Fall von einer höher angeordneten Regel übersteuert werden können.
 
-{{% alert title="Hinweis" color="info" %}}
-Eine Kalendermarkierung ist nur eine zusätzliche visuelle Kennzeichnung. Sie ersetzt weder Status- oder Klassifikationsfarben noch die Kennzeichnung eigener Reservationen. Sie ändert auch keine Bearbeitungsrechte und sperrt die markierte Buchung nicht.
-{{% /alert %}}
+Die verfügbaren Buchungsinformationen und Ihre Berechtigungen können die angezeigte Farbe beeinflussen. Eine Farbregel ändert weder den Status noch die Bearbeitungsrechte und sperrt keine Buchung. Prüfen Sie den Status und die Details, statt allein aus einer Farbe auf die Verfügbarkeit zu schliessen.
 
-### Abgrenzung zu anderen Farben
+## Ressourcenfarben und Planfarben {#abgrenzung-zu-anderen-farben}
 
-- Die **Ressourcenfarbe** wird auf der Ressource unter [Spezifische Daten](/3vrooms/einstellungen/ressourcen/#spezifische-daten-der-ressource-bearbeiten) gepflegt. Sie kennzeichnet die Ressource, beschreibt aber nicht den Status einer konkreten Buchung.
-- Die **Statusfarbe** wird auf dem Buchungsstatus gepflegt und zeigt im Kalender den Status einer Buchung an.
-- Der **Planstatus** zeigt auf dem Plan die aktuelle Verfügbarkeit einer Ressource, z.B. frei, besetzt mit ausstehendem Check-in oder definitiv besetzt. Die Bedeutung der Planfarben ist unter [Planstatus](/3vrooms/plan/planstatus/) beschrieben.
+- **Ressourcenfarben** werden durch eine separate Regelliste in PlaceMe bestimmt. Im klassischen Kalender kennzeichnen sie die Ressource neben ihrem Namen, nicht die einzelnen Buchungsblöcke.
+- Auf dem **Plan** verwenden Fläche, Rahmen und Verfügbarkeitspunkt unterschiedliche Kennzeichnungen. Deren Bedeutung und Standardfarben sind unter [Planstatus]({{< relref "3VROOMS/Plan/Planstatus/_index.md" >}}) beschrieben.
 
-### Transparenz der Farben im Kalender
+## Transparenz der Farben im Kalender
 
 Je nach Dauer der Reservation weist der Block, nach Abschluss der Reservation, eine mehr oder weniger starke Transparenz auf.
 

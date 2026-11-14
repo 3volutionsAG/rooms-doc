@@ -8,7 +8,7 @@ description: 'In diesem Bereich sehen Sie den Status der Basisdaten für die Res
 ## Allgemeine Informationen
 Es gibt drei Arten von Status: Zustand einer Ressource, Systemstatus und frei definierbare Status auf Reservationen
 
-Sie können den Status inklusive der Farbe und einem Symbol selber definieren.
+Sie können die Bezeichnung und ein Symbol für den Status definieren. Farben verwalten Sie zentral über [Buchungsfarbregeln in PlaceMe]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Für eine statusabhängige Farbe verwenden Sie dort die Bedingung **Buchungsstatus**.
 Die bereits bestehenden Status können Sie pro Ressource aktivieren und die Reihenfolge definieren.
 
 {{< imgproc Status_einsehen Resize "1280x" >}}
@@ -64,17 +64,10 @@ Sie können diese nur bei Besetzt (system, provisorisch, temporär, definitiv) a
 Klicken Sie auf das Plus Zeichen, um einen Status hinzuzufügen. Es öffnet sich ein neues Fenster. Hier geben Sie folgende Informationen ein:
 * Bezeichnung
 * Symbol
-* Farbe
-* Farbe (Vorlaufzeit)
-* Farbe (Nachlaufzeit)
 * Identifikationsnummer
 * Jobmanager Workflow
 
-{{< imgproc Status_hinzufügen Resize "1280x" >}}
-Abbildung sd: Individuellen Status hinzufügen
-{{< /imgproc >}}
-
-Die Pflichtfelder z.B. Bezeichnung und Farbe müssen Sie auswählen, ansonsten können Sie den neuen Status nicht speichern.
+Füllen Sie die Pflichtangaben wie **Bezeichnung** aus und speichern Sie den Status. Prüfen Sie anschliessend die Buchungsfarbregeln, wenn dieser Status eine bestimmte Farbe erhalten soll. Vorlauf- und Nachlaufzeiten im klassischen Kalender verwenden eine aus der Buchungsfarbe abgeleitete Darstellung.
 
 Beispiele von bekannte individuelle Status, welche an einem System Status angehängt werden können.
 * Kunde im Raum

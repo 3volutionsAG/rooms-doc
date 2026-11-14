@@ -18,10 +18,14 @@ Status Anzeige der Ressourcen im Plan
 | --------- | --------- |
 | {{< color-swatch "#22c55e" "Grün" >}} Grün | Der Raum ist zum gewünschten Zeitpunkt frei. |
 | {{< color-swatch "#f97316" "Orange" >}} Orange | Der Raum ist besetzt, jedoch muss die Buchung noch via Check-in bestätigt werden. |
-| Statusfarbe | Der Raum ist besetzt. Der Punkt zeigt die Farbe des Buchungsstatus. Rot erscheint nur, wenn für den Status keine Farbe definiert ist. |
+| Buchungsfarbe | Der Raum ist besetzt. Der Punkt zeigt die Farbe der ersten passenden aktiven Buchungsfarbregel. Ohne passende Regel ist der Punkt rot. |
 {{< /bootstrap-table >}}
 
-Diese Punkte zeigen die Verfügbarkeit der Ressource zum gewählten Zeitpunkt. Die Fläche zeigt die Ressourcenfarbe, der Rahmen bei einer Buchung die Statusfarbe. Siehe auch [Farbdarstellung im Kalender](/3vrooms/kalender/kalenderansicht/kalenderbereich/farbdarstellung/).
+Diese Punkte zeigen die Verfügbarkeit der Ressource zum gewählten Zeitpunkt. Ein hinterlegtes Statussymbol kann den Punkt ersetzen.
+
+Die Fläche zeigt die regelbasierte Ressourcenfarbe oder ohne passende Regel eine Standardfarbe des Ressourcentyps. Bei einer Buchung verwendet der Rahmen die regelbasierte Buchungsfarbe. Ohne passende Buchungsfarbregel bleibt der Rahmen in der Ressourcen- beziehungsweise Standardfarbe. Die rote Ersatzfarbe des Besetzt-Punkts gilt also nicht automatisch für den Rahmen.
+
+Die Administration verwaltet [Buchungs- und Ressourcenfarbregeln in PlaceMe]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Siehe auch [Farbdarstellung im Kalender](/3vrooms/kalender/kalenderansicht/kalenderbereich/farbdarstellung/).
 
 ## Check-in Status hervorheben
 
@@ -32,5 +36,5 @@ Wenn die Option aktiv ist, markiert ROOMS eingecheckte Reservationen zusätzlich
 Diese Anzeige ist hilfreich, wenn vor Ort geprüft werden soll, ob Räume zwar reserviert, aber noch nicht bestätigt wurden.
 
 {{< imgproc plan_colors Resize "960x" >}}
-Farbcode: Rahmen in der Statusfarbe, Fläche in der Ressourcenfarbe, Punkt für die Verfügbarkeit
+Farbcode: Rahmen mit Buchungsfarbe, Fläche mit Ressourcenfarbe, Punkt für die Verfügbarkeit
 {{< /imgproc >}}

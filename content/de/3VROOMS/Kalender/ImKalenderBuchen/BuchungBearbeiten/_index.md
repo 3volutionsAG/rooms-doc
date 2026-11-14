@@ -38,7 +38,7 @@ Prüfen Sie vor dem Bestätigen einer Annullation oder Löschung, ob die Aktion 
 
 ### Status ändern
 
-Der aktuelle Buchungsstatus wird mit einem farbigen Punkt in der konfigurierten Statusfarbe angezeigt. Wenn ein Statuswechsel möglich ist, wählen Sie unter **Status Wechsel** den Zielstatus aus. Prüfen Sie die angebotenen E-Mail-Optionen und bei Serien die Option **Änderungen auf Serie übernehmen**, bevor Sie auf **Übernehmen** klicken und die Rückfrage bestätigen.
+Der aktuelle Buchungsstatus wird mit einem farbigen Punkt angezeigt. Dessen Farbe wird aus den [Buchungsfarbregeln]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}) ermittelt, wobei nur der Buchungsstatus berücksichtigt wird. Sie kann deshalb von der Füllfarbe des Kalenderblocks abweichen. Wenn ein Statuswechsel möglich ist, wählen Sie unter **Status Wechsel** den Zielstatus aus. Prüfen Sie die angebotenen E-Mail-Optionen und bei Serien die Option **Änderungen auf Serie übernehmen**, bevor Sie auf **Übernehmen** klicken und die Rückfrage bestätigen.
 
 ### Kalender-Synchronisation
 

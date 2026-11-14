@@ -7,6 +7,8 @@ description: 'In PlaceMe freie Zeitfenster finden, provisorisch buchen und pers�
 
 PlaceMe bietet eine Ressourcenplanung unter **Scheduling** und eine Buchungsliste unter **Buchungen**. Diese Anleitung beschreibt die separate PlaceMe-Weboberfläche. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
 
+Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und Ressourcenfarben]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Die Farbregeln gelten auch für die klassische ROOMS-Oberfläche. Dafür sind zusätzliche Einstellungs- und Konfigurationsrechte erforderlich.
+
 ## Voraussetzung
 
 - Sie sind in PlaceMe angemeldet.
