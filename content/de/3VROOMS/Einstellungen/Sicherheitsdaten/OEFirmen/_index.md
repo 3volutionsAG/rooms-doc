@@ -5,7 +5,7 @@ weight: 1
 description: 'Organisationen verwalten: Stammdaten, Adressen, Personen, Kostenträger und Präferenzen bearbeiten sowie Organisationen neu anlegen.'
 ---
 
-Unter **Einstellungen → Sicherheitsdaten für Personen → OE/Firmen** verwalten Sie Organisationen. Rechts sehen Sie die Organisationen als Liste. Links können Sie die Liste über Suchkriterien filtern.
+Unter **Einstellungen → Sicherheitsdaten für Personen → Organisationen** verwalten Sie Organisationen. Rechts sehen Sie die Organisationen als Liste. Links können Sie die Liste über Suchkriterien filtern.
 
 {{< imgproc OE_Firmen_Ansicht Resize "960x" >}}
 Ansicht der Organisationen
@@ -75,7 +75,7 @@ Haben Sie eine Adresse hinzugefügt und auf speichern geklickt, aktualisiert sic
 
 Sie können Personen einer internen oder externen Organisation zuweisen. Bereits zugewiesene Personen sehen Sie in der Liste.
 
-Voraussetzung sind die globalen Rechte **Darf Firmen mit Personen verwalten** (65) und, je nach Art der Organisation, **Darf Firmen verwalten (intern)** (3) oder **Darf Firmen verwalten (extern)** (22). Sie finden das Register **Personen** unter **Einstellungen → Sicherheitsdaten für Personen → OE/Firmen**, wenn Sie die gewünschte Organisation bearbeiten.
+Voraussetzung sind die globalen Rechte **Darf Firmen mit Personen verwalten** (65) und, je nach Art der Organisation, **Darf Firmen verwalten (intern)** (3) oder **Darf Firmen verwalten (extern)** (22). Sie finden das Register **Personen** unter **Einstellungen → Sicherheitsdaten für Personen → Organisationen**, wenn Sie die gewünschte Organisation bearbeiten.
 
 {{< imgproc OE_Firmen_Personen_Liste Resize "960x" >}}
 Eingetragene Personen in Listenform
