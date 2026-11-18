@@ -35,3 +35,9 @@ Fahren Sie mit dem Mauszeiger über ein Icon, öffnet sich ein Tooltip, das Sie 
 | und |  Bei gleichzeitiger Selektion mehrerer Buttons werden nur die Reservationen hervorgehoben, welche alle selektierten Kriterien erfüllen. Das bedeutet, sie gehören zu einer Serie und enthalten Bestellungen und mobiles Equipment. |  |
 | oder |  Bei gleichzeitiger Selektion mehrerer Buttons werden die Reservationen hervorgehoben, welche mindestens ein selektiertes Kriterium erfüllen. Sie gehören z.B. zu einer Serie oder enthalten Bestellungen oder mobiles Equipment |  |
 {{< /bootstrap-table >}}
+
+## Feste Zeitlinien
+
+Je nach Theming Ihrer Installation zeigen die Ansichten **Tag**, **Arbeitswoche** und **Woche** zusätzliche senkrechte Linien zu festgelegten Uhrzeiten. Diese Linien dienen der zeitlichen Orientierung. Sie stellen keine Buchung oder Sperrzeit dar und schränken die Buchbarkeit nicht ein.
+
+Die Uhrzeiten und das Aussehen werden zentral über das Theming festgelegt, nicht über die Darstellungsfilter im Kalender. Standardmässig sind keine zusätzlichen Zeitlinien eingerichtet. In der **Monatsansicht** werden diese Linien nicht angezeigt.
