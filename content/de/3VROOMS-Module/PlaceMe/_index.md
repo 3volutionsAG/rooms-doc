@@ -1,8 +1,8 @@
 ---
-title: "PlaceMe: Ressourcen suchen und Buchungen filtern"
+title: "PlaceMe: Ressourcen suchen, buchen und Buchungen verwalten"
 linkTitle: "PlaceMe"
 weight: 40
-description: 'In PlaceMe freie Zeitfenster finden, provisorisch buchen und persönliche oder geteilte Filter verwenden'
+description: 'In PlaceMe freie Zeitfenster finden, Buchungen erstellen, bearbeiten oder annullieren und Filter verwenden'
 ---
 
 PlaceMe bietet eine Ressourcenplanung unter **Scheduling** und eine Buchungsliste unter **Buchungen**. Diese Anleitung beschreibt die separate PlaceMe-Weboberfläche. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
@@ -14,7 +14,8 @@ Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und 
 - Sie sind in PlaceMe angemeldet.
 - Für die beiden Navigationseinträge benötigen Sie **Darf Sektion 'Reservieren' nutzen** oder **Darf Sektion 'Listen' nutzen**.
 - Die Ressourcenauswahl berücksichtigt aktive Ressourcen, Ihre Buchungsrechte für den Ressourcentyp und Ihre örtlich und zeitlich gültigen Rechte auf der Ressource.
-- Der hier beschriebene Abschluss erstellt eine **provisorische** Buchung. Dafür benötigen Sie insbesondere **Darf prov. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Ein Suchtreffer oder das Recht für definitive Buchungen allein genügt dafür nicht. Beim Abschluss werden Berechtigungen und Buchungsregeln erneut geprüft.
+- Für eine neue Buchung benötigen Sie **Darf prov. Reservationen buchen** oder **Darf def. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Der Workflow muss einen passenden Anfangsstatus anbieten. Beim Speichern werden Berechtigungen und Buchungsregeln erneut geprüft. Ein Suchtreffer allein garantiert keinen erfolgreichen Abschluss.
+- Für das Erstellen und Bearbeiten einer Raumbuchung ohne Bestuhlung benötigen Sie **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben. Eine Ressource kann in der Suche erscheinen, obwohl eine dieser Voraussetzungen beim Speichern fehlt.
 
 Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/_index.md" >}}).
 
@@ -23,7 +24,9 @@ Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "
 Öffnen Sie die PlaceMe-Webadresse Ihrer Organisation und wählen Sie in der Navigation:
 
 - **Scheduling**, um Ressourcen und passende freie Zeitfenster zu suchen.
-- **Buchungen**, um vorhandene Buchungen zu filtern und ihre Details anzusehen.
+- **Buchungen**, um vorhandene Buchungen zu filtern, zu öffnen und im erlaubten Umfang zu bearbeiten oder zu annullieren.
+
+Auch **Meine heutigen Buchungen** auf **Start** öffnet die jeweilige Buchung.
 
 ## Ein freies Zeitfenster suchen
 
@@ -44,20 +47,62 @@ Weitere Ergebnisse werden beim Scrollen nachgeladen. Die angezeigte Ressourcenan
 
 Sie können zwischen **Listenansicht** und **Kalenderansicht** wechseln. Die Kartenansicht ist deaktiviert.
 
-Der Scheduling-Kalender zeigt Belegungen und Ressourcenbeschränkungen zur Orientierung. Ein Klick auf eine vorhandene Buchung öffnet ihre Informationen. Welche Titel und Personendaten sichtbar sind, hängt von Ihren Rechten ab. In dieser Kalenderansicht bearbeiten, verschieben oder annullieren Sie keine Buchungen direkt. Die Anzeige ersetzt die Prüfung beim Buchungsabschluss nicht.
+Der Scheduling-Kalender zeigt Belegungen und Ressourcenbeschränkungen. Ein Klick auf eine vorhandene Buchung öffnet die Buchungsmaske. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Die Anzeige ersetzt die Prüfung beim Speichern nicht.
 
-## Provisorisch buchen
+## Buchung erstellen
 
-1. Wählen Sie in der **Listenansicht** bei einem passenden Treffer **Wählen**.
-2. Prüfen Sie die Ressource und das **Buchbare Zeitfenster**. Passen Sie **Beginn** und **Ende** innerhalb dieses Fensters an.
-3. Wählen Sie **Weiter zur Buchungsübersicht**.
-4. Prüfen Sie Ressource, Zeitraum und Zeitzone und geben Sie einen **Titel** ein.
-5. Wählen Sie **Provisorisch buchen**. Erst diese Aktion erstellt die Buchung. **Details** oder **Wählen** allein reservieren keine Ressource.
+1. Wählen Sie in der **Listenansicht** bei einem passenden Treffer **Wählen**. Alternativ markieren Sie im Kalender einen freien Zeitraum. Ein Klick auf eine freie Stelle schlägt einen Zeitraum mit der gesuchten Dauer vor.
+2. Prüfen Sie im kompakten Buchungsfenster Ressource, Datum, Beginn und Ende. Beachten Sie die eingestellte Scheduling-Zeitzone.
+3. Geben Sie einen **Titel** und bei Bedarf eine **Beschreibung** ein. Prüfen oder ergänzen Sie die Anzahl im Feld **Personen**.
+4. Öffnen Sie bei Bedarf mit **Alle Angaben** die vollständige Buchungsmaske. Ihre Eingaben werden übernommen. Auf kleinen Bildschirmen füllt die Maske den Bildschirm.
+5. Wählen Sie **Buchen**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
 6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel.
 
-Während die Verfügbarkeit nach einer Kriterienänderung geprüft wird, bleiben die Abschlussaktionen gesperrt. Eine angezeigte Fehlermeldung bedeutet, dass der Abschluss nicht erfolgreich bestätigt wurde. Prüfen Sie die Meldung und die Buchungsliste, bevor Sie erneut buchen. So vermeiden Sie eine zweite Buchung, wenn eine Bestätigung nicht sichtbar bleibt.
+Der Anfangsstatus wird automatisch aus dem Workflow der Ressource und Ihren Buchungsrechten bestimmt. Er kann provisorisch oder definitiv sein. Die Statusauswahl **Standardstatus** ist deaktiviert.
 
-Der Link **Zu meinen Buchungen** öffnet die Buchungsliste. Er setzt keinen automatischen Filter auf Ihre eigenen Buchungen.
+Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschlagen werden. Je nach Konfiguration bleibt das Feld leer. Prüfen Sie die Anzahl vor dem Abschluss.
+
+### Verfügbare Angaben und Grenzen
+
+Die vollständige Maske bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
+
+Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering, Bestuhlung und Equipment. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
+
+PlaceMe verarbeitet einzelne provisorische und definitive Buchungen ohne zusätzliche Buchungsverknüpfungen. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Teil- oder verknüpfte Räume, Bestellungen, Bestuhlung, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
+
+## Buchung bearbeiten oder annullieren
+
+1. Öffnen Sie die Buchung unter **Buchungen**, im Scheduling-Kalender oder unter **Meine heutigen Buchungen** auf **Start**.
+2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status. Ohne Bearbeitungsrecht bleibt die Maske schreibgeschützt.
+3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
+
+Zum Annullieren wählen Sie **Buchung annullieren** beziehungsweise **Annullieren** auf kleinen Bildschirmen. Prüfen Sie die angezeigte Buchung und bestätigen Sie **Buchung annullieren**. **Behalten** schliesst die Rückfrage ohne Annullierung.
+
+### Im Kalender verschieben
+
+Ziehen Sie eine bearbeitbare Buchung auf eine andere Uhrzeit oder verändern Sie ihre Ränder, um Beginn oder Ende anzupassen. Ein Wechsel auf eine andere Ressource ist nicht möglich.
+
+{{% alert title="Änderungen werden sofort gespeichert" color="warning" %}}
+Verschieben und Grössenänderung im Kalender speichern unmittelbar, ohne zusätzliche Bestätigung. Die Erfolgsmeldung bietet **Rückgängig** an. Auch das Rückgängigmachen muss die aktuellen Buchungsregeln erfüllen. Prüfen Sie das Ergebnis.
+{{% /alert %}}
+
+Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sich die Buchungsmaske mit dem vorgeschlagenen Zeitraum und der Meldung. Prüfen und korrigieren Sie die Angaben. Wenn Sie die Maske ohne erfolgreiches Speichern schliessen, wird der Vorschlag verworfen und der Kalender neu geladen.
+
+## Meldungen beim Speichern
+
+- **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
+- **Zeitraum inzwischen belegt:** Wählen Sie beim Erstellen **Andere Zeit wählen**. Die übrigen Angaben bleiben erhalten.
+- **Buchung inzwischen geändert:** Bei einem Bearbeitungskonflikt ist Speichern gesperrt. Prüfen Sie die angezeigten Änderungen und wählen Sie **Aktuelle Version laden**. Das ersetzt Ihre ungespeicherten Eingaben. Erfassen Sie Ihre Änderungen danach erneut.
+- **Bearbeitung in ROOMS oder Übernahme aus Outlook:** Warten Sie, bis die andere Bearbeitung beziehungsweise Synchronisation abgeschlossen ist, und versuchen Sie es erneut.
+- **Aktion nicht unterstützt:** Beachten Sie den angegebenen Grund und verwenden Sie gegebenenfalls die klassische ROOMS-Oberfläche.
+
+Bleibt eine Bestätigung aus oder tritt ein Verbindungsfehler auf, prüfen Sie vor einem erneuten Buchungsversuch die Buchungsliste. So vermeiden Sie eine doppelte Buchung, falls der erste Versuch bereits gespeichert wurde.
+
+## Benachrichtigungen und Outlook
+
+Bestätigungen, Änderungs- und Annullierungsmails sowie Erinnerungen richten sich nach den eingerichteten Benachrichtigungen und Empfängereinstellungen. Nicht jede Feldänderung löst eine Änderungsmail aus. Eine reine Titeländerung genügt dafür beispielsweise nicht.
+
+Bei eingerichteter Exchange-Synchronisation werden unterstützte Buchungen entsprechend den Einstellungen der organisierenden Person und der Ressource im Kalender erstellt, aktualisiert oder entfernt. Versand und Synchronisation laufen im Hintergrund. Eine gespeicherte Buchung bedeutet nicht, dass die E-Mail bereits zugestellt oder Outlook bereits aktualisiert ist.
 
 ## Standort und weitere Filter verwenden
 
