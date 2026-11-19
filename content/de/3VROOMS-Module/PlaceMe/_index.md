@@ -62,15 +62,33 @@ Der Scheduling-Kalender zeigt Belegungen und Ressourcenbeschränkungen. Ein Klic
 
 Der Anfangsstatus wird automatisch aus dem Workflow der Ressource und Ihren Buchungsrechten bestimmt. Er kann provisorisch oder definitiv sein. Die Statusauswahl **Standardstatus** ist deaktiviert.
 
-Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschlagen werden. Je nach Konfiguration bleibt das Feld leer. Prüfen Sie die Anzahl vor dem Abschluss.
+Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschlagen werden. Passt sie zu keiner Bestuhlung eines Raums mit Standardbestuhlung, wird deren Mindestpersonenzahl vorgeschlagen. Fehlt Ihre Standardkapazität und müssen Sie eine Personenanzahl angeben, wird ebenfalls diese Mindestpersonenzahl vorgeschlagen. Je nach Konfiguration bleibt das Feld leer. Prüfen Sie die Anzahl vor dem Abschluss.
+
+### Bestuhlung bei Raumbuchungen
+
+Bei einem Raum mit Standardbestuhlung weist PlaceMe der neuen Buchung automatisch eine Bestuhlung zu:
+
+- Passt die angegebene Personenanzahl zur Standardbestuhlung, wird diese verwendet.
+- Andernfalls wird die günstigste Bestuhlung gewählt, zu der die Personenanzahl passt. Bei gleichem Preis wird die kleinere Bestuhlung bevorzugt.
+- Bei Räumen mit Vorlaufzeit kann eine andere passende Bestuhlung mit kürzerer Vorlaufzeit nötig sein. Beginnt die Vorlaufzeit der gewählten Bestuhlung spätestens in der aktuellen Minute, wird nach der günstigsten passenden Alternative gesucht, deren Vorlaufzeit frühestens in dieser Minute beginnt. Ohne passende Alternative bleibt die zuvor gewählte Bestuhlung bestehen. Die übrigen Buchungsregeln werden weiterhin geprüft.
+
+Passt die Personenanzahl zu keiner Bestuhlung, verhindert die Prüfung beim Speichern den Abschluss. Korrigieren Sie die Anzahl oder verwenden Sie die klassische ROOMS-Oberfläche, um die Bestuhlung selbst zu wählen. Ein Raum ohne Standardbestuhlung erhält in PlaceMe keine automatische Bestuhlung. Dafür benötigen Sie das oben genannte Recht zum Buchen ohne Bestuhlung.
+
+Ohne eigene Zeitangabe wird bei nicht synchronisierten Ressourcen jeweils die längere Vor- beziehungsweise Nachlaufzeit aus Ressource und Bestuhlung verwendet. Die Zeiten werden nicht addiert. Bei synchronisierten Ressourcen verlängern sie die Belegung nicht.
+
+Beim Öffnen einer vorhandenen Buchung zeigt die Maske unter **Optionen zur Buchung → Bestuhlung** den Namen der Bestuhlung, sofern Sie die vollständigen Buchungsdetails sehen dürfen. Beim Bearbeiten bleibt diese Bestuhlung erhalten. Eine geänderte Personenanzahl muss zu ihr passen und löst keine neue Bestuhlungswahl aus. Bestuhlung hinzufügen oder wechseln können Sie in der klassischen ROOMS-Oberfläche.
+
+{{% alert title="Bestuhlungsdienst berücksichtigen" color="warning" %}}
+Ist für den Raum eine Bestuhlungsbenachrichtigung eingerichtet, können Sie in PlaceMe nur Buchungen mit der Standardbestuhlung erstellen, bearbeiten, annullieren, freigeben, terminieren oder als No-show markieren. Ohne Standardbestuhlung oder mit einer anderen Bestuhlung verwenden Sie dafür die klassische ROOMS-Oberfläche. Das gilt auch, wenn PlaceMe beim Erstellen wegen der Personenanzahl oder Vorlaufzeit eine andere Bestuhlung wählen würde. Die Benachrichtigung an den Bestuhlungsdienst wird nicht in PlaceMe verarbeitet. Einchecken allein unterliegt dieser Bestuhlungseinschränkung nicht.
+{{% /alert %}}
 
 ### Verfügbare Angaben und Grenzen
 
 Die vollständige Maske bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
 
-Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering, Bestuhlung und Equipment. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
+Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering, einer Bestuhlung und Equipment. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
 
-PlaceMe verarbeitet einzelne provisorische und definitive Buchungen ohne zusätzliche Buchungsverknüpfungen. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Teil- oder verknüpfte Räume, Bestellungen, Bestuhlung, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
+PlaceMe verarbeitet einzelne provisorische und definitive Buchungen ohne zusätzliche Buchungsverknüpfungen. Raumbuchungen mit Bestuhlung können Sie im oben beschriebenen Umfang verwalten. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Teil- oder verknüpfte Räume, Bestellungen, die Auswahl oder den Wechsel einer Bestuhlung, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
 
 ## Buchung bearbeiten oder annullieren
 
