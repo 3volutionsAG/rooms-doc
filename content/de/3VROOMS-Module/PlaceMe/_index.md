@@ -15,7 +15,7 @@ Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und 
 - Für die beiden Navigationseinträge benötigen Sie **Darf Sektion 'Reservieren' nutzen** oder **Darf Sektion 'Listen' nutzen**.
 - Die Ressourcenauswahl berücksichtigt aktive Ressourcen, Ihre Buchungsrechte für den Ressourcentyp und Ihre örtlich und zeitlich gültigen Rechte auf der Ressource.
 - Für eine neue Buchung benötigen Sie **Darf prov. Reservationen buchen** oder **Darf def. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Der Workflow muss einen passenden Anfangsstatus anbieten. Beim Speichern werden Berechtigungen und Buchungsregeln erneut geprüft. Ein Suchtreffer allein garantiert keinen erfolgreichen Abschluss.
-- Für das Erstellen und Bearbeiten einer Raumbuchung ohne Bestuhlung benötigen Sie **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben. Eine Ressource kann in der Suche erscheinen, obwohl eine dieser Voraussetzungen beim Speichern fehlt.
+- Für das Erstellen und Bearbeiten einer Raumbuchung ohne Bestuhlung benötigen Sie **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben. Beachten Sie die Hinweise zur Buchbarkeit in den Suchergebnissen.
 
 Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/_index.md" >}}).
 
@@ -42,6 +42,8 @@ Ein Treffer bedeutet, dass innerhalb des Suchfensters ein zusammenhängender Zei
 **Ganztägig** erweitert das tägliche Suchfenster. Es hebt Belegungen, Öffnungszeiten und Ressourcenregeln nicht auf. **Alle Ressourcen** zeigt auch Ressourcen ohne passenden freien Zeitraum, erweitert aber weder Ihre Rechte noch die Auswahl auf inaktive Ressourcen.
 
 Weitere Ergebnisse werden beim Scrollen nachgeladen. Die angezeigte Ressourcenanzahl bezieht sich auf bereits geladene Ergebnisse.
+
+Ein Raum, den Sie nur mit einer Bestuhlung buchen dürfen und für den keine Standardbestuhlung hinterlegt ist, kann trotz freiem Zeitraum als **Hier nicht buchbar** erscheinen. In der Liste steht der Grund beim Raum. Im Kalender öffnen Sie den Hinweis beim Raumnamen, auf kleinen Bildschirmen über das Symbol. **Wählen** und die Auswahl eines neuen Zeitfensters sind für diesen Raum gesperrt. Buchen Sie ihn in der klassischen ROOMS-Oberfläche, in der Sie die Bestuhlung wählen können. Diese Kennzeichnung ist keine allgemeine Zusage, dass alle anderen Ressourcen in PlaceMe buchbar sind.
 
 ### Liste und Kalender
 
@@ -88,6 +90,50 @@ Verschieben und Grössenänderung im Kalender speichern unmittelbar, ohne zusät
 
 Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sich die Buchungsmaske mit dem vorgeschlagenen Zeitraum und der Meldung. Prüfen und korrigieren Sie die Angaben. Wenn Sie die Maske ohne erfolgreiches Speichern schliessen, wird der Vorschlag verworfen und der Kalender neu geladen.
 
+## Einchecken, freigeben, terminieren oder No-show melden
+
+Öffnen Sie die Buchung unter **Buchungen**, im Scheduling-Kalender oder unter **Meine heutigen Buchungen** auf **Start**. Am unteren Rand der Maske stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
+
+Die Aktionen beziehen sich auf die zuletzt gelesene, gespeicherte Buchung, nicht auf Ihre ungespeicherten Feldeingaben. Speichern Sie gewünschte Feldänderungen vorher und prüfen Sie Ressource, Titel und Zeitraum in der Rückfrage. Die Prüfung kann eine Aktion auch dann ablehnen, wenn die Schaltfläche sichtbar ist. Beachten Sie die Meldung und prüfen Sie den aktualisierten Buchungsstand, bevor Sie es erneut versuchen.
+
+### Einchecken
+
+Mit **Einchecken** bestätigen Sie, dass die Buchung genutzt wird. Die Ressource muss Check-in verwenden und die organisierende Person muss einer Benutzergruppe mit Check-in für Einzelbuchungen angehören. Sie müssen die vollständigen Buchungsdetails sehen dürfen. Das Check-in-Zeitfenster richtet sich nach dem Beginn und den auf der Ressource eingestellten Vorausminuten. Es endet mit dem Buchungsende.
+
+Ein bereits bestätigter Check-in kann nicht erneut ausgeführt werden. Ist für die organisierende Person **Check-In-Delegation erzwingen** (ID 169) wirksam, muss eine andere Person einchecken. Ein allgemeines Bearbeitungsrecht oder ein zusätzliches Check-in-Recht ist dafür nicht erforderlich.
+
+Wählen Sie **Einchecken**. Danach zeigt die Maske **Eingecheckt** an. Im Scheduling-Kalender kennzeichnet ein Symbol die eingecheckte Buchung, soweit deren Details für Sie sichtbar sind. Für Installationen, in denen der Check-in eine angebundene Türsteuerung auslöst, verwenden Sie die klassische ROOMS-Oberfläche. PlaceMe zeigt dazu eine Meldung.
+
+### Freigeben oder terminieren
+
+Beide Aktionen ändern das Ende der Buchung und beenden die automatische Verlängerung. Der Unterschied betrifft die Nachlaufzeit:
+
+| Aktion | Wirkung | Zeitfenster |
+| --- | --- | --- |
+| **Freigeben** | Die Nachlaufzeit entfällt. Die Ressource wird ab dem neuen Ende frei. | Ab Buchungsbeginn bis zum Ende der Nachlaufzeit. Nicht während der Vorlaufzeit. |
+| **Terminieren** | Die Nachlaufzeit bleibt im bisherigen Umfang reserviert und folgt auf das neue Ende. | Zwischen Buchungsbeginn und Buchungsende. |
+
+Für jede Freigabe benötigen Sie das globale Recht **Darf Reservationen freigeben (eigene)** (ID 90). Für eine fremde Buchung benötigen Sie zusätzlich **Darf Reservationen freigeben (fremde)** (ID 91) auf der Ressource. Entsprechend erfordert jede Terminierung **Darf Reservationen terminieren (eigene)** (ID 49), bei fremden Buchungen zusätzlich **Darf Reservationen terminieren (fremde)** (ID 50). Bei einer fremden privaten Buchung ist zum Terminieren auch **Darf Reservationen für Dritte buchen (privat)** (ID 73) erforderlich. Als eigene Buchung gilt hier eine Buchung, bei der Sie erstellende, organisierende oder verantwortliche Person beziehungsweise deren Stellvertretung sind.
+
+1. Wählen Sie **Freigeben** oder **Terminieren**.
+2. Prüfen Sie die Buchung und die angezeigte Wirkung auf die Nachlaufzeit.
+3. Falls **Endet um** angeboten wird, lassen Sie das Feld für ein sofortiges Ende leer oder wählen Sie eine Uhrzeit. Dafür ist zusätzlich **Darf Reservationen freigeben mit Zeitpunkt** (ID 131) beziehungsweise **Darf Reservationen terminieren mit Zeitpunkt** (ID 130) erforderlich. Die Uhrzeit bezieht sich auf die Zeitzone der Buchungsmaske und ihr nächstes Vorkommen ab jetzt, gegebenenfalls nach Mitternacht. Sie muss innerhalb des verbleibenden Buchungszeitraums liegen. Während der Nachlaufzeit kann nur sofort freigegeben werden.
+4. Bestätigen Sie **Freigeben** oder **Terminieren** und prüfen Sie das neue Ende. Mit **Abbrechen** schliessen Sie die Rückfrage ohne diese Aktion.
+
+Das Ende wird auf die nächste volle Minute aufgerundet. Die Buchung bleibt bestehen und die Preise werden neu berechnet. Das ist keine Annullierung. Falls gerade Änderungen aus Outlook übernommen werden, warten Sie deren Abschluss ab und versuchen Sie die Aktion danach erneut.
+
+### Als No-show markieren
+
+Verwenden Sie **No-show**, wenn eine Buchung nicht wahrgenommen wird. Sie benötigen **Darf Reservationen als No Show kennzeichnen** (ID 120) auf der Ressource, nicht die Annullierungsrechte. Auf Ihrer eigenen persönlichen Ressource können Sie keine Buchung als No-show markieren. Bereits markierte Buchungen können nicht erneut markiert werden.
+
+{{% alert title="No-show annulliert die Buchung" color="warning" %}}
+Die Aktion setzt nicht nur eine Kennzeichnung. Sie annulliert die Buchung, gibt die Ressource frei und berechnet die geltenden Annullierungsgebühren. Prüfen Sie die Buchung vor der Bestätigung. Verwenden Sie zum vorzeitigen Beenden einer tatsächlich genutzten Buchung **Freigeben** oder **Terminieren**.
+{{% /alert %}}
+
+Wählen Sie **No-show**, prüfen Sie die Rückfrage und bestätigen Sie **Als No-show markieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Danach zeigt die Maske den annullierten Status und **No-show**. Die annullierte Buchung belegt die Ressource im Scheduling-Kalender nicht mehr.
+
+Bei installationsspezifischen Freigabe-, Terminierungs- oder No-show-Regeln kann PlaceMe die Aktion mit einem Hinweis auf ROOMS ablehnen. Verwenden Sie in diesem Fall die klassische ROOMS-Oberfläche.
+
 ## Meldungen beim Speichern
 
 - **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
@@ -103,6 +149,10 @@ Bleibt eine Bestätigung aus oder tritt ein Verbindungsfehler auf, prüfen Sie v
 Bestätigungen, Änderungs- und Annullierungsmails sowie Erinnerungen richten sich nach den eingerichteten Benachrichtigungen und Empfängereinstellungen. Nicht jede Feldänderung löst eine Änderungsmail aus. Eine reine Titeländerung genügt dafür beispielsweise nicht.
 
 Bei eingerichteter Exchange-Synchronisation werden unterstützte Buchungen entsprechend den Einstellungen der organisierenden Person und der Ressource im Kalender erstellt, aktualisiert oder entfernt. Versand und Synchronisation laufen im Hintergrund. Eine gespeicherte Buchung bedeutet nicht, dass die E-Mail bereits zugestellt oder Outlook bereits aktualisiert ist.
+
+**Einchecken** allein löst keine Buchungs-Änderungsmail aus. **Freigeben** und **Terminieren** behandeln das neue Ende als Buchungsänderung. Ein Terminieren während einer automatischen Verlängerung kann zusätzlich die konfigurierte Konfliktbenachrichtigung auslösen. **No-show** löst die eingerichteten Annullierungsreaktionen aus. Erinnerungen richten sich nach dem neuen Buchungsstand, bei einer Annullierung werden ausstehende Erinnerungen und die automatische Verlängerung entfernt.
+
+Einchecken, Freigeben und Terminieren legen nicht allein aufgrund Ihrer persönlichen Kalendereinstellung einen neuen Outlook-Termin an. Eine Kalenderaktualisierung setzt eine bestehende Verknüpfung oder eine Ressource mit verpflichtender Kalendersynchronisation voraus und hängt von den übrigen Synchronisationseinstellungen ab.
 
 ## Standort und weitere Filter verwenden
 
