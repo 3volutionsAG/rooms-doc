@@ -15,7 +15,7 @@ Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und 
 - Für die beiden Navigationseinträge benötigen Sie **Darf Sektion 'Reservieren' nutzen** oder **Darf Sektion 'Listen' nutzen**.
 - Die Ressourcenauswahl berücksichtigt aktive Ressourcen, Ihre Buchungsrechte für den Ressourcentyp und Ihre örtlich und zeitlich gültigen Rechte auf der Ressource.
 - Für eine neue Buchung benötigen Sie **Darf prov. Reservationen buchen** oder **Darf def. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Der Workflow muss einen passenden Anfangsstatus anbieten. Beim Speichern werden Berechtigungen und Buchungsregeln erneut geprüft. Ein Suchtreffer allein garantiert keinen erfolgreichen Abschluss.
-- Für das Erstellen und Bearbeiten einer Raumbuchung ohne Bestuhlung benötigen Sie **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben. Beachten Sie die Hinweise zur Buchbarkeit in den Suchergebnissen.
+- Zum Auswählen oder Wechseln einer Bestuhlung benötigen Sie das globale Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28). Bei einer vorhandenen Buchung benötigen Sie auch das Bearbeitungsrecht. Ohne Bestuhlung benötigen Sie beim Erstellen und Bearbeiten einer Raumbuchung **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben.
 
 Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/_index.md" >}}).
 
@@ -43,7 +43,9 @@ Ein Treffer bedeutet, dass innerhalb des Suchfensters ein zusammenhängender Zei
 
 Weitere Ergebnisse werden beim Scrollen nachgeladen. Die angezeigte Ressourcenanzahl bezieht sich auf bereits geladene Ergebnisse.
 
-Ein Raum, den Sie nur mit einer Bestuhlung buchen dürfen und für den keine Standardbestuhlung hinterlegt ist, kann trotz freiem Zeitraum als **Hier nicht buchbar** erscheinen. In der Liste steht der Grund beim Raum. Im Kalender öffnen Sie den Hinweis beim Raumnamen, auf kleinen Bildschirmen über das Symbol. **Wählen** und die Auswahl eines neuen Zeitfensters sind für diesen Raum gesperrt. Buchen Sie ihn in der klassischen ROOMS-Oberfläche, in der Sie die Bestuhlung wählen können. Diese Kennzeichnung ist keine allgemeine Zusage, dass alle anderen Ressourcen in PlaceMe buchbar sind.
+{{% alert title="Zeitzonen und Zeitumstellung prüfen" color="warning" %}}
+Bei Sperrzeiten, Feiertagen und Öffnungszeiten können die Buchungsprüfungen in PlaceMe und der klassischen ROOMS-Oberfläche unterschiedlich ausfallen. Das betrifft insbesondere die Zeitumstellung und verknüpfte Ressourcen in unterschiedlichen Zeitzonen. Verwenden Sie für solche Buchungen die klassische ROOMS-Oberfläche und prüfen Sie die betroffenen Räume.
+{{% /alert %}}
 
 ### Liste und Kalender
 
@@ -56,7 +58,7 @@ Der Scheduling-Kalender zeigt Belegungen und Ressourcenbeschränkungen. Ein Klic
 1. Wählen Sie in der **Listenansicht** bei einem passenden Treffer **Wählen**. Alternativ markieren Sie im Kalender einen freien Zeitraum. Ein Klick auf eine freie Stelle schlägt einen Zeitraum mit der gesuchten Dauer vor.
 2. Prüfen Sie im kompakten Buchungsfenster Ressource, Datum, Beginn und Ende. Beachten Sie die eingestellte Scheduling-Zeitzone.
 3. Geben Sie einen **Titel** und bei Bedarf eine **Beschreibung** ein. Prüfen oder ergänzen Sie die Anzahl im Feld **Personen**.
-4. Öffnen Sie bei Bedarf mit **Alle Angaben** die vollständige Buchungsmaske. Ihre Eingaben werden übernommen. Auf kleinen Bildschirmen füllt die Maske den Bildschirm.
+4. Öffnen Sie bei Bedarf mit **Alle Angaben** die vollständige Buchungsmaske. Ihre Eingaben werden übernommen. Auf kleinen Bildschirmen füllt die Maske den Bildschirm. Wählen Sie dort bei Bedarf unter **Optionen zur Buchung → Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
 5. Wählen Sie **Buchen**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
 6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel.
 
@@ -66,29 +68,41 @@ Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschla
 
 ### Bestuhlung bei Raumbuchungen
 
-Bei einem Raum mit Standardbestuhlung weist PlaceMe der neuen Buchung automatisch eine Bestuhlung zu:
+Mit dem Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28) können Sie in der vollständigen Maske unter **Optionen zur Buchung → Bestuhlung** eine der aktuell angebotenen Bestuhlungen des Raums wählen. Die Auswahl zeigt Namen und Personenbereiche und kennzeichnet die Standardbestuhlung mit **(Standard)**. Ohne Auswahl verwendet eine neue Buchung den automatischen Vorschlag. **Wie Rooms sie vorschlägt** bedeutet nicht, dass ohne Bestuhlung gebucht wird.
+
+Bei einem Raum mit Standardbestuhlung und ohne eigene Auswahl weist PlaceMe der neuen Buchung automatisch eine Bestuhlung zu:
 
 - Passt die angegebene Personenanzahl zur Standardbestuhlung, wird diese verwendet.
 - Andernfalls wird die günstigste Bestuhlung gewählt, zu der die Personenanzahl passt. Bei gleichem Preis wird die kleinere Bestuhlung bevorzugt.
 - Bei Räumen mit Vorlaufzeit kann eine andere passende Bestuhlung mit kürzerer Vorlaufzeit nötig sein. Beginnt die Vorlaufzeit der gewählten Bestuhlung spätestens in der aktuellen Minute, wird nach der günstigsten passenden Alternative gesucht, deren Vorlaufzeit frühestens in dieser Minute beginnt. Ohne passende Alternative bleibt die zuvor gewählte Bestuhlung bestehen. Die übrigen Buchungsregeln werden weiterhin geprüft.
 
-Passt die Personenanzahl zu keiner Bestuhlung, verhindert die Prüfung beim Speichern den Abschluss. Korrigieren Sie die Anzahl oder verwenden Sie die klassische ROOMS-Oberfläche, um die Bestuhlung selbst zu wählen. Ein Raum ohne Standardbestuhlung erhält in PlaceMe keine automatische Bestuhlung. Dafür benötigen Sie das oben genannte Recht zum Buchen ohne Bestuhlung.
+Passt die Personenanzahl nicht zur Bestuhlung, verhindert die Prüfung beim Speichern den Abschluss. Korrigieren Sie die Anzahl oder wählen Sie mit dem erforderlichen Recht eine andere passende Bestuhlung. Ein Raum ohne Standardbestuhlung erhält keine automatische Bestuhlung. Wählen Sie dort eine Bestuhlung oder verwenden Sie das Recht zum Buchen ohne Bestuhlung.
 
-Ohne eigene Zeitangabe wird bei nicht synchronisierten Ressourcen jeweils die längere Vor- beziehungsweise Nachlaufzeit aus Ressource und Bestuhlung verwendet. Die Zeiten werden nicht addiert. Bei synchronisierten Ressourcen verlängern sie die Belegung nicht.
+Ohne eigene Zeitangabe wird bei nicht synchronisierten Ressourcen jeweils die längere Vor- beziehungsweise Nachlaufzeit aus Ressource und Bestuhlung verwendet. Die Zeiten werden nicht addiert. Bei einem Bestuhlungswechsel folgen die bisherigen Standardzeiten der neuen Bestuhlung. Abweichende eigene Zeiten bleiben erhalten. Bei synchronisierten Ressourcen verlängern diese Zeiten die Belegung nicht.
 
-Beim Öffnen einer vorhandenen Buchung zeigt die Maske unter **Optionen zur Buchung → Bestuhlung** den Namen der Bestuhlung, sofern Sie die vollständigen Buchungsdetails sehen dürfen. Beim Bearbeiten bleibt diese Bestuhlung erhalten. Eine geänderte Personenanzahl muss zu ihr passen und löst keine neue Bestuhlungswahl aus. Bestuhlung hinzufügen oder wechseln können Sie in der klassischen ROOMS-Oberfläche.
+Beim Bearbeiten bleibt die gespeicherte Bestuhlung erhalten, solange Sie keine andere wählen. Eine geänderte Personenanzahl muss zu ihr passen und löst keine automatische Neuwahl aus. Ohne Bearbeitungs- oder Bestuhlungsrecht wird der Name angezeigt, soweit Sie die vollständigen Buchungsdetails sehen dürfen. Auch eine inzwischen nicht mehr angebotene, gespeicherte Bestuhlung kann erhalten bleiben. Die Auswahl bietet keine Aktion zum Entfernen der Bestuhlung.
 
-{{% alert title="Bestuhlungsdienst berücksichtigen" color="warning" %}}
-Ist für den Raum eine Bestuhlungsbenachrichtigung eingerichtet, können Sie in PlaceMe nur Buchungen mit der Standardbestuhlung erstellen, bearbeiten, annullieren, freigeben, terminieren oder als No-show markieren. Ohne Standardbestuhlung oder mit einer anderen Bestuhlung verwenden Sie dafür die klassische ROOMS-Oberfläche. Das gilt auch, wenn PlaceMe beim Erstellen wegen der Personenanzahl oder Vorlaufzeit eine andere Bestuhlung wählen würde. Die Benachrichtigung an den Bestuhlungsdienst wird nicht in PlaceMe verarbeitet. Einchecken allein unterliegt dieser Bestuhlungseinschränkung nicht.
+Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrwertsteuer in den Buchungskosten berücksichtigt. Die Kostenanzeige in der PlaceMe-Maske ist mit **Folgt** gekennzeichnet und deaktiviert. Die Benachrichtigung an einen eingerichteten Bestuhlungsdienst wird separat von der allgemeinen Buchungs-Änderungsmail verarbeitet. Beachten Sie den Abschnitt **Benachrichtigungen und Outlook**.
+
+### Kombinierte und verknüpfte Räume
+
+Buchen Sie einen kombinierten Raum, werden seine verknüpften Teilräume als Unterbuchungen mitgebucht. Bei der Buchung eines Teilraums werden auch die zugehörigen übergeordneten Raumkombinationen belegt. Ein anderer Teilraum kann weiterhin separat buchbar sein. Die Verknüpfungen werden eine Ebene nach unten und oben berücksichtigt, nicht beliebig tief.
+
+Für neu hinzukommende Unterbuchungen benötigen Sie Buchungsrechte auf den betroffenen Ressourcen. Auch deren Buchungsregeln werden geprüft. Eine Ablehnung nennt den betroffenen Raum. Das kann auch beim Speichern einer älteren Buchung geschehen, wenn fehlende Unterbuchungen ergänzt werden.
+
+Öffnen Sie eine Unterbuchung in der Liste, im Kalender oder über **Meine heutigen Buchungen**, zeigt PlaceMe die Hauptbuchung, sofern Sie diese sehen dürfen. Prüfen Sie deshalb deren Ressource und Buchungsnummer. Ohne Zugriff auf die Hauptbuchung bleibt die Unterbuchung schreibgeschützt sichtbar und bietet keine eigenen Aktionen. Das gilt auch für kombinierte Buchungen, die in der klassischen ROOMS-Oberfläche erstellt wurden. Unterbuchungen können Sie hier nicht unabhängig bearbeiten oder verschieben.
+
+{{% alert title="Änderungen betreffen die Raumkombination" color="warning" %}}
+Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertraulichen Bemerkungen werden von der Hauptbuchung auf ihre Unterbuchungen übertragen. Freigeben und Terminieren beenden auch die Unterbuchungen. Annullieren und No-show annullieren sie mit. Prüfen Sie vor der Bestätigung, ob die Änderung für die ganze Kombination gelten soll. Zum Einchecken einer Buchung mit Unterbuchungen verwenden Sie die klassische ROOMS-Oberfläche, auch wenn PlaceMe **Einchecken** anbietet.
 {{% /alert %}}
 
 ### Verfügbare Angaben und Grenzen
 
 Die vollständige Maske bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
 
-Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering, einer Bestuhlung und Equipment. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
+Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering und Equipment sowie die Kostenanzeige. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
 
-PlaceMe verarbeitet einzelne provisorische und definitive Buchungen ohne zusätzliche Buchungsverknüpfungen. Raumbuchungen mit Bestuhlung können Sie im oben beschriebenen Umfang verwalten. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Teil- oder verknüpfte Räume, Bestellungen, die Auswahl oder den Wechsel einer Bestuhlung, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
+PlaceMe verarbeitet einzelne provisorische und definitive Buchungen, einschliesslich kombinierter Räume und Bestuhlungen im oben beschriebenen Umfang. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Bestellungen, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
 
 ## Buchung bearbeiten oder annullieren
 
@@ -120,7 +134,7 @@ Mit **Einchecken** bestätigen Sie, dass die Buchung genutzt wird. Die Ressource
 
 Ein bereits bestätigter Check-in kann nicht erneut ausgeführt werden. Ist für die organisierende Person **Check-In-Delegation erzwingen** (ID 169) wirksam, muss eine andere Person einchecken. Ein allgemeines Bearbeitungsrecht oder ein zusätzliches Check-in-Recht ist dafür nicht erforderlich.
 
-Wählen Sie **Einchecken**. Danach zeigt die Maske **Eingecheckt** an. Im Scheduling-Kalender kennzeichnet ein Symbol die eingecheckte Buchung, soweit deren Details für Sie sichtbar sind. Für Installationen, in denen der Check-in eine angebundene Türsteuerung auslöst, verwenden Sie die klassische ROOMS-Oberfläche. PlaceMe zeigt dazu eine Meldung.
+Wählen Sie **Einchecken**. Danach zeigt die Maske **Eingecheckt** an. Im Scheduling-Kalender kennzeichnet ein Symbol die eingecheckte Buchung, soweit deren Details für Sie sichtbar sind. Für Buchungen mit Unterbuchungen und für Installationen, in denen der Check-in eine angebundene Türsteuerung auslöst, verwenden Sie die klassische ROOMS-Oberfläche. PlaceMe zeigt dazu eine Meldung.
 
 ### Freigeben oder terminieren
 
@@ -164,7 +178,13 @@ Bleibt eine Bestätigung aus oder tritt ein Verbindungsfehler auf, prüfen Sie v
 
 ## Benachrichtigungen und Outlook
 
-Bestätigungen, Änderungs- und Annullierungsmails sowie Erinnerungen richten sich nach den eingerichteten Benachrichtigungen und Empfängereinstellungen. Nicht jede Feldänderung löst eine Änderungsmail aus. Eine reine Titeländerung genügt dafür beispielsweise nicht.
+Bestätigungen, Änderungs- und Annullierungsmails sowie Erinnerungen richten sich nach den eingerichteten Benachrichtigungen und Empfängereinstellungen. Nicht jede Feldänderung löst eine Änderungsmail aus. Eine reine Titeländerung genügt dafür beispielsweise nicht. Auch die Bestuhlungswahl allein ist kein Auslöser. Ändern sich dabei die Gesamtkosten oder weitere relevante Angaben, kann dennoch eine Buchungs-Änderungsmail entstehen.
+
+Bei einer Raumkombination werden Benachrichtigungen und Erinnerungen über die Hauptbuchung verarbeitet. Die Raumliste in der Buchungsmail kann die mitgebuchten Räume aufführen. Unterbuchungen erzeugen keine eigenen Buchungsmails, Erinnerungen oder separaten Outlook-Termine.
+
+Ist die Benachrichtigung für Änderungen am selben Tag eingerichtet, verarbeitet PlaceMe bei Erstellen, Annullieren und relevanten Änderungen einer Raumbuchung auch die Mail an die konfigurierten Empfangsadressen, beispielsweise die Rezeption. Sie enthält eine Tabelle der alten und neuen Werte mit markierten Änderungen. Entscheidend ist der noch bevorstehende Belegungsbeginn einschliesslich Vorlaufzeit am aktuellen **UTC-Kalendertag**, nicht allein das lokal angezeigte Buchungsdatum. Bei Änderungen muss zusätzlich der Auslöser für eine Buchungs-Änderungsmail erfüllt sein.
+
+Ein eingerichteter **Bestuhlungsdienst** erhält seine Benachrichtigung über die Gruppe und Vorlage der Angebotszone. Bei Buchungen ohne Standardbestuhlung werden Erstellen, relevante Zeitänderungen, vorzeitiges Beenden und Annullieren berücksichtigt. Auch ein Bestuhlungswechsel wird verarbeitet. Der Versandtermin richtet sich nach der Vorankündigungsfrist der Angebotszone. Vor diesem Termin können ausstehende Benachrichtigungen verschoben oder bei Annullierung beziehungsweise Rückkehr zur Standardbestuhlung entfernt werden. Das bedeutet nicht, dass jede Änderung sofort eine zusätzliche Mail auslöst.
 
 Bei eingerichteter Exchange-Synchronisation werden unterstützte Buchungen entsprechend den Einstellungen der organisierenden Person und der Ressource im Kalender erstellt, aktualisiert oder entfernt. Versand und Synchronisation laufen im Hintergrund. Eine gespeicherte Buchung bedeutet nicht, dass die E-Mail bereits zugestellt oder Outlook bereits aktualisiert ist.
 
