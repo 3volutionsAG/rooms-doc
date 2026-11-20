@@ -13,6 +13,8 @@ description: '3V ROOMS Wizard ist ein Buchungsassistent, der eine vereinfachte B
 
 Das weitere Vorgehen entspricht dem Vorgehen im [3V ROOMS Add-In für Office 365 Outlook](/3vrooms-module/3vrooms_addin_o365outlook/).
 
+Für Catering-Angebote gilt auch im Wizard die Anleitung [Catering mit offener Menge bestellen]({{< relref "3VROOMS-Module/3VROOMS_AddIn_O365Outlook/RessourceBuchen/_index.md#catering-mit-offener-menge-bestellen" >}}). Sie erklärt die Auswahl ohne Mengenangabe, den vorläufigen Gesamtbetrag und den Umgang mit bereits erfasstem Verbrauch.
+
 Mit den entsprechenden Einstellungen werden Buchungen, die mit dem 3V ROOMS Wizard erstellt wurden mit Office 365 Outlook synchronisiert, siehe dazu [Empfohlene Konfigurationen](/3vrooms-module/addin-wizard_konfigurieren/).
 
 ## Serie verwerfen und einen Einzeltermin buchen
