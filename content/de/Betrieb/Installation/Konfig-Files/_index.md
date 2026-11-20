@@ -75,6 +75,16 @@ Wenn Geräte oder gespeicherte Links ein Mandantenpräfix verwenden, setzen Sie 
 Nur das unter `Rooms:LegacyTenant` konfigurierte Präfix wird erkannt. Andere frühere Mandantennamen erhalten keine solche Kompatibilitätsbehandlung. Entspricht der Wert dem Anfang einer aktuellen Route, beispielsweise `Home`, `Calendar` oder `api`, ist die gesamte Kompatibilitätsbehandlung deaktiviert. Der Webhost protokolliert dazu eine Warnung. Prüfen Sie in diesem Fall die betroffenen Geräte und Links direkt mit der aktuellen URL.
 {{% /alert %}}
 
+### HTTP 400 wegen zu grosser Cookie-Header
+
+Zeigt der Reverse Proxy **400 Request Header Or Cookie Too Large**, kann der Cookie-Header des Browsers dessen Grössenlimit überschreiten. Der Proxy weist die Anfrage dann ab, bevor sie ROOMS erreicht. Prüfen Sie die Proxy-Logs und das konfigurierte Header-Limit; bei Nginx ist dafür unter anderem `large_client_header_buffers` relevant. Die Summe aller für den Hostnamen oder die Cookie-Domain gesendeten Cookies zählt, nicht nur die ROOMS-Sitzung.
+
+- Lassen Sie die betroffene Person die Cookies der betroffenen Website im Browser löschen und die Anmeldung erneut aufrufen. Das entfernt die dort gespeicherten Sitzungen; bei gemeinsam genutzter Cookie-Domain können auch andere Anwendungen betroffen sein. Ein erneutes Laden der Seite allein entfernt die Cookies nicht.
+- Bleibt die Meldung bestehen oder tritt sie erneut auf, muss das Betriebsteam die gesamte Cookie-Grösse und die beteiligten Anwendungen prüfen. Auch eine externe Anmeldung oder andere Anwendungen auf derselben Domain können zum Header beitragen. Eine kleine ROOMS-Sitzung allein garantiert deshalb nicht, dass der gesamte Header unter dem Proxy-Limit bleibt.
+- Die ROOMS-Website protokolliert eine Warnung, wenn ihr Sitzungscookie `3v.rooms` das Grössenbudget von 3500 Bytes überschreitet. Dieses Budget ist eine Warnschwelle, kein Proxy-Limit und keine automatische Begrenzung des Cookies. Fehlt diese Warnung, schliesst das einen zu grossen gesamten Cookie-Header nicht aus.
+
+Geben Sie keine Cookie-Werte oder vollständigen Cookie-Header in Supportmeldungen weiter: Sie können gültige Anmeldesitzungen enthalten. Eine Anpassung des Proxy-Limits gehört in die kontrollierte Proxy-Konfiguration, nicht in `appsettings.operator.json`.
+
 ## RoomsPro-Konfiguration
 
 ### Schutz vor wiederholten Anmeldeversuchen
