@@ -5,7 +5,7 @@ weight: 3000
 
 description: 'Alle vorgenommenen Buchungen können sind in der [Kalenderansicht](/3vrooms/kalender/kalenderansicht/) zu finden.'
 ---
-Jeder Buchungseintrag ist, in der zugewiesenen Farbe der erstellenden Person, eingefärbt.
+Die Buchungsblöcke verwenden die zentral festgelegten [Buchungsfarbregeln]({{< relref "3VROOMS/Kalender/Kalenderansicht/Kalenderbereich/Farbdarstellung/_index.md" >}}). Die persönliche Farbe des Organisators kann zusätzlich als schmaler Balken am oberen Rand erscheinen.
 Der Kalender startet standardmässig mit dem aktuellen Tag in der Wochenansicht. Die Ansicht können Sie über die Register "Tag", "Arbeitswoche", "Woche" und "Monat" ändern oder über den Datumspicker oben rechts auf den gewünschten Zeitraum einstellen.
 Über die Filter im Sidepanel ist es unter anderem möglich, gebuchtes Equipment unabhängig vom Raum zu [suchen](/3vrooms/kalender/imkalendersuchen/).
 

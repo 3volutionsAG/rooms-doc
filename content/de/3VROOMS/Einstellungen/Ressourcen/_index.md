@@ -173,7 +173,6 @@ Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im R
 {{< bootstrap-table "table table-striped" >}}
 | Feld                                 | Funktion                                                                                                   |
 | ------------------------------------ |----------------------------------------------------------------------------------------------------------- |
-| Farbe                                | Über das Pinsel-Symbol wählen Sie die gewünschte Farbe für die Ressource aus. Diese Farbe gehört zur Ressource und kann in Ansichten zur Kennzeichnung der Ressource verwendet werden. Sie ist nicht identisch mit der Statusfarbe einer Buchung; Statusfarben werden unter [Status](/3vrooms/einstellungen/basisdatenfuerressourcen/status/) verwaltet. |
 | Workflow                             | Über Drop-Down wählen Sie den definierten [Workflow](/3vrooms/einstellungen/basisdatenfuerressourcen/workflows/) aus. |
 | Plan Label                           | Gewünschtes Plan Label eintragen |
 | Reminder für provisorische Buchungen | Verschickt einen zusätzlichen Reminder auf allen provisorischen Buchungen auf dieser Ressource in Minuten vorher (sofern Wert > 0 ist) Standardwert = leer. Die Notifikation wird an dieselbe Benutzergruppe verschickt, welche bereits beim Statuswechsel (in Status _prov. Buchung_) informiert wurde. Diese muss also vorgängig als [Workflow](/3vrooms/einstellungen/basisdatenfuerressourcen/workflows/) konfiguriert werden. Über die Pfeiltasten (oben/unten) die gewünschte Minutenanzahl auswählen. |
@@ -186,9 +185,7 @@ Legen Sie für die ausgewählte Ressource spezifische Daten fest, indem Sie im R
 
 Die geänderten Daten speichern Sie über den untenstehenden Button _Speichern_.
 
-{{< imgproc Ressourcen_Spezifische_Daten Resize "960x" >}}
-Spezifische Daten der Ressourcen bearbeiten
-{{< /imgproc >}}
+Die Farbe zur Kennzeichnung einer Ressource verwalten Sie in PlaceMe unter **Einstellungen → Farben → Ressourcenfarben**. Verwenden Sie eine [Ressourcenfarbregel]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}) für die gewünschte Ressource oder Gliederung. Die Farbe eines Buchungsblocks wird separat durch Buchungsfarbregeln bestimmt.
 
 ### Medien und Beilagen der Ressource bearbeiten
 

@@ -2,19 +2,17 @@
 title: "Legende"
 linkTitle: "Legende"
 weight: 400
-description: 'Die Legende erklärt die Farben, Symbole und kundenspezifischen Markierungen im Kalender.'
+description: 'Die Legende erklärt die Farben und Symbole im klassischen Kalender.'
 ---
 
 ## Legende öffnen
 
-Klicken Sie auf das Icon **Legende**. Es öffnet sich ein Popup, das die im Kalender verwendeten und möglichen Farben und Symbole erklärt. Dazu gehören Status, Sperrzeiten, Feiertage, Wochenenden, eigene Reservationen sowie Symbole für Anlässe und Serien.
+Klicken Sie auf das Icon **Legende**. Es öffnet sich ein Popup mit Erläuterungen zu Farben und Symbolen, beispielsweise für Sperrzeiten, Feiertage, Wochenenden, eigene Reservationen, Anlässe und Serien.
 
 ## Markierungen
 
-Wenn kundenspezifische Kalendermarkierungen aktiviert sind, enthält die Legende zusätzlich den Abschnitt **Markierungen**. Dort sehen Sie die Farbe und Bezeichnung jedes aktiv konfigurierten Markierungstyps. Die Liste kann deshalb auch Markierungen enthalten, die im aktuell sichtbaren Kalenderausschnitt bei keiner Buchung vorkommen.
+Unter **Markierungen** sehen Sie die für Sie sichtbaren Farben und Bezeichnungen aktiver **Buchungsfarbregeln**. Die Sichtbarkeit berücksichtigt unter anderem die referenzierten Klassifikationen, Ressourcengliederungen sowie Ressourcen und Standorte. Ressourcenfarbregeln sind hier nicht aufgeführt.
 
-Weitere Informationen finden Sie unter [Farbdarstellung im Kalender]({{< relref "3VROOMS/Kalender/Kalenderansicht/Kalenderbereich/Farbdarstellung/_index.md" >}}).
+Die Liste kann Einträge enthalten, die im aktuell sichtbaren Kalenderausschnitt bei keiner Buchung vorkommen oder durch eine höher angeordnete Regel übersteuert werden. Für einen konkreten Buchungsblock bestimmt die erste passende aktive Regel die Farbe.
 
-{{< imgproc Kalender_Legende_Farben Resize "960x" >}}
-Legende im Kalender zur Farbkennzeichnung der Buchungen
-{{< /imgproc >}}
+Weitere Informationen finden Sie unter [Farbdarstellung im Kalender]({{< relref "3VROOMS/Kalender/Kalenderansicht/Kalenderbereich/Farbdarstellung/_index.md" >}}). Administratoren verwalten die Regeln unter [PlaceMe → Einstellungen → Farben]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}).
