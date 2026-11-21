@@ -26,9 +26,9 @@ Folgende Einstellungen müssen unter **Einstellungen → System → Globale Para
 | `Exchange Ressource Sync enabled` | `true` |
 {{< /bootstrap-table >}}
 
-### Legacy `backSyncService`
+### Service-Session `backSyncService`
 
-Für klassische Windows-Service-Setups mit EWS-Ressourcen-Sync wird zusätzlich weiterhin `backSyncService` verwendet:
+Für EWS-Ressourcen-Sync über die klassische BackSync-Verarbeitung wird `backSyncService` in der bestehenden `StructureMapXml`-Konfiguration eingerichtet. Diese Session läuft als Hintergrundjob in `RoomsPro.Worker`:
 
 ```xml
 <AddInstance
@@ -37,7 +37,7 @@ Für klassische Windows-Service-Setups mit EWS-Ressourcen-Sync wird zusätzlich 
   PluggedType="Garaio.Products.Rooms.Core.WindowsServices.BackSyncService.BackSyncServiceSession,Garaio.Products.Rooms.Core" />
 ```
 
-Für **Graph-Subscription-Management**, **EWS-Subscription-Management** und andere bereits migrierte Hintergrundjobs ist dagegen keine separate `pushSubscriberServiceSession`-Aktivierung mehr nötig.
+Für **Graph-Subscription-Management** und **EWS-Subscription-Management** ist keine separate Session-Aktivierung erforderlich. Prüfen Sie die Aufgaben wie unter [Aktivieren der Services]({{< relref "Betrieb/Synchronisation/Rooms/ServiceAktivierung/_index.md" >}}) beschrieben.
 
 ## Ressource konfigurieren
 

@@ -7,10 +7,11 @@ description: 'Mindestanforderungen und Voraussetzungen für eine aktuelle ROOMS-
 Das aktuelle MSI kann folgende Komponenten installieren:
 
 - Legacy Website `ROOMS`
-- Legacy Windows Service `ROOMS`
 - `RoomsPro API`
 - `RoomsPro Worker`
 - gemeinsame Konfigurationskomponenten
+
+**RoomsPro Worker** führt die Service-Sessions und die übrigen Hintergrundjobs aus. Betreiben Sie genau einen Worker pro Installation, auch wenn die Websites auf mehreren Servern laufen. Ein parallel laufender separater ROOMS-Service einer älteren Installation würde dieselben Service-Aufgaben zusätzlich ausführen.
 
 Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demselben dedizierten ROOMS-Service-Account betrieben.
 
@@ -19,14 +20,13 @@ Für den dokumentierten Standardaufbau werden alle Windows-Komponenten mit demse
 {{< bootstrap-table "table table-striped" >}}
 | Komponente | Voraussetzung |
 |---|---|
-| Aktuelles ROOMS-MSI | Windows Server x64 und `.NET 10 Runtime` (x64) |
-| Legacy Website `ROOMS` | IIS 10 oder neuer und `.NET Framework 4.8` |
-| Legacy Windows Service `ROOMS` | `.NET Framework 4.8` |
-| `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64) |
-| `RoomsPro Worker` | `.NET 10 Runtime` (x64) |
+| Aktuelles ROOMS-MSI | Windows Server x64 und ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
+| Legacy Website `ROOMS` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
+| `RoomsPro API` | IIS 10 oder neuer und ASP.NET Core Hosting Bundle für `.NET 10` (x64), mindestens `10.0.14` |
+| `RoomsPro Worker` | ASP.NET Core Runtime für `.NET 10` (x64), mindestens `10.0.14` |
 {{< /bootstrap-table >}}
 
-Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten Feature-Kombination. Installieren Sie das Hosting Bundle vor der IIS-Konfiguration der RoomsPro API.
+Das MSI prüft die installierte ASP.NET Core Runtime unabhängig von der gewählten Feature-Kombination. Die reine .NET Runtime genügt dafür nicht. Installieren Sie auf IIS-Servern das Hosting Bundle vor der Konfiguration der beiden Websites. Beide verwenden `AspNetCoreModuleV2` und einen Application Pool mit **No Managed Code**.
 
 ## Basis-Hardware
 
@@ -35,7 +35,7 @@ Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten
 |---|---|
 | Applikations-/Webserver | 4 vCPU, 16 GB RAM |
 | Freier Speicher | mindestens 100 GB für Binärdateien, Logs, temporäre Dateien und Updates |
-| Datenbankserver | nach Mandantengrösse, Datenvolumen und Backup-Strategie dimensionieren |
+| Datenbankserver | nach Installationsgrösse, Datenvolumen und Backup-Strategie dimensionieren |
 {{< /bootstrap-table >}}
 
 ## Datenbank
@@ -44,7 +44,7 @@ Das MSI prüft die installierte `.NET 10 Runtime` unabhängig von der gewählten
 - SQL Server Management Studio für Restore und Berechtigungsvergabe
 - TCP/IP-Konnektivität zwischen allen ROOMS-Komponenten und SQL Server
 - Aktuelles ROOMS-Baukasten-Backup aus dem Downloadbereich
-- Backup- und Wiederherstellungsstrategie für jede Mandantendatenbank
+- Genau eine ROOMS-Datenbank pro Installation mit eigener Backup- und Wiederherstellungsstrategie
 
 ## Gemeinsamer ROOMS-Service-Account
 
@@ -52,9 +52,8 @@ Stellen Sie vor der Installation einen dedizierten Domänen-Account bereit, zum 
 
 - IIS Application Pool der Legacy Website
 - IIS Application Pool der RoomsPro API
-- Windows-Dienst `ROOMS`
 - Windows-Dienst `RoomsPro Worker`
-- integrierte Anmeldung an den ROOMS-Datenbanken
+- integrierte Anmeldung an der ROOMS-Datenbank der Installation
 
 Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechtigungen]({{< relref "Betrieb/Installation/Datenbankberechtigungen/_index.md" >}}) beschrieben.
 
@@ -72,13 +71,12 @@ Die konkreten SQL-, Windows- und Dateisystemrechte sind unter [Datenbankberechti
 | Komponente | Standardpfad |
 |---|---|
 | Zentrale Konfiguration | `C:\Program Files\3volutions\ROOMS\Configuration` |
-| Legacy Windows Service | `C:\Program Files\3volutions\ROOMS\WindowsService` |
-| RoomsPro Worker | `C:\Program Files\3volutions\ROOMS\Worker` |
+| RoomsPro Worker | `C:\Program Files\3volutions\Worker` |
 | Legacy Website | `C:\inetpub\wwwroot\ROOMS` |
 | RoomsPro API | `C:\inetpub\wwwroot\API` |
 {{< /bootstrap-table >}}
 
-Wenn andere Verzeichnisse gewählt werden, müssen die nachfolgenden Befehle, IIS-Einstellungen und die manuelle API-Erweiterung der `Config.bat` entsprechend angepasst werden.
+Wenn andere Verzeichnisse gewählt werden, passen Sie die nachfolgenden Befehle und IIS-Einstellungen entsprechend an. `Config.bat` verwendet die registrierten Installationspfade.
 
 ## Netzwerk und externe Systeme
 
