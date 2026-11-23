@@ -190,9 +190,9 @@ Bei installationsspezifischen Freigabe-, Terminierungs- oder No-show-Regeln kann
 
 ## Meldungen beim Speichern
 
-- **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
+- **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Die Meldung erklärt die verletzte Buchungsregel, beispielsweise eine überschrittene Höchstdauer oder eine unpassende Personenanzahl. Meldungen ohne zugehöriges Eingabefeld stehen in der Zusammenfassung. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
 - **Zeitraum inzwischen belegt:** Wählen Sie beim Erstellen **Andere Zeit wählen**. Die übrigen Angaben bleiben erhalten.
-- **Buchung inzwischen geändert:** Bei einem Bearbeitungskonflikt ist Speichern gesperrt. Prüfen Sie die angezeigten Änderungen und wählen Sie **Aktuelle Version laden**. Das ersetzt Ihre ungespeicherten Eingaben. Erfassen Sie Ihre Änderungen danach erneut.
+- **Buchung inzwischen geändert:** Bei einem Bearbeitungskonflikt ist Speichern gesperrt. Der Hinweis nennt, soweit verfügbar, Zeitpunkt und Person der letzten Änderung. Das schliesst Änderungen aus der klassischen ROOMS-Oberfläche ein. Prüfen Sie die angezeigten Änderungen und wählen Sie **Aktuelle Version laden**. Das ersetzt Ihre ungespeicherten Eingaben. Erfassen Sie Ihre Änderungen danach erneut.
 - **Bearbeitung in ROOMS oder Übernahme aus Outlook:** Warten Sie, bis die andere Bearbeitung beziehungsweise Synchronisation abgeschlossen ist, und versuchen Sie es erneut.
 - **Aktion nicht unterstützt:** Beachten Sie den angegebenen Grund und verwenden Sie gegebenenfalls die klassische ROOMS-Oberfläche.
 
