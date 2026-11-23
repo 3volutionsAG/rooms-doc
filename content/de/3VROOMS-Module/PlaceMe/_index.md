@@ -63,7 +63,7 @@ Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Welche Titel un
 
 1. Wählen Sie im Kalender eine freie Stelle oder markieren Sie einen Zeitraum. Am Computer öffnet sich die Buchung direkt unter der Ressourcenzeile. In der **Liste** öffnet **Wählen** das Buchungspanel, auf dem Telefon einen Eingabebereich am unteren Bildschirmrand.
 2. Prüfen Sie Ressource, Datum, Beginn und Ende in der angezeigten Zeitzone. Ein Klick verwendet die gesuchte Dauer. Innerhalb des markierten Suchfensters bleibt der Vorschlag darin und kann nahe dessen Ende früher beginnen als die angeklickte Stelle.
-3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Mehr Angaben** führt mit Ihren Eingaben ins Panel.
+3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. Im Panel bearbeiten Sie den Titel direkt in der Überschrift. Es öffnet mit dem Eingabefokus im Titel, bei leerem Titel mit **Titel hinzufügen**. In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Mehr Angaben** führt mit Ihren Eingaben ins Panel.
 4. Öffnen Sie bei Bedarf im Panel **Ändern** für Datum und Uhrzeit oder mit **Alle Angaben** die vollständige Buchungsseite. Dort bearbeiten Sie den Titel direkt in der Überschrift und ergänzen die **Beschreibung**. Wählen Sie bei Bedarf unter **Optionen zur Buchung → Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
 5. Wählen Sie **Buchen**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
 6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel. Die Erfolgsmeldung bietet auch **Buchung öffnen** an.
@@ -127,10 +127,10 @@ PlaceMe verarbeitet einzelne provisorische und definitive Buchungen, einschliess
 ## Buchung bearbeiten oder annullieren
 
 1. Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**.
-2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status im Panel. Wählen Sie **Bearbeiten**, um die vollständige Seite zu öffnen. Wenn Sie die vollständigen Buchungsdetails sehen, aber nicht bearbeiten dürfen, öffnet **Alle Angaben** die schreibgeschützte Seite. Bei eingeschränkten Leserechten fehlt diese Aktion. Sichtbar bleiben nur die erlaubten Angaben, beispielsweise unter **Belegt**.
-3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Danach erscheint wieder das Detailpanel. Mit **Zurück** beziehungsweise **Zurück zum Zeitstrahl** kehren Sie zur Ausgangsseite zurück. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
+2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status im Panel. Unter dem Titel stehen der Status und gegebenenfalls **Eingecheckt** oder **No-show** sowie die Buchungsnummer. Wählen Sie oben rechts das Stiftsymbol **Bearbeiten**, um die vollständige Seite zu öffnen. Wenn Sie die vollständigen Buchungsdetails sehen, aber nicht bearbeiten dürfen, öffnet dort **Alle Angaben** die schreibgeschützte Seite. Bei eingeschränkten Leserechten fehlt diese Aktion. Sichtbar bleiben nur die erlaubten Angaben, beispielsweise unter **Belegt**.
+3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Danach erscheint wieder das Detailpanel. Mit **Zurück** kehren Sie zur Ausgangsseite zurück. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
 
-Zum Annullieren wählen Sie im Panel **Annullieren**. Prüfen Sie die angezeigte Buchung und bestätigen Sie **Buchung annullieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Bearbeiten und Annullieren richten sich nach den jeweiligen Buchungsrechten. Eine direkt geöffnete Buchungsseite lässt sich neu laden. Ungespeicherte Feldeingaben sind dadurch nicht gesichert.
+Zum Annullieren öffnen Sie oben rechts im Panel das Dreipunktmenü **Weitere Aktionen** und wählen **Buchung annullieren**. Auf der vollständigen Seite steht dasselbe Menü neben dem Titel. Prüfen Sie die angezeigte Buchung und bestätigen Sie **Buchung annullieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Bearbeiten und Annullieren richten sich nach den jeweiligen Buchungsrechten. Eine direkt geöffnete Buchungsseite lässt sich neu laden. Ungespeicherte Feldeingaben sind dadurch nicht gesichert.
 
 ### Im Kalender verschieben
 
@@ -145,6 +145,8 @@ Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sic
 ## Einchecken, freigeben, terminieren oder No-show melden
 
 Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
+
+**Einchecken**, **Freigeben** und **Terminieren** stehen unten, jeweils nur während ihres zulässigen Zeitfensters. Ohne eine dieser Aktionen hat das Detailpanel keine Fusszeile. **No-show** finden Sie zusammen mit **Buchung annullieren** unter **Weitere Aktionen** beim Titel. Das Menü zeigt nur zulässige Einträge und fehlt, wenn keiner verfügbar ist. Auf dem Telefon gilt dieselbe Aufteilung im Buchungsbereich am unteren Bildschirmrand.
 
 Die Aktionen beziehen sich auf die zuletzt gelesene, gespeicherte Buchung, nicht auf Ihre ungespeicherten Feldeingaben. Speichern Sie gewünschte Feldänderungen vorher und prüfen Sie Ressource, Titel und Zeitraum in der Rückfrage. Die Prüfung kann eine Aktion auch dann ablehnen, wenn die Schaltfläche sichtbar ist. Beachten Sie die Meldung und prüfen Sie den aktualisierten Buchungsstand, bevor Sie es erneut versuchen.
 
@@ -182,7 +184,7 @@ Verwenden Sie **No-show**, wenn eine Buchung nicht wahrgenommen wird. Sie benöt
 Die Aktion setzt nicht nur eine Kennzeichnung. Sie annulliert die Buchung, gibt die Ressource frei und berechnet die geltenden Annullierungsgebühren. Prüfen Sie die Buchung vor der Bestätigung. Verwenden Sie zum vorzeitigen Beenden einer tatsächlich genutzten Buchung **Freigeben** oder **Terminieren**.
 {{% /alert %}}
 
-Wählen Sie **No-show**, prüfen Sie die Rückfrage und bestätigen Sie **Als No-show markieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Danach zeigt die Maske den annullierten Status und **No-show**. Die annullierte Buchung belegt die Ressource im Scheduling-Kalender nicht mehr.
+Wählen Sie **Weitere Aktionen → No-show**, prüfen Sie die Rückfrage und bestätigen Sie **Als No-show markieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Danach zeigt die Maske den annullierten Status und **No-show**. Die annullierte Buchung belegt die Ressource im Scheduling-Kalender nicht mehr.
 
 Bei installationsspezifischen Freigabe-, Terminierungs- oder No-show-Regeln kann PlaceMe die Aktion mit einem Hinweis auf ROOMS ablehnen. Verwenden Sie in diesem Fall die klassische ROOMS-Oberfläche.
 
