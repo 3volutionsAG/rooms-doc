@@ -1,17 +1,17 @@
 ---
-title: "PlaceMe: Ressourcen suchen, buchen und Buchungen verwalten"
-linkTitle: "PlaceMe"
+title: "cordivo (PlaceMe): Ressourcen suchen, buchen und Buchungen verwalten"
+linkTitle: "cordivo (PlaceMe)"
 weight: 40
-description: 'In PlaceMe freie Zeitfenster finden, Buchungen erstellen, bearbeiten oder annullieren und Filter verwenden'
+description: 'In cordivo freie Zeitfenster finden, Buchungen verwalten und Ansichten speichern oder teilen'
 ---
 
-PlaceMe bietet eine Ressourcenplanung unter **Scheduling** und eine Buchungsliste unter **Buchungen**. Diese Anleitung beschreibt die separate PlaceMe-Weboberfläche. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
+Die separate Weboberfläche cordivo ist auch unter dem Namen PlaceMe bekannt. Unter **Buchen** suchen Sie Ressourcen und freie Zeitfenster, unter **Buchungen** verwalten Sie vorhandene Buchungen. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
 
 Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und Ressourcenfarben]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Die Farbregeln gelten auch für die klassische ROOMS-Oberfläche. Dafür sind zusätzliche Einstellungs- und Konfigurationsrechte erforderlich.
 
 ## Voraussetzung
 
-- Sie sind in PlaceMe angemeldet.
+- Sie sind in cordivo angemeldet.
 - Für die beiden Navigationseinträge benötigen Sie **Darf Sektion 'Reservieren' nutzen** oder **Darf Sektion 'Listen' nutzen**.
 - Die Ressourcenauswahl berücksichtigt aktive Ressourcen, Ihre Buchungsrechte für den Ressourcentyp und Ihre örtlich und zeitlich gültigen Rechte auf der Ressource.
 - Für eine neue Buchung benötigen Sie **Darf prov. Reservationen buchen** oder **Darf def. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Der Workflow muss einen passenden Anfangsstatus anbieten. Beim Speichern werden Berechtigungen und Buchungsregeln erneut geprüft. Ein Suchtreffer allein garantiert keinen erfolgreichen Abschluss.
@@ -21,56 +21,76 @@ Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "
 
 ## Wo finde ich die Funktionen?
 
-Öffnen Sie die PlaceMe-Webadresse Ihrer Organisation und wählen Sie in der Navigation:
+Öffnen Sie die cordivo-/PlaceMe-Webadresse Ihrer Organisation und wählen Sie in der Navigation:
 
-- **Scheduling**, um Ressourcen und passende freie Zeitfenster zu suchen.
+- **Buchen**, um Ressourcen und passende freie Zeitfenster zu suchen.
 - **Buchungen**, um vorhandene Buchungen zu filtern, zu öffnen und im erlaubten Umfang zu bearbeiten oder zu annullieren.
 
-Auch **Meine heutigen Buchungen** auf **Start** öffnet die jeweilige Buchung.
+Auf dem Telefon heisst der Bereich **Buchungen** in der unteren Navigation **Meine**. Auch **Meine heutigen Buchungen** auf **Heute** öffnet die jeweilige Buchung.
+
+Über das Zahnrad gelangen Sie zu **Einstellungen**, sofern Sie das Recht **Darf Sektion 'Einstellungen' nutzen** besitzen. Das persönliche **Erscheinungsbild** wählen Sie am Computer im Kontomenü über Ihr Profilbild, auf dem Telefon unter **Mehr**: **System**, **Hell** oder **Dunkel**. Die Auswahl gilt für diesen Browser. **System** richtet sich nach dem Gerät.
 
 ## Ein freies Zeitfenster suchen
 
-1. Öffnen Sie **Scheduling**.
-2. Tragen Sie unter **Verfügbar von** und **Verfügbar bis** das Datumsfenster ein. Sie können feste Daten im Format `YYYY-MM-DD` oder relative Angaben wie `@today` und `@tomorrow` verwenden. Das Suchfenster umfasst höchstens **62 Kalendertage**, einschliesslich Anfangs- und Enddatum.
-3. Prüfen Sie die **Scheduling-Zeitzone**. Die Datums- und Uhrzeitangaben beziehen sich auf diese Zeitzone, beispielsweise `Europe/Zurich`.
-4. Geben Sie die **Benötigte Dauer (Minuten)** ein. Legen Sie mit **Täglich ab** und **Täglich bis** das tägliche Zeitfenster fest oder aktivieren Sie **Ganztägig**.
-5. Schränken Sie die Ressourcen mit der Textsuche und den Filtern ein, beispielsweise nach Standort oder Ressourcentyp.
-6. Wählen Sie **Nur verfügbare Ressourcen** oder **Alle Ressourcen** und prüfen Sie die Ergebnisse.
+1. Öffnen Sie **Buchen**. Ohne vorgegebene Ansicht oder Zeit startet die Suche für eine Stunde ab der nächsten halben Stunde, frühestens um 08:00. Würde sie nach 20:00 enden, wird morgen 08:00–09:00 vorgeschlagen.
+2. Öffnen Sie das Feld für den **Zeitraum**. Wählen Sie beispielsweise **Heute**, **Morgen** oder **Nächste 7 Tage**. Solche Vorgaben und relative Texteingaben wie `in 2 Wochen` oder `+3` wandern mit dem Datum. Getippte Kalenderdaten wie `20.5` und im Kalender gewählte Daten sind fest. Eine getippte Angabe bestätigen Sie mit Enter, einen Kalenderzeitraum mit dem zweiten angeklickten Tag. Das Suchfenster umfasst höchstens **62 Kalendertage**, einschliesslich Anfangs- und Enddatum.
+3. Öffnen Sie das **Tägliche Zeitfenster** und prüfen Sie **Von** und **Bis**. Normalerweise muss die Ressource während des ganzen täglichen Fensters frei sein. Mit **Kürzer als das Zeitfenster** geben Sie eine kürzere **Benötigte Dauer** an, beispielsweise eine Stunde zwischen 13:00 und 18:00.
+4. Prüfen Sie die Zeitzone unten im Zeitfenster über **Zeiten in … → Ändern**. Datum und Uhrzeit beziehen sich auf diese Zone. Auf dem Telefon öffnen Zeitraum und Zeitfenster einen gemeinsamen Eingabebereich.
+5. Schränken Sie die Ressourcen mit der Textsuche und **Filter** ein, beispielsweise nach Standort oder Ressourcentyp. Aktive Kriterien erscheinen als einzelne Filterfelder.
+6. Prüfen Sie die Ergebnisse: Freie Ressourcen stehen zuerst, weitere passende Ressourcen unter **Zur gewünschten Zeit belegt**. Wählen Sie bei Bedarf **Liste** statt **Kalender**.
 
 Ein Treffer bedeutet, dass innerhalb des Suchfensters ein zusammenhängender Zeitraum der benötigten Dauer gefunden wurde. Pro Ressource wird der früheste passende Zeitraum vorgeschlagen. Die Ressource muss nicht an allen Tagen oder über das gesamte Datumsfenster frei sein. Das tägliche Zeitfenster wird für jeden Kalendertag separat angewendet.
 
-**Ganztägig** erweitert das tägliche Suchfenster. Es hebt Belegungen, Öffnungszeiten und Ressourcenregeln nicht auf. **Alle Ressourcen** zeigt auch Ressourcen ohne passenden freien Zeitraum, erweitert aber weder Ihre Rechte noch die Auswahl auf inaktive Ressourcen.
+**Ganzer Tag** erweitert das tägliche Suchfenster und behält die bisherige benötigte Dauer. Das bedeutet nicht, dass die Ressource den ganzen Tag frei sein muss. Belegungen, Öffnungszeiten und Ressourcenregeln gelten weiterhin. **Zur gewünschten Zeit belegt** bedeutet, dass kein passender buchbarer Zeitraum gefunden wurde. Das kann auch an Regeln oder Berechtigungen liegen. Die Anzeige erweitert weder Ihre Rechte noch die Auswahl auf inaktive Ressourcen.
+
+Mit **Jetzt** wird das Zeitfenster anhand der aktuellen Uhrzeit neu gesetzt. Die Uhrzeit läuft während der geöffneten Seite nicht fortlaufend mit. Die Pfeile beim Zeitraum verschieben ihn um seine Länge und wählen dabei feste Daten. Zeitraum und Zeitfenster stehen auch im Seitenlink. Prüfen Sie diese nach dem Öffnen eines Links oder einer gespeicherten Ansicht.
 
 Weitere Ergebnisse werden beim Scrollen nachgeladen. Die angezeigte Ressourcenanzahl bezieht sich auf bereits geladene Ergebnisse.
 
 {{% alert title="Zeitzonen und Zeitumstellung prüfen" color="warning" %}}
-Bei Sperrzeiten, Feiertagen und Öffnungszeiten können die Buchungsprüfungen in PlaceMe und der klassischen ROOMS-Oberfläche unterschiedlich ausfallen. Das betrifft insbesondere die Zeitumstellung und verknüpfte Ressourcen in unterschiedlichen Zeitzonen. Verwenden Sie für solche Buchungen die klassische ROOMS-Oberfläche und prüfen Sie die betroffenen Räume.
+Bei Sperrzeiten, Feiertagen und Öffnungszeiten können die Buchungsprüfungen in cordivo und der klassischen ROOMS-Oberfläche unterschiedlich ausfallen. Das betrifft insbesondere die Zeitumstellung und verknüpfte Ressourcen in unterschiedlichen Zeitzonen. Verwenden Sie für solche Buchungen die klassische ROOMS-Oberfläche und prüfen Sie die betroffenen Räume.
 {{% /alert %}}
 
 ### Liste und Kalender
 
-Sie können zwischen **Listenansicht** und **Kalenderansicht** wechseln. Die Kartenansicht ist deaktiviert.
+Die Seite öffnet standardmässig mit **Kalender**. Sie können zu **Liste** wechseln. **Plan** ist deaktiviert. Im Kalender wählen Sie **Tag**, **Arbeitswoche**, **Woche** oder **Monat**. Tag und Wochen zeigen mindestens 08:00–20:00. Die dargestellten Stunden erweitern sich für das Suchfenster und die geladenen Buchungen einschliesslich Vor- und Nachlaufzeit.
 
-Der Scheduling-Kalender zeigt Belegungen und Ressourcenbeschränkungen. Ein Klick auf eine vorhandene Buchung öffnet die Buchungsmaske. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Die Anzeige ersetzt die Prüfung beim Speichern nicht.
+Der Kalender zeigt Belegungen und Ressourcenbeschränkungen. Provisorische und temporäre Buchungen haben einen gestrichelten Rand. Belegungen ohne sichtbare Details sind schraffiert, gegebenenfalls mit **Privat** gekennzeichnet. Schmale Blöcke zeigen nur den Text, der hineinpasst. Weitere Angaben finden Sie im Hinweis beim Zeigen auf den Block, soweit Sie diese sehen dürfen. Die Farbe allein bestimmt weder Status noch Verfügbarkeit.
+
+Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Eine geöffnete oder gerade gebuchte Ressource behält ihren Platz bis zur Änderung der Suchkriterien. Prüfen Sie deshalb auch die aktualisierte Belegung, nicht nur die Gruppenzuordnung.
 
 ## Buchung erstellen
 
-1. Wählen Sie in der **Listenansicht** bei einem passenden Treffer **Wählen**. Alternativ markieren Sie im Kalender einen freien Zeitraum. Ein Klick auf eine freie Stelle schlägt einen Zeitraum mit der gesuchten Dauer vor.
-2. Prüfen Sie im kompakten Buchungsfenster Ressource, Datum, Beginn und Ende. Beachten Sie die eingestellte Scheduling-Zeitzone.
-3. Geben Sie einen **Titel** und bei Bedarf eine **Beschreibung** ein. Prüfen oder ergänzen Sie die Anzahl im Feld **Personen**.
-4. Öffnen Sie bei Bedarf mit **Alle Angaben** die vollständige Buchungsmaske. Ihre Eingaben werden übernommen. Auf kleinen Bildschirmen füllt die Maske den Bildschirm. Wählen Sie dort bei Bedarf unter **Optionen zur Buchung → Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
+1. Wählen Sie im Kalender eine freie Stelle oder markieren Sie einen Zeitraum. Am Computer öffnet sich die Buchung direkt unter der Ressourcenzeile. In der **Liste** öffnet **Wählen** das Buchungspanel, auf dem Telefon einen Eingabebereich am unteren Bildschirmrand.
+2. Prüfen Sie Ressource, Datum, Beginn und Ende in der angezeigten Zeitzone. Ein Klick verwendet die gesuchte Dauer. Innerhalb des markierten Suchfensters bleibt der Vorschlag darin und kann nahe dessen Ende früher beginnen als die angeklickte Stelle.
+3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Mehr Angaben** führt mit Ihren Eingaben ins Panel.
+4. Öffnen Sie bei Bedarf im Panel **Ändern** für Datum und Uhrzeit oder mit **Alle Angaben** die vollständige Buchungsseite. Dort bearbeiten Sie den Titel direkt in der Überschrift und ergänzen die **Beschreibung**. Wählen Sie bei Bedarf unter **Optionen zur Buchung → Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
 5. Wählen Sie **Buchen**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
-6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel.
+6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel. Die Erfolgsmeldung bietet auch **Buchung öffnen** an.
 
-Der Anfangsstatus wird automatisch aus dem Workflow der Ressource und Ihren Buchungsrechten bestimmt. Er kann provisorisch oder definitiv sein. Die Statusauswahl **Standardstatus** ist deaktiviert.
+Ein anderer gewählter Zeitraum oder eine andere Ressource übernimmt die übrigen Entwurfseingaben. Bei einem Ressourcenwechsel wird eine eigene Bestuhlungswahl verworfen. Verlangt die Buchungsprüfung aus der Kalenderzeile weitere Angaben, führt sie ins Panel oder auf die vollständige Seite. Ergänzen Sie Angaben, die im Panel fehlen, über **Alle Angaben**.
+
+### Tag und Zeitfenster eingeben
+
+Unter **Wann** beziehungsweise auf der vollständigen Seite unter **Zeit** wählen Sie **Tag** und **Zeitfenster**. Sie können Datum und Uhrzeit auswählen oder Kurzangaben tippen, beispielsweise `20.5`, `930`, `15-17` oder `15 2h`. Enter oder das Verlassen des Felds übernimmt verstandenen Text. Ungültiger Text bleibt mit einer Erklärung stehen und verhindert das Speichern. Korrigieren Sie ihn oder verwerfen Sie die Eingabe mit Escape.
+
+Die Uhrzeitlisten bieten Vorschläge in 15-Minuten-Schritten. Eine Änderung von **Von** behält die Dauer bei, eine Änderung von **Bis** setzt ein neues Ende. Liegt **Bis** nicht nach **Von**, zeigt **+1 Tag** das Ende am nächsten Tag. Mit **Mehrere Tage** erhalten Beginn und Ende je ein Datum und eine Uhrzeit. Prüfen Sie diese besonders bei Buchungen über Mitternacht.
+
+Schraffierte Uhrzeitvorschläge sind belegt und nicht auswählbar. Schraffierte Kalendertage können Sie auswählen, um eine andere Uhrzeit zu suchen. Vollständig gesperrte Tage sind nicht auswählbar. **vorbei** kennzeichnet vergangene Uhrzeiten, erteilt aber kein Recht zum Buchen in der Vergangenheit.
+
+{{% alert title="Verfügbarkeitsanzeige ist keine Reservierung" color="warning" %}}
+Die Anzeige berücksichtigt Vor- und Nachlaufzeiten, soweit sie für die Ressource gelten. Ohne geladene Verfügbarkeitsdaten fehlen Markierungen und Freizeithinweis. Eine fehlende Markierung beweist deshalb nicht, dass der Raum frei ist. Prüfen Sie die angezeigten Zeiten und die Rückmeldung beim Speichern. Andere Buchungen oder Regeln können den Abschluss weiterhin verhindern.
+{{% /alert %}}
+
+Der Anfangsstatus wird automatisch aus dem Workflow der Ressource und Ihren Buchungsrechten bestimmt. Er kann provisorisch oder definitiv sein. Die Statusauswahl **Standardstatus** ist deaktiviert. Bei gespeicherten Buchungen ergänzt ein Symbol den Statusnamen Ihrer Organisation: eine Uhr für temporär, ein gestrichelter Kreis für provisorisch, ein Häkchen im Kreis für definitiv und ein Verbotszeichen für annulliert.
 
 Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschlagen werden. Passt sie zu keiner Bestuhlung eines Raums mit Standardbestuhlung, wird deren Mindestpersonenzahl vorgeschlagen. Fehlt Ihre Standardkapazität und müssen Sie eine Personenanzahl angeben, wird ebenfalls diese Mindestpersonenzahl vorgeschlagen. Je nach Konfiguration bleibt das Feld leer. Prüfen Sie die Anzahl vor dem Abschluss.
 
 ### Bestuhlung bei Raumbuchungen
 
-Mit dem Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28) können Sie in der vollständigen Maske unter **Optionen zur Buchung → Bestuhlung** eine der aktuell angebotenen Bestuhlungen des Raums wählen. Die Auswahl zeigt Namen und Personenbereiche und kennzeichnet die Standardbestuhlung mit **(Standard)**. Ohne Auswahl verwendet eine neue Buchung den automatischen Vorschlag. **Wie Rooms sie vorschlägt** bedeutet nicht, dass ohne Bestuhlung gebucht wird.
+Mit dem Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28) können Sie auf der vollständigen Seite unter **Optionen zur Buchung → Bestuhlung** eine der aktuell angebotenen Bestuhlungen des Raums wählen. Die Auswahl zeigt Namen und Personenbereiche und kennzeichnet die Standardbestuhlung mit **(Standard)**. Ohne Auswahl verwendet eine neue Buchung den automatischen Vorschlag. **Wie Rooms sie vorschlägt** bedeutet nicht, dass ohne Bestuhlung gebucht wird.
 
-Bei einem Raum mit Standardbestuhlung und ohne eigene Auswahl weist PlaceMe der neuen Buchung automatisch eine Bestuhlung zu:
+Bei einem Raum mit Standardbestuhlung und ohne eigene Auswahl weist cordivo der neuen Buchung automatisch eine Bestuhlung zu:
 
 - Passt die angegebene Personenanzahl zur Standardbestuhlung, wird diese verwendet.
 - Andernfalls wird die günstigste Bestuhlung gewählt, zu der die Personenanzahl passt. Bei gleichem Preis wird die kleinere Bestuhlung bevorzugt.
@@ -82,7 +102,7 @@ Ohne eigene Zeitangabe wird bei nicht synchronisierten Ressourcen jeweils die l�
 
 Beim Bearbeiten bleibt die gespeicherte Bestuhlung erhalten, solange Sie keine andere wählen. Eine geänderte Personenanzahl muss zu ihr passen und löst keine automatische Neuwahl aus. Ohne Bearbeitungs- oder Bestuhlungsrecht wird der Name angezeigt, soweit Sie die vollständigen Buchungsdetails sehen dürfen. Auch eine inzwischen nicht mehr angebotene, gespeicherte Bestuhlung kann erhalten bleiben. Die Auswahl bietet keine Aktion zum Entfernen der Bestuhlung.
 
-Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrwertsteuer in den Buchungskosten berücksichtigt. Die Kostenanzeige in der PlaceMe-Maske ist mit **Folgt** gekennzeichnet und deaktiviert. Die Benachrichtigung an einen eingerichteten Bestuhlungsdienst wird separat von der allgemeinen Buchungs-Änderungsmail verarbeitet. Beachten Sie den Abschnitt **Benachrichtigungen und Outlook**.
+Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrwertsteuer in den Buchungskosten berücksichtigt. Die Kostenanzeige auf der Buchungsseite ist mit **Folgt** gekennzeichnet und deaktiviert. Die Benachrichtigung an einen eingerichteten Bestuhlungsdienst wird separat von der allgemeinen Buchungs-Änderungsmail verarbeitet. Beachten Sie den Abschnitt **Benachrichtigungen und Outlook**.
 
 ### Kombinierte und verknüpfte Räume
 
@@ -98,19 +118,19 @@ Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertrauli
 
 ### Verfügbare Angaben und Grenzen
 
-Die vollständige Maske bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
+Die vollständige Seite bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
 
-Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering und Equipment sowie die Kostenanzeige. **Ganztägig** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
+Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering und Equipment sowie die Kostenanzeige. **Ganzer Tag** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
 
 PlaceMe verarbeitet einzelne provisorische und definitive Buchungen, einschliesslich kombinierter Räume und Bestuhlungen im oben beschriebenen Umfang. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Bestellungen, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
 
 ## Buchung bearbeiten oder annullieren
 
-1. Öffnen Sie die Buchung unter **Buchungen**, im Scheduling-Kalender oder unter **Meine heutigen Buchungen** auf **Start**.
-2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status. Ohne Bearbeitungsrecht bleibt die Maske schreibgeschützt.
-3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
+1. Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**.
+2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status im Panel. Wählen Sie **Bearbeiten**, um die vollständige Seite zu öffnen. Wenn Sie die vollständigen Buchungsdetails sehen, aber nicht bearbeiten dürfen, öffnet **Alle Angaben** die schreibgeschützte Seite. Bei eingeschränkten Leserechten fehlt diese Aktion. Sichtbar bleiben nur die erlaubten Angaben, beispielsweise unter **Belegt**.
+3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Danach erscheint wieder das Detailpanel. Mit **Zurück** beziehungsweise **Zurück zum Zeitstrahl** kehren Sie zur Ausgangsseite zurück. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
 
-Zum Annullieren wählen Sie **Buchung annullieren** beziehungsweise **Annullieren** auf kleinen Bildschirmen. Prüfen Sie die angezeigte Buchung und bestätigen Sie **Buchung annullieren**. **Behalten** schliesst die Rückfrage ohne Annullierung.
+Zum Annullieren wählen Sie im Panel **Annullieren**. Prüfen Sie die angezeigte Buchung und bestätigen Sie **Buchung annullieren**. **Behalten** schliesst die Rückfrage ohne Annullierung. Bearbeiten und Annullieren richten sich nach den jeweiligen Buchungsrechten. Eine direkt geöffnete Buchungsseite lässt sich neu laden. Ungespeicherte Feldeingaben sind dadurch nicht gesichert.
 
 ### Im Kalender verschieben
 
@@ -120,11 +140,11 @@ Ziehen Sie eine bearbeitbare Buchung auf eine andere Uhrzeit oder verändern Sie
 Verschieben und Grössenänderung im Kalender speichern unmittelbar, ohne zusätzliche Bestätigung. Die Erfolgsmeldung bietet **Rückgängig** an. Auch das Rückgängigmachen muss die aktuellen Buchungsregeln erfüllen. Prüfen Sie das Ergebnis.
 {{% /alert %}}
 
-Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sich die Buchungsmaske mit dem vorgeschlagenen Zeitraum und der Meldung. Prüfen und korrigieren Sie die Angaben. Wenn Sie die Maske ohne erfolgreiches Speichern schliessen, wird der Vorschlag verworfen und der Kalender neu geladen.
+Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sich die vollständige Buchungsseite mit dem vorgeschlagenen Zeitraum und der Meldung. Prüfen und korrigieren Sie die Angaben. Wenn Sie die Seite ohne erfolgreiches Speichern verlassen, wird der Vorschlag verworfen und der Kalender neu geladen.
 
 ## Einchecken, freigeben, terminieren oder No-show melden
 
-Öffnen Sie die Buchung unter **Buchungen**, im Scheduling-Kalender oder unter **Meine heutigen Buchungen** auf **Start**. Am unteren Rand der Maske stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
+Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
 
 Die Aktionen beziehen sich auf die zuletzt gelesene, gespeicherte Buchung, nicht auf Ihre ungespeicherten Feldeingaben. Speichern Sie gewünschte Feldänderungen vorher und prüfen Sie Ressource, Titel und Zeitraum in der Rückfrage. Die Prüfung kann eine Aktion auch dann ablehnen, wenn die Schaltfläche sichtbar ist. Beachten Sie die Meldung und prüfen Sie den aktualisierten Buchungsstand, bevor Sie es erneut versuchen.
 
@@ -194,29 +214,29 @@ Einchecken, Freigeben und Terminieren legen nicht allein aufgrund Ihrer persönl
 
 ## Standort und weitere Filter verwenden
 
-Die Filter in **Scheduling** und **Buchungen** verwenden dieselbe Bedienung. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich.
+Die Filter in **Buchen** und **Buchungen** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
 
 Beim Standort umfasst **ist innerhalb** den gewählten Standort und seine Unterstandorte. **ist nicht innerhalb** schliesst diesen gesamten Teilbaum aus. Wird ein übergeordneter Standort ausgewählt, ist eine zusätzliche Auswahl seiner Unterstandorte nicht erforderlich.
 
-Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Ein geteilter Filter erteilt keine zusätzlichen Leserechte oder Buchungsrechte.
+Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Eine geteilte Ansicht erteilt keine zusätzlichen Leserechte oder Buchungsrechte.
 
-## Filter speichern und teilen
+## Ansichten speichern und teilen
 
-1. Stellen Sie die Suchkriterien ein und wählen Sie **Speichern**.
-2. Geben Sie einen eindeutigen Filternamen ein.
-3. Wählen Sie die **Sichtbarkeit**:
-   - **Personal** für einen persönlichen Filter.
-   - **Shared** für einen Filter, den andere Personen auswählen und abonnieren können.
-4. Legen Sie bei Bedarf **Pinned** oder **Als Standard verwenden** fest und speichern Sie den Filter.
+1. Stellen Sie Filter, Textsuche, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
+2. Geben Sie unter **Name** einen eindeutigen Namen ein und prüfen Sie die Vorschau der Filter und Darstellung.
+3. Aktivieren Sie bei Bedarf **Mit anderen teilen**, damit andere die Ansicht auswählen und abonnieren können. Ohne diese Auswahl bleibt sie persönlich. Legen Sie mit **Anpinnen** und **Als Standard verwenden** Ihre persönlichen Vorgaben fest.
+4. Entscheiden Sie unter **Buchen**, ob die Ansicht mit **Zeit mitspeichern** auch einen mitwandernden Zeitraum und das Zeitfenster behalten soll. Prüfen Sie die angezeigte Beschreibung und wählen Sie **Speichern**.
 
-**Pinned** heftet den Filter für Sie an. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Gespeicherte Filter für **Scheduling** und **Buchungen** sind getrennt. Ein Filter aus dem einen Bereich wird nicht automatisch im anderen verwendet.
+**Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Buchungen** sind getrennt. Die Kalenderdarstellung **Tag**, **Arbeitswoche**, **Woche** oder **Monat** wird nicht mitgespeichert.
 
-Über **Filteraktionen** können Sie einen fremden geteilten Filter mit **Filter abonnieren** in Ihre Auswahl übernehmen. Nach dem Abonnieren können Sie Ihre persönlichen Einstellungen ändern oder mit **Als privaten Filter kopieren** eine eigene Variante erstellen. **Abo beenden** entfernt Ihr Abonnement, nicht den Filter der Eigentümerin oder des Eigentümers.
+Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verwalten** oder den **Aktionen der Ansicht** können Sie sie mit **Ansicht abonnieren** übernehmen, Ihre persönlichen Einstellungen ändern oder mit **Als eigene Ansicht speichern** eine eigene Variante erstellen. **Abo beenden** entfernt Ihr Abonnement, nicht die Ansicht der Eigentümerin oder des Eigentümers. **Aktuelle Ansicht** im Menü verlässt die gespeicherte Ansicht und behält die aktuellen Kriterien.
 
-Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Sichtbarkeit ändern oder den Filter löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diesen Filter verwenden. Kopieren Sie einen fremden Filter für eigene Abweichungen, statt eine gemeinsame Definition vorauszusetzen.
+Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Freigabe ändern oder die Ansicht löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diese verwenden. **Ansicht löschen** verlangt eine Bestätigung und entfernt eine geteilte Ansicht auch für andere. Speichern Sie für eigene Abweichungen eine eigene Ansicht.
 
-Wenn Sie einen bereits ausgewählten gespeicherten Filter ändern und anschliessend zu einem anderen Filter wechseln, erscheint eine Rückfrage. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählten gespeicherten Filter kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vor dem Wechsel, wenn Sie sie behalten möchten.
+Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Textsuche, Sortierung oder Darstellung. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage nur für geänderte Filter, Textsuche oder Sortierung, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
 
-### Datumsangaben in gespeicherten Scheduling-Filtern
+### Zeit in einer Ansicht unter Buchen
 
-Das Datumsfenster wird nur in der Filterdefinition gespeichert, wenn **beide** Datumsgrenzen relative Angaben sind, beispielsweise `@today` und `@tomorrow`. Feste Daten oder gemischte feste und relative Grenzen werden nicht als wiederverwendbares Datumsfenster gespeichert. Die Scheduling-Zeitzone wird ebenfalls nicht in der Filterdefinition gespeichert. Prüfen Sie Datum und Zeitzone deshalb nach dem Laden eines Filters.
+**Zeit mitspeichern** ist bei einer neuen Ansicht ausgeschaltet. Ohne gespeicherte Zeit verwendet sie beim Öffnen die aktuelle Vorgabe **Heute** und **Jetzt** mit der oben beschriebenen Abendregel. Mit eingeschaltetem Schalter speichert sie einen mitwandernden Tag oder Zeitraum und feste Uhrzeiten, **Jetzt** oder **Ganzer Tag** samt benötigter Dauer. **Jetzt** setzt das Fenster beim Öffnen anhand der Uhr neu. Feste Kalenderdaten lassen sich nicht in einer Ansicht speichern. Der deaktivierte Schalter erklärt den Grund. Die Zeitzone wird ebenfalls nicht in der Ansicht gespeichert.
+
+Eine Änderung von Tag, Zeitfenster, Dauer oder Zeitzone zählt nicht als ungespeicherte Ansichtsänderung. **Speichern** aktualisiert die übrige Definition und lässt die bisher gespeicherte Zeit bestehen. Um diese zu ersetzen, öffnen Sie **Ansicht bearbeiten** und wählen **Durch die gewählte Zeit ersetzen: …** beziehungsweise aktivieren **Zeit mitspeichern**. Prüfen Sie vor dem Speichern die Zeitbeschreibung. Die aktuell auf der Seite gewählte Zeit bleibt dabei erhalten.

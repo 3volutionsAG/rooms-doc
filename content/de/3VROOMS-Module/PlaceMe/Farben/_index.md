@@ -2,14 +2,14 @@
 title: "Buchungs- und Ressourcenfarben verwalten"
 linkTitle: "Farben"
 weight: 10
-description: 'In PlaceMe Farbregeln erstellen, ihre Reihenfolge festlegen und Speicherfehler behandeln'
+description: 'In cordivo Farbregeln erstellen, ihre Reihenfolge festlegen und Speicherfehler behandeln'
 ---
 
-Mit Farbregeln kennzeichnen Sie Buchungen und Ressourcen nach den für Ihre Organisation wichtigen Kriterien. Sie verwalten die Regeln zentral in PlaceMe. Die klassische ROOMS-Oberfläche verwendet dieselben Regeln.
+Mit Farbregeln kennzeichnen Sie Buchungen und Ressourcen nach den für Ihre Organisation wichtigen Kriterien. Sie verwalten die Regeln zentral in cordivo (PlaceMe). Die klassische ROOMS-Oberfläche verwendet dieselben Regeln.
 
 ## Voraussetzung
 
-Sie sind in PlaceMe angemeldet und besitzen beide globalen Rechte:
+Sie sind in cordivo angemeldet und besitzen beide globalen Rechte:
 
 - **Darf Sektion 'Einstellungen' nutzen** (105).
 - **Darf Konfiguration System verwalten** (26).
@@ -18,16 +18,18 @@ Die Administration vergibt diese Rechte unter [Rollen und Rechte]({{< relref "3V
 
 ## Wo finde ich die Farbregeln?
 
-Öffnen Sie in PlaceMe **Einstellungen → Farben** und wählen Sie einen der beiden Bereiche:
+Öffnen Sie in cordivo **Einstellungen → Farben** und wählen Sie einen der beiden Bereiche:
 
 {{< bootstrap-table "table table-striped" >}}
 | Bereich | Verwendung | Mögliche Bedingungen |
 | --- | --- | --- |
-| **Buchungsfarben** | Bestimmt die Farbe einer Buchung, beispielsweise im Scheduling-Kalender und im klassischen Kalender. | **Buchungsstatus**, **Buchungsherkunft**, **Buchungsklassifikation** und verfügbare Ressourcengliederungen. |
+| **Buchungsfarben** | Bestimmt die Farbe einer Buchung, beispielsweise im Kalender unter **Buchen** und im klassischen Kalender. | **Buchungsstatus**, **Buchungsherkunft**, **Buchungsklassifikation** und verfügbare Ressourcengliederungen. |
 | **Ressourcenfarben** | Kennzeichnet die Ressource, beispielsweise neben ihrem Namen im klassischen Kalender oder als Fläche auf dem Plan. Die Farbe ist unabhängig von einer einzelnen Buchung. | **Ressource** und verfügbare Ressourcengliederungen. |
 {{< /bootstrap-table >}}
 
 Beide Bereiche haben eine eigene Regelliste. Eine Ressourcenfarbregel legt nicht die Farbe der Buchungsblöcke fest.
+
+cordivo stimmt die angezeigten Regelfarben auf das helle oder dunkle Erscheinungsbild ab. Erwarten Sie deshalb nicht überall denselben Farbton wie im Farbwähler oder in der klassischen ROOMS-Oberfläche. Statussymbole und Formmerkmale ergänzen die Farbe. Die persönliche Auswahl **System**, **Hell** oder **Dunkel** ändert die zentralen Farbregeln nicht.
 
 ## Welche Regel bestimmt die Farbe?
 
@@ -74,7 +76,7 @@ Mit dem **×** einer Bedingung entfernen Sie diese Bedingung. Ist es die letzte 
 | **Konflikt** / **Aktuellen Stand laden** | Die Regeln wurden zwischenzeitlich anderweitig geändert. Notieren Sie Ihre beabsichtigten Änderungen, laden Sie den aktuellen Stand und bestätigen Sie das Verwerfen der ungespeicherten Änderungen nur, wenn Sie diese entbehren können. Prüfen Sie danach den aktuellen Stand und erfassen Sie nötige Änderungen erneut. |
 {{< /bootstrap-table >}}
 
-Beim Wechsel innerhalb von PlaceMe versucht der Editor, offene gültige Änderungen zu speichern. Bleiben ungespeicherte Änderungen zurück, entscheiden Sie zwischen **Weiter bearbeiten** und **Änderungen verwerfen**. Das Verwerfen nimmt bereits erfolgreich gespeicherte Änderungen nicht zurück.
+Beim Wechsel innerhalb von cordivo versucht der Editor, offene gültige Änderungen zu speichern. Bleiben ungespeicherte Änderungen zurück, entscheiden Sie zwischen **Weiter bearbeiten** und **Änderungen verwerfen**. Das Verwerfen nimmt bereits erfolgreich gespeicherte Änderungen nicht zurück.
 
 Warten Sie vor dem Neuladen oder Schliessen des Browser-Tabs auf **Gespeichert**. Bei offenen Änderungen kann eine Browserwarnung erscheinen. Das bestätigte Verlassen löst keinen abschliessenden Speichervorgang aus.
 
