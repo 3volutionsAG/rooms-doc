@@ -21,6 +21,14 @@ Diese Anleitung gilt nicht für das neue Outlook, Outlook im Browser oder Outloo
 Die native Add-In-DLL und das MSI sind nicht codesigniert. Klären Sie vor der Verteilung, ob das Paket mit den Sicherheitsrichtlinien Ihrer Organisation vereinbar ist. Deaktivieren Sie keine Schutzrichtlinien, um die Installation zu erzwingen.
 {{% /alert %}}
 
+## Bestehende VSTO-Installationen umstellen
+
+{{% alert title="Outlook-Anbindung prüfen" color="warning" %}}
+Die quickROOMS-Webanwendung unterstützt das VSTO-Add-In nicht. Stellen Sie betroffene Arbeitsplätze vor der Aktualisierung der Webanwendung auf das native Add-In oder ein passend bereitgestelltes Office-Web-Add-In um. Die Anleitungen für [O365 / Exchange Online]({{< relref "Betrieb/quickROOMS/AddinDeployment/O365/_index.md" >}}) und [On-Prem Exchange]({{< relref "Betrieb/quickROOMS/AddinDeployment/OnPrem/_index.md" >}}) beschreiben die manifestbasierte Alternative.
+{{% /alert %}}
+
+Das native MSI entfernt ein vorhandenes VSTO-Add-In nicht. Prüfen Sie die Buchung mit dem vorgesehenen Add-In und nehmen Sie das VSTO-Add-In anschliessend über Ihre Softwareverwaltung ausser Betrieb. Sind beide installiert, können beide eine Schaltfläche **Raum buchen** anzeigen; die native Schaltfläche trägt das quickROOMS-Logo. Eine sichtbare VSTO-Schaltfläche bestätigt keine funktionierende Outlook-Anbindung.
+
 ## Installation
 
 1. Wählen Sie das freigegebene Paket mit der Endung `_x64.msi` für 64-Bit-Outlook oder `_x86.msi` für 32-Bit-Outlook. Die Pakete heissen `QuickROOMS.Native.Setup_vVERSION_x64.msi` bzw. `QuickROOMS.Native.Setup_vVERSION_x86.msi`, wobei `VERSION` für die Paketversion steht. Schliessen Sie Outlook vor der Installation.
@@ -28,8 +36,6 @@ Die native Add-In-DLL und das MSI sind nicht codesigniert. Klären Sie vor der V
 3. Geben Sie auf der Adressseite nach der Auswahl des Installationsordners die **Adresse des quickROOMS-Buchungsassistenten** ein, beispielsweise `https://quickrooms.example.com`. Die Adresse beginnt mit `https://` oder `http://`. Wenn Sie die Adresse zentral über eine Richtlinie verwalten, können Sie das Feld leer lassen.
 4. Schliessen Sie das Setup ab und starten Sie Outlook.
 5. Öffnen oder erstellen Sie einen Termin. Wählen Sie im Menüband in der Gruppe **quickROOMS** die Schaltfläche **Raum buchen**. Prüfen Sie, ob der Buchungsassistent mit der vorgesehenen Umgebung lädt.
-
-Das native Add-In kann neben dem bisherigen quickROOMS-Add-In für klassisches Outlook (VSTO-Add-In) installiert sein. In diesem Fall können beide eine Schaltfläche **Raum buchen** anzeigen; die native Schaltfläche trägt das quickROOMS-Logo. Legen Sie bei einer parallelen Bereitstellung fest, welches Add-In die Benutzer verwenden sollen. Die Installation des nativen Add-Ins entfernt das VSTO-Add-In nicht.
 
 ### Unbeaufsichtigte Installation
 
@@ -71,7 +77,7 @@ Um diese Vorbereitung abzuschalten, setzen Sie **`Preload` (`REG_DWORD`) auf `0`
 
 ### «quickROOMS ist nicht erreichbar»
 
-Diese Fehlerseite erscheint im nativen Add-In und im VSTO-Add-In, wenn der Server nicht erreichbar ist oder beim Laden einen HTTP-Fehler zurückgibt. Sie nennt den betroffenen Server und gegebenenfalls den Fehlercode.
+Diese Fehlerseite erscheint im nativen Add-In, wenn der Server nicht erreichbar ist oder beim Laden einen HTTP-Fehler zurückgibt. Sie nennt den betroffenen Server und gegebenenfalls den Fehlercode.
 
 - Prüfen Sie die konfigurierte Adresse und die Erreichbarkeit des angezeigten Servers vom betroffenen Client aus, einschliesslich einer erforderlichen VPN-Verbindung.
 - Mit **Erneut versuchen** laden Sie die Adresse erneut. Die Seite versucht es auch automatisch: bei einem HTTP-Fehler nach 30 Sekunden, bei einer fehlenden Verbindung nach erneuter Erreichbarkeit des Servers.
