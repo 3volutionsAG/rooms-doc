@@ -53,7 +53,29 @@ Bei Sperrzeiten, Feiertagen und Öffnungszeiten können die Buchungsprüfungen i
 
 ### Liste und Kalender
 
-Die Seite öffnet standardmässig mit **Kalender**. Sie können zu **Liste** wechseln. **Plan** ist deaktiviert. Im Kalender wählen Sie **Tag**, **Arbeitswoche**, **Woche** oder **Monat**. Tag und Wochen zeigen mindestens 08:00–20:00. Die dargestellten Stunden erweitern sich für das Suchfenster und die geladenen Buchungen einschliesslich Vor- und Nachlaufzeit.
+Die Seite öffnet standardmässig mit **Kalender**. Sie können zu **Liste** wechseln. **Plan** ist deaktiviert.
+
+#### Den Zeitstrahl einstellen
+
+Ohne andere Vorgabe in einem Link oder einer gespeicherten Ansicht öffnet der Kalender mit **Arbeitszeit**. Dafür gelten **Arbeitsbeginn** und **Arbeitsende** aus Ihren persönlichen ROOMS-Einstellungen. Fehlende Angaben werden durch die Vorgaben Ihrer Organisation ergänzt. Ergibt sich daraus kein gültiger Zeitraum, verwendet cordivo gültige Organisationsvorgaben oder 08:00–17:00. Die dargestellte Arbeitszeit ist keine Öffnungszeit der Ressource und ändert weder Suchkriterien noch Buchungsrechte.
+
+Am Computer steht die Zoomauswahl über dem Zeitstrahl neben **Tag**, **Arbeitswoche**, **Woche** und **Monat**. Ein Klick auf die aktuelle Stufe öffnet das Menü:
+
+| Bereich | Zoomstufen |
+| --- | --- |
+| **Ein Tag** | **4 Stunden**, **6 Stunden**, **Arbeitszeit**, **12 Stunden**, **Ganzer Tag** |
+| **Mehrere Tage** | **2 Tage**, **3 Tage**, **Arbeitswoche**, **Woche**, **2 Wochen**, **Monat** |
+
+- **Plus / Näher zoomen** zeigt die nächste nähere Stufe, **Minus / Weiter weg zoomen** die nächste weitere. Auch **Strg + Mausrad** und eine Zoomgeste mit zwei Fingern wechseln die Stufe.
+- **Tag** wählt **Arbeitszeit**. Die anderen drei Schaltflächen wählen ihre gleichnamige Stufe.
+- Unter **Eigene Stunden …** geben Sie **Von und bis** ein und wählen **Übernehmen**. Das Ende muss nach dem Beginn am selben Tag liegen. `24:00` ist als Ende möglich. Diese Stunden füllen die Breite des Zeitstrahls.
+- Auf dem Telefon öffnen Sie das Feld für Zeitraum und Zeitfenster. Die Zoomauswahl steht dort unter **Spanne**. Im Zeitstrahl können Sie seitlich scrollen und mit zwei Fingern zoomen.
+
+Bei den Stufen für einen Tag bleiben die übrigen Stunden durch seitliches Scrollen erreichbar. Stunden ausserhalb Ihrer Arbeitszeit sind zurückhaltend hinterlegt, die Beschriftung ist gedämpft. Auch dort können Sie im Rahmen Ihrer Rechte und der Ressourcenregeln buchen. Von **2 Tage** bis **2 Wochen** zeigt jeder Tag nur Ihre Arbeitszeit mit den eingestellten Minuten. **Monat** zeigt ganze Tage. Für Buchungen ausserhalb der dargestellten Arbeitszeit wählen Sie **Arbeitszeit** oder **Ganzer Tag** in der Zoomauswahl und scrollen bei Bedarf zur gewünschten Uhrzeit.
+
+Die Zoomstufe bestimmt den Ausschnitt, nicht die Länge des Suchzeitraums. Ändern Sie im Tagesausschnitt das tägliche Suchfenster oder wählen **Jetzt**, verschiebt sich der Ausschnitt bei Bedarf zur Suchzeit. Ist das Fenster breiter als der Ausschnitt, wird sein Anfang angezeigt. Beim Öffnen einer Ansicht mit eigenen Stunden beginnt der Ausschnitt dagegen bei deren eingestelltem Beginn. Scrollen Sie über die Grenze des Suchzeitraums hinaus, folgt der Suchzeitraum dem angezeigten Tag und behält seine Länge. Prüfen Sie deshalb das Datum vor einer Buchung. Ein gezogener Buchungszeitraum bleibt auf den Tag begrenzt, an dem das Ziehen begonnen hat.
+
+**Ganzer Tag** in der Zoomauswahl zeigt 00:00–24:00. Die gleichnamige Aktion im täglichen Suchfenster ändert dagegen die Suchkriterien.
 
 Der Kalender zeigt Belegungen und Ressourcenbeschränkungen. Provisorische und temporäre Buchungen haben einen gestrichelten Rand. Belegungen ohne sichtbare Details sind schraffiert, gegebenenfalls mit **Privat** gekennzeichnet. Schmale Blöcke zeigen nur den Text, der hineinpasst. Weitere Angaben finden Sie im Hinweis beim Zeigen auf den Block, soweit Sie diese sehen dürfen. Die Farbe allein bestimmt weder Status noch Verfügbarkeit.
 
@@ -224,12 +246,12 @@ Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Eine geteilte 
 
 ## Ansichten speichern und teilen
 
-1. Stellen Sie Filter, Textsuche, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
+1. Stellen Sie Filter, Textsuche, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
 2. Geben Sie unter **Name** einen eindeutigen Namen ein und prüfen Sie die Vorschau der Filter und Darstellung.
 3. Aktivieren Sie bei Bedarf **Mit anderen teilen**, damit andere die Ansicht auswählen und abonnieren können. Ohne diese Auswahl bleibt sie persönlich. Legen Sie mit **Anpinnen** und **Als Standard verwenden** Ihre persönlichen Vorgaben fest.
 4. Entscheiden Sie unter **Buchen**, ob die Ansicht mit **Zeit mitspeichern** auch einen mitwandernden Zeitraum und das Zeitfenster behalten soll. Prüfen Sie die angezeigte Beschreibung und wählen Sie **Speichern**.
 
-**Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Buchungen** sind getrennt. Die Kalenderdarstellung **Tag**, **Arbeitswoche**, **Woche** oder **Monat** wird nicht mitgespeichert.
+**Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Buchungen** sind getrennt. Eine Kalenderansicht speichert auch die Zoomstufe oder die eingegebenen eigenen Stunden. **Arbeitszeit** verwendet beim Öffnen die Arbeitszeit der jeweils betrachtenden Person, auch in einer geteilten Ansicht. Die seitliche Scrollposition wird nicht mitgespeichert und kennzeichnet die Ansicht nicht als geändert.
 
 Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verwalten** oder den **Aktionen der Ansicht** können Sie sie mit **Ansicht abonnieren** übernehmen, Ihre persönlichen Einstellungen ändern oder mit **Als eigene Ansicht speichern** eine eigene Variante erstellen. **Abo beenden** entfernt Ihr Abonnement, nicht die Ansicht der Eigentümerin oder des Eigentümers. **Aktuelle Ansicht** im Menü verlässt die gespeicherte Ansicht und behält die aktuellen Kriterien.
 
