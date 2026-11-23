@@ -55,6 +55,17 @@ Bei Sperrzeiten, Feiertagen und Öffnungszeiten können die Buchungsprüfungen i
 
 Die Seite öffnet standardmässig mit **Kalender**. Sie können zu **Liste** wechseln. **Plan** ist deaktiviert.
 
+#### Raumkombinationen im Kalender erkennen
+
+- **Verbund** kennzeichnet einen kombinierten Raum.
+- **Teilraum** steht unter dem Namen eines zugehörigen Teilraums. Jeder Raum hat eine eigene Kalenderzeile mit seiner Belegung und bleibt einzeln auswählbar.
+
+Innerhalb desselben Verfügbarkeitsbereichs stehen bereits geladene Teilräume eingerückt nach ihrem Verbund. Freie und unter **Zur gewünschten Zeit belegt** aufgeführte Räume bleiben getrennt. Ist in diesem Bereich kein zugehöriger Verbund geladen, bleibt die Kennzeichnung **Teilraum** ohne Einrückung sichtbar. Das kann etwa an einem Filter liegen oder daran, dass der Verbund noch nicht geladen ist oder im anderen Verfügbarkeitsbereich steht. Beim Nachladen kann sich die Reihenfolge entsprechend ändern.
+
+Gehört ein Teilraum zu mehreren angezeigten Verbünden, steht er nur einmal, beim ersten bereits geladenen Verbund in der Suchreihenfolge desselben Verfügbarkeitsbereichs. Die Kennzeichnung berücksichtigt nur Verknüpfungen zwischen aktiven Räumen, für die Sie im Suchzeitraum Buchungsrechte haben. Sie ist keine vollständige Übersicht aller eingerichteten Raumverknüpfungen.
+
+Die Gruppierung fasst keine Belegungen zusammen. Prüfen Sie die Zeile des gewünschten Raums. Die Wirkung einer Buchung auf verknüpfte Räume ist unter **Kombinierte und verknüpfte Räume** beschrieben.
+
 #### Den Zeitstrahl einstellen
 
 Ohne andere Vorgabe in einem Link oder einer gespeicherten Ansicht öffnet der Kalender mit **Arbeitszeit**. Dafür gelten **Arbeitsbeginn** und **Arbeitsende** aus Ihren persönlichen ROOMS-Einstellungen. Fehlende Angaben werden durch die Vorgaben Ihrer Organisation ergänzt. Ergibt sich daraus kein gültiger Zeitraum, verwendet cordivo gültige Organisationsvorgaben oder 08:00–17:00. Die dargestellte Arbeitszeit ist keine Öffnungszeit der Ressource und ändert weder Suchkriterien noch Buchungsrechte.
