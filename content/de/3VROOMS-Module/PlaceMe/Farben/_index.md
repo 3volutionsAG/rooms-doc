@@ -23,7 +23,7 @@ Die Administration vergibt diese Rechte unter [Rollen und Rechte]({{< relref "3V
 {{< bootstrap-table "table table-striped" >}}
 | Bereich | Verwendung | Mögliche Bedingungen |
 | --- | --- | --- |
-| **Buchungsfarben** | Bestimmt die Farbe einer Buchung, beispielsweise im Kalender unter **Buchen** und im klassischen Kalender. | **Buchungsstatus**, **Buchungsherkunft**, **Buchungsklassifikation** und verfügbare Ressourcengliederungen. |
+| **Buchungsfarben** | Bestimmt die Farbe einer Buchung, beispielsweise im Kalender unter **Buchen** und im klassischen Kalender. | **Buchungsstatus**, **Buchungsherkunft**, **Buchungsklassifikation**, verfügbare Ressourcengliederungen und **Abgleich** mit den unten beschriebenen Anzeigegrenzen. |
 | **Ressourcenfarben** | Kennzeichnet die Ressource, beispielsweise neben ihrem Namen im klassischen Kalender oder als Fläche auf dem Plan. Die Farbe ist unabhängig von einer einzelnen Buchung. | **Ressource** und verfügbare Ressourcengliederungen. |
 {{< /bootstrap-table >}}
 
@@ -42,6 +42,14 @@ ROOMS prüft die **aktiven Regeln von oben nach unten**. Die erste Regel, deren 
 - Ohne passende aktive Regel verwendet die jeweilige Ansicht ihre Standarddarstellung. Diese kann sich zwischen Kalender, Plan und anderen Anzeigen unterscheiden.
 
 **Beispiel:** Soll eine bestimmte Buchungsklassifikation die übliche Statusfarbe übersteuern, platzieren Sie deren Regel oberhalb der allgemeineren Regeln für den Buchungsstatus. Unterhalb einer bereits passenden Statusregel kommt sie nicht zum Zug.
+
+### Abgleich als Bedingung
+
+Unter **Buchungsfarben** können Sie **Abgleich** mit **Abgeglichen**, **Wird abgeglichen**, **Verknüpfung fehlt**, **Nicht eingetragen** oder **Angehalten** vergleichen. So lassen sich beispielsweise Problemstände in der cordivo-Buchungsliste und im Kalender unter **Buchen** hervorheben. Ordnen Sie eine solche Ausnahme oberhalb allgemeinerer Regeln an, wenn sie diese übersteuern soll.
+
+Diese Bedingung verwendet den für die betrachtende Person sichtbaren Abgleichstand. Ohne vollständige Buchungsdetails oder ohne ermittelten Stand trifft sie nicht zu, auch nicht bei einem ausschliessenden Vergleich. Die Anzeige ist kein Live-Vergleich mit Outlook oder Google und kein Nachweis der Raumbelegung. Bedeutung und Aktionen stehen unter [Kalender-Abgleich prüfen und anstossen]({{< relref "3VROOMS-Module/PlaceMe/_index.md#kalender-abgleich-prüfen-und-anstossen" >}}).
+
+Erwarten Sie diese Auswertung nicht im klassischen Kalender, auf dem Plan, in erzeugten Statussymbolen oder in Buchungsbenachrichtigungen. Die dort verfügbaren Daten unterscheiden sich. Das zusätzliche Problemsymbol in cordivo ist unabhängig von der gewählten Regelfarbe.
 
 ## Eine Farbregel erstellen oder ändern
 

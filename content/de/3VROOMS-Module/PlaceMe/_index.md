@@ -271,6 +271,47 @@ Bei eingerichteter Exchange-Synchronisation werden unterstützte Buchungen entsp
 
 Einchecken, Freigeben und Terminieren legen nicht allein aufgrund Ihrer persönlichen Kalendereinstellung einen neuen Outlook-Termin an. Eine Kalenderaktualisierung setzt eine bestehende Verknüpfung oder eine Ressource mit verpflichtender Kalendersynchronisation voraus und hängt von den übrigen Synchronisationseinstellungen ab.
 
+## Kalender-Abgleich prüfen und anstossen
+
+Öffnen Sie eine vorhandene Buchung im Panel. Unter dem Titel steht bei Buchungen mit Kalender-Abgleich der Stand für **Outlook** oder **Google**. Auch die vollständige Buchungsseite zeigt ihn an. In der Buchungsliste und im Kalender unter **Buchen** kennzeichnet ein zusätzliches Symbol **Nicht eingetragen**, **Verknüpfung fehlt** oder **Abgleich angehalten**, sofern Sie die vollständigen Buchungsdetails sehen dürfen.
+
+Die Anzeige beschreibt den in ROOMS gespeicherten Verknüpfungs- und Verarbeitungsstand. Sie ist **kein Live-Vergleich** der Kalender. **Abgeglichen** bestätigt insbesondere nicht, dass jeder Serientermin im Raumkalender vorhanden ist oder alle Inhalte übereinstimmen. Fehlt eine Anzeige, ist das ebenfalls kein Nachweis eines erfolgreichen Abgleichs.
+
+{{< bootstrap-table "table table-striped" >}}
+| Anzeige | Bedeutung und nächster Schritt |
+| --- | --- |
+| **Abgeglichen** | ROOMS führt die Buchung als verknüpft. Prüfen Sie bei einer konkreten Abweichung trotzdem den Termin und die Raumbelegung in beiden Systemen. |
+| **Wird abgeglichen** | ROOMS hat ausstehende Verarbeitung erkannt. Warten Sie deren Abschluss ab, bevor Sie erneut eingreifen. Die Anzeige verspricht keine Abschlusszeit. |
+| **Nicht eingetragen** | ROOMS führt die Buchung nicht als vollständig im zugehörigen Kalender eingetragen. Das allein annulliert eine ansonsten gültige ROOMS-Buchung nicht. Im Panel kann **In Outlook eintragen** beziehungsweise **In Google eintragen** angeboten werden. |
+| **Verknüpfung fehlt** | Der Termin wurde an Outlook geschickt, die Rückverknüpfung steht aber aus. Änderungen aus Outlook können so nicht zuverlässig übernommen werden. Mit dem globalen Recht **Darf Konfiguration System verwalten** (26) kann im Panel **Erneut verknüpfen** angeboten werden. |
+| **Abgleich angehalten** | Der Abgleich für die Buchung oder Serie ist deaktiviert. Änderungen werden nicht regulär weiter abgeglichen. Prüfen Sie beide Stände. Im Panel kann **Abgleich wieder aufnehmen** angeboten werden. Bei einer angehaltenen Serie nennt der Hinweis den Serienbezug. |
+{{< /bootstrap-table >}}
+
+### Eintragen, wieder aufnehmen oder erneut verknüpfen
+
+Für diese Aktionen müssen Sie die vollständigen Buchungsdetails sehen dürfen. **Eintragen** und **Abgleich wieder aufnehmen** hängen zusätzlich von der eingerichteten Synchronisation der organisierenden Person und der Ressource ab. Sie werden nur für geeignete, nicht annullierte Buchungen mit noch bevorstehendem Belegungsbeginn einschliesslich Vorlaufzeit angeboten. Ein allgemeines Bearbeitungsrecht ist dafür nicht ausschlaggebend. Unterbuchungen bieten keine unabhängigen Abgleich-Aktionen.
+
+Prüfen Sie vor dem Auslösen die Buchung und bei einer Serie die betroffenen Termine. **Eintragen** und **Abgleich wieder aufnehmen** können die ganze Serie betreffen, auch wenn kein eigener Serienhinweis angezeigt wird. **Erneut verknüpfen** stösst bei einer Serie die Verarbeitung über ihren ersten aktiven Termin an und ist keine isolierte Reparatur des gerade geöffneten Termins. Wählen Sie erst nach dieser Prüfung die angebotene Schaltfläche im Panel. Die Aktion stösst Hintergrundverarbeitung an, nicht den sofortigen Abschluss. Laden Sie die Buchung nach deren Verarbeitung erneut und prüfen Sie den Stand in beiden Kalendern. Bleibt eine Abweichung bestehen oder fehlt eine passende Aktion, ziehen Sie die Administration beziehungsweise den Support bei. Wiederholtes Auslösen ersetzt keine Prüfung der Ursache.
+
+### Gezielt einen Stand übernehmen
+
+Mit **Darf Konfiguration System verwalten** (26) können bei einer verknüpften, nicht gesperrten Outlook-Buchung unter **Weitere Aktionen** im Abschnitt **Abgleich mit Outlook** folgende Aktionen verfügbar sein:
+
+- **Outlook überschreiben:** Der gespeicherte Stand aus cordivo wird nach Outlook übertragen. Diese Aktion steht für Einzelbuchungen zur Verfügung.
+- **Cordivo überschreiben:** Der Stand aus Outlook wird nach ROOMS übernommen. Bei einer Serie betrifft die Übernahme die ganze Serie, nicht nur den geöffneten Termin. Die erforderlichen vollständigen Leserechte müssen auch für den ersten aktiven Termin vorliegen.
+
+{{% alert title="Die gewählte Richtung ersetzt Änderungen" color="warning" %}}
+Änderungen auf der überschriebenen Seite können verloren gehen. Prüfen Sie vor der Auswahl beide Stände und bei einer Serie alle betroffenen Termine. Speichern Sie gewünschte Feldeingaben zuerst. Nicht gespeicherte Feldeingaben werden nicht als Quelle übernommen. **Outlook überschreiben** verwendet den gespeicherten cordivo-Stand, **Cordivo überschreiben** den Stand aus Outlook. Beim Überschreiben von Outlook können Eingeladene eine Aktualisierung erhalten, wenn sich der Termin ändert.
+{{% /alert %}}
+
+Wählen Sie erst danach die passende Richtung, prüfen Sie den Bestätigungsdialog und bestätigen Sie die gleichnamige Aktion. **Abbrechen** löst sie nicht aus. Die Bestätigung beauftragt den Abgleich im Hintergrund. Prüfen Sie nach dessen Abschluss die Buchung, die Einladungen und die tatsächliche Raumbelegung. Die Übernahme eines Standes ist keine Garantie, fehlende Raumtermine einer Serie wiederherzustellen. Weitere Prüfschritte finden Sie unter [Problembehandlung der Kalender-Synchronisation]({{< relref "Betrieb/Synchronisation/Troubleshooting/_index.md" >}}).
+
+### Buchungen nach Abgleich filtern
+
+Mit **Darf Konfiguration System verwalten** (26) finden Sie unter **Buchungen → Filter → Status und Ablauf → Abgleich** die Werte **Abgeglichen**, **Wird abgeglichen**, **Verknüpfung fehlt**, **Nicht eingetragen** und **Angehalten**. Wählen Sie beispielsweise die drei Problemstände, kombinieren Sie diese mit einem passenden Zeitraum und speichern oder pinnen Sie die Suche gemäss **Ansichten speichern und teilen**. Der Filter berücksichtigt nur Buchungen mit einem für Sie sichtbaren Abgleichstand. Auch ein ausschliessender Vergleich schliesst Buchungen ohne solchen Stand nicht automatisch ein. Er erweitert keine Leserechte und ist kein entsprechender Ressourcenfilter unter **Buchen**.
+
+Für eine zusätzliche farbliche Kennzeichnung im cordivo-Kalender und in der Buchungsliste kann die Administration eine [Buchungsfarbregel mit der Bedingung Abgleich]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md#abgleich-als-bedingung" >}}) einrichten. Die Farbe ersetzt weder den Hinweis noch die Prüfung der Kalender.
+
 ## Standort und weitere Filter verwenden
 
 Die Filter in **Buchen** und **Buchungen** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
