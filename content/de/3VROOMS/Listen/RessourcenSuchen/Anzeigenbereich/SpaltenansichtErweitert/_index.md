@@ -15,7 +15,7 @@ Folgende Tabelle erläutert die Spaltenkategorien:
 |Vorlaufdauer in Minuten| Für jede Ressource kann eine individuelle Vorlaufdauer, die zur Vorbereitung der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. |
 |Nachlaufdauer in Minuten| Für jede Ressource kann eine individuelle Nachlaufdauer, die z.B. zum Aufräumen oder Reinigen der Ressource benötigt wird, eingestellt werden. In dieser Zeit kann keine andere Buchung eingetragen werden. |
 |Sync. Modus| Zeigt an, über welchen Modus der Raum mit dem System synchronisiert wird.  ; _z.B. Exchange 2016_|
-|External Identifier|Eindeutige Kennung der Ressource für externe Systeme oder Integrationen, z.B. eine E-Mail-Adresse für Terminanfragen. Siehe [Glossar](/glossary/#e).|
+|External Identifier|Optionales Freitextfeld für Kennungen aus Fremdsystemen bei kundenspezifischen Integrationen, z.B. Türsteuerung, Sensorik/Workspace-Systeme oder Exporte in Drittsysteme. Die Standard-Logik von ROOMS verwendet es nicht. Eindeutigkeit wird nicht geprüft. Nicht für Exchange/Outlook oder Terminanfragen. Wird aktuell nicht über die API ausgegeben. Siehe [Glossar](/glossary/#e).|
 |Priorisierung|Rangfolge der Ressource innerhalb der Ressourcenart. [^1]|
 |Ist fixes Equipment|  Gibt an, ob es sich um fixes oder mobiles Equipment handelt. ; _Wird beim Ressourcentyp "Equipment" angezeigt._ |
 {{< /bootstrap-table >}}

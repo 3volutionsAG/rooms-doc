@@ -70,7 +70,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |Equipment|Unter Equipment versteht man Zubehör, das einer Ressource zugeordnet ist oder hinzugebucht werden kann, z.B. ein Beamer oder ein Flipchart.|
 |Equipment (fix)|Equipment, das fest einer Ressource zugeordnet ist und nicht separat gebucht werden kann.|
 |Equipment (mobil)|Equipment, das einer Ressource zugebucht werden kann und für den Zeitraum der Buchung der Ressource zugeteilt wird.|
-|External Identifier|Eindeutige Kennung einer Ressource, um diese von ausserhalb zu identifizieren, z.B. eine E-Mail-Adresse, die zur Terminanfrage verwendet werden kann.|
+|External Identifier|Optionales Freitextfeld für Kennungen aus Fremdsystemen bei kundenspezifischen Integrationen, z.B. Türsteuerung, Sensorik/Workspace-Systeme oder Exporte in Drittsysteme. Die Standard-Logik von ROOMS verwendet es nicht. Eindeutigkeit wird nicht geprüft. Nicht für Exchange/Outlook oder Terminanfragen. Wird aktuell nicht über die API ausgegeben.|
 {{< /bootstrap-table >}}
 
 ---
