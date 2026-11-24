@@ -66,6 +66,8 @@ Gehört ein Teilraum zu mehreren angezeigten Verbünden, steht er nur einmal, be
 
 Die Gruppierung fasst keine Belegungen zusammen. Prüfen Sie die Zeile des gewünschten Raums. Die Wirkung einer Buchung auf verknüpfte Räume ist unter **Kombinierte und verknüpfte Räume** beschrieben.
 
+Unterbuchungen erkennen Sie im Kalender an einem Verknüpfungssymbol, einem gestrichelten Rand und einer zurückhaltenderen Darstellung, sofern Sie den Buchungstitel sehen dürfen. Diese Blöcke lassen sich weder verschieben noch an den Rändern zeitlich verändern. Öffnen Sie zum Bearbeiten die Hauptbuchung wie unter **Kombinierte und verknüpfte Räume** beschrieben.
+
 #### Den Zeitstrahl einstellen
 
 Ohne andere Vorgabe in einem Link oder einer gespeicherten Ansicht öffnet der Kalender mit **Arbeitszeit**. Dafür gelten **Arbeitsbeginn** und **Arbeitsende** aus Ihren persönlichen ROOMS-Einstellungen. Fehlende Angaben werden durch die Vorgaben Ihrer Organisation ergänzt. Ergibt sich daraus kein gültiger Zeitraum, verwendet cordivo gültige Organisationsvorgaben oder 08:00–17:00. Die dargestellte Arbeitszeit ist keine Öffnungszeit der Ressource und ändert weder Suchkriterien noch Buchungsrechte.
@@ -143,7 +145,7 @@ Buchen Sie einen kombinierten Raum, werden seine verknüpften Teilräume als Unt
 
 Für neu hinzukommende Unterbuchungen benötigen Sie Buchungsrechte auf den betroffenen Ressourcen. Auch deren Buchungsregeln werden geprüft. Eine Ablehnung nennt den betroffenen Raum. Das kann auch beim Speichern einer älteren Buchung geschehen, wenn fehlende Unterbuchungen ergänzt werden.
 
-Öffnen Sie eine Unterbuchung in der Liste, im Kalender oder über **Meine heutigen Buchungen**, zeigt PlaceMe die Hauptbuchung, sofern Sie diese sehen dürfen. Prüfen Sie deshalb deren Ressource und Buchungsnummer. Ohne Zugriff auf die Hauptbuchung bleibt die Unterbuchung schreibgeschützt sichtbar und bietet keine eigenen Aktionen. Das gilt auch für kombinierte Buchungen, die in der klassischen ROOMS-Oberfläche erstellt wurden. Unterbuchungen können Sie hier nicht unabhängig bearbeiten oder verschieben.
+Öffnen Sie eine Unterbuchung in der Liste, im Kalender oder über **Meine heutigen Buchungen**, zeigt PlaceMe die Hauptbuchung, sofern Sie diese sehen dürfen. Im Kalender gilt das auch dann, wenn die Zeile der Hauptbuchung ausgefiltert oder noch nicht geladen ist. Prüfen Sie deshalb deren Ressource und Buchungsnummer. Ohne Zugriff auf die Hauptbuchung bleibt die Unterbuchung schreibgeschützt sichtbar und bietet keine eigenen Aktionen. Das gilt auch für kombinierte Buchungen, die in der klassischen ROOMS-Oberfläche erstellt wurden. Unterbuchungen können Sie hier nicht unabhängig bearbeiten oder verschieben.
 
 {{% alert title="Änderungen betreffen die Raumkombination" color="warning" %}}
 Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertraulichen Bemerkungen werden von der Hauptbuchung auf ihre Unterbuchungen übertragen. Freigeben und Terminieren beenden auch die Unterbuchungen. Annullieren und No-show annullieren sie mit. Prüfen Sie vor der Bestätigung, ob die Änderung für die ganze Kombination gelten soll. Zum Einchecken einer Buchung mit Unterbuchungen verwenden Sie die klassische ROOMS-Oberfläche, auch wenn PlaceMe **Einchecken** anbietet.
