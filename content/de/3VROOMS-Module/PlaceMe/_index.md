@@ -16,6 +16,7 @@ Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und 
 - Die Ressourcenauswahl berücksichtigt aktive Ressourcen, Ihre Buchungsrechte für den Ressourcentyp und Ihre örtlich und zeitlich gültigen Rechte auf der Ressource.
 - Für eine neue Buchung benötigen Sie **Darf prov. Reservationen buchen** oder **Darf def. Reservationen buchen** für die Ressource und den gewählten Zeitraum. Der Workflow muss einen passenden Anfangsstatus anbieten. Beim Speichern werden Berechtigungen und Buchungsregeln erneut geprüft. Ein Suchtreffer allein garantiert keinen erfolgreichen Abschluss.
 - Zum Auswählen oder Wechseln einer Bestuhlung benötigen Sie das globale Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28). Bei einer vorhandenen Buchung benötigen Sie auch das Bearbeitungsrecht. Ohne Bestuhlung benötigen Sie beim Erstellen und Bearbeiten einer Raumbuchung **Darf Reservationen ohne Bestuhlung erstellen** (ID 168). Ohne **Darf Reservationen ohne Personenanzahl buchen** (ID 94) müssen Sie eine Personenanzahl angeben.
+- Zum Hinzufügen oder Entfernen von Teilnehmenden benötigen Sie das globale Recht **Darf Teilnehmer editieren** (ID 57). Bei einer vorhandenen Buchung müssen Sie diese auch bearbeiten und die vollständigen Buchungsdetails sehen dürfen. Ohne Änderungsrecht bleibt eine sichtbare Teilnehmendenliste schreibgeschützt. Bei eingeschränkten Detailrechten wird sie ausgeblendet.
 
 Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/_index.md" >}}).
 
@@ -99,7 +100,7 @@ Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Welche Titel un
 1. Wählen Sie im Kalender eine freie Stelle oder markieren Sie einen Zeitraum. Am Computer öffnet sich die Buchung direkt unter der Ressourcenzeile. In der **Liste** öffnet **Wählen** das Buchungspanel, auf dem Telefon einen Eingabebereich am unteren Bildschirmrand.
 2. Prüfen Sie Ressource, Datum, Beginn und Ende in der angezeigten Zeitzone. Ein Klick verwendet die gesuchte Dauer. Innerhalb des markierten Suchfensters bleibt der Vorschlag darin und kann nahe dessen Ende früher beginnen als die angeklickte Stelle.
 3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. Im Panel bearbeiten Sie den Titel direkt in der Überschrift. Es öffnet mit dem Eingabefokus im Titel, bei leerem Titel mit **Titel hinzufügen**. In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Mehr Angaben** führt mit Ihren Eingaben ins Panel.
-4. Öffnen Sie bei Bedarf im Panel **Ändern** für Datum und Uhrzeit oder mit **Alle Angaben** die vollständige Buchungsseite. Dort bearbeiten Sie den Titel direkt in der Überschrift und ergänzen die **Beschreibung**. Wählen Sie bei Bedarf unter **Optionen zur Buchung → Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
+4. Öffnen Sie bei Bedarf im Panel **Ändern** für Datum und Uhrzeit oder mit **Alle Angaben** die vollständige Buchungsseite. Dort bearbeiten Sie den Titel direkt in der Überschrift und ergänzen die **Beschreibung**. Über **Teilnehmende** im Panel gelangen Sie mit dem entsprechenden Recht direkt zum Bereich **Personen** der vollständigen Seite. Ergänzen Sie dort die Einladungen und wählen Sie bei Bedarf im Bereich **Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
 5. Wählen Sie **Buchen**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
 6. Prüfen Sie das Ergebnis unter **Buchungen** anhand von Ressource, Zeitraum und Titel. Die Erfolgsmeldung bietet auch **Buchung öffnen** an.
 
@@ -123,7 +124,9 @@ Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschla
 
 ### Bestuhlung bei Raumbuchungen
 
-Mit dem Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28) können Sie auf der vollständigen Seite unter **Optionen zur Buchung → Bestuhlung** eine der aktuell angebotenen Bestuhlungen des Raums wählen. Die Auswahl zeigt Namen und Personenbereiche und kennzeichnet die Standardbestuhlung mit **(Standard)**. Ohne Auswahl verwendet eine neue Buchung den automatischen Vorschlag. **Wie Rooms sie vorschlägt** bedeutet nicht, dass ohne Bestuhlung gebucht wird.
+Mit dem Recht **Darf Reservationen mit Bestuhlungen buchen** (ID 28) wählen Sie auf der vollständigen Seite im Bereich **Bestuhlung** eine der angebotenen Karten. Jede Karte zeigt den Namen und, soweit vorhanden, den Personenbereich. Ohne eigene Auswahl ist die automatisch vorgeschlagene Bestuhlung ausgewählt. **Passend zur Personenzahl gewählt.** kennzeichnet diesen Vorschlag. Das bedeutet nicht, dass ohne Bestuhlung gebucht wird.
+
+Neben der Überschrift steht die für die aktuelle Buchung wirksame Umbauzeit vor Beginn beziehungsweise nach Ende, sobald die Zeiten vorliegen. Sie gilt für die ausgewählte Bestuhlung und wird nicht für jede ungewählte Karte separat angezeigt. Der Tagesstreifen und die Verfügbarkeitsprüfung berücksichtigen diese Vor- und Nachlaufzeiten. Ein Bestuhlungswechsel kann deshalb mit einer anderen Belegung kollidieren, obwohl Beginn und Ende der eigentlichen Buchung gleich bleiben. Wählen Sie eine andere Zeit oder Bestuhlung und prüfen Sie die Rückmeldung beim Speichern.
 
 Bei einem Raum mit Standardbestuhlung und ohne eigene Auswahl weist cordivo der neuen Buchung automatisch eine Bestuhlung zu:
 
@@ -135,9 +138,24 @@ Passt die Personenanzahl nicht zur Bestuhlung, verhindert die Prüfung beim Spei
 
 Ohne eigene Zeitangabe wird bei nicht synchronisierten Ressourcen jeweils die längere Vor- beziehungsweise Nachlaufzeit aus Ressource und Bestuhlung verwendet. Die Zeiten werden nicht addiert. Bei einem Bestuhlungswechsel folgen die bisherigen Standardzeiten der neuen Bestuhlung. Abweichende eigene Zeiten bleiben erhalten. Bei synchronisierten Ressourcen verlängern diese Zeiten die Belegung nicht.
 
-Beim Bearbeiten bleibt die gespeicherte Bestuhlung erhalten, solange Sie keine andere wählen. Eine geänderte Personenanzahl muss zu ihr passen und löst keine automatische Neuwahl aus. Ohne Bearbeitungs- oder Bestuhlungsrecht wird der Name angezeigt, soweit Sie die vollständigen Buchungsdetails sehen dürfen. Auch eine inzwischen nicht mehr angebotene, gespeicherte Bestuhlung kann erhalten bleiben. Die Auswahl bietet keine Aktion zum Entfernen der Bestuhlung.
+Beim Bearbeiten bleibt die gespeicherte Bestuhlung erhalten, solange Sie keine andere wählen. Eine geänderte Personenanzahl muss zu ihr passen und löst keine automatische Neuwahl aus. Ohne Bearbeitungs- oder Bestuhlungsrecht wird die Bestuhlung angezeigt, soweit Sie die vollständigen Buchungsdetails sehen dürfen. Eine inzwischen nicht mehr angebotene, gespeicherte Bestuhlung bleibt mit **Nicht mehr im Angebot** sichtbar und kann erhalten bleiben. Die Auswahl bietet keine Aktion zum Entfernen der Bestuhlung.
 
 Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrwertsteuer in den Buchungskosten berücksichtigt. Die Kostenanzeige auf der Buchungsseite ist mit **Folgt** gekennzeichnet und deaktiviert. Die Benachrichtigung an einen eingerichteten Bestuhlungsdienst wird separat von der allgemeinen Buchungs-Änderungsmail verarbeitet. Beachten Sie den Abschnitt **Benachrichtigungen und Outlook**.
+
+### Teilnehmende hinzufügen oder entfernen
+
+Öffnen Sie im Panel **Teilnehmende** oder auf der vollständigen Buchungsseite den Bereich **Personen**. Das gilt am Computer und auf dem Telefon. Das Panel fasst die sichtbare Liste zusammen. Auf der vollständigen Seite stehen die einzelnen Namen beziehungsweise E-Mail-Adressen.
+
+1. Wählen Sie **Teilnehmende hinzufügen** und geben Sie mindestens zwei Zeichen eines Namens oder einer E-Mail-Adresse ein. Die Suche findet aktive Personen. Prüfen Sie bei gleichen Namen die angezeigte Organisation und E-Mail-Adresse, soweit vorhanden.
+2. Wählen Sie die gewünschte Person. Für eine externe Person geben Sie die vollständige E-Mail-Adresse ein und wählen den Eintrag **Als externe Person einladen**. Ein eingegebener Suchtext allein fügt niemanden hinzu.
+3. Entfernen Sie bei Bedarf einen Eintrag über das Kreuz neben dem Namen. Einträge, die in der klassischen ROOMS-Oberfläche nur mit Namen und ohne Person oder E-Mail-Adresse gespeichert wurden, haben hier kein Kreuz. Bearbeiten Sie diese in der klassischen Oberfläche.
+4. Prüfen Sie **Personen**, **davon extern** und die Bestuhlung. Wählen Sie erst danach **Buchen** beziehungsweise **Speichern**. Hinzufügen und Entfernen ändern zunächst nur den Entwurf. Die Einladungen werden nach erfolgreichem Speichern gemäss **Benachrichtigungen und Outlook** verarbeitet.
+
+Fügen Sie die organisierende Person nicht zusätzlich als Teilnehmende hinzu. Die organisierende Person und das Postfach eines synchronisierten Raums werden von ROOMS verwaltet. Dieselbe Person oder externe Adresse darf nicht doppelt eingeladen werden. Auch eine externe Adresse, die bereits einer ausgewählten Person gehört, wird beim Speichern abgewiesen. Korrigieren Sie ungültige Adressen oder inzwischen inaktive beziehungsweise nicht mehr vorhandene neu gewählte Personen anhand der Feldmeldung.
+
+Ist Ihre persönliche Einstellung **Anzahl Personen anhand von Teilnehmer berechnen** aktiv, kann das Hinzufügen oder Entfernen die Gesamtanzahl **Personen** anpassen. Gezählt werden die Liste und die organisierende Person. Beim ersten Hinzufügen wird eine leere Anzahl auf zwei gesetzt. Weitere Anpassungen erfolgen, wenn die bisherige Anzahl um genau eins von der neuen Listengrösse einschliesslich organisierender Person abweicht. Eine anders gesetzte Anzahl bleibt bestehen. Ohne diese Einstellung bleibt die Anzahl unverändert. **davon extern** wird durch die Liste nicht automatisch angepasst. Prüfen Sie beide Zahlen selbst.
+
+**Die Teilnehmeranzahl ist für die gewählte Bestuhlung zu gross.** ist ein Hinweis zur Liste einschliesslich organisierender Person und verhindert für sich allein das Speichern nicht. Die separat eingegebene Gesamtanzahl **Personen** muss trotzdem zur Bestuhlung passen. Eine entsprechende Prüfmeldung beim Speichern erfordert eine Korrektur der Anzahl oder Bestuhlung.
 
 ### Kombinierte und verknüpfte Räume
 
@@ -155,7 +173,7 @@ Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertrauli
 
 Die vollständige Seite bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
 
-Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, die Auswahl von Teilnehmenden, Kostenstellen, Catering und Equipment sowie die Kostenanzeige. **Ganzer Tag** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
+Mit **Folgt** gekennzeichnete Bedienelemente sind deaktiviert. Dazu gehören die Statusauswahl, Serien, der Ganztägig-Schalter in der Buchungsmaske, Kostenstellen, Catering und Equipment sowie die Kostenanzeige. **Ganzer Tag** in den Suchkriterien erweitert dagegen das tägliche Suchfenster.
 
 PlaceMe verarbeitet einzelne provisorische und definitive Buchungen, einschliesslich kombinierter Räume und Bestuhlungen im oben beschriebenen Umfang. Verwenden Sie die klassische ROOMS-Oberfläche für Serien, Bestellungen, mobiles Equipment sowie Buchungen mit Anhängen, Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss in PlaceMe ausschliessen. Die Meldung beim Speichern nennt den Grund. Ressource, Organisator und Status einer vorhandenen Buchung lassen sich hier nicht wechseln.
 
@@ -236,6 +254,10 @@ Bleibt eine Bestätigung aus oder tritt ein Verbindungsfehler auf, prüfen Sie v
 ## Benachrichtigungen und Outlook
 
 Bestätigungen, Änderungs- und Annullierungsmails sowie Erinnerungen richten sich nach den eingerichteten Benachrichtigungen und Empfängereinstellungen. Nicht jede Feldänderung löst eine Änderungsmail aus. Eine reine Titeländerung genügt dafür beispielsweise nicht. Auch die Bestuhlungswahl allein ist kein Auslöser. Ändern sich dabei die Gesamtkosten oder weitere relevante Angaben, kann dennoch eine Buchungs-Änderungsmail entstehen.
+
+Wird die Buchung in den Exchange-Kalender der organisierenden Person übernommen, verarbeitet Exchange die Einladungen. Wird nur die Teilnehmendenliste eines bereits verknüpften Termins geändert, richten sich die Besprechungsanfragen an die hinzugefügten beziehungsweise entfernten Teilnehmenden. Ändern Sie auch Beginn, Ende oder Titel, kann die Aktualisierung alle Teilnehmenden erreichen.
+
+Ohne Übernahme in diesen Kalender veranlasst cordivo für neu hinzugefügte Teilnehmende eine ROOMS-Mail mit Kalenderdatei, sofern die Buchung definitiv ist und die passende Teilnehmenden-Benachrichtigung mit Vorlage eingerichtet ist. Bei einer neuen definitiven Buchung ist dies die Teilnehmendenbestätigung, bei einer Änderung die Teilnehmenden-Änderungsmail. Bei provisorischen Buchungen wird diese Mail nicht allein durch das Hinzufügen versendet. Das Hinzufügen oder Entfernen kann bei definitiven Buchungen auch die allgemeine Buchungs-Änderungsmail auslösen. Prüfen Sie daher die Empfängereinstellungen vor dem Speichern und setzen Sie eine entfernte Person nicht mit einer garantiert zugestellten Absage gleich.
 
 Bei einer Raumkombination werden Benachrichtigungen und Erinnerungen über die Hauptbuchung verarbeitet. Die Raumliste in der Buchungsmail kann die mitgebuchten Räume aufführen. Unterbuchungen erzeugen keine eigenen Buchungsmails, Erinnerungen oder separaten Outlook-Termine.
 
