@@ -27,8 +27,8 @@ Die folgenden Daten können Sie ändern und bearbeiten:
 | Bezeichnung          | Die Bezeichnung des Angebots festlegen. Muss mehrsprachig erfasst werden. |
 | Mitteilung vom Dienstleister |Eine Mitteilung oder Anmerkung des Dienstleisters hinterlegen. Kann mehrsprachig erfasst werden. Diese Informationen werden im Buchungsprozess Tab [Dienstleistungen](/3vrooms/einstellungen/basisdatenfuerressourcen/bestuhlung/) visualisiert. |
 | Gültigkeitsdauer         |  Datum und Zeit festlegen. Standard = leer. leer = von wann, bis wann die Angebotszone zur Verfügung steht |
-| Vorlaufdauer          |  Standardwert = 0. Angabe in Minuten. Wird im Buchungsprozess für die Berechnung der Vorlaufdauer verwendet. |
-| Nachlaufdauer          | Standardwert = 0. Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet |
+| Vorlaufdauer          | Standardwert = 0. Puffer in Minuten vor der Buchung für Dienstleistungen dieser Angebotszone. Wird bei der [Berechnung der Vorlaufdauer](/3vrooms/buchen/buchungerstellen/detailbuchung/allgemein/#vorlauf-und-nachlaufzeit) berücksichtigt. |
+| Nachlaufdauer          | Standardwert = 0. Puffer in Minuten nach der Buchung für Dienstleistungen dieser Angebotszone. Wird bei der Berechnung der Nachlaufdauer berücksichtigt. |
 | Währung    | alle aktivierten Währungen. Standardwert = Währung der im Profil der angemeldeten gewählten Kultur.Die Anzahl der aktivierten Währungen ist abhängig von der Anzahl der zur Verfügung gestellten Kulturen. |
 | **Kosten**    | Kosten eintragen und die Währung auswählen     |
 | **Annulierungskosten**    | Annulierungskosten eintragen und Währung auswählen. Standardwert = leer (keine Annullationskosten). Wert > 0 entspricht dem Wert, welcher bei einer Annullation pauschal erhoben wird.  |

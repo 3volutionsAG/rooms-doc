@@ -61,7 +61,7 @@ Die Auswahl wird automatisch gespeichert und bei der nächsten Suche übernommen
 |Standort Name|Name des Standorts, ist nicht zwingend eindeutig|
 |Standort Bezeichnung|eindeutige Kennzeichnung des Standorts|
 |Standort Hierarchiebezeichnung|Aufschlüsselung der Zugehörigkeit des Standorts, z.B. Europa/Schweiz/Zürich/|
-|Vorlaufzeit|Startdatum und -uhrzeit der Vorbereitungszeit zur Buchung|
+|Vorlaufzeit|Startdatum und -uhrzeit des Vorlaufs zur Dienstleistung. Nicht die Vorbereitungszeit einer Gliederung.|
 |Ende|Enddatum und -uhrzeit der Dienstleistung ; _Kann von Buchungsende abweichen_|
 |Wochentag-Von|Startdatum und -uhrzeit der Dienstleistung mit Angabe des Wochentages ; _Kann von Buchungsbeginn abweichen_|
 |Wochentag-Bis|Enddatum und -uhrzeit der Dienstleistung mit Angabe des Wochentages ; _Kann von Buchungsende abweichen_|

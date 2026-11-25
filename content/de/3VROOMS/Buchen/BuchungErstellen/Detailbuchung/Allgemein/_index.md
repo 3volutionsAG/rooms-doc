@@ -44,6 +44,16 @@ Die Prüfung (Validierungsregel) auf Verfügbarkeit einer Ressource erfolgt in d
 * Anzahl Personen
 * Ressource
 
+### Vorlauf- und Nachlaufzeit {#vorlauf-und-nachlaufzeit}
+
+Die _Vorlaufzeit_ blockiert die Ressource direkt vor der Buchung, die _Nachlaufzeit_ direkt danach. Beispiel: Bei einer Buchung von 10:00 bis 11:00 Uhr mit 15 Minuten Nachlaufzeit bleibt die Ressource bis 11:15 Uhr belegt.
+
+Für jede der beiden Zeiten gilt automatisch der grösste zutreffende Wert aus Ressourcen, Bestuhlung und Angebotszonen der gebuchten Dienstleistungen. Kundenspezifische Werte können ebenfalls berücksichtigt werden. Die Werte werden nicht addiert. Ein manuell auf der Buchung gesetzter Wert hat für die jeweilige Zeit Vorrang. Zum Ändern benötigen Sie die entsprechenden Benutzerrechte.
+
+Bei Ressourcen mit aktivierter Synchronisation werden keine Vorlauf- oder Nachlaufzeiten angewendet, auch keine manuell gesetzten Werte.
+
+Die [Vorbereitungszeit der Gliederung](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#vorbereitungszeit) bestimmt dagegen den frühesten Buchungsbeginn ab jetzt. Sie ist kein Buchungspuffer und fliesst nicht in die hier angezeigten Zeiten ein.
+
 ### Gesamtkosten
 
 

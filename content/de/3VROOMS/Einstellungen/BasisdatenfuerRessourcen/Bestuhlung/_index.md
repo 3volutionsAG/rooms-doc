@@ -39,9 +39,11 @@ Folgende Informationen können Sie bearbeiten:
 * Bezeichnung : Erfassung muss Mehrsprachig erfolgen
 * Max. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität den passende Raumgrössen zu finden
 * Min. Personenzahl: wird im Reservationsprozess dazu verwendet, um auf Grund der gewünschten Kapazität die passende Raumgrössen zu finden
-* Vorlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet
-* Nachlaufzeit (Minuten): Angabe in Minuten. Wird im Reservationsprozess für die Berechnung der Vorlaufdauer verwendet
+* Vorlaufzeit (Minuten): Puffer für die Bestuhlung vor der Buchung. Wird bei der Berechnung der Vorlaufdauer berücksichtigt.
+* Nachlaufzeit (Minuten): Puffer für die Bestuhlung nach der Buchung. Wird bei der Berechnung der Nachlaufdauer berücksichtigt.
 * Bildvorschau (Icon): Es kann nur ein Bild zugewiesen werden. Es wird das Thumbnail angezeigt. Klick auf Bild öffnet das Zoom (im modalen Popup)
+
+Für die Berechnung gilt der [grösste zutreffende Wert, nicht die Summe](/3vrooms/buchen/buchungerstellen/detailbuchung/allgemein/#vorlauf-und-nachlaufzeit).
 
 ### Bestuhlung hinzufügen
 

@@ -86,7 +86,7 @@ Tragen Sie die Stammdaten des neuen Subgliederungstypen ein. Folgende Informatio
 | Beschreibung      | Die Beschreibung der Gliederung. Wird in der Benutzersprache des angemeldeten Benutzers geladen, das Feld kann übersetzt werden. |
 | Metadata          | Frei übersetzbares Feld um zusätzliche informationen abzulegen. Wird offt verwenden um Daten in Form von JSON Objekten abzulegen |
 | Sortierung        | An welcher Stelle in der Reihenfolge soll der Gliederungstyp erscheinen. |
-| Vorbereitungszeit | Durch die separate Angabe der Vorbereitungszeit wird gewährleistet, dass die benötigte Zeit für die Vorbereitung berücksichtigt wird, ohne die Buchungsdauer zu beeinflussen |
+| Vorbereitungszeit | Mindestabstand in Minuten zwischen jetzt und dem Buchungsbeginn. Anders als die Vorlauf- und Nachlaufzeit blockiert dieser Wert die Ressource nicht vor oder nach jeder Buchung. Siehe [Vorbereitungszeit](#vorbereitungszeit). |
 | Bild/Datei        | Hier kann ein Bild für diese Gliederung hochgeladen werden |
 {{< /bootstrap-table >}}
 
@@ -97,25 +97,11 @@ Stammdaten eines neuen Subgliederungstypen eintragen
 
 ### Vorbereitungszeit
 
-Oft benötigen Ressourcen wie Räume oder Equipment eine gewisse Vorbereitungszeit, bevor sie für Buchungen verfügbar sind. Dieses Feature ermöglicht es, die notwendige Zeit für die Vorbereitung einer Ressource vor einer Buchung zu berücksichtigen, ohne die Buchungszeit selbst zu verändern.
+Die _Vorbereitungszeit_ legt fest, wie weit im Voraus eine Ressource gebucht werden muss. Der früheste Buchungsbeginn ist **jetzt + Vorbereitungszeit**. Sind einer Ressource mehrere Gliederungen zugeordnet, gilt deren grösste Vorbereitungszeit. Die Werte werden nicht addiert. Das System berücksichtigt diese Grenze bei der Ressourcensuche und prüft sie beim Buchen.
 
-#### Funktionsweise:
-Die Vorbereitungszeit erlaubt es, die benötigte Zeit in Minuten anzugeben, die eine Ressource zur Vorbereitung vor der Buchung benötigt. Das System berücksichtigt die Vorbereitungszeit bei der Suche nach verfügbaren Ressourcen. Dadurch wird gewährleistet, dass die benötigte Zeit für die Vorbereitung angemessen eingeplant wird, ohne die Buchungsdauer mit Vorlaufzeiten zu beeinflussen.
+Beispiel: Bei 1440 Minuten (24 Stunden) Vorbereitungszeit kann die Buchung frühestens 24 Stunden ab jetzt beginnen.
 
-#### Beispiel: Raumreservierung mit 24 Stunden Vorbereitungszeit:
-Angenommen, Sie möchten einen Konferenzraum so konfigurieren, dass er mindestens 24 Stunden im Voraus gebucht werden muss.
-
-Durchführung:
-
-    Ressourcenname: Konferenzraum A
-    Vorbereitungszeit: 1440 Minuten (24 Stunden)
-
-Das System verhindert automatisch Buchungen, die nicht die erforderliche Vorlaufzeit einhalten. Wenn Sie den Raum am 29. August ab 10:00 Uhr buchen möchten, muss die Buchung vor dem 28. August um 10:00 Uhr abgeschlossen werden.
-
-#### Zusammenfassung:
-Das "Vorbereitungszeit"-Feature ermöglicht eine genauere Planung von Ressourcenbuchungen. Es integriert die notwendige Vorbereitungszeit in den Buchungsprozess, ohne die Buchungszeit selbst zu ändern. Dies erleichtert die effiziente Nutzung von Ressourcen.
-
-Wenn Sie Fragen haben oder Unterstützung benötigen, stehen wir Ihnen gerne zur Verfügung.
+Die [Vorlauf- und Nachlaufzeit](/3vrooms/buchen/buchungerstellen/detailbuchung/allgemein/#vorlauf-und-nachlaufzeit) reserviert dagegen einen Puffer direkt vor beziehungsweise nach jeder Buchung. Die Vorbereitungszeit der Gliederung erzeugt keinen solchen Puffer und fliesst nicht in die Vorlauf- oder Nachlaufzeit der Buchung ein.
 
 ### Ressource
 

@@ -143,7 +143,7 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 {{< bootstrap-table "table table-striped" >}}
 |Begriff|Erklärung|
 |---|---|
-|Nachlaufzeit|Zeit, die an eine Buchung angehängt wird, um die Ressource für eine neue Buchung vorbereiten zu können|
+|Nachlaufzeit|Puffer direkt nach einer Buchung, in dem die Ressource weiterhin belegt ist.|
 {{< /bootstrap-table >}}
 
 ---
@@ -218,7 +218,8 @@ description: 'Hier finden Sie applikationsspezifische Begriffe und Fachbegriffe 
 |VC|Abkürzung für Video Confernce (= Videokonferenz)|
 |View Modus|Übersichtliche Darstellung aller hinterlegten Informationen einer Buchung, Ressource, Person,... auf einer Seite. Auch Detailansicht genannt.|
 |virtuelle Räume|Raum, der durch das Ziehen von Trennwänden entsteht|
-|Vorlaufzeit|Zeit, die vor einer Buchung reserviert wird, um die Ressource auf die kommende Buchung vorbereiten zu können|
+|Vorbereitungszeit (Gliederung)|Mindestabstand zwischen jetzt und dem Buchungsbeginn. Kein Puffer vor jeder Buchung. Siehe [Vorbereitungszeit](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#vorbereitungszeit).|
+|Vorlaufzeit|Puffer direkt vor einer Buchung, in dem die Ressource bereits belegt ist.|
 {{< /bootstrap-table >}}
 
 ---
