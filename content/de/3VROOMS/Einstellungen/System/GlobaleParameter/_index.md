@@ -57,6 +57,23 @@ Tragen Sie im Feld **Wert** für jeden dieser drei Parameter einen ganzzahligen 
 Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROOMS Worker nicht. Die Webanwendung bleibt verfügbar, damit Sie die Konfiguration korrigieren können. Prüfen Sie vertragliche und gesetzliche Aufbewahrungspflichten, bevor Sie einen Wert verringern: Beim nächsten Bereinigungslauf kann ROOMS dadurch weitere ältere Daten löschen.
 {{% /alert %}}
 
+### Testumgebung kennzeichnen
+
+Mit dem globalen Parameter **Umgebungsbezeichnung** (ID 166) kennzeichnen Sie eine Testumgebung, damit Benutzer sie von der Produktion unterscheiden können. In der Produktion bleibt der Wert leer; auch der Standardwert ist leer.
+
+1. Öffnen Sie **Einstellungen > System > Globale Parameter**.
+2. Suchen Sie nach **Umgebungsbezeichnung** und öffnen Sie den Parameter zum Bearbeiten.
+3. Tragen Sie im Feld **Wert** eine kurze, eindeutige Bezeichnung ein, zum Beispiel `Test`.
+4. Klicken Sie auf **Speichern**.
+
+Bei einer gesetzten Bezeichnung erscheint ein Band am oberen Rand der klassischen ROOMS-Hauptansicht, auf der ROOMS-Anmeldeseite des Identity Providers und in PlaceMe nach der Anmeldung. Notifikations-E-Mails erhalten die Bezeichnung in eckigen Klammern am Anfang des Betreffs, zum Beispiel `[Test] Buchungsbestätigung`.
+
+Das Band erscheint nicht auf allen Oberflächen, beispielsweise nicht im öffentlichen Portal oder im Outlook Add-In. Prüfen Sie deshalb zusätzlich die aufgerufene URL; ein fehlendes Band ist kein Nachweis dafür, dass Sie in der Produktion arbeiten.
+
+{{% alert title="Kennzeichnung ist keine Absicherung" color="warning" %}}
+Die Umgebungsbezeichnung allein deaktiviert weder die Kalender-Synchronisation noch den E-Mail-Versand. Lassen Sie die Anbindungen und den Mailversand einer Testumgebung vor der Nutzung durch den Betrieb von den Produktivsystemen trennen. Ein Betreffpräfix verhindert keinen Versand an echte Empfänger.
+{{% /alert %}}
+
 ### Liste der Konfigurationen
 
 {{< bootstrap-table "table table-striped" >}}
@@ -147,6 +164,7 @@ Sind die drei Werte nicht vollständig und gültig konfiguriert, startet der ROO
 | 39 | Suchfelder in Smartlist automatisch ausblenden. | Konfiguriert, ob die Suchfelder und das Paging nicht angezeigt werden soll, wenn nicht benötigt. | false |
 | 64 | System User Id | Die ID des Systembenutzers, die für nicht authentifizierte oder automatisierte Vorgänge verwendet wird, wie onsiteROOMS, Check-ins/Check-outs und andere systemgesteuerte Aufgaben. | |
 | 44 | Telefonnummer validierungsregel | Konfiguriert, ob Telefonnummern validiert werden sollen und, wenn ja, wie (Regex Ausdruck). | [\d\s\+\(\)]\* |
+| 166 | Umgebungsbezeichnung | Kennzeichnet eine Testumgebung mit einem Band und einem Präfix im Betreff von Notifikations-E-Mails. Siehe [Testumgebung kennzeichnen](#testumgebung-kennzeichnen). | leer |
 | 152 | Weiterleitung Detailbuchung Keine Rechte | Gibt an ob der Benutzer direkt auf das Detail der Buchung weitergeleitet werden soll, wenn dieser über keine Berechtigungen verfügt eine Schnellbuchung durchzuführen. | true |
 | 155 | Wizard Root-Url | The Root-Url of the Addin/Wizard if installed. Please add the url including the "#". Example: https://vnext.wizard.3vrooms.app/#/ | |
 | 54 | Wochentage bei Datumsangaben anzeigen | Einstellung, ob der Wochentag bei Datumsangaben angezeigt werden soll. | false |
