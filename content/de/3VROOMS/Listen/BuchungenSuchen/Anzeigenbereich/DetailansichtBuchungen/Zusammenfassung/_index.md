@@ -71,11 +71,14 @@ Wie bei den Einzellöschungen werden die Verantwortlichen und Organisierenden in
 
   Über diese Schaltfläche kopieren Sie die vorliegende Buchung. Dies ist z.B. hilfreich, wenn Sie eine neue Buchung mit den vorliegenden Rahmenbedingungen und/oder Teilnehmenden zu einem späteren Zeitpunkt erstellen wollen.
 
+Sie benötigen das Bearbeitungsrecht für die Ausgangsbuchung. Ein Leserecht allein genügt nicht. Nach dem Klick auf **Kopieren** bestätigen Sie die Rückfrage, bevor die Kopie erstellt wird.
 
-Danach öffnet sich die Eingabemaske zur Detailbuchung. Alle Details aus der ursprünglichen Buchung wurden übernommen. Sie haben nun die Möglichkeit einzelne Details, wie z.B. das Datum, zu ändern.
+Danach öffnet sich die Eingabemaske zur Detailbuchung. Sie können die übernommenen Angaben, z.B. das Datum, anpassen.
+
+Im Feld **Status** ist der Status der Ausgangsbuchung vorgewählt, sofern er für die neue Buchung zur Auswahl steht. Eine provisorische Ausgangsbuchung ist damit auch dann provisorisch vorgewählt, wenn Sie sowohl provisorisch als auch definitiv buchen dürfen. Steht der Ausgangsstatus nicht zur Auswahl, wählen Sie einen der angebotenen Status. Prüfen Sie den Status, bevor Sie die neue Buchung speichern.
 
 {{< imgproc List_BG_Anzeige_DS_ZusCopy_Eingabe_beschriftet Resize "960x" >}}
-Eingabemaske nach dem Kopiervorgang. Alle Details wurden übernommen.
+Eingabemaske für die neue Buchung nach dem Kopieren.
 {{< /imgproc >}}
 
 

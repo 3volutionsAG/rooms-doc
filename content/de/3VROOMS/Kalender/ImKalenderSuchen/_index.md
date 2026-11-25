@@ -38,6 +38,16 @@ Die Verknüpfung gilt über alle ausgewählten Gliederungstypen hinweg.
 Sidepanel im Kalender mit Filterfuntionen zur Suche
 {{< /imgproc >}}
 
+### Kalenderfilter zurücksetzen
+
+Klicken Sie unten im Sidepanel auf **Zurücksetzen**, um die aktuelle Einschränkung der Kalendersuche aufzuheben. Dies funktioniert auch, wenn in Ihren persönlichen Einstellungen kein Standard-Standort hinterlegt ist.
+
+Im Kalender aus der Hauptnavigation wird dabei das heutige Datum angezeigt. Ist eine gespeicherte Kalenderliste als **Favorit** festgelegt, werden deren Einstellungen wieder angewendet. Andernfalls gelten Ihre persönlichen Vorgaben, etwa die Standard-Standorte. Ohne Standortvorgabe wird standortübergreifend gesucht. **Zurücksetzen** bedeutet deshalb nicht zwingend, dass alle Filterfelder leer sind.
+
+Ein Klick auf **Kalender** in der Hauptnavigation ist nicht in jedem Fall ein Filter-Reset: Ohne Standard-Standort bleiben die bisherigen Filter erhalten, sofern kein Favorit angewendet wird. Verwenden Sie zum bewussten Zurücksetzen die Schaltfläche im Sidepanel.
+
+Öffnen Sie den Kalender aus einem Anlass, bleibt der Anlassbezug beim Zurücksetzen erhalten.
+
 ### Suchen über mehrere Standorte
 
 
