@@ -52,6 +52,18 @@ Es öffnet sich die Eingabemaske zur Terminerstellung.
     {{< imgproc O365Outlook_web_Buchungsbest Resize "440x">}} {{< /imgproc >}}
 11. Klicken Sie auf **Senden**. Der Termin wird im Kalender gespeichert und die Termineinladung an die Teilnehmenden versendet.
 
+## Catering mit offener Menge bestellen
+
+Dieser Ablauf gilt im Outlook Add-In und im Browser-Wizard. Wenn für die Buchung Catering verfügbar ist, öffnen Sie in den Buchungsdetails **Catering & Services**. Es erscheint der Dialog **Catering wählen**.
+
+- **Feste Menge:** Stellen Sie die gewünschte Anzahl über den Mengenzähler ein.
+- **Offene Menge:** Markieren Sie das Kontrollkästchen beim Angebot. Sie wählen damit das Angebot aus, ohne eine Verbrauchsmenge festzulegen. Die Kennzeichnung **(Offene Menge)** und der Hinweis **Nach Verbrauch** unterscheiden diese Angebote von Bestellungen mit fester Menge. Ein angezeigter **Preis pro Einheit** ist kein Gesamtpreis für die Bestellung.
+- **Pflichtangebot oder gesperrte Auswahl:** Eine vorgeschriebene oder nicht bearbeitbare Auswahl lässt sich nicht abwählen.
+
+Solange der Verbrauch einer ausgewählten offenen Menge aussteht, erscheint bei den Kosten **Gesamtbetrag vorläufig. Offene Mengen werden nach Verbrauch abgerechnet.** Behandeln Sie den angezeigten Gesamtbetrag deshalb nicht als endgültigen Preis. Auch ein angezeigter Betrag von null bedeutet bei ausstehendem Verbrauch nicht, dass das Angebot kostenlos ist.
+
+Beim erneuten Öffnen einer Buchung bleiben offene Mengen ausgewählt. Ist bereits eine Verbrauchsmenge grösser als null erfasst, wird sie angezeigt und lässt sich in dieser Catering-Auswahl nicht ändern oder abwählen. Beim Kopieren einer Buchung wird diese Verbrauchsmenge nicht übernommen; die offene Menge wird für die neue Buchung ohne erfassten Verbrauch ausgewählt.
+
 ## Teilnehmende aus Outlook übernehmen
 
 Für die beschriebene Übernahme im klassischen Outlook benötigen Sie kompatible Versionen von quickROOMS und dem installierten Add-In. Lassen Sie bei abweichendem Verhalten beide Komponenten durch Ihre Administration prüfen und aktualisieren.
