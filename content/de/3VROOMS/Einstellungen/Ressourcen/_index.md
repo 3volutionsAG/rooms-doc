@@ -264,6 +264,35 @@ Mehr über Feiertage erfahren Sie hier: [Feiertage](/3vrooms/einstellungen/erwei
 Für das Türschild wählen Sie den Konfigurationsbenutzer aus und aktivieren das Türschild.
 
 
+### Mobiles Equipment einrichten
+
+Mobiles Equipment wird bei Bedarf zu einer Raumbuchung hinzugebucht. Erfassen Sie es als eigene Ressource der Ressourcenart _Equipment_. Ordnen Sie es nicht unter _Fixes Equipment_ einem Raum zu, sonst steht es nicht als mobiles Equipment zur Auswahl.
+
+#### Standort des mobilen Equipments
+
+Ausgangspunkt ist der Standort des gebuchten Raums. ROOMS berücksichtigt mobiles Equipment auf:
+
+* demselben Standort
+* allen darunterliegenden Standorten
+* allen übergeordneten Standorten bis zur Wurzel des Standortbaums
+
+Benachbarte Zweige werden nicht einbezogen. Beispiel: Sind _2. OG_ und _3. OG_ demselben Gebäude untergeordnet, steht Equipment auf _2. OG_ einem Raum auf _3. OG_ nicht zur Verfügung. Equipment auf dem gemeinsamen Gebäudestandort kann dagegen in beiden Stockwerken genutzt werden.
+
+Erfassen Sie gemeinsam genutztes Equipment deshalb auf dem Standort der betreffenden Räume oder auf einem gemeinsamen übergeordneten Standort, etwa dem Gebäude oder Areal. Die Zuordnung zur [Verfügbarkeit einer Gliederung](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#verfügbarkeit) erweitert diesen Standortbereich nicht.
+
+#### Kurzanleitung für mobiles Equipment
+
+1. Erfassen und aktivieren Sie die Equipment-Ressource auf dem passenden Standort, ohne sie als fixes Equipment zuzuordnen. Vergeben Sie die benötigten lokalen Buchungsrechte. Für die Auswahl muss die buchende Person am Equipment mindestens _Darf prov. Reservationen buchen_ oder _Darf def. Reservationen buchen_ besitzen.
+2. Erstellen Sie einen [Gliederungstyp](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#neuen-gliederungstyp-erstellen), beispielsweise _Equipmenttyp_, mit _Ressourcenart_ = _Equipment_ und _Aggregiert für_ = _Raum_. Aktivieren Sie _Ist sichtbar_, damit der Typ in der aggregierten Ansicht erscheint.
+3. Legen Sie pro Equipmentart eine Gliederung an, beispielsweise _Beamer_ oder _Flipchart_. Ordnen Sie die Equipment-Ressourcen im Reiter _Ressource_ zu. Ressourcen derselben Gliederung müssen dasselbe Tarifmodell verwenden.
+4. Ordnen Sie im Reiter [Gruppe](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#gruppe) die Benutzergruppen zu, welche die Gliederung in der aggregierten Ansicht sehen sollen. Über [Verfügbarkeit](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#verfügbarkeit) können Sie die Nutzung auf bestimmte Räume beschränken.
+
+Die globalen Rechte für die Einzel- beziehungsweise aggregierte Ansicht sind unter [Equipment zur Buchung hinzufügen](/3vrooms/buchen/buchungerstellen/detailbuchung/ressourcen/) beschrieben.
+
+Damit das Equipment angeboten wird, muss es im benötigten Zeitraum frei sein. Sperrzeiten, Feiertage und eine allfällige [Vorbereitungszeit](/3vrooms/einstellungen/erweitertebasisdatenfuerressourcen/gliederung/#vorbereitungszeit) werden ebenfalls berücksichtigt.
+
+Für die Bereitstellung nutzen Sie die bestehende [Arbeitsliste für mobiles Equipment](/3vrooms/listen/buchungensuchen/erweitertesuche/dienstleisterspezifischekriterien/#buchungen-mit-mobilem-equipment-finden).
+
 ### Fixes Equipment der Ressource bearbeiten
 
 Wenn Sie die Ressourcenart _Raum_ bearbeiten, können Sie diesem fixes Equipment zuordnen.

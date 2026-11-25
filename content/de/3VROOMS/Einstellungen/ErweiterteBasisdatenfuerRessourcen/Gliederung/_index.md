@@ -121,7 +121,9 @@ Die Liste aktualisiert sich automatisch. Sie sehen die neu hinzugefügten Ressou
 
 ### Gruppe
 
-Sie können Gruppen zum Gliederungstypen hinzufügen. Wählen Sie dafür den untenstehenden Button `hinzufügen` aus. Es öffnet sich ein neues Feld. In diesem wählen Sie eine oder mehrere zur Verfügung stehender Gruppen aus.
+Hier ordnen Sie der Gliederung Benutzergruppen zu. Diese Zuordnung steuert unter anderem, welche Gliederungen Benutzer:innen in der aggregierten Ressourcenansicht einer Detailbuchung sehen. Dafür muss eine ihrer Gruppen der Gliederung zugeordnet sein. Die Gruppenzuordnung ersetzt nicht die lokalen Buchungsrechte auf der Equipment-Ressource und beschränkt nicht die Auswahl einzelner Geräte über _Equipment hinzufügen_.
+
+Wählen Sie den untenstehenden Button _Hinzufügen_ und im geöffneten Feld die gewünschten Gruppen aus. Der Reiter ist nur mit dem Recht zum Verwalten von Benutzergruppen sichtbar.
 
 {{< imgproc Gliederung_Gruppe_hinzufügen Resize "960x" >}}
 Eine oder mehrere Gruppen zum Gliederungstypen auswählen und hinzufügen
@@ -131,7 +133,17 @@ Bestätigen Sie Ihre Auswahl über den Button "Gruppe hinzufügen". Die Liste ak
 
 ### Verfügbarkeit
 
-Im Reiter Verfügbarkeit können Sie weitere Ressourcen auswählen. Wählen Sie dafür den untenstehenden Button `Hinzufügen` aus und wählen Sie über die Checkbox eine oder mehrere Ressourcen aus.
+Der Reiter _Verfügbarkeit_ erscheint nur, wenn beim Gliederungstyp _Aggregiert für_ gesetzt ist. Hier bestimmen Sie, für welche Zielressourcen die Gliederung verfügbar ist. Bei einem für _Raum_ aggregierten Equipmenttyp wählen Sie also die Räume aus, nicht die Geräte.
+
+Eine leere Liste bedeutet keine Einschränkung durch diese Gliederung. Sobald Räume eingetragen sind, ist die Gliederung nur für diese Räume freigegeben. Standortregeln, zeitliche Verfügbarkeit und Buchungsrechte gelten weiterhin.
+
+Die Freigabe wird bei der Raumsuche mit Equipmentanzahl, beispielsweise _Raum mit 2 Beamern_, für das mobile Equipment berücksichtigt. Auch die aggregierte Ansicht in der Detailbuchung zeigt nur die für den Raum freigegebenen Gliederungen.
+
+{{% alert color="info" title="Auswahl und Buchungsprüfung" %}}
+In der Einzelansicht kann _Equipment hinzufügen_ Geräte anzeigen, deren Gliederung für den Raum nicht freigegeben ist. Beim Speichern der Raumbuchung wird die Freigabe jedoch geprüft. Nicht freigegebenes Equipment verhindert den Abschluss der Buchung mit einer Validierungsmeldung. Sind einem Gerät mehrere für _Raum_ aggregierte Gliederungen zugeordnet, müssen alle darauf gesetzten Raumeinschränkungen erfüllt sein.
+{{% /alert %}}
+
+Wählen Sie _Hinzufügen_ und markieren Sie die gewünschten Ressourcen über die Checkboxen.
 
 {{< imgproc Gliederung_Verfügbarkeit_hinzufügen Resize "960x" >}}
 Verfügbarkeiten auswählen und hinzufügen
