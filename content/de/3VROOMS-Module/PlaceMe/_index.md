@@ -27,9 +27,40 @@ Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "
 - **Buchen**, um Ressourcen und passende freie Zeitfenster zu suchen.
 - **Buchungen**, um vorhandene Buchungen zu filtern, zu öffnen und im erlaubten Umfang zu bearbeiten oder zu annullieren.
 
-Auf dem Telefon heisst der Bereich **Buchungen** in der unteren Navigation **Meine**. Auch **Meine heutigen Buchungen** auf **Heute** öffnet die jeweilige Buchung.
+Unter **Start** finden Sie **Heute**, **Kommende**, **Wartet auf andere** und **Vergangene**. Auf dem Telefon heisst der Bereich **Buchungen** in der unteren Navigation **Meine**. Auch die Buchungskarte auf **Heute** öffnet die jeweilige Buchung.
 
 Über das Zahnrad gelangen Sie zu **Einstellungen**, sofern Sie das Recht **Darf Sektion 'Einstellungen' nutzen** besitzen. Das persönliche **Erscheinungsbild** wählen Sie am Computer im Kontomenü über Ihr Profilbild, auf dem Telefon unter **Mehr**: **System**, **Hell** oder **Dunkel**. Die Auswahl gilt für diesen Browser. **System** richtet sich nach dem Gerät.
+
+## Einen Raum unter Heute sofort buchen
+
+**Start → Heute → Jetzt frei** schlägt freie Räume anhand Ihrer persönlichen Standardstandorte und Standardkapazität vor. Fehlende Vorgaben schränken die Suche nicht entsprechend ein. Die Vorschläge übernehmen nicht die zuletzt verwendete Ansicht unter **Buchen**.
+
+Ein Klick auf eine Dauer kann die Buchung unmittelbar erstellen. Dafür benötigen Sie zusätzlich das globale Recht **Darf Schnellreservationen durchführen** (ID 112); die Ressource muss Schnellbuchungen erlauben. Die Schnellbuchung erhält einen Titel nach dem Muster **Gebucht für [Name]** und den ersten erlaubten definitiven, sonst provisorischen, sonst temporären Status. Möchten Sie Titel oder Status selbst wählen, verwenden Sie **Buchen** und prüfen Sie die Angaben vor dem Abschluss.
+
+1. Prüfen Sie Raum, Standort und **Frei bis …**. Die angezeigten Vorschläge sind keine vorläufigen Reservierungen.
+2. Wählen Sie **30 Min.** oder **1 Std.**. Nicht mögliche Dauern werden nicht angeboten. Die Buchung beginnt ab der nächsten vollen Minute. Für eine andere Zeit öffnen Sie am Computer **Andere Zeit**; **Alle Räume anzeigen**, auf dem Telefon **Alle Räume**, führt zu **Buchen**.
+3. Kann der Raum mit Ihren Vorgaben direkt gebucht werden, ist die Buchung jetzt gespeichert. Andernfalls oder bei fehlenden Pflichtangaben öffnet sich die vorausgefüllte Buchungsseite, auf dem Telefon zunächst der Eingabebereich. Ergänzen und prüfen Sie dort die Angaben vor dem Buchen.
+4. Prüfen Sie die Erfolgsmeldung. Eine provisorische oder temporäre Buchung ist keine definitive Bestätigung. Beachten Sie eine angezeigte Bestätigungsfrist.
+
+{{% alert title="Rückgängig annulliert die Buchung" color="warning" %}}
+Die Erfolgsmeldung bietet **Rückgängig** nur an, wenn die soeben erstellte Schnellbuchung annulliert werden darf und die Vorschau keine Kosten ergibt; sonst bietet sie **Öffnen**. **Rückgängig** annulliert die gespeicherte Buchung ohne weitere Rückfrage. Auch zwischenzeitliche Änderungen können davon betroffen sein. Prüfen Sie bei Unsicherheit zuerst die Buchung über die Buchungsliste. Die Gebührenfreiheit wird beim Ausführen erneut geprüft; entstehen inzwischen Kosten, wird die Rücknahme abgewiesen. Eine Annullierung nimmt bereits veranlasste Nachrichten nicht zurück.
+{{% /alert %}}
+
+Ist der Raum inzwischen belegt oder fehlt die Bestätigung, prüfen Sie vor einem erneuten Versuch die Buchungsliste. Verwenden Sie **Buchen**, wenn kein passender Vorschlag vorhanden ist.
+
+## Eigene Buchungen unter Start finden
+
+Die folgenden Listen enthalten Hauptbuchungen, bei denen Sie erstellende, organisierende oder verantwortliche Person sind. Die blosse Teilnahme genügt nicht. Unterbuchungen einer Raumkombination erscheinen nicht als eigene Einträge.
+
+| Liste | Inhalt |
+| --- | --- |
+| **Kommende** | Noch nicht beendete Buchungen, einschliesslich bereits laufender Buchungen, nach Beginn aufsteigend. |
+| **Wartet auf andere** | Noch nicht beendete provisorische und temporäre Buchungen. Dazu gehören auch Buchungen, die Sie selbst bestätigen könnten; die Liste bestimmt nicht, wer bestätigen darf. |
+| **Vergangene** | Beendete Buchungen, nach Beginn absteigend. |
+
+**Kommende** und **Vergangene** blenden annullierte Buchungen zunächst aus. Mit **Annullierte** zeigen Sie diese zusätzlich an. **Buchung suchen** durchsucht auch noch nicht geladene Einträge der jeweiligen Liste und findet annullierte Buchungen auch bei ausgeschaltetem Schalter. Die Suche wechselt nicht in die andere Zeitliste. **Wartet auf andere** hat weder Suchfeld noch Annullierte-Schalter. Für Ihre eigenen Bestätigungsaufgaben verwenden Sie **Aufgaben → Zu bestätigen**.
+
+Zunächst werden bis zu **50 Buchungen** geladen. Mit **Weitere 50 laden** ergänzen Sie die Liste. **… von … Buchungen** zählt die gefilterte Auswahl; die Zahlen an den Reitern **Kommende** und **Wartet auf andere** bleiben unabhängig von Suche und Schalter und zählen keine annullierten Buchungen. Die Wochenübersicht auf **Heute** ersetzt diese Listen nicht: Sie zeigt höchstens 100 noch nicht beendete Buchungen der laufenden Woche und fehlt auf dem Telefon.
 
 ## Ein freies Zeitfenster suchen
 
@@ -93,18 +124,20 @@ Die Zoomstufe bestimmt den Ausschnitt, nicht die Länge des Suchzeitraums. Ände
 
 Der Kalender zeigt Belegungen und Ressourcenbeschränkungen. Provisorische und temporäre Buchungen haben einen gestrichelten Rand. Belegungen ohne sichtbare Details sind schraffiert, gegebenenfalls mit **Privat** gekennzeichnet. Schmale Blöcke zeigen nur den Text, der hineinpasst. Weitere Angaben finden Sie im Hinweis beim Zeigen auf den Block, soweit Sie diese sehen dürfen. Die Farbe allein bestimmt weder Status noch Verfügbarkeit.
 
-Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Eine geöffnete oder gerade gebuchte Ressource behält ihren Platz bis zur Änderung der Suchkriterien. Prüfen Sie deshalb auch die aktualisierte Belegung, nicht nur die Gruppenzuordnung.
+Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Im Zeitstrahl liegt es über dem Kalender, ohne dessen Breite oder Massstab zu ändern. Eine davon verdeckte Buchung wird bei Bedarf in den sichtbaren Ausschnitt gescrollt. Escape oder ein Klick neben das Panel schliesst es. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Eine geöffnete oder gerade gebuchte Ressource behält ihren Platz bis zur Änderung der Suchkriterien. Prüfen Sie deshalb auch die aktualisierte Belegung, nicht nur die Gruppenzuordnung.
 
 ## Buchung erstellen
 
-1. Wählen Sie im Kalender eine freie Stelle oder markieren Sie einen Zeitraum. Am Computer öffnet sich die Buchung direkt unter der Ressourcenzeile. In der **Liste** öffnet **Wählen** das Buchungspanel, auf dem Telefon einen Eingabebereich am unteren Bildschirmrand.
+1. Wählen Sie im Kalender eine freie Stelle oder markieren Sie einen Zeitraum. Am Computer öffnet sich die Buchung direkt unter der Ressourcenzeile. In der **Liste** öffnet **Wählen** die vollständige Buchungsseite. Das gilt auch für die untereinander angeordnete Kalenderdarstellung in einem schmaleren Computerfenster. Auf dem Telefon öffnet sich ein Eingabebereich am unteren Bildschirmrand.
 2. Prüfen Sie Ressource, Datum, Beginn und Ende in der angezeigten Zeitzone. Ein Klick verwendet die gesuchte Dauer. Innerhalb des markierten Suchfensters bleibt der Vorschlag darin und kann nahe dessen Ende früher beginnen als die angeklickte Stelle.
-3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. Im Panel bearbeiten Sie den Titel direkt in der Überschrift. Es öffnet mit dem Eingabefokus im Titel, bei leerem Titel mit **Titel hinzufügen**. In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Mehr Angaben** führt mit Ihren Eingaben ins Panel.
-4. Öffnen Sie bei Bedarf im Panel **Ändern** für Datum und Uhrzeit oder mit **Alle Angaben** die vollständige Buchungsseite. Dort bearbeiten Sie den Titel direkt in der Überschrift und ergänzen die **Beschreibung**. Über **Teilnehmende** im Panel gelangen Sie mit dem entsprechenden Recht direkt zum Bereich **Personen** der vollständigen Seite. Ergänzen Sie dort die Einladungen und wählen Sie bei Bedarf im Bereich **Bestuhlung** eine passende Bestuhlung. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen.
-5. Ergänzen Sie verlangte **Pflichtangaben** und prüfen Sie **Status nach dem Buchen**, die Kosten und allfällige Zusatzbuchungen. Wählen Sie erst danach die angebotene Buchungsaktion, beispielsweise **Definitiv buchen** oder **Provisorisch reservieren**. Erst diese Aktion erstellt die Buchung. **Wählen** und **Alle Angaben** allein reservieren keine Ressource.
-6. Prüfen Sie das Ergebnis anhand von Ressource, Zeitraum und Titel sowie unter **Buchungen**. Nach dem Buchen zeigt das Panel **Gebucht**. **Fertig** schliesst es. **Rückgängig** annulliert die soeben erstellte Buchung ohne weitere Rückfrage; prüfen Sie deshalb vor dem Anklicken, ob Sie diese wirklich aufgeben möchten.
+3. Geben Sie den **Titel** ein und prüfen oder ergänzen Sie **Personen**. In der Kalenderzeile öffnen Sie mit dem entsprechenden Recht über **Teilnehmende** die Einladungsliste direkt in der Zeile. **Mehr Angaben**, **Catering** und **Dazu buchen** führen mit Ihren Eingaben auf die vollständige Buchungsseite, bei Zusatzleistungen direkt zum betreffenden Bereich.
+4. Ergänzen Sie bei Bedarf auf der vollständigen Seite die **Beschreibung**, **Personen** und **Bestuhlung**. Den Titel bearbeiten Sie direkt in der Überschrift. Bei einem Raum ohne Standardbestuhlung müssen Sie eine Bestuhlung auswählen, sofern Sie nicht ohne Bestuhlung buchen dürfen. Auf dem Telefon öffnet **Alle Angaben** die vollständige Seite. Verlangt der Raum weitere Angaben, führt **Weiter zu den Pflichtangaben** aus der Kalenderzeile direkt zur benötigten Eingabe.
+5. Prüfen Sie Pflichtangaben, Kosten, Zusatzbuchungen und den angebotenen Status. Wählen Sie bei Bedarf über den Pfeil neben der Buchungsaktion **Buchen als** einen anderen erlaubten Status. Wählen Sie erst danach die Buchungsaktion, beispielsweise **Definitiv buchen** oder **Provisorisch buchen**. Erst diese Aktion erstellt die Buchung. **Wählen**, die Statusauswahl und das Öffnen weiterer Angaben allein reservieren keine Ressource.
+6. Prüfen Sie die Erfolgsmeldung und öffnen Sie bei Bedarf mit **Öffnen** die gespeicherte Buchung. Die Meldung unterscheidet definitive, provisorische und temporäre Buchungen. Prüfen Sie Ressource, Zeitraum, Titel und Status auch in der Buchungsliste.
 
-Ein anderer gewählter Zeitraum oder eine andere Ressource übernimmt die übrigen Entwurfseingaben. Bei einem Ressourcenwechsel wird eine eigene Bestuhlungswahl verworfen. Verlangt die Buchungsprüfung aus der Kalenderzeile weitere Angaben, führt sie ins Panel oder auf die vollständige Seite. Ergänzen Sie Angaben, die im Panel fehlen, über **Alle Angaben**.
+In der Kalenderzeile können Sie mit Enter buchen und mit Escape verwerfen. **Zurück** auf der vollständigen Seite führt zur vorherigen Zeile beziehungsweise Liste. Beim Zurückkehren zur Zeile bleiben der auf der Seite gewählte Raum, die Zeit und Ihre Eingaben erhalten, auch wenn nicht alle Angaben in der Zeile sichtbar sind.
+
+Wählen Sie eine andere Ressource direkt im Kalender oder in der Liste, bleiben die allgemeinen Eingaben erhalten; Bestuhlung, weitere Angaben, Catering und Zusatzressourcen werden dabei zurückgesetzt. Verwenden Sie für einen Raumwechsel mit Prüfung der übernehmbaren Angaben **Wechseln** auf der vollständigen Seite wie unter **Raum im Buchungsentwurf wechseln** beschrieben.
 
 ### Tag und Zeitfenster eingeben
 
@@ -122,9 +155,13 @@ Die Anzeige berücksichtigt Vor- und Nachlaufzeiten, soweit sie für die Ressour
 
 ### Status beim Buchen wählen
 
-Im Panel und auf der vollständigen Seite zeigt **Status nach dem Buchen** den Anfangsstatus aus dem Workflow der Ressource und Ihren Buchungsrechten. Bei genau zwei angebotenen Status unterschiedlicher Art wählen Sie über getrennte Buchungsaktionen, beispielsweise **Definitiv buchen** und **Provisorisch reservieren**. Bei mehr als zwei Status oder zwei Status derselben Art öffnet die Statusanzeige die Liste **Status**. Wird nur ein Status angeboten, ist die Anzeige keine Auswahl. In der Kalenderzeile steht nur die vorgeschlagene Buchungsaktion; öffnen Sie für eine andere Statuswahl **Mehr Angaben**.
+Die Buchungsaktion zeigt den gewählten Anfangsstatus: **Definitiv buchen**, **Provisorisch buchen**, **Unverbindlich buchen** oder bei einem eigenen Statusnamen **Buchen als «[Statusname]»**. Ohne eigene Wahl wird zuerst ein erlaubter definitiver, sonst ein provisorischer, sonst ein temporärer Status vorgeschlagen. Innerhalb derselben Art gilt der erste angebotene Status.
 
-Ein temporärer Status kann **Reservieren bis …** anbieten. Prüfen Sie die angezeigte Frist: Eine solche Reservierung ist noch keine definitive Bestätigung. Statusnamen und zulässige Übergänge bestimmt Ihre Organisation. Bei gespeicherten Buchungen ergänzt ein Symbol den Statusnamen: eine Uhr für temporär, ein gestrichelter Kreis für provisorisch, ein Häkchen im Kreis für definitiv und ein Verbotszeichen für annulliert. Die Auswahl beim Erstellen ist kein allgemeiner Statuswechsel für bestehende Buchungen; dafür gelten die Bestätigungsaktionen weiter unten.
+Sind mehrere Status erlaubt, öffnet der Pfeil neben der Aktion das Menü **Buchen als** – in der Kalenderzeile, auf der vollständigen Seite und auf dem Telefon. Fehlen in der Kalenderzeile Pflichtangaben, führt dort zunächst **Weiter zu den Pflichtangaben** auf die vollständige Seite. Das Menü enthält die für Ihre Person, Ressource und Buchungszeit erlaubten Anfangsstatus in der Workflow-Reihenfolge. Wählen Sie einen Eintrag und prüfen Sie die geänderte Buchungsaktion. Die Auswahl allein bucht noch nicht. Bei genau einem Status fehlt der Pfeil; ohne erlaubten Status ist Buchen gesperrt. Prüfen Sie dann Zeitraum und Ressource.
+
+Die Erläuterung im Menü nennt die Wirkung des Status. Bei einem provisorischen Status kann sie die benachrichtigten Gruppen nennen; daraus folgt nicht, wer bestätigen darf. Bei einem temporären Status zeigt sie eine allfällige Frist und ob die Buchung ohne Bestätigung annulliert oder gelöscht wird. **Läuft nicht ab.** bedeutet, dass keine solche Frist eingerichtet ist. Prüfen Sie nach dem Buchen den gespeicherten Status und die angezeigte Frist: Eine temporäre Reservierung ist keine definitive Bestätigung.
+
+Statusnamen und zulässige Übergänge bestimmt Ihre Organisation. Bei gespeicherten Buchungen ergänzt ein Symbol den Statusnamen: eine Uhr für temporär, ein gestrichelter Kreis für provisorisch, ein Häkchen im Kreis für definitiv und ein Verbotszeichen für annulliert. Die Auswahl beim Erstellen ist kein allgemeiner Statuswechsel für bestehende Buchungen; dafür gelten die Bestätigungsaktionen weiter unten.
 
 Bei einer Raumbuchung kann Ihre Standardkapazität als Personenanzahl vorgeschlagen werden. Passt sie zu keiner Bestuhlung eines Raums mit Standardbestuhlung, wird deren Mindestpersonenzahl vorgeschlagen. Fehlt Ihre Standardkapazität und müssen Sie eine Personenanzahl angeben, wird ebenfalls diese Mindestpersonenzahl vorgeschlagen. Je nach Konfiguration bleibt das Feld leer. Prüfen Sie die Anzahl vor dem Abschluss.
 
@@ -150,7 +187,7 @@ Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrw
 
 ### Teilnehmende hinzufügen oder entfernen
 
-Öffnen Sie im Panel **Teilnehmende** oder auf der vollständigen Buchungsseite den Bereich **Personen**. Das gilt am Computer und auf dem Telefon. Das Panel fasst die sichtbare Liste zusammen. Auf der vollständigen Seite stehen die einzelnen Namen beziehungsweise E-Mail-Adressen.
+Beim Erstellen in der Kalenderzeile öffnet **Teilnehmende** das Eingabefeld direkt in der Zeile. Auf der vollständigen Buchungsseite verwenden Sie den Bereich **Personen**. Aus dem Panel führt **Teilnehmende** dorthin, auf dem Telefon ebenso wie bei einer vorhandenen Buchung am Computer. Das Panel fasst die sichtbare Liste zusammen. Auf der vollständigen Seite stehen die einzelnen Namen beziehungsweise E-Mail-Adressen.
 
 1. Wählen Sie **Teilnehmende hinzufügen** und geben Sie mindestens zwei Zeichen eines Namens oder einer E-Mail-Adresse ein. Die Suche findet aktive Personen. Prüfen Sie bei gleichen Namen die angezeigte Organisation und E-Mail-Adresse, soweit vorhanden.
 2. Wählen Sie die gewünschte Person. Für eine externe Person geben Sie die vollständige E-Mail-Adresse ein und wählen den Eintrag **Als externe Person einladen**. Ein eingegebener Suchtext allein fügt niemanden hinzu.
@@ -169,7 +206,7 @@ Buchen Sie einen kombinierten Raum, werden seine verknüpften Teilräume als Unt
 
 Für neu hinzukommende Unterbuchungen benötigen Sie Buchungsrechte auf den betroffenen Ressourcen. Auch deren Buchungsregeln werden geprüft. Eine Ablehnung nennt den betroffenen Raum. Das kann auch beim Speichern einer älteren Buchung geschehen, wenn fehlende Unterbuchungen ergänzt werden.
 
-Öffnen Sie eine Unterbuchung in der Liste, im Kalender oder über **Meine heutigen Buchungen**, zeigt PlaceMe die Hauptbuchung, sofern Sie diese sehen dürfen. Im Kalender gilt das auch dann, wenn die Zeile der Hauptbuchung ausgefiltert oder noch nicht geladen ist. Prüfen Sie deshalb deren Ressource und Buchungsnummer. Ohne Zugriff auf die Hauptbuchung bleibt die Unterbuchung schreibgeschützt sichtbar und bietet keine eigenen Aktionen. Das gilt auch für kombinierte Buchungen, die in der klassischen ROOMS-Oberfläche erstellt wurden. Unterbuchungen können Sie hier nicht unabhängig bearbeiten oder verschieben.
+Öffnen Sie eine Unterbuchung in der Liste oder im Kalender, zeigt PlaceMe die Hauptbuchung, sofern Sie diese sehen dürfen. Im Kalender gilt das auch dann, wenn die Zeile der Hauptbuchung ausgefiltert oder noch nicht geladen ist. Prüfen Sie deshalb deren Ressource und Buchungsnummer. Ohne Zugriff auf die Hauptbuchung bleibt die Unterbuchung schreibgeschützt sichtbar und bietet keine eigenen Aktionen. Das gilt auch für kombinierte Buchungen, die in der klassischen ROOMS-Oberfläche erstellt wurden. Unterbuchungen können Sie hier nicht unabhängig bearbeiten oder verschieben.
 
 {{% alert title="Änderungen betreffen die Raumkombination" color="warning" %}}
 Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertraulichen Bemerkungen werden von der Hauptbuchung auf ihre Unterbuchungen übertragen. Freigeben und Terminieren beenden auch die Unterbuchungen. Annullieren und No-show annullieren sie mit. Einchecken der Hauptbuchung kennzeichnet auch ihre Unterbuchungen als eingecheckt. Eine gesperrte Unterbuchung verhindert diesen Check-in. Prüfen Sie vor einer Aktion, ob sie für die ganze Kombination gelten soll.
@@ -177,7 +214,7 @@ Zeit, Titel, private Kennzeichnung und die allgemeinen beziehungsweise vertrauli
 
 ### Pflichtangaben, Kosten und Kostenträger
 
-Verlangt der Raum weitere Informationen, erscheinen im Panel **Pflichtangaben**. Auf der vollständigen Seite stehen unter **Weitere Angaben** die Klassifikationen und Fragen des Raums. Eine Klassifikation kann zusätzliche Fragen oder mitzubuchende Ressourcen auslösen. Ergänzen Sie **(Pflicht)** beziehungsweise die für den gewählten Status geltenden **(Pflicht ab …)** vor dem Abschluss. Fehlende Angaben werden auch beim Bearbeiten geprüft. Bereits beantwortete Fragen können nach ihrer Änderungsfrist schreibgeschützt sein; beachten Sie **Nicht mehr änderbar seit …**.
+Verlangt der Raum weitere Informationen, führt **Weiter zu den Pflichtangaben** aus der Kalenderzeile auf die vollständige Seite. Im Erstellbereich auf dem Telefon erscheinen **Pflichtangaben**. Auf der vollständigen Seite stehen unter **Weitere Angaben** die Klassifikationen und Fragen des Raums. Eine Klassifikation kann zusätzliche Fragen oder mitzubuchende Ressourcen auslösen. Ergänzen Sie **(Pflicht)** beziehungsweise die für den gewählten Status geltenden **(Pflicht ab …)** vor dem Abschluss. Fehlende Angaben werden auch beim Bearbeiten geprüft. Bereits beantwortete Fragen können nach ihrer Änderungsfrist schreibgeschützt sein; beachten Sie **Nicht mehr änderbar seit …**.
 
 Mit **Darf Kosten sehen** (ID 154) zeigt das Panel eine Kostenzusammenfassung, die vollständige Seite unter **Kosten** die Positionen und das **Total**. Die Beträge werden berechnet, nicht manuell eingegeben. Änderungen an Zeit, Personenanzahl, Bestuhlung oder Bestellungen können die Kosten verändern. **Kostenlos** steht für einen berechneten Nullbetrag; **–** ist kein Nachweis einer kostenlosen Buchung. Eine Kostenvorschau bestätigt weder Verfügbarkeit noch erfolgreiche Buchung. Bei **Nach Verbrauch** ist die Summe vor Erfassung des Verbrauchs vorläufig; sie kann zunächst eine Einheit enthalten.
 
@@ -187,7 +224,7 @@ Mit **Darf Kostenträger anpassen** (ID 82) wählen Sie unter **Kosten → Koste
 
 Für Bestellungen benötigen Sie **Darf Reservationen mit Bestellungen buchen** (ID 68). Angebot, Benutzergruppe, Gültigkeit, Vorbereitungs- und Vorankündigungsfristen sowie Arbeitszeiten der Dienstleister bestimmen, was bestellbar ist. Vorhandene Bestellungen können ohne Bestellrecht schreibgeschützt sichtbar bleiben, sofern Sie die vollständigen Buchungsdetails sehen dürfen.
 
-1. Öffnen Sie beim Erstellen **Catering** aus der Kalenderzeile oder dem Panel. Bei einer vorhandenen Buchung wählen Sie zuerst **Bearbeiten** und auf der vollständigen Seite **Catering und Services**. Die Catering-Zeile im Detailpanel ist eine Zusammenfassung, kein Bestellformular.
+1. Öffnen Sie beim Erstellen **Catering** aus der Kalenderzeile beziehungsweise auf dem Telefon aus dem Erstellbereich. Sie gelangen zum Bereich **Catering und Services** auf der vollständigen Seite. Bei einer vorhandenen Buchung wählen Sie zuerst **Bearbeiten** und dort **Catering und Services**. Die Catering-Zeile im Detailpanel ist eine Zusammenfassung, kein Bestellformular.
 2. Wählen Sie **Produkt hinzufügen**, suchen Sie ein Produkt und wählen Sie **Hinzufügen**. Prüfen Sie Menge und angebotene Optionen. Bei einem Paket sind die Optionen zunächst ausgewählt. Bestätigen Sie die Auswahl mit **1 Produkt hinzufügen** beziehungsweise **… Produkte hinzufügen**.
 3. Prüfen Sie die Bestellzeilen und **Lieferung um …**. Mit **Ändern** bearbeiten Sie die gemeinsame **Zeit** und den **Ort**, mit **Fertig** schliessen Sie diese Felder. Bestehende abweichende Liefer- oder Abholangaben bleiben je Zeile sichtbar. Leeren Sie **Ort**, gilt wieder der Standardlieferort des Raums.
 4. Prüfen Sie Preise, Fristen und die angezeigten Folgen. Wählen Sie erst danach die Buchungsaktion beziehungsweise **Speichern**. Die Produktauswahl allein bestellt noch nichts.
@@ -230,13 +267,19 @@ Unter **Erinnerungen** kann **Erinnerung in Outlook** angeboten werden. **Wie in
 
 Die vollständige Seite bietet Titel, Beschreibung, Datum und Uhrzeit, Personenanzahlen, eine private Kennzeichnung und Bemerkungen für Teilnehmende. Vertrauliche Bemerkungen sowie Vor- und Nachlaufzeiten sind von Ihren Rechten und der Ressource abhängig. Bei synchronisierten Ressourcen stehen keine Vor- und Nachlaufzeiten zur Eingabe zur Verfügung.
 
-Über **Alle Angaben** erreichen Sie ausserdem **Dazu buchen**, **Catering und Services**, **Kosten**, **Erinnerungen**, **Weitere Angaben** und **Anhänge**, soweit Ihre Rechte und die Ressource diese anbieten. Mit **Folgt** gekennzeichnete Bedienelemente, insbesondere für Serien, sind deaktiviert.
+Die vollständige Seite erreichen Sie aus der Kalenderzeile über **Mehr Angaben**, aus dem Panel über **Alle Angaben** beziehungsweise **Bearbeiten**. Sie bietet ausserdem **Dazu buchen**, **Catering und Services**, **Kosten**, **Erinnerungen**, **Weitere Angaben** und **Anhänge**, soweit Ihre Rechte und die Ressource diese anbieten. Mit **Folgt** gekennzeichnete Bedienelemente, insbesondere für Serien, sind deaktiviert.
 
 cordivo verarbeitet Einzelbuchungen einschliesslich kombinierter Räume, Bestuhlungen, Bestellungen, Zusatzressourcen und Anhängen im beschriebenen Umfang. Verwenden Sie die klassische ROOMS-Oberfläche für Serien sowie Buchungen mit Zahlungen, Anlass, Lektion oder Teams-Meeting. Auch persönliche Ressourcen, Organisatoren mit Google-Synchronisation und bestimmte Ressourcen- oder Installationseinstellungen können den Abschluss ausschliessen. Temporäre Reservierungen haben eigene Bestätigungsaktionen und sind nicht wie eine gewöhnliche provisorische oder definitive Buchung bearbeitbar. Die Meldung beim Speichern nennt den Grund einer Ablehnung.
 
+### Raum im Buchungsentwurf wechseln
+
+Öffnen Sie auf der vollständigen Seite neben dem Raum **Wechseln** und wählen Sie einen angebotenen freien Raum. **Details** zeigt nur die Rauminformation. Prüfen Sie vor dem Übernehmen die angekündigten Folgen und bestätigen Sie gegebenenfalls **Raum wechseln**. **Raum behalten** schliesst die Rückfrage ohne Wechsel.
+
+Allgemeine Eingaben und Anhänge bleiben erhalten. Bestuhlung, Klassifikationen und Antworten, Bestellungen und Zusatzressourcen werden nur übernommen, soweit der neue Raum sie zulässt. Unpassende Angaben oder Leistungen können entfallen, Equipmentmengen reduziert und neue Vorgaben ergänzt werden. Prüfen Sie deshalb Bestuhlung, Pflichtangaben, Status und Kosten nach dem Wechsel erneut. Die Raumauswahl allein erstellt keine Buchung; schliessen Sie erst nach dieser Prüfung mit der Buchungsaktion ab. Für bereits gespeicherte Buchungen gelten zusätzlich die Regeln unter **In einen anderen Raum wechseln**.
+
 ## Buchung bearbeiten oder annullieren
 
-1. Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**.
+1. Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder auf **Heute**.
 2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status im Panel. Unter dem Titel stehen der Status und gegebenenfalls **Eingecheckt** oder **No-show** sowie die Buchungsnummer. Wählen Sie oben rechts das Stiftsymbol **Bearbeiten**, um die vollständige Seite zu öffnen. Wenn Sie die vollständigen Buchungsdetails sehen, aber nicht bearbeiten dürfen, öffnet dort **Alle Angaben** die schreibgeschützte Seite. Bei eingeschränkten Leserechten fehlt diese Aktion. Sichtbar bleiben nur die erlaubten Angaben, beispielsweise unter **Belegt**.
 3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Danach erscheint wieder das Detailpanel. Mit **Zurück** kehren Sie zur Ausgangsseite zurück. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
 
@@ -276,7 +319,7 @@ Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sic
 
 ## Einchecken, freigeben, terminieren oder No-show melden
 
-Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder unter **Meine heutigen Buchungen** auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
+Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
 
 **Einchecken**, **Freigeben** und **Terminieren** stehen unten, jeweils nur während ihres zulässigen Zeitfensters. Ohne eine dieser Aktionen hat das Detailpanel keine Fusszeile. **No-show** finden Sie zusammen mit **Buchung annullieren** unter **Weitere Aktionen** beim Titel. Das Menü zeigt nur zulässige Einträge und fehlt, wenn keiner verfügbar ist. Auf dem Telefon gilt dieselbe Aufteilung im Buchungsbereich am unteren Bildschirmrand.
 
@@ -323,7 +366,7 @@ Bei installationsspezifischen Freigabe-, Terminierungs- oder No-show-Regeln kann
 ## Meldungen beim Speichern
 
 - **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Die Meldung erklärt die verletzte Buchungsregel, beispielsweise eine überschrittene Höchstdauer oder eine unpassende Personenanzahl. Meldungen ohne zugehöriges Eingabefeld stehen in der Zusammenfassung. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
-- **Zeitraum inzwischen belegt:** Wählen Sie beim Erstellen **Andere Zeit wählen**. Die übrigen Angaben bleiben erhalten.
+- **Zeitraum inzwischen belegt oder gesperrt:** Auf der vollständigen Seite nennt die Meldung den betroffenen Raum und Zeitraum. Sie können unter **Zeit ändern** die Uhrzeit anpassen oder einen vorgeschlagenen freien Raum mit **Nehmen** auswählen. **Alle … freien Räume** öffnet die weitere Auswahl; auch **Wechseln** neben dem Raum steht zur Verfügung. Die Vorschläge berücksichtigen Zeitraum, Personenanzahl, Ressourcentyp und die anwendbaren Suchfilter. Prüfen Sie vor dem Wechsel die genannten Angaben oder Leistungen, die der andere Raum nicht übernehmen kann. Die Auswahl speichert noch nicht: Prüfen Sie die aktualisierten Angaben und wählen Sie die Buchungsaktion beziehungsweise **Raum wechseln und speichern**. Ohne passenden Vorschlag ändern Sie Zeit oder Suchkriterien. In der Kalenderzeile steht nur die Meldung; wählen Sie eine andere freie Stelle oder öffnen Sie die vollständige Seite. Auf dem Telefon führt **Andere Zeit wählen** zurück zur Zeitauswahl; über **Alle Angaben** erreichen Sie die Raumvorschläge auf der vollständigen Seite.
 - **Buchung inzwischen geändert:** Bei einem Bearbeitungskonflikt ist Speichern gesperrt. Der Hinweis nennt, soweit verfügbar, Zeitpunkt und Person der letzten Änderung. Das schliesst Änderungen aus der klassischen ROOMS-Oberfläche ein. Prüfen Sie die angezeigten Änderungen und wählen Sie **Aktuelle Version laden**. Das ersetzt Ihre ungespeicherten Eingaben. Erfassen Sie Ihre Änderungen danach erneut.
 - **Bearbeitung in ROOMS oder Übernahme aus Outlook:** Warten Sie, bis die andere Bearbeitung beziehungsweise Synchronisation abgeschlossen ist, und versuchen Sie es erneut.
 - **Aktion nicht unterstützt:** Beachten Sie den angegebenen Grund und verwenden Sie gegebenenfalls die klassische ROOMS-Oberfläche.
@@ -391,9 +434,17 @@ Mit **Darf Konfiguration System verwalten** (26) finden Sie unter **Buchungen �
 
 Für eine zusätzliche farbliche Kennzeichnung im cordivo-Kalender und in der Buchungsliste kann die Administration eine [Buchungsfarbregel mit der Bedingung Abgleich]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md#abgleich-als-bedingung" >}}) einrichten. Die Farbe ersetzt weder den Hinweis noch die Prüfung der Kalender.
 
+## Versionen für eine Supportanfrage angeben
+
+Öffnen Sie am Computer im Kontomenü **Über Cordivo**, auf dem Telefon **Mehr → Über Cordivo**. Das Fenster zeigt **Cordivo**, **Rooms-Server** und unter **Verbunden mit** den verbundenen Server-Host. Mit **Versionen kopieren** übernehmen Sie die verfügbaren Angaben in die Zwischenablage und können sie Ihrer Supportanfrage beifügen. **Kopiert** bestätigt die Übernahme. Ist Kopieren im Browser gesperrt, markieren und kopieren Sie die Angaben selbst.
+
+**–** bei **Rooms-Server** bedeutet, dass keine Serverversion geliefert wurde; im kopierten Text fehlt diese Zeile. Die angezeigte Cordivo-Version finden Sie auch im Kontomenü und am Seitenende, auf dem Telefon am Ende von **Mehr**.
+
 ## Standort und weitere Filter verwenden
 
 Die Filter in **Buchen** und **Buchungen** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
+
+Standorte in Suchergebnissen und Buchungen werden als Namen mit Kommas angezeigt, beispielsweise **Bern, Aarbergergasse 20**. Gemeinsame oberste Ebenen der Standorte mit aktiven Ressourcen können entfallen; mindestens die letzte Ebene bleibt sichtbar. Die Standortauswahl im Filter zeigt weiterhin die Hierarchie.
 
 Beim Standort umfasst **ist innerhalb** den gewählten Standort und seine Unterstandorte. **ist nicht innerhalb** schliesst diesen gesamten Teilbaum aus. Wird ein übergeordneter Standort ausgewählt, ist eine zusätzliche Auswahl seiner Unterstandorte nicht erforderlich.
 
