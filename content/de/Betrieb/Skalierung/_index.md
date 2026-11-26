@@ -12,7 +12,7 @@ Einen ungefähren Eindruck über die zu erwartende Auslastung des Systems und di
 
 Je nach Auslastung ist es möglich, alle ROOMS Server Applikationen auf einer einzigen Maschine zu betreiben (1 Maschine); wenn immer möglich, sollte jedoch der MS SQL Server auf einer separaten Maschine installiert werden (2 Maschinen).
 
-Bei höherer Auslastung wird empfohlen, als nächstes den ROOMS Windows Service und die ROOMS Webapplikation auf verschiedenen Maschinen laufen zu lassen (3 Maschinen). Bei Hochleistungssystemen kann danach ein LoadBalancing der Webapplikation als sogenannte WebFarm und/oder ein Clustering des MS SQL Servers ins Auge gefasst werden (n Maschinen).
+Bei höherer Auslastung können **RoomsPro Worker** und die ROOMS-Webanwendungen auf verschiedenen Maschinen laufen. Betreiben Sie auch bei mehreren Webservern genau einen Worker pro Installation. Er führt die Service-Sessions und die übrigen Hintergrundjobs aus. Bei Hochleistungssystemen kann ein LoadBalancing der Webapplikation als sogenannte WebFarm und/oder ein Clustering des MS SQL Servers ins Auge gefasst werden.
 
 Normalerweise dürften 2 oder 3 Maschinen für den Betrieb von ROOMS angemessen sein.
 Das Betriebshandbuch orientiert sich an Installationen mit 2 bis 3 involvierten Maschinen; die Anleitungen in den folgenden Kapiteln sind in diesem Rahmen zu verstehen.
