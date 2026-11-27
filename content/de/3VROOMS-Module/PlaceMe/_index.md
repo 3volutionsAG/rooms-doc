@@ -233,15 +233,48 @@ Für Bestellungen benötigen Sie **Darf Reservationen mit Bestellungen buchen** 
 1. Öffnen Sie beim Erstellen **Catering** aus der Kalenderzeile beziehungsweise auf dem Telefon aus dem Erstellbereich. Sie gelangen zum Bereich **Catering und Services** auf der vollständigen Seite. Bei einer vorhandenen Buchung wählen Sie zuerst **Bearbeiten** und dort **Catering und Services**. Die Catering-Zeile im Detailpanel ist eine Zusammenfassung, kein Bestellformular.
 2. Wählen Sie **Produkt hinzufügen**, suchen Sie ein Produkt und wählen Sie **Hinzufügen**. Prüfen Sie Menge und angebotene Optionen. Bei einem Paket sind die Optionen zunächst ausgewählt. Bestätigen Sie die Auswahl mit **1 Produkt hinzufügen** beziehungsweise **… Produkte hinzufügen**.
 3. Prüfen Sie die Bestellzeilen und **Lieferung um …**. Mit **Ändern** bearbeiten Sie die gemeinsame **Zeit** und den **Ort**, mit **Fertig** schliessen Sie diese Felder. Bestehende abweichende Liefer- oder Abholangaben bleiben je Zeile sichtbar. Leeren Sie **Ort**, gilt wieder der Standardlieferort des Raums.
-4. Prüfen Sie Preise, Fristen und die angezeigten Folgen. Wählen Sie erst danach die Buchungsaktion beziehungsweise **Speichern**. Die Produktauswahl allein bestellt noch nichts.
+4. Prüfen Sie Preise, Fristen und die angezeigten Folgen. Wird **Genehmigung durch** angezeigt, wählen beziehungsweise prüfen Sie die genehmigende Person wie unten beschrieben. Wählen Sie erst danach die Buchungsaktion beziehungsweise **Speichern**. Die Produktauswahl allein bestellt noch nichts.
 
 **Bestellbar bis …** nennt eine geltende Frist. **Nicht mehr änderbar seit …** sperrt die betreffenden Änderungen auch dann, wenn die Seite offen bleibt. Eine Sperre kann das Hinzufügen oder Ändern verhindern, während das Entfernen vor der Lieferung weiterhin zulässig ist. Beachten Sie die tatsächlich angebotenen Aktionen. Eine zusätzliche Catering-Sperrzeit kann am Vortag beginnen und auch zeitunabhängige Bearbeitungsrechte begrenzen. **Gehört zu …** kennzeichnet zwingend mitbestellte Leistungen; diese lassen sich nicht frei ändern oder entfernen. **In Rooms angepasst** kennzeichnet hier schreibgeschützte, in der klassischen Oberfläche individuell angepasste Positionen.
 
 Bei einer Zeitänderung zeigt die Vorschau die neue Lieferung. Nach einer geänderten Personenanzahl bleiben bestehende Bestellmengen erhalten: **Die Mengen der Bestellung bleiben, wie sie sind.** Prüfen und korrigieren Sie diese selbst. Nicht jede Zeile übernimmt eine geänderte Lieferzeit oder einen neuen Ort; gesperrte und zwingende Leistungen behalten ihre jeweiligen Vorgaben.
 
-{{% alert title="Genehmigung und Absage beachten" color="warning" %}}
-Braucht die Bestellung eine neue Genehmigung, beispielsweise wegen einer eingerichteten Kostengrenze, weist cordivo den Abschluss mit einem Hinweis auf ROOMS ab. Verwenden Sie dafür die klassische Oberfläche. Annullieren und No-show annullieren auch die Bestellung; es können Gebühren entstehen. Prüfen Sie die Folgen im Dialog. Dienstleistermails hängen von Status, Genehmigung, Vorlagen und bereits ausstehenden Nachrichten ab. Eine gespeicherte Absage ist kein Nachweis einer bereits zugestellten Mail.
+#### Genehmigung anfragen und Bestellstatus prüfen
+
+Eine Bestellung benötigt eine Genehmigung, wenn ihre Positionskosten in einer Währung die eingerichtete Kostengrenze erreichen oder überschreiten. Dienstleisterpauschalen und Rabatte zählen für diese Grenze nicht mit. Auch eine bereits gewählte genehmigende Person führt die Bestellung durch die Genehmigung. Die Kostengrenzen und Stellvertretungen verwaltet die Administration in der klassischen ROOMS-Oberfläche.
+
+Unter den Positionen erscheint **Genehmigung durch**, sobald eine Genehmigung erforderlich oder eine Person gewählt ist. Geben Sie mindestens zwei Zeichen ein und wählen Sie eine aktive Person aus den Vorschlägen. Das Kreuz entfernt die Auswahl. Bei erreichter Kostengrenze verhindert eine leere Auswahl den Abschluss: **Wähl, wer die Bestellung freigibt.** Prüfen Sie die Person vor der Buchungsaktion beziehungsweise **Speichern**.
+
+Die gespeicherte Buchung unterscheidet:
+
+- **Wartet auf [Name]:** Die Bestellung wartet auf die Entscheidung dieser Person oder ihrer direkten Stellvertretung. Die gespeicherte Raumbuchung ist damit keine Cateringfreigabe.
+- **Freigegeben:** Die Bestellung ist genehmigt. Die Bestätigung des Buchungsstatus bleibt davon getrennt.
+- **Abgelehnt:** Die Bestellpositionen sind entfernt; der Buchungsstatus bleibt bestehen. Die Buchung zeigt die Begründung und, soweit ermittelbar, wer wann abgelehnt hat. Mit den erforderlichen Bearbeitungs- und Bestellrechten führt **Neu bestellen** zu **Catering und Services**. Wählen und speichern Sie die neue Bestellung; die Aktion stellt die entfernten Positionen nicht wieder her.
+
+Ändern Sie eine genehmigte Bestellung oder die genehmigende Person, kann eine neue Genehmigung nötig werden. Das gilt auch für einen Raum- oder Zeitwechsel, der Bestellpositionen, Lieferort oder Lieferzeiten verändert. Die Vorschau nennt dann **Die Freigabe wird neu angefragt.** mit dem Grund. Prüfen Sie diesen Hinweis vor dem Speichern und danach den Bestellstatus. Eine geänderte Personenanzahl allein passt weder die Bestellmengen an noch fordert sie automatisch eine neue Genehmigung an.
+
+{{% alert title="Dienstleisterstand nach Genehmigungsänderungen abgleichen" color="warning" %}}
+Nach einer Änderung, die eine Freigabe zurücksetzt, und nach erneuter Freigabe können Dienstleistermails fehlen, eine überholte Absage enthalten oder eine Bestellung doppelt ankündigen. Verlassen Sie sich bei bereits übermittelten Bestellungen nicht allein auf den angezeigten Genehmigungsstatus: Stimmen Sie die tatsächlich noch zu liefernden Positionen mit dem Dienstleister ab, insbesondere nach entfernten Positionen oder einem Wechsel des Buchungsstatus.
 {{% /alert %}}
+
+{{% alert title="Absage und installationsspezifische Regeln beachten" color="warning" %}}
+Annullieren und No-show annullieren auch die Bestellung; es können Gebühren entstehen. Prüfen Sie die Folgen im Dialog. Dienstleistermails hängen von Status, Genehmigung, Vorlagen und bereits ausstehenden Nachrichten ab. Eine gespeicherte Absage ist kein Nachweis einer bereits zugestellten Mail. Verwendet Ihre Installation eine eigene Genehmigungsregel, kann cordivo den Abschluss weiterhin mit einem Hinweis auf ROOMS ablehnen. Verwenden Sie in diesem Fall die klassische Oberfläche.
+{{% /alert %}}
+
+### Cateringbestellung freigeben oder ablehnen
+
+Entscheiden darf die unter **Genehmigung durch** genannte Person oder ihre in ROOMS eingetragene direkte Stellvertretung. Ein Recht zum Bestätigen oder Bearbeiten der Raumbuchung ist dafür nicht erforderlich; die Aufgabe erlaubt keine allgemeine Buchungsbearbeitung. Die Bestellung muss noch ausstehen, Positionen enthalten und die Buchung darf nicht gesperrt sein. Die Entscheidung gilt für die ganze Bestellung, nicht für einzelne frei wählbare Positionen.
+
+Unter **Aufgaben → Bestellungen** finden Sie Ihre ausstehenden Bestellgenehmigungen. Wer keine Buchungen bestätigen darf, sieht dort nur **Bestellungen** statt zusätzlich **Zu bestätigen**. Die Zahl bei **Aufgaben** zählt beide Aufgabenarten zusammen. Auf **Start → Heute → Zu erledigen** erscheinen bis zu drei Buchungsbestätigungen und **Catering freigeben** gemischt nach Dringlichkeit: zuerst die früheste Frist, sonst der früheste Beginn. **Ansehen** öffnet die betreffende Bestellung unter **Aufgaben → Bestellungen**.
+
+1. Öffnen Sie bei der Bestellung **Ansehen**. Prüfen Sie Buchung, Raum, Zeitraum, bestellende Person und die Positionen. Das Panel zeigt **Summe nach dem Freigeben** sowie vorhandene **Kostenträger**. **Nach Verbrauch** kennzeichnet noch nicht abschliessend bezifferte Positionen.
+2. Prüfen Sie durchgestrichene Positionen und **Bestellbar bis …**. Diese Positionen fallen beim Freigeben weg. Prüfen Sie deshalb vor der Entscheidung, welche Positionen und welche Summe danach bleiben.
+3. Wählen Sie eine der beiden Aktionen: **Freigeben** beziehungsweise **Ohne [Produkt] freigeben** oder **Ohne … Positionen freigeben** entfernt zu späte Positionen und genehmigt die übrigen in einem Schritt, ohne zusätzliche Rückfrage und ohne Kommentarfeld. Möchten Sie stattdessen die ganze Bestellung ablehnen, wählen Sie **Ablehnen**, erfassen unter **Warum lehnst du ab?** eine Begründung und bestätigen **Bestellung ablehnen**. Ohne Begründung ist die Ablehnung gesperrt. Sie entfernt alle Bestellpositionen, annulliert aber nicht die Raumbuchung.
+4. Prüfen Sie die Rückmeldung und die verbleibende Bestellung. Sind beim Freigeben inzwischen weitere Fristen abgelaufen, nennt die Meldung die entfallenen Positionen. Sind alle Positionen zu spät, werden alle entfernt und es bleibt keine freigegebene Bestellung. Wurde die Bestellung zwischenzeitlich geändert, prüfen Sie den neu geladenen Stand und entscheiden erneut. Ist bereits entschieden oder die Aufgabe neu zugewiesen, wird Ihre alte Entscheidung nicht zusätzlich ausgeführt.
+
+Über **Alle Angaben** im Aufgabenpanel gelangen Sie zum Bereich **Catering und Services** auf der vollständigen Buchungsseite; dort können Sie ebenfalls entscheiden. Speichern Sie vorhandene eigene Änderungen zuerst, wenn **Speichere zuerst deine Änderungen.** erscheint. Eine blosse Genehmigungsaufgabe gibt keinen Zugriff auf vertrauliche oder sonst nicht benötigte Buchungsangaben.
+
+Bei eingerichteten Benachrichtigungen erhält die gewählte genehmigende Person die Anfrage per Mail; die direkte Stellvertretung wird nicht zusätzlich angeschrieben. Die Entscheidung wird gemäss den eingerichteten Empfängerregeln gemeldet. Fehlende Vorlagen oder Mailadressen können eine Nachricht verhindern. Prüfen Sie die Entscheidung in cordivo; Speichern und Freigeben sind kein Zustellnachweis und keine Liefergarantie.
 
 ### Zusatzressourcen dazu buchen
 
