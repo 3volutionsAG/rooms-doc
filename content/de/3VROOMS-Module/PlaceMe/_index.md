@@ -50,19 +50,27 @@ Die Erfolgsmeldung bietet **Rückgängig** nur an, wenn die soeben erstellte Sch
 
 Ist der Raum inzwischen belegt oder fehlt die Bestätigung, prüfen Sie vor einem erneuten Versuch die Buchungsliste. Verwenden Sie **Buchen**, wenn kein passender Vorschlag vorhanden ist.
 
-## Eigene Buchungen unter Start finden
+## Eigene Buchungen und Einladungen unter Start finden {#eigene-buchungen-unter-start-finden}
 
-Die folgenden Listen enthalten Hauptbuchungen, bei denen Sie erstellende, organisierende oder verantwortliche Person sind. Die blosse Teilnahme genügt nicht. Unterbuchungen einer Raumkombination erscheinen nicht als eigene Einträge.
+**Heute**, **Kommende** und **Vergangene** zeigen Ihre eigenen Buchungen und Buchungen, zu denen Sie als Teilnehmende eingeladen sind. Als eigene gelten Buchungen, bei denen Sie erstellende, organisierende oder verantwortliche Person sind. Für eine Einladung muss der Teilnehmendeneintrag mit Ihrer ROOMS-Person verknüpft sein; ein blosser Name oder eine E-Mail-Adresse genügt nicht. Unterbuchungen einer Raumkombination erscheinen nicht als eigene Einträge. Es gelten weiterhin die Leserechte für die Buchung.
+
+Einladungen stehen zeitlich einsortiert zwischen Ihren eigenen Buchungen und sind mit **eingeladen von …** statt eines Status gekennzeichnet. Genannt wird die organisierende Person, nicht die erstellende. Sind Sie zugleich erstellende, organisierende oder verantwortliche Person, erscheint die Buchung als eigene. Auf **Heute** zählt die Begrüssung beides als **Termine**. Bei einer Einladung unter **Als Nächstes** öffnet **Ansehen** das Buchungspanel.
 
 | Liste | Inhalt |
 | --- | --- |
 | **Kommende** | Noch nicht beendete Buchungen, einschliesslich bereits laufender Buchungen, nach Beginn aufsteigend. |
-| **Wartet auf andere** | Noch nicht beendete provisorische und temporäre Buchungen. Dazu gehören auch Buchungen, die Sie selbst bestätigen könnten; die Liste bestimmt nicht, wer bestätigen darf. |
+| **Wartet auf andere** | Nur eigene, noch nicht beendete provisorische und temporäre Buchungen, keine blossen Einladungen. Dazu gehören auch Buchungen, die Sie selbst bestätigen könnten; die Liste bestimmt nicht, wer bestätigen darf. |
 | **Vergangene** | Beendete Buchungen, nach Beginn absteigend. |
 
-**Kommende** und **Vergangene** blenden annullierte Buchungen zunächst aus. Mit **Annullierte** zeigen Sie diese zusätzlich an. **Buchung suchen** durchsucht auch noch nicht geladene Einträge der jeweiligen Liste und findet annullierte Buchungen auch bei ausgeschaltetem Schalter. Die Suche wechselt nicht in die andere Zeitliste. **Wartet auf andere** hat weder Suchfeld noch Annullierte-Schalter. Für Ihre eigenen Bestätigungsaufgaben verwenden Sie **Aufgaben → Zu bestätigen**.
+Unter **Kommende** und **Vergangene** ist **Alle** vorausgewählt. **Von mir** beschränkt die Liste auf Ihre eigenen Buchungen. Annullierte Einträge – eigene Buchungen ebenso wie Einladungen – sind zunächst ausgeblendet. Mit **Annullierte** zeigen Sie diese zusätzlich an. **Buchung suchen** durchsucht auch noch nicht geladene Einträge der gewählten Auswahl und findet annullierte Buchungen auch bei ausgeschaltetem Schalter. Die Suche wechselt nicht in die andere Zeitliste. **Wartet auf andere** hat weder Auswahl **Alle / Von mir** noch Suchfeld oder Annullierte-Schalter. Für Ihre eigenen Bestätigungsaufgaben verwenden Sie **Aufgaben → Zu bestätigen**.
 
-Zunächst werden bis zu **50 Buchungen** geladen. Mit **Weitere 50 laden** ergänzen Sie die Liste. **… von … Buchungen** zählt die gefilterte Auswahl; die Zahlen an den Reitern **Kommende** und **Wartet auf andere** bleiben unabhängig von Suche und Schalter und zählen keine annullierten Buchungen. Die Wochenübersicht auf **Heute** ersetzt diese Listen nicht: Sie zeigt höchstens 100 noch nicht beendete Buchungen der laufenden Woche und fehlt auf dem Telefon.
+Zunächst werden bis zu **50 Buchungen** geladen. Mit **Weitere 50 laden** ergänzen Sie die Liste. **… von … Buchungen** zählt die gefilterte Auswahl; die Zahlen an den Reitern **Kommende** und **Wartet auf andere** bleiben unabhängig von Suche, **Von mir** und Annullierte-Schalter und zählen keine annullierten Buchungen. Die Wochenübersicht auf **Heute** ersetzt diese Listen nicht: Sie zeigt höchstens 100 noch nicht beendete eigene Buchungen und Einladungen der laufenden Woche und fehlt auf dem Telefon.
+
+### Eine Einladung ansehen
+
+Öffnen Sie eine Einladung in einer dieser Listen oder auf **Heute**. Ohne Bearbeitungsrecht zeigt das Panel **Du bist eingeladen** und nennt die organisierende Person als Kontakt für Änderungen. **Alle Angaben** öffnet die vollständige schreibgeschützte Seite. Das Stiftsymbol und **Weitere Aktionen** fehlen im Einladungspanel; auch auf der vollständigen Seite fehlt **Weitere Aktionen**. Die Einladung allein erteilt kein Änderungsrecht.
+
+**Einchecken** bleibt verfügbar, wenn die Buchung und die Check-in-Regeln dies erlauben. Sind Sie zugleich für die Cateringgenehmigung zuständig, können Sie unter **Alle Angaben → Catering und Services** die Bestellung freigeben oder ablehnen. Diese Entscheidung erlaubt keine allgemeine Buchungsbearbeitung. Dürfen Sie die eingeladene Buchung ohnehin bearbeiten, öffnet sie sich mit den üblichen Bearbeitungsaktionen statt mit dem Einladungshinweis.
 
 ## Ein freies Zeitfenster suchen
 
@@ -108,7 +116,7 @@ Unterbuchungen erkennen Sie im Kalender an einem Verknüpfungssymbol, einem gest
 
 Ohne andere Vorgabe in einem Link oder einer gespeicherten Ansicht öffnet der Kalender mit **Arbeitszeit**. Dafür gelten **Arbeitsbeginn** und **Arbeitsende** aus Ihren persönlichen ROOMS-Einstellungen. Fehlende Angaben werden durch die Vorgaben Ihrer Organisation ergänzt. Ergibt sich daraus kein gültiger Zeitraum, verwendet cordivo gültige Organisationsvorgaben oder 08:00–17:00. Die dargestellte Arbeitszeit ist keine Öffnungszeit der Ressource und ändert weder Suchkriterien noch Buchungsrechte.
 
-Am Computer steht die Zoomauswahl über dem Zeitstrahl neben **Tag**, **Arbeitswoche**, **Woche** und **Monat**. Ein Klick auf die aktuelle Stufe öffnet das Menü:
+Am Computer steht die Zoomauswahl in der Ergebniszeile über dem Zeitstrahl. Ein Klick auf die aktuelle Stufe öffnet das Menü:
 
 | Bereich | Zoomstufen |
 | --- | --- |
@@ -116,7 +124,7 @@ Am Computer steht die Zoomauswahl über dem Zeitstrahl neben **Tag**, **Arbeitsw
 | **Mehrere Tage** | **2 Tage**, **3 Tage**, **Arbeitswoche**, **Woche**, **2 Wochen**, **Monat** |
 
 - **Plus / Näher zoomen** zeigt die nächste nähere Stufe, **Minus / Weiter weg zoomen** die nächste weitere. Auch **Strg + Mausrad** und eine Zoomgeste mit zwei Fingern wechseln die Stufe.
-- **Tag** wählt **Arbeitszeit**. Die anderen drei Schaltflächen wählen ihre gleichnamige Stufe.
+- In der Zeile darüber öffnen Sie neben **Kalender / Plan / Liste** das Menü für die Spanne. **Tag** wählt **Arbeitszeit**; **Arbeitswoche**, **Woche** und **Monat** wählen ihre gleichnamige Zoomstufe.
 - Unter **Eigene Stunden …** geben Sie **Von und bis** ein und wählen **Übernehmen**. Das Ende muss nach dem Beginn am selben Tag liegen. `24:00` ist als Ende möglich. Diese Stunden füllen die Breite des Zeitstrahls.
 - Auf dem Telefon öffnen Sie das Feld für Zeitraum und Zeitfenster. Die Zoomauswahl steht dort unter **Spanne**. Im Zeitstrahl können Sie seitlich scrollen und mit zwei Fingern zoomen.
 
@@ -253,8 +261,18 @@ Die gespeicherte Buchung unterscheidet:
 
 Ändern Sie eine genehmigte Bestellung oder die genehmigende Person, kann eine neue Genehmigung nötig werden. Das gilt auch für einen Raum- oder Zeitwechsel, der Bestellpositionen, Lieferort oder Lieferzeiten verändert. Die Vorschau nennt dann **Die Freigabe wird neu angefragt.** mit dem Grund. Prüfen Sie diesen Hinweis vor dem Speichern und danach den Bestellstatus. Eine geänderte Personenanzahl allein passt weder die Bestellmengen an noch fordert sie automatisch eine neue Genehmigung an.
 
-{{% alert title="Dienstleisterstand nach Genehmigungsänderungen abgleichen" color="warning" %}}
-Nach einer Änderung, die eine Freigabe zurücksetzt, und nach erneuter Freigabe können Dienstleistermails fehlen, eine überholte Absage enthalten oder eine Bestellung doppelt ankündigen. Verlassen Sie sich bei bereits übermittelten Bestellungen nicht allein auf den angezeigten Genehmigungsstatus: Stimmen Sie die tatsächlich noch zu liefernden Positionen mit dem Dienstleister ab, insbesondere nach entfernten Positionen oder einem Wechsel des Buchungsstatus.
+#### Dienstleister über den Bestellstand informieren
+
+Bei eingerichteten Dienstleisterbenachrichtigungen berücksichtigt cordivo je Angebotszone die genehmigten Positionen einer definitiven Buchung und die bereits zum Versand verarbeiteten Bestellnachrichten:
+
+- Liegt für die Zone noch keine entsprechend verarbeitete Bestellung vor, wird eine neue Bestellung angekündigt.
+- Liegt sie bereits vor, werden relevante Änderungen oder eine erneute Genehmigung als Bestelländerung angekündigt.
+- Bleibt für die Zone nichts Genehmigtes übrig, wird eine Absage veranlasst, sofern dort eine Bestellung als verarbeitet gilt. Das betrifft auch entfernte letzte Positionen, eine Annullierung oder den Wechsel von definitiv zu provisorisch. Eine noch ausstehende neue Bestellmail wird stattdessen entfernt.
+
+Ausstehende Nachrichten werden auf den aktuellen Bestellstand abgestimmt. Wird die Bestellung erneut genehmigt, bevor ihre Absage verarbeitet ist, wird die ausstehende Absage durch die passende Bestellnachricht ersetzt. Der Versandzeitpunkt richtet sich nach der Vorankündigungsfrist der Angebotszone; erforderlich sind die Empfängergruppe und eine passende Vorlage für die jeweilige Nachricht. Diese Beschreibung gilt für Änderungen in cordivo, nicht als Zusicherung desselben Ablaufs in der klassischen ROOMS-Oberfläche.
+
+{{% alert title="Verarbeitete Nachricht ist kein Zustellnachweis" color="warning" %}}
+Auch eine endgültig fehlgeschlagene Zustellung kann als verarbeitet gelten. Bei einer Absage während der laufenden Versandverarbeitung kann die zusätzliche Absagemail ausbleiben. Stimmen Sie kurzfristige Absagen sowie fehlende oder unerwartete Nachrichten direkt mit dem Dienstleister ab. Prüfen Sie dabei die tatsächlich noch zu liefernden Positionen, nicht nur den Genehmigungsstatus.
 {{% /alert %}}
 
 {{% alert title="Absage und installationsspezifische Regeln beachten" color="warning" %}}
@@ -508,7 +526,7 @@ Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Eine geteilte 
 
 ## Ansichten speichern und teilen
 
-1. Stellen Sie Filter, Textsuche, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
+1. Stellen Sie Filter, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Unter **Buchungen** können Sie zusätzlich die Textsuche mitspeichern; die Namenssuche unter **Buchen** gehört nicht zur Ansicht. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
 2. Geben Sie unter **Name** einen eindeutigen Namen ein und prüfen Sie die Vorschau der Filter und Darstellung.
 3. Aktivieren Sie bei Bedarf **Mit anderen teilen**, damit andere die Ansicht auswählen und abonnieren können. Ohne diese Auswahl bleibt sie persönlich. Legen Sie mit **Anpinnen** und **Als Standard verwenden** Ihre persönlichen Vorgaben fest.
 4. Entscheiden Sie unter **Buchen**, ob die Ansicht mit **Zeit mitspeichern** auch einen mitwandernden Zeitraum und das Zeitfenster behalten soll. Prüfen Sie die angezeigte Beschreibung und wählen Sie **Speichern**.
@@ -519,7 +537,20 @@ Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verw
 
 Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Freigabe ändern oder die Ansicht löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diese verwenden. **Ansicht löschen** verlangt eine Bestätigung und entfernt eine geteilte Ansicht auch für andere. Speichern Sie für eigene Abweichungen eine eigene Ansicht.
 
-Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Textsuche, Sortierung oder Darstellung. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage nur für geänderte Filter, Textsuche oder Sortierung, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
+Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Sortierung oder Darstellung; unter **Buchungen** zählt auch die Textsuche dazu. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage für geänderte Filter oder Sortierung sowie unter **Buchungen** für eine geänderte Textsuche, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
+
+### Eine Ansicht unter Buchen speichern oder verwerfen
+
+Am Computer stehen die Filter direkt unter den Ansichtsreitern in einem eigenen Bereich. An dessen rechtem Ende bleibt **Speichern** an derselben Stelle, auch während der Verarbeitung und der kurzen Bestätigung **Gespeichert**. Tag und Zeitfenster stehen darunter zusammen mit **Kalender / Plan / Liste**, Spanne und Sortierung. Die Namenssuche steht bei den Ergebnissen.
+
+**Geändert: Filter**, **Darstellung** oder **Sortierung** nennt die Abweichungen von der gewählten Ansicht. Zoom und Spanne gehören gemeinsam zur **Darstellung**. Bei wenig Platz steht nur **Geändert**; der Hinweis beim Zeigen darauf nennt die Bereiche. Tag, Zeitfenster und Namenssuche kennzeichnen die Ansicht nicht als geändert.
+
+- Bei einer geänderten eigenen Ansicht aktualisiert **Speichern** deren Filter, Darstellung und Sortierung. Die aktuell gewählte Zeit wird dabei nicht in die Ansicht übernommen; beachten Sie **Zeit in einer Ansicht unter Buchen**.
+- Ohne ausgewählte Ansicht oder nach einer Änderung an der Ansicht einer anderen Person öffnet **Speichern** das Fenster **Neue Ansicht**. Die fremde Definition bleibt unverändert. Ist nichts Speicherbares geändert, ist die Schaltfläche deaktiviert.
+- **Verwerfen** stellt Filter, Sortierung und Darstellung der gewählten Ansicht wieder her. Aktueller Tag, Zeitfenster und Namenssuche bleiben erhalten.
+- Für eine Kopie verwenden Sie im Menü der Ansicht oder unter **Alle Ansichten** die Aktion **Als neue Ansicht speichern** beziehungsweise **Als eigene Ansicht speichern**.
+
+Auf dem Telefon bleibt das Speichersymbol rechts neben den seitlich scrollbar angeordneten Filtern stehen. Es öffnet einen kleinen Bereich mit den geänderten Bestandteilen sowie **Speichern** und **Verwerfen**. Die beschriebenen Speicherregeln gelten auch dort. **Zeit mitspeichern** wählen Sie ausdrücklich im Ansichtsfenster, nicht mit der gewöhnlichen Speicheraktion.
 
 ### Zeit in einer Ansicht unter Buchen
 
