@@ -5,7 +5,7 @@ weight: 40
 description: 'In cordivo freie Zeitfenster finden, Buchungen verwalten und Ansichten speichern oder teilen'
 ---
 
-Die separate Weboberfläche cordivo ist auch unter dem Namen PlaceMe bekannt. Unter **Buchen** suchen Sie Ressourcen und freie Zeitfenster, unter **Buchungen** verwalten Sie vorhandene Buchungen. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
+Die separate Weboberfläche cordivo ist auch unter dem Namen PlaceMe bekannt. Unter **Buchen** suchen Sie Ressourcen und freie Zeitfenster, unter **Übersichten** verwalten Sie vorhandene Buchungen. Die Suche und die gespeicherten Listen in der klassischen ROOMS-Oberfläche sind davon getrennt.
 
 Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und Ressourcenfarben]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md" >}}). Die Farbregeln gelten auch für die klassische ROOMS-Oberfläche. Dafür sind zusätzliche Einstellungs- und Konfigurationsrechte erforderlich.
 
@@ -25,9 +25,9 @@ Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "
 Öffnen Sie die cordivo-/PlaceMe-Webadresse Ihrer Organisation und wählen Sie in der Navigation:
 
 - **Buchen**, um Ressourcen und passende freie Zeitfenster zu suchen.
-- **Buchungen**, um vorhandene Buchungen zu filtern, zu öffnen und im erlaubten Umfang zu bearbeiten oder zu annullieren.
+- **Übersichten**, um vorhandene Buchungen zu filtern, zu öffnen und im erlaubten Umfang zu bearbeiten oder zu annullieren.
 
-Unter **Start** finden Sie **Heute**, **Kommende**, **Wartet auf andere** und **Vergangene**. Auf dem Telefon heisst der Bereich **Buchungen** in der unteren Navigation **Meine**. Auch die Buchungskarte auf **Heute** öffnet die jeweilige Buchung.
+Unter **Start** finden Sie **Heute**, **Kommende**, **Wartet auf andere** und **Vergangene**. Auf dem Telefon öffnen Sie **Start** in der unteren Navigation und **Übersichten** über **Mehr → Übersichten**. Auch die Buchungskarte auf **Heute** öffnet die jeweilige Buchung.
 
 Über das Zahnrad gelangen Sie zu **Einstellungen**, sofern Sie das Recht **Darf Sektion 'Einstellungen' nutzen** besitzen. Das persönliche **Erscheinungsbild** wählen Sie am Computer im Kontomenü über Ihr Profilbild, auf dem Telefon unter **Mehr**: **System**, **Hell** oder **Dunkel**. Die Auswahl gilt für diesen Browser. **System** richtet sich nach dem Gerät.
 
@@ -336,7 +336,7 @@ Allgemeine Eingaben und Anhänge bleiben erhalten. Bestuhlung, Klassifikationen 
 
 ## Buchung bearbeiten oder annullieren
 
-1. Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder auf **Heute**.
+1. Öffnen Sie die Buchung unter **Übersichten**, im Kalender unter **Buchen** oder auf **Heute**.
 2. Prüfen Sie Buchungsnummer, Ressource, Zeitraum und Status im Panel. Unter dem Titel stehen der Status und gegebenenfalls **Eingecheckt** oder **No-show** sowie die Buchungsnummer. Wählen Sie oben rechts das Stiftsymbol **Bearbeiten**, um die vollständige Seite zu öffnen. Wenn Sie die vollständigen Buchungsdetails sehen, aber nicht bearbeiten dürfen, öffnet dort **Alle Angaben** die schreibgeschützte Seite. Bei eingeschränkten Leserechten fehlt diese Aktion. Sichtbar bleiben nur die erlaubten Angaben, beispielsweise unter **Belegt**.
 3. Ändern Sie die verfügbaren Angaben und wählen Sie **Speichern**. Danach erscheint wieder das Detailpanel. Mit **Zurück** kehren Sie zur Ausgangsseite zurück. Die angebotenen Aktionen ersetzen die Prüfung beim Speichern nicht. Auch eine sichtbare Aktion kann für eine nicht unterstützte Buchung abgewiesen werden.
 
@@ -380,7 +380,7 @@ Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sic
 
 ## Einchecken, freigeben, terminieren oder No-show melden
 
-Öffnen Sie die Buchung unter **Buchungen**, im Kalender unter **Buchen** oder auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
+Öffnen Sie die Buchung unter **Übersichten**, im Kalender unter **Buchen** oder auf **Heute**. Im Panel und auf der vollständigen Seite stehen die zulässigen Aktionen. Diese können auch verfügbar sein, wenn Sie die Buchungsfelder nicht bearbeiten dürfen. Gesperrte oder annullierte Buchungen bieten diese Aktionen nicht an.
 
 **Einchecken**, **Freigeben** und **Terminieren** stehen unten, jeweils nur während ihres zulässigen Zeitfensters. Ohne eine dieser Aktionen hat das Detailpanel keine Fusszeile. **No-show** finden Sie zusammen mit **Buchung annullieren** unter **Weitere Aktionen** beim Titel. Das Menü zeigt nur zulässige Einträge und fehlt, wenn keiner verfügbar ist. Auf dem Telefon gilt dieselbe Aufteilung im Buchungsbereich am unteren Bildschirmrand.
 
@@ -504,7 +504,7 @@ Wählen Sie erst danach die passende Richtung, prüfen Sie den Bestätigungsdial
 
 ### Buchungen nach Abgleich filtern
 
-Mit **Darf Konfiguration System verwalten** (26) finden Sie unter **Buchungen → Filter → Status und Ablauf → Abgleich** die Werte **Abgeglichen**, **Wird abgeglichen**, **Verknüpfung fehlt**, **Nicht eingetragen** und **Angehalten**. Wählen Sie beispielsweise die drei Problemstände, kombinieren Sie diese mit einem passenden Zeitraum und speichern oder pinnen Sie die Suche gemäss **Ansichten speichern und teilen**. Der Filter berücksichtigt nur Buchungen mit einem für Sie sichtbaren Abgleichstand. Auch ein ausschliessender Vergleich schliesst Buchungen ohne solchen Stand nicht automatisch ein. Er erweitert keine Leserechte und ist kein entsprechender Ressourcenfilter unter **Buchen**.
+Mit **Darf Konfiguration System verwalten** (26) finden Sie unter **Übersichten → Filter → Status und Ablauf → Abgleich** die Werte **Abgeglichen**, **Wird abgeglichen**, **Verknüpfung fehlt**, **Nicht eingetragen** und **Angehalten**. Wählen Sie beispielsweise die drei Problemstände, kombinieren Sie diese mit einem passenden Zeitraum und speichern oder pinnen Sie die Suche gemäss **Ansichten speichern und teilen**. Der Filter berücksichtigt nur Buchungen mit einem für Sie sichtbaren Abgleichstand. Auch ein ausschliessender Vergleich schliesst Buchungen ohne solchen Stand nicht automatisch ein. Er erweitert keine Leserechte und ist kein entsprechender Ressourcenfilter unter **Buchen**.
 
 Für eine zusätzliche farbliche Kennzeichnung im cordivo-Kalender und in der Buchungsliste kann die Administration eine [Buchungsfarbregel mit der Bedingung Abgleich]({{< relref "3VROOMS-Module/PlaceMe/Farben/_index.md#abgleich-als-bedingung" >}}) einrichten. Die Farbe ersetzt weder den Hinweis noch die Prüfung der Kalender.
 
@@ -516,7 +516,7 @@ Für eine zusätzliche farbliche Kennzeichnung im cordivo-Kalender und in der Bu
 
 ## Standort und weitere Filter verwenden
 
-Die Filter in **Buchen** und **Buchungen** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
+Die Filter in **Buchen** und **Übersichten** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
 
 Standorte in Suchergebnissen und Buchungen werden als Namen mit Kommas angezeigt, beispielsweise **Bern, Aarbergergasse 20**. Gemeinsame oberste Ebenen der Standorte mit aktiven Ressourcen können entfallen; mindestens die letzte Ebene bleibt sichtbar. Die Standortauswahl im Filter zeigt weiterhin die Hierarchie.
 
@@ -526,18 +526,18 @@ Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Eine geteilte 
 
 ## Ansichten speichern und teilen
 
-1. Stellen Sie Filter, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Unter **Buchungen** können Sie zusätzlich die Textsuche mitspeichern; die Namenssuche unter **Buchen** gehört nicht zur Ansicht. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
+1. Stellen Sie Filter, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Unter **Übersichten** können Sie zusätzlich die Textsuche mitspeichern; die Namenssuche unter **Buchen** gehört nicht zur Ansicht. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
 2. Geben Sie unter **Name** einen eindeutigen Namen ein und prüfen Sie die Vorschau der Filter und Darstellung.
 3. Aktivieren Sie bei Bedarf **Mit anderen teilen**, damit andere die Ansicht auswählen und abonnieren können. Ohne diese Auswahl bleibt sie persönlich. Legen Sie mit **Anpinnen** und **Als Standard verwenden** Ihre persönlichen Vorgaben fest.
 4. Entscheiden Sie unter **Buchen**, ob die Ansicht mit **Zeit mitspeichern** auch einen mitwandernden Zeitraum und das Zeitfenster behalten soll. Prüfen Sie die angezeigte Beschreibung und wählen Sie **Speichern**.
 
-**Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Buchungen** sind getrennt. Eine Kalenderansicht speichert auch die Zoomstufe oder die eingegebenen eigenen Stunden. **Arbeitszeit** verwendet beim Öffnen die Arbeitszeit der jeweils betrachtenden Person, auch in einer geteilten Ansicht. Die seitliche Scrollposition wird nicht mitgespeichert und kennzeichnet die Ansicht nicht als geändert.
+**Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Übersichten** sind getrennt. Eine Kalenderansicht speichert auch die Zoomstufe oder die eingegebenen eigenen Stunden. **Arbeitszeit** verwendet beim Öffnen die Arbeitszeit der jeweils betrachtenden Person, auch in einer geteilten Ansicht. Die seitliche Scrollposition wird nicht mitgespeichert und kennzeichnet die Ansicht nicht als geändert.
 
 Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verwalten** oder den **Aktionen der Ansicht** können Sie sie mit **Ansicht abonnieren** übernehmen, Ihre persönlichen Einstellungen ändern oder mit **Als eigene Ansicht speichern** eine eigene Variante erstellen. **Abo beenden** entfernt Ihr Abonnement, nicht die Ansicht der Eigentümerin oder des Eigentümers. **Aktuelle Ansicht** im Menü verlässt die gespeicherte Ansicht und behält die aktuellen Kriterien.
 
 Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Freigabe ändern oder die Ansicht löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diese verwenden. **Ansicht löschen** verlangt eine Bestätigung und entfernt eine geteilte Ansicht auch für andere. Speichern Sie für eigene Abweichungen eine eigene Ansicht.
 
-Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Sortierung oder Darstellung; unter **Buchungen** zählt auch die Textsuche dazu. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage für geänderte Filter oder Sortierung sowie unter **Buchungen** für eine geänderte Textsuche, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
+Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Sortierung oder Darstellung; unter **Übersichten** zählt auch die Textsuche dazu. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage für geänderte Filter oder Sortierung sowie unter **Übersichten** für eine geänderte Textsuche, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
 
 ### Eine Ansicht unter Buchen speichern oder verwerfen
 
