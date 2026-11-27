@@ -31,6 +31,8 @@ Unter **Start** finden Sie **Heute**, **Kommende**, **Wartet auf andere** und **
 
 Über das Zahnrad gelangen Sie zu **Einstellungen**, sofern Sie das Recht **Darf Sektion 'Einstellungen' nutzen** besitzen. Das persönliche **Erscheinungsbild** wählen Sie am Computer im Kontomenü über Ihr Profilbild, auf dem Telefon unter **Mehr**: **System**, **Hell** oder **Dunkel**. Die Auswahl gilt für diesen Browser. **System** richtet sich nach dem Gerät.
 
+Bei wenig Platz am Computer zeigt die obere Leiste zunächst nur das cordivo-Zeichen statt des ganzen Logos. Weitere Navigationseinträge finden Sie bei Bedarf unter **Mehr**. Die aktuelle Seite, das vorhandene Einstellungszahnrad und das Kontomenü bleiben direkt erreichbar. Eine Aufgabenanzahl steht gegebenenfalls beim Eintrag **Aufgaben** im Menü.
+
 ## Einen Raum unter Heute sofort buchen
 
 **Start → Heute → Jetzt frei** schlägt freie Räume anhand Ihrer persönlichen Standardstandorte und Standardkapazität vor. Fehlende Vorgaben schränken die Suche nicht entsprechend ein. Die Vorschläge übernehmen nicht die zuletzt verwendete Ansicht unter **Buchen**.
@@ -72,6 +74,8 @@ Zunächst werden bis zu **50 Buchungen** geladen. Mit **Weitere 50 laden** ergä
 6. Prüfen Sie die Ergebnisse: Freie Ressourcen stehen zuerst, weitere passende Ressourcen unter **Zur gewünschten Zeit belegt**. Wählen Sie bei Bedarf **Liste** statt **Kalender**.
 
 Ein Treffer bedeutet, dass innerhalb des Suchfensters ein zusammenhängender Zeitraum der benötigten Dauer gefunden wurde. Pro Ressource wird der früheste passende Zeitraum vorgeschlagen. Die Ressource muss nicht an allen Tagen oder über das gesamte Datumsfenster frei sein. Das tägliche Zeitfenster wird für jeden Kalendertag separat angewendet.
+
+Die Suche berücksichtigt die längste zugewiesene Vorbereitungsfrist des Raums und seiner mitgebuchten Teilräume. Der vorgeschlagene Beginn liegt frühestens nach Ablauf dieser Frist ab dem Suchzeitpunkt. **Jetzt frei** lässt Räume aus, deren Frist für den unmittelbaren Beginn nicht reicht. Bei virtuellen Räumen werden auch Öffnungszeiten, Sperrzeiten und Feiertage der Teilräume mit deren jeweiligen Buchungsrechten geprüft. Ein älterer Suchvorschlag kann beim Speichern trotzdem abgewiesen werden; die Fristen und Regeln werden dann erneut geprüft.
 
 **Ganzer Tag** erweitert das tägliche Suchfenster und behält die bisherige benötigte Dauer. Das bedeutet nicht, dass die Ressource den ganzen Tag frei sein muss. Belegungen, Öffnungszeiten und Ressourcenregeln gelten weiterhin. **Zur gewünschten Zeit belegt** bedeutet, dass kein passender buchbarer Zeitraum gefunden wurde. Das kann auch an Regeln oder Berechtigungen liegen. Die Anzeige erweitert weder Ihre Rechte noch die Auswahl auf inaktive Ressourcen.
 
@@ -123,6 +127,8 @@ Die Zoomstufe bestimmt den Ausschnitt, nicht die Länge des Suchzeitraums. Ände
 **Ganzer Tag** in der Zoomauswahl zeigt 00:00–24:00. Die gleichnamige Aktion im täglichen Suchfenster ändert dagegen die Suchkriterien.
 
 Der Kalender zeigt Belegungen und Ressourcenbeschränkungen. Provisorische und temporäre Buchungen haben einen gestrichelten Rand. Belegungen ohne sichtbare Details sind schraffiert, gegebenenfalls mit **Privat** gekennzeichnet. Schmale Blöcke zeigen nur den Text, der hineinpasst. Weitere Angaben finden Sie im Hinweis beim Zeigen auf den Block, soweit Sie diese sehen dürfen. Die Farbe allein bestimmt weder Status noch Verfügbarkeit.
+
+Beschränkungen, die Ihre Buchung verhindern, erscheinen grau mit Verbotszeichen. Feiertage oder Zeiten ausserhalb der Öffnungszeiten, für die Sie das erforderliche Buchungsrecht besitzen, erscheinen hell bernsteinfarben mit oberer Linie und Infosymbol. Das Band nennt den Feiertag, **Geschlossen** oder den Grund der Sperrzeit, soweit genügend Platz vorhanden ist. Sperrzeiten verhindern die Buchung immer. Bei einer erlaubten Überschreitung zeigt die Buchungszeile für den Beginn-Tag des Entwurfs einen Hinweis mit **Du darfst trotzdem buchen.** Das hebt andere Buchungsregeln nicht auf.
 
 Ein Klick auf eine vorhandene Buchung öffnet das Buchungspanel. Im Zeitstrahl liegt es über dem Kalender, ohne dessen Breite oder Massstab zu ändern. Eine davon verdeckte Buchung wird bei Bedarf in den sichtbaren Ausschnitt gescrollt. Escape oder ein Klick neben das Panel schliesst es. Welche Titel und Personendaten sichtbar sind und welche Aktionen angeboten werden, hängt von Ihren Rechten ab. Eine geöffnete oder gerade gebuchte Ressource behält ihren Platz bis zur Änderung der Suchkriterien. Prüfen Sie deshalb auch die aktualisierte Belegung, nicht nur die Gruppenzuordnung.
 
@@ -187,16 +193,16 @@ Eine kostenpflichtige Bestuhlung wird mit ihrem Namen und der zugewiesenen Mehrw
 
 ### Teilnehmende hinzufügen oder entfernen
 
-Beim Erstellen in der Kalenderzeile öffnet **Teilnehmende** das Eingabefeld direkt in der Zeile. Auf der vollständigen Buchungsseite verwenden Sie den Bereich **Personen**. Aus dem Panel führt **Teilnehmende** dorthin, auf dem Telefon ebenso wie bei einer vorhandenen Buchung am Computer. Das Panel fasst die sichtbare Liste zusammen. Auf der vollständigen Seite stehen die einzelnen Namen beziehungsweise E-Mail-Adressen.
+Beim Erstellen in der Kalenderzeile öffnet **Teilnehmende** das Eingabefeld direkt in der Zeile. Auf dem Telefon steht dasselbe Feld im Erstellbereich. Bei wenig Platz fasst **+N** weitere ausgewählte Personen zusammen; beim Fokussieren des Felds sehen Sie alle Einträge. Auf der vollständigen Buchungsseite verwenden Sie den Bereich **Personen**. Aus dem Panel einer vorhandenen Buchung führt **Teilnehmende** dorthin, am Computer ebenso wie auf dem Telefon. Das Detailpanel fasst die sichtbare Liste zusammen. Auf der vollständigen Seite stehen die einzelnen Namen beziehungsweise E-Mail-Adressen.
 
-1. Wählen Sie **Teilnehmende hinzufügen** und geben Sie mindestens zwei Zeichen eines Namens oder einer E-Mail-Adresse ein. Die Suche findet aktive Personen. Prüfen Sie bei gleichen Namen die angezeigte Organisation und E-Mail-Adresse, soweit vorhanden.
-2. Wählen Sie die gewünschte Person. Für eine externe Person geben Sie die vollständige E-Mail-Adresse ein und wählen den Eintrag **Als externe Person einladen**. Ein eingegebener Suchtext allein fügt niemanden hinzu.
+1. Wählen Sie **Teilnehmende hinzufügen** und geben Sie mindestens zwei Zeichen eines Namens oder einer E-Mail-Adresse ein. Die Suche findet aktive Personen. In der Kalenderzeile und im Erstellbereich auf dem Telefon erscheinen höchstens fünf Vorschläge. Prüfen Sie bei gleichen Namen die angezeigte Abteilung, Firma oder E-Mail-Adresse, soweit vorhanden.
+2. Wählen Sie die gewünschte Person. Für eine externe Person geben Sie die vollständige E-Mail-Adresse ein und wählen in der Kalenderzeile beziehungsweise auf dem Telefon **[Adresse] als Gast hinzufügen**, auf der vollständigen Seite **Als externe Person einladen**. Ein eingegebener Suchtext allein fügt niemanden hinzu. Nach der Auswahl ist das Suchfeld leer; in der Zeile und im Erstellbereich auf dem Telefon können Sie direkt die nächste Person eingeben.
 3. Entfernen Sie bei Bedarf einen Eintrag über das Kreuz neben dem Namen. Einträge, die in der klassischen ROOMS-Oberfläche nur mit Namen und ohne Person oder E-Mail-Adresse gespeichert wurden, haben hier kein Kreuz. Bearbeiten Sie diese in der klassischen Oberfläche.
 4. Prüfen Sie **Personen**, **davon extern** und die Bestuhlung. Wählen Sie erst danach die angebotene Buchungsaktion beziehungsweise **Speichern**. Hinzufügen und Entfernen ändern zunächst nur den Entwurf. Die Einladungen werden nach erfolgreichem Speichern gemäss **Benachrichtigungen und Outlook** verarbeitet.
 
 Fügen Sie die organisierende Person nicht zusätzlich als Teilnehmende hinzu. Die organisierende Person und das Postfach eines synchronisierten Raums werden von ROOMS verwaltet. Dieselbe Person oder externe Adresse darf nicht doppelt eingeladen werden. Auch eine externe Adresse, die bereits einer ausgewählten Person gehört, wird beim Speichern abgewiesen. Korrigieren Sie ungültige Adressen oder inzwischen inaktive beziehungsweise nicht mehr vorhandene neu gewählte Personen anhand der Feldmeldung.
 
-Ist Ihre persönliche Einstellung **Anzahl Personen anhand von Teilnehmer berechnen** aktiv, kann das Hinzufügen oder Entfernen die Gesamtanzahl **Personen** anpassen. Gezählt werden die Liste und die organisierende Person. Beim ersten Hinzufügen wird eine leere Anzahl auf zwei gesetzt. Weitere Anpassungen erfolgen, wenn die bisherige Anzahl um genau eins von der neuen Listengrösse einschliesslich organisierender Person abweicht. Eine anders gesetzte Anzahl bleibt bestehen. Ohne diese Einstellung bleibt die Anzahl unverändert. **davon extern** wird durch die Liste nicht automatisch angepasst. Prüfen Sie beide Zahlen selbst.
+In der Kalenderzeile und im Erstellbereich auf dem Telefon verändert das Hinzufügen oder Entfernen von Teilnehmenden die Gesamtanzahl **Personen** nicht. Auf der vollständigen Seite kann dies Ihre persönliche Einstellung **Anzahl Personen anhand von Teilnehmer berechnen** übernehmen: Gezählt werden die Liste und die organisierende Person. Beim ersten Hinzufügen wird eine leere Anzahl auf zwei gesetzt. Weitere Anpassungen erfolgen, wenn die bisherige Anzahl um genau eins von der neuen Listengrösse einschliesslich organisierender Person abweicht. Eine anders gesetzte Anzahl bleibt bestehen. Ohne diese Einstellung bleibt die Anzahl unverändert. **davon extern** wird durch die Liste nicht automatisch angepasst. Prüfen Sie beide Zahlen selbst.
 
 **Die Teilnehmeranzahl ist für die gewählte Bestuhlung zu gross.** ist ein Hinweis zur Liste einschliesslich organisierender Person und verhindert für sich allein das Speichern nicht. Die separat eingegebene Gesamtanzahl **Personen** muss trotzdem zur Bestuhlung passen. Eine entsprechende Prüfmeldung beim Speichern erfordert eine Korrektur der Anzahl oder Bestuhlung.
 
@@ -247,7 +253,7 @@ Unter **Dazu buchen** wählen Sie Equipment und andere angebotene Zusatzressourc
 
 Die Auswahl wird erst mit der Buchung gespeichert. Reichen bei einer Mengenbestellung die freien Stücke nicht aus, kann die Raumbuchung mit der verfügbaren Teilmenge erfolgreich sein. Prüfen Sie deshalb auch nach dem Abschluss den Hinweis auf fehlende Stücke und die tatsächlich gebuchten Ressourcen. Eine erfolgreiche Raumbuchung bestätigt nicht die volle gewünschte Equipmentmenge.
 
-Wird eine bereits mitgebuchte Ressource am geänderten Zeitpunkt belegt, nennt die Vorschau sie. Prüfen Sie **Ohne … speichern** beziehungsweise **Ohne die belegten Ressourcen speichern**, bevor Sie deren Entfernung bestätigen. **Zeit behalten** stellt die gespeicherten Zeiten wieder her. Eine neu gewählte, belegte Ressource müssen Sie dagegen vor dem Speichern entfernen oder durch eine verfügbare ersetzen. Annullieren und No-show geben auch die mitgebuchten Ressourcen frei.
+Wird eine bereits mitgebuchte Ressource am geänderten Zeitpunkt belegt, zeigt die Vorschau die betroffenen Ressourcen. Mit vollständigen Detailrechten nennt sie die Namen, sonst nur die Anzahl. Prüfen Sie **Ohne … speichern** beziehungsweise **Ohne die belegten Ressourcen speichern**, bevor Sie deren Entfernung bestätigen. Das gilt auch bei einem gleichzeitigen Raum- und Zeitwechsel. Die übrigen übernehmbaren Zusatzressourcen bleiben mitgebucht. **Zeit behalten** stellt bei einer reinen Zeitänderung die gespeicherten Zeiten wieder her. Eine neu gewählte, belegte Ressource müssen Sie dagegen vor dem Speichern entfernen oder durch eine verfügbare ersetzen. Annullieren und No-show geben auch die mitgebuchten Ressourcen frei.
 
 ### Personen, Anhänge und Erinnerungen ergänzen
 
@@ -289,13 +295,15 @@ Vor **Speichern** prüfen Sie **Status nach dem Speichern** und die Folgen der �
 
 ### In einen anderen Raum wechseln
 
-Auf der vollständigen Bearbeitungsseite öffnen Sie beim Raum **Wechseln** und wählen einen angebotenen freien Raum. **Details** öffnet die Rauminformation; es wechselt den Raum nicht. Auch das Ziehen einer Buchung auf eine andere Raumzeile im Kalender führt in diese Bearbeitung.
+Auf der vollständigen Bearbeitungsseite öffnen Sie beim Raum **Wechseln** und wählen einen angebotenen freien Raum. **Details** öffnet die Rauminformation; es wechselt den Raum nicht. Kann die Auswahl nicht geprüft werden, verwenden Sie **Erneut prüfen** unter dem Raum. Ein Ziehen auf eine andere Raumzeile kann den Wechsel unmittelbar speichern; bei anzuzeigenden Folgen erscheint eine Rückfrage, bei fehlenden Pflichtangaben die vollständige Seite.
 
 Prüfen Sie die Vorschau vor **Raum wechseln und speichern**: Der neue Raum kann eine andere Bestuhlung, Vor- und Nachlaufzeiten, einen anderen Status, Kosten, Klassifikationen und Pflichtfragen haben. Seine Raumverknüpfungen werden berücksichtigt. Nicht mehr passende Bestellungen und mobiles Equipment ausserhalb des neuen Standortbereichs können entfallen, automatische Leistungen des neuen Raums hinzukommen. Ein manuell gesetzter Tarif kann durch die Standardberechnung ersetzt werden.
 
 {{% alert title="Raumwechsel kann Eingaben und Zusatzbuchungen verwerfen" color="warning" %}}
 Ungespeicherte Änderungen an **Dazu buchen** und **Catering und Services** werden beim Raumwechsel verworfen. Die Catering-Bearbeitung ist während des Raumwechsels schreibgeschützt. Kontrollieren Sie alle angekündigten Folgen und ergänzen Sie die neuen Pflichtangaben, bevor Sie **Raum wechseln und speichern** wählen. **Raum behalten** nimmt die Raumauswahl zurück und stellt diese Entwurfseingaben wieder her. Nach erfolgreichem Speichern prüfen Sie Raum, Status, Bestellungen, Zusatzressourcen und gegebenenfalls Outlook erneut.
 {{% /alert %}}
+
+Sind mitgebuchte Ressourcen zur neuen Zeit belegt, bietet die Seite stattdessen **Ohne … speichern** an. Damit speichern Sie den Wechsel ohne diese Ressourcen. Ohne vollständige Detailrechte nennt die Folgenprüfung nur deren Anzahl, auch bei Ressourcen, die am neuen Ort entfallen. Prüfen Sie die Folgen trotzdem vor dem Bestätigen.
 
 ## Buchung bestätigen, ablehnen oder an die Bestätigung erinnern
 
@@ -309,11 +317,13 @@ Als erstellende oder organisierende Person können Sie bei einer noch nicht been
 
 ## Buchung im Kalender verschieben
 
-Ziehen Sie eine bearbeitbare Buchung auf eine andere Uhrzeit oder verändern Sie ihre Ränder, um Beginn oder Ende anzupassen. Beim Ziehen auf eine andere Raumzeile öffnet sich die vollständige Seite für den Raumwechsel; prüfen und speichern Sie diesen dort wie unter **In einen anderen Raum wechseln** beschrieben.
+Ziehen Sie eine bearbeitbare Buchung auf eine andere Uhrzeit oder verändern Sie ihre Ränder, um Beginn oder Ende anzupassen. Beim Ziehen auf eine andere Raumzeile können Sie Raum und Zeit gemeinsam ändern. Ohne anzuzeigende Folgen kann der Wechsel unmittelbar speichern. Erscheint **Raum wechseln?**, prüfen Sie die Folgen und bestätigen Sie **Raum wechseln** beziehungsweise bei belegten Zusatzressourcen **Ohne … speichern**. **Raum behalten** verwirft diesen Vorschlag; die Buchung bleibt am bisherigen Ort und zur bisherigen Zeit. Fehlen Pflichtangaben, öffnet sich die vollständige Seite für den Raumwechsel. Ergänzen und speichern Sie dort wie unter **In einen anderen Raum wechseln** beschrieben.
 
 {{% alert title="Vor dem Ziehen die Folgen prüfen" color="warning" %}}
-Verschieben und Grössenänderung innerhalb desselben Raums können unmittelbar speichern. Ändert sich der Status oder betrifft die Änderung Catering beziehungsweise belegte Zusatzressourcen, erscheint zuerst **Zeit ändern?** mit den Folgen. **Zeit behalten** verwirft den Zeitvorschlag. Prüfen Sie insbesondere eine erneute Bestätigung und entfernte Zusatzressourcen. Die Erfolgsmeldung kann **Rückgängig** anbieten; beim Entfernen belegter Zusatzressourcen wird dies nicht angeboten. Auch eine Rücknahme muss die aktuellen Buchungsregeln erfüllen.
+Verschieben und Grössenänderung innerhalb desselben Raums können unmittelbar speichern. Ändert sich der Status oder betrifft die Änderung Catering beziehungsweise belegte Zusatzressourcen, erscheint zuerst **Zeit ändern?** mit den Folgen. **Zeit behalten** verwirft den Zeitvorschlag. Prüfen Sie insbesondere eine erneute Bestätigung und entfernte Zusatzressourcen. Die Erfolgsmeldung kann **Rückgängig** anbieten; bei einem Raumwechsel oder beim Entfernen belegter Zusatzressourcen wird dies nicht angeboten. Auch eine Rücknahme muss die aktuellen Buchungsregeln erfüllen.
 {{% /alert %}}
+
+Bei eingeschränkten Detailrechten nennt die Folgenprüfung für Zusatzressourcen nur Anzahlen statt Namen. Meldet cordivo **Inzwischen ist mehr belegt, als du bestätigt hast.**, prüfen Sie eine erneut angebotene Folgenprüfung und bestätigen Sie nur, wenn diese gewollt ist. Wird stattdessen **Neu prüfen** angeboten, verwenden Sie diese Aktion. Führt sie nicht zu einer aktualisierten Rückfrage, öffnen Sie die Buchung separat und bearbeiten Sie Raum und Zeit dort. Nach dem Speichern weist ein Dreieck auf fehlende Zusatzressourcen hin: Die Raumbuchung ist dabei gespeichert, aber nicht vollständig mit dem gewünschten Equipment versorgt.
 
 Scheitert das Speichern oder wurde die Buchung inzwischen geändert, öffnet sich die vollständige Buchungsseite mit dem vorgeschlagenen Zeitraum und der Meldung. Prüfen und korrigieren Sie die Angaben. Wenn Sie die Seite ohne erfolgreiches Speichern verlassen, wird der Vorschlag verworfen und der Kalender neu geladen.
 
@@ -365,7 +375,20 @@ Bei installationsspezifischen Freigabe-, Terminierungs- oder No-show-Regeln kann
 
 ## Meldungen beim Speichern
 
+Allgemeine Rückmeldungen erscheinen am Computer unten links, auf dem Telefon oberhalb der unteren Navigation beziehungsweise der festen Buchungsaktionen. Sie unterscheiden drei Ergebnisse:
+
+| Zeichen | Bedeutung |
+| --- | --- |
+| Häkchen | Die Aktion ist abgeschlossen. |
+| Dreieck | Die Aktion ist abgeschlossen, aber mit Einschränkung, beispielsweise fehlendem Equipment. Prüfen Sie die Buchung und die fehlenden Leistungen. |
+| Kreis mit Ausrufezeichen | Die Aktion wurde nicht abgeschlossen. Beachten Sie den Grund und die angebotene Korrektur. |
+
+Fehler, Teilerfolge und Reservierungsmeldungen mit Ablaufhinweis bleiben bis zum Schliessen über das Kreuz oder eine Meldungsaktion stehen. Gewöhnliche Erfolgsmeldungen verschwinden üblicherweise nach fünf Sekunden, mit **Rückgängig** nach acht Sekunden; beim Zeigen darauf oder bei Tastaturfokus pausiert die Zeit. Eine temporäre Reservierung ohne Ablaufhinweis verwendet ebenfalls die gewöhnliche Erfolgsmeldung. Im eingeklappten Stapel sehen Sie höchstens drei Meldungen. **… weitere Meldungen** öffnet die zurückgehaltenen Einträge. Das Schliessen einer Meldung annulliert keine Buchung; eine darin angebotene Aktion wie **Rückgängig** kann dagegen eine gespeicherte Buchung verändern.
+
+Feld- und Seitenfehler stehen direkt bei der betroffenen Eingabe beziehungsweise über dem Formular. Ein abgewiesenes Ziehen im Kalender zeigt seinen Grund am Ziel der Geste. Scheitert eine Schnellbuchung unter **Jetzt frei**, steht der Grund beim Raum; über **Andere Zeit** wechseln Sie zur Eingabe.
+
 - **Ungültige Angaben:** Prüfen Sie die Zusammenfassung und die markierten Felder. Die Meldung erklärt die verletzte Buchungsregel, beispielsweise eine überschrittene Höchstdauer oder eine unpassende Personenanzahl. Meldungen ohne zugehöriges Eingabefeld stehen in der Zusammenfassung. Eine Feldmeldung verschwindet beim Ändern des Felds. Ob die Korrektur genügt, wird beim nächsten Speichern geprüft.
+- **Öffnungszeiten oder Vorbereitungsfrist verletzt:** Wählen Sie einen späteren Beginn beziehungsweise einen erlaubten Zeitraum oder eine andere Ressource. Die Öffnungszeiten werden auch beim Speichern unveränderter Zeiten geprüft. Ein gespeicherter Termin kann deshalb nach einer Änderung der Öffnungszeiten eine Korrektur erfordern, sofern Ihnen das Recht zum Buchen ausserhalb der Öffnungszeiten fehlt.
 - **Zeitraum inzwischen belegt oder gesperrt:** Auf der vollständigen Seite nennt die Meldung den betroffenen Raum und Zeitraum. Sie können unter **Zeit ändern** die Uhrzeit anpassen oder einen vorgeschlagenen freien Raum mit **Nehmen** auswählen. **Alle … freien Räume** öffnet die weitere Auswahl; auch **Wechseln** neben dem Raum steht zur Verfügung. Die Vorschläge berücksichtigen Zeitraum, Personenanzahl, Ressourcentyp und die anwendbaren Suchfilter. Prüfen Sie vor dem Wechsel die genannten Angaben oder Leistungen, die der andere Raum nicht übernehmen kann. Die Auswahl speichert noch nicht: Prüfen Sie die aktualisierten Angaben und wählen Sie die Buchungsaktion beziehungsweise **Raum wechseln und speichern**. Ohne passenden Vorschlag ändern Sie Zeit oder Suchkriterien. In der Kalenderzeile steht nur die Meldung; wählen Sie eine andere freie Stelle oder öffnen Sie die vollständige Seite. Auf dem Telefon führt **Andere Zeit wählen** zurück zur Zeitauswahl; über **Alle Angaben** erreichen Sie die Raumvorschläge auf der vollständigen Seite.
 - **Buchung inzwischen geändert:** Bei einem Bearbeitungskonflikt ist Speichern gesperrt. Der Hinweis nennt, soweit verfügbar, Zeitpunkt und Person der letzten Änderung. Das schliesst Änderungen aus der klassischen ROOMS-Oberfläche ein. Prüfen Sie die angezeigten Änderungen und wählen Sie **Aktuelle Version laden**. Das ersetzt Ihre ungespeicherten Eingaben. Erfassen Sie Ihre Änderungen danach erneut.
 - **Bearbeitung in ROOMS oder Übernahme aus Outlook:** Warten Sie, bis die andere Bearbeitung beziehungsweise Synchronisation abgeschlossen ist, und versuchen Sie es erneut.
