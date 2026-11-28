@@ -20,6 +20,14 @@ Administratoren verwalten unter **Einstellungen → Farben** die [Buchungs- und 
 
 Die Administration verwaltet diese Rechte unter [Rollen und Rechte]({{< relref "3VROOMS/Einstellungen/Sicherheitsdaten/Rollen/RechteVerwalten/_index.md" >}}).
 
+## Anmelden und eine abgelaufene Sitzung erneuern
+
+Öffnen Sie die cordivo-Webadresse oder einen direkten Link zu einer Seite. Ohne aktive Sitzung werden Sie zur Anmeldung Ihrer Organisation weitergeleitet. Nach erfolgreicher Anmeldung öffnet cordivo die aufgerufene Seitenadresse wieder. Nach **Abmelden** erscheint **Du bist abgemeldet.**; über **Anmelden** können Sie sich erneut anmelden.
+
+Erscheint während der Arbeit **Deine Sitzung ist abgelaufen**, wählen Sie **Neu anmelden**. Auf dem Telefon steht diese Aufforderung am unteren Bildschirmrand. Bei der erneuten Anmeldung gehen ungespeicherte Eingaben verloren; die Rückkehr zur Seitenadresse stellt keinen Buchungsentwurf wieder her. Prüfen Sie danach die Buchungsliste beziehungsweise den gespeicherten Buchungsstand, bevor Sie eine Aktion erneut ausführen.
+
+Bei **Für dich ist noch nichts freigeschaltet.** prüfen Sie das angezeigte Konto. Ist es das falsche, wählen Sie **Abmelden** und melden sich mit dem richtigen Konto an. Andernfalls wenden Sie sich an die ROOMS-Administration Ihrer Organisation. Kann die Sitzung wegen eines Verbindungsfehlers nicht geprüft werden, verwenden Sie nach Prüfung der Verbindung **Erneut versuchen**.
+
 ## Wo finde ich die Funktionen?
 
 Öffnen Sie die cordivo-/PlaceMe-Webadresse Ihrer Organisation und wählen Sie in der Navigation:
@@ -518,7 +526,11 @@ Für eine zusätzliche farbliche Kennzeichnung im cordivo-Kalender und in der Bu
 
 Die Filter in **Buchen** und **Übersichten** verwenden dieselbe Bedienung. Mit **Filter** fügen Sie Kriterien hinzu. Die verfügbaren Kriterien richten sich nach dem jeweiligen Bereich. Zeitraumvorgaben wie **Heute** wandern mit dem Datum. Getippte Kalenderdaten und im Kalender gewählte Daten bleiben fest. Unter **Buchen** wandern auch relative Texteingaben wie `in 2 Wochen` oder `+3` mit.
 
+Wählen Sie ein aktives Filterfeld, um es zu bearbeiten, oder sein Kreuz, um es zu entfernen. Auf dem Telefon können Sie die Filterzeile seitlich scrollen. Textsuche, Ergebnisanzahl und die Aktion zum Aktualisieren stehen über den Ergebnissen. Das Kreuz **Suche löschen** im Suchfeld leert nur den Suchtext. **Alle Filter entfernen**, sofern angeboten, entfernt dagegen auch den Suchtext.
+
 Standorte in Suchergebnissen und Buchungen werden als Namen mit Kommas angezeigt, beispielsweise **Bern, Aarbergergasse 20**. Gemeinsame oberste Ebenen der Standorte mit aktiven Ressourcen können entfallen; mindestens die letzte Ebene bleibt sichtbar. Die Standortauswahl im Filter zeigt weiterhin die Hierarchie.
+
+Unter **Übersichten** stammen die Standortvorschläge aus den für Sie sichtbaren Buchungen. Ein bereits gesetzter Standortfilter kann trotzdem seinen Namen anzeigen, wenn Sie dort Ressourcen sehen dürfen, aber keine Buchung sichtbar ist. Das bedeutet nicht, dass dieser Standort auch als neuer Vorschlag angeboten wird oder passende Buchungen vorhanden sind.
 
 Beim Standort umfasst **ist innerhalb** den gewählten Standort und seine Unterstandorte. **ist nicht innerhalb** schliesst diesen gesamten Teilbaum aus. Wird ein übergeordneter Standort ausgewählt, ist eine zusätzliche Auswahl seiner Unterstandorte nicht erforderlich.
 
@@ -526,29 +538,31 @@ Die Filter grenzen nur die für Sie zugänglichen Ergebnisse ein. Eine geteilte 
 
 ## Ansichten speichern und teilen
 
-1. Stellen Sie Filter, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Unter **Übersichten** können Sie zusätzlich die Textsuche mitspeichern; die Namenssuche unter **Buchen** gehört nicht zur Ansicht. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
+1. Stellen Sie Filter, Sortierung und unter **Buchen** die Darstellung **Kalender** oder **Liste** ein. Im Kalender wählen Sie auch die gewünschte Zoomstufe oder eigene Stunden. Die Textsuche gehört in beiden Bereichen nicht zur gespeicherten Ansicht. Wählen Sie **Alle Ansichten → Neue Ansicht anlegen**.
 2. Geben Sie unter **Name** einen eindeutigen Namen ein und prüfen Sie die Vorschau der Filter und Darstellung.
 3. Aktivieren Sie bei Bedarf **Mit anderen teilen**, damit andere die Ansicht auswählen und abonnieren können. Ohne diese Auswahl bleibt sie persönlich. Legen Sie mit **Anpinnen** und **Als Standard verwenden** Ihre persönlichen Vorgaben fest.
 4. Entscheiden Sie unter **Buchen**, ob die Ansicht mit **Zeit mitspeichern** auch einen mitwandernden Zeitraum und das Zeitfenster behalten soll. Prüfen Sie die angezeigte Beschreibung und wählen Sie **Speichern**.
 
 **Anpinnen** zeigt die Ansicht als Reiter. **Alle Ansichten** enthält angepinnte, eigene und mit Ihnen geteilte Ansichten und nennt bei geteilten Ansichten die teilende Person. **Als Standard verwenden** bestimmt Ihren persönlichen Standard im jeweiligen Bereich. Ansichten für **Buchen** und **Übersichten** sind getrennt. Eine Kalenderansicht speichert auch die Zoomstufe oder die eingegebenen eigenen Stunden. **Arbeitszeit** verwendet beim Öffnen die Arbeitszeit der jeweils betrachtenden Person, auch in einer geteilten Ansicht. Die seitliche Scrollposition wird nicht mitgespeichert und kennzeichnet die Ansicht nicht als geändert.
 
-Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verwalten** oder den **Aktionen der Ansicht** können Sie sie mit **Ansicht abonnieren** übernehmen, Ihre persönlichen Einstellungen ändern oder mit **Als eigene Ansicht speichern** eine eigene Variante erstellen. **Abo beenden** entfernt Ihr Abonnement, nicht die Ansicht der Eigentümerin oder des Eigentümers. **Aktuelle Ansicht** im Menü verlässt die gespeicherte Ansicht und behält die aktuellen Kriterien.
+Wählen Sie eine geteilte Ansicht aus. Unter **Alle Ansichten → Ansichten verwalten** oder den **Aktionen der Ansicht** können Sie sie mit **Ansicht abonnieren** übernehmen oder Ihre persönlichen Einstellungen ändern. **Als eigene Ansicht speichern** steht in den Aktionen der Ansicht und direkt unter **Alle Ansichten**. **Abo beenden** entfernt Ihr Abonnement, nicht die Ansicht der Eigentümerin oder des Eigentümers. **Aktuelle Ansicht** im Menü verlässt die gespeicherte Ansicht und behält die aktuellen Kriterien.
 
 Nur die Eigentümerin oder der Eigentümer kann die gespeicherte Definition, ihren Namen und ihre Freigabe ändern oder die Ansicht löschen. Änderungen an einer geteilten Definition betreffen auch die Personen, die diese verwenden. **Ansicht löschen** verlangt eine Bestätigung und entfernt eine geteilte Ansicht auch für andere. Speichern Sie für eigene Abweichungen eine eigene Ansicht.
 
-Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Sortierung oder Darstellung; unter **Übersichten** zählt auch die Textsuche dazu. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage für geänderte Filter oder Sortierung sowie unter **Übersichten** für eine geänderte Textsuche, nicht allein für eine andere Darstellung oder Zeit. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Eine freie Suche ohne ausgewählte gespeicherte Ansicht kann beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
+Ein Punkt am Reiter und **Geändert** kennzeichnen Abweichungen an Filtern, Sortierung oder unter **Buchen** an der Darstellung. Die Textsuche zählt in beiden Bereichen nicht dazu. Beim Wechsel zu einer anderen Ansicht erscheint eine Rückfrage für geänderte Filter oder Sortierung, nicht allein für eine andere Darstellung, Zeit oder Textsuche. Entscheiden Sie, ob Sie die Änderungen verwerfen oder mit einer der angebotenen Speicheraktionen erhalten möchten. Freie Filterkriterien ohne ausgewählte gespeicherte Ansicht können beim Wechsel ohne Rückfrage ersetzt werden. Speichern Sie solche Kriterien vorher, wenn Sie sie behalten möchten.
 
-### Eine Ansicht unter Buchen speichern oder verwerfen
+Die Textsuche bleibt beim Wechseln der Ansicht und bei **Verwerfen** auf der Seite erhalten. Auch ein mit einer älteren Ansicht gespeicherter Suchtext wird beim Öffnen nicht angewendet. Prüfen und leeren Sie bei unerwartet wenigen Ergebnissen das Suchfeld; ein erneutes Speichern der Ansicht sichert diesen Text nicht.
 
-Am Computer stehen die Filter direkt unter den Ansichtsreitern in einem eigenen Bereich. An dessen rechtem Ende bleibt **Speichern** an derselben Stelle, auch während der Verarbeitung und der kurzen Bestätigung **Gespeichert**. Tag und Zeitfenster stehen darunter zusammen mit **Kalender / Plan / Liste**, Spanne und Sortierung. Die Namenssuche steht bei den Ergebnissen.
+### Eine Ansicht speichern oder verwerfen {#eine-ansicht-unter-buchen-speichern-oder-verwerfen}
 
-**Geändert: Filter**, **Darstellung** oder **Sortierung** nennt die Abweichungen von der gewählten Ansicht. Zoom und Spanne gehören gemeinsam zur **Darstellung**. Bei wenig Platz steht nur **Geändert**; der Hinweis beim Zeigen darauf nennt die Bereiche. Tag, Zeitfenster und Namenssuche kennzeichnen die Ansicht nicht als geändert.
+Am Computer stehen die Filter in **Buchen** und **Übersichten** direkt unter den Ansichtsreitern in einem eigenen Bereich. An dessen rechtem Ende bleibt **Speichern** an derselben Stelle, auch während der Verarbeitung und der kurzen Bestätigung **Gespeichert**. Unter **Buchen** stehen Tag und Zeitfenster darunter zusammen mit **Kalender / Plan / Liste**, Spanne und Sortierung. Die Textsuche steht bei den Ergebnissen.
 
-- Bei einer geänderten eigenen Ansicht aktualisiert **Speichern** deren Filter, Darstellung und Sortierung. Die aktuell gewählte Zeit wird dabei nicht in die Ansicht übernommen; beachten Sie **Zeit in einer Ansicht unter Buchen**.
+**Geändert: Filter**, **Sortierung** oder unter **Buchen** auch **Darstellung** nennt die Abweichungen von der gewählten Ansicht. Zoom und Spanne gehören gemeinsam zur **Darstellung**. Bei wenig Platz steht nur **Geändert**; der Hinweis beim Zeigen darauf nennt die Bereiche. Tag, Zeitfenster und Textsuche kennzeichnen die Ansicht nicht als geändert.
+
+- Bei einer geänderten eigenen Ansicht aktualisiert **Speichern** deren Filter und Sortierung, unter **Buchen** auch die Darstellung. Die aktuell gewählte Zeit wird dabei nicht in die Ansicht übernommen; beachten Sie **Zeit in einer Ansicht unter Buchen**.
 - Ohne ausgewählte Ansicht oder nach einer Änderung an der Ansicht einer anderen Person öffnet **Speichern** das Fenster **Neue Ansicht**. Die fremde Definition bleibt unverändert. Ist nichts Speicherbares geändert, ist die Schaltfläche deaktiviert.
-- **Verwerfen** stellt Filter, Sortierung und Darstellung der gewählten Ansicht wieder her. Aktueller Tag, Zeitfenster und Namenssuche bleiben erhalten.
-- Für eine Kopie verwenden Sie im Menü der Ansicht oder unter **Alle Ansichten** die Aktion **Als neue Ansicht speichern** beziehungsweise **Als eigene Ansicht speichern**.
+- **Verwerfen** stellt Filter und Sortierung der gewählten Ansicht wieder her, unter **Buchen** auch die Darstellung. Aktueller Tag, Zeitfenster und Textsuche bleiben erhalten.
+- Für eine Kopie Ihrer eigenen Ansicht verwenden Sie die **Aktionen der Ansicht → Als neue Ansicht speichern**. Bei einer Ansicht einer anderen Person finden Sie **Als eigene Ansicht speichern** auch direkt unter **Alle Ansichten**.
 
 Auf dem Telefon bleibt das Speichersymbol rechts neben den seitlich scrollbar angeordneten Filtern stehen. Es öffnet einen kleinen Bereich mit den geänderten Bestandteilen sowie **Speichern** und **Verwerfen**. Die beschriebenen Speicherregeln gelten auch dort. **Zeit mitspeichern** wählen Sie ausdrücklich im Ansichtsfenster, nicht mit der gewöhnlichen Speicheraktion.
 
